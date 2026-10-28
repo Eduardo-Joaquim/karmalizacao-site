@@ -7,73 +7,21 @@ root=Path(__file__).resolve().parents[1]
 subprocess.run(['python3', str(root/'scripts/build-elven-gaeria.py')], check=True)
 source=(root/'docs/reino-humano-gaeria.md').read_text()
 body=source.split('\n',1)[1]
-html=subprocess.check_output(['pandoc','-f','markdown','-t','html5'],input=body,text=True)
-soup=LH.fragment_fromstring(html,create_parent='div')
+subprocess.run(['python3', str(root/'scripts/compile-region.py'), '--human'], check=True)
+compiled=json.loads((root/'.sites-runtime/human-court-generated.json').read_text())
+soup=LH.fragment_fromstring(compiled['html'],create_parent='div')
+for node in soup.xpath('.//*[@class]'):
+ for a,b in [('elven-dossier','realm-dossier'),('elven-vitals-source','realm-vitals'),('elven-attributes-source','realm-attributes'),('elven-ability-source','realm-ability')]:
+  if node.get('class')==a:node.set('class',b)
 txt=lambda n: ''.join(n.itertext())
 render=lambda n:LH.tostring(n,encoding='unicode')
-characters=['rainha-aveline','princesa-isadora','princesa-brigida','conselheiro-tomas']
-for heading in list(soup.findall('h3')):
- if heading.get('id') not in characters:continue
- article=E.Element('article',{'class':'realm-dossier','aria-labelledby':heading.get('id')})
- heading.addprevious(article);node=heading
- while node is not None:
-  nxt=node.getnext()
-  if node is not heading and node.tag in ['h2','h3']:break
-  article.append(node);node=nxt
- stats=next((p for p in article.findall('p') if txt(p).startswith('Identidade:')),None)
- assert stats is not None
- text=re.sub(r'\s+',' ',txt(stats)).strip()
- def capture(label,end):
-  match=re.search(label+r':\s*(.*?)'+end,text)
-  assert match,(label,text)
-  return match[1]
- values=[('Identidade',capture('Identidade',r'\. Vida:')),('Vida',capture('Vida',r'\. Karma:')),('Karma',capture('Karma',r'\. CA:')),('CA e acertos',capture('CA',r'\. Deslocamento:')),('Deslocamento',capture('Deslocamento',r'\. Atributos:'))]
- dl=E.Element('dl',{'class':'realm-vitals'})
- for label,value in values:
-  div=E.SubElement(dl,'div');E.SubElement(div,'dt').text=label;E.SubElement(div,'dd').text=value
- stats.addprevious(dl)
- attrs=E.Element('dl',{'class':'realm-attributes'})
- for chunk in text.split('Atributos:')[1].strip().rstrip('.').split(' · '):
-  label,value=chunk.rsplit(' ',1);div=E.SubElement(attrs,'div');E.SubElement(div,'dt').text=label;E.SubElement(div,'dd').text=value
- article.replace(stats,attrs)
- for ability in list(article.findall('h5')):
-  card=E.Element('section',{'class':'realm-ability'})
-  ability.addprevious(card);node=ability
-  while node is not None:
-   nxt=node.getnext()
-   if node is not ability:
-    if node.tag in ['h2','h3','h4','h5']:break
-    if node.tag=='p' and txt(node).startswith(('Condução','Recompensa')):break
-   card.append(node);node=nxt
-articles=soup.xpath('.//article[@class="realm-dossier"]')
-# Expose the same authored words as structured dossiers for the royal reader.
+characters=compiled['characterIds']
 profiles=[]
-def field_nodes(paragraph):
- fields=[];label='';parts=[]
- if paragraph.text:parts.append(paragraph.text)
- for child in paragraph:
-  if child.tag=='strong':
-   if parts:fields.append(dict(label=label,html=''.join(parts)))
-   label=txt(child).rstrip(':');parts=[child.tail or '']
-  else:parts.append(LH.tostring(child,encoding='unicode',with_tail=True))
- if parts:fields.append(dict(label=label,html=''.join(parts)))
- return fields
-for article in articles:
- heading=article.find('h3');name,title=txt(heading).split(' · ',1)
- h4s=article.findall('h4');lore=[];node=h4s[0].getnext()
- while node is not None and node is not h4s[1]:lore.append(render(node));node=node.getnext()
- vitals={d.find('dt').text:d.find('dd').text for d in article.find('dl')}
- attrs=[dict(name=d.find('dt').text,value=int(d.find('dd').text)) for d in article.findall('dl')[1]]
- facts=[];abilities=[];node=h4s[1].getnext()
- while node is not None:
-  if node.tag=='p':facts.append(dict(fields=field_nodes(node)))
-  if node.tag=='section':
-   ah=node.find('h5');text=txt(node);cost=re.search(r'(\d+)\s+Karma',text)
-   grade=re.search(r'\b(V|IV|III|II|I)\b',txt(node.find('p')))
-   action='Reação' if re.search(r'Uso:(?:\s|\xa0)*(?:uma )?Reação',text) else 'Movimento' if re.search(r'Uso:(?:\s|\xa0)*Movimento',text) else 'Principal'
-   abilities.append(dict(id=ah.get('id'),name=re.sub(r'\s+',' ',re.sub(r'^\d+ · ','',txt(ah))),cost=int(cost[1]) if cost else 0,grade=grade[1] if grade else '',action=action,fields=[f for para in node.findall('p') for f in field_nodes(para)]))
-  node=node.getnext()
- profiles.append(dict(id=heading.get('id'),name=name,title=title,loreId=h4s[0].get('id'),combatId=h4s[1].get('id'),loreHtml=''.join(lore),identity=vitals['Identidade'],life=int(vitals['Vida']),karma=int(vitals['Karma']),defense=vitals['CA e acertos'],movement=vitals['Deslocamento'],attributes=attrs,facts=facts,abilities=abilities))
+for profile in compiled['courtProfiles']:
+ p=dict(profile);p['defense']=str(p.pop('ca'))
+ p['abilities']=[dict(a,cost=int(a['cost'].split()[0]) if a['cost']!='—' else 0) for a in p['abilities']]
+ profiles.append(p)
+from regional_fields import field_nodes
 # Civil figures retain two editorial parts, without inventing combat powers.
 basic_ids=['leonor-ferromonte','mateus-ferromonte','artur-vesperal','naira-vesperal','lidia-vesperal','damiao-cedral','teresa-cedral','rui-salcedo']
 fighter_ids=['germano-ferromonte','celina-vesperal','raul-cedral']

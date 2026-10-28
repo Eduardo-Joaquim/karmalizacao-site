@@ -1,3 +1,4 @@
+import sizeRules from "@/data/size-rules.json";
 export const ATTRIBUTES = [
   "Força",
   "Agilidade",
@@ -202,6 +203,12 @@ export type BindingVow = {
   sacrifices: Array<{ skill: string; points: number }>;
 };
 
+export const SIZE_RULES = sizeRules;
+export function sizeFromHeight(heightCm: number): CharacterSize {
+  const sizes = Object.entries(SIZE_RULES) as [CharacterSize, { minHeight: number }][];
+  return sizes.reverse().find(([, rule]) => heightCm >= rule.minHeight)?.[0] ?? "Minúsculo";
+}
+
 export type PointValue = { base: number; bonus: number };
 
 export type BonusAllocations = {
@@ -371,6 +378,7 @@ export type CharacterSharing = {
 
 export type CharacterPayload = {
   version: 1;
+  combat?: { life: number; karma: number; shield: number; temporaryCharges: number; round: number; domainRounds: Record<string, number> };
   name: string;
   portraitImage: string;
   pronouns: string;
@@ -617,7 +625,7 @@ export function normalizeCharacterPayload(
     },
     heightCm: payload.heightCm ?? null,
     size: typeof payload.heightCm === "number"
-      ? payload.heightCm < 100 ? "Minúsculo" : payload.heightCm < 165 ? "Pequeno" : payload.heightCm <= 190 ? "Médio" : "Grande"
+      ? sizeFromHeight(payload.heightCm)
       : CHARACTER_SIZES.includes(payload.size as CharacterSize) ? payload.size! : "Médio",
     inventory: payload.inventory ?? blank.inventory,
     alchemicalSaturation: Number.isFinite(payload.alchemicalSaturation) ? Math.max(0, Math.min(999, Math.floor(payload.alchemicalSaturation!))) : 0,

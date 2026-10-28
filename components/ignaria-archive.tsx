@@ -1,3 +1,4 @@
+import { ThreatLink } from "@/components/threat-link";
 import { ArrowUpRight, Crown, Flame, Landmark, Shield, Skull } from "lucide-react";
 const court="/mundo/ignaria/corte-vampirica";
 export function IgnariaContinentCard(){return <a href="/mundo/ignaria" className="gaeria-continent-card ignaria-continent-card"><Flame aria-hidden="true"/><div><span>CONTINENTE DO FOGO</span><strong>Ignária</strong><p>Cortes das rainhas · Casas nobres · Pretendentes</p></div><ArrowUpRight aria-hidden="true"/></a>;}
@@ -14,6 +15,6 @@ export function IgnariaArchive(){
       ["Casa Condal Senn","Condado dos reservatórios, dos celeiros e das casas de doação.",court+"#condado-senn"],
       ["Casa Viscondal Kost","Viscondado dos entrepostos e das permissões de travessia.",court+"#viscondado-kost"],
     ].map(([name,description,url])=><a key={url} className="gaeria-entry" href={url}><h4>{name}</h4><p>{description}</p><span>Consultar <ArrowUpRight aria-hidden="true"/></span></a>)}</section>
-    <section className="gaeria-category"><header><Skull aria-hidden="true"/><h3>Monstros de Ignária</h3><span>03</span></header><div className="gaeria-entry gaeria-empty"><Shield aria-hidden="true"/><h4>Nenhuma criatura catalogada</h4><p>O catálogo de monstros deste continente ainda não possui verbetes.</p></div></section>
+    <section className="gaeria-category"><header><Skull aria-hidden="true"/><h3>Monstros de Ignária</h3><span>03</span></header><ThreatLink region="ignaria"/></section>
   </div></section>;
 }

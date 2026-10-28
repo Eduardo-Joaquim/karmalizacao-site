@@ -32,9 +32,9 @@
 .vampire-content .elven-ability-meta .ability-source { border-color:#d8a57d80; color:#efd3b4; }
 .court-source-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:0 0 22px; }
 .court-source-grid>div { padding:15px; background:linear-gradient(130deg,#3a202b,#25171f); border:1px solid #b2786a60; border-top:2px solid #d4aa82; }
-.court-source-grid dt { color:#dfbcad; font-size:11px; line-height:1.6; }
+.court-source-grid dt { color:#dfbcad; font-size:0.6875rem; line-height:1.6; }
 .court-source-grid dd { margin:8px 0 0; color:#f2dbc3; font:28px/1.2 Georgia,serif; }
-.court-source-grid small { margin-left:8px; font:10px/1.5 sans-serif; color:#bc969f; }
+.court-source-grid small { margin-left:8px; font:0.6875rem/1.5 sans-serif; color:#bc969f; }
 @media(max-width:600px) { .court-source-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .vampire-content .elven-signature { background:radial-gradient(ellipse at top right,#ac394437,transparent 65%),linear-gradient(120deg,#3b2026,#22131c); border-color:#d3ac7b; }
 .vampire-content .elven-signature header { background:#bd82651a; }

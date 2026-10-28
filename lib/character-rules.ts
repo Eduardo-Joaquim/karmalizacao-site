@@ -1,3 +1,4 @@
+import { sizeFromHeight, SIZE_RULES } from "@/lib/character-data";
 import { corruptedFormState } from "@/lib/corrupted-form";
 import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
 import raceBook from "@/data/race-book.json";
@@ -869,19 +870,7 @@ export function getDomainRegentAttribute(name: DomainName): AttributeName | null
 
 export const BASE_ARMOR = 12;
 export const BASE_KARMA = 10;
-export const SIZE_RULES: Record<CharacterSize, { life: number; movement: number; armor: number; height: string }> = {
-  Minúsculo: { life: 8, movement: 2, armor: 0, height: "30 a menos de 100 cm" },
-  Pequeno: { life: 10, movement: 1, armor: 0, height: "100 a menos de 165 cm" },
-  Médio: { life: 14, movement: 0, armor: 0, height: "165 a 190 cm" },
-  Grande: { life: 18, movement: -3, armor: 1, height: "Acima de 190 cm" },
-};
-
-export function sizeFromHeight(heightCm: number): CharacterSize {
-  if (heightCm < 100) return "Minúsculo";
-  if (heightCm < 165) return "Pequeno";
-  if (heightCm <= 190) return "Médio";
-  return "Grande";
-}
+export { sizeFromHeight, SIZE_RULES } from "@/lib/character-data";
 
 export function calculateDerivedStats(draft: CharacterPayload, automatic: AutomaticBonuses) {
   const strength = getFinalAttribute(draft, automatic, "Força");
@@ -930,10 +919,16 @@ export function getSkillTest(
   const inventoryPenalty=inventoryTestPenalty(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0,skill,["Força","Agilidade","Constituição"].includes(attribute)||["Atletismo","Acrobacia","Furtividade","Luta","Reflexos","Evasão"].includes(skill));
   const analyticBonus = attribute === "Intelecto" && (mental || social) && level > 0 && value > 0
     ? Math.min(3, Math.floor(intellect / 2)) : 0;
+  const manifested = (name: string) => draft.domains.some(d => d.name === name && d.enabled && d.awakened) && (draft.combat?.domainRounds[name] ?? 0) > 0;
+  const domainDice = Number(attribute === "Força" && ["Luta", "Atletismo"].includes(skill) && manifested("Força"))
+    + Number(attribute === "Agilidade" && ["Luta", "Pontaria", "Reflexos", "Acrobacia"].includes(skill) && manifested("Velocidade"))
+    + Number(attribute === "Constituição" && ["Atletismo", "Sobrevivência"].includes(skill) && manifested("Resistência"))
+    + Number(testPurpose === "technique" && manifested("Técnica"))
+    + Number(["Presença", "Espírito"].includes(attribute) && testPurpose === "technique" && manifested("Superação"));
   return {
-    attribute, value, level, permanentLevel, analyticBonus, oneUse, inventoryPenalty, formDice,
+    attribute, value, level, permanentLevel, analyticBonus, oneUse, inventoryPenalty, formDice, domainDice,
     bonus: value === 0 ? -4 : (oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0)) + analyticBonus + (attribute === "Intelecto" && (mental || social) && level > 0 && draft.domains.some(d => d.name === "Técnica" && d.enabled && d.awakened) ? 1 : 0),
-    dice: Math.max(1,(value === 0 || level === 0 ? 1 : Math.ceil(value / 2))+formDice-inventoryPenalty.dicePenalty),
+    dice: Math.max(1,(value === 0 || level === 0 ? 1 : Math.ceil(value / 2))+formDice+domainDice-inventoryPenalty.dicePenalty),
     selection: "maior",
   };
 }

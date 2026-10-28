@@ -1,3 +1,4 @@
+import { DossierReading } from "@/components/dossier-reading";
 import { bestiaryClassification } from "@/lib/bestiary-classification";
 import { abilityCostFields } from "@/lib/ability-cost-fields";
 import { TechniqueCost } from "@/components/technique-cost";
@@ -65,7 +66,7 @@ function AbilityCard({ ability, index, Mark=TreePine, showSource=false, owner }:
   </section>;
 }
 
-export function CourtDossier({ profile, index, identity=identities[index], crest, motto="“Toda raiz é uma promessa feita ao que ainda não nasceu.”", arsenal="Arsenal de Nemeton", Mark=TreePine, solar=index===2, showSources=false, repertoire, afterCombat }: { repertoire?:ReactNode; afterCombat?:ReactNode; profile: Profile; index: number; identity?:CourtIdentity; crest?:ReactNode; motto?:string; arsenal?:string; Mark?:LucideIcon; solar?:boolean; showSources?:boolean }) {
+export function CourtDossier({ initialReading = "summary", profile, index, identity=identities[index], crest, motto="“Toda raiz é uma promessa feita ao que ainda não nasceu.”", arsenal="Arsenal de Nemeton", Mark=TreePine, solar=index===2, showSources=false, repertoire, afterCombat }: { initialReading?:string; repertoire?:ReactNode; afterCombat?:ReactNode; profile: Profile; index: number; identity?:CourtIdentity; crest?:ReactNode; motto?:string; arsenal?:string; Mark?:LucideIcon; solar?:boolean; showSources?:boolean }) {
   const Icon=identity.Icon;
   const classification=bestiaryClassification(profile.identity,identity);
   const queen=index===0;
@@ -79,6 +80,7 @@ export function CourtDossier({ profile, index, identity=identities[index], crest
   const sources=techniques.reduce<Record<string,number>>((all,a)=>{if(a.source)all[a.source]=(all[a.source]??0)+1;return all;},{});
   return <article className={"elven-sheet" + (queen ? " elven-sheet-queen" : "") + (duke ? " elven-sheet-solar" : "")} style={{"--elven-accent":identity.accent,"--elven-jewel":identity.jewel} as CSSProperties} aria-labelledby={profile.id}>
     <header className="elven-identity"><div className="elven-identity-copy"><p className="elven-eyebrow"><Icon aria-hidden="true"/>{identity.role}</p><h3 id={profile.id}>{profile.name.replace(/^(Rainha|Princesa|Duque|Marquesa|Marquês|Condessa|Viscondessa) /,"")}</h3><p className="elven-title">{profile.title}</p><div className="elven-tags"><span>{profile.identity.split(" · ").slice(0,2).join(" · ")}</span><span>{classification.stage==="—"?"Ofício civil":`Etapa ${classification.stage}`}</span>{classification.rank!=="—"&&<span title="Ranque de ameaça do encontro; não é a Etapa de progressão.">Ameaça {classification.rank}</span>}</div>{queen&&<p className="elven-motto">{motto}</p>}</div><NobleOrnament id={profile.id}/></header>
+    <DossierReading initialView={initialReading}>
     <section className="elven-lore" aria-labelledby={profile.loreId}><div className="elven-part-heading"><BookOpen aria-hidden="true"/><p>História e Origem</p><span>I</span></div><h4 id={profile.loreId} className="sr-only">História e Origem de {profile.name}</h4><div dangerouslySetInnerHTML={{__html:profile.loreHtml}}/></section>
     <section className="elven-combat" aria-labelledby={profile.combatId}><div className="elven-part-heading"><Swords aria-hidden="true"/><p>{profile.sheetLabel}</p><span>II</span></div><h4 id={profile.combatId} className="sr-only">{profile.sheetLabel} de {profile.name}</h4>
       <dl className={"elven-resource-grid" + (profile.pc ? " elven-resources-four" : "")}><div className="elven-resource elven-life"><dt><Heart aria-hidden="true"/>{shared?"Vida compartilhada":"Vida máxima"}</dt><dd>{profile.life}</dd><span>{shared?"Uma reserva · dois corpos":"Pontos de Vida"}</span></div><div className="elven-resource elven-karma"><dt><Sparkles aria-hidden="true"/>Karma</dt><dd>{profile.karma}</dd><span>{shared?"João / Maria · reservas individuais":"Reserva de poder"}</span></div><div className="elven-resource elven-defense"><dt><Shield aria-hidden="true"/>CA</dt><dd>{profile.ca}</dd><span>Defesa atual</span></div>{profile.pc&&<div className="elven-resource elven-corruption"><dt><Orbit aria-hidden="true"/>Corrupção</dt><dd>{profile.pc}</dd><span>Pontos Corruptos</span></div>}</dl>
@@ -94,6 +96,7 @@ export function CourtDossier({ profile, index, identity=identities[index], crest
       </>}
       {afterCombat}
     </section>
+    </DossierReading>
   </article>;
 }
 

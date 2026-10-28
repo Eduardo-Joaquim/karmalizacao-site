@@ -117,3 +117,13 @@ Nidavellir: docs/republica-nidavellir.md, compilador --nidavellir, data/nidavell
 Eirik possui DUAS Bênçãos independentes: Magnetismo e Criação de Matéria Inorgânica (qualquer material inorgânico). Exibir dois cards próprios, com prosa descritiva; não restaurar o antigo bloco Ímã e Matriz com lista de proibições. Volume/duração/custos específicos ficam nas técnicas, não limitam o conceito geral da Bênção.
 
 Eirik revisado: Etapa VI, ameaça A, Vida 100/CA23, Karma132; menor resistência direta dos cinco regentes. Nove artes IV substituem repertório antigo; Járn cria a matéria sem exigir sucata, compartilha Vida atual máxima100 e CA23, manutenção2, ataque mecânico1d12. Saira copia técnicas marciais E Karma puro dos oponentes, Canalização2; três espaços, custos originais e atributos próprios, sem roubar outras fontes/assinaturas/Domínios.
+
+## Patch 1.13 — revisão de mesa em 28/10/2026
+
+Revisão registrada em docs/AUDITORIA-2026-10-28.md. Porte canônico em data/size-rules.json e docs/porte.md: 70/130/210 cm, Grande −1 m, demais sem bônus de velocidade. build-size-rules.py recompõe só a seção do Capítulo 2. Sem buff de Perícia 0, mínimo de dano, alteração das CDs de risco ou dos recursos da Falsa Santa.
+
+compile-region.py e data/compiler-regions.json atendem também --human; build-elven-gaeria.py é compatibilidade. build-gaeria.py monta continentes e civis usando a corte compilada. Identificadores data-item do equipamento apontam para data/equipment-mechanics.json; não inferir propriedades por nome. Divergência de carga interrompe build-equipment.
+
+Bestiário tem seis seções: vinte ameaças de Etapas I–IV em data/early-threats.json, fontes compiladas em docs/ameacas-iniciais.md; build-early-threats.py roda após os compiladores regionais. Página /bestiario/ameacas, API/MCP regiao=ameacas. /mesa compara dois NPCs. Preserve estatísticas, estilos e limites canônicos dos nobres e Pecados.
+
+/personagem aceita visitante, com rascunho local e recuperação explícita após login; APIs e nuvem continuam por proprietário. Recursos combat são opcionais, validados e persistidos. Domínios pagam só ativação, com refinamentos; contadores não executam dano, risco ou manutenção por conta própria. Novos retratos são miniaturas de até 512 px /64 mil caracteres; legado mantém limite anterior. npm test cobre testes atuais; regras históricas 1.2 ficam em test:legacy.

@@ -1,0 +1,1634 @@
+{
+  "mochila-de-campanha": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "cinto-tatico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "arnes-de-expedicao": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "bolsa-de-suprimentos": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "bau-de-campanha": {
+    "category": "gear",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "carrinho-manual": {
+    "category": "gear",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 4.0
+  },
+  "maca-dobravel": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "racao-seca-diaria": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "cantil-cheio": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "bandagens-de-uso-medico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "tochas": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "frasco-de-oleo-de-iluminacao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "flechas-ou-virotes": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "pilhas-de-iluminacao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "bateria-de-radio": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "punhos": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.0
+  },
+  "manoplas": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "adaga": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "espada-ou-machado": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "maca": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "lanca": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "corrente-ou-chicote": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "montante": {
+    "category": "gear",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "machado-pesado": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "martelo-de-guerra": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "bastao": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "florete": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "martelo-de-haste": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "azagaia": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "escudo-de-punho-ofensivo": {
+    "category": "shield",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "machado-de-abordagem": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "arco-curto": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "arco-longo": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "besta": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "besta-pesada": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "funda": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "dardos-de-lancamento": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "arco-de-campanha-desmontavel": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "varinha": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "cajado": {
+    "category": "focus",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "lamina-runica": {
+    "category": "focus",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "grimorio": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "orbe-de-convergencia": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "amuleto-de-vinculo": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "cetro-de-combate": {
+    "category": "focus",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "placa-de-inscricoes": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "fio-de-ancoragem": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "roupa-comum": {
+    "category": "armor",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.0
+  },
+  "roupa-reforcada": {
+    "category": "armor",
+    "minStrength": 0,
+    "armorClass": 1,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "armadura-leve": {
+    "category": "armor",
+    "minStrength": 1,
+    "armorClass": 2,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "armadura-media": {
+    "category": "armor",
+    "minStrength": 2,
+    "armorClass": 4,
+    "agilityCap": 5,
+    "movementPenalty": 0,
+    "spaces": 4.0
+  },
+  "armadura-pesada": {
+    "category": "armor",
+    "minStrength": 3,
+    "armorClass": 7,
+    "agilityCap": 3,
+    "movementPenalty": 2,
+    "spaces": 6.0
+  },
+  "escudo-leve": {
+    "category": "shield",
+    "minStrength": 1,
+    "armorClass": 1,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "escudo-medio": {
+    "category": "shield",
+    "minStrength": 2,
+    "armorClass": 2,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "escudo-pesado": {
+    "category": "shield",
+    "minStrength": 3,
+    "armorClass": 3,
+    "agilityCap": 99,
+    "movementPenalty": 2,
+    "spaces": 3.0
+  },
+  "manto-de-chuva": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "traje-termico-de-viagem": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "traje-de-oficina": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "kit-de-viagem": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "kit-de-medicina": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "kit-medico-militar": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "kit-de-criacao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "ferramentas-de-ladrao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "kit-de-ocultismo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "corda-de-15-m": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "ganchos-e-pitoes": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "lanterna-de-oleo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "bastao-luminescente-alquimico": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "tenda-para-quatro": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 4.0
+  },
+  "espelho-de-inspecao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "cristal-de-karma": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "selo-descartavel-de-identificacao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "pocao-de-cura": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "pocao-de-cura-concentrada": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "elixir-de-regeneracao-experimental": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "antidoto-comum": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "purgador-alquimico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "tonico-de-vigor-industrial": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "soro-de-adrenalina": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "elixir-de-forca-muscular": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "elixir-de-fluxo-karmico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "elixir-de-fluxo-profundo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "infusao-de-lucidez": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "elixir-de-clarividencia": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "soro-de-resistencia-quimica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "ampola-corrosiva": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "ampola-de-chama-alquimica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "ampola-de-fumaca-toxica": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "ampola-de-enfraquecimento": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "oleo-de-lamina-caustica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "oleo-de-selo-karmico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "elixir-de-pulso-corrompido": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "agua-purificada-alquimica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "soro-quimico-industrial": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "destilado-volatil": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "mercurio-karmico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "reagente-de-vitalidade": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "reagente-de-fluxo-karmico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "reagente-de-estimulo-muscular": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "reagente-de-foco-mental": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "reagente-de-purgacao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "reagente-de-volatilidade": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "residuo-corrompido-identificado": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "estabilizante-quimico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "catalisador-karmico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "kit-de-alquimia-de-campanha": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "bancada-alquimica-portatil": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 5.0
+  },
+  "kit-de-conservacao-de-reagentes": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "nucleo-reservatorio": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "tratamento-de-ferro-negro": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "forro-de-coral-abissal": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "revestimento-de-prata-consagrada": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "placa-ceramica-experimental": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "engaste-de-obsidiana-corrupta": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "lanterna-do-eco": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "broche-da-vigilia": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "anel-da-reserva-selada": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "manto-do-passo-curto": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "escama-guardia": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "compasso-do-ultimo-marco": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "pistola-compacta": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "revolver-de-servico": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "pistola-semiautomatica": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "carabina-de-repeticao": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "fuzil-de-ferrolho": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "fuzil-semiautomatico": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "espingarda-de-repeticao": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "submetralhadora": {
+    "category": "weapon",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "metralhadora-leve": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "metralhadora-pesada": {
+    "category": "weapon",
+    "minStrength": 4,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 6.0
+  },
+  "lanca-chamas": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 7.0
+  },
+  "lancador-antiblindagem": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 4.0
+  },
+  "morteiro-leve": {
+    "category": "weapon",
+    "minStrength": 3,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 8.0
+  },
+  "caixa-de-pistola-ou-submetralhadora": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.3333333333333333
+  },
+  "caixa-de-fuzil-ou-carabina": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "caixa-de-espingarda": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "carregador-de-pistola-vazio": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "carregador-de-pistola-abastecido": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.3333333333333333
+  },
+  "carregador-de-fuzil-abastecido": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "carregador-de-submetralhadora-abastecido": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "fita-de-metralhadora": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "projetil-antiblindagem": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "granada-de-morteiro": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "tanque-de-lanca-chamas-de-reserva": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "carga-de-combustivel-comum": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.3333333333333333
+  },
+  "gravada-com-selo-karmico": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "mira-telescopica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "supressor-compativel": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "bipe": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "tripe-de-metralhadora": {
+    "category": "gear",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "baioneta": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "bandoleira": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "carregador-ampliado": {
+    "category": "ammo",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "estojo-de-limpeza": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "granada-de-fragmentacao": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "granada-de-fumaca": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "granada-de-concussao": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "granada-incendiaria": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "granada-anti-karma": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "mina-antipessoal": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5
+  },
+  "mina-antiveiculo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "carga-de-dinamite-de-demolicao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "carga-de-ruptura-selada": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "mascara-de-gas": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "filtro-de-reposicao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "capacete-de-aco": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "colete-balistico-experimental": {
+    "category": "armor",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 5,
+    "movementPenalty": 0,
+    "spaces": 4.0
+  },
+  "binoculo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "radio-de-mochila": {
+    "category": "gear",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "radio-civil-de-mesa": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "telefone-de-campo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "radar-de-campo-experimental": {
+    "category": "gear",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 18.0
+  },
+  "lanterna-eletrica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "camera-fotografica": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "rolo-fotografico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.25
+  },
+  "kit-de-mecanico": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "kit-de-demolicao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "gerador-de-campanha": {
+    "category": "gear",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 5.0
+  },
+  "estacao-de-radio": {
+    "category": "gear",
+    "minStrength": 2,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 12.0
+  },
+  "oficina-de-campo": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 30.0
+  },
+  "hospital-de-campanha": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 40.0
+  },
+  "motocicleta-com-sidecar": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 30.0
+  },
+  "automovel-utilitario": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 100.0
+  },
+  "caminhao-de-suprimentos": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 300.0
+  },
+  "carro-blindado": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 500.0
+  },
+  "tanque-leve": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1000.0
+  },
+  "tanque-medio": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1500.0
+  },
+  "aeronave-a-helice-de-reconhecimento": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 400.0
+  },
+  "lancha-de-patrulha": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 600.0
+  },
+  "metralhadora-leve-montada": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 5.0
+  },
+  "metralhadora-pesada-montada": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 10.0
+  },
+  "canhao-automatico": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 25.0
+  },
+  "canhao-de-tanque": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 40.0
+  },
+  "bomba-de-aeronave": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 8.0
+  },
+  "projetil-de-canhao": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "caixa-de-canhao-automatico": {
+    "category": "weapon",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "acoplador-condutor-de-maquina": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "reservatorio-industrial": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 4.0
+  },
+  "ignicao-karmica-auxiliar": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 3.0
+  },
+  "motor-karmico-integral": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 8.0
+  },
+  "estabilizador-de-selos": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "refrigeracao-elemental": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 2.0
+  },
+  "valvula-de-ruptura": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.0
+  },
+  "nucleo-de-corrupcao": {
+    "category": "gear",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 6.0
+  }
+}

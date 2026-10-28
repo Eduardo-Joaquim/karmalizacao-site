@@ -1,3 +1,4 @@
+import { ThreatLink } from "@/components/threat-link";
 import { ArrowUpRight, Crown, Landmark, Shield, Skull, Sun, TreePine } from "lucide-react";
 
 const humanRealm = "/mundo/gaeria/reino-humano";
@@ -25,7 +26,7 @@ export function GaeriaArchive() {
         <a className="gaeria-entry gaeria-entry-elven" href={elvenRealm+"#duque-thaerion"}><Sun aria-hidden="true"/><h4>Casa Ducal Solvaldren</h4><p>Única casa ducal de Gaéria, sediada em Elaranth. Guarda as fronteiras e os observatórios solares.</p><span>Consultar <ArrowUpRight aria-hidden="true"/></span></a>
         {organizations.map(([name,description,id])=><a key={id} className="gaeria-entry" href={humanRealm+"#"+id}><h4>{name}</h4><p>{description}</p><span>Consultar <ArrowUpRight aria-hidden="true"/></span></a>)}
       </section>
-      <section className="gaeria-category" id="monstros-gaeria"><header><Skull aria-hidden="true"/><h3>Monstros de Gaéria</h3><span>03</span></header><div className="gaeria-entry gaeria-empty"><Shield aria-hidden="true"/><h4>Nenhuma criatura catalogada</h4><p>O catálogo de monstros deste continente ainda não possui verbetes.</p></div></section>
+      <section className="gaeria-category" id="monstros-gaeria"><header><Skull aria-hidden="true"/><h3>Monstros de Gaéria</h3><span>03</span></header><ThreatLink region="gaeria"/></section>
     </div>
   </section>;
 }

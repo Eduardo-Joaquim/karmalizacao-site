@@ -1,3 +1,4 @@
+import earlyThreats from "@/data/early-threats.json";
 import nidavellir from "@/data/nidavellir.json";
 import aeria from "@/data/demi-aeria.json";
 import demons from "@/data/demon-ignaria.json";
@@ -19,7 +20,7 @@ const schemas = {
   listar_capitulos: empty,
   ler_capitulo: z.object({ slug: z.string().min(1).max(120) }).strict(),
   pesquisar_regras: z.object({ texto: z.string().min(2).max(80) }).strict(),
-  ler_bestiario: z.object({ integrante: z.string().max(120).optional(), regiao: z.enum(["gaeria", "elaranth", "ignaria", "demonios", "ghouls", "lunaviel", "aeria", "nidavellir", "cortes"]).optional() }).strict(),
+  ler_bestiario: z.object({ integrante: z.string().max(120).optional(), regiao: z.enum(["gaeria", "elaranth", "ignaria", "demonios", "ghouls", "lunaviel", "aeria", "nidavellir", "ameacas", "cortes"]).optional() }).strict(),
   modelo_ficha: empty,
   criar_ficha: z.object({ nome: z.string().trim().min(1).max(80), payload: z.record(z.unknown()).optional() }).strict(),
   listar_fichas: empty,
@@ -28,7 +29,7 @@ const definitions = [
   ["listar_capitulos", "Lista os capítulos públicos e seus links.", {}],
   ["ler_capitulo", "Lê o texto completo e as seções de um capítulo público.", { slug: { type: "string" } }],
   ["pesquisar_regras", "Pesquisa as regras e o Bestiário por texto.", { texto: { type: "string", minLength: 2, maxLength: 80 } }],
-  ["ler_bestiario", "Lê História e Ficha de Combate, incluindo invocações. Use regiao gaeria para Valdária, elaranth para o Reino Élfico, ignaria para a Corte Vampírica, demonios para Aqueronte, ghouls para os pretendentes, aeria para a corte demi-humana, lunaviel para a casa marquesal ou omita integrante e regiao para listar a Corte da Falsa Santa.", { integrante: { type: "string" }, regiao: { type: "string", enum: ["gaeria", "elaranth", "ignaria", "demonios", "ghouls", "lunaviel", "aeria", "nidavellir", "cortes"] } }],
+  ["ler_bestiario", "Lê História e Ficha de Combate, incluindo invocações. Use regiao gaeria para Valdária, elaranth para o Reino Élfico, ignaria para a Corte Vampírica, demonios para Aqueronte, ghouls para os pretendentes, aeria para a corte demi-humana, lunaviel para a casa marquesal ou omita integrante e regiao para listar a Corte da Falsa Santa.", { integrante: { type: "string" }, regiao: { type: "string", enum: ["gaeria", "elaranth", "ignaria", "demonios", "ghouls", "lunaviel", "aeria", "nidavellir", "ameacas", "cortes"] } }],
   ["modelo_ficha", "Obtém o modelo completo de rascunho e opções. Consulte antes de criar uma ficha.", {}],
   ["criar_ficha", "Cria e salva uma NOVA ficha na conta autenticada. Não altera fichas existentes. Campos omitidos usam o modelo de rascunho; não implica conclusão das escolhas do jogador. Requer nome; payload contém campos do modelo_ficha. Não publique fichas sem pedido do jogador.", { nome: { type: "string", minLength: 1, maxLength: 80 }, payload: { type: "object", additionalProperties: true } }],
   ["listar_fichas", "Lista somente as fichas da conta autenticada.", {}],
@@ -47,7 +48,7 @@ export async function callTool(name: string, args: unknown, request: Request) {
   if (name === "listar_capitulos") return content(getChapterMetadata().map(c => ({ ...c, url: `/regras/${c.slug}` })));
   if (name === "ler_capitulo") { const chapter = getChapter(input.slug as string); return content(chapter ?? { error: "Capítulo não encontrado." }, !chapter); }
   if (name === "pesquisar_regras") { const response = await searchRules(new Request(new URL(`/api/regras/busca?q=${encodeURIComponent(input.texto as string)}`, request.url))); return content(await response.json(), !response.ok); }
-  if (name === "ler_bestiario") { if (input.regiao === "gaeria") return content(gaeria); if (input.regiao === "elaranth") return content(elven); if (input.regiao === "ignaria") return content(vampires); if(input.regiao === "demonios") return content(demons); if(input.regiao === "ghouls") return content(ghouls); if(input.regiao === "lunaviel") return content(lunaviel); if(input.regiao === "nidavellir") return content(nidavellir); if(input.regiao === "aeria") return content(aeria); const entry = input.integrante ? court.find(c => c.slug === input.integrante) : court; return content(entry ?? { error: "Integrante não encontrado." }, !entry); }
+  if (name === "ler_bestiario") { if (input.regiao === "ameacas") return content(earlyThreats); if (input.regiao === "gaeria") return content(gaeria); if (input.regiao === "elaranth") return content(elven); if (input.regiao === "ignaria") return content(vampires); if(input.regiao === "demonios") return content(demons); if(input.regiao === "ghouls") return content(ghouls); if(input.regiao === "lunaviel") return content(lunaviel); if(input.regiao === "nidavellir") return content(nidavellir); if(input.regiao === "aeria") return content(aeria); const entry = input.integrante ? court.find(c => c.slug === input.integrante) : court; return content(entry ?? { error: "Integrante não encontrado." }, !entry); }
   if (name === "modelo_ficha") return content({ payload: createBlankCharacter(), options: { origins: ORIGINS, races: RACES, classes: CLASSES, paths: PATHS, stages: STAGES, attributes: ATTRIBUTES, skills: ALL_SKILLS }, chapters: getAllChapters().filter(c => /cria|personag/.test(c.slug)).map(c => c.slug), instructions: "Use criar_ficha com nome e os campos desejados em payload. Objetos e listas fornecidos substituem o campo completo do modelo. O servidor valida dados e votos. Escolhas vazias representam rascunho. A ficha fica privada na conta autenticada." });
   if (!(await getChatGPTUser())) return content({ error: "Autenticação necessária. Conecte o plugin do Site à sua conta." }, true);
   if (name === "listar_fichas") { const response = await listCharacters(new Request(new URL("/api/personagens", request.url))); return content(await response.json(), !response.ok); }

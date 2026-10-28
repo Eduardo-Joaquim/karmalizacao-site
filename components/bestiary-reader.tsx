@@ -76,7 +76,7 @@ export function BestiaryReader({ initialMember = "", initialMode = "combat", ini
         <div><p className="atlas-overline">KARMALIZAÇÃO / CÓDICE XXI</p><h1>Bestiário<span>.</span></h1><p>Conheça os nomes que o mundo aprendeu a temer.</p></div>
         <div className="atlas-heading-mark" aria-hidden="true"><Skull /><span>ARCHIVUM<br />KARMALIZAÇÃO</span></div>
       </header>
-      <nav className="atlas-regions" aria-label="Seções do Bestiário">
+      <div className="dossier-reading-nav"><a href="/bestiario/ameacas">Monstros e ameaças · Etapas I–IV</a><a href="/mesa">Mestre em combate · duas fichas</a></div><nav className="atlas-regions" aria-label="Seções do Bestiário">
         {regions.map((item, index) => <button type="button" key={item.id} aria-pressed={region === item.id} onClick={() => { setRegion(item.id); window.history.replaceState(null, "", `#${item.id}`); }}><span>0{index + 1}</span>{item.name}</button>)}
         <button type="button" aria-pressed={region === "cortes"} onClick={() => { setRegion("cortes"); window.history.replaceState(null, "", "#cortes"); }}><span>05</span>As duas cortes</button>
       </nav>

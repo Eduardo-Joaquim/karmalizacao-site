@@ -1,4 +1,5 @@
 "use client";
+import { CombatPanel } from "@/components/combat-panel";
 import { TechniqueCost } from "@/components/technique-cost";
 import { CorruptedFormEditor } from "@/components/corrupted-form-editor";
 import { InventoryManager } from "@/components/inventory-manager";
@@ -131,7 +132,7 @@ export function CharacterSheetView({
           <Shield aria-hidden="true" />
           <span>
             <strong>{readOnly ? "Visualização compartilhada" : "Ficha protegida"}</strong>
-            {readOnly ? "Este link permite consultar a ficha, nunca editá-la." : "Esta página é somente leitura. Apenas o inventário pode ser alterado aqui."}
+            {readOnly ? "Este link permite consultar a ficha, nunca editá-la." : "Os recursos de combate e o inventário podem ser ajustados aqui. Salve a ficha para guardar as alterações."}
           </span>
         </div>
       </header>
@@ -156,6 +157,7 @@ export function CharacterSheetView({
         })}
       </div>
 
+      <CombatPanel draft={draft} max={derived} onChange={readOnly ? undefined : onChange}/>
       <SheetSection icon={UserRound} title="Essência e identidade">
         <div className="sheet-readonly-grid">
           <ReadonlyValue label="Nome">{draft.name}</ReadonlyValue>

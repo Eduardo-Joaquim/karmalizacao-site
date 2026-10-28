@@ -8,6 +8,7 @@ import "./skills.css";
 import "./inventory.css";
 import "./corrupted-form.css";
 import "./noble-dossiers.css";
+import "./table-play.css";
 
 import { Toaster } from "@/components/ui/sonner";
 

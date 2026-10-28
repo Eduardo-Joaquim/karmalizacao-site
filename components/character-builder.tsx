@@ -249,7 +249,7 @@ async function fetchOwnedCharacter(id: string, signal?: AbortSignal): Promise<Sa
   return { ...data.character, payload: normalizeCharacterPayload(data.character.payload) };
 }
 
-export function CharacterBuilder({ displayName }: { displayName: string }) {
+export function CharacterBuilder({ displayName, authenticated = true }: { displayName: string; authenticated?: boolean }) {
   const [characters, setCharacters] = useState<SavedCharacter[]>([]);
   const [activeId, setActiveId] = useState<string | null>(null);
   const [draft, setDraft] = useState<CharacterPayload>(() => createBlankCharacter());
@@ -258,9 +258,14 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
   const [saving, setSaving] = useState(false);
   const [dirty, setDirty] = useState(false);
   const [pendingDelete, setPendingDelete] = useState<SavedCharacter | null>(null);
+  const [guestReady, setGuestReady] = useState(false);
   const [openingId, setOpeningId] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!authenticated) {
+      try { const value = localStorage.getItem("karmalizacao-guest-draft-v1"); if (value) setDraft(normalizeCharacterPayload(JSON.parse(value))); } catch { toast.error("Não foi possível recuperar o rascunho deste navegador."); }
+      setGuestReady(true); setLoading(false); return;
+    }
     const controller = new AbortController();
 
     async function loadCharacters() {
@@ -300,7 +305,12 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
 
     void loadCharacters();
     return () => controller.abort();
-  }, []);
+  }, [authenticated]);
+
+  useEffect(() => {
+    if (authenticated || !guestReady) return;
+    try { localStorage.setItem("karmalizacao-guest-draft-v1", JSON.stringify({ ...draft, sharing: { enabled: false, token: "" } })); } catch { toast.error("O navegador não conseguiu guardar o rascunho. Exporte a ficha para não perder alterações."); }
+  }, [draft, authenticated, guestReady]);
 
   const automatic = useMemo(() => calculateAutomaticBonuses(draft), [draft]);
   const classDefinition = useMemo(() => getClassDefinition(draft.className), [draft.className]);
@@ -611,6 +621,10 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
       return null;
     }
 
+    if (!authenticated) {
+      try { localStorage.setItem("karmalizacao-guest-draft-v1", JSON.stringify({ ...characterToSave, sharing: { enabled: false, token: "" } })); setDirty(false); toast.success("Rascunho salvo neste navegador. Entre para salvar na nuvem ou compartilhar."); } catch { toast.error("Não foi possível salvar o rascunho neste navegador."); }
+      return null;
+    }
     setSaving(true);
     const id = activeId ?? crypto.randomUUID();
     try {
@@ -659,6 +673,7 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
   }
 
   async function enableOrCopySharing(regenerate = false) {
+    if (!authenticated) { toast.error("Entre na conta para compartilhar sua ficha. O rascunho permanece neste navegador."); return; }
     if (!draft.name.trim()) {
       setActiveTab("essencia");
       toast.error("Dê um nome ao personagem antes de criar o link.");
@@ -706,6 +721,7 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
 
   return (
     <main className="site-shell character-main">
+      {!authenticated && <aside className="guest-notice"><strong>Modo visitante</strong><p>Experimente a criação completa. Seu rascunho fica somente neste navegador.</p><a href="/signin-with-chatgpt?return_to=%2Fpersonagem" target="_top">Entrar para salvar na nuvem</a><button type="button" onClick={() => { const blob = new Blob([JSON.stringify(draft, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = "karmalizacao-ficha.json"; a.click(); URL.revokeObjectURL(url); }}>Exportar rascunho</button></aside>}
       <CharacterStepNavigation activeStep={activeTab} onSelect={setActiveTab} />
       <header className="character-page-heading">
         <div>
@@ -720,6 +736,7 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
           </p>
         </div>
         <div className="character-heading-actions">
+          {authenticated && <Button type="button" variant="outline" onClick={() => { const raw = localStorage.getItem("karmalizacao-guest-draft-v1"); if (!raw) { toast.error("Nenhum rascunho de visitante encontrado neste navegador."); return; } if (dirty && !window.confirm("Abrir o rascunho de visitante e descartar alterações não salvas?")) return; try { const restored = normalizeCharacterPayload(JSON.parse(raw)); setActiveId(null); commitDraft({ ...restored, sharing: { enabled: false, token: "" } }); setActiveTab("ficha"); } catch { toast.error("O rascunho não pôde ser aberto."); } }}>Recuperar rascunho visitante</Button>}
           <Button type="button" variant="outline" onClick={newCharacter}>
             <Plus aria-hidden="true" /> Nova ficha
           </Button>
@@ -1164,7 +1181,7 @@ export function CharacterBuilder({ displayName }: { displayName: string }) {
                 <span>05</span>
                 <div>
                   <h2>Ficha completa</h2>
-                  <p>Visualização consolidada. Volte às etapas anteriores para editar; aqui, somente o inventário está aberto.</p>
+                  <p>Visualização consolidada. Ajuste os recursos de combate e o inventário aqui; edite as demais escolhas nas etapas anteriores.</p>
                 </div>
               </div>
               <section className="character-share-panel" data-enabled={draft.sharing.enabled}>

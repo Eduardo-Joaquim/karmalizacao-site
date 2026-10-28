@@ -66,14 +66,14 @@ Sacar não equivale a atacar, beber, recarregar ou ativar. A granada do Capítul
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Mochila de campanha | 6 | Organiza até 12 espaços de conteúdo | 1 vazia | — | Capacidade interna; não aumenta C; correias de soltura rápida |
-| Cinto tático | 5 | Prontidão total passa a 8 | 0,5 | — | Máximo 4 espaços do total presos ao próprio cinto |
-| Bandoleira | 4 | Retém uma arma longa solta e permite guardá-la com interação simples | 0,25 | — | Não ocupa propriedade; arma continua contando integralmente |
-| Arnês de expedição | 8 | Prontidão 8; sustenta duas ferramentas longas | 1 | 1 | Não acumula com cinto; mãos continuam necessárias |
-| Bolsa de suprimentos | 2 | Até 4 espaços de conteúdo | 0,25 | — | Pode estar na prontidão, contando conteúdo e recipiente |
-| Baú de campanha | 10 | Até 20 espaços internos | 3 vazio | 2 | Principal para abrir; fechado protege de chuva comum |
-| Carrinho manual | 18 | Até 40 espaços de conteúdo | 4 vazio | 2 | Duas mãos; chão firme; carga fica no carrinho |
-| Maca dobrável | 8 | Transporta uma pessoa entre dois carregadores | 2 vazia | 1 por carregador | Divida corpo, equipamento e maca igualmente entre os dois |
+| <span data-item="mochila-de-campanha">Mochila de campanha</span> | 6 | Organiza até 12 espaços de conteúdo | 1 vazia | — | Capacidade interna; não aumenta C; correias de soltura rápida |
+| <span data-item="cinto-tatico">Cinto tático</span> | 5 | Prontidão total passa a 8 | 0,5 | — | Máximo 4 espaços do total presos ao próprio cinto |
+| <span data-item="bandoleira">Bandoleira</span> | 4 | Retém uma arma longa solta e permite guardá-la com interação simples | 0,25 | — | Não ocupa propriedade; arma continua contando integralmente |
+| <span data-item="arnes-de-expedicao">Arnês de expedição</span> | 8 | Prontidão 8; sustenta duas ferramentas longas | 1 | 1 | Não acumula com cinto; mãos continuam necessárias |
+| <span data-item="bolsa-de-suprimentos">Bolsa de suprimentos</span> | 2 | Até 4 espaços de conteúdo | 0,25 | — | Pode estar na prontidão, contando conteúdo e recipiente |
+| <span data-item="bau-de-campanha">Baú de campanha</span> | 10 | Até 20 espaços internos | 3 vazio | 2 | Principal para abrir; fechado protege de chuva comum |
+| <span data-item="carrinho-manual">Carrinho manual</span> | 18 | Até 40 espaços de conteúdo | 4 vazio | 2 | Duas mãos; chão firme; carga fica no carrinho |
+| <span data-item="maca-dobravel">Maca dobrável</span> | 8 | Transporta uma pessoa entre dois carregadores | 2 vazia | 1 por carregador | Divida corpo, equipamento e maca igualmente entre os dois |
 
 A mochila cheia ocupa sua carga vazia mais o conteúdo. Uma mochila dentro de outra não duplica capacidade. Carrinho e veículo retiram a carga dos ombros enquanto funcionarem e houver rota; ao abandoná-los, o conteúdo precisa ser redistribuído. Puxar carrinho cheio usa o deslocamento normal, sem bônus de Carga Leve, e tem limite Confortável próprio de 40; acima disso não se move. Escadas e terreno fechado exigem outro método.
 
@@ -85,17 +85,17 @@ Registre frações em metades, terços ou quartos. Some-as uma vez no total do i
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Ração seca diária | 0,5 | Alimentação de uma pessoa | 0,25 por dia | — | Quatro dias formam 1 espaço; água separada |
-| Cantil cheio | 0,5 | Água para um dia em clima ameno | 0,25 por dia | — | Quatro reservas diárias formam 1; calor extremo dobra consumo |
-| Bandagens de uso médico | 4 | Uma reposição de carga do kit médico | 0,25 por carga | — | Quatro reposições formam 1; dentro do kit já estão incluídas |
-| Tochas | 1 | Um par; cada uma ilumina por 2 TE | 0,25 por par | — | Oito tochas formam 1; chama revela posição |
-| Frasco de óleo de iluminação | 1 | Abastece lanterna por 6 TE | 0,25 por frasco | — | Quatro frascos formam 1; recipiente incluído |
-| Poção de cura | 8 | Recupera 2d6 Vida | 0,25 por dose | — | Quatro frascos formam 1; não empilhar doses sem contar carga |
-| Antídoto comum | 8 | Uma resistência adicional contra veneno comum | 0,25 por dose | — | Quatro doses formam 1 |
-| Catalisador kármico | 6 | Estabiliza uma preparação descrita adiante | 0,25 por dose | — | Quatro doses formam 1 |
-| Flechas ou virotes | 12 | Vinte projéteis de um único tipo | 1 por lote | — | Cinco projéteis ocupam 0,25; aljava comum incluída |
-| Pilhas de iluminação | 1 | Reposição de 6 TE de uma lanterna | 0,25 por conjunto | — | Quatro conjuntos formam 1 |
-| Bateria de rádio | 3 | Alimenta rádio de mochila por 8 TE | 0,5 por bateria | — | Duas formam 1; não alimentam motor |
+| <span data-item="racao-seca-diaria">Ração seca diária</span> | 0,5 | Alimentação de uma pessoa | 0,25 por dia | — | Quatro dias formam 1 espaço; água separada |
+| <span data-item="cantil-cheio">Cantil cheio</span> | 0,5 | Água para um dia em clima ameno | 0,25 por dia | — | Quatro reservas diárias formam 1; calor extremo dobra consumo |
+| <span data-item="bandagens-de-uso-medico">Bandagens de uso médico</span> | 4 | Uma reposição de carga do kit médico | 0,25 por carga | — | Quatro reposições formam 1; dentro do kit já estão incluídas |
+| <span data-item="tochas">Tochas</span> | 1 | Um par; cada uma ilumina por 2 TE | 0,25 por par | — | Oito tochas formam 1; chama revela posição |
+| <span data-item="frasco-de-oleo-de-iluminacao">Frasco de óleo de iluminação</span> | 1 | Abastece lanterna por 6 TE | 0,25 por frasco | — | Quatro frascos formam 1; recipiente incluído |
+| <span data-item="pocao-de-cura">Poção de cura</span> | 8 | Recupera 2d6 Vida | 0,25 por dose | — | Quatro frascos formam 1; não empilhar doses sem contar carga |
+| <span data-item="antidoto-comum">Antídoto comum</span> | 8 | Uma resistência adicional contra veneno comum | 0,25 por dose | — | Quatro doses formam 1 |
+| <span data-item="catalisador-karmico">Catalisador kármico</span> | 6 | Estabiliza uma preparação descrita adiante | 0,25 por dose | — | Quatro doses formam 1 |
+| <span data-item="flechas-ou-virotes">Flechas ou virotes</span> | 12 | Vinte projéteis de um único tipo | 1 por lote | — | Cinco projéteis ocupam 0,25; aljava comum incluída |
+| <span data-item="pilhas-de-iluminacao">Pilhas de iluminação</span> | 1 | Reposição de 6 TE de uma lanterna | 0,25 por conjunto | — | Quatro conjuntos formam 1 |
+| <span data-item="bateria-de-radio">Bateria de rádio</span> | 3 | Alimenta rádio de mochila por 8 TE | 0,5 por bateria | — | Duas formam 1; não alimentam motor |
 
 **Carga 0.** Uma roupa comum vestida, documentos, uma chave, fósforos e uma bolsa com até 100 moedas formam juntos o conjunto pessoal de carga 0. Só existe um conjunto por personagem. Moedas adicionais contam 1 espaço por lote de até 1.000; joias seguem volume e recipiente. Arma, granada, dose, carregador ou cristal nunca entra nesse conjunto. Uma embalagem parcialmente usada conserva sua fração mínima até esvaziar; eliminar o conteúdo não elimina a carga de um recipiente rígido reutilizável.
 
@@ -141,22 +141,22 @@ Os valores de dano abaixo são bases. Destruidor acrescenta seu +1 quando usado 
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Punhos | 0 | 1d4 físico | 0 | — | 2 m; uma mão livre; desarmado |
-| Manoplas | 12 | 2d4 físico | 1 o par | 1 | 2 m; duas mãos; Precisa, Condutora |
-| Adaga | 4 | 1d6 perfurante | 1 | 1 | 2 m ou arremesso 5 m; Leve; Precisa, Arremessável |
-| Espada ou machado | 12 | 1d8 cortante | 2 | 1 | 2 m; Média; uma mão; Focal de fonte escolhida |
-| Maça | 20 | 1d8 físico | 2 | 1 | 2 m; Média; uma mão; Brutal |
-| Lança | 10 | 1d8 perfurante | 2 | 2 | Até 5 m; Média; duas mãos; Alcance, Focal |
-| Corrente ou chicote | 12 | 1d6 físico | 2 | 1 | Até 5 m; Média; uma mão; Alcance; permite Desarmar por oposição normal |
-| Montante | 24 | 1d12 cortante | 3 | 3 | 2 m; Pesada; Destruidor |
-| Machado pesado | 24 | 1d12 cortante | 3 | 3 | 2 m; Pesada; Destruidor |
-| Martelo de guerra | 26 | 1d10 físico | 3 | 3 | 2 m; Pesada; Brutal, Destruidor |
-| Bastão | 10 | 1d6 físico | 1 | 1 | 2 m; Leve; uma mão; sem propriedade especial |
-| Florete | 18 | 1d6 perfurante | 1 | 1 | 2 m; Leve; Precisa, Defensiva; autoriza Agilidade + Luta |
-| Martelo de haste | 30 | 1d10 físico | 3 | 3 | Até 5 m; Pesada; Alcance, Brutal |
-| Azagaia | 7 | 1d6 perfurante | 1 | 1 | 2 m ou arremesso 15 m; Leve; Arremessável |
-| Escudo de punho ofensivo | 14 | 1d4 físico; +1 CA como escudo leve | 1 | 1 | 2 m; uma mão; Defensiva; não soma outro escudo |
-| Machado de abordagem | 16 | 1d8 cortante | 2 | 2 | 2 m; Média; Brutal; funciona como ferramenta contra madeira |
+| <span data-item="punhos">Punhos</span> | 0 | 1d4 físico | 0 | — | 2 m; uma mão livre; desarmado |
+| <span data-item="manoplas">Manoplas</span> | 12 | 2d4 físico | 1 o par | 1 | 2 m; duas mãos; Precisa, Condutora |
+| <span data-item="adaga">Adaga</span> | 4 | 1d6 perfurante | 1 | 1 | 2 m ou arremesso 5 m; Leve; Precisa, Arremessável |
+| <span data-item="espada-ou-machado">Espada ou machado</span> | 12 | 1d8 cortante | 2 | 1 | 2 m; Média; uma mão; Focal de fonte escolhida |
+| <span data-item="maca">Maça</span> | 20 | 1d8 físico | 2 | 1 | 2 m; Média; uma mão; Brutal |
+| <span data-item="lanca">Lança</span> | 10 | 1d8 perfurante | 2 | 2 | Até 5 m; Média; duas mãos; Alcance, Focal |
+| <span data-item="corrente-ou-chicote">Corrente ou chicote</span> | 12 | 1d6 físico | 2 | 1 | Até 5 m; Média; uma mão; Alcance; permite Desarmar por oposição normal |
+| <span data-item="montante">Montante</span> | 24 | 1d12 cortante | 3 | 3 | 2 m; Pesada; Destruidor |
+| <span data-item="machado-pesado">Machado pesado</span> | 24 | 1d12 cortante | 3 | 3 | 2 m; Pesada; Destruidor |
+| <span data-item="martelo-de-guerra">Martelo de guerra</span> | 26 | 1d10 físico | 3 | 3 | 2 m; Pesada; Brutal, Destruidor |
+| <span data-item="bastao">Bastão</span> | 10 | 1d6 físico | 1 | 1 | 2 m; Leve; uma mão; sem propriedade especial |
+| <span data-item="florete">Florete</span> | 18 | 1d6 perfurante | 1 | 1 | 2 m; Leve; Precisa, Defensiva; autoriza Agilidade + Luta |
+| <span data-item="martelo-de-haste">Martelo de haste</span> | 30 | 1d10 físico | 3 | 3 | Até 5 m; Pesada; Alcance, Brutal |
+| <span data-item="azagaia">Azagaia</span> | 7 | 1d6 perfurante | 1 | 1 | 2 m ou arremesso 15 m; Leve; Arremessável |
+| <span data-item="escudo-de-punho-ofensivo">Escudo de punho ofensivo</span> | 14 | 1d4 físico; +1 CA como escudo leve | 1 | 1 | 2 m; uma mão; Defensiva; não soma outro escudo |
+| <span data-item="machado-de-abordagem">Machado de abordagem</span> | 16 | 1d8 cortante | 2 | 2 | 2 m; Média; Brutal; funciona como ferramenta contra madeira |
 
 Florete troca força bruta por acesso à Agilidade e dano menor. Haste mantém inimigos distantes, mas sofre em adjacência. Correntes permitem uma manobra por sua forma, sem garantir sucesso nem impor Agarrado junto de todo ataque. Usar duas armas ocupa ambas as mãos e toda a carga; ataques adicionais dependem de habilidade, não da compra do segundo item.
 
@@ -164,13 +164,13 @@ Florete troca força bruta por acesso à Agilidade e dano menor. Haste mantém i
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Arco curto | 14 | 1d8 perfurante | 2 | 1 | 15 m; Média; duas mãos; colocar flecha integra Atacar |
-| Arco longo | 24 | 1d10 perfurante | 2 | 2 | 30 m; Média; duas mãos; Desvantagem a até 5 m |
-| Besta | 22 | 1d10 perfurante | 2 | 1 | 30 m; Média; duas mãos; 1 virote; recarga Movimento |
-| Besta pesada | 38 | 1d12 perfurante | 3 | 3 | 40 m; Pesada; 1 virote; recarga Principal; Precisa |
-| Funda | 3 | 1d4 físico | 0,5 | 1 | 15 m; Leve; uma mão; recarregar integra Atacar |
-| Dardos de lançamento | 6 | 1d4 perfurante | 1 por seis | 1 | Arremesso 10 m; seis usos separados; sem ataque múltiplo |
-| Arco de campanha desmontável | 22 | 1d8 perfurante | 2 pronto ou 1 desmontado | 1 | 15 m; duas mãos; montar exige duas Principais |
+| <span data-item="arco-curto">Arco curto</span> | 14 | 1d8 perfurante | 2 | 1 | 15 m; Média; duas mãos; colocar flecha integra Atacar |
+| <span data-item="arco-longo">Arco longo</span> | 24 | 1d10 perfurante | 2 | 2 | 30 m; Média; duas mãos; Desvantagem a até 5 m |
+| <span data-item="besta">Besta</span> | 22 | 1d10 perfurante | 2 | 1 | 30 m; Média; duas mãos; 1 virote; recarga Movimento |
+| <span data-item="besta-pesada">Besta pesada</span> | 38 | 1d12 perfurante | 3 | 3 | 40 m; Pesada; 1 virote; recarga Principal; Precisa |
+| <span data-item="funda">Funda</span> | 3 | 1d4 físico | 0,5 | 1 | 15 m; Leve; uma mão; recarregar integra Atacar |
+| <span data-item="dardos-de-lancamento">Dardos de lançamento</span> | 6 | 1d4 perfurante | 1 por seis | 1 | Arremesso 10 m; seis usos separados; sem ataque múltiplo |
+| <span data-item="arco-de-campanha-desmontavel">Arco de campanha desmontável</span> | 22 | 1d8 perfurante | 2 pronto ou 1 desmontado | 1 | 15 m; duas mãos; montar exige duas Principais |
 
 Flechas comuns não recebem o efeito de uma munição de fogo pelo mesmo nome. Depois de um combate com acesso seguro à área, recupere metade das flechas, virotes e dardos usados, arredondada para baixo; os demais foram perdidos ou danificados. Não recupere projéteis consumidos por efeito sobrenatural nem aqueles deixados em terreno inacessível.
 
@@ -180,15 +180,15 @@ Focos não concedem técnicas gratuitas. O disparo básico possui seu alcance e 
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Varinha | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa |
-| Cajado | 20 | 1d8 Karma | 2 | 1 | 30 m; Média; duas mãos; Focal, Condutora |
-| Lâmina rúnica | 22 | 2d4 cortante | 2 | 1 | 2 m; Média; uma mão; Precisa, Condutora |
-| Grimório | 35 | 1d10 Karma | 1 | — | 15 m; Leve; uma mão para sustentar e outra para gestos; Focal, Ritualística |
-| Orbe de convergência | 75 | 1d6 Karma | 1 | — | 15 m; superior de origem; Focal, Condutora, Origem Remota |
-| Amuleto de vínculo | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
-| Cetro de combate | 28 | 1d8 Karma | 2 | 1 | 15 m; Média; uma mão; Focal, Defensiva apenas se usado em contato |
-| Placa de inscrições | 18 | Foco de preparação, sem ataque próprio | 1 | — | Toque; Ritualística; uma família de ritos |
-| Fio de ancoragem | 16 | Foco para técnica conhecida de vínculo | 0,5 | — | 5 m; Condutora de Conjuração; não invoca sozinho |
+| <span data-item="varinha">Varinha</span> | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa |
+| <span data-item="cajado">Cajado</span> | 20 | 1d8 Karma | 2 | 1 | 30 m; Média; duas mãos; Focal, Condutora |
+| <span data-item="lamina-runica">Lâmina rúnica</span> | 22 | 2d4 cortante | 2 | 1 | 2 m; Média; uma mão; Precisa, Condutora |
+| <span data-item="grimorio">Grimório</span> | 35 | 1d10 Karma | 1 | — | 15 m; Leve; uma mão para sustentar e outra para gestos; Focal, Ritualística |
+| <span data-item="orbe-de-convergencia">Orbe de convergência</span> | 75 | 1d6 Karma | 1 | — | 15 m; superior de origem; Focal, Condutora, Origem Remota |
+| <span data-item="amuleto-de-vinculo">Amuleto de vínculo</span> | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
+| <span data-item="cetro-de-combate">Cetro de combate</span> | 28 | 1d8 Karma | 2 | 1 | 15 m; Média; uma mão; Focal, Defensiva apenas se usado em contato |
+| <span data-item="placa-de-inscricoes">Placa de inscrições</span> | 18 | Foco de preparação, sem ataque próprio | 1 | — | Toque; Ritualística; uma família de ritos |
+| <span data-item="fio-de-ancoragem">Fio de ancoragem</span> | 16 | Foco para técnica conhecida de vínculo | 0,5 | — | 5 m; Condutora de Conjuração; não invoca sozinho |
 
 Pôr o orbe a flutuar adjacente ou movê-lo até 5 m usa a interação simples; isso não reduz a carga contada nem libera prontidão. O usuário pode manter uma mão livre enquanto o orbe está suspenso, mas continua concentrando e percebendo pelos próprios sentidos. O amuleto não sustenta concentração por conta própria. O grimório pode ser fechado como interação simples; não recebe seu disparo ou benefício ritual enquanto fechado.
 
@@ -198,17 +198,17 @@ Use uma única armadura na CA. Uma camada reforçada sob uma proteção pesada n
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Roupa comum | 2 | +0 CA; Resistência 0 | 0 vestida; 0,5 extra | — | Sem limite de Agilidade; sem penalidade |
-| Roupa reforçada | 6 | +1 CA; Resistência 0 | 1 | — | Sem limite de Agilidade; discreta |
-| Armadura leve | 10 | +2 CA; Resistência 0 | 3 | 1 | Agilidade sem limite; sem penalidade de armadura |
-| Armadura média | 20 | +4 CA; Resistência 0 | 4 | 2 | Agilidade na CA até 5; Desvantagem em Acrobacia e Furtividade |
-| Armadura pesada | 35 | +7 CA; Resistência 0 | 6 | 3 | Agilidade na CA até 3; −2 m; Desvantagem em Acrobacia e Furtividade; Evasão com Desvantagem se Agilidade abaixo de 3 |
-| Escudo leve | 8 | +1 CA quando ativo; Resistência 0 | 1 | 1 | Uma mão; defesa direcional |
-| Escudo médio | 18 | +2 CA quando ativo; Resistência 0 | 2 | 2 | Uma mão; Desvantagem em Ladinagem manual enquanto empunhado |
-| Escudo pesado | 35 | +3 CA quando ativo; Resistência 0 | 3 | 3 | Uma mão; −2 m; Desvantagem em Acrobacia |
-| Manto de chuva | 3 | Protege roupa e conteúdo coberto de chuva comum | 0,5 | — | Não veda submersão nem elimina frio sobrenatural |
-| Traje térmico de viagem | 12 | +1d20 contra exposição a frio comum | 2 | 1 | Não concede Resistência a dano de Gelo |
-| Traje de oficina | 8 | +1d20 contra acidente de faísca ou contato térmico breve | 2 | 1 | Sem bônus contra ataque de Fogo; luvas e óculos incluídos |
+| <span data-item="roupa-comum">Roupa comum</span> | 2 | +0 CA; Resistência 0 | 0 vestida; 0,5 extra | — | Sem limite de Agilidade; sem penalidade |
+| <span data-item="roupa-reforcada">Roupa reforçada</span> | 6 | +1 CA; Resistência 0 | 1 | — | Sem limite de Agilidade; discreta |
+| <span data-item="armadura-leve">Armadura leve</span> | 10 | +2 CA; Resistência 0 | 3 | 1 | Agilidade sem limite; sem penalidade de armadura |
+| <span data-item="armadura-media">Armadura média</span> | 20 | +4 CA; Resistência 0 | 4 | 2 | Agilidade na CA até 5; Desvantagem em Acrobacia e Furtividade |
+| <span data-item="armadura-pesada">Armadura pesada</span> | 35 | +7 CA; Resistência 0 | 6 | 3 | Agilidade na CA até 3; −2 m; Desvantagem em Acrobacia e Furtividade; Evasão com Desvantagem se Agilidade abaixo de 3 |
+| <span data-item="escudo-leve">Escudo leve</span> | 8 | +1 CA quando ativo; Resistência 0 | 1 | 1 | Uma mão; defesa direcional |
+| <span data-item="escudo-medio">Escudo médio</span> | 18 | +2 CA quando ativo; Resistência 0 | 2 | 2 | Uma mão; Desvantagem em Ladinagem manual enquanto empunhado |
+| <span data-item="escudo-pesado">Escudo pesado</span> | 35 | +3 CA quando ativo; Resistência 0 | 3 | 3 | Uma mão; −2 m; Desvantagem em Acrobacia |
+| <span data-item="manto-de-chuva">Manto de chuva</span> | 3 | Protege roupa e conteúdo coberto de chuva comum | 0,5 | — | Não veda submersão nem elimina frio sobrenatural |
+| <span data-item="traje-termico-de-viagem">Traje térmico de viagem</span> | 12 | +1d20 contra exposição a frio comum | 2 | 1 | Não concede Resistência a dano de Gelo |
+| <span data-item="traje-de-oficina">Traje de oficina</span> | 8 | +1d20 contra acidente de faísca ou contato térmico breve | 2 | 1 | Sem bônus contra ataque de Fogo; luvas e óculos incluídos |
 
 As armaduras comuns fornecem CA, não redução automática de dano. Resistência material só aparece quando uma modificação ou item a declara. Capacete e colete balístico têm regras no Capítulo 20; o colete substitui a armadura, não é uma camada adicional.
 
@@ -224,23 +224,23 @@ Ter uma ferramenta permite a tarefa. Um bônus só existe quando estiver escrito
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Kit de viagem | 6 | Lona, pederneira, panela e cobertor | 2 | — | Uma pessoa; não inclui comida ou água |
-| Kit de Medicina | 12 | Ferramentas e 3 cargas de tratamento | 2 | — | Toque; Medicina; carga consumida em cada tratamento que a exija |
-| Kit médico militar | 40 | 10 cargas; +1d20 na primeira Medicina da cena | 2 | — | Toque; Licenciado; reposições 4 m e 0,25 cada |
-| Kit de Criação | 12 | Reparos e projetos mundanos portáteis | 2 | — | Toque; não substitui oficina de máquina |
-| Ferramentas de ladrão | 10 | Permitem fechaduras e mecanismos finos | 1 | — | Toque; Ladinagem ou Criação conforme a tarefa |
-| Kit de Ocultismo | 18 | Giz, suportes, espelho e pinças; análise e preparação | 2 | — | Componentes consumidos de ritos são comprados à parte |
-| Corda de 15 m | 3 | Escalada e resgate; até duas pessoas Médias equipadas | 1 | — | Âncora adequada; não segura queda de veículo |
-| Ganchos e pitões | 5 | Um conjunto de seis; permite fixar corda em rocha | 1 | — | Criação ou Atletismo quando a fixação estiver em risco |
-| Lanterna de óleo | 4 | Luz a 10 m por 6 TE | 1 abastecida | — | Uma mão; óleo incluído na carga, comprado separadamente |
-| Bastão luminescente alquímico | 3 | Luz a 5 m por 2 TE | 0,25 | — | Principal para quebrar o selo; sem chama; consumível |
-| Tenda para quatro | 14 | Abrigo de chuva e vento comuns | 4 | 1 | Montagem 1 TE; não garante descanso seguro na Torre |
-| Espelho de inspeção | 3 | Observação ao redor de abertura acessível | 0,25 | — | Sem visão sobrenatural; uma mão |
-| Poção de cura | 8 | Recupera 2d6 Vida, até o máximo | 0,25 | — | Movimento em si; Principal em aliado adjacente |
-| Antídoto comum | 8 | Nova resistência ao veneno com +2d20 | 0,25 | — | Movimento em si; Principal em adjacente; uma dose por exposição |
-| Catalisador kármico | 6 | +1d20 em um teste de preparação de rito kármico | 0,25 | — | Consumido antes de rolar; não atua em ataque nem recupera Karma |
-| Cristal de Karma | 25 | Reserva de 6 Karma investidos | 0,25 | — | Alimenta técnica do investidor; transferência em intervalo |
-| Selo descartável de identificação | 4 | Registra uma Assinatura examinada em contato | 0,25 por quatro | — | Principal e Ocultismo CD 15; conserva registro por sete dias; não copia poder |
+| <span data-item="kit-de-viagem">Kit de viagem</span> | 6 | Lona, pederneira, panela e cobertor | 2 | — | Uma pessoa; não inclui comida ou água |
+| <span data-item="kit-de-medicina">Kit de Medicina</span> | 12 | Ferramentas e 3 cargas de tratamento | 2 | — | Toque; Medicina; carga consumida em cada tratamento que a exija |
+| <span data-item="kit-medico-militar">Kit médico militar</span> | 40 | 10 cargas; +1d20 na primeira Medicina da cena | 2 | — | Toque; Licenciado; reposições 4 m e 0,25 cada |
+| <span data-item="kit-de-criacao">Kit de Criação</span> | 12 | Reparos e projetos mundanos portáteis | 2 | — | Toque; não substitui oficina de máquina |
+| <span data-item="ferramentas-de-ladrao">Ferramentas de ladrão</span> | 10 | Permitem fechaduras e mecanismos finos | 1 | — | Toque; Ladinagem ou Criação conforme a tarefa |
+| <span data-item="kit-de-ocultismo">Kit de Ocultismo</span> | 18 | Giz, suportes, espelho e pinças; análise e preparação | 2 | — | Componentes consumidos de ritos são comprados à parte |
+| <span data-item="corda-de-15-m">Corda de 15 m</span> | 3 | Escalada e resgate; até duas pessoas Médias equipadas | 1 | — | Âncora adequada; não segura queda de veículo |
+| <span data-item="ganchos-e-pitoes">Ganchos e pitões</span> | 5 | Um conjunto de seis; permite fixar corda em rocha | 1 | — | Criação ou Atletismo quando a fixação estiver em risco |
+| <span data-item="lanterna-de-oleo">Lanterna de óleo</span> | 4 | Luz a 10 m por 6 TE | 1 abastecida | — | Uma mão; óleo incluído na carga, comprado separadamente |
+| <span data-item="bastao-luminescente-alquimico">Bastão luminescente alquímico</span> | 3 | Luz a 5 m por 2 TE | 0,25 | — | Principal para quebrar o selo; sem chama; consumível |
+| <span data-item="tenda-para-quatro">Tenda para quatro</span> | 14 | Abrigo de chuva e vento comuns | 4 | 1 | Montagem 1 TE; não garante descanso seguro na Torre |
+| <span data-item="espelho-de-inspecao">Espelho de inspeção</span> | 3 | Observação ao redor de abertura acessível | 0,25 | — | Sem visão sobrenatural; uma mão |
+| <span data-item="pocao-de-cura">Poção de cura</span> | 8 | Recupera 2d6 Vida, até o máximo | 0,25 | — | Movimento em si; Principal em aliado adjacente |
+| <span data-item="antidoto-comum">Antídoto comum</span> | 8 | Nova resistência ao veneno com +2d20 | 0,25 | — | Movimento em si; Principal em adjacente; uma dose por exposição |
+| <span data-item="catalisador-karmico">Catalisador kármico</span> | 6 | +1d20 em um teste de preparação de rito kármico | 0,25 | — | Consumido antes de rolar; não atua em ataque nem recupera Karma |
+| <span data-item="cristal-de-karma">Cristal de Karma</span> | 25 | Reserva de 6 Karma investidos | 0,25 | — | Alimenta técnica do investidor; transferência em intervalo |
+| <span data-item="selo-descartavel-de-identificacao">Selo descartável de identificação</span> | 4 | Registra uma Assinatura examinada em contato | 0,25 por quatro | — | Principal e Ocultismo CD 15; conserva registro por sete dias; não copia poder |
 
 **Medicina.** Depois de uma cena substancial, um tratamento de 1 TE com kit e Intelecto + Medicina CD 15 recupera 1d6 + Constituição do alvo em sucesso, ou apenas Constituição, mínimo 1, em falha. Consome uma carga. O mesmo personagem não recebe outra tentativa até novo dano ou acontecimento relevante; trocar de médico não renova o limite. Estabilizar alguém Morrendo segue seu procedimento próprio e não recupera Vida por si só.
 
@@ -319,42 +319,42 @@ Os preços são por dose; os efeitos não somam bônus idênticos. Efeitos de co
 
 | Nome do Item | Tipo (Ingestão/Arremesso/Reagente) | Preço (m) | Carga (Espaços) | Saturação Gerada | CD de Síntese | Efeito Mecânico Completo |
 |---|---|---|---|---|---|---|
-| Poção de cura | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Recupera 2d6 Vida, até o máximo. |
-| Poção de cura concentrada | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Recupera 3d6 Vida; não remove Ferimento Grave. |
-| Elixir de regeneração experimental | Ingestão, experimental | 60 | 0,25 | 3 | 24 | Recupera 2d6 Vida imediatamente e 1d6 no início dos próximos dois turnos; após rejeição, não deixa cura futura. Uma dose ativa por criatura. |
-| Antídoto comum | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Uma vez por exposição, teste Constituição + Atletismo contra a CD do veneno comum, ou 15, com +2d20. Sucesso encerra esse Envenenado e seu dano futuro; não devolve Vida nem reduz Saturação. |
-| Purgador alquímico | Ingestão, Grau I | 12 | 0,25 | 1 | 15 | Após aceitação da dose, reduz Saturação em 2, mínimo zero; uma tentativa entre descansos longos seguros, incluindo rejeição. Não cura veneno nem remove bloqueio de colapso. |
-| Tônico de vigor industrial | Ingestão, Grau I | 10 | 0,25 | 1 | 15 | +1d20 ao próximo teste de Constituição + Atletismo para marcha ou esforço sustentado dentro de 1 hora; não vale contra rejeição e não remove Exausto. |
-| Soro de adrenalina | Ingestão, Grau II | 20 | 0,25 | 2 | 18 | +2 m de movimento por três turnos, antes das penalidades de carga; não concede ação e não permite mover-se imobilizado. |
-| Elixir de força muscular | Ingestão, Grau II | 22 | 0,25 | 2 | 18 | +1d20 aos testes de Força para levantar, romper ou empurrar objetos por três turnos; sem bônus em ataque, dano, Atributo ou capacidade de carga. |
-| Elixir de fluxo kármico | Ingestão, Grau I | 18 | 0,25 | 1 | 15 | Recupera 1d4 Karma; limite conjunto de um restaurador por cena substancial. |
-| Elixir de fluxo profundo | Ingestão, Grau III | 36 | 0,25 | 2 | 18 | Recupera 2d4 Karma; compartilha o limite do Elixir de fluxo kármico. |
-| Infusão de lucidez | Ingestão, Grau I | 10 | 0,25 | 1 | 15 | +1d20 ao próximo teste para manter concentração dentro de três turnos; não melhora ataques, rejeição ou Controle da Corrupção. |
-| Elixir de clarividência | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | +1d20 em Percepção para notar presença espiritual por três turnos; não atravessa barreiras nem revela nome, intenção ou criatura oculta automaticamente. |
-| Soro de resistência química | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Redução 2 contra dano químico externo por três turnos; não reduz Saturação ou dano interno de rejeição. Use apenas a maior redução da mesma natureza. |
-| Ampola corrosiva | Arremesso, Grau I | 10 | 0,25 | 0 | 15 | Um alvo a 10 m; ataque causa 2d6 ácido, parcial metade, falha zero. Não dissolve armadura equipada permanentemente. |
-| Ampola de chama alquímica | Arremesso, Grau II | 20 | 0,25 | 0 | 18 | Área de raio 2 m a 10 m; Reflexos CD 15, falha 2d6 fogo, sucesso metade. Sem dano persistente automático ou ignição de seres. |
-| Ampola de fumaça tóxica | Arremesso, Grau II | 22 | 0,25 | 0 | 18 | Nuvem de raio 2 m por dois turnos; oculta visão através dela. Ao entrar ou iniciar turno ali, Constituição + Atletismo CD 15: falha causa 1d6 químico e −1d20 em Pontaria até sair; sucesso evita ambos. No máximo uma exposição por turno; máscara apropriada evita a toxina, não a ocultação. Vento forte dissipa. |
-| Ampola de enfraquecimento | Arremesso, Grau II | 24 | 0,25 | 0 | 18 | Um alvo a 10 m; acerto total impõe −1d20 ao próximo teste de Força até o fim do próximo turno; parcial dura somente até o fim do turno atual; falha zero. Não reduz Atributo, carga ou CA. |
-| Óleo de lâmina cáustica | Reagente, infusão Grau II | 20 | 0,25 | 0 | 18 | Reveste uma arma; próximo acerto total ou parcial até três turnos acrescenta 1d4 ácido, após crítico e reduzido à metade no parcial. Uma aplicação ativa por arma, consumida no acerto; sem envenenamento. |
-| Óleo de selo kármico | Reagente, infusão Grau II | 26 | 0,25 | 0 | 18 | Próximo ataque com uma arma revestida dentro de três turnos pode atingir criatura que exija arma kármica; não ignora CA, imunidade a outras naturezas nem aumenta dano. Consome-se ao atacar, mesmo na falha. |
-| Elixir de pulso corrompido | Ingestão, corrompido | 48 | 0,25 | 3 | 24 | Exige Marca desperta; próximo teste de ataque de uma técnica corrupta em três turnos recebe +1d20. A ingestão gera 1 Carga efetiva e um Controle do Capítulo 14, mesmo se houver rejeição; sem autocura ou remoção de bloqueios. Saturação não substitui Carga. |
-| Água purificada alquímica | Reagente, base | 1 | 0,25 | — | — | Uma base para uma fórmula comum; sem benefício medicinal isolado. |
-| Soro químico industrial | Reagente, base | 3 | 0,25 | — | — | Uma base estável para ingestão de Graus I–III; não é dose terapêutica pronta. |
-| Destilado volátil | Reagente, base | 3 | 0,25 | — | — | Uma base para ampola ou óleo; ingerir causa 1d6 químico, sem benefício. |
-| Mercúrio Kármico | Reagente, base | 12 | 0,25 | — | — | Uma base de fórmula heroica ou fluxo selado; não restaura Karma por si só. |
-| Reagente de Vitalidade | Reagente | 2 | 0,25 | — | — | Uma porção de seiva ou tecido compatível, para recuperação de Vida. |
-| Reagente de Fluxo Kármico | Reagente | 4 | 0,25 | — | — | Uma porção de cristal ou glândula de fluxo para restauradores e selos. |
-| Reagente de Estímulo Muscular | Reagente | 3 | 0,25 | — | — | Uma porção de fibra ou extrato para esforço e aceleração. |
-| Reagente de Foco Mental | Reagente | 3 | 0,25 | — | — | Uma porção de esporo tratado ou resina para lucidez e percepção. |
-| Reagente de Purgação | Reagente | 2 | 0,25 | — | — | Uma porção neutralizante para antídotos e purgadores. |
-| Reagente de Volatilidade | Reagente | 3 | 0,25 | — | — | Uma porção corrosiva ou inflamável compatível com a receita. |
-| Resíduo corrompido identificado | Reagente | 6 | 0,25 | — | — | Uma porção selada de procedência conhecida para Pulso corrompido; manuseio e contaminação seguem o Capítulo 14. |
-| Estabilizante químico | Reagente, catalisador | 1 | 0,25 | — | — | Uma medida para fixar fórmula mundana; consumida na síntese. |
-| Catalisador kármico | Reagente, catalisador | 6 | 0,25 | — | — | Uma medida para fórmula sobrenatural. Alternativamente, +1d20 em preparação de rito kármico, consumido antes de rolar; nunca ambos os usos. |
-| Kit de alquimia de campanha | Kit | 28 | 2 | — | — | Retortas, filtros e instrumentos; permite fórmulas comuns, sem materiais consumíveis incluídos. |
-| Bancada alquímica portátil | Kit | 60 | 5 | — | — | Montagem em 1 TE em superfície estável; permite síntese difícil. Não conta como laboratório heroico. |
-| Kit de conservação de reagentes | Kit | 24 | 2 | — | — | Conserva até oito porções por sete dias; cada porção mantém sua própria carga de 0,25, além do kit. |
+| <span data-item="pocao-de-cura">Poção de cura</span> | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Recupera 2d6 Vida, até o máximo. |
+| <span data-item="pocao-de-cura-concentrada">Poção de cura concentrada</span> | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Recupera 3d6 Vida; não remove Ferimento Grave. |
+| <span data-item="elixir-de-regeneracao-experimental">Elixir de regeneração experimental</span> | Ingestão, experimental | 60 | 0,25 | 3 | 24 | Recupera 2d6 Vida imediatamente e 1d6 no início dos próximos dois turnos; após rejeição, não deixa cura futura. Uma dose ativa por criatura. |
+| <span data-item="antidoto-comum">Antídoto comum</span> | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Uma vez por exposição, teste Constituição + Atletismo contra a CD do veneno comum, ou 15, com +2d20. Sucesso encerra esse Envenenado e seu dano futuro; não devolve Vida nem reduz Saturação. |
+| <span data-item="purgador-alquimico">Purgador alquímico</span> | Ingestão, Grau I | 12 | 0,25 | 1 | 15 | Após aceitação da dose, reduz Saturação em 2, mínimo zero; uma tentativa entre descansos longos seguros, incluindo rejeição. Não cura veneno nem remove bloqueio de colapso. |
+| <span data-item="tonico-de-vigor-industrial">Tônico de vigor industrial</span> | Ingestão, Grau I | 10 | 0,25 | 1 | 15 | +1d20 ao próximo teste de Constituição + Atletismo para marcha ou esforço sustentado dentro de 1 hora; não vale contra rejeição e não remove Exausto. |
+| <span data-item="soro-de-adrenalina">Soro de adrenalina</span> | Ingestão, Grau II | 20 | 0,25 | 2 | 18 | +2 m de movimento por três turnos, antes das penalidades de carga; não concede ação e não permite mover-se imobilizado. |
+| <span data-item="elixir-de-forca-muscular">Elixir de força muscular</span> | Ingestão, Grau II | 22 | 0,25 | 2 | 18 | +1d20 aos testes de Força para levantar, romper ou empurrar objetos por três turnos; sem bônus em ataque, dano, Atributo ou capacidade de carga. |
+| <span data-item="elixir-de-fluxo-karmico">Elixir de fluxo kármico</span> | Ingestão, Grau I | 18 | 0,25 | 1 | 15 | Recupera 1d4 Karma; limite conjunto de um restaurador por cena substancial. |
+| <span data-item="elixir-de-fluxo-profundo">Elixir de fluxo profundo</span> | Ingestão, Grau III | 36 | 0,25 | 2 | 18 | Recupera 2d4 Karma; compartilha o limite do Elixir de fluxo kármico. |
+| <span data-item="infusao-de-lucidez">Infusão de lucidez</span> | Ingestão, Grau I | 10 | 0,25 | 1 | 15 | +1d20 ao próximo teste para manter concentração dentro de três turnos; não melhora ataques, rejeição ou Controle da Corrupção. |
+| <span data-item="elixir-de-clarividencia">Elixir de clarividência</span> | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | +1d20 em Percepção para notar presença espiritual por três turnos; não atravessa barreiras nem revela nome, intenção ou criatura oculta automaticamente. |
+| <span data-item="soro-de-resistencia-quimica">Soro de resistência química</span> | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Redução 2 contra dano químico externo por três turnos; não reduz Saturação ou dano interno de rejeição. Use apenas a maior redução da mesma natureza. |
+| <span data-item="ampola-corrosiva">Ampola corrosiva</span> | Arremesso, Grau I | 10 | 0,25 | 0 | 15 | Um alvo a 10 m; ataque causa 2d6 ácido, parcial metade, falha zero. Não dissolve armadura equipada permanentemente. |
+| <span data-item="ampola-de-chama-alquimica">Ampola de chama alquímica</span> | Arremesso, Grau II | 20 | 0,25 | 0 | 18 | Área de raio 2 m a 10 m; Reflexos CD 15, falha 2d6 fogo, sucesso metade. Sem dano persistente automático ou ignição de seres. |
+| <span data-item="ampola-de-fumaca-toxica">Ampola de fumaça tóxica</span> | Arremesso, Grau II | 22 | 0,25 | 0 | 18 | Nuvem de raio 2 m por dois turnos; oculta visão através dela. Ao entrar ou iniciar turno ali, Constituição + Atletismo CD 15: falha causa 1d6 químico e −1d20 em Pontaria até sair; sucesso evita ambos. No máximo uma exposição por turno; máscara apropriada evita a toxina, não a ocultação. Vento forte dissipa. |
+| <span data-item="ampola-de-enfraquecimento">Ampola de enfraquecimento</span> | Arremesso, Grau II | 24 | 0,25 | 0 | 18 | Um alvo a 10 m; acerto total impõe −1d20 ao próximo teste de Força até o fim do próximo turno; parcial dura somente até o fim do turno atual; falha zero. Não reduz Atributo, carga ou CA. |
+| <span data-item="oleo-de-lamina-caustica">Óleo de lâmina cáustica</span> | Reagente, infusão Grau II | 20 | 0,25 | 0 | 18 | Reveste uma arma; próximo acerto total ou parcial até três turnos acrescenta 1d4 ácido, após crítico e reduzido à metade no parcial. Uma aplicação ativa por arma, consumida no acerto; sem envenenamento. |
+| <span data-item="oleo-de-selo-karmico">Óleo de selo kármico</span> | Reagente, infusão Grau II | 26 | 0,25 | 0 | 18 | Próximo ataque com uma arma revestida dentro de três turnos pode atingir criatura que exija arma kármica; não ignora CA, imunidade a outras naturezas nem aumenta dano. Consome-se ao atacar, mesmo na falha. |
+| <span data-item="elixir-de-pulso-corrompido">Elixir de pulso corrompido</span> | Ingestão, corrompido | 48 | 0,25 | 3 | 24 | Exige Marca desperta; próximo teste de ataque de uma técnica corrupta em três turnos recebe +1d20. A ingestão gera 1 Carga efetiva e um Controle do Capítulo 14, mesmo se houver rejeição; sem autocura ou remoção de bloqueios. Saturação não substitui Carga. |
+| <span data-item="agua-purificada-alquimica">Água purificada alquímica</span> | Reagente, base | 1 | 0,25 | — | — | Uma base para uma fórmula comum; sem benefício medicinal isolado. |
+| <span data-item="soro-quimico-industrial">Soro químico industrial</span> | Reagente, base | 3 | 0,25 | — | — | Uma base estável para ingestão de Graus I–III; não é dose terapêutica pronta. |
+| <span data-item="destilado-volatil">Destilado volátil</span> | Reagente, base | 3 | 0,25 | — | — | Uma base para ampola ou óleo; ingerir causa 1d6 químico, sem benefício. |
+| <span data-item="mercurio-karmico">Mercúrio Kármico</span> | Reagente, base | 12 | 0,25 | — | — | Uma base de fórmula heroica ou fluxo selado; não restaura Karma por si só. |
+| <span data-item="reagente-de-vitalidade">Reagente de Vitalidade</span> | Reagente | 2 | 0,25 | — | — | Uma porção de seiva ou tecido compatível, para recuperação de Vida. |
+| <span data-item="reagente-de-fluxo-karmico">Reagente de Fluxo Kármico</span> | Reagente | 4 | 0,25 | — | — | Uma porção de cristal ou glândula de fluxo para restauradores e selos. |
+| <span data-item="reagente-de-estimulo-muscular">Reagente de Estímulo Muscular</span> | Reagente | 3 | 0,25 | — | — | Uma porção de fibra ou extrato para esforço e aceleração. |
+| <span data-item="reagente-de-foco-mental">Reagente de Foco Mental</span> | Reagente | 3 | 0,25 | — | — | Uma porção de esporo tratado ou resina para lucidez e percepção. |
+| <span data-item="reagente-de-purgacao">Reagente de Purgação</span> | Reagente | 2 | 0,25 | — | — | Uma porção neutralizante para antídotos e purgadores. |
+| <span data-item="reagente-de-volatilidade">Reagente de Volatilidade</span> | Reagente | 3 | 0,25 | — | — | Uma porção corrosiva ou inflamável compatível com a receita. |
+| <span data-item="residuo-corrompido-identificado">Resíduo corrompido identificado</span> | Reagente | 6 | 0,25 | — | — | Uma porção selada de procedência conhecida para Pulso corrompido; manuseio e contaminação seguem o Capítulo 14. |
+| <span data-item="estabilizante-quimico">Estabilizante químico</span> | Reagente, catalisador | 1 | 0,25 | — | — | Uma medida para fixar fórmula mundana; consumida na síntese. |
+| <span data-item="catalisador-karmico">Catalisador kármico</span> | Reagente, catalisador | 6 | 0,25 | — | — | Uma medida para fórmula sobrenatural. Alternativamente, +1d20 em preparação de rito kármico, consumido antes de rolar; nunca ambos os usos. |
+| <span data-item="kit-de-alquimia-de-campanha">Kit de alquimia de campanha</span> | Kit | 28 | 2 | — | — | Retortas, filtros e instrumentos; permite fórmulas comuns, sem materiais consumíveis incluídos. |
+| <span data-item="bancada-alquimica-portatil">Bancada alquímica portátil</span> | Kit | 60 | 5 | — | — | Montagem em 1 TE em superfície estável; permite síntese difícil. Não conta como laboratório heroico. |
+| <span data-item="kit-de-conservacao-de-reagentes">Kit de conservação de reagentes</span> | Kit | 24 | 2 | — | — | Conserva até oito porções por sete dias; cada porção mantém sua própria carga de 0,25, além do kit. |
 
 **Receitas de referência.** Cura comum usa água, Vitalidade e estabilizante; cura concentrada usa soro, duas porções de Vitalidade e estabilizante; regeneração usa Mercúrio Kármico, duas Vitalidades, um Fluxo e catalisador kármico. Antídoto e purgador usam água, Purgação e estabilizante. Vigor usa água e Estímulo; adrenalina e força usam soro e duas porções de Estímulo, todos com estabilizante. Fluxo comum usa soro, Fluxo e catalisador kármico; profundo usa soro, dois Fluxos e catalisador kármico. Lucidez usa água, Foco e estabilizante; clarividência usa soro, Foco, Fluxo e catalisador kármico. Resistência química usa soro, duas Purgações e estabilizante. Corrosiva usa destilado, Volatilidade e estabilizante; chama usa destilado, duas Volatilidades e estabilizante; fumaça usa destilado, Volatilidade, Purgação e estabilizante; enfraquecimento usa destilado, Estímulo, Volatilidade e estabilizante. Óleo cáustico usa destilado, Volatilidade, Purgação e estabilizante; óleo selado usa destilado, Fluxo, Purgação e catalisador kármico. Pulso corrompido usa Mercúrio Kármico, Fluxo, Foco, resíduo corrompido identificado e catalisador kármico; o resíduo vale 6 m e ocupa 0,25 espaços. O orçamento de cada receita inclui seus componentes, mesmo quando o conjunto comercial sai mais barato que comprar cada componente isolado.
 
@@ -374,12 +374,12 @@ Escolha o efeito antes de fabricar. Uma arma refinada custa ao menos três vezes
 | Matriz Focal | +15 | Autoriza a combinação de uma fonte registrada | Igual ao item | Igual ao item | Requer fórmula e treinamento do usuário |
 | Inscrição Ritualística | +20 | Benefício de uma família de ritos | Igual ao item | Igual ao item | Não reduz Karma |
 | Canal Condutor | +30 | Aplica Condutora de uma fonte | Igual ao item | Igual ao item | Projeto sobrenatural; sem munição ou dano extra |
-| Núcleo Reservatório | +45 | Guarda até 8 Karma investidos | +0,25 | Igual ao item | Consome uma propriedade; sem geração de recurso |
-| Tratamento de ferro negro | +30 | Resistência 1 contra Fogo material | +1 | +1 ao requisito da peça | Somente armadura ou escudo; não muda requisito da armadura pesada básica |
-| Forro de coral abissal | +35 | +1d20 contra exposição e pressão subaquática comuns | +0,5 | Igual ao item | Somente vestimenta; não concede respiração |
-| Revestimento de prata consagrada | +40 | +1 fixo de dano contra manifestação corrupta identificada | +0,25 | Igual ao item | Fonte divina exige consagração; não torna todo ataque Divino |
-| Placa cerâmica experimental | +45 | Resistência 2 contra um impacto de projétil físico por cena | +1 | Igual ao item | Na armadura; após uso deve ser substituída, não recarregada com Karma |
-| Engaste de obsidiana corrupta | +30 | +2 fixos a um dano corrupto direto por cena | +0,25 | Igual ao item | Restrito registrado ou Proibido; Controle da fonte com CD +2 nesse uso |
+| <span data-item="nucleo-reservatorio">Núcleo Reservatório</span> | +45 | Guarda até 8 Karma investidos | +0,25 | Igual ao item | Consome uma propriedade; sem geração de recurso |
+| <span data-item="tratamento-de-ferro-negro">Tratamento de ferro negro</span> | +30 | Resistência 1 contra Fogo material | +1 | +1 ao requisito da peça | Somente armadura ou escudo; não muda requisito da armadura pesada básica |
+| <span data-item="forro-de-coral-abissal">Forro de coral abissal</span> | +35 | +1d20 contra exposição e pressão subaquática comuns | +0,5 | Igual ao item | Somente vestimenta; não concede respiração |
+| <span data-item="revestimento-de-prata-consagrada">Revestimento de prata consagrada</span> | +40 | +1 fixo de dano contra manifestação corrupta identificada | +0,25 | Igual ao item | Fonte divina exige consagração; não torna todo ataque Divino |
+| <span data-item="placa-ceramica-experimental">Placa cerâmica experimental</span> | +45 | Resistência 2 contra um impacto de projétil físico por cena | +1 | Igual ao item | Na armadura; após uso deve ser substituída, não recarregada com Karma |
+| <span data-item="engaste-de-obsidiana-corrupta">Engaste de obsidiana corrupta</span> | +30 | +2 fixos a um dano corrupto direto por cena | +0,25 | Igual ao item | Restrito registrado ou Proibido; Controle da fonte com CD +2 nesse uso |
 
 Os valores adicionais são custos de componentes; serviço usa os procedimentos de criação e reparo. Uma alteração de material com benefício mecânico ocupa uma propriedade especial. Alterações cosméticas não ocupam propriedade. Um novo requisito de material pertence à versão modificada e precisa constar em sua ficha. Não instale dois núcleos idênticos para duplicar a mesma capacidade.
 
@@ -439,12 +439,12 @@ Os preços abaixo incluem recipiente e poder, mas não consumíveis futuros. Tod
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
-| Lanterna do Eco | 65 | Revela resíduos expostos por 3 rodadas; +1d20 na primeira análise | 1 | — | Grau I; Licenciado; Movimento; uma vez por cena; 30 m |
-| Broche da Vigília | 80 | +1d20 numa Evasão por rodada | 0,25 | — | Grau I; Licenciado; precisa estar exposto; gasta a Reação normal |
-| Anel da Reserva Selada | 160 | Reservatório 20 | 0,25 | — | Grau II; Licenciado; paga técnicas do portador vinculado |
-| Manto do Passo Curto | 210 | Teleporta portador com carga até C por 15 m | 1 | — | Grau II; Licenciado; Movimento; três vezes por cena |
-| Escama Guardiã | 170 | +2 CA contra um ataque sobrenatural percebido | 0,25 | — | Grau II; Licenciado; Reação; uma vez por rodada |
-| Compasso do Último Marco | 260 | Aponta para Marco conhecido na mesma zona | 0,5 | — | Grau II; Licenciado; interação simples; não revela caminho transitável |
+| <span data-item="lanterna-do-eco">Lanterna do Eco</span> | 65 | Revela resíduos expostos por 3 rodadas; +1d20 na primeira análise | 1 | — | Grau I; Licenciado; Movimento; uma vez por cena; 30 m |
+| <span data-item="broche-da-vigilia">Broche da Vigília</span> | 80 | +1d20 numa Evasão por rodada | 0,25 | — | Grau I; Licenciado; precisa estar exposto; gasta a Reação normal |
+| <span data-item="anel-da-reserva-selada">Anel da Reserva Selada</span> | 160 | Reservatório 20 | 0,25 | — | Grau II; Licenciado; paga técnicas do portador vinculado |
+| <span data-item="manto-do-passo-curto">Manto do Passo Curto</span> | 210 | Teleporta portador com carga até C por 15 m | 1 | — | Grau II; Licenciado; Movimento; três vezes por cena |
+| <span data-item="escama-guardia">Escama Guardiã</span> | 170 | +2 CA contra um ataque sobrenatural percebido | 0,25 | — | Grau II; Licenciado; Reação; uma vez por rodada |
+| <span data-item="compasso-do-ultimo-marco">Compasso do Último Marco</span> | 260 | Aponta para Marco conhecido na mesma zona | 0,5 | — | Grau II; Licenciado; interação simples; não revela caminho transitável |
 
 **Lanterna do Eco.** Consome uma dose de óleo consagrado de 1 m e 0,25 espaço por expedição; não atravessa obstáculos. Cobrir o espelho encerra o efeito; quebrá-lo enquanto aceso destrói o poder.
 
@@ -488,19 +488,19 @@ A carga da tabela inclui arma, seus componentes integrais e um carregador vazio 
 
 | Arma | Licença | Preço (m) | Dano | Carga (Espaços) | Munição/Pente | Recarga | Alcance e Propriedades |
 |---|---|---|---|---|---|---|---|
-| Pistola compacta | Licenciado | 25 | 1d8 | 1 | 6; carregador | Movimento | 5 m; uma mão; Ocultável; Força 1 |
-| Revólver de serviço | Licenciado | 42 | 2d6 | 1 | 6; tambor | Principal cheia ou Movimento 3 | 15 m; uma mão; Confiável, Perfurante 1; Força 1 |
-| Pistola semiautomática | Licenciado | 60 | 2d6 | 1 | 8; carregador | Movimento | 15 m; uma mão; Semiautomática, Perfurante 1; Força 1 |
-| Carabina de repetição | Licenciado | 48 | 1d10 | 2 | 6; depósito interno | Principal cheia ou Movimento 3 | 40 m; duas mãos; Confiável, Perfurante 1; Força 1 |
-| Fuzil de ferrolho | Licenciado | 55 | 2d8 | 2 | 5; depósito interno | Principal cheia ou Movimento 3 | 100 m; duas mãos; Precisa, Perfurante 2; Força 2 |
-| Fuzil semiautomático | Licenciado | 80 | 2d8 | 2 | 10; carregador | Movimento | 100 m; duas mãos; Semiautomática, Perfurante 2; Força 2 |
-| Espingarda de repetição | Licenciado | 50 | 4d4 até 5 m; 2d6 até 15 m | 2 | 5; depósito interno | Principal cheia ou Movimento 3 | Máximo 15 m; duas mãos; Espalhamento; Força 2 |
-| Submetralhadora | Restrito | 75 | 2d6 | 2 | 20; carregador | Movimento | 30 m; duas mãos; Automática, Perfurante 1; Força 2 |
-| Metralhadora leve | Restrito | 140 | 2d8 | 3 | 50; caixa/fita | Principal ou assistida | 100 m; duas mãos; Automática, Apoiada, Perfurante 2; Força 3 |
-| Metralhadora pesada | Restrito | 220 | 3d8 | 6 mais tripé 2 | 50; fita | Principal ou assistida | 100 m táticos; montagem; Automática, Apoiada, Perfurante 3; Força 4 |
-| Lança-chamas | Restrito | 240 | 3d8 Fogo | 7 com tanque | 4 jatos | 1 TE | Cone de 10 m; duas mãos; Incendiária; Força 3 |
-| Lançador antiblindagem | Restrito | 180 | 4d10 | 4 | 1 projétil | Principal | 100 m; duas mãos; Antiblindagem; Força 3 |
-| Morteiro leve | Restrito | 260 | 4d8 físico em raio 5 m | 8 dividido em duas peças de 4 | 1 granada | Principal | 16–100 m táticos; tiro indireto; equipe de dois; Força 3 por peça |
+| <span data-item="pistola-compacta">Pistola compacta</span> | Licenciado | 25 | 1d8 | 1 | 6; carregador | Movimento | 5 m; uma mão; Ocultável; Força 1 |
+| <span data-item="revolver-de-servico">Revólver de serviço</span> | Licenciado | 42 | 2d6 | 1 | 6; tambor | Principal cheia ou Movimento 3 | 15 m; uma mão; Confiável, Perfurante 1; Força 1 |
+| <span data-item="pistola-semiautomatica">Pistola semiautomática</span> | Licenciado | 60 | 2d6 | 1 | 8; carregador | Movimento | 15 m; uma mão; Semiautomática, Perfurante 1; Força 1 |
+| <span data-item="carabina-de-repeticao">Carabina de repetição</span> | Licenciado | 48 | 1d10 | 2 | 6; depósito interno | Principal cheia ou Movimento 3 | 40 m; duas mãos; Confiável, Perfurante 1; Força 1 |
+| <span data-item="fuzil-de-ferrolho">Fuzil de ferrolho</span> | Licenciado | 55 | 2d8 | 2 | 5; depósito interno | Principal cheia ou Movimento 3 | 100 m; duas mãos; Precisa, Perfurante 2; Força 2 |
+| <span data-item="fuzil-semiautomatico">Fuzil semiautomático</span> | Licenciado | 80 | 2d8 | 2 | 10; carregador | Movimento | 100 m; duas mãos; Semiautomática, Perfurante 2; Força 2 |
+| <span data-item="espingarda-de-repeticao">Espingarda de repetição</span> | Licenciado | 50 | 4d4 até 5 m; 2d6 até 15 m | 2 | 5; depósito interno | Principal cheia ou Movimento 3 | Máximo 15 m; duas mãos; Espalhamento; Força 2 |
+| <span data-item="submetralhadora">Submetralhadora</span> | Restrito | 75 | 2d6 | 2 | 20; carregador | Movimento | 30 m; duas mãos; Automática, Perfurante 1; Força 2 |
+| <span data-item="metralhadora-leve">Metralhadora leve</span> | Restrito | 140 | 2d8 | 3 | 50; caixa/fita | Principal ou assistida | 100 m; duas mãos; Automática, Apoiada, Perfurante 2; Força 3 |
+| <span data-item="metralhadora-pesada">Metralhadora pesada</span> | Restrito | 220 | 3d8 | 6 mais tripé 2 | 50; fita | Principal ou assistida | 100 m táticos; montagem; Automática, Apoiada, Perfurante 3; Força 4 |
+| <span data-item="lanca-chamas">Lança-chamas</span> | Restrito | 240 | 3d8 Fogo | 7 com tanque | 4 jatos | 1 TE | Cone de 10 m; duas mãos; Incendiária; Força 3 |
+| <span data-item="lancador-antiblindagem">Lançador antiblindagem</span> | Restrito | 180 | 4d10 | 4 | 1 projétil | Principal | 100 m; duas mãos; Antiblindagem; Força 3 |
+| <span data-item="morteiro-leve">Morteiro leve</span> | Restrito | 260 | 4d8 físico em raio 5 m | 8 dividido em duas peças de 4 | 1 granada | Principal | 16–100 m táticos; tiro indireto; equipe de dois; Força 3 por peça |
 
 Metralhadoras militares já incorporam três propriedades especiais como construção superior de origem. Isso não autoriza uma quarta sem projeto. O tripé da pesada é carga separada; a leve inclui bipé. Dividir um morteiro distribui o peso, mas ambas as peças precisam estar presentes e montadas para disparar.
 
@@ -545,18 +545,18 @@ Registre calibre ou família compatível na compra. Munição de pistola, fuzil,
 
 | Munição ou recipiente | Licença | Preço (m) | Efeito | Carga (Espaços) | Força | Capacidade e uso |
 |---|---|---|---|---|---|---|
-| Caixa de pistola ou submetralhadora | Licenciado | 6 | Munição comum | 1/3 | — | 20 disparos; três caixas formam 1 |
-| Caixa de fuzil ou carabina | Licenciado | 8 | Munição comum | 0,5 | — | 20 disparos; duas caixas formam 1 |
-| Caixa de espingarda | Licenciado | 8 | Munição comum | 0,5 | — | 12 cartuchos; duas caixas formam 1 |
-| Carregador de pistola vazio | Livre | 2 | Recipiente reutilizável | 0,25 | — | Até 10 disparos compatíveis |
-| Carregador de pistola abastecido | Licenciado | 5 | Inclui recipiente e munição | 1/3 | — | 8 disparos; remanescente do lote fica separado |
-| Carregador de fuzil abastecido | Licenciado | 6 | Inclui recipiente e munição | 0,5 | — | 10 disparos; vazio custa 2 m e ocupa 0,25 |
-| Carregador de submetralhadora abastecido | Restrito | 9 | Inclui recipiente e munição | 0,5 | — | 20 disparos; vazio custa 3 m e ocupa 0,25 |
-| Fita de metralhadora | Restrito | 12 | Munição e alimentação compatíveis | 1 | — | 50 disparos; caixa rígida reutilizável ocupa 0,25 vazia |
-| Projétil antiblindagem | Restrito | 18 | Aplica a ficha do lançador | 1 | — | Uma utilização; embalagem de transporte incluída |
-| Granada de morteiro | Restrito | 15 | Aplica a ficha do morteiro | 0,5 | — | Uma utilização |
-| Tanque de lança-chamas de reserva | Restrito | 16 | Quatro jatos | 2 | 1 | Inclui recipiente; um tanque instalado já integra carga 7 |
-| Carga de combustível comum | Livre | 2 | Abastece consumo de máquinas | 1/3 | — | Unidade abstrata; três formam 1; recipiente incluído |
+| <span data-item="caixa-de-pistola-ou-submetralhadora">Caixa de pistola ou submetralhadora</span> | Licenciado | 6 | Munição comum | 1/3 | — | 20 disparos; três caixas formam 1 |
+| <span data-item="caixa-de-fuzil-ou-carabina">Caixa de fuzil ou carabina</span> | Licenciado | 8 | Munição comum | 0,5 | — | 20 disparos; duas caixas formam 1 |
+| <span data-item="caixa-de-espingarda">Caixa de espingarda</span> | Licenciado | 8 | Munição comum | 0,5 | — | 12 cartuchos; duas caixas formam 1 |
+| <span data-item="carregador-de-pistola-vazio">Carregador de pistola vazio</span> | Livre | 2 | Recipiente reutilizável | 0,25 | — | Até 10 disparos compatíveis |
+| <span data-item="carregador-de-pistola-abastecido">Carregador de pistola abastecido</span> | Licenciado | 5 | Inclui recipiente e munição | 1/3 | — | 8 disparos; remanescente do lote fica separado |
+| <span data-item="carregador-de-fuzil-abastecido">Carregador de fuzil abastecido</span> | Licenciado | 6 | Inclui recipiente e munição | 0,5 | — | 10 disparos; vazio custa 2 m e ocupa 0,25 |
+| <span data-item="carregador-de-submetralhadora-abastecido">Carregador de submetralhadora abastecido</span> | Restrito | 9 | Inclui recipiente e munição | 0,5 | — | 20 disparos; vazio custa 3 m e ocupa 0,25 |
+| <span data-item="fita-de-metralhadora">Fita de metralhadora</span> | Restrito | 12 | Munição e alimentação compatíveis | 1 | — | 50 disparos; caixa rígida reutilizável ocupa 0,25 vazia |
+| <span data-item="projetil-antiblindagem">Projétil antiblindagem</span> | Restrito | 18 | Aplica a ficha do lançador | 1 | — | Uma utilização; embalagem de transporte incluída |
+| <span data-item="granada-de-morteiro">Granada de morteiro</span> | Restrito | 15 | Aplica a ficha do morteiro | 0,5 | — | Uma utilização |
+| <span data-item="tanque-de-lanca-chamas-de-reserva">Tanque de lança-chamas de reserva</span> | Restrito | 16 | Quatro jatos | 2 | 1 | Inclui recipiente; um tanque instalado já integra carga 7 |
+| <span data-item="carga-de-combustivel-comum">Carga de combustível comum</span> | Livre | 2 | Abastece consumo de máquinas | 1/3 | — | Unidade abstrata; três formam 1; recipiente incluído |
 
 Carregadores abastecidos são referência para compra pronta; transferir munição entre embalagens fora de combate não muda o total de disparos. Uma caixa ou carregador parcialmente cheio conserva sua carga até ser esvaziado. O conteúdo de um carregador instalado integra a arma; todos os carregadores de reserva continuam no inventário. Trocar continuamente carregadores não permite ocultar carga.
 
@@ -567,7 +567,7 @@ Carregadores abastecidos são referência para compra pronta; transferir muniç�
 | Perfurante | Licenciado ou Restrito | ×2 o lote comum | Perfurante +1, máximo 3 em portátil | Igual ao lote | Igual à arma | Não soma Antiblindagem nem atravessa cobertura total |
 | Incendiária | Restrito | ×2 o lote comum | Em total, Queimando 1d4 por dois turnos | Igual ao lote | Igual à arma | Um dano periódico por turno; Principal ou Água adequada apaga |
 | Traçante | Restrito | ×1,5 o lote comum | Após total, +1d20 ao próximo disparo de um aliado contra o alvo | Igual ao lote | Igual à arma | Benefício até início do seu próximo turno; revela a linha de tiro; sem dano extra |
-| Gravada com selo kármico | Licenciado | 10 por cinco disparos | Aceita uma técnica válida de atribuição ou condução registrada | 0,25 por cinco | Igual à arma | Não guarda técnica nem Karma por si só; custos pagos no disparo |
+| <span data-item="gravada-com-selo-karmico">Gravada com selo kármico</span> | Licenciado | 10 por cinco disparos | Aceita uma técnica válida de atribuição ou condução registrada | 0,25 por cinco | Igual à arma | Não guarda técnica nem Karma por si só; custos pagos no disparo |
 
 Só um tratamento especial se aplica ao mesmo projétil, salvo relíquia de projeto específico. Na Rajada, trate o conjunto usado como um modo: só um efeito incendiário ou traçante, sem três aplicações. Parcial não aplica Incendiária ou Traçante; Perfurante já afetou a CA e não concede um segundo efeito. O selo exige fonte e técnica apropriadas, não transforma munição comprada em acesso a Bênção ou Divino. Munição comum com simples inscrições decorativas continua comum.
 
@@ -575,14 +575,14 @@ Só um tratamento especial se aplica ao mesmo projétil, salvo relíquia de proj
 
 | Nome do Item | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | Alcance e propriedades |
 |---|---|---|---|---|---|---|
-| Mira telescópica | Licenciado | 18 | +2 ao resultado após Mirar a mais de 30 m | +0,25 | Igual à arma | Fuzil compatível; não funciona no turno em que se deslocou |
-| Supressor compatível | Licenciado | 20 | Som audível em faixa médio em vez de longo | +0,25 | Igual à arma | Pistola ou submetralhadora compatível; não silencia Rajada |
-| Bipé | Livre | 8 | Mirar concede +2d20 no total, em vez de +1 | +0,5 | Igual à arma | Requer superfície estável; Movimento para preparar |
-| Tripé de metralhadora | Restrito | 12 | Satisfaz montagem e apoio de pesada | 2 | 2 | Não concede bônus além de Apoiada |
-| Baioneta | Licenciado | 5 | 1d8 perfurante em contato | +0,5 | Igual à arma | 2 m; Luta; não recebe Perfurante do tiro |
-| Bandoleira | Livre | 4 | Acesso e retenção do Capítulo 17 | 0,25 | — | Não ocupa propriedade especial |
-| Carregador ampliado | Igual à arma | +40% do preço da arma | Capacidade +50%, arredondada para baixo | +0,5 instalado | Igual à arma | Engasgo exige Principal para limpar |
-| Estojo de limpeza | Livre | 4 | Permite manutenção de arma pessoal | 0,5 | — | 1 TE após exposição severa; não recupera item Quebrado |
+| <span data-item="mira-telescopica">Mira telescópica</span> | Licenciado | 18 | +2 ao resultado após Mirar a mais de 30 m | +0,25 | Igual à arma | Fuzil compatível; não funciona no turno em que se deslocou |
+| <span data-item="supressor-compativel">Supressor compatível</span> | Licenciado | 20 | Som audível em faixa médio em vez de longo | +0,25 | Igual à arma | Pistola ou submetralhadora compatível; não silencia Rajada |
+| <span data-item="bipe">Bipé</span> | Livre | 8 | Mirar concede +2d20 no total, em vez de +1 | +0,5 | Igual à arma | Requer superfície estável; Movimento para preparar |
+| <span data-item="tripe-de-metralhadora">Tripé de metralhadora</span> | Restrito | 12 | Satisfaz montagem e apoio de pesada | 2 | 2 | Não concede bônus além de Apoiada |
+| <span data-item="baioneta">Baioneta</span> | Licenciado | 5 | 1d8 perfurante em contato | +0,5 | Igual à arma | 2 m; Luta; não recebe Perfurante do tiro |
+| <span data-item="bandoleira">Bandoleira</span> | Livre | 4 | Acesso e retenção do Capítulo 17 | 0,25 | — | Não ocupa propriedade especial |
+| <span data-item="carregador-ampliado">Carregador ampliado</span> | Igual à arma | +40% do preço da arma | Capacidade +50%, arredondada para baixo | +0,5 instalado | Igual à arma | Engasgo exige Principal para limpar |
+| <span data-item="estojo-de-limpeza">Estojo de limpeza</span> | Livre | 4 | Permite manutenção de arma pessoal | 0,5 | — | 1 TE após exposição severa; não recupera item Quebrado |
 
 Mira, supressor, bipé com benefício de mira, baioneta e carregador ampliado ocupam propriedade especial; suporte que apenas satisfaz uma restrição física não cria propriedade adicional. Uma arma que já possui duas exige projeto superior para receber uma terceira. Retirar um acessório elimina seu efeito e sua carga, sem apagar o custo de fabricar a configuração superior.
 
@@ -600,15 +600,15 @@ Uma explosão rola dano uma vez para todos. Cobertura é medida a partir do cent
 
 | Dispositivo | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | CD E/D e área |
 |---|---|---|---|---|---|---|
-| Granada de fragmentação | Restrito | 12 | 3d6 físico | 0,25 | 1 | E 16 / D 18; raio 2 m; arremesso 5 m |
-| Granada de fumaça | Licenciado | 10 | Ocultação por 3 rodadas, sem dano | 0,25 | 1 | E — / D 15 antes de ativada; raio 5 m; 5 m |
-| Granada de concussão | Restrito | 14 | 2d6 físico e Abalado até início do próximo turno do lançador | 0,25 | 1 | E 17 / D 18; raio 2 m; 5 m; parcial só metade do dano |
-| Granada incendiária | Restrito | 16 | 2d8 Fogo; total Queimando 1d6 por dois turnos | 0,25 | 1 | E 16 / D 18; raio 2 m; 5 m; parcial 1d4 de queima uma vez |
-| Granada anti-karma | Restrito | 35 | Interferência transitória na canalização | 0,5 | 1 | E 18 / D 20; raio 3 m; arremesso 5 m |
-| Mina antipessoal | Restrito | 20 | 4d8 físico | 0,5 | — | E igual à instalação, ou 18 ambiental / D 18; raio 2 m |
-| Mina antiveículo | Restrito | 45 | 5d8 contra chassi; Antiblindagem | 1 | — | E igual à instalação, ou 20 ambiental / D 20; raio 2 m |
-| Carga de dinamite de demolição | Restrito | 25 | 5d8 contra estrutura imóvel; 3d8 contra criatura | 1 | — | E igual à instalação, ou 18 ambiental / D 18; raio 2 m |
-| Carga de ruptura selada | Proibido | 100 de referência | 4d8 corrupto e risco de Intrusão do operador | 2 | — | E 20 / D 22; raio 3 m; exige projeto de Corrupção |
+| <span data-item="granada-de-fragmentacao">Granada de fragmentação</span> | Restrito | 12 | 3d6 físico | 0,25 | 1 | E 16 / D 18; raio 2 m; arremesso 5 m |
+| <span data-item="granada-de-fumaca">Granada de fumaça</span> | Licenciado | 10 | Ocultação por 3 rodadas, sem dano | 0,25 | 1 | E — / D 15 antes de ativada; raio 5 m; 5 m |
+| <span data-item="granada-de-concussao">Granada de concussão</span> | Restrito | 14 | 2d6 físico e Abalado até início do próximo turno do lançador | 0,25 | 1 | E 17 / D 18; raio 2 m; 5 m; parcial só metade do dano |
+| <span data-item="granada-incendiaria">Granada incendiária</span> | Restrito | 16 | 2d8 Fogo; total Queimando 1d6 por dois turnos | 0,25 | 1 | E 16 / D 18; raio 2 m; 5 m; parcial 1d4 de queima uma vez |
+| <span data-item="granada-anti-karma">Granada anti-karma</span> | Restrito | 35 | Interferência transitória na canalização | 0,5 | 1 | E 18 / D 20; raio 3 m; arremesso 5 m |
+| <span data-item="mina-antipessoal">Mina antipessoal</span> | Restrito | 20 | 4d8 físico | 0,5 | — | E igual à instalação, ou 18 ambiental / D 18; raio 2 m |
+| <span data-item="mina-antiveiculo">Mina antiveículo</span> | Restrito | 45 | 5d8 contra chassi; Antiblindagem | 1 | — | E igual à instalação, ou 20 ambiental / D 20; raio 2 m |
+| <span data-item="carga-de-dinamite-de-demolicao">Carga de dinamite de demolição</span> | Restrito | 25 | 5d8 contra estrutura imóvel; 3d8 contra criatura | 1 | — | E igual à instalação, ou 18 ambiental / D 18; raio 2 m |
+| <span data-item="carga-de-ruptura-selada">Carga de ruptura selada</span> | Proibido | 100 de referência | 4d8 corrupto e risco de Intrusão do operador | 2 | — | E 20 / D 22; raio 3 m; exige projeto de Corrupção |
 
 **Fumaça.** Escolha ponto alcançável a 5 m, sem teste se o arremesso estiver livre. A nuvem dura três rodadas; vento forte reduz a uma. Concede cobertura parcial visual e bloqueia visão através de todo o diâmetro, sem impedir som ou passagem. Não causa dano, não envenena e não concede invisibilidade a quem atira de dentro. Depois de ativada, a fumaça é dispersa ou evitada, não desarmada.
 
@@ -628,24 +628,24 @@ CD de operação só é usada sob risco. CD de desarme indica interromper ou neu
 
 | Equipamento | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | CD e alcance de uso |
 |---|---|---|---|---|---|---|
-| Máscara de gás | Livre | 18 | +1d20 contra agente inalado, com filtro válido | 1 | — | Uso automático; E/D —; não fornece oxigênio |
-| Filtro de reposição | Licenciado | 3 | Até 6 TE de exposição comum | 0,25 | — | Atmosfera concentrada pode consumir em 1 TE, anunciado antes |
-| Capacete de aço | Livre | 12 | +1 CA contra tiro, fragmento ou explosão | 1 | — | Automático; não acumula com outro capacete |
-| Colete balístico experimental | Restrito | 65 | +4 CA contra tiro e fragmentos; não contra outros ataques | 4 | 2 | Armadura média, Agilidade na CA até 5; Desvantagem em Acrobacia e Furtividade |
-| Binóculo | Livre | 10 | +1d20 em Percepção distante estando imóvel | 1 | — | Uma interação para levantar; não vê através de cobertura |
-| Rádio de mochila | Licenciado | 45 | Comunicação de campo até 5 km em terreno aberto | 3 | 1 | Operar Criação 13 sob ruído; D 15; bateria 8 TE |
-| Rádio civil de mesa | Livre | 20 | Recebe transmissões locais; sem emissor | 2 | — | Criação 10 sob interferência; D 13; tomada ou bateria 8 TE |
-| Telefone de campo | Licenciado | 25 | Duas estações e 500 m de fio | 2 | — | Criação 13 sob dano; D 13; baterias incluídas para uma jornada |
-| Radar de campo experimental | Restrito | 900 | Detecta grandes massas metálicas em movimento | 18 em três volumes de 6 | 2 | Criação 20 para calibrar; D 20; 2 km; gerador obrigatório |
-| Lanterna elétrica | Livre | 6 | Luz dirigida até 15 m | 1 abastecida | — | Automático; E/D —; pilhas por 6 TE |
-| Câmera fotográfica | Livre | 16 | Registra uma imagem por interação preparada | 1 | — | Criação 13 em cena difícil; D —; não registra espírito sem adaptação |
-| Rolo fotográfico | Livre | 2 | 24 exposições; revelação em laboratório | 0,25 por quatro rolos | — | Revelar exige 2 TE e material adequado |
-| Kit de mecânico | Livre | 20 | Permite reparos de motor e arma | 2 | — | Criação conforme reparo; não fornece peças consumidas |
-| Kit de demolição | Restrito | 30 | +1d20 para instalar ou desarmar dispositivo | 2 | — | Criação; não inclui explosivo; um único bônus de kit |
-| Gerador de campanha | Licenciado | 70 | Energia para rádio, iluminação e uma instalação pequena | 5 | 2 | Operação Criação 13 sob risco; D 15; 1 combustível por 8 TE |
-| Estação de rádio | Licenciado | 120 | Transmissão regional até 50 km com antena adequada | 12 | 2 | Criação 15; D 18; gerador e linha de propagação |
-| Oficina de campo | Licenciado | 300 | Duas tentativas de reparo de campo por máquina em 48 TE | 30 | — | Montagem 2 TE; Criação 15; D 15 |
-| Hospital de campanha | Licenciado | 500 | Meios cirúrgicos; +1d20 em Medicina | 40 | — | Montagem 4 TE; Medicina conforme tratamento; E/D — |
+| <span data-item="mascara-de-gas">Máscara de gás</span> | Livre | 18 | +1d20 contra agente inalado, com filtro válido | 1 | — | Uso automático; E/D —; não fornece oxigênio |
+| <span data-item="filtro-de-reposicao">Filtro de reposição</span> | Licenciado | 3 | Até 6 TE de exposição comum | 0,25 | — | Atmosfera concentrada pode consumir em 1 TE, anunciado antes |
+| <span data-item="capacete-de-aco">Capacete de aço</span> | Livre | 12 | +1 CA contra tiro, fragmento ou explosão | 1 | — | Automático; não acumula com outro capacete |
+| <span data-item="colete-balistico-experimental">Colete balístico experimental</span> | Restrito | 65 | +4 CA contra tiro e fragmentos; não contra outros ataques | 4 | 2 | Armadura média, Agilidade na CA até 5; Desvantagem em Acrobacia e Furtividade |
+| <span data-item="binoculo">Binóculo</span> | Livre | 10 | +1d20 em Percepção distante estando imóvel | 1 | — | Uma interação para levantar; não vê através de cobertura |
+| <span data-item="radio-de-mochila">Rádio de mochila</span> | Licenciado | 45 | Comunicação de campo até 5 km em terreno aberto | 3 | 1 | Operar Criação 13 sob ruído; D 15; bateria 8 TE |
+| <span data-item="radio-civil-de-mesa">Rádio civil de mesa</span> | Livre | 20 | Recebe transmissões locais; sem emissor | 2 | — | Criação 10 sob interferência; D 13; tomada ou bateria 8 TE |
+| <span data-item="telefone-de-campo">Telefone de campo</span> | Licenciado | 25 | Duas estações e 500 m de fio | 2 | — | Criação 13 sob dano; D 13; baterias incluídas para uma jornada |
+| <span data-item="radar-de-campo-experimental">Radar de campo experimental</span> | Restrito | 900 | Detecta grandes massas metálicas em movimento | 18 em três volumes de 6 | 2 | Criação 20 para calibrar; D 20; 2 km; gerador obrigatório |
+| <span data-item="lanterna-eletrica">Lanterna elétrica</span> | Livre | 6 | Luz dirigida até 15 m | 1 abastecida | — | Automático; E/D —; pilhas por 6 TE |
+| <span data-item="camera-fotografica">Câmera fotográfica</span> | Livre | 16 | Registra uma imagem por interação preparada | 1 | — | Criação 13 em cena difícil; D —; não registra espírito sem adaptação |
+| <span data-item="rolo-fotografico">Rolo fotográfico</span> | Livre | 2 | 24 exposições; revelação em laboratório | 0,25 por quatro rolos | — | Revelar exige 2 TE e material adequado |
+| <span data-item="kit-de-mecanico">Kit de mecânico</span> | Livre | 20 | Permite reparos de motor e arma | 2 | — | Criação conforme reparo; não fornece peças consumidas |
+| <span data-item="kit-de-demolicao">Kit de demolição</span> | Restrito | 30 | +1d20 para instalar ou desarmar dispositivo | 2 | — | Criação; não inclui explosivo; um único bônus de kit |
+| <span data-item="gerador-de-campanha">Gerador de campanha</span> | Licenciado | 70 | Energia para rádio, iluminação e uma instalação pequena | 5 | 2 | Operação Criação 13 sob risco; D 15; 1 combustível por 8 TE |
+| <span data-item="estacao-de-radio">Estação de rádio</span> | Licenciado | 120 | Transmissão regional até 50 km com antena adequada | 12 | 2 | Criação 15; D 18; gerador e linha de propagação |
+| <span data-item="oficina-de-campo">Oficina de campo</span> | Licenciado | 300 | Duas tentativas de reparo de campo por máquina em 48 TE | 30 | — | Montagem 2 TE; Criação 15; D 15 |
+| <span data-item="hospital-de-campanha">Hospital de campanha</span> | Licenciado | 500 | Meios cirúrgicos; +1d20 em Medicina | 40 | — | Montagem 4 TE; Medicina conforme tratamento; E/D — |
 
 O radar requer equipe de dois, 2 TE de montagem e uma área aberta. Detectar exige um Movimento por varredura e Intelecto + Percepção CD 15, ou oposição a uma medida de ocultação apropriada. Ele indica direção e aproximação, não rosto, raça, alinhamento ou fonte espiritual. Não distingue uma pessoa parada entre ruínas. O gerador ocupa sua carga própria e consome uma carga de combustível por 4 TE quando sustenta esse radar. Uma bateria de rádio não o miniaturiza.
 
@@ -661,14 +661,14 @@ A carga própria abaixo serve quando o veículo é levado por guindaste, trem, n
 
 | Veículo | Licença e preço (m) | Carga própria (Espaços) | Estrutura / Blindagem | CA e Evasão | Velocidade | Tripulação e passageiros | Capacidade útil (Espaços) |
 |---|---|---|---|---|---|---|---|
-| Motocicleta com sidecar | Licenciado; 450 | 30 | 22 / 0 | CA 14; Condução normal | 30 m táticos; 40 km/h de viagem | 1 condutor + 2 passageiros | 24 |
-| Automóvel utilitário | Livre com habilitação; 600 | 100 | 30 / 2 | CA 15; Condução normal | 30 m; 50 km/h | 1 + 3 | 60 |
-| Caminhão de suprimentos | Licenciado; 900 | 300 | 45 / 3 | CA 14; Evasão com Desvantagem | 24 m; 35 km/h | 1 + 10 | 300 |
-| Carro blindado | Restrito; 1.800 | 500 | 55 / 6 | CA 18; Evasão com Desvantagem | 24 m; 30 km/h | 3 de tripulação + 4 | 100 |
-| Tanque leve | Restrito; 3.500 | 1.000 | 85 / 10 | CA 20; Evasão com Desvantagem | 15 m; 20 km/h | 4 de tripulação | 80 |
-| Tanque médio | Restrito; 5.000 | 1.500 | 110 / 12 | CA 22; Evasão com Desvantagem | 12 m; 15 km/h | 5 de tripulação | 120 |
-| Aeronave a hélice de reconhecimento | Restrito; 6.000 | 400 | 60 / 4 | CA 18; Condução normal em voo livre | 250 km/h de cruzeiro; escala aérea | 1 piloto + 1 observador | 50 |
-| Lancha de patrulha | Restrito; 3.000 | 600 | 90 / 8 | CA 17; Evasão com Desvantagem | 30 m na água; 30 km/h | 4 + 8 | 160 |
+| <span data-item="motocicleta-com-sidecar">Motocicleta com sidecar</span> | Licenciado; 450 | 30 | 22 / 0 | CA 14; Condução normal | 30 m táticos; 40 km/h de viagem | 1 condutor + 2 passageiros | 24 |
+| <span data-item="automovel-utilitario">Automóvel utilitário</span> | Livre com habilitação; 600 | 100 | 30 / 2 | CA 15; Condução normal | 30 m; 50 km/h | 1 + 3 | 60 |
+| <span data-item="caminhao-de-suprimentos">Caminhão de suprimentos</span> | Licenciado; 900 | 300 | 45 / 3 | CA 14; Evasão com Desvantagem | 24 m; 35 km/h | 1 + 10 | 300 |
+| <span data-item="carro-blindado">Carro blindado</span> | Restrito; 1.800 | 500 | 55 / 6 | CA 18; Evasão com Desvantagem | 24 m; 30 km/h | 3 de tripulação + 4 | 100 |
+| <span data-item="tanque-leve">Tanque leve</span> | Restrito; 3.500 | 1.000 | 85 / 10 | CA 20; Evasão com Desvantagem | 15 m; 20 km/h | 4 de tripulação | 80 |
+| <span data-item="tanque-medio">Tanque médio</span> | Restrito; 5.000 | 1.500 | 110 / 12 | CA 22; Evasão com Desvantagem | 12 m; 15 km/h | 5 de tripulação | 120 |
+| <span data-item="aeronave-a-helice-de-reconhecimento">Aeronave a hélice de reconhecimento</span> | Restrito; 6.000 | 400 | 60 / 4 | CA 18; Condução normal em voo livre | 250 km/h de cruzeiro; escala aérea | 1 piloto + 1 observador | 50 |
+| <span data-item="lancha-de-patrulha">Lancha de patrulha</span> | Restrito; 3.000 | 600 | 90 / 8 | CA 17; Evasão com Desvantagem | 30 m na água; 30 km/h | 4 + 8 | 160 |
 
 Velocidade tática representa manobra controlada entre obstáculos e não se converte diretamente em velocidade rodoviária. Viagem pressupõe estrada ou rota adequada; risco, paradas e navegação reduzem o progresso. Aeronave usa cena aérea com distâncias, velocidade e altura declaradas, em vez de atravessar um mapa de rua por Movimento comum. Exige pista, combustível, tempo atmosférico e pilotagem treinada para manobras; Condução é a Perícia, com especialização narrativa de aeronave.
 
@@ -711,13 +711,13 @@ As cargas são o conjunto da arma e suporte, sem reservas de munição. Instalar
 
 | Arma | Licença | Preço (m) | Dano | Carga (Espaços) | Munição/Pente | Recarga | Alcance e Propriedades |
 |---|---|---|---|---|---|---|---|
-| Metralhadora leve montada | Restrito | 160 | 2d8 | 5 | 50 | Principal ou assistida | 100 m; Automática, Perfurante 2; apoio satisfeito |
-| Metralhadora pesada montada | Restrito | 250 | 3d8 | 10 | 100 | Principal ou assistida | 100 m táticos; Automática, Perfurante 3 |
-| Canhão automático | Restrito | 700 | 4d8 | 25 | 10 | Principal | 100 m táticos; Perfurante 4; sem Rajada adicional; equipe 1 |
-| Canhão de tanque | Restrito | 1.200 | 5d10 antiblindagem ou 3d8 explosivo | 40 | 1 | Principal do carregador ou do atirador | 100 m táticos; alcance ampliado em cena; explosivo raio 2 m |
-| Bomba de aeronave | Restrito | 80 | 5d10 contra estrutura; 3d8 contra criatura | 8 | 1 por suporte | Somente em solo, 1 TE | Raio 5 m; Antiblindagem contra estrutura; exige rota de passagem |
-| Projétil de canhão | Restrito | 25 | Um tipo escolhido da ficha do canhão | 1 | 1 | Conforme arma | Estoque transportado separadamente |
-| Caixa de canhão automático | Restrito | 60 | Dez projéteis compatíveis | 2 | 10 | Principal | Tipo perfurante ou explosivo escolhido antes da compra |
+| <span data-item="metralhadora-leve-montada">Metralhadora leve montada</span> | Restrito | 160 | 2d8 | 5 | 50 | Principal ou assistida | 100 m; Automática, Perfurante 2; apoio satisfeito |
+| <span data-item="metralhadora-pesada-montada">Metralhadora pesada montada</span> | Restrito | 250 | 3d8 | 10 | 100 | Principal ou assistida | 100 m táticos; Automática, Perfurante 3 |
+| <span data-item="canhao-automatico">Canhão automático</span> | Restrito | 700 | 4d8 | 25 | 10 | Principal | 100 m táticos; Perfurante 4; sem Rajada adicional; equipe 1 |
+| <span data-item="canhao-de-tanque">Canhão de tanque</span> | Restrito | 1.200 | 5d10 antiblindagem ou 3d8 explosivo | 40 | 1 | Principal do carregador ou do atirador | 100 m táticos; alcance ampliado em cena; explosivo raio 2 m |
+| <span data-item="bomba-de-aeronave">Bomba de aeronave</span> | Restrito | 80 | 5d10 contra estrutura; 3d8 contra criatura | 8 | 1 por suporte | Somente em solo, 1 TE | Raio 5 m; Antiblindagem contra estrutura; exige rota de passagem |
+| <span data-item="projetil-de-canhao">Projétil de canhão</span> | Restrito | 25 | Um tipo escolhido da ficha do canhão | 1 | 1 | Conforme arma | Estoque transportado separadamente |
+| <span data-item="caixa-de-canhao-automatico">Caixa de canhão automático</span> | Restrito | 60 | Dez projéteis compatíveis | 2 | 10 | Principal | Tipo perfurante ou explosivo escolhido antes da compra |
 
 Canhão automático com projétil explosivo usa 3d8 em raio de 2 m e não aplica Perfurante 4 a criaturas. Bombardeio tem uma rolagem para a área, janela de passagem e defesa anunciada; não gera impactos repetidos sobre o mesmo ponto na mesma ação. Armas e bombas não usam os bônus de arma pessoal de um personagem salvo autorização expressa da técnica.
 
@@ -729,10 +729,10 @@ Uma carga de combustível custa 2 m e ocupa 1/3 de espaço. Cada veículo terres
 
 | Máquina | Consumo normal | Custo e carga da reposição | Autonomia de referência |
 |---|---|---|---|
-| Motocicleta com sidecar | 1 carga por 8 TE | 2 m; 1/3 espaço | Tanque 2 cargas |
+| <span data-item="motocicleta-com-sidecar">Motocicleta com sidecar</span> | 1 carga por 8 TE | 2 m; 1/3 espaço | Tanque 2 cargas |
 | Automóvel | 2 cargas por 8 TE | 4 m; 2/3 espaço | Tanque 4 cargas |
 | Caminhão ou carro blindado | 3 cargas por 8 TE | 6 m; 1 espaço | Tanque 6 cargas |
-| Tanque leve | 4 cargas por 8 TE | 8 m; 1 e 1/3 espaços | Tanque 8 cargas |
+| <span data-item="tanque-leve">Tanque leve</span> | 4 cargas por 8 TE | 8 m; 1 e 1/3 espaços | Tanque 8 cargas |
 | Tanque médio ou lancha | 6 cargas por 8 TE | 12 m; 2 espaços | Tanque 12 cargas |
 | Aeronave a hélice | 8 cargas por saída de até 4 TE | 16 m; 2 e 2/3 espaços | Tanque 8 cargas; uma saída |
 | Gerador comum | 1 carga por 8 TE | 2 m; 1/3 espaço | Uma carga integral |
@@ -754,14 +754,14 @@ Uma instalação tecno-kármica ocupa capacidade útil pelo módulo e por suas b
 
 | Módulo | Licença e preço (m) | Dano / Efeito | Carga (Espaços) | Força | Consumo e risco |
 |---|---|---|---|---|---|
-| Acoplador Condutor de máquina | Licenciado; 90 | Canaliza uma fonte por um equipamento registrado | 2 | — | Custo da técnica; não herda arma automática ou canhão |
-| Reservatório industrial | Restrito; 180 | Guarda 20 Karma investidos | 4 | — | Regra de Reservatório; saldo e investidor identificados |
-| Ignição kármica auxiliar | Licenciado; 120 | Substitui uma carga de combustível do consumo | 3 | — | Paga 4 Karma por carga substituída, máximo metade do consumo normal da jornada |
-| Motor kármico integral | Restrito; 800 | Movimento sem combustível de combustão | 8 | — | 6 Karma por carga de combustível que seria consumida; fonte e saldo reais |
-| Estabilizador de selos | Restrito; 150 | +1d20 em um teste para conter Avaria sobrenatural por cena | 2 | — | Reação do operador e 3 Karma; não cancela dano já causado |
-| Refrigeração elemental | Licenciado; 100 | +1d20 contra falha por superaquecimento | 2 | — | 2 Karma por TE ativo; fonte Água ou Ar apropriada |
-| Válvula de ruptura | Restrito; 80 | Converte colapso de núcleo em desligamento com perda total do saldo | 1 | — | Uma utilização; substituição obrigatória após disparar |
-| Núcleo de Corrupção | Proibido sem registro institucional | Uma exceção de projeto definida por técnica válida | 6 | — | Carga, Voz e Controle da Corrupção da fonte; sem energia gratuita |
+| <span data-item="acoplador-condutor-de-maquina">Acoplador Condutor de máquina</span> | Licenciado; 90 | Canaliza uma fonte por um equipamento registrado | 2 | — | Custo da técnica; não herda arma automática ou canhão |
+| <span data-item="reservatorio-industrial">Reservatório industrial</span> | Restrito; 180 | Guarda 20 Karma investidos | 4 | — | Regra de Reservatório; saldo e investidor identificados |
+| <span data-item="ignicao-karmica-auxiliar">Ignição kármica auxiliar</span> | Licenciado; 120 | Substitui uma carga de combustível do consumo | 3 | — | Paga 4 Karma por carga substituída, máximo metade do consumo normal da jornada |
+| <span data-item="motor-karmico-integral">Motor kármico integral</span> | Restrito; 800 | Movimento sem combustível de combustão | 8 | — | 6 Karma por carga de combustível que seria consumida; fonte e saldo reais |
+| <span data-item="estabilizador-de-selos">Estabilizador de selos</span> | Restrito; 150 | +1d20 em um teste para conter Avaria sobrenatural por cena | 2 | — | Reação do operador e 3 Karma; não cancela dano já causado |
+| <span data-item="refrigeracao-elemental">Refrigeração elemental</span> | Licenciado; 100 | +1d20 contra falha por superaquecimento | 2 | — | 2 Karma por TE ativo; fonte Água ou Ar apropriada |
+| <span data-item="valvula-de-ruptura">Válvula de ruptura</span> | Restrito; 80 | Converte colapso de núcleo em desligamento com perda total do saldo | 1 | — | Uma utilização; substituição obrigatória após disparar |
+| <span data-item="nucleo-de-corrupcao">Núcleo de Corrupção</span> | Proibido sem registro institucional | Uma exceção de projeto definida por técnica válida | 6 | — | Carga, Voz e Controle da Corrupção da fonte; sem energia gratuita |
 
 Um motor integral soma 8 espaços de módulo e remove apenas os 4 espaços de alimentação e tanque vazio previstos na conversão: aumento líquido de 4. O combustível que estava no tanque é retirado e vira reserva física, ou é descartado; não vira Karma. A capacidade útil disponível cai pelo aumento líquido e por qualquer reservatório instalado. O chassi conserva Estrutura, CA, Blindagem e capacidade nominal, salvo projeto separado.
 

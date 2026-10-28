@@ -79,8 +79,8 @@ export async function POST(request: Request) {
     const vowErrors = getVowErrors(normalized, calculateAutomaticBonuses(normalized));
     if (vowErrors.length) return Response.json({ error: vowErrors[0] }, { status: 400 });
     const payload = JSON.stringify(normalized);
-    if (payload.length > 2_200_000) {
-      return Response.json({ error: "A ficha excede o tamanho permitido." }, { status: 413 });
+    if (new TextEncoder().encode(payload).byteLength > 1_900_000) {
+      return Response.json({ error: "A ficha excede o tamanho permitido. Reduza imagens e textos antes de salvar." }, { status: 413 });
     }
 
     const database = await getD1();

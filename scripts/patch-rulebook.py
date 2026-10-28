@@ -119,10 +119,10 @@ table = doc.add_table(rows=1, cols=5)
 table.style = doc.tables[2].style
 headers = ["Tamanho", "Altura", "Movimento", "Vida-base", "CA"]
 rows = [
-    ["Minúsculo", "0,30 m a menos de 1,00 m", "+2 m", "8", "+0"],
-    ["Pequeno", "1,00 m a menos de 1,65 m", "+1 m", "10", "+0"],
-    ["Médio", "1,65 m a 1,90 m, inclusive", "sem ajuste", "14", "+0"],
-    ["Grande", "acima de 1,90 m", "−3 m", "18", "+1"],
+    ["Minúsculo", "0,30 m a menos de 0,70 m", "sem ajuste", "8", "+0"],
+    ["Pequeno", "0,70 m a menos de 1,30 m", "sem ajuste", "10", "+0"],
+    ["Médio", "1,30 m a menos de 2,10 m", "sem ajuste", "14", "+0"],
+    ["Grande", "2,10 m ou mais", "−1 m", "18", "+1"],
 ]
 for cell, text in zip(table.rows[0].cells, headers): cell.text = text
 for row in rows:
@@ -131,8 +131,8 @@ anchor._p.addnext(table._tbl)
 anchor_element = table._tbl
 for text in [
     "A tabela altera apenas a base dos personagens jogadores. Não substitui as fichas próprias de monstros, veículos ou invocações. Vida e Karma recebem os bônus normais depois da base; apenas o ajuste de CA de Grande é somado. Não conceda alcance, dano, Resistência, carga ou encaixe em frestas automaticamente pelo nome da categoria.",
-    "O ganho de robustez troca mobilidade por sobrevivência. Grande perde 3 metros, valor que também reduz a distância de corrida quando ela multiplica o Deslocamento. Minúsculo e Pequeno percorrem mais espaço, mas possuem menor reserva de Vida. Esses bônus não se repetem por raça ou transformação: use uma única categoria mecânica.",
-    "Com Constituição 2, Força 1 e Agilidade 2, antes de raça e classe, Minúsculo possui Vida 13, movimento 9 m e CA 14; Pequeno, Vida 15, movimento 8 m e CA 14; Médio, Vida 19, movimento 7 m e CA 14; Grande, Vida 23, movimento 4 m e CA 15. Todos mantêm a mesma fórmula de Karma. A CA maior não é imunidade: os limiares de acerto parcial e total do Capítulo 7 continuam valendo.",
+    "O ganho de robustez troca mobilidade por sobrevivência. Grande perde 1 metro, valor que também reduz a distância de corrida quando ela multiplica o Deslocamento. Minúsculo e Pequeno possuem menor reserva de Vida, sem ganhar velocidade gratuita. Esses bônus não se repetem por raça ou transformação: use uma única categoria mecânica.",
+    "Com Constituição 2, Força 1 e Agilidade 2, antes de raça e classe, Minúsculo possui Vida 13, movimento 7 m e CA 14; Pequeno, Vida 15, movimento 7 m e CA 14; Médio, Vida 19, movimento 7 m e CA 14; Grande, Vida 23, movimento 6 m e CA 15. Todos mantêm a mesma fórmula de Karma. A CA maior não é imunidade: os limiares de acerto parcial e total do Capítulo 7 continuam valendo.",
     "Tamanho não muda com postura, roupas, cabelo, envelhecimento cosmético ou edição oportunista de altura. Mudança mecânica exige transformação ou revisão aprovada pelo Mestre fora da resolução em curso. Não acumule categorias. Ao migrar uma ficha antiga sem porte, use Médio provisoriamente e confirme na mesa. Recalcular máximos não cura nem recupera Karma atual: preserve o valor atual, limitado ao novo máximo, até a recuperação apropriada.",
 ]:
     element = OxmlElement("w:p"); anchor_element.addnext(element)

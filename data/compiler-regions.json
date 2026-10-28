@@ -1,0 +1,130 @@
+{
+  "--nidavellir": {
+    "source": "docs/republica-nidavellir.md",
+    "file": "data/nidavellir.json",
+    "title": "Nidavellir · República das Quatro Cidades",
+    "slug": "nidavellir",
+    "url": "/mundo/aeria/nidavellir",
+    "characters": [
+      "eirik-malm",
+      "oren-damar",
+      "haldor-rusk",
+      "saira-namar",
+      "idris-khar"
+    ],
+    "counts": [
+      9,
+      7,
+      7,
+      7,
+      7
+    ]
+  },
+  "--aeria": {
+    "source": "docs/corte-demi-humana-aeria.md",
+    "file": "data/demi-aeria.json",
+    "title": "Aéria · Corte dos Céus Abertos",
+    "slug": "corte-demi-humana",
+    "url": "/mundo/aeria/corte-demi-humana",
+    "characters": [
+      "rainha-sael",
+      "princesa-maelis",
+      "duque-darian",
+      "marquesa-iren",
+      "marques-torren",
+      "condessa-octavia",
+      "baronesa-otilia"
+    ],
+    "counts": [
+      10,
+      6,
+      4,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "--demons": {
+    "source": "docs/corte-demoniaca-ignaria.md",
+    "file": "data/demon-ignaria.json",
+    "title": "Aqueronte · Corte Demoníaca de Ignária",
+    "slug": "corte-demoniaca",
+    "url": "/mundo/ignaria/corte-demoniaca",
+    "characters": [
+      "rainha-valac",
+      "princesa-belial",
+      "princesa-astaroth",
+      "princesa-asmodeus",
+      "princesa-bael",
+      "duque-agares",
+      "marques-andras",
+      "marquesa-marchosias"
+    ],
+    "counts": [
+      10,
+      6,
+      6,
+      6,
+      6,
+      5,
+      3,
+      3
+    ]
+  },
+  "--ghouls": {
+    "source": "docs/ghouls-ignaria.md",
+    "file": "data/ghoul-ignaria.json",
+    "title": "Os Pretendentes Ghouls de Ignária",
+    "slug": "ghouls",
+    "url": "/mundo/ignaria/ghouls",
+    "characters": [
+      "al-aqwa",
+      "candidata-sahar",
+      "candidata-naima",
+      "candidata-zahra"
+    ],
+    "counts": [
+      8,
+      4,
+      4,
+      4
+    ]
+  },
+  "--lunaviel": {
+    "source": "docs/casa-lunaviel-ignaria.md",
+    "file": "data/lunaviel-ignaria.json",
+    "title": "Casa Marquesal Lunaviel · Ignária",
+    "slug": "casa-lunaviel",
+    "url": "/mundo/ignaria/casa-lunaviel",
+    "characters": [
+      "caroline-lunaviel",
+      "valentino-heathcliff",
+      "alaric-voss"
+    ],
+    "counts": [
+      8,
+      3,
+      5
+    ]
+  },
+  "--human": {
+    "source": "docs/reino-humano-gaeria.md",
+    "file": ".sites-runtime/human-court-generated.json",
+    "title": "Valdária · Reino Humano de Gaéria",
+    "slug": "reino-humano",
+    "url": "/mundo/gaeria/reino-humano",
+    "characters": [
+      "rainha-aveline",
+      "princesa-isadora",
+      "princesa-brigida",
+      "conselheiro-tomas"
+    ],
+    "counts": [
+      7,
+      6,
+      4,
+      5
+    ]
+  }
+}

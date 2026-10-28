@@ -24,7 +24,7 @@ async function prepareImage(file: File): Promise<string> {
 
   const { image, url } = await loadImage(file);
   try {
-    let longestSide = 900;
+    let longestSide = 512;
     let quality = 0.86;
     for (let attempt = 0; attempt < 14; attempt += 1) {
       const scale = Math.min(1, longestSide / Math.max(image.naturalWidth, image.naturalHeight));
@@ -37,9 +37,9 @@ async function prepareImage(file: File): Promise<string> {
       if (!context) throw new Error("Seu navegador não conseguiu preparar a imagem.");
       context.drawImage(image, 0, 0, width, height);
       const encoded = canvas.toDataURL("image/webp", quality);
-      if (encoded.length <= MAX_EMBEDDED_IMAGE_LENGTH) return encoded;
+      if (encoded.length <= Math.min(64_000, MAX_EMBEDDED_IMAGE_LENGTH)) return encoded;
       quality -= 0.09;
-      if (quality < 0.42) { longestSide = Math.max(420, Math.round(longestSide * 0.8)); quality = 0.78; }
+      if (quality < 0.42) { longestSide = Math.max(192, Math.round(longestSide * 0.8)); quality = 0.78; }
     }
     throw new Error("A imagem continua grande demais. Escolha um arquivo com menos detalhes.");
   } finally {
@@ -75,7 +75,7 @@ export function ImageUploader({
       </div>
       <div className="image-uploader-copy">
         <strong>{label}</strong>
-        <p>{help ?? "PNG, JPG ou WebP. O arquivo será reduzido antes de ser salvo na ficha."}</p>
+        <p>{help ?? "PNG, JPG ou WebP. O arquivo será reduzido a uma miniatura de até 512 px e cerca de 48 KB antes de ser salvo na ficha."}</p>
         <div>
           <label htmlFor={id} className="image-upload-button" aria-disabled={busy}>
             <Upload aria-hidden="true" /> {busy ? "Preparando…" : value ? "Trocar imagem" : "Escolher imagem"}

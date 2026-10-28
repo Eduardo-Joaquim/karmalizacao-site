@@ -1,0 +1,30 @@
+{
+  "Minúsculo": {
+    "minHeight": 30,
+    "life": 8,
+    "movement": 0,
+    "armor": 0,
+    "height": "30 a menos de 70 cm"
+  },
+  "Pequeno": {
+    "minHeight": 70,
+    "life": 10,
+    "movement": 0,
+    "armor": 0,
+    "height": "70 a menos de 130 cm"
+  },
+  "Médio": {
+    "minHeight": 130,
+    "life": 14,
+    "movement": 0,
+    "armor": 0,
+    "height": "130 a menos de 210 cm"
+  },
+  "Grande": {
+    "minHeight": 210,
+    "life": 18,
+    "movement": -1,
+    "armor": 1,
+    "height": "210 cm ou mais"
+  }
+}

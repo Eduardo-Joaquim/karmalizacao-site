@@ -206,6 +206,7 @@ const vowSchema = z.object({
 
 export const characterPayloadSchema = z.object({
   version: z.literal(1),
+  combat: z.object({ life: z.number().int().min(0).max(99999), karma: z.number().int().min(0).max(99999), shield: z.number().int().min(0).max(9999), temporaryCharges: z.number().int().min(0).max(10), round: z.number().int().min(1).max(99999), domainRounds: z.record(z.enum(DOMAIN_NAMES), z.number().int().min(0).max(6)) }).optional(),
   name: z.string().trim().min(1).max(80),
   portraitImage: embeddedImage.optional(),
   pronouns: shortText,

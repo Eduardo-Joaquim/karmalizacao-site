@@ -1,3 +1,4 @@
+import threats from "@/data/early-threats.json";
 import nidavellir from "@/data/nidavellir.json";
 import aeria from "@/data/demi-aeria.json";
 import demons from "@/data/demon-ignaria.json";
@@ -9,6 +10,7 @@ import vampires from "@/data/vampire-ignaria.json";
 import court from "@/data/court-sheets.json";
 export function GET(request: Request) {
   const params = new URL(request.url).searchParams;
+  if (params.get("regiao") === "ameacas") return Response.json({ threats: threats.filter(t => !params.get("area") || t.region === params.get("area")) });
   if (["ignaria", "sarkora"].includes(params.get("regiao") ?? "")) return Response.json(vampires);
   if (params.get("regiao") === "gaeria") return Response.json(gaeria);
   if (params.get("regiao") === "elaranth") return Response.json(elven);

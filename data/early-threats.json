@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "cao-de-cinzas",
+    "name": "Cão de Cinzas",
+    "region": "ignaria",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "Leitos de cinza e trilhas vulcânicas",
+    "lore": "A fuligem acompanha a respiração; o animal segue o calor deixado nas pedras.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Fogo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Faro térmico",
+      "effect": "Percebe rastros recentes de calor a até 5 m se não houver outra fonte intensa entre ele e a trilha. Não localiza automaticamente alvos atrás de paredes."
+    },
+    "attack": {
+      "name": "Mordida",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Rastro ardente",
+      "grade": "I",
+      "source": "Fogo",
+      "action": "Principal",
+      "cost": 2,
+      "components": [
+        {
+          "label": "Base I",
+          "value": 2
+        }
+      ],
+      "description": "Abre as mandíbulas e expele uma língua curta de brasas.",
+      "effect": "Um alvo a 5 m; total 1d6 de Fogo, parcial metade; falha nada.",
+      "test": "Espírito + Controle de Fogo",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "besouro-de-escoria",
+    "name": "Besouro de Escória",
+    "region": "ignaria",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "Escória resfriada junto às fundições",
+    "lore": "Carrega placas de resíduo endurecido e rói os encaixes dos carrinhos de minério.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Carapaça vítrea",
+      "effect": "Resistência física 1. Um acerto total de impacto remove essa proteção até o início do próximo turno do besouro."
+    },
+    "attack": {
+      "name": "Mandíbulas",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Tranca de pinça",
+      "grade": "I",
+      "source": "Marcial",
+      "action": "Principal",
+      "cost": 3,
+      "components": [
+        {
+          "label": "Base I",
+          "value": 2
+        },
+        {
+          "label": "Lentidão simples",
+          "value": 1
+        }
+      ],
+      "description": "As pinças se fecham sobre o pé que interrompe sua passagem.",
+      "effect": "Um alvo em contato; total 1d6 de impacto e −2 m no próximo Movimento, até o início do turno seguinte do besouro; parcial metade, sem lentidão.",
+      "test": "Força + Luta",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "batedor-ghoul-raso",
+    "name": "Batedor Ghoul Raso",
+    "region": "ignaria",
+    "stage": "II",
+    "rank": "D",
+    "habitat": "Galerias de carvão abandonadas",
+    "lore": "É um saqueador de rota, treinado para reconhecer escoltas; sua origem não o torna inimigo de todo viajante.",
+    "life": 40,
+    "ca": 17,
+    "karma": 14,
+    "movement": 7,
+    "attributes": [
+      3,
+      4,
+      3,
+      2,
+      2,
+      3
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Conhecedor de galerias",
+      "effect": "+1d20 em Sobrevivência apenas para encontrar uma saída em mina que já percorreu."
+    },
+    "attack": {
+      "name": "Cutelo",
+      "dice": 2,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Fechar a rota",
+      "grade": "II",
+      "source": "Marcial",
+      "action": "Principal",
+      "cost": 4,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Empurrão 2 m",
+          "value": 1
+        }
+      ],
+      "description": "Lança o corpo contra o apoio do oponente.",
+      "effect": "Em contato; total 1d12 de impacto e empurra 2 m por trajeto livre; parcial metade, sem empurrão.",
+      "test": "Força + Luta",
+      "dice": 2,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "lampreia-de-enxofre",
+    "name": "Lampreia de Enxofre",
+    "region": "ignaria",
+    "stage": "III",
+    "rank": "C",
+    "habitat": "Canais termais de água turva",
+    "lore": "A pele translúcida pulsa sob a água, perto das comportas que aquecem as oficinas.",
+    "life": 60,
+    "ca": 19,
+    "karma": 22,
+    "movement": 7,
+    "attributes": [
+      4,
+      5,
+      4,
+      3,
+      3,
+      4
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Água",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Corpo aquático",
+      "effect": "Natação 9 m; em solo, movimento 3 m. Não respira fora da água por mais de uma cena."
+    },
+    "attack": {
+      "name": "Sucção",
+      "dice": 2,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Jato termal",
+      "grade": "III",
+      "source": "Água",
+      "action": "Principal",
+      "cost": 6,
+      "components": [
+        {
+          "label": "Base III",
+          "value": 4
+        },
+        {
+          "label": "Alcance médio",
+          "value": 2
+        }
+      ],
+      "description": "Contrai o corpo e lança água pressurizada pela boca circular.",
+      "effect": "Um alvo a 15 m; total 2d10 de Água pressurizada, parcial metade; falha nada. Não inclui queimadura.",
+      "test": "Espírito + Controle de Água",
+      "dice": 2,
+      "bonus": 5
+    }
+  },
+  {
+    "id": "automato-de-forja",
+    "name": "Autômato de Forja Defeituoso",
+    "region": "ignaria",
+    "stage": "IV",
+    "rank": "B",
+    "habitat": "Pátios de usinas desativadas",
+    "lore": "Ainda executa a ordem de prensar material, mesmo quando não existe carga sobre a bancada.",
+    "life": 80,
+    "ca": 21,
+    "karma": 30,
+    "movement": 7,
+    "attributes": [
+      5,
+      4,
+      6,
+      3,
+      2,
+      5
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Canalização de Karma",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Núcleo exposto",
+      "effect": "Imune a venenos biológicos; não recebe imunidade a Karma, calor ou dano interno mecânico. Um total contra o núcleo percebido causa o dano normal e cancela a próxima ação de prensagem, uma vez por cena."
+    },
+    "attack": {
+      "name": "Braço de prensa",
+      "dice": 3,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Prensagem",
+      "grade": "IV",
+      "source": "Karma",
+      "action": "Principal",
+      "cost": 9,
+      "components": [
+        {
+          "label": "Base IV",
+          "value": 6
+        },
+        {
+          "label": "Controle secundário III",
+          "value": 3
+        }
+      ],
+      "description": "Trava o apoio e fecha as placas de uma prensa de construção.",
+      "effect": "Exige iniciar o turno adjacente e abrir mão do Movimento; total 2d12 de impacto e Derrubado, parcial metade sem queda; falha nada.",
+      "test": "Espírito + Canalização de Karma",
+      "dice": 3,
+      "bonus": 5
+    }
+  },
+  {
+    "id": "rato-de-marco",
+    "name": "Rato de Marco",
+    "region": "gaeria",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "Celeiros junto aos marcos de estrada",
+    "lore": "Fios minerais crescem nos incisivos e ficam presos nas dobradiças dos portões.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Frestas",
+      "effect": "Pode atravessar uma fresta de 15 cm se estiver sem carga, gastando Movimento; não atravessa rocha ou metal íntegros."
+    },
+    "attack": {
+      "name": "Incisivos",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Disparada",
+      "grade": "II",
+      "source": "Marcial",
+      "action": "Movimento",
+      "cost": 4,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Ação de Movimento",
+          "value": 1
+        }
+      ],
+      "description": "Baixa o corpo e corre entre pés e rodas.",
+      "effect": "Movimento: percorre até 5 m por passagem física livre; não ataca nem ignora Reações. Automático.",
+      "test": "Força + Luta",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "vespa-de-quartzo",
+    "name": "Vespa de Quartzo",
+    "region": "gaeria",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "Paredes de pedreiras e campos floridos",
+    "lore": "O abdômen ressoa contra cristais soltos antes de o enxame mudar de direção.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Terra",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Voo rasante",
+      "effect": "Voo 7 m. Precisa pousar ao terminar o Movimento se as asas estiverem molhadas ou presas."
+    },
+    "attack": {
+      "name": "Ferrão",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Estilhaço",
+      "grade": "I",
+      "source": "Terra",
+      "action": "Principal",
+      "cost": 2,
+      "components": [
+        {
+          "label": "Base I",
+          "value": 2
+        }
+      ],
+      "description": "Parte a ponta mineral do ferrão contra uma superfície.",
+      "effect": "Um alvo a 5 m; total 1d6 perfurante, parcial metade; falha nada.",
+      "test": "Espírito + Controle de Terra",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "saqueador-de-estrada",
+    "name": "Saqueador de Estrada",
+    "region": "gaeria",
+    "stage": "II",
+    "rank": "D",
+    "habitat": "Estradas de carga entre pedreiras",
+    "lore": "Carrega uma lança curta e observa o grupo antes de decidir se exige pedágio ou se foge.",
+    "life": 40,
+    "ca": 17,
+    "karma": 14,
+    "movement": 7,
+    "attributes": [
+      3,
+      4,
+      3,
+      2,
+      2,
+      3
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Abrigo conhecido",
+      "effect": "Quando ocupa cobertura física real, recebe apenas o benefício normal daquela cobertura. Conhece uma rota de retirada descrita no encontro, sem teleporte ou fuga automática."
+    },
+    "attack": {
+      "name": "Lança curta",
+      "dice": 2,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Afastar",
+      "grade": "II",
+      "source": "Marcial",
+      "action": "Principal",
+      "cost": 4,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Empurrão 2 m",
+          "value": 1
+        }
+      ],
+      "description": "A haste se atravessa entre o peito e a ponta da arma.",
+      "effect": "Um alvo em contato; total 1d12 de impacto e empurra 2 m; parcial metade sem empurrão; falha nada.",
+      "test": "Força + Luta",
+      "dice": 2,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "lobo-de-raiz",
+    "name": "Lobo de Raiz",
+    "region": "gaeria",
+    "stage": "III",
+    "rank": "C",
+    "habitat": "Floresta de raízes expostas",
+    "lore": "Os pelos carregam sementes; a alcateia atravessa caminhos que desaparecem sob a vegetação.",
+    "life": 60,
+    "ca": 19,
+    "karma": 22,
+    "movement": 7,
+    "attributes": [
+      4,
+      5,
+      4,
+      3,
+      3,
+      4
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Terra",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Passagem de raízes",
+      "effect": "Ignora terreno difícil apenas quando causado por raízes naturais baixas. Barreiras e raízes de técnicas continuam impedindo sua passagem."
+    },
+    "attack": {
+      "name": "Mordida",
+      "dice": 2,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Laço rasteiro",
+      "grade": "III",
+      "source": "Terra",
+      "action": "Principal",
+      "cost": 9,
+      "components": [
+        {
+          "label": "Base III",
+          "value": 4
+        },
+        {
+          "label": "Alcance médio",
+          "value": 2
+        },
+        {
+          "label": "Controle secundário III",
+          "value": 3
+        }
+      ],
+      "description": "Uma raiz percebida se ergue diante das patas do alvo.",
+      "effect": "Um alvo a 15 m, apoiado em chão com vegetação; total 2d10 de Terra e Derrubado; parcial metade sem queda; falha nada.",
+      "test": "Espírito + Controle de Terra",
+      "dice": 2,
+      "bonus": 5
+    }
+  },
+  {
+    "id": "sentinela-de-barro",
+    "name": "Sentinela de Barro",
+    "region": "gaeria",
+    "stage": "IV",
+    "rank": "B",
+    "habitat": "Ruínas de canais e comportas",
+    "lore": "O corpo é moldado em torno de uma roda de comporta; defende o leito seco de um canal há muito esquecido.",
+    "life": 80,
+    "ca": 21,
+    "karma": 30,
+    "movement": 7,
+    "attributes": [
+      5,
+      4,
+      6,
+      3,
+      2,
+      5
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Terra",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Massa porosa",
+      "effect": "Resistência cortante 2. Água corrente forte mantém seu movimento em 3 m enquanto ele permanecer dentro da corrente, sem destruir o corpo automaticamente."
+    },
+    "attack": {
+      "name": "Mão de argila",
+      "dice": 3,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Vala",
+      "grade": "II",
+      "source": "Terra",
+      "action": "Principal",
+      "cost": 5,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Área pequena",
+          "value": 2
+        }
+      ],
+      "description": "Afunda o piso solto numa faixa estreita diante do corpo.",
+      "effect": "Principal: área de raio 2 m adjacente torna-se terreno difícil para todos até o início do próximo turno. Sem dano, teste ou captura.",
+      "test": "Espírito + Controle de Terra",
+      "dice": 3,
+      "bonus": 5
+    }
+  },
+  {
+    "id": "corvo-de-cabo",
+    "name": "Corvo de Cabo",
+    "region": "aeria",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "Cabos suspensos e estações de dirigíveis",
+    "lore": "Faz ninhos com arames e rouba peças que refletem a luz das oficinas.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Pouso de precisão",
+      "effect": "+1d20 em Acrobacia apenas para pousar em cabos estáveis. Voo 8 m; sem imunidade a quedas quando imobilizado."
+    },
+    "attack": {
+      "name": "Bico",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Voo de través",
+      "grade": "II",
+      "source": "Marcial",
+      "action": "Movimento",
+      "cost": 4,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Ação de Movimento",
+          "value": 1
+        }
+      ],
+      "description": "Corta a passagem num voo baixo e brusco.",
+      "effect": "Movimento: desloca 5 m por rota aérea livre; não concede ataque nem cancela Reações.",
+      "test": "Força + Luta",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "gato-de-descarga",
+    "name": "Gato de Descarga",
+    "region": "aeria",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "Subestações e depósitos de baterias",
+    "lore": "O pelo estala perto de motores ligados. Busca abrigo quente, e ataca quando acuado.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Canalização de Karma",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Carga residual",
+      "effect": "Não produz energia industrial nem abastece aparelhos. Uma descarga percebida serve apenas como luz fraca no próprio corpo."
+    },
+    "attack": {
+      "name": "Garras",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Estalo",
+      "grade": "I",
+      "source": "Karma",
+      "action": "Principal",
+      "cost": 2,
+      "components": [
+        {
+          "label": "Base I",
+          "value": 2
+        }
+      ],
+      "description": "Uma carga kármica salta entre o pelo e a superfície tocada.",
+      "effect": "Um alvo em contato; total 1d6 kármico, parcial metade; falha nada.",
+      "test": "Espírito + Canalização de Karma",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "vigia-de-telhado",
+    "name": "Vigia de Telhado",
+    "region": "aeria",
+    "stage": "II",
+    "rank": "D",
+    "habitat": "Passarelas de Ferravento",
+    "lore": "Um cobrador de quadrilha acostumado a vigiar escadas de emergência.",
+    "life": 40,
+    "ca": 17,
+    "karma": 14,
+    "movement": 7,
+    "attributes": [
+      3,
+      4,
+      3,
+      2,
+      2,
+      3
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Olhar das passarelas",
+      "effect": "+1d20 em Percepção para detectar movimento numa passarela iluminada que esteja observando; não atravessa fumaça, parede ou escuridão."
+    },
+    "attack": {
+      "name": "Cassetete",
+      "dice": 2,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Travessa",
+      "grade": "II",
+      "source": "Marcial",
+      "action": "Principal",
+      "cost": 5,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Desarmar secundário II",
+          "value": 2
+        }
+      ],
+      "description": "Usa o braço inteiro para arrancar um objeto da linha de guarda.",
+      "effect": "Um alvo em contato, objeto alcançável; total 1d12 de impacto e Desarmar; parcial metade sem desarme; falha nada.",
+      "test": "Força + Luta",
+      "dice": 2,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "arraia-de-nevoa",
+    "name": "Arraia de Névoa",
+    "region": "aeria",
+    "stage": "III",
+    "rank": "C",
+    "habitat": "Encostas encobertas e vãos entre pontes",
+    "lore": "As membranas acompanham correntes naturais; o ventre se revela quando precisa mudar de altitude.",
+    "life": 60,
+    "ca": 19,
+    "karma": 22,
+    "movement": 7,
+    "attributes": [
+      4,
+      5,
+      4,
+      3,
+      3,
+      4
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Ar",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Planagem",
+      "effect": "Voo 9 m enquanto houver corrente de ar; em ambiente fechado sem corrente, só plana para um ponto mais baixo e não ganha altitude."
+    },
+    "attack": {
+      "name": "Cauda",
+      "dice": 2,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Sopro oblíquo",
+      "grade": "III",
+      "source": "Ar",
+      "action": "Principal",
+      "cost": 7,
+      "components": [
+        {
+          "label": "Base III",
+          "value": 4
+        },
+        {
+          "label": "Alcance médio",
+          "value": 2
+        },
+        {
+          "label": "Condição simples ou empurrão",
+          "value": 1
+        }
+      ],
+      "description": "Curva as membranas e comprime a corrente de ar num golpe transversal.",
+      "effect": "Um alvo a 15 m; total 2d10 de Ar e empurra 2 m, interrompidos por barreira sólida; parcial metade sem empurrão; falha nada.",
+      "test": "Espírito + Controle de Ar",
+      "dice": 2,
+      "bonus": 5
+    }
+  },
+  {
+    "id": "marionete-ferroviaria",
+    "name": "Marionete Ferroviária",
+    "region": "aeria",
+    "stage": "III",
+    "rank": "C",
+    "habitat": "Túneis de manutenção em linhas desativadas",
+    "lore": "Caminha repetindo os sinais de um antigo sinaleiro; o rosto de metal está voltado para trilhos vazios.",
+    "life": 60,
+    "ca": 19,
+    "karma": 22,
+    "movement": 7,
+    "attributes": [
+      4,
+      5,
+      4,
+      3,
+      3,
+      4
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Canalização de Karma",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Ritmo do trilho",
+      "effect": "+2 m de Movimento apenas sobre trilhos desimpedidos. Fora deles, usa o deslocamento normal."
+    },
+    "attack": {
+      "name": "Chave longa",
+      "dice": 2,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Sinal vermelho",
+      "grade": "III",
+      "source": "Karma",
+      "action": "Principal",
+      "cost": 5,
+      "components": [
+        {
+          "label": "Base III",
+          "value": 4
+        },
+        {
+          "label": "Lentidão simples",
+          "value": 1
+        }
+      ],
+      "description": "A chave golpeia o apoio de quem invade sua linha de trabalho.",
+      "effect": "Um alvo em contato; total 2d10 de impacto e −2 m até o início do próximo turno; parcial metade sem lentidão.",
+      "test": "Espírito + Canalização de Karma",
+      "dice": 2,
+      "bonus": 5
+    }
+  },
+  {
+    "id": "caranguejo-de-degrau",
+    "name": "Caranguejo de Degrau",
+    "region": "torre",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "1º andar · escadarias úmidas",
+    "lore": "Carrega placas arrancadas dos degraus e troca de carapaça nas poças junto às portas.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Apoio baixo",
+      "effect": "+1d20 em Atletismo para resistir apenas a empurrões enquanto estiver sobre pedra firme."
+    },
+    "attack": {
+      "name": "Pinça",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Passo lateral",
+      "grade": "II",
+      "source": "Marcial",
+      "action": "Movimento",
+      "cost": 4,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Ação de Movimento",
+          "value": 1
+        }
+      ],
+      "description": "Solta o apoio e atravessa a quina de um degrau.",
+      "effect": "Movimento: desloca 5 m por trajeto livre ao redor de um obstáculo baixo; não atravessa criaturas ou barreiras.",
+      "test": "Força + Luta",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "eco-sem-rosto",
+    "name": "Eco sem Rosto",
+    "region": "torre",
+    "stage": "II",
+    "rank": "D",
+    "habitat": "1º–2º andares · galerias de prova",
+    "lore": "Repete palavras ouvidas na galeria; a voz continua quando a boca já fechou.",
+    "life": 40,
+    "ca": 17,
+    "karma": 14,
+    "movement": 7,
+    "attributes": [
+      3,
+      4,
+      3,
+      2,
+      2,
+      3
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Canalização de Karma",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Voz emprestada",
+      "effect": "Imita apenas uma frase que ouviu na cena. A imitação não dá controle mental nem transforma aliados em inimigos."
+    },
+    "attack": {
+      "name": "Toque frio",
+      "dice": 2,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Reverberação",
+      "grade": "II",
+      "source": "Karma",
+      "action": "Principal",
+      "cost": 5,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Alcance médio",
+          "value": 2
+        }
+      ],
+      "description": "A frase se repete em tom agudo, junto aos ouvidos da vítima.",
+      "effect": "Um alvo percebido a 15 m; total 1d12 kármico, parcial metade; falha nada.",
+      "test": "Espírito + Canalização de Karma",
+      "dice": 2,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "bandido-karmalizado",
+    "name": "Bandido Karmalizado",
+    "region": "torre",
+    "stage": "I",
+    "rank": "E",
+    "habitat": "1º andar · postos de descanso ocupados",
+    "lore": "Cobra passagem junto de uma fogueira e esconde os suprimentos dos viajantes que recusa deixar passar.",
+    "life": 20,
+    "ca": 15,
+    "karma": 8,
+    "movement": 7,
+    "attributes": [
+      2,
+      3,
+      2,
+      1,
+      1,
+      2
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Atletismo",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Sinal combinado",
+      "effect": "Com uma Livre, indica um ponto visível a um cúmplice. Não concede ações, bônus ou ataques extras."
+    },
+    "attack": {
+      "name": "Faca",
+      "dice": 1,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Punho de retorno",
+      "grade": "I",
+      "source": "Marcial",
+      "action": "Principal",
+      "cost": 2,
+      "components": [
+        {
+          "label": "Base I",
+          "value": 2
+        }
+      ],
+      "description": "Fecha a distância e golpeia com a mão que parecia proteger o rosto.",
+      "effect": "Um alvo em contato; total 1d6 de impacto, parcial metade; falha nada.",
+      "test": "Força + Luta",
+      "dice": 1,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "tecedora-de-frestas",
+    "name": "Tecedora de Frestas",
+    "region": "torre",
+    "stage": "II",
+    "rank": "D",
+    "habitat": "2º andar · alvenaria fragmentada",
+    "lore": "Os fios quase invisíveis prendem poeira nas frestas, revelando a passagem de algo maior que a aranha.",
+    "life": 40,
+    "ca": 17,
+    "karma": 14,
+    "movement": 7,
+    "attributes": [
+      3,
+      4,
+      3,
+      2,
+      2,
+      3
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 1
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Canalização de Karma",
+        "level": 1
+      }
+    ],
+    "trait": {
+      "name": "Escalada",
+      "effect": "Escalada 6 m em superfícies ásperas; vidro liso exige apoio ou teste normal. Não atravessa matéria sólida."
+    },
+    "attack": {
+      "name": "Quelíceras",
+      "dice": 2,
+      "bonus": 2,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Fio de aviso",
+      "grade": "II",
+      "source": "Karma",
+      "action": "Principal",
+      "cost": 7,
+      "components": [
+        {
+          "label": "Base II",
+          "value": 3
+        },
+        {
+          "label": "Duração de cena",
+          "value": 4
+        }
+      ],
+      "description": "Estica um fio entre dois apoios próximos e aguarda sua vibração.",
+      "effect": "Principal: instala um alarme visível a curta distância, com até 5 m de fio por uma cena. Avisa apenas a tecedora quando tocado, sem dano ou contenção; uma Principal permite romper o fio alcançado.",
+      "test": "Espírito + Canalização de Karma",
+      "dice": 2,
+      "bonus": 2
+    }
+  },
+  {
+    "id": "cervo-de-vidro",
+    "name": "Cervo de Vidro",
+    "region": "torre",
+    "stage": "III",
+    "rank": "C",
+    "habitat": "3º andar · bosque de superfícies reflexivas",
+    "lore": "A luz atravessa seus chifres e muda de direção quando o corpo se volta para quem o persegue.",
+    "life": 60,
+    "ca": 19,
+    "karma": 22,
+    "movement": 7,
+    "attributes": [
+      4,
+      5,
+      4,
+      3,
+      3,
+      4
+    ],
+    "skills": [
+      {
+        "name": "Luta",
+        "level": 2
+      },
+      {
+        "name": "Reflexos",
+        "level": 1
+      },
+      {
+        "name": "Controle de Luz",
+        "level": 2
+      }
+    ],
+    "trait": {
+      "name": "Reflexo quebrado",
+      "effect": "Um alvo refletido não conta como alvo diretamente percebido para ataques. O cervo precisa de linha real de visão para escolher sua vítima."
+    },
+    "attack": {
+      "name": "Galhada",
+      "dice": 2,
+      "bonus": 5,
+      "damage": "1d6",
+      "range": "2 m"
+    },
+    "technique": {
+      "name": "Clarão",
+      "grade": "III",
+      "source": "Luz",
+      "action": "Principal",
+      "cost": 7,
+      "components": [
+        {
+          "label": "Base III",
+          "value": 4
+        },
+        {
+          "label": "Alcance médio",
+          "value": 2
+        },
+        {
+          "label": "Condição simples ou empurrão",
+          "value": 1
+        }
+      ],
+      "description": "Inclina a galhada e concentra um único reflexo sobre os olhos do alvo.",
+      "effect": "Um alvo a 15 m; total 2d10 de Luz e Ofuscado até o início do próximo turno; parcial metade sem condição; falha nada.",
+      "test": "Espírito + Controle de Luz",
+      "dice": 2,
+      "bonus": 5
+    }
+  }
+]
