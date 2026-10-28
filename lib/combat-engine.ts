@@ -1,3 +1,4 @@
+import { visualFromRoll } from '@/lib/combat-visuals';
 import { ALL_SKILLS, SKILL_GROUPS, type AttributeName, type CharacterPayload } from '@/lib/character-data';
 import { calculateAutomaticBonuses, calculateDerivedStats, getFinalSkill, getSkillTest } from '@/lib/character-rules';
 import { corruptedFormState } from '@/lib/corrupted-form';
@@ -7,7 +8,7 @@ export const clamp = (n: number, max = 99999) => Math.max(0, Math.min(max, Math.
 export function characterMax(draft: CharacterPayload) { return calculateDerivedStats(draft, calculateAutomaticBonuses(draft)); }
 export function liveState(draft: CharacterPayload): LiveCombatState {
   const max = characterMax(draft), old = draft.combat, s = draft.combatState;
-  return { inCombat: s?.inCombat ?? false, currentLife: clamp(s?.currentLife ?? old?.life ?? max.life,max.life), currentKarma: clamp(s?.currentKarma ?? old?.karma ?? max.karma,max.karma), tempShield: clamp(s?.tempShield ?? old?.shield ?? 0,9999), activeConditions: s?.activeConditions ?? [], lastActionLog: s?.lastActionLog ?? null, combatFeed: (s?.combatFeed ?? []).slice(-25), reactions: clamp(s?.reactions ?? 1,10), round: Math.max(1,clamp(s?.round ?? old?.round ?? 1)), domainRounds: s?.domainRounds ?? old?.domainRounds ?? {} };
+  return { bossPhases:s?.bossPhases??{}, inCombat: s?.inCombat ?? false, currentLife: clamp(s?.currentLife ?? old?.life ?? max.life,max.life), currentKarma: clamp(s?.currentKarma ?? old?.karma ?? max.karma,max.karma), tempShield: clamp(s?.tempShield ?? old?.shield ?? 0,9999), activeConditions: s?.activeConditions ?? [], lastActionLog: s?.lastActionLog ?? null, combatFeed: (s?.combatFeed ?? []).slice(-25), reactions: clamp(s?.reactions ?? 1,10), round: Math.max(1,clamp(s?.round ?? old?.round ?? 1)), domainRounds: s?.domainRounds ?? old?.domainRounds ?? {} };
 }
 export function withLiveState(draft: CharacterPayload, s: LiveCombatState): CharacterPayload {
   return { ...draft, combatState: s, combat: { life:s.currentLife, karma:s.currentKarma, shield:s.tempShield, round:s.round, domainRounds:s.domainRounds, temporaryCharges:draft.combat?.temporaryCharges ?? 0 } };
@@ -63,7 +64,7 @@ export function fixedCost(text:string):number|null {
 export function applyCombatAction(draft:CharacterPayload, op:CombatAction, timestamp=new Date().toISOString()):CharacterPayload {
   let s=liveState(draft), next={...draft}; const max=characterMax(draft);
   if(s.combatFeed.some(e=>e.id===op.id))return draft;
-  const before=s.currentLife;
+  const before=s.currentLife,karmaBefore=s.currentKarma,shieldBefore=s.tempShield;
   const event:CombatLog={id:op.id,timestamp,actorName:op.actorName,title:op.title,kind:'resource'};
   if(op.type==='damage'){const r=receiveDamage(s.currentLife,s.tempShield,op.amount,op.resistance,op.bypassShield);s={...s,currentLife:r.life,tempShield:r.shield};event.kind='damage';event.details=`${op.amount} bruto − ${op.resistance} Resistência; ${r.absorbed} no escudo; ${r.damage} na Vida.`;}
   if(op.type==='heal'){s.currentLife=Math.min(max.life,s.currentLife+op.amount);event.kind='heal';}
@@ -82,6 +83,14 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
     if(s.currentKarma<op.cost)throw Error('Karma insuficiente.');
     s.currentKarma-=op.cost;Object.assign(event,{kind:op.kind,karmaSpent:op.cost,rollFormula:op.rollFormula,diceResults:op.diceResults,total:op.total,details:`${op.details??''} Karma restante: ${s.currentKarma}/${max.karma}.`.trim()});
   }
+  if(op.type==='execute'||op.type==='spectacle')event.visual=visualFromRoll(op.rollFormula,op.diceResults,op.total,op.selection);
+  if(op.type==='spectacle')Object.assign(event,{kind:'attack',rollFormula:op.rollFormula,diceResults:op.diceResults,total:op.total,details:op.details});
+  if(op.type==='phase'){
+    const known=s.bossPhases?.[op.phase.bossKey];
+    if(known&&(known.order>op.phase.order||(known.order===op.phase.order&&!known.pending&&op.phase.pending)))return draft;
+    const entries=Object.entries({...s.bossPhases,[op.phase.bossKey]:op.phase}).slice(-20);
+    s.bossPhases=Object.fromEntries(entries);event.kind='ability';event.visual=op.phase;event.details=op.phase.defense;
+  }
   if(op.type==='domain'){
     const d=draft.domains.find(d=>d.name===op.name&&d.enabled&&d.awakened);if(!d)throw Error('Domínio não despertado.');
     if(Object.hasOwn(s.domainRounds,op.name))throw Error('Domínio já manifestado nesta cena.');
@@ -95,7 +104,7 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
   if(op.type==='round'){s.round=Math.min(99999,s.round+1);s.reactions=1;s.domainRounds=Object.fromEntries(Object.entries(s.domainRounds).map(([k,v])=>[k,Math.max(0,v-1)]));if(next.corruption.formActive)next.corruption={...next.corruption,formTurns:Math.min(999,(next.corruption.formTurns??0)+1)};}
   if(op.type==='scene'){s.round=1;s.reactions=1;s.domainRounds={};}
   if(next.corruption.charge===10 && next.corruption.formActive){event.details=(event.details??'')+' Carga 10: resolva a Ruptura CD 24. Ao encerrar: Carga 7, Forma encerrada e bloqueada, Exausto.';}
-  event.lifeDelta=s.currentLife-before;
+  event.lifeDelta=s.currentLife-before;event.karmaDelta=s.currentKarma-karmaBefore;event.shieldDelta=s.tempShield-shieldBefore;
   s.lastActionLog=event;s.combatFeed=[...s.combatFeed,event].slice(-25);
   return withLiveState(next,s);
 }

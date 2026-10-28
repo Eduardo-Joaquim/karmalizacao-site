@@ -28,3 +28,16 @@ test('saving an old editor snapshot cannot erase newer damage, Karma or logs',as
 test('master navigation, 12 presets and 12px minimum styles are wired',async()=>{const catalog=await vite.ssrLoadModule('/lib/combat-catalog.ts');assert.equal(catalog.earlyPresets.length,12);for(const id of ['euphere','geppeto','eirik-malm','saira-namar','summon-pinoquio'])assert(catalog.combatCatalog.some(c=>c.id===id),id);assert(!/font-size:\s*(?:[1-9]|1[01])px/.test(readFileSync('app/live-combat.css','utf8')));assert(readFileSync('components/site-header.tsx','utf8').includes('href="/mestre"'));});
 test('mixed signature damage keeps different dice and doubles only the recorded base pool',()=>{const rolled=engine.damageDice('Total: 2d10+1d8+3 cortante.',true,(n,s)=>Array(n).fill(s));assert.equal(rolled.formula,'4d10+2d8+3');assert.equal(rolled.total,59);assert.equal(rolled.dice.length,6);});
 test('official catalog preserves queen and regent domains, Falsa Santa reactions and family fighters',async()=>{const {combatCatalog:c}=await vite.ssrLoadModule('/lib/combat-catalog.ts');assert.equal(c.find(x=>x.id==='prorrogadora-da-extincao').reactions,3);assert.equal(c.find(x=>x.id==='oren-damar').arts.filter(x=>x.domain).length,4);for(const id of ['germano-ferromonte','celina-vesperal','raul-cedral','mateus-ferromonte'])assert(c.some(x=>x.id===id),id);assert.equal(c.find(x=>x.id==='geppeto').phase,40);});
+
+test('boss phases and spectator rolls persist over authenticated sync without charging viewers',async()=>{
+ const initial=seed(),first=await get(),etag=first.headers.get('ETag');
+ const phase={type:'phase',bossKey:'boss-geppeto-test',bossName:'Geppeto',phaseId:'mask',order:1,title:'Rompimento da Máscara',description:'Os fios entram em sobrecarga.',ca:23,defense:'Fio-mestre exposto',unlocked:['Máscara rompida'],pending:false};
+ assert.equal((await api.POST(request(action({type:'phase',phase})))).status,200);
+ assert.equal((await api.POST(request(action({type:'spectacle',rollFormula:'3d20 +5',diceResults:[3,20,11],total:25,selection:'maior'})))).status,200);
+ const result=await get(token,etag);assert.equal(result.status,200);const {payload}=await result.json();
+ assert.equal(payload.combatState.bossPhases[phase.bossKey].phaseId,'mask');
+ assert.equal(payload.combatState.lastActionLog.visual.tone,'critical');
+ assert.equal(payload.combatState.currentLife,initial.combatState.currentLife);assert.equal(payload.combatState.currentKarma,initial.combatState.currentKarma);
+ assert(schema.characterPayloadSchema.safeParse(payload).success);
+ assert.equal((await api.POST(request(action({type:'phase',phase}),'revoked-token-1234'))).status,404);
+});

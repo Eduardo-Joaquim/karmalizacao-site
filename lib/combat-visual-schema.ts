@@ -1,0 +1,4 @@
+import {z} from 'zod';
+export const phaseNoticeSchema=z.object({type:z.literal('phase'),bossKey:z.string().min(1).max(80).regex(/^[a-zA-Z0-9-]+$/),bossName:z.string().min(1).max(120),phaseId:z.string().min(1).max(80).regex(/^[a-zA-Z0-9-]+$/),order:z.number().int().min(1).max(20),title:z.string().min(1).max(120),description:z.string().max(600),ca:z.number().int().min(0).max(99),defense:z.string().max(600),unlocked:z.array(z.string().max(120)).max(12),pending:z.boolean()});
+export const rollVisualSchema=z.object({type:z.literal('roll'),dice:z.array(z.number().int().min(1).max(20)).min(1).max(60),selection:z.enum(['maior','menor']),selected:z.number().int().min(1).max(20),bonus:z.number().finite().min(-99999).max(99999),total:z.number().finite().min(-99999).max(99999),tone:z.enum(['normal','critical','fumble']),outcome:z.string().max(120).optional()});
+export const combatVisualSchema=z.discriminatedUnion('type',[rollVisualSchema,phaseNoticeSchema]);

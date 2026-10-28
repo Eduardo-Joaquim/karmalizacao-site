@@ -10,6 +10,8 @@ import "./corrupted-form.css";
 import "./noble-dossiers.css";
 import "./table-play.css";
 import "./live-combat.css";
+import "./combat-cinema.css";
+import { DiceRollerOverlay } from "@/components/dice-roller-overlay";
 
 import { Toaster } from "@/components/ui/sonner";
 
@@ -35,6 +37,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="dark">
       <body className="antialiased">
         {children}
+        <DiceRollerOverlay/>
         <Toaster theme="dark" richColors position="top-right" />
       </body>
     </html>

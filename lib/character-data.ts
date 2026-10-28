@@ -99,6 +99,7 @@ export function normalizeCharacterPayload(
     tempShield: Math.max(0, Math.min(9999, live?.tempShield ?? old?.shield ?? 0)),
     activeConditions: (live?.activeConditions ?? []).slice(0,20),
     lastActionLog: live?.lastActionLog ?? null, combatFeed: (live?.combatFeed ?? []).slice(-25),
+    bossPhases: live?.bossPhases ?? {},
     reactions: live?.reactions ?? 1, round: live?.round ?? old?.round ?? 1,
     domainRounds: live?.domainRounds ?? old?.domainRounds ?? {},
   };

@@ -28,8 +28,18 @@ Busca em todas as fichas oficiais estruturadas, invocações e ameaças; a famí
 
 Forja com Etapas I–VII, papel, atributos, perícias, recursos e técnica de função primária com ação, alcance, duração e um efeito menor. Acesso a Grau III em III, IV em V e V em VII; treinamento precisa ser conferido na fonte. Área e secundárias usam o construtor completo do Capítulo 10. Doze presets são cópias das ameaças iniciais existentes.
 
-Rodadas restauram Reações e reduzem contadores. Fases de Euphere (90), Maélia (60) e Geppeto (40) geram avisos, não transformações ou cura automática. Os limites de Geppeto continuam na tabela: até quatro peças, soma de Graus 8, três comandos; as artes pagas das marionetes exigem Geppeto no encontro. Adicionar uma ficha ao encontro não equivale a pagar sua manifestação nem concede ações.
+Rodadas restauram Reações e reduzem contadores. Fases de Euphere (90 e 1), Maélia (metade da Vida máxima) e Geppeto (40 ou três Âncoras desligadas) geram avisos uma única vez no encontro. Fases gratuitas aplicam apenas os valores finais explicitamente configurados. A Mãe do Vazio fica disponível, mas requer confirmação de Controle CD 17 e pagamento de 13 Karma e 6 PC; não há cura ou restauração de recursos ao transformar. A Falsa Santa usa fases configuradas pelo Mestre, sem limiar canônico inventado. Os limites de Geppeto continuam na tabela: até quatro peças, soma de Graus 8, três comandos; as artes pagas das marionetes exigem Geppeto no encontro. Adicionar uma ficha ao encontro não equivale a pagar sua manifestação nem concede ações.
 
 ## Verificação
 
 Testes com SQLite em memória executam as queries reais da API com sessão substituída apenas no ambiente de testes. Cobrem acesso por token/dono, revogação, ETag, validação, operações simultâneas, reenvio e preservação ao salvar. Testes de motor cobrem reservas, treinamento, Analítico, inventário, dano misto, escudo, cura, Karma, duração e catálogo. A verificação visual usa uma ficha fictícia exclusivamente no banco local da prévia, sem modificar personagens de produção.
+
+## Cinema e acessibilidade
+
+Rolagens guardam os dados reais, a seleção e o modificador no evento. A animação de 600 ms apenas revela esse resultado, sem rolar novamente. O selo natural 20 ou 1 considera exclusivamente o dado selecionado; o brilho de crítico não ignora CA ou CD. Números flutuantes refletem diferenças confirmadas de Vida, escudo e Karma.
+
+Som sintetizado e vibração começam desligados e exigem ativação do usuário. Movimento reduzido respeita a preferência do sistema e o botão próprio. Avisos têm fechamento por botão/Escape e não bloqueiam o foco nem interrompem ações de combate.
+
+O Mestre mantém uma caixa local de avisos de fase e entrega cada evento às fichas vinculadas pela API de combate; rolagens de NPCs também são retransmitidas sem cobrar Karma dos espectadores. Reenvios usam o mesmo ID e há recuperação após falhas transitórias. Cada ficha conserva um resumo das últimas fases por chefe, separado da própria CA e dos próprios recursos. Isso transporta avisos entre dispositivos; não torna o encontro, a iniciativa ou os NPCs uma campanha compartilhada no servidor.
+
+Fases personalizadas permitem limiar de Vida/percentual/Âncoras, CA final, Resistência e habilidades existentes liberadas. Configurações e efeitos valem apenas no encontro. Nenhuma fase reabastece Vida ou Karma. A redução não divina da Mãe do Vazio exige selecionar a fonte de dano; efeitos condicionais seguem a ficha.

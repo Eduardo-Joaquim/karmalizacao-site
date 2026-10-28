@@ -1,12 +1,15 @@
+import type { CombatVisual, PhaseNotice, DiceSelection } from "@/lib/combat-visuals";
 export type CombatLog = {
   id: string; timestamp: string; actorName: string;
   kind: 'skill' | 'attack' | 'technique' | 'ability' | 'damage' | 'heal' | 'resource';
   title: string; rollFormula?: string; diceResults?: number[]; total?: number;
+  visual?: CombatVisual; karmaDelta?: number; shieldDelta?: number;
   karmaSpent?: number; lifeDelta?: number; details?: string;
 };
 export type LiveCombatState = {
   inCombat: boolean; currentLife: number; currentKarma: number; tempShield: number;
   activeConditions: string[]; lastActionLog: CombatLog | null; combatFeed: CombatLog[];
+  bossPhases?: Record<string, PhaseNotice>;
   reactions: number; round: number; domainRounds: Record<string, number>;
 };
 export type CombatAction = {
@@ -16,7 +19,9 @@ export type CombatAction = {
   | { type: 'heal'; amount: number }
   | { type: 'resource'; resource: 'karma' | 'life' | 'shield' | 'saturation' | 'charge' | 'reactions'; delta: number }
   | { type: 'condition'; condition: string; remove: boolean }
-  | { type: 'execute'; cost: number; kind: 'skill' | 'attack' | 'technique' | 'ability'; rollFormula?: string; diceResults?: number[]; total?: number; details?: string }
+  | { type: 'execute'; cost: number; kind: 'skill' | 'attack' | 'technique' | 'ability'; rollFormula?: string; diceResults?: number[]; total?: number; selection?: DiceSelection; details?: string }
+  | { type: 'phase'; phase: PhaseNotice }
+  | { type: 'spectacle'; rollFormula:string; diceResults:number[]; total:number; selection:DiceSelection; details?:string }
   | { type: 'domain'; name: string }
   | { type: 'form'; active: boolean }
   | { type: 'round' }
