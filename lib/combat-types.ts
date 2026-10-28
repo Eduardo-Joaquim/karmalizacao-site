@@ -26,6 +26,7 @@ export type CombatAction = {
   | { type: 'form'; active: boolean }
   | { type: 'round' }
   | { type: 'scene' }
+  | { type: 'rest' }
   | { type: 'toggle'; active: boolean }
 );
 export type CombatLink = { id: string; token?: string };

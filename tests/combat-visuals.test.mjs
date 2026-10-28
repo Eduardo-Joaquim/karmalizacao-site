@@ -35,3 +35,8 @@ test('spectator rolls cross the same sync contract without spending player Karma
 test('animations and audio honor explicit opt in, reduced motion and bounded roll timing',()=>{
  const effect=readFileSync('lib/combat-effects.ts','utf8'),overlay=readFileSync('components/dice-roller-overlay.tsx','utf8'),css=readFileSync('app/combat-cinema.css','utf8');assert(effect.includes('sound:false,haptics:false'));assert(effect.includes("audio.state!=='running'"));assert(overlay.includes('600'));assert(css.includes('prefers-reduced-motion:reduce'));assert(css.includes('.cinema-reduced'));assert(!/font-size:\s*(?:[1-9]|1[01])px/.test(css));assert(!effect.includes('new Audio('));
 });
+
+test('critical damage doubles only base dice and resource notes remain distinct from the attack roll',()=>{
+ const normal=e.damageDice('Dano / Efeito: 2d6 +3 cortante',false,(n,s)=>Array(n).fill(s)),critical=e.damageDice('Dano / Efeito: 2d6 +3 cortante',true,(n,s)=>Array(n).fill(s));assert.equal(normal.formula,'2d6+3');assert.equal(critical.formula,'4d6+3');assert.equal(critical.total,27);
+ const ui=readFileSync('components/player-combat-mode.tsx','utf8');assert(ui.includes('damageDice(art.damage,Boolean(test?.naturalTwenty))'));assert(ui.includes('damageDice(i.notes,r.naturalTwenty)'));assert(ui.includes('Dados-base já dobrados por 20 natural'));
+});

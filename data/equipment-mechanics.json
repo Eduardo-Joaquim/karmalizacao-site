@@ -176,7 +176,7 @@
     "spaces": 2.0
   },
   "montante": {
-    "category": "gear",
+    "category": "weapon",
     "minStrength": 3,
     "armorClass": 0,
     "agilityCap": 99,
@@ -224,7 +224,7 @@
     "spaces": 3.0
   },
   "azagaia": {
-    "category": "gear",
+    "category": "weapon",
     "minStrength": 1,
     "armorClass": 0,
     "agilityCap": 99,
@@ -280,7 +280,7 @@
     "spaces": 3.0
   },
   "funda": {
-    "category": "gear",
+    "category": "weapon",
     "minStrength": 1,
     "armorClass": 0,
     "agilityCap": 99,
@@ -1200,7 +1200,7 @@
     "spaces": 2.0
   },
   "baioneta": {
-    "category": "gear",
+    "category": "weapon",
     "minStrength": 0,
     "armorClass": 0,
     "agilityCap": 99,

@@ -43,3 +43,11 @@ Som sintetizado e vibração começam desligados e exigem ativação do usuário
 O Mestre mantém uma caixa local de avisos de fase e entrega cada evento às fichas vinculadas pela API de combate; rolagens de NPCs também são retransmitidas sem cobrar Karma dos espectadores. Reenvios usam o mesmo ID e há recuperação após falhas transitórias. Cada ficha conserva um resumo das últimas fases por chefe, separado da própria CA e dos próprios recursos. Isso transporta avisos entre dispositivos; não torna o encontro, a iniciativa ou os NPCs uma campanha compartilhada no servidor.
 
 Fases personalizadas permitem limiar de Vida/percentual/Âncoras, CA final, Resistência e habilidades existentes liberadas. Configurações e efeitos valem apenas no encontro. Nenhuma fase reabastece Vida ou Karma. A redução não divina da Mãe do Vazio exige selecionar a fonte de dano; efeitos condicionais seguem a ficha.
+
+## Patch 1.14
+
+Iniciativa usa Reflexos com Agilidade, sem reservar a parada completa para destreinados. Defesas rápidas usam as abordagens indicadas nos botões; perícias agrupadas são lidas pelo parser compartilhado do catálogo. A seleção de alvos de área é local; cada aplicação preserva a autorização por ficha, Resistência e escudo individuais. Falhas parciais de sincronização nomeiam os alvos que não receberam o efeito, sem cobrar novamente os demais.
+
+Exportação de encontro leva estado dos NPCs, rodada e iniciativa. Jogadores são referências por ID, nome, equipe e iniciativa, sem payload completo nem tokens. Ao importar, reconectar os jogadores por seus links recupera a equipe e iniciativa salvas; não sobrescreve recursos no servidor. Arquivos são validados antes de substituir o encontro, até 5 MB e 60 participantes. A biblioteca da Forja valida até 30 modelos e informa falhas de armazenamento. Limpar o encontro não apaga fichas de jogadores.
+
+O descanso seguro é uma ação autorizada e confirmada: Vida/Karma máximos, escudo e Saturação zero, rodada 1, Domínios limpos, Reação padrão, Forma encerrada/desbloqueada. Carga de Corrupção e condições são preservadas. Testes, dano e cura não são disparados pelo descanso. Técnicas e armas exibem dados-base dobrados em 20 natural, sem somar gratuitamente dados adicionais ou aplicar dano ao alvo.

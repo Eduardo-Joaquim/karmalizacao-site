@@ -38,3 +38,10 @@ test('renaming armor preserves its stable mechanics and catalog identity',()=>{
 test('guest page retains authenticated writes and the draft handoff does not overwrite a saved character',()=>{
  const page=readFileSync('app/personagem/page.tsx','utf8'),builder=readFileSync('components/character-builder.tsx','utf8'),api=readFileSync('app/api/personagens/route.ts','utf8');assert(!page.includes('requireChatGPTUser'));assert(page.includes('authenticated={Boolean(user)}'));assert(builder.includes('karmalizacao-guest-draft-v1'));assert(builder.includes('setActiveId(null); commitDraft'));assert(api.includes('if (!user) return unauthorized()'));assert(api.includes('owner_email = ?'));assert(api.includes('byteLength > 1_900_000'));
 });
+
+test('patch 1.14 gives each region the same stage curve and scales basic weapon damage',()=>{
+ const ts=read('data/early-threats.json');for(const region of ['gaeria','ignaria','aeria','torre'])assert.deepEqual(ts.filter(t=>t.region===region).map(t=>t.stage).sort(),['I','I','II','III','IV']);
+ for(const t of ts){assert.equal(t.attack.damage,{I:'1d6',II:'1d8',III:'1d10',IV:'2d6'}[t.stage]);assert.equal(t.attack.dice,Math.ceil(t.attributes[0]/2));const m=t.technique.test.match(/^(Força|Espírito)/);if(m)assert.equal(t.technique.dice,Math.ceil(t.attributes[m[1]==='Força'?0:5]/2),t.id);}
+ const gear=read('data/equipment-catalog.json');for(const id of ['montante','azagaia','funda','baioneta'])assert.equal(gear.find(i=>i.id===id).category,'weapon');
+ assert(!readFileSync('docs/bestiario.md','utf8').includes('o catálogo de criaturas ainda não possui verbetes'));
+});

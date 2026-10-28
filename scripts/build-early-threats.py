@@ -4,6 +4,12 @@ import json
 root = Path(__file__).resolve().parents[1]
 threats = json.loads((root / 'data/early-threats.json').read_text())
 regions = {'gaeria': 'Gaéria', 'ignaria': 'Ignária', 'aeria': 'Aéria', 'torre': 'Torre'}
+for region in regions:
+    assert sorted(c['stage'] for c in threats if c['region']==region)==['I','I','II','III','IV'], f'Curva de Etapas divergente em {region}'
+for c in threats:
+    assert c['attack']['damage']=={'I':'1d6','II':'1d8','III':'1d10','IV':'2d6'}[c['stage']], f'Dano básico divergente: {c["id"]}'
+    assert c['attack']['dice']==(c['attributes'][0]+1)//2, f'Reserva básica divergente: {c["id"]}'
+
 text = '## 06 · Monstros e ameaças de rota {#ameacas-iniciais}\n\n[Consultar as fichas e filtrar por região ou Etapa](/bestiario/ameacas).\n\nAs indicações de andar descrevem habitats destas criaturas; não tornam todo habitante de um andar igualmente poderoso. Cada criatura tem uma Principal, um Movimento, uma Livre e uma Reação por rodada. As fichas usam Vida e CA da referência de ameaça; condições e alcance continuam exigindo meios físicos.\n\n'
 for key, name in regions.items():
     text += f'### Ameaças · {name}\n\n'

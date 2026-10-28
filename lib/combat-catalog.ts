@@ -13,13 +13,25 @@ import threats from '@/data/early-threats.json';
 import costs from '@/data/technique-construction.json';
 import { usageCost } from '@/lib/combat-repertoire';
 import { ALL_SKILLS, ATTRIBUTES } from '@/lib/character-data';
-import { defaultApproach } from '@/lib/combat-engine';
+import { defaultApproach, randomDice } from '@/lib/combat-engine';
+import { resolveRoll } from '@/lib/table-play';
 export type NpcArt={id:string;name:string;cost:number|null;text:string;calculation:string;roll:string;damage:string;attack:boolean;action:string;domain?:string};
 export type NpcTemplate={id:string;name:string;stage:string;source:string;life:number;karma:number;ca:number;movement:string;attributes:number[];skills:string;traits:string;arts:NpcArt[];reactions:number;phase?:number;phases?:BossPhase[];pc?:number;resistance:number};
 function plain(s:unknown):string{return String(s??'').replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();}
 function fields(x:Record<string,unknown>){return ((x.fields??[]) as {label:string;html:string}[]).map(f=>`${f.label}: ${plain(f.html)}`).join('\n');}
 function numbers(v:unknown){return parseInt(String(v??''))||0;}
-function skillsIn(text:string){return ALL_SKILLS.flatMap(name=>{const m=text.match(new RegExp(`${name}\\s+([123])(?:\\b)`,'i'));return m?[{name,level:Number(m[1])}]:[];});}
+export function skillsIn(text:string){
+ const escaped=ALL_SKILLS.map(n=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).sort((a,b)=>b.length-a.length).join('|');
+ const grouped=new RegExp(`((?:${escaped})(?:\\s*(?:,| e |/)\\s*(?:${escaped}))*)\\s+([0-3])\\b`,'gi');
+ const found=new Map<string,number>();
+ for(const m of text.matchAll(grouped))for(const name of ALL_SKILLS){const names=m[1].split(/,|\s+e\s+|\//i).map(n=>n.trim().toLocaleLowerCase('pt-BR'));if(names.includes(name.toLocaleLowerCase('pt-BR')))found.set(name,Math.max(found.get(name)??0,Number(m[2])));}
+ return [...found].map(([name,level])=>({name,level}));
+}
+export function npcSkillRoll(npc:Pick<NpcTemplate,'attributes'|'skills'>,skill:string,attribute:typeof ATTRIBUTES[number],diceSource=(n:number)=>randomDice(n)){
+ const value=npc.attributes[ATTRIBUTES.indexOf(attribute)]??0,level=skillsIn(npc.skills).find(s=>s.name===skill)?.level??0;
+ const count=value>0&&level>0?Math.ceil(value/2):1,bonus=value===0?-4:[0,2,5,10][level]+(attribute==='Intelecto'&&level>0?Math.min(3,Math.floor(value/2)):0);
+ const dice=diceSource(count);return {...resolveRoll(dice,bonus),dice,bonus,formula:`${count}d20 ${bonus>=0?'+':''}${bonus}`};
+}
 function formula(text:string,attributes:number[],skills:string){
  const explicit=text.match(/(?:maior de |menor de )?(\d+)d20\s*([+−-])\s*(\d+)/i);if(explicit)return `${explicit[1]}d20 ${explicit[2]==='−'?'-':explicit[2]}${explicit[3]}`;
  const skill=ALL_SKILLS.filter(n=>text.includes(n)).sort((a,b)=>b.length-a.length)[0];if(!skill)return '';
@@ -56,6 +68,6 @@ export const combatCatalog:NpcTemplate[]=[
  }),
  ...sins.map(p=>{const traits=p.blocks.filter(b=>b.kind==='trait').map(b=>`${b.title}: ${fields(b)}`).join('\n');return {id:p.slug,pc:numbers(p.pc),name:p.name,source:'Corte da Falsa Santa',stage:p.role,life:numbers(p.life),karma:numbers(p.karma),ca:numbers(p.ca),movement:p.movement,attributes:p.attributes,skills:traits,traits,arts:p.blocks.filter(b=>b.kind!=='trait'||b.cost).map((b,i)=>art({...b,name:b.title},p.slug,p.attributes,traits,i)),reactions:p.slug==='prorrogadora-da-extincao'?3:2,phase:({euphere:90,'maelia-veyr':60,geppeto:40} as Record<string,number>)[p.slug],resistance:0};}),
  ...summons.map(p=>({id:`summon-${p.id}`,name:p.name,source:'Teatro de Geppeto',stage:`Invocação ${p.grade}`,life:p.life,karma:0,ca:p.ca,movement:`${p.movement} m`,attributes:p.attributes,skills:p.skills,traits:`${p.weakness} Chamada ${p.call}; manutenção ${p.maintenance}, pagas por Geppeto.`,arts:[{id:'basic',name:p.attack.name,cost:0,text:p.attack.range,roll:p.attack.roll,damage:p.attack.damage,attack:true,action:'Principal',calculation:'Ataque básico: 0 Karma'},...p.abilities.map((a,i)=>art(a,p.id,p.attributes,p.skills,i))],reactions:1,resistance:0})),
- ...threats.map(p=>({id:p.id,name:p.name,source:`Ameaça · ${p.region}`,stage:`Etapa ${p.stage}`,life:p.life,karma:p.karma,ca:p.ca,movement:`${p.movement} m`,attributes:p.attributes,skills:p.skills.map(s=>`${s.name} ${s.level}`).join('; '),traits:`${p.trait.name}: ${p.trait.effect}`,arts:[{id:'basic',name:p.attack.name,cost:0,text:p.attack.range,roll:`${p.attack.dice}d20 +${p.attack.bonus}`,damage:p.attack.damage,attack:true,action:'Principal',calculation:'Ataque básico: 0 Karma'},{id:'tech',name:p.technique.name,cost:p.technique.cost,text:p.technique.effect,roll:`${p.technique.dice}d20 +${p.technique.bonus}`,damage:p.technique.effect.match(/\d+d(?:4|6|8|10|12|20)/)?.[0]??'',attack:/contra CA|dano/.test(p.technique.effect),action:p.technique.action,calculation:p.technique.components.map(c=>`${c.value} ${c.label}`).join(' + ')}],reactions:1,resistance:0})),
+ ...threats.map(p=>({id:p.id,name:p.name,source:`Ameaça · ${p.region}`,stage:`Etapa ${p.stage}`,life:p.life,karma:p.karma,ca:p.ca,movement:`${p.movement} m`,attributes:p.attributes,skills:p.skills.map(s=>`${s.name} ${s.level}`).join('; '),traits:`${p.trait.name}: ${p.trait.effect}`,arts:[{id:'basic',name:p.attack.name,cost:0,text:p.attack.range,roll:`${p.attack.dice}d20 +${p.attack.bonus}`,damage:p.attack.damage,attack:true,action:'Principal',calculation:'Ataque básico: 0 Karma'},{id:'tech',name:p.technique.name,cost:p.technique.cost,text:p.technique.effect,roll:/Automático|sem teste/i.test(p.technique.test)?'':`${p.technique.dice}d20 +${p.technique.bonus}`,damage:p.technique.effect.match(/\d+d(?:4|6|8|10|12|20)/)?.[0]??'',attack:/contra (?:a )?CA/i.test(`${p.technique.test} ${p.technique.effect}`),action:p.technique.action,calculation:p.technique.components.map(c=>`${c.value} ${c.label}`).join(' + ')}],reactions:1,resistance:0})),
 ].map(p=>{const profile=profiles.find(x=>String(x.id)===p.id);const facts=(profile?.facts??[]) as {fields:{label:string;html:string}[]}[];const domains=facts.filter(f=>f.fields.some(x=>/^Domínio — (Força|Velocidade|Resistência|Técnica|Superação) manifestada/.test(x.label))).map((f,i)=>{const title=f.fields[0].label,name=title.match(/Domínio — (\S+)/)?.[1]??title,text=fields(f),cost=Number(text.match(/(\d+) Karma/)?.[1]??3);return {id:`domain-${i}`,name:`Manifestar ${name}`,domain:name,cost,text,calculation:`Ativação: ${cost} Karma, com os Refinamentos registrados.`,roll:'',damage:'',attack:false,action:'Extra'};});return {...p,arts:[...domains,...p.arts]};}).filter((p,i,a)=>a.findIndex(x=>x.id===p.id)===i).sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));
 export const earlyPresets=threats.slice(0,12).map(t=>combatCatalog.find(c=>c.id===t.id)!);

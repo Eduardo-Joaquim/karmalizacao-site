@@ -103,6 +103,7 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
   }
   if(op.type==='round'){s.round=Math.min(99999,s.round+1);s.reactions=1;s.domainRounds=Object.fromEntries(Object.entries(s.domainRounds).map(([k,v])=>[k,Math.max(0,v-1)]));if(next.corruption.formActive)next.corruption={...next.corruption,formTurns:Math.min(999,(next.corruption.formTurns??0)+1)};}
   if(op.type==='scene'){s.round=1;s.reactions=1;s.domainRounds={};}
+  if(op.type==='rest'){s={...s,inCombat:false,currentLife:max.life,currentKarma:max.karma,tempShield:0,domainRounds:{},round:1,reactions:1};next.alchemicalSaturation=0;next.combat={life:s.currentLife,karma:s.currentKarma,shield:0,round:1,domainRounds:{},temporaryCharges:0};next.corruption={...draft.corruption,formBlocked:false,formActive:false,formTurns:0};event.details='Descanso longo seguro: recursos restaurados e Saturação limpa; Carga de Corrupção e condições exigem suas regras próprias.';}
   if(next.corruption.charge===10 && next.corruption.formActive){event.details=(event.details??'')+' Carga 10: resolva a Ruptura CD 24. Ao encerrar: Carga 7, Forma encerrada e bloqueada, Exausto.';}
   event.lifeDelta=s.currentLife-before;event.karmaDelta=s.currentKarma-karmaBefore;event.shieldDelta=s.tempShield-shieldBefore;
   s.lastActionLog=event;s.combatFeed=[...s.combatFeed,event].slice(-25);

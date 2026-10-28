@@ -14,7 +14,7 @@
     "attributes": [
       2,
       3,
-      2,
+      3,
       1,
       1,
       2
@@ -58,7 +58,7 @@
       ],
       "description": "Abre as mandíbulas e expele uma língua curta de brasas.",
       "effect": "Um alvo a 5 m; total 1d6 de Fogo, parcial metade; falha nada.",
-      "test": "Espírito + Controle de Fogo",
+      "test": "Espírito + Controle de Fogo contra CA",
       "dice": 1,
       "bonus": 2
     }
@@ -77,11 +77,11 @@
     "movement": 7,
     "attributes": [
       2,
-      3,
-      2,
+      1,
+      4,
       1,
       1,
-      2
+      1
     ],
     "skills": [
       {
@@ -126,7 +126,7 @@
       ],
       "description": "As pinças se fecham sobre o pé que interrompe sua passagem.",
       "effect": "Um alvo em contato; total 1d6 de impacto e −2 m no próximo Movimento, até o início do turno seguinte do besouro; parcial metade, sem lentidão.",
-      "test": "Força + Luta",
+      "test": "Força + Luta contra CA",
       "dice": 1,
       "bonus": 2
     }
@@ -144,12 +144,12 @@
     "karma": 14,
     "movement": 7,
     "attributes": [
-      3,
       4,
       3,
+      4,
+      1,
       2,
-      2,
-      3
+      2
     ],
     "skills": [
       {
@@ -173,7 +173,7 @@
       "name": "Cutelo",
       "dice": 2,
       "bonus": 2,
-      "damage": "1d6",
+      "damage": "1d8",
       "range": "2 m"
     },
     "technique": {
@@ -194,7 +194,7 @@
       ],
       "description": "Lança o corpo contra o apoio do oponente.",
       "effect": "Em contato; total 1d12 de impacto e empurra 2 m por trajeto livre; parcial metade, sem empurrão.",
-      "test": "Força + Luta",
+      "test": "Força + Luta contra CA",
       "dice": 2,
       "bonus": 2
     }
@@ -213,10 +213,10 @@
     "movement": 7,
     "attributes": [
       4,
-      5,
       4,
-      3,
-      3,
+      5,
+      2,
+      1,
       4
     ],
     "skills": [
@@ -241,7 +241,7 @@
       "name": "Sucção",
       "dice": 2,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "1d10",
       "range": "2 m"
     },
     "technique": {
@@ -262,7 +262,7 @@
       ],
       "description": "Contrai o corpo e lança água pressurizada pela boca circular.",
       "effect": "Um alvo a 15 m; total 2d10 de Água pressurizada, parcial metade; falha nada. Não inclui queimadura.",
-      "test": "Espírito + Controle de Água",
+      "test": "Espírito + Controle de Água contra CA",
       "dice": 2,
       "bonus": 5
     }
@@ -280,11 +280,11 @@
     "karma": 30,
     "movement": 7,
     "attributes": [
-      5,
-      4,
       6,
-      3,
       2,
+      8,
+      2,
+      1,
       5
     ],
     "skills": [
@@ -309,7 +309,7 @@
       "name": "Braço de prensa",
       "dice": 3,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "2d6",
       "range": "2 m"
     },
     "technique": {
@@ -330,7 +330,7 @@
       ],
       "description": "Trava o apoio e fecha as placas de uma prensa de construção.",
       "effect": "Exige iniciar o turno adjacente e abrir mão do Movimento; total 2d12 de impacto e Derrubado, parcial metade sem queda; falha nada.",
-      "test": "Espírito + Canalização de Karma",
+      "test": "Espírito + Canalização de Karma contra CA",
       "dice": 3,
       "bonus": 5
     }
@@ -349,11 +349,11 @@
     "movement": 7,
     "attributes": [
       2,
-      3,
+      4,
       2,
       1,
       1,
-      2
+      1
     ],
     "skills": [
       {
@@ -397,8 +397,8 @@
         }
       ],
       "description": "Baixa o corpo e corre entre pés e rodas.",
-      "effect": "Movimento: percorre até 5 m por passagem física livre; não ataca nem ignora Reações. Automático.",
-      "test": "Força + Luta",
+      "effect": "Movimento: desloca até 5 m adicionais ao deslocamento normal desta rodada, por trajeto livre e fisicamente acessível. Reações disparadas por movimento continuam sendo resolvidas normalmente; não atravessa criaturas ou barreiras nem concede ataque.",
+      "test": "Automático; sem teste",
       "dice": 1,
       "bonus": 2
     }
@@ -416,9 +416,9 @@
     "karma": 8,
     "movement": 7,
     "attributes": [
-      2,
-      3,
-      2,
+      1,
+      4,
+      1,
       1,
       1,
       2
@@ -462,7 +462,7 @@
       ],
       "description": "Parte a ponta mineral do ferrão contra uma superfície.",
       "effect": "Um alvo a 5 m; total 1d6 perfurante, parcial metade; falha nada.",
-      "test": "Espírito + Controle de Terra",
+      "test": "Espírito + Controle de Terra contra CA",
       "dice": 1,
       "bonus": 2
     }
@@ -482,10 +482,10 @@
     "attributes": [
       3,
       4,
+      4,
       3,
       2,
-      2,
-      3
+      1
     ],
     "skills": [
       {
@@ -503,13 +503,13 @@
     ],
     "trait": {
       "name": "Abrigo conhecido",
-      "effect": "Quando ocupa cobertura física real, recebe apenas o benefício normal daquela cobertura. Conhece uma rota de retirada descrita no encontro, sem teleporte ou fuga automática."
+      "effect": "Quando ocupa cobertura física real, recebe +1 adicional na CA além do benefício normal da cobertura. Conhece uma rota de retirada física no encontro, sem teleporte."
     },
     "attack": {
       "name": "Lança curta",
       "dice": 2,
       "bonus": 2,
-      "damage": "1d6",
+      "damage": "1d8",
       "range": "2 m"
     },
     "technique": {
@@ -530,7 +530,7 @@
       ],
       "description": "A haste se atravessa entre o peito e a ponta da arma.",
       "effect": "Um alvo em contato; total 1d12 de impacto e empurra 2 m; parcial metade sem empurrão; falha nada.",
-      "test": "Força + Luta",
+      "test": "Força + Luta contra CA",
       "dice": 2,
       "bonus": 2
     }
@@ -551,9 +551,9 @@
       4,
       5,
       4,
-      3,
-      3,
-      4
+      1,
+      2,
+      3
     ],
     "skills": [
       {
@@ -577,7 +577,7 @@
       "name": "Mordida",
       "dice": 2,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "1d10",
       "range": "2 m"
     },
     "technique": {
@@ -602,7 +602,7 @@
       ],
       "description": "Uma raiz percebida se ergue diante das patas do alvo.",
       "effect": "Um alvo a 15 m, apoiado em chão com vegetação; total 2d10 de Terra e Derrubado; parcial metade sem queda; falha nada.",
-      "test": "Espírito + Controle de Terra",
+      "test": "Espírito + Controle de Terra contra CA",
       "dice": 2,
       "bonus": 5
     }
@@ -620,11 +620,11 @@
     "karma": 30,
     "movement": 7,
     "attributes": [
-      5,
-      4,
       6,
-      3,
+      1,
+      8,
       2,
+      1,
       5
     ],
     "skills": [
@@ -649,7 +649,7 @@
       "name": "Mão de argila",
       "dice": 3,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "2d6",
       "range": "2 m"
     },
     "technique": {
@@ -669,8 +669,8 @@
         }
       ],
       "description": "Afunda o piso solto numa faixa estreita diante do corpo.",
-      "effect": "Principal: área de raio 2 m adjacente torna-se terreno difícil para todos até o início do próximo turno. Sem dano, teste ou captura.",
-      "test": "Espírito + Controle de Terra",
+      "effect": "Principal: afunda solo solto em uma área adjacente de raio 2 m, tornando-a terreno difícil para todos até o início do próximo turno. Sem dano, teste ou captura; exige chão que possa ser deformado.",
+      "test": "Automático; sem teste",
       "dice": 3,
       "bonus": 5
     }
@@ -688,10 +688,10 @@
     "karma": 8,
     "movement": 7,
     "attributes": [
-      2,
-      3,
-      2,
       1,
+      4,
+      1,
+      2,
       1,
       2
     ],
@@ -737,7 +737,7 @@
         }
       ],
       "description": "Corta a passagem num voo baixo e brusco.",
-      "effect": "Movimento: desloca 5 m por rota aérea livre; não concede ataque nem cancela Reações.",
+      "effect": "Movimento: desloca até 5 m adicionais ao deslocamento normal desta rodada, por trajeto aéreo livre. Reações disparadas por movimento continuam sendo resolvidas normalmente; não atravessa criaturas ou barreiras nem concede ataque.",
       "test": "Força + Luta",
       "dice": 1,
       "bonus": 2
@@ -756,10 +756,10 @@
     "karma": 8,
     "movement": 7,
     "attributes": [
-      2,
-      3,
-      2,
       1,
+      4,
+      2,
+      2,
       1,
       2
     ],
@@ -779,7 +779,7 @@
     ],
     "trait": {
       "name": "Carga residual",
-      "effect": "Não produz energia industrial nem abastece aparelhos. Uma descarga percebida serve apenas como luz fraca no próprio corpo."
+      "effect": "Recebe Resistência 1 contra dano kármico e ilumina fracamente até 2 m ao redor do próprio corpo; não abastece máquinas."
     },
     "attack": {
       "name": "Garras",
@@ -802,7 +802,7 @@
       ],
       "description": "Uma carga kármica salta entre o pelo e a superfície tocada.",
       "effect": "Um alvo em contato; total 1d6 kármico, parcial metade; falha nada.",
-      "test": "Espírito + Canalização de Karma",
+      "test": "Espírito + Canalização de Karma contra CA",
       "dice": 1,
       "bonus": 2
     }
@@ -823,9 +823,9 @@
       3,
       4,
       3,
+      3,
       2,
-      2,
-      3
+      1
     ],
     "skills": [
       {
@@ -849,7 +849,7 @@
       "name": "Cassetete",
       "dice": 2,
       "bonus": 2,
-      "damage": "1d6",
+      "damage": "1d8",
       "range": "2 m"
     },
     "technique": {
@@ -870,7 +870,7 @@
       ],
       "description": "Usa o braço inteiro para arrancar um objeto da linha de guarda.",
       "effect": "Um alvo em contato, objeto alcançável; total 1d12 de impacto e Desarmar; parcial metade sem desarme; falha nada.",
-      "test": "Força + Luta",
+      "test": "Força + Luta contra CA",
       "dice": 2,
       "bonus": 2
     }
@@ -888,11 +888,11 @@
     "karma": 22,
     "movement": 7,
     "attributes": [
-      4,
-      5,
-      4,
       3,
+      6,
       3,
+      2,
+      1,
       4
     ],
     "skills": [
@@ -917,7 +917,7 @@
       "name": "Cauda",
       "dice": 2,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "1d10",
       "range": "2 m"
     },
     "technique": {
@@ -942,7 +942,7 @@
       ],
       "description": "Curva as membranas e comprime a corrente de ar num golpe transversal.",
       "effect": "Um alvo a 15 m; total 2d10 de Ar e empurra 2 m, interrompidos por barreira sólida; parcial metade sem empurrão; falha nada.",
-      "test": "Espírito + Controle de Ar",
+      "test": "Espírito + Controle de Ar contra CA",
       "dice": 2,
       "bonus": 5
     }
@@ -951,21 +951,21 @@
     "id": "marionete-ferroviaria",
     "name": "Marionete Ferroviária",
     "region": "aeria",
-    "stage": "III",
-    "rank": "C",
+    "stage": "IV",
+    "rank": "B",
     "habitat": "Túneis de manutenção em linhas desativadas",
     "lore": "Caminha repetindo os sinais de um antigo sinaleiro; o rosto de metal está voltado para trilhos vazios.",
-    "life": 60,
-    "ca": 19,
-    "karma": 22,
+    "life": 80,
+    "ca": 21,
+    "karma": 30,
     "movement": 7,
     "attributes": [
-      4,
       5,
-      4,
+      2,
+      7,
       3,
-      3,
-      4
+      1,
+      6
     ],
     "skills": [
       {
@@ -987,9 +987,9 @@
     },
     "attack": {
       "name": "Chave longa",
-      "dice": 2,
+      "dice": 3,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "2d6",
       "range": "2 m"
     },
     "technique": {
@@ -1010,8 +1010,8 @@
       ],
       "description": "A chave golpeia o apoio de quem invade sua linha de trabalho.",
       "effect": "Um alvo em contato; total 2d10 de impacto e −2 m até o início do próximo turno; parcial metade sem lentidão.",
-      "test": "Espírito + Canalização de Karma",
-      "dice": 2,
+      "test": "Espírito + Canalização de Karma contra CA",
+      "dice": 3,
       "bonus": 5
     }
   },
@@ -1029,11 +1029,11 @@
     "movement": 7,
     "attributes": [
       2,
-      3,
-      2,
+      1,
+      4,
       1,
       1,
-      2
+      1
     ],
     "skills": [
       {
@@ -1077,7 +1077,7 @@
         }
       ],
       "description": "Solta o apoio e atravessa a quina de um degrau.",
-      "effect": "Movimento: desloca 5 m por trajeto livre ao redor de um obstáculo baixo; não atravessa criaturas ou barreiras.",
+      "effect": "Movimento: desloca até 5 m adicionais ao deslocamento normal desta rodada, por trajeto livre e fisicamente acessível. Reações disparadas por movimento continuam sendo resolvidas normalmente; não atravessa criaturas ou barreiras nem concede ataque.",
       "test": "Força + Luta",
       "dice": 1,
       "bonus": 2
@@ -1098,10 +1098,10 @@
     "attributes": [
       3,
       4,
+      2,
       3,
-      2,
-      2,
-      3
+      1,
+      4
     ],
     "skills": [
       {
@@ -1125,7 +1125,7 @@
       "name": "Toque frio",
       "dice": 2,
       "bonus": 2,
-      "damage": "1d6",
+      "damage": "1d8",
       "range": "2 m"
     },
     "technique": {
@@ -1146,7 +1146,7 @@
       ],
       "description": "A frase se repete em tom agudo, junto aos ouvidos da vítima.",
       "effect": "Um alvo percebido a 15 m; total 1d12 kármico, parcial metade; falha nada.",
-      "test": "Espírito + Canalização de Karma",
+      "test": "Espírito + Canalização de Karma contra CA",
       "dice": 2,
       "bonus": 2
     }
@@ -1165,11 +1165,11 @@
     "movement": 7,
     "attributes": [
       2,
+      2,
       3,
       2,
-      1,
-      1,
-      2
+      2,
+      1
     ],
     "skills": [
       {
@@ -1187,7 +1187,7 @@
     ],
     "trait": {
       "name": "Sinal combinado",
-      "effect": "Com uma Livre, indica um ponto visível a um cúmplice. Não concede ações, bônus ou ataques extras."
+      "effect": "Uma vez por cena, pode prestar a ação normal de Auxílio a um cúmplice a até 5 m contra um alvo visível a ambos, respeitando os demais limites e o custo de ação de Auxílio."
     },
     "attack": {
       "name": "Faca",
@@ -1210,7 +1210,7 @@
       ],
       "description": "Fecha a distância e golpeia com a mão que parecia proteger o rosto.",
       "effect": "Um alvo em contato; total 1d6 de impacto, parcial metade; falha nada.",
-      "test": "Força + Luta",
+      "test": "Força + Luta contra CA",
       "dice": 1,
       "bonus": 2
     }
@@ -1219,26 +1219,26 @@
     "id": "tecedora-de-frestas",
     "name": "Tecedora de Frestas",
     "region": "torre",
-    "stage": "II",
-    "rank": "D",
+    "stage": "III",
+    "rank": "C",
     "habitat": "2º andar · alvenaria fragmentada",
     "lore": "Os fios quase invisíveis prendem poeira nas frestas, revelando a passagem de algo maior que a aranha.",
-    "life": 40,
-    "ca": 17,
-    "karma": 14,
+    "life": 60,
+    "ca": 19,
+    "karma": 22,
     "movement": 7,
     "attributes": [
       3,
-      4,
+      5,
       3,
-      2,
-      2,
-      3
+      5,
+      1,
+      4
     ],
     "skills": [
       {
         "name": "Luta",
-        "level": 1
+        "level": 2
       },
       {
         "name": "Reflexos",
@@ -1246,7 +1246,7 @@
       },
       {
         "name": "Canalização de Karma",
-        "level": 1
+        "level": 2
       }
     ],
     "trait": {
@@ -1256,8 +1256,8 @@
     "attack": {
       "name": "Quelíceras",
       "dice": 2,
-      "bonus": 2,
-      "damage": "1d6",
+      "bonus": 5,
+      "damage": "1d10",
       "range": "2 m"
     },
     "technique": {
@@ -1278,30 +1278,30 @@
       ],
       "description": "Estica um fio entre dois apoios próximos e aguarda sua vibração.",
       "effect": "Principal: instala um alarme visível a curta distância, com até 5 m de fio por uma cena. Avisa apenas a tecedora quando tocado, sem dano ou contenção; uma Principal permite romper o fio alcançado.",
-      "test": "Espírito + Canalização de Karma",
+      "test": "Automático; sem teste",
       "dice": 2,
-      "bonus": 2
+      "bonus": 5
     }
   },
   {
     "id": "cervo-de-vidro",
     "name": "Cervo de Vidro",
     "region": "torre",
-    "stage": "III",
-    "rank": "C",
+    "stage": "IV",
+    "rank": "B",
     "habitat": "3º andar · bosque de superfícies reflexivas",
     "lore": "A luz atravessa seus chifres e muda de direção quando o corpo se volta para quem o persegue.",
-    "life": 60,
-    "ca": 19,
-    "karma": 22,
+    "life": 80,
+    "ca": 21,
+    "karma": 30,
     "movement": 7,
     "attributes": [
-      4,
       5,
+      6,
       4,
       3,
-      3,
-      4
+      1,
+      6
     ],
     "skills": [
       {
@@ -1323,9 +1323,9 @@
     },
     "attack": {
       "name": "Galhada",
-      "dice": 2,
+      "dice": 3,
       "bonus": 5,
-      "damage": "1d6",
+      "damage": "2d6",
       "range": "2 m"
     },
     "technique": {
@@ -1350,8 +1350,8 @@
       ],
       "description": "Inclina a galhada e concentra um único reflexo sobre os olhos do alvo.",
       "effect": "Um alvo a 15 m; total 2d10 de Luz e Ofuscado até o início do próximo turno; parcial metade sem condição; falha nada.",
-      "test": "Espírito + Controle de Luz",
-      "dice": 2,
+      "test": "Espírito + Controle de Luz contra CA",
+      "dice": 3,
       "bonus": 5
     }
   }

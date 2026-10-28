@@ -18,7 +18,7 @@ section = """## 01 · Ignária {#ignaria}
 
 Forjas, rios quentes e cidades protegidas pela pedra. Sárkora abriga a Corte Haimaton; Aqueronte recebe a dinastia Lucifero. Entre as comunidades ghouls, o trono permanece vago.
 
-**Monstros locais:** o catálogo de criaturas ainda não possui verbetes.
+**Monstros locais:** Cão de Cinzas, Besouro de Escória, Batedor Ghoul Raso, Lampreia de Enxofre e Autômato de Forja Defeituoso ([consultar ameaças de Ignária](/bestiario/ameacas?regiao=ignaria)).
 
 **Organizações e nobres:** Casa Ducal Agares; Casas Marquesais Dorne, Kessel, Andras, Marchosias e Lunaviel; Casa Condal Senn e Casa Viscondal Kost.
 

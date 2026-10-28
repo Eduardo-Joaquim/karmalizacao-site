@@ -138,3 +138,8 @@ Polling de 1,5 s visível/6 s em segundo plano, ETag e BroadcastChannel. Não pr
 ## Cinema de combate
 
 lib/combat-visuals.ts e boss-phase-state.ts são a fonte dos avisos: dados reais, crítico no dado selecionado, fases idempotentes, sem reposição de recursos. Euphere 90/1, Geppeto 40 ou três Âncoras; Maélia metade da Vida só desbloqueia a forma, exige Controle 17, 13 Karma e 6 PC. Não inventar fase oficial da Falsa Santa. Fases/rolagens de NPCs chegam às fichas pelo endpoint como phase/spectacle, sem modificar a defesa do jogador. Som/vibração desligados por padrão, movimento reduzido por sistema ou botão. Manter tests/combat-visuals.test.mjs e os contratos de sincronização.
+
+
+## Patch 1.14
+
+As ameaças iniciais têm curva I/I/II/III/IV por região e dano básico 1d6/1d8/1d10/2d6. build-early-threats valida reservas e curva. skillsIn lê grupos de perícias sem inferir treino não declarado. Montante, Azagaia, Funda e Baioneta são armas por identificador. Descanso seguro preserva Carga/condições, restaura recursos e desbloqueia a Forma por ação validada. gm-encounter valida importações e biblioteca: não exportar tokens nem payload de jogadores; reconectar referências importadas recupera equipe/iniciativa sem alterar a ficha remota. Não transformar alarmes/terreno em ataques contra CA por conterem a palavra dano.
