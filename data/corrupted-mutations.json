@@ -1,0 +1,10 @@
+[
+ {"id":"carapaca","name":"Carapaça abissal","effect":"+1 CA; proteções corporais sobrenaturais idênticas usam apenas o maior bônus."},
+ {"id":"membros","name":"Membros predatórios","effect":"Arma natural 1d8 cortante ou perfurante, Força + Luta, Principal, 2 m; sem ataque adicional."},
+ {"id":"aceleracao","name":"Aceleração antinatural","effect":"+2 m antes das penalidades de carga; não concede ação, voo ou passagem por obstáculos."},
+ {"id":"canalizacao","name":"Canalização profana","effect":"Uma técnica corrompida de dano por turno próprio recebe um dado adicional, após o crítico; não repete por Enxerto."},
+ {"id":"expansao","name":"Expansão predatória dos Enxertos","effect":"Exige Membros predatórios: alcance de 3 m para esses ataques básicos a partir dos Enxertos; a rede mantém seus limites."},
+ {"id":"tecido","name":"Tecido de contenção","effect":"Escudo único de 2d6 na primeira ativação da cena, compartilhado com a rede; não renova nem acumula com outros escudos."},
+ {"id":"instinto","name":"Instinto intruso","effect":"+1d20 na função registrada: técnica nomeada, Evasão, Atletismo para deslocamento ou Percepção pela rede; nunca Controle."},
+ {"id":"pele","name":"Pele refratária","effect":"Resistência 2 a cortante, perfurante ou contundente, escolhido no registro; proteções corporais idênticas não se somam."}
+]

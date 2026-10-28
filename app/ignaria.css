@@ -1,0 +1,26 @@
+.ignaria-content .elven-identity{background:radial-gradient(ellipse at 95% 5%,#aa72c921,transparent 60%),linear-gradient(140deg,#1c1526,#100e17)}
+.ignaria-content .elven-sheet{background:#131019;border-color:#7a5d7359}
+.ignaria-content .elven-crest{color:var(--elven-accent);filter:drop-shadow(0 0 24px #a475bd25)}
+.ignaria-content .elven-ability{background:linear-gradient(145deg,#27202f,#19141f);border-color:#b391b440}
+.ignaria-content .elven-ability header{background:#ae85be0b;border-color:#aa86bd35}
+.ignaria-content .elven-signature{background:radial-gradient(ellipse at 90% 0%,#a66ab72b,transparent 65%),linear-gradient(140deg,#362839,#19131f);border-color:#d3b58b88}
+.ignaria-content .elven-lore,.ignaria-content .elven-combat{border-color:#b28fbd26}
+.ignaria-content .elven-facts>section{background:#a58dbb09;border-color:#a58dbb26}
+.ghouls-content .elven-identity{background:radial-gradient(ellipse at 90% 10%,#ad946b26,transparent 60%),linear-gradient(145deg,#292621,#151512)}
+.ghouls-content .elven-sheet{background:#191917;border-color:#a9916859}
+.ghouls-content .elven-ability{background:linear-gradient(145deg,#302e28,#22211e);border-color:#c2ae7d40}
+.ghouls-content .elven-signature{background:radial-gradient(ellipse at 95% 0%,#c79e4c23,transparent 65%),linear-gradient(140deg,#3b3326,#24221d);border-color:#cdb58180}
+.lunaviel-content .elven-identity{background:radial-gradient(ellipse at 95% 5%,#819bbb24,transparent 60%),linear-gradient(145deg,#1a2332,#101621)}
+.lunaviel-content .elven-sheet{background:#111923;border-color:#829db459}
+.lunaviel-content .elven-ability{background:linear-gradient(145deg,#263344,#182431);border-color:#9eb6cf40}
+.ignaria-content{--ignaria-base:#15111c;--ignaria-panel:#211a2a;--ignaria-raised:#2a2133;--ignaria-line:#ae90bf44;--ignaria-hero:radial-gradient(circle at 82% 40%,#9965be33,transparent 35%),linear-gradient(115deg,#2e203b,#15111e 70%)}
+.ghouls-content{--ignaria-base:#191916;--ignaria-panel:#24231e;--ignaria-raised:#302e27;--ignaria-line:#b8a27144;--ignaria-hero:radial-gradient(circle at 82% 40%,#c1a56a28,transparent 35%),linear-gradient(115deg,#363125,#191916 70%)}
+.lunaviel-content{--ignaria-base:#111923;--ignaria-panel:#1b2634;--ignaria-raised:#263344;--ignaria-line:#94b0ce44;--ignaria-hero:radial-gradient(circle at 82% 40%,#8fa8cb2b,transparent 35%),linear-gradient(115deg,#23334b,#111923 70%)}
+.ignaria-content .elven-sheet-queen .elven-identity{background:var(--ignaria-hero)}
+.ignaria-content .elven-sheet-queen{border-color:var(--ignaria-line);box-shadow:0 0 0 5px var(--ignaria-base),0 0 0 6px var(--ignaria-line),0 30px 80px #0007}
+.ignaria-content .elven-lore,.ignaria-content .skill-panel{background:var(--ignaria-panel);border-color:var(--ignaria-line)}
+.ignaria-content .elven-combat{background:var(--ignaria-base)}
+.ignaria-content .elven-resource,.ignaria-content .elven-attribute-grid>div,.ignaria-content .skill-card,.ignaria-content .court-source-grid>div{background:var(--ignaria-raised);border-color:var(--ignaria-line)}
+.ignaria-realm-hero{border-color:#aa8d7359;background:radial-gradient(ellipse at 90% 10%,#9873bd22,transparent 65%),#17131e}
+.ghouls-realm-page .ignaria-realm-hero{background:radial-gradient(ellipse at 90% 10%,#b89b6b22,transparent 65%),#211e18}
+.lunaviel-realm-page .ignaria-realm-hero{background:radial-gradient(ellipse at 90% 10%,#8aabd122,transparent 65%),#141b28}

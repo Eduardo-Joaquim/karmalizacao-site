@@ -1,0 +1,2533 @@
+[
+  {
+    "slug": "euphere",
+    "name": "Euphere",
+    "sin": "Ira",
+    "title": "A escritora que ainda escolhe",
+    "role": "Abissal · Especialista · Etapa VI",
+    "rank": "SS",
+    "life": "180",
+    "karma": "126",
+    "ca": "27",
+    "movement": "11 m · voo 12 m",
+    "accent": "#e9a585",
+    "attributes": [
+      7,
+      4,
+      5,
+      8,
+      5,
+      6
+    ],
+    "phases": [
+      {
+        "name": "Sem armadura",
+        "ca": 23,
+        "partial": "11–23",
+        "total": "24+",
+        "life": "180 Vida"
+      },
+      {
+        "name": "Dragão Negro · I",
+        "ca": 27,
+        "partial": "13–27",
+        "total": "28+",
+        "life": "180–91 Vida"
+      },
+      {
+        "name": "Dragão Negro · II",
+        "ca": 27,
+        "partial": "13–27",
+        "total": "28+",
+        "life": "90–1 Vida"
+      }
+    ],
+    "summons": [],
+    "pc": "",
+    "loreHtml": "<p>Antes de ser chamada de Ira, Euphere era uma das maiores guerreiras\nabissais e discípula de Davocar. Durante o extermínio de seu povo,\ncomandou a resistência e matou a criatura que então carregava esse\ntítulo. A vitória não lhe trouxe liberdade. Capturada pela Falsa Santa,\nfoi obrigada a ocupar o lugar da inimiga que destruíra.</p>\n<p>O nome, porém, resistiu. Nas capas dos livros, nas salas de aula e\nnas dedicatórias, ela continua sendo Euphere. Seus romances guardam\ncidades perdidas, formações militares e lembranças que a corte tenta\ntransformar em silêncio. O Quarto sem Mar fala de aprisionamento; Cinzas\nno Fundo da Garganta conserva a memória dos combatentes; A Carta que\nChegou Tarde procura alguém que já não pode responder; Quando a Água\nAprendeu a Odiar descreve o dragão negro que envolve seu corpo.</p>\n<p>De pele parda e cabelos azul-escuros, Euphere fala baixo e observa as\nsaídas antes de escolher onde se sentar. As luvas escondem inscrições\nnos braços. Quando uma ordem contraria aquilo que ainda protege,\nlíquidos próximos sobem pelas paredes e sua armadura abre caminhos que\num golpe mais eficiente teria fechado. Estudantes, escritores e pessoas\nrendidas encontram nessas pequenas desobediências uma chance de\nsobreviver.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Luta 2, Reflexos 2, Atletismo 2, Canalização de Karma 2, Controle de\nÁgua 2; Tática 2 e Investigação 2 com Intelecto e Analítico. Demais\n0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Armadura Viva — Dragão Negro",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 10 Karma; manutenção de 1 Karma no início de cada turno.\nReduz em 3 o dano final recebido, além das Resistências aplicáveis.\nPossui 12 Unidades de Massa na primeira fase e 16 na segunda. Asas\nocupam 4 UM. Mais de 6 UM destacadas da carapaça reduzem sua CA em 2.\nPlacas, garras e asas não perdem Vida por ataques; o dano que supera a\ndefesa alcança Euphere. Se não pagar a manutenção, a armadura desaparece\nao fim do turno e ela fica Exausta. <strong>Composição de\nKarma:</strong> 4 Base III, 4 Cena, 2 Defesa secundária II = 10\nKarma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "10 Karma"
+      },
+      {
+        "title": "Foco Operacional",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>escolhe um alvo, área ou mecanismo no início da cena; uma vez por\nrodada, recebe +2 no primeiro teste de Luta ou Tática contra o Foco.\nTrocar exige Movimento.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Leitura Predatória",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Movimento, 13 Karma; permite usar Intelecto + Tática para atacar o\nFoco. O primeiro total de cada rodada recebe +1d6 e ignora 2 de\nResistência. <strong>Composição de Karma:</strong> 4 Base III, 1\nMovimento, 4 Cena, 3 Dado adicional, 1 Penetração = 13 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "13 Karma"
+      },
+      {
+        "title": "Horizonte Partido",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Grau III · Principal · 8 Karma · 15 m · 2 UM</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Teste: Agilidade + Luta contra CA. Total: 2d10 cortantes; pode trocar\no +1d6 do Foco por Desarmar quando houver objeto exposto. Parcial:\nmetade, sem Desarmar. Custo: 4 Base III, 2 Médio, 2 Controle secundário\nII = 8 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "8 Karma"
+      },
+      {
+        "title": "Coroa das Mil Lâminas",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Grau III · Principal · 9 Karma · raio de 3 m · 3 UM</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Teste: Agilidade + Luta contra CA. Total: 2d10 cortantes e empurra 2\nm. Parcial: metade, sem deslocamento. Atinge aliados na área. Custo: 4\nBase III, 4 Área média, 1 Empurrão 2 m = 9 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "9 Karma"
+      },
+      {
+        "title": "Martelo da Massa Furiosa",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Grau III · Principal · 6 Karma · corpo a corpo · 3 UM</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Teste: Força + Luta contra CA. Total: 2d10 de impacto e desloca 4 m.\nParcial: metade e desloca 2 m. Custo: 4 Base III, 2 Movimento secundário\nII = 6 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "6 Karma"
+      },
+      {
+        "title": "Punho da Maré Morta",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Grau III · Principal · 5 Karma · corpo a corpo</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Teste: Força + Luta contra CA. Total: 2d10 de impacto e empurra 2 m.\nParcial: metade do dano, sem empurrão. Custo: 4 Base III, 1 Empurrão 2 m\n= 5 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "5 Karma"
+      },
+      {
+        "title": "Queda do Leviatã",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Grau III · Principal · 7 Karma · raio de 2 m centrado nela;\naproximação usa Movimento normal</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Teste: Força + Luta contra CA. Total: 2d10 de impacto e Derrubado.\nParcial: metade, sem queda. Custo: 4 Base III, 2 Área pequena, 1 Caído =\n7 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "7 Karma"
+      },
+      {
+        "title": "Arco de Plasma Cru",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Grau IV · Principal · 11 Karma · 15 m</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Teste: Espírito + Canalização de Karma contra CA. Total: 2d12 de\nplasma e perda da Reação até o início do próximo turno da vítima.\nParcial: metade, sem perda da Reação. Custo: 6 Base IV, 2 Médio, 3\nControle secundário III = 11 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "11 Karma"
+      },
+      {
+        "title": "Nadir",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo · alcance",
+            "html": "<p>Assinatura · Grau IV · Principal · 15 Karma · centro a até 15 m, raio\nde 2 m · requer Armadura Viva · ocupa 2 UM</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Bênção, plasma e Karma. O Dragão Negro desprende duas costelas de sua\ncarapaça e as fecha em torno de um núcleo de plasma, sustentado por\nfilamentos de Karma. As peças se encontram sobre o ponto escolhido; a\ndescarga nasce voltada para dentro e desenha a silhueta de uma mandíbula\nnegra. Exige Armadura Viva ativa e 2 UM disponíveis, não destinadas às\nasas ou a outra estrutura. Euphere rola Espírito + Canalização de Karma\n(maior de 3d20 +5) uma vez contra a CA de cada inimigo na área; aliados\nsão excluídos pelos filamentos. Total: 2d12 de plasma e Imobilizado\npelas costelas até o início do próximo turno de Euphere. Uma Principal\npermite ao alvo tentar romper a contenção com Força + Atletismo contra o\nresultado original; empate ou sucesso liberta. Parcial: metade do dano,\nsem contenção. Falha: nenhum efeito. A descarga ocorre uma única vez; a\nprisão não causa dano recorrente, não impede ataques ou ações possíveis\ne se desfaz se a armadura terminar. As 2 UM não são consumidas: ficam\nocupadas até a contenção se desfazer e então voltam a ficar disponíveis.\nNão criam massa adicional. Uma utilização por cena; compartilha o ápice\nda cena com outras assinaturas. Não soma o dano de outra arma ou de\noutra técnica ao ataque. Os 15 Karma pagam apenas Nadir. Ativar a\nArmadura Viva exige outra Ação Principal e 10 Karma; sua manutenção\nhabitual de 1 Karma por turno continua sendo paga separadamente.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "15 Karma"
+      },
+      {
+        "title": "Traços",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>atua submersa sem penalidades por pressão ou profundidade comum;\nrecebe um dado Extra para investigar vestígios abissais. A armadura\nmolda armas e estruturas com a massa disponível; não produz criaturas\nindependentes ou matéria permanente.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Votos",
+        "kind": "weakness",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>A Última Testemunha a impede de executar estudantes, escritores,\ncivis desarmados e rendidos quando existe alternativa. Meu Nome Não Será\nApagado a obriga a reconhecer a própria identidade diante de uma\nlembrança verdadeira. Uma vez por cena, pode repetir uma resistência à\ncoerção com dois dados Extras. Pronunciar seu nome, expor as inscrições\ne apresentar passagens de seus livros abre caminhos para romper o\ncontrole.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fases",
+        "kind": "phase",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>de 180 a 91 Vida, conserva a primeira forma. Com 90 Vida ou menos, a\narmadura se compacta, conserva CA 27 e recebe 4 UM até o máximo de 16. A\nmudança não restaura Vida ou Karma nem concede uma ação.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Raça · classe · posição",
+        "value": "Abissal · Especialista · chefe SS, Etapa VI"
+      },
+      {
+        "label": "Reações",
+        "value": "Uma comum e uma adicional para defesa ou movimento"
+      }
+    ]
+  },
+  {
+    "slug": "joao-e-maria",
+    "name": "João e Maria",
+    "sin": "Gula",
+    "title": "Dois corpos. Uma fome.",
+    "role": "Ocultista e Ranger · Etapa V",
+    "rank": "S",
+    "life": "120",
+    "karma": "63 / 55",
+    "ca": "25",
+    "movement": "9 m · ambos",
+    "accent": "#e4a76e",
+    "attributes": [
+      3,
+      3,
+      4,
+      5,
+      6,
+      6
+    ],
+    "phases": [],
+    "summons": [],
+    "pc": "",
+    "loreHtml": "<p>João e Maria sobreviveram a uma instalação subterrânea que prometia\nvencer a fome. Ali, Karma, calor geotérmico e matéria viva eram\nalimentados ao mesmo projeto. Nas câmaras escuras, João aprendeu a fazer\no breu devorar luz, distância e impulso. Maria seguiu as fissuras\nquentes do subsolo, transformando obsidiana e magma em instrumentos de\ncaça para encontrá-lo.</p>\n<p>Quando finalmente alcançaram a saída, ambos estavam mortalmente\nferidos. O juramento que trocaram — não morrer antes do outro —\nencontrou resposta no Karma. Os dois corações passaram a consumir a\nmesma vida. As vontades permaneceram distintas, e com elas o poder de\ncada um.</p>\n<p>Na corte, Gula possui duas vozes. João enfraquece a resistência e\nconduz as vítimas para perto; Maria escolhe onde a perseguição termina.\nA escuridão se contrai como uma garganta antes dos rituais dele. Sob os\npés dela, a rocha brilha e esfria em lâminas negras. Quando um sofre um\nferimento, o outro perde o fôlego, mesmo sem ter sido tocado.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>João: Controle de Trevas 2, Ocultismo 2 e Reflexos 2. Maria: Controle\nde Terra 2, Controle de Fogo 2, Pontaria 2 e Reflexos 2. Cada combinação\nusa o Atributo do próprio corpo. Demais 0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Coração da Gula",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>resolva defesa, Resistência e escudo no corpo atingido; retire o dano\nrestante uma vez da reserva comum. Condições e Ferimentos pertencem ao\ncorpo afetado. Uma cura que alcance os dois na mesma resolução restaura\na reserva uma única vez. A 0 Vida, ambos ficam Morrendo e Inconscientes\ne usam um único marcador de morte. Karma, ações e concentração são\nindividuais; ambos estão na Etapa V e não possuem ápice de Grau V.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fome do Breu",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau II · Principal · 5 Karma · 15 m</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Espírito + Ocultismo contra Espírito + Ocultismo ou Presença +\nLiderança da vítima. Vitória: −2 no próximo ataque até o início do\npróximo turno de João. Empate favorece a vítima. Por 7 Karma (base III 4\n+ médio 2 + duração 1), a penalidade é −3 e dura duas rodadas. Custo: 3\nBase II, 2 Médio = 5 Karma.</p>"
+          }
+        ],
+        "grade": "II",
+        "cost": "5 Karma"
+      },
+      {
+        "title": "Correntes da Garganta Vazia",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau III · Principal · 8 Karma · 15 m</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Espírito + Ocultismo contra CA. Total: Lento e sem Reação até o\ninício do próximo turno de João. Parcial: apenas Lento. Custo: 4 Base\nIII, 2 Médio, 2 Controle secundário II = 8 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "8 Karma"
+      },
+      {
+        "title": "Liturgia da Boca Sem Fundo",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · Principal · 10 Karma · uma vez por cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Exige foco preparado e alvo a 15 m. Oposição de Espírito + Ocultismo\ncontra a defesa espiritual da vítima. Vitória: 2d12 de Trevas no início\ndo próximo turno dela. No início de cada um dos dois turnos seguintes de\nJoão, repetir o pulso exige sua Principal e mais 8 Karma; sem esse\npagamento, o ritual termina. Uma Principal e resistência contra o\nresultado registrado rompem o ritual; cobrir ou destruir o foco também o\nencerra. Custo: 6 Base IV, 2 Médio, 2 Três rodadas = 10 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "10 Karma"
+      },
+      {
+        "title": "Banquete do Breu",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · Principal · 15 Karma · uma vez por cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Centro a até 15 m, raio 5 m. Espírito + Controle de Trevas contra\ncada CA; total 2d12 de Trevas e puxa 2 m para o centro por caminho\nlivre; parcial metade e puxa 1 m; falha nada. Maria pode ser excluída.\nCusto: 6 Base IV, 2 Médio, 4 Área média, 2 Poupar Maria, 1 Empurrão = 15\nKarma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "15 Karma"
+      },
+      {
+        "title": "Flecha de Escória",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau II · Livre antes de atirar · 8 Karma · uma vez por rodada</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>+2 no teste do disparo; o dano da arma torna-se Magma/Fogo. O ataque\nconserva sua ação e seu dano-base. Custo: 3 Base II, 4 Livre, 1 Teste\nespecífico +2 = 8 Karma.</p>"
+          }
+        ],
+        "grade": "II",
+        "cost": "8 Karma"
+      },
+      {
+        "title": "Passo de Escória",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau II · Livre após Pontaria · 7 Karma · uma vez por rodada</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Move até 9 m por trajeto livre, sujeito a gatilhos normais; não\nconcede ataque ou ocultação. Esconder-se exige a ação e o teste normais.\nCusto: 3 Base II, 4 Livre = 7 Karma.</p>"
+          }
+        ],
+        "grade": "II",
+        "cost": "7 Karma"
+      },
+      {
+        "title": "Olho da Caldeira",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau III · Movimento · 9 Karma · uma vez por cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Por três rodadas, percebe calor e vibrações de criaturas em 15 m,\nrespeitando cobertura total. Por mais 5 Karma na ativação (2 por alcance\nlongo e 3 por um dado adicional), alcança 30 m; o dado adicional de 1d6\nvale somente para o próximo acerto antes do início do turno seguinte,\nnão a cada rodada. Custo: 4 Base III, 1 Movimento, 2 Médio, 2 Três\nrodadas = 9 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "9 Karma"
+      },
+      {
+        "title": "Caldeirão da Gula",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · Principal · 17 Karma · uma vez por cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Flecha-âncora a até 15 m, raio 5 m. Pontaria contra cada CA: total\n2d12 de Magma e Imobilizado até o início do próximo turno de Maria;\nparcial metade e Lento pelo mesmo prazo; falha nada. Uma Principal e\nForça + Atletismo contra o resultado inicial permitem sair antes. João e\naté dois aliados podem ser excluídos. Não causa dano periódico\nadicional. Custo: 6 Base IV, 2 Médio, 4 Área média, 2 Poupar aliados, 3\nControle secundário III = 17 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "17 Karma"
+      },
+      {
+        "title": "Vínculo da Fornalha",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>o vínculo não transmite condições entre os corpos. Impedir João de\nmanter o foco interrompe sua pressão ritual; impedir Maria de sustentar\no Caldeirão encerra a fervura. Separá-los dificulta a coordenação, mas\nnão divide a Vida nem permite transferir Karma. O Caldeirão admite fuga\nfísica e destruição de suas paredes; não impede teleporte por si só.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Classe · Etapa",
+        "value": "Ocultista · V · Ranger · V"
+      },
+      {
+        "label": "Especialidade",
+        "value": "Trevas: Breu Faminto · Terra e Fogo: Magma"
+      },
+      {
+        "label": "Karma",
+        "value": "63 · 55"
+      },
+      {
+        "label": "Vida de referência para Ferimentos",
+        "value": "120 · 120"
+      },
+      {
+        "label": "Vida compartilhada",
+        "value": "120, em uma única reserva para os dois · A mesma reserva"
+      }
+    ]
+  },
+  {
+    "slug": "geppeto",
+    "name": "Geppeto",
+    "sin": "Orgulho",
+    "title": "O diretor dos sete fios",
+    "role": "Invocador · Etapa V",
+    "rank": "S",
+    "life": "80",
+    "karma": "124",
+    "ca": "23",
+    "movement": "7 m",
+    "accent": "#d3b574",
+    "attributes": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      6
+    ],
+    "phases": [],
+    "summons": [
+      {
+        "id": "pinoquio",
+        "name": "Pinóquio",
+        "title": "O Menino de Madeira",
+        "grade": "IV",
+        "life": 45,
+        "ca": 25,
+        "movement": 11,
+        "attributes": [
+          2,
+          10,
+          2,
+          2,
+          12,
+          2
+        ],
+        "call": 8,
+        "maintenance": 3,
+        "skills": "Luta 2; Conjuração Vincular 2; demais 0.",
+        "attack": {
+          "name": "Golpe de Madeira",
+          "attribute": 1,
+          "training": 2,
+          "damage": "3d8 físicos",
+          "range": "Corpo a corpo, até 2 m",
+          "roll": "maior de 5d20 +5"
+        },
+        "weakness": "Uma Principal e Espírito + Ocultismo CD 18 encerram o comando antes de cumpri-lo. Um aliado pode cortar o fio, CA 12 e Vida 8. Confessar voluntariamente a mentira com uma Principal também rompe o controle e apaga as cópias ligadas àquela vítima. Comando impossível ou contraditório desfaz o fio.",
+        "abilities": [
+          {
+            "name": "Fio da Mentira",
+            "action": "Passivo",
+            "cost": "0 Karma",
+            "range": "15 m",
+            "effect": "Uma mentira deliberada de uma criatura viva cria um fio visível ligado ao falante. Erro sincero, opinião, silêncio e recusa não contam. Existe no máximo um fio por alvo. A marca revela que houve mentira, não revela a verdade.",
+            "duration": "Até Pinóquio se dissipar, o fio ser rompido ou a cena terminar."
+          },
+          {
+            "name": "Puxar os Fios",
+            "action": "Manifestar ou Reação com ordem reservada",
+            "cost": "11 Karma de Geppeto",
+            "range": "Uma criatura marcada a até 15 m",
+            "test": "maior de 6d20 +5 contra CA. A Reação exige uma nova mentira deliberada da vítima.",
+            "total": "Impõe um comando executável de uma frase, por até três rodadas ou até sua conclusão. A vítima usa suas próprias ações em seus turnos. Antes de obedecer, pode tentar romper o controle com Espírito + Ocultismo CD 18.",
+            "partial": "Uma interação simples imediata, sem ataque ou gasto de recurso. Não concede cópia.",
+            "failure": "Não controla; rompe o fio. A vítima não pode sofrer Puxar os Fios novamente nesta cena.",
+            "limits": "Não cria turnos ou ações ofensivas adicionais para a vítima.",
+            "construction": "Grau IV: 6 Base IV, 1 Reação possível, 2 Médio, 2 Três rodadas = 11 Karma."
+          },
+          {
+            "name": "Cópia Vinculada — Bênção e Técnica",
+            "action": "Registro após concluir um comando de acerto total; Manifestar para usar a cópia",
+            "cost": "Registro sem custo adicional. Cada uso paga o custo e a manutenção originais com os recursos de Geppeto.",
+            "effect": "Ao concluir um comando total de Puxar os Fios, Pinóquio registra poderes que tenha observado a vítima manifestar nesta cena. Pode manter simultaneamente uma Bênção e uma técnica de Grau I a IV. Os dois espaços são independentes: registrar uma técnica substitui somente a técnica anterior; registrar outra Bênção substitui somente a Bênção anterior.",
+            "test": "Quando o poder copiado exige ataque, use maior de 6d20 +5 contra a defesa indicada pelo poder. Se exige resistência por CD, preserve a CD original. Benefícios voluntários e passivos não recebem teste novo sem necessidade.",
+            "total": "Reproduz o dano, a cura, a proteção ou o efeito integral escrito no poder copiado, com seus alvos, alcance, duração, manutenção e limites de uso. Uma Bênção concede seu Núcleo e apenas as Expressões que Pinóquio observou, não capacidades ainda desconhecidas.",
+            "partial": "Usa a forma parcial do próprio poder. Se um ataque copiado não possuir forma parcial, causa metade do dano e não aplica condição grave. Poder sem ataque contra CA não ganha resultado parcial artificial.",
+            "duration": "Cada cópia permanece disponível por três rodadas contadas nos turnos de Geppeto; a reprodução e seus efeitos mantidos encerram quando a cópia expira ou o fio que a sustenta é rompido.",
+            "limits": "Uma ordem Manifestar ativa um poder copiado, não os dois ao mesmo tempo. Os usos por cena ficam registrados por poder e não reiniciam ao copiar de novo. A cópia não retira a Bênção do original, não concede Comunhão, traços raciais ou transcendência, e não permite copiar técnica de Grau V."
+          }
+        ],
+        "partial": "12–25",
+        "total": "26+",
+        "tests": [
+          {
+            "name": "Puxar os Fios / Cópia Vinculada",
+            "roll": "maior de 6d20 +5"
+          }
+        ]
+      },
+      {
+        "id": "grilo-falante",
+        "name": "Grilo Falante",
+        "title": "A Consciência",
+        "grade": "II",
+        "life": 17,
+        "ca": 19,
+        "movement": 15,
+        "attributes": [
+          2,
+          2,
+          2,
+          7,
+          4,
+          2
+        ],
+        "call": 3,
+        "maintenance": 1,
+        "skills": "Percepção 1; Atuação 1; demais 0. Batedor: um dado Extra em Percepção.",
+        "attack": {
+          "name": "Pancada Diminuta",
+          "attribute": 0,
+          "training": 0,
+          "damage": "1d8 físicos",
+          "range": "Corpo a corpo, até 1 m",
+          "roll": "1d20"
+        },
+        "weakness": "Silenciado impede perguntas e avisos. Cobertura total impede observar novos acontecimentos. A voz precisa alcançar o protegido. Provas de uma promessa quebrada por Geppeto podem fazê-lo recusar uma punição injusta.",
+        "abilities": [
+          {
+            "name": "Pergunta Incômoda",
+            "action": "Auxiliar; uma vez por rodada",
+            "cost": "0 Karma",
+            "range": "Um alvo que o ouça a até 15 m",
+            "effect": "Faz uma pergunta objetiva sobre intenção ou contradição observada. Se o alvo recusar responder, o Grilo recebe +2 no próximo teste de Percepção para antecipá-lo até o início do próximo turno de Geppeto. Uma resposta honesta não sofre punição. Mentira só cria Fio da Mentira se Pinóquio também puder percebê-la."
+          },
+          {
+            "name": "Eu Avisei",
+            "action": "Reação defensiva",
+            "cost": "3 Karma de Geppeto",
+            "range": "Um aliado ou invocação a até 5 m",
+            "effect": "Antes da rolagem de um ataque percebido, concede +2 CA ao protegido apenas contra aquela resolução. O protegido precisa ouvir o aviso; recalcule parcial e total com a CA aumentada. Não exige ordem ofensiva reservada.",
+            "limits": "Consome a mesma Reação usada para Evasão ou Peso da Consciência.",
+            "construction": "Grau I: 2 Base I, 1 Reação = 3 Karma."
+          },
+          {
+            "name": "Peso da Consciência",
+            "action": "Reação com ordem reservada",
+            "cost": "8 Karma de Geppeto",
+            "range": "15 m",
+            "effect": "Quando alguém quebra uma promessa voluntária feita na cena, conhecida pelo Grilo e com quebra observável, perde a Reação e fica Exausto até o fim de seu próximo turno. Exausto reduz cada d20 em 1, mínimo 1, antes de escolher o maior. O gatilho não causa dano e não exige ataque.",
+            "limits": "Promessas impostas por controle mental não ativam o poder. Exausto não se acumula consigo.",
+            "construction": "Grau II: 3 Base II, 1 Reação, 2 Médio, 2 Controle secundário I = 8 Karma."
+          }
+        ],
+        "partial": "9–19",
+        "total": "20+",
+        "tests": [
+          {
+            "name": "Percepção de pistas",
+            "roll": "maior de 5d20 +5"
+          }
+        ]
+      },
+      {
+        "id": "fada-azul",
+        "name": "Fada Azul",
+        "title": "A Promessa",
+        "grade": "III",
+        "life": 29,
+        "ca": 21,
+        "movement": 11,
+        "attributes": [
+          2,
+          2,
+          2,
+          2,
+          10,
+          7
+        ],
+        "call": 5,
+        "maintenance": 2,
+        "skills": "Conjuração Vincular 1; Percepção 1; demais 0.",
+        "attack": {
+          "name": "Fagulha de Promessa",
+          "attribute": 4,
+          "training": 1,
+          "damage": "2d6 kármicos",
+          "range": "Corpo a corpo, até 2 m",
+          "roll": "maior de 5d20 +2"
+        },
+        "weakness": "Não restaura uma peça já dissipada. Promessa impossível não sustenta sua magia. A luz azul não concede imunidade nem voo por si só.",
+        "abilities": [
+          {
+            "name": "Forma Verdadeira",
+            "action": "Manifestar",
+            "cost": "8 Karma de Geppeto",
+            "range": "Uma invocação ativa a até 5 m",
+            "effect": "Restaura 2d6 Vida da peça. Por três rodadas concede +2 CA contra ataques físicos. Uma Forma Verdadeira por vez; não acrescenta dados ao ataque e não ultrapassa a Vida máxima.",
+            "duration": "Três rodadas para os bônus; a cura é imediata.",
+            "limits": "Só uma Forma Verdadeira fica ativa. Trocar o beneficiário encerra os bônus anteriores. Cada peça recebe esta cura uma vez por cena. O dado adicional não aumenta técnicas, cura ou número de ações.",
+            "construction": "Grau III: 4 Base III, 2 Defesa secundária II, 2 Três rodadas = 8 Karma."
+          },
+          {
+            "name": "Dar Vida",
+            "action": "Manifestar; exige uma ordem da Fada nas rodadas em que o objeto agir",
+            "cost": "5 Karma de Geppeto",
+            "range": "Um objeto abandonado ou sem dono a até 5 m",
+            "effect": "Anima por três rodadas um objeto de porte humano ou menor. O objeto tem Vida 8, CA 10 e movimento 5 m; executa uma tarefa simples, como carregar chave, segurar porta ou acionar alavanca. Não recebe ataque ou turno próprio.",
+            "limits": "Um objeto por vez. Item carregado por inimigo não é alvo válido. A 0 Vida ou ao terminar o efeito, fica inerte.",
+            "construction": "Grau II: 3 Base II, 2 Três rodadas = 5 Karma."
+          },
+          {
+            "name": "Desejo com Condição",
+            "action": "Manifestar",
+            "cost": "3 Karma de Geppeto",
+            "range": "Um aliado ou invocação voluntária a até 5 m",
+            "effect": "O beneficiário aceita uma promessa concreta, viável e breve. Remove uma condição simples ou reduz uma grave à sua forma reduzida. Não exige teste para aceitar.",
+            "limits": "Não remove Morrendo, Ferimento Grave, Corrupção nem a causa de reaplicação. Quebrar a promessa na mesma cena devolve a condição até o fim da cena; ela pode ser tratada normalmente.",
+            "construction": "Grau II: 3 Base II = 3 Karma."
+          }
+        ],
+        "partial": "10–21",
+        "total": "22+",
+        "tests": []
+      },
+      {
+        "id": "gato",
+        "name": "Gato",
+        "title": "O Ladrão de Voz",
+        "grade": "II",
+        "life": 24,
+        "ca": 19,
+        "movement": 11,
+        "attributes": [
+          2,
+          7,
+          2,
+          4,
+          2,
+          2
+        ],
+        "call": 3,
+        "maintenance": 1,
+        "skills": "Luta 1; Furtividade 1; demais 0.",
+        "attack": {
+          "name": "Garras Finas",
+          "attribute": 1,
+          "training": 1,
+          "damage": "1d8 físicos",
+          "range": "Corpo a corpo, até 1 m",
+          "roll": "maior de 4d20 +2"
+        },
+        "weakness": "Retirar sombras, cortinas e outras ocultações elimina sua Vantagem em Furtividade. A 0 Vida, devolve a voz e derruba objetos guardados.",
+        "abilities": [
+          {
+            "name": "Passo de Veludo",
+            "action": "Passivo; Auxiliar para esconder-se",
+            "cost": "0 Karma",
+            "effect": "Movimenta-se sem som. Quando houver sombra, cortina, máquinas ou multidão que permitam ocultação, recebe Vantagem em Furtividade. Esconder-se usa a ordem Auxiliar e um teste oposto à Percepção. Atacar ou produzir efeito evidente encerra Oculto.",
+            "limits": "Não apaga rastros anteriores, não atravessa objetos sólidos e não cria ocultação em espaço aberto."
+          },
+          {
+            "name": "Roubo de Voz",
+            "action": "Manifestar",
+            "cost": "5 Karma de Geppeto",
+            "range": "Toque; pode aproximar-se até 4 m dentro da ação",
+            "test": "maior de 4d20 +2 contra CA. O toque percebido permite defesa normal.",
+            "total": "Silenciado durante três rodadas contadas nos turnos de Geppeto. O Gato guarda o timbre e a Raposa pode utilizá-lo.",
+            "partial": "Desvantagem no próximo teste dependente de voz; o timbre pode ser imitado por uma rodada.",
+            "failure": "Nenhuma voz ou condição é aplicada.",
+            "limits": "Uma voz por vez; roubar outra devolve a anterior. A vítima Agarrada pelo Gato não perde suas demais ações automaticamente.",
+            "construction": "Grau II: 3 Base II, 2 Três rodadas = 5 Karma."
+          },
+          {
+            "name": "Bolso Impossível",
+            "action": "Auxiliar",
+            "cost": "0 Karma",
+            "effect": "Guarda na pelagem uma chave, documento ou objeto pequeno que tenha obtido. Pegar algo largado usa a ordem; furtar item carregado exige manobra e teste próprios contra o portador.",
+            "limits": "Capturar o Gato ou negociar permite recuperar o conteúdo. Um personagem que o tenha Agarrado pode gastar Principal para exigir a voz: o Gato escolhe devolver ou dissipar-se. O fim do Silenciado devolve a voz, mas não transporta documentos de volta."
+          }
+        ],
+        "partial": "9–19",
+        "total": "20+",
+        "tests": [
+          {
+            "name": "Roubo de Voz / Furtividade",
+            "roll": "maior de 4d20 +2"
+          }
+        ]
+      },
+      {
+        "id": "raposa",
+        "name": "Raposa",
+        "title": "A Negociadora",
+        "grade": "II",
+        "life": 24,
+        "ca": 19,
+        "movement": 11,
+        "attributes": [
+          2,
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        "call": 3,
+        "maintenance": 1,
+        "skills": "Enganação 1; Persuasão 1; demais 0.",
+        "attack": {
+          "name": "Bengalada",
+          "attribute": 0,
+          "training": 0,
+          "damage": "1d8 físicos",
+          "range": "Corpo a corpo, até 1 m",
+          "roll": "1d20"
+        },
+        "weakness": "Recusar uma oferta não custa ação ou recurso. Exigir termos claros, investigar a imagem e expor contradições retira a vantagem da fraude. Nenhuma rolagem decide pelo personagem aceitar um acordo.",
+        "abilities": [
+          {
+            "name": "Campo dos Milagres",
+            "action": "Manifestar",
+            "cost": "3 Karma de Geppeto",
+            "range": "Um alvo que a ouça a até 5 m",
+            "effect": "Oferece recuperar 2 Karma, suspender Exausto por uma rodada ou conceder +2 no próximo teste até o fim da próxima rodada. Antes da aceitação, declara preço concreto: objeto, informação ou favor executável. Os 2 Karma de recuperação saem adicionalmente da reserva de Geppeto, não surgem do nada.",
+            "limits": "Uma aceitação por alvo por cena. Entrega e cobrança usam ações normais. O acordo não transporta objetos nem controla a mente; alma, identidade inteira e Bênção não são preços válidos.",
+            "construction": "Grau II: 3 Base II = 3 Karma."
+          },
+          {
+            "name": "Cenário Conveniente",
+            "action": "Manifestar",
+            "cost": "6 Karma de Geppeto",
+            "range": "Centro a até 5 m; raio 2 m",
+            "test": "Role maior de 4d20 +2 e registre o resultado.",
+            "effect": "Cria por duas rodadas uma ilusão visual e sonora de pessoa, documento ou passagem. Quem gastar Principal para examinar usa Intelecto + Investigação em oposição ao resultado registrado; vencer revela a fraude. Contato que demonstre impossibilidade física também a revela ao observador.",
+            "limits": "Não causa dano, não concede cobertura física e não força movimento ou aceitação de perigo.",
+            "construction": "Grau II: 3 Base II, 2 Área pequena, 1 Duas rodadas = 6 Karma."
+          },
+          {
+            "name": "Sócia do Gato",
+            "action": "Auxiliar",
+            "cost": "0 Karma",
+            "effect": "Enquanto o Gato guardar uma voz, a Raposa pode reproduzi-la perfeitamente numa fala. Contradições no conteúdo continuam perceptíveis.",
+            "duration": "Até o fim do Roubo de Voz ou dissipação do Gato.",
+            "limits": "Não copia lembranças, senhas desconhecidas, autoridade sobrenatural ou documentos."
+          }
+        ],
+        "partial": "9–19",
+        "total": "20+",
+        "tests": [
+          {
+            "name": "Enganação / Persuasão",
+            "roll": "maior de 4d20 +2"
+          }
+        ]
+      },
+      {
+        "id": "baleia",
+        "name": "Baleia",
+        "title": "O Ventre do Mundo",
+        "grade": "IV",
+        "life": 56,
+        "ca": 23,
+        "movement": 11,
+        "attributes": [
+          10,
+          2,
+          12,
+          2,
+          2,
+          2
+        ],
+        "call": 8,
+        "maintenance": 3,
+        "skills": "Luta 2; Atletismo 2; demais 0.",
+        "attack": {
+          "name": "Impacto de Mandíbula",
+          "attribute": 0,
+          "training": 2,
+          "damage": "3d8 físicos",
+          "range": "Corpo a corpo, até 2 m",
+          "roll": "maior de 5d20 +5"
+        },
+        "weakness": "O ventre tem uma garganta e uma fissura alcançáveis. Destruir a fissura, sair pela garganta ou dissipar a Baleia devolve os prisioneiros sem dano adicional.",
+        "abilities": [
+          {
+            "name": "Engolir o Cenário",
+            "action": "Manifestar; uma vez por cena; anunciado na rodada anterior",
+            "cost": "10 Karma de Geppeto",
+            "range": "Centro a até 5 m da boca; raio 5 m",
+            "test": "Uma rolagem de maior de 5d20 +5, comparada separadamente à CA de cada ocupante. Aliados também podem ser atingidos; cobertura e Evasão continuam válidas.",
+            "total": "Transporta para o Ventre do Mundo, sem dano inicial. O prisioneiro conserva iniciativa, ações, consciência e recursos.",
+            "partial": "Arrasta 2 m em direção à boca e aplica Lento até o início do próximo turno da vítima; não a engole.",
+            "failure": "Não desloca nem aprisiona.",
+            "duration": "No máximo três rodadas no ventre; depois, todos são expelidos em espaço livre junto à boca.",
+            "construction": "Grau IV: 6 Base IV, 4 Área média, 2 Três rodadas, -2 Preparo e uma vez por cena = 10 Karma."
+          },
+          {
+            "name": "Dentro do Ventre — rotas de saída",
+            "action": "Principal do prisioneiro ou ataque apropriado",
+            "cost": "Sem custo fixo; técnicas usadas pagam seus custos normais",
+            "effect": "A garganta permite fuga com Agilidade + Acrobacia ou Constituição + Atletismo CD 18. A fissura tem CA 12 e Vida 12 e pode ser atacada por dentro ou de fora; destruí-la abre passagem para todos até o próximo turno de Geppeto. O ventre não causa digestão automática.",
+            "limits": "A 0 Vida da Baleia, todos saem sem dano adicional. Uma peça convencida pode gastar sua ordem para pedir abertura por uma razão coerente com transporte ou proteção da carga."
+          },
+          {
+            "name": "Carga Territorial",
+            "action": "Movimento por ordem apropriada",
+            "cost": "0 Karma adicional",
+            "effect": "Transporta uma Âncora Territorial e seus ocupantes associados, preservando a estabilidade da carga. Nada ou desliza por sombras largas com o deslocamento registrado.",
+            "limits": "A Âncora continua acessível para sabotagem; o transporte não cria uma décima Âncora. Em interiores, manifesta apenas a parte do corpo compatível com o espaço."
+          }
+        ],
+        "partial": "11–23",
+        "total": "24+",
+        "tests": [
+          {
+            "name": "Engolir o Cenário",
+            "roll": "maior de 5d20 +5"
+          }
+        ]
+      },
+      {
+        "id": "pavio",
+        "name": "Pavio",
+        "title": "O Convite ao Abandono",
+        "grade": "III",
+        "life": 29,
+        "ca": 21,
+        "movement": 11,
+        "attributes": [
+          2,
+          7,
+          2,
+          2,
+          10,
+          2
+        ],
+        "call": 5,
+        "maintenance": 2,
+        "skills": "Conjuração Vincular 1; Atuação 1; demais 0.",
+        "attack": {
+          "name": "Laço de Abandono",
+          "attribute": 4,
+          "training": 1,
+          "damage": "2d6 kármicos",
+          "range": "Corpo a corpo, até 2 m",
+          "roll": "maior de 5d20 +2"
+        },
+        "weakness": "Recusar as ofertas impede as marcas. Reassumir uma responsabilidade livremente escolhida, com a ajuda de alguém, rompe a transformação. Não pode obter aceitação por controle mental.",
+        "abilities": [
+          {
+            "name": "Terra dos Brinquedos",
+            "action": "Manifestar; uma oferta por alvo a cada rodada",
+            "cost": "7 Karma de Geppeto",
+            "range": "Um alvo que o ouça a até 5 m",
+            "effect": "Oferece receber +2 no próximo teste até o fim do próximo turno ou adiar até 5 de um dano imediato até o fim do próximo turno da vítima. Antes da escolha, anuncia que aceitar concede uma Marca de Abandono e descreve o próximo estágio. Cada nova marca exige outra aceitação voluntária.",
+            "limits": "A Reação só pode ser recuperada uma vez por rodada. Dano adiado não é reduzido, não pode ser adiado de novo e ainda chega mesmo se as marcas forem removidas.",
+            "construction": "Grau III: 4 Base III, 1 Duas rodadas, 2 Transformação secundária II = 7 Karma."
+          },
+          {
+            "name": "Três Marcas de Abandono",
+            "action": "Consequência das aceitações; Auxiliar para comandar a besta",
+            "cost": "0 Karma adicional",
+            "effect": "Primeira marca: ignora Amedrontado por uma rodada. Segunda: −1 em testes para ajudar ou cooperar. Terceira: transforma em besta de carga até o fim da cena, conservando Vida, CA e atributos, mas retirando fala articulada e manipulação fina. Uma ordem permite seguir, carregar, aguardar ou largar carga usando a ação normal da vítima.",
+            "limits": "Não concede ataques gratuitos, não força agressão e não aplica três marcas com uma única aceitação."
+          },
+          {
+            "name": "Responsabilidade Escolhida",
+            "action": "Principal da vítima ou de aliado adjacente",
+            "cost": "0 Karma",
+            "effect": "Um aliado lembra uma responsabilidade verdadeira escolhida livremente pela vítima. Se ela decidir reassumi-la, todas as marcas e a transformação terminam sem teste. A própria vítima pode usar Principal e Espírito + Ocultismo CD 18 para recordar o vínculo.",
+            "limits": "Dissipar Pavio ou encerrar a cena também remove as marcas. Danos apenas adiados continuam devidos."
+          }
+        ],
+        "partial": "10–21",
+        "total": "22+",
+        "tests": []
+      }
+    ],
+    "pc": "",
+    "loreHtml": "<p>Geppeto observa o mundo como um palco cuja única falha é permitir que\nas peças escolham seus próprios movimentos. Sob a cortesia do artesão\nexiste a convicção de que toda pessoa funcionaria melhor se estivesse\npresa aos fios certos.</p>\n<p>Geppeto prefere intermediários às aparições públicas. Oficinas,\ncontratos e corpos provisórios ocultam sua participação atrás do\ntrabalho de outras pessoas. O homem sentado entre cenários é apenas uma\ncasca. Seu núcleo repousa nos territórios conquistados, protegido pela\ndistância e por seus servos.</p>\n<p>Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e\nPavio representam os papéis de seu teatro. Geppeto os chama pelo nome,\nelogia a obediência e corrige qualquer improviso que não tenha\nautorizado. Quando precisa levantar-se, a máscara racha. O Orgulho não\nteme apenas perder a batalha: teme que alguém perceba que o diretor\ntambém depende dos fios.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Conjuração Vincular 2 com Presença, Canalização de Karma 2 com\nEspírito, Reflexos 2, Ocultismo 2 e Tática 2. Demais 0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Estilete de Fio",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 0 Karma, 5 m; 2d8 kármicos no total, metade no\nparcial.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Agulhas de Cena",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 6 Karma, 15 m; 1d12 kármicos e Lento até o início do\npróximo turno de Geppeto no total. Parcial: metade e Lento até o início\ndo próximo turno do alvo. <strong>Composição de Karma:</strong> 3 Base\nII, 2 Médio, 1 Lento = 6 Karma.</p>"
+          }
+        ],
+        "grade": "II",
+        "cost": "6 Karma"
+      },
+      {
+        "title": "Bastidor Fechado",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 6 Karma; Geppeto e uma invocação, ou duas invocações, a\naté 5 m recebem 2d6 de escudo temporário até o início do próximo turno\ndele. Não acumula consigo. <strong>Composição de Karma:</strong> 4 Base\nIII, 2 Dois alvos = 6 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "6 Karma"
+      },
+      {
+        "title": "Teatro dos Sete Fios",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>chamar uma peça exige Principal e o custo da tabela; ela surge a até\n5 m. Conjuração Vincular 2: até quatro peças ativas, soma de Graus até\n8. Conhece sete pactos, mas não pode manifestar todos simultaneamente.\nMovimento permite ordenar duas peças, Extra uma terceira; no máximo três\ncomandos por turno, uma ação por peça. Sem ordem, acompanham com metade\ndo movimento e defendem. Ordens exigem voz audível. Grande Ato custa\nPrincipal e 2 Karma, além dos recursos normais de comando, uma vez por\ncena: ordena até três peças disponíveis, sem elevar o teto de comandos\nou de Graus ativos, após anunciar os sete fios na rodada anterior;\nsubstitui a regência normal daquele turno.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Pinóquio",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>45 · 25</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>8 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>O Menino de Madeira · Grau IV.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Grilo Falante",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>17 · 19</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>3 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>A Consciência · Grau II.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fada Azul",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>29 · 21</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>5 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>A Promessa · Grau III.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Gato",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>24 · 19</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>3 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>O Ladrão de Voz · Grau II.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Raposa",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>24 · 19</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>3 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>A Negociadora · Grau II.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Baleia",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>56 · 23</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>8 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>O Ventre do Mundo · Grau IV.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Pavio",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Vida · CA",
+            "html": "<p>29 · 21</p>"
+          },
+          {
+            "label": "Chamada",
+            "html": "<p>5 Karma</p>"
+          },
+          {
+            "label": "Função",
+            "html": "<p>O Convite ao Abandono · Grau III.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Limites do teatro",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>cada peça tem uma Reação; uma reação ofensiva ou de controle\nreservada substitui sua ação comandada. Invocações destruídas não\nretornam durante o confronto. A casca a 0 Vida encerra todos os vínculos\nlocais. As sete chamadas têm soma-base de 35 Karma, mas os limites\nimpedem sete manifestações simultâneas. Cada peça além da primeira paga\n+1 na própria chamada e manutenção; manutenção a cada dez rodadas ou na\ntransição de cena, sem cobrança duplicada.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fio mestre",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>silêncio interrompe comandos. Na segunda fase, Investigação ou\nOcultismo CD 18 revela um fio mestre: CA 12, Vida 8. Rompê-lo reduz as\nordens habituais de três para duas até Geppeto gastar Principal para\nrepará-lo. Só um fio fica exposto por vez.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fases",
+        "kind": "phase",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>com 40 Vida ou três Âncoras desligadas, a máscara se rompe. A mudança\nnão recupera recursos. Cinco das nove Âncoras Territoriais desligadas\nexpulsam sua manifestação.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Classe · posição",
+        "value": "Invocador · chefe S, Etapa V"
+      }
+    ]
+  },
+  {
+    "slug": "ganancia",
+    "name": "O Colecionador de Vidas",
+    "sin": "Ganância",
+    "title": "Cada movimento tem um proprietário",
+    "role": "Vampiro · Ladrão e Elementalista · Etapa V",
+    "rank": "S",
+    "life": "120",
+    "karma": "91",
+    "ca": "25",
+    "movement": "9 m",
+    "accent": "#b7c58c",
+    "attributes": [
+      4,
+      6,
+      5,
+      8,
+      7,
+      6
+    ],
+    "phases": [],
+    "summons": [],
+    "pc": "",
+    "loreHtml": "<p>Durante cerca de oitocentos anos, o Colecionador serviu à corte\nvampírica. Foi conselheiro da quarta e da quinta soberanas; quando\nNosferato assumiu como sexta rainha, encontrou-o instalado nos mesmos\narquivos e cercado pelos mesmos credores. Ele aprendera que possuir a\nchave de uma decisão podia valer mais que ocupar o trono. Favores,\nlinhagens e segredos formavam o patrimônio que ninguém conseguia\ncontar.</p>\n<p>Defendeu a escravização dos ghouls, chamando exploração de\nestabilidade. Nosferato reconheceu o projeto, destituiu o conselheiro e\no expulsou da corte. A abertura dos arquivos expôs contratos usados para\nencobrir cativeiro e expurgos; o Édito dos Nomes retirou desses\ndocumentos a proteção que seus autores julgavam possuir. Depois da\nexpulsão, Geppeto lhe ofereceu um lugar na corte da Falsa Santa, onde o\nantigo conselheiro poderia continuar transformando pessoas em\npropriedade sem precisar da aprovação de uma coroa.</p>\n<p>De cabelos brancos muito longos, olhos vermelhos e vestes nobres\nclaras, Ganância fala como quem apresenta uma oportunidade. Sua rapieira\né delicada; os termos que propõe, não. Chama prisioneiros de ativos e\nderrotas de inadimplência. Nos arquivos de seu acervo, anatomia e\ngenealogia dividem espaço com cláusulas de posse. Ele negocia até\ndurante a luta, mas uma ameaça à coleção pode fazê-lo abandonar a\nprudência.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Luta 2, Reflexos 2, Ladinagem 2, Controle de Luz 2, Controle de\nTrevas 2 e Canalização de Karma 2. Demais 0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Rapieira",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 0 Karma, 2 m; 1d8 perfurante, metade no parcial.\n<strong>Guarda de Rapieira:</strong> Reação, 3 Karma, antes de um ataque\ncorpo a corpo percebido; CA 27 apenas contra ele, sem outra defesa na\nmesma resolução.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Véu de Trevas",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Movimento, 11 Karma; raio de 5 m por duas rodadas. +2 em Furtividade\npara Ganância; −2 em Percepção visual e ataques à distância através da\nárea. Luz intensa e sentidos alternativos contrariam o véu.\n<strong>Composição de Karma:</strong> 4 Base III, 1 Movimento, 4 Área\nmédia, 1 Duas rodadas, 1 Efeito menor = 11 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "11 Karma"
+      },
+      {
+        "title": "Estocada de Luz",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 8 Karma, linha de 15 m; maior de 3d20 +5 contra CA, 2d8 de\nLuz. Pode atacar um segundo inimigo alinhado com a mesma rolagem, sem\natingir um terceiro. Parcial: metade. <strong>Composição de\nKarma:</strong> 4 Base III, 2 Médio, 2 Dois alvos = 8 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "8 Karma"
+      },
+      {
+        "title": "Furto de Órgãos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>a primeira Marca de Usurpação exige causar mais de 10 de dano final à\nVida em um único ataque e estar a até 5 m; aplicá-la usa Livre após o\nataque. Marcas posteriores usam Principal e Intelecto + Ladinagem contra\nConstituição + Atletismo. O custo por marca é 13 Karma, sem desconto por\ndiferença de Atributos. Cada alvo admite uma marca por rodada; até dois\nalvos podem ser marcados na rodada. Uma ou mais marcas impõem −2 em\ntestes físicos, sem acumular. A quarta consome as marcas e permite uma\núnica aplicação de Alienação Integral, com sua ação, custo e ataque\nnormais; não causa morte ou queda automática. Vida máxima ou fim da cena\nremovem as marcas. Não funciona em corpos sem anatomia pertinente e não\nconcede poderes da vítima. <strong>Composição de Karma:</strong> 6 Base\nIV, 4 Livre inicial, 3 Controle secundário III = 13 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "13 Karma"
+      },
+      {
+        "title": "Transgressão à Carne — Grau IV",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 13 Karma, uma vez por cena; até três alvos marcados a 15\nm. Agilidade + Ladinagem oposta a Constituição + Atletismo de cada\nvítima. Quem perder fica preso aos fios por duas rodadas, Imobilizado,\nsem perder a Principal. Uma Principal e a mesma oposição permitem romper\no vínculo. Ganância não recebe Vida, escudo ou ações das vítimas.\n<strong>Alienação Integral:</strong> durante o vínculo, uma Principal e\n8 Karma encerram a própria Transgressão para atacar um afetado: 2d12\nkármico contra CA, parcial metade, falha nada. Consome duas marcas antes\nda tentativa, mesmo em falha; não causa condição adicional.\n<strong>Composição de Karma:</strong> 6 Base IV, 2 Médio, 4 Até seis\nalvos, 1 Duas rodadas = 13 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "13 Karma"
+      },
+      {
+        "title": "Libertação",
+        "kind": "weakness",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal e Constituição + Atletismo CD 22 encerram a assinatura para\na vítima e removem uma marca. Recuperar Vida máxima ou permanecer uma\nrodada inteira além de 15 m também liberta. Se todos se libertarem antes\ndo prazo, Ganância perde 6 Vida e sua próxima Reação disponível.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Arrombamento do Impossível",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 9 Karma, 5 m; Agilidade + Ladinagem CD 18. Abre por uma\nrodada um vão de 1 m numa proteção com mecanismo ou selo identificável,\npermitindo a passagem dele e de um aliado. Contra proteção Grau IV,\nconserva o custo e exige CD 22. Não atravessa parede maciça sem acesso\nnem proteção Grau V. <strong>Composição de Karma:</strong> 6 Base IV, 2\nDois alvos, 1 Duas rodadas = 9 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "9 Karma"
+      },
+      {
+        "title": "Maldição solar",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>sol direto impõe Desvantagem em testes físicos e sobrenaturais e\nimpede sua cura por Drenagem Vital. Esta pode ocorrer três vezes por\ncena, após acerto corpo a corpo contra vivo voluntário, Agarrado ou\nIndefeso: +1d6 de dano e cura igual. A luz que ele próprio produz não é\nsolar.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Raça · classe · posição",
+        "value": "Vampiro · Ladrão com prática Elementalista · chefe S, Etapa V"
+      },
+      {
+        "label": "Ataques de precisão / Evasão",
+        "value": "Maior de 3d20 +5 / maior de 3d20 +5"
+      },
+      {
+        "label": "Reações",
+        "value": "Uma comum e uma defensiva adicional"
+      }
+    ]
+  },
+  {
+    "slug": "nemetor",
+    "name": "Nemetor",
+    "sin": "Preguiça",
+    "title": "O Deus-Raiz Sacrificial",
+    "role": "Deus-Raiz · Etapa V · Porte de 3 m",
+    "rank": "S",
+    "life": "120",
+    "karma": "54",
+    "ca": "25",
+    "movement": "7 m · subsolo 14 m",
+    "accent": "#8abb9e",
+    "attributes": [
+      5,
+      1,
+      5,
+      1,
+      3,
+      5
+    ],
+    "phases": [],
+    "summons": [],
+    "pc": "",
+    "loreHtml": "<p>Chamam-no de Deus-Raiz Sacrificial porque, onde seu corpo desperta, a\nfloresta floresce sobre aquilo que foi entregue aos altares. A casca tem\na forma de um ídolo de três metros; por dentro, um Coração-Semente\nsustenta a presença que a corte conhece como Preguiça.</p>\n<p>Nemetor oferece repouso. Suas raízes recebem os exaustos, cobrem suas\npernas e tornam cada decisão de partir mais difícil que a anterior. O\nbosque parece saudável demais junto aos cativos. Folhas novas surgem\nquando os vínculos apertam, e o silêncio nunca é completo: sob a terra,\nalguma coisa arrasta o peso de uma floresta inteira.</p>\n<p>Ele protege o ritual antes de perseguir adversários. Libertar uma\noferenda muda sua atenção; aproximar fogo do cerne faz a casca\ncontrair-se. Quando o Coração-Semente aparece, o vermelho que atravessa\no lenho revela que a quietude também pode sentir medo.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Luta 2, Atletismo 2, Canalização de Karma 2 e Controle de Terra 2;\nPercepção 1. Demais 0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Corpo de solo e lenho",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>imune a Sangramento, veneno e sufocamento. Fogo suspende suas\nproteções de casca e raiz enquanto a queimadura estiver ativa; não\nimpede que outras criaturas o tratem como alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Punho de Cerne",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau III · Principal · 5 Karma · corpo a corpo</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>2d10 físico e empurra 2 m no total; metade e empurra 1 m no parcial.\nCusto: 4 Base III, 1 Empurrão = 5 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "5 Karma"
+      },
+      {
+        "title": "Mergulho da Raiz Adormecida",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · Movimento · 10 Karma</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Percorre até 12 m por solo natural e emerge no início do próximo\nturno; não pode ser usado em turnos consecutivos. Enquanto enterrado,\nnão ataca nem usa Muralha. Seu primeiro ataque corpo a corpo ao emergir\nrecebe um dado Extra. Custo: 6 Base IV, 1 Movimento, 3 Dado no próximo\nataque = 10 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "10 Karma"
+      },
+      {
+        "title": "Erupção do Bosque Sepultado",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · Principal · 15 Karma · 15 m, raio de 3 m</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Total: 2d12 físicos e um alvo Imobilizado até o fim do próximo turno\ndele. Parcial: metade e −3 m de movimento. Não pode ser usada em turnos\nconsecutivos. Custo: 6 Base IV, 2 Médio, 4 Área média, 3 Controle\nsecundário III = 15 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "15 Karma"
+      },
+      {
+        "title": "Dízimo da Floresta",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau III · Principal · 7 Karma · uma vez por fase</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Até dois cativos em altares recebem vínculos visíveis, CA 18 e Vida\n5. No início do próximo turno, faça uma única rolagem de ataque contra\ncada cativo ainda vinculado, que causa 2d10 de Terra no total, metade no\nparcial. Principal e Atletismo, Sobrevivência ou Canalização CD 18\nrompem um vínculo. Custo: 4 Base III, 2 Dois alvos, 2 Médio, -1 Preparo\nanunciado = 7 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "7 Karma"
+      },
+      {
+        "title": "Santuário da Quietude Verde",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · Principal · 19 Karma · segunda fase · uma vez por cena</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Por três rodadas, raízes em raio de 10 m tornam o chão difícil para\ninimigos. Terminar o turno sem mover 3 m concede Torpor; mover 3 m\nremove uma marca. Uma marca: −3 m. Duas: Imobilizado e um dado a menos.\nUma ação de Movimento remove todas as marcas. O Santuário não causa dano\nnem suprime a Principal. Custo: 6 Base IV, 6 Área grande, 2 Três\nrodadas, 2 Poupar aliados, 3 Controle secundário III = 19 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "19 Karma"
+      },
+      {
+        "title": "Muralha de Raízes",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau I · Reação · 3 Karma</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>+2 CA contra um ataque percebido, declarado antes da rolagem. Não\nprotege de Fogo nem funciona enquanto enterrado. Custo: 2 Base I, 1\nReação = 3 Karma.</p>"
+          }
+        ],
+        "grade": "I",
+        "cost": "3 Karma"
+      },
+      {
+        "title": "Arrasto Subterrâneo",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau I · Reação · 3 Karma</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Após sofrer um total, move 3 m por terra natural sem provocar\nreações; permanece visível. Custo: 2 Base I, 1 Reação = 3 Karma.</p>"
+          }
+        ],
+        "grade": "I",
+        "cost": "3 Karma"
+      },
+      {
+        "title": "Coração-Semente",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>emerge depois de mergulhos e sacrifícios. Uma Principal de Ocultismo\nou Sobrevivência CD 20 identifica o ritmo de exposição. Um total\ndirigido ao coração suspende proteções de raiz e impede novo Mergulho\naté o próximo turno. Percepção ou Sobrevivência CD 20 localiza sua\nposição subterrânea e remove o dado Extra da emergência; 5 de dano que\nalcance o subsolo força sua saída.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fases",
+        "kind": "phase",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>com 60 Vida ou menos, a casca se abre, o movimento sobe para 10 m, o\ncoração permanece visível e o Santuário fica disponível. A transição não\nrecupera Vida, Karma ou ações.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Posição · porte",
+        "value": "Chefe S · Etapa V · 3 m"
+      },
+      {
+        "label": "Reações",
+        "value": "Uma comum e uma defensiva adicional"
+      }
+    ]
+  },
+  {
+    "slug": "branca-de-neve",
+    "name": "Branca de Neve",
+    "sin": "Luxúria",
+    "title": "A assassina do Miasma Carmesim",
+    "role": "Assassina · Etapa V · Água, Terra e Ar",
+    "rank": "S",
+    "life": "120",
+    "karma": "78",
+    "ca": "25",
+    "movement": "12 m",
+    "accent": "#d899b1",
+    "attributes": [
+      3,
+      7,
+      4,
+      5,
+      5,
+      6
+    ],
+    "phases": [],
+    "summons": [],
+    "pc": "",
+    "loreHtml": "<p>Branca de Neve aproxima-se como alguém que não deseja interromper\nnada. Os passos não anunciam sua chegada, o ar conserva uma doçura\ndiscreta e uma maçã vermelha repousa sempre ao alcance de sua mão.\nQuando a vítima percebe as primeiras partículas escarlates, já começou a\nduvidar dos próprios sentidos.</p>\n<p>Na corte da Falsa Santa, a Luxúria transforma aproximação em acesso e\natenção em vulnerabilidade. Seu Miasma Carmesim reúne Água, Terra e\nVento à Corrupção: um veneno capaz de contaminar tanto o ambiente quanto\na percepção de quem o atravessa. Ela escolhe o momento de tocar,\ndesaparecer ou permitir que um reflexo tome seu lugar.</p>\n<p>As maçãs acompanham seus encontros como um sinal reconhecível. Uma\nsuperfície limpa demais, rastros que terminam sem motivo e imagens que\nse movem fora do ritmo do corpo denunciam sua passagem. A aparente\ntranquilidade permanece mesmo quando o jardim ao redor começa a\nadoecer.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Luta 2, Pontaria 2, Furtividade 2, Reflexos 2, Controle de Água 2,\nControle de Terra 2, Controle de Ar 2 e Controle da Corrupção 2. Demais\n0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Beijo da Serpente",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau III · 5 Karma</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Principal; até 2 m. Luta contra CA. Total: 2d10 tóxico e Envenenado\naté o início do próximo turno dela; parcial metade e sem condição; falha\nnada. Não acumula venenos ou mata por contagem. Custo: 4 Base III, 1\nEnvenenado = 5 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "5 Karma"
+      },
+      {
+        "title": "Passos da Inocência",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau II · 8 Karma</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Movimento; pessoal, até o fim da cena. Abafa som e rastros novos;\nFurtividade ainda enfrenta Percepção e exige ocultação real. Atacar\nrevela sua posição, sem encerrar o abafamento. Não concede\ninvisibilidade. Custo: 3 Base II, 1 Movimento, 4 Duração de cena = 8\nKarma.</p>"
+          }
+        ],
+        "grade": "II",
+        "cost": "8 Karma"
+      },
+      {
+        "title": "Jardim Proibido",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · 13 Karma</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Principal; centro a 15 m, raio 5 m, duas rodadas. Controle de Água\ncontra Constituição + Atletismo de cada criatura na criação. Vitória\naplica Desorientado até o início do turno seguinte da assassina; empate\nou derrota nada. O miasma obscurece a área, impondo −2 à Percepção\nvisual enquanto permanecer; aliados também. Não drena Karma e não repete\na condição ao entrar. Custo: 6 Base IV, 2 Médio, 4 Área média, 1 Duas\nrodadas = 13 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "13 Karma"
+      },
+      {
+        "title": "Sete Gotas do Pecado",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · 13 Karma</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Principal; até seis alvos a 15 m. Sete agulhas formam um único ataque\npor alvo; uma rolagem de Pontaria e um dano de 2d12, comparados\nindividualmente à CA. Total aplica Envenenado até o início do próximo\nturno dela; parcial metade sem condição; falha nada. Concentrar agulhas\nnão multiplica dano contra a mesma criatura. Custo: 6 Base IV, 2 Médio,\n4 Até seis alvos, 1 Envenenado = 13 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "13 Karma"
+      },
+      {
+        "title": "Espelho, Espelho Meu",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau III · 7 Karma</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Reação antes de ataque percebido contra ela. Uma imagem sustenta\ndefesa oposta de Controle de Água contra o ataque; vitória anula apenas\naquela incidência e permite recuar 2 m por trajeto livre, empate metade\ndo dano sem recuo, derrota dano normal. Não combina com Evasão ou outra\ndefesa. Custo: 4 Base III, 1 Reação, 2 Movimento secundário II = 7\nKarma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "7 Karma"
+      },
+      {
+        "title": "A Última Maçã",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Ação · custo",
+            "html": "<p>Grau IV · 15 Karma</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Principal; uma vez por cena; centro a 15 m, raio 5 m; paga também 2\nPC e faz Controle da Corrupção CD 18. Controle da Corrupção contra cada\nCA: total 2d12 corrupto e Cego até o início do próximo turno dela;\nparcial metade e −2 ao próximo ataque visual; falha nada. Atinge\naliados, pode ser dispersa por vento forte e não cancela técnicas\nalheias. Não existe execução automática. Custo: 6 Base IV, 2 Médio, 4\nÁrea média, 3 Controle secundário III = 15 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "15 Karma"
+      },
+      {
+        "title": "Traços",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>prepara a eliminação por exposição e isolamento. Suas ilusões\ndependem da contaminação sensorial; imagens não são corpos\nindependentes. O Miasma não transforma Trevas em Corrupção e não produz\nexecução automática.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Rastro do Miasma",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>observar partículas, rastros interrompidos e reflexos permite\nreconhecer a área contaminada. Cobertura total e ausência de trajetória\nimpedem ataques diretos; efeitos que removam o veneno ou dispersem as\npartículas enfrentam a preparação da assassina. Identificar a origem da\ncontaminação é tão relevante quanto alcançar seu corpo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Classe · Etapa · ranque",
+        "value": "Assassina · V · S"
+      },
+      {
+        "label": "Fontes",
+        "value": "Karma elemental e Corrupção"
+      },
+      {
+        "label": "Elementos",
+        "value": "Água, Terra e Vento"
+      },
+      {
+        "label": "Subdobra",
+        "value": "Miasma Carmesim"
+      },
+      {
+        "label": "Função",
+        "value": "Infiltração, envenenamento e desorientação"
+      }
+    ]
+  },
+  {
+    "slug": "maelia-veyr",
+    "name": "Maélia Veyr",
+    "sin": "Inveja",
+    "title": "A Mãe das Vidas Roubadas",
+    "role": "Samaritano · Etapa V · Ruptura",
+    "rank": "S",
+    "life": "120",
+    "karma": "89",
+    "ca": "25",
+    "movement": "7 m",
+    "accent": "#b3a3d6",
+    "attributes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      5
+    ],
+    "phases": [
+      {
+        "name": "A mãe das vidas roubadas",
+        "ca": 25,
+        "partial": "12–25",
+        "total": "26+",
+        "life": "120–61 Vida"
+      },
+      {
+        "name": "Mãe do Vazio",
+        "ca": 25,
+        "partial": "12–25",
+        "total": "26+",
+        "life": "60 Vida ou boneca tomada"
+      }
+    ],
+    "summons": [],
+    "pc": "18",
+    "loreHtml": "<p>Maélia nasceu em Gaéria e sonhava estudar medicina para atender quem\nnão podia pagar os templos. Preparava remédios, trabalhava a terra e\nacreditava que ainda teria tempo de aprender a salvar mais pessoas.</p>\n<p>Eron nasceu depois de uma violência cometida contra ela por um homem\ninfluente. Durante anos, Maélia confundiu a semelhança do menino com a\nlembrança do agressor e o tratou com uma dureza que ele jamais mereceu.\nQuando um incêndio atingiu a casa, ela o salvou e ficou com uma extensa\ncicatriz no rosto e um olho perdido. Eron tinha nove anos. Enquanto ela\nse recuperava, costurou uma boneca azul, de pontos tortos e um olho de\nbotão, para dizer que ainda a reconhecia como mãe.</p>\n<p>O afeto não apagou os anos anteriores. Maélia reconheceu o que\nfizera, pediu perdão e aprendeu a conhecer o próprio filho. Aos treze\nanos, Eron recebeu o primeiro abraço espontâneo dela. Depois vieram o\ntrabalho partilhado, as pequenas figuras de argila e os planos de um\nfuturo que parecia possível.</p>\n<p>Aos dezesseis, ele era o único doador compatível para um transplante\ncapaz de salvar Maélia. A instituição omitiu riscos essenciais. Ela\nsobreviveu; Eron morreu. O procedimento foi chamado de sucesso.</p>\n<p>Desde então, Maélia invejou as manhãs das outras famílias: o tempo\npara discutir, pedir desculpas e tentar de novo. A Falsa Santa\nofereceu-lhe poder para reconstruir rostos, gestos e lembranças em\nargila. Sua vocação de Samaritano tornou-se uma forma de aprisionar\naquilo que não suportava perder.</p>\n<p>Os cabelos castanhos descem até metade das costas; a cicatriz\nacompanha o olho ausente. Junto ao peito, a boneca azul sustenta sua\nconsciência em meio à Ruptura. Maélia reproduz muitas pessoas, mas se\nrecusa a moldar Eron. A única lembrança que aceita como verdadeira cabe\nentre suas mãos.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Medicina 2, Controle da Corrupção 2, Resistência à Corrupção 2,\nCanalização de Karma 2 e Ocultismo 2; Reflexos 1. Demais 0.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução de danos e efeitos",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Argila Viva",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>subdobra avançada de Terra que molda ferramentas, barreiras e\nconstruções animadas. A Corrupção grava memórias na matéria. As cópias\nnão possuem alma.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Memórias que Não Me Pertencem — Grau IV",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 11 Karma e 1 PC, 15 m. Um acerto pessoal anterior permite\nmarcar o Karma da vítima; a marca concede uma leitura no turno seguinte.\nCada ativação revela um terço das memórias acessíveis. Resistência\nespiritual à Corrupção CD 20 evita as penalidades; a leitura ainda\nocorre pelo Voto O Direito de Conhecer. Falha deixa Abalado e pode\ncausar 1d6 mental; a terceira leitura acrescenta 1d8 mental e\nDesorientado até o fim do próximo turno. Romper a marca exige Principal\ne resistência espiritual CD 18. <strong>Composição de Karma:</strong> 6\nBase IV, 2 Médio, 3 Controle secundário III = 11 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "11 Karma"
+      },
+      {
+        "title": "Inveja da Vida — Reflexos de Argila",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 12 Karma; até dois clones, manutenção de 1 Karma por clone\na cada rodada. Um terço das memórias produz clone com Vida 8, CA 8 e\nKarma próprio 0; dois terços: Vida 16, CA 16 e Karma próprio 0; memória\ncompleta: Vida 24, CA 24 e Karma próprio 0. Um clone completo pode\nreproduzir uma habilidade Grau I–III, pagando integralmente com o Karma\nde Maélia; não reproduz Domínios ou Votos. Apenas um clone realiza ação\nofensiva comandada por rodada, consumindo a Principal de Maélia; manter\nclones não cria ações ofensivas gratuitas. Enquanto mantiver clones,\nMaélia não restaura a própria Vida; fazê-lo desfaz todos e impede novas\ncópias na cena. <strong>Composição de Karma:</strong> 6 Base IV, 2 Dois\nalvos, 4 Duração de cena = 12 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "12 Karma"
+      },
+      {
+        "title": "Os Pequenos Famintos — Grau III",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 14 Karma e 2 PC; cria até três miniaturas, cada uma com\nVida 6, CA 12 e movimento 6 m. O grupo realiza um ataque por rodada:\nmaior de 3d20 +5 contra CA; total causa 1d6 e drena 2 Karma, parcial\ncausa metade e drena 1. Ao acumular 4 Karma, o grupo recebe 8 de escudo\ntemporário e +3 no próximo dano, consumido após o golpe. Só absorvem de\nquem já usou técnica sobrenatural na cena; violar essa regra zera a\nreserva e desativa o grupo por um turno. <strong>Composição de\nKarma:</strong> 4 Base III, 4 Três alvos, 4 Duração de cena, 2 Controle\nsecundário II = 14 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "14 Karma"
+      },
+      {
+        "title": "Os Braços que Deveriam Ter Protegido — Grau III",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Reação, 9 Karma, 10 m, uma vez por rodada. Reduz 2d6 + Espírito do\ndano de um ataque ou, após o acerto, cura 2d8 + Espírito de um alvo\nconsciente. Pode manter uma ligação até o início do próximo turno e\nassumir uma vez até 5 de dano no lugar do protegido. Não remove\ncondições nem desperta alguém em Estado Crítico. Uma criatura consciente\npode recusar a ligação. <strong>Composição de Karma:</strong> 4 Base\nIII, 1 Reação, 2 Médio, 2 Proteção secundária II = 9 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "9 Karma"
+      },
+      {
+        "title": "A Casa dos Amanhãs Roubados — Grau IV",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, 19 Karma e 4 PC; exige um terço de memória registrado,\nraio 10 m, três rodadas. Inimigos perdem 2 m de deslocamento. Alvos\nmarcados resistem à Corrupção CD 20 no início do turno: sucesso evita o\nefeito mental; falha impõe −2 no próximo teste sobrenatural, mais −2 m\nde movimento e 1d6 mental. Movimento de Maélia concede uma vez por\nrodada 6 de escudo temporário a uma construção, pagando 3 Karma por\nconcessão. Reação permite trocar de posição com um clone, uma vez por\nrodada. Duas bonecas-âncora, CA 12 e Vida 8 cada, sustentam a casa;\ndestruir ambas a encerra. A boneca azul de Eron nunca é uma dessas\nâncoras. <strong>Composição de Karma:</strong> 6 Base IV, 6 Área grande,\n2 Três rodadas, 2 Seleção de aliados, 3 Controle secundário III = 19\nKarma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "19 Karma"
+      },
+      {
+        "title": "Domínio — Resistência manifestada",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p><strong>Ativação:</strong> Extra, 1 Karma, quatro rodadas.\n<strong>Manifestação:</strong> Redução física total 2 e +1d20 em\nConstituição. Uma vez na Manifestação, permanece com 1 Vida em vez de\ncair por dano físico. <strong>Essência:</strong> Redução 1 contra dano\nfísico comum.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Domínio — Superação manifestada",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p><strong>Ativação:</strong> Extra, 1 Karma, quatro rodadas.\n<strong>Manifestação:</strong> +1d20 em Medicina, Canalização e\nresistências a condições. Pode reduzir uma condição grave à forma leve\numa vez. <strong>Essência:</strong> Uma vez por cena, repete um teste\nfalho para remover condição simples.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fases",
+        "kind": "phase",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>com 60 Vida ou menos, Maélia pode usar Principal, 13 Karma e 6 PC e\nteste de controle CD 17 para assumir a Mãe do Vazio. Se a boneca azul\nfor tomada contra sua vontade, a transformação é imediata, sem ação ou\nteste, e ela perde o controle consciente. A forma concede +2 Presença e\nEspírito, CA 25 e redução 3 contra dano não divino. Costuras do Nunca\nMais usa Reação e 2 PC após a destruição de um clone; o responsável\nresiste à imobilização com CD 18. Recuperar a boneca permite teste de\ncontrole CD 20 no início do turno para retomar a consciência. Nenhuma\ntransformação restaura reservas.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Classe · posição",
+        "value": "Samaritano · chefe S, Etapa V"
+      },
+      {
+        "label": "Domínios",
+        "value": "Resistência e Superação"
+      },
+      {
+        "label": "Estado",
+        "value": "Ruptura permanente; consciência ancorada na boneca azul"
+      }
+    ]
+  },
+  {
+    "slug": "prorrogadora-da-extincao",
+    "name": "Falsa Santa",
+    "sin": "Soberana",
+    "title": "A Prorrogadora da Extinção",
+    "role": "Suporte · Curandeiro · Etapa VII",
+    "rank": "",
+    "life": "240",
+    "karma": "300",
+    "ca": "17",
+    "movement": "9 m",
+    "accent": "#d7c8a7",
+    "attributes": [
+      7,
+      7,
+      7,
+      10,
+      10,
+      10
+    ],
+    "phases": [],
+    "summons": [],
+    "pc": "20",
+    "loreHtml": "<p>Quando ainda faltavam cerca de mil e quinhentos anos para a\nconstrução da Torre, ela já atravessava o mundo. Seu nome verdadeiro\ndesapareceu; talvez tenha sido abandonado junto da primeira pessoa que\nnão conseguiu salvar. Restaram títulos: Falsa Santa, Prorrogadora da\nExtinção, Pináculo do Karma. Nenhum deles responde à pergunta que os\nsobreviventes aprendem a fazer tarde demais: o que ela considera uma\nvida salva?</p>\n<p>Nas mãos da Falsa Santa, uma artéria encontra sua outra metade. Um\npulmão volta a encher. A carne perdida cresce entre fios que parecem luz\nquando vistos de longe. Esses milagres são reais. O horror começa quando\no paciente pede que ela pare. Para a Prorrogadora, morrer é uma derrota\nque ninguém tem o direito de aceitar — nem mesmo quem está morrendo. Ela\nconfunde permanência com misericórdia e gratidão com pertencimento.</p>\n<p>Uma entidade exterior lhe concedeu os Fios da Providência Usurpada.\nPor eles, a curandeira aprendeu a costurar corpos e conduzir vontades.\nSua bênção não lhe deu a autoridade da Santa legítima; tampouco a\nausência desse reconhecimento diminuiu sua certeza. Ela não se apresenta\ncomo impostora. Fala como alguém que acredita cumprir uma obrigação\nabandonada pelos deuses.</p>\n<p>Os Pecados são sua corte e a prova viva dessa contradição. Ela\noferece abrigo a existências feridas, conserva talentos que o mundo\ntentou destruir e transforma a sobrevivência em dívida. A desobediência\nde Euphere, a fome de João e Maria, os fios de Geppeto e a imobilidade\nde Nemetor não são simples defeitos de servos: são vontades que sua obra\nnunca conseguiu apagar por completo. Diante deles, sua ternura pode soar\nmais ameaçadora que uma ordem.</p>\n<p>A Falsa Santa primeiro nota o ferimento. Interrompe uma ameaça para\ncorrigir a respiração de quem a pronunciou. Pede licença com delicadeza\ne aproxima a mão antes de receber resposta. Quando escuta uma recusa,\ndemora um instante a compreendê-la; então oferece a mesma salvação com\npalavras diferentes. Os fios ficam mais tensos quando alguém reivindica\no direito de partir. Antes de julgar uma multidão, ela enumera aquilo\nque pretende preservar, como uma médica ditando o inventário de um\ndesastre.</p>",
+    "blocks": [
+      {
+        "title": "Perícias",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Luta 2 e Atletismo 2: maior de 4d20 +5 com Força. Reflexos 2: maior\nde 4d20 +5 com Agilidade. Medicina, Religião, Ocultismo, História,\nInvestigação e Percepção 2: maior de 5d20 +8 com Intelecto, incluindo\nAnalítico. Persuasão, Enganação e Intimidação 2: maior de 5d20 +5 com\nPresença. Canalização de Karma, Resistência à Corrupção, Controle\nElemental e Manifestação de Bênção 3: maior de 5d20 +10 com Espírito.\nComunhão Divina, Controle da Corrupção e Conjuração Vincular 3: maior de\n5d20 +10 com Presença; o vínculo usa Conjuração. Demais perícias no\nnível 1 (+2), com a reserva do Atributo pertinente. Analítico só se\naplica a testes mentais ou sociais treinados efetivamente regidos por\nIntelecto, nunca ao dano, à cura ou às fontes de Presença.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Ataque básico",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Principal, um alvo a até 2 m, sem custo. Maior de 4d20 +5 contra CA;\ngolpe desarmado causa 1d6 físico no total, metade no parcial e nenhum\ndano na falha. Luta e Atletismo não recebem os bônus das perícias\nsobrenaturais.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Resolução",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>role a reserva indicada e selecione o maior d20, somando o bônus uma\nvez. Ataques usam a CA; no parcial, causam metade do dano, arredondada\npara baixo, sem condições secundárias, salvo descrição expressa. Falha\nnão causa dano nem condição. Áreas usam um teste comparado separadamente\ncom cada alvo, sujeito às defesas cabíveis. Em oposição, empate favorece\nquem resiste. Custos são pagos na declaração, inclusive em falha. Dano,\ncura e escudo usam os dados e bônus escritos; cura não supera a Vida\nmáxima. Sem indicação contrária, efeitos de duas rodadas terminam no\ninício do segundo turno seguinte da Falsa Santa. Alvos precisam ser\npercebidos e alcançáveis por linha de efeito. Críticos seguem as regras\ndo livro, sem multiplicar bônus fixos, duração ou condições.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Reservatório Milenar",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Vida 240 e Karma 300 são seus máximos; a reserva já inclui o Karma\nacumulado durante sua longa existência. Não recupera recursos\nautomaticamente em combate. Pontos Corruptos formam uma reserva própria\nde 20, compartilhada entre as técnicas que os exigem; não substituem\nVida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou\nresistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não\ncontinua agindo por possuir reconstrução.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Conhecimento de incontáveis vidas",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>pode utilizar Medicina no lugar de Primeiros Socorros. Uma vez por\ncena, antes da rolagem de um aliado percebido a até 10 m, concede +2 ao\nteste por Intervenção Providencial; não altera dano, cura ou\nduração.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Seis manifestações",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>domina Fogo, Água, Terra e Ar. Luz Litúrgica manifesta Poder Divino;\nSombra Profana manifesta Corrupção. Cada técnica conserva a fonte\nindicada; aparência elemental não acrescenta dano, uma segunda fonte ou\numa segunda aplicação de dominância.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Fios da Providência Usurpada",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>bênção de uma entidade exterior, regida por Espírito + Manifestação\nde Bênção. Os fios costuram carne e conduzem energia. Seus efeitos\ncorruptos usam técnicas e custos próprios. A bênção não concede a\nautoridade da Santa legítima, ressurreição automática ou controle\npermanente sobre quem foi curado.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Costura do Excedente",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>se Sutura Impossível, Tecelã do Destino ou Frankenstein atingir outra\ncriatura que já esteja com Vida completa antes da resolução, converte\ntoda a cura rolada em escudo temporário. Dura até o início do próximo\nturno da Falsa Santa; substitui um escudo anterior desta característica\nsomente se for maior. Curar um alvo ferido até seu máximo não converte o\nexcesso. Adão e a cura liberada pelo Manto não ativam esta\ncaracterística.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Limite da própria carne",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>a Falsa Santa não pode escolher a si mesma como alvo de nenhuma\ntécnica corrupta, incluindo Tecelã do Destino, Manto da Linha Profana e\nFrankenstein. Também não recebe cura, escudo, reconstrução ou outro\nbenefício indireto produzido por suas técnicas corruptas sobre\nterceiros. A única técnica de cura que pode utilizar em si mesma é\n<strong>Adão — Primeiro Sopro</strong>, de fonte Divina, <strong>uma\núnica vez por cena</strong>; pode incluir-se entre seus três alvos nessa\nutilização. Esse limite não concede uma ativação adicional de Adão.\nSutura Impossível e Costura do Excedente beneficiam somente outras\ncriaturas.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Condução corrupta",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>técnicas que custam Pontos Corruptos exigem Controle da Corrupção,\nmaior de 5d20 +10, contra a CD indicada. Este teste não substitui o\nataque ou a oposição do efeito. Em falha, o custo é perdido e a técnica\nnão produz seu efeito; aplicam-se as consequências de falha de Controle\nda Corrupção. Não some o treinamento de Resistência à Corrupção ao de\nControle. Os custos abaixo são finais; ampliar uma técnica exige uma\nopção de ampliação expressamente permitida pelo livro, sem gerar efeitos\ngratuitos.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Duas assinaturas, um ápice",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>Frankenstein e Dia do Julgamento Final são de Grau V e compartilham\num único uso de ápice por cena. Declarar uma impede utilizar a outra na\nmesma cena, mesmo em falha ou interrupção. Nenhuma delas fornece um\nturno extra.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "Sutura Impossível",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Bênção · Principal · 6 Karma · toque, até 2 m ·\ninstantânea</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Os fios encontram as bordas do ferimento e as aproximam. Outra\ncriatura voluntária recupera 2d10 Vida. Fecha ferimentos abertos, mas\nnão encerra automaticamente uma condição persistente.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Não regenera membros inteiros, remove maldições ou ressuscita. Pode\naplicar Costura do Excedente. Custo: 6 Base IV = 6 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "6 Karma"
+      },
+      {
+        "title": "Fio de Contenção",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau II · Bênção · Principal · 5 Karma · um alvo a até 15 m</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Maior de 5d20 +10 contra CA. No total, reduz o Deslocamento do alvo à\nmetade até o início do próximo turno da Falsa Santa. Parcial ou falha:\nnão prende. O fio se enrosca nas articulações, sem causar dano.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>O alvo pode gastar uma Principal para opor Força + Atletismo à\nManifestação da Falsa Santa; igualar ou superar rompe o fio. Não remove\nações. O vínculo termina se ela ficar inconsciente, perder a linha de\nefeito ou se afastar mais de 15 m. Custo: 3 Base II, 2 Médio = 5\nKarma.</p>"
+          }
+        ],
+        "grade": "II",
+        "cost": "5 Karma"
+      },
+      {
+        "title": "Tecelã do Destino",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Corrupção · Principal · 11 Karma e 6 PC · um ser vivo a até\n15 m · Controle CD 16</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Após sucesso no Controle, restaura 2d10 Vida, regenera um membro\nperdido sem remover outra condição nessa execução. O membro é escolhido\nna declaração; a regeneração é a única função secundária.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Não pode ser usada na própria Falsa Santa. Não desfaz cegueira\nmística, maldição, doença sem origem em ferimento ou alma destruída; não\nressuscita. Exige alvo voluntário. Pode aplicar Costura do Excedente.\nCusto: 6 Base IV, 2 Médio, 3 Reconstrução secundária III = 11 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "11 Karma"
+      },
+      {
+        "title": "Manto da Linha Profana",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Corrupção · Reação · 13 Karma e 4 PC · uma criatura a até\n15 m · Controle CD 13 · duas rodadas</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Declare antes de descontar o dano de um ataque percebido. Em sucesso\nno Controle, role 2d10 de escudo temporário, aplicado já contra aquela\nincidência e conservado pelo saldo durante duas rodadas. Cada ponto\nefetivamente absorvido é armazenado uma única vez. Ao término natural, o\nprotegido recupera metade desse total em Vida, arredondada para baixo; a\noutra metade se dissipa. O escudo nunca se renova e não soma com outra\nproteção temporária maior.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Um manto ativo. Reaplicá-lo encerra o anterior sem cura. Dissipação,\ninconsciência da Falsa Santa ou distância superior a 15 m encerram a\nproteção sem cura. Dano que ignore barreiras espirituais ignora o manto\ne não é armazenado. Não absorve condições sem dano; não devolve dano. A\nFalsa Santa não pode ser o alvo do manto nem receber sua cura. Custo: 6\nBase IV, 1 Reação, 2 Médio, 1 Duas rodadas, 3 Restauração secundária III\n= 13 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "13 Karma"
+      },
+      {
+        "title": "Linha da Mentira",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau III · Corrupção · Principal · 10 Karma e 4 PC · um alvo a até 20\nm · Controle CD 13</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Após o Controle, ataque com maior de 5d20 +10 contra CA. Total: 2d10\nde dano corrupto e uma condição escolhida na declaração: Cego,\nImobilizado ou Desorientado. Parcial: metade do dano, sem condição. Os\nfios costuram uma percepção falsa sobre o corpo.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>A condição termina no início do próximo turno da Falsa Santa.\nDesorientado impõe −2 somente ao próximo teste feito nesse período,\nsendo consumido ao aplicá-lo. Condições iguais não se acumulam;\nImobilizado impede deslocamento, não todas as ações. Custo: 4 Base III,\n4 Longo, 2 Controle secundário II = 10 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "10 Karma"
+      },
+      {
+        "title": "Agulhas do Desamparo",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau III · Corrupção · Principal · 9 Karma e 3 PC · um alvo a até 20\nm · Controle CD 12</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Após o Controle, ataque com maior de 5d20 +10 contra CA. Total: 2d10\nde dano corrupto; a próxima cura recebida antes do início do próximo\nturno da Falsa Santa é reduzida em 1d8, mínimo 0. Parcial: metade do\ndano, sem redução de cura.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Role a redução quando a cura ocorrer e consuma o efeito, mesmo que\nreduza 0. Não afeta escudos, não causa dano adicional e não se acumula\ncom outra aplicação desta técnica. Custo: 4 Base III, 4 Longo, 1 Efeito\nmenor = 9 Karma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "9 Karma"
+      },
+      {
+        "title": "Jacó — Escada do Firmamento",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Divino · Principal · 11 Karma · alvo a até 30 m ou passagem\nde até 15 m</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Escolha na declaração. Ataque: maior de 5d20 +10 contra CA; total\n2d12 divino e Caído; parcial metade do dano, sem queda. Passagem:\ndegraus de vento e luz formam um caminho suspenso de até 15 m, com 2 m\nde largura, durante duas rodadas.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Não combina ataque e passagem. A elevação do ataque não acrescenta\ndano de queda. A passagem exige apoios seguros nas duas extremidades,\nnão desloca criaturas automaticamente e não atravessa barreiras\nfechadas. Ao desaparecer, quem permanecer sobre ela fica sujeito à queda\nnormal. Custo: 6 Base IV, 4 Longo, 1 Caído = 11 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "11 Karma"
+      },
+      {
+        "title": "Moisés — Travessia do Impossível",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Divino · Principal · 15 Karma · linha de até 20 m por 3 m a\npartir da Falsa Santa</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Ataque: maior de 5d20 +10 comparado à CA de cada inimigo na linha;\ntotal 2d12 divino e empurrão de 2 m para uma das laterais, por trajeto\npossível; parcial metade do dano, sem empurrão. Travessia: separa água\njá existente ao longo dessa linha, abrindo passagem até o leito por duas\nrodadas.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Escolha um modo; a travessia não causa o ataque. Não afeta água\ndentro de seres vivos, massas oceânicas ou profundidade superior a 10 m.\nO retorno da água é visível; a técnica não concede respiração aquática\nnem deslocamento gratuito. Custo: 6 Base IV, 6 Área grande, 2 Poupar\naliados, 1 Empurrão 2 m = 15 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "15 Karma"
+      },
+      {
+        "title": "Davi — Pedra da Sentença",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau III · Divino · Principal · 11 Karma · um alvo a até 30 m</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Uma pedra concentra o peso da sentença. Maior de 5d20 +10 contra CA;\ntotal 2d10 divino, mais 1d10 se o porte do alvo for maior que o da Falsa\nSanta. No parcial, metade do dano aplicável.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>O dado contra porte maior é adicional, aplicado uma vez. Não ignora\ncobertura, armadura ou resistência e não aumenta contra múltiplas\ncategorias de tamanho. Custo: 4 Base III, 4 Longo, 3 Dado adicional = 11\nKarma.</p>"
+          }
+        ],
+        "grade": "III",
+        "cost": "11 Karma"
+      },
+      {
+        "title": "Sansão — Colunas do Último Templo",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Divino · Principal · 17 Karma · raio de 5 m, centro a até\n20 m</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Colunas incandescentes irrompem do chão. Maior de 5d20 +10, comparado\nà CA de cada criatura na área. Total 2d12 divino e Imobilizado até o\ninício do próximo turno da Falsa Santa; parcial metade do dano, sem\nimobilização.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Atinge aliados na área. As colunas não causam dano novamente ao\nentrar, sair ou iniciar turno. Não esmagam construções automaticamente.\nCusto: 6 Base IV, 4 Longo, 4 Área média, 3 Controle secundário III = 17\nKarma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "17 Karma"
+      },
+      {
+        "title": "Adão — Primeiro Sopro",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Grau IV · Divino · Principal · 17 Karma · até três criaturas\nvoluntárias a até 20 m · uma vez por cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Um sopro atravessa água e luz. Role 2d10 uma vez; cada alvo recupera\nesse valor em Vida e encerra, à escolha, Sangramento ou Exausto causado\nexclusivamente por esforço físico.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Pode incluir a própria Falsa Santa entre os alvos, constituindo sua\núnica utilização de cura divina em si mesma por cena. O uso pessoal\ncompartilha a mesma ativação única de Adão; não concede uma segunda\nutilização. Não remove exaustão por esgotamento de Karma, Corrupção,\nmaldições ou custos de técnicas. Não regenera membros, não ressuscita e\nnão produz escudo por Costura do Excedente. Custo: 6 Base IV, 4 Longo, 4\nAté seis alvos, 3 Purificação secundária III = 17 Karma.</p>"
+          }
+        ],
+        "grade": "IV",
+        "cost": "17 Karma"
+      },
+      {
+        "title": "Frankenstein — A Obra que Respira",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Assinatura corrupta · Grau V · Principal · 21 Karma e 8 PC · um ser\nvivo a até 10 m · Controle CD 19 · ápice da cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Em sucesso no Controle, um alvo voluntário recupera 3d10 Vida,\nregenera partes corporais perdidas ; a reconstrução restaura tecidos e\nmembros, mas não remove maldições ou outras condições por uma terceira\nfunção. Contra alvo involuntário, primeiro oponha Presença + Controle da\nCorrupção (maior de 5d20 +10) a Espírito + Resistência à Corrupção do\nalvo: somente se superar, aplica a reconstrução e assume controle\ncorporal por até duas rodadas. No início de cada turno da vítima, repita\nessa oposição; empate ou vitória da vítima encerra o controle antes de\nagir.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>A Falsa Santa não pode ser alvo desta técnica. Sustentar o controle\nconsome a Principal da Falsa Santa em cada turno seguinte; a vítima age\napenas no próprio turno e com as próprias ações e recursos. Uma vítima\npor vez. Não acessa memórias, rouba bênçãos ou obriga técnicas que a\nFalsa Santa desconheça. Ordens de autodestruição direta encerram o\ncontrole. Inconsciência da Falsa Santa, afastamento além de 10 m ou\nabandono da sustentação também o encerram; a cura já realizada\npermanece. Não remove maldições, esgotamento de recursos ou destruição\nda alma, nem ressuscita. Pode aplicar Costura do Excedente. Custo: 12\nBase V, 2 Médio, 6 Controle secundário IV, 1 Duas rodadas = 21\nKarma.</p>"
+          }
+        ],
+        "grade": "V",
+        "cost": "21 Karma"
+      },
+      {
+        "title": "Dia do Julgamento Final",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Uso",
+            "html": "<p>Assinatura divina · Grau V · Principal · 23 Karma · centro visível a\naté 30 m · raio de 10 m · ápice da cena</p>"
+          },
+          {
+            "label": "Resolução",
+            "html": "<p>Marca um círculo fixo e soa a primeira trombeta imediatamente. Outras\nseis soam, uma em cada turno seguinte, ao gastar a Principal para\nsustentar. Em cada pulso, role Comunhão Divina, maior de 5d20 +10,\ncontra a CA de cada criatura dentro do círculo, inclusive aliados.\nTotal: 3d10 divino e o efeito da trombeta; parcial: metade do dano, sem\nefeito secundário. Cada condição dura até o início do próximo turno da\nFalsa Santa.</p>"
+          },
+          {
+            "label": "Limites",
+            "html": "<p>Entrar na área não dispara pulso adicional; sair permite evitar os\nseguintes. A Falsa Santa pode mover-se e reagir enquanto sustenta, mas\nnão usar outra Principal. O ritual termina ao abandonar a sustentação,\nficar inconsciente ou sofrer dissipação bem-sucedida por confronto\nsobrenatural contra sua Comunhão. Não guarda trombetas para depois nem\nas concentra num só turno. Cada trombeta posterior exige mais 23 Karma\njunto da Principal; sem esse pagamento o ritual termina antes do pulso.\nO máximo de sete pulsos custa 161 Karma. Custo: 12 Base V, 4 Longo, 6\nÁrea grande, 1 Efeito da trombeta = 23 Karma.</p>"
+          }
+        ],
+        "grade": "V",
+        "cost": "23 Karma"
+      },
+      {
+        "title": "As sete trombetas",
+        "kind": "trait",
+        "fields": [
+          {
+            "label": "",
+            "html": "<p>o círculo vibra antes de cada pulso, revelando a área ameaçada. Os\nefeitos abaixo só atingem quem sofreu o dano total daquela trombeta.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "I · Soberba",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>As cabeças se curvam sob uma coroa invisível.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>−2 nos testes de ataque.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "II · Avareza",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>Cada fio exige um preço para deixar o corpo agir.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Técnicas que custam Karma exigem +2 Karma por ativação, uma vez por\ntécnica; não altera manutenção nem custos em PC. Sem recursos\nsuficientes, a técnica não pode ser declarada.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "III · Luxúria",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>O centro promete aquilo que cada coração perdeu.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Não pode aumentar voluntariamente a distância ao centro. Pode\naproximar-se ou mover-se sem aumentar essa distância; movimento forçado\ncontinua possível.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "IV · Inveja",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>Os presentes alheios se tornam peso morto.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Suspende bônus numéricos concedidos por outras criaturas; não remove\natributos próprios, itens, cura ou escudos já recebidos. Os bônus\nretomam sua duração restante ao terminar.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "V · Gula",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>Toda cura parece insuficiente para a fome da carne.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Curas recebidas são reduzidas à metade, arredondada para baixo. Não\nreduz escudos nem causa dano.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "VI · Ira",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>A defesa se abre diante de uma ameaça que ninguém mais vê.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>−2 na CA. Não altera Evasão ou Resistência.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      },
+      {
+        "title": "VII · Preguiça",
+        "kind": "ability",
+        "fields": [
+          {
+            "label": "Manifestação",
+            "html": "<p>Até o impulso de sobreviver se torna exaustivo.</p>"
+          },
+          {
+            "label": "Efeito",
+            "html": "<p>Deslocamento reduzido à metade; perde a Reação ainda disponível e não\nrecebe outra enquanto durar o efeito. Não remove a Principal.</p>"
+          }
+        ],
+        "grade": "",
+        "cost": ""
+      }
+    ],
+    "facts": [
+      {
+        "label": "Raça · classe · posição",
+        "value": "Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa VII · senhora da Corte"
+      },
+      {
+        "label": "Ações",
+        "value": "1 Principal, 1 Deslocamento e 3 Reações por rodada. Apenas uma Reação pode responder à mesma resolução hostil."
+      },
+      {
+        "label": "Iniciativa e Evasão",
+        "value": "Agilidade + Reflexos: maior de 4d20 +5"
+      }
+    ]
+  }
+]

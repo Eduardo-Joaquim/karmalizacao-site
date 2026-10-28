@@ -1,0 +1,75 @@
+{
+  "rounding": "ceil",
+  "multipliers": {
+    "life": 100,
+    "karma": 100,
+    "ca": 100
+  },
+  "overrides": {},
+  "base": {
+    "euphere": {
+      "life": 180,
+      "karma": [
+        126
+      ],
+      "ca": 27,
+      "forms": [
+        23,
+        27,
+        27
+      ]
+    },
+    "joao-e-maria": {
+      "life": 120,
+      "karma": [
+        63,
+        55
+      ],
+      "ca": 25,
+      "forms": []
+    },
+    "geppeto": {
+      "life": 80,
+      "karma": [
+        124
+      ],
+      "ca": 23,
+      "forms": []
+    },
+    "ganancia": {
+      "life": 120,
+      "karma": [
+        91
+      ],
+      "ca": 25,
+      "forms": []
+    },
+    "nemetor": {
+      "life": 120,
+      "karma": [
+        54
+      ],
+      "ca": 25,
+      "forms": []
+    },
+    "branca-de-neve": {
+      "life": 120,
+      "karma": [
+        78
+      ],
+      "ca": 25,
+      "forms": []
+    },
+    "maelia-veyr": {
+      "life": 120,
+      "karma": [
+        89
+      ],
+      "ca": 25,
+      "forms": [
+        25,
+        25
+      ]
+    }
+  }
+}

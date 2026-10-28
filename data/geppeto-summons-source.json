@@ -1,0 +1,440 @@
+{
+  "multiplier": 130,
+  "members": [
+    {
+      "id": "pinoquio",
+      "name": "Pinóquio",
+      "title": "O Menino de Madeira",
+      "grade": "IV",
+      "life": 34,
+      "ca": 19,
+      "movement": 8,
+      "attributes": [
+        1,
+        7,
+        1,
+        1,
+        9,
+        1
+      ],
+      "call": 8,
+      "maintenance": 3,
+      "skills": "Luta 2; Conjuração Vincular 2; demais 0.",
+      "attack": {
+        "name": "Golpe de Madeira",
+        "attribute": 1,
+        "training": 2,
+        "damage": "3d8 físicos",
+        "range": "Corpo a corpo, até 2 m"
+      },
+      "tests": [
+        {
+          "name": "Puxar os Fios / Cópia Vinculada",
+          "attribute": 4,
+          "training": 2
+        }
+      ],
+      "weakness": "Uma Principal e Espírito + Ocultismo CD 18 encerram o comando antes de cumpri-lo. Um aliado pode cortar o fio, CA 12 e Vida 8. Confessar voluntariamente a mentira com uma Principal também rompe o controle e apaga as cópias ligadas àquela vítima. Comando impossível ou contraditório desfaz o fio.",
+      "abilities": [
+        {
+          "name": "Fio da Mentira",
+          "action": "Passivo",
+          "cost": "0 Karma",
+          "range": "15 m",
+          "effect": "Uma mentira deliberada de uma criatura viva cria um fio visível ligado ao falante. Erro sincero, opinião, silêncio e recusa não contam. Existe no máximo um fio por alvo. A marca revela que houve mentira, não revela a verdade.",
+          "duration": "Até Pinóquio se dissipar, o fio ser rompido ou a cena terminar."
+        },
+        {
+          "name": "Puxar os Fios",
+          "action": "Manifestar ou Reação com ordem reservada",
+          "cost": "11 Karma de Geppeto",
+          "range": "Uma criatura marcada a até 15 m",
+          "test": "{test0} contra CA. A Reação exige uma nova mentira deliberada da vítima.",
+          "total": "Impõe um comando executável de uma frase, por até três rodadas ou até sua conclusão. A vítima usa suas próprias ações em seus turnos. Antes de obedecer, pode tentar romper o controle com Espírito + Ocultismo CD 18.",
+          "partial": "Uma interação simples imediata, sem ataque ou gasto de recurso. Não concede cópia.",
+          "failure": "Não controla; rompe o fio. A vítima não pode sofrer Puxar os Fios novamente nesta cena.",
+          "limits": "Não cria turnos ou ações ofensivas adicionais para a vítima.",
+          "construction": "Grau IV: 6 Base IV, 1 Reação possível, 2 Médio, 2 Três rodadas = 11 Karma."
+        },
+        {
+          "name": "Cópia Vinculada — Bênção e Técnica",
+          "action": "Registro após concluir um comando de acerto total; Manifestar para usar a cópia",
+          "cost": "Registro sem custo adicional. Cada uso paga o custo e a manutenção originais com os recursos de Geppeto.",
+          "effect": "Ao concluir um comando total de Puxar os Fios, Pinóquio registra poderes que tenha observado a vítima manifestar nesta cena. Pode manter simultaneamente uma Bênção e uma técnica de Grau I a IV. Os dois espaços são independentes: registrar uma técnica substitui somente a técnica anterior; registrar outra Bênção substitui somente a Bênção anterior.",
+          "test": "Quando o poder copiado exige ataque, use {test0} contra a defesa indicada pelo poder. Se exige resistência por CD, preserve a CD original. Benefícios voluntários e passivos não recebem teste novo sem necessidade.",
+          "total": "Reproduz o dano, a cura, a proteção ou o efeito integral escrito no poder copiado, com seus alvos, alcance, duração, manutenção e limites de uso. Uma Bênção concede seu Núcleo e apenas as Expressões que Pinóquio observou, não capacidades ainda desconhecidas.",
+          "partial": "Usa a forma parcial do próprio poder. Se um ataque copiado não possuir forma parcial, causa metade do dano e não aplica condição grave. Poder sem ataque contra CA não ganha resultado parcial artificial.",
+          "duration": "Cada cópia permanece disponível por três rodadas contadas nos turnos de Geppeto; a reprodução e seus efeitos mantidos encerram quando a cópia expira ou o fio que a sustenta é rompido.",
+          "limits": "Uma ordem Manifestar ativa um poder copiado, não os dois ao mesmo tempo. Os usos por cena ficam registrados por poder e não reiniciam ao copiar de novo. A cópia não retira a Bênção do original, não concede Comunhão, traços raciais ou transcendência, e não permite copiar técnica de Grau V."
+        }
+      ]
+    },
+    {
+      "id": "grilo-falante",
+      "name": "Grilo Falante",
+      "title": "A Consciência",
+      "grade": "II",
+      "life": 13,
+      "ca": 14,
+      "movement": 11,
+      "attributes": [
+        1,
+        1,
+        1,
+        5,
+        3,
+        1
+      ],
+      "call": 3,
+      "maintenance": 1,
+      "skills": "Percepção 1; Atuação 1; demais 0. Batedor: um dado Extra em Percepção.",
+      "attack": {
+        "name": "Pancada Diminuta",
+        "attribute": 0,
+        "training": 0,
+        "damage": "1d8 físicos",
+        "range": "Corpo a corpo, até 1 m"
+      },
+      "tests": [
+        {
+          "name": "Percepção de pistas",
+          "attribute": 3,
+          "training": 1,
+          "extra": 1,
+          "analytic": true
+        }
+      ],
+      "weakness": "Silenciado impede perguntas e avisos. Cobertura total impede observar novos acontecimentos. A voz precisa alcançar o protegido. Provas de uma promessa quebrada por Geppeto podem fazê-lo recusar uma punição injusta.",
+      "abilities": [
+        {
+          "name": "Pergunta Incômoda",
+          "action": "Auxiliar; uma vez por rodada",
+          "cost": "0 Karma",
+          "range": "Um alvo que o ouça a até 15 m",
+          "effect": "Faz uma pergunta objetiva sobre intenção ou contradição observada. Se o alvo recusar responder, o Grilo recebe +2 no próximo teste de Percepção para antecipá-lo até o início do próximo turno de Geppeto. Uma resposta honesta não sofre punição. Mentira só cria Fio da Mentira se Pinóquio também puder percebê-la."
+        },
+        {
+          "name": "Eu Avisei",
+          "action": "Reação defensiva",
+          "cost": "3 Karma de Geppeto",
+          "range": "Um aliado ou invocação a até 5 m",
+          "effect": "Antes da rolagem de um ataque percebido, concede +2 CA ao protegido apenas contra aquela resolução. O protegido precisa ouvir o aviso; recalcule parcial e total com a CA aumentada. Não exige ordem ofensiva reservada.",
+          "limits": "Consome a mesma Reação usada para Evasão ou Peso da Consciência.",
+          "construction": "Grau I: 2 Base I, 1 Reação = 3 Karma."
+        },
+        {
+          "name": "Peso da Consciência",
+          "action": "Reação com ordem reservada",
+          "cost": "8 Karma de Geppeto",
+          "range": "15 m",
+          "effect": "Quando alguém quebra uma promessa voluntária feita na cena, conhecida pelo Grilo e com quebra observável, perde a Reação e fica Exausto até o fim de seu próximo turno. Exausto reduz cada d20 em 1, mínimo 1, antes de escolher o maior. O gatilho não causa dano e não exige ataque.",
+          "limits": "Promessas impostas por controle mental não ativam o poder. Exausto não se acumula consigo.",
+          "construction": "Grau II: 3 Base II, 1 Reação, 2 Médio, 2 Controle secundário I = 8 Karma."
+        }
+      ]
+    },
+    {
+      "id": "fada-azul",
+      "name": "Fada Azul",
+      "title": "A Promessa",
+      "grade": "III",
+      "life": 22,
+      "ca": 16,
+      "movement": 8,
+      "attributes": [
+        1,
+        1,
+        1,
+        1,
+        7,
+        5
+      ],
+      "call": 5,
+      "maintenance": 2,
+      "skills": "Conjuração Vincular 1; Percepção 1; demais 0.",
+      "attack": {
+        "name": "Fagulha de Promessa",
+        "attribute": 4,
+        "training": 1,
+        "damage": "2d6 kármicos",
+        "range": "Corpo a corpo, até 2 m"
+      },
+      "tests": [],
+      "weakness": "Não restaura uma peça já dissipada. Promessa impossível não sustenta sua magia. A luz azul não concede imunidade nem voo por si só.",
+      "abilities": [
+        {
+          "name": "Forma Verdadeira",
+          "action": "Manifestar",
+          "cost": "8 Karma de Geppeto",
+          "range": "Uma invocação ativa a até 5 m",
+          "effect": "Restaura 2d6 Vida da peça. Por três rodadas concede +2 CA contra ataques físicos. Uma Forma Verdadeira por vez; não acrescenta dados ao ataque e não ultrapassa a Vida máxima.",
+          "duration": "Três rodadas para os bônus; a cura é imediata.",
+          "limits": "Só uma Forma Verdadeira fica ativa. Trocar o beneficiário encerra os bônus anteriores. Cada peça recebe esta cura uma vez por cena. O dado adicional não aumenta técnicas, cura ou número de ações.",
+          "construction": "Grau III: 4 Base III, 2 Defesa secundária II, 2 Três rodadas = 8 Karma."
+        },
+        {
+          "name": "Dar Vida",
+          "action": "Manifestar; exige uma ordem da Fada nas rodadas em que o objeto agir",
+          "cost": "5 Karma de Geppeto",
+          "range": "Um objeto abandonado ou sem dono a até 5 m",
+          "effect": "Anima por três rodadas um objeto de porte humano ou menor. O objeto tem Vida 8, CA 10 e movimento 5 m; executa uma tarefa simples, como carregar chave, segurar porta ou acionar alavanca. Não recebe ataque ou turno próprio.",
+          "limits": "Um objeto por vez. Item carregado por inimigo não é alvo válido. A 0 Vida ou ao terminar o efeito, fica inerte.",
+          "construction": "Grau II: 3 Base II, 2 Três rodadas = 5 Karma."
+        },
+        {
+          "name": "Desejo com Condição",
+          "action": "Manifestar",
+          "cost": "3 Karma de Geppeto",
+          "range": "Um aliado ou invocação voluntária a até 5 m",
+          "effect": "O beneficiário aceita uma promessa concreta, viável e breve. Remove uma condição simples ou reduz uma grave à sua forma reduzida. Não exige teste para aceitar.",
+          "limits": "Não remove Morrendo, Ferimento Grave, Corrupção nem a causa de reaplicação. Quebrar a promessa na mesma cena devolve a condição até o fim da cena; ela pode ser tratada normalmente.",
+          "construction": "Grau II: 3 Base II = 3 Karma."
+        }
+      ]
+    },
+    {
+      "id": "gato",
+      "name": "Gato",
+      "title": "O Ladrão de Voz",
+      "grade": "II",
+      "life": 18,
+      "ca": 14,
+      "movement": 8,
+      "attributes": [
+        1,
+        5,
+        1,
+        3,
+        1,
+        1
+      ],
+      "call": 3,
+      "maintenance": 1,
+      "skills": "Luta 1; Furtividade 1; demais 0.",
+      "attack": {
+        "name": "Garras Finas",
+        "attribute": 1,
+        "training": 1,
+        "damage": "1d8 físicos",
+        "range": "Corpo a corpo, até 1 m"
+      },
+      "tests": [
+        {
+          "name": "Roubo de Voz / Furtividade",
+          "attribute": 1,
+          "training": 1
+        }
+      ],
+      "weakness": "Retirar sombras, cortinas e outras ocultações elimina sua Vantagem em Furtividade. A 0 Vida, devolve a voz e derruba objetos guardados.",
+      "abilities": [
+        {
+          "name": "Passo de Veludo",
+          "action": "Passivo; Auxiliar para esconder-se",
+          "cost": "0 Karma",
+          "effect": "Movimenta-se sem som. Quando houver sombra, cortina, máquinas ou multidão que permitam ocultação, recebe Vantagem em Furtividade. Esconder-se usa a ordem Auxiliar e um teste oposto à Percepção. Atacar ou produzir efeito evidente encerra Oculto.",
+          "limits": "Não apaga rastros anteriores, não atravessa objetos sólidos e não cria ocultação em espaço aberto."
+        },
+        {
+          "name": "Roubo de Voz",
+          "action": "Manifestar",
+          "cost": "5 Karma de Geppeto",
+          "range": "Toque; pode aproximar-se até 4 m dentro da ação",
+          "test": "{test0} contra CA. O toque percebido permite defesa normal.",
+          "total": "Silenciado durante três rodadas contadas nos turnos de Geppeto. O Gato guarda o timbre e a Raposa pode utilizá-lo.",
+          "partial": "Desvantagem no próximo teste dependente de voz; o timbre pode ser imitado por uma rodada.",
+          "failure": "Nenhuma voz ou condição é aplicada.",
+          "limits": "Uma voz por vez; roubar outra devolve a anterior. A vítima Agarrada pelo Gato não perde suas demais ações automaticamente.",
+          "construction": "Grau II: 3 Base II, 2 Três rodadas = 5 Karma."
+        },
+        {
+          "name": "Bolso Impossível",
+          "action": "Auxiliar",
+          "cost": "0 Karma",
+          "effect": "Guarda na pelagem uma chave, documento ou objeto pequeno que tenha obtido. Pegar algo largado usa a ordem; furtar item carregado exige manobra e teste próprios contra o portador.",
+          "limits": "Capturar o Gato ou negociar permite recuperar o conteúdo. Um personagem que o tenha Agarrado pode gastar Principal para exigir a voz: o Gato escolhe devolver ou dissipar-se. O fim do Silenciado devolve a voz, mas não transporta documentos de volta."
+        }
+      ]
+    },
+    {
+      "id": "raposa",
+      "name": "Raposa",
+      "title": "A Negociadora",
+      "grade": "II",
+      "life": 18,
+      "ca": 14,
+      "movement": 8,
+      "attributes": [
+        1,
+        1,
+        1,
+        3,
+        5,
+        1
+      ],
+      "call": 3,
+      "maintenance": 1,
+      "skills": "Enganação 1; Persuasão 1; demais 0.",
+      "attack": {
+        "name": "Bengalada",
+        "attribute": 0,
+        "training": 0,
+        "damage": "1d8 físicos",
+        "range": "Corpo a corpo, até 1 m"
+      },
+      "tests": [
+        {
+          "name": "Enganação / Persuasão",
+          "attribute": 4,
+          "training": 1
+        }
+      ],
+      "weakness": "Recusar uma oferta não custa ação ou recurso. Exigir termos claros, investigar a imagem e expor contradições retira a vantagem da fraude. Nenhuma rolagem decide pelo personagem aceitar um acordo.",
+      "abilities": [
+        {
+          "name": "Campo dos Milagres",
+          "action": "Manifestar",
+          "cost": "3 Karma de Geppeto",
+          "range": "Um alvo que a ouça a até 5 m",
+          "effect": "Oferece recuperar 2 Karma, suspender Exausto por uma rodada ou conceder +2 no próximo teste até o fim da próxima rodada. Antes da aceitação, declara preço concreto: objeto, informação ou favor executável. Os 2 Karma de recuperação saem adicionalmente da reserva de Geppeto, não surgem do nada.",
+          "limits": "Uma aceitação por alvo por cena. Entrega e cobrança usam ações normais. O acordo não transporta objetos nem controla a mente; alma, identidade inteira e Bênção não são preços válidos.",
+          "construction": "Grau II: 3 Base II = 3 Karma."
+        },
+        {
+          "name": "Cenário Conveniente",
+          "action": "Manifestar",
+          "cost": "6 Karma de Geppeto",
+          "range": "Centro a até 5 m; raio 2 m",
+          "test": "Role {test0} e registre o resultado.",
+          "effect": "Cria por duas rodadas uma ilusão visual e sonora de pessoa, documento ou passagem. Quem gastar Principal para examinar usa Intelecto + Investigação em oposição ao resultado registrado; vencer revela a fraude. Contato que demonstre impossibilidade física também a revela ao observador.",
+          "limits": "Não causa dano, não concede cobertura física e não força movimento ou aceitação de perigo.",
+          "construction": "Grau II: 3 Base II, 2 Área pequena, 1 Duas rodadas = 6 Karma."
+        },
+        {
+          "name": "Sócia do Gato",
+          "action": "Auxiliar",
+          "cost": "0 Karma",
+          "effect": "Enquanto o Gato guardar uma voz, a Raposa pode reproduzi-la perfeitamente numa fala. Contradições no conteúdo continuam perceptíveis.",
+          "duration": "Até o fim do Roubo de Voz ou dissipação do Gato.",
+          "limits": "Não copia lembranças, senhas desconhecidas, autoridade sobrenatural ou documentos."
+        }
+      ]
+    },
+    {
+      "id": "baleia",
+      "name": "Baleia",
+      "title": "O Ventre do Mundo",
+      "grade": "IV",
+      "life": 43,
+      "ca": 17,
+      "movement": 8,
+      "attributes": [
+        7,
+        1,
+        9,
+        1,
+        1,
+        1
+      ],
+      "call": 8,
+      "maintenance": 3,
+      "skills": "Luta 2; Atletismo 2; demais 0.",
+      "attack": {
+        "name": "Impacto de Mandíbula",
+        "attribute": 0,
+        "training": 2,
+        "damage": "3d8 físicos",
+        "range": "Corpo a corpo, até 2 m"
+      },
+      "tests": [
+        {
+          "name": "Engolir o Cenário",
+          "attribute": 0,
+          "training": 2
+        }
+      ],
+      "weakness": "O ventre tem uma garganta e uma fissura alcançáveis. Destruir a fissura, sair pela garganta ou dissipar a Baleia devolve os prisioneiros sem dano adicional.",
+      "abilities": [
+        {
+          "name": "Engolir o Cenário",
+          "action": "Manifestar; uma vez por cena; anunciado na rodada anterior",
+          "cost": "10 Karma de Geppeto",
+          "range": "Centro a até 5 m da boca; raio 5 m",
+          "test": "Uma rolagem de {test0}, comparada separadamente à CA de cada ocupante. Aliados também podem ser atingidos; cobertura e Evasão continuam válidas.",
+          "total": "Transporta para o Ventre do Mundo, sem dano inicial. O prisioneiro conserva iniciativa, ações, consciência e recursos.",
+          "partial": "Arrasta 2 m em direção à boca e aplica Lento até o início do próximo turno da vítima; não a engole.",
+          "failure": "Não desloca nem aprisiona.",
+          "duration": "No máximo três rodadas no ventre; depois, todos são expelidos em espaço livre junto à boca.",
+          "construction": "Grau IV: 6 Base IV, 4 Área média, 2 Três rodadas, -2 Preparo e uma vez por cena = 10 Karma."
+        },
+        {
+          "name": "Dentro do Ventre — rotas de saída",
+          "action": "Principal do prisioneiro ou ataque apropriado",
+          "cost": "Sem custo fixo; técnicas usadas pagam seus custos normais",
+          "effect": "A garganta permite fuga com Agilidade + Acrobacia ou Constituição + Atletismo CD 18. A fissura tem CA 12 e Vida 12 e pode ser atacada por dentro ou de fora; destruí-la abre passagem para todos até o próximo turno de Geppeto. O ventre não causa digestão automática.",
+          "limits": "A 0 Vida da Baleia, todos saem sem dano adicional. Uma peça convencida pode gastar sua ordem para pedir abertura por uma razão coerente com transporte ou proteção da carga."
+        },
+        {
+          "name": "Carga Territorial",
+          "action": "Movimento por ordem apropriada",
+          "cost": "0 Karma adicional",
+          "effect": "Transporta uma Âncora Territorial e seus ocupantes associados, preservando a estabilidade da carga. Nada ou desliza por sombras largas com o deslocamento registrado.",
+          "limits": "A Âncora continua acessível para sabotagem; o transporte não cria uma décima Âncora. Em interiores, manifesta apenas a parte do corpo compatível com o espaço."
+        }
+      ]
+    },
+    {
+      "id": "pavio",
+      "name": "Pavio",
+      "title": "O Convite ao Abandono",
+      "grade": "III",
+      "life": 22,
+      "ca": 16,
+      "movement": 8,
+      "attributes": [
+        1,
+        5,
+        1,
+        1,
+        7,
+        1
+      ],
+      "call": 5,
+      "maintenance": 2,
+      "skills": "Conjuração Vincular 1; Atuação 1; demais 0.",
+      "attack": {
+        "name": "Laço de Abandono",
+        "attribute": 4,
+        "training": 1,
+        "damage": "2d6 kármicos",
+        "range": "Corpo a corpo, até 2 m"
+      },
+      "tests": [],
+      "weakness": "Recusar as ofertas impede as marcas. Reassumir uma responsabilidade livremente escolhida, com a ajuda de alguém, rompe a transformação. Não pode obter aceitação por controle mental.",
+      "abilities": [
+        {
+          "name": "Terra dos Brinquedos",
+          "action": "Manifestar; uma oferta por alvo a cada rodada",
+          "cost": "7 Karma de Geppeto",
+          "range": "Um alvo que o ouça a até 5 m",
+          "effect": "Oferece receber +2 no próximo teste até o fim do próximo turno ou adiar até 5 de um dano imediato até o fim do próximo turno da vítima. Antes da escolha, anuncia que aceitar concede uma Marca de Abandono e descreve o próximo estágio. Cada nova marca exige outra aceitação voluntária.",
+          "limits": "A Reação só pode ser recuperada uma vez por rodada. Dano adiado não é reduzido, não pode ser adiado de novo e ainda chega mesmo se as marcas forem removidas.",
+          "construction": "Grau III: 4 Base III, 1 Duas rodadas, 2 Transformação secundária II = 7 Karma."
+        },
+        {
+          "name": "Três Marcas de Abandono",
+          "action": "Consequência das aceitações; Auxiliar para comandar a besta",
+          "cost": "0 Karma adicional",
+          "effect": "Primeira marca: ignora Amedrontado por uma rodada. Segunda: −1 em testes para ajudar ou cooperar. Terceira: transforma em besta de carga até o fim da cena, conservando Vida, CA e atributos, mas retirando fala articulada e manipulação fina. Uma ordem permite seguir, carregar, aguardar ou largar carga usando a ação normal da vítima.",
+          "limits": "Não concede ataques gratuitos, não força agressão e não aplica três marcas com uma única aceitação."
+        },
+        {
+          "name": "Responsabilidade Escolhida",
+          "action": "Principal da vítima ou de aliado adjacente",
+          "cost": "0 Karma",
+          "effect": "Um aliado lembra uma responsabilidade verdadeira escolhida livremente pela vítima. Se ela decidir reassumi-la, todas as marcas e a transformação terminam sem teste. A própria vítima pode usar Principal e Espírito + Ocultismo CD 18 para recordar o vínculo.",
+          "limits": "Dissipar Pavio ou encerrar a cena também remove as marcas. Danos apenas adiados continuam devidos."
+        }
+      ]
+    }
+  ]
+}

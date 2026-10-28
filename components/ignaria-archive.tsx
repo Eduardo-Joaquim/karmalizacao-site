@@ -1,0 +1,19 @@
+import { ArrowUpRight, Crown, Flame, Landmark, Shield, Skull } from "lucide-react";
+const court="/mundo/ignaria/corte-vampirica";
+export function IgnariaContinentCard(){return <a href="/mundo/ignaria" className="gaeria-continent-card ignaria-continent-card"><Flame aria-hidden="true"/><div><span>CONTINENTE DO FOGO</span><strong>Ignária</strong><p>Cortes das rainhas · Casas nobres · Pretendentes</p></div><ArrowUpRight aria-hidden="true"/></a>;}
+export function IgnariaArchive(){
+  return <section className="gaeria-archive ignaria-archive" aria-label="Arquivo de Ignária"><header className="gaeria-archive-heading"><Flame aria-hidden="true"/><div><p>CONTINENTE DO FOGO</p><h2>Ignária</h2><span>Coroas sobre a cinza. Juramentos em ferro.</span></div></header><details className="imperial-entry"><summary><Crown aria-hidden="true"/>Corte Imperial · Ignária</summary><p>Nos encontros entre reinos, a precedência imperial se sobrepõe à nobreza territorial. Abaixo das coroas, os ducados antecedem os marquesados, seguidos por condados, viscondados e baronatos. A linhagem de uma casa não dispensa os compromissos assumidos com a terra e seus habitantes.</p></details><div className="gaeria-category-grid">
+    <section className="gaeria-category"><header><Crown aria-hidden="true"/><h3>Cortes e coroas</h3><span>01</span></header><a className="gaeria-entry gaeria-entry-royal" href={court}><small>REINO VAMPÍRICO · SÁRKORA</small><h4>Corte Haimaton</h4><p>Rainha Nosferato V. Drácula, Princesa Alucard e Princesa Sávia Vita.</p><span>Conhecer a corte <ArrowUpRight aria-hidden="true"/></span></a><a className="gaeria-entry gaeria-entry-royal" href="/mundo/ignaria/corte-demoniaca"><small>REINO DEMONÍACO · AQUERONTE</small><h4>Corte Lucifero</h4><p>Valac Lucifero, as quatro herdeiras e a bênção Desespero.</p><span>Conhecer a corte <ArrowUpRight aria-hidden="true"/></span></a><a className="gaeria-entry" href="/mundo/ignaria/ghouls"><small>REALEZA GHOUL · TRONO VAGO</small><h4>Qahir</h4><p>Al-Aqwa, Matador de Rainhas, e três candidatas à coroa.</p><span>Conhecer os pretendentes <ArrowUpRight aria-hidden="true"/></span></a></section>
+    <section className="gaeria-category"><header><Landmark aria-hidden="true"/><h3>Organizações e casas</h3><span>02</span></header>{[
+      ["Casa Ducal Agares","Ducado das passagens do sul, guardado por sangue e juramento.","/mundo/ignaria/corte-demoniaca#duque-agares"],
+      ["Casa Marquesal Dorne","Marquesado das passagens de basalto, das minas e da guarda do norte.",court+"#marquesado-dorne"],
+      ["Casa Marquesal Kessel","Marquesado das estradas de cinza e das rotas das forjas.",court+"#marquesado-kessel"],
+      ["Casa Marquesal Andras","Marquesado das rotas veladas e dos serviços à coroa.","/mundo/ignaria/corte-demoniaca#marques-andras"],
+      ["Casa Marquesal Marchosias","Marquesado das guarnições e dos pactos militares de Aqueronte.","/mundo/ignaria/corte-demoniaca#marquesa-marchosias"],
+      ["Casa Marquesal Lunaviel","Marquesado humano de Ignária: Caroline, Valentino e Alaric Voss.","/mundo/ignaria/casa-lunaviel"],
+      ["Casa Condal Senn","Condado dos reservatórios, dos celeiros e das casas de doação.",court+"#condado-senn"],
+      ["Casa Viscondal Kost","Viscondado dos entrepostos e das permissões de travessia.",court+"#viscondado-kost"],
+    ].map(([name,description,url])=><a key={url} className="gaeria-entry" href={url}><h4>{name}</h4><p>{description}</p><span>Consultar <ArrowUpRight aria-hidden="true"/></span></a>)}</section>
+    <section className="gaeria-category"><header><Skull aria-hidden="true"/><h3>Monstros de Ignária</h3><span>03</span></header><div className="gaeria-entry gaeria-empty"><Shield aria-hidden="true"/><h4>Nenhuma criatura catalogada</h4><p>O catálogo de monstros deste continente ainda não possui verbetes.</p></div></section>
+  </div></section>;
+}

@@ -1,0 +1,815 @@
+{
+  "title": "Os Pretendentes Ghouls de Ignária",
+  "slug": "ghouls",
+  "url": "/mundo/ignaria/ghouls",
+  "introHtml": "<p>Nas cidades de Ignária, os ghouls já negociam terras, juram serviço e\ndisputam cargos. A coroa continua vazia. Entre seus pretendentes, nenhum\nnome pesa tanto quanto Al-Aqwa.</p>\n",
+  "html": "<p>Nas cidades de Ignária, os ghouls já negociam terras, juram serviço e\ndisputam cargos. A coroa continua vazia. Entre seus pretendentes, nenhum\nnome pesa tanto quanto Al-Aqwa.</p>\n<h2 id=\"trono-ghoul\">O trono sem soberana</h2>\n<p>As candidatas precisam conquistar seguidores e sustentar seu direito\ndiante dos próprios ghouls. A aprovação do Matador de Rainhas pode\nreunir casas inteiras, mas não equivale a uma coroação.</p>\n<article class=\"elven-dossier\" aria-labelledby=\"al-aqwa\"><h3 id=\"al-aqwa\">Al-Aqwa · Qahir</h3>\n<h4 id=\"aqwa-historia\">História e Origem</h4>\n<p>Al-Aqwa tem vinte anos. Há quatro anos, aos dezesseis, matou as\nantigas rainhas tritã, demi-humana e humana em confrontos que encerraram\ntrês reinados. As soberanas que hoje ocupam essas três coroas vieram\ndepois; os nomes das mortas continuam nos juramentos de seus seguidores\ne de seus inimigos. Cada sucessão prosseguiu entre os respectivos\nherdeiros: nenhuma dessas mortes o coroou rei dos povos que enfrentou.\nSeus seguidores chamam-no de Pináculo da Resistência e Matador de\nRainhas. Entre os nove gênios reconhecidos no mundo, ocupa o lugar do\nGênio da Luta.</p>\n<p>Ele recusa uma coroa que exigiria abandonar as ruas onde cresceu.\nRecebe pretendentes em um pátio aberto, sem exigir reverência. Escuta\npromessas até o fim e pergunta quem pagará por elas. Sahar, Naima e\nZahra disputam seu reconhecimento; nenhuma recebeu dele um juramento de\nsubmissão. Sua voz é baixa, seus gestos são econômicos e suas mãos\nconservam as marcas de ferimentos que obrigaram curandeiros a aprender\nnovos tratamentos.</p>\n<h4 id=\"aqwa-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Tanque VII, 20 anos, Ranque SSS</dd></div><div><dt>Vida</dt><dd>280</dd></div><div><dt>Karma</dt><dd>100</dd></div><div><dt>CA</dt><dd>29</dd></div><div><dt>Deslocamento</dt><dd>9 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>10</dd></div><div><dt>Agilidade</dt><dd>3</dd></div><div><dt>Constituição</dt><dd>14</dd></div><div><dt>Intelecto</dt><dd>3</dd></div><div><dt>Presença</dt><dd>5</dd></div><div><dt>Espírito</dt><dd>3</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Uma mesma resolução admite uma única resposta dele.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">7d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">2d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">2d20 + 6</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intimidação</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Canalização</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">2d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Punhos:</strong> Luta contra CA, alcance 2 m, dano base 2d10\nfísico. As técnicas substituem esse dano quando indicam outro valor.\n<strong>Carne obstinada:</strong> redução 4 contra dano físico.\nFerimentos continuam a afetá-lo normalmente; não regenera membros\ndurante um confronto.</p>\n<section class=\"elven-ability-source\"><h5 id=\"aqwa-ruina\">1 · Ruína</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Caído. Parcial causa metade, sem derrubar. Levantar\nconsome Movimento.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-cerco\">2 · Cerco</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra Força + Atletismo. Vitória\naplica Agarrado até o final do próximo turno de Al-Aqwa; enquanto mantém\no agarrão, ele também não pode se afastar. A vítima pode gastar\nPrincipal para repetir a oposição. Não causa dano e só mantém um\nalvo.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-cisma\">3 · Cisma</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Guarda Rota, reduzindo a CA em 3 até o final do\npróximo turno da vítima. Parcial metade, sem condição. Guarda Rota não\nacumula consigo mesma.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-rechaco\">4 · Rechaço</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nReação, 8 Karma, quando um ataque corpo a corpo percebido erra sua CA.\nLuta contra CA do atacante a 2 m: <strong>2d12 físico</strong> e\nempurrão de 4 m; se houver obstáculo antes dessa distância, o alvo fica\nCaído, sem dano adicional. Parcial metade sem deslocamento. Não responde\na contra-ataques nem inicia ciclos de reação.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 1 efeito\nmenor = 8 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-lastro\">5 · Lastro</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nPrincipal, 13 Karma, chão em raio de 4 m. Luta contra Reflexos de cada\noutra criatura apoiada no solo. Vitória causa <strong>2d12\nfísico</strong> e Lento, reduzindo o deslocamento pela metade até o\nfinal do próximo turno da vítima. Derrota causa metade, sem condição.\nNão alcança criaturas voando ou suspensas; aliados também são\nafetados.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 4 área /\ndestinatários + 3 função secundária iii = 13 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-quebranto\">6 · Quebranto</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Braço Inerte, impondo −3 aos ataques que usem um braço\nescolhido até o final do próximo turno da vítima. Parcial metade sem\npenalidade. Não amputa nem destrói equipamentos.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-interdito\">7 · Interdito</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Desorientado até o final do próximo turno da vítima;\nenquanto durar, ela não pode usar Reações. Parcial metade, sem condição.\nNão remove ações já resolvidas.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-ananke\">Assinatura · Ananké</h5>\n<p><strong>Fonte e Grau:</strong> Marcial V. <strong>Uso:</strong>\nPrincipal, 19 Karma, uma vez por cena, alvo a 2 m. Al-Aqwa firma os pés\ne desfere um golpe curto contra o centro do corpo. Luta contra CA: total\n<strong>3d10 físico</strong> e Abalado Grave por duas rodadas:\ndeslocamento reduzido à metade, sem Reações e −3 aos ataques. No início\nde cada turno, a vítima pode testar Constituição + Atletismo, CD 22;\nsucesso encerra a condição antes de agir. Parcial causa metade do dano,\nsem condição. O golpe não recebe os danos das outras técnicas nem exige\nque o alvo esteja previamente agarrado.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 1 duração + 6\nfunção secundária iv = 19 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"candidata-sahar\"><h3 id=\"candidata-sahar\">Sahar · Sayf</h3>\n<h4 id=\"sahar-historia\">História e Origem</h4>\n<p>Sahar reuniu veteranos sem soldo e abriu as portas de seu quartel às\nfamílias deles. Sua candidatura nasceu desses compromissos. Deseja uma\ncoroa capaz de defender bairros ghouls sem transformar seus moradores em\ntropas descartáveis. Diante de Al-Aqwa, exige ser julgada pelos acordos\nque cumpriu. Ela chama cada testemunha pelo nome e jamais permite que um\narauto fale em seu lugar.</p>\n<h4 id=\"sahar-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Duelista VI, pretendente à realeza, Ranque SS</dd></div><div><dt>Vida</dt><dd>162</dd></div><div><dt>Karma</dt><dd>86</dd></div><div><dt>CA</dt><dd>26</dd></div><div><dt>Deslocamento</dt><dd>12 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>7</dd></div><div><dt>Agilidade</dt><dd>9</dd></div><div><dt>Constituição</dt><dd>8</dd></div><div><dt>Intelecto</dt><dd>5</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>5</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. <strong>Arma:</strong> sabre, Luta contra CA, 2d8 cortante,\nalcance 2 m.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>5 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Liderança</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 7</p></div></div><div class=\"skill-notes\"></div></section><section class=\"elven-ability-source\"><h5 id=\"sahar-fenda\">1 · Fenda</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 7 Karma, alcance 2 m. Luta contra CA: <strong>2d12\ncortante</strong> e −2 à CA até o final do próximo turno da vítima.\nParcial metade sem penalidade; não acumula.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 efeito menor = 7\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"sahar-esquiva\">2 · Esquiva</h5>\n<p><strong>Fonte e Grau:</strong> Karma III. <strong>Uso:</strong>\nReação, 6 Karma, diante de ataque percebido. Reduz o dano em\n<strong>2d10</strong> e permite recuar 2 m após a resolução, se houver\npassagem livre. Esse recuo não atravessa criaturas nem paredes.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação + 1\nefeito menor = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"sahar-guarda\">3 · Guarda</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nReação, 10 Karma, aliado a 2 m atingido por ataque percebido. Sahar\nrecebe o ataque em seu lugar, usando a própria CA, e reduz o dano\nresultante em 10. Não protege de efeitos que atinjam os dois em\nárea.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 3 função\nsecundária iii = 10 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"sahar-juramento\">Assinatura · Juramento de Ferro</h5>\n<p><strong>Fonte e Grau:</strong> Karma V. <strong>Uso:</strong>\nPrincipal, 22 Karma, uma vez por cena, alvo a 2 m. Luta contra CA:\n<strong>3d10 cortante</strong>. Acerto total impede o alvo de atravessar\numa linha de 6 m traçada pelo sabre até o final do próximo turno de\nSahar, salvo se vencer uma oposição de Força + Atletismo contra o\nresultado inicial do ataque; tentar atravessar custa 3 m de deslocamento\ne só admite uma tentativa por turno. Parcial metade sem interdição. A\nlinha desaparece se Sahar ficar inconsciente.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 4 área /\ndestinatários + 6 função secundária iv = 22 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"candidata-naima\"><h3 id=\"candidata-naima\">Naima · Alkahest</h3>\n<h4 id=\"naima-historia\">História e Origem</h4>\n<p>As oficinas de Naima sustentam hospitais e cozinhas comunitárias. Ela\nconhece o custo de cada reagente e a origem de cada dívida que compra.\nSeus adversários a acusam de adquirir lealdade; ela responde mostrando\nas listas de mortos anteriores à abertura das oficinas. Quer que Al-Aqwa\nreconheça a força de quem mantém uma cidade viva. Em audiência,\napresenta provas antes de formular pedidos e oferece água até a quem\nveio ameaçá-la.</p>\n<h4 id=\"naima-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Alquimista VI, pretendente à realeza, Ranque SS</dd></div><div><dt>Vida</dt><dd>132</dd></div><div><dt>Karma</dt><dd>94</dd></div><div><dt>CA</dt><dd>24</dd></div><div><dt>Deslocamento</dt><dd>9 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>4</dd></div><div><dt>Agilidade</dt><dd>6</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>10</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>6</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 1 Reação por\nrodada. <strong>Alforje:</strong> 3 frascos cáusticos e 2 doses\nrestauradoras por cena preparada; reposição exige oficina, ingredientes\ne uma hora. <strong>Arma:</strong> besta de mão, Pontaria contra CA, 1d8\nperfurante, 15 m.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Criação</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 15</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Medicina</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 15</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Pontaria</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Investigação</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Persuasão</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Estoque de combate:</strong> três doses corrosivas, três\nrestauradoras e dois antídotos, 0,25 espaços por frasco. Cada uso\nconsome a dose; não há reposição em combate. Restauradores seguem\nSaturação (2 por dose potente) e o limiar do consumidor. Ampolas\narremessadas não geram Saturação em quem as lança. As fórmulas de 0\nKarma são itens consumíveis, não técnicas mágicas gratuitas.</p>\n<section class=\"elven-ability-source\"><h5 id=\"naima-alcali\">1 · Álcali</h5>\n<p><strong>Fonte e Grau:</strong> Alquimia IV. <strong>Uso:</strong>\nPrincipal, 0 Karma, um frasco cáustico, alvo a 15 m. Pontaria contra CA:\n<strong>4d8 ácido</strong> e −2 aos ataques até o final do próximo turno\nda vítima. Parcial metade sem penalidade. Lavar o rosto com água, como\nLivre, remove a penalidade.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"naima-balsamo\">2 · Bálsamo</h5>\n<p><strong>Fonte e Grau:</strong> Alquimia III. <strong>Uso:</strong>\nPrincipal, 0 Karma, uma dose restauradora, toque em criatura voluntária.\nRecupera <strong>3d8 + 10 Vida</strong>, sem ultrapassar o máximo. Não\nregenera órgãos nem desperta mortos.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"naima-silica\">3 · Sílica</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nReação, 9 Karma, ataque percebido contra si ou aliado a 6 m. Uma\npelícula cristalina reduz o dano em <strong>2d12</strong> e se desfaz\napós a resolução. Não remove condições que independam do dano.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 2\nalcance médio = 9 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"naima-aqua-regia\">Assinatura · Aqua Regia</h5>\n<p><strong>Fonte e Grau:</strong> Alquimia V. <strong>Uso:</strong>\nPrincipal, 28 Karma e um frasco cáustico, uma vez por cena, área de 3 m\na até 15 m. Pontaria contra Reflexos de todos na área: vitória causa\n<strong>3d10 ácido</strong> e cria névoa corrosiva por duas rodadas.\nQuem começar o turno nela recebe 2d8 ácido, uma vez por rodada; sair\nencerra a exposição. Derrota na oposição inicial causa metade, mas não\nconcede imunidade à névoa. Vento forte a dispersa; Naima e aliados\ntambém são afetados. Danos à armadura são superficiais e não destroem\nitens.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 2 alcance médio + 4\nárea / destinatários + 1 duração + 6 função secundária iv + 3 pulsos\nposteriores = 28 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"candidata-zahra\"><h3 id=\"candidata-zahra\">Zahra · Siroco</h3>\n<h4 id=\"zahra-historia\">História e Origem</h4>\n<p>Zahra acompanha caravanas que cruzam os corredores de vento quente.\nSua candidatura reúne comunidades que raramente comparecem às\nassembleias das cidades. Quer que a futura corte responda também por\nquem vive longe de suas muralhas. Ao encontrar Al-Aqwa, relata primeiro\nos desaparecidos na última viagem. Usa mapas riscados à mão e deixa\nespaços em branco onde ninguém voltou para confirmar um caminho.</p>\n<h4 id=\"zahra-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Elementalista VI, afinidade Ar, pretendente à realeza, Ranque SS</dd></div><div><dt>Vida</dt><dd>140</dd></div><div><dt>Karma</dt><dd>110</dd></div><div><dt>CA</dt><dd>25</dd></div><div><dt>Deslocamento</dt><dd>12 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>4</dd></div><div><dt>Agilidade</dt><dd>8</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>6</dd></div><div><dt>Presença</dt><dd>6</dd></div><div><dt>Espírito</dt><dd>10</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. <strong>Arma:</strong> bastão, Luta contra CA, 1d8 físico,\nalcance 2 m. <strong>Ar:</strong> os ventos criados não removem o ar dos\npulmões nem atravessam barreiras fechadas.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Ar</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Canalização</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Sobrevivência</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 1\"><small>NÍVEL</small>1</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+2</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i></i><i></i></span></div><p class=\"skill-roll\">2d20 + 2</p></div></div><div class=\"skill-notes\"></div></section><section class=\"elven-ability-source\"><h5 id=\"zahra-rajada\">1 · Rajada</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar IV.\n<strong>Uso:</strong> Principal, 10 Karma, linha de 18 m por 2 m. Ar\ncontra Reflexos de todos na linha: vitória causa <strong>2d12\nAr</strong> e empurra 4 m; derrota causa metade sem empurrão. Obstáculos\ninterrompem a linha; aliados são afetados.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 4 área /\ndestinatários = 10 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"zahra-contravento\">2 · Contravento</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar IV.\n<strong>Uso:</strong> Reação, 9 Karma, projétil físico percebido\ndirigido a criatura a 10 m. Reduz o dano em <strong>2d12</strong>. Não\ndesvia raios, explosões ou efeitos mentais.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 2\nalcance médio = 9 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"zahra-ascensao\">3 · Ascensão</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar III.\n<strong>Uso:</strong> Movimento, 7 Karma, pessoal. Voa até 12 m e pousa\nem superfície capaz de sustentá-la. Não permanece suspensa após esse\ndeslocamento. Pode carregar uma criatura voluntária de porte igual ou\nmenor, reduzindo a distância à metade.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 movimento + 2\nalcance médio = 7 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"zahra-samum\">Assinatura · Samum</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar V.\n<strong>Uso:</strong> Principal, 23 Karma, uma vez por cena, coluna de 4\nm de raio a 20 m, duração duas rodadas. Ar contra Reflexos de cada\ncriatura na área: vitória causa <strong>3d10 Ar</strong> e Caído;\nderrota causa metade, sem condição. Durante a duração, o terreno da\ncoluna custa o dobro de deslocamento e projéteis físicos que a\natravessem sofrem −3 ao ataque. Não repete o dano inicial. Zahra pode\ndissipá-la como Livre; aliados não são imunes.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 4 alcance longo + 1\nduração + 6 função secundária iv = 23 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section></article>",
+  "sections": [
+    {
+      "id": "trono-ghoul",
+      "title": "O trono sem soberana",
+      "html": "<p>As candidatas precisam conquistar seguidores e sustentar seu direito\ndiante dos próprios ghouls. A aprovação do Matador de Rainhas pode\nreunir casas inteiras, mas não equivale a uma coroação.</p>\n<article class=\"elven-dossier\" aria-labelledby=\"al-aqwa\"><h3 id=\"al-aqwa\">Al-Aqwa · Qahir</h3>\n<h4 id=\"aqwa-historia\">História e Origem</h4>\n<p>Al-Aqwa tem vinte anos. Há quatro anos, aos dezesseis, matou as\nantigas rainhas tritã, demi-humana e humana em confrontos que encerraram\ntrês reinados. As soberanas que hoje ocupam essas três coroas vieram\ndepois; os nomes das mortas continuam nos juramentos de seus seguidores\ne de seus inimigos. Cada sucessão prosseguiu entre os respectivos\nherdeiros: nenhuma dessas mortes o coroou rei dos povos que enfrentou.\nSeus seguidores chamam-no de Pináculo da Resistência e Matador de\nRainhas. Entre os nove gênios reconhecidos no mundo, ocupa o lugar do\nGênio da Luta.</p>\n<p>Ele recusa uma coroa que exigiria abandonar as ruas onde cresceu.\nRecebe pretendentes em um pátio aberto, sem exigir reverência. Escuta\npromessas até o fim e pergunta quem pagará por elas. Sahar, Naima e\nZahra disputam seu reconhecimento; nenhuma recebeu dele um juramento de\nsubmissão. Sua voz é baixa, seus gestos são econômicos e suas mãos\nconservam as marcas de ferimentos que obrigaram curandeiros a aprender\nnovos tratamentos.</p>\n<h4 id=\"aqwa-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Tanque VII, 20 anos, Ranque SSS</dd></div><div><dt>Vida</dt><dd>280</dd></div><div><dt>Karma</dt><dd>100</dd></div><div><dt>CA</dt><dd>29</dd></div><div><dt>Deslocamento</dt><dd>9 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>10</dd></div><div><dt>Agilidade</dt><dd>3</dd></div><div><dt>Constituição</dt><dd>14</dd></div><div><dt>Intelecto</dt><dd>3</dd></div><div><dt>Presença</dt><dd>5</dd></div><div><dt>Espírito</dt><dd>3</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Uma mesma resolução admite uma única resposta dele.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">7d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">2d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">2d20 + 6</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intimidação</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Canalização</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">2d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Punhos:</strong> Luta contra CA, alcance 2 m, dano base 2d10\nfísico. As técnicas substituem esse dano quando indicam outro valor.\n<strong>Carne obstinada:</strong> redução 4 contra dano físico.\nFerimentos continuam a afetá-lo normalmente; não regenera membros\ndurante um confronto.</p>\n<section class=\"elven-ability-source\"><h5 id=\"aqwa-ruina\">1 · Ruína</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Caído. Parcial causa metade, sem derrubar. Levantar\nconsome Movimento.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-cerco\">2 · Cerco</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra Força + Atletismo. Vitória\naplica Agarrado até o final do próximo turno de Al-Aqwa; enquanto mantém\no agarrão, ele também não pode se afastar. A vítima pode gastar\nPrincipal para repetir a oposição. Não causa dano e só mantém um\nalvo.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-cisma\">3 · Cisma</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Guarda Rota, reduzindo a CA em 3 até o final do\npróximo turno da vítima. Parcial metade, sem condição. Guarda Rota não\nacumula consigo mesma.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-rechaco\">4 · Rechaço</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nReação, 8 Karma, quando um ataque corpo a corpo percebido erra sua CA.\nLuta contra CA do atacante a 2 m: <strong>2d12 físico</strong> e\nempurrão de 4 m; se houver obstáculo antes dessa distância, o alvo fica\nCaído, sem dano adicional. Parcial metade sem deslocamento. Não responde\na contra-ataques nem inicia ciclos de reação.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 1 efeito\nmenor = 8 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-lastro\">5 · Lastro</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nPrincipal, 13 Karma, chão em raio de 4 m. Luta contra Reflexos de cada\noutra criatura apoiada no solo. Vitória causa <strong>2d12\nfísico</strong> e Lento, reduzindo o deslocamento pela metade até o\nfinal do próximo turno da vítima. Derrota causa metade, sem condição.\nNão alcança criaturas voando ou suspensas; aliados também são\nafetados.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 4 área /\ndestinatários + 3 função secundária iii = 13 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-quebranto\">6 · Quebranto</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Braço Inerte, impondo −3 aos ataques que usem um braço\nescolhido até o final do próximo turno da vítima. Parcial metade sem\npenalidade. Não amputa nem destrói equipamentos.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-interdito\">7 · Interdito</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Desorientado até o final do próximo turno da vítima;\nenquanto durar, ela não pode usar Reações. Parcial metade, sem condição.\nNão remove ações já resolvidas.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"aqwa-ananke\">Assinatura · Ananké</h5>\n<p><strong>Fonte e Grau:</strong> Marcial V. <strong>Uso:</strong>\nPrincipal, 19 Karma, uma vez por cena, alvo a 2 m. Al-Aqwa firma os pés\ne desfere um golpe curto contra o centro do corpo. Luta contra CA: total\n<strong>3d10 físico</strong> e Abalado Grave por duas rodadas:\ndeslocamento reduzido à metade, sem Reações e −3 aos ataques. No início\nde cada turno, a vítima pode testar Constituição + Atletismo, CD 22;\nsucesso encerra a condição antes de agir. Parcial causa metade do dano,\nsem condição. O golpe não recebe os danos das outras técnicas nem exige\nque o alvo esteja previamente agarrado.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 1 duração + 6\nfunção secundária iv = 19 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"candidata-sahar\"><h3 id=\"candidata-sahar\">Sahar · Sayf</h3>\n<h4 id=\"sahar-historia\">História e Origem</h4>\n<p>Sahar reuniu veteranos sem soldo e abriu as portas de seu quartel às\nfamílias deles. Sua candidatura nasceu desses compromissos. Deseja uma\ncoroa capaz de defender bairros ghouls sem transformar seus moradores em\ntropas descartáveis. Diante de Al-Aqwa, exige ser julgada pelos acordos\nque cumpriu. Ela chama cada testemunha pelo nome e jamais permite que um\narauto fale em seu lugar.</p>\n<h4 id=\"sahar-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Duelista VI, pretendente à realeza, Ranque SS</dd></div><div><dt>Vida</dt><dd>162</dd></div><div><dt>Karma</dt><dd>86</dd></div><div><dt>CA</dt><dd>26</dd></div><div><dt>Deslocamento</dt><dd>12 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>7</dd></div><div><dt>Agilidade</dt><dd>9</dd></div><div><dt>Constituição</dt><dd>8</dd></div><div><dt>Intelecto</dt><dd>5</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>5</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. <strong>Arma:</strong> sabre, Luta contra CA, 2d8 cortante,\nalcance 2 m.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>5 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Liderança</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 7</p></div></div><div class=\"skill-notes\"></div></section><section class=\"elven-ability-source\"><h5 id=\"sahar-fenda\">1 · Fenda</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 7 Karma, alcance 2 m. Luta contra CA: <strong>2d12\ncortante</strong> e −2 à CA até o final do próximo turno da vítima.\nParcial metade sem penalidade; não acumula.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 efeito menor = 7\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"sahar-esquiva\">2 · Esquiva</h5>\n<p><strong>Fonte e Grau:</strong> Karma III. <strong>Uso:</strong>\nReação, 6 Karma, diante de ataque percebido. Reduz o dano em\n<strong>2d10</strong> e permite recuar 2 m após a resolução, se houver\npassagem livre. Esse recuo não atravessa criaturas nem paredes.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação + 1\nefeito menor = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"sahar-guarda\">3 · Guarda</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nReação, 10 Karma, aliado a 2 m atingido por ataque percebido. Sahar\nrecebe o ataque em seu lugar, usando a própria CA, e reduz o dano\nresultante em 10. Não protege de efeitos que atinjam os dois em\nárea.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 3 função\nsecundária iii = 10 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"sahar-juramento\">Assinatura · Juramento de Ferro</h5>\n<p><strong>Fonte e Grau:</strong> Karma V. <strong>Uso:</strong>\nPrincipal, 22 Karma, uma vez por cena, alvo a 2 m. Luta contra CA:\n<strong>3d10 cortante</strong>. Acerto total impede o alvo de atravessar\numa linha de 6 m traçada pelo sabre até o final do próximo turno de\nSahar, salvo se vencer uma oposição de Força + Atletismo contra o\nresultado inicial do ataque; tentar atravessar custa 3 m de deslocamento\ne só admite uma tentativa por turno. Parcial metade sem interdição. A\nlinha desaparece se Sahar ficar inconsciente.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 4 área /\ndestinatários + 6 função secundária iv = 22 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"candidata-naima\"><h3 id=\"candidata-naima\">Naima · Alkahest</h3>\n<h4 id=\"naima-historia\">História e Origem</h4>\n<p>As oficinas de Naima sustentam hospitais e cozinhas comunitárias. Ela\nconhece o custo de cada reagente e a origem de cada dívida que compra.\nSeus adversários a acusam de adquirir lealdade; ela responde mostrando\nas listas de mortos anteriores à abertura das oficinas. Quer que Al-Aqwa\nreconheça a força de quem mantém uma cidade viva. Em audiência,\napresenta provas antes de formular pedidos e oferece água até a quem\nveio ameaçá-la.</p>\n<h4 id=\"naima-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Alquimista VI, pretendente à realeza, Ranque SS</dd></div><div><dt>Vida</dt><dd>132</dd></div><div><dt>Karma</dt><dd>94</dd></div><div><dt>CA</dt><dd>24</dd></div><div><dt>Deslocamento</dt><dd>9 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>4</dd></div><div><dt>Agilidade</dt><dd>6</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>10</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>6</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 1 Reação por\nrodada. <strong>Alforje:</strong> 3 frascos cáusticos e 2 doses\nrestauradoras por cena preparada; reposição exige oficina, ingredientes\ne uma hora. <strong>Arma:</strong> besta de mão, Pontaria contra CA, 1d8\nperfurante, 15 m.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Criação</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 15</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Medicina</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 15</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Pontaria</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Investigação</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Persuasão</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Estoque de combate:</strong> três doses corrosivas, três\nrestauradoras e dois antídotos, 0,25 espaços por frasco. Cada uso\nconsome a dose; não há reposição em combate. Restauradores seguem\nSaturação (2 por dose potente) e o limiar do consumidor. Ampolas\narremessadas não geram Saturação em quem as lança. As fórmulas de 0\nKarma são itens consumíveis, não técnicas mágicas gratuitas.</p>\n<section class=\"elven-ability-source\"><h5 id=\"naima-alcali\">1 · Álcali</h5>\n<p><strong>Fonte e Grau:</strong> Alquimia IV. <strong>Uso:</strong>\nPrincipal, 0 Karma, um frasco cáustico, alvo a 15 m. Pontaria contra CA:\n<strong>4d8 ácido</strong> e −2 aos ataques até o final do próximo turno\nda vítima. Parcial metade sem penalidade. Lavar o rosto com água, como\nLivre, remove a penalidade.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"naima-balsamo\">2 · Bálsamo</h5>\n<p><strong>Fonte e Grau:</strong> Alquimia III. <strong>Uso:</strong>\nPrincipal, 0 Karma, uma dose restauradora, toque em criatura voluntária.\nRecupera <strong>3d8 + 10 Vida</strong>, sem ultrapassar o máximo. Não\nregenera órgãos nem desperta mortos.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"naima-silica\">3 · Sílica</h5>\n<p><strong>Fonte e Grau:</strong> Karma IV. <strong>Uso:</strong>\nReação, 9 Karma, ataque percebido contra si ou aliado a 6 m. Uma\npelícula cristalina reduz o dano em <strong>2d12</strong> e se desfaz\napós a resolução. Não remove condições que independam do dano.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 2\nalcance médio = 9 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"naima-aqua-regia\">Assinatura · Aqua Regia</h5>\n<p><strong>Fonte e Grau:</strong> Alquimia V. <strong>Uso:</strong>\nPrincipal, 28 Karma e um frasco cáustico, uma vez por cena, área de 3 m\na até 15 m. Pontaria contra Reflexos de todos na área: vitória causa\n<strong>3d10 ácido</strong> e cria névoa corrosiva por duas rodadas.\nQuem começar o turno nela recebe 2d8 ácido, uma vez por rodada; sair\nencerra a exposição. Derrota na oposição inicial causa metade, mas não\nconcede imunidade à névoa. Vento forte a dispersa; Naima e aliados\ntambém são afetados. Danos à armadura são superficiais e não destroem\nitens.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 2 alcance médio + 4\nárea / destinatários + 1 duração + 6 função secundária iv + 3 pulsos\nposteriores = 28 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"candidata-zahra\"><h3 id=\"candidata-zahra\">Zahra · Siroco</h3>\n<h4 id=\"zahra-historia\">História e Origem</h4>\n<p>Zahra acompanha caravanas que cruzam os corredores de vento quente.\nSua candidatura reúne comunidades que raramente comparecem às\nassembleias das cidades. Quer que a futura corte responda também por\nquem vive longe de suas muralhas. Ao encontrar Al-Aqwa, relata primeiro\nos desaparecidos na última viagem. Usa mapas riscados à mão e deixa\nespaços em branco onde ninguém voltou para confirmar um caminho.</p>\n<h4 id=\"zahra-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Ghoul, Elementalista VI, afinidade Ar, pretendente à realeza, Ranque SS</dd></div><div><dt>Vida</dt><dd>140</dd></div><div><dt>Karma</dt><dd>110</dd></div><div><dt>CA</dt><dd>25</dd></div><div><dt>Deslocamento</dt><dd>12 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>4</dd></div><div><dt>Agilidade</dt><dd>8</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>6</dd></div><div><dt>Presença</dt><dd>6</dd></div><div><dt>Espírito</dt><dd>10</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. <strong>Arma:</strong> bastão, Luta contra CA, 1d8 físico,\nalcance 2 m. <strong>Ar:</strong> os ventos criados não removem o ar dos\npulmões nem atravessam barreiras fechadas.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Ar</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Canalização</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">5d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Sobrevivência</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 1\"><small>NÍVEL</small>1</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+2</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i></i><i></i></span></div><p class=\"skill-roll\">2d20 + 2</p></div></div><div class=\"skill-notes\"></div></section><section class=\"elven-ability-source\"><h5 id=\"zahra-rajada\">1 · Rajada</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar IV.\n<strong>Uso:</strong> Principal, 10 Karma, linha de 18 m por 2 m. Ar\ncontra Reflexos de todos na linha: vitória causa <strong>2d12\nAr</strong> e empurra 4 m; derrota causa metade sem empurrão. Obstáculos\ninterrompem a linha; aliados são afetados.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 4 área /\ndestinatários = 10 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"zahra-contravento\">2 · Contravento</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar IV.\n<strong>Uso:</strong> Reação, 9 Karma, projétil físico percebido\ndirigido a criatura a 10 m. Reduz o dano em <strong>2d12</strong>. Não\ndesvia raios, explosões ou efeitos mentais.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação + 2\nalcance médio = 9 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"zahra-ascensao\">3 · Ascensão</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar III.\n<strong>Uso:</strong> Movimento, 7 Karma, pessoal. Voa até 12 m e pousa\nem superfície capaz de sustentá-la. Não permanece suspensa após esse\ndeslocamento. Pode carregar uma criatura voluntária de porte igual ou\nmenor, reduzindo a distância à metade.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 movimento + 2\nalcance médio = 7 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"zahra-samum\">Assinatura · Samum</h5>\n<p><strong>Fonte e Grau:</strong> Elemental de Ar V.\n<strong>Uso:</strong> Principal, 23 Karma, uma vez por cena, coluna de 4\nm de raio a 20 m, duração duas rodadas. Ar contra Reflexos de cada\ncriatura na área: vitória causa <strong>3d10 Ar</strong> e Caído;\nderrota causa metade, sem condição. Durante a duração, o terreno da\ncoluna custa o dobro de deslocamento e projéteis físicos que a\natravessem sofrem −3 ao ataque. Não repete o dano inicial. Zahra pode\ndissipá-la como Livre; aliados não são imunes.</p>\n<p><strong>Composição de Karma:</strong> 12 base v + 4 alcance longo + 1\nduração + 6 função secundária iv = 23 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section></article>"
+    }
+  ],
+  "characterIds": [
+    "al-aqwa",
+    "candidata-sahar",
+    "candidata-naima",
+    "candidata-zahra"
+  ],
+  "courtProfiles": [
+    {
+      "id": "al-aqwa",
+      "name": "Al-Aqwa",
+      "title": "Qahir",
+      "loreId": "aqwa-historia",
+      "combatId": "aqwa-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>Al-Aqwa tem vinte anos. Há quatro anos, aos dezesseis, matou as\nantigas rainhas tritã, demi-humana e humana em confrontos que encerraram\ntrês reinados. As soberanas que hoje ocupam essas três coroas vieram\ndepois; os nomes das mortas continuam nos juramentos de seus seguidores\ne de seus inimigos. Cada sucessão prosseguiu entre os respectivos\nherdeiros: nenhuma dessas mortes o coroou rei dos povos que enfrentou.\nSeus seguidores chamam-no de Pináculo da Resistência e Matador de\nRainhas. Entre os nove gênios reconhecidos no mundo, ocupa o lugar do\nGênio da Luta.</p>\n<p>Ele recusa uma coroa que exigiria abandonar as ruas onde cresceu.\nRecebe pretendentes em um pátio aberto, sem exigir reverência. Escuta\npromessas até o fim e pergunta quem pagará por elas. Sahar, Naima e\nZahra disputam seu reconhecimento; nenhuma recebeu dele um juramento de\nsubmissão. Sua voz é baixa, seus gestos são econômicos e suas mãos\nconservam as marcas de ferimentos que obrigaram curandeiros a aprender\nnovos tratamentos.</p>\n",
+      "identity": "Ghoul, Tanque VII, 20 anos, Ranque SSS",
+      "life": 280,
+      "karma": 100,
+      "pc": null,
+      "ca": 29,
+      "movement": "9 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 10
+        },
+        {
+          "name": "Agilidade",
+          "value": 3
+        },
+        {
+          "name": "Constituição",
+          "value": 14
+        },
+        {
+          "name": "Intelecto",
+          "value": 3
+        },
+        {
+          "name": "Presença",
+          "value": 5
+        },
+        {
+          "name": "Espírito",
+          "value": 3
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 2 Reações por\nrodada. Uma mesma resolução admite uma única resposta dele."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Luta 3 — 5d20 + 10; Atletismo 3 — 7d20 +\n10 com Constituição ou 5d20 + 10 com Força; Reflexos 2 — 2d20 + 5;\nPercepção 2 — 2d20 + 6; Intimidação 2 — 3d20 + 5; Canalização 2 — 2d20 +\n5."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Punhos",
+              "html": " Luta contra CA, alcance 2 m, dano base 2d10\nfísico. As técnicas substituem esse dano quando indicam outro valor.\n"
+            },
+            {
+              "label": "Carne obstinada",
+              "html": " redução 4 contra dano físico.\nFerimentos continuam a afetá-lo normalmente; não regenera membros\ndurante um confronto."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "aqwa-ruina",
+          "name": "Ruína",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Caído. Parcial causa metade, sem derrubar. Levantar\nconsome Movimento."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-cerco",
+          "name": "Cerco",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, alvo a 2 m. Luta contra Força + Atletismo. Vitória\naplica Agarrado até o final do próximo turno de Al-Aqwa; enquanto mantém\no agarrão, ele também não pode se afastar. A vítima pode gastar\nPrincipal para repetir a oposição. Não causa dano e só mantém um\nalvo."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-cisma",
+          "name": "Cisma",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Guarda Rota, reduzindo a CA em 3 até o final do\npróximo turno da vítima. Parcial metade, sem condição. Guarda Rota não\nacumula consigo mesma."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-rechaco",
+          "name": "Rechaço",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "8 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 8 Karma, quando um ataque corpo a corpo percebido erra sua CA.\nLuta contra CA do atacante a 2 m: <strong>2d12 físico</strong> e\nempurrão de 4 m; se houver obstáculo antes dessa distância, o alvo fica\nCaído, sem dano adicional. Parcial metade sem deslocamento. Não responde\na contra-ataques nem inicia ciclos de reação."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 1 reação + 1 efeito\nmenor = 8 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-lastro",
+          "name": "Lastro",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "IV",
+          "cost": "13 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 13 Karma, chão em raio de 4 m. Luta contra Reflexos de cada\noutra criatura apoiada no solo. Vitória causa <strong>2d12\nfísico</strong> e Lento, reduzindo o deslocamento pela metade até o\nfinal do próximo turno da vítima. Derrota causa metade, sem condição.\nNão alcança criaturas voando ou suspensas; aliados também são\nafetados."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 4 área /\ndestinatários + 3 função secundária iii = 13 Karma. Manutenção e outros\nrecursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-quebranto",
+          "name": "Quebranto",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Braço Inerte, impondo −3 aos ataques que usem um braço\nescolhido até o final do próximo turno da vítima. Parcial metade sem\npenalidade. Não amputa nem destrói equipamentos."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-interdito",
+          "name": "Interdito",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, alvo a 2 m. Luta contra CA: total <strong>2d12\nfísico</strong> e Desorientado até o final do próximo turno da vítima;\nenquanto durar, ela não pode usar Reações. Parcial metade, sem condição.\nNão remove ações já resolvidas."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "aqwa-ananke",
+          "name": "Ananké",
+          "kind": "signature",
+          "source": "Marcial",
+          "grade": "V",
+          "cost": "19 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial V. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 19 Karma, uma vez por cena, alvo a 2 m. Al-Aqwa firma os pés\ne desfere um golpe curto contra o centro do corpo. Luta contra CA: total\n<strong>3d10 físico</strong> e Abalado Grave por duas rodadas:\ndeslocamento reduzido à metade, sem Reações e −3 aos ataques. No início\nde cada turno, a vítima pode testar Constituição + Atletismo, CD 22;\nsucesso encerra a condição antes de agir. Parcial causa metade do dano,\nsem condição. O golpe não recebe os danos das outras técnicas nem exige\nque o alvo esteja previamente agarrado."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 12 base v + 1 duração + 6\nfunção secundária iv = 19 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "candidata-sahar",
+      "name": "Sahar",
+      "title": "Sayf",
+      "loreId": "sahar-historia",
+      "combatId": "sahar-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>Sahar reuniu veteranos sem soldo e abriu as portas de seu quartel às\nfamílias deles. Sua candidatura nasceu desses compromissos. Deseja uma\ncoroa capaz de defender bairros ghouls sem transformar seus moradores em\ntropas descartáveis. Diante de Al-Aqwa, exige ser julgada pelos acordos\nque cumpriu. Ela chama cada testemunha pelo nome e jamais permite que um\narauto fale em seu lugar.</p>\n",
+      "identity": "Ghoul, Duelista VI, pretendente à realeza, Ranque SS",
+      "life": 162,
+      "karma": 86,
+      "pc": null,
+      "ca": 26,
+      "movement": "12 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 7
+        },
+        {
+          "name": "Agilidade",
+          "value": 9
+        },
+        {
+          "name": "Constituição",
+          "value": 8
+        },
+        {
+          "name": "Intelecto",
+          "value": 5
+        },
+        {
+          "name": "Presença",
+          "value": 7
+        },
+        {
+          "name": "Espírito",
+          "value": 5
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 2 Reações por\nrodada. "
+            },
+            {
+              "label": "Arma",
+              "html": " sabre, Luta contra CA, 2d8 cortante,\nalcance 2 m."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Luta 3 — 5d20 + 10; Reflexos 3 — 5d20 +\n10; Atletismo 2 — 4d20 + 5; Liderança 2 — 4d20 + 5; Percepção 2 — 3d20 +\n7."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "sahar-fenda",
+          "name": "Fenda",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "7 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 7 Karma, alcance 2 m. Luta contra CA: <strong>2d12\ncortante</strong> e −2 à CA até o final do próximo turno da vítima.\nParcial metade sem penalidade; não acumula."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 1 efeito menor = 7\nKarma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "sahar-esquiva",
+          "name": "Esquiva",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "III",
+          "cost": "6 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 6 Karma, diante de ataque percebido. Reduz o dano em\n<strong>2d10</strong> e permite recuar 2 m após a resolução, se houver\npassagem livre. Esse recuo não atravessa criaturas nem paredes."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 reação + 1\nefeito menor = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "sahar-guarda",
+          "name": "Guarda",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "10 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 10 Karma, aliado a 2 m atingido por ataque percebido. Sahar\nrecebe o ataque em seu lugar, usando a própria CA, e reduz o dano\nresultante em 10. Não protege de efeitos que atinjam os dois em\nárea."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 1 reação + 3 função\nsecundária iii = 10 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "sahar-juramento",
+          "name": "Juramento de Ferro",
+          "kind": "signature",
+          "source": "Karma",
+          "grade": "V",
+          "cost": "22 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma V. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 22 Karma, uma vez por cena, alvo a 2 m. Luta contra CA:\n<strong>3d10 cortante</strong>. Acerto total impede o alvo de atravessar\numa linha de 6 m traçada pelo sabre até o final do próximo turno de\nSahar, salvo se vencer uma oposição de Força + Atletismo contra o\nresultado inicial do ataque; tentar atravessar custa 3 m de deslocamento\ne só admite uma tentativa por turno. Parcial metade sem interdição. A\nlinha desaparece se Sahar ficar inconsciente."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 12 base v + 4 área /\ndestinatários + 6 função secundária iv = 22 Karma. Manutenção e outros\nrecursos são pagos separadamente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "candidata-naima",
+      "name": "Naima",
+      "title": "Alkahest",
+      "loreId": "naima-historia",
+      "combatId": "naima-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>As oficinas de Naima sustentam hospitais e cozinhas comunitárias. Ela\nconhece o custo de cada reagente e a origem de cada dívida que compra.\nSeus adversários a acusam de adquirir lealdade; ela responde mostrando\nas listas de mortos anteriores à abertura das oficinas. Quer que Al-Aqwa\nreconheça a força de quem mantém uma cidade viva. Em audiência,\napresenta provas antes de formular pedidos e oferece água até a quem\nveio ameaçá-la.</p>\n",
+      "identity": "Ghoul, Alquimista VI, pretendente à realeza, Ranque SS",
+      "life": 132,
+      "karma": 94,
+      "pc": null,
+      "ca": 24,
+      "movement": "9 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 4
+        },
+        {
+          "name": "Agilidade",
+          "value": 6
+        },
+        {
+          "name": "Constituição",
+          "value": 7
+        },
+        {
+          "name": "Intelecto",
+          "value": 10
+        },
+        {
+          "name": "Presença",
+          "value": 7
+        },
+        {
+          "name": "Espírito",
+          "value": 6
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 1 Reação por\nrodada. "
+            },
+            {
+              "label": "Alforje",
+              "html": " 3 frascos cáusticos e 2 doses\nrestauradoras por cena preparada; reposição exige oficina, ingredientes\ne uma hora. "
+            },
+            {
+              "label": "Arma",
+              "html": " besta de mão, Pontaria contra CA, 1d8\nperfurante, 15 m."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Criação 3 — 5d20 + 15; Medicina 3 — 5d20 +\n15; Pontaria 2 — 3d20 + 5; Reflexos 2 — 3d20 + 5; Investigação 2 — 5d20\n+ 10; Persuasão 2 — 4d20 + 5."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Estoque de combate",
+              "html": " três doses corrosivas, três\nrestauradoras e dois antídotos, 0,25 espaços por frasco. Cada uso\nconsome a dose; não há reposição em combate. Restauradores seguem\nSaturação (2 por dose potente) e o limiar do consumidor. Ampolas\narremessadas não geram Saturação em quem as lança. As fórmulas de 0\nKarma são itens consumíveis, não técnicas mágicas gratuitas."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "naima-alcali",
+          "name": "Álcali",
+          "kind": "technique",
+          "source": "Alquimia",
+          "grade": "IV",
+          "cost": "0 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Alquimia IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 0 Karma, um frasco cáustico, alvo a 15 m. Pontaria contra CA:\n<strong>4d8 ácido</strong> e −2 aos ataques até o final do próximo turno\nda vítima. Parcial metade sem penalidade. Lavar o rosto com água, como\nLivre, remove a penalidade."
+            }
+          ]
+        },
+        {
+          "id": "naima-balsamo",
+          "name": "Bálsamo",
+          "kind": "technique",
+          "source": "Alquimia",
+          "grade": "III",
+          "cost": "0 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Alquimia III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 0 Karma, uma dose restauradora, toque em criatura voluntária.\nRecupera <strong>3d8 + 10 Vida</strong>, sem ultrapassar o máximo. Não\nregenera órgãos nem desperta mortos."
+            }
+          ]
+        },
+        {
+          "id": "naima-silica",
+          "name": "Sílica",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 9 Karma, ataque percebido contra si ou aliado a 6 m. Uma\npelícula cristalina reduz o dano em <strong>2d12</strong> e se desfaz\napós a resolução. Não remove condições que independam do dano."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 1 reação + 2\nalcance médio = 9 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "naima-aqua-regia",
+          "name": "Aqua Regia",
+          "kind": "signature",
+          "source": "Alquimia",
+          "grade": "V",
+          "cost": "28 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Alquimia V. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 28 Karma e um frasco cáustico, uma vez por cena, área de 3 m\na até 15 m. Pontaria contra Reflexos de todos na área: vitória causa\n<strong>3d10 ácido</strong> e cria névoa corrosiva por duas rodadas.\nQuem começar o turno nela recebe 2d8 ácido, uma vez por rodada; sair\nencerra a exposição. Derrota na oposição inicial causa metade, mas não\nconcede imunidade à névoa. Vento forte a dispersa; Naima e aliados\ntambém são afetados. Danos à armadura são superficiais e não destroem\nitens."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 12 base v + 2 alcance médio + 4\nárea / destinatários + 1 duração + 6 função secundária iv + 3 pulsos\nposteriores = 28 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "candidata-zahra",
+      "name": "Zahra",
+      "title": "Siroco",
+      "loreId": "zahra-historia",
+      "combatId": "zahra-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>Zahra acompanha caravanas que cruzam os corredores de vento quente.\nSua candidatura reúne comunidades que raramente comparecem às\nassembleias das cidades. Quer que a futura corte responda também por\nquem vive longe de suas muralhas. Ao encontrar Al-Aqwa, relata primeiro\nos desaparecidos na última viagem. Usa mapas riscados à mão e deixa\nespaços em branco onde ninguém voltou para confirmar um caminho.</p>\n",
+      "identity": "Ghoul, Elementalista VI, afinidade Ar, pretendente à realeza, Ranque SS",
+      "life": 140,
+      "karma": 110,
+      "pc": null,
+      "ca": 25,
+      "movement": "12 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 4
+        },
+        {
+          "name": "Agilidade",
+          "value": 8
+        },
+        {
+          "name": "Constituição",
+          "value": 7
+        },
+        {
+          "name": "Intelecto",
+          "value": 6
+        },
+        {
+          "name": "Presença",
+          "value": 6
+        },
+        {
+          "name": "Espírito",
+          "value": 10
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 2 Reações por\nrodada. "
+            },
+            {
+              "label": "Arma",
+              "html": " bastão, Luta contra CA, 1d8 físico,\nalcance 2 m. "
+            },
+            {
+              "label": "Ar",
+              "html": " os ventos criados não removem o ar dos\npulmões nem atravessam barreiras fechadas."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Ar 3 — 5d20 + 10; Canalização 3 — 5d20 +\n10; Reflexos 2 — 4d20 + 5; Sobrevivência 2 — 3d20 + 8; Percepção 2 —\n3d20 + 8; Luta 1 — 2d20 + 2."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "zahra-rajada",
+          "name": "Rajada",
+          "kind": "technique",
+          "source": "Elemental de Ar",
+          "grade": "IV",
+          "cost": "10 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Elemental de Ar IV.\n"
+            },
+            {
+              "label": "Uso",
+              "html": " Principal, 10 Karma, linha de 18 m por 2 m. Ar\ncontra Reflexos de todos na linha: vitória causa <strong>2d12\nAr</strong> e empurra 4 m; derrota causa metade sem empurrão. Obstáculos\ninterrompem a linha; aliados são afetados."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 4 área /\ndestinatários = 10 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "zahra-contravento",
+          "name": "Contravento",
+          "kind": "technique",
+          "source": "Elemental de Ar",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Elemental de Ar IV.\n"
+            },
+            {
+              "label": "Uso",
+              "html": " Reação, 9 Karma, projétil físico percebido\ndirigido a criatura a 10 m. Reduz o dano em <strong>2d12</strong>. Não\ndesvia raios, explosões ou efeitos mentais."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 1 reação + 2\nalcance médio = 9 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "zahra-ascensao",
+          "name": "Ascensão",
+          "kind": "technique",
+          "source": "Elemental de Ar",
+          "grade": "III",
+          "cost": "7 Karma",
+          "action": "Movimento",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Elemental de Ar III.\n"
+            },
+            {
+              "label": "Uso",
+              "html": " Movimento, 7 Karma, pessoal. Voa até 12 m e pousa\nem superfície capaz de sustentá-la. Não permanece suspensa após esse\ndeslocamento. Pode carregar uma criatura voluntária de porte igual ou\nmenor, reduzindo a distância à metade."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 movimento + 2\nalcance médio = 7 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "zahra-samum",
+          "name": "Samum",
+          "kind": "signature",
+          "source": "Elemental de Ar",
+          "grade": "V",
+          "cost": "23 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Elemental de Ar V.\n"
+            },
+            {
+              "label": "Uso",
+              "html": " Principal, 23 Karma, uma vez por cena, coluna de 4\nm de raio a 20 m, duração duas rodadas. Ar contra Reflexos de cada\ncriatura na área: vitória causa <strong>3d10 Ar</strong> e Caído;\nderrota causa metade, sem condição. Durante a duração, o terreno da\ncoluna custa o dobro de deslocamento e projéteis físicos que a\natravessem sofrem −3 ao ataque. Não repete o dano inicial. Zahra pode\ndissipá-la como Livre; aliados não são imunes."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 12 base v + 4 alcance longo + 1\nduração + 6 função secundária iv = 23 Karma. Manutenção e outros\nrecursos são pagos separadamente."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "id": "al-aqwa",
+      "name": "Al-Aqwa",
+      "title": "Qahir"
+    },
+    {
+      "id": "candidata-sahar",
+      "name": "Sahar",
+      "title": "Sayf"
+    },
+    {
+      "id": "candidata-naima",
+      "name": "Naima",
+      "title": "Alkahest"
+    },
+    {
+      "id": "candidata-zahra",
+      "name": "Zahra",
+      "title": "Siroco"
+    }
+  ],
+  "anchors": [
+    "trono-ghoul",
+    "al-aqwa",
+    "aqwa-historia",
+    "aqwa-combate",
+    "aqwa-ruina",
+    "aqwa-cerco",
+    "aqwa-cisma",
+    "aqwa-rechaco",
+    "aqwa-lastro",
+    "aqwa-quebranto",
+    "aqwa-interdito",
+    "aqwa-ananke",
+    "candidata-sahar",
+    "sahar-historia",
+    "sahar-combate",
+    "sahar-fenda",
+    "sahar-esquiva",
+    "sahar-guarda",
+    "sahar-juramento",
+    "candidata-naima",
+    "naima-historia",
+    "naima-combate",
+    "naima-alcali",
+    "naima-balsamo",
+    "naima-silica",
+    "naima-aqua-regia",
+    "candidata-zahra",
+    "zahra-historia",
+    "zahra-combate",
+    "zahra-rajada",
+    "zahra-contravento",
+    "zahra-ascensao",
+    "zahra-samum"
+  ]
+}

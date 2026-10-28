@@ -1,0 +1,115 @@
+## Alquimia, síntese de poções e saturação
+
+Nas oficinas de Meridian, retortas de vidro dividem a bancada com centrifugadoras, queimadores e pequenos selos de contenção. A indústria fornece soros de composição estável; a Torre oferece seivas, glândulas e cristais cuja potência varia entre andares. Uma fórmula reúne uma base líquida, de um a três reagentes e um catalisador de reação. Preparar a mistura exige reconhecer essas diferenças antes de romper o primeiro lacre.
+
+### Frascos, prontidão e administração
+
+Todo frasco de poção, elixir, antídoto, óleo, base líquida ou catalisador ocupa **0,25 espaços**: quatro frascos somam 1 espaço. O recipiente está incluído. Um frasco vazio continua ocupando 0,25 até ser descartado ou armazenado fora da carga pessoal. Kits não são frascos; sua carga consta da tabela. As doses da habilidade Poção Restauradora do Alquimista também ocupam 0,25 espaços, preservando seus custos, validade e limite de seis doses.
+
+**Beber.** Uma dose em Prontidão exige uma mão livre e Ação de Movimento, que inclui retirar o frasco e beber. Uma dose na Mochila exige Principal para localizar, retirar e beber, ou Principal para sacá-la agora e Movimento para beber depois. Não receba um saque gratuito adicional para ignorar essa diferença. Beber substitui o deslocamento daquela Ação de Movimento.
+
+**Administrar.** Principal, ao alcance de toque, em aliado adjacente voluntário ou incapaz de reagir. A ação inclui retirar uma dose em Prontidão; se estiver na Mochila, saque-a com outra Principal antes. Um aliado caído e consciente pode beber normalmente. Um Inconsciente com respiração e deglutição preservadas pode receber uma dose cuidadosamente administrada; uma via aérea obstruída ou incapacidade de engolir exige Medicina para estabilizar a situação, sem forçar líquido. Uma poção não ressuscita nem remove Ferimento Grave por si só.
+
+**Ampolas e óleos.** Arremessar uma ampola em Prontidão custa Principal; na Mochila, é preciso sacá-la com outra Principal. Use Agilidade + Pontaria, alcance 10 m. Uma ampola de alvo único resolve ataque contra CA, com Evasão permitida. Uma ampola de área usa Pontaria contra CD 15 para alcançar um ponto visível: sucesso coloca o centro nesse ponto; falha quebra em espaço desocupado a 2 m do ponto, na direção definida antes da rolagem pelo Mestre, nunca escolhida depois para atingir mais alvos. Toda criatura na área faz Agilidade + Reflexos contra a CD da ampola, sem gastar Reação; esse teste substitui outra Evasão contra a mesma explosão. Cobertura completa bloqueia a reação. Aplicar óleo custa Principal, toque, em arma acessível e consentida. Nenhuma dessas ações inclui um ataque de arma gratuito.
+
+### Síntese modular
+
+**Acesso e abordagem.** Exige ao menos nível 1 na Perícia usada, fórmula registrada e kit adequado. Use Intelecto + Criação para emulsões e compostos, Intelecto + Medicina para soros e antídotos, Intelecto ou Espírito + Ocultismo para reagentes sobrenaturais. Espírito só rege a leitura e contenção do fluxo espiritual; não substitui Intelecto numa cirurgia ou análise química comum. A fórmula registra a abordagem antes da rolagem. Use a reserva de d20 do Atributo e o treinamento +2, +5 ou +10; não some o Atributo ao resultado. O bônus Analítico do Capítulo 3 aplica-se quando cabível a Intelecto treinado, uma vez.
+
+**Base líquida.** Água purificada admite fórmulas comuns de ingestão; soro químico industrial admite ingestão de Graus I–III e estabiliza estimulantes; destilado volátil serve exclusivamente a ampolas e óleos, nunca é bebível; Mercúrio Kármico é um solvente sobrenatural selado para fluxos e fórmulas heroicas, sem relação com mercúrio medicinal. Uma base não concede bônus próprio nem permite aumentar o Grau gratuitamente.
+
+**Reagentes.** Escolha um vetor primário. Um reagente de Vitalidade conduz recuperação; Fluxo Kármico, circulação de Karma; Estímulo Muscular, esforço; Foco Mental, percepção e clareza; Purgação, neutralização; Volatilidade, corrosão, fumaça e calor. Cada porção é consumida numa dose. Um segundo ou terceiro reagente só serve a uma fórmula que os peça; ingredientes excedentes não acrescentam dados, duração ou funções. Corrosão não transforma qualquer elixir em ácido por simples inversão: é necessária a receita de ampola correspondente.
+
+**Catalisador.** Cada dose consome uma medida de estabilizante químico ou um Catalisador kármico. O estabilizante, de 1 m, fixa fórmulas mundanas; o Catalisador kármico, de 6 m, permite fórmulas de fluxo, purgação sobrenatural e óleos selados. A escolha entre ingestão, arremesso e infusão é feita ao preparar a dose, não ao usá-la. O catalisador comprado para síntese substitui seu uso em rito: não concede também +1d20 à mesma fabricação. O bônus ritual existente permanece válido fora dessa síntese.
+
+**Receita.** Registre nome, tipo, Grau, vetor, base, um a três reagentes, catalisador, CD, tempo, custo, validade, Saturação e efeito completo. As fórmulas da tabela são conhecidas onde houver acesso comercial compatível; novas fórmulas requerem pesquisa, amostra e aprovação de efeito pelo Mestre. Não podem copiar Bênçãos, Domínios, assinaturas ou ápices. Um aprimoramento conserva o limite de uma dose e exige nova receita; não multiplique uma poção por número de ingredientes.
+
+| Potência | Requisito | CD de síntese | Tempo por dose | Saturação ingerida |
+|---|---|---|---|---|
+| Comum, Grau I | Perícia 1, kit portátil | 15 | 1 TE de trabalho | 1 |
+| Difícil, Graus II–III | Perícia 2, bancada estável | 18 | 3 TE de trabalho | 2 |
+| Heroica ou experimental | Perícia 2 e Etapa V, laboratório | 24 | 6 TE de trabalho | 3 |
+
+Um TE corresponde a aproximadamente 30 minutos. Trabalho em descanso ocupa esse tempo e não conta simultaneamente como repouso; só o período restante pode cumprir o descanso. Não há síntese modular durante um turno de combate. A habilidade Poção Restauradora conserva seu procedimento excepcional de fabricação rápida. Fórmulas corrompidas exigem acesso legítimo à Corrupção; testes da Marca e Cargas seguem o Capítulo 14 e não são substituídos pela Saturação.
+
+**Materiais e preço.** Para cada produto final listado, o custo de síntese é 75% do preço de compra, arredondado para cima, mínimo 2 m. Esse total inclui base, reagentes, catalisador e frasco; não some esses componentes de novo. Ao usar componentes já comprados ou colhidos, desconte seu valor de referência do total, até zero, e consuma-os. Bases, reagentes puros, catalisadores e kits não são produzidos por essa fórmula de desconto; óleos de infusão são produtos finais e usam o custo de síntese. O custo só vale para a receita específica: quatro frascos de água não substituem reagentes raros. Venda de fabricação doméstica segue demanda e licenças, sem lucro automático garantido.
+
+**Colheita.** Em 1 TE, faça Intelecto + Sobrevivência para flora, Medicina para tecido orgânico ou Ocultismo para resíduo sobrenatural, CD 15, 18 ou 24 conforme o perigo. Sucesso extrai uma porção do vetor declarado; falha inutiliza essa oportunidade. Cada fonte oferece no máximo uma porção útil por vetor autorizado pelo Mestre, sem nova tentativa sobre o mesmo resto. A coleta não faz surgir ingredientes em qualquer cadáver. Anote vetor, procedência e valor; material instável dura 24 horas sem conservação, ou sete dias no kit de conservação de reagentes. A carga de cada porção lacrada é 0,25 espaços.
+
+**Validade.** Doses seladas conservam potência por 30 dias; fórmulas experimentais ou corrompidas, por 24 horas. Um frasco aberto deve ser usado no mesmo turno ou descartado. Poção Restauradora conserva suas 24 horas próprias. Misturar doses prontas inutiliza ambas, sem criar outro efeito.
+
+**Resultados.** Sucesso produz uma dose, sem ganho adicional no crítico. Falha por até 4 pontos consome tempo e metade do orçamento de materiais, arredondada para cima, incluindo pelo menos um reagente; a parte não consumida permanece identificada. Falha por 5 ou mais consome todos os materiais e deixa mistura instável, sem efeito utilizável. Descartá-la com o kit ao fim do trabalho é automático; transportá-la não cria uma ampola gratuita. Quebra ou tentativa de ingestão dessa mistura causa 1d6 químico ao manipulador, sem benefício, e a destrói. Não há nova tentativa sem novo tempo e reposição do material perdido.
+
+### Saturação e rejeição alquímica
+
+**Limiar seguro = 2 + teto(Constituição ÷ 2).** Use Constituição final. Saturação é um contador separado de Vida, Karma, Carga de inventário e Carga de Corrupção. Começa em zero. Cada dose ingerida ou administrada soma sua Saturação antes de resolver o benefício: Grau I +1; Graus II–III +2; experimental, heroica ou corrompida +3. Injeções, se uma fórmula as permitir expressamente, também contam; mudar a via não evita toxicidade. Bases, catalisadores e reagentes não podem ser ingeridos para obter benefícios.
+
+Doses arremessadas e óleos não geram Saturação no usuário; seus perigos são resolvidos pelos ataques e condições descritos. Cura divina, tratamento de Medicina e recuperação natural não geram Saturação. Doses criadas por Poção Restauradora contam +1, sem alterar o teto de seis doses ou a regra de limpeza de Corrupção da habilidade.
+
+**Restauração de Karma.** Uma criatura recebe benefício de restaurador alquímico de Karma somente uma vez por cena substancial, somando poções comerciais e Poção Restauradora. Trocar de fórmula ou fabricante não renova esse limite. A cena só se renova após acontecimento ou desafio relevante, nunca pela declaração de uma pausa ou novo combate artificial. A dose repetida é consumida e gera Saturação normalmente, mesmo sem restaurar Karma. Cristais investidos e fontes kármicas seguem suas próprias regras, sem se tornarem poções.
+
+**Teste de rejeição.** Se a nova Saturação ultrapassar o limiar, faça imediatamente Constituição + Atletismo contra **CD 14 + Saturação total após a dose**. Não use Medicina para resistir com o próprio corpo. Medicina pode diagnosticar ou tratar a reação pelas regras abaixo, sem substituir esse teste. Sucesso permite o efeito integral da dose, respeitados os limites, mas não reduz Saturação. Falha aplica somente a linha correspondente ao excesso total; as linhas não se acumulam entre si na mesma dose. Novas doses exigem novo teste; reações anteriores ainda em duração continuam válidas, sem somar penalidades idênticas. Não é possível escolher falhar para obter um benefício.
+
+| Excesso acima do limiar | Rejeição na falha | Efeito completo |
+|---|---|---|
+| 1 | Enjoo químico | Cura ou recuperação numérica da dose cai à metade, arredondada para baixo; duração de benefício não numérico cai à metade, mínimo um turno. Remoção instantânea de condição falha. Desvantagem de 1d20 em testes de Agilidade e nos testes exigidos para manter concentração até o fim do próximo turno do alvo. Não cria uma nova Perícia de Concentração. |
+| 2 | Expurgo violento | A dose não produz benefício. Perde a próxima Ação de Movimento, até o fim do próximo turno, e não pode Evadir até o início desse próximo turno. Se a Ação de Movimento atual já foi gasta para beber, perde a do turno seguinte. CA não sofre uma redução adicional. |
+| 3 | Inversão tóxica | A dose não produz benefício; sofre 2d8 químico interno diretamente na Vida, ignorando CA, armadura e escudos temporários, e perde 2 Karma, mínimo zero. Proteção expressa contra veneno ou dano químico ainda pode reduzir o dano; não é ataque nem crítico. |
+| 4 ou mais | Colapso tóxico | A dose não produz benefício; sofre 3d8 químico interno nas mesmas condições, perde 2 Karma e fica Exausto. Não pode receber outra poção ou elixir, inclusive por administração ou injeção, até um descanso longo seguro ou tratamento de purificação bem-sucedido. Água e alimentação comuns continuam possíveis após estabilização; não curam o colapso. |
+
+Exausto usa a condição do Capítulo 7 e não acumula consigo. A Saturação da dose permanece mesmo quando ela é expelida ou causa inversão. Reduzir Constituição e, portanto, o limiar não causa rejeição retroativa: confira o excesso na próxima dose. Aumentar Constituição não apaga Saturação acumulada.
+
+**Recuperação.** Um descanso longo seguro com água e alimentação remove toda a Saturação e o bloqueio por colapso. Descanso curto ou uma nova cena não reduzem o contador. O Antídoto comum trata veneno, não a Saturação. Purgador alquímico pode reduzir o total em 2, após sua própria Saturação e seu teste de rejeição, apenas uma vez entre descansos longos seguros; se for rejeitado, não reduz nada. Remover e ganhar pontos dessa maneira não renova o uso do purgador.
+
+**Purificação do colapso.** Um cuidador treinado em Medicina 2 com kit médico gasta 3 TE e 10 m de materiais, usando Intelecto + Medicina CD 18. Sucesso remove o bloqueio de novas poções e reduz Saturação em 2, uma vez por alvo entre descansos longos seguros; não remove Exausto. Falha consome materiais e tempo, sem repetição antes desse descanso. Uma liturgia que remova expressamente veneno ou contaminação pode substituir esse procedimento para remover o bloqueio, pagando seus próprios custos, mas não reduz Saturação adicional nem renova o tratamento. Alvos inconscientes são estabilizados antes. Nenhuma purificação permite beber durante a própria resolução de uma rejeição.
+
+### Catálogo alquímico
+
+Os preços são por dose; os efeitos não somam bônus idênticos. Efeitos de combate duram até o prazo indicado ou o fim da cena, o que ocorrer primeiro. Toda restauração respeita os máximos e não trata Ferimentos Graves. Ampolas de dano não recebem bônus de arma ou dados de ampliação de técnica. Produtos de CD 24 exigem licença institucional e laboratório; fórmulas corrompidas seguem também as restrições da Corrupção. Os demais são Livres, salvo legislação local. Reagentes e kits têm CD — por não serem doses sintetizadas pelo procedimento acima.
+
+| Nome do Item | Tipo (Ingestão/Arremesso/Reagente) | Preço (m) | Carga (Espaços) | Saturação Gerada | CD de Síntese | Efeito Mecânico Completo |
+|---|---|---|---|---|---|---|
+| Poção de cura | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Recupera 2d6 Vida, até o máximo. |
+| Poção de cura concentrada | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Recupera 3d6 Vida; não remove Ferimento Grave. |
+| Elixir de regeneração experimental | Ingestão, experimental | 60 | 0,25 | 3 | 24 | Recupera 2d6 Vida imediatamente e 1d6 no início dos próximos dois turnos; após rejeição, não deixa cura futura. Uma dose ativa por criatura. |
+| Antídoto comum | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Uma vez por exposição, teste Constituição + Atletismo contra a CD do veneno comum, ou 15, com +2d20. Sucesso encerra esse Envenenado e seu dano futuro; não devolve Vida nem reduz Saturação. |
+| Purgador alquímico | Ingestão, Grau I | 12 | 0,25 | 1 | 15 | Após aceitação da dose, reduz Saturação em 2, mínimo zero; uma tentativa entre descansos longos seguros, incluindo rejeição. Não cura veneno nem remove bloqueio de colapso. |
+| Tônico de vigor industrial | Ingestão, Grau I | 10 | 0,25 | 1 | 15 | +1d20 ao próximo teste de Constituição + Atletismo para marcha ou esforço sustentado dentro de 1 hora; não vale contra rejeição e não remove Exausto. |
+| Soro de adrenalina | Ingestão, Grau II | 20 | 0,25 | 2 | 18 | +2 m de movimento por três turnos, antes das penalidades de carga; não concede ação e não permite mover-se imobilizado. |
+| Elixir de força muscular | Ingestão, Grau II | 22 | 0,25 | 2 | 18 | +1d20 aos testes de Força para levantar, romper ou empurrar objetos por três turnos; sem bônus em ataque, dano, Atributo ou capacidade de carga. |
+| Elixir de fluxo kármico | Ingestão, Grau I | 18 | 0,25 | 1 | 15 | Recupera 1d4 Karma; limite conjunto de um restaurador por cena substancial. |
+| Elixir de fluxo profundo | Ingestão, Grau III | 36 | 0,25 | 2 | 18 | Recupera 2d4 Karma; compartilha o limite do Elixir de fluxo kármico. |
+| Infusão de lucidez | Ingestão, Grau I | 10 | 0,25 | 1 | 15 | +1d20 ao próximo teste para manter concentração dentro de três turnos; não melhora ataques, rejeição ou Controle da Corrupção. |
+| Elixir de clarividência | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | +1d20 em Percepção para notar presença espiritual por três turnos; não atravessa barreiras nem revela nome, intenção ou criatura oculta automaticamente. |
+| Soro de resistência química | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Redução 2 contra dano químico externo por três turnos; não reduz Saturação ou dano interno de rejeição. Use apenas a maior redução da mesma natureza. |
+| Ampola corrosiva | Arremesso, Grau I | 10 | 0,25 | 0 | 15 | Um alvo a 10 m; ataque causa 2d6 ácido, parcial metade, falha zero. Não dissolve armadura equipada permanentemente. |
+| Ampola de chama alquímica | Arremesso, Grau II | 20 | 0,25 | 0 | 18 | Área de raio 2 m a 10 m; Reflexos CD 15, falha 2d6 fogo, sucesso metade. Sem dano persistente automático ou ignição de seres. |
+| Ampola de fumaça tóxica | Arremesso, Grau II | 22 | 0,25 | 0 | 18 | Nuvem de raio 2 m por dois turnos; oculta visão através dela. Ao entrar ou iniciar turno ali, Constituição + Atletismo CD 15: falha causa 1d6 químico e −1d20 em Pontaria até sair; sucesso evita ambos. No máximo uma exposição por turno; máscara apropriada evita a toxina, não a ocultação. Vento forte dissipa. |
+| Ampola de enfraquecimento | Arremesso, Grau II | 24 | 0,25 | 0 | 18 | Um alvo a 10 m; acerto total impõe −1d20 ao próximo teste de Força até o fim do próximo turno; parcial dura somente até o fim do turno atual; falha zero. Não reduz Atributo, carga ou CA. |
+| Óleo de lâmina cáustica | Reagente, infusão Grau II | 20 | 0,25 | 0 | 18 | Reveste uma arma; próximo acerto total ou parcial até três turnos acrescenta 1d4 ácido, após crítico e reduzido à metade no parcial. Uma aplicação ativa por arma, consumida no acerto; sem envenenamento. |
+| Óleo de selo kármico | Reagente, infusão Grau II | 26 | 0,25 | 0 | 18 | Próximo ataque com uma arma revestida dentro de três turnos pode atingir criatura que exija arma kármica; não ignora CA, imunidade a outras naturezas nem aumenta dano. Consome-se ao atacar, mesmo na falha. |
+| Elixir de pulso corrompido | Ingestão, corrompido | 48 | 0,25 | 3 | 24 | Exige Marca desperta; próximo teste de ataque de uma técnica corrupta em três turnos recebe +1d20. A ingestão gera 1 Carga efetiva e um Controle do Capítulo 14, mesmo se houver rejeição; sem autocura ou remoção de bloqueios. Saturação não substitui Carga. |
+| Água purificada alquímica | Reagente, base | 1 | 0,25 | — | — | Uma base para uma fórmula comum; sem benefício medicinal isolado. |
+| Soro químico industrial | Reagente, base | 3 | 0,25 | — | — | Uma base estável para ingestão de Graus I–III; não é dose terapêutica pronta. |
+| Destilado volátil | Reagente, base | 3 | 0,25 | — | — | Uma base para ampola ou óleo; ingerir causa 1d6 químico, sem benefício. |
+| Mercúrio Kármico | Reagente, base | 12 | 0,25 | — | — | Uma base de fórmula heroica ou fluxo selado; não restaura Karma por si só. |
+| Reagente de Vitalidade | Reagente | 2 | 0,25 | — | — | Uma porção de seiva ou tecido compatível, para recuperação de Vida. |
+| Reagente de Fluxo Kármico | Reagente | 4 | 0,25 | — | — | Uma porção de cristal ou glândula de fluxo para restauradores e selos. |
+| Reagente de Estímulo Muscular | Reagente | 3 | 0,25 | — | — | Uma porção de fibra ou extrato para esforço e aceleração. |
+| Reagente de Foco Mental | Reagente | 3 | 0,25 | — | — | Uma porção de esporo tratado ou resina para lucidez e percepção. |
+| Reagente de Purgação | Reagente | 2 | 0,25 | — | — | Uma porção neutralizante para antídotos e purgadores. |
+| Reagente de Volatilidade | Reagente | 3 | 0,25 | — | — | Uma porção corrosiva ou inflamável compatível com a receita. |
+| Resíduo corrompido identificado | Reagente | 6 | 0,25 | — | — | Uma porção selada de procedência conhecida para Pulso corrompido; manuseio e contaminação seguem o Capítulo 14. |
+| Estabilizante químico | Reagente, catalisador | 1 | 0,25 | — | — | Uma medida para fixar fórmula mundana; consumida na síntese. |
+| Catalisador kármico | Reagente, catalisador | 6 | 0,25 | — | — | Uma medida para fórmula sobrenatural. Alternativamente, +1d20 em preparação de rito kármico, consumido antes de rolar; nunca ambos os usos. |
+| Kit de alquimia de campanha | Kit | 28 | 2 | — | — | Retortas, filtros e instrumentos; permite fórmulas comuns, sem materiais consumíveis incluídos. |
+| Bancada alquímica portátil | Kit | 60 | 5 | — | — | Montagem em 1 TE em superfície estável; permite síntese difícil. Não conta como laboratório heroico. |
+| Kit de conservação de reagentes | Kit | 24 | 2 | — | — | Conserva até oito porções por sete dias; cada porção mantém sua própria carga de 0,25, além do kit. |
+
+**Receitas de referência.** Cura comum usa água, Vitalidade e estabilizante; cura concentrada usa soro, duas porções de Vitalidade e estabilizante; regeneração usa Mercúrio Kármico, duas Vitalidades, um Fluxo e catalisador kármico. Antídoto e purgador usam água, Purgação e estabilizante. Vigor usa água e Estímulo; adrenalina e força usam soro e duas porções de Estímulo, todos com estabilizante. Fluxo comum usa soro, Fluxo e catalisador kármico; profundo usa soro, dois Fluxos e catalisador kármico. Lucidez usa água, Foco e estabilizante; clarividência usa soro, Foco, Fluxo e catalisador kármico. Resistência química usa soro, duas Purgações e estabilizante. Corrosiva usa destilado, Volatilidade e estabilizante; chama usa destilado, duas Volatilidades e estabilizante; fumaça usa destilado, Volatilidade, Purgação e estabilizante; enfraquecimento usa destilado, Estímulo, Volatilidade e estabilizante. Óleo cáustico usa destilado, Volatilidade, Purgação e estabilizante; óleo selado usa destilado, Fluxo, Purgação e catalisador kármico. Pulso corrompido usa Mercúrio Kármico, Fluxo, Foco, resíduo corrompido identificado e catalisador kármico; o resíduo vale 6 m e ocupa 0,25 espaços. O orçamento de cada receita inclui seus componentes, mesmo quando o conjunto comercial sai mais barato que comprar cada componente isolado.
+
+### Exemplos de síntese e rejeição
+
+**Uma dose preparada.** Irene tem Intelecto 5 e Medicina 1. Cura comum exige CD 15 e 1 TE; os materiais custam teto de 8 × 0,75 = 6 m. Ela rola 3d20, escolhe 12 e soma +2 de treino e +2 Analítico: 16, sucesso. Consome os materiais e registra Poção de cura, 0,25 espaços, 2d6 Vida, Saturação 1. Sem treino, não poderia usar essa síntese modular.
+
+**Uma dose a mais.** Damião tem Constituição 5 e Atletismo 2: limiar 5. Já acumula Saturação 5 e bebe cura concentrada em Prontidão, gastando Movimento. Vai a 7; excesso 2, CD 21. Rola 3d20, seleciona 13 e soma +5: 18, falha. Não recupera Vida, fica sem Evasão até o início do próximo turno e perde a Ação de Movimento desse próximo turno, pois já gastou a atual. Permanece com Saturação 7. Uma segunda dose arriscaria rejeição mais grave; mudar de poção não limpa o sangue.

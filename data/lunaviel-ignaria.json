@@ -1,0 +1,645 @@
+{
+  "title": "Casa Marquesal Lunaviel · Ignária",
+  "slug": "casa-lunaviel",
+  "url": "/mundo/ignaria/casa-lunaviel",
+  "introHtml": "<p>Humanos entre as grandes casas de Ignária, os Lunaviel mantêm sua\nposição por alianças, patrimônio e serviço. O marquesado recebe\nemissários de diferentes povos, mas conserva uma memória familiar ligada\na Nova Estrela e à sobrevivência de Sophia Ospher.</p>\n",
+  "html": "<p>Humanos entre as grandes casas de Ignária, os Lunaviel mantêm sua\nposição por alianças, patrimônio e serviço. O marquesado recebe\nemissários de diferentes povos, mas conserva uma memória familiar ligada\na Nova Estrela e à sobrevivência de Sophia Ospher.</p>\n<h2 id=\"casa-marquesal-lunaviel\">A casa e seus vínculos</h2>\n<p>Sophia perdeu a família ainda pequena durante a destruição de Nova\nEstrela. Protegida primeiro por um clérigo e depois por Merlin,\nestabeleceu-se na Nação do Fogo e transmitiu aos descendentes o\npatrimônio que sobrevivera à morte do marido. O nome Lunaviel passou a\nacompanhar essa linhagem. Nas recepções da casa, recordar Sophia é\nafirmar que a continuidade da família depende de pessoas acolhidas e\ncompromissos mantidos.</p>\n<p>Caroline e Valentino são os pais de Maximillian e Dominick. Os dois\nfilhos aparecem nas recepções e nas decisões de sucessão da casa; os\nnegócios e a segurança do marquesado permanecem sob a responsabilidade\ndos pais e do mordomo Alaric Voss.</p>\n<article class=\"elven-dossier\" aria-labelledby=\"caroline-lunaviel\"><h3 id=\"caroline-lunaviel\">Caroline Lunaviel · A Patriarca</h3>\n<h4 id=\"caroline-historia\">História e Origem</h4>\n<p>Caroline mantém duas espadas ao alcance da mão mesmo quando recebe\nconvidados. A primeira fica presa ao cinto; a segunda repousa junto à\ncadeira, numa bainha sem ornamentos. Quem a conhece entende o lugar\nreservado a cada uma: nenhuma é uma ameaça cerimonial. Caroline é a mais\nforte dos Lunaviel, e a autoridade de A Patriarca foi conquistada tanto\nnas negociações quanto nos duelos que impediram a ruína do\nmarquesado.</p>\n<p>No Estilo da Espada da Lua, aprendeu a esconder a mudança de ritmo\ndentro de gestos quase idênticos. Um corte amplo pode terminar numa\nestocada curta; uma retirada de meio passo prepara o golpe da outra mão.\nDiante de uma guarda resistente, aproxima-se com brutalidade calculada,\naté obrigar o adversário a escolher qual lâmina acompanhar. Suas espadas\ntrabalham juntas, sem que uma mão se limite a proteger a outra.</p>\n<p>Maximillian e Dominick são as pessoas diante de quem sua voz perde a\ndureza. Caroline exige que sejam capazes de sustentar os próprios\ncompromissos, mas não tolera que alguém os use para negociar com ela.\nValentino conhece essa fronteira e respeita sua liderança. Ao receber\numa afronta, ela pousa o copo, pede aos presentes que se afastem e\noferece uma única oportunidade de retratação.</p>\n<h4 id=\"caroline-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Humana · Duelista · Etapa V · A Patriarca da Casa Marquesal Lunaviel · Ranque SS</dd></div><div><dt>Vida</dt><dd>168</dd></div><div><dt>Karma</dt><dd>84</dd></div><div><dt>CA</dt><dd>26</dd></div><div><dt>Deslocamento</dt><dd>10 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>6</dd></div><div><dt>Agilidade</dt><dd>7</dd></div><div><dt>Constituição</dt><dd>6</dd></div><div><dt>Intelecto</dt><dd>5</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>5</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Cada gatilho admite uma única resposta; contra-ataques não geram\noutros contra-ataques. <strong>Armas:</strong> duas espadas, 2d6\ncortante cada, alcance 2 m, Médias e Precisas. Um ataque comum usa\napenas uma espada; empunhar duas não concede ações ou ataques\ngratuitos.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>7 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">4d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Acrobacia</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 7</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intuição</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 7</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Liderança</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Estilo — Espada da Lua:</strong> Caroline alterna a mão que\ninicia seus cortes sem penalidade por mão secundária. Uma vez por turno,\nao obter acerto total com uma espada, pode deslocar-se 2 m por terreno\nlivre. Esse passo não atravessa criaturas e não evita uma reação cujo\ngatilho já tenha ocorrido. Somente técnicas que dizem atacar com ambas\nas espadas realizam dois ataques.</p>\n<section class=\"elven-ability-source\"><h5 id=\"caroline-mikazuki\">1 · Mikazuki</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, alcance 2 m. A lâmina descreve um arco baixo e sobe\njunto ao braço adversário. Luta contra CA: <strong>2d10\ncortante</strong>; em acerto total, o próximo ataque com arma do alvo\nsofre −1d20 até o fim do próximo turno dele. Parcial causa metade do\ndano, sem penalidade. Não acumula consigo mesma.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-kasumi\">2 · Kasumi</h5>\n<p><strong>Fonte e Grau:</strong> Karma III. <strong>Uso:</strong>\nMovimento, 6 Karma, pessoal. Caroline muda o ritmo dos passos e percorre\naté 4 m por trajeto desimpedido. Seu próximo ataque de espada neste\nturno recebe +2. Não concede invisibilidade, passagem por obstáculos ou\nataque adicional. Não pode ser usada com carga crítica.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 movimento + 1\nteste específico +2 = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-shingetsu\">3 · Shingetsu</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, ataque físico percebido contra ela. As lâminas fecham a\npassagem em ângulos contrários: reduz o dano em <strong>2d10</strong>,\naté zero. Não reduz efeitos mentais, dano interno ou áreas; não produz\ncontra-ataque gratuito.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-getsuga\">4 · Getsuga</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, um ou dois alvos a 2 m. Executa dois ataques, um com\ncada espada, <strong>2d10 cortante</strong> por acerto total. Cada\nrolagem de Luta usa −1d20, mínimo 1d20, e resolve contra a CA de seu\nalvo. Parcial causa metade apenas do ataque correspondente. Não combina\ncom outra ação que conceda ataques adicionais.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 área /\ndestinatários = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-tsukikage\">5 · Tsukikage</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, após um ataque corpo a corpo contra Caroline resultar\nem falha. Ela atravessa a abertura com a espada oposta: Luta contra CA\ndo atacante a 2 m, <strong>2d10 cortante</strong>. Parcial metade. Não\nresponde a outro contra-ataque e não pode compartilhar o mesmo\nataque-gatilho com Shingetsu.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-mangetsu\">6 · Mangetsu</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 8 Karma, até dois inimigos a 3 m. Um giro completo mantém as\nduas lâminas em alturas diferentes. Faça uma rolagem de Luta e compare\nseparadamente à CA de cada alvo: <strong>2d10 cortante</strong> em\nacerto total, metade em parcial. Cada criatura recebe o dano uma única\nvez. Exige espaço para girar e não atravessa cobertura sólida.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 área /\ndestinatários + 2 seleção de aliados = 8 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-nisshoku\">7 · Nisshoku</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alcance 2 m. A primeira espada força a guarda; a\nsegunda procura a abertura: um único teste de Luta contra CA,\n<strong>2d12 cortante</strong>. Em acerto total, o alvo sofre −2 CA até\no início do próximo turno de Caroline. Parcial metade, sem perda de CA.\nA redução não acumula consigo mesma nem destrói automaticamente\narmaduras.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-gekko\">Assinatura · Gekkō</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 12 Karma, uma vez por cena, alvo a 2 m. Caroline muda a\ncadência entre a entrada e o contato das lâminas, obrigando o adversário\na fechar a guarda cedo demais. Luta contra CA: <strong>2d12\ncortante</strong>. Em acerto total, deixa a abertura lunar até o início\nde seu próximo turno. Se o alvo atacar ou se deslocar enquanto\npermanecer a 2 m, Caroline pode gastar uma Reação para causar\n<strong>2d6 cortante</strong>, sem nova rolagem; isso encerra a\nabertura. Parcial causa metade do dano inicial e não cria abertura. A\nresposta exige que Caroline perceba o alvo e possa empunhar uma espada;\nnão se repete nem gera outra reação.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii + 3 resposta lunar reservada = 12 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"valentino-heathcliff\"><h3 id=\"valentino-heathcliff\">Valentino Heathcliff · Custos</h3>\n<h4 id=\"valentino-historia\">História e Origem</h4>\n<p>Valentino conserva o sobrenome Heathcliff ao lado dos Lunaviel.\nPatriarca consorte e protetor da família, prefere organizar uma escolta\nantes que alguém precise pedi-la. Nos encontros públicos, concede espaço\nà autoridade de Caroline e permanece acessível aos filhos.</p>\n<p>Conhece o peso de promessas feitas em nome de pessoas ausentes. Antes\nde aceitar uma missão, pergunta quem ficará desprotegido com sua\npartida. Sua cortesia é direta: acompanha o visitante até a porta,\nconfere se a carruagem chegou e só então encerra a conversa.</p>\n<h4 id=\"valentino-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Humano · Tanque · Etapa V · protetor da Casa Marquesal Lunaviel · Ranque S · chefe S</dd></div><div><dt>Vida</dt><dd>120</dd></div><div><dt>Karma</dt><dd>68</dd></div><div><dt>CA</dt><dd>25</dd></div><div><dt>Deslocamento</dt><dd>9 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>6</dd></div><div><dt>Agilidade</dt><dd>6</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>6</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>6</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Uma mesma resolução admite uma única resposta dele.\n<strong>Armas:</strong> espada, Luta contra CA, 2d8 cortante, alcance 2\nm; escudo incluído na CA.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">3d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Liderança</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intuição</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div></div><div class=\"skill-notes\"></div></section><section class=\"elven-ability-source\"><h5 id=\"valentino-anteparo\">1 · Anteparo</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, ataque físico percebido contra aliado a 2 m. O escudo\nreduz o dano do aliado em <strong>2d10</strong>. Não protege de uma área\nque alcance ambos nem impede condições independentes do dano.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"valentino-passagem\">2 · Passagem</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, alvo a 2 m. Luta contra CA: <strong>2d10\ncortante</strong> e empurrão de 2 m. Parcial metade sem empurrão. O\nempurrão é o único efeito além do dano.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"valentino-egide\">3 · Égide</h5>\n<p><strong>Fonte e Grau:</strong> Karma III. <strong>Uso:</strong>\nPrincipal, 5 Karma, toque em criatura voluntária. Concede <strong>18\npontos de escudo</strong> por duas rodadas. Não acumula consigo mesmo,\nnão cura Vida e termina se Valentino ficar inconsciente ou se afastar\nmais de 15 m do protegido.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 duração = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"alaric-voss\"><h3 id=\"alaric-voss\">Alaric Voss · Punho de Ébano</h3>\n<h4 id=\"alaric-historia\">História e Origem</h4>\n<p>Alaric aprendeu a reconhecer um visitante perigoso pelo espaço que\ndeixa entre o próprio corpo e a porta. Serve os Lunaviel há décadas:\nconhece os horários da criadagem, os hábitos dos filhos e as pequenas\nmudanças que anunciam uma emboscada. Nas recepções, recolhe\ndiscretamente os talheres que ninguém usou; quando Caroline se levanta\npara lutar, já abriu caminho para retirar os demais convidados.</p>\n<p>Antes de vestir a casaca, combateu nos ringues dos bairros\nindustriais de Ignária. Conserva a guarda fechada, os passos curtos e a\ninsistência de quem venceu lutas encostado às cordas. Usa manoplas sob\nluvas reforçadas e evita golpes vistosos. Quer preservar a casa que lhe\ndeu um lugar, mas sua lealdade não o impede de advertir Caroline quando\numa decisão põe os filhos em risco. Fala baixo, chama cada empregado\npelo nome e jamais termina uma conversa enquanto houver alguém caído\nprecisando de ajuda.</p>\n<h4 id=\"alaric-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Humano · Pugilista · Etapa V · mordomo da Casa Marquesal Lunaviel · Ranque S · chefe S</dd></div><div><dt>Vida</dt><dd>120</dd></div><div><dt>Karma</dt><dd>76</dd></div><div><dt>CA</dt><dd>25</dd></div><div><dt>Deslocamento</dt><dd>10 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>7</dd></div><div><dt>Agilidade</dt><dd>8</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>6</dd></div><div><dt>Presença</dt><dd>6</dd></div><div><dt>Espírito</dt><dd>5</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Um mesmo gatilho admite uma única resposta; contra-ataques não\ngeram outros contra-ataques. <strong>Armas:</strong> manoplas, 2d8\ncontundente, alcance 1 m, Leves. Ataques comuns não concedem sequências\ngratuitas.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>7 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">4d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">4d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Acrobacia</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intuição</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intimidação</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Estilo — Guarda Fechada:</strong> enquanto estiver consciente\ne com ambas as mãos livres ou usando manoplas, Alaric reduz em 2 o dano\nde cada ataque corpo a corpo percebido. A guarda não protege de ataques\npelas costas não percebidos, áreas ou dano interno. Uma criatura não\nsofre várias instâncias dessa redução pelo mesmo ataque.</p>\n<section class=\"elven-ability-source\"><h5 id=\"alaric-prensa\">1 · Prensa</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, alcance 1 m. Luta contra CA: <strong>2d10\ncontundente</strong>. Em acerto total, empurra o alvo 2 m; a colisão\napenas encerra o empurrão. Parcial metade, sem empurrão. Não causa dano\nadicional por colisão.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-ferro-curto\">2 · Ferro Curto</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 6 Karma, alcance 1 m. Um direto ao corpo retira o apoio da\nguarda: Luta contra CA, <strong>2d12 contundente</strong> e −2 CA ao\nalvo até o início do próximo turno de Alaric em acerto total. Parcial\nmetade, sem redução. A penalidade não acumula consigo mesma.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv = 6 Karma. Manutenção\ne outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-casamata\">3 · Casamata</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nReação, 7 Karma, ataque físico percebido contra ele. Alaric recolhe os\ncotovelos e acompanha o golpe: reduz o dano em <strong>2d12</strong>,\naté zero. Não protege contra área, dano interno ou efeitos mentais.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação = 7 Karma.\nManutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-retorno\">4 · Retorno</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, após falha de um ataque corpo a corpo contra Alaric. Um\npasso curto o mantém a 1 m do agressor, se houver passagem livre; então\nfaz Luta contra CA, <strong>2d10 contundente</strong>, metade em\nparcial. Não combina com Casamata no mesmo ataque e não responde a\ncontra-ataques.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-requiem\">Assinatura · Réquiem</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, uma vez por cena, alcance 1 m. Alaric prende a\natenção do oponente na guarda alta e concentra o golpe no centro do\ncorpo. Luta contra CA: <strong>2d12 contundente</strong>. Em acerto\ntotal, o alvo fica <strong>Caído</strong> e não pode realizar Reações\naté o início do próximo turno de Alaric. Parcial metade, sem condições.\nA técnica não executa automaticamente uma criatura nem ignora\nresistência.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section></article>",
+  "sections": [
+    {
+      "id": "casa-marquesal-lunaviel",
+      "title": "A casa e seus vínculos",
+      "html": "<p>Sophia perdeu a família ainda pequena durante a destruição de Nova\nEstrela. Protegida primeiro por um clérigo e depois por Merlin,\nestabeleceu-se na Nação do Fogo e transmitiu aos descendentes o\npatrimônio que sobrevivera à morte do marido. O nome Lunaviel passou a\nacompanhar essa linhagem. Nas recepções da casa, recordar Sophia é\nafirmar que a continuidade da família depende de pessoas acolhidas e\ncompromissos mantidos.</p>\n<p>Caroline e Valentino são os pais de Maximillian e Dominick. Os dois\nfilhos aparecem nas recepções e nas decisões de sucessão da casa; os\nnegócios e a segurança do marquesado permanecem sob a responsabilidade\ndos pais e do mordomo Alaric Voss.</p>\n<article class=\"elven-dossier\" aria-labelledby=\"caroline-lunaviel\"><h3 id=\"caroline-lunaviel\">Caroline Lunaviel · A Patriarca</h3>\n<h4 id=\"caroline-historia\">História e Origem</h4>\n<p>Caroline mantém duas espadas ao alcance da mão mesmo quando recebe\nconvidados. A primeira fica presa ao cinto; a segunda repousa junto à\ncadeira, numa bainha sem ornamentos. Quem a conhece entende o lugar\nreservado a cada uma: nenhuma é uma ameaça cerimonial. Caroline é a mais\nforte dos Lunaviel, e a autoridade de A Patriarca foi conquistada tanto\nnas negociações quanto nos duelos que impediram a ruína do\nmarquesado.</p>\n<p>No Estilo da Espada da Lua, aprendeu a esconder a mudança de ritmo\ndentro de gestos quase idênticos. Um corte amplo pode terminar numa\nestocada curta; uma retirada de meio passo prepara o golpe da outra mão.\nDiante de uma guarda resistente, aproxima-se com brutalidade calculada,\naté obrigar o adversário a escolher qual lâmina acompanhar. Suas espadas\ntrabalham juntas, sem que uma mão se limite a proteger a outra.</p>\n<p>Maximillian e Dominick são as pessoas diante de quem sua voz perde a\ndureza. Caroline exige que sejam capazes de sustentar os próprios\ncompromissos, mas não tolera que alguém os use para negociar com ela.\nValentino conhece essa fronteira e respeita sua liderança. Ao receber\numa afronta, ela pousa o copo, pede aos presentes que se afastem e\noferece uma única oportunidade de retratação.</p>\n<h4 id=\"caroline-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Humana · Duelista · Etapa V · A Patriarca da Casa Marquesal Lunaviel · Ranque SS</dd></div><div><dt>Vida</dt><dd>168</dd></div><div><dt>Karma</dt><dd>84</dd></div><div><dt>CA</dt><dd>26</dd></div><div><dt>Deslocamento</dt><dd>10 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>6</dd></div><div><dt>Agilidade</dt><dd>7</dd></div><div><dt>Constituição</dt><dd>6</dd></div><div><dt>Intelecto</dt><dd>5</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>5</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Cada gatilho admite uma única resposta; contra-ataques não geram\noutros contra-ataques. <strong>Armas:</strong> duas espadas, 2d6\ncortante cada, alcance 2 m, Médias e Precisas. Um ataque comum usa\napenas uma espada; empunhar duas não concede ações ou ataques\ngratuitos.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>7 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">4d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Acrobacia</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 7</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intuição</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 7</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Liderança</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Estilo — Espada da Lua:</strong> Caroline alterna a mão que\ninicia seus cortes sem penalidade por mão secundária. Uma vez por turno,\nao obter acerto total com uma espada, pode deslocar-se 2 m por terreno\nlivre. Esse passo não atravessa criaturas e não evita uma reação cujo\ngatilho já tenha ocorrido. Somente técnicas que dizem atacar com ambas\nas espadas realizam dois ataques.</p>\n<section class=\"elven-ability-source\"><h5 id=\"caroline-mikazuki\">1 · Mikazuki</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, alcance 2 m. A lâmina descreve um arco baixo e sobe\njunto ao braço adversário. Luta contra CA: <strong>2d10\ncortante</strong>; em acerto total, o próximo ataque com arma do alvo\nsofre −1d20 até o fim do próximo turno dele. Parcial causa metade do\ndano, sem penalidade. Não acumula consigo mesma.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-kasumi\">2 · Kasumi</h5>\n<p><strong>Fonte e Grau:</strong> Karma III. <strong>Uso:</strong>\nMovimento, 6 Karma, pessoal. Caroline muda o ritmo dos passos e percorre\naté 4 m por trajeto desimpedido. Seu próximo ataque de espada neste\nturno recebe +2. Não concede invisibilidade, passagem por obstáculos ou\nataque adicional. Não pode ser usada com carga crítica.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 movimento + 1\nteste específico +2 = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-shingetsu\">3 · Shingetsu</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, ataque físico percebido contra ela. As lâminas fecham a\npassagem em ângulos contrários: reduz o dano em <strong>2d10</strong>,\naté zero. Não reduz efeitos mentais, dano interno ou áreas; não produz\ncontra-ataque gratuito.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-getsuga\">4 · Getsuga</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, um ou dois alvos a 2 m. Executa dois ataques, um com\ncada espada, <strong>2d10 cortante</strong> por acerto total. Cada\nrolagem de Luta usa −1d20, mínimo 1d20, e resolve contra a CA de seu\nalvo. Parcial causa metade apenas do ataque correspondente. Não combina\ncom outra ação que conceda ataques adicionais.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 área /\ndestinatários = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-tsukikage\">5 · Tsukikage</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, após um ataque corpo a corpo contra Caroline resultar\nem falha. Ela atravessa a abertura com a espada oposta: Luta contra CA\ndo atacante a 2 m, <strong>2d10 cortante</strong>. Parcial metade. Não\nresponde a outro contra-ataque e não pode compartilhar o mesmo\nataque-gatilho com Shingetsu.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-mangetsu\">6 · Mangetsu</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 8 Karma, até dois inimigos a 3 m. Um giro completo mantém as\nduas lâminas em alturas diferentes. Faça uma rolagem de Luta e compare\nseparadamente à CA de cada alvo: <strong>2d10 cortante</strong> em\nacerto total, metade em parcial. Cada criatura recebe o dano uma única\nvez. Exige espaço para girar e não atravessa cobertura sólida.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 área /\ndestinatários + 2 seleção de aliados = 8 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-nisshoku\">7 · Nisshoku</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, alcance 2 m. A primeira espada força a guarda; a\nsegunda procura a abertura: um único teste de Luta contra CA,\n<strong>2d12 cortante</strong>. Em acerto total, o alvo sofre −2 CA até\no início do próximo turno de Caroline. Parcial metade, sem perda de CA.\nA redução não acumula consigo mesma nem destrói automaticamente\narmaduras.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"caroline-gekko\">Assinatura · Gekkō</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 12 Karma, uma vez por cena, alvo a 2 m. Caroline muda a\ncadência entre a entrada e o contato das lâminas, obrigando o adversário\na fechar a guarda cedo demais. Luta contra CA: <strong>2d12\ncortante</strong>. Em acerto total, deixa a abertura lunar até o início\nde seu próximo turno. Se o alvo atacar ou se deslocar enquanto\npermanecer a 2 m, Caroline pode gastar uma Reação para causar\n<strong>2d6 cortante</strong>, sem nova rolagem; isso encerra a\nabertura. Parcial causa metade do dano inicial e não cria abertura. A\nresposta exige que Caroline perceba o alvo e possa empunhar uma espada;\nnão se repete nem gera outra reação.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii + 3 resposta lunar reservada = 12 Karma. Manutenção e outros\nrecursos são pagos separadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"valentino-heathcliff\"><h3 id=\"valentino-heathcliff\">Valentino Heathcliff · Custos</h3>\n<h4 id=\"valentino-historia\">História e Origem</h4>\n<p>Valentino conserva o sobrenome Heathcliff ao lado dos Lunaviel.\nPatriarca consorte e protetor da família, prefere organizar uma escolta\nantes que alguém precise pedi-la. Nos encontros públicos, concede espaço\nà autoridade de Caroline e permanece acessível aos filhos.</p>\n<p>Conhece o peso de promessas feitas em nome de pessoas ausentes. Antes\nde aceitar uma missão, pergunta quem ficará desprotegido com sua\npartida. Sua cortesia é direta: acompanha o visitante até a porta,\nconfere se a carruagem chegou e só então encerra a conversa.</p>\n<h4 id=\"valentino-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Humano · Tanque · Etapa V · protetor da Casa Marquesal Lunaviel · Ranque S · chefe S</dd></div><div><dt>Vida</dt><dd>120</dd></div><div><dt>Karma</dt><dd>68</dd></div><div><dt>CA</dt><dd>25</dd></div><div><dt>Deslocamento</dt><dd>9 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>6</dd></div><div><dt>Agilidade</dt><dd>6</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>6</dd></div><div><dt>Presença</dt><dd>7</dd></div><div><dt>Espírito</dt><dd>6</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Uma mesma resolução admite uma única resposta dele.\n<strong>Armas:</strong> espada, Luta contra CA, 2d8 cortante, alcance 2\nm; escudo incluído na CA.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>6 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">3d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Liderança</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intuição</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div></div><div class=\"skill-notes\"></div></section><section class=\"elven-ability-source\"><h5 id=\"valentino-anteparo\">1 · Anteparo</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, ataque físico percebido contra aliado a 2 m. O escudo\nreduz o dano do aliado em <strong>2d10</strong>. Não protege de uma área\nque alcance ambos nem impede condições independentes do dano.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"valentino-passagem\">2 · Passagem</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, alvo a 2 m. Luta contra CA: <strong>2d10\ncortante</strong> e empurrão de 2 m. Parcial metade sem empurrão. O\nempurrão é o único efeito além do dano.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"valentino-egide\">3 · Égide</h5>\n<p><strong>Fonte e Grau:</strong> Karma III. <strong>Uso:</strong>\nPrincipal, 5 Karma, toque em criatura voluntária. Concede <strong>18\npontos de escudo</strong> por duas rodadas. Não acumula consigo mesmo,\nnão cura Vida e termina se Valentino ficar inconsciente ou se afastar\nmais de 15 m do protegido.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 duração = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section></article><article class=\"elven-dossier\" aria-labelledby=\"alaric-voss\"><h3 id=\"alaric-voss\">Alaric Voss · Punho de Ébano</h3>\n<h4 id=\"alaric-historia\">História e Origem</h4>\n<p>Alaric aprendeu a reconhecer um visitante perigoso pelo espaço que\ndeixa entre o próprio corpo e a porta. Serve os Lunaviel há décadas:\nconhece os horários da criadagem, os hábitos dos filhos e as pequenas\nmudanças que anunciam uma emboscada. Nas recepções, recolhe\ndiscretamente os talheres que ninguém usou; quando Caroline se levanta\npara lutar, já abriu caminho para retirar os demais convidados.</p>\n<p>Antes de vestir a casaca, combateu nos ringues dos bairros\nindustriais de Ignária. Conserva a guarda fechada, os passos curtos e a\ninsistência de quem venceu lutas encostado às cordas. Usa manoplas sob\nluvas reforçadas e evita golpes vistosos. Quer preservar a casa que lhe\ndeu um lugar, mas sua lealdade não o impede de advertir Caroline quando\numa decisão põe os filhos em risco. Fala baixo, chama cada empregado\npelo nome e jamais termina uma conversa enquanto houver alguém caído\nprecisando de ajuda.</p>\n<h4 id=\"alaric-combate\">Ficha de Combate</h4>\n<dl class=\"elven-vitals-source\"><div><dt>Identidade</dt><dd>Humano · Pugilista · Etapa V · mordomo da Casa Marquesal Lunaviel · Ranque S · chefe S</dd></div><div><dt>Vida</dt><dd>120</dd></div><div><dt>Karma</dt><dd>76</dd></div><div><dt>CA</dt><dd>25</dd></div><div><dt>Deslocamento</dt><dd>10 m</dd></div></dl><dl class=\"elven-attributes-source\"><div><dt>Força</dt><dd>7</dd></div><div><dt>Agilidade</dt><dd>8</dd></div><div><dt>Constituição</dt><dd>7</dd></div><div><dt>Intelecto</dt><dd>6</dd></div><div><dt>Presença</dt><dd>6</dd></div><div><dt>Espírito</dt><dd>5</dd></div></dl><p><strong>Ações:</strong> Principal, Movimento, Livre e 2 Reações por\nrodada. Um mesmo gatilho admite uma única resposta; contra-ataques não\ngeram outros contra-ataques. <strong>Armas:</strong> manoplas, 2d8\ncontundente, alcance 1 m, Leves. Ataques comuns não concedem sequências\ngratuitas.</p>\n<section class=\"skill-panel\" aria-label=\"Perícias\"><header class=\"skill-panel-heading\"><h4>Perícias</h4><span>7 treinadas</span></header><div class=\"skill-card-grid\"><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Luta</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">4d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Atletismo</strong><span class=\"skill-level\" aria-label=\"Nível 3\"><small>NÍVEL</small>3</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+10</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i class=\"filled\"></i></span></div><p class=\"skill-roll\">4d20 + 10</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Reflexos</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Acrobacia</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">4d20 + 5</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Percepção</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intuição</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 8</p></div><div class=\"skill-card\"><div class=\"skill-card-identity\"><strong>Intimidação</strong><span class=\"skill-level\" aria-label=\"Nível 2\"><small>NÍVEL</small>2</span></div><div class=\"skill-training\"><span>Treinamento</span><b>+5</b><span class=\"skill-pips\" aria-hidden=\"true\"><i class=\"filled\"></i><i class=\"filled\"></i><i></i></span></div><p class=\"skill-roll\">3d20 + 5</p></div></div><div class=\"skill-notes\"></div></section><p><strong>Estilo — Guarda Fechada:</strong> enquanto estiver consciente\ne com ambas as mãos livres ou usando manoplas, Alaric reduz em 2 o dano\nde cada ataque corpo a corpo percebido. A guarda não protege de ataques\npelas costas não percebidos, áreas ou dano interno. Uma criatura não\nsofre várias instâncias dessa redução pelo mesmo ataque.</p>\n<section class=\"elven-ability-source\"><h5 id=\"alaric-prensa\">1 · Prensa</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nPrincipal, 6 Karma, alcance 1 m. Luta contra CA: <strong>2d10\ncontundente</strong>. Em acerto total, empurra o alvo 2 m; a colisão\napenas encerra o empurrão. Parcial metade, sem empurrão. Não causa dano\nadicional por colisão.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-ferro-curto\">2 · Ferro Curto</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 6 Karma, alcance 1 m. Um direto ao corpo retira o apoio da\nguarda: Luta contra CA, <strong>2d12 contundente</strong> e −2 CA ao\nalvo até o início do próximo turno de Alaric em acerto total. Parcial\nmetade, sem redução. A penalidade não acumula consigo mesma.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv = 6 Karma. Manutenção\ne outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-casamata\">3 · Casamata</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nReação, 7 Karma, ataque físico percebido contra ele. Alaric recolhe os\ncotovelos e acompanha o golpe: reduz o dano em <strong>2d12</strong>,\naté zero. Não protege contra área, dano interno ou efeitos mentais.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 1 reação = 7 Karma.\nManutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-retorno\">4 · Retorno</h5>\n<p><strong>Fonte e Grau:</strong> Marcial III. <strong>Uso:</strong>\nReação, 5 Karma, após falha de um ataque corpo a corpo contra Alaric. Um\npasso curto o mantém a 1 m do agressor, se houver passagem livre; então\nfaz Luta contra CA, <strong>2d10 contundente</strong>, metade em\nparcial. Não combina com Casamata no mesmo ataque e não responde a\ncontra-ataques.</p>\n<p><strong>Composição de Karma:</strong> 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente.</p>\n</section><section class=\"elven-ability-source\"><h5 id=\"alaric-requiem\">Assinatura · Réquiem</h5>\n<p><strong>Fonte e Grau:</strong> Marcial IV. <strong>Uso:</strong>\nPrincipal, 9 Karma, uma vez por cena, alcance 1 m. Alaric prende a\natenção do oponente na guarda alta e concentra o golpe no centro do\ncorpo. Luta contra CA: <strong>2d12 contundente</strong>. Em acerto\ntotal, o alvo fica <strong>Caído</strong> e não pode realizar Reações\naté o início do próximo turno de Alaric. Parcial metade, sem condições.\nA técnica não executa automaticamente uma criatura nem ignora\nresistência.</p>\n<p><strong>Composição de Karma:</strong> 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente.</p>\n</section></article>"
+    }
+  ],
+  "characterIds": [
+    "caroline-lunaviel",
+    "valentino-heathcliff",
+    "alaric-voss"
+  ],
+  "courtProfiles": [
+    {
+      "id": "caroline-lunaviel",
+      "name": "Caroline Lunaviel",
+      "title": "A Patriarca",
+      "loreId": "caroline-historia",
+      "combatId": "caroline-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>Caroline mantém duas espadas ao alcance da mão mesmo quando recebe\nconvidados. A primeira fica presa ao cinto; a segunda repousa junto à\ncadeira, numa bainha sem ornamentos. Quem a conhece entende o lugar\nreservado a cada uma: nenhuma é uma ameaça cerimonial. Caroline é a mais\nforte dos Lunaviel, e a autoridade de A Patriarca foi conquistada tanto\nnas negociações quanto nos duelos que impediram a ruína do\nmarquesado.</p>\n<p>No Estilo da Espada da Lua, aprendeu a esconder a mudança de ritmo\ndentro de gestos quase idênticos. Um corte amplo pode terminar numa\nestocada curta; uma retirada de meio passo prepara o golpe da outra mão.\nDiante de uma guarda resistente, aproxima-se com brutalidade calculada,\naté obrigar o adversário a escolher qual lâmina acompanhar. Suas espadas\ntrabalham juntas, sem que uma mão se limite a proteger a outra.</p>\n<p>Maximillian e Dominick são as pessoas diante de quem sua voz perde a\ndureza. Caroline exige que sejam capazes de sustentar os próprios\ncompromissos, mas não tolera que alguém os use para negociar com ela.\nValentino conhece essa fronteira e respeita sua liderança. Ao receber\numa afronta, ela pousa o copo, pede aos presentes que se afastem e\noferece uma única oportunidade de retratação.</p>\n",
+      "identity": "Humana · Duelista · Etapa V · A Patriarca da Casa Marquesal Lunaviel · Ranque SS",
+      "life": 168,
+      "karma": 84,
+      "pc": null,
+      "ca": 26,
+      "movement": "10 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 6
+        },
+        {
+          "name": "Agilidade",
+          "value": 7
+        },
+        {
+          "name": "Constituição",
+          "value": 6
+        },
+        {
+          "name": "Intelecto",
+          "value": 5
+        },
+        {
+          "name": "Presença",
+          "value": 7
+        },
+        {
+          "name": "Espírito",
+          "value": 5
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 2 Reações por\nrodada. Cada gatilho admite uma única resposta; contra-ataques não geram\noutros contra-ataques. "
+            },
+            {
+              "label": "Armas",
+              "html": " duas espadas, 2d6\ncortante cada, alcance 2 m, Médias e Precisas. Um ataque comum usa\napenas uma espada; empunhar duas não concede ações ou ataques\ngratuitos."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Luta 3 — 4d20 + 10 com Agilidade;\nAtletismo 2 — 3d20 + 5; Reflexos 2 — 4d20 + 5; Acrobacia 2 — 4d20 + 5;\nPercepção 2 — 3d20 + 7; Intuição 2 — 3d20 + 7; Liderança 2 — 4d20 +\n5."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Estilo — Espada da Lua",
+              "html": " Caroline alterna a mão que\ninicia seus cortes sem penalidade por mão secundária. Uma vez por turno,\nao obter acerto total com uma espada, pode deslocar-se 2 m por terreno\nlivre. Esse passo não atravessa criaturas e não evita uma reação cujo\ngatilho já tenha ocorrido. Somente técnicas que dizem atacar com ambas\nas espadas realizam dois ataques."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "caroline-mikazuki",
+          "name": "Mikazuki",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "6 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 6 Karma, alcance 2 m. A lâmina descreve um arco baixo e sobe\njunto ao braço adversário. Luta contra CA: <strong>2d10\ncortante</strong>; em acerto total, o próximo ataque com arma do alvo\nsofre −1d20 até o fim do próximo turno dele. Parcial causa metade do\ndano, sem penalidade. Não acumula consigo mesma."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-kasumi",
+          "name": "Kasumi",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "III",
+          "cost": "6 Karma",
+          "action": "Movimento",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nMovimento, 6 Karma, pessoal. Caroline muda o ritmo dos passos e percorre\naté 4 m por trajeto desimpedido. Seu próximo ataque de espada neste\nturno recebe +2. Não concede invisibilidade, passagem por obstáculos ou\nataque adicional. Não pode ser usada com carga crítica."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 movimento + 1\nteste específico +2 = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-shingetsu",
+          "name": "Shingetsu",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "5 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 5 Karma, ataque físico percebido contra ela. As lâminas fecham a\npassagem em ângulos contrários: reduz o dano em <strong>2d10</strong>,\naté zero. Não reduz efeitos mentais, dano interno ou áreas; não produz\ncontra-ataque gratuito."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-getsuga",
+          "name": "Getsuga",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "6 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 6 Karma, um ou dois alvos a 2 m. Executa dois ataques, um com\ncada espada, <strong>2d10 cortante</strong> por acerto total. Cada\nrolagem de Luta usa −1d20, mínimo 1d20, e resolve contra a CA de seu\nalvo. Parcial causa metade apenas do ataque correspondente. Não combina\ncom outra ação que conceda ataques adicionais."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 2 área /\ndestinatários = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-tsukikage",
+          "name": "Tsukikage",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "5 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 5 Karma, após um ataque corpo a corpo contra Caroline resultar\nem falha. Ela atravessa a abertura com a espada oposta: Luta contra CA\ndo atacante a 2 m, <strong>2d10 cortante</strong>. Parcial metade. Não\nresponde a outro contra-ataque e não pode compartilhar o mesmo\nataque-gatilho com Shingetsu."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-mangetsu",
+          "name": "Mangetsu",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "8 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 8 Karma, até dois inimigos a 3 m. Um giro completo mantém as\nduas lâminas em alturas diferentes. Faça uma rolagem de Luta e compare\nseparadamente à CA de cada alvo: <strong>2d10 cortante</strong> em\nacerto total, metade em parcial. Cada criatura recebe o dano uma única\nvez. Exige espaço para girar e não atravessa cobertura sólida."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 2 área /\ndestinatários + 2 seleção de aliados = 8 Karma. Manutenção e outros\nrecursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-nisshoku",
+          "name": "Nisshoku",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, alcance 2 m. A primeira espada força a guarda; a\nsegunda procura a abertura: um único teste de Luta contra CA,\n<strong>2d12 cortante</strong>. Em acerto total, o alvo sofre −2 CA até\no início do próximo turno de Caroline. Parcial metade, sem perda de CA.\nA redução não acumula consigo mesma nem destrói automaticamente\narmaduras."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "caroline-gekko",
+          "name": "Gekkō",
+          "kind": "signature",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "12 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 12 Karma, uma vez por cena, alvo a 2 m. Caroline muda a\ncadência entre a entrada e o contato das lâminas, obrigando o adversário\na fechar a guarda cedo demais. Luta contra CA: <strong>2d12\ncortante</strong>. Em acerto total, deixa a abertura lunar até o início\nde seu próximo turno. Se o alvo atacar ou se deslocar enquanto\npermanecer a 2 m, Caroline pode gastar uma Reação para causar\n<strong>2d6 cortante</strong>, sem nova rolagem; isso encerra a\nabertura. Parcial causa metade do dano inicial e não cria abertura. A\nresposta exige que Caroline perceba o alvo e possa empunhar uma espada;\nnão se repete nem gera outra reação."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii + 3 resposta lunar reservada = 12 Karma. Manutenção e outros\nrecursos são pagos separadamente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valentino-heathcliff",
+      "name": "Valentino Heathcliff",
+      "title": "Custos",
+      "loreId": "valentino-historia",
+      "combatId": "valentino-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>Valentino conserva o sobrenome Heathcliff ao lado dos Lunaviel.\nPatriarca consorte e protetor da família, prefere organizar uma escolta\nantes que alguém precise pedi-la. Nos encontros públicos, concede espaço\nà autoridade de Caroline e permanece acessível aos filhos.</p>\n<p>Conhece o peso de promessas feitas em nome de pessoas ausentes. Antes\nde aceitar uma missão, pergunta quem ficará desprotegido com sua\npartida. Sua cortesia é direta: acompanha o visitante até a porta,\nconfere se a carruagem chegou e só então encerra a conversa.</p>\n",
+      "identity": "Humano · Tanque · Etapa V · protetor da Casa Marquesal Lunaviel · Ranque S · chefe S",
+      "life": 120,
+      "karma": 68,
+      "pc": null,
+      "ca": 25,
+      "movement": "9 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 6
+        },
+        {
+          "name": "Agilidade",
+          "value": 6
+        },
+        {
+          "name": "Constituição",
+          "value": 7
+        },
+        {
+          "name": "Intelecto",
+          "value": 6
+        },
+        {
+          "name": "Presença",
+          "value": 7
+        },
+        {
+          "name": "Espírito",
+          "value": 6
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 2 Reações por\nrodada. Uma mesma resolução admite uma única resposta dele.\n"
+            },
+            {
+              "label": "Armas",
+              "html": " espada, Luta contra CA, 2d8 cortante, alcance 2\nm; escudo incluído na CA."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Luta 3 — 3d20 + 10; Atletismo 2 — 3d20 +\n5; Reflexos 2 — 3d20 + 5; Percepção 2 — 3d20 + 8; Liderança 2 — 4d20 +\n5; Intuição 2 — 3d20 + 8."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "valentino-anteparo",
+          "name": "Anteparo",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "5 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 5 Karma, ataque físico percebido contra aliado a 2 m. O escudo\nreduz o dano do aliado em <strong>2d10</strong>. Não protege de uma área\nque alcance ambos nem impede condições independentes do dano."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "valentino-passagem",
+          "name": "Passagem",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "6 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 6 Karma, alvo a 2 m. Luta contra CA: <strong>2d10\ncortante</strong> e empurrão de 2 m. Parcial metade sem empurrão. O\nempurrão é o único efeito além do dano."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "valentino-egide",
+          "name": "Égide",
+          "kind": "technique",
+          "source": "Karma",
+          "grade": "III",
+          "cost": "5 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Karma III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 5 Karma, toque em criatura voluntária. Concede <strong>18\npontos de escudo</strong> por duas rodadas. Não acumula consigo mesmo,\nnão cura Vida e termina se Valentino ficar inconsciente ou se afastar\nmais de 15 m do protegido."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 duração = 5\nKarma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alaric-voss",
+      "name": "Alaric Voss",
+      "title": "Punho de Ébano",
+      "loreId": "alaric-historia",
+      "combatId": "alaric-combate",
+      "sheetLabel": "Ficha de Combate",
+      "loreHtml": "<p>Alaric aprendeu a reconhecer um visitante perigoso pelo espaço que\ndeixa entre o próprio corpo e a porta. Serve os Lunaviel há décadas:\nconhece os horários da criadagem, os hábitos dos filhos e as pequenas\nmudanças que anunciam uma emboscada. Nas recepções, recolhe\ndiscretamente os talheres que ninguém usou; quando Caroline se levanta\npara lutar, já abriu caminho para retirar os demais convidados.</p>\n<p>Antes de vestir a casaca, combateu nos ringues dos bairros\nindustriais de Ignária. Conserva a guarda fechada, os passos curtos e a\ninsistência de quem venceu lutas encostado às cordas. Usa manoplas sob\nluvas reforçadas e evita golpes vistosos. Quer preservar a casa que lhe\ndeu um lugar, mas sua lealdade não o impede de advertir Caroline quando\numa decisão põe os filhos em risco. Fala baixo, chama cada empregado\npelo nome e jamais termina uma conversa enquanto houver alguém caído\nprecisando de ajuda.</p>\n",
+      "identity": "Humano · Pugilista · Etapa V · mordomo da Casa Marquesal Lunaviel · Ranque S · chefe S",
+      "life": 120,
+      "karma": 76,
+      "pc": null,
+      "ca": 25,
+      "movement": "10 m",
+      "attributes": [
+        {
+          "name": "Força",
+          "value": 7
+        },
+        {
+          "name": "Agilidade",
+          "value": 8
+        },
+        {
+          "name": "Constituição",
+          "value": 7
+        },
+        {
+          "name": "Intelecto",
+          "value": 6
+        },
+        {
+          "name": "Presença",
+          "value": 6
+        },
+        {
+          "name": "Espírito",
+          "value": 5
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "label": "Ações",
+              "html": " Principal, Movimento, Livre e 2 Reações por\nrodada. Um mesmo gatilho admite uma única resposta; contra-ataques não\ngeram outros contra-ataques. "
+            },
+            {
+              "label": "Armas",
+              "html": " manoplas, 2d8\ncontundente, alcance 1 m, Leves. Ataques comuns não concedem sequências\ngratuitas."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Perícias",
+              "html": " Luta 3 — 4d20 + 10; Atletismo 3 — 4d20 +\n10; Reflexos 2 — 4d20 + 5; Acrobacia 2 — 4d20 + 5; Percepção 2 — 3d20 +\n8; Intuição 2 — 3d20 + 8; Intimidação 2 — 3d20 + 5."
+            }
+          ]
+        },
+        {
+          "fields": [
+            {
+              "label": "Estilo — Guarda Fechada",
+              "html": " enquanto estiver consciente\ne com ambas as mãos livres ou usando manoplas, Alaric reduz em 2 o dano\nde cada ataque corpo a corpo percebido. A guarda não protege de ataques\npelas costas não percebidos, áreas ou dano interno. Uma criatura não\nsofre várias instâncias dessa redução pelo mesmo ataque."
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "alaric-prensa",
+          "name": "Prensa",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "6 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 6 Karma, alcance 1 m. Luta contra CA: <strong>2d10\ncontundente</strong>. Em acerto total, empurra o alvo 2 m; a colisão\napenas encerra o empurrão. Parcial metade, sem empurrão. Não causa dano\nadicional por colisão."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 2 função\nsecundária ii = 6 Karma. Manutenção e outros recursos são pagos\nseparadamente."
+            }
+          ]
+        },
+        {
+          "id": "alaric-ferro-curto",
+          "name": "Ferro Curto",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "6 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 6 Karma, alcance 1 m. Um direto ao corpo retira o apoio da\nguarda: Luta contra CA, <strong>2d12 contundente</strong> e −2 CA ao\nalvo até o início do próximo turno de Alaric em acerto total. Parcial\nmetade, sem redução. A penalidade não acumula consigo mesma."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv = 6 Karma. Manutenção\ne outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "alaric-casamata",
+          "name": "Casamata",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "7 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 7 Karma, ataque físico percebido contra ele. Alaric recolhe os\ncotovelos e acompanha o golpe: reduz o dano em <strong>2d12</strong>,\naté zero. Não protege contra área, dano interno ou efeitos mentais."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 1 reação = 7 Karma.\nManutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "alaric-retorno",
+          "name": "Retorno",
+          "kind": "technique",
+          "source": "Marcial",
+          "grade": "III",
+          "cost": "5 Karma",
+          "action": "Reação",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial III. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nReação, 5 Karma, após falha de um ataque corpo a corpo contra Alaric. Um\npasso curto o mantém a 1 m do agressor, se houver passagem livre; então\nfaz Luta contra CA, <strong>2d10 contundente</strong>, metade em\nparcial. Não combina com Casamata no mesmo ataque e não responde a\ncontra-ataques."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 4 base iii + 1 reação = 5\nKarma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        },
+        {
+          "id": "alaric-requiem",
+          "name": "Réquiem",
+          "kind": "signature",
+          "source": "Marcial",
+          "grade": "IV",
+          "cost": "9 Karma",
+          "action": "Principal",
+          "fields": [
+            {
+              "label": "Fonte e Grau",
+              "html": " Marcial IV. "
+            },
+            {
+              "label": "Uso",
+              "html": "\nPrincipal, 9 Karma, uma vez por cena, alcance 1 m. Alaric prende a\natenção do oponente na guarda alta e concentra o golpe no centro do\ncorpo. Luta contra CA: <strong>2d12 contundente</strong>. Em acerto\ntotal, o alvo fica <strong>Caído</strong> e não pode realizar Reações\naté o início do próximo turno de Alaric. Parcial metade, sem condições.\nA técnica não executa automaticamente uma criatura nem ignora\nresistência."
+            },
+            {
+              "label": "Composição de Karma",
+              "html": " 6 base iv + 3 função secundária\niii = 9 Karma. Manutenção e outros recursos são pagos separadamente."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "id": "caroline-lunaviel",
+      "name": "Caroline Lunaviel",
+      "title": "A Patriarca"
+    },
+    {
+      "id": "valentino-heathcliff",
+      "name": "Valentino Heathcliff",
+      "title": "Custos"
+    },
+    {
+      "id": "alaric-voss",
+      "name": "Alaric Voss",
+      "title": "Punho de Ébano"
+    }
+  ],
+  "anchors": [
+    "casa-marquesal-lunaviel",
+    "caroline-lunaviel",
+    "caroline-historia",
+    "caroline-combate",
+    "caroline-mikazuki",
+    "caroline-kasumi",
+    "caroline-shingetsu",
+    "caroline-getsuga",
+    "caroline-tsukikage",
+    "caroline-mangetsu",
+    "caroline-nisshoku",
+    "caroline-gekko",
+    "valentino-heathcliff",
+    "valentino-historia",
+    "valentino-combate",
+    "valentino-anteparo",
+    "valentino-passagem",
+    "valentino-egide",
+    "alaric-voss",
+    "alaric-historia",
+    "alaric-combate",
+    "alaric-prensa",
+    "alaric-ferro-curto",
+    "alaric-casamata",
+    "alaric-retorno",
+    "alaric-requiem"
+  ]
+}

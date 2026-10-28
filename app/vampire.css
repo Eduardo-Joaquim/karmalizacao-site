@@ -1,0 +1,56 @@
+.vampire-realm-page { background:radial-gradient(ellipse at 80% 0,#682e3036,transparent 35%),#100b0e; }
+.vampire-realm-hero { border-color:#b679655e; background:radial-gradient(ellipse at top right,#9b304333,transparent 58%),linear-gradient(125deg,#28131b,#130e12 72%); }
+.vampire-realm-hero::after { content:"VI"; position:absolute; right:5%; top:8%; font:clamp(90px,15vw,190px)/1 Georgia,serif; color:#c1767210; pointer-events:none; }
+.vampire-realm-page .atlas-overline { color:#d9ae91; }
+.vampire-realm-page .realm-summary { border-color:#a86b6655; }
+.vampire-realm-page .realm-summary strong { color:#e6c298; }
+.vampire-content { --realm-accent:#d9a88e; }
+.vampire-content .realm-section > h2 { border-color:#9d5c6455; color:#e6c6a9; }
+.vampire-content .elven-sheet { border-color:#a268675c; background:#171015; box-shadow:0 20px 65px #0004; }
+.vampire-content .elven-identity { background:radial-gradient(ellipse at right,#882d4140,transparent 62%),linear-gradient(120deg,#301923,#191016); border-color:#b17b6c44; }
+.vampire-content .elven-sheet-queen { border-color:#d2a27988; box-shadow:0 0 0 5px #211217,0 0 0 6px #98634844,0 30px 80px #0007; }
+.vampire-content .elven-sheet-queen .elven-identity { min-height:340px; background:radial-gradient(circle at 82% 40%,#b52c4640,transparent 33%),linear-gradient(115deg,#381a23,#1a1016 65%); }
+.vampire-content .elven-identity h3 { color:#f1dfc5; }
+.vampire-content .elven-title { color:var(--elven-accent); letter-spacing:.08em; }
+.vampire-content .elven-lore { background:#1d141b; border-color:#a4696740; }
+.vampire-content .elven-lore p { color:#c9b9ba; }
+.vampire-content .elven-combat { background:#120e12; }
+.vampire-content .elven-part-heading { color:#d8b698; border-color:#ad7a6a40; }
+.vampire-content .elven-resource { background:linear-gradient(135deg,#34202b,#20151d); border-color:#9c5f6c60; }
+.vampire-content .elven-resource dt,.vampire-content .elven-resource>span { color:#c2a0a8; }
+.vampire-content .elven-resource dd { color:#f0c6bd; }
+.vampire-content .elven-attribute-grid>div { background:#21161e; border-color:#93626d44; }
+.vampire-content .elven-attribute-grid dt { color:#c3a4ac; }
+.vampire-content .elven-attribute-grid dd { color:#e9c9b3; }
+.vampire-content .elven-facts>section { background:#20161d; border-color:#93626d44; }
+.vampire-content .elven-field>span { color:#d8b799; }
+.vampire-content .elven-field>div { color:#c9b8bd; }
+.vampire-content .elven-ability { background:linear-gradient(150deg,#34202d,#21151e); border-color:#b3758166; border-top-color:var(--elven-accent); }
+.vampire-content .elven-ability header { background:#48232d55; border-color:#b3787040; }
+.vampire-content .elven-ability h5 { color:#f0d5bb; }
+.vampire-content .elven-ability-meta span { background:#120d1366; border-color:#ab788355; color:#dfbcae; }
+.vampire-content .elven-ability-meta .ability-source { border-color:#d8a57d80; color:#efd3b4; }
+.court-source-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:0 0 22px; }
+.court-source-grid>div { padding:15px; background:linear-gradient(130deg,#3a202b,#25171f); border:1px solid #b2786a60; border-top:2px solid #d4aa82; }
+.court-source-grid dt { color:#dfbcad; font-size:11px; line-height:1.6; }
+.court-source-grid dd { margin:8px 0 0; color:#f2dbc3; font:28px/1.2 Georgia,serif; }
+.court-source-grid small { margin-left:8px; font:10px/1.5 sans-serif; color:#bc969f; }
+@media(max-width:600px) { .court-source-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.vampire-content .elven-signature { background:radial-gradient(ellipse at top right,#ac394437,transparent 65%),linear-gradient(120deg,#3b2026,#22131c); border-color:#d3ac7b; }
+.vampire-content .elven-signature header { background:#bd82651a; }
+.vampire-content .skill-panel { background:#21151d; border-color:#9c67705c; }
+.vampire-content .skill-card { background:#2e1e29; border-color:#87586666; }
+.vampire-content .skill-card-identity strong { color:#ead1c2; }
+.vampire-content .skill-roll { color:#d4acb4; }
+.vampire-content .skill-pips i.filled { background:#d39798; }
+.vampire-realm-page .crown-navigation-toggle,.vampire-realm-page .crown-navigation-panel,.vampire-realm-page .gaeria-bestiary-return { background:#25141ef7; border-color:#b77e8066; }
+.vampire-realm-page .crown-navigation-panel a[aria-current] { background:#9c3e5325; border-color:#d69d94; }
+.ignaria-archive { background:radial-gradient(ellipse at top right,#8f3c2c22,transparent 65%),#201419; border-color:#a8755966; }
+.ignaria-archive .gaeria-category { background:#32191f33; border-color:#b0786333; }
+.ignaria-archive .gaeria-entry { background:#2d1b20; border-color:#a16e6455; }
+.ignaria-archive .gaeria-entry-royal { background:linear-gradient(135deg,#4a2430,#26171c); border-color:#c58d7066; }
+.ignaria-archive .gaeria-entry p { color:#c2a8a7; }
+.ignaria-archive .gaeria-category h3,.ignaria-archive .gaeria-archive-heading h2 { color:#e9c9ac; }
+.ignaria-archive .gaeria-entry:hover { border-color:#e1b78f; }
+@media(max-width:600px) { .vampire-content .elven-sheet-queen .elven-identity { min-height:0; }.haimaton-crest { max-width:210px; }.vampire-realm-hero::after { display:none; } }
+@media print { .vampire-realm-page,.vampire-content .elven-sheet,.vampire-content .elven-identity,.vampire-content .elven-lore,.vampire-content .elven-combat,.vampire-content .elven-ability,.vampire-content .elven-facts>section { background:white!important; }.vampire-content .elven-sheet * { color:black!important; }.vampire-realm-hero::after { display:none; } }

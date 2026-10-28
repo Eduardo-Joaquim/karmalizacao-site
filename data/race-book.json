@@ -1,0 +1,382 @@
+{
+  "Humano": {
+    "summary": "+1 ponto de Atributo, +1 ponto de Perícia na criação e +5 Vida.",
+    "features": [
+      {
+        "name": "Segunda tentativa",
+        "kind": "Habilidade",
+        "description": "uma vez por cena, 0 Karma, sem preparação. Depois de rolar um teste próprio e antes de aplicar suas consequências, rerrole toda a reserva sem ação adicional. Reaplique os mesmos modificadores e mantenha o novo resultado, mesmo pior. Não repete o teste adversário, não restitui recursos e não rerrola dano, cura ou uma segunda rerrolagem do mesmo teste."
+      },
+      {
+        "name": "Adaptabilidade",
+        "kind": "Habilidade",
+        "description": "o bônus de Atributo e o de Perícia podem ser destinados a qualquer opção permitida na criação."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Experiência compartilhada: Passiva, 0 Karma. Depois de presenciar uma tentativa real de uma tarefa ou de tentá-la pessoalmente naquela cena, você pode prestar Auxílio na mesma tarefa mesmo sem treinamento na Perícia, se conseguir contribuir de modo concreto. Gaste a ação normal de Auxílio e respeite seu alcance, benefício e teto; a evolução remove apenas o requisito de treinamento para essa ajuda. Não permite operar sozinho uma técnica desconhecida nem auxiliar uma defesa quando não houver tempo ou meio para fazê-lo."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Uma chance para o outro: Reação, 5 Karma, aliado voluntário a até 5 metros que possa ouvi-lo ou perceber seu aviso. Depois do teste dele e antes das consequências, gaste o uso ainda disponível de sua Segunda tentativa para que ele rerrole toda a reserva com os mesmos modificadores. Até a Etapa IV, ele mantém o novo resultado, mesmo pior. Você não rerrola dano ou teste adversário, nem uma rolagem já rerrolada. O uso é o seu, compartilhado com a aplicação pessoal; o aliado não precisa ser humano."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Aprender com a tentativa: Passiva. Segunda tentativa passa a conservar o melhor resultado final entre a rolagem original e a nova, em vez de obrigar a usar a nova. Isso também vale quando você cede seu uso por Uma chance para o outro. A seleção interna de cada reserva, inclusive Desvantagem, continua normal. Nada é rolado uma terceira vez, e o traço continua com um único uso compartilhado por cena."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Recomeço em movimento: Uma vez por cena, depois de resolver por completo um teste afetado por sua Segunda tentativa, você pode pagar 4 Karma, sem ação adicional. O beneficiário consciente escolhe levantar-se de Caído ou deslocar-se até 5 metros por um caminho possível, sem provocar reações disparadas apenas por esse movimento. O efeito é instantâneo e não concede ataque ou outra ação. Não remove Agarrado, Imobilizado, terreno perigoso ou consequências que impeçam o movimento. Funciona após sucesso ou falha, mas não evita retroativamente dano já aplicado."
+      }
+    ]
+  },
+  "Elfo": {
+    "summary": "+1 Agilidade ou Intelecto; +1 em Percepção ou História; +4 Karma máximo. Aplique apenas na criação, respeitando o teto inicial das Perícias.",
+    "features": [
+      {
+        "name": "Vigília desperta",
+        "kind": "Passiva",
+        "description": "Passiva. Durante repouso, conserve percepção dos estímulos que normalmente alcançariam seus sentidos. Descanso longo ainda ocupa 12 TE e exige segurança; vigiar dessa maneira não permite investigar, trabalhar, manter técnica ou realizar outra atividade principal durante o repouso. Surpresa ainda é possível contra uma ameaça que você não percebeu. Sono ou Inconsciência impostos por um efeito funcionam normalmente."
+      },
+      {
+        "name": "Memória sensorial",
+        "kind": "Habilidade",
+        "description": "Com um minuto de observação sem outra tarefa exigente, registre uma cena percebida: aparência, sons e posições dos elementos presentes. Conserve um registro até substituí-lo por outro. Recordá-lo é interação simples, 0 Karma e sem teste; ele contém somente o que foi efetivamente percebido, não interpretações, pensamentos ou detalhes ocultos. Ler escrita desconhecida ou deduzir um fato ainda exige conhecimento e teste apropriados. Uma ilusão pode ser registrada como foi percebida."
+      },
+      {
+        "name": "Escuta de ressonância",
+        "kind": "Habilidade",
+        "description": "Principal, 2 Karma, uma vez por cena, até 5 metros. Examine um objeto ou trecho de ambiente percebido e escolha uma pergunta: houve passagem física no último TE; de que direção vem um fluxo presente de ar ou água; ou qual fonte visível produz uma vibração percebida. Espírito + Percepção CD 13 com sinais expostos, CD 18 se antigos dentro desse TE ou interferidos. Um rastro deliberadamente ocultado usa o resultado de ocultação como CD, em vez da escala. Sucesso entrega uma pista sensorial verdadeira; falha não entrega pista, sem parcial. Não lê acontecimentos passados como uma gravação, não localiza pessoas por nome e não atravessa cobertura total."
+      },
+      {
+        "name": "Limite sensorial",
+        "kind": "Habilidade",
+        "description": "A memória depende dos sentidos que estavam disponíveis. Ausência de luz, ruído, obstáculos e sentidos impedidos continuam relevantes. Vigília não concede imunidade a sono, medo ou ilusão, e Escuta exige algum sinal material ou, depois da evolução apropriada, um vestígio sobrenatural real."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Passagem discreta: Passiva, 0 Karma. Ao caminhar voluntariamente sobre vegetação, terra, areia ou neve, você pode evitar pegadas comuns e o som produzido apenas pelo apoio dos pés. Isso não oculta seu corpo, cheiro, equipamento, voz, sangue ou vegetação quebrada por outras partes do corpo. Para passar despercebido, faça Furtividade quando houver observador capaz de percebê-lo. Corrida, queda, deslocamento forçado e veículo deixam seus rastros normais."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Eco compartilhado: Principal, 3 Karma, toque em uma criatura voluntária, uma vez por cena. Compartilhe seu registro atual de Memória sensorial como uma lembrança identificada claramente como sua. O destinatário percebe o que foi registrado, inclusive suas lacunas, sem teste. A exposição é instantânea; depois ele pode recordá-la como uma experiência comum. Não altera outras memórias, não exige acreditar numa interpretação e não produz ilusão externa. O registro original permanece com você e não concede idioma ou Perícia ao destinatário."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Escuta entre camadas: Passiva que amplia Escuta de ressonância, conservando Principal, 2 Karma, alcance de 5 metros e o mesmo uso por cena. Você também pode perguntar se uma superfície, objeto ou presença percebida conserva um vestígio sobrenatural ativo ou produzido no último TE. Espírito + Percepção enfrenta o resultado de ocultação da fonte como CD; sem ocultação registrada, CD 18. Sucesso identifica presença, localização aproximada no alvo examinado e se o vestígio está ativo ou residual. Não revela automaticamente a técnica, a identidade do autor ou o conteúdo de uma ilusão, nem dissipa o efeito. Falha não informa, sem parcial."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Despertar do eco: Principal, 6 Karma, toque em uma criatura voluntária, uma vez por cena. Compare seu registro sensorial, feito antes da alteração, com um efeito temporário de sono sobrenatural, ilusão sensorial ou adulteração de memória que esteja afetando essa criatura. O registro deve conter uma referência concreta capaz de demonstrar a alteração; uma lembrança vaga não basta. Teste Espírito + Percepção contra o resultado original do efeito como CD; sem resultado, CD 18, ou 22 se for uma versão ampliada de classe ou linhagem. Sucesso encerra esse efeito de Grau I a IV; Grau V fica suspenso até o início do seu próximo turno. Efeito sem Grau usa a classificação exclusiva de Dissipação do Capítulo 9. Falha não altera, sem parcial. Não desfaz mudança permanente, dano ou uma informação verdadeira desagradável; a criatura pode estar adormecida e ter consentido previamente em ser despertada."
+      }
+    ]
+  },
+  "Anão": {
+    "summary": "+1 Constituição ou Força; +1 em Criação ou Atletismo; +6 Vida máxima. Aplique apenas na criação. O porte segue a altura ou a categoria registrada no Capítulo 2; a raça não concede uma segunda alteração de tamanho.",
+    "features": [
+      {
+        "name": "Leitura do veio",
+        "kind": "Habilidade",
+        "description": "Principal, 0 Karma, toque em pedra, metal ou objeto de construção sólida. Intelecto + Criação CD 13 para material acessível, CD 18 para construção complexa ou adulterada. Sucesso identifica uma fissura, suporte comprometido, reparo recente ou união removível que realmente exista na parte examinada; escolha uma dessas perguntas antes do teste. Falha não identifica, sem parcial. Uma nova tentativa exige expor outra parte ou mudar concretamente a abordagem. Não concede visão através de paredes, não revela senhas e não identifica poder mágico pelo material. A informação permite agir sobre uma fraqueza existente, sem criar uma redução de CA ou dano extra."
+      },
+      {
+        "name": "Raiz de pedra",
+        "kind": "Habilidade",
+        "description": "Reação, 2 Karma, quando uma força física percebida o derrubaria ou deslocaria contra a vontade. Exige estar consciente e apoiado em chão, plataforma ou estrutura capaz de sustentar seu peso. Antes de aplicar as consequências, escolha impedir Caído dessa ocorrência ou reduzir em até 5 metros a distância do deslocamento forçado, respeitando o percurso restante e um destino que comporte seu corpo. Automática e instantânea; não exige teste próprio. Dano e demais efeitos permanecem. Não impede banimento, teleporte, perda do próprio suporte nem movimento de veículo; não se combina com Evasão ou Bloqueio na mesma resolução."
+      },
+      {
+        "name": "Limite de sustentação",
+        "kind": "Habilidade",
+        "description": "Raiz de pedra não funciona durante queda livre, suspensão sem apoio ou natação sem superfície firme. Uma ponte pode sustentar o anão e ainda ser destruída. Conhecer uma estrutura não substitui ferramentas, peças, treinamento ou tempo exigidos para modificá-la."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Mãos de tradição: Passiva, 0 Karma. Para reparar um item comum não mágico, você pode substituir o kit de Criação por ferramentas improvisadas realmente adequadas, sem a Desvantagem causada apenas pela ausência desse kit. Tempo, peças, materiais, CD e treinamento continuam normais. A evolução não permite trabalhar sem qualquer ferramenta, improvisar componente inexistente ou dispensar oficina quando o projeto exigir uma."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Escora viva: Ampliação de Raiz de pedra. Ao ativá-la, você pode pagar 3 Karma no total, em vez de 2, para proteger a si e a um aliado voluntário adjacente, a até 2 metros, da mesma ocorrência física. Precisa ter uma mão livre ou apoio material capaz de ligar os dois. Escolha para cada protegido impedir Caído ou reduzir em até 5 metros o deslocamento forçado. Gasta uma única Reação e não cria segunda defesa contra outro ataque. O aliado precisa estar em apoio válido; se já usou uma defesa ativa contra essa resolução, não pode receber esta."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Reparo sob pressão: Principal, 4 Karma, toque em item comum não mágico Danificado que ocupe até 3 espaços de carga; uma vez por cena. Com ferramentas adequadas e peças de 10% do preço do item, arredondadas para cima, teste Intelecto + Criação CD 18. Sucesso repara o estado Danificado; falha mantém o estado. Ambos consomem a ação, o Karma e os materiais, sem parcial. Um mesmo item recebe uma tentativa dessa habilidade entre descansos longos seguros. Não repara Quebrado, não recupera Estrutura de veículos nem repõe munição, carga ou poder de relíquia."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Obra que permanece: Principal, 6 Karma, toque, uma vez por descanso longo seguro. Com ferramentas adequadas, reúna as partes acessíveis de um item comum não mágico Quebrado, de até 3 espaços de carga, e devolva automaticamente sua função para uma única utilização antes do fim do seu próximo turno. Ele precisa conservar as peças essenciais; pó, peças ausentes e consumíveis gastos não são reconstruídos. Um ataque, teste de ferramenta ou proteção contra um ataque conta como essa utilização e exige as ações e rolagens normais. Depois dela, ou ao expirar o prazo, o item volta a Quebrado. Não recupera Vida, Estrutura ou valor de revenda e não funciona em veículo, relíquia ou objeto consumido pelo próprio uso."
+      }
+    ]
+  },
+  "Demi-humano": {
+    "summary": "+1 em Agilidade, Força ou Espírito; +6 Vida; +1 ponto em uma Perícia sobrenatural.",
+    "features": [
+      {
+        "name": "Corpo híbrido",
+        "kind": "Habilidade",
+        "description": "receba Vantagem em testes diretamente ligados à adaptação escolhida."
+      },
+      {
+        "name": "Arma natural",
+        "kind": "Habilidade",
+        "description": "garras, presas, chifres, cauda ou estrutura equivalente causam 1d8 físico e contam como arma leve. Um ataque básico consome Principal, sem Karma ou preparo, usa Força ou Agilidade + Luta contra CA e alcance de 2 metros. Total causa o dano; parcial, metade; falha, nenhum. Usar a arma não concede ataque adicional."
+      },
+      {
+        "name": "Instinto de terreno",
+        "kind": "Habilidade",
+        "description": "uma vez por jornada, antes de um teste, ignore nele uma Desvantagem causada por ambiente coerente com a linhagem. É passivo, sem ação, custo ou preparação, e dura apenas esse teste. Não elimina dano ambiental ou uma condição inteira."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Corpo no próprio terreno: Passiva, 0 Karma. Registre um tipo estreito de terreno coerente com a adaptação corporal, como galhos, neve rasa, pedras irregulares ou lodo raso. Ao usar seu Movimento nesse terreno, ignore apenas a redução de distância por terreno difícil. Correntes perigosas, quedas, armadilhas, dano e testes para atravessar um obstáculo continuam existindo. A escolha acompanha a adaptação registrada e não muda de cena para cena. Não concede voo, respiração aquática ou outra anatomia."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Bote natural: Principal, 3 Karma, uma vez por turno. Desloque-se por até metade de seu Deslocamento, arredondada para baixo, no máximo 5 metros, e realize um ataque com sua arma natural contra um alvo a até 2 metros da posição final. Use Força ou Agilidade + Luta contra CA; dano-base 1d8 físico, parcial metade, falha nenhum, com crítico e defesas normais. O trajeto precisa ser possível e continua sujeito a terreno e reações. É uma única Principal, não um ataque adicional somado a outra ação de ataque."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Garras de domínio: Passiva, uma vez por turno. Depois de confirmar acerto total de um ataque com sua arma natural, você pode substituir todo o dano por uma tentativa de Agarrar ou Derrubar o mesmo alvo, sem outra ação ou Karma. Faça a oposição normal da manobra; empate favorece o defensor, e derrota não aplica a condição. Exige anatomia, contato e porte compatíveis com a manobra. Isso não produz dano, crítico de manobra ou um novo ataque, e o ataque original ainda pode ter sido evitado por defesa normal."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Forma ancestral: Movimento, 6 Karma, uma vez por cena, automática, duração de três rodadas. Intensifique a adaptação já registrada: sua arma natural pode atingir seres imateriais e Garras de domínio passa a permitir a manobra depois de causar o dano, em vez de substituí-lo. Continua exigindo acerto total e a oposição normal, no máximo uma vez por turno. Equipamento, porte, Atributos, CA e reservas permanecem os mesmos; não concede membros ou locomoção que sua adaptação não possua. A forma termina no prazo, ao ficar Inconsciente ou por encerramento Livre no próprio turno."
+      }
+    ]
+  },
+  "Vampiro": {
+    "summary": "+2 pontos de Perícia e +7 Vida.",
+    "features": [
+      {
+        "name": "Visão noturna",
+        "kind": "Habilidade",
+        "description": "capacidade passiva, sem custo ou teste, para enxergar em escuridão comum até 15 metros. Não atravessa obstáculos nem escuridão sobrenatural que impeça visão."
+      },
+      {
+        "name": "Drenagem vital",
+        "kind": "Habilidade",
+        "description": "até três vezes por cena, 0 Karma e sem preparo. Depois de confirmado um acerto corpo a corpo contra criatura viva voluntária, Agarrada ou Indefesa, declare a drenagem antes do dano; ela integra o ataque, sem ação adicional. Acrescente 1d6, não multiplicado pelo crítico, antes da divisão por parcial. Recupere somente a parcela adicional que efetivamente retirou Vida: aplique as reduções e o escudo primeiro ao dano original e depois ao adicional, sem usar duas vezes a mesma redução. Falha ou Evasão não consome um uso não declarado. Sob sol direto não há cura. Um ataque provoca no máximo uma drenagem; sangue armazenado e dano fabricado em aliado não produzem recuperação."
+      },
+      {
+        "name": "Luz solar",
+        "kind": "Habilidade",
+        "description": "sob sol direto, receba Desvantagem em testes físicos e sobrenaturais, e Drenagem Vital não recupera Vida. Proteção adequada remove a Desvantagem, mas não permite a cura."
+      },
+      {
+        "name": "Fome",
+        "kind": "Habilidade",
+        "description": "depois de dois dias sem alimentação apropriada, fique Exausto até se alimentar e completar um descanso longo."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Escuta do sangue: Movimento, 0 Karma. Até o fim do turno, perceba a direção de criaturas com circulação sanguínea a até 5 metros, quando não houver cobertura total entre elas e você. Uma presença não oculta é percebida automaticamente; para localizar alguém escondido, faça Espírito + Percepção contra a Furtividade que o oculta, com empate a favor da criatura escondida. Sucesso localiza, falha não, sem parcial. Isso não revela identidade, pensamentos ou tipo de sangue e não substitui visão para técnicas que a exijam. Uma criatura só é examinada uma vez por você a cada turno."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Rastro rubro: Ao retirar Vida real de um alvo com Drenagem vital, você pode pagar mais 3 Karma, sem ação adicional, para memorizar seu rastro até o fim da cena. Conserve apenas um rastro assim. Enquanto houver um caminho aberto pelo ar e o alvo estiver a até 15 metros, perceba sua direção; cobertura total ou recipiente hermético interrompe essa percepção. Para localizar exatamente uma criatura escondida, use a oposição de Escuta do sangue. Não permite atacar através de cobertura, ignora ilusões apenas quanto à direção desse rastro e não devolve usos de Drenagem."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Resposta do predador: Passiva. Drenagem vital também pode ser aplicada a um inimigo vivo que tenha retirado Vida de você naquela cena, mesmo que ele não esteja Agarrado ou Indefeso. Ainda exige seu acerto corpo a corpo, circulação ou natureza compatível com a drenagem e declaração antes do dano. Permanecem o limite compartilhado de três drenagens por cena, o cálculo da cura e a proibição de curar sob sol direto. Dano encenado entre aliados não habilita esta condição."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Corpo em bruma: Movimento, 6 Karma, uma vez por cena, automático. Durante esse Movimento, desfaça o corpo em bruma e percorra até 5 metros por um trajeto contínuo, terminando em espaço livre percebido. Pode atravessar uma grade ou fresta pela qual passe ar, mas não parede contínua, recipiente vedado, barreira sobrenatural ou passagem cuja proibição inclua esse tipo de movimento. Escapa de Agarrado apenas quando a contenção for exclusivamente um aperto físico comum; selos e imobilizações sobrenaturais permanecem. Não provoca reação disparada apenas por atravessar o alcance de uma criatura. Dano ambiental e luz solar ainda afetam você; a forma termina ao concluir o Movimento e não concede imunidade entre turnos."
+      }
+    ]
+  },
+  "Tritão": {
+    "summary": "+1 Constituição, +1 Atletismo e +6 Vida.",
+    "features": [
+      {
+        "name": "Anfíbio",
+        "kind": "Habilidade",
+        "description": "respire ar e água sem ação ou custo. Receba +1 dado num teste de manipulação de Água que já possa realizar; o traço não concede Controle de Água, uma técnica ou mudança gratuita de fonte."
+      },
+      {
+        "name": "Leitura de corrente",
+        "kind": "Habilidade",
+        "description": "receba +1 dado em testes diretamente ligados a nadar, navegar, perceber correntes ou atuar sob a água."
+      },
+      {
+        "name": "Desidratação",
+        "kind": "Habilidade",
+        "description": "depois de 12 horas sem hidratação adequada, fique Exausto. Vinte minutos de imersão e repouso encerram a condição."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Voz submersa: Passiva, 0 Karma. Você fala e executa componentes vocais enquanto submerso, desde que consiga normalmente falar. Criaturas na mesma massa de água podem ouvi-lo a até 5 metros em condições comuns; ruído, barreiras e distância maior usam Percepção quando necessário. Isso não concede idioma, telepatia ou alcance adicional a habilidades sonoras. Pode continuar falando normalmente fora da água."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Fôlego partilhado: Principal, 3 Karma, toque em uma criatura voluntária, automático. Durante até 1 TE, ela pode respirar água enquanto estiver na mesma massa contínua de água e a até 5 metros de você. Você sustenta apenas um beneficiário; uma nova ativação encerra a anterior. Sair desse alcance ou ficar Inconsciente encerra o efeito. Não concede natação, proteção contra pressão, frio, veneno ou gases. A criatura percebe o fim do vínculo e volta a depender do próprio fôlego; não sofre dano instantâneo apenas pelo encerramento."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Leitura de esteira: Passiva que amplia Leitura de corrente. Enquanto submerso, você percebe movimento de corpos na mesma massa contínua de água a até 15 metros, sem depender de luz. Uma criatura que tenta se ocultar ainda exige Espírito + Percepção contra Furtividade para ser localizada, com empate a favor dela; o dado de Leitura de corrente aplica-se uma vez. Uma Movimento permite essa busca, com uma tentativa por alvo por turno. Não atravessa cobertura total nem revela ser imóvel, identidade ou pensamento; turbulência pode impor Desvantagem coerente."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Maré conduzida: Movimento, 6 Karma, uma vez por cena, automático. Enquanto submerso, conduza até dois aliados voluntários inicialmente a até 2 metros de você num deslocamento conjunto de até 5 metros pela água. Cada participante precisa poder mover-se e respirar durante a passagem; você pode manter contato com um beneficiário de Fôlego partilhado. Todos seguem o mesmo trajeto possível e terminam em espaços livres próximos entre si, sem provocar reações disparadas apenas pelo movimento. Não atravessa parede ou selo, não remove Agarrado ou Imobilizado e não permite levar outra cadeia de criaturas. Não concede ação ou ataque aos passageiros."
+      }
+    ]
+  },
+  "Demônio": {
+    "summary": "+6 Karma máximo e +4 Vida.",
+    "features": [
+      {
+        "name": "Ouvido da Marca",
+        "kind": "Habilidade",
+        "description": "+1 dado em testes para detectar Corrupção e em resistência efetivamente prevista contra uma Intrusão. Não cria um teste para evitar gratuitamente a escolha entre aceitar a Intrusão e receber Carga. Não modifica todo Teste de Controle apenas porque ele envolve Corrupção."
+      },
+      {
+        "name": "Pulso herdado",
+        "kind": "Habilidade",
+        "description": "uma vez por cena, ativação Livre antes de um ataque ou técnica que teste contra CA; 0 Karma, sem preparo; exige ao menos 1 Carga própria e um alvo capaz de possuir Carga. Reserve 1 Carga, sem removê-la ainda da sua CD ou do seu estágio. Resolva normalmente a ação original, pagando seu custo. Em total após as defesas, transfira essa Carga ao alvo e acrescente-a à ficha dele; parcial, falha ou Evasão devolvem a Carga reservada sem alteração. A transferência não muda a fonte ou o dano do ataque e não exige Controle só por este traço. Ela conta no limite comum de 3 Cargas removidas entre descansos; não pode ser usada depois de esgotado esse limite. Alcançar 10 aciona Ruptura após a ação."
+      },
+      {
+        "name": "Sinal visível",
+        "kind": "Habilidade",
+        "description": "escolha um traço físico ou espiritual que não possa ser ocultado de uma inspeção cuidadosa."
+      },
+      {
+        "name": "Limite",
+        "kind": "Habilidade",
+        "description": "proximidade não é imunidade. Demônios sofrem normalmente os estágios da Marca."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Recusa consciente: Uma vez por cena, ao recusar uma Intrusão da Voz, você pode pagar 2 Karma no lugar da Carga adicional cobrada exclusivamente por essa recusa. A escolha integra a resolução, sem ação ou teste próprios. Todas as Cargas do desconto, da Ampliação, do uso de Enxerto ou de outro custo continuam sendo recebidas normalmente. Não reduz Carga já existente, não evita Ruptura já acionada e não permite recusar gratuitamente um efeito alheio que não seja a Intrusão."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Pulso de resposta: Reação, 3 Karma, depois de sofrer o dano de um ataque sobrenatural total de uma criatura percebida a até 15 metros. Se continuar consciente, tiver ao menos 1 Carga e ainda dispuser de Pulso herdado, gaste esse mesmo uso por cena para tentar transferir uma Carga ao atacante. Presença + Controle da Corrupção enfrenta em oposição a combinação que produziu o ataque, usando o resultado já rolado; empate protege o atacante. Vitória transfere, derrota mantém sua Carga, sem parcial. A transferência respeita a capacidade do alvo e o limite comum de limpeza. Não devolve Vida e não funciona se você já gastou uma defesa ativa contra a mesma resolução."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Assumir o fardo: Principal, 4 Karma, toque em criatura voluntária com ao menos 1 Carga, uma vez por descanso longo seguro. Transfira automaticamente uma Carga dela para você, desde que sua própria Carga efetiva seja no máximo 8 antes da transferência. A remoção conta no limite comum de três Cargas do alvo; se ele o esgotou, a habilidade não pode ser usada. Seu aumento é real, altera estágio e CDs normalmente e não concede benefício adicional. Não transfere dívida, vínculo, Intrusão já aceita ou consequência narrativa. Não é possível fabricar Carga apenas para alimentar esse procedimento."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Soberania do nome: Uma vez por descanso longo seguro, ao alcançar Carga 10 e entrar em Ruptura, você pode pagar 6 Karma, sem ação adicional, para conservar a condução do próprio primeiro turno dessa Ruptura. No início dele, faça o Controle CD 24 normal: sucesso encerra a Ruptura; falha mantém a Ruptura, mas nesse único turno você age conscientemente por meios que não utilizem Corrupção. Depois dele, a Voz assume a intenção se a Ruptura continuar. Esse turno conta no limite normal de três; o relógio não reinicia. Ao terminar a Ruptura, aplique Carga 7, Exausto e o bloqueio até descanso seguro normalmente. Não pode ativar estando Inconsciente."
+      }
+    ]
+  },
+  "Ghoul": {
+    "summary": "+1 Constituição, +1 em Percepção ou Sobrevivência e +6 Vida.",
+    "features": [
+      {
+        "name": "Faro do repouso",
+        "kind": "Habilidade",
+        "description": "receba +1 dado para localizar feridos, cadáveres, doença, veneno ou decomposição em alcance médio quando houver um rastro possível."
+      },
+      {
+        "name": "Consumo de vestígio",
+        "kind": "Habilidade",
+        "description": "uma vez por cena, Principal, 0 Karma, toque e sem preparo adicional. Consuma uma porção apropriada de matéria orgânica obtida de criatura viva ou morta há no máximo três semanas. A obtenção de matéria de um alvo hostil exige uma ação separada apropriada; o consumo não extrai órgãos nem causa dano automaticamente. Sem teste, escolha recuperar 1d8 + Constituição de Vida ou perceber o último sentimento e a última visão registrados no vestígio. Em matéria de ser vivo, são os instantes anteriores à separação; em cadáver, os instantes finais. Cada corpo só fornece um vestígio útil por cena, independentemente das porções; um cadáver fornece apenas um em toda a existência. Não recupera Vida por lesões fabricadas ou consumo do próprio corpo e não revela fatos que o ser não percebeu."
+      },
+      {
+        "name": "Fisiologia cadavérica",
+        "kind": "Habilidade",
+        "description": "receba Vantagem para resistir a doença e veneno, sem adquirir imunidade."
+      },
+      {
+        "name": "Fome funerária",
+        "kind": "Habilidade",
+        "description": "depois de dois dias sem matéria orgânica apropriada, fique Exausto até alimentar-se e completar um intervalo seguro."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Paladar dos vestígios: Passiva. Ao usar validamente Consumo de vestígio, além da opção normal, você reconhece se aquela matéria apresenta sinais de doença, veneno ou decomposição anormal. A resposta é automática e limitada à amostra; não identifica necessariamente a substância, o agente ou o tratamento, que exigem investigação ou Medicina. Uma ocultação sobrenatural pode exigir Espírito + Percepção contra o resultado da fonte como CD. Não transforma ingerir matéria perigosa em imunidade e não permite consumir o mesmo cadáver outra vez."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Letargia funerária: Principal, 3 Karma, pessoal, duração máxima de 1 TE. Automaticamente suspenda movimentos voluntários e sinais externos comuns, aparentando um cadáver enquanto conserva audição. Movimento voluntário, fala, ação ou encerramento Livre no seu turno terminam o estado. Inspeção cuidadosa usa Intelecto + Medicina contra sua Constituição + Atletismo, rolada na ativação; empate favorece o examinador. Não impede dano ou detecção sobrenatural, não conta como descanso seguro e não estabiliza Morrendo. Você continua vulnerável como um corpo imóvel e não usa Reação enquanto mantiver a letargia."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Memória nutritiva: Passiva. Uma utilização válida de Consumo de vestígio passa a conceder simultaneamente a recuperação de Vida e a percepção do último sentimento e visão, em vez de exigir escolher entre elas. A cura continua 1d8 + Constituição; não é duplicada. Permanecem o custo de ação, a idade máxima de três semanas, os limites por corpo e por cena e a proibição de alimentar recuperação com lesões fabricadas. Informações ausentes da experiência da criatura continuam inacessíveis."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Última fome: Reação, 6 Karma, uma vez por descanso longo seguro, no instante em que dano o levaria a 0 Vida, antes de perder a consciência. Até o fim de seu próximo turno, você permanece consciente e Morrendo. Nesse período, pode usar apenas um Movimento por turno, limitado à metade de seu Deslocamento, e Principal exclusivamente para Consumo de vestígio; não recebe uso extra do traço e não pode usar Extra ou Reação. Faça testes de morte e aplique dano a 0 normalmente; morte encerra imediatamente a habilidade. Recuperar Vida estabiliza pelas regras comuns, mas só encerra essa restrição e permite voltar às ações normais ao atingir 10 Vida, ou seu máximo se menor. Se o prazo terminar antes desse limiar, fique Inconsciente, mesmo se já estabilizado."
+      }
+    ]
+  },
+  "Abissal": {
+    "summary": "+1 Espírito ou +1 Força, +1 em Ocultismo ou Canalização de Karma e +6 Karma máximo.",
+    "features": [
+      {
+        "name": "Anatomia de fenda",
+        "kind": "Habilidade",
+        "description": "você não respira de maneira comum, podendo ficar sem respirar por um dia."
+      },
+      {
+        "name": "Âncora de identidade",
+        "kind": "Habilidade",
+        "description": "receba +1 dado para resistir a possessão e a alterações de memória, nome, corpo ou identidade."
+      },
+      {
+        "name": "Ossos Negros",
+        "kind": "Habilidade",
+        "description": "ossos negros resistem ao decepamento: os membros não podem ser separados do corpo por um efeito de amputação. Dano, Ferimento Grave, fratura e incapacidade continuam possíveis. Enquanto consciente, percebendo o ataque e capaz de se defender, receba +2 CA, sem ação, custo ou teste; é o sentido de “ao defender” deste traço. Não exige gastar Principal em Defender e não se aplica contra agressão imperceptível ou estando Indefeso."
+      },
+      {
+        "name": "Instabilidade espacial",
+        "kind": "Habilidade",
+        "description": "efeitos de banimento, selamento ou deslocamento forçado recebem +1 dado contra você. Se obtiverem sucesso total, você também perde a Reação até o início do próximo turno."
+      },
+      {
+        "name": "Herança — Etapa I",
+        "kind": "Habilidade",
+        "description": "Memória do próprio nome: Passiva. Durante um intervalo seguro, registre um fato verificável sobre si e associe-o a um gesto, objeto ou palavra de referência. Mantenha apenas um registro. Depois de sofrer alteração sobrenatural de memória ou identidade, perceber essa referência informa que há uma discrepância, sem ação ou teste próprios. O aviso não desfaz a alteração, não revela toda a verdade e não permite agir enquanto estiver Inconsciente ou controlado. A referência precisa existir fora da memória adulterada; repetir uma palavra que o efeito apagou não cria acesso automático a ela."
+      },
+      {
+        "name": "Herança — Etapa III",
+        "kind": "Habilidade",
+        "description": "Passo de fenda: Movimento, 3 Karma, automático, uma vez por turno. Transfira seu corpo e a carga normal para um espaço livre percebido a até 5 metros, com linha de efeito entre origem e destino. É um deslocamento instantâneo, sem percorrer os pontos intermediários e sem provocar reações disparadas apenas por movimento. Não atravessa cobertura total, selo ou barreira que proíba a passagem; não pode ser usado estando Agarrado ou Imobilizado. Não leva outra criatura nem muda porte, anatomia ou reservas. Instabilidade espacial continua valendo contra efeitos hostis."
+      },
+      {
+        "name": "Herança — Etapa V",
+        "kind": "Habilidade",
+        "description": "Retirada pela fenda: Passo de fenda também pode ser usado como Reação, pagando seus mesmos 3 Karma, imediatamente depois de sofrer um ataque total de origem percebida e aplicar todas as consequências. Continua sendo no máximo um Passo de fenda por turno, somando as duas formas de uso. Exige permanecer consciente, capaz de mover-se e com a Reação disponível; não evita retroativamente o dano e não funciona depois de outra defesa ativa contra a mesma resolução. Distância e impedimentos permanecem os da habilidade."
+      },
+      {
+        "name": "Herança — Etapa VII",
+        "kind": "Habilidade",
+        "description": "Âncora do eu: Reação, 6 Karma, uma vez por cena, antes de aplicar um banimento, teleporte hostil ou deslocamento sobrenatural que retiraria você de sua posição. Teste Espírito + Ocultismo contra o resultado já rolado da fonte como CD; se ela não rolou, seu usuário rola a combinação da fonte para estabelecer essa CD. O dado adicional de Instabilidade espacial entra uma vez nessa rolagem da fonte, inclusive se ela for feita agora. Sucesso impede somente a mudança de posição ou plano; dano e demais condições continuam. Falha aplica o efeito completo, sem parcial. Não permite uma segunda defesa ativa na mesma resolução e não rompe um selamento já estabelecido. Sua Âncora de identidade inicial só acrescenta o dado quando o efeito também alterar corpo, memória, nome ou identidade, não por qualquer empurrão."
+      }
+    ]
+  }
+}

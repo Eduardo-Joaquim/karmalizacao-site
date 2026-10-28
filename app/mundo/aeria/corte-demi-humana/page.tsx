@@ -1,0 +1,5 @@
+import data from "@/data/demi-aeria.json";
+import {CrownNavigation} from "@/components/crown-navigation";
+import {AeriaCourtContent} from "@/components/aeria-court-content";
+export const metadata={title:data.title,description:"Sael Aruven, Maelis e as casas nobres dos Céus Abertos."};
+export default function Page(){return <div className="site-page realm-page realm-with-index aeria-realm-page"><CrownNavigation entries={data.navigation} title={data.title} region="aeria" home="/mundo/aeria" homeLabel="Aéria · Corte e casas nobres"/><main className="site-shell realm-shell"><header className="realm-hero"><p className="atlas-overline">AÉRIA · O TRONO DRACÔNICO</p><h1>Celestária<span>A Corte dos Céus Abertos</span></h1><p>Uma coroa de escamas. Sete nomes entre pousos, oficinas e juramentos.</p><div className="realm-summary"><div><strong>{data.courtProfiles.length}</strong><span>Figuras</span></div><div><strong>{data.courtProfiles.reduce((n,p)=>n+p.abilities.length,0)}</strong><span>Artes e técnicas</span></div></div></header><AeriaCourtContent/></main></div>}

@@ -1,0 +1,5 @@
+import data from "@/data/nidavellir.json";
+import {CrownNavigation} from "@/components/crown-navigation";
+import {NidavellirContent} from "@/components/nidavellir-content";
+export const metadata={title:data.title,description:"O Prefeito-Geral e os quatro reis municipais de Nidavellir: cinco fichas completas, técnicas e Domínios Manifestados."};
+export default function Page(){return <div className="site-page realm-page realm-with-index"><CrownNavigation entries={data.navigation} title={data.title} region="aeria" home="/mundo/aeria" homeLabel="Voltar a Aéria"/><main className="site-shell realm-shell"><header className="realm-hero"><p className="atlas-overline">AÉRIA · REPÚBLICA INDUSTRIAL</p><h1>Nidavellir<span>As Quatro Cidades</span></h1><p>Quatro governos locais. Um presidente eleito. Entre as oficinas e os gabinetes, cada promessa encontra quem cobre seu preço.</p><div className="realm-summary"><div><strong>5</strong><span>Governantes</span></div><div><strong>37</strong><span>Técnicas e assinaturas</span></div></div></header><NidavellirContent/></main></div>}

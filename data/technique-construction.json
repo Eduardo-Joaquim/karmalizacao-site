@@ -1,0 +1,6370 @@
+[
+  {
+    "owner": "raul-cedral",
+    "name": "Olhos sobre a Ponte",
+    "grade": "I",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base I",
+        "value": 2
+      }
+    ],
+    "cost": 2
+  },
+  {
+    "owner": "raul-cedral",
+    "name": "Recuo do Vigia",
+    "grade": "I",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base I",
+        "value": 2
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ],
+    "cost": 3
+  },
+  {
+    "owner": "raul-cedral",
+    "name": "Flecha de Advertência",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "celina-vesperal",
+    "name": "Nó de Correnteza",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ],
+    "cost": 3
+  },
+  {
+    "owner": "celina-vesperal",
+    "name": "Água entre as Lâminas",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "celina-vesperal",
+    "name": "Chicote da Vazão",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "germano-ferromonte",
+    "name": "Passagem Segura",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "germano-ferromonte",
+    "name": "Golpe do Pilar",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "germano-ferromonte",
+    "name": "Ponte de Escudos",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "conselheiro-tomas",
+    "name": "A Porta Ainda Está Comigo",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "conselheiro-tomas",
+    "name": "Ficar de Pé",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "conselheiro-tomas",
+    "name": "Braço da Sentinela",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "conselheiro-tomas",
+    "name": "Avanço do Portão",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "conselheiro-tomas",
+    "name": "Entre a Coroa e a Lâmina",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-brigida",
+    "name": "Resposta da Segunda Filha",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-brigida",
+    "name": "Corpo que Não Recua",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "princesa-brigida",
+    "name": "Travessia do Cais",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "princesa-brigida",
+    "name": "Punho de Pedra Franca",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-isadora",
+    "name": "Herança do Primeiro Acorde",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "princesa-isadora",
+    "name": "Cadência da Passagem",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-isadora",
+    "name": "Compasso dos que Permanecem",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "princesa-isadora",
+    "name": "Nota de Ruptura",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ],
+    "cost": 3
+  },
+  {
+    "owner": "princesa-isadora",
+    "name": "Contratempo de Vidro",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-isadora",
+    "name": "Acorde de Abrigo",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Três Rodadas sem Ferida",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Reação de reflexão",
+        "value": 1
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Duração três rodadas",
+        "value": 2
+      },
+      {
+        "label": "Preparo e uso limitado",
+        "value": -2
+      }
+    ],
+    "cost": 17
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Guilhotina do Rio Suspenso",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Lança das Comportas",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Agulha do Tetraedro",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Cela de Ângulos Vivos",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Pavilhão de Seis Faces",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Face do Juramento",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "caelen-solvarden",
+    "name": "Praesidium",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "caelen-solvarden",
+    "name": "Eidolon",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "caelen-solvarden",
+    "name": "Incisio",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "duque-thaerion",
+    "name": "Sol Niger",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 15
+  },
+  {
+    "owner": "duque-thaerion",
+    "name": "Leucosis",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "duque-thaerion",
+    "name": "Parallax",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Livre",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Ação Livre",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "duque-thaerion",
+    "name": "Speculum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "duque-thaerion",
+    "name": "Zênite",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-ilyra",
+    "name": "Eósphoros",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 15
+  },
+  {
+    "owner": "princesa-ilyra",
+    "name": "Fornax",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Livre",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Livre",
+        "value": 4
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-ilyra",
+    "name": "Cinis",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Função secundária I",
+        "value": 2
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "princesa-ilyra",
+    "name": "Pyra",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Heliánthos",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Área grande",
+        "value": 6
+      },
+      {
+        "label": "Controle secundário IV",
+        "value": 6
+      },
+      {
+        "label": "Preparo e uso limitado",
+        "value": -2
+      }
+    ],
+    "cost": 22
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Anástasis",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Ékdysis",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Aegis",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Nepénthes",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "pulso de captura",
+        "value": 3
+      }
+    ],
+    "cost": 14
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Ákantha",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "pulsos posteriores",
+        "value": 6
+      }
+    ],
+    "cost": 27
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Nix",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Khlôris",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 15
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Dáphne",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 2
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 12
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Rhíza",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 20
+  },
+  {
+    "owner": "rainha-naerith",
+    "name": "Sagitta",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "viscondado-kost",
+    "name": "Transitus",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "viscondado-kost",
+    "name": "Fixum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "viscondado-kost",
+    "name": "Signum",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Livre",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Ação Livre",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 2
+      }
+    ],
+    "cost": 13
+  },
+  {
+    "owner": "condado-senn",
+    "name": "Custodia",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "condado-senn",
+    "name": "Ligatura",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "condado-senn",
+    "name": "Fons",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ],
+    "cost": 3
+  },
+  {
+    "owner": "marquesado-kessel",
+    "name": "Risposta",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marquesado-kessel",
+    "name": "Passata",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "marquesado-kessel",
+    "name": "Fendente",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marquesado-dorne",
+    "name": "Porta",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marquesado-dorne",
+    "name": "Malleus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marquesado-dorne",
+    "name": "Scutum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-savia",
+    "name": "Concordia",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "princesa-savia",
+    "name": "Pallium",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-savia",
+    "name": "Catharsis",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-savia",
+    "name": "Salus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Erebos",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Sepulcrum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Exúvia",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Acus",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Umbra",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Teste específico +2",
+        "value": 1
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Tacita",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Livre",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Livre",
+        "value": 4
+      },
+      {
+        "label": "Penetração física 2",
+        "value": 1
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "princesa-alucard",
+    "name": "Mors",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 13
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Imperium",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Até seis pontos de ancoragem",
+        "value": 4
+      },
+      {
+        "label": "Duração três rodadas",
+        "value": 2
+      },
+      {
+        "label": "Movimento secundário IV",
+        "value": 6
+      }
+    ],
+    "cost": 26
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Coagulum",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Duração",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "resposta das espículas",
+        "value": 3
+      }
+    ],
+    "cost": 14
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Sutura",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Encerrar Sangramento",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Rubedo",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "pulsos posteriores",
+        "value": 6
+      }
+    ],
+    "cost": 23
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Retorsio",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Aegis",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Cruor",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 13
+  },
+  {
+    "owner": "rainha-nosferato",
+    "name": "Hasta",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "marquesa-marchosias",
+    "name": "Fractus",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "marquesa-marchosias",
+    "name": "Tenax",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "marquesa-marchosias",
+    "name": "Rictus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marques-andras",
+    "name": "Pallor",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marques-andras",
+    "name": "Sectio",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "marques-andras",
+    "name": "Vestigium",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "duque-agares",
+    "name": "Concordia Rubra",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 16
+  },
+  {
+    "owner": "duque-agares",
+    "name": "Hereditas",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "duque-agares",
+    "name": "Frater",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "duque-agares",
+    "name": "Fibra",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "duque-agares",
+    "name": "Hematis",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-bael",
+    "name": "Tellus",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "plataformas e proteção",
+        "value": 3
+      }
+    ],
+    "cost": 22
+  },
+  {
+    "owner": "princesa-bael",
+    "name": "Custos",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "princesa-bael",
+    "name": "Scala",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "princesa-bael",
+    "name": "Fulcrum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-bael",
+    "name": "Murus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "princesa-bael",
+    "name": "Talus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-asmodeus",
+    "name": "Dies Irae",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 17
+  },
+  {
+    "owner": "princesa-asmodeus",
+    "name": "Fides",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-asmodeus",
+    "name": "Discors",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-asmodeus",
+    "name": "Sibilus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-asmodeus",
+    "name": "Aria",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "princesa-asmodeus",
+    "name": "Pactum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "princesa-astaroth",
+    "name": "Athanor",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "pulsos posteriores",
+        "value": 3
+      }
+    ],
+    "cost": 18
+  },
+  {
+    "owner": "princesa-astaroth",
+    "name": "Lavacrum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-astaroth",
+    "name": "Unda",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "princesa-astaroth",
+    "name": "Elixir",
+    "grade": "III",
+    "type": "consumível",
+    "cost": 0,
+    "source": "Capítulo 17: dose consumida, saturação e estoque finito"
+  },
+  {
+    "owner": "princesa-astaroth",
+    "name": "Antidotum",
+    "grade": "III",
+    "type": "consumível",
+    "cost": 0,
+    "source": "Capítulo 17: dose consumida, saturação e estoque finito"
+  },
+  {
+    "owner": "princesa-astaroth",
+    "name": "Vitriol",
+    "grade": "III",
+    "type": "consumível",
+    "cost": 0,
+    "source": "Capítulo 17: dose consumida, saturação e estoque finito"
+  },
+  {
+    "owner": "princesa-belial",
+    "name": "Rex Igneus",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-belial",
+    "name": "Pignus",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Livre",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Ação Livre",
+        "value": 4
+      },
+      {
+        "label": "dois dados adicionais",
+        "value": 6
+      },
+      {
+        "label": "penetração física",
+        "value": 1
+      }
+    ],
+    "cost": 17
+  },
+  {
+    "owner": "princesa-belial",
+    "name": "Reditus",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-belial",
+    "name": "Favilla",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "princesa-belial",
+    "name": "Incisio",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-belial",
+    "name": "Provocatio",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 13
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Miserere",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Até seis alvos",
+        "value": 4
+      },
+      {
+        "label": "Duração três rodadas",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário IV",
+        "value": 6
+      },
+      {
+        "label": "Foco e dois Domínios ativos",
+        "value": -2
+      }
+    ],
+    "cost": 24
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Oblatio",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "pulsos posteriores, pagos na criação",
+        "value": 6
+      }
+    ],
+    "cost": 17
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Nexum",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Anatema",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 12
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Mortis",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Mutilatio",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Legado",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 11
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Limiar",
+    "grade": "IV",
+    "type": "bênção verdadeira",
+    "cost": 10,
+    "source": "Desespero: 50 no contador e uma ativação; não é técnica construída",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Proteção secundária III",
+        "value": 3
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Hiato",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "rainha-valac",
+    "name": "Nadir",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 15
+  },
+  {
+    "owner": "candidata-zahra",
+    "name": "Samum",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária IV",
+        "value": 6
+      }
+    ],
+    "cost": 23
+  },
+  {
+    "owner": "candidata-zahra",
+    "name": "Ascensão",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "candidata-zahra",
+    "name": "Contravento",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "candidata-zahra",
+    "name": "Rajada",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "candidata-naima",
+    "name": "Aqua Regia",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária IV",
+        "value": 6
+      },
+      {
+        "label": "pulsos posteriores",
+        "value": 3
+      }
+    ],
+    "cost": 28
+  },
+  {
+    "owner": "candidata-naima",
+    "name": "Sílica",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "candidata-naima",
+    "name": "Bálsamo",
+    "grade": "III",
+    "type": "consumível",
+    "cost": 0,
+    "source": "Capítulo 17: dose consumida, saturação e estoque finito"
+  },
+  {
+    "owner": "candidata-naima",
+    "name": "Álcali",
+    "grade": "IV",
+    "type": "consumível",
+    "cost": 0,
+    "source": "Capítulo 17: dose consumida, saturação e estoque finito"
+  },
+  {
+    "owner": "candidata-sahar",
+    "name": "Juramento de Ferro",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Função secundária IV",
+        "value": 6
+      }
+    ],
+    "cost": 22
+  },
+  {
+    "owner": "candidata-sahar",
+    "name": "Guarda",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 10
+  },
+  {
+    "owner": "candidata-sahar",
+    "name": "Esquiva",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "candidata-sahar",
+    "name": "Fenda",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Ananké",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      },
+      {
+        "label": "Função secundária IV",
+        "value": 6
+      }
+    ],
+    "cost": 19
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Interdito",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Quebranto",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Lastro",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 13
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Rechaço",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Cisma",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Cerco",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "al-aqwa",
+    "name": "Ruína",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "alaric-voss",
+    "name": "Réquiem",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "alaric-voss",
+    "name": "Retorno",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "alaric-voss",
+    "name": "Casamata",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "alaric-voss",
+    "name": "Ferro Curto",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "alaric-voss",
+    "name": "Prensa",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "valentino-heathcliff",
+    "name": "Égide",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "valentino-heathcliff",
+    "name": "Passagem",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "valentino-heathcliff",
+    "name": "Anteparo",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Gekkō",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "resposta lunar reservada",
+        "value": 3
+      }
+    ],
+    "cost": 12
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Nisshoku",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Mangetsu",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Tsukikage",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Getsuga",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Shingetsu",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Kasumi",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Teste específico +2",
+        "value": 1
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "caroline-lunaviel",
+    "name": "Mikazuki",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "baronesa-otilia",
+    "name": "Último Cabo",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "baronesa-otilia",
+    "name": "Trava de passagem",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Movimento reduzido 2 m",
+        "value": 1
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "baronesa-otilia",
+    "name": "Linha de segurança",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "condessa-octavia",
+    "name": "Vencimento",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "condessa-octavia",
+    "name": "Passo noturno",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "condessa-octavia",
+    "name": "Crédito de sangue",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "marques-torren",
+    "name": "Arco Catenário",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 2
+      }
+    ],
+    "cost": 14
+  },
+  {
+    "owner": "marques-torren",
+    "name": "Descompressão",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marques-torren",
+    "name": "Escora",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "marquesa-iren",
+    "name": "Palimpsesto",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Duração",
+        "value": 4
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      },
+      {
+        "label": "repetição de resistência",
+        "value": 3
+      }
+    ],
+    "cost": 22
+  },
+  {
+    "owner": "marquesa-iren",
+    "name": "Interdição",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "marquesa-iren",
+    "name": "Contraprova",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "duque-darian",
+    "name": "Rosa dos Ventos",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 12
+  },
+  {
+    "owner": "duque-darian",
+    "name": "Tesoura",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "duque-darian",
+    "name": "Linha de resgate",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "duque-darian",
+    "name": "Contra-alísio",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ],
+    "cost": 9
+  },
+  {
+    "owner": "princesa-maelis",
+    "name": "Aster",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Até seis alvos",
+        "value": 4
+      },
+      {
+        "label": "Movimento secundário II",
+        "value": 2
+      }
+    ],
+    "cost": 12
+  },
+  {
+    "owner": "princesa-maelis",
+    "name": "Limiar",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "princesa-maelis",
+    "name": "Passo de quilha",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ],
+    "cost": 4
+  },
+  {
+    "owner": "princesa-maelis",
+    "name": "Ascua",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "princesa-maelis",
+    "name": "Íris",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Duração três rodadas",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "princesa-maelis",
+    "name": "Sustento",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 5
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Anábasis",
+    "grade": "V",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Função secundária IV",
+        "value": 6
+      },
+      {
+        "label": "arremesso e retorno",
+        "value": 3
+      },
+      {
+        "label": "Preparo e uso limitado",
+        "value": -2
+      }
+    ],
+    "cost": 19
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Escória",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Cautério",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Livre",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Livre",
+        "value": 4
+      }
+    ],
+    "cost": 8
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Fulmen",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Regnum",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 4
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Função secundária III",
+        "value": 3
+      }
+    ],
+    "cost": 15
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Alária",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Duração três rodadas",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Tegmen",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Drómē",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Teste específico +2",
+        "value": 1
+      }
+    ],
+    "cost": 6
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Istmo",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Função secundária II",
+        "value": 2
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "rainha-sael",
+    "name": "Talion",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ],
+    "cost": 7
+  },
+  {
+    "owner": "euphere",
+    "name": "Horizonte Partido",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Coroa das Mil Lâminas",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Empurrão 2 m",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Martelo da Massa Furiosa",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Punho da Maré Morta",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Empurrão 2 m",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Queda do Leviatã",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área pequena",
+        "value": 2
+      },
+      {
+        "label": "Caído",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Arco de Plasma Cru",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Fome do Breu",
+    "grade": "II",
+    "type": "técnica",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Correntes da Garganta Vazia",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Liturgia da Boca Sem Fundo",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 10,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Banquete do Breu",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 15,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Poupar Maria",
+        "value": 2
+      },
+      {
+        "label": "Empurrão",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Flecha de Escória",
+    "grade": "II",
+    "type": "técnica",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Livre",
+        "value": 4
+      },
+      {
+        "label": "Teste específico +2",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Passo de Escória",
+    "grade": "II",
+    "type": "técnica",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Livre",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Olho da Caldeira",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "joao-e-maria",
+    "name": "Caldeirão da Gula",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 17,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Poupar aliados",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Punho de Cerne",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Empurrão",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Mergulho da Raiz Adormecida",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 10,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Dado no próximo ataque",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Erupção do Bosque Sepultado",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 15,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Dízimo da Floresta",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Dois alvos",
+        "value": 2
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Preparo anunciado",
+        "value": -1
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Santuário da Quietude Verde",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 19,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área grande",
+        "value": 6
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      },
+      {
+        "label": "Poupar aliados",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Muralha de Raízes",
+    "grade": "I",
+    "type": "técnica",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base I",
+        "value": 2
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "nemetor",
+    "name": "Arrasto Subterrâneo",
+    "grade": "I",
+    "type": "técnica",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base I",
+        "value": 2
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "branca-de-neve",
+    "name": "Beijo da Serpente",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Envenenado",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "branca-de-neve",
+    "name": "Passos da Inocência",
+    "grade": "II",
+    "type": "técnica",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Duração de cena",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "owner": "branca-de-neve",
+    "name": "Jardim Proibido",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "branca-de-neve",
+    "name": "Sete Gotas do Pecado",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Até seis alvos",
+        "value": 4
+      },
+      {
+        "label": "Envenenado",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "branca-de-neve",
+    "name": "Espelho, Espelho Meu",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Movimento secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "branca-de-neve",
+    "name": "A Última Maçã",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 15,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Armadura Viva — Dragão Negro",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 10,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Cena",
+        "value": 4
+      },
+      {
+        "label": "Defesa secundária II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Leitura Predatória",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Cena",
+        "value": 4
+      },
+      {
+        "label": "Dado adicional",
+        "value": 3
+      },
+      {
+        "label": "Penetração",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "geppeto",
+    "name": "Agulhas de Cena",
+    "grade": "II",
+    "type": "técnica",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Lento",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "geppeto",
+    "name": "Bastidor Fechado",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Dois alvos",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "ganancia",
+    "name": "Véu de Trevas",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "ganancia",
+    "name": "Estocada de Luz",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Dois alvos",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "ganancia",
+    "name": "Furto de Órgãos",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Livre inicial",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "ganancia",
+    "name": "Transgressão à Carne — Grau IV",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Até seis alvos",
+        "value": 4
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "ganancia",
+    "name": "Arrombamento do Impossível",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Dois alvos",
+        "value": 2
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "maelia-veyr",
+    "name": "Memórias que Não Me Pertencem — Grau IV",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "maelia-veyr",
+    "name": "Inveja da Vida — Reflexos de Argila",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 12,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Dois alvos",
+        "value": 2
+      },
+      {
+        "label": "Duração de cena",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "owner": "maelia-veyr",
+    "name": "Os Pequenos Famintos — Grau III",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 14,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Três alvos",
+        "value": 4
+      },
+      {
+        "label": "Duração de cena",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "maelia-veyr",
+    "name": "Os Braços que Deveriam Ter Protegido — Grau III",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Proteção secundária II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "maelia-veyr",
+    "name": "A Casa dos Amanhãs Roubados — Grau IV",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 19,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área grande",
+        "value": 6
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Sutura Impossível",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Fio de Contenção",
+    "grade": "II",
+    "type": "técnica",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Tecelã do Destino",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Reconstrução secundária III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Manto da Linha Profana",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      },
+      {
+        "label": "Restauração secundária III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Linha da Mentira",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 10,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Agulhas do Desamparo",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Jacó — Escada do Firmamento",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Caído",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Moisés — Travessia do Impossível",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 15,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área grande",
+        "value": 6
+      },
+      {
+        "label": "Poupar aliados",
+        "value": 2
+      },
+      {
+        "label": "Empurrão 2 m",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Davi — Pedra da Sentença",
+    "grade": "III",
+    "type": "técnica",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Dado adicional",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Sansão — Colunas do Último Templo",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 17,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Adão — Primeiro Sopro",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 17,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Até seis alvos",
+        "value": 4
+      },
+      {
+        "label": "Purificação secundária III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Frankenstein — A Obra que Respira",
+    "grade": "V",
+    "type": "técnica",
+    "cost": 21,
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário IV",
+        "value": 6
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "prorrogadora-da-extincao",
+    "name": "Dia do Julgamento Final",
+    "grade": "V",
+    "type": "técnica",
+    "cost": 23,
+    "components": [
+      {
+        "label": "Base V",
+        "value": 12
+      },
+      {
+        "label": "Longo",
+        "value": 4
+      },
+      {
+        "label": "Área grande",
+        "value": 6
+      },
+      {
+        "label": "Efeito da trombeta",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "pinoquio",
+    "name": "Fio da Mentira",
+    "grade": "IV",
+    "type": "traço",
+    "cost": null,
+    "source": "0 Karma"
+  },
+  {
+    "owner": "pinoquio",
+    "name": "Puxar os Fios",
+    "grade": "IV",
+    "type": "invocação",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação possível",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "pinoquio",
+    "name": "Cópia Vinculada — Bênção e Técnica",
+    "grade": "IV",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "Registro sem custo adicional. Cada uso paga o custo e a manutenção originais com os recursos de Geppeto."
+  },
+  {
+    "owner": "grilo-falante",
+    "name": "Pergunta Incômoda",
+    "grade": "II",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "0 Karma"
+  },
+  {
+    "owner": "grilo-falante",
+    "name": "Eu Avisei",
+    "grade": "I",
+    "type": "invocação",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base I",
+        "value": 2
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "grilo-falante",
+    "name": "Peso da Consciência",
+    "grade": "II",
+    "type": "invocação",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      },
+      {
+        "label": "Controle secundário I",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "fada-azul",
+    "name": "Forma Verdadeira",
+    "grade": "III",
+    "type": "invocação",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Defesa secundária II",
+        "value": 2
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "fada-azul",
+    "name": "Dar Vida",
+    "grade": "II",
+    "type": "invocação",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "fada-azul",
+    "name": "Desejo com Condição",
+    "grade": "II",
+    "type": "invocação",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "gato",
+    "name": "Passo de Veludo",
+    "grade": "II",
+    "type": "traço",
+    "cost": null,
+    "source": "0 Karma"
+  },
+  {
+    "owner": "gato",
+    "name": "Roubo de Voz",
+    "grade": "II",
+    "type": "invocação",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "gato",
+    "name": "Bolso Impossível",
+    "grade": "II",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "0 Karma"
+  },
+  {
+    "owner": "raposa",
+    "name": "Campo dos Milagres",
+    "grade": "II",
+    "type": "invocação",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "raposa",
+    "name": "Cenário Conveniente",
+    "grade": "II",
+    "type": "invocação",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Área pequena",
+        "value": 2
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "raposa",
+    "name": "Sócia do Gato",
+    "grade": "II",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "0 Karma"
+  },
+  {
+    "owner": "baleia",
+    "name": "Engolir o Cenário",
+    "grade": "IV",
+    "type": "invocação",
+    "cost": 10,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Área média",
+        "value": 4
+      },
+      {
+        "label": "Três rodadas",
+        "value": 2
+      },
+      {
+        "label": "Preparo e uma vez por cena",
+        "value": -2
+      }
+    ]
+  },
+  {
+    "owner": "baleia",
+    "name": "Dentro do Ventre — rotas de saída",
+    "grade": "IV",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "Sem custo fixo; técnicas usadas pagam seus custos normais"
+  },
+  {
+    "owner": "baleia",
+    "name": "Carga Territorial",
+    "grade": "IV",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "0 Karma adicional"
+  },
+  {
+    "owner": "pavio",
+    "name": "Terra dos Brinquedos",
+    "grade": "III",
+    "type": "invocação",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Duas rodadas",
+        "value": 1
+      },
+      {
+        "label": "Transformação secundária II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "pavio",
+    "name": "Três Marcas de Abandono",
+    "grade": "III",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "0 Karma adicional"
+  },
+  {
+    "owner": "pavio",
+    "name": "Responsabilidade Escolhida",
+    "grade": "III",
+    "type": "regra do pacto",
+    "cost": null,
+    "source": "0 Karma"
+  },
+  {
+    "owner": "ganancia",
+    "name": "Alienação Integral",
+    "grade": "IV",
+    "type": "técnica",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Médio",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "maelia-veyr",
+    "name": "Mãe do Vazio",
+    "grade": "IV",
+    "type": "transformação",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Duração de cena",
+        "value": 4
+      },
+      {
+        "label": "Proteção secundária III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "euphere",
+    "name": "Nadir",
+    "grade": "IV",
+    "type": "assinatura",
+    "cost": 15,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área pequena",
+        "value": 2
+      },
+      {
+        "label": "Seleção de aliados",
+        "value": 2
+      },
+      {
+        "label": "Contenção secundária III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Cala",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 4,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Surdo simples",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Sem Chão",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Troco Miúdo",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Trinco",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Rasteiro",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Fundo da Rua",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 8,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área pequena",
+        "value": 2
+      },
+      {
+        "label": "Terreno seletivo",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "oren-damar",
+    "name": "Senhor de Tudo",
+    "grade": "IV",
+    "type": "assinatura",
+    "action": "Principal",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Até dois alvos",
+        "value": 2
+      },
+      {
+        "label": "Movimento secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Prumo",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 4,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Porta Estreita",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Junção",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Controle secundário II",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Entre Eixos",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Contraface",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Secção",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 6,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "owner": "haldor-rusk",
+    "name": "Linha Mestra",
+    "grade": "IV",
+    "type": "assinatura",
+    "action": "Principal",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação diferida",
+        "value": 1
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      },
+      {
+        "label": "Duração dois turnos",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Negativo",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Duração cena",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Anatomia",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Rasura",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Desvio",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Interlinha",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Contraprova",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "saira-namar",
+    "name": "Palimpsesto",
+    "grade": "IV",
+    "type": "assinatura",
+    "action": "Principal",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Aurora",
+    "grade": "II",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 3,
+    "components": [
+      {
+        "label": "Base II",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Pilar",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 4,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Estaca",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Efeito menor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Zênite",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Controle secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Marcha Solar",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Movimento",
+    "cost": 5,
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Ainda Aqui",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "idris-khar",
+    "name": "Meio-Dia",
+    "grade": "IV",
+    "type": "assinatura",
+    "action": "Principal",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Movimento secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Pneuma",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Empurrão 2 m",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Condensador",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Reação",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Reação",
+        "value": 1
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Câmara de Ignição",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Área pequena",
+        "value": 2
+      },
+      {
+        "label": "Duração duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Trilho Impossível",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Movimento",
+    "cost": 7,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Movimento",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Órbita",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 9,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Duração duas rodadas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Matriz de Oficina",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 10,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Duração cena",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Lançadeira",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance longo",
+        "value": 4
+      },
+      {
+        "label": "Derrubado simples",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Aríete de Bancada",
+    "grade": "IV",
+    "type": "técnica",
+    "action": "Principal",
+    "cost": 11,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Alcance médio",
+        "value": 2
+      },
+      {
+        "label": "Movimento secundário III",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "owner": "eirik-malm",
+    "name": "Járn",
+    "grade": "IV",
+    "type": "assinatura",
+    "action": "Principal",
+    "cost": 13,
+    "components": [
+      {
+        "label": "Base IV",
+        "value": 6
+      },
+      {
+        "label": "Duração cena",
+        "value": 4
+      },
+      {
+        "label": "Defesa secundária III",
+        "value": 3
+      }
+    ]
+  }
+]
