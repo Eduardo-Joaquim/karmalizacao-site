@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+import { CharacterCombatShell } from "@/components/character-combat-shell";
 import { CharacterStepNavigation } from "@/components/character-step-navigation";
 import { CharacterPowerEditor } from "@/components/character-power-editor";
 import { CharacterSheetView, type DerivedStats } from "@/components/character-sheet-view";
@@ -721,6 +722,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
 
   return (
     <main className="site-shell character-main">
+      <CharacterCombatShell draft={draft} onChange={setDraft} id={activeId} onShare={() => void enableOrCopySharing()}>
       {!authenticated && <aside className="guest-notice"><strong>Modo visitante</strong><p>Experimente a criação completa. Seu rascunho fica somente neste navegador.</p><a href="/signin-with-chatgpt?return_to=%2Fpersonagem" target="_top">Entrar para salvar na nuvem</a><button type="button" onClick={() => { const blob = new Blob([JSON.stringify(draft, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = "karmalizacao-ficha.json"; a.click(); URL.revokeObjectURL(url); }}>Exportar rascunho</button></aside>}
       <CharacterStepNavigation activeStep={activeTab} onSelect={setActiveTab} />
       <header className="character-page-heading">
@@ -1187,7 +1189,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
               <section className="character-share-panel" data-enabled={draft.sharing.enabled}>
                 <div className="character-share-heading">
                   <span aria-hidden="true"><Share2 /></span>
-                  <div><small>Somente visualização</small><h3>Compartilhar esta ficha</h3><p>Qualquer pessoa com o link poderá consultar a ficha, as imagens e o inventário. Ninguém poderá editar ou descobrir o e-mail da conta.</p></div>
+                  <div><small>Somente visualização</small><h3>Compartilhar esta ficha</h3><p>Quem possui o link pode consultar a ficha e ajustar recursos e condições em combate. A criação permanece protegida e o e-mail da conta não é exibido. Revogue ou renove o link para encerrar o acesso.</p></div>
                 </div>
                 {draft.sharing.enabled && activeId && draft.sharing.token ? <>
                   <div className="character-share-link"><Link2 aria-hidden="true" /><Input aria-label="Caminho público da ficha" readOnly value={`/ficha/${activeId}/${draft.sharing.token}`} /></div>
@@ -1268,6 +1270,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+      </CharacterCombatShell>
     </main>
   );
 }

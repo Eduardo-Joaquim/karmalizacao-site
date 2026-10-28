@@ -204,8 +204,21 @@ const vowSchema = z.object({
   sacrifices: z.array(z.object({ skill: shortText, points: z.number().int().min(1).max(2) })).max(4),
 });
 
+export const combatLogSchema = z.object({
+  id:z.string().min(12).max(80).regex(/^[a-zA-Z0-9-]+$/), timestamp:z.string().datetime(), actorName:shortText,
+  kind:z.enum(['skill','attack','technique','ability','damage','heal','resource']), title:shortText,
+  rollFormula:shortText.optional(), diceResults:z.array(z.number().int().min(1).max(100)).max(60).optional(), total:z.number().finite().min(-99999).max(99999).optional(),
+  karmaSpent:z.number().int().min(0).max(99999).optional(), lifeDelta:z.number().int().min(-99999).max(99999).optional(), details:longText(2000).optional(),
+});
+export const liveCombatSchema = z.object({
+  inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),
+  activeConditions:z.array(z.string().min(1).max(80)).max(20),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
+  reactions:z.number().int().min(0).max(10).default(1),round:z.number().int().min(1).max(99999).default(1),domainRounds:z.record(z.enum(DOMAIN_NAMES),z.number().int().min(0).max(6)).default({}),
+});
+
 export const characterPayloadSchema = z.object({
   version: z.literal(1),
+  combatState: liveCombatSchema.optional(),
   combat: z.object({ life: z.number().int().min(0).max(99999), karma: z.number().int().min(0).max(99999), shield: z.number().int().min(0).max(9999), temporaryCharges: z.number().int().min(0).max(10), round: z.number().int().min(1).max(99999), domainRounds: z.record(z.enum(DOMAIN_NAMES), z.number().int().min(0).max(6)) }).optional(),
   name: z.string().trim().min(1).max(80),
   portraitImage: embeddedImage.optional(),

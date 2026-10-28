@@ -157,7 +157,7 @@ export function CharacterSheetView({
         })}
       </div>
 
-      <CombatPanel draft={draft} max={derived} onChange={readOnly ? undefined : onChange}/>
+      <p className="combat-entry-hint">Use a barra inferior para abrir o Modo Combate.</p>
       <SheetSection icon={UserRound} title="Essência e identidade">
         <div className="sheet-readonly-grid">
           <ReadonlyValue label="Nome">{draft.name}</ReadonlyValue>

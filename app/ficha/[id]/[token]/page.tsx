@@ -4,6 +4,7 @@ import { Eye, LogIn, ShieldCheck } from "lucide-react";
 import { notFound } from "next/navigation";
 
 import { chatGPTSignInPath } from "@/app/chatgpt-auth";
+import { SharedCombatCharacter } from "@/components/character-combat-shell";
 import { CharacterSheetView } from "@/components/character-sheet-view";
 import { SiteHeader } from "@/components/site-header";
 import { Badge } from "@/components/ui/badge";
@@ -17,7 +18,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Ficha compartilhada",
-  description: "Visualização pública e somente leitura de uma ficha de Karmalização.",
+  description: "Ficha compartilhada com recursos de combate sincronizados.",
   robots: { index: false, follow: false },
 };
 
@@ -43,10 +44,10 @@ export default async function SharedCharacterPage({ params }: PageProps) {
     <SiteHeader user={null} />
     <main className="site-shell shared-character-main">
       <header className="shared-character-banner">
-        <div><Badge variant="outline"><Eye aria-hidden="true" /> ficha compartilhada</Badge><h1>Registro público de personagem</h1><p>Esta é uma cópia atual da ficha salva pelo jogador. O endereço permite apenas visualizar; alterações continuam restritas ao proprietário.</p></div>
-        <div className="shared-character-trust"><ShieldCheck aria-hidden="true" /><span><strong>Link sem edição</strong>O e-mail e os dados da conta não são exibidos.</span></div>
+        <div><Badge variant="outline"><Eye aria-hidden="true" /> ficha compartilhada</Badge><h1>Registro público de personagem</h1><p>Quem possui este link pode acompanhar e ajustar Vida, Karma, condições e recursos de combate. Atributos, técnicas e escolhas da ficha só podem ser editados pelo proprietário.</p></div>
+        <div className="shared-character-trust"><ShieldCheck aria-hidden="true" /><span><strong>Combate compartilhado</strong>O e-mail e os dados da conta não são exibidos.</span></div>
       </header>
-      <CharacterSheetView draft={draft} automatic={automatic} derived={derived} readOnly />
+      <SharedCombatCharacter initial={draft} id={id} token={token}/>
       <footer className="shared-character-footer"><p>Quer criar sua própria personagem?</p><Button asChild className="karma-button"><a href={chatGPTSignInPath("/personagem")} target="_top"><LogIn aria-hidden="true" /> Entrar no arquivo</a></Button><Link href="/">Conhecer Karmalização</Link></footer>
     </main>
   </div>;

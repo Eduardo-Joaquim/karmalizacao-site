@@ -67,6 +67,7 @@ export default async function PortalPage() {
           </Link>
         </section>
 
+        <Link href="/mestre" className="portal-choice"><div><p className="choice-kicker">Conduzir a sessão</p><h2>Escudo do Mestre</h2><p>Combate conectado, Forja de Ameaças, consulta rápida e dossiês.</p></div><span className="choice-action">Abrir central <ArrowRight aria-hidden="true"/></span></Link>
         <aside className="portal-note">
           <span>Nota do arquivo</span>
           <p>

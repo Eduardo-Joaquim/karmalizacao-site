@@ -22,7 +22,7 @@ async function load(name,parent=process.cwd()+'/entry.ts'){
  else if(path===resolve('db'))m=new vm.SyntheticModule(['getD1'],function(){this.setExport('getD1',async()=>db)});
  else if(path.endsWith('.json'))m=new vm.SyntheticModule(['default'],function(){this.setExport('default',JSON.parse(readFileSync(path,'utf8')))});
  else {const file=existsSync(path)?path:path+'.ts';const source=ts.transpileModule(readFileSync(file,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;m=new vm.SourceTextModule(source,{identifier:file});}
- cache.set(path,m);await m.link(spec=>load(spec,m.identifier));return m;
+ const linked=Promise.resolve(m.link(spec=>load(spec,m.identifier))).then(()=>m);cache.set(path,linked);return linked;
 }
 const m=await load('@/app/mcp/route');await m.evaluate();const {POST,callTool}=m.namespace;
 const request=new Request('https://example.com/mcp');

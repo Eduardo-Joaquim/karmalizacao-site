@@ -1,6 +1,7 @@
 import { getChatGPTUser } from "@/app/chatgpt-auth";
 import { getD1 } from "@/db";
 import { characterPayloadSchema, saveCharacterSchema } from "@/lib/character-schema";
+import { mergeCombat } from "@/lib/combat-engine";
 import { normalizeCharacterPayload } from "@/lib/character-data";
 import { calculateAutomaticBonuses, getVowErrors, validateVowTransition } from "@/lib/character-rules";
 
@@ -75,10 +76,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const normalized = normalizeCharacterPayload(parsed.data.payload);
+    let normalized = normalizeCharacterPayload(parsed.data.payload);
     const vowErrors = getVowErrors(normalized, calculateAutomaticBonuses(normalized));
     if (vowErrors.length) return Response.json({ error: vowErrors[0] }, { status: 400 });
-    const payload = JSON.stringify(normalized);
+    let payload = JSON.stringify(normalized);
     if (new TextEncoder().encode(payload).byteLength > 1_900_000) {
       return Response.json({ error: "A ficha excede o tamanho permitido. Reduza imagens e textos antes de salvar." }, { status: 413 });
     }
@@ -88,6 +89,10 @@ export async function POST(request: Request) {
       .bind(parsed.data.id, user.email).first<{ payload: string }>();
     if (previous) {
       const old = normalizeCharacterPayload(characterPayloadSchema.parse(JSON.parse(previous.payload)));
+      if (old.combatState?.inCombat || old.combatState?.lastActionLog?.id !== normalized.combatState?.lastActionLog?.id) {
+        normalized = mergeCombat(old, normalized);
+        payload = JSON.stringify(normalized);
+      }
       const transitionError = validateVowTransition(old.vows, normalized.vows);
       if (transitionError) return Response.json({ error: transitionError }, { status: 409 });
     }
@@ -97,7 +102,7 @@ export async function POST(request: Request) {
        ON CONFLICT(id) DO UPDATE SET
          name = excluded.name,
          payload = excluded.payload,
-         updated_at = CURRENT_TIMESTAMP
+         updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
        WHERE characters.owner_email = excluded.owner_email AND characters.payload = ?`,
     );
     const result = await statement

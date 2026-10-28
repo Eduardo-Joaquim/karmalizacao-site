@@ -26,6 +26,7 @@ export function SiteHeader({ user }: { user?: ChatGPTUser | null }) {
         <PatchNotes />
 
         <nav className="site-nav" aria-label="Navegação principal">
+          <Link href="/mestre" aria-label="Página do Mestre">Mestre</Link>
           <Link href="/regras" aria-label="Livro de Regras"><BookOpen aria-hidden="true" />Regras</Link>
           <Link href="/regras/21-bestiario" aria-label="Bestiário"><Skull aria-hidden="true" />Bestiário</Link>
           {user ? <>

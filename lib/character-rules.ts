@@ -1,4 +1,4 @@
-import { sizeFromHeight, SIZE_RULES } from "@/lib/character-data";
+import { sizeFromHeight, SIZE_RULES } from "@/lib/character-model";
 import { corruptedFormState } from "@/lib/corrupted-form";
 import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
 import raceBook from "@/data/race-book.json";
@@ -16,7 +16,7 @@ import {
   type CharacterSize,
   type CharacterPayload,
   type DomainName,
-} from "@/lib/character-data";
+} from "@/lib/character-model";
 
 export type RuleFeature = {
   name: string;
@@ -870,7 +870,7 @@ export function getDomainRegentAttribute(name: DomainName): AttributeName | null
 
 export const BASE_ARMOR = 12;
 export const BASE_KARMA = 10;
-export { sizeFromHeight, SIZE_RULES } from "@/lib/character-data";
+export { sizeFromHeight, SIZE_RULES } from "@/lib/character-model";
 
 export function calculateDerivedStats(draft: CharacterPayload, automatic: AutomaticBonuses) {
   const strength = getFinalAttribute(draft, automatic, "Força");
