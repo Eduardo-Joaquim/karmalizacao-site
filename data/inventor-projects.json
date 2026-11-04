@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "stages": [
+    {
+      "stage": "Etapa I",
+      "prepared": 2,
+      "active": 1,
+      "ca": 14,
+      "life": 12,
+      "damage": "1d6",
+      "range": 15,
+      "duration": 3,
+      "parts": 5,
+      "timeTE": 1,
+      "complexity": "Uma função simples e instalação fixa ou empunhada."
+    },
+    {
+      "stage": "Etapa II",
+      "prepared": 3,
+      "active": 1,
+      "ca": 14,
+      "life": 14,
+      "damage": "1d6",
+      "range": 15,
+      "duration": 3,
+      "parts": 6,
+      "timeTE": 1,
+      "complexity": "Suportes articulados, fixações e comando por fio."
+    },
+    {
+      "stage": "Etapa III",
+      "prepared": 4,
+      "active": 2,
+      "ca": 15,
+      "life": 16,
+      "damage": "1d8",
+      "range": 20,
+      "duration": 4,
+      "parts": 8,
+      "timeTE": 2,
+      "complexity": "Tração terrestre: até 4 m por Movimento do operador, terreno normal."
+    },
+    {
+      "stage": "Etapa IV",
+      "prepared": 5,
+      "active": 2,
+      "ca": 15,
+      "life": 18,
+      "damage": "1d8",
+      "range": 20,
+      "duration": 4,
+      "parts": 10,
+      "timeTE": 2,
+      "complexity": "Até duas funções registradas no mesmo chassi; apenas uma por turno."
+    },
+    {
+      "stage": "Etapa V",
+      "prepared": 6,
+      "active": 3,
+      "ca": 16,
+      "life": 20,
+      "damage": "1d10",
+      "range": 25,
+      "duration": 5,
+      "parts": 14,
+      "timeTE": 3,
+      "complexity": "Integração tecno-kármica de uma fonte legitimamente possuída."
+    },
+    {
+      "stage": "Etapa VI",
+      "prepared": 7,
+      "active": 3,
+      "ca": 17,
+      "life": 22,
+      "damage": "1d10",
+      "range": 25,
+      "duration": 5,
+      "parts": 18,
+      "timeTE": 3,
+      "complexity": "Controle remoto por rádio no alcance do perfil, sujeito a interferência."
+    },
+    {
+      "stage": "Etapa VII",
+      "prepared": 8,
+      "active": 4,
+      "ca": 18,
+      "life": 24,
+      "damage": "1d12",
+      "range": 30,
+      "duration": 6,
+      "parts": 24,
+      "timeTE": 4,
+      "complexity": "Até três funções registradas; apenas uma por turno. Protótipos excepcionais exigem projeto próprio."
+    }
+  ],
+  "note": "Limites para dispositivos portáteis autorais de classe; não substituem construção industrial, veículos ou pesquisa do Capítulo 20.",
+  "examples": [
+    {
+      "name": "Torre mecânica",
+      "function": "Ofensiva",
+      "stage": "Etapa I",
+      "load": 2,
+      "description": "Instalação fixa com seis utilizações comuns; usa o dano, alcance e comando da Etapa."
+    },
+    {
+      "name": "Besta de suporte articulado",
+      "function": "Ofensiva",
+      "stage": "Etapa II",
+      "load": 2,
+      "description": "Uma montagem diferente para o mesmo perfil de ataque; não recebe disparos extras."
+    },
+    {
+      "name": "Sonda de inspeção",
+      "function": "Ferramenta",
+      "stage": "Etapa I",
+      "load": 2,
+      "description": "+1d20 em Investigação para inspecionar mecanismos fisicamente acessíveis, usando a ação normal."
+    },
+    {
+      "name": "Carro de recuperação",
+      "function": "Manipulação",
+      "stage": "Etapa III",
+      "load": 3,
+      "description": "Chassi com tração terrestre; deslocamento exige Movimento do operador e conserva a capacidade do manipulador."
+    },
+    {
+      "name": "Braço de oficina com ferramenta intercambiável",
+      "function": "Manipulação e ferramenta",
+      "stage": "Etapa IV",
+      "load": 3,
+      "description": "Duas funções registradas, somente uma por rodada; não concede membros, ações ou ataques adicionais ao operador."
+    }
+  ]
+}

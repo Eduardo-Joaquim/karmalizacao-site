@@ -1,7 +1,7 @@
 "use client";
 import {useEffect,useRef,useState,type CSSProperties} from 'react';
 import type {CombatLog} from '@/lib/combat-types';
-import {COMBAT_EFFECT_EVENT,combatSound,effectSettings,unlockCombatAudio} from '@/lib/combat-effects';
+import {COMBAT_EFFECT_EVENT,effectSettings} from '@/lib/combat-effects';
 export function DiceRollerOverlay(){
  const [current,setCurrent]=useState<CombatLog|null>(null),[rolling,setRolling]=useState(false),[reduced,setReduced]=useState(false);
  const queue=useRef<CombatLog[]>([]),seen=useRef(new Set<string>()),active=useRef(false),timers=useRef<ReturnType<typeof setTimeout>[]>([]),mounted=useRef(false);
@@ -9,9 +9,7 @@ export function DiceRollerOverlay(){
   timers.current.forEach(clearTimeout);timers.current=[];
   if(!mounted.current)return;const next=queue.current.shift();if(!next){active.current=false;setCurrent(null);return;}
   active.current=true;const reduce=!effectSettings().motion||window.matchMedia('(prefers-reduced-motion: reduce)').matches;setReduced(reduce);setCurrent(next);setRolling(next.visual?.type==='roll'&&!reduce);
-  if(next.visual?.type==='roll'){combatSound('roll');timers.current.push(setTimeout(()=>{if(!mounted.current)return;setRolling(false);if(next.visual?.type==='roll'&&next.visual.tone==='critical')combatSound('impact');},reduce?0:600));}
-  if(next.visual?.type==='phase')combatSound('phase');
-  if(effectSettings().haptics&&'vibrate' in navigator){try{navigator.vibrate(next.visual?.type==='phase'?[30,40,30]:15);}catch{}}
+  if(next.visual?.type==='roll'){timers.current.push(setTimeout(()=>{if(!mounted.current)return;setRolling(false);},reduce?0:600));}
   timers.current.push(setTimeout(()=>{setCurrent(null);timers.current.push(setTimeout(showNext,120));},next.visual?.type==='phase'?5500:reduce?2100:3300));
  }
  function dismiss(){timers.current.forEach(clearTimeout);timers.current=[];setCurrent(null);showNext();}
@@ -23,10 +21,10 @@ export function DiceRollerOverlay(){
    if(!active.current)showNext();
   };
   const settings=()=>{const reduce=!effectSettings().motion||window.matchMedia('(prefers-reduced-motion: reduce)').matches;setReduced(reduce);if(reduce)setRolling(false);document.documentElement.classList.toggle('combat-motion-reduced',reduce);};
-  const unlock=()=>{if(effectSettings().sound)void unlockCombatAudio();};
-  const media=window.matchMedia('(prefers-reduced-motion: reduce)');settings();media.addEventListener('change',settings);window.addEventListener('karmalizacao:effects-settings',settings);window.addEventListener('pointerdown',unlock);
+
+  const media=window.matchMedia('(prefers-reduced-motion: reduce)');settings();media.addEventListener('change',settings);window.addEventListener('karmalizacao:effects-settings',settings);
   const key=(e:KeyboardEvent)=>{if(e.key==='Escape')dismiss();};window.addEventListener(COMBAT_EFFECT_EVENT,listener);window.addEventListener('keydown',key);
-  return()=>{mounted.current=false;timers.current.forEach(clearTimeout);timers.current=[];window.removeEventListener(COMBAT_EFFECT_EVENT,listener);window.removeEventListener('keydown',key);media.removeEventListener('change',settings);window.removeEventListener('karmalizacao:effects-settings',settings);window.removeEventListener('pointerdown',unlock);};
+  return()=>{mounted.current=false;timers.current.forEach(clearTimeout);timers.current=[];window.removeEventListener(COMBAT_EFFECT_EVENT,listener);window.removeEventListener('keydown',key);media.removeEventListener('change',settings);window.removeEventListener('karmalizacao:effects-settings',settings);};
  },[]);
  const visual=current?.visual;if(!current||!visual)return null;
  const phase=visual.type==='phase',tone=phase?'phase':rolling?'normal':visual.tone,selectedIndex=phase?-1:visual.dice.indexOf(visual.selected);

@@ -57,10 +57,13 @@
         }
       ],
       "description": "Abre as mandíbulas e expele uma língua curta de brasas.",
-      "effect": "Um alvo a 5 m; total 1d6 de Fogo, parcial metade; falha nada.",
+      "effect": "Um alvo a 5 m; total 1d10 de Fogo, parcial metade; falha nada.",
       "test": "Espírito + Controle de Fogo contra CA",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -125,10 +128,13 @@
         }
       ],
       "description": "As pinças se fecham sobre o pé que interrompe sua passagem.",
-      "effect": "Um alvo em contato; total 1d6 de impacto e −2 m no próximo Movimento, até o início do turno seguinte do besouro; parcial metade, sem lentidão.",
+      "effect": "Um alvo em contato; total 1d8 de impacto e −2 m no próximo Movimento, até o início do turno seguinte do besouro; parcial metade, sem lentidão.",
       "test": "Força + Luta contra CA",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d8"
     }
   },
   {
@@ -193,10 +199,13 @@
         }
       ],
       "description": "Lança o corpo contra o apoio do oponente.",
-      "effect": "Em contato; total 1d12 de impacto e empurra 2 m por trajeto livre; parcial metade, sem empurrão.",
+      "effect": "Em contato; total 1d10 de impacto e empurra 2 m por trajeto livre; parcial metade, sem empurrão.",
       "test": "Força + Luta contra CA",
       "dice": 2,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -261,10 +270,13 @@
         }
       ],
       "description": "Contrai o corpo e lança água pressurizada pela boca circular.",
-      "effect": "Um alvo a 15 m; total 2d10 de Água pressurizada, parcial metade; falha nada. Não inclui queimadura.",
+      "effect": "Um alvo a 15 m; total 2d8 de Água pressurizada, parcial metade; falha nada. Não inclui queimadura.",
       "test": "Espírito + Controle de Água contra CA",
       "dice": 2,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "2d8"
     }
   },
   {
@@ -329,10 +341,13 @@
         }
       ],
       "description": "Trava o apoio e fecha as placas de uma prensa de construção.",
-      "effect": "Exige iniciar o turno adjacente e abrir mão do Movimento; total 2d12 de impacto e Derrubado, parcial metade sem queda; falha nada.",
+      "effect": "Exige iniciar o turno adjacente e abrir mão do Movimento; total 2d10 de impacto e Derrubado, parcial metade sem queda; falha nada.",
       "test": "Espírito + Canalização de Karma contra CA",
       "dice": 3,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Kármico",
+      "damageType": "Kármico",
+      "baseDamage": "2d10"
     }
   },
   {
@@ -400,7 +415,10 @@
       "effect": "Movimento: desloca até 5 m adicionais ao deslocamento normal desta rodada, por trajeto livre e fisicamente acessível. Reações disparadas por movimento continuam sendo resolvidas normalmente; não atravessa criaturas ou barreiras nem concede ataque.",
       "test": "Automático; sem teste",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -464,7 +482,10 @@
       "effect": "Um alvo a 5 m; total 1d6 perfurante, parcial metade; falha nada.",
       "test": "Espírito + Controle de Terra contra CA",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -529,10 +550,13 @@
         }
       ],
       "description": "A haste se atravessa entre o peito e a ponta da arma.",
-      "effect": "Um alvo em contato; total 1d12 de impacto e empurra 2 m; parcial metade sem empurrão; falha nada.",
+      "effect": "Um alvo em contato; total 1d10 de impacto e empurra 2 m; parcial metade sem empurrão; falha nada.",
       "test": "Força + Luta contra CA",
       "dice": 2,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -601,10 +625,13 @@
         }
       ],
       "description": "Uma raiz percebida se ergue diante das patas do alvo.",
-      "effect": "Um alvo a 15 m, apoiado em chão com vegetação; total 2d10 de Terra e Derrubado; parcial metade sem queda; falha nada.",
+      "effect": "Um alvo a 15 m, apoiado em chão com vegetação; total 2d8 de Terra e Derrubado; parcial metade sem queda; falha nada.",
       "test": "Espírito + Controle de Terra contra CA",
       "dice": 2,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "2d8"
     }
   },
   {
@@ -672,7 +699,10 @@
       "effect": "Principal: afunda solo solto em uma área adjacente de raio 2 m, tornando-a terreno difícil para todos até o início do próximo turno. Sem dano, teste ou captura; exige chão que possa ser deformado.",
       "test": "Automático; sem teste",
       "dice": 3,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "2d6"
     }
   },
   {
@@ -740,7 +770,10 @@
       "effect": "Movimento: desloca até 5 m adicionais ao deslocamento normal desta rodada, por trajeto aéreo livre. Reações disparadas por movimento continuam sendo resolvidas normalmente; não atravessa criaturas ou barreiras nem concede ataque.",
       "test": "Força + Luta",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -801,10 +834,13 @@
         }
       ],
       "description": "Uma carga kármica salta entre o pelo e a superfície tocada.",
-      "effect": "Um alvo em contato; total 1d6 kármico, parcial metade; falha nada.",
+      "effect": "Um alvo em contato; total 1d10 kármico, parcial metade; falha nada.",
       "test": "Espírito + Canalização de Karma contra CA",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Kármico",
+      "damageType": "Kármico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -869,10 +905,13 @@
         }
       ],
       "description": "Usa o braço inteiro para arrancar um objeto da linha de guarda.",
-      "effect": "Um alvo em contato, objeto alcançável; total 1d12 de impacto e Desarmar; parcial metade sem desarme; falha nada.",
+      "effect": "Um alvo em contato, objeto alcançável; total 1d10 de impacto e Desarmar; parcial metade sem desarme; falha nada.",
       "test": "Força + Luta contra CA",
       "dice": 2,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -941,10 +980,13 @@
         }
       ],
       "description": "Curva as membranas e comprime a corrente de ar num golpe transversal.",
-      "effect": "Um alvo a 15 m; total 2d10 de Ar e empurra 2 m, interrompidos por barreira sólida; parcial metade sem empurrão; falha nada.",
+      "effect": "Um alvo a 15 m; total 2d8 de Ar e empurra 2 m, interrompidos por barreira sólida; parcial metade sem empurrão; falha nada.",
       "test": "Espírito + Controle de Ar contra CA",
       "dice": 2,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "2d8"
     }
   },
   {
@@ -1009,10 +1051,13 @@
         }
       ],
       "description": "A chave golpeia o apoio de quem invade sua linha de trabalho.",
-      "effect": "Um alvo em contato; total 2d10 de impacto e −2 m até o início do próximo turno; parcial metade sem lentidão.",
+      "effect": "Um alvo em contato; total 2d8 de impacto e −2 m até o início do próximo turno; parcial metade sem lentidão.",
       "test": "Espírito + Canalização de Karma contra CA",
       "dice": 3,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Kármico",
+      "damageType": "Kármico",
+      "baseDamage": "2d8"
     }
   },
   {
@@ -1080,7 +1125,10 @@
       "effect": "Movimento: desloca até 5 m adicionais ao deslocamento normal desta rodada, por trajeto livre e fisicamente acessível. Reações disparadas por movimento continuam sendo resolvidas normalmente; não atravessa criaturas ou barreiras nem concede ataque.",
       "test": "Força + Luta",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d10"
     }
   },
   {
@@ -1145,10 +1193,13 @@
         }
       ],
       "description": "A frase se repete em tom agudo, junto aos ouvidos da vítima.",
-      "effect": "Um alvo percebido a 15 m; total 1d12 kármico, parcial metade; falha nada.",
+      "effect": "Um alvo percebido a 15 m; total 2d6 kármico, parcial metade; falha nada.",
       "test": "Espírito + Canalização de Karma contra CA",
       "dice": 2,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Kármico",
+      "damageType": "Kármico",
+      "baseDamage": "2d6"
     }
   },
   {
@@ -1209,10 +1260,13 @@
         }
       ],
       "description": "Fecha a distância e golpeia com a mão que parecia proteger o rosto.",
-      "effect": "Um alvo em contato; total 1d6 de impacto, parcial metade; falha nada.",
+      "effect": "Um alvo em contato; total 1d8 de impacto, parcial metade; falha nada.",
       "test": "Força + Luta contra CA",
       "dice": 1,
-      "bonus": 2
+      "bonus": 2,
+      "matrix": "Marcial",
+      "damageType": "Físico",
+      "baseDamage": "1d8"
     }
   },
   {
@@ -1280,7 +1334,10 @@
       "effect": "Principal: instala um alarme visível a curta distância, com até 5 m de fio por uma cena. Avisa apenas a tecedora quando tocado, sem dano ou contenção; uma Principal permite romper o fio alcançado.",
       "test": "Automático; sem teste",
       "dice": 2,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Kármico",
+      "damageType": "Kármico",
+      "baseDamage": "2d6"
     }
   },
   {
@@ -1349,10 +1406,13 @@
         }
       ],
       "description": "Inclina a galhada e concentra um único reflexo sobre os olhos do alvo.",
-      "effect": "Um alvo a 15 m; total 2d10 de Luz e Ofuscado até o início do próximo turno; parcial metade sem condição; falha nada.",
+      "effect": "Um alvo a 15 m; total 2d8 de Luz e Ofuscado até o início do próximo turno; parcial metade sem condição; falha nada.",
       "test": "Espírito + Controle de Luz contra CA",
       "dice": 3,
-      "bonus": 5
+      "bonus": 5,
+      "matrix": "Elemental",
+      "damageType": "Kármico",
+      "baseDamage": "2d8"
     }
   }
 ]

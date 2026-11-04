@@ -24,6 +24,17 @@ for key, name in regions.items():
 text = text.rstrip() + '\n'
 (root / 'docs/ameacas-iniciais.md').write_text(text)
 p = root / 'docs/bestiario.md'
-body = p.read_text().split('## 06 · Monstros e ameaças de rota')[0].rstrip()
-p.write_text(body + '\n\n' + text)
-print(f'{len(threats)} ameaças iniciais integradas ao Bestiário.')
+body=p.read_text().split('## 06 · Monstros e ameaças de rota')[0].split('## 06 · Ameaças dos Andares da Torre')[0].rstrip()
+import re
+body=re.sub(r'\n<!-- regional-monsters:[^>]+ -->.*?<!-- /regional-monsters -->\n','\n',body,flags=re.S)
+for region,title in regions.items():
+ group=text.split('### Ameaças · '+title+'\n\n',1)[1].split('### Ameaças · ',1)[0].rstrip()
+ block='\n<!-- regional-monsters:'+region+' -->\n### Bestiário de '+title+'\n\n'+group+'\n<!-- /regional-monsters -->\n'
+ if region=='torre':body+='\n\n## 06 · Ameaças dos Andares da Torre {#ameacas-iniciais}\n'+block
+ else:
+  heading={'gaeria':'## 02 · Gaéria','ignaria':'## 01 · Ignária','aeria':'## 04 · Aéria'}[region]
+  start=body.index(heading);end=body.find('\n## ',start+4)
+  if end<0:end=len(body)
+  body=body[:end]+block+body[end:]
+p.write_text(body+'\n')
+print(f'{len(threats)} ameaças integradas aos seus territórios.')

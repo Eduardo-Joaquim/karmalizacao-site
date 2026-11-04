@@ -1,6 +1,7 @@
 import { sizeFromHeight, SIZE_RULES } from "@/lib/character-model";
 import { corruptedFormState } from "@/lib/corrupted-form";
 import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
+import racialProgression from "@/data/racial-progression.json";
 import raceBook from "@/data/race-book.json";
 import characterRulesData from "@/data/character-rules.json";
 import {
@@ -22,6 +23,7 @@ export type RuleFeature = {
   name: string;
   kind: "Passiva" | "Habilidade" | "Fraqueza" | "Traço";
   description: string;
+  stage?: string;
 };
 
 export type BonusChoiceSlot = {
@@ -83,7 +85,7 @@ export type ClassDefinition = {
   recommendedSkills: string;
   trait: { name: string; description: string };
   abilities: Array<{ name: string; usage: string; effect: string }>;
-  progression: Array<{ stage: string; status: string; development: string }>;
+  progression: Array<{ stage: string; status: string; systemStatus?: string; classStatus?: string; development: string }>;
   amplifications: Array<{
     abilityName: string;
     name: string;
@@ -347,11 +349,20 @@ export const RACE_RULES: Record<string, RaceRule> = {
 RACE_RULES.Elfo = {name:"Elfo", summary:raceBook.Elfo.summary, automatic:{karma:4}, attributeSlots:[{label:"Herança élfica",options:["Agilidade","Intelecto"],value:1}],skillSlots:[{label:"Memória élfica",options:["Percepção","História"],value:1}],features:[]};
 RACE_RULES.Anão = {name:"Anão", summary:raceBook.Anão.summary, automatic:{life:6}, attributeSlots:[{label:"Herança anã",options:["Constituição","Força"],value:1}],skillSlots:[{label:"Ofício ancestral",options:["Criação","Atletismo"],value:1}],features:[]};
 for (const [name, content] of Object.entries(raceBook)) {
+  if(!RACE_RULES[name]) RACE_RULES[name]={name,summary:content.summary,automatic:{},attributeSlots:[],skillSlots:[],features:[]};
   RACE_RULES[name].summary = content.summary;
   RACE_RULES[name].features = content.features as RuleFeature[];
 }
 
+for(const name of Object.keys(racialProgression).filter(n=>!["Tritão","Abissal"].includes(n))){
+ const rule=RACE_RULES[name];rule.automatic={};rule.attributeSlots=[];rule.skillSlots=[];
+ if(name==='Humano')rule.skillSlots=[anySkillSlot('Versatilidade — Perícia 1'),anySkillSlot('Versatilidade — Perícia 2')];
+ if(name==='Ghoul'){rule.automatic={attributes:{Constituição:1}};rule.attributeSlots=[{label:'Herança predatória',options:['Força','Agilidade'],value:1}];}
+}
+export function racialFeatures(draft:CharacterPayload){const step=Math.max(1,getStageIndex(draft.stage));return getRaceRule(draft.race)?.features.filter(f=>!f.stage||['I','II','III','IV','V','VI','VII'].indexOf(f.stage)+1<=step)??[];}
+
 const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
+  Conjurador: { automatic: { life: 4, karma: 10, attributes: { Espírito: 1 }, skills: { "Canalização de Karma": 1 } } },
   Mercenário: {
     automatic: { life: 8, karma: 6, skills: { Percepção: 1 } },
     skillSlots: [anySkillSlot("Treino mercenário — Perícia 1"), anySkillSlot("Treino mercenário — Perícia 2")],
@@ -395,8 +406,9 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   Samaritano: {
     automatic: { life: 4, karma: 12 },
     skillSlots: [
-      { label: "Formação samaritana — Perícia 1", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 2 },
-      { label: "Formação samaritana — Perícia 2", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 2 },
+      { label: "Formação samaritana — Perícia 1", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 1 },
+      { label: "Formação samaritana — Perícia 2", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 1 },
+      { label: "Formação samaritana — Perícia 3", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 1 },
     ],
   },
   Curandeiro: {
@@ -415,7 +427,7 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   },
   Bardo: {
     automatic: {
-      karma: 10,
+      karma: 12,
       attributes: { Presença: 1 },
       skills: Object.fromEntries(SOCIAL_SKILLS.map((skill) => [skill, 1])),
     },
@@ -452,7 +464,7 @@ for (const name of ["Ladrão", "Assassino", "Inventor", "Invocador", "Elementali
   CLASS_INITIAL_RULES[name].skillSlots = [...(CLASS_INITIAL_RULES[name].skillSlots ?? []), anySkillSlot("Excedente de criação — escolha uma Perícia coerente")];
 }
 CLASS_INITIAL_RULES.Elementalista.skillSlots = [{label:"Controle do elemento escolhido",options:ALL_SKILLS.filter(s => s.startsWith("Controle de ")),value:1},anySkillSlot("Excedente de criação — Perícia coerente")];
-CLASS_INITIAL_RULES.Samaritano.skillSlots = Array.from({length:4},(_,i)=>({label:`Formação samaritana ${i+1}`, options:[...MENTAL_SKILLS,...SOCIAL_SKILLS],value:1}));
+CLASS_INITIAL_RULES.Samaritano.skillSlots = Array.from({length:3},(_,i)=>({label:`Formação samaritana ${i+1}`, options:[...MENTAL_SKILLS,...SOCIAL_SKILLS],value:1}));
 
 export const DOMAIN_RULES: Record<
   DomainName,
@@ -692,6 +704,10 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   const race = getRaceRule(draft.race);
   if (race) {
     addPartialBonus(result, race.automatic);
+    const racialStage=Math.max(1,getStageIndex(draft.stage));
+    if(draft.race==='Elfo')result.karma+=racialStage;
+    if(draft.race==='Anão')result.life+=2*racialStage;
+    if(draft.race==='Demi-humano')result.movement+=1;
     result.raceAttributeSlots = race.attributeSlots;
     result.raceSkillSlots = race.skillSlots;
     applySlots(result, race.attributeSlots, draft.allocations.raceAttributes, "attribute");
@@ -703,6 +719,7 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   const classDefinition = getClassDefinition(draft.className);
   if (classRule) {
     addPartialBonus(result, classRule.automatic);
+    if (draft.className === "Inventor") addPartialBonus(result, {skills:{"Criação":1}}, "evolutive");
     result.classAttributeSlots = classRule.attributeSlots ?? [];
     result.classSkillSlots = classRule.skillSlots ?? [];
     applySlots(result, result.classAttributeSlots, draft.allocations.classAttributes, "attribute");
@@ -796,12 +813,16 @@ export function getSkillLevelBreakdown(
   const sacrificedCommon = getSacrificedPoints(draft, skill);
   const baseCommon = Math.max(0, points.base - sacrificedCommon);
   const manualCommon = Math.max(0, points.bonus);
-  const automaticCommon = Math.max(0, tierBonuses.common);
+  const racialTraining = draft.race === "Humano" && getStageIndex(draft.stage) >= 2 && draft.allocations.humanTraining === skill;
+  const grantsCommon = racialTraining && baseCommon + manualCommon + tierBonuses.common === 0;
+  const automaticCommon = Math.max(0, tierBonuses.common) + Number(grantsCommon);
   const commonRaw = baseCommon + manualCommon + automaticCommon;
   const common = Math.min(1, commonRaw);
-  const evolutiveRaw = Math.max(0, tierBonuses.evolutive);
+  const grantsEvolutive = racialTraining && !grantsCommon && getStageIndex(draft.stage) >= 4 && tierBonuses.evolutive === 0;
+  const evolutiveRaw = Math.max(0, tierBonuses.evolutive) + Number(grantsEvolutive);
   const evolutive = common === 1 ? Math.min(1, evolutiveRaw) : 0;
-  const transcendentalRaw = Math.max(0, tierBonuses.transcendental);
+  const grantsTranscendental = racialTraining && !grantsCommon && !grantsEvolutive && common === 1 && evolutive === 1 && getStageIndex(draft.stage) === 7 && tierBonuses.transcendental === 0;
+  const transcendentalRaw = Math.max(0, tierBonuses.transcendental) + Number(grantsTranscendental);
   const transcendental = getStageIndex(draft.stage) === 7 && common === 1 && evolutive === 1
     ? Math.min(1, transcendentalRaw)
     : 0;
@@ -878,9 +899,9 @@ export function calculateDerivedStats(draft: CharacterPayload, automatic: Automa
   const constitution = getFinalAttribute(draft, automatic, "Constituição");
   const spirit = getFinalAttribute(draft, automatic, "Espírito");
   const size = SIZE_RULES[draft.heightCm === null ? draft.size : sizeFromHeight(draft.heightCm)];
-  const burden=inventoryState(draft.inventory,strength,agility,draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0);
+  const burden=inventoryState(draft.inventory,strength,agility,draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),(draft.loadModifier??0)+(draft.race==="Anão"?2:0));
   const form=corruptedFormState(draft,getFinalSkill(draft,automatic,"Controle da Corrupção"));
-  const baseMovement=Math.max(1,5+agility+size.movement+automatic.movement+form.movementBonus-burden.equipmentMovement);
+  const baseMovement=Math.max(1,5+agility+size.movement+automatic.movement+form.movementBonus-(draft.race==="Anão"?0:burden.equipmentMovement));
   const finalMovement=burden.tier===4?0:burden.tier===3?Math.max(1,Math.floor(baseMovement/4)):Math.max(burden.tier===2?2:1,baseMovement+burden.movementBonus);
   return {
     life: size.life + 2 * constitution + strength + automatic.life,
@@ -915,7 +936,9 @@ export function getSkillTest(
   const oneUse = Boolean(vow && vow.kind === "sacrifice" && vow.status === "sealed" && vow.approved && vow.targetSkill === getTrainingSkill(skill) && permanentLevel === 2 && getVowErrors(draft, automatic).length === 0);
   const level = permanentLevel;
   const form=corruptedFormState(draft,getFinalSkill(draft,automatic,"Controle da Corrupção"));
-  const formDice=form.active&&form.selected.includes("instinto")&&(draft.corruption.formFocus===testPurpose&&((testPurpose==="evasion"&&skill==="Reflexos")||(testPurpose==="movement"&&skill==="Atletismo")||(testPurpose==="perception"&&skill==="Percepção")))?1:0;
+  const racialStage=getStageIndex(draft.stage);
+  const racialDice=Number(draft.race==='Elfo'&&racialStage>=2&&['Canalização de Karma','Pontaria'].includes(skill))+Number(draft.race==='Demônio'&&skill==='Intimidação');
+  const formDice=racialDice+(form.active&&form.selected.includes("instinto")&&(draft.corruption.formFocus===testPurpose&&((testPurpose==="evasion"&&skill==="Reflexos")||(testPurpose==="movement"&&skill==="Atletismo")||(testPurpose==="perception"&&skill==="Percepção")))?1:0);
   const inventoryPenalty=inventoryTestPenalty(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0,skill,["Força","Agilidade","Constituição"].includes(attribute)||["Atletismo","Acrobacia","Furtividade","Luta","Reflexos","Evasão"].includes(skill));
   const analyticBonus = attribute === "Intelecto" && (mental || social) && level > 0 && value > 0
     ? Math.min(3, Math.floor(intellect / 2)) : 0;

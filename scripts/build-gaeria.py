@@ -87,7 +87,7 @@ assert len(ids)==len(set(ids))
 (root/'data/gaeria-anchors.json').write_text(json.dumps(ids,ensure_ascii=False)+'\n')
 articles=soup.xpath('.//article[@class="realm-dossier"]')
 assert len(articles)==4
-assert [len(a.xpath('.//section[@class="realm-ability"]')) for a in articles]==[7,6,4,5]
+assert [len(a.xpath('.//section[@class="realm-ability"]')) for a in articles]==[7,7,5,5]
 assert len(soup.xpath('.//dl[@class="realm-attributes"]//dd'))==24
 intro=''.join(render(n) for n in list(soup)[:list(soup).index(soup.find('h2'))])
 data=dict(title='Valdária · Reino Humano de Gaéria',slug='reino-humano',url='/mundo/gaeria/reino-humano',introHtml=intro,html=''.join(render(n) for n in soup),sections=sections,characterIds=characters,courtProfiles=profiles,nobleProfiles=noble_profiles,navigation=navigation)

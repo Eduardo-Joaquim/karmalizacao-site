@@ -26,6 +26,8 @@ const embeddedImage = z.string().max(MAX_EMBEDDED_IMAGE_LENGTH).refine(
 const allocationsSchema = z.object({
   raceAttributes: z.array(shortText).max(12).default([]),
   raceSkills: z.array(shortText).max(12).default([]),
+  humanTraining: shortText.optional(),
+  humanSignature: shortText.optional(),
   classAttributes: z.array(shortText).max(12).default([]),
   classSkills: z.array(shortText).max(12).default([]),
   stageAttributes: z.array(shortText).max(20).default([]),
@@ -74,7 +76,12 @@ const corruptionSchema = z.object({
   ruptureIntent: longText(1000).default(""),
 });
 
+const blessingGrantSchema = z.object({
+ matrices:z.array(z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"])).max(5).optional(),
+ id: shortText, name: shortText.default(""), pantheon: shortText.default(""), deity: shortText.default(""), deityId: shortText.optional(), deityEpithet: shortText.default(""), grantOrigin: shortText.default(""), grantReason: longText(1000).optional(), regentAttribute: shortText.default(""), tier: shortText.default(""), core: longText(800).default(""), initialGift: longText(1000).default(""), activeManifestation: longText(2500).default(""), essentialLimits: longText(1000).default(""), precept: longText(600).optional(), profanation: longText(600).optional(),
+});
 const divineSchema = z.object({
+ deityId: shortText.optional(), deityEpithet: shortText.optional(), grantOrigin: shortText.optional(), grantReason: longText(1000).optional(), activeManifestation: longText(2500).optional(), blessings: z.array(blessingGrantSchema).max(8).optional(),
   enabled: z.boolean().default(false),
   expression: shortText.default("Bênção"),
   blessingName: shortText.default(""),
@@ -112,6 +119,7 @@ const elementalSchema = z.object({
 });
 
 const techniqueSchema = z.object({
+  matrix:z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"]).optional(),damageType:z.enum(["Físico","Mental","Kármico"]).optional(),matrixExtras:z.number().min(0).max(999).optional(),matrixDiscount:z.number().min(0).max(3).optional(),
   id: shortText,
   name: shortText.default(""),
   concept: longText(800).default(""),
@@ -213,6 +221,7 @@ export const combatLogSchema = z.object({
   karmaSpent:z.number().int().min(0).max(99999).optional(), lifeDelta:z.number().int().min(-99999).max(99999).optional(), details:longText(2000).optional(),
 });
 export const liveCombatSchema = z.object({
+  summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean()})).default({}),
   inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),
   activeConditions:z.array(z.string().min(1).max(80)).max(20),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
   bossPhases:z.record(z.string().max(80),phaseNoticeSchema).refine(v=>Object.keys(v).length<=20).optional(),

@@ -1,5 +1,7 @@
 "use client";
+import {TechniqueMatrixEditor} from "@/components/technique-matrix-editor";
 
+import { BlessingEditor } from "@/components/blessing-editor";
 import {
   BookOpen,
   CircleDot,
@@ -47,6 +49,7 @@ import {
   getClassDefinition,
   getDomainRegentAttribute,
   getFinalAttribute,
+  getStageIndex,
   getRaceRule,
   PRESENCE_SKILLS,
   type AutomaticBonuses,
@@ -811,82 +814,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
               />
             </div>
             {draft.divine.enabled ? (
-              <div className="character-form-grid two-columns compact-form">
-                <div className="character-field">
-                  <Label htmlFor="divine-expression" className="character-label">Expressão</Label>
-                  <NativeSelect
-                    id="divine-expression"
-                    value={draft.divine.expression}
-                    onChange={(event) => updateDivine({ expression: event.target.value })}
-                  >
-                    {["Bênção", "Comunhão Divina", "Bênção + Comunhão Divina"].map((option) => (
-                      <NativeSelectOption key={option} value={option}>{option}</NativeSelectOption>
-                    ))}
-                  </NativeSelect>
-                </div>
-                <TextField
-                  id="divine-blessing-name"
-                  label="Nome da Bênção"
-                  value={draft.divine.blessingName}
-                  onChange={(blessingName) => updateDivine({ blessingName })}
-                />
-                <div className="character-field">
-                  <Label htmlFor="divine-regent" className="character-label">Regente da Bênção (não da Comunhão)</Label>
-                  <NativeSelect
-                    id="divine-regent"
-                    value={draft.divine.regentAttribute}
-                    onChange={(event) => updateDivine({ regentAttribute: event.target.value })}
-                  >
-                    <NativeSelectOption value="">Escolha</NativeSelectOption>
-                    {ATTRIBUTES.map((attribute) => (
-                      <NativeSelectOption value={attribute} key={attribute}>{attribute}</NativeSelectOption>
-                    ))}
-                  </NativeSelect>
-                  <small>Comunhão Divina sempre usa Presença {getFinalAttribute(draft, automatic, "Presença")}, independentemente do regente da Bênção.</small>
-                </div>
-                <div className="character-field">
-                  <Label htmlFor="divine-pantheon" className="character-label">Panteão / Asa</Label>
-                  <NativeSelect
-                    id="divine-pantheon"
-                    value={draft.divine.pantheon}
-                    onChange={(event) => updateDivine({ pantheon: event.target.value })}
-                  >
-                    <NativeSelectOption value="">Escolha o panteão</NativeSelectOption>
-                    {PANTHEONS.map((pantheon) => (
-                      <NativeSelectOption value={pantheon} key={pantheon}>{pantheon}</NativeSelectOption>
-                    ))}
-                  </NativeSelect>
-                </div>
-                <TextField id="divine-deity" label="Divindade" value={draft.divine.deity} onChange={(deity) => updateDivine({ deity })} />
-                <TextField id="divine-jurisdictions" label="Jurisdições" value={draft.divine.jurisdictions} onChange={(jurisdictions) => updateDivine({ jurisdictions })} />
-                <div className="range-field">
-                  <span><Label>Favor</Label><strong>{draft.divine.favor}/3</strong></span>
-                  <Slider min={0} max={3} step={1} value={[draft.divine.favor]} onValueChange={(values) => updateDivine({ favor: values[0] ?? 0 })} aria-label="Favor divino" />
-                </div>
-                <div className="range-field">
-                  <span><Label>Nível de poder</Label><strong>{draft.divine.powerLevel}/5</strong></span>
-                  <Slider min={0} max={5} step={1} value={[draft.divine.powerLevel]} onValueChange={(values) => updateDivine({ powerLevel: values[0] ?? 0 })} aria-label="Nível de poder divino" />
-                </div>
-                {([
-                  ["core", "Núcleo da Bênção"],
-                  ["initialGift", "Dádiva inicial"],
-                  ["essentialLimits", "Limites essenciais"],
-                  ["precept", "Preceito"],
-                  ["profanation", "Profanação"],
-                  ["liturgies", "Liturgias conhecidas"],
-                  ["miracles", "Milagres registrados"],
-                ] as const).map(([field, label]) => (
-                  <TextField
-                    id={`divine-${field}`}
-                    label={label}
-                    value={draft.divine[field]}
-                    multiline
-                    wide={field === "liturgies" || field === "miracles"}
-                    onChange={(value) => updateDivine({ [field]: value })}
-                    key={field}
-                  />
-                ))}
-              </div>
+              <BlessingEditor draft={draft} onChange={updateDivine}/>
             ) : (
               <p className="empty-power-copy">Ative para registrar uma Bênção ou Comunhão Divina.</p>
             )}
@@ -917,6 +845,14 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
             </Button>
           </div>
 
+          {draft.race === "Humano" && getStageIndex(draft.stage) >= 4 && <label className="character-field">
+            <span>Cadência Tática · Técnica Assinatura Humana</span>
+            <NativeSelect value={draft.allocations.humanSignature ?? ""} onChange={e => update("allocations", {...draft.allocations, humanSignature: e.target.value})}>
+              <NativeSelectOption value="">Escolha uma técnica</NativeSelectOption>
+              {draft.techniques.filter(t => t.name).map(t => <NativeSelectOption key={t.id} value={t.id}>{t.name}</NativeSelectOption>)}
+            </NativeSelect>
+            <small>Reduz o custo em 1 Karma, até o mínimo de 1 para técnicas pagas.</small>
+          </label>}
           <div className="dynamic-card-list techniques-list">
             {draft.techniques.length ? (
               draft.techniques.map((technique, index) => (
@@ -951,7 +887,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   </header>
                   <div className="character-form-grid two-columns compact-form">
                     <TextField id={`technique-name-${technique.id}`} label="Nome" value={technique.name} onChange={(name) => updateTechnique(technique.id, { name })} />
-                    <TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
+                    <TechniqueMatrixEditor technique={technique} onChange={patch=>updateTechnique(technique.id,patch)}/><TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
                     <div className="character-field">
                       <Label htmlFor={`technique-attribute-${technique.id}`} className="character-label">Atributo</Label>
                       <NativeSelect id={`technique-attribute-${technique.id}`} value={PRESENCE_SKILLS.includes(technique.skill) ? "Presença" : technique.attribute} disabled={PRESENCE_SKILLS.includes(technique.skill)} onChange={(event) => updateTechnique(technique.id, { attribute: event.target.value })}>

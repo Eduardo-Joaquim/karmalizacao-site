@@ -1,0 +1,785 @@
+[
+  {
+    "id": "apolo",
+    "name": "Apolo",
+    "epithet": "Senhor da Luz e da Harmonia",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Luz",
+      "Profecia",
+      "Harmonia Solar"
+    ],
+    "typicalBlessing": "Dádiva ligada a luz, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar luz com responsabilidade e cumprir a palavra empenhada em nome de Apolo.",
+    "profanation": "Usar a dádiva para profanar luz ou quebrar deliberadamente um juramento feito a Apolo."
+  },
+  {
+    "id": "atena",
+    "name": "Atena",
+    "epithet": "Guardiã da Égide e dos Seis Ângulos",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Estratégia",
+      "Égide",
+      "Geometria Bélica"
+    ],
+    "typicalBlessing": "Dádiva ligada a estratégia, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar estratégia com responsabilidade e cumprir a palavra empenhada em nome de Atena.",
+    "profanation": "Usar a dádiva para profanar estratégia ou quebrar deliberadamente um juramento feito a Atena."
+  },
+  {
+    "id": "hefesto",
+    "name": "Hefesto",
+    "epithet": "Artífice das Forjas Imortais",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Forja",
+      "Autômatos",
+      "Fogo Industrial"
+    ],
+    "typicalBlessing": "Dádiva ligada a forja, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar forja com responsabilidade e cumprir a palavra empenhada em nome de Hefesto.",
+    "profanation": "Usar a dádiva para profanar forja ou quebrar deliberadamente um juramento feito a Hefesto."
+  },
+  {
+    "id": "artemis",
+    "name": "Ártemis",
+    "epithet": "Vigia das Fronteiras Selvagens",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Caça",
+      "Lua",
+      "Fronteiras Selvagens"
+    ],
+    "typicalBlessing": "Dádiva ligada a caça, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar caça com responsabilidade e cumprir a palavra empenhada em nome de Ártemis.",
+    "profanation": "Usar a dádiva para profanar caça ou quebrar deliberadamente um juramento feito a Ártemis."
+  },
+  {
+    "id": "hades",
+    "name": "Hades",
+    "epithet": "Custódio dos Juramentos dos Mortos",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Submundo",
+      "Riqueza Mineral",
+      "Juramentos dos Mortos"
+    ],
+    "typicalBlessing": "Dádiva ligada a submundo, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar submundo com responsabilidade e cumprir a palavra empenhada em nome de Hades.",
+    "profanation": "Usar a dádiva para profanar submundo ou quebrar deliberadamente um juramento feito a Hades."
+  },
+  {
+    "id": "nix",
+    "name": "Nix",
+    "epithet": "Manto da Noite Primeira",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Noite Primordial",
+      "Véu",
+      "Sombras"
+    ],
+    "typicalBlessing": "Dádiva ligada a noite primordial, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar noite primordial com responsabilidade e cumprir a palavra empenhada em nome de Nix.",
+    "profanation": "Usar a dádiva para profanar noite primordial ou quebrar deliberadamente um juramento feito a Nix."
+  },
+  {
+    "id": "jupiter",
+    "name": "Júpiter",
+    "epithet": "Voz do Decreto Celeste",
+    "pantheon": "Romano — Asa da Autoridade",
+    "spheres": [
+      "Soberania",
+      "Decreto",
+      "Céu Imperial"
+    ],
+    "typicalBlessing": "Dádiva ligada a soberania, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar soberania com responsabilidade e cumprir a palavra empenhada em nome de Júpiter.",
+    "profanation": "Usar a dádiva para profanar soberania ou quebrar deliberadamente um juramento feito a Júpiter."
+  },
+  {
+    "id": "marte",
+    "name": "Marte",
+    "epithet": "Guardião da Vanguarda",
+    "pantheon": "Romano — Asa da Autoridade",
+    "spheres": [
+      "Ordem Militar",
+      "Muralhas",
+      "Vanguarda"
+    ],
+    "typicalBlessing": "Dádiva ligada a ordem militar, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar ordem militar com responsabilidade e cumprir a palavra empenhada em nome de Marte.",
+    "profanation": "Usar a dádiva para profanar ordem militar ou quebrar deliberadamente um juramento feito a Marte."
+  },
+  {
+    "id": "minerva",
+    "name": "Minerva",
+    "epithet": "Arquiteta da Cidade Justa",
+    "pantheon": "Romano — Asa da Autoridade",
+    "spheres": [
+      "Arquitetura",
+      "Lei",
+      "Ofício Cívico"
+    ],
+    "typicalBlessing": "Dádiva ligada a arquitetura, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar arquitetura com responsabilidade e cumprir a palavra empenhada em nome de Minerva.",
+    "profanation": "Usar a dádiva para profanar arquitetura ou quebrar deliberadamente um juramento feito a Minerva."
+  },
+  {
+    "id": "jano",
+    "name": "Jano",
+    "epithet": "Senhor das Duas Passagens",
+    "pantheon": "Romano — Asa da Autoridade",
+    "spheres": [
+      "Portões",
+      "Passagens",
+      "Transições"
+    ],
+    "typicalBlessing": "Dádiva ligada a portões, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar portões com responsabilidade e cumprir a palavra empenhada em nome de Jano.",
+    "profanation": "Usar a dádiva para profanar portões ou quebrar deliberadamente um juramento feito a Jano."
+  },
+  {
+    "id": "vesta",
+    "name": "Vesta",
+    "epithet": "Chama do Santuário",
+    "pantheon": "Romano — Asa da Autoridade",
+    "spheres": [
+      "Lareira Cívica",
+      "Santuário Inviolável"
+    ],
+    "typicalBlessing": "Dádiva ligada a lareira cívica, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar lareira cívica com responsabilidade e cumprir a palavra empenhada em nome de Vesta.",
+    "profanation": "Usar a dádiva para profanar lareira cívica ou quebrar deliberadamente um juramento feito a Vesta."
+  },
+  {
+    "id": "odin",
+    "name": "Odin",
+    "epithet": "Vigia das Runas e do Sacrifício",
+    "pantheon": "Nórdico — Asa do Destino",
+    "spheres": [
+      "Runas",
+      "Sacrifício por Sabedoria",
+      "Vigília"
+    ],
+    "typicalBlessing": "Dádiva ligada a runas, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar runas com responsabilidade e cumprir a palavra empenhada em nome de Odin.",
+    "profanation": "Usar a dádiva para profanar runas ou quebrar deliberadamente um juramento feito a Odin."
+  },
+  {
+    "id": "thor",
+    "name": "Thor",
+    "epithet": "Escudo das Rotas sob a Tempestade",
+    "pantheon": "Nórdico — Asa do Destino",
+    "spheres": [
+      "Tempestade",
+      "Força Bruta",
+      "Proteção das Rotas"
+    ],
+    "typicalBlessing": "Dádiva ligada a tempestade, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar tempestade com responsabilidade e cumprir a palavra empenhada em nome de Thor.",
+    "profanation": "Usar a dádiva para profanar tempestade ou quebrar deliberadamente um juramento feito a Thor."
+  },
+  {
+    "id": "freya",
+    "name": "Freya",
+    "epithet": "Senhora do Seidr e das Valquírias",
+    "pantheon": "Nórdico — Asa do Destino",
+    "spheres": [
+      "Seidr",
+      "Vida",
+      "Guerra"
+    ],
+    "typicalBlessing": "Dádiva ligada a seidr, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar seidr com responsabilidade e cumprir a palavra empenhada em nome de Freya.",
+    "profanation": "Usar a dádiva para profanar seidr ou quebrar deliberadamente um juramento feito a Freya."
+  },
+  {
+    "id": "tyr",
+    "name": "Tyr",
+    "epithet": "Fiador do Pacto Custoso",
+    "pantheon": "Nórdico — Asa do Destino",
+    "spheres": [
+      "Pacto",
+      "Justiça",
+      "Coragem"
+    ],
+    "typicalBlessing": "Dádiva ligada a pacto, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar pacto com responsabilidade e cumprir a palavra empenhada em nome de Tyr.",
+    "profanation": "Usar a dádiva para profanar pacto ou quebrar deliberadamente um juramento feito a Tyr."
+  },
+  {
+    "id": "ivaldi",
+    "name": "Ivaldi",
+    "epithet": "Mestre da Matéria Forjada",
+    "pantheon": "Nórdico — Asa do Destino",
+    "spheres": [
+      "Engenharia Rúnica",
+      "Matéria Forjada",
+      "Liga Metálica"
+    ],
+    "typicalBlessing": "Dádiva ligada a engenharia rúnica, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar engenharia rúnica com responsabilidade e cumprir a palavra empenhada em nome de Ivaldi.",
+    "profanation": "Usar a dádiva para profanar engenharia rúnica ou quebrar deliberadamente um juramento feito a Ivaldi."
+  },
+  {
+    "id": "sindri",
+    "name": "Sindri",
+    "epithet": "Artífice do Ouro Vivo",
+    "pantheon": "Nórdico — Asa do Destino",
+    "spheres": [
+      "Engenharia Rúnica",
+      "Forja",
+      "Liga Metálica"
+    ],
+    "typicalBlessing": "Dádiva ligada a engenharia rúnica, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar engenharia rúnica com responsabilidade e cumprir a palavra empenhada em nome de Sindri.",
+    "profanation": "Usar a dádiva para profanar engenharia rúnica ou quebrar deliberadamente um juramento feito a Sindri."
+  },
+  {
+    "id": "thoth",
+    "name": "Thoth",
+    "epithet": "Escriba da Medida Sagrada",
+    "pantheon": "Egípcio — Asa da Balança",
+    "spheres": [
+      "Registro",
+      "Geometria Sagrada",
+      "Palavra Escrita"
+    ],
+    "typicalBlessing": "Dádiva ligada a registro, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar registro com responsabilidade e cumprir a palavra empenhada em nome de Thoth.",
+    "profanation": "Usar a dádiva para profanar registro ou quebrar deliberadamente um juramento feito a Thoth."
+  },
+  {
+    "id": "anubis",
+    "name": "Anúbis",
+    "epithet": "Guardião dos Nomes na Travessia",
+    "pantheon": "Egípcio — Asa da Balança",
+    "spheres": [
+      "Travessia",
+      "Embalsamamento",
+      "Guarda dos Nomes"
+    ],
+    "typicalBlessing": "Dádiva ligada a travessia, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar travessia com responsabilidade e cumprir a palavra empenhada em nome de Anúbis.",
+    "profanation": "Usar a dádiva para profanar travessia ou quebrar deliberadamente um juramento feito a Anúbis."
+  },
+  {
+    "id": "isis",
+    "name": "Ísis",
+    "epithet": "Senhora dos Nomes que Restauram",
+    "pantheon": "Egípcio — Asa da Balança",
+    "spheres": [
+      "Restauração",
+      "Nomes Verdadeiros",
+      "Devoção"
+    ],
+    "typicalBlessing": "Dádiva ligada a restauração, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar restauração com responsabilidade e cumprir a palavra empenhada em nome de Ísis.",
+    "profanation": "Usar a dádiva para profanar restauração ou quebrar deliberadamente um juramento feito a Ísis."
+  },
+  {
+    "id": "ra",
+    "name": "Rá",
+    "epithet": "Coroa do Zênite",
+    "pantheon": "Egípcio — Asa da Balança",
+    "spheres": [
+      "Zênite Solar",
+      "Soberania da Luz"
+    ],
+    "typicalBlessing": "Dádiva ligada a zênite solar, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar zênite solar com responsabilidade e cumprir a palavra empenhada em nome de Rá.",
+    "profanation": "Usar a dádiva para profanar zênite solar ou quebrar deliberadamente um juramento feito a Rá."
+  },
+  {
+    "id": "sekhmet",
+    "name": "Sekhmet",
+    "epithet": "Leoa da Retribuição e da Cura",
+    "pantheon": "Egípcio — Asa da Balança",
+    "spheres": [
+      "Sangue",
+      "Retribuição Ardente",
+      "Cura após Praga"
+    ],
+    "typicalBlessing": "Dádiva ligada a sangue, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar sangue com responsabilidade e cumprir a palavra empenhada em nome de Sekhmet.",
+    "profanation": "Usar a dádiva para profanar sangue ou quebrar deliberadamente um juramento feito a Sekhmet."
+  },
+  {
+    "id": "ptah",
+    "name": "Ptah",
+    "epithet": "Voz que Ergue a Matéria",
+    "pantheon": "Egípcio — Asa da Balança",
+    "spheres": [
+      "Criação de Matéria",
+      "Palavra",
+      "Alvenaria do Mundo"
+    ],
+    "typicalBlessing": "Dádiva ligada a criação de matéria, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar criação de matéria com responsabilidade e cumprir a palavra empenhada em nome de Ptah.",
+    "profanation": "Usar a dádiva para profanar criação de matéria ou quebrar deliberadamente um juramento feito a Ptah."
+  },
+  {
+    "id": "shiva",
+    "name": "Shiva",
+    "epithet": "Senhor do Ritmo que Transforma",
+    "pantheon": "Hindu — Asa do Dharma",
+    "spheres": [
+      "Transformação",
+      "Destruição do Ilusório",
+      "Ritmo Cósmico"
+    ],
+    "typicalBlessing": "Dádiva ligada a transformação, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar transformação com responsabilidade e cumprir a palavra empenhada em nome de Shiva.",
+    "profanation": "Usar a dádiva para profanar transformação ou quebrar deliberadamente um juramento feito a Shiva."
+  },
+  {
+    "id": "vishnu",
+    "name": "Vishnu",
+    "epithet": "Amparo do Mundo",
+    "pantheon": "Hindu — Asa do Dharma",
+    "spheres": [
+      "Preservação",
+      "Equilíbrio",
+      "Amparo"
+    ],
+    "typicalBlessing": "Dádiva ligada a preservação, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar preservação com responsabilidade e cumprir a palavra empenhada em nome de Vishnu.",
+    "profanation": "Usar a dádiva para profanar preservação ou quebrar deliberadamente um juramento feito a Vishnu."
+  },
+  {
+    "id": "kali",
+    "name": "Kali",
+    "epithet": "Tempo que Rompe a Tirania",
+    "pantheon": "Hindu — Asa do Dharma",
+    "spheres": [
+      "Tempo",
+      "Sangue",
+      "Fim da Tirania"
+    ],
+    "typicalBlessing": "Dádiva ligada a tempo, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar tempo com responsabilidade e cumprir a palavra empenhada em nome de Kali.",
+    "profanation": "Usar a dádiva para profanar tempo ou quebrar deliberadamente um juramento feito a Kali."
+  },
+  {
+    "id": "agni",
+    "name": "Agni",
+    "epithet": "Chama da Oferenda",
+    "pantheon": "Hindu — Asa do Dharma",
+    "spheres": [
+      "Fogo Sacrificial",
+      "Purificação",
+      "Combustão"
+    ],
+    "typicalBlessing": "Dádiva ligada a fogo sacrificial, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar fogo sacrificial com responsabilidade e cumprir a palavra empenhada em nome de Agni.",
+    "profanation": "Usar a dádiva para profanar fogo sacrificial ou quebrar deliberadamente um juramento feito a Agni."
+  },
+  {
+    "id": "surya",
+    "name": "Surya",
+    "epithet": "Olhar do Zênite",
+    "pantheon": "Hindu — Asa do Dharma",
+    "spheres": [
+      "Claridade Solar",
+      "Visão"
+    ],
+    "typicalBlessing": "Dádiva ligada a claridade solar, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar claridade solar com responsabilidade e cumprir a palavra empenhada em nome de Surya.",
+    "profanation": "Usar a dádiva para profanar claridade solar ou quebrar deliberadamente um juramento feito a Surya."
+  },
+  {
+    "id": "vishvakarma",
+    "name": "Vishvakarma",
+    "epithet": "Arquiteto das Cidades Divinas",
+    "pantheon": "Hindu — Asa do Dharma",
+    "spheres": [
+      "Arquitetura",
+      "Máquinas",
+      "Cidades"
+    ],
+    "typicalBlessing": "Dádiva ligada a arquitetura, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar arquitetura com responsabilidade e cumprir a palavra empenhada em nome de Vishvakarma.",
+    "profanation": "Usar a dádiva para profanar arquitetura ou quebrar deliberadamente um juramento feito a Vishvakarma."
+  },
+  {
+    "id": "amaterasu",
+    "name": "Amaterasu",
+    "epithet": "Luz do Espelho Sagrado",
+    "pantheon": "Xintoísta — Asa da Pureza",
+    "spheres": [
+      "Sol Imperial",
+      "Espelho Sagrado",
+      "Luz"
+    ],
+    "typicalBlessing": "Dádiva ligada a sol imperial, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar sol imperial com responsabilidade e cumprir a palavra empenhada em nome de Amaterasu.",
+    "profanation": "Usar a dádiva para profanar sol imperial ou quebrar deliberadamente um juramento feito a Amaterasu."
+  },
+  {
+    "id": "tsukuyomi",
+    "name": "Tsukuyomi",
+    "epithet": "Senhor da Lua Silenciosa",
+    "pantheon": "Xintoísta — Asa da Pureza",
+    "spheres": [
+      "Lua",
+      "Ordem Noturna",
+      "Lâmina Fria"
+    ],
+    "typicalBlessing": "Dádiva ligada a lua, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar lua com responsabilidade e cumprir a palavra empenhada em nome de Tsukuyomi.",
+    "profanation": "Usar a dádiva para profanar lua ou quebrar deliberadamente um juramento feito a Tsukuyomi."
+  },
+  {
+    "id": "susanoo",
+    "name": "Susanoo",
+    "epithet": "Lâmina do Mar Revolto",
+    "pantheon": "Xintoísta — Asa da Pureza",
+    "spheres": [
+      "Vendaval",
+      "Mar",
+      "Caça às Serpentes"
+    ],
+    "typicalBlessing": "Dádiva ligada a vendaval, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar vendaval com responsabilidade e cumprir a palavra empenhada em nome de Susanoo.",
+    "profanation": "Usar a dádiva para profanar vendaval ou quebrar deliberadamente um juramento feito a Susanoo."
+  },
+  {
+    "id": "inari",
+    "name": "Inari",
+    "epithet": "Guardião das Forjas e da Prosperidade",
+    "pantheon": "Xintoísta — Asa da Pureza",
+    "spheres": [
+      "Prosperidade",
+      "Raposas Mensageiras",
+      "Forja de Espadas"
+    ],
+    "typicalBlessing": "Dádiva ligada a prosperidade, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar prosperidade com responsabilidade e cumprir a palavra empenhada em nome de Inari.",
+    "profanation": "Usar a dádiva para profanar prosperidade ou quebrar deliberadamente um juramento feito a Inari."
+  },
+  {
+    "id": "raijin",
+    "name": "Raijin",
+    "epithet": "Tambor do Impulso Celeste",
+    "pantheon": "Xintoísta — Asa da Pureza",
+    "spheres": [
+      "Trovão",
+      "Magnetismo",
+      "Impulso Elétrico"
+    ],
+    "typicalBlessing": "Dádiva ligada a trovão, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar trovão com responsabilidade e cumprir a palavra empenhada em nome de Raijin.",
+    "profanation": "Usar a dádiva para profanar trovão ou quebrar deliberadamente um juramento feito a Raijin."
+  },
+  {
+    "id": "yuanshi-tianzun",
+    "name": "Yuanshi Tianzun",
+    "epithet": "Princípio do Mandato Celeste",
+    "pantheon": "Taoísta — Asa do Mandato",
+    "spheres": [
+      "Mandato Celeste",
+      "Lei Natural",
+      "Origem"
+    ],
+    "typicalBlessing": "Dádiva ligada a mandato celeste, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar mandato celeste com responsabilidade e cumprir a palavra empenhada em nome de Yuanshi Tianzun.",
+    "profanation": "Usar a dádiva para profanar mandato celeste ou quebrar deliberadamente um juramento feito a Yuanshi Tianzun."
+  },
+  {
+    "id": "imperador-de-jade",
+    "name": "Imperador de Jade",
+    "epithet": "Soberano da Corte Celeste",
+    "pantheon": "Taoísta — Asa do Mandato",
+    "spheres": [
+      "Mandato Celeste",
+      "Lei",
+      "Decreto"
+    ],
+    "typicalBlessing": "Dádiva ligada a mandato celeste, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar mandato celeste com responsabilidade e cumprir a palavra empenhada em nome de Imperador de Jade.",
+    "profanation": "Usar a dádiva para profanar mandato celeste ou quebrar deliberadamente um juramento feito a Imperador de Jade."
+  },
+  {
+    "id": "xuanwu",
+    "name": "Xuanwu",
+    "epithet": "Guardião Inabalável do Norte",
+    "pantheon": "Taoísta — Asa do Mandato",
+    "spheres": [
+      "Defesa",
+      "Água",
+      "Tartaruga Negra"
+    ],
+    "typicalBlessing": "Dádiva ligada a defesa, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar defesa com responsabilidade e cumprir a palavra empenhada em nome de Xuanwu.",
+    "profanation": "Usar a dádiva para profanar defesa ou quebrar deliberadamente um juramento feito a Xuanwu."
+  },
+  {
+    "id": "nezha",
+    "name": "Nezha",
+    "epithet": "Chama Rebelde do Lótus",
+    "pantheon": "Taoísta — Asa do Mandato",
+    "spheres": [
+      "Chama de Lótus",
+      "Velocidade",
+      "Armas Celestes"
+    ],
+    "typicalBlessing": "Dádiva ligada a chama de lótus, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar chama de lótus com responsabilidade e cumprir a palavra empenhada em nome de Nezha.",
+    "profanation": "Usar a dádiva para profanar chama de lótus ou quebrar deliberadamente um juramento feito a Nezha."
+  },
+  {
+    "id": "erlang-shen",
+    "name": "Erlang Shen",
+    "epithet": "Olho que Discerni o Oculto",
+    "pantheon": "Taoísta — Asa do Mandato",
+    "spheres": [
+      "Verdade",
+      "Terceiro Olho",
+      "Contenção de Monstros"
+    ],
+    "typicalBlessing": "Dádiva ligada a verdade, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar verdade com responsabilidade e cumprir a palavra empenhada em nome de Erlang Shen.",
+    "profanation": "Usar a dádiva para profanar verdade ou quebrar deliberadamente um juramento feito a Erlang Shen."
+  },
+  {
+    "id": "doumu",
+    "name": "Doumu",
+    "epithet": "Mãe da Medida das Estrelas",
+    "pantheon": "Taoísta — Asa do Mandato",
+    "spheres": [
+      "Estrelas",
+      "Compaixão",
+      "Medida da Vida"
+    ],
+    "typicalBlessing": "Dádiva ligada a estrelas, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar estrelas com responsabilidade e cumprir a palavra empenhada em nome de Doumu.",
+    "profanation": "Usar a dádiva para profanar estrelas ou quebrar deliberadamente um juramento feito a Doumu."
+  },
+  {
+    "id": "tupa",
+    "name": "Tupã",
+    "epithet": "Voz do Trovão Criador",
+    "pantheon": "Lendas Tupi-Guarani — Asa do Assombro",
+    "spheres": [
+      "Trovão",
+      "Criação",
+      "Tempestade"
+    ],
+    "typicalBlessing": "Dádiva ligada a trovão, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar trovão com responsabilidade e cumprir a palavra empenhada em nome de Tupã.",
+    "profanation": "Usar a dádiva para profanar trovão ou quebrar deliberadamente um juramento feito a Tupã."
+  },
+  {
+    "id": "guaraci",
+    "name": "Guaraci",
+    "epithet": "Calor que Desperta a Mata",
+    "pantheon": "Lendas Tupi-Guarani — Asa do Assombro",
+    "spheres": [
+      "Sol",
+      "Vida",
+      "Mata"
+    ],
+    "typicalBlessing": "Dádiva ligada a sol, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar sol com responsabilidade e cumprir a palavra empenhada em nome de Guaraci.",
+    "profanation": "Usar a dádiva para profanar sol ou quebrar deliberadamente um juramento feito a Guaraci."
+  },
+  {
+    "id": "jaci",
+    "name": "Jaci",
+    "epithet": "Guardiã da Semente e da Noite",
+    "pantheon": "Lendas Tupi-Guarani — Asa do Assombro",
+    "spheres": [
+      "Lua",
+      "Semente",
+      "Noite"
+    ],
+    "typicalBlessing": "Dádiva ligada a lua, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar lua com responsabilidade e cumprir a palavra empenhada em nome de Jaci.",
+    "profanation": "Usar a dádiva para profanar lua ou quebrar deliberadamente um juramento feito a Jaci."
+  },
+  {
+    "id": "boitata",
+    "name": "Boitatá",
+    "epithet": "Olhos de Chama da Terra",
+    "pantheon": "Lendas Tupi-Guarani — Asa do Assombro",
+    "spheres": [
+      "Fogo Fátuo",
+      "Terra",
+      "Proteção"
+    ],
+    "typicalBlessing": "Dádiva ligada a fogo fátuo, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar fogo fátuo com responsabilidade e cumprir a palavra empenhada em nome de Boitatá.",
+    "profanation": "Usar a dádiva para profanar fogo fátuo ou quebrar deliberadamente um juramento feito a Boitatá."
+  },
+  {
+    "id": "anhanga",
+    "name": "Anhangá",
+    "epithet": "Vigia da Caça Justa",
+    "pantheon": "Lendas Tupi-Guarani — Asa do Assombro",
+    "spheres": [
+      "Floresta",
+      "Caça Justa",
+      "Assombro"
+    ],
+    "typicalBlessing": "Dádiva ligada a floresta, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar floresta com responsabilidade e cumprir a palavra empenhada em nome de Anhangá.",
+    "profanation": "Usar a dádiva para profanar floresta ou quebrar deliberadamente um juramento feito a Anhangá."
+  },
+  {
+    "id": "caipora",
+    "name": "Caipora",
+    "epithet": "Senhora das Trilhas e das Feras",
+    "pantheon": "Lendas Tupi-Guarani — Asa do Assombro",
+    "spheres": [
+      "Trilhas",
+      "Feras",
+      "Floresta"
+    ],
+    "typicalBlessing": "Dádiva ligada a trilhas, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar trilhas com responsabilidade e cumprir a palavra empenhada em nome de Caipora.",
+    "profanation": "Usar a dádiva para profanar trilhas ou quebrar deliberadamente um juramento feito a Caipora."
+  },
+  {
+    "id": "ogum",
+    "name": "Ogum",
+    "epithet": "Senhor da Forja e dos Caminhos de Ferro",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Ferro",
+      "Forja",
+      "Tecnologia",
+      "Lâmina"
+    ],
+    "typicalBlessing": "Dádiva ligada a ferro, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar ferro com responsabilidade e cumprir a palavra empenhada em nome de Ogum.",
+    "profanation": "Usar a dádiva para profanar ferro ou quebrar deliberadamente um juramento feito a Ogum."
+  },
+  {
+    "id": "xango",
+    "name": "Xangô",
+    "epithet": "Machado da Justiça Real",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Justiça",
+      "Trovão",
+      "Fogo Real"
+    ],
+    "typicalBlessing": "Dádiva ligada a justiça, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar justiça com responsabilidade e cumprir a palavra empenhada em nome de Xangô.",
+    "profanation": "Usar a dádiva para profanar justiça ou quebrar deliberadamente um juramento feito a Xangô."
+  },
+  {
+    "id": "iansa-oya",
+    "name": "Iansã / Oyá",
+    "epithet": "Senhora dos Ventos e das Travessias",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Ventos",
+      "Raios",
+      "Travessia de Espíritos"
+    ],
+    "typicalBlessing": "Dádiva ligada a ventos, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar ventos com responsabilidade e cumprir a palavra empenhada em nome de Iansã / Oyá.",
+    "profanation": "Usar a dádiva para profanar ventos ou quebrar deliberadamente um juramento feito a Iansã / Oyá."
+  },
+  {
+    "id": "oxossi",
+    "name": "Oxóssi",
+    "epithet": "Guardião da Flecha Única",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Caça",
+      "Fartura",
+      "Conhecimento da Mata"
+    ],
+    "typicalBlessing": "Dádiva ligada a caça, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar caça com responsabilidade e cumprir a palavra empenhada em nome de Oxóssi.",
+    "profanation": "Usar a dádiva para profanar caça ou quebrar deliberadamente um juramento feito a Oxóssi."
+  },
+  {
+    "id": "oxum",
+    "name": "Oxum",
+    "epithet": "Senhora do Ouro e do Cuidado",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Águas Doces",
+      "Ouro",
+      "Diplomacia",
+      "Cuidado"
+    ],
+    "typicalBlessing": "Dádiva ligada a águas doces, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar águas doces com responsabilidade e cumprir a palavra empenhada em nome de Oxum.",
+    "profanation": "Usar a dádiva para profanar águas doces ou quebrar deliberadamente um juramento feito a Oxum."
+  },
+  {
+    "id": "obaluaie-omolu",
+    "name": "Obaluaiê / Omolu",
+    "epithet": "Guardião da Terra e das Chagas",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Terra",
+      "Cura",
+      "Vida e Morte"
+    ],
+    "typicalBlessing": "Dádiva ligada a terra, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar terra com responsabilidade e cumprir a palavra empenhada em nome de Obaluaiê / Omolu.",
+    "profanation": "Usar a dádiva para profanar terra ou quebrar deliberadamente um juramento feito a Obaluaiê / Omolu."
+  },
+  {
+    "id": "oxala",
+    "name": "Oxalá",
+    "epithet": "Manto Branco da Criação",
+    "pantheon": "Iorubá — Asa do Axé",
+    "spheres": [
+      "Paz",
+      "Criação",
+      "Paciência"
+    ],
+    "typicalBlessing": "Dádiva ligada a paz, expressa por uma capacidade própria do portador.",
+    "precept": "Honrar paz com responsabilidade e cumprir a palavra empenhada em nome de Oxalá.",
+    "profanation": "Usar a dádiva para profanar paz ou quebrar deliberadamente um juramento feito a Oxalá."
+  },
+  {
+    "id": "tiamat",
+    "name": "Tiamat",
+    "epithet": "Mãe Ancestral dos Dragões",
+    "pantheon": "Outro panteão",
+    "spheres": [
+      "Ancestralidade dracônica",
+      "Proteção",
+      "Sangue de linhagem"
+    ],
+    "typicalBlessing": "Anatomia dracônica parcial transmitida pela linhagem.",
+    "precept": "Acolher a criatura rendida sob proteção do juramento.",
+    "profanation": "Negar deliberadamente socorro de passagem a quem foi acolhido pelo juramento."
+  },
+  {
+    "id": "boreas",
+    "name": "Bóreas",
+    "epithet": "Guardião dos Ventos do Norte",
+    "pantheon": "Grego — Asa da Glória",
+    "spheres": [
+      "Ventos",
+      "Passagens",
+      "Resgate"
+    ],
+    "typicalBlessing": "Conduzir ventos, passagens, resgate.",
+    "precept": "Preservar os vínculos confiados à sua guarda.",
+    "profanation": "Abandonar deliberadamente quem depende de sua proteção."
+  },
+  {
+    "id": "tecela-exterior",
+    "name": "A Tecelã Exterior",
+    "epithet": "Aquela que Une as Bordas da Vida",
+    "pantheon": "Outro panteão",
+    "spheres": [
+      "Fios",
+      "Continuidade",
+      "Vínculos"
+    ],
+    "typicalBlessing": "Conduzir fios, continuidade, vínculos.",
+    "precept": "Preservar os vínculos confiados à sua guarda.",
+    "profanation": "Abandonar deliberadamente quem depende de sua proteção."
+  }
+]

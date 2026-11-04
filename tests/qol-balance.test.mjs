@@ -38,7 +38,7 @@ test('all regional art prices and grades agree with their authored constructions
   assert.equal(Number(String(a.cost).match(/\d+/)?.[0]),e.cost,p.id+'/'+a.name);
   assert.equal(a.grade,e.grade,p.id+'/'+a.name);checked++;
  }
- assert.equal(checked,189); // nine additional house arts are rendered in the regional HTML.
+ assert.equal(checked,197); // nine additional house arts are rendered in the regional HTML.
 });
 test('noble combatants use exact boss Life and CA, excluding dukes and Caroline',()=>{
  const expected={

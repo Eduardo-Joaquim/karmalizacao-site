@@ -1,0 +1,97 @@
+{
+  "name": "Conjurador",
+  "function": "Lançamento frequente de feitiços, preparação arcana e manipulação da execução de técnicas.",
+  "identity": "O Conjurador domina o ato de lançar magias: guarda uma fórmula prestes a se completar, divide uma descarga e força uma segunda conjuração. Seu repertório vem de técnicas aprendidas e fontes legitimamente acessíveis, sem se limitar a um elemento.",
+  "initialBonus": "+4 Vida máxima; +10 Karma máximo; +1 Espírito; +1 em Canalização de Karma.",
+  "recommendedAttributes": "Espírito e Intelecto; outros atributos regentes permanecem necessários para fontes específicas.",
+  "recommendedSkills": "Canalização de Karma, Ocultismo, Investigação, Percepção e as Perícias das fontes utilizadas. Conjuração continua sendo a Perícia dos pactos, não uma Perícia universal de magia.",
+  "trait": {
+    "name": "Feitiço de Ofício",
+    "description": "Principal, 0 Karma, uma vez no próprio turno. Escolha uma expressão de Karma puro: Dardo Arcano, ataque de Espírito + Canalização de Karma contra CA a até 15 m, dano-base 1d6 kármico, total integral/parcial metade/falha zero, defesas normais; Mão Arcana, manipule um objeto solto e consentido de até 0,25 espaços a até 5 m, movendo-o até 2 m, sem ataque, uso de consumível, mecanismo trancado, roubo, recarga ou pressão sobre criatura; ou Lume, luz visível de raio 3 m presa a um objeto consentido tocado ou ponto livre percebido a até 5 m, durante três rodadas, uma aplicação por vez, sem revelar invisíveis. Cada uso executa uma expressão, sem outra ação ou efeito gratuito. Dardo evolui para 1d8 na Etapa III, 1d10 na V e 1d12 na VII. Essas expressões são habilidades fixas de classe, não técnicas de Grau; não recebem sobretaxa de improvisação, ampliação de técnica ou conversão em área. Não exigem foco específico; precisam de gesto ou enunciação registrados na ficha. Não concedem elementos, Bênçãos ou Corrupção."
+  },
+  "abilities": [
+    {
+      "name": "Trama Suspensa",
+      "usage": "Principal, 2 Karma além de todos os custos da técnica preparada. Uma trama por vez.",
+      "effect": "Escolha uma técnica conhecida de execução Principal, instantânea e sem sustentação, que você possa executar. Pague sua ação e custos na preparação e registre a versão, opções e parâmetros; o efeito ainda não acontece. Até o fim do seu próximo turno, pode liberá-la como Extra no próprio turno, escolhendo um alvo atualmente válido e fazendo seus testes normais. Origem, alcance e linha de efeito são verificados na liberação; preparar não fixa um alvo através de paredes nem garante acerto. Custos, riscos e requisitos de fonte ocorrem nos instantes exigidos por essa fonte, sem serem dispensados ou repetidos apenas por guardar a trama. Não armazena Grau V, assinaturas, outras habilidades de classe, invocações, rituais prolongados ou técnicas de reação. Manter a trama não exige ação adicional. Ela se desfaz no prazo, se você ficar Inconsciente, perder a capacidade de conjurar ou preparar outra, sem devolver custos. Liberar Trama Suspensa e usar Conjuração de Ímpeto são alternativas: não pode fazer ambos no mesmo turno, nem combiná-los com outra Principal adicional recebida naquele turno."
+    },
+    {
+      "name": "Cisão de Feitiço",
+      "usage": "Livre, 3 Karma adicionais, antes do teste de uma técnica conhecida de dano instantâneo e alvo único; uma vez no próprio turno.",
+      "effect": "Exige reserva de pelo menos dois d20 e dano-base de pelo menos dois dados. Escolha dois alvos percebidos válidos para a técnica. Divida previamente os d20 da reserva e os dados-base de dano entre eles, ao menos um de cada por alvo; nenhum dado é duplicado. Cada reserva recebe o treinamento e modificadores de teste normais, seleciona seu próprio resultado e enfrenta CA e defesas separadamente. Distribua dados adicionais e bônus fixos de dano antes das rolagens, sem duplicá-los. Críticos e parciais modificam somente a parcela destinada ao respectivo alvo. O efeito dividido é somente dano: renuncie a condições, cura, deslocamentos e outros efeitos da técnica nesse uso. Não afeta áreas, assinaturas, Grau V, danos persistentes ou técnicas que já atinjam múltiplos alvos. Pague o custo normal uma vez, além dos 3 Karma, preservando riscos e consequências da fonte. Conta como uma técnica e não ativa um benefício de conjuração duas vezes; benefícios por alvo ou dano efetivo conservam suas condições normais."
+    },
+    {
+      "name": "Conjuração de Ímpeto",
+      "usage": "Extra, 4 Karma além do custo da segunda técnica; uma vez no próprio turno.",
+      "effect": "Depois de resolver uma técnica conhecida de execução Principal no próprio turno, pagando ao menos 1 Karma no custo final dela, execute imediatamente uma segunda técnica conhecida de execução Principal, instantânea e de até Grau II. Pague todos os custos e faça todos os testes e riscos da segunda técnica normalmente. Pode escolher outro alvo e outra fonte legítima. Não concede Movimento ou outra Extra. Feitiço de Ofício não habilita o gatilho. Não permite assinaturas, Grau V, invocações, rituais prolongados ou ativar outra habilidade de classe como a segunda técnica. Não pode usar se já liberou Trama Suspensa, recebeu outra Principal adicional ou executou uma segunda técnica por efeito semelhante naquele turno; depois de usá-la, não pode liberar Trama ou receber outra Principal adicional nesse turno. A habilidade não inicia outra cadeia de conjurações."
+    }
+  ],
+  "amplifications": [
+    {
+      "abilityName": "Trama Suspensa",
+      "name": "Fórmula em Vigília",
+      "description": "Pode conservar a trama até o fim do terceiro turno seu após a preparação, em vez do próximo. Uma vez por cena, ao preparar, dispense os 2 Karma adicionais; o custo e os riscos da técnica permanecem. Continua uma trama, liberada como Extra, e todos os limites de ação permanecem."
+    },
+    {
+      "abilityName": "Cisão de Feitiço",
+      "name": "Sintaxe Ramificada",
+      "description": "Pode dividir entre até três alvos, se possuir ao menos três d20 e três dados-base para distribuir. Cada alvo exige ao menos um d20 e um dado-base; não duplica dados ou dano. Custo adicional permanece 3 Karma e todas as restrições da técnica dividida continuam."
+    },
+    {
+      "abilityName": "Conjuração de Ímpeto",
+      "name": "Ímpeto Superior",
+      "description": "A segunda técnica pode ser de até Grau III, respeitando Etapa e treinamento. Uma vez por cena, pague 2 Karma adicionais em vez de 4. Não amplia o número de conjurações nem remove qualquer limite de ações ou risco de fonte."
+    }
+  ],
+  "progression": [
+    {
+      "stage": "Etapa I",
+      "systemStatus": "+2 Vida máxima.",
+      "classStatus": "+2 Vida máxima.",
+      "status": "Sistema: +2 Vida máxima. Extra do Conjurador: +2 Vida máxima.",
+      "development": "Técnica de Fundamento até Grau II, com fonte e treinamento adequados."
+    },
+    {
+      "stage": "Etapa II",
+      "systemStatus": "+2 Karma máximo.",
+      "classStatus": "+3 Karma máximo; +1 ponto de Atributo à escolha.",
+      "status": "Sistema: +2 Karma máximo. Extra do Conjurador: +3 Karma máximo; +1 ponto de Atributo à escolha.",
+      "development": "Segunda habilidade."
+    },
+    {
+      "stage": "Etapa III",
+      "systemStatus": "+2 Vida máxima; +1 CA.",
+      "classStatus": "+2 Vida máxima.",
+      "status": "Sistema: +2 Vida máxima; +1 CA. Extra do Conjurador: +2 Vida máxima.",
+      "development": "Técnica Evoluída até Grau III, com Perícia 1."
+    },
+    {
+      "stage": "Etapa IV",
+      "systemStatus": "+2 Karma máximo.",
+      "classStatus": "+3 Karma máximo; +1 ponto de Atributo à escolha.",
+      "status": "Sistema: +2 Karma máximo. Extra do Conjurador: +3 Karma máximo; +1 ponto de Atributo à escolha.",
+      "development": "Terceira habilidade."
+    },
+    {
+      "stage": "Etapa V",
+      "systemStatus": "+2 Vida máxima; +2 Karma máximo; +1 CA.",
+      "classStatus": "+1 Espírito.",
+      "status": "Sistema: +2 Vida máxima; +2 Karma máximo; +1 CA. Extra do Conjurador: +1 Espírito.",
+      "development": "Técnica de Assinatura até Grau IV, com Perícia 2."
+    },
+    {
+      "stage": "Etapa VI",
+      "systemStatus": "+2 Karma máximo.",
+      "classStatus": "+4 Karma máximo; +1 ponto de Atributo à escolha.",
+      "status": "Sistema: +2 Karma máximo. Extra do Conjurador: +4 Karma máximo; +1 ponto de Atributo à escolha.",
+      "development": "Primeira ampliação."
+    },
+    {
+      "stage": "Etapa VII",
+      "systemStatus": "+4 Vida máxima; +2 Karma máximo; +1 CA.",
+      "classStatus": "+3 Vida máxima; +4 Karma máximo.",
+      "status": "Sistema: +4 Vida máxima; +2 Karma máximo; +1 CA. Extra do Conjurador: +3 Vida máxima; +4 Karma máximo.",
+      "development": "Técnica de Assinatura Grau V, com Perícia 3; segunda ampliação."
+    }
+  ]
+}

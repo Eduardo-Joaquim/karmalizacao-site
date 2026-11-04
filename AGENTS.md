@@ -143,3 +143,24 @@ lib/combat-visuals.ts e boss-phase-state.ts são a fonte dos avisos: dados reais
 ## Patch 1.14
 
 As ameaças iniciais têm curva I/I/II/III/IV por região e dano básico 1d6/1d8/1d10/2d6. build-early-threats valida reservas e curva. skillsIn lê grupos de perícias sem inferir treino não declarado. Montante, Azagaia, Funda e Baioneta são armas por identificador. Descanso seguro preserva Carga/condições, restaura recursos e desbloqueia a Forma por ação validada. gm-encounter valida importações e biblioteca: não exportar tokens nem payload de jogadores; reconectar referências importadas recupera equipe/iniciativa sem alterar a ficha remota. Não transformar alarmes/terreno em ataques contra CA por conterem a palavra dano.
+
+## Outorga divina
+
+`data/pantheon-deities.json` usa os nove valores completos de PANTHEONS; Tiamat permanece em Outro panteão. Nomes, esferas e preceitos são adaptações do cenário. Atena já era a concessora da Geometria: preservar Aveline e Isadora. Nemeton/Guaraci, Vitral/Surya, Haimaton/Sekhmet, Desespero/Nix, Sceleris/Tyr, Concordato/Jano, Magnetismo/Ogum, Criação de Matéria Inorgânica/Ptah. Outorgas nos manuscritos são compiladas em facts com data-divine-grant; não alterar custos/recursos ao regenerar. DivineState mantém legado; blessings é o registro estruturado, withBlessings espelha a primeira. Comunhão usa Presença; Manifestação usa o regente registrado. Não inferir custo gratuito de uma Bênção sem custo declarado. Favor é recurso dinâmico autorizado, 0–3, mesclado sem sobrescrever construção da ficha. Bestiário permanece somente no site.
+
+## Outorgas do Bestiário — Patch 1.15
+
+data/world-blessings.json identifica dezesseis outorgas em quinze portadores; marcadores data-world-blessing nos manuscritos ligam os altares às fichas compiladas. Não conceder Bênçãos a personagens que só possuem uma subdobra, cópia ou legado transmitido. Motivações divinas são hipóteses narrativas. A Tecelã Exterior permanece fora das nove Asas. Falsa Santa possui Força, Resistência, Técnica e Superação, sem Refinamentos: 3 Karma, Extra, quatro rodadas, uma ativação por cena cada; recursos e custos das técnicas anteriores permanecem intactos.
+
+## Classes e Karma — Patch 1.16
+
+A fonte autoral de classes é data/character-rules.json (17 classes), docs/classes-introducao.html e docs/classes-fecho.html; scripts/build-class-revision.py gera docs/classes.md e os capítulos 6/9, reparando referências obsoletas em 5/13. Não reimporte um livro antigo por cima das aprovações. Conjurador usa Canalização de Karma, não Conjuração de pactos. Aliases de habilidades renomeadas em normalizeCharacterPayload preservam escolhas antigas. data/inventor-projects.json define os limites de dispositivos portáteis; fabricação industrial continua no capítulo 20. Invocador preservado.
+
+Karma tem fonte em docs/karma.md. Não reintroduzir Dissipação ou Contrafluxo universais; término natural, dispensa pelo próprio invocador e condições específicas permanecem. Barreira é Reação: 3 Karma/+2 CA ou 5/+4 numa incidência, sem outra defesa com a mesma Reação. A ação barrier paga Karma e Reação atomicamente, sem alterar CA permanente. Mutações corporais custam 6 Karma; rede gratuita é distinta. Manutenção de 1 Karma e testes de Controle são resolvidos expressamente; o contador não zera ao desligar a Forma.
+
+
+## Patch 2.0 — precedência canônica
+
+O pedido de 01/11/2026 substitui as progressões raciais e ofensivas anteriores. Não incluir Fada como raça: preservar as nove raças existentes e seus marcos II/IV/VI, conforme data/racial-progression.json. Não criar Vaela Caelis; a casa Solvaldren permanece a única ducal de Gaéria. As cinco matrizes de docs/matrizes-tecnicas.md e lib/technique-matrices.ts substituem a curva ofensiva única; cura, escudo e ataques básicos mantêm suas próprias regras. Riscos corruptos e Favor de técnicas divinas IV/V são adicionais ao Karma.
+
+Outorgas atuais em data/world-blessings.json prevalecem sobre as listas históricas acima: Geometria/Minerva, Desespero/Kali, Sceleris/Marte, Concordato/Thoth, Criação/Hefesto; não duplicar bênçãos transmitidas. Liturgias novas alteram a contagem de artes, sem mudar Vida, Karma máximo ou CA auditados. Som e vibração foram removidos, não apenas desativados. Bestiário continua exclusivo do site.

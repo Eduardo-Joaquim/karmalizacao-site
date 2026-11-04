@@ -1,3 +1,4 @@
+import {ContinentalMonstersSection} from '@/components/continental-monsters-section';
 import { ThreatLink } from "@/components/threat-link";
 import { ArrowUpRight, Crown, Landmark, Shield, Skull, Sun, TreePine } from "lucide-react";
 
@@ -28,5 +29,5 @@ export function GaeriaArchive() {
       </section>
       <section className="gaeria-category" id="monstros-gaeria"><header><Skull aria-hidden="true"/><h3>Monstros de Gaéria</h3><span>03</span></header><ThreatLink region="gaeria"/></section>
     </div>
-  </section>;
+  <ContinentalMonstersSection region="gaeria"/></section>;
 }

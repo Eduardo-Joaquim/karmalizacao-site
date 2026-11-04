@@ -1,3 +1,4 @@
+import { NobleTraitCards } from "@/components/noble-details";
 import { abilityCostFields } from "@/lib/ability-cost-fields";
 import { TechniqueCost } from "@/components/technique-cost";
 import { costDisclosureHtml } from "@/lib/cost-disclosure";
@@ -6,15 +7,18 @@ import court from "@/data/court-sheets.json";
 import { plainSkillText } from "@/lib/skill-display";
 type Block = (typeof court)[number]["blocks"][number];
 function Fields({ block }: { block: Block }) { return <div className="saint-tech-fields">{abilityCostFields("prorrogadora-da-extincao",block.title,block.fields).filter(f=>f.label!=="Uso").map((f,i)=>f.label==="Composição de Karma"?<TechniqueCost key={i} html={f.html}/>:<div key={i} className={`saint-tech-field ${f.label === "Limites" ? "saint-tech-limits" : ""}`}>{f.label && <h5>{f.label}</h5>}<div dangerouslySetInnerHTML={{__html:costDisclosureHtml(f.html)}}/></div>)}</div>; }
-export function FalseSaintRepertoire({ blocks }: { blocks: Block[] }) {
+export function FalseSaintRepertoire({ blocks, hidePowers=false }: { blocks: Block[]; hidePowers?:boolean }) {
   const abilities=blocks.filter(b=>b.kind === "ability");
   const signatures=abilities.filter(b=>/^(Frankenstein|Dia do Julgamento)/.test(b.title));
   const trumpets=abilities.filter(b=>/^[IVX]+ ·/.test(b.title));
   const ordinary=abilities.filter(b=>!signatures.includes(b)&&!trumpets.includes(b));
   const groups=[{id:"blessing",name:"Fios da Providência Usurpada",label:"BÊNÇÃO",copy:"Os fios que aproximam as bordas da vida.",Icon:HeartHandshake,match:"Bênção"},{id:"divine",name:"Milagres da Prorrogadora",label:"PODER DIVINO",copy:"Cinco nomes pronunciados como promessas.",Icon:Sparkles,match:"Divino"},{id:"corrupt",name:"A Linha Profana",label:"CORRUPÇÃO",copy:"A carne permanece. A escolha pode desaparecer.",Icon:Skull,match:"Corrupção"}];
   const notes=blocks.filter(b=>b.kind!=="ability"&&b.title!=="Perícias"&&b.title!=="As sete trombetas");
+  const powers=notes.filter(b=>/^Domínio —/.test(b.title)||b.fields.some(f=>f.html.includes('data-world-blessing')));
   return <div className="saint-repertoire">
-    <div className="saint-rules-grid">{notes.map((block,i)=><section key={block.title} className={`saint-rule saint-rule-${block.kind}`}><header><span>{String(i+1).padStart(2,"0")}</span><h3>{block.title}</h3></header><Fields block={block}/></section>)}</div>
+    {!hidePowers&&<NobleTraitCards facts={powers.map(b=>({fields:[{label:b.title,html:b.fields.map(f=>f.html).join(' ')}]}))}/>}
+
+    <div className="saint-rules-grid">{notes.filter(b=>!powers.includes(b)).map((block,i)=><section key={block.title} className={`saint-rule saint-rule-${block.kind}`}><header><span>{String(i+1).padStart(2,"0")}</span><h3>{block.title}</h3></header><Fields block={block}/></section>)}</div>
     {groups.map(group=><section key={group.id} className={`saint-source saint-source-${group.id}`} aria-label={group.label}>
       <header className="saint-source-heading"><div className="saint-source-seal"><group.Icon aria-hidden="true"/></div><div><p>{group.label}</p><h3>{group.name}</h3><span>{group.copy}</span></div></header>
       <div className="saint-tech-grid">{ordinary.filter(b=>plainSkillText(b.fields.find(f=>f.label==="Uso")?.html??"").split(" · ").includes(group.match)).map((block,i)=>{

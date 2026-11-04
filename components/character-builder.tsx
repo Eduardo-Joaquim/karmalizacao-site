@@ -79,6 +79,7 @@ import {
   getFinalSkill,
   getProgressionRewards,
   getSkillLevelBreakdown,
+  getStageIndex,
   type BonusChoiceSlot,
   type SkillTier,
 } from "@/lib/character-rules";
@@ -467,6 +468,8 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
             ...next.allocations,
             raceAttributes: [],
             raceSkills: [],
+            humanTraining: undefined,
+            humanSignature: undefined,
           },
         };
       }
@@ -927,7 +930,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                       <div>
                         <span>{attribute.slice(0, 3).toUpperCase()}</span>
                         <h3>{attribute}</h3>
-                        <small>
+                        <div className="attribute-result"><strong>{total}</strong><span>{Math.ceil(total/2)}d20</span></div><small>
                           Total {total}
                           {automaticBonus ? ` · +${automaticBonus} automático` : ""}
                         </small>
@@ -989,6 +992,14 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                 </span>
               </div>
 
+              {draft.race === "Humano" && getStageIndex(draft.stage) >= 2 && <label className="character-field">
+                <span>Improviso sob Pressão · Perícia adicional</span>
+                <NativeSelect value={draft.allocations.humanTraining ?? ""} onChange={e => updateDraft("allocations", {...draft.allocations, humanTraining:e.target.value})}>
+                  <NativeSelectOption value="">Escolha uma perícia</NativeSelectOption>
+                  {ALL_SKILLS.map(skill => <NativeSelectOption key={skill} value={skill}>{skill}</NativeSelectOption>)}
+                </NativeSelect>
+                <small>Eleva uma perícia em um nível, respeitando o teto da Etapa.</small>
+              </label>}
               <AllocationPanel
                 title="Raça"
                 description="Bônus Comum: complete nível 1, sem ultrapassar esse teto."
@@ -1114,7 +1125,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                             key={skill}
                           >
                             <span>
-                              <strong>{skill}</strong>
+                              <strong>{skill}</strong><small className="skill-category-badge">{group.name}</small>
                               <small>
                                 Nível {total} · bônus +{([0, 2, 5, 10][total] ?? 0)}
                                 {test.analyticBonus ? ` · análise +${test.analyticBonus}` : ""}
@@ -1132,7 +1143,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                                   ? " · redistribua os pontos incompatíveis"
                                   : ""}
                               </small>
-                              {group.name === "Mentais" || group.name === "Sociais" || ["Conjuração", "Comunhão Divina", "Controle da Corrupção"].includes(skill) ? <small className="skill-test-preview">{test.attribute} {test.value}: {test.dice}d20, {test.selection}, +{test.bonus}{group.name === "Sociais" && test.attribute === "Intelecto" ? " · abordagem racional" : ""}{skill === "Conjuração" ? " · contenção comum; uso Vincular exige Presença" : ""}</small> : null}
+                              {true ? <small className="skill-test-preview">{test.attribute} {test.value}: {test.dice}d20, {test.selection}, +{test.bonus}{group.name === "Sociais" && test.attribute === "Intelecto" ? " · abordagem racional" : ""}{skill === "Conjuração" ? " · contenção comum; uso Vincular exige Presença" : ""}</small> : null}
                             </span>
                             <PointStepper
                               label={`${skill}, pontos-base`}

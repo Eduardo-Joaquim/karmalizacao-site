@@ -48,7 +48,7 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 **Defesa e sinais:** a CA já inclui a proteção pessoal da bênção. Dois selos quadrados giram junto aos ombros, cada um com CA 18 e Vida 12. Atacá-los exige uma ação e um ataque próprio; não se retira Vida da rainha pelo mesmo golpe. Cada selo destruído reduz sua CA em 2, até 25; os selos não são recriados durante a cena. Destruí-los não remove a bênção ou as Expressões conhecidas.
 
-**Bênção hereditária — Geometria do Amparo:** concedida à linhagem por Atena após a defesa de uma cidade sitiada. Atributo regente: Espírito. Núcleo: dar existência a superfícies geométricas que separam espaços, interceptam trajetórias e redistribuem impactos. Dom Inicial: sustentar uma placa do tamanho da mão para aparar chuva, apoiar um objeto leve ou apresentar o brasão, sem benefício de combate. A Marca Divina são ângulos verdes luminosos nas íris. A bênção não cria matéria dentro de corpos, não corta almas, não produz ar respirável e não concede invulnerabilidade. Sua interdição proíbe manter deliberadamente uma pessoa indefesa presa numa barreira enquanto lhe nega água; a rainha precisa desfazer a prisão antes de violá-la.
+**Bênção hereditária — Geometria do Amparo:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-1"></span> Minerva entregou os seis ângulos do amparo à linhagem que sustentou uma cidade sitiada. Aveline guarda essa outorga hereditária em defesa de quem vive dentro das muralhas. concedida à linhagem por Minerva após a defesa de uma cidade sitiada. Atributo regente: Espírito. Núcleo: dar existência a superfícies geométricas que separam espaços, interceptam trajetórias e redistribuem impactos. Dom Inicial: sustentar uma placa do tamanho da mão para aparar chuva, apoiar um objeto leve ou apresentar o brasão, sem benefício de combate. A Marca Divina são ângulos verdes luminosos nas íris. A bênção não cria matéria dentro de corpos, não corta almas, não produz ar respirável e não concede invulnerabilidade. Sua interdição proíbe manter deliberadamente uma pessoa indefesa presa numa barreira enquanto lhe nega água; a rainha precisa desfazer a prisão antes de violá-la.
 
 ##### 1 · Face do Juramento
 
@@ -56,11 +56,15 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 **Composição de Karma:** 6 base iv + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Pavilhão de Seis Faces
 
 **Fonte e Grau:** Bênção III; defesa. **Uso:** Principal, 9 Karma, até quatro criaturas voluntárias a até 5 m, por duas rodadas. Cada uma recebe 2d6 de escudo temporário, rolados separadamente, até o início do segundo turno seguinte de Aveline. Os escudos não se somam a outros escudos temporários: conserve o maior valor restante. Não aumentam a CA, não removem condições e não são renovados automaticamente. Sem teste contra aliados voluntários; não possui parcial.
 
 **Composição de Karma:** 4 base iii + 4 área / destinatários + 1 duração = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Cela de Ângulos Vivos
 
@@ -68,23 +72,31 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 **Composição de Karma:** 6 base iv + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Agulha do Tetraedro
 
-**Fonte e Grau:** Bênção IV; ataque. **Uso:** Principal, 8 Karma, um alvo percebido a até 15 m; instantâneo. Maior de 5d20 +10 contra CA. Um vértice projetado causa 2d12 de dano divino no total; parcial metade, falha nenhum dano. Não ignora armadura ou cobertura e não causa ferimento adicional gratuito. A luz se concentra entre os dedos antes do disparo, permitindo reconhecer sua direção.
+**Fonte e Grau:** Bênção IV; ataque. **Uso:** Principal, 8 Karma, um alvo percebido a até 15 m; instantâneo. Maior de 5d20 +10 contra CA. Um vértice projetado causa 2d10 de dano divino no total; parcial metade, falha nenhum dano. Não ignora armadura ou cobertura e não causa ferimento adicional gratuito. A luz se concentra entre os dedos antes do disparo, permitindo reconhecer sua direção.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Lança das Comportas
 
-**Fonte e Grau:** Água conduzida pela bênção, III; ataque elemental. **Uso:** Principal, 7 Karma, um alvo a até 15 m; instantâneo. Exige pelo menos um litro de água disponível e uma trajetória desobstruída. Maior de 5d20 +10 contra CA; total 2d10 de dano elemental de Água e deslocamento de 2 m para trás por passagem possível; parcial metade do dano e 1 m; falha nenhum efeito. A água percorre um canal triangular visível. A geometria não acrescenta dano divino, ataque extra ou vantagem adicional de fonte.
+**Fonte e Grau:** Água conduzida pela bênção, III; ataque elemental. **Uso:** Principal, 7 Karma, um alvo a até 15 m; instantâneo. Exige pelo menos um litro de água disponível e uma trajetória desobstruída. Maior de 5d20 +10 contra CA; total 2d8 de dano elemental de Água e deslocamento de 2 m para trás por passagem possível; parcial metade do dano e 1 m; falha nenhum efeito. A água percorre um canal triangular visível. A geometria não acrescenta dano divino, ataque extra ou vantagem adicional de fonte.
 
 **Composição de Karma:** 4 base iii + 2 alcance médio + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Guilhotina do Rio Suspenso
 
-**Fonte e Grau:** Água e moldura de barreiras, IV; ataque elemental. **Uso:** Principal, 8 Karma, linha de 5 m de comprimento e 1 m de largura que começa a até 5 m, até dois alvos; instantâneo. Exige água disponível. Maior de 5d20 +10, comparado separadamente à CA de cada alvo; total 2d12 elemental de Água, parcial metade, falha nenhum dano. Não imobiliza, não atravessa cobertura total e não acumula bônus por ser uma combinação de fontes. Um retângulo cheio de água anuncia o plano do corte antes de a lâmina descer.
+**Fonte e Grau:** Água e moldura de barreiras, IV; ataque elemental. **Uso:** Principal, 8 Karma, linha de 5 m de comprimento e 1 m de largura que começa a até 5 m, até dois alvos; instantâneo. Exige água disponível. Maior de 5d20 +10, comparado separadamente à CA de cada alvo; total 2d10 elemental de Água, parcial metade, falha nenhum dano. Não imobiliza, não atravessa cobertura total e não acumula bônus por ser uma combinação de fontes. Um retângulo cheio de água anuncia o plano do corte antes de a lâmina descer.
 
 **Composição de Karma:** 6 base iv + 2 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Três Rodadas sem Ferida
 
@@ -97,6 +109,8 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 **Fronteiras e preço:** não devolve clima, desabamento sem fonte ativa identificável, veneno já ingerido, doença instalada, juramento aceito ou o custo dos próprios poderes. Não atinge um agressor além de 30 m e não cancela automaticamente autoridade divina fora da escala mortal. Encerrada a barreira, perde as duas Reações até o início de seu turno seguinte; não pode reativá-la naquela cena. A rainha ainda precisa perceber a ameaça, conservar sua Reação comum e vencer o confronto: três rodadas de possibilidade de reflexão não são imunidade a todo o combate.
 
 **Composição de Karma:** 12 base v + 1 reação de reflexão + 4 alcance longo + 2 duração três rodadas − 2 preparo e uso limitado = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Isadora de Valdária · Cantus Primus {#princesa-isadora}
 
@@ -112,9 +126,9 @@ Em cena, Isadora afina o instrumento antes de responder a uma acusação. Quando
 
 **Identidade:** Humana · Bardo · Etapa V · chefe S. **Vida:** 120. **Karma:** 64. **CA:** 25. **Deslocamento:** 10 m. **Atributos:** Força 2 · Agilidade 5 · Constituição 5 · Intelecto 6 · Presença 7 · Espírito 7.
 
-**Perícias:** Manifestação de Bênção 2 e Atuação 2, ambas com maior de 4d20 +5; Reflexos 2, maior de 3d20 +5; Atletismo 1, maior de 3d20 +2; Persuasão 2, maior de 4d20 +5. Demais 0. Ataque básico: Principal, 1d20 +0, até 2 m, 1d4 físico, sem Karma; parcial metade, falha nada. Sem Resistência ou imunidade adicional.
+**Perícias:** Comunhão Divina 2 (Presença, maior de 4d20 +5); Manifestação de Bênção 2 e Atuação 2, ambas com maior de 4d20 +5; Reflexos 2, maior de 3d20 +5; Atletismo 1, maior de 3d20 +2; Persuasão 2, maior de 4d20 +5. Demais 0. Ataque básico: Principal, 1d20 +0, até 2 m, 1d4 físico, sem Karma; parcial metade, falha nada. Sem Resistência ou imunidade adicional.
 
-**Bênção e defesa:** compartilha concessora, Núcleo e interdição da linhagem, com Espírito como regente. Seu Dom Inicial produz uma placa para sustentar a partitura, sem proteção em combate. A Marca se manifesta como pautas luminosas nos olhos. A CA inclui quatro pontos de proteção sonora: se estiver Silenciada ou não conseguir tocar o instrumento, cai para 21. As seis aplicações abaixo exigem instrumento empunhado e liberdade de tocar. Danificar o ukulele exige um ataque próprio contra CA 17 e Vida 10 ou uma manobra válida de desarme; a bênção não é destruída com ele. Um instrumento substituto precisa de uma Principal para afinação.
+**Bênção e defesa:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-2"></span> Geometria do Amparo: Isadora herdou a dádiva de Minerva sem extinguir a manifestação de Aveline; seus acordes dão voz aos mesmos seis ângulos de proteção. compartilha concessora, Núcleo e interdição da linhagem, com Espírito como regente. Seu Dom Inicial produz uma placa para sustentar a partitura, sem proteção em combate. A Marca se manifesta como pautas luminosas nos olhos. A CA inclui quatro pontos de proteção sonora: se estiver Silenciada ou não conseguir tocar o instrumento, cai para 21. As seis aplicações abaixo exigem instrumento empunhado e liberdade de tocar. Danificar o ukulele exige um ataque próprio contra CA 17 e Vida 10 ou uma manobra válida de desarme; a bênção não é destruída com ele. Um instrumento substituto precisa de uma Principal para afinação.
 
 ##### 1 · Acorde de Abrigo
 
@@ -122,17 +136,23 @@ Em cena, Isadora afina o instrumento antes de responder a uma acusação. Quando
 
 **Composição de Karma:** 4 base iii + 2 área / destinatários = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Contratempo de Vidro
 
 **Fonte e Grau:** Bênção III. **Uso:** Reação defensiva, 5 Karma, uma criatura a até 5 m, antes do dano de um ataque percebido. Maior de 4d20 +5 contra o resultado atacante. Se superar, a placa sonora reduz aquele dano a 0 e impede efeitos dependentes do acerto; empate reduz o dano à metade e usa a forma reduzida dos efeitos; se perder, não reduz. Não reflete e não permite Evasão na mesma resolução.
 
 **Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Nota de Ruptura
 
-**Fonte e Grau:** Bênção II. **Uso:** Principal, 3 Karma, um alvo a até 5 m; maior de 4d20 +5 contra CA. Uma lâmina de ressonância causa 1d12 de dano divino; parcial metade e falha nada. Não quebra equipamentos automaticamente e não atravessa proteção total.
+**Fonte e Grau:** Bênção II. **Uso:** Principal, 3 Karma, um alvo a até 5 m; maior de 4d20 +5 contra CA. Uma lâmina de ressonância causa 2d6 de dano divino; parcial metade e falha nada. Não quebra equipamentos automaticamente e não atravessa proteção total.
 
 **Composição de Karma:** 3 base ii = 3 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Compasso dos que Permanecem
 
@@ -140,17 +160,34 @@ Em cena, Isadora afina o instrumento antes de responder a uma acusação. Quando
 
 **Composição de Karma:** 4 base iii + 4 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Cadência da Passagem
 
 **Fonte e Grau:** arte de Bardo II. **Uso:** Principal, 5 Karma, até dois aliados voluntários a até 5 m. Cada um pode deslocar-se imediatamente até 2 m por caminho possível, sem ataque adicional e sujeito aos gatilhos normais de movimento. Não atravessa criaturas, paredes ou contenção que impeça movimento. Cada alvo escolhe se aceita. Sem teste ou parcial.
 
 **Composição de Karma:** 3 base ii + 2 área / destinatários = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Herança do Primeiro Acorde
 
 **Fonte e Grau:** assinatura da Bênção IV. **Uso:** Principal, 10 Karma, uma vez por cena, círculo de raio 2 m centrado nela; até o início do segundo turno seguinte. O círculo tem uma reserva única de escudo de 2d10, compartilhada pelas criaturas que Isadora declarar protegidas ao criar a barreira. Ataques que cruzem a borda consomem essa reserva depois das reduções normais; ela não se multiplica pelo número de pessoas ou de ataques. Não contém inimigos, não protege contra efeitos que já se originem dentro e termina se Isadora perder a capacidade de tocar. Não reflete. Sem teste de criação ou parcial; qualquer dano excedente atinge o alvo original.
 
 **Composição de Karma:** 6 base iv + 2 área / destinatários + 2 seleção de aliados = 10 Karma. Manutenção e outros recursos são pagos separadamente.
+
+
+**Comunhão Divina — Minerva:** <span data-divine-grant="minerva">Outorga litúrgica de Minerva · Romano — Asa da Autoridade</span> Arquiteta da Cidade Justa. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar arquitetura com responsabilidade e cumprir a palavra empenhada em nome de Minerva. Profanação: Usar a dádiva para profanar arquitetura ou quebrar deliberadamente um juramento feito a Minerva.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
+##### Liturgia · Consagração do Sexto Ângulo
+
+**Fonte e Grau:** Divino III. **Uso:** Principal, 7 Karma; Até dois aliados voluntários a 5 m recebem 2d6 de Escudo Temporário. Até o início do próximo turno de Isadora, o primeiro deslocamento de cada um pode atravessar um espaço aliado sem custo extra. O escudo não se acumula: conserve o maior restante; a passagem não atravessa inimigos ou obstáculos. Sem teste em voluntários; nenhuma cura ou reposição de ações.
+
+**Composição de Karma:** 4 Base III + 2 Dois destinatários + 1 Passagem coordenada = 7 Karma.
+
+**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Brígida de Valdária · Manus Ferrea {#princesa-brigida}
 
@@ -166,7 +203,7 @@ Brígida não conspira contra a sucessora. Os conspiradores tentam falar por ela
 
 **Identidade:** Humana · Pugilista · Etapa IV · chefe A. **Vida:** 100. **Karma:** 42. **CA:** 23. **Deslocamento:** 11 m. **Atributos:** Força 6 · Agilidade 6 · Constituição 6 · Intelecto 3 · Presença 4 · Espírito 4.
 
-**Perícias:** Luta 2 e Reflexos 2, maior de 3d20 +5; Atletismo 1, maior de 3d20 +2. Demais 0. Ataque básico: Principal, até 2 m, maior de 3d20 +5, 1d10 físico; parcial metade, falha nada. A CA combina postura, treino e proteções de antebraço, sem camada sobrenatural removível. Não possui Bênção, Resistência a dano ou Grau IV. As quatro técnicas abaixo usam reforço de Karma e não acrescentam CA.
+**Perícias:** Comunhão Divina 2 (Presença, maior de 3d20 +5); Luta 2 e Reflexos 2, maior de 3d20 +5; Atletismo 1, maior de 3d20 +2. Demais 0. Ataque básico: Principal, até 2 m, maior de 3d20 +5, 1d10 físico; parcial metade, falha nada. A CA combina postura, treino e proteções de antebraço, sem camada sobrenatural removível. Não possui Bênção, Resistência a dano ou Grau IV. As quatro técnicas abaixo usam reforço de Karma e não acrescentam CA.
 
 ##### 1 · Punho de Pedra Franca
 
@@ -191,6 +228,17 @@ Brígida não conspira contra a sucessora. Os conspiradores tentam falar por ela
 **Grau III. Uso:** Reação comum, 5 Karma, uma vez por rodada. Quando um ataque corpo a corpo percebido contra Brígida resultar em falha pela CA, pode golpear o agressor se ele estiver a até 2 m. Não dispara contra parcial, ataque à distância ou apenas por ter vencido uma Evasão. Maior de 3d20 +5 contra CA; total 2d10 físicos, parcial metade, falha nada. Consome a permissão compartilhada de Principal adicional da rodada; se ela já a usou, não pode ativar. A Reação defensiva adicional não executa este ataque.
 
 **Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+
+**Comunhão Divina — Marte:** <span data-divine-grant="marte">Outorga litúrgica de Marte · Romano — Asa da Autoridade</span> Guardião da Vanguarda. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar ordem militar com responsabilidade e cumprir a palavra empenhada em nome de Marte. Profanação: Usar a dádiva para profanar ordem militar ou quebrar deliberadamente um juramento feito a Marte.
+
+##### Liturgia · Juramento da Porta Acesa
+
+**Fonte e Grau:** Divino III. **Uso:** Reação, 5 Karma; Quando um aliado a até 5 m receber um Acerto Total, Brígida promete sustentar sua retirada e concede 2d6 de Escudo antes do dano. O aliado pode recuar 2 m por um percurso livre após a resolução, se consciente. A chama marca o ponto de partida até o fim do próximo turno, sem causar dano ou cegar. Um beneficiário por uso; não combina outra defesa com a mesma Reação.
+
+**Composição de Karma:** 4 Base III + 1 Reação de amparo = 5 Karma.
+
+**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Conselheiro Tomás Ardel · Ultima Ianua {#conselheiro-tomas}
 

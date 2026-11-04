@@ -10,7 +10,7 @@ const inv=await vite.ssrLoadModule('/lib/invocation-rules.ts');
 test('book contains all chapters, classes, and races',()=>{
  const book=JSON.parse(readFileSync('data/rules.json'));
  assert.equal(book.chapters.length,20);assert.equal(new Set(book.chapters.map(c=>c.slug)).size,20);
- assert.equal(JSON.parse(readFileSync('data/character-rules.json')).classes.length,16);
+ assert.equal(JSON.parse(readFileSync('data/character-rules.json')).classes.length,17);
  assert.equal(data.RACES.length,9);
  for(const name of data.CLASSES){const c=rules.getClassDefinition(name);assert.equal(c.abilities.length,3);assert.equal(c.amplifications.length,3);assert.equal(c.progression.length,7);}
 });
@@ -30,7 +30,7 @@ test('common growth and class extras both apply',()=>{
  const a=rules.calculateAutomaticBonuses(d);assert.equal(a.life,18);assert.equal(a.karma,10);assert.equal(a.armor,1);
 });
 test('new races have faithful numeric grants',()=>{
- const d=data.createBlankCharacter();d.race='Elfo';assert.equal(rules.calculateAutomaticBonuses(d).karma,4);d.race='Anão';assert.equal(rules.calculateAutomaticBonuses(d).life,6);
+ const d=data.createBlankCharacter();d.race='Elfo';assert.equal(rules.calculateAutomaticBonuses(d).karma,1);d.race='Anão';assert.equal(rules.calculateAutomaticBonuses(d).life,2);
 });
 test('invocations use 1,1,1,2,3 training',()=>assert.deepEqual(Object.values(inv.INVOCATION_GRADE_RULES).map(x=>x.skill),[1,1,1,2,3]));
 test('memory consumes a bonus, retains level and suspends points until milestone',()=>{

@@ -26,9 +26,11 @@ Ele recusa uma coroa que exigiria abandonar as ruas onde cresceu. Recebe pretend
 
 ##### 1 · Ruína {#aqwa-ruina}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d12 físico** e Caído. Parcial causa metade, sem derrubar. Levantar consome Movimento.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d8 físico** e Caído. Parcial causa metade, sem derrubar. Levantar consome Movimento.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Cerco {#aqwa-cerco}
 
@@ -36,41 +38,55 @@ Ele recusa uma coroa que exigiria abandonar as ruas onde cresceu. Recebe pretend
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Cisma {#aqwa-cisma}
 
-**Fonte e Grau:** Karma IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d12 físico** e Guarda Rota, reduzindo a CA em 3 até o final do próximo turno da vítima. Parcial metade, sem condição. Guarda Rota não acumula consigo mesma.
+**Fonte e Grau:** Karma IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d10 físico** e Guarda Rota, reduzindo a CA em 3 até o final do próximo turno da vítima. Parcial metade, sem condição. Guarda Rota não acumula consigo mesma.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Rechaço {#aqwa-rechaco}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Reação, 8 Karma, quando um ataque corpo a corpo percebido erra sua CA. Luta contra CA do atacante a 2 m: **2d12 físico** e empurrão de 4 m; se houver obstáculo antes dessa distância, o alvo fica Caído, sem dano adicional. Parcial metade sem deslocamento. Não responde a contra-ataques nem inicia ciclos de reação.
+**Fonte e Grau:** Marcial IV. **Uso:** Reação, 8 Karma, quando um ataque corpo a corpo percebido erra sua CA. Luta contra CA do atacante a 2 m: **2d8 físico** e empurrão de 4 m; se houver obstáculo antes dessa distância, o alvo fica Caído, sem dano adicional. Parcial metade sem deslocamento. Não responde a contra-ataques nem inicia ciclos de reação.
 
 **Composição de Karma:** 6 base iv + 1 reação + 1 efeito menor = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Lastro {#aqwa-lastro}
 
-**Fonte e Grau:** Karma IV. **Uso:** Principal, 13 Karma, chão em raio de 4 m. Luta contra Reflexos de cada outra criatura apoiada no solo. Vitória causa **2d12 físico** e Lento, reduzindo o deslocamento pela metade até o final do próximo turno da vítima. Derrota causa metade, sem condição. Não alcança criaturas voando ou suspensas; aliados também são afetados.
+**Fonte e Grau:** Karma IV. **Uso:** Principal, 13 Karma, chão em raio de 4 m. Luta contra Reflexos de cada outra criatura apoiada no solo. Vitória causa **2d10 físico** e Lento, reduzindo o deslocamento pela metade até o final do próximo turno da vítima. Derrota causa metade, sem condição. Não alcança criaturas voando ou suspensas; aliados também são afetados.
 
 **Composição de Karma:** 6 base iv + 4 área / destinatários + 3 função secundária iii = 13 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Quebranto {#aqwa-quebranto}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d12 físico** e Braço Inerte, impondo −3 aos ataques que usem um braço escolhido até o final do próximo turno da vítima. Parcial metade sem penalidade. Não amputa nem destrói equipamentos.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d8 físico** e Braço Inerte, impondo −3 aos ataques que usem um braço escolhido até o final do próximo turno da vítima. Parcial metade sem penalidade. Não amputa nem destrói equipamentos.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Interdito {#aqwa-interdito}
 
-**Fonte e Grau:** Karma IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d12 físico** e Desorientado até o final do próximo turno da vítima; enquanto durar, ela não pode usar Reações. Parcial metade, sem condição. Não remove ações já resolvidas.
+**Fonte e Grau:** Karma IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d10 físico** e Desorientado até o final do próximo turno da vítima; enquanto durar, ela não pode usar Reações. Parcial metade, sem condição. Não remove ações já resolvidas.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Ananké {#aqwa-ananke}
 
-**Fonte e Grau:** Marcial V. **Uso:** Principal, 19 Karma, uma vez por cena, alvo a 2 m. Al-Aqwa firma os pés e desfere um golpe curto contra o centro do corpo. Luta contra CA: total **3d10 físico** e Abalado Grave por duas rodadas: deslocamento reduzido à metade, sem Reações e −3 aos ataques. No início de cada turno, a vítima pode testar Constituição + Atletismo, CD 22; sucesso encerra a condição antes de agir. Parcial causa metade do dano, sem condição. O golpe não recebe os danos das outras técnicas nem exige que o alvo esteja previamente agarrado.
+**Fonte e Grau:** Marcial V. **Uso:** Principal, 19 Karma, uma vez por cena, alvo a 2 m. Al-Aqwa firma os pés e desfere um golpe curto contra o centro do corpo. Luta contra CA: total **3d8 físico** e Abalado Grave por duas rodadas: deslocamento reduzido à metade, sem Reações e −3 aos ataques. No início de cada turno, a vítima pode testar Constituição + Atletismo, CD 22; sucesso encerra a condição antes de agir. Parcial causa metade do dano, sem condição. O golpe não recebe os danos das outras técnicas nem exige que o alvo esteja previamente agarrado.
 
 **Composição de Karma:** 12 base v + 1 duração + 6 função secundária iv = 19 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau V: 3d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Sahar · Sayf {#candidata-sahar}
 
@@ -92,11 +108,15 @@ Sahar reuniu veteranos sem soldo e abriu as portas de seu quartel às famílias 
 
 **Composição de Karma:** 6 base iv + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Esquiva {#sahar-esquiva}
 
 **Fonte e Grau:** Karma III. **Uso:** Reação, 6 Karma, diante de ataque percebido. Reduz o dano em **2d10** e permite recuar 2 m após a resolução, se houver passagem livre. Esse recuo não atravessa criaturas nem paredes.
 
 **Composição de Karma:** 4 base iii + 1 reação + 1 efeito menor = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Guarda {#sahar-guarda}
 
@@ -104,11 +124,15 @@ Sahar reuniu veteranos sem soldo e abriu as portas de seu quartel às famílias 
 
 **Composição de Karma:** 6 base iv + 1 reação + 3 função secundária iii = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Juramento de Ferro {#sahar-juramento}
 
 **Fonte e Grau:** Karma V. **Uso:** Principal, 22 Karma, uma vez por cena, alvo a 2 m. Luta contra CA: **3d10 cortante**. Acerto total impede o alvo de atravessar uma linha de 6 m traçada pelo sabre até o final do próximo turno de Sahar, salvo se vencer uma oposição de Força + Atletismo contra o resultado inicial do ataque; tentar atravessar custa 3 m de deslocamento e só admite uma tentativa por turno. Parcial metade sem interdição. A linha desaparece se Sahar ficar inconsciente.
 
 **Composição de Karma:** 12 base v + 4 área / destinatários + 6 função secundária iv = 22 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Naima · Alkahest {#candidata-naima}
 
@@ -131,9 +155,13 @@ As oficinas de Naima sustentam hospitais e cozinhas comunitárias. Ela conhece o
 
 **Fonte e Grau:** Alquimia IV. **Uso:** Principal, 0 Karma, um frasco cáustico, alvo a 15 m. Pontaria contra CA: **4d8 ácido** e −2 aos ataques até o final do próximo turno da vítima. Parcial metade sem penalidade. Lavar o rosto com água, como Livre, remove a penalidade.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Bálsamo {#naima-balsamo}
 
 **Fonte e Grau:** Alquimia III. **Uso:** Principal, 0 Karma, uma dose restauradora, toque em criatura voluntária. Recupera **3d8 + 10 Vida**, sem ultrapassar o máximo. Não regenera órgãos nem desperta mortos.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Sílica {#naima-silica}
 
@@ -141,11 +169,15 @@ As oficinas de Naima sustentam hospitais e cozinhas comunitárias. Ela conhece o
 
 **Composição de Karma:** 6 base iv + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Aqua Regia {#naima-aqua-regia}
 
 **Fonte e Grau:** Alquimia V. **Uso:** Principal, 28 Karma e um frasco cáustico, uma vez por cena, área de 3 m a até 15 m. Pontaria contra Reflexos de todos na área: vitória causa **3d10 ácido** e cria névoa corrosiva por duas rodadas. Quem começar o turno nela recebe 2d8 ácido, uma vez por rodada; sair encerra a exposição. Derrota na oposição inicial causa metade, mas não concede imunidade à névoa. Vento forte a dispersa; Naima e aliados também são afetados. Danos à armadura são superficiais e não destroem itens.
 
 **Composição de Karma:** 12 base v + 2 alcance médio + 4 área / destinatários + 1 duração + 6 função secundária iv + 3 pulsos posteriores = 28 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Zahra · Siroco {#candidata-zahra}
 
@@ -167,11 +199,15 @@ Zahra acompanha caravanas que cruzam os corredores de vento quente. Sua candidat
 
 **Composição de Karma:** 6 base iv + 4 área / destinatários = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Contravento {#zahra-contravento}
 
 **Fonte e Grau:** Elemental de Ar IV. **Uso:** Reação, 9 Karma, projétil físico percebido dirigido a criatura a 10 m. Reduz o dano em **2d12**. Não desvia raios, explosões ou efeitos mentais.
 
 **Composição de Karma:** 6 base iv + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Ascensão {#zahra-ascensao}
 
@@ -179,8 +215,13 @@ Zahra acompanha caravanas que cruzam os corredores de vento quente. Sua candidat
 
 **Composição de Karma:** 4 base iii + 1 movimento + 2 alcance médio = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Samum {#zahra-samum}
 
 **Fonte e Grau:** Elemental de Ar V. **Uso:** Principal, 23 Karma, uma vez por cena, coluna de 4 m de raio a 20 m, duração duas rodadas. Ar contra Reflexos de cada criatura na área: vitória causa **3d10 Ar** e Caído; derrota causa metade, sem condição. Durante a duração, o terreno da coluna custa o dobro de deslocamento e projéteis físicos que a atravessem sofrem −3 ao ataque. Não repete o dano inicial. Zahra pode dissipá-la como Livre; aliados não são imunes.
 
 **Composição de Karma:** 12 base v + 4 alcance longo + 1 duração + 6 função secundária iv = 23 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+

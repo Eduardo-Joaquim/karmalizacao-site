@@ -1,0 +1,27 @@
+import test,{after} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createServer} from 'vite';
+const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:{'@':process.cwd()}},server:{middlewareMode:true,hmr:false}});
+after(()=>vite.close());
+const rules=await vite.ssrLoadModule('/lib/character-rules.ts'),model=await vite.ssrLoadModule('/lib/character-data.ts'),schema=await vite.ssrLoadModule('/lib/character-schema.ts'),divine=await vite.ssrLoadModule('/lib/divine-blessings.ts'),repertoire=await vite.ssrLoadModule('/lib/combat-repertoire.ts'),engine=await vite.ssrLoadModule('/lib/combat-engine.ts');
+const json=p=>JSON.parse(readFileSync(p,'utf8'));
+test('nine canonical Wings have at least four named grantors; primordial is separate',()=>{
+ const ds=json('data/pantheon-deities.json');assert.equal(new Set(ds.map(d=>d.id)).size,ds.length);
+ assert.equal(rules.PANTHEONS.filter(p=>p!=='Outro panteão').length,9);
+ for(const p of rules.PANTHEONS.filter(p=>p!=='Outro panteão'))assert(ds.filter(d=>d.pantheon===p).length>=4,p);
+ for(const d of ds){assert(rules.PANTHEONS.includes(d.pantheon));for(const key of ['id','name','epithet','typicalBlessing','precept','profanation'])assert(d[key].trim());assert(d.spheres.length);}
+ assert.equal(ds.find(d=>d.id==='tiamat').pantheon,'Outro panteão');
+});
+test('all audited court resources, defenses, attributes and techniques are unchanged',()=>{
+ const baseline=json('tests/fixtures/divine-court-mechanics.json');assert(Object.keys(baseline).length>20);
+ for(const [key,expected]of Object.entries(baseline)){const [file,id]=key.split(':');const data=json(`data/${file}.json`);const p=(Array.isArray(data)?data:data.courtProfiles).find(p=>p.id===id);assert(p,key);for(const [field,value]of Object.entries(expected)){if(field==='abilities'){for(const old of value){const art=p.abilities.find(a=>a.id===old.id);assert(art,old.id);for(const k of ['cost','grade','action'])assert.deepEqual(art[k],old[k],`${key} ${old.name} ${k}`);}}else assert.deepEqual(p[field],value,`${key} ${field}`);};}
+});
+test('every requested grant is compiled into court blessing facts',()=>{
+ const expectations={'gaeria':['minerva','minerva'],'elven-gaeria':['guaraci','surya'],'vampire-ignaria':['sekhmet'],'demon-ignaria':['kali','marte','thoth'],'nidavellir':['ogum','hefesto'],'demi-aeria':['tiamat','tiamat']};
+ for(const[file,ids]of Object.entries(expectations)){const text=JSON.stringify(json(`data/${file}.json`).courtProfiles.map(p=>p.facts));for(const id of new Set(ids))assert((text.match(new RegExp(`data-divine-grant=\\\\"${id}`,'g'))??[]).length>=ids.filter(v=>v===id).length,`${file} ${id}`);}
+});
+function sheet(){const d=model.createBlankCharacter();d.name="Portador";d.stage="Etapa IV";d.divine={...d.divine,enabled:true,expression:'Bênção + Comunhão Divina',blessingName:'Forja Viva',deity:'Ogum',pantheon:rules.PANTHEONS[8],regentAttribute:'Intelecto',core:'Modelar o ferro.',liturgies:'Rito da oficina'};d.attributes.Intelecto.base=6;d.attributes.Presença.base=2;d.skills['Manifestação de Bênção'].base=1;d.skills['Comunhão Divina'].base=1;return model.normalizeCharacterPayload(d);}
+test('legacy blessing migrates without loss and multiple grants persist through validation',()=>{const d=sheet();const grants=divine.blessingGrants(d.divine);assert.equal(grants[0].name,'Forja Viva');d.divine=divine.withBlessings(d.divine,[...grants,{...grants[0],id:'second',name:'Matéria',deity:'Ptah',regentAttribute:'Espírito'}]);assert.equal(schema.characterPayloadSchema.parse(d).divine.blessings.length,2);assert.equal(model.normalizeCharacterPayload(d).divine.blessings[1].deity,'Ptah');const old=model.normalizeCharacterPayload(model.createBlankCharacter());assert.deepEqual(divine.blessingGrants(old.divine),[]);});
+test('blessing and communion use distinct canonical skills and attributes; no free activation inferred',()=>{const d=sheet();const arts=repertoire.playerArts(d);const b=arts.find(a=>a.category==='Bênção · Ogum'),c=arts.find(a=>a.id==='divine-communion');assert.equal(b.attribute,'Intelecto');assert.equal(b.skill,'Manifestação de Bênção');assert.equal(b.cost,null);assert.equal(c.attribute,'Presença');assert.equal(c.skill,'Comunhão Divina');const roll=engine.skillRoll(d,b.skill,b.attribute,0,undefined,n=>Array(n).fill(12));assert.equal(roll.dice.length,3);assert.equal(roll.test.bonus,2);const communion=engine.skillRoll(d,c.skill,c.attribute,0,undefined,n=>Array(n).fill(12));assert.equal(communion.dice.length,1);assert.equal(communion.test.bonus,2);d.divine.enabled=false;assert(!repertoire.playerArts(d).some(a=>a.id.startsWith('blessing-')));});
+test('Favor clamps, logs and synchronizes while preserving the authored divine sheet',()=>{let d=sheet();const action={id:crypto.randomUUID(),actorName:'Mestre',title:'Favor concedido',type:'resource',resource:'favor',delta:9};const next=engine.applyCombatAction(d,action);assert.equal(next.divine.favor,3);assert.equal(next.divine.blessingName,'Forja Viva');assert.equal(engine.applyCombatAction(next,action).divine.favor,3);assert.equal(engine.mergeCombat(next,d).divine.favor,3);assert(schema.characterPayloadSchema.safeParse(next).success);assert.equal(engine.applyCombatAction(next,{...action,id:crypto.randomUUID(),delta:-9}).divine.favor,0);});

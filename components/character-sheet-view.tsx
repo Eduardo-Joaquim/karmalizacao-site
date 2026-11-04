@@ -1,4 +1,5 @@
 "use client";
+import { DivineAltar } from "@/components/divine-altar";
 import { CombatPanel } from "@/components/combat-panel";
 import { TechniqueCost } from "@/components/technique-cost";
 import { CorruptedFormEditor } from "@/components/corrupted-form-editor";
@@ -36,7 +37,7 @@ import {
   getClassDefinition,
   getFinalAttribute,
   getFinalSkill,
-  getRaceRule,
+  getRaceRule, racialFeatures,
   getSkillTest,
   getSacrificedPoints,
   VOW_WEIGHTS,
@@ -233,7 +234,7 @@ export function CharacterSheetView({
             </div>
             {race?.features.length ? (
               <div className="sheet-ability-list">
-                {race.features.map((feature) => (
+                {racialFeatures(draft).map((feature) => (
                   <div key={feature.name}>
                     <Badge variant="outline">{feature.kind}</Badge>
                     <strong>{feature.name}</strong>
@@ -355,24 +356,7 @@ export function CharacterSheetView({
 
       {draft.divine.enabled ? (
         <SheetSection icon={Landmark} title="Poder divino">
-          <div className="sheet-readonly-grid compact">
-            <ReadonlyValue label="Expressão">{draft.divine.expression}</ReadonlyValue>
-            <ReadonlyValue label="Bênção">{draft.divine.blessingName}</ReadonlyValue>
-            <ReadonlyValue label="Regente da Bênção">{draft.divine.expression.includes("Bênção") ? draft.divine.regentAttribute : null}</ReadonlyValue>
-            {draft.divine.expression.includes("Comunhão") ? <ReadonlyValue label="Comunhão Divina">Presença {getFinalAttribute(draft, automatic, "Presença")}</ReadonlyValue> : null}
-            <ReadonlyValue label="Panteão / Asa">{draft.divine.pantheon}</ReadonlyValue>
-            <ReadonlyValue label="Divindade">{draft.divine.deity}</ReadonlyValue>
-            <ReadonlyValue label="Jurisdições">{draft.divine.jurisdictions}</ReadonlyValue>
-            {draft.divine.expression.includes("Comunhão") ? <ReadonlyValue label="Favor">{draft.divine.favor}/3</ReadonlyValue> : null}
-            {draft.divine.expression.includes("Comunhão") || draft.divine.powerLevel > 0 ? <ReadonlyValue label="Nível de poder">{draft.divine.powerLevel}/5</ReadonlyValue> : null}
-            <ReadonlyValue label="Núcleo">{draft.divine.core}</ReadonlyValue>
-            <ReadonlyValue label="Dádiva inicial">{draft.divine.initialGift}</ReadonlyValue>
-            <ReadonlyValue label="Limites essenciais">{draft.divine.essentialLimits}</ReadonlyValue>
-            <ReadonlyValue label="Preceito">{draft.divine.precept}</ReadonlyValue>
-            <ReadonlyValue label="Profanação">{draft.divine.profanation}</ReadonlyValue>
-            <ReadonlyValue label="Liturgias">{draft.divine.liturgies}</ReadonlyValue>
-            <ReadonlyValue label="Milagres">{draft.divine.miracles}</ReadonlyValue>
-          </div>
+          <DivineAltar draft={draft}/>
         </SheetSection>
       ) : null}
 

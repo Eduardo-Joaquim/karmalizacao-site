@@ -38,7 +38,7 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Trevas e subdobra do Abismo:** Valac comprime suas próprias sombras em cavidades que puxam matéria ou absorvem impacto. A subdobra usa Controle de Trevas; não abre passagem para dentro de corpos, não apaga uma criatura da existência e não concede conhecimento sobre lugares que ela não percebe.
 
-**Desespero — Bênção Verdadeira, não hereditária:** some ao contador o dano que Valac efetivamente retira da Vida de inimigos e o dano que efetivamente perde de sua própria Vida por ações hostis. Escudos, custos voluntários, excesso além da Vida restante e dano entre cúmplices não alimentam o contador. O limite é **50**; excedentes se perdem. Limiar ou Legado consomem os 50 pontos e contam como uma ativação da bênção. Encerrar a cena zera contador e número de ativações.
+**Bênção Verdadeira — Desespero, não hereditária:** <span data-divine-grant="kali">Outorgada por Kali · Hindu — Asa do Dharma</span><span data-world-blessing="outorga-6"></span> Nix concedeu Desespero diretamente a Valac, reconhecendo a vontade que persistiu na noite de sua ascensão. A dádiva pertence à rainha e não se transmite às filhas. some ao contador o dano que Valac efetivamente retira da Vida de inimigos e o dano que efetivamente perde de sua própria Vida por ações hostis. Escudos, custos voluntários, excesso além da Vida restante e dano entre cúmplices não alimentam o contador. O limite é **50**; excedentes se perdem. Limiar ou Legado consomem os 50 pontos e contam como uma ativação da bênção. Encerrar a cena zera contador e número de ativações.
 
 **Exaltação do Desespero:** o beneficiário recebe **dois dados adicionais do mesmo tipo de dado do dano-base** de suas técnicas de dano direto e **+5 de Resistência contra todo dano**, até o final da rodada seguinte à ativação. Os dados entram uma vez por resolução, depois do crítico e antes do parcial; não ampliam cura, dano contínuo ou outro dado adicional. Se uma base misturar dados, use o maior dado presente. Exaltações não se acumulam; substituem-se.
 
@@ -62,11 +62,15 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Hiato {#valac-hiato}
 
 **Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Reação, 9 Karma, contra ataque percebido em si ou aliado a até 8 m. Uma dobra escura recebe o impacto, reduzindo **2d12** do dano daquela resolução, depois das reduções permanentes. O excesso se perde. Não desvia condições sem dano nem absorve um segundo ataque.
 
 **Composição de Karma:** 6 base iv + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Limiar {#valac-limiar}
 
@@ -74,6 +78,7 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Composição de Karma:** 6 base IV + 3 proteção secundária III + 1 duração = 10 Karma. Ação Extra é a ativação própria da Bênção Verdadeira; exige também 50 Desespero.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Legado {#valac-legado}
 
@@ -81,17 +86,23 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 3 função secundária iii = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Mutilatio {#valac-mutilatio}
 
-**Fonte e Grau:** Corrupção IV. **Requisito:** ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle após pagar a Carga. Controle da Corrupção contra CA. Total: **2d12 corrupto** e −2 nos ataques feitos com um membro escolhido até o final do próximo turno da vítima. Parcial: metade do dano sem penalidade. Não amputa automaticamente, não altera atributos e não atinge seres imunes à Corrupção.
+**Fonte e Grau:** Corrupção IV. **Requisito:** ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle após pagar a Carga. Controle da Corrupção contra CA. Total: **2d10 corrupto** e −2 nos ataques feitos com um membro escolhido até o final do próximo turno da vítima. Parcial: metade do dano sem penalidade. Não amputa automaticamente, não altera atributos e não atinge seres imunes à Corrupção.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 3 função secundária iii = 11 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 6 · Mortis {#valac-mortis}
 
-**Fonte e Grau:** Corrupção IV. **Requisito:** ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo a até 15 m; Controle normal. Presença + Controle da Corrupção oposto a Espírito + Ocultismo ou Presença + Liderança. Vitória: **2d12 corrupto** e o próximo efeito de cura recebido antes do fim do próximo turno de Valac restaura metade da Vida, arredondada para baixo. Empate ou derrota: nada. O selo não acumula consigo e se encerra após afetar uma cura.
+**Fonte e Grau:** Corrupção IV. **Requisito:** ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo a até 15 m; Controle normal. Presença + Controle da Corrupção oposto a Espírito + Ocultismo ou Presença + Liderança. Vitória: **2d10 corrupto** e o próximo efeito de cura recebido antes do fim do próximo turno de Valac restaura metade da Vida, arredondada para baixo. Empate ou derrota: nada. O selo não acumula consigo e se encerra após afetar uma cura.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 3 função secundária iii = 11 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Anatema {#valac-anatema}
 
@@ -99,17 +110,23 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 1 duração + 3 função secundária iii = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 8 · Nexum {#valac-nexum}
 
 **Fonte e Grau:** Ocultismo III. **Uso:** Principal, 10 Karma, até dois alvos a até 15 m, separados por no máximo 5 m. Uma rolagem de Espírito + Ocultismo contra suas CAs, com defesas individuais. Total: Lento e perda das Reações disponíveis, sem recuperá-las até o início do próximo turno de Valac. Parcial: somente Lento. Lento reduz Deslocamento à metade. Falha: nada. Não causa dano, arrasto ou agarrão físico.
 
 **Composição de Karma:** 4 base iii + 2 alcance médio + 2 área / destinatários + 2 função secundária ii = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 9 · Oblatio {#valac-oblatio}
 
 **Fonte e Grau:** Ocultismo IV. **Uso:** Principal, 17 Karma e 1 Carga, uma vez por cena, alvo a até 15 m do foco. O foco exige 1 TE de preparo ou uma Principal num turno anterior; CA 14, Vida 6. Controle normal. Controle da Corrupção oposto a Presença + Liderança ou Espírito + Ocultismo. Vitória: **2d12 espiritual** no início dos próximos três turnos da vítima, sem novos ataques ou críticos. Ela pode gastar Principal e alcançar o resultado inicial registrado com sua defesa para encerrar. Destruir ou cobrir completamente o foco, ou afastar-se mais de 15 m dele, encerra o ritual. Exaltação não amplia os pulsos contínuos.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 3 função secundária iii + 6 pulsos posteriores, pagos na criação = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Miserere {#valac-miserere}
 
@@ -120,6 +137,8 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 **A abdicação:** um Vinculado pode gastar Principal para repetir a defesa contra o resultado original registrado, encerrando o vínculo em igualdade ou sucesso. Destruir o trono, afastar a vítima mais de 15 m dele, ou deixar Valac Inconsciente também a liberta. A assinatura não transfere ações à rainha nem permite ordens sobre as escolhas dos jogadores.
 
 **Composição de Karma:** 12 base v + 2 alcance médio + 4 até seis alvos + 2 duração três rodadas + 6 controle secundário iv − 2 foco e dois domínios ativos = 24 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Belial Lucifero · Ferrum Regni {#princesa-belial}
 
@@ -135,9 +154,9 @@ A bênção Sceleris endurece sua lâmina à medida que aceita o risco de um con
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre e 2 Reações por rodada, uma por resolução. Não possui Domínio desperto. **Arma:** espada longa, 2 m, Luta contra CA, 2d8 cortante; parcial metade.
 
-**Perícias:** Luta 3: maior de 4d20 +10 com Agilidade. Reflexos 2: maior de 4d20 +5. Controle de Fogo 2 e Manifestação de Bênção 2: maior de 3d20 +5. Atletismo 2: maior de 3d20 +5. Liderança 2: maior de 3d20 +5. Tática 2: maior de 2d20 +7 com Analítico. Demais 0.
+**Perícias:** Comunhão Divina 2 (Presença, maior de 3d20 +5); Luta 3: maior de 4d20 +10 com Agilidade. Reflexos 2: maior de 4d20 +5. Controle de Fogo 2 e Manifestação de Bênção 2: maior de 3d20 +5. Atletismo 2: maior de 3d20 +5. Liderança 2: maior de 3d20 +5. Tática 2: maior de 2d20 +7 com Analítico. Demais 0.
 
-**Bênção — Sceleris:** única. Uma rivalidade precisa ser declarada diante da vítima; apenas um adversário pode ser escolhido. A bênção não força ninguém a aceitar um duelo, atacar ou permanecer perto. Belial não usa Corrupção neste repertório.
+**Bênção — Sceleris:** <span data-divine-grant="marte">Outorgada por Marte · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-7"></span> Tyr concedeu Sceleris diretamente a Belial ao exigir que sua rivalidade tivesse rosto, palavra e risco assumido. A outorga é própria da princesa, independente de Desespero. única. Uma rivalidade precisa ser declarada diante da vítima; apenas um adversário pode ser escolhido. A bênção não força ninguém a aceitar um duelo, atacar ou permanecer perto. Belial não usa Corrupção neste repertório.
 
 ##### 1 · Provocatio {#belial-provocatio}
 
@@ -145,11 +164,15 @@ A bênção Sceleris endurece sua lâmina à medida que aceita o risco de um con
 
 **Composição de Karma:** 4 base iii + 1 movimento + 2 alcance médio + 4 duração + 2 função secundária ii = 13 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Incisio {#belial-incisio}
 
 **Fonte e Grau:** Marcial III. **Uso:** Principal, 5 Karma em esforço kármico, espada, 2 m. Luta contra CA. Total: **2d10 cortante** e −2 em ataques de um braço escolhido até o início do próximo turno de Belial. Parcial metade, sem penalidade. Não amputa.
 
 **Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Favilla {#belial-favilla}
 
@@ -157,23 +180,42 @@ A bênção Sceleris endurece sua lâmina à medida que aceita o risco de um con
 
 **Composição de Karma:** 4 base iii + 4 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Reditus {#belial-reditus}
 
 **Fonte e Grau:** Karma III. **Uso:** Reação, 5 Karma, depois de um ataque corpo a corpo percebido errar Belial. Contra o agressor a 2 m, Luta contra CA, **2d10 cortante** no total; parcial metade. Não responde a contra-ataques.
 
 **Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Pignus {#belial-pignus}
 
-**Fonte e Grau:** Bênção IV. **Uso:** Livre, 17 Karma e perda direta de 8 Vida, duas vezes por cena, antes de atacar o rival. O próximo total de espada neste turno acrescenta **2d12 kármicos**, depois do crítico, e ignora 2 de redução física. Parcial recebe metade do adicional; falha perde o benefício. Não produz outro ataque e não deixa Belial abaixo de 1 Vida pelo preço.
+**Fonte e Grau:** Bênção IV. **Uso:** Livre, 17 Karma e perda direta de 8 Vida, duas vezes por cena, antes de atacar o rival. O próximo total de espada neste turno acrescenta **2d10 kármicos**, depois do crítico, e ignora 2 de redução física. Parcial recebe metade do adicional; falha perde o benefício. Não produz outro ataque e não deixa Belial abaixo de 1 Vida pelo preço.
 
 **Composição de Karma:** 6 base iv + 4 ação livre + 6 dois dados adicionais + 1 penetração física = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Rex Igneus {#belial-rex}
 
 **Fonte e Grau:** Bênção IV. **Uso:** Principal, 9 Karma, uma vez por cena, rival a até 2 m. A espada se fecha numa bainha de brasa antes do corte; Luta contra CA. Total: **2d12 cortante**, e o alvo escolhe largar uma arma empunhada ou sofrer −2 CA até o início do próximo turno de Belial. Parcial: metade sem escolha. Falha: nada. A arma largada cai aos pés da vítima; o efeito não a destrói.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+
+**Comunhão Divina — Marte:** <span data-divine-grant="marte">Outorga litúrgica de Marte · Romano — Asa da Autoridade</span> Guardião da Vanguarda. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar ordem militar com responsabilidade e cumprir a palavra empenhada em nome de Marte. Profanação: Usar a dádiva para profanar ordem militar ou quebrar deliberadamente um juramento feito a Marte.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
+##### Liturgia · Sceleris — Decreto da Lâmina Deposta
+
+**Fonte e Grau:** Divino IV. **Uso:** Principal, 8 Karma; 1 Favor adicional; Belial acusa um inimigo percebido a até 5 m que tenha causado dano desde o turno anterior. Presença + Comunhão Divina contra Presença + Religião do alvo. Vitória: o próximo ataque dele antes do fim de seu próximo turno sofre −1d20; se decidir não atacar, a sentença termina. Empate ou derrota: nenhum efeito. O decreto não obriga confissão, não inventa culpa e não suprime a Principal.
+
+**Composição de Karma:** 6 Base IV + 2 Decreto = 8 Karma.
+
+**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Astaroth Lucifero · Atramentum {#princesa-astaroth}
 
@@ -200,13 +242,19 @@ Ela quer que a sucessora dependa de suas reservas médicas, mesmo que outra irm�
 
 **Fonte e Grau:** Alquimia III. **Uso:** Principal, um frasco corrosivo, 0 Karma, alvo a até 15 m; Pontaria contra CA. Total **3d8 ácido** e −2 CA da armadura até a vítima gastar Principal para lavar ou neutralizar o composto. Parcial metade, sem redução. Não altera CA natural e não acumula consigo.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Antidotum {#astaroth-antidotum}
 
 **Fonte e Grau:** Alquimia III. **Uso:** Principal, um antídoto, toque, 0 Karma. Medicina contra a CD original de veneno até CD 20. Sucesso encerra esse veneno; falha suspende seus efeitos até o final do próximo turno do paciente. Uma tentativa por veneno por cena; não remove Corrupção.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Elixir {#astaroth-elixir}
 
 **Fonte e Grau:** Alquimia III. **Uso:** Principal, uma ampola restauradora, toque, 0 Karma. Restaura **2d10 +7 Vida** de um vivo, sem remover condições ou regenerar membros. O recipiente consumido não pode ser usado novamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Unda {#astaroth-unda}
 
@@ -214,17 +262,23 @@ Ela quer que a sucessora dependa de suas reservas médicas, mesmo que outra irm�
 
 **Composição de Karma:** 4 base iii + 4 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Lavacrum {#astaroth-lavacrum}
 
 **Fonte e Grau:** Elemental de Água III. **Uso:** Reação, 7 Karma, si ou aliado a até 8 m, ataque percebido. Um jato remove parte do impacto, reduzindo **2d10** do dano daquela resolução. Não purifica efeitos que já tenham entrado no corpo.
 
 **Composição de Karma:** 4 base iii + 1 reação + 2 alcance médio = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Athanor {#astaroth-athanor}
 
 **Fonte e Grau:** Alquimia IV. **Uso:** Principal, 18 Karma e um frasco corrosivo, uma vez por cena; centro a 15 m, raio de 4 m, duas rodadas. Uma retorta condensada, CA 18 e Vida 18, libera névoa de reagentes. Entrar ou começar o turno nela exige Constituição + Atletismo CD 19: falha sofre **2d12 ácido** e −2 nos ataques até o fim do turno; sucesso sofre metade sem penalidade. Máximo uma aplicação por rodada por criatura. Afeta aliados; destruir a retorta ou dispersar a névoa com vento forte encerra a área.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 4 área / destinatários + 3 função secundária iii + 3 pulsos posteriores = 18 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Asmodeus Lucifero · Vox Ferrea {#princesa-asmodeus}
 
@@ -240,11 +294,11 @@ A princesa deseja uma corte em que ninguém consiga negar o que jurou diante del
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre e 1 Reação. Sem Domínios.
 
-**Perícias:** Atuação 3 e Persuasão 3: maior de 5d20 +10 com Presença. Manifestação de Bênção 2 e Controle de Ar 2: maior de 4d20 +5. Reflexos 2: maior de 3d20 +5. Percepção 2: maior de 4d20 +8 com Analítico. Demais 0.
+**Perícias:** Comunhão Divina 2 (Presença, maior de 4d20 +5); Atuação 3 e Persuasão 3: maior de 5d20 +10 com Presença. Manifestação de Bênção 2 e Controle de Ar 2: maior de 4d20 +5. Reflexos 2: maior de 3d20 +5. Percepção 2: maior de 4d20 +8 com Analítico. Demais 0.
 
 **Arma:** florete, Luta 0, 1d20 contra CA, 1d6 perfurante; parcial metade.
 
-**Concordato:** bênção única. Um pacto exige uma promessa compreensível e aceitação voluntária em voz alta. Não transforma medo, encantamento ou simples conversa em consentimento. Os efeitos de combate vêm das técnicas abaixo.
+**Bênção — Concordato:** <span data-divine-grant="thoth">Outorgada por Thoth · Egípcio — Asa da Balança</span><span data-world-blessing="outorga-8"></span> Jano concedeu Concordato diretamente a Asmodeus, fazendo da promessa aceita uma passagem entre duas vontades. A dádiva é própria da princesa e preserva o consentimento exigido por seus pactos. bênção única. Um pacto exige uma promessa compreensível e aceitação voluntária em voz alta. Não transforma medo, encantamento ou simples conversa em consentimento. Os efeitos de combate vêm das técnicas abaixo.
 
 ##### 1 · Pactum {#asmodeus-pactum}
 
@@ -252,11 +306,15 @@ A princesa deseja uma corte em que ninguém consiga negar o que jurou diante del
 
 **Composição de Karma:** 4 base iii + 2 alcance médio = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Aria {#asmodeus-aria}
 
 **Fonte e Grau:** Karma III. **Uso:** Principal, 10 Karma, até três aliados que a ouçam a até 10 m. Cada um recebe +2 no próximo ataque antes do fim do turno seguinte dela. Não concede ataque extra e não acumula consigo.
 
 **Composição de Karma:** 4 base iii + 2 alcance médio + 4 área / destinatários = 10 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Sibilus {#asmodeus-sibilus}
 
@@ -264,11 +322,15 @@ A princesa deseja uma corte em que ninguém consiga negar o que jurou diante del
 
 **Composição de Karma:** 4 base iii + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Discors {#asmodeus-discors}
 
 **Fonte e Grau:** Karma III. **Uso:** Reação, 7 Karma, ao perceber uma ordem sonora a até 15 m. Atuação oposta à Liderança do emissor. Vitória impede apenas o bônus mecânico daquela ordem em um destinatário escolhido; não cancela a ação dele nem rompe comunicação futura. Empate protege o emissor.
 
 **Composição de Karma:** 4 base iii + 1 reação + 2 alcance médio = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Fides {#asmodeus-fides}
 
@@ -276,11 +338,26 @@ A princesa deseja uma corte em que ninguém consiga negar o que jurou diante del
 
 **Composição de Karma:** 6 base iv + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Dies Irae {#asmodeus-dies-irae}
 
 **Fonte e Grau:** Bênção IV. **Uso:** Principal, 17 Karma, uma vez por cena, até três inimigos que a ouçam a até 15 m. Manifestação de Bênção contra Espírito + Canalização de Karma ou Presença + Liderança. Quem perder sofre **2d12 espiritual** e não recebe bônus de ordens sonoras até o final do próximo turno de Asmodeus. Empate ou vitória defensiva: metade do dano, sem restrição. Não controla falas ou decisões e não impede técnicas pessoais.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 4 área / destinatários + 2 seleção de aliados + 3 função secundária iii = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+
+
+**Comunhão Divina — Thoth:** <span data-divine-grant="thoth">Outorga litúrgica de Thoth · Egípcio — Asa da Balança</span> Escriba da Medida Sagrada. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar registro com responsabilidade e cumprir a palavra empenhada em nome de Thoth. Profanação: Usar a dádiva para profanar registro ou quebrar deliberadamente um juramento feito a Thoth.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
+##### Liturgia · Concordato — Cláusula de Travessia
+
+**Fonte e Grau:** Divino IV. **Uso:** Principal, 8 Karma; 1 Favor adicional; Dois aliados voluntários a até 5 m aceitam uma cláusula visível por duas rodadas: a primeira vez que cada um sair de uma área ameaçada, recebe 1d8 de Escudo Temporário antes da reação provocada. Cada reserva só aparece uma vez, não acumula e termina ao fim da cláusula. Recusar ou quebrar o acordo encerra o próprio benefício, sem dano punitivo. Não obriga inimigos a aceitar o pacto nem duplica uma defesa.
+
+**Composição de Karma:** 6 Base IV + 2 Cláusula sagrada = 8 Karma.
+
+**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Bael Lucifero · Radix Alba {#princesa-bael}
 
@@ -306,11 +383,15 @@ Ela deseja uma sucessão em que a morte da rainha não seja seguida por mais qua
 
 **Composição de Karma:** 4 base iii + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Murus {#bael-murus}
 
 **Fonte e Grau:** Elemental de Terra III. **Uso:** Principal, 6 Karma, parede de 5 m por 3 m a até 15 m, três rodadas. CA 20, Vida 28, cobertura total para trajetórias bloqueadas. Não ocupa o espaço de criaturas; ruir não causa dano adicional automático.
 
 **Composição de Karma:** 4 base iii + 2 alcance médio = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Fulcrum {#bael-fulcrum}
 
@@ -318,17 +399,23 @@ Ela deseja uma sucessão em que a morte da rainha não seja seguida por mais qua
 
 **Composição de Karma:** 4 base iii + 1 reação + 2 alcance médio = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Scala {#bael-scala}
 
 **Fonte e Grau:** Elemental de Terra II. **Uso:** Movimento, 6 Karma, rampa de até 6 m ou plataforma de até 2 m de altura num ponto a até 10 m, duas rodadas. Transporta no máximo duas criaturas voluntárias para espaços livres; não concede ataques nem projeta inimigos.
 
 **Composição de Karma:** 3 base ii + 1 movimento + 2 alcance médio = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Custos {#bael-custos}
 
 **Fonte e Grau:** Karma III. **Uso:** Principal, 4 Karma, aliado tocado, duas rodadas. Concede **20 de escudo**. Um Custos por alvo; escudos da mesma técnica se substituem. Não aumenta CA ou cura.
 
 **Composição de Karma:** 4 base iii = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Tellus {#bael-tellus}
 
@@ -337,6 +424,8 @@ Ela deseja uma sucessão em que a morte da rainha não seja seguida por mais qua
 **Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 3 função secundária iii + 3 plataformas e proteção = 22 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ## Casas demoníacas {#casas-demoniacas}
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Duque Agares · Sanguis Vetus {#duque-agares}
 
@@ -354,7 +443,7 @@ A Casa Ducal Agares governa os canais do sul e conserva uma bênção que só pa
 
 **Arma:** lança, Luta 2, maior de 3d20 +5 contra CA, 2d8 perfurante a 3 m; parcial metade.
 
-**Consanguis:** bênção hereditária de vínculo protetor; apenas Agares a porta integralmente. Sua subdobra de Sangue usa Controle de Água e sangue exteriorizado, sem controle de órgãos intactos. Não é um poder da família Drácula.
+**Consanguis:** <span data-divine-grant="isis">Outorgada por Ísis · Egípcio — Asa da Balança.</span><span data-world-blessing="outorga-14"></span> bênção hereditária de vínculo protetor; apenas Agares a porta integralmente. Sua subdobra de Sangue usa Controle de Água e sangue exteriorizado, sem controle de órgãos intactos. Não é um poder da família Drácula.
 
 ##### 1 · Hematis {#agares-hematis}
 
@@ -362,11 +451,15 @@ A Casa Ducal Agares governa os canais do sul e conserva uma bênção que só pa
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Fibra {#agares-fibra}
 
 **Fonte e Grau:** Subdobra de Sangue III. **Uso:** Principal, 7 Karma, um alvo a 15 m. Controle de Água oposto a Força + Atletismo. Vitória Imobiliza por duas rodadas, sem dano; a vítima pode gastar Principal para repetir a oposição. Empate ou derrota não prende; destruir os fios, CA 18 e Vida 16, encerra a prisão.
 
 **Composição de Karma:** 4 base iii + 2 alcance médio + 1 duração = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Frater {#agares-frater}
 
@@ -374,17 +467,23 @@ A Casa Ducal Agares governa os canais do sul e conserva uma bênção que só pa
 
 **Composição de Karma:** 4 base iii = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Hereditas {#agares-hereditas}
 
 **Fonte e Grau:** Bênção IV. **Uso:** Reação, 7 Karma, quando Frater protege o aliado. A redução desse único dano passa de 5 para **2d12**, com perda direta da mesma quantidade de Vida por Agares, e Frater termina. Não pode reduzir o duque a menos de 1 Vida; nesse caso, reduz apenas o que ele pode pagar.
 
 **Composição de Karma:** 6 base iv + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Concordia Rubra {#agares-concordia}
 
 **Fonte e Grau:** Bênção IV. **Uso:** Principal, 16 Karma, uma vez por cena, até três aliados voluntários a 10 m. Cada um recebe **24 de escudo** por duas rodadas. Quando o escudo de um deles é destruído, os demais perdem 4 de seus próprios escudos, sem retirar Vida. Agares precisa permanecer consciente e a até 20 m de todos. Não cria ações, cura ou transmissão da bênção.
 
 **Composição de Karma:** 6 base iv + 2 alcance médio + 4 área / destinatários + 1 duração + 3 função secundária iii = 16 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Marquês Andras · Umbra Ferri {#marques-andras}
 
@@ -408,17 +507,23 @@ A Casa Marquesal Andras mantém postos de correio e fortalezas nas gargantas do 
 
 **Composição de Karma:** 4 base iii + 1 movimento + 2 alcance médio + 1 duração + 2 função secundária ii = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Sectio {#andras-sectio}
 
 **Fonte e Grau:** Corrupção IV. **Uso:** Principal, 9 Karma e 1 Carga, Controle normal, adaga a 2 m. Luta contra CA: total **2d12 cortante** e Sangramento 1d6 no início dos próximos dois turnos. Parcial metade sem Sangramento. Medicina CD 15 com Principal encerra o Sangramento; renovar substitui, não acumula.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Pallor {#andras-pallor}
 
 **Fonte e Grau:** Corrupção III. **Uso:** Reação, 5 Karma e 1 Carga, Controle normal, ataque percebido contra si. Reduz **2d10** do dano. Não oculta Andras, remove condições ou anula ataques posteriores.
 
 **Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Marquesa Marchosias · Dens Leonis {#marquesa-marchosias}
 
@@ -438,9 +543,11 @@ A Casa Marquesal Marchosias fornece as tropas que guardam o planalto. Sua senhor
 
 ##### 1 · Rictus {#marchosias-rictus}
 
-**Fonte e Grau:** Corrupção III. **Uso:** Principal, 5 Karma e 1 Carga, Controle normal, 2 m. Luta contra CA: total **2d10 físico** e empurra 3 m por trajetória livre. Parcial metade sem empurrão; falha nada.
+**Fonte e Grau:** Corrupção III. **Uso:** Principal, 5 Karma e 1 Carga, Controle normal, 2 m. Luta contra CA: total **2d8 físico** e empurra 3 m por trajetória livre. Parcial metade sem empurrão; falha nada.
 
 **Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Tenax {#marchosias-tenax}
 
@@ -448,8 +555,13 @@ A Casa Marquesal Marchosias fornece as tropas que guardam o planalto. Sua senhor
 
 **Composição de Karma:** 4 base iii + 2 função secundária ii = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Fractus {#marchosias-fractus}
 
-**Fonte e Grau:** Corrupção IV. **Uso:** Principal, 9 Karma e 1 Carga, Controle normal, alvo Agarrado por ela. Luta contra CA: total **2d12 físico** e −2 em testes físicos até o final do próximo turno da vítima. Parcial metade sem penalidade. O agarrão termina depois da tentativa; não quebra membros automaticamente.
+**Fonte e Grau:** Corrupção IV. **Uso:** Principal, 9 Karma e 1 Carga, Controle normal, alvo Agarrado por ela. Luta contra CA: total **2d10 físico** e −2 em testes físicos até o final do próximo turno da vítima. Parcial metade sem penalidade. O agarrão termina depois da tentativa; não quebra membros automaticamente.
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+

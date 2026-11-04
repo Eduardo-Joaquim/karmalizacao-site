@@ -22,13 +22,15 @@ export function normalizeCharacterPayload(
     ...blank,
     ...payload,
     version: 1,
+    classAbilities: (payload.classAbilities ?? []).map(name => ({"Poção Restauradora":"Síntese Alquímica","Torre Mecânica":"Dispositivo Autoral","Leitura Predatória":"Análise Operacional","Bênção Revigorante":"Restauração Revigorante"}[name] ?? name)),
+    classAmplifications: (payload.classAmplifications ?? []).map(name => ({"Fórmula Concentrada":"Síntese em Lote","Plataforma de Combate":"Engenharia Modular"}[name] ?? name)),
     portraitImage: normalizeEmbeddedImage(payload.portraitImage),
     attributes,
     skills,
     allocations: { ...blank.allocations, ...(payload.allocations ?? {}) },
     personalPath: { ...blank.personalPath, ...(payload.personalPath ?? {}) },
     corruption: { ...blank.corruption, ...(payload.corruption ?? {}) },
-    divine: { ...blank.divine, ...(payload.divine ?? {}) },
+    divine: { ...blank.divine, ...(payload.divine ?? {}), blessings: Array.isArray(payload.divine?.blessings) ? payload.divine.blessings : undefined },
     elemental: {
       ...blank.elemental,
       ...(payload.elemental ?? {}),
@@ -93,6 +95,7 @@ export function normalizeCharacterPayload(
   const max = calculateDerivedStats(normalized, calculateAutomaticBonuses(normalized));
   const old = payload.combat, live = payload.combatState;
   normalized.combatState = {
+    summons:live?.summons??{},
     inCombat: live?.inCombat ?? false,
     currentLife: Math.max(0, Math.min(max.life, live?.currentLife ?? old?.life ?? max.life)),
     currentKarma: Math.max(0, Math.min(max.karma, live?.currentKarma ?? old?.karma ?? max.karma)),

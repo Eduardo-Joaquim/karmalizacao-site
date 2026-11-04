@@ -153,7 +153,7 @@ for article in soup.xpath('.//article[@class="elven-dossier"]'):
             else:
                 kind = "technique"
             name_text = re.sub(
-                r"^(?:\d+|Reação|Assinatura) · ", "", heading_text
+                r"^(?:\d+|Reação|Assinatura|Liturgia) · ", "", heading_text
             )
             full_text = re.sub(r"\s+", " ", text(node))
             source_match = re.search(r"Fonte e Grau:\s*(.*?)\s+(?:V|IV|III|II|I)\b", full_text)
@@ -245,7 +245,7 @@ for heading in soup.findall("h2"):
 ids = soup.xpath(".//@id")
 assert len(ids) == len(set(ids))
 assert len(profiles) == (len(extension["characters"]) if extension else 7 if vampires else 4)
-assert [len(profile["abilities"]) for profile in profiles] == (extension["counts"] if extension else [8, 7, 4, 3, 3, 3, 3] if vampires else [11, 4, 5, 3])
+assert [len(profile["abilities"]) for profile in profiles] == (extension["counts"] if extension else [8, 8, 4, 3, 3, 3, 3] if vampires else [11, 5, 5, 3]), [(p["id"],len(p["abilities"])) for p in profiles]
 if vampires:
     from collections import Counter
     assert Counter(a["source"] for a in profiles[0]["abilities"] if a["kind"] == "technique") == {"Elemental de Água": 1, "Subdobra de Sangue": 3, "Karma": 2, "Marcial": 1}

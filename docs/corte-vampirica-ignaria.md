@@ -62,11 +62,15 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Composição de Karma:** 6 base iv + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Cruor
 
 **Fonte e Grau:** Subdobra de Sangue IV; ataque e absorção. **Uso:** Principal, 13 Karma, um alvo vivo a até 20 m. Exige sangue já exteriorizado a até 3 m da vítima. Controle de Água contra CA. **Total:** 2d12 de Sangue e Nosferato recupera metade do dano que efetivamente retirou da Vida, máximo 15. **Parcial:** metade do dano e nenhuma cura. **Falha:** nada. A cura ocorre uma vez por rodada; sangue armazenado serve de foco, não de alimento inesgotável.
 
 **Composição de Karma:** 6 base iv + 4 alcance longo + 3 função secundária iii = 13 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Aegis
 
@@ -74,11 +78,15 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Composição de Karma:** 6 base iv + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Retorsio
 
-**Fonte e Grau:** Karma IV; contraestocada. **Uso:** Reação, 8 Karma, depois de um ataque corpo a corpo percebido contra a rainha ser resolvido, com o agressor a até 3 m. Karma percorre a haste e prolonga o impulso do giro; Luta contra CA. **Total:** 2d12 kármico e o agressor perde 2 m de Deslocamento até o fim do próximo turno dele. **Parcial:** metade do dano, sem redução de Deslocamento. **Falha:** nenhum efeito. Não impede o ataque que a desencadeou e não responde a outro contra-ataque.
+**Fonte e Grau:** Karma IV; contraestocada. **Uso:** Reação, 8 Karma, depois de um ataque corpo a corpo percebido contra a rainha ser resolvido, com o agressor a até 3 m. Karma percorre a haste e prolonga o impulso do giro; Luta contra CA. **Total:** 2d10 kármico e o agressor perde 2 m de Deslocamento até o fim do próximo turno dele. **Parcial:** metade do dano, sem redução de Deslocamento. **Falha:** nenhum efeito. Não impede o ataque que a desencadeou e não responde a outro contra-ataque.
 
 **Composição de Karma:** 6 base iv + 1 reação + 1 efeito menor = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Rubedo
 
@@ -86,17 +94,23 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 3 função secundária iii + 6 pulsos posteriores = 23 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Sutura
 
 **Fonte e Grau:** Karma IV; sustentação. **Uso:** Principal, 7 Karma, toque em si ou em um vivo, duas ativações por cena. Fecha lacerações e restaura **2d10 Vida**. Também encerra um Sangramento em curso. Não regenera membros, não remove veneno ou Corrupção e não ressuscita. A reserva máxima de Vida nunca é ultrapassada.
 
 **Composição de Karma:** 6 base iv + 1 encerrar sangramento = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 7 · Coagulum
 
 **Fonte e Grau:** Subdobra de Sangue IV; armadura hemática. **Uso:** Principal, 14 Karma, si mesma ou um aliado tocado, por três rodadas. Consome uma dose de sangue exteriorizado. Placas de coágulo encaixam-se sobre roupas e pele, concedendo **24 de escudo**. A primeira vez em cada rodada que um agressor a até 3 m retira pontos desse escudo com um ataque corpo a corpo, espículas lhe causam **2d10 perfurante**, sem teste adicional. A resposta não ativa outra espícula ou contra-ataque. Só uma armadura pode existir; substituí-la desfaz a anterior. Escudo não se soma a outro Coagulum e desaparece ao expirar. Não aumenta CA e não restaura Vida.
 
 **Composição de Karma:** 6 base iv + 2 duração + 3 função secundária iii + 3 resposta das espículas = 14 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Imperium
 
@@ -111,6 +125,8 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 **Recolher o sangue:** Nosferato pode gastar Principal, sem novo custo-base além das Ampliações escolhidas, para encerrar Imperium sobre uma criatura com Estigmas, percebida a até 15 m de uma estaca restante. Controle de Água oposto a Força + Atletismo ou Espírito + Canalização de Karma da vítima. **Vitória da rainha:** as estacas desabam em fios que causam **2d10 +1d12 de Sangue** (base V: o d12 da lança substitui um d10); pode gastar 3 Karma por Estigma para acrescentar 1d10, no máximo dois dados adicionais, e arrastam o alvo até 2 m em direção à estaca escolhida, por caminho livre. O alvo fica Imobilizado até gastar Principal para vencer novamente a oposição, ou até a estaca escolhida ser destruída; essa estaca permanece por uma rodada para sustentar os fios. **Empate:** metade do dano, sem arrasto ou prisão. **Derrota:** nenhum efeito. A assinatura termina após essa tentativa, apagando todos os outros Estigmas. O alvo conserva suas defesas contra a oposição; o território não declara morte automática.
 
 **Composição de Karma:** 12 base v + 2 alcance médio + 4 até seis pontos de ancoragem + 2 duração três rodadas + 6 movimento secundário iv = 26 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Alucard V. Drácula · Rubra Nox {#princesa-alucard}
 
@@ -128,9 +144,9 @@ Alucard fala sem pressa e raramente eleva a voz. Antes de aceitar um testemunho,
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre e 2 Reações por rodada; uma por resolução. **Armas:** duas adagas, Principal, 2 m, Luta, maior de 5d20 +10 contra CA, 2d8 cortante; parcial metade. Duas armas não concedem ataque extra.
 
-**Perícias:** Luta 3, Reflexos 3 e Furtividade 3: maior de 5d20 +10. Acrobacia 2: maior de 5d20 +5. Manifestação de Bênção 3: maior de 4d20 +10. Atletismo 2: maior de 3d20 +5. Investigação 2 e Percepção 2: maior de 3d20 +9 com Analítico e a Essência de Técnica. Enganação 2: maior de 3d20 +5. Perícias não indicadas são 0.
+**Perícias:** Comunhão Divina 2 (Presença, maior de 4d20 +5); Luta 3, Reflexos 3 e Furtividade 3: maior de 5d20 +10. Acrobacia 2: maior de 5d20 +5. Manifestação de Bênção 3: maior de 4d20 +10. Atletismo 2: maior de 3d20 +5. Investigação 2 e Percepção 2: maior de 3d20 +9 com Analítico e a Essência de Técnica. Enganação 2: maior de 3d20 +5. Perícias não indicadas são 0.
 
-**Bênção — Haimaton:** Alucard é a única portadora da bênção completa. Molda seu sangue exteriorizado ou sangue deixado por ferimentos; não controla corpos intactos nem adquire lembranças pela ingestão. Criar sangue de combate com a bênção exige o custo das técnicas, sem retirar Vida adicional.
+**Bênção — Haimaton:** <span data-divine-grant="sekhmet">Outorgada por Sekhmet, Leoa da Retribuição e da Cura · Egípcio — Asa da Balança.</span><span data-world-blessing="outorga-5"></span> Sekhmet concedeu Haimaton à linhagem régia. A outorga passou integralmente de Nosferato para Alucard no nascimento; a mãe conserva sua subdobra de Sangue, sem duplicar a Bênção. Alucard é a única portadora da bênção completa. Molda seu sangue exteriorizado ou sangue deixado por ferimentos; não controla corpos intactos nem adquire lembranças pela ingestão. Criar sangue de combate com a bênção exige o custo das técnicas, sem retirar Vida adicional.
 
 **Primeiro Sangue:** o primeiro ataque direto de Alucard contra cada inimigo que ainda não causou dano na cena recebe **1d6 adicional** se acertar. A oportunidade é consumida pela primeira tentativa, mesmo em falha. O dado entra depois do crítico e antes do parcial; ocultar-se novamente não renova o benefício. Áreas não o ativam.
 
@@ -148,6 +164,8 @@ Alucard fala sem pressa e raramente eleva a voz. Antes de aceitar um testemunho,
 
 **Composição de Karma:** 4 base iii + 1 movimento + 2 alcance médio + 4 duração + 2 função secundária ii = 13 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Tacita
 
 **Fonte e Grau:** Karma IV; Execução Silenciosa. **Uso:** Livre, 11 Karma, antes de um ataque direto de adaga contra alvo Surpreso ou para o qual Alucard esteja Oculta; uma vez por alvo por cena. O ataque mantém sua ação normal e usa Luta contra CA. Em acerto, a base das adagas passa de **2d12 para 4d8 cortante**; em crítico natural válido, usa **6d8**, sem nova multiplicação. Dados de Primeiro Sangue e outros adicionais entram uma vez, após o crítico.
@@ -156,11 +174,15 @@ Alucard fala sem pressa e raramente eleva a voz. Antes de aceitar um testemunho,
 
 **Composição de Karma:** 6 base iv + 4 livre + 1 penetração física 2 = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Umbra
 
 **Fonte e Grau:** Karma III; Passo Sombrio. **Uso:** Movimento, 8 Karma, uma vez por turno. Teleporta Alucard e seu equipamento até uma sombra percebida a até **15 m**, com espaço livre que comporte seu corpo. A travessia não provoca reações de percurso. Até o fim do turno, recebe **+1d20 no próximo teste de Furtividade ou ataque**, escolhendo onde gastá-lo. Não concede Oculto, não transporta uma vítima, não atravessa proibição de teleporte e não a liberta de prisão ancorada sem resolver antes o impedimento.
 
 **Composição de Karma:** 4 base iii + 1 movimento + 2 médio + 1 teste específico +2 = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Acus
 
@@ -168,17 +190,23 @@ Alucard fala sem pressa e raramente eleva a voz. Antes de aceitar um testemunho,
 
 **Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 5 · Exúvia
 
 **Fonte e Grau:** Bênção IV; evasão e fuga. **Uso:** Reação, 10 Karma, contra um ataque percebido que permita Evasão. Alucard deixa uma silhueta de sangue no instante em que sai do golpe; faça a Evasão normal com **+1d20** em Reflexos. **Se evitar completamente o ataque**, pode mover até 3 m por caminho livre sem provocar reações de saída de alcance. Se alcançar cobertura ou ocultação real, faz Furtividade oposta à Percepção de quem a procura para esconder-se. A silhueta se desfaz imediatamente. Se a Evasão falhar, sofre o resultado normal, sem barreira, cura ou deslocamento. É uma única Reação, substituindo a Evasão comum daquela resolução.
 
 **Composição de Karma:** 6 base iv + 1 reação + 3 função secundária iii = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Sepulcrum
 
 **Fonte e Grau:** Bênção III; infiltração. **Uso:** Principal, 11 Karma, centro percebido a até 10 m, raio de 3 m, duas rodadas. Um anel de sangue abafa o som que cruza seu contorno. Quem está fora não ouve falas, passos ou golpes produzidos dentro, e o inverso também se aplica. Criaturas no mesmo lado do limite continuam ouvindo-se normalmente. O anel é visível, afeta aliados e não apaga luz, pegadas, cheiro ou percepção visual. Impede ordens e alertas sonoros através da borda; não anula técnicas já ativadas nem efeitos que não precisem de voz. Apenas um anel pode existir; terminar a duração ou deixar o centro a mais de 20 m de Alucard desfaz o efeito.
 
 **Composição de Karma:** 4 base iii + 2 alcance médio + 4 área / destinatários + 1 efeito menor = 11 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Erebos
 
@@ -189,6 +217,19 @@ Alucard fala sem pressa e raramente eleva a voz. Antes de aceitar um testemunho,
 **Precisão final:** a assinatura usa sua própria base; Tacita não a multiplica nem altera seu parcial. Um crítico dobra apenas os 4d10 ou 6d10 aplicáveis. Primeiro Sangue, Mors e outros adicionais entram uma vez. Erebos não exige imobilizar a vítima, não drena Vida e não produz morte automática; encerrar a cena exige que o ataque efetivamente vença suas defesas e reduza sua Vida.
 
 **Composição de Karma:** 6 base iv + 4 alcance longo + 1 efeito menor = 11 Karma. Manutenção e outros recursos são pagos separadamente.
+
+
+**Comunhão Divina — Sekhmet:** <span data-divine-grant="sekhmet">Outorga litúrgica de Sekhmet · Egípcio — Asa da Balança</span> Leoa da Retribuição e da Cura. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar sangue com responsabilidade e cumprir a palavra empenhada em nome de Sekhmet. Profanação: Usar a dádiva para profanar sangue ou quebrar deliberadamente um juramento feito a Sekhmet.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
+##### Liturgia · Cálice da Herdeira Rubra
+
+**Fonte e Grau:** Divino IV. **Uso:** Principal, 8 Karma; 1 Favor adicional; Com uma gota própria como selo, Alucard escolhe um aliado voluntário adjacente e cura 2d10 de Vida. A gota não causa desgaste adicional. O cálice sela uma ferida, suspendendo Sangrando até o fim do turno seguinte; a condição retorna depois se sua causa não tiver sido tratada. Não transfere Haimaton, não drena outra criatura e não recupera Karma. Sem teste em voluntário; uma cura de cálice por beneficiário por cena.
+
+**Composição de Karma:** 6 Base IV + 2 Amparo sagrado = 8 Karma.
+
+**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Sávia Vita · Pietà {#princesa-savia}
 
@@ -216,17 +257,23 @@ As irmãs mantêm uma relação estreita: Alucard aprende quais sinais denunciam
 
 **Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Catharsis
 
 **Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, toque. Medicina contra a CD original de um veneno, doença ou condição física tratável, limitada a CD 19. Sucesso encerra um efeito; falha suspende seus sintomas até o fim do próximo turno do paciente. Cada alvo recebe uma tentativa por efeito por cena. Não remove Corrupção, Maldição, Ferimento permanente ou obrigação de um voto.
 
 **Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Pallium
 
 **Fonte e Grau:** Karma III. **Uso:** Reação, 7 Karma, ao perceber dano contra aliado a até 10 m. Reduz em **2d6** o dano daquela resolução. Não cura, não ativa Cuidado protetor e não acumula com outra Reação defensiva de Sávia para o mesmo ataque.
 
 **Composição de Karma:** 4 base iii + 1 reação + 2 alcance médio = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Concordia
 
@@ -235,6 +282,8 @@ As irmãs mantêm uma relação estreita: Alucard aprende quais sinais denunciam
 **Composição de Karma:** 4 base iii + 2 alcance médio + 4 área / destinatários + 1 efeito menor = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ## Casas nobres de Sárkora {#casas-sarkora}
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Marquesa Eliska Dorne · Ferrata {#marquesado-dorne}
 
@@ -262,17 +311,23 @@ Ela sustenta o Édito dos Nomes e disputa com o condado os recursos necessários
 
 **Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Malleus
 
-**Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, 2 m, Luta contra CA. Total **2d10 físico** e derruba criatura de porte até Grande; parcial metade sem queda. Falha não produz efeito.
+**Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, 2 m, Luta contra CA. Total **2d8 físico** e derruba criatura de porte até Grande; parcial metade sem queda. Falha não produz efeito.
 
 **Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Porta
 
 **Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, por duas rodadas. Firma uma guarda de 3 m de largura junto a uma passagem, com Deslocamento 0. Aliados atrás dela recebem +2 CA contra ataques que cruzem a guarda. A proteção termina se Eliska se mover, cair Inconsciente ou não puder perceber a ameaça. Não bloqueia trajetos laterais.
 
 **Composição de Karma:** 4 base iii + 1 duração = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Marquês Odran Kessel · Cineris {#marquesado-kessel}
 
@@ -300,17 +355,23 @@ O marquês apoia a coroa, mas teme que a investigação dos antigos expurgos alc
 
 **Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Passata
 
 **Fonte e Grau:** Karma II. **Uso:** Movimento, 7 Karma. Desloca até 6 m por rota livre sem provocar reações de saída de alcance. Seu próximo ataque corpo a corpo neste turno recebe +2; o bônus não cria um ataque e expira ao fim do turno.
 
 **Composição de Karma:** 3 base ii + 1 movimento + 2 alcance médio + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Risposta
 
 **Fonte e Grau:** Karma III. **Uso:** Reação, 5 Karma, depois de um ataque corpo a corpo percebido errar Odran, com agressor a até 2 m. Luta contra CA, total **2d10 cortante**, parcial metade. Não responde a outro contra-ataque e não altera o resultado do ataque original.
 
 **Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Condessa Mirela Senn · Annona {#condado-senn}
 
@@ -336,17 +397,23 @@ Curandeira da Etapa III, acompanha as coletas e conhece o preço de uma interrup
 
 **Composição de Karma:** 3 base ii = 3 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Ligatura
 
 **Fonte e Grau:** Karma II. **Uso:** Principal, 4 Karma, toque. Encerra um Sangramento e estabiliza um vivo com 0 Vida, deixando-o Inconsciente e sem curá-lo. Exige que o corpo ainda esteja vivo; não desfaz Ferimento permanente.
 
 **Composição de Karma:** 3 base ii + 1 efeito menor = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Custodia
 
 **Fonte e Grau:** Karma III. **Uso:** Reação, 7 Karma, aliado percebido a até 8 m prestes a receber dano. Reduz esse dano em **2d6**. Não restaura Vida, não ativa Cuidado protetor e não elimina condições que permaneçam mesmo sem dano.
 
 **Composição de Karma:** 4 base iii + 1 reação + 2 alcance médio = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Viscondessa Irina Kost · Clavis {#viscondado-kost}
 
@@ -372,14 +439,21 @@ Ela descobre cargas clandestinas pelo que falta: uma carroça sem reserva de ág
 
 **Composição de Karma:** 3 base ii + 4 ação livre + 4 alcance longo + 2 duração = 13 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Fixum
 
 **Fonte e Grau:** Karma III. **Uso:** Principal, 9 Karma, besta carregada, 30 m, Pontaria contra CA. Total **2d10 perfurante** e reduz Deslocamento em 3 m até o fim do próximo turno do alvo. Parcial metade, sem redução. Consome a carga; não exige nem recebe um segundo disparo gratuito.
 
 **Composição de Karma:** 4 base iii + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 3 · Transitus
 
 **Fonte e Grau:** Karma II. **Uso:** Reação, 4 Karma, após perceber o início de um ataque à distância contra si. Move até 3 m por rota livre antes de a rolagem ocorrer; a cobertura obtida aplica-se normalmente. Se não houver trajeto possível, a técnica não pode ser ativada. Não cancela ataques que ainda a alcancem nem responde a área que já tenha sido resolvida.
 
 **Composição de Karma:** 3 base ii + 1 reação = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+

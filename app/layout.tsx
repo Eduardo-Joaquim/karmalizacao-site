@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./divine.css";
 import "./bestiary.css";
 import "./gaeria.css";
 import "./vampire.css";

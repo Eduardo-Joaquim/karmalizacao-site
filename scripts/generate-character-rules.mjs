@@ -139,3 +139,7 @@ writeFileSync(
 );
 
 console.log(`Geradas ${classes.length} classes em ${outputPath}.`);
+
+// a progressão racial é canônica e não é reimportada de livros antigos
+const canonicalRaces=JSON.parse(readFileSync(resolve("data/racial-progression.json"),"utf8"));
+const generated=JSON.parse(readFileSync(resolve(destination),"utf8"));generated.races=canonicalRaces;writeFileSync(resolve(destination),JSON.stringify(generated,null,2)+"\n");

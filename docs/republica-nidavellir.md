@@ -28,9 +28,9 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Cargo — Prefeito-Geral da República:** Chamado presidente no uso nacional e prefeito-geral nos estatutos federativos; eleito por voto popular, não por herança. Os quatro reis são prefeitos das cidades, apelidos de autoridade local, sem coroas hereditárias. Cada mandato exige eleição; seu cargo permanece sujeito a nova votação e fiscalização.
 
-**Bênção — Magnetismo:** Eirik governa campos magnéticos. Ao abrir a mão, faz ferramentas orbitarem seus dedos; ao fechá-la, aproxima chapas e mantém peças suspensas com a precisão de uma bancada de montagem. Nas oficinas, essa Bênção é uma extensão de suas mãos. No combate, transforma o metal ao redor em pontos de apoio, obstáculos e instrumentos de força.
+**Bênção — Magnetismo:** <span data-divine-grant="ogum">Outorgada por Ogum, Senhor da Forja e dos Caminhos de Ferro · Iorubá — Asa do Axé.</span><span data-world-blessing="outorga-9"></span> Ogum concedeu Magnetismo a Eirik para abrir caminhos com o ferro e conduzir o trabalho de suas oficinas. Esta outorga governa os campos magnéticos e permanece distinta de sua segunda Bênção. Eirik governa campos magnéticos. Ao abrir a mão, faz ferramentas orbitarem seus dedos; ao fechá-la, aproxima chapas e mantém peças suspensas com a precisão de uma bancada de montagem. Nas oficinas, essa Bênção é uma extensão de suas mãos. No combate, transforma o metal ao redor em pontos de apoio, obstáculos e instrumentos de força.
 
-**Bênção — Criação de Matéria Inorgânica:** Eirik pode criar qualquer material inorgânico e dar-lhe forma: ferro, vidro, pedra, cerâmica e ligas metálicas surgem onde antes havia espaço vazio. Uma ideia ganha espessura, peso e textura entre suas mãos. Engrenagens, placas e estruturas nascem já moldadas para o projeto que ele pretende construir. É uma segunda Bênção, independente do Magnetismo; juntas, permitem que ele produza a matéria de uma máquina e conduza sua montagem.
+**Bênção — Criação de Matéria Inorgânica:** <span data-divine-grant="hefesto">Outorgada por Hefesto, Voz que Ergue a Matéria · Egípcio — Asa da Balança.</span><span data-world-blessing="outorga-10"></span> Hefesto concedeu a Eirik a Criação de Matéria Inorgânica: a ideia ganha corpo, material e forma entre suas mãos. É uma segunda outorga independente, que se une ao Magnetismo em suas invenções. Eirik pode criar qualquer material inorgânico e dar-lhe forma: ferro, vidro, pedra, cerâmica e ligas metálicas surgem onde antes havia espaço vazio. Uma ideia ganha espessura, peso e textura entre suas mãos. Engrenagens, placas e estruturas nascem já moldadas para o projeto que ele pretende construir. É uma segunda Bênção, independente do Magnetismo; juntas, permitem que ele produza a matéria de uma máquina e conduza sua montagem.
 
 **Elementos — Vapor e Combustão:** Controle de Água 2 e Fogo 2: subformas de Vapor e Combustão. O Vapor permite controlar pressão, expansão e condensação; a Combustão alimenta câmaras de ignição e impulsos dirigidos. Eirik incorpora ambos ao funcionamento de seus projetos.
 
@@ -58,6 +58,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Composição de Karma:** 6 Base IV + 2 Alcance médio + 1 Empurrão 2 m = 9 Karma. Custos de Manifestação e manutenção são separados.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Condensador {#eirik-malm-arte-2}
 
 **Fonte e Grau:** Água · Vapor IV. **Uso:** Reação, 9 Karma.
@@ -67,6 +69,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 **Efeito:** Antes do dano de um ataque físico de trajetória percebida contra si ou um aliado até 15 m, Eirik faz o vapor colapsar em lâminas de água e gotas densas sobre a trajetória. Concede 2d10 de escudo temporário ao protegido somente contra aquela resolução; o restante se dissipa depois. O impacto atravessa a cortina quando supera o escudo. Não aumenta CA e não intercepta dano sem trajetória externa. A condensação permite salvar um aliado sem exigir que Eirik o acompanhe fisicamente.
 
 **Composição de Karma:** 6 Base IV + 1 Reação + 2 Alcance médio = 9 Karma. Custos de Manifestação e manutenção são separados.
+
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Câmara de Ignição {#eirik-malm-arte-3}
 
@@ -78,6 +82,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Composição de Karma:** 6 Base IV + 2 Alcance médio + 2 Área pequena + 1 Duração duas rodadas = 11 Karma. Custos de Manifestação e manutenção são separados.
 
+**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Trilho Impossível {#eirik-malm-arte-4}
 
 **Fonte e Grau:** Bênçãos · Criação de Matéria Inorgânica e Magnetismo IV. **Uso:** Movimento, 7 Karma.
@@ -87,6 +93,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 **Efeito:** Um trilho de aço nasce sob os pés de Eirik e o Magnetismo conduz uma plataforma sobre ele. Move até 10 m por uma passagem visível e fisicamente livre, inclusive vencendo uma vala de até 5 m. A plataforma suporta apenas Eirik e sua carga confortável. O trilho se recolhe ao terminar; não deixa ponte ou cobertura após o deslocamento. Não atravessa parede ou criatura, não cancela Reações e não inclui ataque. A elevação depende de pontos de apoio sólidos nas extremidades; não concede voo livre.
 
 **Composição de Karma:** 6 Base IV + 1 Movimento = 7 Karma. Custos de Manifestação e manutenção são separados.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Órbita {#eirik-malm-arte-5}
 
@@ -98,6 +106,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Composição de Karma:** 6 Base IV + 2 Alcance médio + 1 Duração duas rodadas = 9 Karma. Custos de Manifestação e manutenção são separados.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Matriz de Oficina {#eirik-malm-arte-6}
 
 **Fonte e Grau:** Bênção · Criação de Matéria Inorgânica IV. **Uso:** Principal, 10 Karma.
@@ -107,6 +117,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 **Efeito:** Cria até 4 espaços de qualquer material inorgânico numa única peça ao alcance das mãos, até o fim da cena. Decide composição e geometria ao executar: uma engrenagem de liga metálica, isolante de cerâmica, lente de vidro, calço de pedra ou ferramenta de precisão. A peça nasce íntegra, mas instalar, calibrar ou reparar a máquina exige o tempo e o teste de Criação próprios do trabalho. Não é um motor funcionando apenas por receber formato de motor. Pode moldar uma placa de cobertura: ela tem CA 18 e 20 Vida, ocupa no máximo 1 m de largura e oferece cobertura somente contra trajetórias que realmente bloqueie. A placa é destruível e não soma CA por proximidade. Apenas uma peça desta técnica permanece; substituir desfaz a anterior. Fora de combate, fabricação duradoura segue oficina e materiais do Capítulo 20.
 
 **Composição de Karma:** 6 Base IV + 4 Duração cena = 10 Karma. Custos de Manifestação e manutenção são separados.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Lançadeira {#eirik-malm-arte-7}
 
@@ -118,6 +130,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Composição de Karma:** 6 Base IV + 4 Alcance longo + 1 Derrubado simples = 11 Karma. Custos de Manifestação e manutenção são separados.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 8 · Aríete de Bancada {#eirik-malm-arte-8}
 
 **Fonte e Grau:** Ofício · Inventor IV. **Uso:** Principal, 11 Karma.
@@ -127,6 +141,8 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 **Efeito:** Uma máquina telescópica de pressão transforma o gesto de uma manivela em um golpe remoto. Exige estrutura própria ao alcance das mãos: bancada, poste, carcaça ou o chassi de Járn. Intelecto + Criação contra CA de um alvo a até 10 m em linha livre. Total: 2d12 de impacto e desloca até 5 m na direção do pistão, interrompidos por obstáculo sólido; parcial metade do dano, sem deslocamento; falha nada. O braço mecânico se recolhe depois do golpe e não ganha turno, agarrão ou dano de colisão. Contra objeto, o dano precisa superar suas proteções antes de deslocar uma peça fixada.
 
 **Composição de Karma:** 6 Base IV + 2 Alcance médio + 3 Movimento secundário III = 11 Karma. Custos de Manifestação e manutenção são separados.
+
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Járn {#eirik-malm-arte-9}
 
@@ -138,6 +154,7 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Composição de Karma:** 6 Base IV + 4 Duração cena + 3 Defesa secundária III = 13 Karma. Custos de Manifestação e manutenção são separados.
 
+**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Oren Damar · Senhor de Tudo {#oren-damar}
 
@@ -179,6 +196,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 
 **Composição de Karma:** 3 Base II + 1 Surdo simples = 4 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau II: 1d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Sem Chão {#oren-damar-arte-2}
 
 **Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma.
@@ -188,6 +207,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 **Efeito:** Força + Luta contra CA. Total: 2d10 de impacto; desloca a vítima até 4 m para um ponto livre ao alcance da projeção. Pode lançá-la sobre uma bancada baixa ou além de um corrimão rompido, mas não atravessa parede nem acrescenta dano de colisão. Parcial: metade de 2d10, sem efeitos adicionais. Falha: nenhum efeito.
 
 **Composição de Karma:** 4 Base III + 2 Movimento secundário II = 6 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Troco Miúdo {#oren-damar-arte-3}
 
@@ -199,6 +220,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 
 **Composição de Karma:** 6 Base IV + 1 Reação = 7 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Trinco {#oren-damar-arte-4}
 
 **Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma.
@@ -208,6 +231,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 **Efeito:** Força + Luta contra CA. Total: 2d10 de impacto e Desarmar um objeto empunhado. Oren prende o objeto contra o braço ou o cenário e torce; precisa alcançar o objeto. Não copia propriedades da arma. Parcial: metade de 2d10, sem efeitos adicionais. Falha: nenhum efeito.
 
 **Composição de Karma:** 4 Base III + 2 Controle secundário II = 6 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Rasteiro {#oren-damar-arte-5}
 
@@ -219,6 +244,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 
 **Composição de Karma:** 4 Base III + 1 Movimento = 5 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Fundo da Rua {#oren-damar-arte-6}
 
 **Fonte e Grau:** Marcial III. **Uso:** Principal, 8 Karma.
@@ -229,6 +256,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 
 **Composição de Karma:** 4 Base III + 2 Área pequena + 2 Terreno seletivo = 8 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Senhor de Tudo {#oren-damar-arte-7}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 11 Karma.
@@ -238,6 +267,8 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 **Efeito:** Exige Força e Técnica manifestadas. Oren transforma uma sequência de apoios no cenário em uma investida irregular: pisa na parede, passa por baixo de um braço e muda de direção com um ombro. Escolhe até dois inimigos que possa alcançar por um único trajeto contínuo de até 5 m; termina em ponto livre e não atravessa barreiras ou criaturas. Faz uma rolagem de Força + Luta comparada à CA de cada alvo. Total: 2d12 de impacto em cada alvo, rolados separadamente; parcial metade do dano destinado àquela vítima; falha zero. Cada alvo só pode ser atingido uma vez, mesmo que Oren passe por ele novamente. O movimento não concede outros ataques. Pode aplicar benefícios dos Domínios somente na frequência autorizada: um dado de Força para um único alvo e uma manobra de Técnica com oposição por turno. O percurso termina após a última investida.
 
 **Composição de Karma:** 6 Base IV + 2 Até dois alvos + 3 Movimento secundário III = 11 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Haldor Rusk · A Régua {#haldor-rusk}
 
@@ -279,6 +310,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 
 **Composição de Karma:** 3 Base II + 1 Efeito menor = 4 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau II: 1d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Porta Estreita {#haldor-rusk-arte-2}
 
 **Fonte e Grau:** Marcial III. **Uso:** Reação, 7 Karma.
@@ -288,6 +321,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 **Efeito:** Agilidade + Luta contra CA. Total: 2d10 cortantes e encerra o deslocamento que trouxe a vítima ao alcance. Gatilho: inimigo entra voluntariamente a até 2 m. Não interrompe teleporte ou movimento já encerrado. Parcial: metade de 2d10, sem efeitos adicionais. Falha: nenhum efeito.
 
 **Composição de Karma:** 4 Base III + 1 Reação + 2 Controle secundário II = 7 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Junção {#haldor-rusk-arte-3}
 
@@ -299,6 +334,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 
 **Composição de Karma:** 4 Base III + 2 Controle secundário II = 6 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Entre Eixos {#haldor-rusk-arte-4}
 
 **Fonte e Grau:** Marcial III. **Uso:** Movimento, 5 Karma.
@@ -308,6 +345,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 **Efeito:** Move até 5 m por trajeto livre, mantendo passagem física e Reações normais. Pode contornar a vítima para alcançar o lado da arma; não inclui ataque nem Vantagem automática.
 
 **Composição de Karma:** 4 Base III + 1 Movimento = 5 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Contraface {#haldor-rusk-arte-5}
 
@@ -319,6 +358,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 
 **Composição de Karma:** 6 Base IV + 1 Reação = 7 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Secção {#haldor-rusk-arte-6}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 6 Karma.
@@ -329,6 +370,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 
 **Composição de Karma:** 6 Base IV = 6 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Linha Mestra {#haldor-rusk-arte-7}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 11 Karma.
@@ -338,6 +381,8 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 **Efeito:** Exige Técnica manifestada. Haldor escolhe uma linha de 4 m ao alcance e anuncia a interdição até o início de seu segundo turno seguinte. Não ergue barreira invisível: precisa permanecer a até 2 m do ponto em que pretende interceptar, consciente e com mãos livres. Uma única vez, quando um inimigo tentar atravessar a linha, gasta uma Reação e rola Agilidade + Luta contra CA: total 2d12 cortantes e Derrubado antes de prosseguir; parcial metade, sem queda. A linha então termina. A Principal reserva esse ataque futuro, não permite atacar duas vezes com a mesma técnica. Se ninguém atravessar, o Karma e a Principal continuam gastos. Pode ser contornada, atacada de fora ou superada afastando Haldor. Não causa dano automático por movimento.
 
 **Composição de Karma:** 6 Base IV + 1 Reação diferida + 3 Controle secundário III + 1 Duração dois turnos = 11 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Saira Namar · O Espelho Partido {#saira-namar}
 
@@ -379,6 +424,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 
 **Composição de Karma:** 6 Base IV + 1 Reação + 4 Duração cena = 11 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Anatomia {#saira-namar-arte-2}
 
 **Fonte e Grau:** Marcial II. **Uso:** Principal, 3 Karma.
@@ -388,6 +435,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 **Efeito:** Intelecto + Medicina contra Agilidade + Reflexos de alvo percebido a até 5 m. Vitória identifica um membro poupado, apoio comprometido ou gesto recorrente realmente observável; empate revela a região sem motivo. Não revela técnicas ocultas, fraqueza inventada ou pensamento e não concede bônus de ataque.
 
 **Composição de Karma:** 3 Base II = 3 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau II: 1d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Rasura {#saira-namar-arte-3}
 
@@ -399,6 +448,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 
 **Composição de Karma:** 4 Base III + 1 Efeito menor = 5 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Desvio {#saira-namar-arte-4}
 
 **Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma.
@@ -408,6 +459,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 **Efeito:** Contra ataque físico percebido em contato, Agilidade + Luta contra resultado do agressor: vitória anula, empate conserva parcial, derrota mantém original. Não inclui cópia ou ataque; registrar o movimento exigiria outra Reação em resolução posterior.
 
 **Composição de Karma:** 4 Base III + 1 Reação = 5 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Interlinha {#saira-namar-arte-5}
 
@@ -419,6 +472,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 
 **Composição de Karma:** 4 Base III + 1 Movimento = 5 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Contraprova {#saira-namar-arte-6}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma.
@@ -429,6 +484,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 
 **Composição de Karma:** 6 Base IV + 3 Controle secundário III = 9 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Palimpsesto {#saira-namar-arte-7}
 
 **Fonte e Grau:** Marcial e Karma IV. **Uso:** Principal, 9 Karma.
@@ -438,6 +495,8 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 **Efeito:** Exige Técnica manifestada e duas cópias distintas registradas, marciais ou de Karma puro. Saira inicia a abertura de uma e troca a conclusão pela cadência da outra: uma guarda preparada para o primeiro movimento encontra um golpe que chega por outra direção. Ela apaga apenas UMA das duas cópias, escolhida antes da tentativa; conserva a outra para executar depois pelo custo original. Agilidade + Luta contra CA de um alvo em contato: total 2d12 de impacto e Desarmar um objeto empunhado; parcial metade, sem desarme; falha nada. A cópia apagada ainda é perdida em falha. Não executa as duas técnicas armazenadas nem soma seus danos ou condições. A memória kármica fornece o ritmo de concentração, não o alcance, elemento ou Poder do adversário. Uma vez por cena. A manobra de Técnica manifestada pode complementar o golpe com uma oposição própria, sem tornar o desarme desta assinatura automático no parcial.
 
 **Composição de Karma:** 6 Base IV + 3 Controle secundário III = 9 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Idris Khar · O Sol de Orma {#idris-khar}
 
@@ -481,6 +540,8 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 
 **Composição de Karma:** 3 Base II = 3 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau II: 1d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 2 · Pilar {#idris-khar-arte-2}
 
 **Fonte e Grau:** Marcial III. **Uso:** Principal, 4 Karma.
@@ -490,6 +551,8 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 **Efeito:** Prepara ombro, respiração e apoio: recebe 2d6 de escudo temporário até o início do próximo turno. Não aumenta CA e conserva apenas o maior escudo temporário, sem acumular usos.
 
 **Composição de Karma:** 4 Base III = 4 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Estaca {#idris-khar-arte-3}
 
@@ -501,6 +564,8 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 
 **Composição de Karma:** 4 Base III + 1 Efeito menor = 5 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 4 · Zênite {#idris-khar-arte-4}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma.
@@ -510,6 +575,8 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 **Efeito:** Força + Luta contra CA. Total: 2d12 de impacto e Derrubado. Exige Força manifestada e alvo ao alcance físico do punho. Não maximiza dados. Parcial: metade de 2d12, sem efeitos adicionais. Falha: nenhum efeito.
 
 **Composição de Karma:** 6 Base IV + 3 Controle secundário III = 9 Karma. Manifestações, manutenção e outros recursos são separados.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Marcha Solar {#idris-khar-arte-5}
 
@@ -521,6 +588,8 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 
 **Composição de Karma:** 4 Base III + 1 Movimento = 5 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### 6 · Ainda Aqui {#idris-khar-arte-6}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Reação, 7 Karma.
@@ -531,6 +600,8 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 
 **Composição de Karma:** 6 Base IV + 1 Reação = 7 Karma. Manifestações, manutenção e outros recursos são separados.
 
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
+
 ##### Assinatura · Meio-Dia {#idris-khar-arte-7}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma.
@@ -540,4 +611,6 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 **Efeito:** Exige Força e Técnica manifestadas. Idris precisa começar o turno em contato com o alvo e renuncia ao seu Movimento nessa rodada. O pé de trás finca no chão; o quadril, o ombro e o punho direito chegam como uma única peça. Força + Luta contra CA: total 2d12 de impacto e projeta o alvo até 5 m diretamente para trás, interrompidos por barreira sólida; parcial metade, sem projeção; falha nada. Uma tentativa por cena, acertando ou não. O benefício de dano da Força pode acrescentar um único d12 se ainda estiver disponível na rodada; a manobra de Técnica exige sua oposição normal e um meio corporal possível. Não soma dano de colisão. Depois de executar, Idris conserva a posição até o próximo turno, podendo defender-se e usar Reações, mas sem deslocamentos voluntários. Ser deslocado por inimigo não cancela o dano já causado.
 
 **Composição de Karma:** 6 Base IV + 3 Movimento secundário III = 9 Karma. Manifestações são pagas separadamente.
+
+**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 

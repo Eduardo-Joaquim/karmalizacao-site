@@ -21,4 +21,4 @@ for name in ['rules','character-rules']:
   c=next(c for c in b['chapters'] if c['number']==6)
   t=html.fragment_fromstring(c['html'],create_parent='div');c['searchableText']=re.sub(r'\s+',' ',t.text_content()).strip();c['wordCount']=len(c['searchableText'].split())
  p.write_text(json.dumps(b,ensure_ascii=False,indent=2)+'\n')
-print('Doses do Alquimista: 0,25 espaços, Saturação 1 e ações de consumo alinhadas.')
+print('Frascos e ações de consumo alinhados; potência e Saturação seguem a receita.')

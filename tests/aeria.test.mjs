@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync('data/demi-aeria.json'));const source=readFil
 const plain=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ');
 test('court has seven complete distinct dossiers and no duplicate anchors',()=>{
  assert.equal(data.courtProfiles.length,7);assert.equal(data.navigation.length,7);assert.equal(new Set(data.anchors).size,data.anchors.length);
- assert.deepEqual(data.courtProfiles.map(p=>p.abilities.length),[10,6,4,3,3,3,3]);
+ assert.deepEqual(data.courtProfiles.map(p=>p.abilities.length),[10,7,4,3,3,3,3]);
  for(const p of data.courtProfiles){assert(p.loreHtml.length>500,p.id);assert.equal(p.attributes.length,6);assert(p.life>0&&p.karma>0&&p.ca>0);assert.equal(p.abilities.filter(a=>a.kind==='signature').length,1);assert(p.facts.some(f=>f.fields.some(x=>x.label==='Perícias')));for(const a of p.abilities){assert(a.grade,a.name);assert(a.source,a.name);assert(a.fields.length>=1,a.name);}}
 });
 test('queen preserves handwritten attributes and genuinely separates three repertoires',()=>{

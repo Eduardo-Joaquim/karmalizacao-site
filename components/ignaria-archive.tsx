@@ -1,3 +1,4 @@
+import {ContinentalMonstersSection} from '@/components/continental-monsters-section';
 import { ThreatLink } from "@/components/threat-link";
 import { ArrowUpRight, Crown, Flame, Landmark, Shield, Skull } from "lucide-react";
 const court="/mundo/ignaria/corte-vampirica";
@@ -16,5 +17,5 @@ export function IgnariaArchive(){
       ["Casa Viscondal Kost","Viscondado dos entrepostos e das permissões de travessia.",court+"#viscondado-kost"],
     ].map(([name,description,url])=><a key={url} className="gaeria-entry" href={url}><h4>{name}</h4><p>{description}</p><span>Consultar <ArrowUpRight aria-hidden="true"/></span></a>)}</section>
     <section className="gaeria-category"><header><Skull aria-hidden="true"/><h3>Monstros de Ignária</h3><span>03</span></header><ThreatLink region="ignaria"/></section>
-  </div></section>;
+  </div><ContinentalMonstersSection region="ignaria"/></section>;
 }

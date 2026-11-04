@@ -1,0 +1,73 @@
+{
+  "euphere": {
+    "Armadura Viva — Dragão Negro": "Kármico",
+    "Leitura Predatória": "Marcial",
+    "Horizonte Partido": "Marcial",
+    "Coroa das Mil Lâminas": "Marcial",
+    "Martelo da Massa Furiosa": "Marcial",
+    "Punho da Maré Morta": "Marcial",
+    "Queda do Leviatã": "Marcial",
+    "Arco de Plasma Cru": "Elemental",
+    "Nadir": "Elemental"
+  },
+  "joao-e-maria": {
+    "Fome do Breu": "Kármico",
+    "Correntes da Garganta Vazia": "Kármico",
+    "Liturgia da Boca Sem Fundo": "Kármico",
+    "Banquete do Breu": "Elemental",
+    "Flecha de Escória": "Elemental",
+    "Passo de Escória": "Marcial",
+    "Olho da Caldeira": "Elemental",
+    "Caldeirão da Gula": "Elemental"
+  },
+  "geppeto": {
+    "Agulhas de Cena": "Kármico",
+    "Bastidor Fechado": "Kármico"
+  },
+  "ganancia": {
+    "Véu de Trevas": "Elemental",
+    "Estocada de Luz": "Elemental",
+    "Furto de Órgãos": "Corrupto",
+    "Transgressão à Carne — Grau IV": "Corrupto",
+    "Arrombamento do Impossível": "Kármico"
+  },
+  "nemetor": {
+    "Punho de Cerne": "Marcial",
+    "Mergulho da Raiz Adormecida": "Elemental",
+    "Erupção do Bosque Sepultado": "Elemental",
+    "Dízimo da Floresta": "Corrupto",
+    "Santuário da Quietude Verde": "Corrupto",
+    "Muralha de Raízes": "Elemental",
+    "Arrasto Subterrâneo": "Elemental"
+  },
+  "branca-de-neve": {
+    "Beijo da Serpente": "Marcial",
+    "Passos da Inocência": "Elemental",
+    "Jardim Proibido": "Elemental",
+    "Sete Gotas do Pecado": "Elemental",
+    "Espelho, Espelho Meu": "Elemental",
+    "A Última Maçã": "Corrupto"
+  },
+  "maelia-veyr": {
+    "Memórias que Não Me Pertencem — Grau IV": "Corrupto",
+    "Inveja da Vida — Reflexos de Argila": "Corrupto",
+    "Os Pequenos Famintos — Grau III": "Corrupto",
+    "Os Braços que Deveriam Ter Protegido — Grau III": "Corrupto",
+    "A Casa dos Amanhãs Roubados — Grau IV": "Corrupto"
+  },
+  "prorrogadora-da-extincao": {
+    "Sutura Impossível": "Kármico",
+    "Fio de Contenção": "Kármico",
+    "Tecelã do Destino": "Corrupto",
+    "Manto da Linha Profana": "Corrupto",
+    "Linha da Mentira": "Corrupto",
+    "Agulhas do Desamparo": "Corrupto",
+    "Jacó — Escada do Firmamento": "Divino",
+    "Moisés — Travessia do Impossível": "Divino",
+    "Davi — Pedra da Sentença": "Divino",
+    "Sansão — Colunas do Último Templo": "Divino",
+    "Adão — Primeiro Sopro": "Divino",
+    "Frankenstein — A Obra que Respira": "Corrupto",
+    "Dia do Julgamento Final": "Divino"
+  }
+}

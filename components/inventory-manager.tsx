@@ -12,7 +12,8 @@ const categories={weapon:"Arma",armor:"Armadura",shield:"Escudo",ammo:"Munição
 export function InventoryManager({draft,onChange,readOnly=false}:{draft:CharacterPayload;onChange?:(draft:CharacterPayload)=>void;readOnly?:boolean}){
  const [selected,setSelected]=useState("");
  const automatic=calculateAutomaticBonuses(draft);const derived=calculateDerivedStats(draft,automatic);
- const state=inventoryState(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0);
+ const state=inventoryState(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),(draft.loadModifier??0)+(draft.race==="Anão"?2:0));
+ if(draft.race==="Humano")state.readiness+=1;
  const update=(id:string,patch:Partial<InventoryItem>)=>onChange?.({...draft,inventory:draft.inventory.map(i=>i.id===id?{...i,...patch}:i)});
  const add=()=>{if(draft.inventory.length>=100)return;const entry=catalog.find(i=>i.id===selected);onChange?.({...draft,inventory:[...draft.inventory,{...(entry??{name:"Novo item",spaces:1,notes:"",category:"gear" as const}),category:(entry?.category??"gear") as InventoryItem["category"],id:globalThis.crypto?.randomUUID?.()??`item-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`,quantity:1,location:"backpack",equipped:false}]});};
  return <section className="inventory-manager" id="ficha-inventario"><header><Backpack/><div><p>PREPARAÇÃO DA EXPEDIÇÃO</p><h2>Inventário e Carga</h2></div></header>

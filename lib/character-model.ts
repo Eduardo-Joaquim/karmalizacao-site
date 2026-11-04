@@ -26,9 +26,9 @@ export const RACES = [
   "Anão",
   "Demi-humano",
   "Vampiro",
-  "Tritão",
   "Demônio",
   "Ghoul",
+  "Tritão",
   "Abissal",
 ] as const;
 
@@ -49,6 +49,7 @@ export const CLASSES = [
   "Especialista",
   "Invocador",
   "Elementalista",
+  "Conjurador",
 ] as const;
 
 export const PATHS = [
@@ -215,6 +216,8 @@ export type PointValue = { base: number; bonus: number };
 export type BonusAllocations = {
   raceAttributes: string[];
   raceSkills: string[];
+  humanTraining?: string;
+  humanSignature?: string;
   classAttributes: string[];
   classSkills: string[];
   stageAttributes: string[];
@@ -263,7 +266,12 @@ export type CorruptionState = {
   ruptureIntent: string;
 };
 
+export type BlessingGrant = {
+ matrices?:string[];
+ id: string; name: string; pantheon: string; deity: string; deityId?: string; deityEpithet: string; grantOrigin: string; grantReason?: string; regentAttribute: string; tier: string; core: string; initialGift: string; activeManifestation: string; essentialLimits: string; precept?: string; profanation?: string;
+};
 export type DivineState = {
+  deityId?: string; deityEpithet?: string; grantOrigin?: string; grantReason?: string; activeManifestation?: string; blessings?: BlessingGrant[];
   enabled: boolean;
   expression: string;
   blessingName: string;
@@ -301,6 +309,9 @@ export type ElementalState = {
 };
 
 export type TechniqueRecord = {
+  matrix?:"Kármico"|"Elemental"|"Divino"|"Marcial"|"Corrupto";
+  damageType?:"Físico"|"Mental"|"Kármico";
+  matrixExtras?:number;matrixDiscount?:number;
   id: string;
   name: string;
   concept: string;

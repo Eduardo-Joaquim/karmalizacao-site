@@ -4,6 +4,28 @@ A Voz oferece um corpo capaz de cumprir sua promessa. A carapaça pode repetir o
 
 A Transformação Corrompida personaliza o corpo durante a Forma das Cargas 7 a 9. A rede de Enxertos descrita acima continua gratuita: Movimento, 0 Karma, sem preparo, com seus limites de 2, 4 ou 8 Enxertos a 15 m. As mutações corporais desta seção são uma opção adicional. Seus custos não são cobrados de quem manifesta somente a rede, e não concedem mutações permanentes na Marca desperta.
 
+### Corpo rede e vontade
+
+A Forma Corrompida dá corpo à promessa da Voz. Ela não cria uma segunda pessoa para agir pelo personagem: altera o corpo e oferece novas origens para as mesmas ações. Cada Enxerto é uma parte da mesma presença, compartilhando defesas, consequências e recursos segundo a Rede.
+
+Existem duas camadas distintas. A rede exterioriza a anatomia intrusa, usando as regras gratuitas já descritas; as mutações corporais são o pacote registrado nesta seção, com ativação de 6 Karma e manutenção de 1 por turno seguinte. Manifestar a rede não concede os traços corporais gratuitamente, e selecionar um traço na ficha não o ativa.
+
+Escolha uma imagem unificadora: uma fome que produz mandíbulas, uma necessidade de vigiar que abre olhos, um medo de abandono que faz crescer braços. A aparência pode ser singular sem multiplicar benefícios. Um braço pode parecer uma asa quebrada; só recebe voo se uma regra realmente o conceder. Uma carapaça pode parecer cerâmica, osso ou pele escrita: continua usando o mesmo bônus registrado.
+
+### Sequência de uso
+
+| Momento | Procedimento |
+|---|---|
+| Antes da cena | Registre nome, promessa, mutações, função dos traços e intenção da Ruptura |
+| Despertar o corpo | Movimento e 6 Karma; uma ativação conjunta com a rede exige um único Controle |
+| Agir transformado | Use suas ações normais; cada técnica paga seus custos e faz os testes de efeito e risco cabíveis |
+| Manter o corpo | Pague 1 Karma no início do turno seguinte; esse pagamento sozinho não exige Controle |
+| Completar cinco turnos corporais | Acrescente 1 Carga e resolva o marco uma vez; encerrar e reabrir não apaga o contador |
+| Atingir Carga 10 | Conclua o evento que causou o aumento e aplique Ruptura, sem segundo teste comum para impedir seu início |
+
+O escudo protege a reserva compartilhada, não concede uma proteção por Enxerto. Dados adicionais pertencem à execução, não a cada origem ou pulso. Os espaços de mutação limitam quantos traços possui; a Carga determina a rede e o risco. Etapa, espaços e Carga não são três bônus de tamanho para o mesmo benefício.
+
+
 ### Criar e registrar a transformação
 
 Para despertar as mutações, tenha Etapa III ou superior, Controle da Corrupção 1 ou superior e Marca no Estágio III, com 7 a 9 Cargas efetivas. Cargas temporárias não cumprem o requisito. Esses requisitos adicionais valem somente para as mutações; o acesso à Anatomia e à rede permanece como descrito nas seções anteriores. A Forma e as mutações ficam indisponíveis durante o bloqueio causado pela Ruptura.

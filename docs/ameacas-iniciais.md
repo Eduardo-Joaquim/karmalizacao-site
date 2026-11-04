@@ -56,7 +56,7 @@ Carrega uma lança curta e observa o grupo antes de decidir se exige pedágio ou
 
 **Lança curta:** Principal, sem Karma, 2 m; maior de 2d20 +2 contra CA, 1d8 físico. Parcial metade antes das proteções; falha nada.
 
-**Afastar — Grau II:** A haste se atravessa entre o peito e a ponta da arma. Principal, 4 Karma. Força + Luta contra CA: maior de 2d20 +2, quando houver teste. Um alvo em contato; total 1d12 de impacto e empurra 2 m; parcial metade sem empurrão; falha nada.
+**Afastar — Grau II:** A haste se atravessa entre o peito e a ponta da arma. Principal, 4 Karma. Força + Luta contra CA: maior de 2d20 +2, quando houver teste. Um alvo em contato; total 1d10 de impacto e empurra 2 m; parcial metade sem empurrão; falha nada.
 
 **Composição de Karma:** 3 Base II + 1 Empurrão 2 m = 4 Karma.
 
@@ -74,7 +74,7 @@ Os pelos carregam sementes; a alcateia atravessa caminhos que desaparecem sob a 
 
 **Mordida:** Principal, sem Karma, 2 m; maior de 2d20 +5 contra CA, 1d10 físico. Parcial metade antes das proteções; falha nada.
 
-**Laço rasteiro — Grau III:** Uma raiz percebida se ergue diante das patas do alvo. Principal, 9 Karma. Espírito + Controle de Terra contra CA: maior de 2d20 +5, quando houver teste. Um alvo a 15 m, apoiado em chão com vegetação; total 2d10 de Terra e Derrubado; parcial metade sem queda; falha nada.
+**Laço rasteiro — Grau III:** Uma raiz percebida se ergue diante das patas do alvo. Principal, 9 Karma. Espírito + Controle de Terra contra CA: maior de 2d20 +5, quando houver teste. Um alvo a 15 m, apoiado em chão com vegetação; total 2d8 de Terra e Derrubado; parcial metade sem queda; falha nada.
 
 **Composição de Karma:** 4 Base III + 2 Alcance médio + 3 Controle secundário III = 9 Karma.
 
@@ -112,7 +112,7 @@ A fuligem acompanha a respiração; o animal segue o calor deixado nas pedras.
 
 **Mordida:** Principal, sem Karma, 2 m; maior de 1d20 +2 contra CA, 1d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Rastro ardente — Grau I:** Abre as mandíbulas e expele uma língua curta de brasas. Principal, 2 Karma. Espírito + Controle de Fogo contra CA: maior de 1d20 +2, quando houver teste. Um alvo a 5 m; total 1d6 de Fogo, parcial metade; falha nada.
+**Rastro ardente — Grau I:** Abre as mandíbulas e expele uma língua curta de brasas. Principal, 2 Karma. Espírito + Controle de Fogo contra CA: maior de 1d20 +2, quando houver teste. Um alvo a 5 m; total 1d10 de Fogo, parcial metade; falha nada.
 
 **Composição de Karma:** 2 Base I = 2 Karma.
 
@@ -130,7 +130,7 @@ Carrega placas de resíduo endurecido e rói os encaixes dos carrinhos de minér
 
 **Mandíbulas:** Principal, sem Karma, 2 m; maior de 1d20 +2 contra CA, 1d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Tranca de pinça — Grau I:** As pinças se fecham sobre o pé que interrompe sua passagem. Principal, 3 Karma. Força + Luta contra CA: maior de 1d20 +2, quando houver teste. Um alvo em contato; total 1d6 de impacto e −2 m no próximo Movimento, até o início do turno seguinte do besouro; parcial metade, sem lentidão.
+**Tranca de pinça — Grau I:** As pinças se fecham sobre o pé que interrompe sua passagem. Principal, 3 Karma. Força + Luta contra CA: maior de 1d20 +2, quando houver teste. Um alvo em contato; total 1d8 de impacto e −2 m no próximo Movimento, até o início do turno seguinte do besouro; parcial metade, sem lentidão.
 
 **Composição de Karma:** 2 Base I + 1 Lentidão simples = 3 Karma.
 
@@ -148,7 +148,7 @@ Carrega placas de resíduo endurecido e rói os encaixes dos carrinhos de minér
 
 **Cutelo:** Principal, sem Karma, 2 m; maior de 2d20 +2 contra CA, 1d8 físico. Parcial metade antes das proteções; falha nada.
 
-**Fechar a rota — Grau II:** Lança o corpo contra o apoio do oponente. Principal, 4 Karma. Força + Luta contra CA: maior de 2d20 +2, quando houver teste. Em contato; total 1d12 de impacto e empurra 2 m por trajeto livre; parcial metade, sem empurrão.
+**Fechar a rota — Grau II:** Lança o corpo contra o apoio do oponente. Principal, 4 Karma. Força + Luta contra CA: maior de 2d20 +2, quando houver teste. Em contato; total 1d10 de impacto e empurra 2 m por trajeto livre; parcial metade, sem empurrão.
 
 **Composição de Karma:** 3 Base II + 1 Empurrão 2 m = 4 Karma.
 
@@ -166,7 +166,7 @@ A pele translúcida pulsa sob a água, perto das comportas que aquecem as oficin
 
 **Sucção:** Principal, sem Karma, 2 m; maior de 2d20 +5 contra CA, 1d10 físico. Parcial metade antes das proteções; falha nada.
 
-**Jato termal — Grau III:** Contrai o corpo e lança água pressurizada pela boca circular. Principal, 6 Karma. Espírito + Controle de Água contra CA: maior de 2d20 +5, quando houver teste. Um alvo a 15 m; total 2d10 de Água pressurizada, parcial metade; falha nada. Não inclui queimadura.
+**Jato termal — Grau III:** Contrai o corpo e lança água pressurizada pela boca circular. Principal, 6 Karma. Espírito + Controle de Água contra CA: maior de 2d20 +5, quando houver teste. Um alvo a 15 m; total 2d8 de Água pressurizada, parcial metade; falha nada. Não inclui queimadura.
 
 **Composição de Karma:** 4 Base III + 2 Alcance médio = 6 Karma.
 
@@ -184,7 +184,7 @@ Ainda executa a ordem de prensar material, mesmo quando não existe carga sobre 
 
 **Braço de prensa:** Principal, sem Karma, 2 m; maior de 3d20 +5 contra CA, 2d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Prensagem — Grau IV:** Trava o apoio e fecha as placas de uma prensa de construção. Principal, 9 Karma. Espírito + Canalização de Karma contra CA: maior de 3d20 +5, quando houver teste. Exige iniciar o turno adjacente e abrir mão do Movimento; total 2d12 de impacto e Derrubado, parcial metade sem queda; falha nada.
+**Prensagem — Grau IV:** Trava o apoio e fecha as placas de uma prensa de construção. Principal, 9 Karma. Espírito + Canalização de Karma contra CA: maior de 3d20 +5, quando houver teste. Exige iniciar o turno adjacente e abrir mão do Movimento; total 2d10 de impacto e Derrubado, parcial metade sem queda; falha nada.
 
 **Composição de Karma:** 6 Base IV + 3 Controle secundário III = 9 Karma.
 
@@ -222,7 +222,7 @@ O pelo estala perto de motores ligados. Busca abrigo quente, e ataca quando acua
 
 **Garras:** Principal, sem Karma, 2 m; maior de 1d20 +2 contra CA, 1d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Estalo — Grau I:** Uma carga kármica salta entre o pelo e a superfície tocada. Principal, 2 Karma. Espírito + Canalização de Karma contra CA: maior de 1d20 +2, quando houver teste. Um alvo em contato; total 1d6 kármico, parcial metade; falha nada.
+**Estalo — Grau I:** Uma carga kármica salta entre o pelo e a superfície tocada. Principal, 2 Karma. Espírito + Canalização de Karma contra CA: maior de 1d20 +2, quando houver teste. Um alvo em contato; total 1d10 kármico, parcial metade; falha nada.
 
 **Composição de Karma:** 2 Base I = 2 Karma.
 
@@ -240,7 +240,7 @@ Um cobrador de quadrilha acostumado a vigiar escadas de emergência.
 
 **Cassetete:** Principal, sem Karma, 2 m; maior de 2d20 +2 contra CA, 1d8 físico. Parcial metade antes das proteções; falha nada.
 
-**Travessa — Grau II:** Usa o braço inteiro para arrancar um objeto da linha de guarda. Principal, 5 Karma. Força + Luta contra CA: maior de 2d20 +2, quando houver teste. Um alvo em contato, objeto alcançável; total 1d12 de impacto e Desarmar; parcial metade sem desarme; falha nada.
+**Travessa — Grau II:** Usa o braço inteiro para arrancar um objeto da linha de guarda. Principal, 5 Karma. Força + Luta contra CA: maior de 2d20 +2, quando houver teste. Um alvo em contato, objeto alcançável; total 1d10 de impacto e Desarmar; parcial metade sem desarme; falha nada.
 
 **Composição de Karma:** 3 Base II + 2 Desarmar secundário II = 5 Karma.
 
@@ -258,7 +258,7 @@ As membranas acompanham correntes naturais; o ventre se revela quando precisa mu
 
 **Cauda:** Principal, sem Karma, 2 m; maior de 2d20 +5 contra CA, 1d10 físico. Parcial metade antes das proteções; falha nada.
 
-**Sopro oblíquo — Grau III:** Curva as membranas e comprime a corrente de ar num golpe transversal. Principal, 7 Karma. Espírito + Controle de Ar contra CA: maior de 2d20 +5, quando houver teste. Um alvo a 15 m; total 2d10 de Ar e empurra 2 m, interrompidos por barreira sólida; parcial metade sem empurrão; falha nada.
+**Sopro oblíquo — Grau III:** Curva as membranas e comprime a corrente de ar num golpe transversal. Principal, 7 Karma. Espírito + Controle de Ar contra CA: maior de 2d20 +5, quando houver teste. Um alvo a 15 m; total 2d8 de Ar e empurra 2 m, interrompidos por barreira sólida; parcial metade sem empurrão; falha nada.
 
 **Composição de Karma:** 4 Base III + 2 Alcance médio + 1 Condição simples ou empurrão = 7 Karma.
 
@@ -276,7 +276,7 @@ Caminha repetindo os sinais de um antigo sinaleiro; o rosto de metal está volta
 
 **Chave longa:** Principal, sem Karma, 2 m; maior de 3d20 +5 contra CA, 2d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Sinal vermelho — Grau III:** A chave golpeia o apoio de quem invade sua linha de trabalho. Principal, 5 Karma. Espírito + Canalização de Karma contra CA: maior de 3d20 +5, quando houver teste. Um alvo em contato; total 2d10 de impacto e −2 m até o início do próximo turno; parcial metade sem lentidão.
+**Sinal vermelho — Grau III:** A chave golpeia o apoio de quem invade sua linha de trabalho. Principal, 5 Karma. Espírito + Canalização de Karma contra CA: maior de 3d20 +5, quando houver teste. Um alvo em contato; total 2d8 de impacto e −2 m até o início do próximo turno; parcial metade sem lentidão.
 
 **Composição de Karma:** 4 Base III + 1 Lentidão simples = 5 Karma.
 
@@ -314,7 +314,7 @@ Repete palavras ouvidas na galeria; a voz continua quando a boca já fechou.
 
 **Toque frio:** Principal, sem Karma, 2 m; maior de 2d20 +2 contra CA, 1d8 físico. Parcial metade antes das proteções; falha nada.
 
-**Reverberação — Grau II:** A frase se repete em tom agudo, junto aos ouvidos da vítima. Principal, 5 Karma. Espírito + Canalização de Karma contra CA: maior de 2d20 +2, quando houver teste. Um alvo percebido a 15 m; total 1d12 kármico, parcial metade; falha nada.
+**Reverberação — Grau II:** A frase se repete em tom agudo, junto aos ouvidos da vítima. Principal, 5 Karma. Espírito + Canalização de Karma contra CA: maior de 2d20 +2, quando houver teste. Um alvo percebido a 15 m; total 2d6 kármico, parcial metade; falha nada.
 
 **Composição de Karma:** 3 Base II + 2 Alcance médio = 5 Karma.
 
@@ -332,7 +332,7 @@ Cobra passagem junto de uma fogueira e esconde os suprimentos dos viajantes que 
 
 **Faca:** Principal, sem Karma, 2 m; maior de 1d20 +2 contra CA, 1d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Punho de retorno — Grau I:** Fecha a distância e golpeia com a mão que parecia proteger o rosto. Principal, 2 Karma. Força + Luta contra CA: maior de 1d20 +2, quando houver teste. Um alvo em contato; total 1d6 de impacto, parcial metade; falha nada.
+**Punho de retorno — Grau I:** Fecha a distância e golpeia com a mão que parecia proteger o rosto. Principal, 2 Karma. Força + Luta contra CA: maior de 1d20 +2, quando houver teste. Um alvo em contato; total 1d8 de impacto, parcial metade; falha nada.
 
 **Composição de Karma:** 2 Base I = 2 Karma.
 
@@ -368,6 +368,6 @@ A luz atravessa seus chifres e muda de direção quando o corpo se volta para qu
 
 **Galhada:** Principal, sem Karma, 2 m; maior de 3d20 +5 contra CA, 2d6 físico. Parcial metade antes das proteções; falha nada.
 
-**Clarão — Grau III:** Inclina a galhada e concentra um único reflexo sobre os olhos do alvo. Principal, 7 Karma. Espírito + Controle de Luz contra CA: maior de 3d20 +5, quando houver teste. Um alvo a 15 m; total 2d10 de Luz e Ofuscado até o início do próximo turno; parcial metade sem condição; falha nada.
+**Clarão — Grau III:** Inclina a galhada e concentra um único reflexo sobre os olhos do alvo. Principal, 7 Karma. Espírito + Controle de Luz contra CA: maior de 3d20 +5, quando houver teste. Um alvo a 15 m; total 2d8 de Luz e Ofuscado até o início do próximo turno; parcial metade sem condição; falha nada.
 
 **Composição de Karma:** 4 Base III + 2 Alcance médio + 1 Condição simples ou empurrão = 7 Karma.
