@@ -11,14 +11,17 @@ def index(c):
   c['sections'].append({'id':n.get('id'),'title':n.text_content(),'level':int(n.tag[1]),'searchableText':n.text_content()+' '+' '.join(x.text_content() for x in n.itersiblings() if x.tag=='p')})
 races=read('data/racial-progression.json');rules=read('data/character-rules.json');rules['races']=races;write('data/character-rules.json',rules);write('data/race-book.json',races)
 md='## Herança e os três marcos raciais\n\nA raça vem primeiro: nela vivem o corpo, os sentidos e o poder que ninguém aprende em uma escola. A classe ensina a agir sob pressão. A técnica é a maneira singular de pôr ambas a serviço de uma intenção. O traço nasce na criação; a herança amadurece nas Etapas II, IV e VI.\n\n'
+def alternatives(items):
+ return ' ou '.join(items) if len(items)<3 else ', '.join(items[:-1])+' ou '+items[-1]
 for name,race in races.items():
  gain=race['creation']; bonus=gain['automatic']; fs=race['features']
  md+=f"### {name}\n\n{race['summary']}\n\n"
  md+='| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |\n|---|---|---|---|\n'
  fixed=', '.join(f'+{v} em {k}' for k,v in bonus.get('attributes',{}).items())
- attrs=(fixed+'; ' if fixed else '')+'+1 em '+ ' ou '.join(gain['attributes'])
- skills='duas perícias à escolha' if gain['skills']=='*' else 'uma entre '+', '.join(gain['skills'])
- resources=f"+{bonus['life']} Vida"+(f" e +{bonus['karma']} Karma" if bonus['karma'] else '; sem bônus de Karma')
+ attrs=(fixed+'; ' if fixed else '')+('+1 em um Atributo à escolha' if len(gain['attributes'])==6 else '+1 em '+alternatives(gain['attributes']))
+ skills='Duas perícias à escolha' if gain['skills']=='*' else '+1 em '+alternatives(gain['skills'])
+ resources=f"+{bonus['life']} Vida"+(f" e +{bonus['karma']} Karma" if bonus['karma'] else ('' if bonus.get('movement') else '; sem bônus de Karma'))
+ if bonus.get('movement'):resources+=f" e +{bonus['movement']} m de Deslocamento"
  md+=f"| {attrs} | {skills} | {resources} | {fs[0]['name']} |\n\n"
  for f in fs:md+=f"#### Etapa {f['stage']} — {f['name']}\n\n{f['description']}\n\n"
 (root/'docs/racas.md').write_text(md)

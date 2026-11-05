@@ -3,7 +3,7 @@ import {calculateInvocationStats} from '@/lib/invocation-rules';
 import { visualFromRoll } from '@/lib/combat-visuals';
 import { ALL_SKILLS, SKILL_GROUPS, type AttributeName, type CharacterPayload } from '@/lib/character-data';
 import { calculateAutomaticBonuses, calculateDerivedStats, getFinalSkill, getSkillTest, getStageIndex as getFinalRacialStage } from '@/lib/character-rules';
-import { corruptedFormState } from '@/lib/corrupted-form';
+import { corruptedFormState, corruptionControlDC } from '@/lib/corrupted-form';
 import { domainActivation, resolveRoll } from '@/lib/table-play';
 import type { CombatAction, CombatLog, LiveCombatState } from '@/lib/combat-types';
 export const clamp = (n: number, max = 99999) => Math.max(0, Math.min(max, Math.floor(n)));
@@ -47,8 +47,10 @@ export function randomDice(count:number,sides=20) {
   count=Math.max(1,Math.min(60,Math.floor(count))); const limit=Math.floor(4294967296/sides)*sides;
   return Array.from({length:count},()=>{const a=new Uint32Array(1);do{crypto.getRandomValues(a)}while(a[0]>=limit);return a[0]%sides+1;});
 }
-export function skillRoll(draft:CharacterPayload, skill:string, approach?:AttributeName, circumstance: -1|0|1=0, purpose?:'technique', diceSource=randomDice,extraBonus=0,extraDice=0) {
+export function skillRoll(draft:CharacterPayload, skill:string, approach?:AttributeName, circumstance: -1|0|1=0, purpose?:'technique', diceSource=randomDice,extraBonus=0,extraDice=0,impetus=false) {
   if (!ALL_SKILLS.some(s=>s===skill)) throw new Error('Perícia desconhecida.');
+  if(impetus && (!impetusLimit(draft)||!(liveState(draft).impetus??0)))throw Error('Ímpeto indisponível para este teste.');
+  extraDice+=Number(impetus);extraBonus+=impetus?2:0;
   const test=getSkillTest(draft,calculateAutomaticBonuses(draft),skill,approach??defaultApproach(skill),undefined,purpose);
   const penalties=test.inventoryPenalty.dicePenalty, raw=(test.value===0||test.level===0?1:Math.ceil(test.value/2))+test.formDice+test.domainDice+circumstance-penalties+extraDice;
   const worst=raw<=0, count=worst?2:Math.min(30,raw), dice=diceSource(count,20);
@@ -128,7 +130,7 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
       next.corruption={...draft.corruption,charge:clamp(draft.corruption.charge+risk.charge,10)};
       next.combat={...draft.combat!,temporaryCharges:clamp((draft.combat?.temporaryCharges??0)+risk.temporary,10)};
       s.currentLife=clamp(s.currentLife-risk.life,max.life);
-      const dc=CORRUPT_CONTROL_BASE+next.corruption.charge+next.combat.temporaryCharges;
+      const dc=corruptionControlDC(next,CORRUPT_CONTROL_BASE);
       riskText=`Risco da matriz: +${risk.temporary} temporárias, +${risk.charge} efetiva, ${risk.life} Vida. ${next.corruption.charge===10?'Ruptura: Controle CD 24.':risk.immediateControl?`Faça um Controle imediato CD ${dc}${risk.disadvantage?' com Desvantagem':''}.`:risk.endOfTurnControl?`Faça um Controle CD ${dc} no fim do turno.`:'O desgaste já foi aplicado.'} `;
      }
     }
@@ -165,7 +167,7 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
   if(op.type==='scene'){s.impetus=impetusLimit(draft);s.impetusBloodied=false;s.round=1;s.reactions=1;s.domainRounds={};next.corruption={...next.corruption,formTurns:0};}
   if(op.type==='rest'){s={...s,inCombat:false,currentLife:max.life,currentKarma:max.karma,tempShield:0,domainRounds:{},round:1,reactions:1};next.alchemicalSaturation=0;next.combat={life:s.currentLife,karma:s.currentKarma,shield:0,round:1,domainRounds:{},temporaryCharges:0};next.corruption={...draft.corruption,formBlocked:false,formActive:false,formTurns:0};event.details='Descanso longo seguro: recursos restaurados e Saturação limpa; Carga de Corrupção e condições exigem suas regras próprias.';}
   if(next.corruption.charge===10 && next.corruption.formActive){event.details=(event.details??'')+' Carga 10: resolva a Ruptura CD 24. Ao encerrar: Carga 7, Forma encerrada e bloqueada, Exausto.';}
-  if(impetusLimit(draft)&&!s.impetusBloodied&&before>=max.life/2&&s.currentLife<max.life/2){
+  if(impetusLimit(draft)&&!s.impetusBloodied&&before>=max.life/2&&s.currentLife<=max.life/2){
    s.impetusBloodied=true;s.impetus=clamp((s.impetus??0)+1,impetusLimit(draft));
   }
   event.lifeDelta=s.currentLife-before;event.karmaDelta=s.currentKarma-karmaBefore;event.shieldDelta=s.tempShield-shieldBefore;

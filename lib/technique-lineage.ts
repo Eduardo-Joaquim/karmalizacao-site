@@ -3,8 +3,8 @@ export const LINEAGE_CATALYSTS:Record<string,string>={
  Elfo:'Em Harmonia, acrescente 3 m de alcance ou ignore cobertura parcial.',
  Anão:'Descarregue Cargas de Bigorna para firmar a técnica ou quebrar a guarda.',
  'Demi-humano':'Adapte o efeito secundário ao Aspecto Bestial ativo.',
- Vampiro:'Gaste Vitae para converter em cura a parcela prevista pela Reserva de Vitae.',
- Demônio:'Aplique ou resolva o Selo de Coação no alvo atingido.',
+ Vampiro:'Gaste 1 Vitae ao lançar a técnica para somar +1d6 de dano ou impor Sangrando no Acerto Total (a cura racial exige mordida direta).',
+ Demônio:'Aplique o Selo de Coação ao atingir o alvo. O +1d8 Corrupto do revide exige 2 Karma ou 1 Carga Temporária de Corrupção; aplicar o selo pelo olhar custa 1 Karma.',
  Ghoul:'Em Caça, use a Regeneração Voraz se o alvo e o resultado cumprirem seu gatilho.',
  'Tritão':'Deslize ou empurre o alvo atingido 2 m com o Pulso de Maré.',
  Abissal:'Meça alcance e trajetória a partir da Âncora do Vazio.'

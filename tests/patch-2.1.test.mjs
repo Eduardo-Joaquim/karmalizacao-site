@@ -80,3 +80,47 @@ test('reading ornament is inserted only between headings and never around each s
  assert.doesNotMatch(out,/<\/svg>\s*<svg class="section-filigree"/);
  assert(out.startsWith('<h2>'));
 });
+test('racial revision keeps fresh blood as the only ordinary vampiric healing source',async()=>{
+ const races=JSON.parse(read('data/racial-progression.json')),vamp=races.Vampiro;
+ const prose=vamp.features.map(f=>f.description).join(' ');
+ assert.doesNotMatch(prose,/3 Vida para curar/);
+ assert.match(prose,/Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva/);
+ assert.match(prose,/Vitae não curam Vida diretamente/);
+ assert.match(vamp.features[1].description,/\+1d8/);
+ assert.match(vamp.features[3].description,/Etapa × 4/);
+ const {LINEAGE_CATALYSTS}=await v.ssrLoadModule('/lib/technique-lineage.ts');
+ assert.match(LINEAGE_CATALYSTS.Vampiro,/a cura racial exige mordida direta/);
+ assert.doesNotMatch(LINEAGE_CATALYSTS.Vampiro,/converter em cura/);
+ assert.match(read('docs/racas.md'),/Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva/);
+});
+test('Aqueronte grants native corruption training and requires a paid retaliation',async()=>{
+ const demon=JSON.parse(read('data/racial-progression.json'))['Demônio'];
+ assert(demon.creation.skills.includes('Controle da Corrupção'));
+ assert.match(demon.features[0].description,/reduzida em 1 ponto/);
+ assert.match(demon.features[0].description,/2 Karma ou assumir 1 Carga Temporária de Corrupção.*\+1d8 de dano Corrupto/);
+ const d=createBlankCharacter();d.race='Demônio';d.corruption.charge=4;d.combat={temporaryCharges:2};
+ const {corruptionControlDC}=await v.ssrLoadModule('/lib/corrupted-form.ts');
+ assert.equal(corruptionControlDC(d),19);assert.equal(corruptionControlDC(d,16),21);
+ assert(rules.calculateAutomaticBonuses(d).raceSkillSlots.some(s=>s.options.includes('Controle da Corrupção')));
+});
+test('human creation and impetus rolls apply the extra die and flat bonus together',()=>{
+ const d=createBlankCharacter();d.race='Humano';d.stage='Etapa I';d.attributes.Força.base=4;d.skills.Luta.base=1;
+ const bonus=rules.calculateAutomaticBonuses(d);assert.equal(bonus.life,6);assert.equal(bonus.karma,2);
+ const source=n=>Array(n).fill(12);
+ const plain=engine.skillRoll(d,'Luta','Força',0,undefined,source);
+ const boosted=engine.skillRoll(d,'Luta','Força',0,undefined,source,0,0,true);
+ assert.equal(boosted.dice.length,plain.dice.length+1);assert.equal(boosted.total,plain.total+2);
+ assert.match(boosted.formula,/\+4$/);
+ const exhausted=engine.withLiveState(d,{...engine.liveState(d),impetus:0});
+ assert.throws(()=>engine.skillRoll(exhausted,'Luta','Força',0,undefined,source,0,0,true),/Ímpeto indisponível/);
+ const max=engine.characterMax(d).life;
+ const hurt=engine.applyCombatAction(d,{id:'exact-half',type:'damage',title:'Dano',actorName:'Mestre',amount:max-Math.floor(max/2),resistance:0});
+ assert.equal(hurt.combatState.impetusBloodied,true);
+});
+test('race tables use grammatical choices, include movement and preserve generated sources',()=>{
+ const text=read('docs/racas.md');
+ assert.doesNotMatch(text,/Força ou Agilidade ou Constituição|fere no Total|forma robusta dá|resista a Água e Gelo com 3|Escolha Agilidade, Intelecto ou Espírito\./);
+ assert.match(text,/\+1 em um Atributo à escolha/);assert.match(text,/Duas perícias à escolha/);
+ assert.match(text,/\+6 Vida e \+1 m de Deslocamento/);
+ assert.deepEqual(JSON.parse(read('data/race-book.json')),JSON.parse(read('data/racial-progression.json')));
+});
