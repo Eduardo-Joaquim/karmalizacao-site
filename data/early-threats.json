@@ -62,9 +62,12 @@
       "dice": 1,
       "bonus": 2,
       "matrix": "Elemental",
-      "damageType": "Kármico",
+      "damageType": "Elemental / Fogo",
       "baseDamage": "1d10"
-    }
+    },
+    "huntingDamage": "Elemental / Fogo",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "besouro-de-escoria",
@@ -133,9 +136,12 @@
       "dice": 1,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
+      "damageType": "Marcial",
       "baseDamage": "1d8"
-    }
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Pequeno"
   },
   {
     "id": "batedor-ghoul-raso",
@@ -204,9 +210,12 @@
       "dice": 2,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
+      "damageType": "Marcial",
       "baseDamage": "1d10"
-    }
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "lampreia-de-enxofre",
@@ -275,9 +284,12 @@
       "dice": 2,
       "bonus": 5,
       "matrix": "Elemental",
-      "damageType": "Kármico",
+      "damageType": "Elemental / Água",
       "baseDamage": "2d8"
-    }
+    },
+    "huntingDamage": "Elemental / Água",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "automato-de-forja",
@@ -348,7 +360,10 @@
       "matrix": "Kármico",
       "damageType": "Kármico",
       "baseDamage": "2d10"
-    }
+    },
+    "huntingDamage": "Kármico",
+    "huntingRole": "Guardião",
+    "size": "Grande"
   },
   {
     "id": "rato-de-marco",
@@ -417,9 +432,12 @@
       "dice": 1,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
-      "baseDamage": "1d10"
-    }
+      "damageType": "Mobilidade",
+      "baseDamage": ""
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Pequeno"
   },
   {
     "id": "vespa-de-quartzo",
@@ -469,7 +487,7 @@
     "technique": {
       "name": "Estilhaço",
       "grade": "I",
-      "source": "Terra",
+      "source": "Quartzo",
       "action": "Principal",
       "cost": 2,
       "components": [
@@ -479,14 +497,17 @@
         }
       ],
       "description": "Parte a ponta mineral do ferrão contra uma superfície.",
-      "effect": "Um alvo a 5 m; total 1d6 perfurante, parcial metade; falha nada.",
+      "effect": "Um alvo a 5 m; total 1d10 de Quartzo, parcial metade; falha nada.",
       "test": "Espírito + Controle de Terra contra CA",
       "dice": 1,
       "bonus": 2,
       "matrix": "Elemental",
-      "damageType": "Kármico",
+      "damageType": "Elemental / Quartzo",
       "baseDamage": "1d10"
-    }
+    },
+    "huntingDamage": "Elemental / Quartzo",
+    "huntingRole": "Guardião",
+    "size": "Pequeno"
   },
   {
     "id": "saqueador-de-estrada",
@@ -555,9 +576,12 @@
       "dice": 2,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
+      "damageType": "Marcial",
       "baseDamage": "1d10"
-    }
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "lobo-de-raiz",
@@ -630,9 +654,12 @@
       "dice": 2,
       "bonus": 5,
       "matrix": "Elemental",
-      "damageType": "Kármico",
+      "damageType": "Elemental / Terra",
       "baseDamage": "2d8"
-    }
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "sentinela-de-barro",
@@ -701,9 +728,12 @@
       "dice": 3,
       "bonus": 5,
       "matrix": "Elemental",
-      "damageType": "Kármico",
-      "baseDamage": "2d6"
-    }
+      "damageType": "Suporte",
+      "baseDamage": ""
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Grande"
   },
   {
     "id": "corvo-de-cabo",
@@ -772,9 +802,12 @@
       "dice": 1,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
-      "baseDamage": "1d10"
-    }
+      "damageType": "Mobilidade",
+      "baseDamage": ""
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Pequeno"
   },
   {
     "id": "gato-de-descarga",
@@ -824,7 +857,7 @@
     "technique": {
       "name": "Estalo",
       "grade": "I",
-      "source": "Karma",
+      "source": "Raio",
       "action": "Principal",
       "cost": 2,
       "components": [
@@ -834,14 +867,17 @@
         }
       ],
       "description": "Uma carga kármica salta entre o pelo e a superfície tocada.",
-      "effect": "Um alvo em contato; total 1d10 kármico, parcial metade; falha nada.",
+      "effect": "Um alvo em contato; total 1d10 de Raio, parcial metade; falha nada.",
       "test": "Espírito + Canalização de Karma contra CA",
       "dice": 1,
       "bonus": 2,
-      "matrix": "Kármico",
-      "damageType": "Kármico",
+      "matrix": "Elemental",
+      "damageType": "Elemental / Raio",
       "baseDamage": "1d10"
-    }
+    },
+    "huntingDamage": "Elemental / Raio",
+    "huntingRole": "Guardião",
+    "size": "Pequeno"
   },
   {
     "id": "vigia-de-telhado",
@@ -910,9 +946,12 @@
       "dice": 2,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
+      "damageType": "Marcial",
       "baseDamage": "1d10"
-    }
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Emboscador",
+    "size": "Médio"
   },
   {
     "id": "arraia-de-nevoa",
@@ -985,9 +1024,12 @@
       "dice": 2,
       "bonus": 5,
       "matrix": "Elemental",
-      "damageType": "Kármico",
+      "damageType": "Elemental / Vento",
       "baseDamage": "2d8"
-    }
+    },
+    "huntingDamage": "Elemental / Vento",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "marionete-ferroviaria",
@@ -1058,7 +1100,10 @@
       "matrix": "Kármico",
       "damageType": "Kármico",
       "baseDamage": "2d8"
-    }
+    },
+    "huntingDamage": "Kármico",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "caranguejo-de-degrau",
@@ -1127,9 +1172,12 @@
       "dice": 1,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
-      "baseDamage": "1d10"
-    }
+      "damageType": "Mobilidade",
+      "baseDamage": ""
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Pequeno"
   },
   {
     "id": "eco-sem-rosto",
@@ -1200,7 +1248,10 @@
       "matrix": "Kármico",
       "damageType": "Kármico",
       "baseDamage": "2d6"
-    }
+    },
+    "huntingDamage": "Kármico",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "bandido-karmalizado",
@@ -1265,9 +1316,12 @@
       "dice": 1,
       "bonus": 2,
       "matrix": "Marcial",
-      "damageType": "Físico",
+      "damageType": "Marcial",
       "baseDamage": "1d8"
-    }
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "tecedora-de-frestas",
@@ -1336,9 +1390,12 @@
       "dice": 2,
       "bonus": 5,
       "matrix": "Kármico",
-      "damageType": "Kármico",
-      "baseDamage": "2d6"
-    }
+      "damageType": "Suporte",
+      "baseDamage": ""
+    },
+    "huntingDamage": "Marcial",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   },
   {
     "id": "cervo-de-vidro",
@@ -1411,8 +1468,11 @@
       "dice": 3,
       "bonus": 5,
       "matrix": "Elemental",
-      "damageType": "Kármico",
+      "damageType": "Elemental / Luz",
       "baseDamage": "2d8"
-    }
+    },
+    "huntingDamage": "Elemental / Luz",
+    "huntingRole": "Guardião",
+    "size": "Médio"
   }
 ]

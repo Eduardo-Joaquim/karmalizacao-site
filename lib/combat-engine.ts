@@ -1,4 +1,4 @@
-import {corruptionMatrixRisk} from '@/lib/technique-matrices';
+import {calculateElementalDefense, CORRUPT_CONTROL_BASE,corruptionMatrixRisk} from '@/lib/technique-matrices';
 import {calculateInvocationStats} from '@/lib/invocation-rules';
 import { visualFromRoll } from '@/lib/combat-visuals';
 import { ALL_SKILLS, SKILL_GROUPS, type AttributeName, type CharacterPayload } from '@/lib/character-data';
@@ -8,9 +8,13 @@ import { domainActivation, resolveRoll } from '@/lib/table-play';
 import type { CombatAction, CombatLog, LiveCombatState } from '@/lib/combat-types';
 export const clamp = (n: number, max = 99999) => Math.max(0, Math.min(max, Math.floor(n)));
 export function characterMax(draft: CharacterPayload) { return calculateDerivedStats(draft, calculateAutomaticBonuses(draft)); }
+export function impetusLimit(draft:CharacterPayload){
+ const stage=getFinalRacialStage(draft.stage);
+ return draft.race!=='Humano'?0:stage>=6?4:stage>=4?3:2;
+}
 export function liveState(draft: CharacterPayload): LiveCombatState {
   const max = characterMax(draft), old = draft.combat, s = draft.combatState;
-  return { summons:s?.summons??{},bossPhases:s?.bossPhases??{}, inCombat: s?.inCombat ?? false, currentLife: clamp(s?.currentLife ?? old?.life ?? max.life,max.life), currentKarma: clamp(s?.currentKarma ?? old?.karma ?? max.karma,max.karma), tempShield: clamp(s?.tempShield ?? old?.shield ?? 0,9999), activeConditions: s?.activeConditions ?? [], lastActionLog: s?.lastActionLog ?? null, combatFeed: (s?.combatFeed ?? []).slice(-25), reactions: clamp(s?.reactions ?? 1,10), round: Math.max(1,clamp(s?.round ?? old?.round ?? 1)), domainRounds: s?.domainRounds ?? old?.domainRounds ?? {} };
+  return { impetus:clamp(s?.impetus??impetusLimit(draft),impetusLimit(draft)),impetusBloodied:s?.impetusBloodied??false,summons:s?.summons??{},bossPhases:s?.bossPhases??{}, inCombat: s?.inCombat ?? false, currentLife: clamp(s?.currentLife ?? old?.life ?? max.life,max.life), currentKarma: clamp(s?.currentKarma ?? old?.karma ?? max.karma,max.karma), tempShield: clamp(s?.tempShield ?? old?.shield ?? 0,9999), activeConditions: s?.activeConditions ?? [], lastActionLog: s?.lastActionLog ?? null, combatFeed: (s?.combatFeed ?? []).slice(-25), reactions: clamp(s?.reactions ?? 1,10), round: Math.max(1,clamp(s?.round ?? old?.round ?? 1)), domainRounds: s?.domainRounds ?? old?.domainRounds ?? {} };
 }
 export function withLiveState(draft: CharacterPayload, s: LiveCombatState): CharacterPayload {
   return { ...draft, combatState: s, combat: { life:s.currentLife, karma:s.currentKarma, shield:s.tempShield, round:s.round, domainRounds:s.domainRounds, temporaryCharges:draft.combat?.temporaryCharges ?? 0 } };
@@ -43,13 +47,13 @@ export function randomDice(count:number,sides=20) {
   count=Math.max(1,Math.min(60,Math.floor(count))); const limit=Math.floor(4294967296/sides)*sides;
   return Array.from({length:count},()=>{const a=new Uint32Array(1);do{crypto.getRandomValues(a)}while(a[0]>=limit);return a[0]%sides+1;});
 }
-export function skillRoll(draft:CharacterPayload, skill:string, approach?:AttributeName, circumstance: -1|0|1=0, purpose?:'technique', diceSource=randomDice,extraBonus=0) {
+export function skillRoll(draft:CharacterPayload, skill:string, approach?:AttributeName, circumstance: -1|0|1=0, purpose?:'technique', diceSource=randomDice,extraBonus=0,extraDice=0) {
   if (!ALL_SKILLS.some(s=>s===skill)) throw new Error('Perícia desconhecida.');
   const test=getSkillTest(draft,calculateAutomaticBonuses(draft),skill,approach??defaultApproach(skill),undefined,purpose);
-  const penalties=test.inventoryPenalty.dicePenalty, raw=(test.value===0||test.level===0?1:Math.ceil(test.value/2))+test.formDice+test.domainDice+circumstance-penalties;
+  const penalties=test.inventoryPenalty.dicePenalty, raw=(test.value===0||test.level===0?1:Math.ceil(test.value/2))+test.formDice+test.domainDice+circumstance-penalties+extraDice;
   const worst=raw<=0, count=worst?2:Math.min(30,raw), dice=diceSource(count,20);
   const result=resolveRoll(dice,test.bonus+extraBonus,undefined,'CD',worst?'menor':'maior');
-  return { ...result, dice, formula:`${worst?'menor':'maior'} de ${count}d20 ${test.bonus+extraBonus>=0?'+':''}${test.bonus+extraBonus}`, test };
+  return { ...result, dice, selection:worst?'menor' as const:'maior' as const, formula:`${worst?'menor':'maior'} de ${count}d20 ${test.bonus+extraBonus>=0?'+':''}${test.bonus+extraBonus}`, test };
 }
 export function damageDice(text:string, critical=false, diceSource=randomDice) {
   const match=text.match(/(?<![\w])(\d{1,2}d(?:20|12|10|8|6|4)(?:\s*\+\s*\d{1,3}(?:d(?:20|12|10|8|6|4))?)*)(?!\d)/i);
@@ -68,7 +72,7 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
   if(s.combatFeed.some(e=>e.id===op.id))return draft;
   const before=s.currentLife,karmaBefore=s.currentKarma,shieldBefore=s.tempShield;
   const event:CombatLog={id:op.id,timestamp,actorName:op.actorName,title:op.title,kind:'resource'};
-  if(op.type==='damage'){const r=receiveDamage(s.currentLife,s.tempShield,op.amount,op.resistance,op.bypassShield);s={...s,currentLife:r.life,tempShield:r.shield};event.kind='damage';event.details=`${op.amount} bruto − ${op.resistance} Resistência; ${r.absorbed} no escudo; ${r.damage} na Vida.`;}
+  if(op.type==='damage'){const resistance=op.incomingElement&&op.primaryDefenses?calculateElementalDefense(op.primaryDefenses,op.incomingElement):op.resistance;const r=receiveDamage(s.currentLife,s.tempShield,op.amount,resistance,op.bypassShield);s={...s,currentLife:r.life,tempShield:r.shield};event.kind='damage';event.details=`${op.amount} bruto − ${resistance} Resistência; ${r.absorbed} no escudo; ${r.damage} na Vida.`;}
   if(op.type==='summon'){
    const invocation=draft.invocations.find(i=>i.id===op.invocationId);if(!invocation)throw Error('Invocação não registrada.');
    const stats=calculateInvocationStats(invocation),current=s.summons?.[invocation.id]??{life:stats.life,active:false};
@@ -103,6 +107,15 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
   if(op.type==='toggle')s.inCombat=op.active;
   if(op.type==='execute'){
     let riskText='';
+    if(op.impetus){
+     if(!impetusLimit(draft)||!(s.impetus??0)||!op.diceResults?.length)throw Error('Ímpeto indisponível para este teste.');
+     s.impetus=(s.impetus??0)-1;
+     riskText='1 Ímpeto gasto. ';
+     if(getFinalRacialStage(draft.stage)>=2&&(op.kind==='attack'||op.kind==='technique'))riskText+='Leitura de Brecha: próximo ataque aliado contra o alvo reduz em 2 ambos os limiares de acerto. ';
+    }
+    if(op.diceResults?.length&&(op.selection==='menor'?Math.min(...op.diceResults):Math.max(...op.diceResults))===20)
+     s.impetus=clamp((s.impetus??0)+1,impetusLimit(draft));
+
     if(op.techniqueId){
      const art=draft.techniques.find(t=>t.id===op.techniqueId);if(!art)throw Error('Técnica não registrada.');
      const grade=['I','II','III','IV','V'].indexOf(art.grade.replace('Grau ',''));
@@ -110,13 +123,13 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
      if(art.matrix==='Corrupto'&&grade>=0){
       if(!draft.corruption.enabled)throw Error('A matriz Corrupta exige a Marca.');
       const natural=op.diceResults?.length?(op.selection==='menor'?Math.min(...op.diceResults):Math.max(...op.diceResults)):0;
-      if(grade===1&&op.succeeded===undefined)throw Error('Confirme o sucesso ou falha para resolver o risco de Grau II.');
+      if(grade<=1&&op.succeeded===undefined)throw Error('Registre o resultado do ataque antes de resolver a técnica.');
       const risk=corruptionMatrixRisk(grade,op.succeeded??true,natural);
       next.corruption={...draft.corruption,charge:clamp(draft.corruption.charge+risk.charge,10)};
       next.combat={...draft.combat!,temporaryCharges:clamp((draft.combat?.temporaryCharges??0)+risk.temporary,10)};
       s.currentLife=clamp(s.currentLife-risk.life,max.life);
-      const dc=14+next.corruption.charge+next.combat.temporaryCharges;
-      riskText=`Risco da matriz: +${risk.temporary} temporárias, +${risk.charge} efetiva, ${risk.life} Vida. ${next.corruption.charge===10?'Ruptura: Controle CD 24.':risk.immediateControl?`Resolva um único Controle imediato CD ${dc}.`:'Resolva Controle nos gatilhos do Capítulo 14.'} `;
+      const dc=CORRUPT_CONTROL_BASE+next.corruption.charge+next.combat.temporaryCharges;
+      riskText=`Risco da matriz: +${risk.temporary} temporárias, +${risk.charge} efetiva, ${risk.life} Vida. ${next.corruption.charge===10?'Ruptura: Controle CD 24.':risk.immediateControl?`Faça um Controle imediato CD ${dc}${risk.disadvantage?' com Desvantagem':''}.`:risk.endOfTurnControl?`Faça um Controle CD ${dc} no fim do turno.`:'O desgaste já foi aplicado.'} `;
      }
     }
     if(s.currentKarma<op.cost)throw Error('Karma insuficiente.');
@@ -148,10 +161,13 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
     if(op.active){const form=corruptedFormState(draft,getFinalSkill(draft,calculateAutomaticBonuses(draft),'Controle da Corrupção'));if(form.issues.length||!form.selected.length)throw Error(form.issues[0]??'Registre as mutações da Forma na ficha.');if(draft.corruption.formActive)throw Error('Mutações já ativas.');if(s.currentKarma<6)throw Error('Karma insuficiente.');s.currentKarma-=6;event.karmaSpent=6;}
     next.corruption={...draft.corruption,formActive:op.active};event.kind='ability';event.details=op.active?'Movimento e 6 Karma; resolva um Controle na ativação conjunta de rede e mutações. Manutenção de 1 Karma por turno seguinte, sem teste por esse pagamento.':'Mutações encerradas; contador corporal da cena preservado. Se acumulou cinco turnos, aplique Exausto.';
   }
-  if(op.type==='round'){s.round=Math.min(99999,s.round+1);s.reactions=draft.race==='Humano'&&getFinalRacialStage(draft.stage)>=4?2:1;s.domainRounds=Object.fromEntries(Object.entries(s.domainRounds).map(([k,v])=>[k,Math.max(0,v-1)]));if(next.corruption.formActive)next.corruption={...next.corruption,formTurns:Math.min(999,(next.corruption.formTurns??0)+1)};}
-  if(op.type==='scene'){s.round=1;s.reactions=draft.race==='Humano'&&getFinalRacialStage(draft.stage)>=4?2:1;s.domainRounds={};next.corruption={...next.corruption,formTurns:0};}
+  if(op.type==='round'){s.round=Math.min(99999,s.round+1);s.reactions=1;s.domainRounds=Object.fromEntries(Object.entries(s.domainRounds).map(([k,v])=>[k,Math.max(0,v-1)]));if(next.corruption.formActive)next.corruption={...next.corruption,formTurns:Math.min(999,(next.corruption.formTurns??0)+1)};}
+  if(op.type==='scene'){s.impetus=impetusLimit(draft);s.impetusBloodied=false;s.round=1;s.reactions=1;s.domainRounds={};next.corruption={...next.corruption,formTurns:0};}
   if(op.type==='rest'){s={...s,inCombat:false,currentLife:max.life,currentKarma:max.karma,tempShield:0,domainRounds:{},round:1,reactions:1};next.alchemicalSaturation=0;next.combat={life:s.currentLife,karma:s.currentKarma,shield:0,round:1,domainRounds:{},temporaryCharges:0};next.corruption={...draft.corruption,formBlocked:false,formActive:false,formTurns:0};event.details='Descanso longo seguro: recursos restaurados e Saturação limpa; Carga de Corrupção e condições exigem suas regras próprias.';}
   if(next.corruption.charge===10 && next.corruption.formActive){event.details=(event.details??'')+' Carga 10: resolva a Ruptura CD 24. Ao encerrar: Carga 7, Forma encerrada e bloqueada, Exausto.';}
+  if(impetusLimit(draft)&&!s.impetusBloodied&&before>=max.life/2&&s.currentLife<max.life/2){
+   s.impetusBloodied=true;s.impetus=clamp((s.impetus??0)+1,impetusLimit(draft));
+  }
   event.lifeDelta=s.currentLife-before;event.karmaDelta=s.currentKarma-karmaBefore;event.shieldDelta=s.tempShield-shieldBefore;
   s.lastActionLog=event;s.combatFeed=[...s.combatFeed,event].slice(-25);
   return withLiveState(next,s);

@@ -20,7 +20,8 @@ for key, name in regions.items():
         text += '**Atributos:** ' + ' · '.join(f'{n} {v}' for n,v in zip(['Força','Agilidade','Constituição','Intelecto','Presença','Espírito'],c['attributes'])) + '.\n\n'
         text += '**Perícias:** ' + ' · '.join(f'{s["name"]} {s["level"]}' for s in c['skills']) + '. Demais 0.\n\n'
         text += f'**{c["trait"]["name"]}:** {c["trait"]["effect"]}\n\n**{a["name"]}:** Principal, sem Karma, {a["range"]}; maior de {a["dice"]}d20 +{a["bonus"]} contra CA, {a["damage"]} físico. Parcial metade antes das proteções; falha nada.\n\n'
-        text += f'**{t["name"]} — Grau {t["grade"]}:** {t["description"]} {t["action"]}, {t["cost"]} Karma. {t["test"]}: maior de {t["dice"]}d20 +{t["bonus"]}, quando houver teste. {t["effect"]}\n\n**Composição de Karma:** ' + ' + '.join(f'{v["value"]} {v["label"]}' for v in t['components']) + f' = {t["cost"]} Karma.\n\n'
+        test='Ativação direta, sem rolagem de ataque' if 'sem teste' in t['test'].lower() or 'contra CA' not in t['test'] else f'{t["test"]}: maior de {t["dice"]}d20 +{t["bonus"]}'
+        text += f'**{t["name"]} — Grau {t["grade"]}:** {t["description"]} {t["action"]}, {t["cost"]} Karma. {test}. {t["effect"]}\n\n**Composição de Karma:** ' + ' + '.join(f'{v["value"]} {v["label"]}' for v in t['components']) + f' = {t["cost"]} Karma.\n\n'
 text = text.rstrip() + '\n'
 (root / 'docs/ameacas-iniciais.md').write_text(text)
 p = root / 'docs/bestiario.md'

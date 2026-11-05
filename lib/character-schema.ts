@@ -1,3 +1,4 @@
+import {DAMAGE_TYPES} from "./technique-matrices";
 import { combatVisualSchema, phaseNoticeSchema } from "@/lib/combat-visual-schema";
 import { z } from "zod";
 
@@ -119,7 +120,7 @@ const elementalSchema = z.object({
 });
 
 const techniqueSchema = z.object({
-  matrix:z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"]).optional(),damageType:z.enum(["Físico","Mental","Kármico"]).optional(),matrixExtras:z.number().min(0).max(999).optional(),matrixDiscount:z.number().min(0).max(3).optional(),
+  matrix:z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"]).optional(),damageType:z.enum([...DAMAGE_TYPES,"Físico"] as const).optional(),lineageCatalyst:shortText.optional(),doctrine:shortText.optional(),matrixExtras:z.number().min(0).max(999).optional(),matrixDiscount:z.number().min(0).max(3).optional(),
   id: shortText,
   name: shortText.default(""),
   concept: longText(800).default(""),
@@ -222,6 +223,7 @@ export const combatLogSchema = z.object({
 });
 export const liveCombatSchema = z.object({
   summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean()})).default({}),
+  impetus:z.number().int().min(0).max(4).optional(),impetusBloodied:z.boolean().optional(),
   inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),
   activeConditions:z.array(z.string().min(1).max(80)).max(20),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
   bossPhases:z.record(z.string().max(80),phaseNoticeSchema).refine(v=>Object.keys(v).length<=20).optional(),

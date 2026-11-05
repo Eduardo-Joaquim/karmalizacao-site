@@ -1,3 +1,4 @@
+import {MarkdownArticle} from "@/components/markdown-article";
 import { RuleOrnament } from "@/components/rule-ornament";
 import court from "@/data/court-sheets.json";
 import type { Metadata } from "next";
@@ -75,10 +76,7 @@ export default async function RuleChapterPage({ params, searchParams }: PageProp
             </div>
           </header>
 
-          <div
-            className="rule-content"
-            dangerouslySetInnerHTML={{ __html: chapter.html }}
-          />
+          <MarkdownArticle html={chapter.html} chapter={chapter.number}/>
 
           <nav className="chapter-pagination" aria-label="Capítulos anterior e próximo">
             {previous ? (

@@ -40,7 +40,7 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 **Perícias:** Pontaria 3: maior de 5d20 +10. Reflexos 3: maior de 5d20 +10. Manifestação de Bênção 3 e Controle de Terra 3: maior de 4d20 +10. Percepção 3 e Tática 3: maior de 5d20 +14 com Analítico. Furtividade 2: maior de 5d20 +5. Atletismo 2: maior de 3d20 +5. Perícias não indicadas são 0.
 
-**Armas:** arco real, Principal, 40 m, maior de 5d20 +10 contra CA, 1d10 perfurante; parcial metade. Duas pistolas vegetais, Principal, 20 m, maior de 5d20 +10 contra CA, 1d8 perfurante; cada pistola comporta um disparo e recarregar uma delas exige Movimento. Empunhar as duas não concede ataque adicional.
+**Armas:** Arco real, Principal, 40 m, maior de 5d20 +10 contra CA, 1d10 perfurante; parcial metade. Duas pistolas vegetais, Principal, 20 m, maior de 5d20 +10 contra CA, 1d8 perfurante; cada pistola comporta um disparo e recarregar uma delas exige Movimento. Empunhar as duas não concede ataque adicional.
 
 **Bênção hereditária — Nemeton:** <span data-divine-grant="guaraci">Outorgada por Guaraci, Calor que Desperta a Mata · Lendas Tupi-Guarani — Asa do Assombro.</span><span data-world-blessing="outorga-3"></span> Guaraci confiou à coroa o santuário vivo da floresta. Naerith recebeu Nemeton na coroação; a outorga passa integralmente à sucessora, sem duas portadoras completas simultâneas. a soberana desperta formas vegetais completas a partir de sementes, raízes e solo fértil. Plantas simples florescem sem custo; manifestações de combate usam as técnicas abaixo. A bênção passa integralmente à herdeira durante a coroação e não permanece completa em duas rainhas ao mesmo tempo.
 
@@ -50,95 +50,84 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 ##### 1 · Sagitta
 
-**Fonte e Grau:** Bênção III; ataque. **Uso:** Principal, 9 Karma, um alvo a até 30 m. Naerith faz brotar uma flor balística e rola Manifestação de Bênção contra a CA. Total: **2d10 perfurante** e o alvo fica marcado por pólen até o início do próximo turno da rainha; o primeiro ataque de um aliado contra ele recebe +2. Parcial: metade do dano, sem marca. Falha: nenhum efeito. Apenas uma marca de Sagitta pode existir.
+**Fonte e Grau:** Bênção III; ataque. **Uso:** Principal, 9 Karma, um alvo a até 30 m. Naerith faz brotar uma flor balística e rola Manifestação de Bênção contra a CA. Total: **2d8 perfurante** E o alvo fica marcado por pólen até o início do próximo turno da rainha; o primeiro ataque de um aliado contra ele recebe +2. Parcial: metade do dano, sem marca. Falha: nenhum efeito. Apenas uma marca de Sagitta pode existir.
 
-**Composição de Karma:** 4 base iii + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Rhíza
 
-**Fonte e Grau:** Bênção IV; contenção em área. **Uso:** Principal, 20 Karma, centro a até 25 m, raio de 4 m, por duas rodadas. Naerith rola Manifestação de Bênção uma vez; cada inimigo na área opõe Força + Atletismo ou Espírito + Canalização. Quem perder sofre **2d10 de Terra** e fica Imobilizado até usar uma Principal para repetir a oposição. Em empate, sofre metade do dano e perde 3 m de Deslocamento até o fim do próximo turno. As raízes têm CA 20 e Vida 24 por alvo; destruí-las liberta apenas a criatura correspondente.
+**Fonte e Grau:** Bênção IV; contenção em área. **Uso:** Principal, 20 Karma, centro a até 25 m, raio de 4 m, por duas rodadas. Naerith rola Manifestação de Bênção uma vez; cada inimigo na área opõe Força + Atletismo ou Espírito + Canalização. Quem perder sofre **2d10 de Terra** E fica Imobilizado até usar uma Principal para repetir a oposição. Em empate, sofre metade do dano e perde 3 m de Deslocamento até o fim do próximo turno. As raízes têm CA 20 e Vida 24 por alvo; destruí-las liberta apenas a criatura correspondente.
 
-**Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 1 duração + 3 função secundária iii = 20 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 1 duração + 3 Função secundária III = 20 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Dáphne
 
-**Fonte e Grau:** Bênção III; proteção. **Uso:** Principal, 12 Karma, Naerith ou um aliado a até 20 m, por três rodadas. Uma couraça de folhas endurecidas concede **+2 CA** e reduz em 3 o dano físico recebido depois de outras reduções. A redução física aplica-se somente ao primeiro dano físico recebido em cada rodada; não causa retaliação. Uma criatura por vez; reaplicar encerra a proteção anterior.
+**Fonte e Grau:** Bênção III; proteção. **Uso:** Principal, 12 Karma, Naerith ou um aliado a até 20 m, por três rodadas. Uma couraça de folhas endurecidas concede **+2 CA** E reduz em 3 o dano físico recebido depois de outras reduções. A redução física aplica-se somente ao primeiro dano físico recebido em cada rodada; não causa retaliação. Uma criatura por vez; reaplicar encerra a proteção anterior.
 
-**Composição de Karma:** 4 base iii + 4 alcance longo + 2 duração + 2 função secundária ii = 12 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 alcance longo + 2 duração + 2 Função secundária II = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Khlôris
 
-**Fonte e Grau:** Bênção IV; ataque em linha. **Uso:** Principal, 15 Karma, linha de 15 m por 3 m iniciada em um ponto percebido a até 20 m. Caules lançadores disparam em sequência. Uma rolagem de Manifestação de Bênção é comparada à CA de cada criatura na área. Total: **2d12 perfurante** e empurrão de 2 m para uma lateral possível. Parcial: metade do dano, sem empurrão. A linha atinge aliados e não atravessa cobertura total.
+**Fonte e Grau:** Bênção IV; ataque em linha. **Uso:** Principal, 15 Karma, linha de 15 m por 3 m iniciada em um ponto percebido a até 20 m. Caules lançadores disparam em sequência. Uma rolagem de Manifestação de Bênção é comparada à CA de cada criatura na área. Total: **2d10 perfurante** E empurrão de 2 m para uma lateral possível. Parcial: metade do dano, sem empurrão. A linha atinge aliados e não atravessa cobertura total.
 
-**Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Nix
 
 **Fonte e Grau:** Bênção III; ataque e supressão. **Uso:** Principal, 10 Karma, um alvo a até 25 m. Uma flor pálida abre-se sobre o alvo; Manifestação de Bênção contra CA. Total: **2d8 kármico**, Deslocamento reduzido à metade e perda da próxima Reação disponível até o início do próximo turno de Naerith. Parcial: metade do dano e −2 m de Deslocamento, sem perda de Reação. A técnica não transforma o dano em Água nem congela o interior de corpos.
 
-**Composição de Karma:** 4 base iii + 4 alcance longo + 2 função secundária ii = 10 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 alcance longo + 2 Função secundária II = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 6 · Ákantha
 
-**Fonte e Grau:** Bênção IV; domínio de terreno. **Uso:** Principal, 27 Karma, centro a até 25 m, raio de 5 m, por três rodadas. O terreno torna-se difícil. Na criação, Naerith compara uma rolagem de Manifestação de Bênção à CA de cada criatura na área: total causa **2d12 perfurante**, parcial metade. Depois disso, cada inimigo que percorrer mais de 2 m dentro da área sofre **1d8 perfurante**, uma vez por rodada, sem nova condição. Fogo suficiente para causar 20 de dano à área encerra a manifestação.
+**Fonte e Grau:** Bênção IV; domínio de terreno. **Uso:** Principal, 27 Karma, centro a até 25 m, raio de 5 m, por três rodadas. O terreno torna-se difícil. Na criação, Naerith compara uma rolagem de Manifestação de Bênção à CA de cada criatura na área: total causa **2d10 perfurante**, parcial metade. Depois disso, cada inimigo que percorrer mais de 2 m dentro da área sofre **1d8 perfurante**, uma vez por rodada, sem nova condição. Fogo suficiente para causar 20 de dano à área encerra a manifestação.
 
-**Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 2 duração + 3 função secundária iii + 6 pulsos posteriores = 27 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 2 duração + 3 Função secundária III + 6 pulsos posteriores = 27 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Nepénthes
 
 **Fonte e Grau:** Bênção IV; captura. **Uso:** Principal, 14 Karma, um alvo de porte Grande ou menor a até 15 m, por até duas rodadas. Manifestação de Bênção contra CA. Total: a planta causa **2d10 de impacto**, arrasta o alvo 3 m por rota livre e o aprisiona; parcial causa metade do dano, sem captura. Preso, o alvo fica Imobilizado e sofre 1d10 kármico no início do próprio turno. Uma Principal e Força + Atletismo ou Agilidade + Acrobacia contra o resultado inicial permitem escapar. Nepénthes tem CA 21 e Vida 35; sua destruição liberta o alvo.
 
-**Composição de Karma:** 6 base iv + 2 alcance médio + 3 função secundária iii + 3 pulso de captura = 14 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III + 3 pulso de captura = 14 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Reação · Aegis
 
 **Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 9 Karma, Naerith ou aliado percebido a até 15 m, antes do dano de um ataque com trajetória. Uma folha colossal intercepta o golpe; Naerith opõe Manifestação de Bênção ao resultado do ataque. Vitória impede o dano e os efeitos dependentes do acerto; empate reduz o dano à metade e impede apenas os efeitos que exigem total. Falha não reduz o golpe. Não protege outros alvos da mesma área.
 
-**Composição de Karma:** 6 base iv + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Reação · Ékdysis
 
 **Fonte e Grau:** Bênção III; reação. **Uso:** Reação, 9 Karma, depois de Naerith sofrer um acerto total, uma vez por rodada. Escolha uma planta criada por sua bênção a até 10 m. Naerith troca de posição com ela e reduz o dano recebido em **2d6**; a planta é destruída. A troca exige posições livres e linha de efeito, não desfaz condições já aplicadas e não pode usar uma planta que contenha uma criatura.
 
-**Composição de Karma:** 4 base iii + 1 reação + 2 alcance médio + 2 função secundária ii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação + 2 alcance médio + 2 Função secundária II = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Reação · Anástasis
 
 **Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 7 Karma, uma vez por cena, quando uma manifestação vegetal sua for destruída ou alcançar o fim da duração. Escolha: restaurar uma planta destruída com metade da Vida máxima no mesmo espaço ou prolongar Rhíza, Dáphne ou Ákantha por uma rodada. Não restaura Heliánthos, não repete dano de criação e não devolve uma criatura já libertada ao aprisionamento.
 
-**Composição de Karma:** 6 base iv + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Heliánthos
 
-**Fonte e Grau:** assinatura da Bênção V. **Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice. Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada. A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
+**Fonte e Grau:** Assinatura da Bênção V. **Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice. Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada. A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
 
 Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
 
-**Segunda coroa:** ao chegar a 100 Vida, raízes brancas cobrem a cicatriz de Naerith. Plantas criadas por suas técnicas recebem +2 CA e pode pagar mais 3 Karma ao ativar uma nova manifestação para acrescentar um dado do mesmo tipo àquela execução, depois do crítico e dentro do teto de dois dados adicionais. A transformação ocorre uma vez, não recupera Vida ou Karma e não concede ação imediata.
+**Segunda coroa:** Ao chegar a 100 Vida, raízes brancas cobrem a cicatriz de Naerith. Plantas criadas por suas técnicas recebem +2 CA e pode pagar mais 3 Karma ao ativar uma nova manifestação para acrescentar um dado do mesmo tipo àquela execução, depois do crítico e dentro do teto de dois dados adicionais. A transformação ocorre uma vez, não recupera Vida ou Karma e não concede ação imediata.
 
-**Composição de Karma:** 12 base v + 6 área grande + 6 controle secundário iv − 2 preparo e uso limitado = 22 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 12 Base V + 6 área grande + 6 controle secundário iv − 2 preparo e uso limitado = 22 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Ilyra Vaelora · Pyrphóros {#princesa-ilyra}
 
@@ -164,38 +153,34 @@ Ilyra fala com franqueza e escuta críticas que a corte preferiria esconder. Dia
 
 ##### 1 · Pyra
 
-**Fonte e Grau:** Fogo III. **Uso:** Principal, 8 Karma, um alvo a até 25 m. Controle de Fogo contra CA. Total: **2d10 de Fogo** e 1d6 de Fogo adicional se o alvo já tiver sofrido uma técnica de Ilyra nesta rodada. Parcial: metade do dano-base, sem dado adicional. O efeito não permanece queimando.
+**Fonte e Grau:** Fogo III. **Uso:** Principal, 8 Karma, um alvo a até 25 m. Controle de Fogo contra CA. Total: **2d8 de Fogo** E 1d6 de Fogo adicional se o alvo já tiver sofrido uma técnica de Ilyra nesta rodada. Parcial: metade do dano-base, sem dado adicional. O efeito não permanece queimando.
 
-**Composição de Karma:** 4 base iii + 4 alcance longo = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 alcance longo = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Cinis
 
 **Fonte e Grau:** Fogo II. **Uso:** Movimento, 10 Karma, pessoal. Ilyra percorre até 6 m por uma rota livre e deixa uma cortina de cinzas de 2 m de altura ao longo do trajeto até o início do próximo turno. Ataques à distância que atravessem a cortina sofrem −2. A cinza não concede invisibilidade nem bloqueia sentidos não visuais.
 
-**Composição de Karma:** 3 base ii + 1 movimento + 4 alcance longo + 2 função secundária i = 10 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 movimento + 4 alcance longo + 2 Função secundária I = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Fornax
 
 **Fonte e Grau:** Fogo II. **Uso:** Livre, 7 Karma, uma vez por rodada antes de um disparo. A brasa acompanha a mira e concede +2 somente ao teste desse disparo, terminando após a tentativa. Não acrescenta dado de dano nem reduz a CA do alvo.
 
-**Composição de Karma:** 3 base II + 4 Livre = 7 Karma.
+**Composição de Karma:** 3 Base II + 4 Livre = 7 Karma.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Eósphoros
 
-**Fonte e Grau:** assinatura de Fogo IV. **Uso:** Principal, 15 Karma, centro a até 30 m, raio de 3 m, uma vez por cena. Uma flecha ascende e se fragmenta em um amanhecer de brasas. Ilyra rola Controle de Fogo uma vez contra a CA de cada criatura na área. Total: **2d12 de Fogo** e o alvo não recebe benefícios de fumaça ou ocultação comum até o início do próximo turno da princesa. Parcial: metade do dano, sem revelação. Cobertura total permanece válida.
+**Fonte e Grau:** Assinatura de Fogo IV. **Uso:** Principal, 15 Karma, centro a até 30 m, raio de 3 m, uma vez por cena. Uma flecha ascende e se fragmenta em um amanhecer de brasas. Ilyra rola Controle de Fogo uma vez contra a CA de cada criatura na área. Total: **2d10 de Fogo** e o alvo não recebe benefícios de fumaça ou ocultação comum até o início do próximo turno da princesa. Parcial: metade do dano, sem revelação. Cobertura total permanece válida.
 
-**Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
-**Comunhão Divina — Guaraci:** <span data-divine-grant="guaraci">Outorga litúrgica de Guaraci · Lendas Tupi-Guarani — Asa do Assombro</span> Calor que Desperta a Mata. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar sol com responsabilidade e cumprir a palavra empenhada em nome de Guaraci. Profanação: Usar a dádiva para profanar sol ou quebrar deliberadamente um juramento feito a Guaraci.
+**Comunhão Divina — Guaraci:** <span data-divine-grant="guaraci">Outorga litúrgica de Guaraci · Lendas Tupi-Guarani — Asa do Assombro</span> Calor que Desperta a Mata. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Partilhe o calor que permite à mata e às pessoas atravessarem a estação fria. Profanação: Tomar para si toda a luz e deixar morrer aquilo que dela depende quebra o sustento.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Liturgia · Santuário da Primeira Folha
 
@@ -203,7 +188,6 @@ Ilyra fala com franqueza e escuta críticas que a corte preferiria esconder. Dia
 
 **Composição de Karma:** 6 Base IV + 2 Santuário = 8 Karma.
 
-**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Duque Thaerion Solvaldren · Sol Niger {#duque-thaerion}
 
@@ -225,9 +209,9 @@ Thaerion recebe visitantes diante de janelas altas, posicionando cada cadeira de
 
 **Bênção hereditária — Vitral do Meio-Dia:** <span data-divine-grant="surya">Outorgada por Surya, Olhar do Zênite · Hindu — Asa do Dharma.</span><span data-world-blessing="outorga-4"></span> Surya concedeu à linhagem Solvaldren a luz que atravessa os vitrais do zênite. Thaerion é seu portador hereditário; Vitral do Meio-Dia e a subdobra Heliose conservam naturezas distintas. Thaerion dobra a própria luz por superfícies, lâminas e selos transparentes. Os vitrais não criam ações independentes e precisam de uma técnica para interceptar ataques ou causar dano.
 
-**Subdobra — Heliose:** a radiação de Thaerion reproduz os efeitos mais cruéis da exposição solar. Uma vez por rodada, quando uma técnica de Luz alcançar acerto total, ele escolhe uma condição abaixo para o alvo até o início do próximo turno do duque. Condições iguais não se acumulam.
+**Subdobra — Heliose:** A radiação de Thaerion reproduz os efeitos mais cruéis da exposição solar. Uma vez por rodada, quando uma técnica de Luz alcançar acerto total, ele escolhe uma condição abaixo para o alvo até o início do próximo turno do duque. Condições iguais não se acumulam.
 
-**Ofuscado:** −2 em ataques e Percepção que dependam de visão. **Insolado:** −2 em testes de Força e Constituição e −2 m de Deslocamento. **Ressequido:** a próxima cura de Vida recebida é reduzida em 1d8, mínimo 0, e então a condição termina.
+**Ofuscado:** −2 em ataques e Percepção que dependam de visão. **Insolado:** −2 em testes de Força e Constituição e −2 m de Deslocamento. **Ressequido:** A próxima cura de Vida recebida é reduzida em 1d8, mínimo 0, e então a condição termina.
 
 Essas condições são efeitos elementais de Luz. Proteção capaz de bloquear integralmente luz solar impede a condição, mas não anula o dano da técnica sem uma regra própria. A luz conta como solar somente quando a habilidade declara.
 
@@ -237,45 +221,40 @@ Essas condições são efeitos elementais de Luz. Proteção capaz de bloquear i
 
 ##### 1 · Zênite
 
-**Fonte e Grau:** Luz III. **Uso:** Principal, 9 Karma, um alvo a até 25 m. Controle de Luz contra CA. Total: **2d10 de Luz** e permite aplicar Heliose. Parcial: metade do dano. A linha precisa de trajetória e não atravessa cobertura total.
+**Fonte e Grau:** Luz III. **Uso:** Principal, 9 Karma, um alvo a até 25 m. Controle de Luz contra CA. Total: **2d8 de Luz** E permite aplicar Heliose. Parcial: metade do dano. A linha precisa de trajetória e não atravessa cobertura total.
 
-**Composição de Karma:** 4 base iii + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Speculum
 
 **Fonte e Grau:** Bênção III. **Uso:** Reação, 5 Karma, pessoal, antes do dano de um ataque percebido. Thaerion opõe Manifestação de Bênção ao resultado do ataque. Vitória impede o dano; empate reduz à metade; falha não reduz. O vitral não devolve o golpe, não protege outros alvos da área e não se combina com outra defesa na mesma resolução.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Parallax
 
 **Fonte e Grau:** Bênção II. **Uso:** Livre, 9 Karma, uma vez por rodada antes de Zênite. Escolha um vitral ou ponto refletor percebido a até 10 m; o disparo parte dali, mantendo um percurso total de até 25 m. Pode contornar cobertura parcial se ambos os segmentos estiverem livres. Não atravessa cobertura total nem alcança alvos não percebidos.
 
-**Composição de Karma:** 3 base ii + 4 ação livre + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 4 ação livre + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Leucosis
 
 **Fonte e Grau:** Corrupção III. **Uso:** Principal, 6 Karma e 4 Pontos Corruptos, um alvo a até 15 m, Controle CD 15. Após vencer o Controle, Thaerion opõe Presença + Controle da Corrupção a Espírito + Resistência à Corrupção. Se superar, manchas claras atravessam a visão e o alvo recebe as três condições de Heliose até o início do próximo turno do duque. Empate ou derrota não aplicam as condições. Leucosis não causa dano, não se acumula consigo e não conta como luz solar.
 
-**Composição de Karma:** 4 base iii + 2 alcance médio = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 alcance médio = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Sol Niger
 
-**Fonte e Grau:** assinatura de Luz IV. **Uso:** Principal, 15 Karma, centro a até 25 m, raio de 4 m, uma vez por cena. Uma esfera branca, cercada por um halo negro, permanece até o início do próximo turno do duque. Na criação, Controle de Luz é comparado à CA de cada criatura na área: total causa **2d12 de Luz**, parcial metade. Em total, Thaerion pode aplicar **duas condições diferentes de Heliose**.
+**Fonte e Grau:** Assinatura de Luz IV. **Uso:** Principal, 15 Karma, centro a até 25 m, raio de 4 m, uma vez por cena. Uma esfera branca, cercada por um halo negro, permanece até o início do próximo turno do duque. Na criação, Controle de Luz é comparado à CA de cada criatura na área: total causa **2d10 de Luz**, parcial metade. Em total, Thaerion pode aplicar **duas condições diferentes de Heliose**.
 
 A área conta como luz solar verdadeira enquanto a esfera permanecer. Entrar ou começar o turno nela não repete o dano, mas mantém expostas características que reagem ao sol. Cobertura total bloqueia a radiação; dissipação bem-sucedida contra o Controle de Luz encerra a esfera.
 
-**Composição de Karma:** 6 base iv + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Caelen Solvaldren · Heliádromo {#caelen-solvarden}
 
@@ -303,26 +282,21 @@ Caelen mantém as janelas abertas mesmo durante reuniões formais. Antes de saca
 
 **Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, um alvo a até 2 m. Luta contra CA. Total: **2d8 físico**; escolha braço ou perna, impondo −2 ao próximo teste que dependa daquele membro antes do início do próximo turno de Caelen. Parcial: metade do dano, sem penalidade. A técnica não decepa nem aplica ferimento permanente.
 
-**Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Eidolon
 
 **Fonte e Grau:** Luz II. **Uso:** Movimento, 5 Karma, pessoal. Caelen percorre até 5 m por uma rota livre e deixa uma imagem luminosa. O primeiro ataque à distância contra ele antes do início do próximo turno sofre −2. Sentidos que não dependam de visão ignoram a imagem; ela não ataca nem ocupa espaço.
 
-**Composição de Karma:** 3 base ii + 1 movimento + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 movimento + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Praesidium
 
-**Fonte e Grau:** Karma III. **Uso:** Reação, 5 Karma, um aliado a até 2 m antes do dano de um ataque percebido. A lâmina intercepta parte do golpe e concede **2d6 de escudo** somente para aquela resolução. O restante desaparece depois do ataque. Caelen precisa alcançar a trajetória; a técnica não redireciona condições que não dependam de dano.
+**Fonte e Grau:** Karma III. **Uso:** Reação, 5 Karma, um aliado a até 2 m antes do dano de um ataque percebido. A lâmina intercepta parte do golpe e concede **2d6 de escudo** Somente para aquela resolução. O restante desaparece depois do ataque. Caelen precisa alcançar a trajetória; a técnica não redireciona condições que não dependam de dano.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
-**Dados da assinatura:** base de Grau V (3d10), substituindo um d10 pelo d8 do arco que conduz a descarga: 2d10 +1d8. Não soma o dano integral da arma nem dados adicionais gratuitos.
-
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
-
+**Dados da assinatura:** Base de Grau V (3d10), substituindo um d10 pelo d8 do arco que conduz a descarga: 2d10 +1d8. Não soma o dano integral da arma nem dados adicionais gratuitos.

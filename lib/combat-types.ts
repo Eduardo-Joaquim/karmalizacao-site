@@ -7,6 +7,7 @@ export type CombatLog = {
   karmaSpent?: number; lifeDelta?: number; details?: string;
 };
 export type LiveCombatState = {
+  impetus?:number; impetusBloodied?:boolean;
   inCombat: boolean; currentLife: number; currentKarma: number; tempShield: number;
   activeConditions: string[]; lastActionLog: CombatLog | null; combatFeed: CombatLog[];
   summons?:Record<string,{life:number;active:boolean}>;
@@ -16,12 +17,12 @@ export type LiveCombatState = {
 export type CombatAction = {
   id: string; actorName: string; title: string;
 } & (
-  | { type: 'damage'; amount: number; resistance: number; bypassShield?: boolean }
+  | { type: 'damage'; amount: number; resistance: number; incomingElement?:string; primaryDefenses?:Record<string,number>; bypassShield?: boolean }
   | {type:'summon';invocationId:string;operation:'call'|'maintain'|'life'|'dismiss';delta?:number}
   | { type: 'heal'; amount: number }
   | { type: 'resource'; resource: 'karma' | 'life' | 'shield' | 'saturation' | 'charge' | 'reactions' | 'favor'; delta: number }
   | { type: 'condition'; condition: string; remove: boolean }
-  | { type: 'execute'; techniqueId?:string; succeeded?:boolean; cost: number; kind: 'skill' | 'attack' | 'technique' | 'ability'; rollFormula?: string; diceResults?: number[]; total?: number; selection?: DiceSelection; details?: string }
+  | { type: 'execute'; techniqueId?:string; succeeded?:boolean; impetus?:boolean; cost: number; kind: 'skill' | 'attack' | 'technique' | 'ability'; rollFormula?: string; diceResults?: number[]; total?: number; selection?: DiceSelection; details?: string }
   | { type: 'phase'; phase: PhaseNotice }
   | { type: 'spectacle'; rollFormula:string; diceResults:number[]; total:number; selection:DiceSelection; details?:string }
   | { type: 'domain'; name: string }

@@ -62,7 +62,7 @@ Um ritual exige foco e tempo de preparação. Registre a técnica ou improvisaç
 
 **Ao iniciar o ritual, escolha um benefício:**
 
-reduzir o custo final em 1 por rodada de preparação, até o máximo de 5;
+Reduzir o custo final em 1 por rodada de preparação, até o máximo de 5;
 
 receber +1 dado no teste principal; ou
 
@@ -87,7 +87,7 @@ As manobras abaixo são conhecidas automaticamente por quem possui o nível exig
 
 Para interações que dependam de Grau, Canalização simples não tem Grau de técnica; Barreira e Revestimento são I, passando a II quando pagos com seu reforço adicional; Reforço é I. Formas simples, refinada, superior e magistral correspondem a I, III, IV e V. Arma magistral consome o ápice de Grau V ao ser criada. Essas classificações não recalculam custos próprios ou liberam técnicas adicionais.
 
-**Preparação comum:** nenhuma, salvo ritual expresso. Canalização simples, Projeção, Barreira, Revestimento, Arma ou escudo, Reforço e Fontes kármicas exigem Canalização 1. Intervalo Kármico pode usar uma fonte pessoal não treinada quando houver acesso legítimo; aplique Perícia 0. Fluxo de retorno é passivo. Estas manobras possuem o custo final escrito, sem novo desconto de técnica conhecida.
+**Preparação comum:** Nenhuma, salvo ritual expresso. Canalização simples, Projeção, Barreira, Revestimento, Arma ou escudo, Reforço e Fontes kármicas exigem Canalização 1. Intervalo Kármico pode usar uma fonte pessoal não treinada quando houver acesso legítimo; aplique Perícia 0. Fluxo de retorno é passivo. Estas manobras possuem o custo final escrito, sem novo desconto de técnica conhecida.
 
 ### Canalização simples
 
@@ -105,7 +105,7 @@ Projeção afeta seres imateriais, mas não explora vulnerabilidade elemental ne
 
 ### Barreira Kármica
 
-**Requisito:** Canalização de Karma 1. **Ação:** Reação. **Custo:** 3 Karma. **Alvo:** você ou um aliado voluntário a até 5 m, percebido e com linha de efeito. Na Etapa III, o alcance máximo passa a 15 m.
+**Requisito:** Canalização de Karma 1. **Ação:** Reação. **Custo:** 3 Karma. **Alvo:** Você ou um aliado voluntário a até 5 m, percebido e com linha de efeito. Na Etapa III, o alcance máximo passa a 15 m.
 
 Quando um ataque percebido estiver prestes a ser comparado com a CA do protegido, condense uma superfície kármica na trajetória e conceda **+2 CA somente contra aquela resolução**. Pode declarar depois de conhecer a rolagem, mas antes de definir o acerto e aplicar dano ou condições. Pague **5 Karma no total** para receber **+4 CA**, em vez de +2.
 
@@ -115,7 +115,7 @@ Essa Reação não inclui Esquiva ou Bloqueio. Não some duas Barreiras Kármica
 
 Efeitos que não enfrentam CA não são interceptados por esse bônus. Ataques de área continuam sendo resolvidos contra os demais alvos normalmente. Paredes, prisões e proteções duradouras exigem uma técnica própria com sua construção, custos e limites.
 
-**Exemplo:** uma personagem tem CA 18 e recebe um ataque de resultado 21. Antes da comparação final, paga 5 Karma e usa sua Reação: a CA daquela incidência passa a 22. O ataque passa de total para parcial; role seu dano, divida pela metade e aplique Resistência e escudo na ordem normal. Depois, a CA volta a 18. A técnica inimiga não foi anulada.
+**Exemplo:** Uma personagem tem CA 18 e recebe um ataque de resultado 21. Antes da comparação final, paga 5 Karma e usa sua Reação: a CA daquela incidência passa a 22. O ataque passa de total para parcial; role seu dano, divida pela metade e aplique Resistência e escudo na ordem normal. Depois, a CA volta a 18. A técnica inimiga não foi anulada.
 
 ### Revestimento
 
@@ -131,13 +131,13 @@ Condense Karma em arma ou escudo até o fim da cena. A forma usa categorias, dan
 
 Ativação: Principal; alcance pessoal, em uma mão livre; preparação nenhuma; criação de um objeto, salvo as duas armas leves da forma refinada. Use uma categoria do catálogo e suas exigências. Escudos precisam ser empunhados e defendidos normalmente. Armas de projétil criam até vinte projéteis kármicos apenas para aquela arma, consumidos no disparo e desfeitos ao encerrar; não produzem munição de fogo ou explosivos.
 
-**Forma simples — Canalização 1, 3 Karma:** arma leve ou média, ou escudo leve.
+**Forma simples — Canalização 1, 3 Karma:** Arma leve ou média, ou escudo leve.
 
-**Forma refinada — Etapa III e Canalização 1, 5 Karma:** arma pesada, duas armas leves ou escudo médio.
+**Forma refinada — Etapa III e Canalização 1, 5 Karma:** Arma pesada, duas armas leves ou escudo médio.
 
-**Forma superior — Etapa V e Canalização 2, 7 Karma:** formas anteriores ou escudo pesado, com até duas propriedades especiais, incluindo Condutora ou Ritualística se escolhida.
+**Forma superior — Etapa V e Canalização 2, 7 Karma:** Formas anteriores ou escudo pesado, com até duas propriedades especiais, incluindo Condutora ou Ritualística se escolhida.
 
-**Forma magistral — Etapa VII e Canalização 3, 10 Karma:** use a forma superior, receba +1 de dano e altere sua forma ou uma propriedade uma vez por turno com interação simples.
+**Forma magistral — Etapa VII e Canalização 3, 10 Karma:** Use a forma superior, receba +1 de dano e altere sua forma ou uma propriedade uma vez por turno com interação simples.
 
 Fora de perigo, a criação é automática. Sob pressão, teste Espírito + Canalização contra CD 12 na forma simples, 15 na refinada, 20 na superior ou 24 na magistral. Sucesso cria a forma até o fim da cena. Em falha comum, devolva metade do Karma pago, arredondada para baixo; a forma surge instável e dura só até o fim do próximo turno. Em 1 natural selecionado, não surge e não há devolução. Apenas um conjunto de forma permanece ativo: criar outro encerra o anterior. Soltar ou emprestar não cria nova instância; a 15 metros do criador o objeto se desfaz. Desfazer voluntariamente é Livre, sem reembolso.
 
@@ -155,9 +155,9 @@ Com Etapa III e Canalização 1, declare a Ampliação antes da rolagem e pague 
 
 Ampliação integra a ação original, sem ação, teste ou preparo separados. Seu alcance e duração são os da técnica. Só se aplica a efeito compatível e não melhora uma reserva já criada nem todas as futuras execuções pela cena. Um bônus em deslocamento é medido em metros; “Potência” não aumenta CD, CA, número de alvos ou regeneração de Karma.
 
-**Potência:** pague 2 Karma para acrescentar +2 ao dano, cura, escudo ou deslocamento produzido.
+**Potência:** Pague 2 Karma para acrescentar +2 ao dano, cura, escudo ou deslocamento produzido.
 
-**Dado adicional:** pague 3 Karma para acrescentar um dado do mesmo tipo ao dano, cura ou escudo. Um segundo dado custa mais 3 Karma. O limite é de dois dados adicionais.
+**Dado adicional:** Pague 3 Karma para acrescentar um dado do mesmo tipo ao dano, cura ou escudo. Um segundo dado custa mais 3 Karma. O limite é de dois dados adicionais.
 
 A primeira Ampliação não impõe penalidade. Uma segunda Ampliação diferente custa mais 1 Karma; na Etapa VII, com Canalização 3, essa sobretaxa é dispensada. Repetir Potência impõe Desvantagem ao teste principal e aumenta em 1 a CD secundária por repetição. Dado adicional segue seu limite próprio.
 

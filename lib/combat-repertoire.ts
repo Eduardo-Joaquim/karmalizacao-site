@@ -12,11 +12,9 @@ export function usageCost(usage:string,passive=false){
  return all.length===1?Number(all[0][1]):null;
 }
 export function playerArts(d:CharacterPayload):CombatArt[]{
- const signature=d.race==='Humano'&&getStageIndex(d.stage)>=4?d.allocations.humanSignature:undefined;
- function techniqueCost(id:string,usage:string){const cost=usageCost(usage);return id===signature&&cost!==null&&cost>0?Math.max(1,cost-1):cost;}
 
  const cls=getClassDefinition(d.className),race=getRaceRule(d.race);
- const arts:CombatArt[]=d.techniques.filter(t=>t.name).map(t=>({id:t.id,techniqueId:t.id,name:t.name,category:t.signature?'Assinatura':'Técnica',cost:techniqueCost(t.id,t.cost),usage:`${t.action} · ${t.cost} · ${t.range}${t.id===signature?" · Cadência Tática":""}`,text:`Total: ${t.totalSuccess}\nParcial: ${t.partialSuccess}\nFalha: ${t.failure}\n${t.limits}`,attribute:t.attribute as AttributeName,skill:t.skill,damage:t.totalSuccess,calculation:t.calculation}));
+ const arts:CombatArt[]=d.techniques.filter(t=>t.name).map(t=>({id:t.id,techniqueId:t.id,name:t.name,category:t.signature?'Assinatura':'Técnica',cost:usageCost(t.cost),usage:`${t.action} · ${t.cost} · ${t.range}`,text:`Total: ${t.totalSuccess}\nParcial: ${t.partialSuccess}\nFalha: ${t.failure}\n${t.limits}`,attribute:t.attribute as AttributeName,skill:t.skill,damage:t.totalSuccess,calculation:t.calculation}));
  for(const a of cls?.abilities??[])if(d.classAbilities.includes(a.name))arts.push({id:`class-${a.name}`,name:a.name,category:'Classe',usage:a.usage,cost:usageCost(a.usage),text:a.effect});
  for(const a of cls?.amplifications??[])if(d.classAmplifications.includes(a.name))arts.push({id:`amp-${a.name}`,name:a.name,category:'Ampliação',usage:a.description,cost:null,text:a.description});
  if(getFinalSkill(d,calculateAutomaticBonuses(d),'Canalização de Karma')>=1)for(const reinforced of [false,true])arts.push({id:reinforced?'karma-barrier-reinforced':'karma-barrier',name:reinforced?'Barreira Kármica reforçada':'Barreira Kármica',category:'Karma puro',cost:reinforced?5:3,usage:`Reação · ${reinforced?5:3} Karma · +${reinforced?4:2} CA contra uma incidência`,text:'Declare antes da comparação final com CA; não inclui outra defesa. O comando paga Karma e consome uma Reação, sem alterar a CA permanente. Para aliado, resolva alcance, trajetória e CA dele na mesa.'});

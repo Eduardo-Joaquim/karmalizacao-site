@@ -10,8 +10,8 @@ test('nine canonical Wings have at least four named grantors; primordial is sepa
  const ds=json('data/pantheon-deities.json');assert.equal(new Set(ds.map(d=>d.id)).size,ds.length);
  assert.equal(rules.PANTHEONS.filter(p=>p!=='Outro panteão').length,9);
  for(const p of rules.PANTHEONS.filter(p=>p!=='Outro panteão'))assert(ds.filter(d=>d.pantheon===p).length>=4,p);
- for(const d of ds){assert(rules.PANTHEONS.includes(d.pantheon));for(const key of ['id','name','epithet','typicalBlessing','precept','profanation'])assert(d[key].trim());assert(d.spheres.length);}
- assert.equal(ds.find(d=>d.id==='tiamat').pantheon,'Outro panteão');
+ for(const d of ds){assert(rules.PANTHEONS.includes(d.pantheon)||['Entidade Primordial','Entidade Exterior'].includes(d.pantheon));for(const key of ['id','name','epithet','typicalBlessing','precept','profanation'])assert(d[key].trim());assert(d.spheres.length);}
+ assert.equal(ds.find(d=>d.id==='tiamat').pantheon,'Entidade Primordial');
 });
 test('all audited court resources, defenses, attributes and techniques are unchanged',()=>{
  const baseline=json('tests/fixtures/divine-court-mechanics.json');assert(Object.keys(baseline).length>20);

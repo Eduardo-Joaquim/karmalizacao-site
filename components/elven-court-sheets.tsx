@@ -61,7 +61,7 @@ function AbilityCard({ ability, index, Mark=TreePine, showSource=false, owner }:
   const reaction=ability.kind==="reaction";
   return <section className={"elven-ability" + (signature ? " elven-signature" : "") + (reaction ? " elven-reaction" : "")} id={ability.id}>
     <header><span>{String(index+1).padStart(2,"0")}</span><div>{(signature||reaction)&&<p>{signature?"ASSINATURA":"REAÇÃO DA COROA"}</p>}<h5>{ability.name}</h5></div>{signature?<Crown aria-hidden="true"/>:reaction?<Orbit aria-hidden="true"/>:<Mark aria-hidden="true"/>}</header>
-    <div className="elven-ability-meta">{ability.matrix&&<span>{ability.matrix}</span>}{ability.damageType&&<span>Dano {ability.damageType}</span>}{showSource&&ability.source&&<span className="ability-source">{ability.source}</span>}{ability.grade&&<span>Grau {ability.grade}</span>}<span>{ability.cost}</span><span>{ability.action}</span></div>
+    <div className="elven-ability-meta">{ability.damageType&&<span>{ability.damageType}</span>}{showSource&&ability.source&&<span className="ability-source">{ability.source}</span>}{ability.grade&&<span>Grau {ability.grade}</span>}<span>{ability.cost}</span><span>{ability.action}</span></div>
     <Fields fields={abilityCostFields(owner,ability.name,ability.fields)}/>
   </section>;
 }

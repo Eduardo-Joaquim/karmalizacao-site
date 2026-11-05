@@ -49,7 +49,6 @@ import {
   getClassDefinition,
   getDomainRegentAttribute,
   getFinalAttribute,
-  getStageIndex,
   getRaceRule,
   PRESENCE_SKILLS,
   type AutomaticBonuses,
@@ -845,14 +844,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
             </Button>
           </div>
 
-          {draft.race === "Humano" && getStageIndex(draft.stage) >= 4 && <label className="character-field">
-            <span>Cadência Tática · Técnica Assinatura Humana</span>
-            <NativeSelect value={draft.allocations.humanSignature ?? ""} onChange={e => update("allocations", {...draft.allocations, humanSignature: e.target.value})}>
-              <NativeSelectOption value="">Escolha uma técnica</NativeSelectOption>
-              {draft.techniques.filter(t => t.name).map(t => <NativeSelectOption key={t.id} value={t.id}>{t.name}</NativeSelectOption>)}
-            </NativeSelect>
-            <small>Reduz o custo em 1 Karma, até o mínimo de 1 para técnicas pagas.</small>
-          </label>}
+
           <div className="dynamic-card-list techniques-list">
             {draft.techniques.length ? (
               draft.techniques.map((technique, index) => (
@@ -887,7 +879,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   </header>
                   <div className="character-form-grid two-columns compact-form">
                     <TextField id={`technique-name-${technique.id}`} label="Nome" value={technique.name} onChange={(name) => updateTechnique(technique.id, { name })} />
-                    <TechniqueMatrixEditor technique={technique} onChange={patch=>updateTechnique(technique.id,patch)}/><TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
+                    <TechniqueMatrixEditor technique={technique} race={draft.race} className={draft.className} onChange={patch=>updateTechnique(technique.id,patch)}/><TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
                     <div className="character-field">
                       <Label htmlFor={`technique-attribute-${technique.id}`} className="character-label">Atributo</Label>
                       <NativeSelect id={`technique-attribute-${technique.id}`} value={PRESENCE_SKILLS.includes(technique.skill) ? "Presença" : technique.attribute} disabled={PRESENCE_SKILLS.includes(technique.skill)} onChange={(event) => updateTechnique(technique.id, { attribute: event.target.value })}>

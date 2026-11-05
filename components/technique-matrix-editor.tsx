@@ -1,13 +1,30 @@
 "use client";
-import {MATRICES,techniqueProfile,type TechniqueMatrix} from '@/lib/technique-matrices';
+import {DAMAGE_TYPES,MATRICES,techniqueProfile,type TechniqueMatrix} from '@/lib/technique-matrices';
+import {LINEAGE_CATALYSTS,doctrineOptions,doctrineDiscount} from '@/lib/technique-lineage';
 import type {TechniqueRecord} from '@/lib/character-model';
-export function TechniqueMatrixEditor({technique,onChange}:{technique:TechniqueRecord;onChange:(patch:Partial<TechniqueRecord>)=>void}){
- const matrix=technique.matrix??'Kármico',grade=Math.max(0,['I','II','III','IV','V'].indexOf(technique.grade.replace('Grau ',''))),profile=techniqueProfile(matrix,grade,technique.matrixExtras??0,technique.matrixDiscount??0);
- const rules:Record<TechniqueMatrix,string>={
- 'Kármico':'Espírito + Canalização de Karma. Alcance +1–3, área +2–4, tração +1–2, escudo +2. Recarga ou concentração real: −1 cada.',
- Elemental:'Atributo regente + Controle do elemento. Condição +1–3, zona por uma rodada +2, condução +1. Dependência ambiental ou desgaste em falha: −1 cada.',
- Divino:'Manifestação de Bênção com seu regente, ou Presença + Comunhão Divina. Perfurar 2 Resistência profana +1, amparo +2, decreto +2. Preceito restritivo −1; Graus IV–V gastam 1 Favor.',
- Marcial:'Luta, Pontaria, Acrobacia ou Atletismo. Condição +1–2, Reação +2, investida +1. Arma específica −1; contato com Movimento cedido −1–2. Dado da arma não se soma integralmente ao dano da técnica.',
- Corrupto:'Presença + Controle da Corrupção. I: 1 temporária em 1 natural; II: 1 temporária na falha; III: 1 temporária ao executar; IV: 1 Carga efetiva e 2 Vida; V: 2 temporárias, Controle imediato e 4 Vida. Não duplique o Controle da mesma ação.'};
- return <section className="matrix-builder"><h4>Matriz da técnica</h4><div className="character-form-grid two-columns"><label>Matriz<select value={matrix} onChange={e=>onChange({matrix:e.target.value as TechniqueMatrix})}>{MATRICES.map(m=><option key={m}>{m}</option>)}</select></label><label>Dano universal<select value={technique.damageType??profile.damageType} onChange={e=>onChange({damageType:e.target.value as TechniqueRecord['damageType']})}>{['Físico','Mental','Kármico'].map(m=><option key={m}>{m}</option>)}</select></label><label>Ampliações e efeitos · Karma<input type="number" min={0} max={999} value={technique.matrixExtras??0} onChange={e=>onChange({matrixExtras:Math.max(0,Number(e.target.value))})}/></label><label>Redutores · Karma<input type="number" min={0} max={3} value={technique.matrixDiscount??0} onChange={e=>onChange({matrixDiscount:Math.max(0,Number(e.target.value))})}/></label></div><p>{rules[matrix]}</p><p>Base {profile.damage} · custo-base {profile.base} · desconto aplicado {profile.discount} · final {profile.cost} Karma</p><button type="button" onClick={()=>onChange({cost:String(profile.cost),calculation:`Base ${profile.base} + ampliações ${technique.matrixExtras??0} − redutores ${profile.discount} = ${profile.cost} Karma`,totalSuccess:`${profile.damage} de dano ${technique.damageType??profile.damageType}.`,partialSuccess:'Metade do dano, arredondada para baixo antes de Resistência e Escudo; efeitos adicionais conforme a construção.',failure:'Sem dano; custos permanecem gastos.'})}>Aplicar base e composição à técnica</button><p>Descreva separadamente cada ampliação, requisito, alvo, duração e redutor. Uma Bênção pode usar qualquer matriz compatível com seu Núcleo.</p></section>;
+export function TechniqueMatrixEditor({technique,race,className,onChange}:{technique:TechniqueRecord;race:string;className:string;onChange:(patch:Partial<TechniqueRecord>)=>void}){
+ const matrix=technique.matrix??'Kármico',grade=Math.max(0,['I','II','III','IV','V'].indexOf(technique.grade.replace('Grau ','')));
+ const extras=technique.matrixExtras??0,baseDiscount=technique.matrixDiscount??0,doctrine=technique.doctrine??'';
+ const profile=techniqueProfile(matrix,grade,extras,baseDiscount+doctrineDiscount(className,doctrine,extras));
+ const elemental=DAMAGE_TYPES.filter(m=>m.startsWith('Elemental / '));
+ const damage=matrix==='Elemental'?(technique.damageType?.startsWith('Elemental / ')?technique.damageType:elemental[0]):profile.damageType;
+ const catalyst=LINEAGE_CATALYSTS[race];
+ function apply(offensive:boolean){
+  onChange({matrix,damageType:damage as TechniqueRecord['damageType'],cost:String(profile.cost),calculation:`Base ${profile.base} + efeitos ${extras} − redução ${profile.discount} = ${profile.cost} Karma`,
+   ...(offensive?{totalSuccess:`${profile.damage} de dano ${damage}.`,partialSuccess:'Metade do dano antes de Resistência e Escudo.',failure:'Sem dano. Os custos permanecem gastos.'}:{})});
+ }
+ return <section className="matrix-builder"><h4>Da linhagem à técnica</h4>
+ <div className="character-form-grid two-columns">
+ <label>1. Matriz<select value={matrix} onChange={e=>onChange({matrix:e.target.value as TechniqueMatrix,damageType:undefined})}>{MATRICES.map(m=><option key={m}>{m}</option>)}</select></label>
+ {matrix==='Elemental'&&<label>Elemento ou subdobra<select value={damage} onChange={e=>onChange({damageType:e.target.value as TechniqueRecord['damageType']})}>{elemental.map(m=><option key={m}>{m}</option>)}</select></label>}
+ <label>2. Catalisador de linhagem<select value={technique.lineageCatalyst===race?race:''} onChange={e=>onChange({lineageCatalyst:e.target.value})}><option value="">Sem catalisador</option>{catalyst&&<option value={race}>{race}</option>}</select></label>
+ <label>3. Doutrina de {className||'classe'}<select value={doctrineOptions(className).includes(doctrine)?doctrine:''} onChange={e=>onChange({doctrine:e.target.value})}><option value="">Sem desconto de doutrina</option>{doctrineOptions(className).map(m=><option key={m}>{m}</option>)}</select></label>
+ <label>4. Ampliações e efeitos · Karma<input type="number" min={0} max={999} value={extras} onChange={e=>onChange({matrixExtras:Math.max(0,Math.min(999,Number(e.target.value)))})}/></label>
+ <label>Outros redutores · Karma<input type="number" min={0} max={3} value={baseDiscount} onChange={e=>onChange({matrixDiscount:Math.max(0,Math.min(3,Number(e.target.value)))})}/></label>
+ </div>
+ {technique.lineageCatalyst===race&&catalyst&&<p>{catalyst} Aplique o gatilho e os limites da linhagem na mesa.</p>}
+ {matrix==='Corrupto'&&<p>Controle: CD 16 mais Cargas. Grau III exige Controle no fim do turno; IV e V, imediato. No Grau V, com Desvantagem.</p>}
+ <output>Base {profile.base} + efeitos {extras} − redução {profile.discount} = {profile.cost} Karma. Dano-base ofensivo: {profile.damage}.</output>
+ <div><button type="button" onClick={()=>apply(false)}>Aplicar apenas o custo</button> <button type="button" onClick={()=>apply(true)}>Aplicar custo e dano-base</button></div>
+ </section>;
 }

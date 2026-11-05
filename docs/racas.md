@@ -1,184 +1,220 @@
 ## Herança e os três marcos raciais
 
-O Traço Base é recebido na criação. As evoluções raciais chegam somente nas Etapas II, IV e VI. Na Etapa I o traço-base já está disponível; III, V e VII não concedem outra evolução racial. Raça não é classe, jurisdição ou alinhamento moral.
-
-### Ghoul
-
-Rework Completo — Predador de Mutação, Sangue e Voracidade.
-
-#### Voracidade Carmesim · Etapa I
-
-Suas presas e garras contam como armas naturais de contato (1d8 de Dano Físico cortante/perfurante, usando Luta). Você fareja sangue exposto e criaturas abaixo de 50% da Vida a até 10 m (mesmo através de fumaça ou penumbra) e pode consumir biomassa/sangue fresco como Ação de Movimento para estabilizar o próprio organismo, encerrando Sangrando em si mesmo.
-
-#### Órgão Predatório (Manifestação de Caça) · Etapa II
-
-Ao iniciar um combate ou ao consumir sangue/biomassa com Ação de Movimento, você desperta sua estrutura predatória celular pelo resto da cena (1x por cena sem custo, ou 2 Karma para reativar): Recebe +1d20 em testes de Luta e Atletismo; Seu deslocamento aumenta em +2 m quando se move na direção de um inimigo ferido; Recebe Resistência 1 contra Dano Físico.
-
-#### Regeneração Celular Voraz · Etapa IV
-
-Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, sempre que você obtiver Acerto Total com ataque desarmado/arma natural ou técnica de alcance de contato contra uma criatura viva/orgânica, você devora o impacto vital: Recupera Constituição + Etapa pontos de Vida (se já estiver com a Vida máxima, recebe metade desse valor como Escudo Temporário até o fim do próximo turno); Se o alvo estiver Sangrando, Caído ou abaixo de 50% da Vida, esse ataque causa +1d8 de Dano Físico adicional.
-
-#### Apogeu da Fome (Predador de Ruptura) · Etapa VI
-
-Seus ataques naturais e técnicas de contato ignoram até 3 pontos de Resistência do alvo. Além disso, uma vez por cena, quando sua Vida cair para 50% ou menos (ou como Reação ao sofrer um Acerto Total), você entra em Frenesi Predatório por 3 rodadas: Recebe +2 na CA, imunidade às condições Abalado e Caído, e todos os seus ataques corpo a corpo e técnicas Marciais/Corruptas de contato recebem +1 dado base de dano.
+A raça vem primeiro: nela vivem o corpo, os sentidos e o poder que ninguém aprende em uma escola. A classe ensina a agir sob pressão. A técnica é a maneira singular de pôr ambas a serviço de uma intenção. O traço nasce na criação; a herança amadurece nas Etapas II, IV e VI.
 
 ### Humano
 
-Adaptação Tática, Versatilidade e Determinação.
+A vontade não é herança de um trono. É a chama que ainda arde quando o destino já deu seu veredito.
 
-#### Versatilidade Obstinada · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Força ou Agilidade ou Constituição ou Intelecto ou Presença ou Espírito | duas perícias à escolha | +5 Vida; sem bônus de Karma | Inconformismo |
 
-Começa com +2 pontos Comuns de Perícia adicionais na criação e recebe +1 no limite de itens em Prontidão.
+#### Etapa I — Inconformismo
 
-#### Improviso sob Pressão · Etapa II
+Comece cada cena com 2 Ímpetos, até o limite da Etapa. Recupere 1 ao tirar 20 no dado escolhido ou ao cair abaixo de metade da Vida pela primeira vez na cena. Gaste 1 antes de um teste para acrescentar 1d20, ou troque a perda de uma ação ou uma condição menor por um passo tático de 2 m.
 
-Escolhe 1 perícia para elevar gratuitamente em +1 nível de treinamento (respeitando o teto da Etapa). Além disso, 1x por cena, pode rerrolar 1 dado d20 da sua reserva em qualquer teste de perícia e escolher o melhor resultado.
+#### Etapa II — Leitura de Brecha
 
-#### Cadência Tática · Etapa IV
+Escolha uma perícia adicional, respeitando o teto da Etapa. Ao gastar Ímpeto em ataque ou técnica, abra uma brecha: o próximo ataque aliado contra o alvo reduz em 2 os limites de Acerto Parcial e Total até o início do seu próximo turno.
 
-Recebe +1 Reação adicional por rodada para manobras defensivas/táticas (Esquiva, Aparar ou Auxílio). Além disso, escolhe 1 Técnica do seu repertório como Técnica Assinatura Humana, reduzindo seu custo final em -1 Karma (mínimo 1).
+#### Etapa IV — Sobrevivência Indomável
 
-#### Indomável (Quebra de Limite) · Etapa VI
+Seu limite sobe para 3. Como Reação ao sofrer dano ou condição debilitante, gaste 1 Ímpeto: receba Escudo igual à soma de Constituição, Presença e Etapa antes do dano e ignore uma condição física ou mental até o fim do próximo turno.
 
-Uma vez por cena, ao obter um Acerto Parcial em um ataque ou técnica, pode convertê-lo automaticamente em Acerto Total (ou, ao sofrer um Acerto Total inimigo, pode usar sua Reação para convertê-lo em Acerto Parcial e remover 1 condição ativa sobre si).
+#### Etapa VI — Recusa ao Fim
+
+Seu limite sobe para 4 e você escolhe mais um Atributo. Uma vez por cena, gaste 2 Ímpetos após ver a rolagem para elevar Falha a Parcial ou Parcial a Total. Em vez disso, no seu turno, execute uma Principal adicional: uma técnica de até Grau III sem pagar seu custo-base. Ampliações mantêm o custo.
 
 ### Elfo
 
-Fluxo Kármico, Precisão Solar e Sintonia Natural.
+O arqueiro élfico lê a paisagem pelo que ela devolve: a sombra entre folhas, o ar atrás da flecha, a luz que se parte no metal.
 
-#### Sintonia de Elaranth · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Agilidade ou Intelecto | uma entre Percepção, História, Sobrevivência | +4 Vida e +4 Karma | Ressonância Élfica |
 
-Ignora terreno difícil natural (raízes, mata, pedras soltas), enxerga na penumbra como luz plena e recebe +1 na reserva máxima de Karma por Etapa (+Etapa Karma).
+#### Etapa I — Ressonância Élfica
 
-#### Fluxo Limpo de Canalização · Etapa II
+Ignore terreno difícil natural e penalidade de penumbra. Ao mover-se ao menos 3 m e atacar à distância no mesmo turno, entre em Harmonia até o início do seu próximo turno. Em Harmonia, alcance +3 m e CA +1 contra disparos.
 
-Recebe +1d20 em testes de Canalização de Karma e Pontaria. Sempre que executar uma técnica de alcance médio ou longo (15 m+), pode deslocar-se 2 m sem provocar Reações antes ou depois do disparo.
+#### Etapa II — Refração do Véu Verde
 
-#### Ressonância de Reserva · Etapa IV
+Escolha Canalização de Karma ou Pontaria. Em Harmonia, ignore cobertura parcial. Ao executar técnica, deslize 3 m sem Reações ou purgue uma condição ambiental ou elemental sua ou de aliado a até 5 m.
 
-Uma vez por rodada, quando o dado selecionado da sua rolagem de ataque ou técnica for 17 ou mais natural no d20, você recupera imediatamente 2 Karma (ou 3 Karma na Etapa VI). Além disso, recebe Resistência 2 contra Dano Kármico de matriz Elemental.
+#### Etapa IV — Cálice de Luz Perene
 
-#### Transcendência do Zênite · Etapa VI
+Aumente Karma máximo em valor igual à Etapa. Uma vez por rodada, em Harmonia, um Acerto Total ou 17 natural ou mais recupera 2 Karma e causa dano adicional igual a Intelecto mais Etapa, do mesmo tipo, ao alvo ou a um segundo inimigo a até 4 m dele.
 
-O alcance de todas as suas técnicas Kármicas, Elementais e ataques de Pontaria aumenta em +5 m (técnicas de contato ganham alcance de 3 m). Uma vez por cena, como Ação Livre no seu turno, pode reduzir em -3 Karma o custo da próxima técnica de Grau III, IV ou V que executar naquela rodada (mínimo 1).
+#### Etapa VI — Zênite Astral
+
+Escolha Agilidade, Intelecto ou Espírito. Em Harmonia, some 1d20 a Canalização de Karma, Controles elementais e Pontaria. Uma vez por cena, como Livre, acenda o Zênite por três rodadas: técnicas custam 2 Karma a menos, mínimo 1; um aliado que atravesse o rastro luminoso recebe Vantagem no próximo teste pertinente.
 
 ### Anão
 
-Estabilidade Inabalável, Engenharia de Forja e Densidade.
+A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver o peso.
 
-#### Densidade da Rocha · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Constituição ou Força | uma entre Criação, Atletismo | +8 Vida; sem bônus de Karma | Fornalha de Inércia |
 
-Recebe +2 de Vida máxima por Etapa (+2 × Etapa), não tem seu deslocamento reduzido pelo uso de Armadura Pesada ou Escudo Pesado e possui +2 Espaços de Carga sem penalidade.
+#### Etapa I — Fornalha de Inércia
 
-#### Base Inamovível · Etapa II
+Receba 2 espaços de carga e ignore a perda de deslocamento por armadura e escudo pesados. Ao sofrer um golpe que cause dano, mesmo absorvido, ou terminar o turno após mover-se no máximo 3 m, acumule uma Carga de Bigorna, até 3. Cada carga concede Resistência 1 contra Marcial, Terra e Fogo.
 
-Recebe +1d20 para resistir a Empurrar, Derrubar e Desarmar, e reduz em -3 m qualquer deslocamento forçado contra você. Suas armas e armaduras equipadas não podem ser quebradas por efeitos comuns e recebem +1 no dano base (armas) ou +1 na Resistência contra acerto parcial (armaduras).
+#### Etapa II — Têmpera de Nidavellir
 
-#### Couraça de Forja Viva · Etapa IV
+Some 1d20 contra empurrão, queda e desarme. Escolha temperar a arma para +1 dano-base ou a proteção para +1 Resistência. Ao acertar de perto, pode gastar todas as cargas: cada uma soma 1d6 de dano; o alvo recua 2 m ou perde 2 m de deslocamento por uma rodada.
 
-Você recebe Resistência 2 permanente contra Dano Físico (acumulável em +1 caso já possua Resistência de armadura/domínio). Além disso, quando realiza um Acerto Total com arma corpo a corpo ou técnica Marcial/Terra, aplica Abalado ou reduz o deslocamento do alvo em -2 m por 1 rodada.
+#### Etapa IV — Reação Sísmica
 
-#### Baluarte de Nidavellir · Etapa VI
+Ganhe 2 de Vida máxima por Etapa. Uma vez por rodada, como Reação a acerto de inimigo até 5 m contra você ou aliado adjacente, gaste 2 cargas ou 2 Karma: reduza dano em Constituição mais Etapa e imponha CA −2 ao atacante até o fim do próximo turno dele.
 
-Uma vez por cena, como Reação ao sofrer um Acerto Total (de qualquer tipo de dano universal), você trava os pés e reduz o dano final sofrido pela metade, tornando-se imune a movimento forçado e condições físicas até o início do seu próximo turno.
+#### Etapa VI — Monólito de Ferro
+
+Escolha Constituição ou Força. O limite de cargas sobe para 4. Uma vez por cena, como Livre ou Reação a Acerto Total, por três rodadas reduza à metade o dano sofrido e ignore movimento forçado, Caído e Atordoado. Só inimigos tratam a área em 4 m como terreno difícil.
 
 ### Demi-humano
 
-Instinto Feral, Linhagem Bestial e Impulso.
+A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que percebe a emboscada e no pé que já saltou quando a voz manda correr.
 
-#### Sangue de Linhagem Feral · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Agilidade ou Força ou Espírito | uma entre Percepção, Atletismo, Acrobacia, Sobrevivência | +6 Vida; sem bônus de Karma | Despertar de Aspecto |
 
-Recebe sentidos aguçados (+1d20 em Percepção auditiva/olfativa), +1 m de Deslocamento base e escolhe uma adaptação corporal (Garras 1d8, Impulso de Salto/Escalada ou Fôlego Anfíbio/Alado).
+#### Etapa I — Despertar de Aspecto
 
-#### Bote da Fera · Etapa II
+Some 1d20 à Percepção auditiva ou olfativa. No início do turno, como Livre, escolha Garra, Asa ou Carapaça. Garra causa 1d8 desarmado ou +2 com arma e fere no Total. Asa soma 2 m, amortece quedas até 10 m e cruza obstáculos sem Reações. Carapaça concede CA +1 e Resistência 2 contra Fogo, Água, Vento ou Terra à escolha.
 
-Sempre que você se deslocar pelo menos 4 m em linha reta antes de atacar no mesmo turno, seu primeiro ataque ou técnica Marcial naquela rodada recebe +1d20 no teste de acerto e soma +Etapa ao dano final.
+#### Etapa II — Marca de Caça
 
-#### Instinto de Contra-Ataque · Etapa IV
+Como Livre, uma vez por turno, marque uma presa visível. Saiba sua direção mesmo atrás de cobertura; se percorreu 3 m, some 1d20 ao primeiro ataque do turno contra ela.
 
-Seus reflexos animais disparam sob ameaça: uma vez por rodada, quando um inimigo adjacente erra um ataque contra você (Falha), você pode usar sua Reação para desferir imediatamente um ataque básico corpo a corpo contra ele sem custo de Karma.
+#### Etapa IV — Reflexo Selvagem
 
-#### Despertar da Fera Ancestral · Etapa VI
+Uma vez por rodada, como Reação quando um inimigo erra contra você ou deixa seu contato, avance até 3 m e desfira ataque básico, Derrubar ou Agarrar sem Karma.
 
-Uma vez por cena (Ação Livre, duração de 3 rodadas), você libera o ápice da sua linhagem: recebe +2 m de deslocamento, +1d20 em todos os testes de Força e Agilidade, e seus ataques e técnicas Marciais/Elementais causam +1 dado base de dano.
+#### Etapa VI — Forma Ancestral Quimérica
 
-### Demônio
-
-Autoridade de Aqueronte, Pressão Abissal e Combustão.
-
-#### Estigma de Aqueronte · Etapa I
-
-Recebe Resistência 2 contra efeitos de calor/fogo e venenos comuns, enxerga perfeitamente na escuridão e recebe +1d20 em Intimidação.
-
-#### Brasa de Retaliação · Etapa II
-
-Sempre que você sofrer dano de um inimigo a até 5 m, você acumula Rancor Abissal: no seu próximo turno, seu primeiro ataque ou técnica que atingir um inimigo causa +1d8 de Dano Kármico (Fogo/Corrupto/Sombra) adicional.
-
-#### Soberania do Pacto · Etapa IV
-
-Suas técnicas de matriz Elemental (Fogo/Combustão), Corrupta ou Divina têm seu custo reduzido em -1 Karma (mínimo 1) uma vez por rodada. Além disso, inimigos que estejam Abalados, Queimando ou com Cargas de Corrupção sofrem -1 na CA contra seus ataques.
-
-#### Presença do Trono Abissal · Etapa VI
-
-Uma vez por cena, como Ação Livre por 3 rodadas, você emana pressão régia a até 5 m: inimigos na área têm sua faixa de Acerto Total ampliada em +1 a seu favor (você acerta o Total com CA em vez de CA+1), sofrem -1d20 em testes de vontade/Espírito e você recebe Escudo Temporário igual a Presença + Etapa no início de cada um desses 3 turnos.
+Escolha Força, Agilidade ou Espírito. Uma vez por cena, como Livre, mantenha os três Aspectos por três rodadas, acrescente um dado-base aos ataques e técnicas ofensivas e recupere Espírito mais Etapa de Vida no início de cada um desses turnos.
 
 ### Vampiro
 
-Subdobra de Sangue, Nobreza de Sárkora e Drenagem.
+Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas coisas é oferecida sem que alguém pague o preço.
 
-#### Linhagem de Sárkora · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Agilidade ou Presença ou Espírito | duas perícias à escolha | +7 Vida; sem bônus de Karma | Reserva de Vitae |
 
-Enxerga no escuro, sente batimentos cardíacos a até 10 m e possui ataque de presas/drenagem em contato (1d8 físico/kármico) que recupera 2 PV ao causar Acerto Total em criatura viva (1x por rodada).
+#### Etapa I — Reserva de Vitae
 
-#### Sangue Régio Manipulado · Etapa II
+Enxergue no escuro e perceba batimentos em 10 m. Presas causam 1d8 Marcial. Ao ferir criatura viva com presas, arma de contato ou técnica de Sangue ou Sombra, ganhe 1 Vitae, até 3. Gaste 1 Vitae ou 3 Vida para curar Etapa mais 2 de Vida ou acrescentar 1d6 ao próximo ataque. Permanecem a sede de sangue e a vulnerabilidade canônica ao sol direto.
 
-Você pode gastar de 1 a 4 pontos da própria Vida como Ação Livre ao lançar uma técnica para somar +1d6 (para 2 PV) ou +1d10 (para 4 PV) ao dano da técnica, ou para receber +1d20 no teste de acerto. Sua cura por drenagem no Traço Base sobe para Etapa + 2 PV.
+#### Etapa II — Dízimo Carmesim
 
-#### Passo de Névoa Sanguínea · Etapa IV
+Gaste 2 Vitae ou 4 Vida ao atacar para ganhar 1d20 no teste e 1d10 no dano. Ao acertar, aplique Sangrando ou, com olhar hipnótico sustentado por Presença, Abalado.
 
-Recebe Resistência 2 contra efeitos de sangramento, necróticos e venenos sanguíneos. Como Reação ao ser alvo de um ataque (1x por rodada, custo 2 Karma), você reduz o dano sofrido em -Etapa e desliza até 4 m em forma de névoa rubra sem provocar Reações.
+#### Etapa IV — Transfusão de Névoa Rubra
 
-#### Aristocracia Imortal · Etapa VI
+Seu limite sobe para 5; Resistência 3 contra sangramento, veneno e efeitos necróticos ou de Sombra. Uma vez por rodada, como Reação a ataque, gaste 1 Vitae ou 2 Karma para reduzir dano em Espírito mais Etapa e reaparecer até 5 m sem Reações. Atravesse um inimigo vivo para drenar 1 Vitae.
 
-Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz brevemente em névoa carmesim e se recompõe a até 5 m com Etapa × 4 pontos de Vida, limpando condições de imobilização/sangramento.
+#### Etapa VI — Trono Imortal
+
+Escolha Presença, Agilidade ou Espírito. Uma vez por cena, ao sofrer dano que zeraria sua Vida, cause 2d8 aos inimigos adjacentes e recomponha-se a até 6 m com cinco vezes sua Etapa em Vida. Encerre condições físicas.
+
+### Demônio
+
+Diante de Aqueronte, até o silêncio tem cláusulas. O inimigo marcado pode escolher a quem ferir; só não pode escolher sair ileso.
+
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Presença ou Espírito ou Força | uma entre Intimidação, Enganação, Canalização de Karma | +5 Vida e +6 Karma | Selo de Coação |
+
+#### Etapa I — Selo de Coação
+
+Enxergue no escuro e resista a Fogo e calor com 3. Uma vez por turno, ao atingir ou encarar como Livre a até 10 m, sele o inimigo até seu próximo turno. Se atacar ou usar técnica sem incluir você, ele sofre Etapa mais Presença de dano Mental. Se atacar você, seu próximo revide contra ele ganha 1d20 e 1d8 de dano.
+
+#### Etapa II — Combustão de Rancor
+
+Contra alvo marcado, Abalado ou Queimando, trate a CA como 1 ponto menor. Sua primeira técnica do turno contra ele custa 1 Karma a menos, mínimo 1.
+
+#### Etapa IV — Jurisdição dos Sete Círculos
+
+Quando um marcado falha num teste ou sofre Acerto Total seu, recupere 2 Karma e ganhe Escudo igual a Presença mais Etapa. Some 1d20 a Intimidação, Comunhão Divina e Controle da Corrupção.
+
+#### Etapa VI — Soberania do Trono Infernal
+
+Escolha Presença, Espírito ou Força. Uma vez por cena, como Livre, manifeste aura de 6 m por três rodadas. Inimigos na área ficam selados e perdem 1d20 para resistir mentalmente; reduza em 2 o limiar de Total de seus ataques contra eles. Suas técnicas ofensivas de Grau III ou superior somam um dado-base.
+
+### Ghoul
+
+O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o rastro abrir caminho no escuro e sua carne se prepara para caçar.
+
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Constituição; +1 em Força ou Agilidade | uma entre Percepção, Sobrevivência | +6 Vida; sem bônus de Karma | Voracidade Carmesim |
+
+#### Etapa I — Voracidade Carmesim
+
+Garras e presas causam 1d8 Marcial com Luta. Fareje sangue e feridos até 12 m, mesmo sob invisibilidade ou fumaça. Ao ferir em contato ou consumir biomassa como Movimento, entre em Caça pela cena e encerre Sangrando em si.
+
+#### Etapa II — Órgão Predatório
+
+Durante a Caça, manifeste o órgão sem custo na primeira vez na cena; reativar custa 2 Karma. Escolha no turno: forma robusta dá 1d20 em Luta e Atletismo, 2 m ao avançar contra feridos e Resistência Marcial 2; forma alongada dá alcance 3 m e dano natural 1d10.
+
+#### Etapa IV — Regeneração Celular Voraz
+
+Com o órgão ativo, uma vez por rodada, Acerto Total de contato contra criatura viva cura Constituição mais Etapa; excedente vira Escudo. Contra Sangrando, Caído ou abaixo de metade da Vida, some 1d8 e impeça cura até o início do seu próximo turno.
+
+#### Etapa VI — Apogeu da Fome
+
+Escolha Constituição, Força ou Agilidade. Seus ataques e técnicas ignoram até 4 Resistência. Uma vez por cena, ao cair a metade da Vida ou menos ou como Reação a Total, entre em Frenesi por três rodadas: CA +2, imunidade a Abalado, Lento e Caído, e um dado-base adicional no dano.
 
 ### Tritão
 
-+1 Constituição, +1 Atletismo e +6 Vida..
+As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra seca, o tritão leva a maré consigo.
 
-#### Tritão — Traço de linhagem · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Constituição; +1 em Força ou Agilidade ou Espírito | uma entre Atletismo, Sobrevivência | +6 Vida; sem bônus de Karma | Pressão Abissal |
 
-Anfíbio: respire ar e água sem ação ou custo. Receba +1 dado num teste de manipulação de Água que já possa realizar; o traço não concede Controle de Água, uma técnica ou mudança gratuita de fonte. Leitura de corrente: receba +1 dado em testes diretamente ligados a nadar, navegar, perceber correntes ou atuar sob a água. Desidratação: depois de 12 horas sem hidratação adequada, fique Exausto. Vinte minutos de imersão e repouso encerram a condição.
+#### Etapa I — Pressão Abissal
 
-#### Herança — Etapa II · Etapa II
+Respire no ar e na água, nade com deslocamento pleno e resista a Água e Gelo com 3. Ao atacar ou executar uma técnica, o Pulso de Maré permite deslizar 2 m ou empurrar o alvo atingido 2 m.
 
-Voz submersa: Passiva, 0 Karma. Você fala e executa componentes vocais enquanto submerso, desde que consiga normalmente falar. Criaturas na mesma massa de água podem ouvi-lo a até 5 metros em condições comuns; ruído, barreiras e distância maior usam Percepção quando necessário. Isso não concede idioma, telepatia ou alcance adicional a habilidades sonoras. Pode continuar falando normalmente fora da água.
+#### Etapa II — Manto de Correnteza
 
-#### Herança — Etapa IV · Etapa IV
+CA +1 contra ataques à distância e 1d20 adicional para escapar de agarrões e imobilizações. Uma vez por rodada, o Pulso reduz em 2 m o deslocamento do alvo atingido até o próximo turno; com Água ou Gelo, pode impor Lento ou Enraizado conforme a técnica.
 
-Fôlego partilhado: Principal, 3 Karma, toque em uma criatura voluntária, automático. Durante até 1 TE, ela pode respirar água enquanto estiver na mesma massa contínua de água e a até 5 metros de você. Você sustenta apenas um beneficiário; uma nova ativação encerra a anterior. Sair desse alcance ou ficar Inconsciente encerra o efeito. Não concede natação, proteção contra pressão, frio, veneno ou gases. A criatura percebe o fim do vínculo e volta a depender do próprio fôlego; não sofre dano instantâneo apenas pelo encerramento.
+#### Etapa IV — Implosão de Fossa
 
-#### Herança — Etapa VI · Etapa VI
+Uma vez por rodada, como Reação a ataque de contato ou técnica, gaste 2 Karma, reduza o dano em Constituição mais Etapa e devolva 2d6 de dano de Água ao atacante.
 
-Leitura de esteira: Passiva que amplia Leitura de corrente. Enquanto submerso, você percebe movimento de corpos na mesma massa contínua de água a até 15 metros, sem depender de luz. Uma criatura que tenta se ocultar ainda exige Espírito + Percepção contra Furtividade para ser localizada, com empate a favor dela; o dado de Leitura de corrente aplica-se uma vez. Uma Movimento permite essa busca, com uma tentativa por alvo por turno. Não atravessa cobertura total nem revela ser imóvel, identidade ou pensamento; turbulência pode impor Desvantagem coerente. Maré conduzida: Movimento, 6 Karma, uma vez por cena, automático. Enquanto submerso, conduza até dois aliados voluntários inicialmente a até 2 metros de você num deslocamento conjunto de até 5 metros pela água. Cada participante precisa poder mover-se e respirar durante a passagem; você pode manter contato com um beneficiário de Fôlego partilhado. Todos seguem o mesmo trajeto possível e terminam em espaços livres próximos entre si, sem provocar reações disparadas apenas pelo movimento. Não atravessa parede ou selo, não remove Agarrado ou Imobilizado e não permite levar outra cadeia de criaturas. Não concede ação ou ataque aos passageiros.
+#### Etapa VI — Soberano do Leviatã
+
+Escolha Constituição, Força ou Espírito. Uma vez por cena, como Livre, crie uma zona de 6 m por três rodadas: aliados ganham 2 m e Resistência 3 contra Fogo e Marcial; inimigos têm CA −2 contra você. Suas técnicas de Água, Gelo, Vapor e Marciais somam um dado-base.
 
 ### Abissal
 
-+1 Espírito ou +1 Força, +1 em Ocultismo ou Canalização de Karma e +6 Karma máximo..
+Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar distante: leva ao avesso do lugar que já está ali.
 
-#### Abissal — Traço de linhagem · Etapa I
+| Atributos raciais | Perícias de linhagem | Vitalidade e Karma | Assinatura racial |
+|---|---|---|---|
+| +1 em Espírito ou Intelecto | uma entre Percepção, Ocultismo, História, Canalização de Karma | +4 Vida e +6 Karma | Fenda de Horizonte |
 
-Anatomia de fenda: você não respira de maneira comum, podendo ficar sem respirar por um dia. Âncora de identidade: receba +1 dado para resistir a possessão e a alterações de memória, nome, corpo ou identidade. Ossos Negros: ossos negros resistem ao decepamento: os membros não podem ser separados do corpo por um efeito de amputação. Dano, Ferimento Grave, fratura e incapacidade continuam possíveis. Enquanto consciente, percebendo o ataque e capaz de se defender, receba +2 CA, sem ação, custo ou teste; é o sentido de “ao defender” deste traço. Não exige gastar Principal em Defender e não se aplica contra agressão imperceptível ou estando Indefeso. Instabilidade espacial: efeitos de banimento, selamento ou deslocamento forçado recebem +1 dado contra você. Se obtiverem sucesso total, você também perde a Reação até o início do próximo turno.
+#### Etapa I — Fenda de Horizonte
 
-#### Herança — Etapa II · Etapa II
+Veja através de ilusões simples e escuridão mágica. Resistência 3 contra Sombra e Mental. Uma vez por turno, como Livre, posicione uma Âncora visível a até 10 m. Meça o alcance e a trajetória de suas técnicas a partir de você ou dela.
 
-Memória do próprio nome: Passiva. Durante um intervalo seguro, registre um fato verificável sobre si e associe-o a um gesto, objeto ou palavra de referência. Mantenha apenas um registro. Depois de sofrer alteração sobrenatural de memória ou identidade, perceber essa referência informa que há uma discrepância, sem ação ou teste próprios. O aviso não desfaz a alteração, não revela toda a verdade e não permite agir enquanto estiver Inconsciente ou controlado. A referência precisa existir fora da memória adulterada; repetir uma palavra que o efeito apagou não cria acesso automático a ela.
+#### Etapa II — Passo de Fresta
 
-#### Herança — Etapa IV · Etapa IV
+Como Movimento ou Reação de 1 Karma, uma vez por rodada, troque de lugar com a Âncora sem provocar Reações. Inimigos adjacentes à chegada sofrem CA −1 até o fim do seu turno.
 
-Passo de fenda: Movimento, 3 Karma, automático, uma vez por turno. Transfira seu corpo e a carga normal para um espaço livre percebido a até 5 metros, com linha de efeito entre origem e destino. É um deslocamento instantâneo, sem percorrer os pontos intermediários e sem provocar reações disparadas apenas por movimento. Não atravessa cobertura total, selo ou barreira que proíba a passagem; não pode ser usado estando Agarrado ou Imobilizado. Não leva outra criatura nem muda porte, anatomia ou reservas. Instabilidade espacial continua valendo contra efeitos hostis.
+#### Etapa IV — Dobra de Singularidade
 
-#### Herança — Etapa VI · Etapa VI
+Uma vez por rodada, como Reação a técnica sobrenatural ou disparo, gaste 2 Karma para reduzir dano em Espírito mais Etapa. Guarde o eco na Âncora: o próximo ataque ou técnica soma 1d10 de dano de Sombra.
 
-Retirada pela fenda: Passo de fenda também pode ser usado como Reação, pagando seus mesmos 3 Karma, imediatamente depois de sofrer um ataque total de origem percebida e aplicar todas as consequências. Continua sendo no máximo um Passo de fenda por turno, somando as duas formas de uso. Exige permanecer consciente, capaz de mover-se e com a Reação disponível; não evita retroativamente o dano e não funciona depois de outra defesa ativa contra a mesma resolução. Distância e impedimentos permanecem os da habilidade. Âncora do eu: Reação, 6 Karma, uma vez por cena, antes de aplicar um banimento, teleporte hostil ou deslocamento sobrenatural que retiraria você de sua posição. Teste Espírito + Ocultismo contra o resultado já rolado da fonte como CD; se ela não rolou, seu usuário rola a combinação da fonte para estabelecer essa CD. O dado adicional de Instabilidade espacial entra uma vez nessa rolagem da fonte, inclusive se ela for feita agora. Sucesso impede somente a mudança de posição ou plano; dano e demais condições continuam. Falha aplica o efeito completo, sem parcial. Não permite uma segunda defesa ativa na mesma resolução e não rompe um selamento já estabelecido. Sua Âncora de identidade inicial só acrescenta o dado quando o efeito também alterar corpo, memória, nome ou identidade, não por qualquer empurrão.
+#### Etapa VI — Horizonte de Eventos
+
+Escolha Espírito, Intelecto ou Presença e mantenha duas Âncoras. Uma vez por cena, como Livre, conecte-as por três rodadas. Troque de posição por até 3 m entre elas uma vez por turno e some 1d20 aos testes de técnicas. Um inimigo que tente sair do intervalo sofre 2d10 de dano Mental e tem seu deslocamento reduzido à metade.
 

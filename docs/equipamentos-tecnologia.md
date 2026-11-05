@@ -401,7 +401,7 @@ Uma refeição simples custa 1 m; uma diária em hospedaria modesta custa 2 m. A
 | Autorização institucional restrita | 25 m de trâmite | Exige patrocinador e finalidade; taxa não compra aprovação |
 | Aluguel de ferramenta comum | 10% do preço por dia | Caução pelo valor do item; mínimo 1 m |
 
-**Livre** dispensa autorização especial. **Licenciado** exige registro e usuário habilitado. **Restrito** depende de instituição, serviço, missão ou autorização específica para aquele material. **Proibido** não possui venda legal; o valor apresentado, se houver, é referência de campanha, não permissão. Licenças são categorias do cenário, não leis de um país real. Uma arma registrada continua dependendo da jurisdição visitada.
+**Livre** Dispensa autorização especial. **Licenciado** exige registro e usuário habilitado. **Restrito** depende de instituição, serviço, missão ou autorização específica para aquele material. **Proibido** não possui venda legal; o valor apresentado, se houver, é referência de campanha, não permissão. Licenças são categorias do cenário, não leis de um país real. Uma arma registrada continua dependendo da jurisdição visitada.
 
 Em rota abastecida, use o preço de catálogo. Escassez declarada aplica ×1,5; cerco ou isolamento severo, ×2. Aplique apenas o maior multiplicador de escassez. Contrabando pode acrescentar ×2 pelo risco, sem reduzir exigências narrativas. Revenda de item íntegro rende normalmente 50% do preço local sem modificador de contrabando; Danificado rende 25%, Quebrado apenas 10% como peças. Cargas gastas e munições disparadas não são revendidas como intactas.
 
@@ -522,7 +522,7 @@ O ferrolho e a ação de repetição integram o ataque; não geram uma segunda P
 
 **Antiblindagem.** Reduz até 3 de uma parcela física da CA da máquina e ignora metade da Blindagem dela, arredondada para baixo. Não soma a redução de CA com Perfurante: use a maior. Contra criatura sem Blindagem, apenas o dano normal da arma. Retaguarda do lançador ocupa cone de 5 m; use a mesma rolagem para 2d6 Fogo nas criaturas ali, com defesas normais. Declare o cone antes de disparar. Ele não pode ser usado em compartimento fechado sem espaço livre de descarga.
 
-**Espalhamento.** A espingarda atinge um alvo, não todo um cone. Causa 4d4 até 5 m e 2d6 acima de 5 até 15 m. Precisa ser apontada normalmente. **Confiável** ignora o primeiro Engasgo da cena, embora o tiro correspondente ainda falhe. **Ocultável** permite esconder em roupa adequada; encontrar usa revista ou oposição entre Furtividade e Percepção, sem invisibilidade automática.
+**Espalhamento.** A espingarda atinge um alvo, não todo um cone. Causa 4d4 até 5 m e 2d6 acima de 5 até 15 m. Precisa ser apontada normalmente. **Confiável** Ignora o primeiro Engasgo da cena, embora o tiro correspondente ainda falhe. **Ocultável** permite esconder em roupa adequada; encontrar usa revista ou oposição entre Furtividade e Percepção, sem invisibilidade automática.
 
 ## Tiro rápido, rajada e supressão
 
@@ -680,9 +680,9 @@ O veículo não recebe turno próprio. Cada tripulante age na própria iniciativ
 
 **Condutor.** Gasta Movimento para deslocar e testa Agilidade + Condução quando houver risco. Evasão do veículo gasta a Reação dele e precisa superar o ataque percebido. Quem estiver exposto à mesma incidência escolhe essa defesa coletiva ou sua defesa pessoal possível antes da rolagem; não tenta a segunda após falhar na primeira. Veículo parado por avaria ou sem espaço não Evade.
 
-**Atirador.** Usa Principal e Agilidade + Pontaria numa arma montada. Cada arma dispara no máximo uma vez por rodada, mesmo com vários operadores ou ações extras; recarga continua necessária. **Auxiliar** pode pagar Movimento para recarga assistida se estiver adjacente à estação.
+**Atirador.** Usa Principal e Agilidade + Pontaria numa arma montada. Cada arma dispara no máximo uma vez por rodada, mesmo com vários operadores ou ações extras; recarga continua necessária. **Auxiliar** Pode pagar Movimento para recarga assistida se estiver adjacente à estação.
 
-**Comandante.** Movimento e Intelecto + Tática CD 15 concedem +1d20 a um teste de condutor, atirador ou mecânico antes do próximo turno do comandante. Ordens equivalentes não acumulam. **Observador** usa Principal e Intelecto + Percepção CD 15, ou oposição à ocultação real, para informar posição e viabilizar tiro indireto até seu próximo turno.
+**Comandante.** Movimento e Intelecto + Tática CD 15 concedem +1d20 a um teste de condutor, atirador ou mecânico antes do próximo turno do comandante. Ordens equivalentes não acumulam. **Observador** Usa Principal e Intelecto + Percepção CD 15, ou oposição à ocultação real, para informar posição e viabilizar tiro indireto até seu próximo turno.
 
 **Mecânico.** Usa Principal e Intelecto + Criação CD 18 para suspender uma Avaria até o início do próximo turno dele, sem recuperar Estrutura. Engasgo conserva seu procedimento de limpeza. Sem condutor capaz, a máquina mantém o movimento ou para conforme a situação; não escolhe desvios ou alvos sozinha.
 

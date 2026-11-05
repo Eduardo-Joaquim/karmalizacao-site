@@ -19,7 +19,7 @@ O sistema mantém sua reserva de d20. Atributo positivo fornece `ceil(valor / 2)
 
 Em Perícia mental ou social treinada, quando o Atributo efetivamente usado é Intelecto:
 
-`resultado = dado selecionado + 2 × nível + min(3, floor(Intelecto final / 2))`
+`resultado = dado selecionado + 2 × nível + metade do Intelecto final, arredondada para baixo e limitada a 3`
 
 O bônus Analítico melhora a chance de sucesso, não o nível, dano, cura, duração, CA, graus ou pré-requisitos. Usa o Intelecto final com bônus de raça e classe. Sem treinamento, não há bônus Analítico. Em uma abordagem social racional descrita antes da rolagem, Intelecto pode substituir Presença se for maior. Carisma instintivo, autoridade e expressão permanecem abordagens de Presença; não há substituição automática de toda interação ficcional.
 

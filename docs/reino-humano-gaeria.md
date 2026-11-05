@@ -46,71 +46,64 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 **Perícias:** Manifestação de Bênção 3; Controle de Água 3; Atletismo 3; Reflexos 2; Luta 1; Persuasão 2; Percepção 2. Bênção e Água: maior de 5d20 +10. Evasão: maior de 4d20 +5. Constituição + Atletismo: maior de 5d20 +10. Ataque básico: Principal, até 2 m, maior de 3d20 +2, 1d8 físico, sem Karma; parcial metade, falha nenhum dano. Perícias não indicadas são 0. Não possui imunidade, Resistência a dano ou Comunhão Divina implícitas.
 
-**Defesa e sinais:** a CA já inclui a proteção pessoal da bênção. Dois selos quadrados giram junto aos ombros, cada um com CA 18 e Vida 12. Atacá-los exige uma ação e um ataque próprio; não se retira Vida da rainha pelo mesmo golpe. Cada selo destruído reduz sua CA em 2, até 25; os selos não são recriados durante a cena. Destruí-los não remove a bênção ou as Expressões conhecidas.
+**Defesa e sinais:** A CA já inclui a proteção pessoal da bênção. Dois selos quadrados giram junto aos ombros, cada um com CA 18 e Vida 12. Atacá-los exige uma ação e um ataque próprio; não se retira Vida da rainha pelo mesmo golpe. Cada selo destruído reduz sua CA em 2, até 25; os selos não são recriados durante a cena. Destruí-los não remove a bênção ou as Expressões conhecidas.
 
-**Bênção hereditária — Geometria do Amparo:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-1"></span> Minerva entregou os seis ângulos do amparo à linhagem que sustentou uma cidade sitiada. Aveline guarda essa outorga hereditária em defesa de quem vive dentro das muralhas. concedida à linhagem por Minerva após a defesa de uma cidade sitiada. Atributo regente: Espírito. Núcleo: dar existência a superfícies geométricas que separam espaços, interceptam trajetórias e redistribuem impactos. Dom Inicial: sustentar uma placa do tamanho da mão para aparar chuva, apoiar um objeto leve ou apresentar o brasão, sem benefício de combate. A Marca Divina são ângulos verdes luminosos nas íris. A bênção não cria matéria dentro de corpos, não corta almas, não produz ar respirável e não concede invulnerabilidade. Sua interdição proíbe manter deliberadamente uma pessoa indefesa presa numa barreira enquanto lhe nega água; a rainha precisa desfazer a prisão antes de violá-la.
+**Bênção hereditária — Geometria do Amparo:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-1"></span> Minerva entregou os seis ângulos do amparo à linhagem que sustentou uma cidade sitiada. Aveline guarda essa outorga hereditária em defesa de quem vive dentro das muralhas. Concedida à linhagem por Minerva após a defesa de uma cidade sitiada. Atributo regente: Espírito. Núcleo: dar existência a superfícies geométricas que separam espaços, interceptam trajetórias e redistribuem impactos. Dom Inicial: sustentar uma placa do tamanho da mão para aparar chuva, apoiar um objeto leve ou apresentar o brasão, sem benefício de combate. A Marca Divina são ângulos verdes luminosos nas íris. A bênção não cria matéria dentro de corpos, não corta almas, não produz ar respirável e não concede invulnerabilidade. Sua interdição proíbe manter deliberadamente uma pessoa indefesa presa numa barreira enquanto lhe nega água; a rainha precisa desfazer a prisão antes de violá-la.
 
 ##### 1 · Face do Juramento
 
 **Fonte e Grau:** Bênção IV; defesa. **Uso:** Reação defensiva, 7 Karma, rainha ou um aliado percebido a até 5 m; uma resolução imediata. Antes do dano de um ataque com trajetória identificável, Aveline ergue uma face hexagonal e rola maior de 5d20 +10 contra o resultado do ataque. Se superar, a face intercepta aquela parcela do ataque e impede seu dano e os efeitos que dependiam desse acerto. Em empate, aplica-se metade do dano que seria recebido e apenas a forma reduzida dos efeitos. Se ficar abaixo, nada é reduzido pela face. Não protege outros alvos da mesma área, não reflete e não é combinada com Evasão contra a mesma resolução.
 
-**Composição de Karma:** 6 base iv + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Pavilhão de Seis Faces
 
 **Fonte e Grau:** Bênção III; defesa. **Uso:** Principal, 9 Karma, até quatro criaturas voluntárias a até 5 m, por duas rodadas. Cada uma recebe 2d6 de escudo temporário, rolados separadamente, até o início do segundo turno seguinte de Aveline. Os escudos não se somam a outros escudos temporários: conserve o maior valor restante. Não aumentam a CA, não removem condições e não são renovados automaticamente. Sem teste contra aliados voluntários; não possui parcial.
 
-**Composição de Karma:** 4 base iii + 4 área / destinatários + 1 duração = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 área / destinatários + 1 duração = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Cela de Ângulos Vivos
 
 **Fonte e Grau:** Bênção IV; aprisionamento. **Uso:** Principal, 8 Karma, uma criatura a até 15 m, por no máximo duas rodadas. Aveline rola maior de 5d20 +10; o alvo opõe Força + Atletismo ou Espírito + Canalização de Karma, à sua escolha. Se Aveline superar, um prisma prende o alvo e aplica Imobilizado, sem suprimir sua Principal ou impedir ataques possíveis através da grade. Em empate, reduz o Deslocamento à metade apenas até o fim do próximo turno do alvo. Se perder, a cela não se fecha. A prisão tem CA 20 e Vida 25, não causa dano nem sufoca. Uma Principal permite repetir o confronto para rompê-la; dano externo também pode destruí-la. Termina se Aveline ficar Inconsciente, morrer ou se afastar mais de 15 m. Somente uma cela pode existir por vez.
 
-**Composição de Karma:** 6 base iv + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Agulha do Tetraedro
 
 **Fonte e Grau:** Bênção IV; ataque. **Uso:** Principal, 8 Karma, um alvo percebido a até 15 m; instantâneo. Maior de 5d20 +10 contra CA. Um vértice projetado causa 2d10 de dano divino no total; parcial metade, falha nenhum dano. Não ignora armadura ou cobertura e não causa ferimento adicional gratuito. A luz se concentra entre os dedos antes do disparo, permitindo reconhecer sua direção.
 
-**Composição de Karma:** 6 base iv + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Lança das Comportas
 
 **Fonte e Grau:** Água conduzida pela bênção, III; ataque elemental. **Uso:** Principal, 7 Karma, um alvo a até 15 m; instantâneo. Exige pelo menos um litro de água disponível e uma trajetória desobstruída. Maior de 5d20 +10 contra CA; total 2d8 de dano elemental de Água e deslocamento de 2 m para trás por passagem possível; parcial metade do dano e 1 m; falha nenhum efeito. A água percorre um canal triangular visível. A geometria não acrescenta dano divino, ataque extra ou vantagem adicional de fonte.
 
-**Composição de Karma:** 4 base iii + 2 alcance médio + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 alcance médio + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 6 · Guilhotina do Rio Suspenso
 
 **Fonte e Grau:** Água e moldura de barreiras, IV; ataque elemental. **Uso:** Principal, 8 Karma, linha de 5 m de comprimento e 1 m de largura que começa a até 5 m, até dois alvos; instantâneo. Exige água disponível. Maior de 5d20 +10, comparado separadamente à CA de cada alvo; total 2d10 elemental de Água, parcial metade, falha nenhum dano. Não imobiliza, não atravessa cobertura total e não acumula bônus por ser uma combinação de fontes. Um retângulo cheio de água anuncia o plano do corte antes de a lâmina descer.
 
-**Composição de Karma:** 6 base iv + 2 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 2 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Elemental · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Três Rodadas sem Ferida
 
-**Fonte e Grau:** assinatura da Bênção V; reflexão. **Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline. Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos. Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
+**Fonte e Grau:** Assinatura da Bênção V; reflexão. **Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline. Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos. Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
 
-**Reflexão:** uma vez por rodada, usa sua Reação comum antes da resolução de um golpe ou efeito hostil direto, percebido, que tenha Aveline como alvo e origem a até 30 m. A reação defensiva adicional de chefe não ativa esta reflexão. Pode interceptar dano físico, Karma, Elemental, Divino, Corrupção ou um efeito direto sem dano. Aveline rola maior de 5d20 +10 contra o teste original da fonte; se a origem só fornecer CD, compara com essa CD. Precisa superar, não basta empatar. Em sucesso, a parcela que a atingiria retorna à origem e não a afeta. Em empate, não retorna e Aveline recebe somente metade do dano e a forma reduzida do efeito. Em falha, recebe a resolução normal.
+**Reflexão:** Uma vez por rodada, usa sua Reação comum antes da resolução de um golpe ou efeito hostil direto, percebido, que tenha Aveline como alvo e origem a até 30 m. A reação defensiva adicional de chefe não ativa esta reflexão. Pode interceptar dano físico, Karma, Elemental, Divino, Corrupção ou um efeito direto sem dano. Aveline rola maior de 5d20 +10 contra o teste original da fonte; se a origem só fornecer CD, compara com essa CD. Precisa superar, não basta empatar. Em sucesso, a parcela que a atingiria retorna à origem e não a afeta. Em empate, não retorna e Aveline recebe somente metade do dano e a forma reduzida do efeito. Em falha, recebe a resolução normal.
 
-**Retorno:** um ataque devolvido conserva o resultado e o dano originais, comparados à CA do agressor, que ainda pode usar uma defesa legal se tiver Reação. Um efeito com resistência conserva a CD e permite ao agressor seu teste normal. Não duplica dano nem inverte cura. Contra área, apenas a parcela destinada à rainha retorna; os demais alvos resolvem seus próprios efeitos. Um efeito refletido não pode ser refletido novamente. A assinatura não cria dados próprios: devolve somente a parcela original, sem acrescentar os 3d10 de uma técnica ofensiva de Grau V.
+**Retorno:** Um ataque devolvido conserva o resultado e o dano originais, comparados à CA do agressor, que ainda pode usar uma defesa legal se tiver Reação. Um efeito com resistência conserva a CD e permite ao agressor seu teste normal. Não duplica dano nem inverte cura. Contra área, apenas a parcela destinada à rainha retorna; os demais alvos resolvem seus próprios efeitos. Um efeito refletido não pode ser refletido novamente. A assinatura não cria dados próprios: devolve somente a parcela original, sem acrescentar os 3d10 de uma técnica ofensiva de Grau V.
 
-**Fronteiras e preço:** não devolve clima, desabamento sem fonte ativa identificável, veneno já ingerido, doença instalada, juramento aceito ou o custo dos próprios poderes. Não atinge um agressor além de 30 m e não cancela automaticamente autoridade divina fora da escala mortal. Encerrada a barreira, perde as duas Reações até o início de seu turno seguinte; não pode reativá-la naquela cena. A rainha ainda precisa perceber a ameaça, conservar sua Reação comum e vencer o confronto: três rodadas de possibilidade de reflexão não são imunidade a todo o combate.
+**Fronteiras e preço:** Não devolve clima, desabamento sem fonte ativa identificável, veneno já ingerido, doença instalada, juramento aceito ou o custo dos próprios poderes. Não atinge um agressor além de 30 m e não cancela automaticamente autoridade divina fora da escala mortal. Encerrada a barreira, perde as duas Reações até o início de seu turno seguinte; não pode reativá-la naquela cena. A rainha ainda precisa perceber a ameaça, conservar sua Reação comum e vencer o confronto: três rodadas de possibilidade de reflexão não são imunidade a todo o combate.
 
-**Composição de Karma:** 12 base v + 1 reação de reflexão + 4 alcance longo + 2 duração três rodadas − 2 preparo e uso limitado = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 12 Base V + 1 reação de reflexão + 4 alcance longo + 2 duração três rodadas − 2 preparo e uso limitado = 17 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau V: 3d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Isadora de Valdária · Cantus Primus {#princesa-isadora}
 
@@ -128,58 +121,52 @@ Em cena, Isadora afina o instrumento antes de responder a uma acusação. Quando
 
 **Perícias:** Comunhão Divina 2 (Presença, maior de 4d20 +5); Manifestação de Bênção 2 e Atuação 2, ambas com maior de 4d20 +5; Reflexos 2, maior de 3d20 +5; Atletismo 1, maior de 3d20 +2; Persuasão 2, maior de 4d20 +5. Demais 0. Ataque básico: Principal, 1d20 +0, até 2 m, 1d4 físico, sem Karma; parcial metade, falha nada. Sem Resistência ou imunidade adicional.
 
-**Bênção e defesa:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-2"></span> Geometria do Amparo: Isadora herdou a dádiva de Minerva sem extinguir a manifestação de Aveline; seus acordes dão voz aos mesmos seis ângulos de proteção. compartilha concessora, Núcleo e interdição da linhagem, com Espírito como regente. Seu Dom Inicial produz uma placa para sustentar a partitura, sem proteção em combate. A Marca se manifesta como pautas luminosas nos olhos. A CA inclui quatro pontos de proteção sonora: se estiver Silenciada ou não conseguir tocar o instrumento, cai para 21. As seis aplicações abaixo exigem instrumento empunhado e liberdade de tocar. Danificar o ukulele exige um ataque próprio contra CA 17 e Vida 10 ou uma manobra válida de desarme; a bênção não é destruída com ele. Um instrumento substituto precisa de uma Principal para afinação.
+**Bênção e defesa:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-2"></span> Geometria do Amparo: Isadora herdou a dádiva de Minerva sem extinguir a manifestação de Aveline; seus acordes dão voz aos mesmos seis ângulos de proteção. Compartilha concessora, Núcleo e interdição da linhagem, com Espírito como regente. Seu Dom Inicial produz uma placa para sustentar a partitura, sem proteção em combate. A Marca se manifesta como pautas luminosas nos olhos. A CA inclui quatro pontos de proteção sonora: se estiver Silenciada ou não conseguir tocar o instrumento, cai para 21. As seis aplicações abaixo exigem instrumento empunhado e liberdade de tocar. Danificar o ukulele exige um ataque próprio contra CA 17 e Vida 10 ou uma manobra válida de desarme; a bênção não é destruída com ele. Um instrumento substituto precisa de uma Principal para afinação.
 
 ##### 1 · Acorde de Abrigo
 
 **Fonte e Grau:** Bênção III. **Uso:** Principal, 6 Karma, até dois aliados a até 5 m, até o início do segundo turno seguinte de Isadora. Cada alvo recebe 2d6 de escudo temporário, sem acumular com outro escudo; conserve o maior restante. Sem teste ou parcial em alvos voluntários. Não cura nem concede CA.
 
-**Composição de Karma:** 4 base iii + 2 área / destinatários = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 área / destinatários = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Contratempo de Vidro
 
 **Fonte e Grau:** Bênção III. **Uso:** Reação defensiva, 5 Karma, uma criatura a até 5 m, antes do dano de um ataque percebido. Maior de 4d20 +5 contra o resultado atacante. Se superar, a placa sonora reduz aquele dano a 0 e impede efeitos dependentes do acerto; empate reduz o dano à metade e usa a forma reduzida dos efeitos; se perder, não reduz. Não reflete e não permite Evasão na mesma resolução.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Nota de Ruptura
 
 **Fonte e Grau:** Bênção II. **Uso:** Principal, 3 Karma, um alvo a até 5 m; maior de 4d20 +5 contra CA. Uma lâmina de ressonância causa 2d6 de dano divino; parcial metade e falha nada. Não quebra equipamentos automaticamente e não atravessa proteção total.
 
-**Composição de Karma:** 3 base ii = 3 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II = 3 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Compasso dos que Permanecem
 
-**Fonte e Grau:** arte de Bardo III, alimentada por Karma. **Uso:** Principal, 8 Karma, até quatro aliados que a ouçam a até 5 m, até o início de seu próximo turno. Cada um recebe +2 em um único teste de resistência contra medo ou coerção que ocorrer durante a duração. Não remove controle existente, não concede ataques e não soma consigo. O beneficiário escolhe quando consumir o bônus. Sem teste ou parcial.
+**Fonte e Grau:** Arte de Bardo III, alimentada por Karma. **Uso:** Principal, 8 Karma, até quatro aliados que a ouçam a até 5 m, até o início de seu próximo turno. Cada um recebe +2 em um único teste de resistência contra medo ou coerção que ocorrer durante a duração. Não remove controle existente, não concede ataques e não soma consigo. O beneficiário escolhe quando consumir o bônus. Sem teste ou parcial.
 
-**Composição de Karma:** 4 base iii + 4 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 4 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Cadência da Passagem
 
-**Fonte e Grau:** arte de Bardo II. **Uso:** Principal, 5 Karma, até dois aliados voluntários a até 5 m. Cada um pode deslocar-se imediatamente até 2 m por caminho possível, sem ataque adicional e sujeito aos gatilhos normais de movimento. Não atravessa criaturas, paredes ou contenção que impeça movimento. Cada alvo escolhe se aceita. Sem teste ou parcial.
+**Fonte e Grau:** Arte de Bardo II. **Uso:** Principal, 5 Karma, até dois aliados voluntários a até 5 m. Cada um pode deslocar-se imediatamente até 2 m por caminho possível, sem ataque adicional e sujeito aos gatilhos normais de movimento. Não atravessa criaturas, paredes ou contenção que impeça movimento. Cada alvo escolhe se aceita. Sem teste ou parcial.
 
-**Composição de Karma:** 3 base ii + 2 área / destinatários = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 2 área / destinatários = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau II: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 6 · Herança do Primeiro Acorde
 
-**Fonte e Grau:** assinatura da Bênção IV. **Uso:** Principal, 10 Karma, uma vez por cena, círculo de raio 2 m centrado nela; até o início do segundo turno seguinte. O círculo tem uma reserva única de escudo de 2d10, compartilhada pelas criaturas que Isadora declarar protegidas ao criar a barreira. Ataques que cruzem a borda consomem essa reserva depois das reduções normais; ela não se multiplica pelo número de pessoas ou de ataques. Não contém inimigos, não protege contra efeitos que já se originem dentro e termina se Isadora perder a capacidade de tocar. Não reflete. Sem teste de criação ou parcial; qualquer dano excedente atinge o alvo original.
+**Fonte e Grau:** Assinatura da Bênção IV. **Uso:** Principal, 10 Karma, uma vez por cena, círculo de raio 2 m centrado nela; até o início do segundo turno seguinte. O círculo tem uma reserva única de escudo de 2d10, compartilhada pelas criaturas que Isadora declarar protegidas ao criar a barreira. Ataques que cruzem a borda consomem essa reserva depois das reduções normais; ela não se multiplica pelo número de pessoas ou de ataques. Não contém inimigos, não protege contra efeitos que já se originem dentro e termina se Isadora perder a capacidade de tocar. Não reflete. Sem teste de criação ou parcial; qualquer dano excedente atinge o alvo original.
 
-**Composição de Karma:** 6 base iv + 2 área / destinatários + 2 seleção de aliados = 10 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 2 área / destinatários + 2 seleção de aliados = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
-**Comunhão Divina — Minerva:** <span data-divine-grant="minerva">Outorga litúrgica de Minerva · Romano — Asa da Autoridade</span> Arquiteta da Cidade Justa. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar arquitetura com responsabilidade e cumprir a palavra empenhada em nome de Minerva. Profanação: Usar a dádiva para profanar arquitetura ou quebrar deliberadamente um juramento feito a Minerva.
+**Comunhão Divina — Minerva:** <span data-divine-grant="minerva">Outorga litúrgica de Minerva · Romano — Asa da Autoridade</span> Arquiteta da Cidade Justa. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Escolha a obra que permanecerá útil quando o louvor tiver acabado. Profanação: Fazer da sabedoria uma armadilha para impedir que outros aprendam ofende a mestra.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau IV: 2d10; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Liturgia · Consagração do Sexto Ângulo
 
@@ -187,7 +174,6 @@ Em cena, Isadora afina o instrumento antes de responder a uma acusação. Quando
 
 **Composição de Karma:** 4 Base III + 2 Dois destinatários + 1 Passagem coordenada = 7 Karma.
 
-**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Princesa Brígida de Valdária · Manus Ferrea {#princesa-brigida}
 
@@ -209,28 +195,28 @@ Brígida não conspira contra a sucessora. Os conspiradores tentam falar por ela
 
 **Grau III. Uso:** Principal, 5 Karma, um alvo a até 2 m. Maior de 3d20 +5 contra CA; total 2d10 físicos e empurra 2 m por trajeto possível; parcial metade do dano e 1 m; falha nada. O dano já substitui o golpe básico, não se soma a ele.
 
-**Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 2 · Travessia do Cais
 
 **Grau II. Uso:** Principal, 4 Karma, um alvo alcançável por até 5 m de deslocamento real. Brígida percorre o trajeto, sujeita a terreno e gatilhos normais, e resolve maior de 3d20 +5 contra CA. Total 1d12 físico, parcial metade, falha nenhum dano; o movimento já realizado não é desfeito. Não atravessa obstáculos nem cria um segundo ataque.
 
-**Composição de Karma:** 3 base ii + 1 efeito menor = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 efeito menor = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 3 · Corpo que Não Recua
 
 **Grau II. Uso:** Movimento, 4 Karma, pessoal, até o início do próximo turno. Recebe +2 somente no próximo teste para resistir a empurrão, queda ou agarrão durante a duração. O bônus é consumido após um teste, não se acumula e não elimina a possibilidade de perder o confronto. Sem teste de ativação ou parcial; não reduz dano.
 
-**Composição de Karma:** 3 base ii + 1 movimento = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 movimento = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 4 · Resposta da Segunda Filha
 
 **Grau III. Uso:** Reação comum, 5 Karma, uma vez por rodada. Quando um ataque corpo a corpo percebido contra Brígida resultar em falha pela CA, pode golpear o agressor se ele estiver a até 2 m. Não dispara contra parcial, ataque à distância ou apenas por ter vencido uma Evasão. Maior de 3d20 +5 contra CA; total 2d10 físicos, parcial metade, falha nada. Consome a permissão compartilhada de Principal adicional da rodada; se ela já a usou, não pode ativar. A Reação defensiva adicional não executa este ataque.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
-**Comunhão Divina — Marte:** <span data-divine-grant="marte">Outorga litúrgica de Marte · Romano — Asa da Autoridade</span> Guardião da Vanguarda. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar ordem militar com responsabilidade e cumprir a palavra empenhada em nome de Marte. Profanação: Usar a dádiva para profanar ordem militar ou quebrar deliberadamente um juramento feito a Marte.
+**Comunhão Divina — Marte:** <span data-divine-grant="marte">Outorga litúrgica de Marte · Romano — Asa da Autoridade</span> Guardião da Vanguarda. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Comande de frente e partilhe o risco que ordena aos seus. Profanação: Abandonar quem manteve a linha sob suas ordens mancha a insígnia.
 
 ##### Liturgia · Juramento da Porta Acesa
 
@@ -238,7 +224,6 @@ Brígida não conspira contra a sucessora. Os conspiradores tentam falar por ela
 
 **Composição de Karma:** 4 Base III + 1 Reação de amparo = 5 Karma.
 
-**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Conselheiro Tomás Ardel · Ultima Ianua {#conselheiro-tomas}
 
@@ -256,37 +241,37 @@ Durante uma audiência, escolhe um lugar de onde enxergue as duas princesas. Enc
 
 **Perícias:** Luta 2, maior de 4d20 +5; Atletismo 2, maior de 4d20 +5 com Força ou 5d20 +5 com Constituição; Reflexos 1, maior de 2d20 +2; Persuasão 2, maior de 3d20 +5. Demais 0. Ataque básico: Principal, até 2 m, maior de 4d20 +5, 2d10 físicos; parcial metade, falha nada. Sem Resistência ou imunidade permanente. Sua Evasão sofre Desvantagem enquanto empunhar o escudo pesado.
 
-**Proteção visível:** a CA inclui armadura pesada e escudo pesado; o escudo concede 3 dos 27 pontos. Se for desarmado, quebrado ou estiver impedido de defender-se com ele, CA 24. Sem a armadura, mas com escudo, CA 20. Sem ambos, CA 17. Nenhuma técnica abaixo aumenta esses números. Os valores já incluem sua defesa treinada; não some novamente equipamento à CA registrada.
+**Proteção visível:** A CA inclui armadura pesada e escudo pesado; o escudo concede 3 dos 27 pontos. Se for desarmado, quebrado ou estiver impedido de defender-se com ele, CA 24. Sem a armadura, mas com escudo, CA 20. Sem ambos, CA 17. Nenhuma técnica abaixo aumenta esses números. Os valores já incluem sua defesa treinada; não some novamente equipamento à CA registrada.
 
 ##### 1 · Entre a Coroa e a Lâmina
 
 **Grau III; Karma. Uso:** Reação defensiva, 5 Karma, aliado adjacente. Antes da comparação de um ataque direto percebido, Tomás ocupa o lugar do aliado, se houver espaço, e se torna o único alvo daquela parcela. Compare o ataque original à CA de Tomás. Não rola Evasão ou outra defesa para o mesmo ataque; Resolve total, parcial e falha normalmente. Não intercepta uma área inteira, efeito interno ou invasão mental. Exige escudo funcional e não teleporta ninguém.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 2 · Avanço do Portão
 
 **Grau III; marcial reforçada. Uso:** Principal, 5 Karma, um alvo a até 2 m. Maior de 4d20 +5 contra CA; total 2d10 físicos e empurra 2 m; parcial metade do dano e 1 m; falha nada. Exige escudo e uma direção possível. Não derruba ou prende gratuitamente e não soma o dano do ataque básico.
 
-**Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 3 · Braço da Sentinela
 
 **Grau II; marcial. Uso:** Principal, 4 Karma, um alvo adjacente, até o fim do próximo turno de Tomás. Exige mão livre, impedindo o uso simultâneo de arma de duas mãos. Força + Atletismo, maior de 4d20 +5, oposto a Força + Atletismo ou Agilidade + Acrobacia do alvo. Vitória aplica Agarrado, empate apenas impõe −2 no próximo teste de movimento do alvo antes do fim de seu próximo turno; derrota não prende. O alvo pode usar a Principal para escapar pelo mesmo confronto. Tomás precisa manter a mão e a adjacência; a condição não retira a Principal da vítima.
 
-**Composição de Karma:** 3 base ii + 1 efeito menor = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 efeito menor = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 4 · Ficar de Pé
 
 **Grau III; Karma. Uso:** Reação defensiva, 5 Karma, pessoal, antes do dano de um ataque percebido. Recebe 2d6 de escudo temporário somente para aquele dano, depois das reduções normais; o restante desaparece ao fim da resolução. Sem teste de ativação ou parcial. Não impede condições por si só e não se combina com Evasão ou outra Reação contra a mesma resolução.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ##### 5 · A Porta Ainda Está Comigo
 
 **Grau IV; assinatura defensiva. Uso:** Principal, 10 Karma, uma vez por cena, até o início do segundo turno seguinte. Exige escudo funcional e Tomás ocupando uma passagem física de até 3 m de largura. Até quatro aliados indicados, atrás dele e a até 5 m, compartilham um único escudo temporário de 2d10 contra ataques que cruzem essa passagem. A reserva é única, não individual. Não protege contra ataque pelas costas, efeito originado do lado protegido ou trajeto que contorne a passagem. Não fecha outras entradas, não reflete e não imobiliza. Termina se Tomás sair da posição ou perder o escudo; excedentes atingem o alvo original.
 
-**Composição de Karma:** 6 base iv + 4 área / destinatários = 10 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 4 área / destinatários = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ## Os dois marquesados {#marquesados-valdaria}
 
@@ -298,7 +283,7 @@ Leonor quer autonomia para contratar patrulhas e levantar novas fortalezas. Defe
 
 A Casa não é uma organização criminosa uniforme. Parte dos guardas recebe tarde; parte dos administradores desvia dinheiro; outros preservam as rotas apesar disso. Um documento que prova fraude pode ameaçar o único comandante capaz de impedir um ataque naquela semana. Os aventureiros precisam decidir quem assume o serviço quando um responsável cai.
 
-**Encontro e pistas:** faróis apagados, carga mineral trocada por pedra comum e patrulhas desviadas do mesmo trecho. Leonor negocia diante de provas e perde a paciência diante de humilhação pública. A família oferece escolta e acesso às minas; pede proteção de mensageiros e investigação de uma fortaleza cujo relatório continua chegando mesmo depois de ter sido evacuada. Seus nobres não recebem poderes de chefe automaticamente por causa do título.
+**Encontro e pistas:** Faróis apagados, carga mineral trocada por pedra comum e patrulhas desviadas do mesmo trecho. Leonor negocia diante de provas e perde a paciência diante de humilhação pública. A família oferece escolta e acesso às minas; pede proteção de mensageiros e investigação de uma fortaleza cujo relatório continua chegando mesmo depois de ter sido evacuada. Seus nobres não recebem poderes de chefe automaticamente por causa do título.
 
 
 #### Leonor Ferromonte · Domina Rupis {#leonor-ferromonte}
@@ -315,7 +300,7 @@ Leonor herdou uma fronteira cujas fortalezas envelhecem mais depressa que os jur
 
 **Traço — Cadeia de comando:** Uma vez por cena, apresenta uma ordem verificável de sua jurisdição e recebe +2 em um teste de Persuasão para solicitar cooperação de uma patrulha. Não força obediência nem legitima ordens fora de sua autoridade.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 
 #### Mateus Ferromonte · Heres Septem {#mateus-ferromonte}
@@ -332,7 +317,7 @@ Mateus cresceu entre relatórios de obra e funerais de soldados. Financia engenh
 
 **Traço — Memória das obras:** Uma vez por cena, após examinar uma obra por pelo menos um minuto, recebe +2 em Investigação para reconhecer alteração em relação à planta que possui. Sem planta ou acesso à estrutura, não recebe o bônus.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 #### Germano Ferromonte · Columna Ferri {#germano-ferromonte}
 
@@ -350,13 +335,13 @@ Germano é primo de Leonor e comanda as guarnições das escarpas. Tanque da Eta
 
 **Uso:** Reação defensiva, 4 Karma, um aliado adjacente, antes do dano de um ataque físico percebido. Germano interpõe o escudo e concede 1d8 de escudo temporário apenas para essa resolução. O excedente se perde; não concede CA, não se acumula com outro escudo temporário e não permite Evasão na mesma resolução. Sem teste ou parcial. Exige escudo funcional.
 
-**Composição de Karma:** 3 base ii + 1 reação = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 reação = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ###### Golpe do Pilar · Grau III
 
 **Uso:** Principal, 5 Karma, um alvo a até 2 m. Maior de 3d20 +2 contra CA; total 2d10 físicos e empurra 2 m por passagem possível; parcial metade do dano e 1 m; falha nada. Exige escudo. O dano substitui o ataque básico e não derruba gratuitamente.
 
-**Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ###### Passagem Segura · Grau II
 
@@ -364,7 +349,7 @@ Germano é primo de Leonor e comanda as guarnições das escarpas. Tanque da Eta
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre, duas Reações defensivas e uma Intervenção por rodada. A Intervenção permite mover até 4 m ou realizar o ataque básico e compartilha o limite de Principal adicional.
 
-**Composição de Karma:** 3 base ii + 2 área / destinatários = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 2 área / destinatários = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ### Casa Vesperal · Aqua Perennis {#casa-vesperal}
 
@@ -372,7 +357,7 @@ O marquês Artur Vesperal controla concessões dos canais do leste, hortas medic
 
 Artur apoia Isadora e suas auditorias em público. Em privado, receia que a abertura dos arquivos exponha dívidas assumidas para manter o sistema funcionando durante uma seca. Naira quer os registros publicados mesmo assim. Sua filha, Lídia, encontra canais secundários que desapareceram dos mapas oficiais: alguém cobra pela água antes que o reino saiba que ela existe.
 
-**Encontro e pistas:** marcas recentes sob pedras antigas, comportas com numeração duplicada e ervas que murcham apenas a jusante de certas propriedades. A Casa pode fornecer travessia e tratamento comum, mas não milagres gratuitos. Um pedido de ajuda envolve decidir se a água deve seguir para a plantação que alimenta milhares ou para o distrito que contém os hospitais. A solução duradoura depende de restaurar o canal desviado e identificar quem lucra com a escassez.
+**Encontro e pistas:** Marcas recentes sob pedras antigas, comportas com numeração duplicada e ervas que murcham apenas a jusante de certas propriedades. A Casa pode fornecer travessia e tratamento comum, mas não milagres gratuitos. Um pedido de ajuda envolve decidir se a água deve seguir para a plantação que alimenta milhares ou para o distrito que contém os hospitais. A solução duradoura depende de restaurar o canal desviado e identificar quem lucra com a escassez.
 
 
 #### Artur Vesperal · Praefectus Aquae {#artur-vesperal}
@@ -389,7 +374,7 @@ Artur manteve trabalhadores empregados durante a seca assumindo compromissos que
 
 **Traço — Mesa de negociação:** Uma vez por cena, depois de expor uma concessão concreta que pode cumprir, recebe +2 em Persuasão numa negociação de abastecimento. O bônus não revela se a outra parte mente e não substitui o consentimento.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 
 #### Naira Vesperal · Ingenium Fluminis {#naira-vesperal}
@@ -406,7 +391,7 @@ Naira é tritã, engenheira e esposa de Artur. Sua autoridade nas obras foi conq
 
 **Traço — Leitura de vazão:** Uma vez por cena, após observar o fluxo por um minuto, recebe +2 em Percepção para localizar uma obstrução ou desvio visível no canal examinado. Não detecta automaticamente magia ou passagens fora de seu alcance sensorial.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 
 #### Lídia Vesperal · Oculus Alvei {#lidia-vesperal}
@@ -423,7 +408,7 @@ Lídia acompanha a mãe nas inspeções e mantém um mapa próprio, corrigido a 
 
 **Traço — Mapa de campo:** Uma vez por cena, com seu caderno e dez minutos para comparar marcos, recebe +2 em Investigação para identificar divergência entre o mapa e o trajeto percorrido. Não cria uma rota segura onde ela não existe.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 #### Celina Vesperal · Unda Bellatrix {#celina-vesperal}
 
@@ -441,13 +426,13 @@ Celina é irmã de Artur e uma Elementalista da Etapa III. Criada entre as obras
 
 **Uso:** Principal, 5 Karma, um alvo a até 5 m. Exige ao menos um litro de água. Maior de 3d20 +2 contra CA; total 2d10 de Água e puxa o alvo 2 m por trajeto desobstruído; parcial metade do dano e 1 m; falha nada. Não agarra nem atravessa obstáculos. O dano substitui o ataque básico.
 
-**Composição de Karma:** 4 base iii + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 efeito menor = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ###### Água entre as Lâminas · Grau II
 
 **Uso:** Reação defensiva, 4 Karma, pessoal, antes do dano de um ataque percebido. Recebe 1d8 de escudo temporário apenas para aquele dano, aplicado após reduções; o restante desaparece ao fim da resolução. Não impede condições por si só, não se combina com Evasão e não se acumula com escudo já maior. Sem teste de ativação ou parcial. Exige água disponível.
 
-**Composição de Karma:** 3 base ii + 1 reação = 4 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 1 reação = 4 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ###### Nó de Correnteza · Grau II
 
@@ -455,7 +440,7 @@ Celina é irmã de Artur e uma Elementalista da Etapa III. Criada entre as obras
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre, duas Reações defensivas e uma Intervenção por rodada. A Intervenção permite mover até 5 m ou realizar o ataque básico e compartilha o limite de Principal adicional. Um reservatório pode ser drenado ou isolado com as ações cabíveis ao mecanismo; a água não surge gratuitamente do solo.
 
-**Composição de Karma:** 3 base ii = 3 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II = 3 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ## Horrea Regis · Cedro Novo {#baronato-cedro-novo}
 
@@ -463,7 +448,7 @@ O barão Damião Cedral responde pelo entroncamento de estradas entre os marques
 
 Damião ganhou o título durante uma retirada, levando refugiados através da ponte enquanto nobres disputavam a precedência das carruagens. Hoje tem medo de perder a vila que ajudou a salvar. Autoriza adiantamentos de grão que os administradores chamam de empréstimos, mesmo quando não há contrato, e já não sabe quanto resta nas reservas. Sua irmã, Teresa, comanda o celeiro principal e exige uma contagem pública.
 
-**Encontro e pistas:** sacos novos ocultam grãos velhos, a balança foi reajustada e os livros têm páginas arrancadas sem alteração na numeração. O barão não é um vilão inevitável. Pode confessar e aceitar tutela temporária se os aventureiros garantirem abastecimento para a vila. Pode também destruir provas se acreditar que os marqueses usarão a fome para anexar o baronato. O contrato oferece pagamento, hospedagem e direito de passagem; o cargo não está à venda como espólio.
+**Encontro e pistas:** Sacos novos ocultam grãos velhos, a balança foi reajustada e os livros têm páginas arrancadas sem alteração na numeração. O barão não é um vilão inevitável. Pode confessar e aceitar tutela temporária se os aventureiros garantirem abastecimento para a vila. Pode também destruir provas se acreditar que os marqueses usarão a fome para anexar o baronato. O contrato oferece pagamento, hospedagem e direito de passagem; o cargo não está à venda como espólio.
 
 
 #### Damião Cedral · Dominus Horrei {#damiao-cedral}
@@ -480,7 +465,7 @@ Damião recebeu a concessão depois de atravessar uma ponte com refugiados quand
 
 **Traço — Nome entre os moradores:** Uma vez por cena, após oferecer abrigo ou alimento que realmente possui, recebe +2 em Persuasão para organizar uma evacuação em Cedro Novo. Não dispõe de estoque infinito nem recebe lealdade automática.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 
 #### Teresa Cedral · Mater Frumenti {#teresa-cedral}
@@ -497,7 +482,7 @@ Teresa administra o celeiro principal e conhece a diferença entre uma conta mal
 
 **Traço — Peso de aferição:** Uma vez por cena, usando seu peso e examinando uma balança por um minuto, recebe +2 em Investigação para comprovar adulteração daquele instrumento. O resultado não identifica sozinho quem o alterou.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
 
 #### Raul Cedral · Sagitta Pontis {#raul-cedral}
 
@@ -515,13 +500,13 @@ Raul é filho de Teresa e patrulha Cedro Novo como Ranger da Etapa II. Não herd
 
 **Uso:** Principal, 6 Karma, um alvo percebido a até 15 m. Maior de 3d20 +2 contra CA; total 1d12 físico e −2 no próximo teste de movimento do alvo antes do fim de seu próximo turno; parcial metade do dano, sem penalidade; falha nada. Não remove a Principal e não soma o dano da arma ao dano registrado.
 
-**Composição de Karma:** 3 base ii + 2 alcance médio + 1 efeito menor = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 3 Base II + 2 alcance médio + 1 efeito menor = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ###### Recuo do Vigia · Grau I
 
 **Uso:** Movimento, 3 Karma, pessoal. Desloca-se até 5 m por caminho possível. Não atravessa obstáculos, não ignora agarrões e continua sujeito aos gatilhos normais de movimento. Não inclui ataque. Sem teste em trajeto livre; um obstáculo mantém os testes e riscos próprios.
 
-**Composição de Karma:** 2 base i + 1 movimento = 3 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 2 Base I + 1 movimento = 3 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ###### Olhos sobre a Ponte · Grau I
 
@@ -529,19 +514,19 @@ Raul é filho de Teresa e patrulha Cedro Novo como Ranger da Etapa II. Não herd
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre, duas Reações defensivas e uma Intervenção por rodada. A Intervenção permite mover até 5 m ou atacar com o arco e compartilha o limite de Principal adicional.
 
-**Composição de Karma:** 2 base i = 2 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 2 Base I = 2 Karma. Manutenção e outros recursos são pagos separadamente.
 
 ## Aventura · O Reino por uma Comporta {#aventura-comporta}
 
 Às vésperas do juramento que confirmará publicamente Isadora como herdeira, ainda sob o reinado de Aveline, uma comporta rompe durante uma inspeção. Um depósito de Cedro Novo desaparece, Ferromonte fecha uma estrada e os registros de Vesperal indicam uma ordem real que Aveline afirma nunca ter assinado. Brígida parte para ajudar os atingidos; Tomás precisa decidir se a acompanha ou permanece com a rainha.
 
-**A primeira noite:** salvar moradores e conter a água revela que o mecanismo foi aberto por dentro. Não é necessário derrotar um membro da corte para encontrar a primeira prova. Um operador desaparecido deixou uma cópia de sua escala na bainha do casaco, e sua família sabe para quem entregou a chave substituta.
+**A primeira noite:** Salvar moradores e conter a água revela que o mecanismo foi aberto por dentro. Não é necessário derrotar um membro da corte para encontrar a primeira prova. Um operador desaparecido deixou uma cópia de sua escala na bainha do casaco, e sua família sabe para quem entregou a chave substituta.
 
-**A investigação:** três pistas independentes permitem avançar: a chave está registrada num posto Ferromonte; a água desviada abastece terras omitidas nos mapas Vesperal; o grão vendido passa por uma balança de Cedro Novo. Nenhuma descoberta prova, sozinha, a culpa de uma família inteira. Testes malsucedidos aumentam o tempo, o custo ou a exposição dos investigadores, mas não apagam todas as rotas para a próxima cena.
+**A investigação:** Três pistas independentes permitem avançar: a chave está registrada num posto Ferromonte; a água desviada abastece terras omitidas nos mapas Vesperal; o grão vendido passa por uma balança de Cedro Novo. Nenhuma descoberta prova, sozinha, a culpa de uma família inteira. Testes malsucedidos aumentam o tempo, o custo ou a exposição dos investigadores, mas não apagam todas as rotas para a próxima cena.
 
-**A audiência:** o responsável pela rede é Rui Salcedo, escrivão que cruza os contratos das três casas. Usa autorizações reais antigas para legitimar ordens novas e pretende esconder os desvios no caos da sucessão. Quando confrontado, tenta fazer uma testemunha parecer refém da princesa mais nova. O grupo pode separar as pessoas, apresentar os registros ou impedir a fuga pelos canais. Sua função administrativa não lhe concede a força da rainha.
+**A audiência:** O responsável pela rede é Rui Salcedo, escrivão que cruza os contratos das três casas. Usa autorizações reais antigas para legitimar ordens novas e pretende esconder os desvios no caos da sucessão. Quando confrontado, tenta fazer uma testemunha parecer refém da princesa mais nova. O grupo pode separar as pessoas, apresentar os registros ou impedir a fuga pelos canais. Sua função administrativa não lhe concede a força da rainha.
 
-**O que permanece:** divulgar tudo protege a sucessão, mas exige que a coroa assuma dívidas e reorganize concessões. Encobrir os nomes preserva a aparência de estabilidade e deixa os prejudicados sem restituição. Apoiar Brígida não exige destronar Isadora; oferecer às irmãs uma tarefa comum pode ser a única vitória que Aveline não consegue conquistar sozinha.
+**O que permanece:** Divulgar tudo protege a sucessão, mas exige que a coroa assuma dívidas e reorganize concessões. Encobrir os nomes preserva a aparência de estabilidade e deixa os prejudicados sem restituição. Apoiar Brígida não exige destronar Isadora; oferecer às irmãs uma tarefa comum pode ser a única vitória que Aveline não consegue conquistar sozinha.
 
 
 #### Rui Salcedo · Scriba Trium {#rui-salcedo}
@@ -558,4 +543,4 @@ Rui transforma autorizações antigas em ordens novas e confia que ninguém comp
 
 **Traço — Índice dos contratos:** Uma vez por cena, com acesso ao arquivo em que trabalha, recebe +2 em Investigação para localizar um documento que conhece. O traço não falsifica selos automaticamente, não altera a memória de testemunhas e não destrói provas à distância.
 
-**Defesa:** uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.
+**Defesa:** Uma Reação por rodada; Evasão usa Reflexos 0, portanto 1d20 sem bônus. Não possui armadura, escudo, Resistência a dano ou técnicas de combate conhecidas. **Ataque básico:** Principal, até 2 m, Luta 0, 1d20 contra CA, 1d4 físico; parcial metade, mínimo 1 antes das reduções, falha nenhum dano.

@@ -202,8 +202,8 @@
     ],
     "cost": 10,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "conselheiro-tomas",
@@ -223,8 +223,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "conselheiro-tomas",
@@ -244,8 +244,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "conselheiro-tomas",
@@ -286,8 +286,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-brigida",
@@ -328,8 +328,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-brigida",
@@ -395,8 +395,8 @@
     ],
     "cost": 10,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-isadora",
@@ -416,8 +416,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-isadora",
@@ -437,8 +437,8 @@
     ],
     "cost": 8,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-isadora",
@@ -475,8 +475,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-isadora",
@@ -496,8 +496,8 @@
     ],
     "cost": 6,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-aveline",
@@ -529,8 +529,8 @@
     ],
     "cost": 17,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "3d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-aveline",
@@ -550,7 +550,7 @@
     ],
     "cost": 8,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Água",
     "baseDamage": "2d10"
   },
   {
@@ -575,7 +575,7 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Água",
     "baseDamage": "2d8"
   },
   {
@@ -617,8 +617,8 @@
     ],
     "cost": 8,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-aveline",
@@ -642,8 +642,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-aveline",
@@ -663,8 +663,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "caelen-solvarden",
@@ -684,8 +684,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "caelen-solvarden",
@@ -709,8 +709,8 @@
     ],
     "cost": 5,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "caelen-solvarden",
@@ -759,7 +759,7 @@
     ],
     "cost": 15,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Raio",
     "baseDamage": "2d10"
   },
   {
@@ -780,8 +780,8 @@
     ],
     "cost": 6,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "duque-thaerion",
@@ -805,8 +805,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "duque-thaerion",
@@ -826,8 +826,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "duque-thaerion",
@@ -851,7 +851,7 @@
     ],
     "cost": 9,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Luz",
     "baseDamage": "2d8"
   },
   {
@@ -880,7 +880,7 @@
     ],
     "cost": 15,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Raio",
     "baseDamage": "2d10"
   },
   {
@@ -901,8 +901,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-ilyra",
@@ -930,8 +930,8 @@
     ],
     "cost": 10,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-ilyra",
@@ -951,7 +951,7 @@
     ],
     "cost": 8,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Fogo",
     "baseDamage": "2d8"
   },
   {
@@ -1001,8 +1001,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-naerith",
@@ -1030,8 +1030,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-naerith",
@@ -1055,8 +1055,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-naerith",
@@ -1208,8 +1208,8 @@
     ],
     "cost": 12,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-naerith",
@@ -1291,8 +1291,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "viscondado-kost",
@@ -1345,8 +1345,8 @@
     ],
     "cost": 13,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "condado-senn",
@@ -1370,8 +1370,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "condado-senn",
@@ -1391,8 +1391,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "condado-senn",
@@ -1408,8 +1408,8 @@
     ],
     "cost": 3,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "marquesado-kessel",
@@ -1458,8 +1458,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "marquesado-kessel",
@@ -1500,8 +1500,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "marquesado-dorne",
@@ -1542,8 +1542,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-savia",
@@ -1571,8 +1571,8 @@
     ],
     "cost": 11,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-savia",
@@ -1596,8 +1596,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-savia",
@@ -1617,8 +1617,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-savia",
@@ -1638,8 +1638,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-alucard",
@@ -1692,8 +1692,8 @@
     ],
     "cost": 11,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-alucard",
@@ -1717,8 +1717,8 @@
     ],
     "cost": 10,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-alucard",
@@ -1767,8 +1767,8 @@
     ],
     "cost": 8,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-alucard",
@@ -1825,8 +1825,8 @@
     ],
     "cost": 13,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-nosferato",
@@ -1858,7 +1858,7 @@
     ],
     "cost": 26,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Sangue",
     "baseDamage": "3d10"
   },
   {
@@ -1887,7 +1887,7 @@
     ],
     "cost": 14,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Sangue",
     "baseDamage": "2d10"
   },
   {
@@ -1908,8 +1908,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-nosferato",
@@ -1941,7 +1941,7 @@
     ],
     "cost": 23,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Sangue",
     "baseDamage": "2d10"
   },
   {
@@ -1991,8 +1991,8 @@
     ],
     "cost": 9,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-nosferato",
@@ -2016,7 +2016,7 @@
     ],
     "cost": 13,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Sangue",
     "baseDamage": "2d10"
   },
   {
@@ -2037,7 +2037,7 @@
     ],
     "cost": 7,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -2079,8 +2079,8 @@
     ],
     "cost": 6,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "marquesa-marchosias",
@@ -2121,8 +2121,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "marques-andras",
@@ -2175,8 +2175,8 @@
     ],
     "cost": 10,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "duque-agares",
@@ -2208,8 +2208,8 @@
     ],
     "cost": 16,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "duque-agares",
@@ -2229,8 +2229,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "duque-agares",
@@ -2246,8 +2246,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "duque-agares",
@@ -2271,8 +2271,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "duque-agares",
@@ -2296,7 +2296,7 @@
     ],
     "cost": 9,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Sangue",
     "baseDamage": "2d10"
   },
   {
@@ -2333,7 +2333,7 @@
     ],
     "cost": 22,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Raio",
     "baseDamage": "2d10"
   },
   {
@@ -2350,8 +2350,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-bael",
@@ -2375,8 +2375,8 @@
     ],
     "cost": 6,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-bael",
@@ -2400,8 +2400,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-bael",
@@ -2421,8 +2421,8 @@
     ],
     "cost": 6,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-bael",
@@ -2446,7 +2446,7 @@
     ],
     "cost": 9,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Terra",
     "baseDamage": "2d8"
   },
   {
@@ -2500,8 +2500,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-asmodeus",
@@ -2525,8 +2525,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-asmodeus",
@@ -2550,7 +2550,7 @@
     ],
     "cost": 9,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Vento",
     "baseDamage": "2d8"
   },
   {
@@ -2575,8 +2575,8 @@
     ],
     "cost": 10,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-asmodeus",
@@ -2596,8 +2596,8 @@
     ],
     "cost": 6,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-astaroth",
@@ -2654,8 +2654,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-astaroth",
@@ -2675,7 +2675,7 @@
     ],
     "cost": 8,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Água",
     "baseDamage": "2d8"
   },
   {
@@ -2686,8 +2686,8 @@
     "cost": 0,
     "source": "Capítulo 17: dose consumida, saturação e estoque finito",
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Item Alquímico",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-astaroth",
@@ -2697,8 +2697,8 @@
     "cost": 0,
     "source": "Capítulo 17: dose consumida, saturação e estoque finito",
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Item Alquímico",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-astaroth",
@@ -2708,8 +2708,8 @@
     "cost": 0,
     "source": "Capítulo 17: dose consumida, saturação e estoque finito",
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Item Alquímico",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-belial",
@@ -2800,7 +2800,7 @@
     ],
     "cost": 8,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Fogo",
     "baseDamage": "2d8"
   },
   {
@@ -2821,7 +2821,7 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -2854,8 +2854,8 @@
     ],
     "cost": 13,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-valac",
@@ -2949,8 +2949,8 @@
     ],
     "cost": 10,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-valac",
@@ -2978,8 +2978,8 @@
     ],
     "cost": 12,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-valac",
@@ -3053,8 +3053,8 @@
     ],
     "cost": 11,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-valac",
@@ -3078,8 +3078,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-valac",
@@ -3103,8 +3103,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-valac",
@@ -3131,8 +3131,8 @@
       }
     ],
     "cost": 15,
-    "matrix": "Kármico",
-    "damageType": "Kármico",
+    "matrix": "Elemental",
+    "damageType": "Elemental / Plasma",
     "baseDamage": "2d10"
   },
   {
@@ -3161,7 +3161,7 @@
     ],
     "cost": 23,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Raio",
     "baseDamage": "3d10"
   },
   {
@@ -3186,8 +3186,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-zahra",
@@ -3211,8 +3211,8 @@
     ],
     "cost": 9,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-zahra",
@@ -3232,7 +3232,7 @@
     ],
     "cost": 10,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Vento",
     "baseDamage": "2d10"
   },
   {
@@ -3294,8 +3294,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-naima",
@@ -3305,8 +3305,8 @@
     "cost": 0,
     "source": "Capítulo 17: dose consumida, saturação e estoque finito",
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Item Alquímico",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-naima",
@@ -3316,8 +3316,8 @@
     "cost": 0,
     "source": "Capítulo 17: dose consumida, saturação e estoque finito",
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Item Alquímico",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-sahar",
@@ -3340,9 +3340,9 @@
       }
     ],
     "cost": 22,
-    "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "3d10"
+    "matrix": "Marcial",
+    "damageType": "Marcial",
+    "baseDamage": "3d8"
   },
   {
     "owner": "candidata-sahar",
@@ -3366,8 +3366,8 @@
     ],
     "cost": 10,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-sahar",
@@ -3391,8 +3391,8 @@
     ],
     "cost": 6,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "candidata-sahar",
@@ -3412,7 +3412,7 @@
     ],
     "cost": 7,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3437,7 +3437,7 @@
     ],
     "cost": 19,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "3d8"
   },
   {
@@ -3457,9 +3457,9 @@
       }
     ],
     "cost": 9,
-    "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "matrix": "Marcial",
+    "damageType": "Marcial",
+    "baseDamage": "2d8"
   },
   {
     "owner": "al-aqwa",
@@ -3479,7 +3479,7 @@
     ],
     "cost": 9,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3503,9 +3503,9 @@
       }
     ],
     "cost": 13,
-    "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "matrix": "Marcial",
+    "damageType": "Marcial",
+    "baseDamage": "2d8"
   },
   {
     "owner": "al-aqwa",
@@ -3529,7 +3529,7 @@
     ],
     "cost": 8,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3549,9 +3549,9 @@
       }
     ],
     "cost": 9,
-    "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "matrix": "Marcial",
+    "damageType": "Marcial",
+    "baseDamage": "2d8"
   },
   {
     "owner": "al-aqwa",
@@ -3571,8 +3571,8 @@
     ],
     "cost": 9,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "al-aqwa",
@@ -3592,7 +3592,7 @@
     ],
     "cost": 9,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3613,7 +3613,7 @@
     ],
     "cost": 9,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3634,7 +3634,7 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3655,8 +3655,8 @@
     ],
     "cost": 7,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "alaric-voss",
@@ -3672,7 +3672,7 @@
     ],
     "cost": 6,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3693,7 +3693,7 @@
     ],
     "cost": 6,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3714,8 +3714,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "valentino-heathcliff",
@@ -3735,7 +3735,7 @@
     ],
     "cost": 6,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3756,8 +3756,8 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "caroline-lunaviel",
@@ -3781,7 +3781,7 @@
     ],
     "cost": 12,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3802,7 +3802,7 @@
     ],
     "cost": 9,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -3827,7 +3827,7 @@
     ],
     "cost": 8,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3848,7 +3848,7 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3869,7 +3869,7 @@
     ],
     "cost": 6,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3890,8 +3890,8 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "caroline-lunaviel",
@@ -3915,8 +3915,8 @@
     ],
     "cost": 6,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "caroline-lunaviel",
@@ -3936,7 +3936,7 @@
     ],
     "cost": 6,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -3953,8 +3953,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "baronesa-otilia",
@@ -3978,7 +3978,7 @@
     ],
     "cost": 8,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "1d10"
   },
   {
@@ -3999,8 +3999,8 @@
     ],
     "cost": 4,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "1d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "condessa-octavia",
@@ -4045,8 +4045,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "condessa-octavia",
@@ -4062,8 +4062,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "marques-torren",
@@ -4091,8 +4091,8 @@
     ],
     "cost": 14,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "marques-torren",
@@ -4112,8 +4112,8 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "marques-torren",
@@ -4133,8 +4133,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "marquesa-iren",
@@ -4170,8 +4170,8 @@
     ],
     "cost": 22,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "marquesa-iren",
@@ -4195,7 +4195,7 @@
     ],
     "cost": 7,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4220,8 +4220,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "duque-darian",
@@ -4245,8 +4245,8 @@
     ],
     "cost": 12,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "duque-darian",
@@ -4266,7 +4266,7 @@
     ],
     "cost": 8,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Vento",
     "baseDamage": "2d8"
   },
   {
@@ -4291,8 +4291,8 @@
     ],
     "cost": 8,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "duque-darian",
@@ -4316,8 +4316,8 @@
     ],
     "cost": 9,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-maelis",
@@ -4345,8 +4345,8 @@
     ],
     "cost": 12,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-maelis",
@@ -4366,7 +4366,7 @@
     ],
     "cost": 5,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4387,8 +4387,8 @@
     ],
     "cost": 4,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-maelis",
@@ -4433,8 +4433,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-maelis",
@@ -4454,8 +4454,8 @@
     ],
     "cost": 5,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4483,7 +4483,7 @@
     ],
     "cost": 19,
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Combustão",
     "baseDamage": "3d10"
   },
   {
@@ -4504,8 +4504,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4525,8 +4525,8 @@
     ],
     "cost": 8,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4546,8 +4546,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4575,8 +4575,8 @@
     ],
     "cost": 15,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4600,8 +4600,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4621,8 +4621,8 @@
     ],
     "cost": 7,
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4646,8 +4646,8 @@
     ],
     "cost": 6,
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "rainha-sael",
@@ -4671,7 +4671,7 @@
     ],
     "cost": 7,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4692,7 +4692,7 @@
     ],
     "cost": 7,
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -4716,7 +4716,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4740,7 +4740,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4760,7 +4760,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4780,7 +4780,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4804,7 +4804,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -4828,7 +4828,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Plasma",
     "baseDamage": "2d10"
   },
   {
@@ -4848,8 +4848,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "joao-e-maria",
@@ -4872,8 +4872,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "joao-e-maria",
@@ -4895,8 +4895,8 @@
         "value": 2
       }
     ],
-    "matrix": "Kármico",
-    "damageType": "Kármico",
+    "matrix": "Elemental",
+    "damageType": "Elemental / Sombra",
     "baseDamage": "2d10"
   },
   {
@@ -4928,7 +4928,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Sombra",
     "baseDamage": "2d10"
   },
   {
@@ -4952,8 +4952,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "joao-e-maria",
@@ -4972,8 +4972,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "1d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "joao-e-maria",
@@ -5000,8 +5000,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "joao-e-maria",
@@ -5032,7 +5032,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Magma",
     "baseDamage": "2d10"
   },
   {
@@ -5052,7 +5052,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -5076,8 +5076,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "nemetor",
@@ -5104,7 +5104,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Terra",
     "baseDamage": "2d10"
   },
   {
@@ -5132,7 +5132,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d6"
   },
   {
@@ -5164,8 +5164,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "nemetor",
@@ -5184,8 +5184,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "1d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "nemetor",
@@ -5204,8 +5204,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "1d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "branca-de-neve",
@@ -5224,7 +5224,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -5248,8 +5248,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "branca-de-neve",
@@ -5276,8 +5276,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "branca-de-neve",
@@ -5304,8 +5304,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "branca-de-neve",
@@ -5328,8 +5328,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "branca-de-neve",
@@ -5356,7 +5356,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d8"
   },
   {
@@ -5380,8 +5380,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "euphere",
@@ -5412,8 +5412,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "geppeto",
@@ -5456,8 +5456,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "ganancia",
@@ -5488,8 +5488,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "ganancia",
@@ -5512,7 +5512,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Luz",
     "baseDamage": "2d8"
   },
   {
@@ -5536,8 +5536,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "ganancia",
@@ -5564,7 +5564,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d8"
   },
   {
@@ -5588,8 +5588,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "maelia-veyr",
@@ -5612,7 +5612,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d8"
   },
   {
@@ -5636,8 +5636,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "maelia-veyr",
@@ -5664,7 +5664,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d6"
   },
   {
@@ -5692,8 +5692,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d6"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "maelia-veyr",
@@ -5724,7 +5724,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d8"
   },
   {
@@ -5740,8 +5740,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "prorrogadora-da-extincao",
@@ -5760,8 +5760,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "prorrogadora-da-extincao",
@@ -5784,8 +5784,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "prorrogadora-da-extincao",
@@ -5816,8 +5816,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "prorrogadora-da-extincao",
@@ -5840,7 +5840,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d6"
   },
   {
@@ -5864,7 +5864,7 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
+    "damageType": "Corrupto",
     "baseDamage": "3d6"
   },
   {
@@ -5888,7 +5888,7 @@
       }
     ],
     "matrix": "Divino",
-    "damageType": "Kármico",
+    "damageType": "Divino",
     "baseDamage": "2d8"
   },
   {
@@ -5916,7 +5916,7 @@
       }
     ],
     "matrix": "Divino",
-    "damageType": "Kármico",
+    "damageType": "Divino",
     "baseDamage": "2d8"
   },
   {
@@ -5940,7 +5940,7 @@
       }
     ],
     "matrix": "Divino",
-    "damageType": "Kármico",
+    "damageType": "Divino",
     "baseDamage": "2d6"
   },
   {
@@ -5968,7 +5968,7 @@
       }
     ],
     "matrix": "Divino",
-    "damageType": "Kármico",
+    "damageType": "Divino",
     "baseDamage": "2d8"
   },
   {
@@ -5996,8 +5996,8 @@
       }
     ],
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "prorrogadora-da-extincao",
@@ -6024,8 +6024,8 @@
       }
     ],
     "matrix": "Corrupto",
-    "damageType": "Kármico",
-    "baseDamage": "3d12"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "prorrogadora-da-extincao",
@@ -6052,7 +6052,7 @@
       }
     ],
     "matrix": "Divino",
-    "damageType": "Kármico",
+    "damageType": "Divino",
     "baseDamage": "3d8"
   },
   {
@@ -6486,7 +6486,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Plasma",
     "baseDamage": "2d10"
   },
   {
@@ -6507,7 +6507,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "1d10"
   },
   {
@@ -6528,7 +6528,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -6549,7 +6549,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -6570,7 +6570,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -6591,8 +6591,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "oren-damar",
@@ -6616,8 +6616,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "oren-damar",
@@ -6641,7 +6641,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -6662,7 +6662,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "1d10"
   },
   {
@@ -6687,7 +6687,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -6708,7 +6708,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -6729,8 +6729,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "haldor-rusk",
@@ -6750,8 +6750,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "haldor-rusk",
@@ -6767,7 +6767,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -6796,7 +6796,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -6821,8 +6821,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d8"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "saira-namar",
@@ -6838,8 +6838,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "1d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "saira-namar",
@@ -6859,7 +6859,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -6880,8 +6880,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "saira-namar",
@@ -6901,8 +6901,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "saira-namar",
@@ -6922,7 +6922,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -6943,7 +6943,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -6960,7 +6960,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "1d10"
   },
   {
@@ -6977,8 +6977,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "idris-khar",
@@ -6998,7 +6998,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d6"
   },
   {
@@ -7019,7 +7019,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -7040,8 +7040,8 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
-    "baseDamage": "2d6"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "idris-khar",
@@ -7061,7 +7061,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -7082,7 +7082,7 @@
       }
     ],
     "matrix": "Marcial",
-    "damageType": "Físico",
+    "damageType": "Marcial",
     "baseDamage": "2d8"
   },
   {
@@ -7107,7 +7107,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Vapor",
     "baseDamage": "2d10"
   },
   {
@@ -7132,8 +7132,8 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "eirik-malm",
@@ -7161,7 +7161,7 @@
       }
     ],
     "matrix": "Elemental",
-    "damageType": "Kármico",
+    "damageType": "Elemental / Combustão",
     "baseDamage": "2d10"
   },
   {
@@ -7182,8 +7182,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Mobilidade",
+    "baseDamage": ""
   },
   {
     "owner": "eirik-malm",
@@ -7207,8 +7207,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "eirik-malm",
@@ -7228,8 +7228,8 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Kármico",
-    "baseDamage": "2d10"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "eirik-malm",
@@ -7277,8 +7277,8 @@
         "value": 3
       }
     ],
-    "matrix": "Kármico",
-    "damageType": "Kármico",
+    "matrix": "Elemental",
+    "damageType": "Elemental",
     "baseDamage": "2d10"
   },
   {
@@ -7328,8 +7328,8 @@
     ],
     "cost": 7,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-brigida",
@@ -7349,8 +7349,8 @@
     ],
     "cost": 5,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d6"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-ilyra",
@@ -7370,8 +7370,8 @@
     ],
     "cost": 8,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-alucard",
@@ -7391,8 +7391,8 @@
     ],
     "cost": 8,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-belial",
@@ -7412,8 +7412,8 @@
     ],
     "cost": 8,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Suporte",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-asmodeus",
@@ -7433,8 +7433,8 @@
     ],
     "cost": 8,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   },
   {
     "owner": "princesa-maelis",
@@ -7458,7 +7458,7 @@
     ],
     "cost": 7,
     "matrix": "Divino",
-    "damageType": "Kármico",
+    "damageType": "Divino",
     "baseDamage": "2d6"
   },
   {
@@ -7483,7 +7483,7 @@
     ],
     "cost": 8,
     "matrix": "Divino",
-    "damageType": "Kármico",
-    "baseDamage": "2d8"
+    "damageType": "Defesa",
+    "baseDamage": ""
   }
 ]

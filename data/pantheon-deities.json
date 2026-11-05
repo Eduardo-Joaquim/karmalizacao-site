@@ -9,9 +9,9 @@
       "Profecia",
       "Harmonia Solar"
     ],
-    "typicalBlessing": "Dádiva ligada a luz, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar luz com responsabilidade e cumprir a palavra empenhada em nome de Apolo.",
-    "profanation": "Usar a dádiva para profanar luz ou quebrar deliberadamente um juramento feito a Apolo."
+    "typicalBlessing": "Uma luz que revela o caminho oculto sem apagar a sombra de quem procura abrigo.",
+    "precept": "Diga em voz alta a verdade que só você teve coragem de ver.",
+    "profanation": "É profanação torcer uma profecia para conduzir um inocente à ruína."
   },
   {
     "id": "atena",
@@ -23,9 +23,9 @@
       "Égide",
       "Geometria Bélica"
     ],
-    "typicalBlessing": "Dádiva ligada a estratégia, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar estratégia com responsabilidade e cumprir a palavra empenhada em nome de Atena.",
-    "profanation": "Usar a dádiva para profanar estratégia ou quebrar deliberadamente um juramento feito a Atena."
+    "typicalBlessing": "Uma égide cujo ângulo nasce da leitura precisa da ameaça.",
+    "precept": "Antes de erguer a lança, procure a vitória que poupa quem não empunha armas.",
+    "profanation": "A vitória comprada pela traição dos que confiaram no seu plano não honra a deusa."
   },
   {
     "id": "hefesto",
@@ -37,9 +37,9 @@
       "Autômatos",
       "Fogo Industrial"
     ],
-    "typicalBlessing": "Dádiva ligada a forja, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar forja com responsabilidade e cumprir a palavra empenhada em nome de Hefesto.",
-    "profanation": "Usar a dádiva para profanar forja ou quebrar deliberadamente um juramento feito a Hefesto."
+    "typicalBlessing": "A matéria atende ao desenho de quem conhece o peso de cada peça.",
+    "precept": "Deixe em cada obra a medida do cuidado que teria se sua própria vida dependesse dela.",
+    "profanation": "Quebrar o sustento de um artesão por inveja do seu ofício é insultar a forja."
   },
   {
     "id": "artemis",
@@ -51,9 +51,9 @@
       "Lua",
       "Fronteiras Selvagens"
     ],
-    "typicalBlessing": "Dádiva ligada a caça, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar caça com responsabilidade e cumprir a palavra empenhada em nome de Ártemis.",
-    "profanation": "Usar a dádiva para profanar caça ou quebrar deliberadamente um juramento feito a Ártemis."
+    "typicalBlessing": "A flecha encontra a presa pelo rastro que ela deixa no mundo.",
+    "precept": "Na mata, tome apenas o que a fome ou a defesa exigir.",
+    "profanation": "Caçar pelo prazer de prolongar a agonia macula a flecha."
   },
   {
     "id": "hades",
@@ -65,9 +65,9 @@
       "Riqueza Mineral",
       "Juramentos dos Mortos"
     ],
-    "typicalBlessing": "Dádiva ligada a submundo, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar submundo com responsabilidade e cumprir a palavra empenhada em nome de Hades.",
-    "profanation": "Usar a dádiva para profanar submundo ou quebrar deliberadamente um juramento feito a Hades."
+    "typicalBlessing": "Um juramento dos mortos sustenta a guarda de um nome que ainda importa.",
+    "precept": "Guarde o nome e o repouso de quem já cruzou o limiar.",
+    "profanation": "Roubar dos mortos seu descanso por lucro é abrir uma dívida que o ouro não paga."
   },
   {
     "id": "nix",
@@ -79,9 +79,9 @@
       "Véu",
       "Sombras"
     ],
-    "typicalBlessing": "Dádiva ligada a noite primordial, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar noite primordial com responsabilidade e cumprir a palavra empenhada em nome de Nix.",
-    "profanation": "Usar a dádiva para profanar noite primordial ou quebrar deliberadamente um juramento feito a Nix."
+    "typicalBlessing": "A noite se dobra em véu para acolher quem escolhe permanecer despercebido.",
+    "precept": "Proteja sob a noite os que não podem se mostrar à luz.",
+    "profanation": "Vender o esconderijo de quem se refugiou em sua sombra profana a vigília."
   },
   {
     "id": "jupiter",
@@ -93,9 +93,9 @@
       "Decreto",
       "Céu Imperial"
     ],
-    "typicalBlessing": "Dádiva ligada a soberania, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar soberania com responsabilidade e cumprir a palavra empenhada em nome de Júpiter.",
-    "profanation": "Usar a dádiva para profanar soberania ou quebrar deliberadamente um juramento feito a Júpiter."
+    "typicalBlessing": "A palavra empenhada recebe a força de um decreto sob o céu.",
+    "precept": "Responda pelos juramentos feitos sob o céu aberto.",
+    "profanation": "Invocar a justiça do raio para acobertar sua própria quebra de palavra é sacrilégio."
   },
   {
     "id": "marte",
@@ -107,9 +107,9 @@
       "Muralhas",
       "Vanguarda"
     ],
-    "typicalBlessing": "Dádiva ligada a ordem militar, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar ordem militar com responsabilidade e cumprir a palavra empenhada em nome de Marte.",
-    "profanation": "Usar a dádiva para profanar ordem militar ou quebrar deliberadamente um juramento feito a Marte."
+    "typicalBlessing": "Uma linha de batalha se fecha ao redor de quem não abandona seus companheiros.",
+    "precept": "Comande de frente e partilhe o risco que ordena aos seus.",
+    "profanation": "Abandonar quem manteve a linha sob suas ordens mancha a insígnia."
   },
   {
     "id": "minerva",
@@ -121,9 +121,9 @@
       "Lei",
       "Ofício Cívico"
     ],
-    "typicalBlessing": "Dádiva ligada a arquitetura, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar arquitetura com responsabilidade e cumprir a palavra empenhada em nome de Minerva.",
-    "profanation": "Usar a dádiva para profanar arquitetura ou quebrar deliberadamente um juramento feito a Minerva."
+    "typicalBlessing": "Muralhas e escudos recebem uma geometria capaz de repartir o impacto.",
+    "precept": "Escolha a obra que permanecerá útil quando o louvor tiver acabado.",
+    "profanation": "Fazer da sabedoria uma armadilha para impedir que outros aprendam ofende a mestra."
   },
   {
     "id": "jano",
@@ -135,9 +135,9 @@
       "Passagens",
       "Transições"
     ],
-    "typicalBlessing": "Dádiva ligada a portões, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar portões com responsabilidade e cumprir a palavra empenhada em nome de Jano.",
-    "profanation": "Usar a dádiva para profanar portões ou quebrar deliberadamente um juramento feito a Jano."
+    "typicalBlessing": "A soleira reconhece um pacto e oferece passagem apenas nas condições aceitas.",
+    "precept": "Abra a passagem com a mesma honestidade com que a fecharia.",
+    "profanation": "Prometer abrigo para capturar quem cruza a soleira viola as duas faces do pacto."
   },
   {
     "id": "vesta",
@@ -148,9 +148,9 @@
       "Lareira Cívica",
       "Santuário Inviolável"
     ],
-    "typicalBlessing": "Dádiva ligada a lareira cívica, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar lareira cívica com responsabilidade e cumprir a palavra empenhada em nome de Vesta.",
-    "profanation": "Usar a dádiva para profanar lareira cívica ou quebrar deliberadamente um juramento feito a Vesta."
+    "typicalBlessing": "O fogo da casa preserva um abrigo onde a violência precisa pedir licença.",
+    "precept": "Mantenha um lugar à mesa para quem chega sem ter aonde ir.",
+    "profanation": "Usar o fogo da casa para ferir um hóspede desarmado apaga a chama do altar."
   },
   {
     "id": "odin",
@@ -162,9 +162,9 @@
       "Sacrifício por Sabedoria",
       "Vigília"
     ],
-    "typicalBlessing": "Dádiva ligada a runas, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar runas com responsabilidade e cumprir a palavra empenhada em nome de Odin.",
-    "profanation": "Usar a dádiva para profanar runas ou quebrar deliberadamente um juramento feito a Odin."
+    "typicalBlessing": "Uma runa desperta quando seu portador aceita pagar o preço do conhecimento.",
+    "precept": "Pague com o próprio esforço pelo conhecimento que busca.",
+    "profanation": "Tomar de outro o sacrifício que jurou oferecer por si mesmo falseia a runa."
   },
   {
     "id": "thor",
@@ -176,9 +176,9 @@
       "Força Bruta",
       "Proteção das Rotas"
     ],
-    "typicalBlessing": "Dádiva ligada a tempestade, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar tempestade com responsabilidade e cumprir a palavra empenhada em nome de Thor.",
-    "profanation": "Usar a dádiva para profanar tempestade ou quebrar deliberadamente um juramento feito a Thor."
+    "typicalBlessing": "O trovão se reúne no golpe que protege uma rota ameaçada.",
+    "precept": "Fique entre o perigo e os que não podem sustentar seu peso.",
+    "profanation": "Voltar a força da tempestade contra quem pediu proteção desonra o trovão."
   },
   {
     "id": "freya",
@@ -190,9 +190,9 @@
       "Vida",
       "Guerra"
     ],
-    "typicalBlessing": "Dádiva ligada a seidr, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar seidr com responsabilidade e cumprir a palavra empenhada em nome de Freya.",
-    "profanation": "Usar a dádiva para profanar seidr ou quebrar deliberadamente um juramento feito a Freya."
+    "typicalBlessing": "Os fios do seidr unem coragem, desejo e o cuidado devido aos vivos.",
+    "precept": "Trate como sagrada a liberdade de quem lhe oferece amor ou lealdade.",
+    "profanation": "Forçar devoção por encanto transforma uma dádiva em corrente."
   },
   {
     "id": "tyr",
@@ -204,9 +204,9 @@
       "Justiça",
       "Coragem"
     ],
-    "typicalBlessing": "Dádiva ligada a pacto, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar pacto com responsabilidade e cumprir a palavra empenhada em nome de Tyr.",
-    "profanation": "Usar a dádiva para profanar pacto ou quebrar deliberadamente um juramento feito a Tyr."
+    "typicalBlessing": "A força de um pacto cresce com o risco que seu portador assume ao cumpri-lo.",
+    "precept": "Cumpra o pacto justo mesmo quando o preço recair sobre sua própria mão.",
+    "profanation": "Exigir que o outro se exponha a um risco que você secretamente evitou corrompe o juramento."
   },
   {
     "id": "ivaldi",
@@ -218,9 +218,9 @@
       "Matéria Forjada",
       "Liga Metálica"
     ],
-    "typicalBlessing": "Dádiva ligada a engenharia rúnica, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar engenharia rúnica com responsabilidade e cumprir a palavra empenhada em nome de Ivaldi.",
-    "profanation": "Usar a dádiva para profanar engenharia rúnica ou quebrar deliberadamente um juramento feito a Ivaldi."
+    "typicalBlessing": "Ferramentas respondem à mão que sabe reparar aquilo que cria.",
+    "precept": "Entregue uma ferramenta que seu aprendiz possa um dia reparar sozinho.",
+    "profanation": "Tornar uma oficina dependente de uma falha que você escondeu é indigno do ofício."
   },
   {
     "id": "sindri",
@@ -232,9 +232,9 @@
       "Forja",
       "Liga Metálica"
     ],
-    "typicalBlessing": "Dádiva ligada a engenharia rúnica, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar engenharia rúnica com responsabilidade e cumprir a palavra empenhada em nome de Sindri.",
-    "profanation": "Usar a dádiva para profanar engenharia rúnica ou quebrar deliberadamente um juramento feito a Sindri."
+    "typicalBlessing": "Uma liga impossível conserva o esforço e o nome de quem a forjou.",
+    "precept": "Dê à última junta o mesmo cuidado dado à primeira.",
+    "profanation": "Assinar como sua a obra de outra mão rouba o fogo que a tornou possível."
   },
   {
     "id": "thoth",
@@ -246,9 +246,9 @@
       "Geometria Sagrada",
       "Palavra Escrita"
     ],
-    "typicalBlessing": "Dádiva ligada a registro, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar registro com responsabilidade e cumprir a palavra empenhada em nome de Thoth.",
-    "profanation": "Usar a dádiva para profanar registro ou quebrar deliberadamente um juramento feito a Thoth."
+    "typicalBlessing": "O registro de uma promessa dá forma e medida à obrigação assumida.",
+    "precept": "Registre o que aconteceu, inclusive a linha que pesa contra você.",
+    "profanation": "Apagar o testemunho de quem não pode contestá-lo falsifica a balança."
   },
   {
     "id": "anubis",
@@ -260,9 +260,9 @@
       "Embalsamamento",
       "Guarda dos Nomes"
     ],
-    "typicalBlessing": "Dádiva ligada a travessia, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar travessia com responsabilidade e cumprir a palavra empenhada em nome de Anúbis.",
-    "profanation": "Usar a dádiva para profanar travessia ou quebrar deliberadamente um juramento feito a Anúbis."
+    "typicalBlessing": "Uma passagem segura preserva o nome da alma que atravessa o limiar.",
+    "precept": "Conduza cada morto pelo nome com que desejava ser lembrado.",
+    "profanation": "Trocar os restos de alguém por proveito próprio é profanar a travessia."
   },
   {
     "id": "isis",
@@ -274,9 +274,9 @@
       "Nomes Verdadeiros",
       "Devoção"
     ],
-    "typicalBlessing": "Dádiva ligada a restauração, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar restauração com responsabilidade e cumprir a palavra empenhada em nome de Ísis.",
-    "profanation": "Usar a dádiva para profanar restauração ou quebrar deliberadamente um juramento feito a Ísis."
+    "typicalBlessing": "A restauração recompõe o que ainda pode viver sem apagar suas cicatrizes.",
+    "precept": "Use o que sabe dos nomes secretos para restituir dignidade aos feridos.",
+    "profanation": "Expor um nome confiado em cura para dominar seu portador quebra o amparo."
   },
   {
     "id": "ra",
@@ -287,9 +287,9 @@
       "Zênite Solar",
       "Soberania da Luz"
     ],
-    "typicalBlessing": "Dádiva ligada a zênite solar, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar zênite solar com responsabilidade e cumprir a palavra empenhada em nome de Rá.",
-    "profanation": "Usar a dádiva para profanar zênite solar ou quebrar deliberadamente um juramento feito a Rá."
+    "typicalBlessing": "O zênite faz da luz uma presença que não se curva ao medo.",
+    "precept": "Ao nascer do dia, encare as consequências do que fez na escuridão.",
+    "profanation": "Acender a luz para entregar ao algoz quem procurou refúgio deturpa o sol."
   },
   {
     "id": "sekhmet",
@@ -301,9 +301,9 @@
       "Retribuição Ardente",
       "Cura após Praga"
     ],
-    "typicalBlessing": "Dádiva ligada a sangue, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar sangue com responsabilidade e cumprir a palavra empenhada em nome de Sekhmet.",
-    "profanation": "Usar a dádiva para profanar sangue ou quebrar deliberadamente um juramento feito a Sekhmet."
+    "typicalBlessing": "A mesma chama que pune a crueldade estanca a ferida de quem sobrevive.",
+    "precept": "Contenha sua fúria quando o último agressor já tiver caído.",
+    "profanation": "Fingir que a carnificina é cura é desprezar ambas as faces da leoa."
   },
   {
     "id": "ptah",
@@ -315,9 +315,9 @@
       "Palavra",
       "Alvenaria do Mundo"
     ],
-    "typicalBlessing": "Dádiva ligada a criação de matéria, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar criação de matéria com responsabilidade e cumprir a palavra empenhada em nome de Ptah.",
-    "profanation": "Usar a dádiva para profanar criação de matéria ou quebrar deliberadamente um juramento feito a Ptah."
+    "typicalBlessing": "Uma palavra bem medida veste a ideia com pedra, metal e proporção.",
+    "precept": "Antes de falar a obra ao mundo, dê nome à sua finalidade e ao seu limite.",
+    "profanation": "Criar por vaidade algo que outros terão de sustentar com sofrimento corrompe a palavra."
   },
   {
     "id": "shiva",
@@ -329,9 +329,9 @@
       "Destruição do Ilusório",
       "Ritmo Cósmico"
     ],
-    "typicalBlessing": "Dádiva ligada a transformação, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar transformação com responsabilidade e cumprir a palavra empenhada em nome de Shiva.",
-    "profanation": "Usar a dádiva para profanar transformação ou quebrar deliberadamente um juramento feito a Shiva."
+    "typicalBlessing": "O ritmo da transformação desfaz uma forma sem extinguir tudo que ela sustentava.",
+    "precept": "Desfaça o que aprisiona a vida, inclusive o orgulho de ter construído a prisão.",
+    "profanation": "Confundir transformação com destruir tudo que resiste à sua vontade macula a dança."
   },
   {
     "id": "vishnu",
@@ -343,9 +343,9 @@
       "Equilíbrio",
       "Amparo"
     ],
-    "typicalBlessing": "Dádiva ligada a preservação, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar preservação com responsabilidade e cumprir a palavra empenhada em nome de Vishnu.",
-    "profanation": "Usar a dádiva para profanar preservação ou quebrar deliberadamente um juramento feito a Vishnu."
+    "typicalBlessing": "Um amparo duradouro impede que o desequilíbrio de um só destrua muitos.",
+    "precept": "Sustente o equilíbrio onde o poder de um só ameaça a vida de muitos.",
+    "profanation": "Preservar a própria posição à custa daqueles que jurou defender é trair a guarda."
   },
   {
     "id": "kali",
@@ -357,9 +357,9 @@
       "Sangue",
       "Fim da Tirania"
     ],
-    "typicalBlessing": "Dádiva ligada a tempo, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar tempo com responsabilidade e cumprir a palavra empenhada em nome de Kali.",
-    "profanation": "Usar a dádiva para profanar tempo ou quebrar deliberadamente um juramento feito a Kali."
+    "typicalBlessing": "A dádiva rompe o jugo e devolve ao oprimido a possibilidade de recusar.",
+    "precept": "Rompa a tirania antes que ela ensine os oprimidos a amar as correntes.",
+    "profanation": "Tomar o lugar do tirano e exigir a mesma submissão profana a libertação."
   },
   {
     "id": "agni",
@@ -371,9 +371,9 @@
       "Purificação",
       "Combustão"
     ],
-    "typicalBlessing": "Dádiva ligada a fogo sacrificial, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar fogo sacrificial com responsabilidade e cumprir a palavra empenhada em nome de Agni.",
-    "profanation": "Usar a dádiva para profanar fogo sacrificial ou quebrar deliberadamente um juramento feito a Agni."
+    "typicalBlessing": "O fogo sacrificial consome a impureza cujo preço foi assumido pelo portador.",
+    "precept": "Ofereça ao fogo algo seu antes de pedir que ele purifique o alheio.",
+    "profanation": "Queimar uma oferenda roubada e chamá-la de sacrifício alimenta apenas a mentira."
   },
   {
     "id": "surya",
@@ -384,9 +384,9 @@
       "Claridade Solar",
       "Visão"
     ],
-    "typicalBlessing": "Dádiva ligada a claridade solar, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar claridade solar com responsabilidade e cumprir a palavra empenhada em nome de Surya.",
-    "profanation": "Usar a dádiva para profanar claridade solar ou quebrar deliberadamente um juramento feito a Surya."
+    "typicalBlessing": "A claridade solar alcança o alvo e revela o percurso de sua própria chegada.",
+    "precept": "Ilumine o caminho inteiro, não só o trecho que lhe convém mostrar.",
+    "profanation": "Cegar deliberadamente quem procura a verdade é ofender a claridade."
   },
   {
     "id": "vishvakarma",
@@ -398,9 +398,9 @@
       "Máquinas",
       "Cidades"
     ],
-    "typicalBlessing": "Dádiva ligada a arquitetura, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar arquitetura com responsabilidade e cumprir a palavra empenhada em nome de Vishvakarma.",
-    "profanation": "Usar a dádiva para profanar arquitetura ou quebrar deliberadamente um juramento feito a Vishvakarma."
+    "typicalBlessing": "Máquinas e cidades nascem de um traçado que prevê também quem as habitará.",
+    "precept": "Construa à medida de quem habitará a obra depois de você.",
+    "profanation": "Poupar esforço na fundação sabendo que outros morrerão sob ela é trair a arquitetura."
   },
   {
     "id": "amaterasu",
@@ -412,9 +412,9 @@
       "Espelho Sagrado",
       "Luz"
     ],
-    "typicalBlessing": "Dádiva ligada a sol imperial, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar sol imperial com responsabilidade e cumprir a palavra empenhada em nome de Amaterasu.",
-    "profanation": "Usar a dádiva para profanar sol imperial ou quebrar deliberadamente um juramento feito a Amaterasu."
+    "typicalBlessing": "Um espelho sagrado devolve à luz aquilo que foi escondido sob uma autoridade falsa.",
+    "precept": "Faça de sua presença uma luz sob a qual os outros possam agir sem medo.",
+    "profanation": "Ocultar a injustiça atrás do brilho de uma posição sagrada escurece o espelho."
   },
   {
     "id": "tsukuyomi",
@@ -426,9 +426,9 @@
       "Ordem Noturna",
       "Lâmina Fria"
     ],
-    "typicalBlessing": "Dádiva ligada a lua, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar lua com responsabilidade e cumprir a palavra empenhada em nome de Tsukuyomi.",
-    "profanation": "Usar a dádiva para profanar lua ou quebrar deliberadamente um juramento feito a Tsukuyomi."
+    "typicalBlessing": "O luar encontra na lâmina e no silêncio a mesma medida de precisão.",
+    "precept": "Mantenha a medida da noite e respeite os silêncios que foram confiados a você.",
+    "profanation": "Fazer do segredo alheio uma moeda de domínio quebra a ordem lunar."
   },
   {
     "id": "susanoo",
@@ -440,9 +440,9 @@
       "Mar",
       "Caça às Serpentes"
     ],
-    "typicalBlessing": "Dádiva ligada a vendaval, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar vendaval com responsabilidade e cumprir a palavra empenhada em nome de Susanoo.",
-    "profanation": "Usar a dádiva para profanar vendaval ou quebrar deliberadamente um juramento feito a Susanoo."
+    "typicalBlessing": "O vendaval abre uma rota onde a força bruta só encontraria resistência.",
+    "precept": "Enfrente de peito aberto a tempestade que sua própria ação despertou.",
+    "profanation": "Provocar a tormenta e fugir antes que ela caia sobre os indefesos é indigno do vento."
   },
   {
     "id": "inari",
@@ -454,9 +454,9 @@
       "Raposas Mensageiras",
       "Forja de Espadas"
     ],
-    "typicalBlessing": "Dádiva ligada a prosperidade, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar prosperidade com responsabilidade e cumprir a palavra empenhada em nome de Inari.",
-    "profanation": "Usar a dádiva para profanar prosperidade ou quebrar deliberadamente um juramento feito a Inari."
+    "typicalBlessing": "A abundância circula por celeiros, oficinas e mensageiros de olhos atentos.",
+    "precept": "Devolva à comunidade parte do fruto que recebeu da terra.",
+    "profanation": "Deixar o celeiro cheio enquanto o vizinho morre de fome profana a colheita."
   },
   {
     "id": "raijin",
@@ -468,9 +468,9 @@
       "Magnetismo",
       "Impulso Elétrico"
     ],
-    "typicalBlessing": "Dádiva ligada a trovão, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar trovão com responsabilidade e cumprir a palavra empenhada em nome de Raijin.",
-    "profanation": "Usar a dádiva para profanar trovão ou quebrar deliberadamente um juramento feito a Raijin."
+    "typicalBlessing": "O impulso elétrico desperta o metal e marca o ar com a promessa do trovão.",
+    "precept": "Antes do trovão, dê ao menos um aviso àqueles que ainda podem recuar.",
+    "profanation": "Golpear de surpresa quem já se rendeu transforma o estrondo em covardia."
   },
   {
     "id": "yuanshi-tianzun",
@@ -482,9 +482,9 @@
       "Lei Natural",
       "Origem"
     ],
-    "typicalBlessing": "Dádiva ligada a mandato celeste, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar mandato celeste com responsabilidade e cumprir a palavra empenhada em nome de Yuanshi Tianzun.",
-    "profanation": "Usar a dádiva para profanar mandato celeste ou quebrar deliberadamente um juramento feito a Yuanshi Tianzun."
+    "typicalBlessing": "Uma mudança recebe lugar no mundo quando respeita a lei que a torna possível.",
+    "precept": "Ao alterar o curso de uma coisa, considere aquilo que cresce graças ao seu curso natural.",
+    "profanation": "Impor sua conveniência como se fosse lei do universo falseia o Mandato."
   },
   {
     "id": "imperador-de-jade",
@@ -496,9 +496,9 @@
       "Lei",
       "Decreto"
     ],
-    "typicalBlessing": "Dádiva ligada a mandato celeste, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar mandato celeste com responsabilidade e cumprir a palavra empenhada em nome de Imperador de Jade.",
-    "profanation": "Usar a dádiva para profanar mandato celeste ou quebrar deliberadamente um juramento feito a Imperador de Jade."
+    "typicalBlessing": "O Mandato confere peso a uma ordem cujas consequências seu portador aceita responder.",
+    "precept": "Preste contas do menor decreto com a mesma atenção devida ao maior.",
+    "profanation": "Vender uma sentença celestial por favores terrenos avilta o tribunal."
   },
   {
     "id": "xuanwu",
@@ -510,9 +510,9 @@
       "Água",
       "Tartaruga Negra"
     ],
-    "typicalBlessing": "Dádiva ligada a defesa, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar defesa com responsabilidade e cumprir a palavra empenhada em nome de Xuanwu.",
-    "profanation": "Usar a dádiva para profanar defesa ou quebrar deliberadamente um juramento feito a Xuanwu."
+    "typicalBlessing": "Uma guarda paciente recebe o golpe sem entregar a passagem atrás de si.",
+    "precept": "Não abandone o posto enquanto houver alguém atrás da sua guarda.",
+    "profanation": "Fingir firmeza para atrair os protegidos a uma emboscada rompe o escudo."
   },
   {
     "id": "nezha",
@@ -524,9 +524,9 @@
       "Velocidade",
       "Armas Celestes"
     ],
-    "typicalBlessing": "Dádiva ligada a chama de lótus, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar chama de lótus com responsabilidade e cumprir a palavra empenhada em nome de Nezha.",
-    "profanation": "Usar a dádiva para profanar chama de lótus ou quebrar deliberadamente um juramento feito a Nezha."
+    "typicalBlessing": "A chama de lótus transforma o movimento rebelde em arma de libertação.",
+    "precept": "Desafie a autoridade que fere os pequenos, mesmo quando ela fala com voz familiar.",
+    "profanation": "Usar a rebeldia como desculpa para humilhar quem não pode responder macula a chama."
   },
   {
     "id": "erlang-shen",
@@ -538,9 +538,9 @@
       "Terceiro Olho",
       "Contenção de Monstros"
     ],
-    "typicalBlessing": "Dádiva ligada a verdade, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar verdade com responsabilidade e cumprir a palavra empenhada em nome de Erlang Shen.",
-    "profanation": "Usar a dádiva para profanar verdade ou quebrar deliberadamente um juramento feito a Erlang Shen."
+    "typicalBlessing": "O terceiro olhar distingue a aparência do vínculo que mantém um monstro oculto.",
+    "precept": "Veja o que está oculto antes de decidir quem deve ser contido.",
+    "profanation": "Condenar alguém pela aparência enquanto ignora a prova desonra o terceiro olho."
   },
   {
     "id": "doumu",
@@ -552,9 +552,9 @@
       "Compaixão",
       "Medida da Vida"
     ],
-    "typicalBlessing": "Dádiva ligada a estrelas, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar estrelas com responsabilidade e cumprir a palavra empenhada em nome de Doumu.",
-    "profanation": "Usar a dádiva para profanar estrelas ou quebrar deliberadamente um juramento feito a Doumu."
+    "typicalBlessing": "Uma estrela guia o cuidado para uma vida que parecia ter perdido sua medida.",
+    "precept": "Conte entre as vidas dignas de cuidado também aquelas que o mundo esqueceu.",
+    "profanation": "Trocar o destino de muitos pela vaidade de um só obscurece a constelação."
   },
   {
     "id": "tupa",
@@ -566,9 +566,9 @@
       "Criação",
       "Tempestade"
     ],
-    "typicalBlessing": "Dádiva ligada a trovão, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar trovão com responsabilidade e cumprir a palavra empenhada em nome de Tupã.",
-    "profanation": "Usar a dádiva para profanar trovão ou quebrar deliberadamente um juramento feito a Tupã."
+    "typicalBlessing": "A voz da tempestade atravessa o medo e reúne quem precisa ser ouvido.",
+    "precept": "Faça sua voz servir aos que nunca foram ouvidos sob a tempestade.",
+    "profanation": "Imitar a voz do céu para arrancar obediência pelo medo profana o trovão."
   },
   {
     "id": "guaraci",
@@ -580,9 +580,9 @@
       "Vida",
       "Mata"
     ],
-    "typicalBlessing": "Dádiva ligada a sol, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar sol com responsabilidade e cumprir a palavra empenhada em nome de Guaraci.",
-    "profanation": "Usar a dádiva para profanar sol ou quebrar deliberadamente um juramento feito a Guaraci."
+    "typicalBlessing": "O calor vivificante desperta a força que a mata guardava na semente.",
+    "precept": "Partilhe o calor que permite à mata e às pessoas atravessarem a estação fria.",
+    "profanation": "Tomar para si toda a luz e deixar morrer aquilo que dela depende quebra o sustento."
   },
   {
     "id": "jaci",
@@ -594,9 +594,9 @@
       "Semente",
       "Noite"
     ],
-    "typicalBlessing": "Dádiva ligada a lua, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar lua com responsabilidade e cumprir a palavra empenhada em nome de Jaci.",
-    "profanation": "Usar a dádiva para profanar lua ou quebrar deliberadamente um juramento feito a Jaci."
+    "typicalBlessing": "A lua vela o crescimento que ainda não pode suportar o olhar do dia.",
+    "precept": "Guarde as sementes e as promessas que amadurecem longe dos olhos.",
+    "profanation": "Arrancar um fruto antes do tempo só para impedir que outro o colha trai a lua."
   },
   {
     "id": "boitata",
@@ -608,9 +608,9 @@
       "Terra",
       "Proteção"
     ],
-    "typicalBlessing": "Dádiva ligada a fogo fátuo, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar fogo fátuo com responsabilidade e cumprir a palavra empenhada em nome de Boitatá.",
-    "profanation": "Usar a dádiva para profanar fogo fátuo ou quebrar deliberadamente um juramento feito a Boitatá."
+    "typicalBlessing": "Olhos de chama seguem o rastro de quem feriu a terra sob sua guarda.",
+    "precept": "Faça arder o olhar contra quem queima a terra por cobiça.",
+    "profanation": "Voltar a chama contra o que jurou guardar trai os olhos da mata."
   },
   {
     "id": "anhanga",
@@ -622,9 +622,9 @@
       "Caça Justa",
       "Assombro"
     ],
-    "typicalBlessing": "Dádiva ligada a floresta, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar floresta com responsabilidade e cumprir a palavra empenhada em nome de Anhangá.",
-    "profanation": "Usar a dádiva para profanar floresta ou quebrar deliberadamente um juramento feito a Anhangá."
+    "typicalBlessing": "O assombro devolve ao caçador a medida do perigo que impôs à mata.",
+    "precept": "Ao seguir uma presa, lembre-se de que a floresta também segue você.",
+    "profanation": "Matar o animal que ampara os filhotes apenas para provar destreza chama o castigo."
   },
   {
     "id": "caipora",
@@ -636,9 +636,9 @@
       "Feras",
       "Floresta"
     ],
-    "typicalBlessing": "Dádiva ligada a trilhas, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar trilhas com responsabilidade e cumprir a palavra empenhada em nome de Caipora.",
-    "profanation": "Usar a dádiva para profanar trilhas ou quebrar deliberadamente um juramento feito a Caipora."
+    "typicalBlessing": "As trilhas se oferecem àqueles que aprendem a passar sem tomar tudo para si.",
+    "precept": "Peça licença à trilha e saia dela levando apenas o necessário.",
+    "profanation": "Guiar caçadores até um abrigo de feras por pagamento trai a guardiã."
   },
   {
     "id": "ogum",
@@ -651,9 +651,9 @@
       "Tecnologia",
       "Lâmina"
     ],
-    "typicalBlessing": "Dádiva ligada a ferro, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar ferro com responsabilidade e cumprir a palavra empenhada em nome de Ogum.",
-    "profanation": "Usar a dádiva para profanar ferro ou quebrar deliberadamente um juramento feito a Ogum."
+    "typicalBlessing": "O ferro abre caminhos e obedece ao trabalho de quem sabe para onde os conduz.",
+    "precept": "Abra o caminho e deixe que os próximos também o atravessem.",
+    "profanation": "Forjar grilhões para aqueles que ajudaram a erguer sua oficina mancha o ferro."
   },
   {
     "id": "xango",
@@ -665,9 +665,9 @@
       "Trovão",
       "Fogo Real"
     ],
-    "typicalBlessing": "Dádiva ligada a justiça, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar justiça com responsabilidade e cumprir a palavra empenhada em nome de Xangô.",
-    "profanation": "Usar a dádiva para profanar justiça ou quebrar deliberadamente um juramento feito a Xangô."
+    "typicalBlessing": "A justiça encontra no trovão e no machado a força de uma sentença assumida.",
+    "precept": "Ouça os dois lados antes que o peso do seu machado decida a disputa.",
+    "profanation": "Proferir sentença por vingança pessoal rouba a justiça do fogo."
   },
   {
     "id": "iansa-oya",
@@ -679,9 +679,9 @@
       "Raios",
       "Travessia de Espíritos"
     ],
-    "typicalBlessing": "Dádiva ligada a ventos, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar ventos com responsabilidade e cumprir a palavra empenhada em nome de Iansã / Oyá.",
-    "profanation": "Usar a dádiva para profanar ventos ou quebrar deliberadamente um juramento feito a Iansã / Oyá."
+    "typicalBlessing": "Os ventos soltam os vínculos que impedem os espíritos de seguir.",
+    "precept": "Deixe que os mortos sigam e que os vivos tenham coragem de dizer adeus.",
+    "profanation": "Prender um espírito por posse ou vingança é afrontar o vento da travessia."
   },
   {
     "id": "oxossi",
@@ -693,9 +693,9 @@
       "Fartura",
       "Conhecimento da Mata"
     ],
-    "typicalBlessing": "Dádiva ligada a caça, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar caça com responsabilidade e cumprir a palavra empenhada em nome de Oxóssi.",
-    "profanation": "Usar a dádiva para profanar caça ou quebrar deliberadamente um juramento feito a Oxóssi."
+    "typicalBlessing": "Uma flecha basta quando o conhecimento da mata precede o disparo.",
+    "precept": "Faça cada flecha contar e partilhe a caça com quem não pôde seguir a trilha.",
+    "profanation": "Abater mais do que pode repartir fere a fartura que pediu."
   },
   {
     "id": "oxum",
@@ -708,9 +708,9 @@
       "Diplomacia",
       "Cuidado"
     ],
-    "typicalBlessing": "Dádiva ligada a águas doces, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar águas doces com responsabilidade e cumprir a palavra empenhada em nome de Oxum.",
-    "profanation": "Usar a dádiva para profanar águas doces ou quebrar deliberadamente um juramento feito a Oxum."
+    "typicalBlessing": "A água doce converte o cuidado e a diplomacia em uma força que preserva a vida.",
+    "precept": "Defenda a água que alimenta a aldeia antes de adornar a própria margem.",
+    "profanation": "Usar afeto como isca para retirar de alguém sua liberdade turva o rio."
   },
   {
     "id": "obaluaie-omolu",
@@ -722,9 +722,9 @@
       "Cura",
       "Vida e Morte"
     ],
-    "typicalBlessing": "Dádiva ligada a terra, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar terra com responsabilidade e cumprir a palavra empenhada em nome de Obaluaiê / Omolu.",
-    "profanation": "Usar a dádiva para profanar terra ou quebrar deliberadamente um juramento feito a Obaluaiê / Omolu."
+    "typicalBlessing": "A terra acolhe a dor e oferece ao ferido uma passagem de volta ao convívio.",
+    "precept": "Aproxime-se de quem todos evitam e cuide sem cobrar humilhação.",
+    "profanation": "Espalhar enfermidade para vender alívio profana o remédio."
   },
   {
     "id": "oxala",
@@ -736,23 +736,23 @@
       "Criação",
       "Paciência"
     ],
-    "typicalBlessing": "Dádiva ligada a paz, expressa por uma capacidade própria do portador.",
-    "precept": "Honrar paz com responsabilidade e cumprir a palavra empenhada em nome de Oxalá.",
-    "profanation": "Usar a dádiva para profanar paz ou quebrar deliberadamente um juramento feito a Oxalá."
+    "typicalBlessing": "O pano branco dá ao portador a paciência de sustentar uma paz que ainda se constrói.",
+    "precept": "Tenha a paciência de reconstruir a paz sem exigir silêncio dos feridos.",
+    "profanation": "Pintar de branco a violência para que pareça concórdia é ultrajar o pano sagrado."
   },
   {
     "id": "tiamat",
     "name": "Tiamat",
     "epithet": "Mãe Ancestral dos Dragões",
-    "pantheon": "Outro panteão",
+    "pantheon": "Entidade Primordial",
     "spheres": [
       "Ancestralidade dracônica",
       "Proteção",
       "Sangue de linhagem"
     ],
-    "typicalBlessing": "Anatomia dracônica parcial transmitida pela linhagem.",
-    "precept": "Acolher a criatura rendida sob proteção do juramento.",
-    "profanation": "Negar deliberadamente socorro de passagem a quem foi acolhido pelo juramento."
+    "typicalBlessing": "O sangue dracônico desperta em formas distintas sem perder a memória de sua origem.",
+    "precept": "Honre o sangue antigo sem negar aos descendentes o direito de escolher seu caminho.",
+    "profanation": "Oferecer a própria linhagem em troca de uma vitória profana a origem."
   },
   {
     "id": "boreas",
@@ -764,22 +764,22 @@
       "Passagens",
       "Resgate"
     ],
-    "typicalBlessing": "Conduzir ventos, passagens, resgate.",
-    "precept": "Preservar os vínculos confiados à sua guarda.",
-    "profanation": "Abandonar deliberadamente quem depende de sua proteção."
+    "typicalBlessing": "O vento do Norte endurece a guarda e conduz a força pela rota menos esperada.",
+    "precept": "Faça do vento um aviso antes de fazê-lo uma lâmina.",
+    "profanation": "Quebrar as rotas de quem confiou em sua escolta afronta o Norte."
   },
   {
     "id": "tecela-exterior",
     "name": "A Tecelã Exterior",
     "epithet": "Aquela que Une as Bordas da Vida",
-    "pantheon": "Outro panteão",
+    "pantheon": "Entidade Exterior",
     "spheres": [
       "Fios",
       "Continuidade",
       "Vínculos"
     ],
-    "typicalBlessing": "Conduzir fios, continuidade, vínculos.",
-    "precept": "Preservar os vínculos confiados à sua guarda.",
-    "profanation": "Abandonar deliberadamente quem depende de sua proteção."
+    "typicalBlessing": "A trama acolhe aquilo que deveria ter terminado e cobra de outro fio a continuidade.",
+    "precept": "Reconheça o peso de todo fio que escolher sustentar.",
+    "profanation": "Atar uma vida a um destino que ela jamais pôde recusar trai a própria trama."
   }
 ]

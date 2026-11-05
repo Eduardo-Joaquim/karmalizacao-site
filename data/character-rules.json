@@ -1652,417 +1652,614 @@
     }
   ],
   "races": {
-    "Ghoul": {
-      "summary": "Rework Completo — Predador de Mutação, Sangue e Voracidade",
-      "features": [
-        {
-          "name": "Voracidade Carmesim",
-          "stage": "I",
-          "kind": "Passiva",
-          "description": "Suas presas e garras contam como armas naturais de contato (1d8 de Dano Físico cortante/perfurante, usando Luta). Você fareja sangue exposto e criaturas abaixo de 50% da Vida a até 10 m (mesmo através de fumaça ou penumbra) e pode consumir biomassa/sangue fresco como Ação de Movimento para estabilizar o próprio organismo, encerrando Sangrando em si mesmo."
-        },
-        {
-          "name": "Órgão Predatório (Manifestação de Caça)",
-          "stage": "II",
-          "kind": "Habilidade",
-          "description": "Ao iniciar um combate ou ao consumir sangue/biomassa com Ação de Movimento, você desperta sua estrutura predatória celular pelo resto da cena (1x por cena sem custo, ou 2 Karma para reativar): Recebe +1d20 em testes de Luta e Atletismo; Seu deslocamento aumenta em +2 m quando se move na direção de um inimigo ferido; Recebe Resistência 1 contra Dano Físico."
-        },
-        {
-          "name": "Regeneração Celular Voraz",
-          "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, sempre que você obtiver Acerto Total com ataque desarmado/arma natural ou técnica de alcance de contato contra uma criatura viva/orgânica, você devora o impacto vital: Recupera Constituição + Etapa pontos de Vida (se já estiver com a Vida máxima, recebe metade desse valor como Escudo Temporário até o fim do próximo turno); Se o alvo estiver Sangrando, Caído ou abaixo de 50% da Vida, esse ataque causa +1d8 de Dano Físico adicional."
-        },
-        {
-          "name": "Apogeu da Fome (Predador de Ruptura)",
-          "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Seus ataques naturais e técnicas de contato ignoram até 3 pontos de Resistência do alvo. Além disso, uma vez por cena, quando sua Vida cair para 50% ou menos (ou como Reação ao sofrer um Acerto Total), você entra em Frenesi Predatório por 3 rodadas: Recebe +2 na CA, imunidade às condições Abalado e Caído, e todos os seus ataques corpo a corpo e técnicas Marciais/Corruptas de contato recebem +1 dado base de dano."
-        }
-      ],
-      "progression": [
-        {
-          "stage": "II",
-          "name": "Órgão Predatório (Manifestação de Caça)",
-          "description": "Ao iniciar um combate ou ao consumir sangue/biomassa com Ação de Movimento, você desperta sua estrutura predatória celular pelo resto da cena (1x por cena sem custo, ou 2 Karma para reativar): Recebe +1d20 em testes de Luta e Atletismo; Seu deslocamento aumenta em +2 m quando se move na direção de um inimigo ferido; Recebe Resistência 1 contra Dano Físico."
-        },
-        {
-          "stage": "IV",
-          "name": "Regeneração Celular Voraz",
-          "description": "Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, sempre que você obtiver Acerto Total com ataque desarmado/arma natural ou técnica de alcance de contato contra uma criatura viva/orgânica, você devora o impacto vital: Recupera Constituição + Etapa pontos de Vida (se já estiver com a Vida máxima, recebe metade desse valor como Escudo Temporário até o fim do próximo turno); Se o alvo estiver Sangrando, Caído ou abaixo de 50% da Vida, esse ataque causa +1d8 de Dano Físico adicional."
-        },
-        {
-          "stage": "VI",
-          "name": "Apogeu da Fome (Predador de Ruptura)",
-          "description": "Seus ataques naturais e técnicas de contato ignoram até 3 pontos de Resistência do alvo. Além disso, uma vez por cena, quando sua Vida cair para 50% ou menos (ou como Reação ao sofrer um Acerto Total), você entra em Frenesi Predatório por 3 rodadas: Recebe +2 na CA, imunidade às condições Abalado e Caído, e todos os seus ataques corpo a corpo e técnicas Marciais/Corruptas de contato recebem +1 dado base de dano."
-        }
-      ]
-    },
     "Humano": {
-      "summary": "Adaptação Tática, Versatilidade e Determinação",
+      "summary": "A vontade não é herança de um trono. É a chama que ainda arde quando o destino já deu seu veredito.",
+      "creation": {
+        "attributes": [
+          "Força",
+          "Agilidade",
+          "Constituição",
+          "Intelecto",
+          "Presença",
+          "Espírito"
+        ],
+        "skills": "*",
+        "skillCount": 2,
+        "automatic": {
+          "life": 5,
+          "karma": 0
+        }
+      },
+      "stageVIAttributes": [
+        "Força",
+        "Agilidade",
+        "Constituição",
+        "Intelecto",
+        "Presença",
+        "Espírito"
+      ],
       "features": [
         {
-          "name": "Versatilidade Obstinada",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Começa com +2 pontos Comuns de Perícia adicionais na criação e recebe +1 no limite de itens em Prontidão."
+          "name": "Inconformismo",
+          "description": "Comece cada cena com 2 Ímpetos, até o limite da Etapa. Recupere 1 ao tirar 20 no dado escolhido ou ao cair abaixo de metade da Vida pela primeira vez na cena. Gaste 1 antes de um teste para acrescentar 1d20, ou troque a perda de uma ação ou uma condição menor por um passo tático de 2 m.",
+          "kind": "Traço"
         },
         {
-          "name": "Improviso sob Pressão",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Escolhe 1 perícia para elevar gratuitamente em +1 nível de treinamento (respeitando o teto da Etapa). Além disso, 1x por cena, pode rerrolar 1 dado d20 da sua reserva em qualquer teste de perícia e escolher o melhor resultado."
+          "name": "Leitura de Brecha",
+          "description": "Escolha uma perícia adicional, respeitando o teto da Etapa. Ao gastar Ímpeto em ataque ou técnica, abra uma brecha: o próximo ataque aliado contra o alvo reduz em 2 os limites de Acerto Parcial e Total até o início do seu próximo turno.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Cadência Tática",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Recebe +1 Reação adicional por rodada para manobras defensivas/táticas (Esquiva, Aparar ou Auxílio). Além disso, escolhe 1 Técnica do seu repertório como Técnica Assinatura Humana, reduzindo seu custo final em -1 Karma (mínimo 1)."
+          "name": "Sobrevivência Indomável",
+          "description": "Seu limite sobe para 3. Como Reação ao sofrer dano ou condição debilitante, gaste 1 Ímpeto: receba Escudo igual à soma de Constituição, Presença e Etapa antes do dano e ignore uma condição física ou mental até o fim do próximo turno.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Indomável (Quebra de Limite)",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Uma vez por cena, ao obter um Acerto Parcial em um ataque ou técnica, pode convertê-lo automaticamente em Acerto Total (ou, ao sofrer um Acerto Total inimigo, pode usar sua Reação para convertê-lo em Acerto Parcial e remover 1 condição ativa sobre si)."
+          "name": "Recusa ao Fim",
+          "description": "Seu limite sobe para 4 e você escolhe mais um Atributo. Uma vez por cena, gaste 2 Ímpetos após ver a rolagem para elevar Falha a Parcial ou Parcial a Total. Em vez disso, no seu turno, execute uma Principal adicional: uma técnica de até Grau III sem pagar seu custo-base. Ampliações mantêm o custo.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Improviso sob Pressão",
-          "description": "Escolhe 1 perícia para elevar gratuitamente em +1 nível de treinamento (respeitando o teto da Etapa). Além disso, 1x por cena, pode rerrolar 1 dado d20 da sua reserva em qualquer teste de perícia e escolher o melhor resultado."
+          "name": "Leitura de Brecha",
+          "description": "Escolha uma perícia adicional, respeitando o teto da Etapa. Ao gastar Ímpeto em ataque ou técnica, abra uma brecha: o próximo ataque aliado contra o alvo reduz em 2 os limites de Acerto Parcial e Total até o início do seu próximo turno."
         },
         {
           "stage": "IV",
-          "name": "Cadência Tática",
-          "description": "Recebe +1 Reação adicional por rodada para manobras defensivas/táticas (Esquiva, Aparar ou Auxílio). Além disso, escolhe 1 Técnica do seu repertório como Técnica Assinatura Humana, reduzindo seu custo final em -1 Karma (mínimo 1)."
+          "name": "Sobrevivência Indomável",
+          "description": "Seu limite sobe para 3. Como Reação ao sofrer dano ou condição debilitante, gaste 1 Ímpeto: receba Escudo igual à soma de Constituição, Presença e Etapa antes do dano e ignore uma condição física ou mental até o fim do próximo turno."
         },
         {
           "stage": "VI",
-          "name": "Indomável (Quebra de Limite)",
-          "description": "Uma vez por cena, ao obter um Acerto Parcial em um ataque ou técnica, pode convertê-lo automaticamente em Acerto Total (ou, ao sofrer um Acerto Total inimigo, pode usar sua Reação para convertê-lo em Acerto Parcial e remover 1 condição ativa sobre si)."
+          "name": "Recusa ao Fim",
+          "description": "Seu limite sobe para 4 e você escolhe mais um Atributo. Uma vez por cena, gaste 2 Ímpetos após ver a rolagem para elevar Falha a Parcial ou Parcial a Total. Em vez disso, no seu turno, execute uma Principal adicional: uma técnica de até Grau III sem pagar seu custo-base. Ampliações mantêm o custo."
         }
       ]
     },
     "Elfo": {
-      "summary": "Fluxo Kármico, Precisão Solar e Sintonia Natural",
+      "summary": "O arqueiro élfico lê a paisagem pelo que ela devolve: a sombra entre folhas, o ar atrás da flecha, a luz que se parte no metal.",
+      "creation": {
+        "attributes": [
+          "Agilidade",
+          "Intelecto"
+        ],
+        "skills": [
+          "Percepção",
+          "História",
+          "Sobrevivência"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 4,
+          "karma": 4
+        }
+      },
+      "stageVIAttributes": [
+        "Agilidade",
+        "Intelecto",
+        "Espírito"
+      ],
       "features": [
         {
-          "name": "Sintonia de Elaranth",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Ignora terreno difícil natural (raízes, mata, pedras soltas), enxerga na penumbra como luz plena e recebe +1 na reserva máxima de Karma por Etapa (+Etapa Karma)."
+          "name": "Ressonância Élfica",
+          "description": "Ignore terreno difícil natural e penalidade de penumbra. Ao mover-se ao menos 3 m e atacar à distância no mesmo turno, entre em Harmonia até o início do seu próximo turno. Em Harmonia, alcance +3 m e CA +1 contra disparos.",
+          "kind": "Traço"
         },
         {
-          "name": "Fluxo Limpo de Canalização",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Recebe +1d20 em testes de Canalização de Karma e Pontaria. Sempre que executar uma técnica de alcance médio ou longo (15 m+), pode deslocar-se 2 m sem provocar Reações antes ou depois do disparo."
+          "name": "Refração do Véu Verde",
+          "description": "Escolha Canalização de Karma ou Pontaria. Em Harmonia, ignore cobertura parcial. Ao executar técnica, deslize 3 m sem Reações ou purgue uma condição ambiental ou elemental sua ou de aliado a até 5 m.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Ressonância de Reserva",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Uma vez por rodada, quando o dado selecionado da sua rolagem de ataque ou técnica for 17 ou mais natural no d20, você recupera imediatamente 2 Karma (ou 3 Karma na Etapa VI). Além disso, recebe Resistência 2 contra Dano Kármico de matriz Elemental."
+          "name": "Cálice de Luz Perene",
+          "description": "Aumente Karma máximo em valor igual à Etapa. Uma vez por rodada, em Harmonia, um Acerto Total ou 17 natural ou mais recupera 2 Karma e causa dano adicional igual a Intelecto mais Etapa, do mesmo tipo, ao alvo ou a um segundo inimigo a até 4 m dele.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Transcendência do Zênite",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "O alcance de todas as suas técnicas Kármicas, Elementais e ataques de Pontaria aumenta em +5 m (técnicas de contato ganham alcance de 3 m). Uma vez por cena, como Ação Livre no seu turno, pode reduzir em -3 Karma o custo da próxima técnica de Grau III, IV ou V que executar naquela rodada (mínimo 1)."
+          "name": "Zênite Astral",
+          "description": "Escolha Agilidade, Intelecto ou Espírito. Em Harmonia, some 1d20 a Canalização de Karma, Controles elementais e Pontaria. Uma vez por cena, como Livre, acenda o Zênite por três rodadas: técnicas custam 2 Karma a menos, mínimo 1; um aliado que atravesse o rastro luminoso recebe Vantagem no próximo teste pertinente.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Fluxo Limpo de Canalização",
-          "description": "Recebe +1d20 em testes de Canalização de Karma e Pontaria. Sempre que executar uma técnica de alcance médio ou longo (15 m+), pode deslocar-se 2 m sem provocar Reações antes ou depois do disparo."
+          "name": "Refração do Véu Verde",
+          "description": "Escolha Canalização de Karma ou Pontaria. Em Harmonia, ignore cobertura parcial. Ao executar técnica, deslize 3 m sem Reações ou purgue uma condição ambiental ou elemental sua ou de aliado a até 5 m."
         },
         {
           "stage": "IV",
-          "name": "Ressonância de Reserva",
-          "description": "Uma vez por rodada, quando o dado selecionado da sua rolagem de ataque ou técnica for 17 ou mais natural no d20, você recupera imediatamente 2 Karma (ou 3 Karma na Etapa VI). Além disso, recebe Resistência 2 contra Dano Kármico de matriz Elemental."
+          "name": "Cálice de Luz Perene",
+          "description": "Aumente Karma máximo em valor igual à Etapa. Uma vez por rodada, em Harmonia, um Acerto Total ou 17 natural ou mais recupera 2 Karma e causa dano adicional igual a Intelecto mais Etapa, do mesmo tipo, ao alvo ou a um segundo inimigo a até 4 m dele."
         },
         {
           "stage": "VI",
-          "name": "Transcendência do Zênite",
-          "description": "O alcance de todas as suas técnicas Kármicas, Elementais e ataques de Pontaria aumenta em +5 m (técnicas de contato ganham alcance de 3 m). Uma vez por cena, como Ação Livre no seu turno, pode reduzir em -3 Karma o custo da próxima técnica de Grau III, IV ou V que executar naquela rodada (mínimo 1)."
+          "name": "Zênite Astral",
+          "description": "Escolha Agilidade, Intelecto ou Espírito. Em Harmonia, some 1d20 a Canalização de Karma, Controles elementais e Pontaria. Uma vez por cena, como Livre, acenda o Zênite por três rodadas: técnicas custam 2 Karma a menos, mínimo 1; um aliado que atravesse o rastro luminoso recebe Vantagem no próximo teste pertinente."
         }
       ]
     },
     "Anão": {
-      "summary": "Estabilidade Inabalável, Engenharia de Forja e Densidade",
+      "summary": "A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver o peso.",
+      "creation": {
+        "attributes": [
+          "Constituição",
+          "Força"
+        ],
+        "skills": [
+          "Criação",
+          "Atletismo"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 8,
+          "karma": 0
+        }
+      },
+      "stageVIAttributes": [
+        "Constituição",
+        "Força"
+      ],
       "features": [
         {
-          "name": "Densidade da Rocha",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Recebe +2 de Vida máxima por Etapa (+2 × Etapa), não tem seu deslocamento reduzido pelo uso de Armadura Pesada ou Escudo Pesado e possui +2 Espaços de Carga sem penalidade."
+          "name": "Fornalha de Inércia",
+          "description": "Receba 2 espaços de carga e ignore a perda de deslocamento por armadura e escudo pesados. Ao sofrer um golpe que cause dano, mesmo absorvido, ou terminar o turno após mover-se no máximo 3 m, acumule uma Carga de Bigorna, até 3. Cada carga concede Resistência 1 contra Marcial, Terra e Fogo.",
+          "kind": "Traço"
         },
         {
-          "name": "Base Inamovível",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Recebe +1d20 para resistir a Empurrar, Derrubar e Desarmar, e reduz em -3 m qualquer deslocamento forçado contra você. Suas armas e armaduras equipadas não podem ser quebradas por efeitos comuns e recebem +1 no dano base (armas) ou +1 na Resistência contra acerto parcial (armaduras)."
+          "name": "Têmpera de Nidavellir",
+          "description": "Some 1d20 contra empurrão, queda e desarme. Escolha temperar a arma para +1 dano-base ou a proteção para +1 Resistência. Ao acertar de perto, pode gastar todas as cargas: cada uma soma 1d6 de dano; o alvo recua 2 m ou perde 2 m de deslocamento por uma rodada.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Couraça de Forja Viva",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Você recebe Resistência 2 permanente contra Dano Físico (acumulável em +1 caso já possua Resistência de armadura/domínio). Além disso, quando realiza um Acerto Total com arma corpo a corpo ou técnica Marcial/Terra, aplica Abalado ou reduz o deslocamento do alvo em -2 m por 1 rodada."
+          "name": "Reação Sísmica",
+          "description": "Ganhe 2 de Vida máxima por Etapa. Uma vez por rodada, como Reação a acerto de inimigo até 5 m contra você ou aliado adjacente, gaste 2 cargas ou 2 Karma: reduza dano em Constituição mais Etapa e imponha CA −2 ao atacante até o fim do próximo turno dele.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Baluarte de Nidavellir",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Uma vez por cena, como Reação ao sofrer um Acerto Total (de qualquer tipo de dano universal), você trava os pés e reduz o dano final sofrido pela metade, tornando-se imune a movimento forçado e condições físicas até o início do seu próximo turno."
+          "name": "Monólito de Ferro",
+          "description": "Escolha Constituição ou Força. O limite de cargas sobe para 4. Uma vez por cena, como Livre ou Reação a Acerto Total, por três rodadas reduza à metade o dano sofrido e ignore movimento forçado, Caído e Atordoado. Só inimigos tratam a área em 4 m como terreno difícil.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Base Inamovível",
-          "description": "Recebe +1d20 para resistir a Empurrar, Derrubar e Desarmar, e reduz em -3 m qualquer deslocamento forçado contra você. Suas armas e armaduras equipadas não podem ser quebradas por efeitos comuns e recebem +1 no dano base (armas) ou +1 na Resistência contra acerto parcial (armaduras)."
+          "name": "Têmpera de Nidavellir",
+          "description": "Some 1d20 contra empurrão, queda e desarme. Escolha temperar a arma para +1 dano-base ou a proteção para +1 Resistência. Ao acertar de perto, pode gastar todas as cargas: cada uma soma 1d6 de dano; o alvo recua 2 m ou perde 2 m de deslocamento por uma rodada."
         },
         {
           "stage": "IV",
-          "name": "Couraça de Forja Viva",
-          "description": "Você recebe Resistência 2 permanente contra Dano Físico (acumulável em +1 caso já possua Resistência de armadura/domínio). Além disso, quando realiza um Acerto Total com arma corpo a corpo ou técnica Marcial/Terra, aplica Abalado ou reduz o deslocamento do alvo em -2 m por 1 rodada."
+          "name": "Reação Sísmica",
+          "description": "Ganhe 2 de Vida máxima por Etapa. Uma vez por rodada, como Reação a acerto de inimigo até 5 m contra você ou aliado adjacente, gaste 2 cargas ou 2 Karma: reduza dano em Constituição mais Etapa e imponha CA −2 ao atacante até o fim do próximo turno dele."
         },
         {
           "stage": "VI",
-          "name": "Baluarte de Nidavellir",
-          "description": "Uma vez por cena, como Reação ao sofrer um Acerto Total (de qualquer tipo de dano universal), você trava os pés e reduz o dano final sofrido pela metade, tornando-se imune a movimento forçado e condições físicas até o início do seu próximo turno."
+          "name": "Monólito de Ferro",
+          "description": "Escolha Constituição ou Força. O limite de cargas sobe para 4. Uma vez por cena, como Livre ou Reação a Acerto Total, por três rodadas reduza à metade o dano sofrido e ignore movimento forçado, Caído e Atordoado. Só inimigos tratam a área em 4 m como terreno difícil."
         }
       ]
     },
     "Demi-humano": {
-      "summary": "Instinto Feral, Linhagem Bestial e Impulso",
+      "summary": "A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que percebe a emboscada e no pé que já saltou quando a voz manda correr.",
+      "creation": {
+        "attributes": [
+          "Agilidade",
+          "Força",
+          "Espírito"
+        ],
+        "skills": [
+          "Percepção",
+          "Atletismo",
+          "Acrobacia",
+          "Sobrevivência"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 6,
+          "karma": 0,
+          "movement": 1
+        }
+      },
+      "stageVIAttributes": [
+        "Força",
+        "Agilidade",
+        "Espírito"
+      ],
       "features": [
         {
-          "name": "Sangue de Linhagem Feral",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Recebe sentidos aguçados (+1d20 em Percepção auditiva/olfativa), +1 m de Deslocamento base e escolhe uma adaptação corporal (Garras 1d8, Impulso de Salto/Escalada ou Fôlego Anfíbio/Alado)."
+          "name": "Despertar de Aspecto",
+          "description": "Some 1d20 à Percepção auditiva ou olfativa. No início do turno, como Livre, escolha Garra, Asa ou Carapaça. Garra causa 1d8 desarmado ou +2 com arma e fere no Total. Asa soma 2 m, amortece quedas até 10 m e cruza obstáculos sem Reações. Carapaça concede CA +1 e Resistência 2 contra Fogo, Água, Vento ou Terra à escolha.",
+          "kind": "Traço"
         },
         {
-          "name": "Bote da Fera",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Sempre que você se deslocar pelo menos 4 m em linha reta antes de atacar no mesmo turno, seu primeiro ataque ou técnica Marcial naquela rodada recebe +1d20 no teste de acerto e soma +Etapa ao dano final."
+          "name": "Marca de Caça",
+          "description": "Como Livre, uma vez por turno, marque uma presa visível. Saiba sua direção mesmo atrás de cobertura; se percorreu 3 m, some 1d20 ao primeiro ataque do turno contra ela.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Instinto de Contra-Ataque",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Seus reflexos animais disparam sob ameaça: uma vez por rodada, quando um inimigo adjacente erra um ataque contra você (Falha), você pode usar sua Reação para desferir imediatamente um ataque básico corpo a corpo contra ele sem custo de Karma."
+          "name": "Reflexo Selvagem",
+          "description": "Uma vez por rodada, como Reação quando um inimigo erra contra você ou deixa seu contato, avance até 3 m e desfira ataque básico, Derrubar ou Agarrar sem Karma.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Despertar da Fera Ancestral",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Uma vez por cena (Ação Livre, duração de 3 rodadas), você libera o ápice da sua linhagem: recebe +2 m de deslocamento, +1d20 em todos os testes de Força e Agilidade, e seus ataques e técnicas Marciais/Elementais causam +1 dado base de dano."
+          "name": "Forma Ancestral Quimérica",
+          "description": "Escolha Força, Agilidade ou Espírito. Uma vez por cena, como Livre, mantenha os três Aspectos por três rodadas, acrescente um dado-base aos ataques e técnicas ofensivas e recupere Espírito mais Etapa de Vida no início de cada um desses turnos.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Bote da Fera",
-          "description": "Sempre que você se deslocar pelo menos 4 m em linha reta antes de atacar no mesmo turno, seu primeiro ataque ou técnica Marcial naquela rodada recebe +1d20 no teste de acerto e soma +Etapa ao dano final."
+          "name": "Marca de Caça",
+          "description": "Como Livre, uma vez por turno, marque uma presa visível. Saiba sua direção mesmo atrás de cobertura; se percorreu 3 m, some 1d20 ao primeiro ataque do turno contra ela."
         },
         {
           "stage": "IV",
-          "name": "Instinto de Contra-Ataque",
-          "description": "Seus reflexos animais disparam sob ameaça: uma vez por rodada, quando um inimigo adjacente erra um ataque contra você (Falha), você pode usar sua Reação para desferir imediatamente um ataque básico corpo a corpo contra ele sem custo de Karma."
+          "name": "Reflexo Selvagem",
+          "description": "Uma vez por rodada, como Reação quando um inimigo erra contra você ou deixa seu contato, avance até 3 m e desfira ataque básico, Derrubar ou Agarrar sem Karma."
         },
         {
           "stage": "VI",
-          "name": "Despertar da Fera Ancestral",
-          "description": "Uma vez por cena (Ação Livre, duração de 3 rodadas), você libera o ápice da sua linhagem: recebe +2 m de deslocamento, +1d20 em todos os testes de Força e Agilidade, e seus ataques e técnicas Marciais/Elementais causam +1 dado base de dano."
-        }
-      ]
-    },
-    "Demônio": {
-      "summary": "Autoridade de Aqueronte, Pressão Abissal e Combustão",
-      "features": [
-        {
-          "name": "Estigma de Aqueronte",
-          "stage": "I",
-          "kind": "Passiva",
-          "description": "Recebe Resistência 2 contra efeitos de calor/fogo e venenos comuns, enxerga perfeitamente na escuridão e recebe +1d20 em Intimidação."
-        },
-        {
-          "name": "Brasa de Retaliação",
-          "stage": "II",
-          "kind": "Habilidade",
-          "description": "Sempre que você sofrer dano de um inimigo a até 5 m, você acumula Rancor Abissal: no seu próximo turno, seu primeiro ataque ou técnica que atingir um inimigo causa +1d8 de Dano Kármico (Fogo/Corrupto/Sombra) adicional."
-        },
-        {
-          "name": "Soberania do Pacto",
-          "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Suas técnicas de matriz Elemental (Fogo/Combustão), Corrupta ou Divina têm seu custo reduzido em -1 Karma (mínimo 1) uma vez por rodada. Além disso, inimigos que estejam Abalados, Queimando ou com Cargas de Corrupção sofrem -1 na CA contra seus ataques."
-        },
-        {
-          "name": "Presença do Trono Abissal",
-          "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Uma vez por cena, como Ação Livre por 3 rodadas, você emana pressão régia a até 5 m: inimigos na área têm sua faixa de Acerto Total ampliada em +1 a seu favor (você acerta o Total com CA em vez de CA+1), sofrem -1d20 em testes de vontade/Espírito e você recebe Escudo Temporário igual a Presença + Etapa no início de cada um desses 3 turnos."
-        }
-      ],
-      "progression": [
-        {
-          "stage": "II",
-          "name": "Brasa de Retaliação",
-          "description": "Sempre que você sofrer dano de um inimigo a até 5 m, você acumula Rancor Abissal: no seu próximo turno, seu primeiro ataque ou técnica que atingir um inimigo causa +1d8 de Dano Kármico (Fogo/Corrupto/Sombra) adicional."
-        },
-        {
-          "stage": "IV",
-          "name": "Soberania do Pacto",
-          "description": "Suas técnicas de matriz Elemental (Fogo/Combustão), Corrupta ou Divina têm seu custo reduzido em -1 Karma (mínimo 1) uma vez por rodada. Além disso, inimigos que estejam Abalados, Queimando ou com Cargas de Corrupção sofrem -1 na CA contra seus ataques."
-        },
-        {
-          "stage": "VI",
-          "name": "Presença do Trono Abissal",
-          "description": "Uma vez por cena, como Ação Livre por 3 rodadas, você emana pressão régia a até 5 m: inimigos na área têm sua faixa de Acerto Total ampliada em +1 a seu favor (você acerta o Total com CA em vez de CA+1), sofrem -1d20 em testes de vontade/Espírito e você recebe Escudo Temporário igual a Presença + Etapa no início de cada um desses 3 turnos."
+          "name": "Forma Ancestral Quimérica",
+          "description": "Escolha Força, Agilidade ou Espírito. Uma vez por cena, como Livre, mantenha os três Aspectos por três rodadas, acrescente um dado-base aos ataques e técnicas ofensivas e recupere Espírito mais Etapa de Vida no início de cada um desses turnos."
         }
       ]
     },
     "Vampiro": {
-      "summary": "Subdobra de Sangue, Nobreza de Sárkora e Drenagem",
+      "summary": "Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas coisas é oferecida sem que alguém pague o preço.",
+      "creation": {
+        "attributes": [
+          "Agilidade",
+          "Presença",
+          "Espírito"
+        ],
+        "skills": "*",
+        "skillCount": 2,
+        "automatic": {
+          "life": 7,
+          "karma": 0
+        }
+      },
+      "stageVIAttributes": [
+        "Presença",
+        "Agilidade",
+        "Espírito"
+      ],
       "features": [
         {
-          "name": "Linhagem de Sárkora",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Enxerga no escuro, sente batimentos cardíacos a até 10 m e possui ataque de presas/drenagem em contato (1d8 físico/kármico) que recupera 2 PV ao causar Acerto Total em criatura viva (1x por rodada)."
+          "name": "Reserva de Vitae",
+          "description": "Enxergue no escuro e perceba batimentos em 10 m. Presas causam 1d8 Marcial. Ao ferir criatura viva com presas, arma de contato ou técnica de Sangue ou Sombra, ganhe 1 Vitae, até 3. Gaste 1 Vitae ou 3 Vida para curar Etapa mais 2 de Vida ou acrescentar 1d6 ao próximo ataque. Permanecem a sede de sangue e a vulnerabilidade canônica ao sol direto.",
+          "kind": "Traço"
         },
         {
-          "name": "Sangue Régio Manipulado",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Você pode gastar de 1 a 4 pontos da própria Vida como Ação Livre ao lançar uma técnica para somar +1d6 (para 2 PV) ou +1d10 (para 4 PV) ao dano da técnica, ou para receber +1d20 no teste de acerto. Sua cura por drenagem no Traço Base sobe para Etapa + 2 PV."
+          "name": "Dízimo Carmesim",
+          "description": "Gaste 2 Vitae ou 4 Vida ao atacar para ganhar 1d20 no teste e 1d10 no dano. Ao acertar, aplique Sangrando ou, com olhar hipnótico sustentado por Presença, Abalado.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Passo de Névoa Sanguínea",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Recebe Resistência 2 contra efeitos de sangramento, necróticos e venenos sanguíneos. Como Reação ao ser alvo de um ataque (1x por rodada, custo 2 Karma), você reduz o dano sofrido em -Etapa e desliza até 4 m em forma de névoa rubra sem provocar Reações."
+          "name": "Transfusão de Névoa Rubra",
+          "description": "Seu limite sobe para 5; Resistência 3 contra sangramento, veneno e efeitos necróticos ou de Sombra. Uma vez por rodada, como Reação a ataque, gaste 1 Vitae ou 2 Karma para reduzir dano em Espírito mais Etapa e reaparecer até 5 m sem Reações. Atravesse um inimigo vivo para drenar 1 Vitae.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Aristocracia Imortal",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz brevemente em névoa carmesim e se recompõe a até 5 m com Etapa × 4 pontos de Vida, limpando condições de imobilização/sangramento."
+          "name": "Trono Imortal",
+          "description": "Escolha Presença, Agilidade ou Espírito. Uma vez por cena, ao sofrer dano que zeraria sua Vida, cause 2d8 aos inimigos adjacentes e recomponha-se a até 6 m com cinco vezes sua Etapa em Vida. Encerre condições físicas.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Sangue Régio Manipulado",
-          "description": "Você pode gastar de 1 a 4 pontos da própria Vida como Ação Livre ao lançar uma técnica para somar +1d6 (para 2 PV) ou +1d10 (para 4 PV) ao dano da técnica, ou para receber +1d20 no teste de acerto. Sua cura por drenagem no Traço Base sobe para Etapa + 2 PV."
+          "name": "Dízimo Carmesim",
+          "description": "Gaste 2 Vitae ou 4 Vida ao atacar para ganhar 1d20 no teste e 1d10 no dano. Ao acertar, aplique Sangrando ou, com olhar hipnótico sustentado por Presença, Abalado."
         },
         {
           "stage": "IV",
-          "name": "Passo de Névoa Sanguínea",
-          "description": "Recebe Resistência 2 contra efeitos de sangramento, necróticos e venenos sanguíneos. Como Reação ao ser alvo de um ataque (1x por rodada, custo 2 Karma), você reduz o dano sofrido em -Etapa e desliza até 4 m em forma de névoa rubra sem provocar Reações."
+          "name": "Transfusão de Névoa Rubra",
+          "description": "Seu limite sobe para 5; Resistência 3 contra sangramento, veneno e efeitos necróticos ou de Sombra. Uma vez por rodada, como Reação a ataque, gaste 1 Vitae ou 2 Karma para reduzir dano em Espírito mais Etapa e reaparecer até 5 m sem Reações. Atravesse um inimigo vivo para drenar 1 Vitae."
         },
         {
           "stage": "VI",
-          "name": "Aristocracia Imortal",
-          "description": "Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz brevemente em névoa carmesim e se recompõe a até 5 m com Etapa × 4 pontos de Vida, limpando condições de imobilização/sangramento."
+          "name": "Trono Imortal",
+          "description": "Escolha Presença, Agilidade ou Espírito. Uma vez por cena, ao sofrer dano que zeraria sua Vida, cause 2d8 aos inimigos adjacentes e recomponha-se a até 6 m com cinco vezes sua Etapa em Vida. Encerre condições físicas."
+        }
+      ]
+    },
+    "Demônio": {
+      "summary": "Diante de Aqueronte, até o silêncio tem cláusulas. O inimigo marcado pode escolher a quem ferir; só não pode escolher sair ileso.",
+      "creation": {
+        "attributes": [
+          "Presença",
+          "Espírito",
+          "Força"
+        ],
+        "skills": [
+          "Intimidação",
+          "Enganação",
+          "Canalização de Karma"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 5,
+          "karma": 6
+        }
+      },
+      "stageVIAttributes": [
+        "Presença",
+        "Espírito",
+        "Força"
+      ],
+      "features": [
+        {
+          "stage": "I",
+          "name": "Selo de Coação",
+          "description": "Enxergue no escuro e resista a Fogo e calor com 3. Uma vez por turno, ao atingir ou encarar como Livre a até 10 m, sele o inimigo até seu próximo turno. Se atacar ou usar técnica sem incluir você, ele sofre Etapa mais Presença de dano Mental. Se atacar você, seu próximo revide contra ele ganha 1d20 e 1d8 de dano.",
+          "kind": "Traço"
+        },
+        {
+          "stage": "II",
+          "name": "Combustão de Rancor",
+          "description": "Contra alvo marcado, Abalado ou Queimando, trate a CA como 1 ponto menor. Sua primeira técnica do turno contra ele custa 1 Karma a menos, mínimo 1.",
+          "kind": "Habilidade"
+        },
+        {
+          "stage": "IV",
+          "name": "Jurisdição dos Sete Círculos",
+          "description": "Quando um marcado falha num teste ou sofre Acerto Total seu, recupere 2 Karma e ganhe Escudo igual a Presença mais Etapa. Some 1d20 a Intimidação, Comunhão Divina e Controle da Corrupção.",
+          "kind": "Habilidade"
+        },
+        {
+          "stage": "VI",
+          "name": "Soberania do Trono Infernal",
+          "description": "Escolha Presença, Espírito ou Força. Uma vez por cena, como Livre, manifeste aura de 6 m por três rodadas. Inimigos na área ficam selados e perdem 1d20 para resistir mentalmente; reduza em 2 o limiar de Total de seus ataques contra eles. Suas técnicas ofensivas de Grau III ou superior somam um dado-base.",
+          "kind": "Habilidade"
+        }
+      ],
+      "progression": [
+        {
+          "stage": "II",
+          "name": "Combustão de Rancor",
+          "description": "Contra alvo marcado, Abalado ou Queimando, trate a CA como 1 ponto menor. Sua primeira técnica do turno contra ele custa 1 Karma a menos, mínimo 1."
+        },
+        {
+          "stage": "IV",
+          "name": "Jurisdição dos Sete Círculos",
+          "description": "Quando um marcado falha num teste ou sofre Acerto Total seu, recupere 2 Karma e ganhe Escudo igual a Presença mais Etapa. Some 1d20 a Intimidação, Comunhão Divina e Controle da Corrupção."
+        },
+        {
+          "stage": "VI",
+          "name": "Soberania do Trono Infernal",
+          "description": "Escolha Presença, Espírito ou Força. Uma vez por cena, como Livre, manifeste aura de 6 m por três rodadas. Inimigos na área ficam selados e perdem 1d20 para resistir mentalmente; reduza em 2 o limiar de Total de seus ataques contra eles. Suas técnicas ofensivas de Grau III ou superior somam um dado-base."
+        }
+      ]
+    },
+    "Ghoul": {
+      "summary": "O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o rastro abrir caminho no escuro e sua carne se prepara para caçar.",
+      "creation": {
+        "attributes": [
+          "Força",
+          "Agilidade"
+        ],
+        "skills": [
+          "Percepção",
+          "Sobrevivência"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 6,
+          "karma": 0,
+          "attributes": {
+            "Constituição": 1
+          }
+        }
+      },
+      "stageVIAttributes": [
+        "Constituição",
+        "Força",
+        "Agilidade"
+      ],
+      "features": [
+        {
+          "stage": "I",
+          "name": "Voracidade Carmesim",
+          "description": "Garras e presas causam 1d8 Marcial com Luta. Fareje sangue e feridos até 12 m, mesmo sob invisibilidade ou fumaça. Ao ferir em contato ou consumir biomassa como Movimento, entre em Caça pela cena e encerre Sangrando em si.",
+          "kind": "Traço"
+        },
+        {
+          "stage": "II",
+          "name": "Órgão Predatório",
+          "description": "Durante a Caça, manifeste o órgão sem custo na primeira vez na cena; reativar custa 2 Karma. Escolha no turno: forma robusta dá 1d20 em Luta e Atletismo, 2 m ao avançar contra feridos e Resistência Marcial 2; forma alongada dá alcance 3 m e dano natural 1d10.",
+          "kind": "Habilidade"
+        },
+        {
+          "stage": "IV",
+          "name": "Regeneração Celular Voraz",
+          "description": "Com o órgão ativo, uma vez por rodada, Acerto Total de contato contra criatura viva cura Constituição mais Etapa; excedente vira Escudo. Contra Sangrando, Caído ou abaixo de metade da Vida, some 1d8 e impeça cura até o início do seu próximo turno.",
+          "kind": "Habilidade"
+        },
+        {
+          "stage": "VI",
+          "name": "Apogeu da Fome",
+          "description": "Escolha Constituição, Força ou Agilidade. Seus ataques e técnicas ignoram até 4 Resistência. Uma vez por cena, ao cair a metade da Vida ou menos ou como Reação a Total, entre em Frenesi por três rodadas: CA +2, imunidade a Abalado, Lento e Caído, e um dado-base adicional no dano.",
+          "kind": "Habilidade"
+        }
+      ],
+      "progression": [
+        {
+          "stage": "II",
+          "name": "Órgão Predatório",
+          "description": "Durante a Caça, manifeste o órgão sem custo na primeira vez na cena; reativar custa 2 Karma. Escolha no turno: forma robusta dá 1d20 em Luta e Atletismo, 2 m ao avançar contra feridos e Resistência Marcial 2; forma alongada dá alcance 3 m e dano natural 1d10."
+        },
+        {
+          "stage": "IV",
+          "name": "Regeneração Celular Voraz",
+          "description": "Com o órgão ativo, uma vez por rodada, Acerto Total de contato contra criatura viva cura Constituição mais Etapa; excedente vira Escudo. Contra Sangrando, Caído ou abaixo de metade da Vida, some 1d8 e impeça cura até o início do seu próximo turno."
+        },
+        {
+          "stage": "VI",
+          "name": "Apogeu da Fome",
+          "description": "Escolha Constituição, Força ou Agilidade. Seus ataques e técnicas ignoram até 4 Resistência. Uma vez por cena, ao cair a metade da Vida ou menos ou como Reação a Total, entre em Frenesi por três rodadas: CA +2, imunidade a Abalado, Lento e Caído, e um dado-base adicional no dano."
         }
       ]
     },
     "Tritão": {
-      "summary": "+1 Constituição, +1 Atletismo e +6 Vida.",
+      "summary": "As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra seca, o tritão leva a maré consigo.",
+      "creation": {
+        "attributes": [
+          "Força",
+          "Agilidade",
+          "Espírito"
+        ],
+        "skills": [
+          "Atletismo",
+          "Sobrevivência"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 6,
+          "karma": 0,
+          "attributes": {
+            "Constituição": 1
+          }
+        }
+      },
+      "stageVIAttributes": [
+        "Constituição",
+        "Força",
+        "Espírito"
+      ],
       "features": [
         {
-          "name": "Tritão — Traço de linhagem",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Anfíbio: respire ar e água sem ação ou custo. Receba +1 dado num teste de manipulação de Água que já possa realizar; o traço não concede Controle de Água, uma técnica ou mudança gratuita de fonte. Leitura de corrente: receba +1 dado em testes diretamente ligados a nadar, navegar, perceber correntes ou atuar sob a água. Desidratação: depois de 12 horas sem hidratação adequada, fique Exausto. Vinte minutos de imersão e repouso encerram a condição."
+          "name": "Pressão Abissal",
+          "description": "Respire no ar e na água, nade com deslocamento pleno e resista a Água e Gelo com 3. Ao atacar ou executar uma técnica, o Pulso de Maré permite deslizar 2 m ou empurrar o alvo atingido 2 m.",
+          "kind": "Traço"
         },
         {
-          "name": "Herança — Etapa II",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Voz submersa: Passiva, 0 Karma. Você fala e executa componentes vocais enquanto submerso, desde que consiga normalmente falar. Criaturas na mesma massa de água podem ouvi-lo a até 5 metros em condições comuns; ruído, barreiras e distância maior usam Percepção quando necessário. Isso não concede idioma, telepatia ou alcance adicional a habilidades sonoras. Pode continuar falando normalmente fora da água."
+          "name": "Manto de Correnteza",
+          "description": "CA +1 contra ataques à distância e 1d20 adicional para escapar de agarrões e imobilizações. Uma vez por rodada, o Pulso reduz em 2 m o deslocamento do alvo atingido até o próximo turno; com Água ou Gelo, pode impor Lento ou Enraizado conforme a técnica.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Herança — Etapa IV",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Fôlego partilhado: Principal, 3 Karma, toque em uma criatura voluntária, automático. Durante até 1 TE, ela pode respirar água enquanto estiver na mesma massa contínua de água e a até 5 metros de você. Você sustenta apenas um beneficiário; uma nova ativação encerra a anterior. Sair desse alcance ou ficar Inconsciente encerra o efeito. Não concede natação, proteção contra pressão, frio, veneno ou gases. A criatura percebe o fim do vínculo e volta a depender do próprio fôlego; não sofre dano instantâneo apenas pelo encerramento."
+          "name": "Implosão de Fossa",
+          "description": "Uma vez por rodada, como Reação a ataque de contato ou técnica, gaste 2 Karma, reduza o dano em Constituição mais Etapa e devolva 2d6 de dano de Água ao atacante.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Herança — Etapa VI",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Leitura de esteira: Passiva que amplia Leitura de corrente. Enquanto submerso, você percebe movimento de corpos na mesma massa contínua de água a até 15 metros, sem depender de luz. Uma criatura que tenta se ocultar ainda exige Espírito + Percepção contra Furtividade para ser localizada, com empate a favor dela; o dado de Leitura de corrente aplica-se uma vez. Uma Movimento permite essa busca, com uma tentativa por alvo por turno. Não atravessa cobertura total nem revela ser imóvel, identidade ou pensamento; turbulência pode impor Desvantagem coerente. Maré conduzida: Movimento, 6 Karma, uma vez por cena, automático. Enquanto submerso, conduza até dois aliados voluntários inicialmente a até 2 metros de você num deslocamento conjunto de até 5 metros pela água. Cada participante precisa poder mover-se e respirar durante a passagem; você pode manter contato com um beneficiário de Fôlego partilhado. Todos seguem o mesmo trajeto possível e terminam em espaços livres próximos entre si, sem provocar reações disparadas apenas pelo movimento. Não atravessa parede ou selo, não remove Agarrado ou Imobilizado e não permite levar outra cadeia de criaturas. Não concede ação ou ataque aos passageiros."
+          "name": "Soberano do Leviatã",
+          "description": "Escolha Constituição, Força ou Espírito. Uma vez por cena, como Livre, crie uma zona de 6 m por três rodadas: aliados ganham 2 m e Resistência 3 contra Fogo e Marcial; inimigos têm CA −2 contra você. Suas técnicas de Água, Gelo, Vapor e Marciais somam um dado-base.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Herança — Etapa II",
-          "description": "Voz submersa: Passiva, 0 Karma. Você fala e executa componentes vocais enquanto submerso, desde que consiga normalmente falar. Criaturas na mesma massa de água podem ouvi-lo a até 5 metros em condições comuns; ruído, barreiras e distância maior usam Percepção quando necessário. Isso não concede idioma, telepatia ou alcance adicional a habilidades sonoras. Pode continuar falando normalmente fora da água."
+          "name": "Manto de Correnteza",
+          "description": "CA +1 contra ataques à distância e 1d20 adicional para escapar de agarrões e imobilizações. Uma vez por rodada, o Pulso reduz em 2 m o deslocamento do alvo atingido até o próximo turno; com Água ou Gelo, pode impor Lento ou Enraizado conforme a técnica."
         },
         {
           "stage": "IV",
-          "name": "Herança — Etapa IV",
-          "description": "Fôlego partilhado: Principal, 3 Karma, toque em uma criatura voluntária, automático. Durante até 1 TE, ela pode respirar água enquanto estiver na mesma massa contínua de água e a até 5 metros de você. Você sustenta apenas um beneficiário; uma nova ativação encerra a anterior. Sair desse alcance ou ficar Inconsciente encerra o efeito. Não concede natação, proteção contra pressão, frio, veneno ou gases. A criatura percebe o fim do vínculo e volta a depender do próprio fôlego; não sofre dano instantâneo apenas pelo encerramento."
+          "name": "Implosão de Fossa",
+          "description": "Uma vez por rodada, como Reação a ataque de contato ou técnica, gaste 2 Karma, reduza o dano em Constituição mais Etapa e devolva 2d6 de dano de Água ao atacante."
         },
         {
           "stage": "VI",
-          "name": "Herança — Etapa VI",
-          "description": "Leitura de esteira: Passiva que amplia Leitura de corrente. Enquanto submerso, você percebe movimento de corpos na mesma massa contínua de água a até 15 metros, sem depender de luz. Uma criatura que tenta se ocultar ainda exige Espírito + Percepção contra Furtividade para ser localizada, com empate a favor dela; o dado de Leitura de corrente aplica-se uma vez. Uma Movimento permite essa busca, com uma tentativa por alvo por turno. Não atravessa cobertura total nem revela ser imóvel, identidade ou pensamento; turbulência pode impor Desvantagem coerente. Maré conduzida: Movimento, 6 Karma, uma vez por cena, automático. Enquanto submerso, conduza até dois aliados voluntários inicialmente a até 2 metros de você num deslocamento conjunto de até 5 metros pela água. Cada participante precisa poder mover-se e respirar durante a passagem; você pode manter contato com um beneficiário de Fôlego partilhado. Todos seguem o mesmo trajeto possível e terminam em espaços livres próximos entre si, sem provocar reações disparadas apenas pelo movimento. Não atravessa parede ou selo, não remove Agarrado ou Imobilizado e não permite levar outra cadeia de criaturas. Não concede ação ou ataque aos passageiros."
+          "name": "Soberano do Leviatã",
+          "description": "Escolha Constituição, Força ou Espírito. Uma vez por cena, como Livre, crie uma zona de 6 m por três rodadas: aliados ganham 2 m e Resistência 3 contra Fogo e Marcial; inimigos têm CA −2 contra você. Suas técnicas de Água, Gelo, Vapor e Marciais somam um dado-base."
         }
       ]
     },
     "Abissal": {
-      "summary": "+1 Espírito ou +1 Força, +1 em Ocultismo ou Canalização de Karma e +6 Karma máximo.",
+      "summary": "Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar distante: leva ao avesso do lugar que já está ali.",
+      "creation": {
+        "attributes": [
+          "Espírito",
+          "Intelecto"
+        ],
+        "skills": [
+          "Percepção",
+          "Ocultismo",
+          "História",
+          "Canalização de Karma"
+        ],
+        "skillCount": 1,
+        "automatic": {
+          "life": 4,
+          "karma": 6
+        }
+      },
+      "stageVIAttributes": [
+        "Espírito",
+        "Intelecto",
+        "Presença"
+      ],
       "features": [
         {
-          "name": "Abissal — Traço de linhagem",
           "stage": "I",
-          "kind": "Passiva",
-          "description": "Anatomia de fenda: você não respira de maneira comum, podendo ficar sem respirar por um dia. Âncora de identidade: receba +1 dado para resistir a possessão e a alterações de memória, nome, corpo ou identidade. Ossos Negros: ossos negros resistem ao decepamento: os membros não podem ser separados do corpo por um efeito de amputação. Dano, Ferimento Grave, fratura e incapacidade continuam possíveis. Enquanto consciente, percebendo o ataque e capaz de se defender, receba +2 CA, sem ação, custo ou teste; é o sentido de “ao defender” deste traço. Não exige gastar Principal em Defender e não se aplica contra agressão imperceptível ou estando Indefeso. Instabilidade espacial: efeitos de banimento, selamento ou deslocamento forçado recebem +1 dado contra você. Se obtiverem sucesso total, você também perde a Reação até o início do próximo turno."
+          "name": "Fenda de Horizonte",
+          "description": "Veja através de ilusões simples e escuridão mágica. Resistência 3 contra Sombra e Mental. Uma vez por turno, como Livre, posicione uma Âncora visível a até 10 m. Meça o alcance e a trajetória de suas técnicas a partir de você ou dela.",
+          "kind": "Traço"
         },
         {
-          "name": "Herança — Etapa II",
           "stage": "II",
-          "kind": "Habilidade",
-          "description": "Memória do próprio nome: Passiva. Durante um intervalo seguro, registre um fato verificável sobre si e associe-o a um gesto, objeto ou palavra de referência. Mantenha apenas um registro. Depois de sofrer alteração sobrenatural de memória ou identidade, perceber essa referência informa que há uma discrepância, sem ação ou teste próprios. O aviso não desfaz a alteração, não revela toda a verdade e não permite agir enquanto estiver Inconsciente ou controlado. A referência precisa existir fora da memória adulterada; repetir uma palavra que o efeito apagou não cria acesso automático a ela."
+          "name": "Passo de Fresta",
+          "description": "Como Movimento ou Reação de 1 Karma, uma vez por rodada, troque de lugar com a Âncora sem provocar Reações. Inimigos adjacentes à chegada sofrem CA −1 até o fim do seu turno.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Herança — Etapa IV",
           "stage": "IV",
-          "kind": "Habilidade",
-          "description": "Passo de fenda: Movimento, 3 Karma, automático, uma vez por turno. Transfira seu corpo e a carga normal para um espaço livre percebido a até 5 metros, com linha de efeito entre origem e destino. É um deslocamento instantâneo, sem percorrer os pontos intermediários e sem provocar reações disparadas apenas por movimento. Não atravessa cobertura total, selo ou barreira que proíba a passagem; não pode ser usado estando Agarrado ou Imobilizado. Não leva outra criatura nem muda porte, anatomia ou reservas. Instabilidade espacial continua valendo contra efeitos hostis."
+          "name": "Dobra de Singularidade",
+          "description": "Uma vez por rodada, como Reação a técnica sobrenatural ou disparo, gaste 2 Karma para reduzir dano em Espírito mais Etapa. Guarde o eco na Âncora: o próximo ataque ou técnica soma 1d10 de dano de Sombra.",
+          "kind": "Habilidade"
         },
         {
-          "name": "Herança — Etapa VI",
           "stage": "VI",
-          "kind": "Habilidade",
-          "description": "Retirada pela fenda: Passo de fenda também pode ser usado como Reação, pagando seus mesmos 3 Karma, imediatamente depois de sofrer um ataque total de origem percebida e aplicar todas as consequências. Continua sendo no máximo um Passo de fenda por turno, somando as duas formas de uso. Exige permanecer consciente, capaz de mover-se e com a Reação disponível; não evita retroativamente o dano e não funciona depois de outra defesa ativa contra a mesma resolução. Distância e impedimentos permanecem os da habilidade. Âncora do eu: Reação, 6 Karma, uma vez por cena, antes de aplicar um banimento, teleporte hostil ou deslocamento sobrenatural que retiraria você de sua posição. Teste Espírito + Ocultismo contra o resultado já rolado da fonte como CD; se ela não rolou, seu usuário rola a combinação da fonte para estabelecer essa CD. O dado adicional de Instabilidade espacial entra uma vez nessa rolagem da fonte, inclusive se ela for feita agora. Sucesso impede somente a mudança de posição ou plano; dano e demais condições continuam. Falha aplica o efeito completo, sem parcial. Não permite uma segunda defesa ativa na mesma resolução e não rompe um selamento já estabelecido. Sua Âncora de identidade inicial só acrescenta o dado quando o efeito também alterar corpo, memória, nome ou identidade, não por qualquer empurrão."
+          "name": "Horizonte de Eventos",
+          "description": "Escolha Espírito, Intelecto ou Presença e mantenha duas Âncoras. Uma vez por cena, como Livre, conecte-as por três rodadas. Troque de posição por até 3 m entre elas uma vez por turno e some 1d20 aos testes de técnicas. Um inimigo que tente sair do intervalo sofre 2d10 de dano Mental e tem seu deslocamento reduzido à metade.",
+          "kind": "Habilidade"
         }
       ],
       "progression": [
         {
           "stage": "II",
-          "name": "Herança — Etapa II",
-          "description": "Memória do próprio nome: Passiva. Durante um intervalo seguro, registre um fato verificável sobre si e associe-o a um gesto, objeto ou palavra de referência. Mantenha apenas um registro. Depois de sofrer alteração sobrenatural de memória ou identidade, perceber essa referência informa que há uma discrepância, sem ação ou teste próprios. O aviso não desfaz a alteração, não revela toda a verdade e não permite agir enquanto estiver Inconsciente ou controlado. A referência precisa existir fora da memória adulterada; repetir uma palavra que o efeito apagou não cria acesso automático a ela."
+          "name": "Passo de Fresta",
+          "description": "Como Movimento ou Reação de 1 Karma, uma vez por rodada, troque de lugar com a Âncora sem provocar Reações. Inimigos adjacentes à chegada sofrem CA −1 até o fim do seu turno."
         },
         {
           "stage": "IV",
-          "name": "Herança — Etapa IV",
-          "description": "Passo de fenda: Movimento, 3 Karma, automático, uma vez por turno. Transfira seu corpo e a carga normal para um espaço livre percebido a até 5 metros, com linha de efeito entre origem e destino. É um deslocamento instantâneo, sem percorrer os pontos intermediários e sem provocar reações disparadas apenas por movimento. Não atravessa cobertura total, selo ou barreira que proíba a passagem; não pode ser usado estando Agarrado ou Imobilizado. Não leva outra criatura nem muda porte, anatomia ou reservas. Instabilidade espacial continua valendo contra efeitos hostis."
+          "name": "Dobra de Singularidade",
+          "description": "Uma vez por rodada, como Reação a técnica sobrenatural ou disparo, gaste 2 Karma para reduzir dano em Espírito mais Etapa. Guarde o eco na Âncora: o próximo ataque ou técnica soma 1d10 de dano de Sombra."
         },
         {
           "stage": "VI",
-          "name": "Herança — Etapa VI",
-          "description": "Retirada pela fenda: Passo de fenda também pode ser usado como Reação, pagando seus mesmos 3 Karma, imediatamente depois de sofrer um ataque total de origem percebida e aplicar todas as consequências. Continua sendo no máximo um Passo de fenda por turno, somando as duas formas de uso. Exige permanecer consciente, capaz de mover-se e com a Reação disponível; não evita retroativamente o dano e não funciona depois de outra defesa ativa contra a mesma resolução. Distância e impedimentos permanecem os da habilidade. Âncora do eu: Reação, 6 Karma, uma vez por cena, antes de aplicar um banimento, teleporte hostil ou deslocamento sobrenatural que retiraria você de sua posição. Teste Espírito + Ocultismo contra o resultado já rolado da fonte como CD; se ela não rolou, seu usuário rola a combinação da fonte para estabelecer essa CD. O dado adicional de Instabilidade espacial entra uma vez nessa rolagem da fonte, inclusive se ela for feita agora. Sucesso impede somente a mudança de posição ou plano; dano e demais condições continuam. Falha aplica o efeito completo, sem parcial. Não permite uma segunda defesa ativa na mesma resolução e não rompe um selamento já estabelecido. Sua Âncora de identidade inicial só acrescenta o dado quando o efeito também alterar corpo, memória, nome ou identidade, não por qualquer empurrão."
+          "name": "Horizonte de Eventos",
+          "description": "Escolha Espírito, Intelecto ou Presença e mantenha duas Âncoras. Uma vez por cena, como Livre, conecte-as por três rodadas. Troque de posição por até 3 m entre elas uma vez por turno e some 1d20 aos testes de técnicas. Um inimigo que tente sair do intervalo sofre 2d10 de dano Mental e tem seu deslocamento reduzido à metade."
         }
       ]
     }

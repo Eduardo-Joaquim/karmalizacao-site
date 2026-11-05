@@ -374,15 +374,15 @@ O candidato enfrenta sozinho uma prova conduzida por um examinador de um ranque 
 
 **O examinador avalia:**
 
-domínio das próprias capacidades;
+Domínio das próprias capacidades;
 
-decisões sob pressão;
+Decisões sob pressão;
 
-proteção de terceiros contra riscos desnecessários;
+Proteção de terceiros contra riscos desnecessários;
 
-capacidade de reconhecer retirada ou mudança de objetivo;
+Capacidade de reconhecer retirada ou mudança de objetivo;
 
-cumprimento da missão ou demonstração convincente de prontidão.
+Cumprimento da missão ou demonstração convincente de prontidão.
 
 O candidato não precisa derrotar o examinador. Precisa provar que consegue assumir as responsabilidades do próximo ranque.
 
@@ -492,21 +492,21 @@ Alcançar o total necessário permite realizar uma Prova da Torre. Ela não é o
 
 **Exemplos incluem:**
 
-retornar de uma primeira expedição com uma descoberta;
+Retornar de uma primeira expedição com uma descoberta;
 
-compreender e explorar corretamente uma lei da Torre;
+Compreender e explorar corretamente uma lei da Torre;
 
-recuperar uma rota que havia sido perdida;
+Recuperar uma rota que havia sido perdida;
 
-superar ou negociar com um guardião;
+Superar ou negociar com um guardião;
 
-liderar uma equipe durante Pressão elevada;
+Liderar uma equipe durante Pressão elevada;
 
-estabelecer um Marco ou abrigo que outras expedições possam utilizar;
+Estabelecer um Marco ou abrigo que outras expedições possam utilizar;
 
-sobreviver a uma alteração de corpo, memória, nome ou identidade;
+Sobreviver a uma alteração de corpo, memória, nome ou identidade;
 
-confrontar um fenômeno Transcendental e conseguir retornar.
+Confrontar um fenômeno Transcendental e conseguir retornar.
 
 O personagem precisa alcançar o total de Marcas e cumprir uma prova adequada à nova etapa.
 
@@ -544,11 +544,11 @@ Seu poder não vem de uma instituição nem da Torre, mas da reputação constru
 
 **Ao escolher este caminho, o personagem registra:**
 
-uma frase pela qual deseja ser conhecido;
+Uma frase pela qual deseja ser conhecido;
 
-dois princípios que procura seguir;
+Dois princípios que procura seguir;
 
-um limite que se recusa a ultrapassar.
+Um limite que se recusa a ultrapassar.
 
 **Exemplo:** “Nunca abandona quem aceitou proteger”, com os princípios de cumprir acordos e proteger inocentes, mas recusando trabalhar com traficantes de pessoas.
 
@@ -574,17 +574,17 @@ Matar repetidamente criaturas fracas, inventar contratos entre aliados ou encena
 
 Ao alcançar o total necessário, a reputação do personagem provoca uma consequência. Pode ser:
 
-um rival tentando superá-lo;
+Um rival tentando superá-lo;
 
-uma comunidade pedindo ajuda;
+Uma comunidade pedindo ajuda;
 
-uma acusação contra seu nome;
+Uma acusação contra seu nome;
 
-alguém cobrando um favor antigo;
+Alguém cobrando um favor antigo;
 
-uma autoridade tentando recrutá-lo ou controlá-lo;
+Uma autoridade tentando recrutá-lo ou controlá-lo;
 
-uma ameaça procurando especificamente por ele.
+Uma ameaça procurando especificamente por ele.
 
 Resolver essa consequência concede a nova etapa de Renome e sua recompensa de Perícia. Não é necessário vencer um duelo; o personagem precisa demonstrar o que seu nome representa.
 
@@ -647,187 +647,223 @@ Os benefícios de origem são passivos, sem Karma ou preparo adicional; usam a a
 
 ## Herança e os três marcos raciais
 
-O Traço Base é recebido na criação. As evoluções raciais chegam somente nas Etapas II, IV e VI. Na Etapa I o traço-base já está disponível; III, V e VII não concedem outra evolução racial. Raça não é classe, jurisdição ou alinhamento moral.
-
-### Ghoul
-
-Rework Completo — Predador de Mutação, Sangue e Voracidade.
-
-#### Voracidade Carmesim · Etapa I
-
-Suas presas e garras contam como armas naturais de contato (1d8 de Dano Físico cortante/perfurante, usando Luta). Você fareja sangue exposto e criaturas abaixo de 50% da Vida a até 10 m (mesmo através de fumaça ou penumbra) e pode consumir biomassa/sangue fresco como Ação de Movimento para estabilizar o próprio organismo, encerrando Sangrando em si mesmo.
-
-#### Órgão Predatório (Manifestação de Caça) · Etapa II
-
-Ao iniciar um combate ou ao consumir sangue/biomassa com Ação de Movimento, você desperta sua estrutura predatória celular pelo resto da cena (1x por cena sem custo, ou 2 Karma para reativar): Recebe +1d20 em testes de Luta e Atletismo; Seu deslocamento aumenta em +2 m quando se move na direção de um inimigo ferido; Recebe Resistência 1 contra Dano Físico.
-
-#### Regeneração Celular Voraz · Etapa IV
-
-Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, sempre que você obtiver Acerto Total com ataque desarmado/arma natural ou técnica de alcance de contato contra uma criatura viva/orgânica, você devora o impacto vital: Recupera Constituição + Etapa pontos de Vida (se já estiver com a Vida máxima, recebe metade desse valor como Escudo Temporário até o fim do próximo turno); Se o alvo estiver Sangrando, Caído ou abaixo de 50% da Vida, esse ataque causa +1d8 de Dano Físico adicional.
-
-#### Apogeu da Fome (Predador de Ruptura) · Etapa VI
-
-Seus ataques naturais e técnicas de contato ignoram até 3 pontos de Resistência do alvo. Além disso, uma vez por cena, quando sua Vida cair para 50% ou menos (ou como Reação ao sofrer um Acerto Total), você entra em Frenesi Predatório por 3 rodadas: Recebe +2 na CA, imunidade às condições Abalado e Caído, e todos os seus ataques corpo a corpo e técnicas Marciais/Corruptas de contato recebem +1 dado base de dano.
+A raça vem primeiro: nela vivem o corpo, os sentidos e o poder que ninguém aprende em uma escola. A classe ensina a agir sob pressão. A técnica é a maneira singular de pôr ambas a serviço de uma intenção. O traço nasce na criação; a herança amadurece nas Etapas II, IV e VI.
 
 ### Humano
 
-Adaptação Tática, Versatilidade e Determinação.
+A vontade não é herança de um trono. É a chama que ainda arde quando o destino já deu seu veredito.
 
-#### Versatilidade Obstinada · Etapa I
+| Atributos raciais                                                             | Perícias de linhagem    | Vitalidade e Karma          | Assinatura racial |
+|-------------------------------------------------------------------------------|-------------------------|-----------------------------|-------------------|
+| +1 em Força ou Agilidade ou Constituição ou Intelecto ou Presença ou Espírito | duas perícias à escolha | +5 Vida; sem bônus de Karma | Inconformismo     |
 
-Começa com +2 pontos Comuns de Perícia adicionais na criação e recebe +1 no limite de itens em Prontidão.
+#### Etapa I — Inconformismo
 
-#### Improviso sob Pressão · Etapa II
+Comece cada cena com 2 Ímpetos, até o limite da Etapa. Recupere 1 ao tirar 20 no dado escolhido ou ao cair abaixo de metade da Vida pela primeira vez na cena. Gaste 1 antes de um teste para acrescentar 1d20, ou troque a perda de uma ação ou uma condição menor por um passo tático de 2 m.
 
-Escolhe 1 perícia para elevar gratuitamente em +1 nível de treinamento (respeitando o teto da Etapa). Além disso, 1x por cena, pode rerrolar 1 dado d20 da sua reserva em qualquer teste de perícia e escolher o melhor resultado.
+#### Etapa II — Leitura de Brecha
 
-#### Cadência Tática · Etapa IV
+Escolha uma perícia adicional, respeitando o teto da Etapa. Ao gastar Ímpeto em ataque ou técnica, abra uma brecha: o próximo ataque aliado contra o alvo reduz em 2 os limites de Acerto Parcial e Total até o início do seu próximo turno.
 
-Recebe +1 Reação adicional por rodada para manobras defensivas/táticas (Esquiva, Aparar ou Auxílio). Além disso, escolhe 1 Técnica do seu repertório como Técnica Assinatura Humana, reduzindo seu custo final em -1 Karma (mínimo 1).
+#### Etapa IV — Sobrevivência Indomável
 
-#### Indomável (Quebra de Limite) · Etapa VI
+Seu limite sobe para 3. Como Reação ao sofrer dano ou condição debilitante, gaste 1 Ímpeto: receba Escudo igual à soma de Constituição, Presença e Etapa antes do dano e ignore uma condição física ou mental até o fim do próximo turno.
 
-Uma vez por cena, ao obter um Acerto Parcial em um ataque ou técnica, pode convertê-lo automaticamente em Acerto Total (ou, ao sofrer um Acerto Total inimigo, pode usar sua Reação para convertê-lo em Acerto Parcial e remover 1 condição ativa sobre si).
+#### Etapa VI — Recusa ao Fim
+
+Seu limite sobe para 4 e você escolhe mais um Atributo. Uma vez por cena, gaste 2 Ímpetos após ver a rolagem para elevar Falha a Parcial ou Parcial a Total. Em vez disso, no seu turno, execute uma Principal adicional: uma técnica de até Grau III sem pagar seu custo-base. Ampliações mantêm o custo.
 
 ### Elfo
 
-Fluxo Kármico, Precisão Solar e Sintonia Natural.
+O arqueiro élfico lê a paisagem pelo que ela devolve: a sombra entre folhas, o ar atrás da flecha, a luz que se parte no metal.
 
-#### Sintonia de Elaranth · Etapa I
+| Atributos raciais            | Perícias de linhagem                         | Vitalidade e Karma | Assinatura racial  |
+|------------------------------|----------------------------------------------|--------------------|--------------------|
+| +1 em Agilidade ou Intelecto | uma entre Percepção, História, Sobrevivência | +4 Vida e +4 Karma | Ressonância Élfica |
 
-Ignora terreno difícil natural (raízes, mata, pedras soltas), enxerga na penumbra como luz plena e recebe +1 na reserva máxima de Karma por Etapa (+Etapa Karma).
+#### Etapa I — Ressonância Élfica
 
-#### Fluxo Limpo de Canalização · Etapa II
+Ignore terreno difícil natural e penalidade de penumbra. Ao mover-se ao menos 3 m e atacar à distância no mesmo turno, entre em Harmonia até o início do seu próximo turno. Em Harmonia, alcance +3 m e CA +1 contra disparos.
 
-Recebe +1d20 em testes de Canalização de Karma e Pontaria. Sempre que executar uma técnica de alcance médio ou longo (15 m+), pode deslocar-se 2 m sem provocar Reações antes ou depois do disparo.
+#### Etapa II — Refração do Véu Verde
 
-#### Ressonância de Reserva · Etapa IV
+Escolha Canalização de Karma ou Pontaria. Em Harmonia, ignore cobertura parcial. Ao executar técnica, deslize 3 m sem Reações ou purgue uma condição ambiental ou elemental sua ou de aliado a até 5 m.
 
-Uma vez por rodada, quando o dado selecionado da sua rolagem de ataque ou técnica for 17 ou mais natural no d20, você recupera imediatamente 2 Karma (ou 3 Karma na Etapa VI). Além disso, recebe Resistência 2 contra Dano Kármico de matriz Elemental.
+#### Etapa IV — Cálice de Luz Perene
 
-#### Transcendência do Zênite · Etapa VI
+Aumente Karma máximo em valor igual à Etapa. Uma vez por rodada, em Harmonia, um Acerto Total ou 17 natural ou mais recupera 2 Karma e causa dano adicional igual a Intelecto mais Etapa, do mesmo tipo, ao alvo ou a um segundo inimigo a até 4 m dele.
 
-O alcance de todas as suas técnicas Kármicas, Elementais e ataques de Pontaria aumenta em +5 m (técnicas de contato ganham alcance de 3 m). Uma vez por cena, como Ação Livre no seu turno, pode reduzir em -3 Karma o custo da próxima técnica de Grau III, IV ou V que executar naquela rodada (mínimo 1).
+#### Etapa VI — Zênite Astral
+
+Escolha Agilidade, Intelecto ou Espírito. Em Harmonia, some 1d20 a Canalização de Karma, Controles elementais e Pontaria. Uma vez por cena, como Livre, acenda o Zênite por três rodadas: técnicas custam 2 Karma a menos, mínimo 1; um aliado que atravesse o rastro luminoso recebe Vantagem no próximo teste pertinente.
 
 ### Anão
 
-Estabilidade Inabalável, Engenharia de Forja e Densidade.
+A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver o peso.
 
-#### Densidade da Rocha · Etapa I
+| Atributos raciais           | Perícias de linhagem         | Vitalidade e Karma          | Assinatura racial   |
+|-----------------------------|------------------------------|-----------------------------|---------------------|
+| +1 em Constituição ou Força | uma entre Criação, Atletismo | +8 Vida; sem bônus de Karma | Fornalha de Inércia |
 
-Recebe +2 de Vida máxima por Etapa (+2 × Etapa), não tem seu deslocamento reduzido pelo uso de Armadura Pesada ou Escudo Pesado e possui +2 Espaços de Carga sem penalidade.
+#### Etapa I — Fornalha de Inércia
 
-#### Base Inamovível · Etapa II
+Receba 2 espaços de carga e ignore a perda de deslocamento por armadura e escudo pesados. Ao sofrer um golpe que cause dano, mesmo absorvido, ou terminar o turno após mover-se no máximo 3 m, acumule uma Carga de Bigorna, até 3. Cada carga concede Resistência 1 contra Marcial, Terra e Fogo.
 
-Recebe +1d20 para resistir a Empurrar, Derrubar e Desarmar, e reduz em -3 m qualquer deslocamento forçado contra você. Suas armas e armaduras equipadas não podem ser quebradas por efeitos comuns e recebem +1 no dano base (armas) ou +1 na Resistência contra acerto parcial (armaduras).
+#### Etapa II — Têmpera de Nidavellir
 
-#### Couraça de Forja Viva · Etapa IV
+Some 1d20 contra empurrão, queda e desarme. Escolha temperar a arma para +1 dano-base ou a proteção para +1 Resistência. Ao acertar de perto, pode gastar todas as cargas: cada uma soma 1d6 de dano; o alvo recua 2 m ou perde 2 m de deslocamento por uma rodada.
 
-Você recebe Resistência 2 permanente contra Dano Físico (acumulável em +1 caso já possua Resistência de armadura/domínio). Além disso, quando realiza um Acerto Total com arma corpo a corpo ou técnica Marcial/Terra, aplica Abalado ou reduz o deslocamento do alvo em -2 m por 1 rodada.
+#### Etapa IV — Reação Sísmica
 
-#### Baluarte de Nidavellir · Etapa VI
+Ganhe 2 de Vida máxima por Etapa. Uma vez por rodada, como Reação a acerto de inimigo até 5 m contra você ou aliado adjacente, gaste 2 cargas ou 2 Karma: reduza dano em Constituição mais Etapa e imponha CA −2 ao atacante até o fim do próximo turno dele.
 
-Uma vez por cena, como Reação ao sofrer um Acerto Total (de qualquer tipo de dano universal), você trava os pés e reduz o dano final sofrido pela metade, tornando-se imune a movimento forçado e condições físicas até o início do seu próximo turno.
+#### Etapa VI — Monólito de Ferro
+
+Escolha Constituição ou Força. O limite de cargas sobe para 4. Uma vez por cena, como Livre ou Reação a Acerto Total, por três rodadas reduza à metade o dano sofrido e ignore movimento forçado, Caído e Atordoado. Só inimigos tratam a área em 4 m como terreno difícil.
 
 ### Demi-humano
 
-Instinto Feral, Linhagem Bestial e Impulso.
+A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que percebe a emboscada e no pé que já saltou quando a voz manda correr.
 
-#### Sangue de Linhagem Feral · Etapa I
+| Atributos raciais                    | Perícias de linhagem                                     | Vitalidade e Karma          | Assinatura racial    |
+|--------------------------------------|----------------------------------------------------------|-----------------------------|----------------------|
+| +1 em Agilidade ou Força ou Espírito | uma entre Percepção, Atletismo, Acrobacia, Sobrevivência | +6 Vida; sem bônus de Karma | Despertar de Aspecto |
 
-Recebe sentidos aguçados (+1d20 em Percepção auditiva/olfativa), +1 m de Deslocamento base e escolhe uma adaptação corporal (Garras 1d8, Impulso de Salto/Escalada ou Fôlego Anfíbio/Alado).
+#### Etapa I — Despertar de Aspecto
 
-#### Bote da Fera · Etapa II
+Some 1d20 à Percepção auditiva ou olfativa. No início do turno, como Livre, escolha Garra, Asa ou Carapaça. Garra causa 1d8 desarmado ou +2 com arma e fere no Total. Asa soma 2 m, amortece quedas até 10 m e cruza obstáculos sem Reações. Carapaça concede CA +1 e Resistência 2 contra Fogo, Água, Vento ou Terra à escolha.
 
-Sempre que você se deslocar pelo menos 4 m em linha reta antes de atacar no mesmo turno, seu primeiro ataque ou técnica Marcial naquela rodada recebe +1d20 no teste de acerto e soma +Etapa ao dano final.
+#### Etapa II — Marca de Caça
 
-#### Instinto de Contra-Ataque · Etapa IV
+Como Livre, uma vez por turno, marque uma presa visível. Saiba sua direção mesmo atrás de cobertura; se percorreu 3 m, some 1d20 ao primeiro ataque do turno contra ela.
 
-Seus reflexos animais disparam sob ameaça: uma vez por rodada, quando um inimigo adjacente erra um ataque contra você (Falha), você pode usar sua Reação para desferir imediatamente um ataque básico corpo a corpo contra ele sem custo de Karma.
+#### Etapa IV — Reflexo Selvagem
 
-#### Despertar da Fera Ancestral · Etapa VI
+Uma vez por rodada, como Reação quando um inimigo erra contra você ou deixa seu contato, avance até 3 m e desfira ataque básico, Derrubar ou Agarrar sem Karma.
 
-Uma vez por cena (Ação Livre, duração de 3 rodadas), você libera o ápice da sua linhagem: recebe +2 m de deslocamento, +1d20 em todos os testes de Força e Agilidade, e seus ataques e técnicas Marciais/Elementais causam +1 dado base de dano.
+#### Etapa VI — Forma Ancestral Quimérica
 
-### Demônio
-
-Autoridade de Aqueronte, Pressão Abissal e Combustão.
-
-#### Estigma de Aqueronte · Etapa I
-
-Recebe Resistência 2 contra efeitos de calor/fogo e venenos comuns, enxerga perfeitamente na escuridão e recebe +1d20 em Intimidação.
-
-#### Brasa de Retaliação · Etapa II
-
-Sempre que você sofrer dano de um inimigo a até 5 m, você acumula Rancor Abissal: no seu próximo turno, seu primeiro ataque ou técnica que atingir um inimigo causa +1d8 de Dano Kármico (Fogo/Corrupto/Sombra) adicional.
-
-#### Soberania do Pacto · Etapa IV
-
-Suas técnicas de matriz Elemental (Fogo/Combustão), Corrupta ou Divina têm seu custo reduzido em -1 Karma (mínimo 1) uma vez por rodada. Além disso, inimigos que estejam Abalados, Queimando ou com Cargas de Corrupção sofrem -1 na CA contra seus ataques.
-
-#### Presença do Trono Abissal · Etapa VI
-
-Uma vez por cena, como Ação Livre por 3 rodadas, você emana pressão régia a até 5 m: inimigos na área têm sua faixa de Acerto Total ampliada em +1 a seu favor (você acerta o Total com CA em vez de CA+1), sofrem -1d20 em testes de vontade/Espírito e você recebe Escudo Temporário igual a Presença + Etapa no início de cada um desses 3 turnos.
+Escolha Força, Agilidade ou Espírito. Uma vez por cena, como Livre, mantenha os três Aspectos por três rodadas, acrescente um dado-base aos ataques e técnicas ofensivas e recupere Espírito mais Etapa de Vida no início de cada um desses turnos.
 
 ### Vampiro
 
-Subdobra de Sangue, Nobreza de Sárkora e Drenagem.
+Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas coisas é oferecida sem que alguém pague o preço.
 
-#### Linhagem de Sárkora · Etapa I
+| Atributos raciais                       | Perícias de linhagem    | Vitalidade e Karma          | Assinatura racial |
+|-----------------------------------------|-------------------------|-----------------------------|-------------------|
+| +1 em Agilidade ou Presença ou Espírito | duas perícias à escolha | +7 Vida; sem bônus de Karma | Reserva de Vitae  |
 
-Enxerga no escuro, sente batimentos cardíacos a até 10 m e possui ataque de presas/drenagem em contato (1d8 físico/kármico) que recupera 2 PV ao causar Acerto Total em criatura viva (1x por rodada).
+#### Etapa I — Reserva de Vitae
 
-#### Sangue Régio Manipulado · Etapa II
+Enxergue no escuro e perceba batimentos em 10 m. Presas causam 1d8 Marcial. Ao ferir criatura viva com presas, arma de contato ou técnica de Sangue ou Sombra, ganhe 1 Vitae, até 3. Gaste 1 Vitae ou 3 Vida para curar Etapa mais 2 de Vida ou acrescentar 1d6 ao próximo ataque. Permanecem a sede de sangue e a vulnerabilidade canônica ao sol direto.
 
-Você pode gastar de 1 a 4 pontos da própria Vida como Ação Livre ao lançar uma técnica para somar +1d6 (para 2 PV) ou +1d10 (para 4 PV) ao dano da técnica, ou para receber +1d20 no teste de acerto. Sua cura por drenagem no Traço Base sobe para Etapa + 2 PV.
+#### Etapa II — Dízimo Carmesim
 
-#### Passo de Névoa Sanguínea · Etapa IV
+Gaste 2 Vitae ou 4 Vida ao atacar para ganhar 1d20 no teste e 1d10 no dano. Ao acertar, aplique Sangrando ou, com olhar hipnótico sustentado por Presença, Abalado.
 
-Recebe Resistência 2 contra efeitos de sangramento, necróticos e venenos sanguíneos. Como Reação ao ser alvo de um ataque (1x por rodada, custo 2 Karma), você reduz o dano sofrido em -Etapa e desliza até 4 m em forma de névoa rubra sem provocar Reações.
+#### Etapa IV — Transfusão de Névoa Rubra
 
-#### Aristocracia Imortal · Etapa VI
+Seu limite sobe para 5; Resistência 3 contra sangramento, veneno e efeitos necróticos ou de Sombra. Uma vez por rodada, como Reação a ataque, gaste 1 Vitae ou 2 Karma para reduzir dano em Espírito mais Etapa e reaparecer até 5 m sem Reações. Atravesse um inimigo vivo para drenar 1 Vitae.
 
-Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz brevemente em névoa carmesim e se recompõe a até 5 m com Etapa × 4 pontos de Vida, limpando condições de imobilização/sangramento.
+#### Etapa VI — Trono Imortal
+
+Escolha Presença, Agilidade ou Espírito. Uma vez por cena, ao sofrer dano que zeraria sua Vida, cause 2d8 aos inimigos adjacentes e recomponha-se a até 6 m com cinco vezes sua Etapa em Vida. Encerre condições físicas.
+
+### Demônio
+
+Diante de Aqueronte, até o silêncio tem cláusulas. O inimigo marcado pode escolher a quem ferir; só não pode escolher sair ileso.
+
+| Atributos raciais                   | Perícias de linhagem                                   | Vitalidade e Karma | Assinatura racial |
+|-------------------------------------|--------------------------------------------------------|--------------------|-------------------|
+| +1 em Presença ou Espírito ou Força | uma entre Intimidação, Enganação, Canalização de Karma | +5 Vida e +6 Karma | Selo de Coação    |
+
+#### Etapa I — Selo de Coação
+
+Enxergue no escuro e resista a Fogo e calor com 3. Uma vez por turno, ao atingir ou encarar como Livre a até 10 m, sele o inimigo até seu próximo turno. Se atacar ou usar técnica sem incluir você, ele sofre Etapa mais Presença de dano Mental. Se atacar você, seu próximo revide contra ele ganha 1d20 e 1d8 de dano.
+
+#### Etapa II — Combustão de Rancor
+
+Contra alvo marcado, Abalado ou Queimando, trate a CA como 1 ponto menor. Sua primeira técnica do turno contra ele custa 1 Karma a menos, mínimo 1.
+
+#### Etapa IV — Jurisdição dos Sete Círculos
+
+Quando um marcado falha num teste ou sofre Acerto Total seu, recupere 2 Karma e ganhe Escudo igual a Presença mais Etapa. Some 1d20 a Intimidação, Comunhão Divina e Controle da Corrupção.
+
+#### Etapa VI — Soberania do Trono Infernal
+
+Escolha Presença, Espírito ou Força. Uma vez por cena, como Livre, manifeste aura de 6 m por três rodadas. Inimigos na área ficam selados e perdem 1d20 para resistir mentalmente; reduza em 2 o limiar de Total de seus ataques contra eles. Suas técnicas ofensivas de Grau III ou superior somam um dado-base.
+
+### Ghoul
+
+O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o rastro abrir caminho no escuro e sua carne se prepara para caçar.
+
+| Atributos raciais                            | Perícias de linhagem               | Vitalidade e Karma          | Assinatura racial   |
+|----------------------------------------------|------------------------------------|-----------------------------|---------------------|
+| +1 em Constituição; +1 em Força ou Agilidade | uma entre Percepção, Sobrevivência | +6 Vida; sem bônus de Karma | Voracidade Carmesim |
+
+#### Etapa I — Voracidade Carmesim
+
+Garras e presas causam 1d8 Marcial com Luta. Fareje sangue e feridos até 12 m, mesmo sob invisibilidade ou fumaça. Ao ferir em contato ou consumir biomassa como Movimento, entre em Caça pela cena e encerre Sangrando em si.
+
+#### Etapa II — Órgão Predatório
+
+Durante a Caça, manifeste o órgão sem custo na primeira vez na cena; reativar custa 2 Karma. Escolha no turno: forma robusta dá 1d20 em Luta e Atletismo, 2 m ao avançar contra feridos e Resistência Marcial 2; forma alongada dá alcance 3 m e dano natural 1d10.
+
+#### Etapa IV — Regeneração Celular Voraz
+
+Com o órgão ativo, uma vez por rodada, Acerto Total de contato contra criatura viva cura Constituição mais Etapa; excedente vira Escudo. Contra Sangrando, Caído ou abaixo de metade da Vida, some 1d8 e impeça cura até o início do seu próximo turno.
+
+#### Etapa VI — Apogeu da Fome
+
+Escolha Constituição, Força ou Agilidade. Seus ataques e técnicas ignoram até 4 Resistência. Uma vez por cena, ao cair a metade da Vida ou menos ou como Reação a Total, entre em Frenesi por três rodadas: CA +2, imunidade a Abalado, Lento e Caído, e um dado-base adicional no dano.
 
 ### Tritão
 
-+1 Constituição, +1 Atletismo e +6 Vida..
+As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra seca, o tritão leva a maré consigo.
 
-#### Tritão — Traço de linhagem · Etapa I
+| Atributos raciais                                        | Perícias de linhagem               | Vitalidade e Karma          | Assinatura racial |
+|----------------------------------------------------------|------------------------------------|-----------------------------|-------------------|
+| +1 em Constituição; +1 em Força ou Agilidade ou Espírito | uma entre Atletismo, Sobrevivência | +6 Vida; sem bônus de Karma | Pressão Abissal   |
 
-Anfíbio: respire ar e água sem ação ou custo. Receba +1 dado num teste de manipulação de Água que já possa realizar; o traço não concede Controle de Água, uma técnica ou mudança gratuita de fonte. Leitura de corrente: receba +1 dado em testes diretamente ligados a nadar, navegar, perceber correntes ou atuar sob a água. Desidratação: depois de 12 horas sem hidratação adequada, fique Exausto. Vinte minutos de imersão e repouso encerram a condição.
+#### Etapa I — Pressão Abissal
 
-#### Herança — Etapa II · Etapa II
+Respire no ar e na água, nade com deslocamento pleno e resista a Água e Gelo com 3. Ao atacar ou executar uma técnica, o Pulso de Maré permite deslizar 2 m ou empurrar o alvo atingido 2 m.
 
-Voz submersa: Passiva, 0 Karma. Você fala e executa componentes vocais enquanto submerso, desde que consiga normalmente falar. Criaturas na mesma massa de água podem ouvi-lo a até 5 metros em condições comuns; ruído, barreiras e distância maior usam Percepção quando necessário. Isso não concede idioma, telepatia ou alcance adicional a habilidades sonoras. Pode continuar falando normalmente fora da água.
+#### Etapa II — Manto de Correnteza
 
-#### Herança — Etapa IV · Etapa IV
+CA +1 contra ataques à distância e 1d20 adicional para escapar de agarrões e imobilizações. Uma vez por rodada, o Pulso reduz em 2 m o deslocamento do alvo atingido até o próximo turno; com Água ou Gelo, pode impor Lento ou Enraizado conforme a técnica.
 
-Fôlego partilhado: Principal, 3 Karma, toque em uma criatura voluntária, automático. Durante até 1 TE, ela pode respirar água enquanto estiver na mesma massa contínua de água e a até 5 metros de você. Você sustenta apenas um beneficiário; uma nova ativação encerra a anterior. Sair desse alcance ou ficar Inconsciente encerra o efeito. Não concede natação, proteção contra pressão, frio, veneno ou gases. A criatura percebe o fim do vínculo e volta a depender do próprio fôlego; não sofre dano instantâneo apenas pelo encerramento.
+#### Etapa IV — Implosão de Fossa
 
-#### Herança — Etapa VI · Etapa VI
+Uma vez por rodada, como Reação a ataque de contato ou técnica, gaste 2 Karma, reduza o dano em Constituição mais Etapa e devolva 2d6 de dano de Água ao atacante.
 
-Leitura de esteira: Passiva que amplia Leitura de corrente. Enquanto submerso, você percebe movimento de corpos na mesma massa contínua de água a até 15 metros, sem depender de luz. Uma criatura que tenta se ocultar ainda exige Espírito + Percepção contra Furtividade para ser localizada, com empate a favor dela; o dado de Leitura de corrente aplica-se uma vez. Uma Movimento permite essa busca, com uma tentativa por alvo por turno. Não atravessa cobertura total nem revela ser imóvel, identidade ou pensamento; turbulência pode impor Desvantagem coerente. Maré conduzida: Movimento, 6 Karma, uma vez por cena, automático. Enquanto submerso, conduza até dois aliados voluntários inicialmente a até 2 metros de você num deslocamento conjunto de até 5 metros pela água. Cada participante precisa poder mover-se e respirar durante a passagem; você pode manter contato com um beneficiário de Fôlego partilhado. Todos seguem o mesmo trajeto possível e terminam em espaços livres próximos entre si, sem provocar reações disparadas apenas pelo movimento. Não atravessa parede ou selo, não remove Agarrado ou Imobilizado e não permite levar outra cadeia de criaturas. Não concede ação ou ataque aos passageiros.
+#### Etapa VI — Soberano do Leviatã
+
+Escolha Constituição, Força ou Espírito. Uma vez por cena, como Livre, crie uma zona de 6 m por três rodadas: aliados ganham 2 m e Resistência 3 contra Fogo e Marcial; inimigos têm CA −2 contra você. Suas técnicas de Água, Gelo, Vapor e Marciais somam um dado-base.
 
 ### Abissal
 
-+1 Espírito ou +1 Força, +1 em Ocultismo ou Canalização de Karma e +6 Karma máximo..
+Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar distante: leva ao avesso do lugar que já está ali.
 
-#### Abissal — Traço de linhagem · Etapa I
+| Atributos raciais           | Perícias de linhagem                                           | Vitalidade e Karma | Assinatura racial  |
+|-----------------------------|----------------------------------------------------------------|--------------------|--------------------|
+| +1 em Espírito ou Intelecto | uma entre Percepção, Ocultismo, História, Canalização de Karma | +4 Vida e +6 Karma | Fenda de Horizonte |
 
-Anatomia de fenda: você não respira de maneira comum, podendo ficar sem respirar por um dia. Âncora de identidade: receba +1 dado para resistir a possessão e a alterações de memória, nome, corpo ou identidade. Ossos Negros: ossos negros resistem ao decepamento: os membros não podem ser separados do corpo por um efeito de amputação. Dano, Ferimento Grave, fratura e incapacidade continuam possíveis. Enquanto consciente, percebendo o ataque e capaz de se defender, receba +2 CA, sem ação, custo ou teste; é o sentido de “ao defender” deste traço. Não exige gastar Principal em Defender e não se aplica contra agressão imperceptível ou estando Indefeso. Instabilidade espacial: efeitos de banimento, selamento ou deslocamento forçado recebem +1 dado contra você. Se obtiverem sucesso total, você também perde a Reação até o início do próximo turno.
+#### Etapa I — Fenda de Horizonte
 
-#### Herança — Etapa II · Etapa II
+Veja através de ilusões simples e escuridão mágica. Resistência 3 contra Sombra e Mental. Uma vez por turno, como Livre, posicione uma Âncora visível a até 10 m. Meça o alcance e a trajetória de suas técnicas a partir de você ou dela.
 
-Memória do próprio nome: Passiva. Durante um intervalo seguro, registre um fato verificável sobre si e associe-o a um gesto, objeto ou palavra de referência. Mantenha apenas um registro. Depois de sofrer alteração sobrenatural de memória ou identidade, perceber essa referência informa que há uma discrepância, sem ação ou teste próprios. O aviso não desfaz a alteração, não revela toda a verdade e não permite agir enquanto estiver Inconsciente ou controlado. A referência precisa existir fora da memória adulterada; repetir uma palavra que o efeito apagou não cria acesso automático a ela.
+#### Etapa II — Passo de Fresta
 
-#### Herança — Etapa IV · Etapa IV
+Como Movimento ou Reação de 1 Karma, uma vez por rodada, troque de lugar com a Âncora sem provocar Reações. Inimigos adjacentes à chegada sofrem CA −1 até o fim do seu turno.
 
-Passo de fenda: Movimento, 3 Karma, automático, uma vez por turno. Transfira seu corpo e a carga normal para um espaço livre percebido a até 5 metros, com linha de efeito entre origem e destino. É um deslocamento instantâneo, sem percorrer os pontos intermediários e sem provocar reações disparadas apenas por movimento. Não atravessa cobertura total, selo ou barreira que proíba a passagem; não pode ser usado estando Agarrado ou Imobilizado. Não leva outra criatura nem muda porte, anatomia ou reservas. Instabilidade espacial continua valendo contra efeitos hostis.
+#### Etapa IV — Dobra de Singularidade
 
-#### Herança — Etapa VI · Etapa VI
+Uma vez por rodada, como Reação a técnica sobrenatural ou disparo, gaste 2 Karma para reduzir dano em Espírito mais Etapa. Guarde o eco na Âncora: o próximo ataque ou técnica soma 1d10 de dano de Sombra.
 
-Retirada pela fenda: Passo de fenda também pode ser usado como Reação, pagando seus mesmos 3 Karma, imediatamente depois de sofrer um ataque total de origem percebida e aplicar todas as consequências. Continua sendo no máximo um Passo de fenda por turno, somando as duas formas de uso. Exige permanecer consciente, capaz de mover-se e com a Reação disponível; não evita retroativamente o dano e não funciona depois de outra defesa ativa contra a mesma resolução. Distância e impedimentos permanecem os da habilidade. Âncora do eu: Reação, 6 Karma, uma vez por cena, antes de aplicar um banimento, teleporte hostil ou deslocamento sobrenatural que retiraria você de sua posição. Teste Espírito + Ocultismo contra o resultado já rolado da fonte como CD; se ela não rolou, seu usuário rola a combinação da fonte para estabelecer essa CD. O dado adicional de Instabilidade espacial entra uma vez nessa rolagem da fonte, inclusive se ela for feita agora. Sucesso impede somente a mudança de posição ou plano; dano e demais condições continuam. Falha aplica o efeito completo, sem parcial. Não permite uma segunda defesa ativa na mesma resolução e não rompe um selamento já estabelecido. Sua Âncora de identidade inicial só acrescenta o dado quando o efeito também alterar corpo, memória, nome ou identidade, não por qualquer empurrão.
+#### Etapa VI — Horizonte de Eventos
+
+Escolha Espírito, Intelecto ou Presença e mantenha duas Âncoras. Uma vez por cena, como Livre, conecte-as por três rodadas. Troque de posição por até 3 m entre elas uma vez por turno e some 1d20 aos testes de técnicas. Um inimigo que tente sair do intervalo sofre 2d10 de dano Mental e tem seu deslocamento reduzido à metade.
 
 ### Personagens de outras linhagens
 
@@ -1885,6 +1921,8 @@ Antes de jogar, anote as três habilidades da classe e quais estão aprendidas, 
 
 # Capítulo 7 - Vida, CA, Evasão e cobertura
 
+O Karma alimenta a técnica; a natureza do golpe decide a proteção. Registre dano Marcial, Kármico, Divino, Corrupto ou Elemental com sua expressão. Agressões à mente causam dano Mental. Contra uma subdobra, aplique metade da maior defesa dos elementos de origem, arredondada para baixo. Consulte o Capítulo 10.
+
 Vida mede a capacidade de continuar agindo. CA mede o quanto é difícil produzir um impacto decisivo contra o personagem enquanto suas proteções funcionam. Evasão é a tentativa ativa de sair totalmente do ataque. Armadura não reduz dano por regra geral: sua função principal é compor a CA.
 
 ### Classe de Armadura
@@ -2262,7 +2300,7 @@ Um ritual exige foco e tempo de preparação. Registre a técnica ou improvisaç
 
 **Ao iniciar o ritual, escolha um benefício:**
 
-reduzir o custo final em 1 por rodada de preparação, até o máximo de 5;
+Reduzir o custo final em 1 por rodada de preparação, até o máximo de 5;
 
 receber +1 dado no teste principal; ou
 
@@ -2287,7 +2325,7 @@ As manobras abaixo são conhecidas automaticamente por quem possui o nível exig
 
 Para interações que dependam de Grau, Canalização simples não tem Grau de técnica; Barreira e Revestimento são I, passando a II quando pagos com seu reforço adicional; Reforço é I. Formas simples, refinada, superior e magistral correspondem a I, III, IV e V. Arma magistral consome o ápice de Grau V ao ser criada. Essas classificações não recalculam custos próprios ou liberam técnicas adicionais.
 
-**Preparação comum:** nenhuma, salvo ritual expresso. Canalização simples, Projeção, Barreira, Revestimento, Arma ou escudo, Reforço e Fontes kármicas exigem Canalização 1. Intervalo Kármico pode usar uma fonte pessoal não treinada quando houver acesso legítimo; aplique Perícia 0. Fluxo de retorno é passivo. Estas manobras possuem o custo final escrito, sem novo desconto de técnica conhecida.
+**Preparação comum:** Nenhuma, salvo ritual expresso. Canalização simples, Projeção, Barreira, Revestimento, Arma ou escudo, Reforço e Fontes kármicas exigem Canalização 1. Intervalo Kármico pode usar uma fonte pessoal não treinada quando houver acesso legítimo; aplique Perícia 0. Fluxo de retorno é passivo. Estas manobras possuem o custo final escrito, sem novo desconto de técnica conhecida.
 
 ### Canalização simples
 
@@ -2305,7 +2343,7 @@ Projeção afeta seres imateriais, mas não explora vulnerabilidade elemental ne
 
 ### Barreira Kármica
 
-**Requisito:** Canalização de Karma 1. **Ação:** Reação. **Custo:** 3 Karma. **Alvo:** você ou um aliado voluntário a até 5 m, percebido e com linha de efeito. Na Etapa III, o alcance máximo passa a 15 m.
+**Requisito:** Canalização de Karma 1. **Ação:** Reação. **Custo:** 3 Karma. **Alvo:** Você ou um aliado voluntário a até 5 m, percebido e com linha de efeito. Na Etapa III, o alcance máximo passa a 15 m.
 
 Quando um ataque percebido estiver prestes a ser comparado com a CA do protegido, condense uma superfície kármica na trajetória e conceda **+2 CA somente contra aquela resolução**. Pode declarar depois de conhecer a rolagem, mas antes de definir o acerto e aplicar dano ou condições. Pague **5 Karma no total** para receber **+4 CA**, em vez de +2.
 
@@ -2315,7 +2353,7 @@ Essa Reação não inclui Esquiva ou Bloqueio. Não some duas Barreiras Kármica
 
 Efeitos que não enfrentam CA não são interceptados por esse bônus. Ataques de área continuam sendo resolvidos contra os demais alvos normalmente. Paredes, prisões e proteções duradouras exigem uma técnica própria com sua construção, custos e limites.
 
-**Exemplo:** uma personagem tem CA 18 e recebe um ataque de resultado 21. Antes da comparação final, paga 5 Karma e usa sua Reação: a CA daquela incidência passa a 22. O ataque passa de total para parcial; role seu dano, divida pela metade e aplique Resistência e escudo na ordem normal. Depois, a CA volta a 18. A técnica inimiga não foi anulada.
+**Exemplo:** Uma personagem tem CA 18 e recebe um ataque de resultado 21. Antes da comparação final, paga 5 Karma e usa sua Reação: a CA daquela incidência passa a 22. O ataque passa de total para parcial; role seu dano, divida pela metade e aplique Resistência e escudo na ordem normal. Depois, a CA volta a 18. A técnica inimiga não foi anulada.
 
 ### Revestimento
 
@@ -2331,13 +2369,13 @@ Condense Karma em arma ou escudo até o fim da cena. A forma usa categorias, dan
 
 Ativação: Principal; alcance pessoal, em uma mão livre; preparação nenhuma; criação de um objeto, salvo as duas armas leves da forma refinada. Use uma categoria do catálogo e suas exigências. Escudos precisam ser empunhados e defendidos normalmente. Armas de projétil criam até vinte projéteis kármicos apenas para aquela arma, consumidos no disparo e desfeitos ao encerrar; não produzem munição de fogo ou explosivos.
 
-**Forma simples — Canalização 1, 3 Karma:** arma leve ou média, ou escudo leve.
+**Forma simples — Canalização 1, 3 Karma:** Arma leve ou média, ou escudo leve.
 
-**Forma refinada — Etapa III e Canalização 1, 5 Karma:** arma pesada, duas armas leves ou escudo médio.
+**Forma refinada — Etapa III e Canalização 1, 5 Karma:** Arma pesada, duas armas leves ou escudo médio.
 
-**Forma superior — Etapa V e Canalização 2, 7 Karma:** formas anteriores ou escudo pesado, com até duas propriedades especiais, incluindo Condutora ou Ritualística se escolhida.
+**Forma superior — Etapa V e Canalização 2, 7 Karma:** Formas anteriores ou escudo pesado, com até duas propriedades especiais, incluindo Condutora ou Ritualística se escolhida.
 
-**Forma magistral — Etapa VII e Canalização 3, 10 Karma:** use a forma superior, receba +1 de dano e altere sua forma ou uma propriedade uma vez por turno com interação simples.
+**Forma magistral — Etapa VII e Canalização 3, 10 Karma:** Use a forma superior, receba +1 de dano e altere sua forma ou uma propriedade uma vez por turno com interação simples.
 
 Fora de perigo, a criação é automática. Sob pressão, teste Espírito + Canalização contra CD 12 na forma simples, 15 na refinada, 20 na superior ou 24 na magistral. Sucesso cria a forma até o fim da cena. Em falha comum, devolva metade do Karma pago, arredondada para baixo; a forma surge instável e dura só até o fim do próximo turno. Em 1 natural selecionado, não surge e não há devolução. Apenas um conjunto de forma permanece ativo: criar outro encerra o anterior. Soltar ou emprestar não cria nova instância; a 15 metros do criador o objeto se desfaz. Desfazer voluntariamente é Livre, sem reembolso.
 
@@ -2355,9 +2393,9 @@ Com Etapa III e Canalização 1, declare a Ampliação antes da rolagem e pague 
 
 Ampliação integra a ação original, sem ação, teste ou preparo separados. Seu alcance e duração são os da técnica. Só se aplica a efeito compatível e não melhora uma reserva já criada nem todas as futuras execuções pela cena. Um bônus em deslocamento é medido em metros; “Potência” não aumenta CD, CA, número de alvos ou regeneração de Karma.
 
-**Potência:** pague 2 Karma para acrescentar +2 ao dano, cura, escudo ou deslocamento produzido.
+**Potência:** Pague 2 Karma para acrescentar +2 ao dano, cura, escudo ou deslocamento produzido.
 
-**Dado adicional:** pague 3 Karma para acrescentar um dado do mesmo tipo ao dano, cura ou escudo. Um segundo dado custa mais 3 Karma. O limite é de dois dados adicionais.
+**Dado adicional:** Pague 3 Karma para acrescentar um dado do mesmo tipo ao dano, cura ou escudo. Um segundo dado custa mais 3 Karma. O limite é de dois dados adicionais.
 
 A primeira Ampliação não impõe penalidade. Uma segunda Ampliação diferente custa mais 1 Karma; na Etapa VII, com Canalização 3, essa sobretaxa é dispensada. Repetir Potência impõe Desvantagem ao teste principal e aumenta em 1 a CD secundária por repetição. Dado adicional segue seu limite próprio.
 
@@ -2396,33 +2434,70 @@ Poções, habilidades, fontes e rituais nunca restauram acima do máximo dispon�
 
 <div class="section" matrices="2">
 
-## Dano universal e matriz de criação
+## O que o golpe se torna
 
-Todo dano pertence a uma das três categorias universais. Físico é impacto material: corte, projétil, contusão e perfuração. Mental é agressão psíquica, espiritual-cognitiva, ilusão lesiva ou choque de vontade. Kármico reúne os ataques mágicos e sobrenaturais, inclusive os de origem Elemental, Divina e Corrupta. A origem identifica de onde o efeito veio; não cria uma quarta categoria de Resistência. Uma rocha lançada pode causar Físico; uma descarga elemental, Kármico. Registre a categoria na técnica, antes de usá-la.
+O Karma alimenta a existência. Quando alguém o reúne na mão, na lâmina ou na voz, essa força dá à técnica o primeiro impulso. O golpe, porém, só recebe seu nome depois da transformação. Um ferreiro pode alimentar uma chama com óleo; a queimadura continua sendo de fogo. Assim também, uma técnica que gasta Karma pode ferir pelo aço, pelo calor, por decreto divino ou pela entropia da Marca.
 
-Resistência específica continua exigindo correspondência: Resistência contra Fogo protege de dano Kármico com a expressão Fogo, não de toda magia. Resistências da mesma categoria não se somam sem autorização expressa. Uma armadura física não absorve automaticamente dano Mental.
+O dano **Marcial** é material: cortante, perfurante, contundente ou balístico. O dano **Kármico** é a descarga de força espiritual que não foi convertida. O dano **Divino** carrega a autoridade de uma outorga; só atravessa resistências se a expressão ou o efeito comprado disser quanto. O dano **Corrupto** fere com a matéria impossível da Marca. Uma manifestação **Elemental** sempre registra a expressão: Elemental / Fogo, Elemental / Raio, Elemental / Gelo. O dano Mental continua reservado às agressões à mente; não é uma sexta matriz de construção.
 
-| Matriz    | I · 2 Karma | II · 3 Karma | III · 4 Karma | IV · 6 Karma | V · 12 Karma | Dano universal padrão                    |
-|-----------|-------------|--------------|---------------|--------------|--------------|------------------------------------------|
-| Kármico   | 1d10        | 2d6          | 2d8           | 2d10         | 3d10         | Kármico                                  |
-| Elemental | 1d10        | 2d6          | 2d8           | 2d10         | 3d10         | Kármico; impacto mineral pode ser Físico |
-| Divino    | 1d8         | 1d10         | 2d6           | 2d8          | 3d8          | Kármico ou Mental                        |
-| Marcial   | 1d8         | 1d10         | 2d6           | 2d8          | 3d8          | Físico                                   |
-| Corrupto  | 1d10        | 2d8          | 3d6           | 3d8          | 3d12         | Kármico ou Mental                        |
+| Matriz    | I · 2 Karma | II · 3 Karma | III · 4 Karma | IV · 6 Karma | V · 12 Karma |
+|-----------|-------------|--------------|---------------|--------------|--------------|
+| Marcial   | 1d8         | 1d10         | 2d6           | 2d8          | 3d8          |
+| Kármico   | 1d10        | 2d6          | 2d8           | 2d10         | 3d10         |
+| Divino    | 1d8         | 1d10         | 2d6           | 2d8          | 3d8          |
+| Corrupto  | 1d10        | 2d8          | 3d6           | 3d8          | 3d12         |
+| Elemental | 1d10        | 2d6          | 2d8           | 2d10         | 3d10         |
 
-A tabela representa o dano-base de uma técnica ofensiva, não de ataques básicos, cura ou Escudo. O custo-base é igual nas cinco matrizes. Some as ampliações e efeitos registrados e subtraia apenas restrições reais, até `min(3, floor(custo-base/2))`. O custo final mínimo é 1 Karma. Não some o dano integral da arma ao dano-base de uma técnica Marcial; propriedades coerentes continuam aplicáveis. Dados adicionais e efeitos secundários precisam estar registrados e pagos. O limite de um ápice de Grau V por cena permanece compartilhado entre fontes.
+Esses dados pertencem às técnicas ofensivas. Ataques básicos, cura e Escudo seguem suas próprias tabelas. Um efeito sem dano não recebe dados ofensivos só por ter Grau. Some os efeitos comprados e aplique os redutores até a metade do custo-base, arredondada para baixo, com limite de 3 Karma de redução e custo final mínimo de 1. Uma arma pode substituir um dado conforme as regras de arma condutora, sem acrescentar o dano inteiro ao da técnica.
 
-### Construção por matriz
+## A guarda diante das subdobras
 
-Kármico usa Espírito + Canalização de Karma. Escolha a função e o Grau; depois registre alcance, alvos e forma. Alcance adicional custa de 1 a 3 Karma; área, de 2 a 4; empurrão ou tração, de 1 a 2; uma proteção secundária, 2. Defina metragem e resistência da manobra. Recarga de uma rodada ou concentração que realmente possa ser interrompida reduz 1 Karma cada.
+| Elemento primário | Subdobras                                               |
+|-------------------|---------------------------------------------------------|
+| Vento (Ar)        | Raio, Som e Vácuo                                       |
+| Água              | Gelo, Sangue e Vapor (com Fogo)                         |
+| Fogo              | Combustão, Plasma e Cinza Ardente; também Vapor e Magma |
+| Terra             | Metal, Cristal, Quartzo, Areia, Magma e Lava (com Fogo) |
+| Luz               | Laser e Miragem Solar                                   |
+| Sombra (Trevas)   | Erosão e Breu Abissal                                   |
 
-Elemental usa o Atributo e Controle do elemento correspondente. A expressão define condições compatíveis: Queimando, Ofuscado, Enraizado ou Lentidão custam de 1 a 3 Karma conforme gravidade; uma zona ambiental de uma rodada custa 2; condução pelo terreno, 1. Exigir uma fonte ambiental real ou sofrer desgaste térmico em falha reduz 1 cada. Não conceda um redutor por uma exigência já obrigatória da fonte.
+Use a defesa inteira contra seu elemento primário. Subdobras não têm defesa própria: aplique metade da defesa do elemento de origem, arredondando para baixo. Quando houver dois elementos-pai, escolha a maior defesa entre eles antes de dividir. Não some as duas.
 
-Divino usa o regente + Manifestação de Bênção ou Presença + Comunhão Divina. Perfurar até 2 Resistência de uma criatura corrompida/profana custa 1; amparo com cura ou Escudo a aliado custa 2; decreto ou santuário custa 2. Registre valor, duração, defesa e consequências da profanação. Um preceito restritivo efetivo pode reduzir 1 Karma; Graus IV–V exigem também 1 Favor. A Bênção é a outorga, e a matriz é a forma de construir cada manifestação: Magnetismo, Haimaton ou Nemeton não ficam obrigados à matriz Divina. Qualquer uma das cinco matrizes pode expressar um Núcleo compatível, conservando seus próprios requisitos e riscos.
+> O Raio é uma subdobra do Vento. Se a criatura tem 4 de Resistência contra Vento, ainda se protege de um ataque de Elemental / Raio. A descarga atravessa parte da guarda: reduza o dano em apenas 2 pontos.
 
-Marcial usa Luta, Pontaria, Acrobacia ou Atletismo conforme a execução. Condições físicas custam de 1 a 2 Karma; aparar ou contra-atacar como Reação custa 2; investida embutida custa 1. Uma arma específica como exigência reduz 1; contato com Movimento cedido reduz de 1 a 2 conforme a exposição. Registre a oportunidade, o percurso e o que acontece no parcial. A técnica não concede ataques adicionais por interpretação do nome.
+## A dívida da Marca
 
-Corrupto usa obrigatoriamente Presença + Controle da Corrupção ou o teste ofensivo registrado de uma manifestação da Marca. Além de Karma, cada Grau traz seu risco: I gera 1 Carga temporária em falha crítica; II gera 1 temporária em falha; III gera 1 temporária ao executar; IV gera 1 Carga efetiva e consome 2 Vida; V gera 2 temporárias, exige Controle imediato e consome 4 Vida. Desgaste é pago diretamente na Vida, sem armadura ou Escudo. As Cargas entram antes do Controle. Use CD 14 + Carga efetiva + temporárias; quando o mesmo evento já exige Controle, faça um único teste com todos os modificadores. Grau III exige Controle ao fim do turno quando a Marca estiver em zona de perigo. Carga 10 continua acionando Ruptura CD 24. Esse risco não produz um desconto extra: ele já compensa a base ofensiva maior.
+O desgaste corrupto atinge a Vida diretamente, sem Escudo ou armadura. Registre as Cargas antes do teste. Para técnicas da matriz Corrupta, a dificuldade de Controle é **16 mais a Carga efetiva e as temporárias**. As demais fontes de Corrupção seguem o Capítulo 14. Ao alcançar Carga 10, resolva a Ruptura própria da Marca; não repita o mesmo teste por dois gatilhos.
+
+| Grau | Pedágio                                                                                      |
+|------|----------------------------------------------------------------------------------------------|
+| I    | Uma falha no teste acrescenta 1 Carga temporária.                                            |
+| II   | A ativação acrescenta 1 temporária. Se falhar, perca 2 Vida após apurar o resultado.         |
+| III  | Acrescente 1 temporária e perca 2 Vida. Faça Controle no fim do turno.                       |
+| IV   | Acrescente 1 efetiva e 1 temporária; perca 4 Vida e faça Controle imediato.                  |
+| V    | Acrescente 1 efetiva e 2 temporárias; perca 6 Vida e faça Controle imediato com Desvantagem. |
+
+## Da linhagem ao gesto
+
+**Primeiro, escolha o Grau e o que fere.** Para uma descarga pura, use Espírito e Canalização de Karma. Uma arte elemental usa o atributo regente e o Controle do elemento de origem; uma marcial usa a perícia da manobra. A divina usa Manifestação de Bênção com seu regente ou Presença e Comunhão Divina. Técnicas divinas IV e V consomem também 1 Favor. A Marca usa Presença e Controle da Corrupção ou o teste ofensivo próprio da manifestação.
+
+**Depois, escolha um catalisador da linhagem.** Registre como a técnica conversa com seu corpo. O catalisador não custa Karma adicional, mas conserva o gatilho, o recurso e os limites da herança. Ele não concede um marco que o personagem ainda não alcançou.
+
+| Linhagem    | Catalisador                                                                                                    |
+|-------------|----------------------------------------------------------------------------------------------------------------|
+| Humano      | Gaste 1 Ímpeto para somar um dado-base ou reduzir o custo em 1 Karma.                                          |
+| Elfo        | Em Harmonia, escolha +3 m de alcance ou ignorar cobertura parcial.                                             |
+| Anão        | Gaste Cargas de Bigorna para firmar a técnica ou descarregá-las em uma quebra de guarda, conforme sua Têmpera. |
+| Demi-humano | Adapte o efeito secundário à Garra, à Asa ou à Carapaça ativa.                                                 |
+| Vampiro     | Alimente a técnica com Vitae e converta em cura a parcela prevista pela Reserva de Vitae.                      |
+| Demônio     | Aplique ou resolva o Selo de Coação no alvo atingido, respeitando a frequência do selo.                        |
+| Ghoul       | Em Caça, use a Regeneração Celular Voraz contra o alvo ferido ou Sangrando quando cumprir seu gatilho.         |
+| Tritão      | Use o Pulso de Maré para deslizar ou empurrar o alvo atingido 2 m.                                             |
+| Abissal     | Trace a técnica a partir da Âncora do Vazio ativa.                                                             |
+
+**Reconheça a doutrina da classe.** Um Duelista ou Pugilista pode economizar 1 Karma em uma manobra comprada; um Conjurador, em alcance, área ou sustentação; um Assassino, em precisão ou ocultação; um Tanque, em bloqueio ou proteção aliada. A economia só vale quando existe um componente que a doutrina possa aperfeiçoar. Ela entra no mesmo limite de redução da técnica.
+
+**Por fim, dê medida ao efeito.** Compre alcance, área, duração, controle ou proteção. Indique o alvo, o teste, a defesa e o que sobra no parcial. Uma condição precisa de gatilho e duração; um redutor precisa impor uma restrição que importe na mesa. O nome de uma técnica não lhe concede uma segunda ação, dano adicional ou uma defesa que não foi registrada.
 
 </div>
 
@@ -2511,7 +2586,7 @@ O dano-base representa o dano total da técnica antes das Ampliações e demais 
 
 Se uma arma conduzir a técnica, escolha o procedimento já previsto: substituir um dado do dano-base pelo dano da arma; ou partir do dano da arma e acrescentar apenas os dados necessários para alcançar um valor equivalente ao Grau. Registre os dados resultantes e confira a equivalência com o Mestre. Não some integralmente arma e dano-base. Uma arma de vários dados pode exigir revisão da combinação ou do Grau; conduzir Karma não torna qualquer soma válida.
 
-Por exemplo, uma técnica III teria 2d10 de dano-base. Se utilizar uma arma de 1d8 pela opção de substituição, pode registrar 1d10 + 1d8. O dado da arma ocupa o lugar de um dos d10; não é acrescentado por cima dos dois.
+Por exemplo, uma técnica Kármica de Grau III teria 2d8 de dano-base. Se utilizar uma arma de 1d8 pela opção de substituição, pode registrar 1d8 + 1d8. O dado da arma ocupa o lugar de um dos d8; não é acrescentado por cima dos dois.
 
 ### Defesa
 
@@ -2782,11 +2857,11 @@ Nos seis exemplos seguintes, não há preparação nem consumível adicional. Ca
 
 **Conceito:** uma corrente de água se condensa em uma lança que fere e afasta um adversário.
 
-**Ficha:** Água; Grau II; Espírito + Controle de Água 1; Ação Principal; um alvo percebido a até 15 metros; trajetória direta; duração instantânea. A função primária é Ataque, com 1d12 de Água. O efeito menor empurra 2 metros para longe do usuário por uma trajetória possível.
+**Ficha:** Água; Grau II; Espírito + Controle de Água 1; Ação Principal; um alvo percebido a até 15 metros; trajetória direta; duração instantânea. A função primária é Ataque, com 2d6 de Água. O efeito menor empurra 2 metros para longe do usuário por uma trajetória possível.
 
 **Custo:** 3 de base + 2 pelo alcance médio + 1 pelo efeito menor = **6 Karma**. Não há desconto por limitação. A técnica exige a fonte habilitada e pode ser aprendida desde a criação.
 
-**Resolução:** ataque contra CA. O alvo pode Evadir se cumprir seus requisitos. Cobertura e proteções pertinentes continuam valendo. Total causa 1d12 de Água e empurra 2 metros. Parcial causa metade do dano, arredondada para baixo, e empurra 1 metro. Falha não causa dano nem deslocamento; os 6 Karma e a Ação Principal são gastos.
+**Resolução:** ataque contra CA. O alvo pode Evadir se cumprir seus requisitos. Cobertura e proteções pertinentes continuam valendo. Total causa 2d6 de Água e empurra 2 metros. Parcial causa metade do dano, arredondada para baixo, e empurra 1 metro. Falha não causa dano nem deslocamento; os 6 Karma e a Ação Principal são gastos.
 
 **Exemplo de uso:** com Espírito 5 e Controle de Água 1, o usuário rola 3d20 e soma +2 ao maior. Dados 7, 12 e 16 produzem 18. Contra CA 17, é total; se o dano mostrar 9, aplique 9 antes das reduções e empurre 2 metros. Contra CA 18, o mesmo ataque seria parcial: 4 de dano antes das reduções e 1 metro de empurrão.
 
@@ -2832,7 +2907,7 @@ Nos seis exemplos seguintes, não há preparação nem consumível adicional. Ca
 
 **Conceito:** uma manifestação de Fogo explode em um ponto escolhido e deixa brasas nos atingidos.
 
-**Ficha:** Fogo; Grau II; Espírito + Controle de Fogo 1; Ação Principal; ponto de origem a até 15 metros, com linha de ataque; área de raio de 2 metros. Função primária Ataque, com 1d12 de Fogo; efeito menor Queimando. A explosão é instantânea; a condição utiliza sua duração própria.
+**Ficha:** Fogo; Grau II; Espírito + Controle de Fogo 1; Ação Principal; ponto de origem a até 15 metros, com linha de ataque; área de raio de 2 metros. Função primária Ataque, com 2d6 de Fogo; efeito menor Queimando. A explosão é instantânea; a condição utiliza sua duração própria.
 
 **Custo:** 3 de base + 2 pelo alcance médio + 2 pela área pequena + 1 pelo efeito menor = **8 Karma**. Esta versão também alcança aliados expostos dentro da área. Comprar a distinção de aliados acrescentaria 2, para um total de 10 Karma, e precisaria constar na ficha.
 
@@ -2848,7 +2923,7 @@ Nos seis exemplos seguintes, não há preparação nem consumível adicional. Ca
 
 **Custo:** 3 de base, sem modificadores = **3 Karma**. Em situação simples e sem incerteza, a leitura é direta. Sob pressão comum, este exemplo usa CD 13; interferência conhecida pode exigir outra dificuldade pertinente, definida antes do teste. Uma ocultação poderosa não pode ser atravessada apenas aumentando a CD de um efeito de Grau II.
 
-**Resultados:** ao igualar ou superar a CD, o usuário recebe a informação descrita. Este exemplo não possui parcial. Falha não permite identificar o vestígio e consome a ação e o Karma. O efeito não tem dano, por isso não recebe 1d12 apenas por ser de Grau II. Um crítico também não acrescenta informações fora do escopo sem regra expressa.
+**Resultados:** ao igualar ou superar a CD, o usuário recebe a informação descrita. Este exemplo não possui parcial. Falha não permite identificar o vestígio e consome a ação e o Karma. O efeito não tem dano, por isso não recebe dano-base apenas por ser de Grau II. Um crítico também não acrescenta informações fora do escopo sem regra expressa.
 
 ## Aprender e aperfeiçoar técnicas
 
@@ -3242,15 +3317,15 @@ Antes do teste, descreva o efeito. O Mestre define uma aplicação de potência 
 
 **Um uso criativo não pode:**
 
-alcançar um grau ainda bloqueado;
+Alcançar um grau ainda bloqueado;
 
-produzir efeito maior que a Expressão usada como referência;
+Produzir efeito maior que a Expressão usada como referência;
 
-ignorar resistência que uma aplicação semelhante permitiria;
+Ignorar resistência que uma aplicação semelhante permitiria;
 
-gerar Karma, ações, Bênçãos ou recursos permanentes;
+Gerar Karma, ações, Bênçãos ou recursos permanentes;
 
-tornar-se uma habilidade dominada apenas por ter funcionado uma vez.
+Tornar-se uma habilidade dominada apenas por ter funcionado uma vez.
 
 Em falha, o mesmo uso criativo não pode ser repetido naquela cena. Durante uma evolução, o jogador pode transformar um uso criativo marcante em uma nova Expressão.
 
@@ -3769,9 +3844,9 @@ A transformação corporal acontece automaticamente quando os requisitos e o pag
 
 A ativação de 6 Karma não é uma técnica de Grau escolhido. Por isso, não pode receber desconto por Cargas temporárias nem Ampliação Corrompida para aumentar todos os seus bônus. O pagamento ativa somente o pacote escrito na ficha; não compra Grau, ações ou espaços adicionais.
 
-**Manutenção corporal:** a ativação cobre o turno atual. No início de cada turno seguinte, antes de agir, pague 1 Karma para conservar as mutações até o início do próximo turno. Esse pagamento não consome ação, não recebe desconto e não exige Controle por si só. Se não pagar, os traços e o escudo de Tecido de contenção se encerram imediatamente. A rede gratuita pode continuar ativa se seus requisitos permanecerem válidos.
+**Manutenção corporal:** A ativação cobre o turno atual. No início de cada turno seguinte, antes de agir, pague 1 Karma para conservar as mutações até o início do próximo turno. Esse pagamento não consome ação, não recebe desconto e não exige Controle por si só. Se não pagar, os traços e o escudo de Tecido de contenção se encerram imediatamente. A rede gratuita pode continuar ativa se seus requisitos permanecerem válidos.
 
-**Duração e pressão:** as mutações podem durar até o fim da cena enquanto houver manutenção, requisitos e consciência. Conte cada turno em que qualquer benefício corporal tenha sido usado ou permanecido ativo, incluindo o da ativação. Ao fim do quinto turno corporal da cena, receba 1 Carga efetiva. Se ainda estiver abaixo de 10, faça Controle contra CD 14 + a nova Carga; falha abre Intrusão, sem conceder outra Carga automática por esse mesmo marco. Repita ao completar dez, quinze e assim por diante. Esse é um evento de permanência, distinto das ações realizadas durante o turno; não faça um segundo teste pelo mesmo marco.
+**Duração e pressão:** As mutações podem durar até o fim da cena enquanto houver manutenção, requisitos e consciência. Conte cada turno em que qualquer benefício corporal tenha sido usado ou permanecido ativo, incluindo o da ativação. Ao fim do quinto turno corporal da cena, receba 1 Carga efetiva. Se ainda estiver abaixo de 10, faça Controle contra CD 14 + a nova Carga; falha abre Intrusão, sem conceder outra Carga automática por esse mesmo marco. Repita ao completar dez, quinze e assim por diante. Esse é um evento de permanência, distinto das ações realizadas durante o turno; não faça um segundo teste pelo mesmo marco.
 
 Encerrar e reabrir as mutações não zera esse contador dentro da cena nem renova o escudo. O marco acontece mesmo que o jogador encerre a transformação depois de usar seu quinto turno. Fora de combate, um intervalo de até um minuto de atividade corporal contínua equivale a cinco turnos para esse risco e custa 10 Karma no total: 6 de ativação e quatro manutenções. Cada minuto adicional custa 5 Karma e produz outro marco; uma mudança de modo de contagem não reinicia o tempo já transcorrido.
 
@@ -4494,7 +4569,7 @@ Uma refeição simples custa 1 m; uma diária em hospedaria modesta custa 2 m. A
 | Autorização institucional restrita | 25 m de trâmite      | Exige patrocinador e finalidade; taxa não compra aprovação |
 | Aluguel de ferramenta comum        | 10% do preço por dia | Caução pelo valor do item; mínimo 1 m                      |
 
-**Livre** dispensa autorização especial. **Licenciado** exige registro e usuário habilitado. **Restrito** depende de instituição, serviço, missão ou autorização específica para aquele material. **Proibido** não possui venda legal; o valor apresentado, se houver, é referência de campanha, não permissão. Licenças são categorias do cenário, não leis de um país real. Uma arma registrada continua dependendo da jurisdição visitada.
+**Livre** Dispensa autorização especial. **Licenciado** exige registro e usuário habilitado. **Restrito** depende de instituição, serviço, missão ou autorização específica para aquele material. **Proibido** não possui venda legal; o valor apresentado, se houver, é referência de campanha, não permissão. Licenças são categorias do cenário, não leis de um país real. Uma arma registrada continua dependendo da jurisdição visitada.
 
 Em rota abastecida, use o preço de catálogo. Escassez declarada aplica ×1,5; cerco ou isolamento severo, ×2. Aplique apenas o maior multiplicador de escassez. Contrabando pode acrescentar ×2 pelo risco, sem reduzir exigências narrativas. Revenda de item íntegro rende normalmente 50% do preço local sem modificador de contrabando; Danificado rende 25%, Quebrado apenas 10% como peças. Cargas gastas e munições disparadas não são revendidas como intactas.
 
@@ -4559,6 +4634,8 @@ Ela encontra uma caixa de peças de 4 espaços: L passa a 15,75, Sobrecarregada,
 
 
 # Capítulo 18 - Inimigos monstros e encontros
+
+O Karma alimenta a técnica; a natureza do golpe decide a proteção. Registre dano Marcial, Kármico, Divino, Corrupto ou Elemental com sua expressão. Agressões à mente causam dano Mental. Contra uma subdobra, aplique metade da maior defesa dos elementos de origem, arredondada para baixo. Consulte o Capítulo 10.
 
 Uma ameaça precisa de intenção, comportamento e meios de ser enfrentada. A ficha informa o que ela consegue fazer; a cena informa por que está fazendo isso e o que encerra o conflito. Captura, selamento, rendição, negociação e retirada podem resolver um encontro sem eliminar todos os adversários.
 
@@ -4698,9 +4775,9 @@ Cada tentativa de desativação custa Principal, 0 Karma e exige ferramenta aces
 
 **Rebite Kármico:** Grau II, Principal, 5 Karma, sem preparo; um alvo a até 15 metros. Espírito + Canalização, maior de 3d20 +5, contra CA; 1d12 kármico neutro, parcial metade, falha nenhum. Cobertura e Evasão cabíveis. Custo: Ataque II 3 + médio 2.
 
-**Expansão da Fornalha:** Grau III, Principal, 7 Karma, sem preparo; raio de 2 metros centrado no Guardião, alcança todas as demais criaturas, inclusive seus aliados. Uma rolagem de Canalização, maior de 3d20 +5, para todas as CAs; 2d10 de Fogo uma vez. Total causa dano e empurra 2 metros para fora por trajeto possível; parcial metade do dano e 1 metro; falha nada. Custo: base III 4 + área 2 + efeito menor 1. Não atravessa cobertura total.
+**Expansão da Fornalha:** Grau III, Principal, 7 Karma, sem preparo; raio de 2 metros centrado no Guardião, alcança todas as demais criaturas, inclusive seus aliados. Uma rolagem de Canalização, maior de 3d20 +5, para todas as CAs; 2d10 de Fogo uma vez. Total causa dano e empurra 2 metros para fora por trajeto possível; parcial metade do dano e 1 metro; falha nada. Custo: Base III 4 + área 2 + efeito menor 1. Não atravessa cobertura total.
 
-**Jato de Pressão:** Grau IV, 10 Karma; uma vez por cena. Gaste Principal preparando, anuncie e marque um cone de 10 metros que não muda de direção; pague ao iniciar. No turno seguinte, gaste Principal para liberar. Ataque de Canalização, maior de 3d20 +5, contra cada CA; uma rolagem de 2d12 de Fogo. Total aplica dano e Queimando; parcial metade do dano mais 1d4 uma vez pela versão reduzida de Queimando; falha nada. Custo: base IV 6 + área média 4 + efeito menor 1 − preparo 1. Inconsciência, perda da Principal, saída da posição ou desativação de ambos os reguladores interrompe, sem reembolso. Ferimento Grave exige Canalização CD 20 para conservar o preparo. O sinal deixa uma rodada para sair do cone ou agir sobre os reguladores.
+**Jato de Pressão:** Grau IV, 10 Karma; uma vez por cena. Gaste Principal preparando, anuncie e marque um cone de 10 metros que não muda de direção; pague ao iniciar. No turno seguinte, gaste Principal para liberar. Ataque de Canalização, maior de 3d20 +5, contra cada CA; uma rolagem de 2d12 de Fogo. Total aplica dano e Queimando; parcial metade do dano mais 1d4 uma vez pela versão reduzida de Queimando; falha nada. Custo: Base IV 6 + área média 4 + efeito menor 1 − preparo 1. Inconsciência, perda da Principal, saída da posição ou desativação de ambos os reguladores interrompe, sem reembolso. Ferimento Grave exige Canalização CD 20 para conservar o preparo. O sinal deixa uma rodada para sair do cone ou agir sobre os reguladores.
 
 **Reação Aparo das Placas:** uma vez por rodada, 0 Karma; sem preparo. Antes do dano de ataque percebido e enquanto houver regulador ativo, reduza em 4 o dano após parcial e Resistência. Usa uma das Reações disponíveis; não pode combinar com Evasão contra o mesmo ataque. O Guardião conserva duas Reações defensivas, renovadas no início de seu turno, mas só um Aparo por rodada; a outra pode ser Evasão. Sua Intervenção padrão permite ataque básico ou movimento de até 4 metros, com o teto do capítulo.
 
@@ -4942,7 +5019,7 @@ O ferrolho e a ação de repetição integram o ataque; não geram uma segunda P
 
 **Antiblindagem.** Reduz até 3 de uma parcela física da CA da máquina e ignora metade da Blindagem dela, arredondada para baixo. Não soma a redução de CA com Perfurante: use a maior. Contra criatura sem Blindagem, apenas o dano normal da arma. Retaguarda do lançador ocupa cone de 5 m; use a mesma rolagem para 2d6 Fogo nas criaturas ali, com defesas normais. Declare o cone antes de disparar. Ele não pode ser usado em compartimento fechado sem espaço livre de descarga.
 
-**Espalhamento.** A espingarda atinge um alvo, não todo um cone. Causa 4d4 até 5 m e 2d6 acima de 5 até 15 m. Precisa ser apontada normalmente. **Confiável** ignora o primeiro Engasgo da cena, embora o tiro correspondente ainda falhe. **Ocultável** permite esconder em roupa adequada; encontrar usa revista ou oposição entre Furtividade e Percepção, sem invisibilidade automática.
+**Espalhamento.** A espingarda atinge um alvo, não todo um cone. Causa 4d4 até 5 m e 2d6 acima de 5 até 15 m. Precisa ser apontada normalmente. **Confiável** Ignora o primeiro Engasgo da cena, embora o tiro correspondente ainda falhe. **Ocultável** permite esconder em roupa adequada; encontrar usa revista ou oposição entre Furtividade e Percepção, sem invisibilidade automática.
 
 ## Tiro rápido, rajada e supressão
 
@@ -5100,9 +5177,9 @@ O veículo não recebe turno próprio. Cada tripulante age na própria iniciativ
 
 **Condutor.** Gasta Movimento para deslocar e testa Agilidade + Condução quando houver risco. Evasão do veículo gasta a Reação dele e precisa superar o ataque percebido. Quem estiver exposto à mesma incidência escolhe essa defesa coletiva ou sua defesa pessoal possível antes da rolagem; não tenta a segunda após falhar na primeira. Veículo parado por avaria ou sem espaço não Evade.
 
-**Atirador.** Usa Principal e Agilidade + Pontaria numa arma montada. Cada arma dispara no máximo uma vez por rodada, mesmo com vários operadores ou ações extras; recarga continua necessária. **Auxiliar** pode pagar Movimento para recarga assistida se estiver adjacente à estação.
+**Atirador.** Usa Principal e Agilidade + Pontaria numa arma montada. Cada arma dispara no máximo uma vez por rodada, mesmo com vários operadores ou ações extras; recarga continua necessária. **Auxiliar** Pode pagar Movimento para recarga assistida se estiver adjacente à estação.
 
-**Comandante.** Movimento e Intelecto + Tática CD 15 concedem +1d20 a um teste de condutor, atirador ou mecânico antes do próximo turno do comandante. Ordens equivalentes não acumulam. **Observador** usa Principal e Intelecto + Percepção CD 15, ou oposição à ocultação real, para informar posição e viabilizar tiro indireto até seu próximo turno.
+**Comandante.** Movimento e Intelecto + Tática CD 15 concedem +1d20 a um teste de condutor, atirador ou mecânico antes do próximo turno do comandante. Ordens equivalentes não acumulam. **Observador** Usa Principal e Intelecto + Percepção CD 15, ou oposição à ocultação real, para informar posição e viabilizar tiro indireto até seu próximo turno.
 
 **Mecânico.** Usa Principal e Intelecto + Criação CD 18 para suspender uma Avaria até o início do próximo turno dele, sem recuperar Estrutura. Engasgo conserva seu procedimento de limpeza. Sem condutor capaz, a máquina mantém o movimento ou para conforme a situação; não escolhe desvios ou alvos sozinha.
 

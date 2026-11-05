@@ -30,7 +30,7 @@ test('common growth and class extras both apply',()=>{
  const a=rules.calculateAutomaticBonuses(d);assert.equal(a.life,18);assert.equal(a.karma,10);assert.equal(a.armor,1);
 });
 test('new races have faithful numeric grants',()=>{
- const d=data.createBlankCharacter();d.race='Elfo';assert.equal(rules.calculateAutomaticBonuses(d).karma,1);d.race='Anão';assert.equal(rules.calculateAutomaticBonuses(d).life,2);
+ const d=data.createBlankCharacter();d.race='Elfo';assert.equal(rules.calculateAutomaticBonuses(d).karma,4);d.race='Anão';assert.equal(rules.calculateAutomaticBonuses(d).life,8);
 });
 test('invocations use 1,1,1,2,3 training',()=>assert.deepEqual(Object.values(inv.INVOCATION_GRADE_RULES).map(x=>x.skill),[1,1,1,2,3]));
 test('memory consumes a bonus, retains level and suspends points until milestone',()=>{

@@ -172,8 +172,8 @@ export function CharacterSheetView({
           <ReadonlyValue label="Etapa">{draft.stage}</ReadonlyValue>
           <ReadonlyValue label="Idioma comum">{draft.commonLanguage}</ReadonlyValue>
           <ReadonlyValue label="Afinidade">{draft.affinity}</ReadonlyValue>
-          <ReadonlyValue label="Vínculo">{draft.bond}</ReadonlyValue>
-          <ReadonlyValue label="Conceito">{draft.concept}</ReadonlyValue>
+          <div className="sheet-wide-field"><ReadonlyValue label="Vínculo">{draft.bond}</ReadonlyValue></div>
+          <div className="sheet-wide-field"><ReadonlyValue label="Conceito">{draft.concept}</ReadonlyValue></div>
           {race?.customizationLabel ? (
             <ReadonlyValue label={race.customizationLabel}>{draft.racialCustomization}</ReadonlyValue>
           ) : null}
@@ -189,8 +189,10 @@ export function CharacterSheetView({
             return (
               <article key={attribute}>
                 <small>{attribute.slice(0, 3).toUpperCase()}</small>
+                <small className="sheet-dice">{total<=0?"1d20 − 4":`${Math.ceil(total/2)}d20`}</small>
                 <h3>{attribute}</h3>
                 <strong>{total}</strong>
+
                 <span>
                   {points.base} base
                   {automaticBonus ? ` · +${automaticBonus} automático` : ""}
@@ -215,7 +217,7 @@ export function CharacterSheetView({
                     <div key={skill} data-trained={total > 0}>
                       <span>{skill}</span>
                       <strong>{total}</strong>
-                      <small>+{([0, 2, 5, 10][total] ?? 0)}{test.analyticBonus ? ` · análise +${test.analyticBonus}` : ""}</small>
+                      <small>{test.dice}d20 {test.bonus<0?"−":"+"} {Math.abs(test.bonus)}</small>
                     </div>
                   );
                 })}
@@ -424,7 +426,7 @@ export function CharacterSheetView({
                   <ReadonlyValue label="Alcance">{technique.range}</ReadonlyValue>
                   <ReadonlyValue label="Custo">{technique.cost}</ReadonlyValue>
                   <ReadonlyValue label="Alvo / área / duração">{technique.targetAreaDuration}</ReadonlyValue>
-                  
+
                 </div>
                 <TechniqueCost>{technique.calculation?.trim() || "Esta técnica ainda não possui uma composição de custo registrada."}</TechniqueCost>
                 <div className="technique-results">

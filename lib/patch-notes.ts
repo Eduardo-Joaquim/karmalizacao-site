@@ -8,6 +8,14 @@ export type PatchNote = {
 
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
+  {id:"patch-2-1-2026-11-05-refino",version:"2.1",label:"Patch 2.1 · 05/11/2026",title:"O que a linhagem deixa no golpe",highlights:[
+    "As nove linhagens recuperam seus ganhos de criação e têm novas heranças nas Etapas II, IV e VI.",
+    "Cada técnica registra a natureza do golpe. Contra subdobras, a defesa elemental de origem protege pela metade. Técnicas corruptas passam a cobrar um pedágio próprio.",
+    "A ficha mostra as rolagens prontas, e o construtor de técnicas separa linhagem, doutrina e custo.",
+    "Monstros têm registros de caça próprios. O livro ganhou ornamentos ao longo dos capítulos e as cortes tiveram seus dossiês revisados.",
+    "Divisores, atributos e perícias ganharam espaçamento mais limpo. As técnicas dos monstros têm rolador próprio, e os dossiês distinguem dano, defesa e suporte.",
+    "Os dados de dano e os resultados parciais foram revisados. Selos primordiais e descrições de dádivas agora identificam melhor sua origem."
+  ]},
   {id:"patch-2-0-1-2026-11-04-r2",version:"2.0.1",label:"Patch 2.0.1 · 04/11/2026",title:"Escolhas da linhagem humana",highlights:[
     "A partir da Etapa II, personagens humanos podem registrar a perícia de Improviso sob Pressão na ficha. O bônus respeita o teto de treinamento da Etapa.",
     "Na Etapa IV, a técnica escolhida para Cadência Tática custa 1 Karma a menos no Modo Player, com mínimo de 1 para técnicas pagas.",

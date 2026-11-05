@@ -133,231 +133,18 @@ const anySkillSlot = (label: string, value = 1): BonusChoiceSlot => ({
   value,
 });
 
-export const RACE_RULES: Record<string, RaceRule> = {
-  Humano: {
-    name: "Humano",
-    summary: "+1 Atributo à escolha, +1 Perícia à escolha e +5 Vida.",
-    automatic: { life: 5 },
-    attributeSlots: [anyAttributeSlot("Adaptabilidade — Atributo")],
-    skillSlots: [anySkillSlot("Adaptabilidade — Perícia")],
-    features: [
-      {
-        name: "Segunda tentativa",
-        kind: "Habilidade",
-        description:
-          "Uma vez por cena, depois de ver os dados de um teste próprio, role novamente toda a reserva e mantenha o novo resultado.",
-      },
-      {
-        name: "Adaptabilidade",
-        kind: "Passiva",
-        description:
-          "Os bônus raciais de Atributo e Perícia podem ser destinados a qualquer opção permitida na criação.",
-      },
-    ],
-  },
-  "Demi-humano": {
-    name: "Demi-humano",
-    summary: "+1 em Agilidade, Força ou Espírito; +1 Perícia sobrenatural e +6 Vida.",
-    automatic: { life: 6 },
-    attributeSlots: [
-      { label: "Herança híbrida — Atributo", options: ["Agilidade", "Força", "Espírito"], value: 1 },
-    ],
-    skillSlots: [
-      { label: "Herança híbrida — Perícia sobrenatural", options: SUPERNATURAL_SKILLS, value: 1 },
-    ],
-    customizationLabel: "Adaptação corporal",
-    customizationPlaceholder: "Ex.: olhos de falcão, guelras, patas felinas, pele mineral…",
-    features: [
-      {
-        name: "Corpo híbrido",
-        kind: "Passiva",
-        description:
-          "Receba Vantagem em testes diretamente ligados à adaptação corporal escolhida.",
-      },
-      {
-        name: "Arma natural",
-        kind: "Habilidade",
-        description: "Garras, presas, chifres, cauda ou equivalente causam 1d8 e contam como arma leve.",
-      },
-      {
-        name: "Instinto de terreno",
-        kind: "Passiva",
-        description:
-          "Uma vez por jornada, ignore uma Desvantagem causada por ambiente coerente com a linhagem.",
-      },
-    ],
-  },
-  Vampiro: {
-    name: "Vampiro",
-    summary: "+2 pontos de Perícia e +7 Vida.",
-    automatic: { life: 7 },
-    attributeSlots: [],
-    skillSlots: [
-      { ...anySkillSlot("Memória do sangue — ponto 1"), allowRepeat: true },
-      { ...anySkillSlot("Memória do sangue — ponto 2"), allowRepeat: true },
-    ],
-    features: [
-      {
-        name: "Visão noturna",
-        kind: "Passiva",
-        description: "Enxerga em escuridão comum até alcance médio.",
-      },
-      {
-        name: "Drenagem vital",
-        kind: "Habilidade",
-        description:
-          "Após acerto corpo a corpo contra alvo vivo voluntário, Agarrado ou Indefeso, causa +1d6 e recupera Vida igual ao dano adicional; até três vezes por cena.",
-      },
-      {
-        name: "Luz solar",
-        kind: "Fraqueza",
-        description:
-          "Sob sol direto recebe Desvantagem em testes físicos e sobrenaturais, e Drenagem Vital não recupera Vida.",
-      },
-      {
-        name: "Fome",
-        kind: "Fraqueza",
-        description:
-          "Depois de dois dias sem alimentação apropriada, fica Exausto até se alimentar e completar descanso longo.",
-      },
-    ],
-  },
-  "Tritão": {
-    name: "Tritão",
-    summary: "+1 Constituição, +1 Atletismo e +6 Vida.",
-    automatic: { life: 6, attributes: { Constituição: 1 }, skills: { Atletismo: 1 } },
-    attributeSlots: [],
-    skillSlots: [],
-    features: [
-      {
-        name: "Anfíbio",
-        kind: "Passiva",
-        description: "Respira ar e água e recebe +1 dado na manipulação de água.",
-      },
-      {
-        name: "Leitura de corrente",
-        kind: "Passiva",
-        description:
-          "Recebe +1 dado em testes ligados a nadar, navegar, perceber correntes ou atuar sob a água.",
-      },
-      {
-        name: "Desidratação",
-        kind: "Fraqueza",
-        description:
-          "Após 12 horas sem hidratação adequada fica Exausto; vinte minutos de imersão e repouso encerram a condição.",
-      },
-    ],
-  },
-  "Demônio": {
-    name: "Demônio",
-    summary: "+6 Karma máximo e +4 Vida.",
-    automatic: { life: 4, karma: 6 },
-    attributeSlots: [],
-    skillSlots: [],
-    customizationLabel: "Sinal visível",
-    customizationPlaceholder: "Traço físico ou espiritual impossível de ocultar em inspeção cuidadosa.",
-    features: [
-      {
-        name: "Ouvido da Marca",
-        kind: "Passiva",
-        description: "Recebe +1 dado para detectar Corrupção e resistir às Intrusões da Voz.",
-      },
-      {
-        name: "Pulso herdado",
-        kind: "Habilidade",
-        description:
-          "Uma vez por cena, antes de ataque ou técnica, retire 1 Carga própria para corromper a ação e tente transferi-la no acerto total.",
-      },
-      {
-        name: "Proximidade não é imunidade",
-        kind: "Fraqueza",
-        description: "Demônios sofrem normalmente todos os estágios da Marca.",
-      },
-    ],
-  },
-  Ghoul: {
-    name: "Ghoul",
-    summary: "+1 Constituição, +1 em Percepção ou Sobrevivência e +6 Vida.",
-    automatic: { life: 6, attributes: { Constituição: 1 } },
-    attributeSlots: [],
-    skillSlots: [
-      { label: "Instinto funerário — Perícia", options: ["Percepção", "Sobrevivência"], value: 1 },
-    ],
-    features: [
-      {
-        name: "Faro do repouso",
-        kind: "Passiva",
-        description:
-          "Recebe +1 dado para localizar feridos, cadáveres, doença, veneno ou decomposição em alcance médio quando houver rastro.",
-      },
-      {
-        name: "Consumo de vestígio",
-        kind: "Habilidade",
-        description:
-          "Uma vez por cena, recupera 1d8 + Constituição de Vida ou percebe o último sentimento e visão de restos orgânicos recentes.",
-      },
-      {
-        name: "Fisiologia cadavérica",
-        kind: "Passiva",
-        description: "Recebe Vantagem para resistir a doença e veneno, sem imunidade.",
-      },
-      {
-        name: "Fome funerária",
-        kind: "Fraqueza",
-        description:
-          "Depois de dois dias sem matéria orgânica apropriada fica Exausto até alimentar-se e completar intervalo seguro.",
-      },
-    ],
-  },
-  Abissal: {
-    name: "Abissal",
-    summary: "+1 Espírito ou Força, +1 Ocultismo ou Canalização e +6 Karma máximo.",
-    automatic: { karma: 6 },
-    attributeSlots: [
-      { label: "Sangue abissal — Atributo", options: ["Espírito", "Força"], value: 1 },
-    ],
-    skillSlots: [
-      { label: "Sangue abissal — Perícia", options: ["Ocultismo", "Canalização de Karma"], value: 1 },
-    ],
-    features: [
-      {
-        name: "Anatomia de fenda",
-        kind: "Passiva",
-        description: "Não respira de maneira comum e pode ficar sem respirar por um dia.",
-      },
-      {
-        name: "Âncora de identidade",
-        kind: "Passiva",
-        description:
-          "Recebe +1 dado para resistir a possessão e alterações de memória, nome, corpo ou identidade.",
-      },
-      {
-        name: "Ossos Negros",
-        kind: "Passiva",
-        description: "Membros não são decepados e recebe +2 CA ao defender.",
-      },
-      {
-        name: "Instabilidade espacial",
-        kind: "Fraqueza",
-        description:
-          "Banimento, selamento e deslocamento forçado recebem +1 dado contra você; em sucesso total você perde a Reação.",
-      },
-    ],
-  },
-};
-
-RACE_RULES.Elfo = {name:"Elfo", summary:raceBook.Elfo.summary, automatic:{karma:4}, attributeSlots:[{label:"Herança élfica",options:["Agilidade","Intelecto"],value:1}],skillSlots:[{label:"Memória élfica",options:["Percepção","História"],value:1}],features:[]};
-RACE_RULES.Anão = {name:"Anão", summary:raceBook.Anão.summary, automatic:{life:6}, attributeSlots:[{label:"Herança anã",options:["Constituição","Força"],value:1}],skillSlots:[{label:"Ofício ancestral",options:["Criação","Atletismo"],value:1}],features:[]};
-for (const [name, content] of Object.entries(raceBook)) {
-  if(!RACE_RULES[name]) RACE_RULES[name]={name,summary:content.summary,automatic:{},attributeSlots:[],skillSlots:[],features:[]};
-  RACE_RULES[name].summary = content.summary;
-  RACE_RULES[name].features = content.features as RuleFeature[];
-}
-
-for(const name of Object.keys(racialProgression).filter(n=>!["Tritão","Abissal"].includes(n))){
- const rule=RACE_RULES[name];rule.automatic={};rule.attributeSlots=[];rule.skillSlots=[];
- if(name==='Humano')rule.skillSlots=[anySkillSlot('Versatilidade — Perícia 1'),anySkillSlot('Versatilidade — Perícia 2')];
- if(name==='Ghoul'){rule.automatic={attributes:{Constituição:1}};rule.attributeSlots=[{label:'Herança predatória',options:['Força','Agilidade'],value:1}];}
+export const RACE_RULES: Record<string,RaceRule> = Object.fromEntries(
+ Object.entries(raceBook).map(([name,content])=>[name,{name,summary:content.summary,automatic:content.creation.automatic,attributeSlots:[],skillSlots:[],features:content.features as RuleFeature[]}])
+);
+const lineage = racialProgression as Record<string, {
+ creation: {attributes: AttributeName[]; skills: string[] | "*"; skillCount: number; automatic: RaceRule["automatic"]};
+ stageVIAttributes: AttributeName[];
+}>;
+for (const [name, {creation}] of Object.entries(lineage)) {
+ const rule=RACE_RULES[name];
+ rule.automatic=creation.automatic;
+ rule.attributeSlots=[{label:"Atributo de linhagem",options:creation.attributes,value:1}];
+ rule.skillSlots=Array.from({length:creation.skillCount},(_,i)=>({label:`Perícia de linhagem ${i+1}`,options:creation.skills==="*"?ALL_SKILLS:creation.skills,value:1}));
 }
 export function racialFeatures(draft:CharacterPayload){const step=Math.max(1,getStageIndex(draft.stage));return getRaceRule(draft.race)?.features.filter(f=>!f.stage||['I','II','III','IV','V','VI','VII'].indexOf(f.stage)+1<=step)??[];}
 
@@ -705,13 +492,14 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   if (race) {
     addPartialBonus(result, race.automatic);
     const racialStage=Math.max(1,getStageIndex(draft.stage));
-    if(draft.race==='Elfo')result.karma+=racialStage;
-    if(draft.race==='Anão')result.life+=2*racialStage;
-    if(draft.race==='Demi-humano')result.movement+=1;
-    result.raceAttributeSlots = race.attributeSlots;
-    result.raceSkillSlots = race.skillSlots;
-    applySlots(result, race.attributeSlots, draft.allocations.raceAttributes, "attribute");
-    applySlots(result, race.skillSlots, draft.allocations.raceSkills, "skill");
+    if(draft.race==='Elfo'&&racialStage>=4)result.karma+=racialStage;
+    if(draft.race==='Anão'&&racialStage>=4)result.life+=2*racialStage;
+    result.raceAttributeSlots = [...race.attributeSlots];
+    if(racialStage>=6)result.raceAttributeSlots.push({label:"Atributo da Etapa VI",options:lineage[draft.race].stageVIAttributes,value:1});
+    if(draft.race==="Elfo"&&racialStage>=2)result.raceSkillSlots=[...race.skillSlots,{label:"Refração do Véu Verde",options:["Canalização de Karma","Pontaria"],value:1}];
+    else result.raceSkillSlots=race.skillSlots;
+    applySlots(result, result.raceAttributeSlots, draft.allocations.raceAttributes, "attribute");
+    applySlots(result, result.raceSkillSlots, draft.allocations.raceSkills, "skill");
     result.sources.push({ label: `Raça — ${race.name}`, detail: race.summary });
   }
 
@@ -937,7 +725,7 @@ export function getSkillTest(
   const level = permanentLevel;
   const form=corruptedFormState(draft,getFinalSkill(draft,automatic,"Controle da Corrupção"));
   const racialStage=getStageIndex(draft.stage);
-  const racialDice=Number(draft.race==='Elfo'&&racialStage>=2&&['Canalização de Karma','Pontaria'].includes(skill))+Number(draft.race==='Demônio'&&skill==='Intimidação');
+  const racialDice=Number(draft.race==='Demônio'&&racialStage>=4&&['Intimidação','Comunhão Divina','Controle da Corrupção'].includes(skill));
   const formDice=racialDice+(form.active&&form.selected.includes("instinto")&&(draft.corruption.formFocus===testPurpose&&((testPurpose==="evasion"&&skill==="Reflexos")||(testPurpose==="movement"&&skill==="Atletismo")||(testPurpose==="perception"&&skill==="Percepção")))?1:0);
   const inventoryPenalty=inventoryTestPenalty(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0,skill,["Força","Agilidade","Constituição"].includes(attribute)||["Atletismo","Acrobacia","Furtividade","Luta","Reflexos","Evasão"].includes(skill));
   const analyticBonus = attribute === "Intelecto" && (mental || social) && level > 0 && value > 0

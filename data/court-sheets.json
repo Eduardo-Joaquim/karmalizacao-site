@@ -64,7 +64,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -76,7 +76,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p><span data-divine-grant=\"tiamat\">Outorgada por Tiamat · Outro\npanteão.</span><span data-world-blessing=\"outorga-15\"></span> O Dragão\nNegro é uma carapaça viva, distribuída entre placas, garras e asas.\nEuphere molda essa presença com a massa disponível; Nadir reúne sua\nmatéria, plasma e Karma em uma única assinatura.</p>"
+            "html": "<p><span data-divine-grant=\"tiamat\">Outorgada por Tiamat · Entidade\nPrimordial.</span><span data-world-blessing=\"outorga-15\"></span> O\nDragão Negro é uma carapaça viva, distribuída entre placas, garras e\nasas. Euphere molda essa presença com a massa disponível; Nadir reúne\nsua matéria, plasma e Karma em uma única assinatura.</p>"
           }
         ],
         "grade": "",
@@ -89,17 +89,13 @@
           {
             "label": "",
             "html": "<p>Principal, 10 Karma; manutenção de 1 Karma no início de cada turno.\nReduz em 3 o dano final recebido, além das Resistências aplicáveis.\nPossui 12 Unidades de Massa na primeira fase e 16 na segunda. Asas\nocupam 4 UM. Mais de 6 UM destacadas da carapaça reduzem sua CA em 2.\nPlacas, garras e asas não perdem Vida por ataques; o dano que supera a\ndefesa alcança Euphere. Se não pagar a manutenção, a armadura desaparece\nao fim do turno e ela fica Exausta. <strong>Composição de\nKarma:</strong> 4 Base III, 4 Cena, 2 Defesa secundária II = 10\nKarma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "10 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Defesa",
+        "baseDamage": ""
       },
       {
         "title": "Foco Operacional",
@@ -107,7 +103,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>escolhe um alvo, área ou mecanismo no início da cena; uma vez por\nrodada, recebe +2 no primeiro teste de Luta ou Tática contra o Foco.\nTrocar exige Movimento.</p>"
+            "html": "<p>Escolhe um alvo, área ou mecanismo no início da cena; uma vez por\nrodada, recebe +2 no primeiro teste de Luta ou Tática contra o Foco.\nTrocar exige Movimento.</p>"
           }
         ],
         "grade": "",
@@ -120,17 +116,13 @@
           {
             "label": "",
             "html": "<p>Movimento, 13 Karma; permite usar Intelecto + Tática para atacar o\nFoco. O primeiro total de cada rodada recebe +1d6 e ignora 2 de\nResistência. <strong>Composição de Karma:</strong> 4 Base III, 1\nMovimento, 4 Cena, 3 Dado adicional, 1 Penetração = 13 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "13 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
-        "baseDamage": "2d6"
+        "damageType": "Defesa",
+        "baseDamage": ""
       },
       {
         "title": "Horizonte Partido",
@@ -142,17 +134,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Teste: Agilidade + Luta contra CA. Total: 2d6 cortantes; pode trocar\no +1d6 do Foco por Desarmar quando houver objeto exposto. Parcial:\nmetade, sem Desarmar. Custo: 4 Base III, 2 Médio, 2 Controle secundário\nII = 8 Karma. Matriz: Marcial; dano universal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Teste: Agilidade + Luta contra CA. Total: 2d6 cortantes; pode trocar\no +1d6 do Foco por Desarmar quando houver objeto exposto. Parcial:\nmetade, sem Desarmar. Custo: 4 Base III, 2 Médio, 2 Controle secundário\nII = 8 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "8 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -165,17 +153,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Teste: Agilidade + Luta contra CA. Total: 2d6 cortantes e empurra 2\nm. Parcial: metade, sem deslocamento. Atinge aliados na área. Custo: 4\nBase III, 4 Área média, 1 Empurrão 2 m = 9 Karma. Matriz: Marcial; dano\nuniversal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Teste: Agilidade + Luta contra CA. Total: 2d6 cortantes e empurra 2\nm. Parcial: metade, sem deslocamento. Atinge aliados na área. Custo: 4\nBase III, 4 Área média, 1 Empurrão 2 m = 9 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "9 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -188,17 +172,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Teste: Força + Luta contra CA. Total: 2d6 de impacto e desloca 4 m.\nParcial: metade e desloca 2 m. Custo: 4 Base III, 2 Movimento secundário\nII = 6 Karma. Matriz: Marcial; dano universal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Teste: Força + Luta contra CA. Total: 2d6 de impacto e desloca 4 m.\nParcial: metade e desloca 2 m. Custo: 4 Base III, 2 Movimento secundário\nII = 6 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "6 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -211,17 +191,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Teste: Força + Luta contra CA. Total: 2d6 de impacto e empurra 2 m.\nParcial: metade do dano, sem empurrão. Custo: 4 Base III, 1 Empurrão 2 m\n= 5 Karma. Matriz: Marcial; dano universal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Teste: Força + Luta contra CA. Total: 2d6 de impacto e empurra 2 m.\nParcial: metade do dano, sem empurrão. Custo: 4 Base III, 1 Empurrão 2 m\n= 5 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "5 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -234,17 +210,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Teste: Força + Luta contra CA. Total: 2d6 de impacto e Derrubado.\nParcial: metade, sem queda. Custo: 4 Base III, 2 Área pequena, 1 Caído =\n7 Karma. Matriz: Marcial; dano universal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Teste: Força + Luta contra CA. Total: 2d6 de impacto e Derrubado.\nParcial: metade, sem queda. Custo: 4 Base III, 2 Área pequena, 1 Caído =\n7 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "7 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -257,17 +229,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Teste: Espírito + Canalização de Karma contra CA. Total: 2d10 de\nplasma e perda da Reação até o início do próximo turno da vítima.\nParcial: metade, sem perda da Reação. Custo: 6 Base IV, 2 Médio, 3\nControle secundário III = 11 Karma. Matriz: Elemental; dano universal:\nKármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Teste: Espírito + Canalização de Karma contra CA. Total: 2d10 de\nplasma e perda da Reação até o início do próximo turno da vítima.\nParcial: metade, sem perda da Reação. Custo: 6 Base IV, 2 Médio, 3\nControle secundário III = 11 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "11 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
+        "damageType": "Elemental / Plasma",
         "baseDamage": "2d10"
       },
       {
@@ -280,17 +248,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Bênção, plasma e Karma. O Dragão Negro desprende duas costelas de sua\ncarapaça e as fecha em torno de um núcleo de plasma, sustentado por\nfilamentos de Karma. As peças se encontram sobre o ponto escolhido; a\ndescarga nasce voltada para dentro e desenha a silhueta de uma mandíbula\nnegra. Exige Armadura Viva ativa e 2 UM disponíveis, não destinadas às\nasas ou a outra estrutura. Euphere rola Espírito + Canalização de Karma\n(maior de 3d20 +5) uma vez contra a CA de cada inimigo na área; aliados\nsão excluídos pelos filamentos. Total: 2d10 de plasma e Imobilizado\npelas costelas até o início do próximo turno de Euphere. Uma Principal\npermite ao alvo tentar romper a contenção com Força + Atletismo contra o\nresultado original; empate ou sucesso liberta. Parcial: metade do dano,\nsem contenção. Falha: nenhum efeito. A descarga ocorre uma única vez; a\nprisão não causa dano recorrente, não impede ataques ou ações possíveis\ne se desfaz se a armadura terminar. As 2 UM não são consumidas: ficam\nocupadas até a contenção se desfazer e então voltam a ficar disponíveis.\nNão criam massa adicional. Uma utilização por cena; compartilha o ápice\nda cena com outras assinaturas. Não soma o dano de outra arma ou de\noutra técnica ao ataque. Os 15 Karma pagam apenas Nadir. Ativar a\nArmadura Viva exige outra Ação Principal e 10 Karma; sua manutenção\nhabitual de 1 Karma por turno continua sendo paga separadamente. Matriz:\nElemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Bênção, plasma e Karma. O Dragão Negro desprende duas costelas de sua\ncarapaça e as fecha em torno de um núcleo de plasma, sustentado por\nfilamentos de Karma. As peças se encontram sobre o ponto escolhido; a\ndescarga nasce voltada para dentro e desenha a silhueta de uma mandíbula\nnegra. Exige Armadura Viva ativa e 2 UM disponíveis, não destinadas às\nasas ou a outra estrutura. Euphere rola Espírito + Canalização de Karma\n(maior de 3d20 +5) uma vez contra a CA de cada inimigo na área; aliados\nsão excluídos pelos filamentos. Total: 2d10 de plasma e Imobilizado\npelas costelas até o início do próximo turno de Euphere. Uma Principal\npermite ao alvo tentar romper a contenção com Força + Atletismo contra o\nresultado original; empate ou sucesso liberta. Parcial: metade do dano,\nsem contenção. Falha: nenhum efeito. A descarga ocorre uma única vez; a\nprisão não causa dano recorrente, não impede ataques ou ações possíveis\ne se desfaz se a armadura terminar. As 2 UM não são consumidas: ficam\nocupadas até a contenção se desfazer e então voltam a ficar disponíveis.\nNão criam massa adicional. Uma utilização por cena; compartilha o ápice\nda cena com outras assinaturas. Não soma o dano de outra arma ou de\noutra técnica ao ataque. Os 15 Karma pagam apenas Nadir. Ativar a\nArmadura Viva exige outra Ação Principal e 10 Karma; sua manutenção\nhabitual de 1 Karma por turno continua sendo paga separadamente.</p>"
           }
         ],
         "grade": "IV",
         "cost": "15 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
+        "damageType": "Elemental / Plasma",
         "baseDamage": "2d10"
       },
       {
@@ -299,7 +263,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>atua submersa sem penalidades por pressão ou profundidade comum;\nrecebe um dado Extra para investigar vestígios abissais. A armadura\nmolda armas e estruturas com a massa disponível; não produz criaturas\nindependentes ou matéria permanente.</p>"
+            "html": "<p>Atua submersa sem penalidades por pressão ou profundidade comum;\nrecebe um dado Extra para investigar vestígios abissais. A armadura\nmolda armas e estruturas com a massa disponível; não produz criaturas\nindependentes ou matéria permanente.</p>"
           }
         ],
         "grade": "",
@@ -323,7 +287,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>de 180 a 91 Vida, conserva a primeira forma. Com 90 Vida ou menos, a\narmadura se compacta, conserva CA 27 e recebe 4 UM até o máximo de 16. A\nmudança não restaura Vida ou Karma nem concede uma ação.</p>"
+            "html": "<p>De 180 a 91 Vida, conserva a primeira forma. Com 90 Vida ou menos, a\narmadura se compacta, conserva CA 27 e recebe 4 UM até o máximo de 16. A\nmudança não restaura Vida ou Karma nem concede uma ação.</p>"
           }
         ],
         "grade": "",
@@ -384,7 +348,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -396,7 +360,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>resolva defesa, Resistência e escudo no corpo atingido; retire o dano\nrestante uma vez da reserva comum. Condições e Ferimentos pertencem ao\ncorpo afetado. Uma cura que alcance os dois na mesma resolução restaura\na reserva uma única vez. A 0 Vida, ambos ficam Morrendo e Inconscientes\ne usam um único marcador de morte. Karma, ações e concentração são\nindividuais; ambos estão na Etapa V e não possuem ápice de Grau V.</p>"
+            "html": "<p>Resolva defesa, Resistência e escudo no corpo atingido; retire o dano\nrestante uma vez da reserva comum. Condições e Ferimentos pertencem ao\ncorpo afetado. Uma cura que alcance os dois na mesma resolução restaura\na reserva uma única vez. A 0 Vida, ambos ficam Morrendo e Inconscientes\ne usam um único marcador de morte. Karma, ações e concentração são\nindividuais; ambos estão na Etapa V e não possuem ápice de Grau V.</p>"
           }
         ],
         "grade": "",
@@ -412,18 +376,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Espírito + Ocultismo contra Espírito + Ocultismo ou Presença +\nLiderança da vítima. Vitória: −2 no próximo ataque até o início do\npróximo turno de João. Empate favorece a vítima. Por 7 Karma (base III 4\n+ médio 2 + duração 1), a penalidade é −3 e dura duas rodadas. Custo: 3\nBase II, 2 Médio = 5 Karma. Matriz: Kármico; dano universal:\nKármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Espírito + Ocultismo contra Espírito + Ocultismo ou Presença +\nLiderança da vítima. Vitória: −2 no próximo ataque até o início do\npróximo turno de João. Empate favorece a vítima. Por 7 Karma (Base III 4\n+ médio 2 + duração 1), a penalidade é −3 e dura duas rodadas. Custo: 3\nBase II, 2 Médio = 5 Karma.</p>"
           }
         ],
         "grade": "II",
         "cost": "5 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d6"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Correntes da Garganta Vazia",
@@ -435,18 +395,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Espírito + Ocultismo contra CA. Total: Lento e sem Reação até o\ninício do próximo turno de João. Parcial: apenas Lento. Custo: 4 Base\nIII, 2 Médio, 2 Controle secundário II = 8 Karma. Matriz: Kármico; dano\nuniversal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Espírito + Ocultismo contra CA. Total: Lento e sem Reação até o\ninício do próximo turno de João. Parcial: apenas Lento. Custo: 4 Base\nIII, 2 Médio, 2 Controle secundário II = 8 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "8 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Liturgia da Boca Sem Fundo",
@@ -458,17 +414,13 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Exige foco preparado e alvo a 15 m. Oposição de Espírito + Ocultismo\ncontra a defesa espiritual da vítima. Vitória: 2d10 de Trevas no início\ndo próximo turno dela. No início de cada um dos dois turnos seguintes de\nJoão, repetir o pulso exige sua Principal e mais 8 Karma; sem esse\npagamento, o ritual termina. Uma Principal e resistência contra o\nresultado registrado rompem o ritual; cobrir ou destruir o foco também o\nencerra. Custo: 6 Base IV, 2 Médio, 2 Três rodadas = 10 Karma. Matriz:\nKármico; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Exige foco preparado e alvo a 15 m. Oposição de Espírito + Ocultismo\ncontra a defesa espiritual da vítima. Vitória: 2d10 de Trevas no início\ndo próximo turno dela. No início de cada um dos dois turnos seguintes de\nJoão, repetir o pulso exige sua Principal e mais 8 Karma; sem esse\npagamento, o ritual termina. Uma Principal e resistência contra o\nresultado registrado rompem o ritual; cobrir ou destruir o foco também o\nencerra. Custo: 6 Base IV, 2 Médio, 2 Três rodadas = 10 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "10 Karma",
-        "matrix": "Kármico",
-        "damageType": "Kármico",
+        "matrix": "Elemental",
+        "damageType": "Elemental / Sombra",
         "baseDamage": "2d10"
       },
       {
@@ -481,17 +433,13 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Centro a até 15 m, raio 5 m. Espírito + Controle de Trevas contra\ncada CA; total 2d10 de Trevas e puxa 2 m para o centro por caminho\nlivre; parcial metade e puxa 1 m; falha nada. Maria pode ser excluída.\nCusto: 6 Base IV, 2 Médio, 4 Área média, 2 Poupar Maria, 1 Empurrão = 15\nKarma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Centro a até 15 m, raio 5 m. Espírito + Controle de Trevas contra\ncada CA; total 2d10 de Trevas e puxa 2 m para o centro por caminho\nlivre; parcial metade e puxa 1 m; falha nada. Maria pode ser excluída.\nCusto: 6 Base IV, 2 Médio, 4 Área média, 2 Poupar Maria, 1 Empurrão = 15\nKarma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "15 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
+        "damageType": "Elemental / Sombra",
         "baseDamage": "2d10"
       },
       {
@@ -504,18 +452,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>+2 no teste do disparo; o dano da arma torna-se Magma/Fogo. O ataque\nconserva sua ação e seu dano-base. Custo: 3 Base II, 4 Livre, 1 Teste\nespecífico +2 = 8 Karma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>+2 no teste do disparo; o dano da arma torna-se Magma/Fogo. O ataque\nconserva sua ação e seu dano-base. Custo: 3 Base II, 4 Livre, 1 Teste\nespecífico +2 = 8 Karma.</p>"
           }
         ],
         "grade": "II",
         "cost": "8 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d6"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Passo de Escória",
@@ -527,18 +471,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Move até 9 m por trajeto livre, sujeito a gatilhos normais; não\nconcede ataque ou ocultação. Esconder-se exige a ação e o teste normais.\nCusto: 3 Base II, 4 Livre = 7 Karma. Matriz: Marcial; dano universal:\nFísico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 1d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Move até 9 m por trajeto livre, sujeito a gatilhos normais; não\nconcede ataque ou ocultação. Esconder-se exige a ação e o teste normais.\nCusto: 3 Base II, 4 Livre = 7 Karma.</p>"
           }
         ],
         "grade": "II",
         "cost": "7 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
-        "baseDamage": "1d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Olho da Caldeira",
@@ -550,18 +490,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Por três rodadas, percebe calor e vibrações de criaturas em 15 m,\nrespeitando cobertura total. Por mais 5 Karma na ativação (2 por alcance\nlongo e 3 por um dado adicional), alcança 30 m; o dado adicional de 1d6\nvale somente para o próximo acerto antes do início do turno seguinte,\nnão a cada rodada. Custo: 4 Base III, 1 Movimento, 2 Médio, 2 Três\nrodadas = 9 Karma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Por três rodadas, percebe calor e vibrações de criaturas em 15 m,\nrespeitando cobertura total. Por mais 5 Karma na ativação (2 por alcance\nlongo e 3 por um dado adicional), alcança 30 m; o dado adicional de 1d6\nvale somente para o próximo acerto antes do início do turno seguinte,\nnão a cada rodada. Custo: 4 Base III, 1 Movimento, 2 Médio, 2 Três\nrodadas = 9 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "9 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "Caldeirão da Gula",
@@ -573,17 +509,13 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Flecha-âncora a até 15 m, raio 5 m. Pontaria contra cada CA: total\n2d10 de Magma e Imobilizado até o início do próximo turno de Maria;\nparcial metade e Lento pelo mesmo prazo; falha nada. Uma Principal e\nForça + Atletismo contra o resultado inicial permitem sair antes. João e\naté dois aliados podem ser excluídos. Não causa dano periódico\nadicional. Custo: 6 Base IV, 2 Médio, 4 Área média, 2 Poupar aliados, 3\nControle secundário III = 17 Karma. Matriz: Elemental; dano universal:\nKármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Flecha-âncora a até 15 m, raio 5 m. Pontaria contra cada CA: total\n2d10 de Magma e Imobilizado até o início do próximo turno de Maria;\nparcial metade e Lento pelo mesmo prazo; falha nada. Uma Principal e\nForça + Atletismo contra o resultado inicial permitem sair antes. João e\naté dois aliados podem ser excluídos. Não causa dano periódico\nadicional. Custo: 6 Base IV, 2 Médio, 4 Área média, 2 Poupar aliados, 3\nControle secundário III = 17 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "17 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
+        "damageType": "Elemental / Magma",
         "baseDamage": "2d10"
       },
       {
@@ -592,7 +524,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>o vínculo não transmite condições entre os corpos. Impedir João de\nmanter o foco interrompe sua pressão ritual; impedir Maria de sustentar\no Caldeirão encerra a fervura. Separá-los dificulta a coordenação, mas\nnão divide a Vida nem permite transferir Karma. O Caldeirão admite fuga\nfísica e destruição de suas paredes; não impede teleporte por si só.</p>"
+            "html": "<p>O vínculo não transmite condições entre os corpos. Impedir João de\nmanter o foco interrompe sua pressão ritual; impedir Maria de sustentar\no Caldeirão encerra a fervura. Separá-los dificulta a coordenação, mas\nnão divide a Vida nem permite transferir Karma. O Caldeirão admite fuga\nfísica e destruição de suas paredes; não impede teleporte por si só.</p>"
           }
         ],
         "grade": "",
@@ -1115,7 +1047,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1140,10 +1072,6 @@
           {
             "label": "",
             "html": "<p>Principal, 6 Karma, 15 m; 2d6 kármicos e Lento até o início do\npróximo turno de Geppeto no total. Parcial: metade e Lento até o início\ndo próximo turno do alvo. <strong>Composição de Karma:</strong> 3 Base\nII, 2 Médio, 1 Lento = 6 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "II",
@@ -1159,17 +1087,13 @@
           {
             "label": "",
             "html": "<p>Principal, 6 Karma; Geppeto e uma invocação, ou duas invocações, a\naté 5 m recebem 2d6 de escudo temporário até o início do próximo turno\ndele. Não acumula consigo. <strong>Composição de Karma:</strong> 4 Base\nIII, 2 Dois alvos = 6 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "6 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Defesa",
+        "baseDamage": ""
       },
       {
         "title": "Teatro dos Sete Fios",
@@ -1177,7 +1101,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>chamar uma peça exige Principal e o custo da tabela; ela surge a até\n5 m. Conjuração Vincular 2: até quatro peças ativas, soma de Graus até\n8. Conhece sete pactos, mas não pode manifestar todos simultaneamente.\nMovimento permite ordenar duas peças, Extra uma terceira; no máximo três\ncomandos por turno, uma ação por peça. Sem ordem, acompanham com metade\ndo movimento e defendem. Ordens exigem voz audível. Grande Ato custa\nPrincipal e 2 Karma, além dos recursos normais de comando, uma vez por\ncena: ordena até três peças disponíveis, sem elevar o teto de comandos\nou de Graus ativos, após anunciar os sete fios na rodada anterior;\nsubstitui a regência normal daquele turno.</p>"
+            "html": "<p>Chamar uma peça exige Principal e o custo da tabela; ela surge a até\n5 m. Conjuração Vincular 2: até quatro peças ativas, soma de Graus até\n8. Conhece sete pactos, mas não pode manifestar todos simultaneamente.\nMovimento permite ordenar duas peças, Extra uma terceira; no máximo três\ncomandos por turno, uma ação por peça. Sem ordem, acompanham com metade\ndo movimento e defendem. Ordens exigem voz audível. Grande Ato custa\nPrincipal e 2 Karma, além dos recursos normais de comando, uma vez por\ncena: ordena até três peças disponíveis, sem elevar o teto de comandos\nou de Graus ativos, após anunciar os sete fios na rodada anterior;\nsubstitui a regência normal daquele turno.</p>"
           }
         ],
         "grade": "",
@@ -1329,7 +1253,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>cada peça tem uma Reação; uma reação ofensiva ou de controle\nreservada substitui sua ação comandada. Invocações destruídas não\nretornam durante o confronto. A casca a 0 Vida encerra todos os vínculos\nlocais. As sete chamadas têm soma-base de 35 Karma, mas os limites\nimpedem sete manifestações simultâneas. Cada peça além da primeira paga\n+1 na própria chamada e manutenção; manutenção a cada dez rodadas ou na\ntransição de cena, sem cobrança duplicada.</p>"
+            "html": "<p>Cada peça tem uma Reação; uma reação ofensiva ou de controle\nreservada substitui sua ação comandada. Invocações destruídas não\nretornam durante o confronto. A casca a 0 Vida encerra todos os vínculos\nlocais. As sete chamadas têm soma-base de 35 Karma, mas os limites\nimpedem sete manifestações simultâneas. Cada peça além da primeira paga\n+1 na própria chamada e manutenção; manutenção a cada dez rodadas ou na\ntransição de cena, sem cobrança duplicada.</p>"
           }
         ],
         "grade": "",
@@ -1341,7 +1265,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>silêncio interrompe comandos. Na segunda fase, Investigação ou\nOcultismo CD 18 revela um fio mestre: CA 12, Vida 8. Rompê-lo reduz as\nordens habituais de três para duas até Geppeto gastar Principal para\nrepará-lo. Só um fio fica exposto por vez.</p>"
+            "html": "<p>Silêncio interrompe comandos. Na segunda fase, Investigação ou\nOcultismo CD 18 revela um fio mestre: CA 12, Vida 8. Rompê-lo reduz as\nordens habituais de três para duas até Geppeto gastar Principal para\nrepará-lo. Só um fio fica exposto por vez.</p>"
           }
         ],
         "grade": "",
@@ -1353,7 +1277,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>com 40 Vida ou três Âncoras desligadas, a máscara se rompe. A mudança\nnão recupera recursos. Cinco das nove Âncoras Territoriais desligadas\nexpulsam sua manifestação.</p>"
+            "html": "<p>Com 40 Vida ou três Âncoras desligadas, a máscara se rompe. A mudança\nnão recupera recursos. Cinco das nove Âncoras Territoriais desligadas\nexpulsam sua manifestação.</p>"
           }
         ],
         "grade": "",
@@ -1410,7 +1334,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1435,17 +1359,13 @@
           {
             "label": "",
             "html": "<p>Movimento, 11 Karma; raio de 5 m por duas rodadas. +2 em Furtividade\npara Ganância; −2 em Percepção visual e ataques à distância através da\nárea. Luz intensa e sentidos alternativos contrariam o véu.\n<strong>Composição de Karma:</strong> 4 Base III, 1 Movimento, 4 Área\nmédia, 1 Duas rodadas, 1 Efeito menor = 11 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "11 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "Estocada de Luz",
@@ -1454,16 +1374,12 @@
           {
             "label": "",
             "html": "<p>Principal, 8 Karma, linha de 15 m; maior de 3d20 +5 contra CA, 2d8 de\nLuz. Pode atacar um segundo inimigo alinhado com a mesma rolagem, sem\natingir um terceiro. Parcial: metade. <strong>Composição de\nKarma:</strong> 4 Base III, 2 Médio, 2 Dois alvos = 8 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "8 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
+        "damageType": "Elemental / Luz",
         "baseDamage": "2d8"
       },
       {
@@ -1472,18 +1388,14 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>a primeira Marca de Usurpação exige causar mais de 10 de dano final à\nVida em um único ataque e estar a até 5 m; aplicá-la usa Livre após o\nataque. Marcas posteriores usam Principal e Intelecto + Ladinagem contra\nConstituição + Atletismo. O custo por marca é 13 Karma, sem desconto por\ndiferença de Atributos. Cada alvo admite uma marca por rodada; até dois\nalvos podem ser marcados na rodada. Uma ou mais marcas impõem −2 em\ntestes físicos, sem acumular. A quarta consome as marcas e permite uma\núnica aplicação de Alienação Integral, com sua ação, custo e ataque\nnormais; não causa morte ou queda automática. Vida máxima ou fim da cena\nremovem as marcas. Não funciona em corpos sem anatomia pertinente e não\nconcede poderes da vítima. <strong>Composição de Karma:</strong> 6 Base\nIV, 4 Livre inicial, 3 Controle secundário III = 13 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>A primeira Marca de Usurpação exige causar mais de 10 de dano final à\nVida em um único ataque e estar a até 5 m; aplicá-la usa Livre após o\nataque. Marcas posteriores usam Principal e Intelecto + Ladinagem contra\nConstituição + Atletismo. O custo por marca é 13 Karma, sem desconto por\ndiferença de Atributos. Cada alvo admite uma marca por rodada; até dois\nalvos podem ser marcados na rodada. Uma ou mais marcas impõem −2 em\ntestes físicos, sem acumular. A quarta consome as marcas e permite uma\núnica aplicação de Alienação Integral, com sua ação, custo e ataque\nnormais; não causa morte ou queda automática. Vida máxima ou fim da cena\nremovem as marcas. Não funciona em corpos sem anatomia pertinente e não\nconcede poderes da vítima. <strong>Composição de Karma:</strong> 6 Base\nIV, 4 Livre inicial, 3 Controle secundário III = 13 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "13 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d8"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Transgressão à Carne — Grau IV",
@@ -1491,17 +1403,13 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Principal, 13 Karma, uma vez por cena; até três alvos marcados a 15\nm. Agilidade + Ladinagem oposta a Constituição + Atletismo de cada\nvítima. Quem perder fica preso aos fios por duas rodadas, Imobilizado,\nsem perder a Principal. Uma Principal e a mesma oposição permitem romper\no vínculo. Ganância não recebe Vida, escudo ou ações das vítimas.\n<strong>Alienação Integral:</strong> durante o vínculo, uma Principal e\n8 Karma encerram a própria Transgressão para atacar um afetado: 3d8\nkármico contra CA, parcial metade, falha nada. Consome duas marcas antes\nda tentativa, mesmo em falha; não causa condição adicional.\n<strong>Composição de Karma:</strong> 6 Base IV, 2 Médio, 4 Até seis\nalvos, 1 Duas rodadas = 13 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Principal, 13 Karma, uma vez por cena; até três alvos marcados a 15\nm. Agilidade + Ladinagem oposta a Constituição + Atletismo de cada\nvítima. Quem perder fica preso aos fios por duas rodadas, Imobilizado,\nsem perder a Principal. Uma Principal e a mesma oposição permitem romper\no vínculo. Ganância não recebe Vida, escudo ou ações das vítimas.\n<strong>Alienação Integral:</strong> Durante o vínculo, uma Principal e\n8 Karma encerram a própria Transgressão para atacar um afetado: 3d8\nkármico contra CA, parcial metade, falha nada. Consome duas marcas antes\nda tentativa, mesmo em falha; não causa condição adicional.\n<strong>Composição de Karma:</strong> 6 Base IV, 2 Médio, 4 Até seis\nalvos, 1 Duas rodadas = 13 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "13 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d8"
       },
       {
@@ -1523,17 +1431,13 @@
           {
             "label": "",
             "html": "<p>Principal, 9 Karma, 5 m; Agilidade + Ladinagem CD 18. Abre por uma\nrodada um vão de 1 m numa proteção com mecanismo ou selo identificável,\npermitindo a passagem dele e de um aliado. Contra proteção Grau IV,\nconserva o custo e exige CD 22. Não atravessa parede maciça sem acesso\nnem proteção Grau V. <strong>Composição de Karma:</strong> 6 Base IV, 2\nDois alvos, 1 Duas rodadas = 9 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "IV",
         "cost": "9 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Maldição solar",
@@ -1541,7 +1445,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>sol direto impõe Desvantagem em testes físicos e sobrenaturais e\nimpede sua cura por Drenagem Vital. Esta pode ocorrer três vezes por\ncena, após acerto corpo a corpo contra vivo voluntário, Agarrado ou\nIndefeso: +1d6 de dano e cura igual. A luz que ele próprio produz não é\nsolar.</p>"
+            "html": "<p>Sol direto impõe Desvantagem em testes físicos e sobrenaturais e\nimpede sua cura por Drenagem Vital. Esta pode ocorrer três vezes por\ncena, após acerto corpo a corpo contra vivo voluntário, Agarrado ou\nIndefeso: +1d6 de dano e cura igual. A luz que ele próprio produz não é\nsolar.</p>"
           }
         ],
         "grade": "",
@@ -1606,7 +1510,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1618,7 +1522,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>imune a Sangramento, veneno e sufocamento. Fogo suspende suas\nproteções de casca e raiz enquanto a queimadura estiver ativa; não\nimpede que outras criaturas o tratem como alvo.</p>"
+            "html": "<p>Imune a Sangramento, veneno e sufocamento. Fogo suspende suas\nproteções de casca e raiz enquanto a queimadura estiver ativa; não\nimpede que outras criaturas o tratem como alvo.</p>"
           }
         ],
         "grade": "",
@@ -1634,17 +1538,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>2d6 físico e empurra 2 m no total; metade e empurra 1 m no parcial.\nCusto: 4 Base III, 1 Empurrão = 5 Karma. Matriz: Marcial; dano\nuniversal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>2d6 físico e empurra 2 m no total; metade e empurra 1 m no parcial.\nCusto: 4 Base III, 1 Empurrão = 5 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "5 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -1657,18 +1557,14 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Percorre até 12 m por solo natural e emerge no início do próximo\nturno; não pode ser usado em turnos consecutivos. Enquanto enterrado,\nnão ataca nem usa Muralha. Seu primeiro ataque corpo a corpo ao emergir\nrecebe um dado Extra. Custo: 6 Base IV, 1 Movimento, 3 Dado no próximo\nataque = 10 Karma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Percorre até 12 m por solo natural e emerge no início do próximo\nturno; não pode ser usado em turnos consecutivos. Enquanto enterrado,\nnão ataca nem usa Muralha. Seu primeiro ataque corpo a corpo ao emergir\nrecebe um dado Extra. Custo: 6 Base IV, 1 Movimento, 3 Dado no próximo\nataque = 10 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "10 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d10"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "Erupção do Bosque Sepultado",
@@ -1680,17 +1576,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Total: 2d10 físicos e um alvo Imobilizado até o fim do próximo turno\ndele. Parcial: metade e −3 m de movimento. Não pode ser usada em turnos\nconsecutivos. Custo: 6 Base IV, 2 Médio, 4 Área média, 3 Controle\nsecundário III = 15 Karma. Matriz: Elemental; dano universal:\nKármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Total: 2d10 físicos e um alvo Imobilizado até o fim do próximo turno\ndele. Parcial: metade e −3 m de movimento. Não pode ser usada em turnos\nconsecutivos. Custo: 6 Base IV, 2 Médio, 4 Área média, 3 Controle\nsecundário III = 15 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "15 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
+        "damageType": "Elemental / Terra",
         "baseDamage": "2d10"
       },
       {
@@ -1703,17 +1595,13 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Até dois cativos em altares recebem vínculos visíveis, CA 18 e Vida\n5. No início do próximo turno, faça uma única rolagem de ataque contra\ncada cativo ainda vinculado, que causa 3d6 de Terra no total, metade no\nparcial. Principal e Atletismo, Sobrevivência ou Canalização CD 18\nrompem um vínculo. Custo: 4 Base III, 2 Dois alvos, 2 Médio, -1 Preparo\nanunciado = 7 Karma. Matriz: Corrupto; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Até dois cativos em altares recebem vínculos visíveis, CA 18 e Vida\n5. No início do próximo turno, faça uma única rolagem de ataque contra\ncada cativo ainda vinculado, que causa 3d6 de Terra no total, metade no\nparcial. Principal e Atletismo, Sobrevivência ou Canalização CD 18\nrompem um vínculo. Custo: 4 Base III, 2 Dois alvos, 2 Médio, -1 Preparo\nanunciado = 7 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "7 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d6"
       },
       {
@@ -1726,18 +1614,14 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Por três rodadas, raízes em raio de 10 m tornam o chão difícil para\ninimigos. Terminar o turno sem mover 3 m concede Torpor; mover 3 m\nremove uma marca. Uma marca: −3 m. Duas: Imobilizado e um dado a menos.\nUma ação de Movimento remove todas as marcas. O Santuário não causa dano\nnem suprime a Principal. Custo: 6 Base IV, 6 Área grande, 2 Três\nrodadas, 2 Poupar aliados, 3 Controle secundário III = 19 Karma. Matriz:\nCorrupto; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Por três rodadas, raízes em raio de 10 m tornam o chão difícil para\ninimigos. Terminar o turno sem mover 3 m concede Torpor; mover 3 m\nremove uma marca. Uma marca: −3 m. Duas: Imobilizado e um dado a menos.\nUma ação de Movimento remove todas as marcas. O Santuário não causa dano\nnem suprime a Principal. Custo: 6 Base IV, 6 Área grande, 2 Três\nrodadas, 2 Poupar aliados, 3 Controle secundário III = 19 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "19 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d8"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "Muralha de Raízes",
@@ -1749,18 +1633,14 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>+2 CA contra um ataque percebido, declarado antes da rolagem. Não\nprotege de Fogo nem funciona enquanto enterrado. Custo: 2 Base I, 1\nReação = 3 Karma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 1d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>+2 CA contra um ataque percebido, declarado antes da rolagem. Não\nprotege de Fogo nem funciona enquanto enterrado. Custo: 2 Base I, 1\nReação = 3 Karma.</p>"
           }
         ],
         "grade": "I",
         "cost": "3 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "1d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Arrasto Subterrâneo",
@@ -1772,18 +1652,14 @@
           },
           {
             "label": "Efeito",
-            "html": "<p>Após sofrer um total, move 3 m por terra natural sem provocar\nreações; permanece visível. Custo: 2 Base I, 1 Reação = 3 Karma. Matriz:\nElemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 1d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Após sofrer um total, move 3 m por terra natural sem provocar\nreações; permanece visível. Custo: 2 Base I, 1 Reação = 3 Karma.</p>"
           }
         ],
         "grade": "I",
         "cost": "3 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "1d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Coração-Semente",
@@ -1791,7 +1667,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>emerge depois de mergulhos e sacrifícios. Uma Principal de Ocultismo\nou Sobrevivência CD 20 identifica o ritmo de exposição. Um total\ndirigido ao coração suspende proteções de raiz e impede novo Mergulho\naté o próximo turno. Percepção ou Sobrevivência CD 20 localiza sua\nposição subterrânea e remove o dado Extra da emergência; 5 de dano que\nalcance o subsolo força sua saída.</p>"
+            "html": "<p>Emerge depois de mergulhos e sacrifícios. Uma Principal de Ocultismo\nou Sobrevivência CD 20 identifica o ritmo de exposição. Um total\ndirigido ao coração suspende proteções de raiz e impede novo Mergulho\naté o próximo turno. Percepção ou Sobrevivência CD 20 localiza sua\nposição subterrânea e remove o dado Extra da emergência; 5 de dano que\nalcance o subsolo força sua saída.</p>"
           }
         ],
         "grade": "",
@@ -1803,7 +1679,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>com 60 Vida ou menos, a casca se abre, o movimento sobe para 10 m, o\ncoração permanece visível e o Santuário fica disponível. A transição não\nrecupera Vida, Karma ou ações.</p>"
+            "html": "<p>Com 60 Vida ou menos, a casca se abre, o movimento sobe para 10 m, o\ncoração permanece visível e o Santuário fica disponível. A transição não\nrecupera Vida, Karma ou ações.</p>"
           }
         ],
         "grade": "",
@@ -1864,7 +1740,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1880,17 +1756,13 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Principal; até 2 m. Luta contra CA. Total: 2d6 tóxico e Envenenado\naté o início do próximo turno dela; parcial metade e sem condição; falha\nnada. Não acumula venenos ou mata por contagem. Custo: 4 Base III, 1\nEnvenenado = 5 Karma. Matriz: Marcial; dano universal: Físico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Marcial · Físico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Principal; até 2 m. Luta contra CA. Total: 2d6 tóxico e Envenenado\naté o início do próximo turno dela; parcial metade e sem condição; falha\nnada. Não acumula venenos ou mata por contagem. Custo: 4 Base III, 1\nEnvenenado = 5 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "5 Karma",
         "matrix": "Marcial",
-        "damageType": "Físico",
+        "damageType": "Marcial",
         "baseDamage": "2d6"
       },
       {
@@ -1903,18 +1775,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Movimento; pessoal, até o fim da cena. Abafa som e rastros novos;\nFurtividade ainda enfrenta Percepção e exige ocultação real. Atacar\nrevela sua posição, sem encerrar o abafamento. Não concede\ninvisibilidade. Custo: 3 Base II, 1 Movimento, 4 Duração de cena = 8\nKarma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Movimento; pessoal, até o fim da cena. Abafa som e rastros novos;\nFurtividade ainda enfrenta Percepção e exige ocultação real. Atacar\nrevela sua posição, sem encerrar o abafamento. Não concede\ninvisibilidade. Custo: 3 Base II, 1 Movimento, 4 Duração de cena = 8\nKarma.</p>"
           }
         ],
         "grade": "II",
         "cost": "8 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d6"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "Jardim Proibido",
@@ -1926,18 +1794,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Principal; centro a 15 m, raio 5 m, duas rodadas. Controle de Água\ncontra Constituição + Atletismo de cada criatura na criação. Vitória\naplica Desorientado até o início do turno seguinte da assassina; empate\nou derrota nada. O miasma obscurece a área, impondo −2 à Percepção\nvisual enquanto permanecer; aliados também. Não drena Karma e não repete\na condição ao entrar. Custo: 6 Base IV, 2 Médio, 4 Área média, 1 Duas\nrodadas = 13 Karma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Principal; centro a 15 m, raio 5 m, duas rodadas. Controle de Água\ncontra Constituição + Atletismo de cada criatura na criação. Vitória\naplica Desorientado até o início do turno seguinte da assassina; empate\nou derrota nada. O miasma obscurece a área, impondo −2 à Percepção\nvisual enquanto permanecer; aliados também. Não drena Karma e não repete\na condição ao entrar. Custo: 6 Base IV, 2 Médio, 4 Área média, 1 Duas\nrodadas = 13 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "13 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Sete Gotas do Pecado",
@@ -1949,18 +1813,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Principal; até seis alvos a 15 m. Sete agulhas formam um único ataque\npor alvo; uma rolagem de Pontaria e um dano de 2d12, comparados\nindividualmente à CA. Total aplica Envenenado até o início do próximo\nturno dela; parcial metade sem condição; falha nada. Concentrar agulhas\nnão multiplica dano contra a mesma criatura. Custo: 6 Base IV, 2 Médio,\n4 Até seis alvos, 1 Envenenado = 13 Karma. Matriz: Elemental; dano\nuniversal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Principal; até seis alvos a 15 m. Sete agulhas formam um único ataque\npor alvo; uma rolagem de Pontaria e um dano de 2d12, comparados\nindividualmente à CA. Total aplica Envenenado até o início do próximo\nturno dela; parcial metade sem condição; falha nada. Concentrar agulhas\nnão multiplica dano contra a mesma criatura. Custo: 6 Base IV, 2 Médio,\n4 Até seis alvos, 1 Envenenado = 13 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "13 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Espelho, Espelho Meu",
@@ -1972,18 +1832,14 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Reação antes de ataque percebido contra ela. Uma imagem sustenta\ndefesa oposta de Controle de Água contra o ataque; vitória anula apenas\naquela incidência e permite recuar 2 m por trajeto livre, empate metade\ndo dano sem recuo, derrota dano normal. Não combina com Evasão ou outra\ndefesa. Custo: 4 Base III, 1 Reação, 2 Movimento secundário II = 7\nKarma. Matriz: Elemental; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Elemental · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Reação antes de ataque percebido contra ela. Uma imagem sustenta\ndefesa oposta de Controle de Água contra o ataque; vitória anula apenas\naquela incidência e permite recuar 2 m por trajeto livre, empate metade\ndo dano sem recuo, derrota dano normal. Não combina com Evasão ou outra\ndefesa. Custo: 4 Base III, 1 Reação, 2 Movimento secundário II = 7\nKarma.</p>"
           }
         ],
         "grade": "III",
         "cost": "7 Karma",
         "matrix": "Elemental",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "A Última Maçã",
@@ -1995,17 +1851,13 @@
           },
           {
             "label": "Resolução",
-            "html": "<p>Principal; uma vez por cena; centro a 15 m, raio 5 m; paga também 2\nPC e faz Controle da Corrupção CD 18. Controle da Corrupção contra cada\nCA: total 3d8 corrupto e Cego até o início do próximo turno dela;\nparcial metade e −2 ao próximo ataque visual; falha nada. Atinge\naliados, pode ser dispersa por vento forte e não cancela técnicas\nalheias. Não existe execução automática. Custo: 6 Base IV, 2 Médio, 4\nÁrea média, 3 Controle secundário III = 15 Karma. Matriz: Corrupto; dano\nuniversal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Principal; uma vez por cena; centro a 15 m, raio 5 m; paga também 2\nPC e faz Controle da Corrupção CD 18. Controle da Corrupção contra cada\nCA: total 3d8 corrupto e Cego até o início do próximo turno dela;\nparcial metade e −2 ao próximo ataque visual; falha nada. Atinge\naliados, pode ser dispersa por vento forte e não cancela técnicas\nalheias. Não existe execução automática. Custo: 6 Base IV, 2 Médio, 4\nÁrea média, 3 Controle secundário III = 15 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "15 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d8"
       },
       {
@@ -2014,7 +1866,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>prepara a eliminação por exposição e isolamento. Suas ilusões\ndependem da contaminação sensorial; imagens não são corpos\nindependentes. O Miasma não transforma Trevas em Corrupção e não produz\nexecução automática.</p>"
+            "html": "<p>Prepara a eliminação por exposição e isolamento. Suas ilusões\ndependem da contaminação sensorial; imagens não são corpos\nindependentes. O Miasma não transforma Trevas em Corrupção e não produz\nexecução automática.</p>"
           }
         ],
         "grade": "",
@@ -2026,7 +1878,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>observar partículas, rastros interrompidos e reflexos permite\nreconhecer a área contaminada. Cobertura total e ausência de trajetória\nimpedem ataques diretos; efeitos que removam o veneno ou dispersem as\npartículas enfrentam a preparação da assassina. Identificar a origem da\ncontaminação é tão relevante quanto alcançar seu corpo.</p>"
+            "html": "<p>Observar partículas, rastros interrompidos e reflexos permite\nreconhecer a área contaminada. Cobertura total e ausência de trajetória\nimpedem ataques diretos; efeitos que removam o veneno ou dispersem as\npartículas enfrentam a preparação da assassina. Identificar a origem da\ncontaminação é tão relevante quanto alcançar seu corpo.</p>"
           }
         ],
         "grade": "",
@@ -2114,7 +1966,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -2126,7 +1978,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>subdobra avançada de Terra que molda ferramentas, barreiras e\nconstruções animadas. A Corrupção grava memórias na matéria. As cópias\nnão possuem alma.</p>"
+            "html": "<p>Subdobra avançada de Terra que molda ferramentas, barreiras e\nconstruções animadas. A Corrupção grava memórias na matéria. As cópias\nnão possuem alma.</p>"
           }
         ],
         "grade": "",
@@ -2139,16 +1991,12 @@
           {
             "label": "",
             "html": "<p>Principal, 11 Karma e 1 PC, 15 m. Um acerto pessoal anterior permite\nmarcar o Karma da vítima; a marca concede uma leitura no turno seguinte.\nCada ativação revela um terço das memórias acessíveis. Resistência\nespiritual à Corrupção CD 20 evita as penalidades; a leitura ainda\nocorre pelo Voto O Direito de Conhecer. Falha deixa Abalado e pode\ncausar 1d6 mental; a terceira leitura acrescenta 1d8 mental e\nDesorientado até o fim do próximo turno. Romper a marca exige Principal\ne resistência espiritual CD 18. <strong>Composição de Karma:</strong> 6\nBase IV, 2 Médio, 3 Controle secundário III = 11 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "IV",
         "cost": "11 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d8"
       },
       {
@@ -2158,17 +2006,13 @@
           {
             "label": "",
             "html": "<p>Principal, 12 Karma; até dois clones, manutenção de 1 Karma por clone\na cada rodada. Um terço das memórias produz clone com Vida 8, CA 8 e\nKarma próprio 0; dois terços: Vida 16, CA 16 e Karma próprio 0; memória\ncompleta: Vida 24, CA 24 e Karma próprio 0. Um clone completo pode\nreproduzir uma habilidade Grau I–III, pagando integralmente com o Karma\nde Maélia; não reproduz Domínios ou Votos. Apenas um clone realiza ação\nofensiva comandada por rodada, consumindo a Principal de Maélia; manter\nclones não cria ações ofensivas gratuitas. Enquanto mantiver clones,\nMaélia não restaura a própria Vida; fazê-lo desfaz todos e impede novas\ncópias na cena. <strong>Composição de Karma:</strong> 6 Base IV, 2 Dois\nalvos, 4 Duração de cena = 12 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "IV",
         "cost": "12 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d8"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Os Pequenos Famintos — Grau III",
@@ -2177,16 +2021,12 @@
           {
             "label": "",
             "html": "<p>Principal, 14 Karma e 2 PC; cria até três miniaturas, cada uma com\nVida 6, CA 12 e movimento 6 m. O grupo realiza um ataque por rodada:\nmaior de 3d20 +5 contra CA; total causa 1d6 e drena 2 Karma, parcial\ncausa metade e drena 1. Ao acumular 4 Karma, o grupo recebe 8 de escudo\ntemporário e +3 no próximo dano, consumido após o golpe. Só absorvem de\nquem já usou técnica sobrenatural na cena; violar essa regra zera a\nreserva e desativa o grupo por um turno. <strong>Composição de\nKarma:</strong> 4 Base III, 4 Três alvos, 4 Duração de cena, 2 Controle\nsecundário II = 14 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d6. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "14 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d6"
       },
       {
@@ -2196,17 +2036,13 @@
           {
             "label": "",
             "html": "<p>Reação, 9 Karma, 10 m, uma vez por rodada. Reduz 2d6 + Espírito do\ndano de um ataque ou, após o acerto, cura 2d8 + Espírito de um alvo\nconsciente. Pode manter uma ligação até o início do próximo turno e\nassumir uma vez até 5 de dano no lugar do protegido. Não remove\ncondições nem desperta alguém em Estado Crítico. Uma criatura consciente\npode recusar a ligação. <strong>Composição de Karma:</strong> 4 Base\nIII, 1 Reação, 2 Médio, 2 Proteção secundária II = 9 Karma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d6. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "III",
         "cost": "9 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d6"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "A Casa dos Amanhãs Roubados — Grau IV",
@@ -2215,16 +2051,12 @@
           {
             "label": "",
             "html": "<p>Principal, 19 Karma e 4 PC; exige um terço de memória registrado,\nraio 10 m, três rodadas. Inimigos perdem 2 m de deslocamento. Alvos\nmarcados resistem à Corrupção CD 20 no início do turno: sucesso evita o\nefeito mental; falha impõe −2 no próximo teste sobrenatural, mais −2 m\nde movimento e 1d6 mental. Movimento de Maélia concede uma vez por\nrodada 6 de escudo temporário a uma construção, pagando 3 Karma por\nconcessão. Reação permite trocar de posição com um clone, uma vez por\nrodada. Duas bonecas-âncora, CA 12 e Vida 8 cada, sustentam a casa;\ndestruir ambas a encerra. A boneca azul de Eron nunca é uma dessas\nâncoras. <strong>Composição de Karma:</strong> 6 Base IV, 6 Área grande,\n2 Três rodadas, 2 Seleção de aliados, 3 Controle secundário III = 19\nKarma.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
           }
         ],
         "grade": "IV",
         "cost": "19 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d8"
       },
       {
@@ -2257,7 +2089,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>com 60 Vida ou menos, Maélia pode usar Principal, 13 Karma e 6 PC e\nteste de controle CD 17 para assumir a Mãe do Vazio. Se a boneca azul\nfor tomada contra sua vontade, a transformação é imediata, sem ação ou\nteste, e ela perde o controle consciente. A forma concede +2 Presença e\nEspírito, CA 25 e redução 3 contra dano não divino. Costuras do Nunca\nMais usa Reação e 2 PC após a destruição de um clone; o responsável\nresiste à imobilização com CD 18. Recuperar a boneca permite teste de\ncontrole CD 20 no início do turno para retomar a consciência. Nenhuma\ntransformação restaura reservas.</p>"
+            "html": "<p>Com 60 Vida ou menos, Maélia pode usar Principal, 13 Karma e 6 PC e\nteste de controle CD 17 para assumir a Mãe do Vazio. Se a boneca azul\nfor tomada contra sua vontade, a transformação é imediata, sem ação ou\nteste, e ela perde o controle consciente. A forma concede +2 Presença e\nEspírito, CA 25 e redução 3 contra dano não divino. Costuras do Nunca\nMais usa Reação e 2 PC após a destruição de um clone; o responsável\nresiste à imobilização com CD 18. Recuperar a boneca permite teste de\ncontrole CD 20 no início do turno para retomar a consciência. Nenhuma\ntransformação restaura reservas.</p>"
           }
         ],
         "grade": "",
@@ -2334,7 +2166,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>role a reserva indicada e selecione o maior d20, somando o bônus uma\nvez. Ataques usam a CA; no parcial, causam metade do dano, arredondada\npara baixo, sem condições secundárias, salvo descrição expressa. Falha\nnão causa dano nem condição. Áreas usam um teste comparado separadamente\ncom cada alvo, sujeito às defesas cabíveis. Em oposição, empate favorece\nquem resiste. Custos são pagos na declaração, inclusive em falha. Dano,\ncura e escudo usam os dados e bônus escritos; cura não supera a Vida\nmáxima. Sem indicação contrária, efeitos de duas rodadas terminam no\ninício do segundo turno seguinte da Falsa Santa. Alvos precisam ser\npercebidos e alcançáveis por linha de efeito. Críticos seguem as regras\ndo livro, sem multiplicar bônus fixos, duração ou condições.</p>"
+            "html": "<p>Role a reserva indicada e selecione o maior d20, somando o bônus uma\nvez. Ataques usam a CA; no parcial, causam metade do dano, arredondada\npara baixo, sem condições secundárias, salvo descrição expressa. Falha\nnão causa dano nem condição. Áreas usam um teste comparado separadamente\ncom cada alvo, sujeito às defesas cabíveis. Em oposição, empate favorece\nquem resiste. Custos são pagos na declaração, inclusive em falha. Dano,\ncura e escudo usam os dados e bônus escritos; cura não supera a Vida\nmáxima. Sem indicação contrária, efeitos de duas rodadas terminam no\ninício do segundo turno seguinte da Falsa Santa. Alvos precisam ser\npercebidos e alcançáveis por linha de efeito. Críticos seguem as regras\ndo livro, sem multiplicar bônus fixos, duração ou condições.</p>"
           }
         ],
         "grade": "",
@@ -2358,7 +2190,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>pode utilizar Medicina no lugar de Primeiros Socorros. Uma vez por\ncena, antes da rolagem de um aliado percebido a até 10 m, concede +2 ao\nteste por Intervenção Providencial; não altera dano, cura ou\nduração.</p>"
+            "html": "<p>Pode utilizar Medicina no lugar de Primeiros Socorros. Uma vez por\ncena, antes da rolagem de um aliado percebido a até 10 m, concede +2 ao\nteste por Intervenção Providencial; não altera dano, cura ou\nduração.</p>"
           }
         ],
         "grade": "",
@@ -2370,7 +2202,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>domina Fogo, Água, Terra e Ar. Luz Litúrgica manifesta Poder Divino;\nSombra Profana manifesta Corrupção. Cada técnica conserva a fonte\nindicada; aparência elemental não acrescenta dano, uma segunda fonte ou\numa segunda aplicação de dominância.</p>"
+            "html": "<p>Domina Fogo, Água, Terra e Ar. Luz Litúrgica manifesta Poder Divino;\nSombra Profana manifesta Corrupção. Cada técnica conserva a fonte\nindicada; aparência elemental não acrescenta dano, uma segunda fonte ou\numa segunda aplicação de dominância.</p>"
           }
         ],
         "grade": "",
@@ -2382,7 +2214,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p><span data-divine-grant=\"tecela-exterior\">Outorgada por A Tecelã\nExterior · Outro panteão.</span><span\ndata-world-blessing=\"outorga-16\"></span> bênção de uma entidade\nexterior, regida por Espírito + Manifestação de Bênção. Os fios costuram\ncarne e conduzem energia. Seus efeitos corruptos usam técnicas e custos\npróprios. A bênção não concede a autoridade da Santa legítima,\nressurreição automática ou controle permanente sobre quem foi\ncurado.</p>"
+            "html": "<p><span data-divine-grant=\"tecela-exterior\">Outorgada pela Tecelã\nExterior · Entidade Exterior.</span><span\ndata-world-blessing=\"outorga-16\"></span> Bênção de uma entidade\nexterior, regida por Espírito + Manifestação de Bênção. Os fios costuram\ncarne e conduzem energia. Seus efeitos corruptos usam técnicas e custos\npróprios. A bênção não concede a autoridade da Santa legítima,\nressurreição automática ou controle permanente sobre quem foi\ncurado.</p>"
           }
         ],
         "grade": "",
@@ -2394,7 +2226,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>O peso das mãos. <strong>Ativação:</strong> Ação Extra, 3 Karma,\nquatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> O primeiro acerto total corpo a corpo com\nForça em cada rodada ignora 1 de Resistência física; empurrões de 2 m\npassam a 3 m. <strong>Manifestação:</strong> +1d20 em Luta e Atletismo\ncom Força. Uma vez por rodada, após um acerto total com Força,\nacrescenta um dado-base de dano depois do crítico ou empurra 4 m, quando\nhouver espaço e a manobra for possível. <strong>Limites:</strong> a\nativação não restaura Vida, Karma ou Reações; encerra ao fim da duração.\nBônus modificam os testes e valores-base indicados na ficha, sem\nduplicar uma mesma Essência.</p>"
+            "html": "<p>O peso das mãos. <strong>Ativação:</strong> Ação Extra, 3 Karma,\nquatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> O primeiro acerto total corpo a corpo com\nForça em cada rodada ignora 1 de Resistência física; empurrões de 2 m\npassam a 3 m. <strong>Manifestação:</strong> +1d20 em Luta e Atletismo\ncom Força. Uma vez por rodada, após um acerto total com Força,\nacrescenta um dado-base de dano depois do crítico ou empurra 4 m, quando\nhouver espaço e a manobra for possível. <strong>Limites:</strong> A\nativação não restaura Vida, Karma ou Reações; encerra ao fim da duração.\nBônus modificam os testes e valores-base indicados na ficha, sem\nduplicar uma mesma Essência.</p>"
           }
         ],
         "grade": "",
@@ -2406,7 +2238,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>A carne que permanece. <strong>Ativação:</strong> Ação Extra, 3\nKarma, quatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> Resistência 1 contra dano de qualquer tipo.\n<strong>Manifestação:</strong> +1d20 em testes de Constituição com\nAtletismo ou Sobrevivência para esforço físico. Recebe mais 2 de\nResistência física: total 3 física e 1 contra os demais danos. Uma vez\npor manifestação, quando dano a levaria a 0 Vida, permanece com 1; não\nse aplica a perda direta de Vida. <strong>Limites:</strong> a ativação\nnão restaura Vida, Karma ou Reações; encerra ao fim da duração. Bônus\nmodificam os testes e valores-base indicados na ficha, sem duplicar uma\nmesma Essência.</p>"
+            "html": "<p>A carne que permanece. <strong>Ativação:</strong> Ação Extra, 3\nKarma, quatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> Resistência 1 contra dano de qualquer tipo.\n<strong>Manifestação:</strong> +1d20 em testes de Constituição com\nAtletismo ou Sobrevivência para esforço físico. Recebe mais 2 de\nResistência física: total 3 física e 1 contra os demais danos. Uma vez\npor manifestação, quando dano a levaria a 0 Vida, permanece com 1; não\nse aplica a perda direta de Vida. <strong>Limites:</strong> A ativação\nnão restaura Vida, Karma ou Reações; encerra ao fim da duração. Bônus\nmodificam os testes e valores-base indicados na ficha, sem duplicar uma\nmesma Essência.</p>"
           }
         ],
         "grade": "",
@@ -2418,7 +2250,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>A precisão da agulha. <strong>Ativação:</strong> Ação Extra, 3 Karma,\nquatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> +1 em testes mentais ou sociais treinados\nefetivamente regidos por Intelecto, separado do Bônus Analítico.\n<strong>Manifestação:</strong> +1d20 no teste principal de uma técnica\ncontra alvo percebido, usando seu atributo regente. Uma vez por turno\napós um acerto total de técnica, pode tentar Derrubar, Empurrar ou\nDesarmar sem ação adicional; mantém a oposição normal e exige meios\nfísicos para a manobra. <strong>Limites:</strong> a ativação não\nrestaura Vida, Karma ou Reações; encerra ao fim da duração. Bônus\nmodificam os testes e valores-base indicados na ficha, sem duplicar uma\nmesma Essência.</p>"
+            "html": "<p>A precisão da agulha. <strong>Ativação:</strong> Ação Extra, 3 Karma,\nquatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> +1 em testes mentais ou sociais treinados\nefetivamente regidos por Intelecto, separado do Bônus Analítico.\n<strong>Manifestação:</strong> +1d20 no teste principal de uma técnica\ncontra alvo percebido, usando seu atributo regente. Uma vez por turno\napós um acerto total de técnica, pode tentar Derrubar, Empurrar ou\nDesarmar sem ação adicional; mantém a oposição normal e exige meios\nfísicos para a manobra. <strong>Limites:</strong> A ativação não\nrestaura Vida, Karma ou Reações; encerra ao fim da duração. Bônus\nmodificam os testes e valores-base indicados na ficha, sem duplicar uma\nmesma Essência.</p>"
           }
         ],
         "grade": "",
@@ -2430,7 +2262,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>O juramento de continuar. <strong>Ativação:</strong> Ação Extra, 3\nKarma, quatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> +2d20 contra medo, desespero, coerção,\npossessão ou controle que ameacem seu vínculo: cuidar de quem\nvoluntariamente confiou sua vida a ela. Fissura registrada: Espírito e\nManifestação de Bênção. <strong>Manifestação:</strong> +1d20 em testes\nde fonte de poder regidos por Presença ou Espírito. Com Vida atual em\naté 75%, 50% ou 25% do máximo, recebe respectivamente +1, +2 ou +3 no\ndano e na Resistência; usa somente a maior faixa, recalculada após cura.\nO dano fixo entra depois do crítico e antes do parcial. Esses benefícios\nnão permitem receber efeitos de suas técnicas corruptas em si mesma.\n<strong>Limites:</strong> a ativação não restaura Vida, Karma ou\nReações; encerra ao fim da duração. Bônus modificam os testes e\nvalores-base indicados na ficha, sem duplicar uma mesma Essência.</p>"
+            "html": "<p>O juramento de continuar. <strong>Ativação:</strong> Ação Extra, 3\nKarma, quatro rodadas, uma vez por cena; sem Refinamentos de Eficiência.\n<strong>Essência:</strong> +2d20 contra medo, desespero, coerção,\npossessão ou controle que ameacem seu vínculo: cuidar de quem\nvoluntariamente confiou sua vida a ela. Fissura registrada: Espírito e\nManifestação de Bênção. <strong>Manifestação:</strong> +1d20 em testes\nde fonte de poder regidos por Presença ou Espírito. Com Vida atual em\naté 75%, 50% ou 25% do máximo, recebe respectivamente +1, +2 ou +3 no\ndano e na Resistência; usa somente a maior faixa, recalculada após cura.\nO dano fixo entra depois do crítico e antes do parcial. Esses benefícios\nnão permitem receber efeitos de suas técnicas corruptas em si mesma.\n<strong>Limites:</strong> A ativação não restaura Vida, Karma ou\nReações; encerra ao fim da duração. Bônus modificam os testes e\nvalores-base indicados na ficha, sem duplicar uma mesma Essência.</p>"
           }
         ],
         "grade": "",
@@ -2442,7 +2274,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>se Sutura Impossível, Tecelã do Destino ou Frankenstein atingir outra\ncriatura que já esteja com Vida completa antes da resolução, converte\ntoda a cura rolada em escudo temporário. Dura até o início do próximo\nturno da Falsa Santa; substitui um escudo anterior desta característica\nsomente se for maior. Curar um alvo ferido até seu máximo não converte o\nexcesso. Adão e a cura liberada pelo Manto não ativam esta\ncaracterística.</p>"
+            "html": "<p>Se Sutura Impossível, Tecelã do Destino ou Frankenstein atingir outra\ncriatura que já esteja com Vida completa antes da resolução, converte\ntoda a cura rolada em escudo temporário. Dura até o início do próximo\nturno da Falsa Santa; substitui um escudo anterior desta característica\nsomente se for maior. Curar um alvo ferido até seu máximo não converte o\nexcesso. Adão e a cura liberada pelo Manto não ativam esta\ncaracterística.</p>"
           }
         ],
         "grade": "",
@@ -2454,7 +2286,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>a Falsa Santa não pode escolher a si mesma como alvo de nenhuma\ntécnica corrupta, incluindo Tecelã do Destino, Manto da Linha Profana e\nFrankenstein. Também não recebe cura, escudo, reconstrução ou outro\nbenefício indireto produzido por suas técnicas corruptas sobre\nterceiros. A única técnica de cura que pode utilizar em si mesma é\n<strong>Adão — Primeiro Sopro</strong>, de fonte Divina, <strong>uma\núnica vez por cena</strong>; pode incluir-se entre seus três alvos nessa\nutilização. Esse limite não concede uma ativação adicional de Adão.\nSutura Impossível e Costura do Excedente beneficiam somente outras\ncriaturas.</p>"
+            "html": "<p>A Falsa Santa não pode escolher a si mesma como alvo de nenhuma\ntécnica corrupta, incluindo Tecelã do Destino, Manto da Linha Profana e\nFrankenstein. Também não recebe cura, escudo, reconstrução ou outro\nbenefício indireto produzido por suas técnicas corruptas sobre\nterceiros. A única técnica de cura que pode utilizar em si mesma é\n<strong>Adão — Primeiro Sopro</strong>, de fonte Divina, <strong>uma\núnica vez por cena</strong>; pode incluir-se entre seus três alvos nessa\nutilização. Esse limite não concede uma ativação adicional de Adão.\nSutura Impossível e Costura do Excedente beneficiam somente outras\ncriaturas.</p>"
           }
         ],
         "grade": "",
@@ -2466,7 +2298,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>técnicas que custam Pontos Corruptos exigem Controle da Corrupção,\nmaior de 5d20 +10, contra a CD indicada. Este teste não substitui o\nataque ou a oposição do efeito. Em falha, o custo é perdido e a técnica\nnão produz seu efeito; aplicam-se as consequências de falha de Controle\nda Corrupção. Não some o treinamento de Resistência à Corrupção ao de\nControle. Os custos abaixo são finais; ampliar uma técnica exige uma\nopção de ampliação expressamente permitida pelo livro, sem gerar efeitos\ngratuitos.</p>"
+            "html": "<p>Técnicas que custam Pontos Corruptos exigem Controle da Corrupção,\nmaior de 5d20 +10, contra a CD indicada. Este teste não substitui o\nataque ou a oposição do efeito. Em falha, o custo é perdido e a técnica\nnão produz seu efeito; aplicam-se as consequências de falha de Controle\nda Corrupção. Não some o treinamento de Resistência à Corrupção ao de\nControle. Os custos abaixo são finais; ampliar uma técnica exige uma\nopção de ampliação expressamente permitida pelo livro, sem gerar efeitos\ngratuitos.</p>"
           }
         ],
         "grade": "",
@@ -2498,18 +2330,14 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Não regenera membros inteiros, remove maldições ou ressuscita. Pode\naplicar Costura do Excedente. Custo: 6 Base IV = 6 Karma. Matriz:\nKármico; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d10. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Não regenera membros inteiros, remove maldições ou ressuscita. Pode\naplicar Costura do Excedente. Custo: 6 Base IV = 6 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "6 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d10"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Fio de Contenção",
@@ -2525,18 +2353,14 @@
           },
           {
             "label": "Limites",
-            "html": "<p>O alvo pode gastar uma Principal para opor Força + Atletismo à\nManifestação da Falsa Santa; igualar ou superar rompe o fio. Não remove\nações. O vínculo termina se ela ficar inconsciente, perder a linha de\nefeito ou se afastar mais de 15 m. Custo: 3 Base II, 2 Médio = 5 Karma.\nMatriz: Kármico; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Kármico · Kármico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>O alvo pode gastar uma Principal para opor Força + Atletismo à\nManifestação da Falsa Santa; igualar ou superar rompe o fio. Não remove\nações. O vínculo termina se ela ficar inconsciente, perder a linha de\nefeito ou se afastar mais de 15 m. Custo: 3 Base II, 2 Médio = 5\nKarma.</p>"
           }
         ],
         "grade": "II",
         "cost": "5 Karma",
         "matrix": "Kármico",
-        "damageType": "Kármico",
-        "baseDamage": "2d6"
+        "damageType": "Mobilidade",
+        "baseDamage": ""
       },
       {
         "title": "Tecelã do Destino",
@@ -2552,18 +2376,14 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Não pode ser usada na própria Falsa Santa. Não desfaz cegueira\nmística, maldição, doença sem origem em ferimento ou alma destruída; não\nressuscita. Exige alvo voluntário. Pode aplicar Costura do Excedente.\nCusto: 6 Base IV, 2 Médio, 3 Reconstrução secundária III = 11 Karma.\nMatriz: Corrupto; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Não pode ser usada na própria Falsa Santa. Não desfaz cegueira\nmística, maldição, doença sem origem em ferimento ou alma destruída; não\nressuscita. Exige alvo voluntário. Pode aplicar Costura do Excedente.\nCusto: 6 Base IV, 2 Médio, 3 Reconstrução secundária III = 11 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "11 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d8"
+        "damageType": "Suporte",
+        "baseDamage": ""
       },
       {
         "title": "Manto da Linha Profana",
@@ -2579,18 +2399,14 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Um manto ativo. Reaplicá-lo encerra o anterior sem cura. Dissipação,\ninconsciência da Falsa Santa ou distância superior a 15 m encerram a\nproteção sem cura. Dano que ignore barreiras espirituais ignora o manto\ne não é armazenado. Não absorve condições sem dano; não devolve dano. A\nFalsa Santa não pode ser o alvo do manto nem receber sua cura. Custo: 6\nBase IV, 1 Reação, 2 Médio, 1 Duas rodadas, 3 Restauração secundária III\n= 13 Karma. Matriz: Corrupto; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Um manto ativo. Reaplicá-lo encerra o anterior sem cura. Dissipação,\ninconsciência da Falsa Santa ou distância superior a 15 m encerram a\nproteção sem cura. Dano que ignore barreiras espirituais ignora o manto\ne não é armazenado. Não absorve condições sem dano; não devolve dano. A\nFalsa Santa não pode ser o alvo do manto nem receber sua cura. Custo: 6\nBase IV, 1 Reação, 2 Médio, 1 Duas rodadas, 3 Restauração secundária III\n= 13 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "13 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d8"
+        "damageType": "Defesa",
+        "baseDamage": ""
       },
       {
         "title": "Linha da Mentira",
@@ -2606,17 +2422,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>A condição termina no início do próximo turno da Falsa Santa.\nDesorientado impõe −2 somente ao próximo teste feito nesse período,\nsendo consumido ao aplicá-lo. Condições iguais não se acumulam;\nImobilizado impede deslocamento, não todas as ações. Custo: 4 Base III,\n4 Longo, 2 Controle secundário II = 10 Karma. Matriz: Corrupto; dano\nuniversal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>A condição termina no início do próximo turno da Falsa Santa.\nDesorientado impõe −2 somente ao próximo teste feito nesse período,\nsendo consumido ao aplicá-lo. Condições iguais não se acumulam;\nImobilizado impede deslocamento, não todas as ações. Custo: 4 Base III,\n4 Longo, 2 Controle secundário II = 10 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "10 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d6"
       },
       {
@@ -2633,17 +2445,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Role a redução quando a cura ocorrer e consuma o efeito, mesmo que\nreduza 0. Não afeta escudos, não causa dano adicional e não se acumula\ncom outra aplicação desta técnica. Custo: 4 Base III, 4 Longo, 1 Efeito\nmenor = 9 Karma. Matriz: Corrupto; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Role a redução quando a cura ocorrer e consuma o efeito, mesmo que\nreduza 0. Não afeta escudos, não causa dano adicional e não se acumula\ncom outra aplicação desta técnica. Custo: 4 Base III, 4 Longo, 1 Efeito\nmenor = 9 Karma.</p>"
           }
         ],
         "grade": "III",
         "cost": "9 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
+        "damageType": "Corrupto",
         "baseDamage": "3d6"
       },
       {
@@ -2660,17 +2468,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Não combina ataque e passagem. A elevação do ataque não acrescenta\ndano de queda. A passagem exige apoios seguros nas duas extremidades,\nnão desloca criaturas automaticamente e não atravessa barreiras\nfechadas. Ao desaparecer, quem permanecer sobre ela fica sujeito à queda\nnormal. Custo: 6 Base IV, 4 Longo, 1 Caído = 11 Karma. Matriz: Divino;\ndano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Divino · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Não combina ataque e passagem. A elevação do ataque não acrescenta\ndano de queda. A passagem exige apoios seguros nas duas extremidades,\nnão desloca criaturas automaticamente e não atravessa barreiras\nfechadas. Ao desaparecer, quem permanecer sobre ela fica sujeito à queda\nnormal. Custo: 6 Base IV, 4 Longo, 1 Caído = 11 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "11 Karma",
         "matrix": "Divino",
-        "damageType": "Kármico",
+        "damageType": "Divino",
         "baseDamage": "2d8"
       },
       {
@@ -2687,17 +2491,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Escolha um modo; a travessia não causa o ataque. Não afeta água\ndentro de seres vivos, massas oceânicas ou profundidade superior a 10 m.\nO retorno da água é visível; a técnica não concede respiração aquática\nnem deslocamento gratuito. Custo: 6 Base IV, 6 Área grande, 2 Poupar\naliados, 1 Empurrão 2 m = 15 Karma. Matriz: Divino; dano universal:\nKármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Divino · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Escolha um modo; a travessia não causa o ataque. Não afeta água\ndentro de seres vivos, massas oceânicas ou profundidade superior a 10 m.\nO retorno da água é visível; a técnica não concede respiração aquática\nnem deslocamento gratuito. Custo: 6 Base IV, 6 Área grande, 2 Poupar\naliados, 1 Empurrão 2 m = 15 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "15 Karma",
         "matrix": "Divino",
-        "damageType": "Kármico",
+        "damageType": "Divino",
         "baseDamage": "2d8"
       },
       {
@@ -2714,17 +2514,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>O dado contra porte maior é adicional, aplicado uma vez. Não ignora\ncobertura, armadura ou resistência e não aumenta contra múltiplas\ncategorias de tamanho. Custo: 4 Base III, 4 Longo, 3 Dado adicional = 11\nKarma. Matriz: Divino; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Divino · Kármico. Base ofensiva: 2d6. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>O dado contra porte maior é adicional, aplicado uma vez. Não ignora\ncobertura, armadura ou resistência e não aumenta contra múltiplas\ncategorias de tamanho. Custo: 4 Base III, 4 Longo, 3 Dado adicional = 11\nKarma.</p>"
           }
         ],
         "grade": "III",
         "cost": "11 Karma",
         "matrix": "Divino",
-        "damageType": "Kármico",
+        "damageType": "Divino",
         "baseDamage": "2d6"
       },
       {
@@ -2741,17 +2537,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Atinge aliados na área. As colunas não causam dano novamente ao\nentrar, sair ou iniciar turno. Não esmagam construções automaticamente.\nCusto: 6 Base IV, 4 Longo, 4 Área média, 3 Controle secundário III = 17\nKarma. Matriz: Divino; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Divino · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Atinge aliados na área. As colunas não causam dano novamente ao\nentrar, sair ou iniciar turno. Não esmagam construções automaticamente.\nCusto: 6 Base IV, 4 Longo, 4 Área média, 3 Controle secundário III = 17\nKarma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "17 Karma",
         "matrix": "Divino",
-        "damageType": "Kármico",
+        "damageType": "Divino",
         "baseDamage": "2d8"
       },
       {
@@ -2768,18 +2560,14 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Pode incluir a própria Falsa Santa entre os alvos, constituindo sua\núnica utilização de cura divina em si mesma por cena. O uso pessoal\ncompartilha a mesma ativação única de Adão; não concede uma segunda\nutilização. Não remove exaustão por esgotamento de Karma, Corrupção,\nmaldições ou custos de técnicas. Não regenera membros, não ressuscita e\nnão produz escudo por Costura do Excedente. Custo: 6 Base IV, 4 Longo, 4\nAté seis alvos, 3 Purificação secundária III = 17 Karma. Matriz: Divino;\ndano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Divino · Kármico. Base ofensiva: 2d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Pode incluir a própria Falsa Santa entre os alvos, constituindo sua\núnica utilização de cura divina em si mesma por cena. O uso pessoal\ncompartilha a mesma ativação única de Adão; não concede uma segunda\nutilização. Não remove exaustão por esgotamento de Karma, Corrupção,\nmaldições ou custos de técnicas. Não regenera membros, não ressuscita e\nnão produz escudo por Costura do Excedente. Custo: 6 Base IV, 4 Longo, 4\nAté seis alvos, 3 Purificação secundária III = 17 Karma.</p>"
           }
         ],
         "grade": "IV",
         "cost": "17 Karma",
         "matrix": "Divino",
-        "damageType": "Kármico",
-        "baseDamage": "2d8"
+        "damageType": "Defesa",
+        "baseDamage": ""
       },
       {
         "title": "Frankenstein — A Obra que Respira",
@@ -2795,18 +2583,14 @@
           },
           {
             "label": "Limites",
-            "html": "<p>A Falsa Santa não pode ser alvo desta técnica. Sustentar o controle\nconsome a Principal da Falsa Santa em cada turno seguinte; a vítima age\napenas no próprio turno e com as próprias ações e recursos. Uma vítima\npor vez. Não acessa memórias, rouba bênçãos ou obriga técnicas que a\nFalsa Santa desconheça. Ordens de autodestruição direta encerram o\ncontrole. Inconsciência da Falsa Santa, afastamento além de 10 m ou\nabandono da sustentação também o encerram; a cura já realizada\npermanece. Não remove maldições, esgotamento de recursos ou destruição\nda alma, nem ressuscita. Pode aplicar Costura do Excedente. Custo: 12\nBase V, 2 Médio, 6 Controle secundário IV, 1 Duas rodadas = 21 Karma.\nMatriz: Corrupto; dano universal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Corrupto · Kármico. Base ofensiva: 3d12. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>A Falsa Santa não pode ser alvo desta técnica. Sustentar o controle\nconsome a Principal da Falsa Santa em cada turno seguinte; a vítima age\napenas no próprio turno e com as próprias ações e recursos. Uma vítima\npor vez. Não acessa memórias, rouba bênçãos ou obriga técnicas que a\nFalsa Santa desconheça. Ordens de autodestruição direta encerram o\ncontrole. Inconsciência da Falsa Santa, afastamento além de 10 m ou\nabandono da sustentação também o encerram; a cura já realizada\npermanece. Não remove maldições, esgotamento de recursos ou destruição\nda alma, nem ressuscita. Pode aplicar Costura do Excedente. Custo: 12\nBase V, 2 Médio, 6 Controle secundário IV, 1 Duas rodadas = 21\nKarma.</p>"
           }
         ],
         "grade": "V",
         "cost": "21 Karma",
         "matrix": "Corrupto",
-        "damageType": "Kármico",
-        "baseDamage": "3d12"
+        "damageType": "Defesa",
+        "baseDamage": ""
       },
       {
         "title": "Dia do Julgamento Final",
@@ -2822,17 +2606,13 @@
           },
           {
             "label": "Limites",
-            "html": "<p>Entrar na área não dispara pulso adicional; sair permite evitar os\nseguintes. A Falsa Santa pode mover-se e reagir enquanto sustenta, mas\nnão usar outra Principal. O ritual termina ao abandonar a sustentação,\nficar inconsciente ou sofrer dissipação bem-sucedida por confronto\nsobrenatural contra sua Comunhão. Não guarda trombetas para depois nem\nas concentra num só turno. Cada trombeta posterior exige mais 23 Karma\njunto da Principal; sem esse pagamento o ritual termina antes do pulso.\nO máximo de sete pulsos custa 161 Karma. Custo: 12 Base V, 4 Longo, 6\nÁrea grande, 1 Efeito da trombeta = 23 Karma. Matriz: Divino; dano\nuniversal: Kármico.</p>"
-          },
-          {
-            "label": "Matriz e dano universal",
-            "html": "Divino · Kármico. Base ofensiva: 3d8. Riscos e ampliações conforme o Capítulo 10."
+            "html": "<p>Entrar na área não dispara pulso adicional; sair permite evitar os\nseguintes. A Falsa Santa pode mover-se e reagir enquanto sustenta, mas\nnão usar outra Principal. O ritual termina ao abandonar a sustentação,\nficar inconsciente ou sofrer dissipação bem-sucedida por confronto\nsobrenatural contra sua Comunhão. Não guarda trombetas para depois nem\nas concentra num só turno. Cada trombeta posterior exige mais 23 Karma\njunto da Principal; sem esse pagamento o ritual termina antes do pulso.\nO máximo de sete pulsos custa 161 Karma. Custo: 12 Base V, 4 Longo, 6\nÁrea grande, 1 Efeito da trombeta = 23 Karma.</p>"
           }
         ],
         "grade": "V",
         "cost": "23 Karma",
         "matrix": "Divino",
-        "damageType": "Kármico",
+        "damageType": "Divino",
         "baseDamage": "3d8"
       },
       {
@@ -2841,7 +2621,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>o círculo vibra antes de cada pulso, revelando a área ameaçada. Os\nefeitos abaixo só atingem quem sofreu o dano total daquela trombeta.</p>"
+            "html": "<p>O círculo vibra antes de cada pulso, revelando a área ameaçada. Os\nefeitos abaixo só atingem quem sofreu o dano total daquela trombeta.</p>"
           }
         ],
         "grade": "",

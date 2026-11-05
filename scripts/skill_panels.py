@@ -14,7 +14,7 @@ def skill_panel(text):
   roll=re.search(r'(?:maior\s+(?:de\s+)?)?\d+d20\s*[+−-]\s*\d+',part,re.I)
   for m in matches:
    for name in re.split(r',\s*|\s+e\s+',re.sub(r'^(e|Perícias:)\s+','',m[1],flags=re.I)):
-    if name.strip() and name not in [s[0] for s in skills]:skills.append((name.strip(),int(m[2]),roll[0] if roll else ''))
+    if name.strip() and name not in [s[0] for s in skills]:skills.append((name.strip().strip('() '),int(m[2]),roll[0] if roll else ''))
  if not skills:return None
  cards=[]
  for name,level,roll in skills:

@@ -425,7 +425,8 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
       draft.allocations.progressionTranscendentalSkills,
     ),
   ];
-  const allAllocationsComplete = allocationChecks.every(Boolean);
+  const humanStageChoiceComplete=draft.race!=="Humano"||getStageIndex(draft.stage)<2||ALL_SKILLS.includes(draft.allocations.humanTraining as typeof ALL_SKILLS[number]);
+  const allAllocationsComplete = allocationChecks.every(Boolean)&&humanStageChoiceComplete;
   const classAbilitiesComplete = classDefinition
     ? draft.classAbilities.length === getClassAbilityLimit(draft.stage)
     : false;
@@ -930,9 +931,8 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                       <div>
                         <span>{attribute.slice(0, 3).toUpperCase()}</span>
                         <h3>{attribute}</h3>
-                        <div className="attribute-result"><strong>{total}</strong><span>{Math.ceil(total/2)}d20</span></div><small>
-                          Total {total}
-                          {automaticBonus ? ` · +${automaticBonus} automático` : ""}
+                        <div className="attribute-result"><strong>{total}</strong><span>{total<=0?"1d20 − 4":`${Math.ceil(total/2)}d20`}</span></div><small>
+                          {automaticBonus ? `+${automaticBonus} de bônus` : ""}
                         </small>
                       </div>
                       <div className="attribute-controls">
@@ -992,8 +992,9 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                 </span>
               </div>
 
+              <div className="skill-allocation-grid">
               {draft.race === "Humano" && getStageIndex(draft.stage) >= 2 && <label className="character-field">
-                <span>Improviso sob Pressão · Perícia adicional</span>
+                <span>Leitura de Brecha · Perícia adicional</span>
                 <NativeSelect value={draft.allocations.humanTraining ?? ""} onChange={e => updateDraft("allocations", {...draft.allocations, humanTraining:e.target.value})}>
                   <NativeSelectOption value="">Escolha uma perícia</NativeSelectOption>
                   {ALL_SKILLS.map(skill => <NativeSelectOption key={skill} value={skill}>{skill}</NativeSelectOption>)}
@@ -1100,6 +1101,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                 </p>
               </aside>
 
+              </div>
               <div className="skill-groups">
                 {SKILL_GROUPS.map((group) => (
                   <section className="skill-group" key={group.name}>
@@ -1124,27 +1126,10 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                             data-invalid={breakdown.hasInvalidPoints}
                             key={skill}
                           >
-                            <span>
-                              <strong>{skill}</strong><small className="skill-category-badge">{group.name}</small>
-                              <small>
-                                Nível {total} · bônus +{([0, 2, 5, 10][total] ?? 0)}
-                                {test.analyticBonus ? ` · análise +${test.analyticBonus}` : ""}
-                                {breakdown.sacrificedCommon ? ` · ${breakdown.sacrificedCommon} ponto(s) sacrificado(s)` : ""}
-                                {breakdown.automaticCommon
-                                  ? ` · +${breakdown.automaticCommon} Comum automático`
-                                  : ""}
-                                {breakdown.evolutive
-                                  ? ` · +${breakdown.evolutive} Evolutivo`
-                                  : ""}
-                                {breakdown.transcendental
-                                  ? ` · +${breakdown.transcendental} Transcendental`
-                                  : ""}
-                                {breakdown.hasInvalidPoints
-                                  ? " · redistribua os pontos incompatíveis"
-                                  : ""}
-                              </small>
-                              {true ? <small className="skill-test-preview">{test.attribute} {test.value}: {test.dice}d20, {test.selection}, +{test.bonus}{group.name === "Sociais" && test.attribute === "Intelecto" ? " · abordagem racional" : ""}{skill === "Conjuração" ? " · contenção comum; uso Vincular exige Presença" : ""}</small> : null}
-                            </span>
+                            <div className="skill-row-head"><strong>{skill}</strong><small className="skill-test-preview">{test.attribute} · {test.dice}d20 {test.bonus<0?"−":"+"} {Math.abs(test.bonus)}</small></div>
+                            <div className="skill-row-controls">
+                            <small>{["Destreinado","Treinado +2","Veterano +5","Transcendental +10"][total]}{breakdown.hasInvalidPoints?" · revise os pontos":""}{breakdown.sacrificedCommon?` · ${breakdown.sacrificedCommon} suspenso(s)`:""}</small>
+                            <div className="skill-row-inputs">
                             <PointStepper
                               label={`${skill}, pontos-base`}
                               value={points.base}
@@ -1156,7 +1141,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                               onChange={(value) => updateSkill(skill, "base", value)}
                             />
                             <div className="skill-bonus">
-                              <label htmlFor={`skill-bonus-${skill}`}>Ajuste comum</label>
+                              <label htmlFor={`skill-bonus-${skill}`}>Ajuste</label>
                               <NativeSelect
                                 id={`skill-bonus-${skill}`}
                                 value={String(Math.min(points.bonus, manualLimit))}
@@ -1169,6 +1154,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                                 ))}
                               </NativeSelect>
                             </div>
+                            </div></div>
                           </div>
                         );
                       })}

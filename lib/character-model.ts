@@ -310,7 +310,9 @@ export type ElementalState = {
 
 export type TechniqueRecord = {
   matrix?:"Kármico"|"Elemental"|"Divino"|"Marcial"|"Corrupto";
-  damageType?:"Físico"|"Mental"|"Kármico";
+  damageType?:import("./technique-matrices").DamageType|"Físico";
+  lineageCatalyst?:string;
+  doctrine?:string;
   matrixExtras?:number;matrixDiscount?:number;
   id: string;
   name: string;

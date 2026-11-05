@@ -22,7 +22,7 @@ Maximillian e Dominick são as pessoas diante de quem sua voz perde a dureza. Ca
 
 **Identidade:** Humana · Duelista · Etapa V · A Patriarca da Casa Marquesal Lunaviel · Ranque SS. **Vida:** 168. **Karma:** 84. **CA:** 26. **Deslocamento:** 10 m. **Atributos:** Força 6 · Agilidade 7 · Constituição 6 · Intelecto 5 · Presença 7 · Espírito 5.
 
-**Ações:** Principal, Movimento, Livre e 2 Reações por rodada. Cada gatilho admite uma única resposta; contra-ataques não geram outros contra-ataques. **Armas:** duas espadas, 2d6 cortante cada, alcance 2 m, Médias e Precisas. Um ataque comum usa apenas uma espada; empunhar duas não concede ações ou ataques gratuitos.
+**Ações:** Principal, Movimento, Livre e 2 Reações por rodada. Cada gatilho admite uma única resposta; contra-ataques não geram outros contra-ataques. **Armas:** Duas espadas, 2d6 cortante cada, alcance 2 m, Médias e Precisas. Um ataque comum usa apenas uma espada; empunhar duas não concede ações ou ataques gratuitos.
 
 **Perícias:** Comunhão Divina 2 (Presença, maior de 4d20 +5); Luta 3 — 4d20 + 10 com Agilidade; Atletismo 2 — 3d20 + 5; Reflexos 2 — 4d20 + 5; Acrobacia 2 — 4d20 + 5; Percepção 2 — 3d20 + 7; Intuição 2 — 3d20 + 7; Liderança 2 — 4d20 + 5.
 
@@ -30,70 +30,62 @@ Maximillian e Dominick são as pessoas diante de quem sua voz perde a dureza. Ca
 
 ##### 1 · Mikazuki {#caroline-mikazuki}
 
-**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, alcance 2 m. A lâmina descreve um arco baixo e sobe junto ao braço adversário. Luta contra CA: **2d10 cortante**; em acerto total, o próximo ataque com arma do alvo sofre −1d20 até o fim do próximo turno dele. Parcial causa metade do dano, sem penalidade. Não acumula consigo mesma.
+**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, alcance 2 m. A lâmina descreve um arco baixo e sobe junto ao braço adversário. Luta contra CA: **2d6 cortante**; em acerto total, o próximo ataque com arma do alvo sofre −1d20 até o fim do próximo turno dele. Parcial causa metade do dano, sem penalidade. Não acumula consigo mesma.
 
-**Composição de Karma:** 4 base iii + 2 função secundária ii = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 Função secundária II = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Kasumi {#caroline-kasumi}
 
 **Fonte e Grau:** Karma III. **Uso:** Movimento, 6 Karma, pessoal. Caroline muda o ritmo dos passos e percorre até 4 m por trajeto desimpedido. Seu próximo ataque de espada neste turno recebe +2. Não concede invisibilidade, passagem por obstáculos ou ataque adicional. Não pode ser usada com carga crítica.
 
-**Composição de Karma:** 4 base iii + 1 movimento + 1 teste específico +2 = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 movimento + 1 teste específico +2 = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Shingetsu {#caroline-shingetsu}
 
 **Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma, ataque físico percebido contra ela. As lâminas fecham a passagem em ângulos contrários: reduz o dano em **2d10**, até zero. Não reduz efeitos mentais, dano interno ou áreas; não produz contra-ataque gratuito.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Getsuga {#caroline-getsuga}
 
-**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, um ou dois alvos a 2 m. Executa dois ataques, um com cada espada, **2d10 cortante** por acerto total. Cada rolagem de Luta usa −1d20, mínimo 1d20, e resolve contra a CA de seu alvo. Parcial causa metade apenas do ataque correspondente. Não combina com outra ação que conceda ataques adicionais.
+**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, um ou dois alvos a 2 m. Executa dois ataques, um com cada espada, **2d6 cortante** Por acerto total. Cada rolagem de Luta usa −1d20, mínimo 1d20, e resolve contra a CA de seu alvo. Parcial causa metade apenas do ataque correspondente. Não combina com outra ação que conceda ataques adicionais.
 
-**Composição de Karma:** 4 base iii + 2 área / destinatários = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 área / destinatários = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 5 · Tsukikage {#caroline-tsukikage}
 
-**Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma, após um ataque corpo a corpo contra Caroline resultar em falha. Ela atravessa a abertura com a espada oposta: Luta contra CA do atacante a 2 m, **2d10 cortante**. Parcial metade. Não responde a outro contra-ataque e não pode compartilhar o mesmo ataque-gatilho com Shingetsu.
+**Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma, após um ataque corpo a corpo contra Caroline resultar em falha. Ela atravessa a abertura com a espada oposta: Luta contra CA do atacante a 2 m, **2d6 cortante**. Parcial metade. Não responde a outro contra-ataque e não pode compartilhar o mesmo ataque-gatilho com Shingetsu.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 6 · Mangetsu {#caroline-mangetsu}
 
-**Fonte e Grau:** Marcial III. **Uso:** Principal, 8 Karma, até dois inimigos a 3 m. Um giro completo mantém as duas lâminas em alturas diferentes. Faça uma rolagem de Luta e compare separadamente à CA de cada alvo: **2d10 cortante** em acerto total, metade em parcial. Cada criatura recebe o dano uma única vez. Exige espaço para girar e não atravessa cobertura sólida.
+**Fonte e Grau:** Marcial III. **Uso:** Principal, 8 Karma, até dois inimigos a 3 m. Um giro completo mantém as duas lâminas em alturas diferentes. Faça uma rolagem de Luta e compare separadamente à CA de cada alvo: **2d6 cortante** Em acerto total, metade em parcial. Cada criatura recebe o dano uma única vez. Exige espaço para girar e não atravessa cobertura sólida.
 
-**Composição de Karma:** 4 base iii + 2 área / destinatários + 2 seleção de aliados = 8 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 área / destinatários + 2 seleção de aliados = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 7 · Nisshoku {#caroline-nisshoku}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alcance 2 m. A primeira espada força a guarda; a segunda procura a abertura: um único teste de Luta contra CA, **2d12 cortante**. Em acerto total, o alvo sofre −2 CA até o início do próximo turno de Caroline. Parcial metade, sem perda de CA. A redução não acumula consigo mesma nem destrói automaticamente armaduras.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alcance 2 m. A primeira espada força a guarda; a segunda procura a abertura: um único teste de Luta contra CA, **2d8 cortante**. Em acerto total, o alvo sofre −2 CA até o início do próximo turno de Caroline. Parcial metade, sem perda de CA. A redução não acumula consigo mesma nem destrói automaticamente armaduras.
 
-**Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 3 Função secundária III = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Gekkō {#caroline-gekko}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 12 Karma, uma vez por cena, alvo a 2 m. Caroline muda a cadência entre a entrada e o contato das lâminas, obrigando o adversário a fechar a guarda cedo demais. Luta contra CA: **2d12 cortante**. Em acerto total, deixa a abertura lunar até o início de seu próximo turno. Se o alvo atacar ou se deslocar enquanto permanecer a 2 m, Caroline pode gastar uma Reação para causar **2d6 cortante**, sem nova rolagem; isso encerra a abertura. Parcial causa metade do dano inicial e não cria abertura. A resposta exige que Caroline perceba o alvo e possa empunhar uma espada; não se repete nem gera outra reação.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 12 Karma, uma vez por cena, alvo a 2 m. Caroline muda a cadência entre a entrada e o contato das lâminas, obrigando o adversário a fechar a guarda cedo demais. Luta contra CA: **2d8 cortante**. Em acerto total, deixa a abertura lunar até o início de seu próximo turno. Se o alvo atacar ou se deslocar enquanto permanecer a 2 m, Caroline pode gastar uma Reação para causar **2d6 cortante**, sem nova rolagem; isso encerra a abertura. Parcial causa metade do dano inicial e não cria abertura. A resposta exige que Caroline perceba o alvo e possa empunhar uma espada; não se repete nem gera outra reação.
 
-**Composição de Karma:** 6 base iv + 3 função secundária iii + 3 resposta lunar reservada = 12 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 3 Função secundária III + 3 resposta lunar reservada = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
-**Comunhão Divina — Tsukuyomi:** <span data-divine-grant="tsukuyomi">Outorga litúrgica de Tsukuyomi · Xintoísta — Asa da Pureza</span> Senhor da Lua Silenciosa. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Honrar lua com responsabilidade e cumprir a palavra empenhada em nome de Tsukuyomi. Profanação: Usar a dádiva para profanar lua ou quebrar deliberadamente um juramento feito a Tsukuyomi.
+**Comunhão Divina — Tsukuyomi:** <span data-divine-grant="tsukuyomi">Outorga litúrgica de Tsukuyomi · Xintoísta — Asa da Pureza</span> Senhor da Lua Silenciosa. O vínculo é devocional e não concede uma segunda Bênção. Preceito: Mantenha a medida da noite e respeite os silêncios que foram confiados a você. Profanação: Fazer do segredo alheio uma moeda de domínio quebra a ordem lunar.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Liturgia · Espelho da Lua Interrompida
 
@@ -101,7 +93,6 @@ Maximillian e Dominick são as pessoas diante de quem sua voz perde a dureza. Ca
 
 **Composição de Karma:** 6 Base IV + 1 Reação + 1 Espelho litúrgico = 8 Karma.
 
-**Matriz e dano universal:** Divino · Kármico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Valentino Heathcliff · Custos {#valentino-heathcliff}
 
@@ -115,7 +106,7 @@ Conhece o peso de promessas feitas em nome de pessoas ausentes. Antes de aceitar
 
 **Identidade:** Humano · Tanque · Etapa V · protetor da Casa Marquesal Lunaviel · Ranque S · chefe S. **Vida:** 120. **Karma:** 68. **CA:** 25. **Deslocamento:** 9 m. **Atributos:** Força 6 · Agilidade 6 · Constituição 7 · Intelecto 6 · Presença 7 · Espírito 6.
 
-**Ações:** Principal, Movimento, Livre e 2 Reações por rodada. Uma mesma resolução admite uma única resposta dele. **Armas:** espada, Luta contra CA, 2d8 cortante, alcance 2 m; escudo incluído na CA.
+**Ações:** Principal, Movimento, Livre e 2 Reações por rodada. Uma mesma resolução admite uma única resposta dele. **Armas:** Espada, Luta contra CA, 2d8 cortante, alcance 2 m; escudo incluído na CA.
 
 **Perícias:** Luta 3 — 3d20 + 10; Atletismo 2 — 3d20 + 5; Reflexos 2 — 3d20 + 5; Percepção 2 — 3d20 + 8; Liderança 2 — 4d20 + 5; Intuição 2 — 3d20 + 8.
 
@@ -123,25 +114,22 @@ Conhece o peso de promessas feitas em nome de pessoas ausentes. Antes de aceitar
 
 **Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma, ataque físico percebido contra aliado a 2 m. O escudo reduz o dano do aliado em **2d10**. Não protege de uma área que alcance ambos nem impede condições independentes do dano.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Passagem {#valentino-passagem}
 
-**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, alvo a 2 m. Luta contra CA: **2d10 cortante** e empurrão de 2 m. Parcial metade sem empurrão. O empurrão é o único efeito além do dano.
+**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, alvo a 2 m. Luta contra CA: **2d6 cortante** E empurrão de 2 m. Parcial metade sem empurrão. O empurrão é o único efeito além do dano.
 
-**Composição de Karma:** 4 base iii + 2 função secundária ii = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 Função secundária II = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Égide {#valentino-egide}
 
-**Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, toque em criatura voluntária. Concede **18 pontos de escudo** por duas rodadas. Não acumula consigo mesmo, não cura Vida e termina se Valentino ficar inconsciente ou se afastar mais de 15 m do protegido.
+**Fonte e Grau:** Karma III. **Uso:** Principal, 5 Karma, toque em criatura voluntária. Concede **18 pontos de escudo** Por duas rodadas. Não acumula consigo mesmo, não cura Vida e termina se Valentino ficar inconsciente ou se afastar mais de 15 m do protegido.
 
-**Composição de Karma:** 4 base iii + 1 duração = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 duração = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Kármico · Kármico. Base ofensiva de Grau III: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ### Alaric Voss · Punho de Ébano {#alaric-voss}
 
@@ -155,49 +143,42 @@ Antes de vestir a casaca, combateu nos ringues dos bairros industriais de Ignár
 
 **Identidade:** Humano · Pugilista · Etapa V · mordomo da Casa Marquesal Lunaviel · Ranque S · chefe S. **Vida:** 120. **Karma:** 76. **CA:** 25. **Deslocamento:** 10 m. **Atributos:** Força 7 · Agilidade 8 · Constituição 7 · Intelecto 6 · Presença 6 · Espírito 5.
 
-**Ações:** Principal, Movimento, Livre e 2 Reações por rodada. Um mesmo gatilho admite uma única resposta; contra-ataques não geram outros contra-ataques. **Armas:** manoplas, 2d8 contundente, alcance 1 m, Leves. Ataques comuns não concedem sequências gratuitas.
+**Ações:** Principal, Movimento, Livre e 2 Reações por rodada. Um mesmo gatilho admite uma única resposta; contra-ataques não geram outros contra-ataques. **Armas:** Manoplas, 2d8 contundente, alcance 1 m, Leves. Ataques comuns não concedem sequências gratuitas.
 
 **Perícias:** Luta 3 — 4d20 + 10; Atletismo 3 — 4d20 + 10; Reflexos 2 — 4d20 + 5; Acrobacia 2 — 4d20 + 5; Percepção 2 — 3d20 + 8; Intuição 2 — 3d20 + 8; Intimidação 2 — 3d20 + 5.
 
-**Estilo — Guarda Fechada:** enquanto estiver consciente e com ambas as mãos livres ou usando manoplas, Alaric reduz em 2 o dano de cada ataque corpo a corpo percebido. A guarda não protege de ataques pelas costas não percebidos, áreas ou dano interno. Uma criatura não sofre várias instâncias dessa redução pelo mesmo ataque.
+**Estilo — Guarda Fechada:** Enquanto estiver consciente e com ambas as mãos livres ou usando manoplas, Alaric reduz em 2 o dano de cada ataque corpo a corpo percebido. A guarda não protege de ataques pelas costas não percebidos, áreas ou dano interno. Uma criatura não sofre várias instâncias dessa redução pelo mesmo ataque.
 
 ##### 1 · Prensa {#alaric-prensa}
 
-**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, alcance 1 m. Luta contra CA: **2d10 contundente**. Em acerto total, empurra o alvo 2 m; a colisão apenas encerra o empurrão. Parcial metade, sem empurrão. Não causa dano adicional por colisão.
+**Fonte e Grau:** Marcial III. **Uso:** Principal, 6 Karma, alcance 1 m. Luta contra CA: **2d6 contundente**. Em acerto total, empurra o alvo 2 m; a colisão apenas encerra o empurrão. Parcial metade, sem empurrão. Não causa dano adicional por colisão.
 
-**Composição de Karma:** 4 base iii + 2 função secundária ii = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 2 Função secundária II = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 2 · Ferro Curto {#alaric-ferro-curto}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 6 Karma, alcance 1 m. Um direto ao corpo retira o apoio da guarda: Luta contra CA, **2d12 contundente** e −2 CA ao alvo até o início do próximo turno de Alaric em acerto total. Parcial metade, sem redução. A penalidade não acumula consigo mesma.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 6 Karma, alcance 1 m. Um direto ao corpo retira o apoio da guarda: Luta contra CA, **2d8 contundente** E −2 CA ao alvo até o início do próximo turno de Alaric em acerto total. Parcial metade, sem redução. A penalidade não acumula consigo mesma.
 
-**Composição de Karma:** 6 base iv = 6 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 3 · Casamata {#alaric-casamata}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Reação, 7 Karma, ataque físico percebido contra ele. Alaric recolhe os cotovelos e acompanha o golpe: reduz o dano em **2d12**, até zero. Não protege contra área, dano interno ou efeitos mentais.
 
-**Composição de Karma:** 6 base iv + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### 4 · Retorno {#alaric-retorno}
 
-**Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma, após falha de um ataque corpo a corpo contra Alaric. Um passo curto o mantém a 1 m do agressor, se houver passagem livre; então faz Luta contra CA, **2d10 contundente**, metade em parcial. Não combina com Casamata no mesmo ataque e não responde a contra-ataques.
+**Fonte e Grau:** Marcial III. **Uso:** Reação, 5 Karma, após falha de um ataque corpo a corpo contra Alaric. Um passo curto o mantém a 1 m do agressor, se houver passagem livre; então faz Luta contra CA, **2d6 contundente**, metade em parcial. Não combina com Casamata no mesmo ataque e não responde a contra-ataques.
 
-**Composição de Karma:** 4 base iii + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
+**Composição de Karma:** 4 Base III + 1 reação = 5 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau III: 2d6; cura, Escudo e efeitos não ofensivos conservam a construção própria.
 
 ##### Assinatura · Réquiem {#alaric-requiem}
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, uma vez por cena, alcance 1 m. Alaric prende a atenção do oponente na guarda alta e concentra o golpe no centro do corpo. Luta contra CA: **2d12 contundente**. Em acerto total, o alvo fica **Caído** e não pode realizar Reações até o início do próximo turno de Alaric. Parcial metade, sem condições. A técnica não executa automaticamente uma criatura nem ignora resistência.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, uma vez por cena, alcance 1 m. Alaric prende a atenção do oponente na guarda alta e concentra o golpe no centro do corpo. Luta contra CA: **2d8 contundente**. Em acerto total, o alvo fica **Caído** E não pode realizar Reações até o início do próximo turno de Alaric. Parcial metade, sem condições. A técnica não executa automaticamente uma criatura nem ignora resistência.
 
-**Composição de Karma:** 6 base iv + 3 função secundária iii = 9 Karma. Manutenção e outros recursos são pagos separadamente.
-
-**Matriz e dano universal:** Marcial · Físico. Base ofensiva de Grau IV: 2d8; cura, Escudo e efeitos não ofensivos conservam a construção própria.
-
+**Composição de Karma:** 6 Base IV + 3 Função secundária III = 9 Karma. Manutenção e outros recursos são pagos separadamente.
