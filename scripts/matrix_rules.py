@@ -49,7 +49,7 @@ def classify(art):
  offense=re.sub(r'\bnão (?:causa|inflige) dano\b','',prose,flags=re.I)
  if re.search(r'frasco|ampola|alqu[ií]m',source,re.I) and re.search(r'0 Karma|sem Karma',str(art.get('cost',''))+' '+prose,re.I):
   tag='Item Alquímico'
- elif title in DIVINE_ATTACKS:
+ elif any(re.search(r'(?<!\w)'+re.escape(t)+r'(?!\w)',title,re.I) for t in DIVINE_ATTACKS):
   art['matrix']='Divino';tag='Divino'
  elif re.search(r'\b\d+d\d+\s+'+DAMAGE_SUFFIX,offense,re.I) or re.search(r'causa (?:dano|\d+d\d+)',offense,re.I):
   tag=damage_type(text,art['matrix'])

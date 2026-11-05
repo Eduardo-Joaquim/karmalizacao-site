@@ -14,15 +14,15 @@ parts=[]
 for c in classes:
  s='## '+c['name']+'\n\n'
  for field,label in [('function','Função'),('identity','Identidade'),('initialBonus','Bônus inicial'),('recommendedAttributes','Atributos recomendados'),('recommendedSkills','Perícias recomendadas')]:s+=f'**{label}:** {c[field]}\n\n'
- s+=f"### Traço {c['trait']['name']}\n\n{c['trait']['description']}\n\n"
- for a in c['abilities']:
-  s+='### '+a['name']+'\n\n'
+ s+=f"#### Traço de Classe — {c['trait']['name']}\n\n{c['trait']['description']}\n\n"
+ for ability_index,a in enumerate(c['abilities'],1):
+  s+='#### Habilidade '+str(ability_index)+' — '+a['name']+'\n\n'
   if a['usage']:s+='**Uso:** '+a['usage']+'\n\n'
   effect=a['effect'];prefix='Ativação e custo: '+a['usage']
   if a['usage'] and effect.startswith(prefix):effect=effect[len(prefix):].lstrip()
   # Break named procedures into paragraphs without omitting their text.
   effect=re.sub(r' (?=(?:Resolução:|Encerramento:|Manutenção:|Punho em Suspenso:|Intervenção Clínica:|Expressão de |Expressões elementais:))','\n\n',effect)
-  s+=effect+'\n\n';amp=next(x for x in c['amplifications'] if x['abilityName']==a['name']);s+=f"**Ampliação — {amp['name']}:** {amp['description']}\n\n"
+  s+=effect+'\n\n';amp=next(x for x in c['amplifications'] if x['abilityName']==a['name']);s+=f"#### Ampliação — {amp['name']}\n\n{amp['description']}\n\n"
  if c['name']=='Inventor':
   rows=json.loads((root/'data/inventor-projects.json').read_text())['stages']
   s+='### Progressão dos projetos\n\n| Etapa | Preparados | Ativos | Peças (m) | Construção (TE) | Carga básica |\n|---|---|---|---|---|---|\n'

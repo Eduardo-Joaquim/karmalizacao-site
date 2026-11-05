@@ -24,7 +24,7 @@ export function inventoryState(items:InventoryItem[],strength:number,agility:num
  if(armor&&/média|pesada|balístico/i.test(armor.name)){penalties.push("Armadura: Desvantagem em Acrobacia e Furtividade");disadvantages+=2;}
  if(armor&&/pesada/i.test(armor.name)&&agility<3){penalties.push("Armadura pesada: Desvantagem em Evasão");disadvantages++;}
  if(armor&&strength<(armor.minStrength??0))penalties.push("Sem corrida; perde Reação ao usar Movimento; Desvantagem em testes físicos");
- if(shield&&/pesado/i.test(shield.name)){penalties.push("Escudo pesado: Desvantagem em Acrobacia");disadvantages++;}
+ if(shield&&/pesado/i.test(shield.name)){penalties.push("Escudo pesado: Desvantagem em Evasão e Acrobacia");disadvantages++;}
  if(tier===4)issues.push("Carga imobilizante: largue ou transfira itens antes de se deslocar.");
  return {current:Math.round(current*1000)/1000,capacity,tier,label:["Leve / Ágil","Confortável","Sobrecarregado","Crítica","Imobilizante"][tier],ready,readiness,penalties,issues,disadvantages,
   armorBonus:(armor?.armorClass??0)+Math.max(0,(shield?.armorClass??0)-(shield&&strength<(shield.minStrength??0)?1:0)),
@@ -48,6 +48,6 @@ export function inventoryTestPenalty(items:InventoryItem[],strength:number,agili
  if(armor&&/média|pesada|balístico/i.test(armor.name)&&/Acrobacia|Furtividade/.test(skill))sources.push("Armadura");
  if(armor&&/pesada/i.test(armor.name)&&agility<3&&/Evasão|Reflexos/.test(skill))sources.push("Armadura pesada");
  if(armor&&strength<(armor.minStrength??0)&&physical)sources.push("Força insuficiente para a armadura");
- if(shield&&/pesado/i.test(shield.name)&&skill==="Acrobacia")sources.push("Escudo pesado");
+ if(shield&&/pesado/i.test(shield.name)&&/^(Evasão|Reflexos|Acrobacia)$/.test(skill))sources.push("Escudo pesado");
  return {sources,dicePenalty:sources.length,blocked:!state.canEvade&&skill==="Evasão"};
 }

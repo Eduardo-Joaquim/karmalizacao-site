@@ -6,7 +6,7 @@ export const LINEAGE_CATALYSTS:Record<string,string>={
  Vampiro:'Gaste 1 Vitae ao lançar a técnica para somar +1d6 de dano ou impor Sangrando no Acerto Total (a cura racial exige mordida direta).',
  Demônio:'Aplique o Selo de Coação ao atingir o alvo. O +1d8 Corrupto do revide exige 2 Karma ou 1 Carga Temporária de Corrupção; aplicar o selo pelo olhar custa 1 Karma.',
  Ghoul:'Em Caça, use a Regeneração Voraz se o alvo e o resultado cumprirem seu gatilho.',
- 'Tritão':'Deslize ou empurre o alvo atingido 2 m com o Pulso de Maré.',
+ 'Tritão':'Use o Pulso de Maré para empurrar o alvo atingido em 2 m ou impor o controle hidrostático da sua Etapa.',
  Abissal:'Meça alcance e trajetória a partir da Âncora do Vazio.'
 };
 const families={

@@ -23,11 +23,21 @@ for name,race in races.items():
  resources=f"+{bonus['life']} Vida"+(f" e +{bonus['karma']} Karma" if bonus['karma'] else ('' if bonus.get('movement') else '; sem bônus de Karma'))
  if bonus.get('movement'):resources+=f" e +{bonus['movement']} m de Deslocamento"
  md+=f"| {attrs} | {skills} | {resources} | {fs[0]['name']} |\n\n"
- for f in fs:md+=f"#### Etapa {f['stage']} — {f['name']}\n\n{f['description']}\n\n"
+ for f in fs:
+  sentences=re.split(r'(?<=[.!?])\s+(?=[A-ZÁÀÂÃÉÊÍÓÔÕÚÇ])',f['description'])
+  if len(sentences)==1:
+   sentences=re.split(r';\s+|(?<=dano causado) e, ',f['description'],maxsplit=1)
+  groups=min(3,max(2,len(sentences)//2))
+  chunks=[sentences[i*len(sentences)//groups:(i+1)*len(sentences)//groups] for i in range(groups)]
+  labels=['Aprimoramento / Passiva','Ativação / Reação','Efeito e limites']
+  if name=='Humano' and f['stage']=='II':
+   labels=['Dano ao gastar Ímpeto','Brecha na guarda']
+   chunks=[[sentences[0]+'.'],[sentences[1][0].upper()+sentences[1][1:]]]
+  md+=f"#### Etapa {f['stage']} — {f['name']}\n\n"+'\n'.join('- **'+labels[i]+':** '+' '.join(chunk) for i,chunk in enumerate(chunks) if chunk)+'\n\n'
 (root/'docs/racas.md').write_text(md)
 b=read('data/rules.json');c=next(c for c in b['chapters'] if c['number']==5);prefix=(root/'docs/origens-base.html').read_text();suffix=(root/'docs/linhagens-adicionais.html').read_text();c['html']=prefix+render(md)+suffix;index(c)
 c=next(c for c in b['chapters'] if c['number']==2);c['html']=re.sub(r'<p data-racial-milestones>.*?</p>','',c['html'],flags=re.S);c['html']+='<p data-racial-milestones>Herança racial: Traço Base na criação; três marcos de evolução nas Etapas II, IV e VI. Consulte as nove linhagens no Capítulo 5.</p>';index(c)
-c=next(c for c in b['chapters'] if c['number']==10);c['html']=re.sub(r'<section data-matrices="2">.*?</section>','',c['html'],flags=re.S);c['html']='<section data-matrices="2">'+render((root/'docs/matrizes-tecnicas.md').read_text())+'</section>'+c['html'];index(c)
+c=next(c for c in b['chapters'] if c['number']==10);c['html']=re.sub(r'<section data-matrices="2">.*?</section>','',c['html'],flags=re.S);c['html']=re.sub(r'<!-- matrices:start -->.*?<!-- matrices:end -->','',c['html'],flags=re.S);c['html']='<!-- matrices:start -->'+render((root/'docs/matrizes-tecnicas.md').read_text())+'<!-- matrices:end -->'+c['html'];index(c)
 # Remove the obsolete single offensive progression from the original table.
 for chapter in b['chapters']:
  if chapter['number']==10:
@@ -49,7 +59,7 @@ for chapter in b['chapters']:
   index(chapter)
 write('data/rules.json',b)
 # Export the canonical rules manuscript, excluding the site-only Bestiary.
-(root/'docs/regras.md').write_text('\n\n'.join('# '+c['title']+'\n\n'+subprocess.check_output(['pandoc','-f','html','-t','gfm','--wrap=none'],input=c['html'],text=True) for c in b['chapters'] if c['number']<=20))
+(root/'docs/regras.md').write_text('\n\n'.join('# '+c['title']+'\n\n'+subprocess.check_output(['pandoc','-f','html','-t','gfm','--wrap=none'],input=re.sub(r'<!--.*?-->','',c['html'],flags=re.S),text=True) for c in b['chapters'] if c['number']<=20))
 print('Patch 2.0.1: regras, nove linhagens e cinco matrizes compiladas.')
 
 from matrix_rules import profile,adapt_damage,classify
@@ -88,7 +98,7 @@ def polish(value):
  if isinstance(value,list):return [polish(x) for x in value]
  if isinstance(value,dict):return {k:polish(v) for k,v in value.items()}
  if not isinstance(value,str):return value
- value=value.replace('Outro panteão','Entidade Primordial').replace('Outorgada por A Tecelã Exterior · Entidade Primordial','Outorgada pela Tecelã Exterior · Entidade Exterior')
+ value=value.replace('Entidade Primordial','Entidade Primordial').replace('Outorgada por A Tecelã Exterior · Entidade Primordial','Outorgada pela Tecelã Exterior · Entidade Exterior')
  value=re.sub(r'\s*Matriz: [^.;<]+; dano universal: [^.<]+\.','',value)
  value=re.sub(r'(<p>)([a-záàâãéêíóôõúç])',lambda m:m[1]+m[2].upper(),value)
  value=re.sub(r'(?i)(\bbase|função secundária) (i{1,3}|iv|v)\b',lambda m:m[1].capitalize()+' '+m[2].upper(),value)

@@ -3569,7 +3569,7 @@ De pele parda e cabelos azul-escuros, Euphere fala baixo e observa as saídas an
 
 **Foco Operacional:** Escolhe um alvo, área ou mecanismo no início da cena; uma vez por rodada, recebe +2 no primeiro teste de Luta ou Tática contra o Foco. Trocar exige Movimento.
 
-**Leitura Predatória:** Movimento, 13 Karma; permite usar Intelecto + Tática para atacar o Foco. O primeiro total de cada rodada recebe +1d6 e ignora 2 de Resistência. **Composição de Karma:** 4 Base III, 1 Movimento, 4 Cena, 3 Dado adicional, 1 Penetração = 13 Karma.
+**Análise Operacional:** Movimento, 13 Karma; permite usar Intelecto + Tática para atacar o Foco. O primeiro total de cada rodada recebe +1d6 e ignora 2 de Resistência. **Composição de Karma:** 4 Base III, 1 Movimento, 4 Cena, 3 Dado adicional, 1 Penetração = 13 Karma.
 
 | Técnica | Ação · custo · alcance | Efeito |
 |---|---|---|

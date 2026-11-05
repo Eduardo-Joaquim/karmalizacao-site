@@ -53,10 +53,10 @@ O desgaste corrupto atinge a Vida diretamente, sem Escudo ou armadura. Registre 
 | Elfo | Em Harmonia, escolha +3 m de alcance ou ignorar cobertura parcial. |
 | Anão | Gaste Cargas de Bigorna para firmar a técnica ou descarregá-las em uma quebra de guarda, conforme sua Têmpera. |
 | Demi-humano | Adapte o efeito secundário à Garra, à Asa ou à Carapaça ativa. |
-| Vampiro | Alimente a técnica com Vitae e converta em cura a parcela prevista pela Reserva de Vitae. |
+| Vampiro | Gaste 1 Vitae ao lançar a técnica para somar +1d6 de dano ou impor Sangrando no Acerto Total (a cura racial exige mordida direta). |
 | Demônio | Aplique ou resolva o Selo de Coação no alvo atingido, respeitando a frequência do selo. |
 | Ghoul | Em Caça, use a Regeneração Celular Voraz contra o alvo ferido ou Sangrando quando cumprir seu gatilho. |
-| Tritão | Use o Pulso de Maré para deslizar ou empurrar o alvo atingido 2 m. |
+| Tritão | Use o Pulso de Maré para empurrar o alvo atingido em 2 m ou impor o controle hidrostático da sua Etapa. |
 | Abissal | Trace a técnica a partir da Âncora do Vazio ativa. |
 
 **Reconheça a doutrina da classe.** Um Duelista ou Pugilista pode economizar 1 Karma em uma manobra comprada; um Conjurador, em alcance, área ou sustentação; um Assassino, em precisão ou ocultação; um Tanque, em bloqueio ou proteção aliada. A economia só vale quando existe um componente que a doutrina possa aperfeiçoar. Ela entra no mesmo limite de redução da técnica.

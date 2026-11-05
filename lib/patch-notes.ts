@@ -8,7 +8,9 @@ export type PatchNote = {
 
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
-  {id:"patch-2-0-1-2026-11-05-linhagens-r2",version:"2.0.1",label:"Patch 2.0.1 · 05/11/2026",title:"O que a linhagem deixa no golpe",highlights:[
+  {id:"patch-2-0-1-2026-11-05-editorial-r3",version:"2.0.1",label:"Patch 2.0.1 · 05/11/2026",title:"Regras afinadas, leitura renovada",highlights:[
+    "Etapas raciais e habilidades de classe ganharam cartões, tópicos e destaques para custos, ações e resultados. Tabelas e exemplos têm nova apresentação editorial.",
+    "Catalisadores, referências entre classes e exemplos de dano foram alinhados às cinco matrizes. Escudo pesado reduz 1 m e impõe Desvantagem em Evasão e Acrobacia.",
     "Leitura de Brecha do Humano não concede mais treinamento adicional em Perícia; seus efeitos ofensivos permanecem.",
     "Balanceamento racial: somente o Demi-humano mantém metros extras de deslocamento. Tritão perde o contra-ataque de dano e a resistência Marcial da aura; sua defesa reduz dano apenas pela Constituição e suas interações usam Água / Subdobras.",
     "Abissal posiciona ou move a Âncora com Ação de Movimento, paga +1 Karma por técnica através dela e 3 Karma por Passo de Fresta. Dobra de Singularidade reduz dano apenas por Espírito e armazena 1d4 de Sombra.",

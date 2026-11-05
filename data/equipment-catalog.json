@@ -653,11 +653,11 @@
     "spaces": 3.0,
     "category": "shield",
     "price": "35",
-    "notes": "Dano / Efeito: +3 CA quando ativo; Resistência 0 · Requisito de Força: 3 · Alcance e Propriedades: Uma mão; −2 m; Desvantagem em Acrobacia",
+    "notes": "Dano / Efeito: +3 CA quando ativo; Resistência 0 · Requisito de Força: 3 · Alcance e Propriedades: Uma mão; −1 m; Desvantagem em Evasão e Acrobacia",
     "minStrength": 3,
     "armorClass": 3,
     "agilityCap": 99,
-    "movementPenalty": 2
+    "movementPenalty": 1
   },
   {
     "id": "manto-de-chuva",

@@ -29,7 +29,7 @@
       {
         "stage": "I",
         "name": "Inconformismo",
-        "description": "Você começa cada cena com 2 Ímpetos (Pontos de Ímpeto) (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.",
+        "description": "Você começa cada cena com 2 Pontos de Ímpeto (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.",
         "kind": "Traço"
       },
       {
@@ -243,7 +243,7 @@
       {
         "stage": "IV",
         "name": "Reflexo Selvagem",
-        "description": "Uma vez por rodada, quando um inimigo erra um ataque contra você ou tenta sair do seu alcance de contato, você pode usar sua Reação para avançar até 3 m e realizar um ataque básico ou uma manobra de Derrubar ou Agarrar contra ele, sem custo de Karma.",
+        "description": "Uma vez por rodada, quando um inimigo erra um ataque contra você ou tenta sair do seu alcance de contato, você pode usar sua Reação para avançar até 3 m. Ao avançar, realize um ataque básico ou uma manobra de Derrubar ou Agarrar contra ele, sem custo de Karma.",
         "kind": "Habilidade"
       },
       {
@@ -262,7 +262,7 @@
       {
         "stage": "IV",
         "name": "Reflexo Selvagem",
-        "description": "Uma vez por rodada, quando um inimigo erra um ataque contra você ou tenta sair do seu alcance de contato, você pode usar sua Reação para avançar até 3 m e realizar um ataque básico ou uma manobra de Derrubar ou Agarrar contra ele, sem custo de Karma."
+        "description": "Uma vez por rodada, quando um inimigo erra um ataque contra você ou tenta sair do seu alcance de contato, você pode usar sua Reação para avançar até 3 m. Ao avançar, realize um ataque básico ou uma manobra de Derrubar ou Agarrar contra ele, sem custo de Karma."
       },
       {
         "stage": "VI",
@@ -363,7 +363,7 @@
       {
         "stage": "I",
         "name": "Sangue da Marca e Selo de Coação",
-        "description": "Você enxerga na escuridão plena, possui Resistência 3 contra dano Elemental / Fogo e calor ambiental, e seu sangue abissal possui Tolerância à Marca: a CD de todos os seus testes de Controle da Corrupção é reduzida em 1 ponto (mínimo CD 10). Selo de Coação: Uma vez por turno, ao atingir um inimigo com um ataque ou técnica (ou como Ação Livre pagando 1 Karma para encarar um alvo visível a até 10 m), você grava nele um Selo de Coação até o início do seu próximo turno. Se o inimigo selado realizar um ataque ou técnica que não inclua você entre os alvos, o selo queima de dentro para fora e causa a ele dano Corrupto (ou Mental) igual a Presença + Etapa; se o inimigo selado atacar você, seu próximo teste de ataque ou técnica contra ele até o fim do seu próximo turno recebe +1d20. Ao realizar esse revide contra o alvo selado, você pode pagar 2 Karma ou assumir 1 Carga Temporária de Corrupção para alimentar o golpe e acrescentar +1d8 de dano Corrupto ao resultado.",
+        "description": "Você enxerga na escuridão plena, possui Resistência 3 contra dano Elemental / Fogo e calor ambiental, e sua fisiologia de Aqueronte possui Tolerância à Marca: a CD de todos os seus testes de Controle da Corrupção é reduzida em 1 ponto (mínimo CD 10). Selo de Coação: Uma vez por turno, ao atingir um inimigo com um ataque ou técnica (ou como Ação Livre pagando 1 Karma para encarar um alvo visível a até 10 m), você grava nele um Selo de Coação até o início do seu próximo turno. Se o inimigo selado realizar um ataque ou técnica que não inclua você entre os alvos, o selo queima de dentro para fora e causa a ele dano Corrupto (ou Mental) igual a Presença + Etapa; se o inimigo selado atacar você, seu próximo teste de ataque ou técnica contra ele até o fim do seu próximo turno recebe +1d20. Ao realizar esse revide contra o alvo selado, você pode pagar 2 Karma ou assumir 1 Carga Temporária de Corrupção para alimentar o golpe e acrescentar +1d8 de dano Corrupto ao resultado.",
         "kind": "Traço"
       },
       {
@@ -380,7 +380,7 @@
       },
       {
         "stage": "VI",
-        "name": "Soberania do Trono Abissal",
+        "name": "Soberania de Aqueronte",
         "description": "Você recebe +1 ponto em Presença, Espírito ou Força. Uma vez por cena, como Ação Livre pagando 4 Karma (ou assumindo 1 Carga Efetiva de Corrupção), você manifesta sua aura soberana em um raio de 6 m por 3 rodadas: inimigos na área recebem automaticamente o Selo de Coação, sofrem -1d20 em testes de resistência mental ou espiritual e têm o limiar de Acerto Total reduzido em 1 a seu favor. Enquanto a aura estiver ativa, uma vez por turno, você pode pagar 2 Karma ou 1 Carga Temporária de Corrupção para acrescentar um dado-base adicional de dano Corrupto a uma técnica de Grau III ou superior contra um alvo selado.",
         "kind": "Habilidade"
       }
@@ -398,7 +398,7 @@
       },
       {
         "stage": "VI",
-        "name": "Soberania do Trono Abissal",
+        "name": "Soberania de Aqueronte",
         "description": "Você recebe +1 ponto em Presença, Espírito ou Força. Uma vez por cena, como Ação Livre pagando 4 Karma (ou assumindo 1 Carga Efetiva de Corrupção), você manifesta sua aura soberana em um raio de 6 m por 3 rodadas: inimigos na área recebem automaticamente o Selo de Coação, sofrem -1d20 em testes de resistência mental ou espiritual e têm o limiar de Acerto Total reduzido em 1 a seu favor. Enquanto a aura estiver ativa, uma vez por turno, você pode pagar 2 Karma ou 1 Carga Temporária de Corrupção para acrescentar um dado-base adicional de dano Corrupto a uma técnica de Grau III ou superior contra um alvo selado."
       }
     ]
@@ -501,7 +501,7 @@
     "features": [
       {
         "stage": "I",
-        "name": "Pressão Abissal",
+        "name": "Pressão Oceânica",
         "description": "Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água / Subdobras. Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite empurrar o alvo atingido em 2 m ou criar um efeito hidrostático local, sem conceder deslocamento adicional.",
         "kind": "Traço"
       },

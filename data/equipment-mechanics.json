@@ -436,7 +436,7 @@
     "minStrength": 3,
     "armorClass": 3,
     "agilityCap": 99,
-    "movementPenalty": 2,
+    "movementPenalty": 1,
     "spaces": 3.0
   },
   "manto-de-chuva": {
