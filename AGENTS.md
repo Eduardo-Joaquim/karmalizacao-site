@@ -165,6 +165,6 @@ O pedido de 01/11/2026 substitui as progressões raciais e ofensivas anteriores.
 
 Outorgas atuais em data/world-blessings.json prevalecem sobre as listas históricas acima: Geometria/Minerva, Desespero/Kali, Sceleris/Marte, Concordato/Thoth, Criação/Hefesto; não duplicar bênçãos transmitidas. Liturgias novas alteram a contagem de artes, sem mudar Vida, Karma máximo ou CA auditados. Som e vibração foram removidos, não apenas desativados. Bestiário continua exclusivo do site.
 
-## Patch 2.1 — Linhagens, natureza do dano e revisão editorial
+## Patch 2.0.1 — Linhagens, natureza do dano e revisão editorial
 Os ganhos iniciais das nove raças vêm de `data/racial-progression.json`; o compilador deriva os quadros do livro e os dados da ficha. Marcos em II, IV e VI. O nome Fada Azul continua sendo uma invocação existente, não uma raça jogável. Não restaure a Cadência Tática do Patch 2.0.1.
 A matriz ofensiva e a natureza do dano são relacionadas, mas não são sinônimos de combustível: Karma alimenta todas as técnicas. Defesa de subdobra é metade da maior defesa parental; nunca some os pais. O Controle de técnicas corruptas usa CD 16 mais Cargas; os demais gatilhos da Marca mantêm suas regras. Não publique notas de auditoria dentro das técnicas; use as etiquetas de natureza e função.

@@ -50,7 +50,7 @@ for chapter in b['chapters']:
 write('data/rules.json',b)
 # Export the canonical rules manuscript, excluding the site-only Bestiary.
 (root/'docs/regras.md').write_text('\n\n'.join('# '+c['title']+'\n\n'+subprocess.check_output(['pandoc','-f','html','-t','gfm','--wrap=none'],input=c['html'],text=True) for c in b['chapters'] if c['number']<=20))
-print('Patch 2.1: regras, nove linhagens e cinco matrizes compiladas.')
+print('Patch 2.0.1: regras, nove linhagens e cinco matrizes compiladas.')
 
 from matrix_rules import profile,adapt_damage,classify
 constructions=read('data/technique-construction.json')

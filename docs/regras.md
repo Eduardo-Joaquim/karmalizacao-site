@@ -659,7 +659,7 @@ A vontade não é herança de um trono. É a chama que ainda arde quando o desti
 
 #### Etapa I — Inconformismo
 
-Você começa cada cena com 2 Ímpetos (Pontos de Ímpeto) (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição e realizar um passo tático de 2 m sem provocar Reações.
+Você começa cada cena com 2 Ímpetos (Pontos de Ímpeto) (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.
 
 #### Etapa II — Leitura de Brecha
 
@@ -687,7 +687,7 @@ Você ignora terreno difícil natural e enxerga na penumbra sem penalidade. Ao s
 
 #### Etapa II — Refração do Véu Verde
 
-Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa. Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para deslizar 3 m sem provocar Reações ou remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m.
+Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa. Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m.
 
 #### Etapa IV — Cálice de Luz Perene
 
@@ -807,11 +807,11 @@ Suas garras e presas são armas naturais de contato que causam 1d8 de dano Marci
 
 #### Etapa II — Órgão Predatório
 
-Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma. Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo, +2 m de deslocamento ao avançar contra criaturas feridas e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10.
+Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma. Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10.
 
 #### Etapa IV — Regeneração Celular Voraz
 
-Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição + Etapa. Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno.
+Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição (sem somar a Etapa). Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno.
 
 #### Etapa VI — Apogeu da Fome
 
@@ -827,19 +827,19 @@ As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra s
 
 #### Etapa I — Pressão Abissal
 
-Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água e Elemental / Gelo. Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite deslizar 2 m ou empurrar o alvo atingido em 2 m.
+Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água / Subdobras. Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite empurrar o alvo atingido em 2 m ou criar um efeito hidrostático local, sem conceder deslocamento adicional.
 
 #### Etapa II — Manto de Correnteza
 
-Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações. Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água ou Gelo, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica.
+Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações. Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água / Subdobras, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica.
 
 #### Etapa IV — Implosão de Fossa
 
-Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo. O dano sofrido diminui em Constituição + Etapa, e um jato pressurizado causa 2d6 de dano Elemental / Água ao atacante.
+Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo. O dano sofrido diminui em Constituição, e um jato pressurizado empurra o atacante em 2 m, sem causar dano.
 
 #### Etapa VI — Soberano do Leviatã
 
-Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas. Aliados na área recebem +2 m de deslocamento e Resistência 3 contra dano Elemental / Fogo e Marcial; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água, Gelo, Vapor ou Marcial causam um dado-base adicional de dano.
+Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas. Aliados na área recebem Resistência 3 exclusivamente contra dano Elemental / Fogo; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água / Subdobras ou Marcial causam um dado-base adicional de dano.
 
 ### Abissal
 
@@ -851,15 +851,15 @@ Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar 
 
 #### Etapa I — Fenda de Horizonte
 
-Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação Livre, pode posicionar sua única Âncora do Vazio em um ponto visível a até 10 m. O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora.
+Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m. O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora. Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.
 
 #### Etapa II — Passo de Fresta
 
-Uma vez por rodada, como Ação de Movimento ou como Reação pagando 1 Karma, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações. Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno.
+Uma vez por rodada, pagando 3 de Karma por uso e consumindo uma Ação de Movimento ou uma Reação, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações. Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno.
 
 #### Etapa IV — Dobra de Singularidade
 
-Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito + Etapa e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d10 de dano Elemental / Sombra, consumindo o eco armazenado.
+Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado.
 
 #### Etapa VI — Horizonte de Eventos
 

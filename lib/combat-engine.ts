@@ -66,7 +66,7 @@ export function damageDice(text:string, critical=false, diceSource=randomDice) {
 }
 export function fixedCost(text:string):number|null {
   if (/^\s*(?:0|gratuit[ao]|passiv[ao])(?:\s*Karma)?\s*$/i.test(text)) return 0;
-  const m=text.match(/^\s*(\d+)\s*Karma(?:\s*(?:de Geppeto|[.;,]|$))/i) ?? text.match(/^\s*(\d+)\s*$/);
+  const m=text.match(/^\s*(\d+)\s*(?:de\s+)?Karma(?:\s*(?:de Geppeto|[.;,]|$))/i) ?? text.match(/^\s*(\d+)\s*$/);
   return m?Number(m[1]):null;
 }
 export function applyCombatAction(draft:CharacterPayload, op:CombatAction, timestamp=new Date().toISOString()):CharacterPayload {

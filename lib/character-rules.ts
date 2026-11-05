@@ -490,7 +490,7 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
 
   const race = getRaceRule(draft.race);
   if (race) {
-    addPartialBonus(result, race.automatic);
+    addPartialBonus(result, {...race.automatic, movement: draft.race === "Demi-humano" ? race.automatic.movement ?? 0 : 0});
     const racialStage=Math.max(1,getStageIndex(draft.stage));
     if(draft.race==='Elfo'&&racialStage>=4)result.karma+=racialStage;
     if(draft.race==='Anão'&&racialStage>=4)result.life+=2*racialStage;

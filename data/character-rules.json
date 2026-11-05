@@ -1682,7 +1682,7 @@
         {
           "stage": "I",
           "name": "Inconformismo",
-          "description": "Você começa cada cena com 2 Ímpetos (Pontos de Ímpeto) (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição e realizar um passo tático de 2 m sem provocar Reações.",
+          "description": "Você começa cada cena com 2 Ímpetos (Pontos de Ímpeto) (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.",
           "kind": "Traço"
         },
         {
@@ -1755,7 +1755,7 @@
         {
           "stage": "II",
           "name": "Refração do Véu Verde",
-          "description": "Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa. Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para deslizar 3 m sem provocar Reações ou remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m.",
+          "description": "Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa. Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m.",
           "kind": "Habilidade"
         },
         {
@@ -1775,7 +1775,7 @@
         {
           "stage": "II",
           "name": "Refração do Véu Verde",
-          "description": "Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa. Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para deslizar 3 m sem provocar Reações ou remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m."
+          "description": "Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa. Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m."
         },
         {
           "stage": "IV",
@@ -2091,13 +2091,13 @@
         {
           "stage": "II",
           "name": "Órgão Predatório",
-          "description": "Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma. Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo, +2 m de deslocamento ao avançar contra criaturas feridas e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10.",
+          "description": "Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma. Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10.",
           "kind": "Habilidade"
         },
         {
           "stage": "IV",
           "name": "Regeneração Celular Voraz",
-          "description": "Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição + Etapa. Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno.",
+          "description": "Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição (sem somar a Etapa). Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno.",
           "kind": "Habilidade"
         },
         {
@@ -2111,12 +2111,12 @@
         {
           "stage": "II",
           "name": "Órgão Predatório",
-          "description": "Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma. Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo, +2 m de deslocamento ao avançar contra criaturas feridas e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10."
+          "description": "Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma. Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10."
         },
         {
           "stage": "IV",
           "name": "Regeneração Celular Voraz",
-          "description": "Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição + Etapa. Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno."
+          "description": "Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição (sem somar a Etapa). Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno."
         },
         {
           "stage": "VI",
@@ -2155,25 +2155,25 @@
         {
           "stage": "I",
           "name": "Pressão Abissal",
-          "description": "Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água e Elemental / Gelo. Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite deslizar 2 m ou empurrar o alvo atingido em 2 m.",
+          "description": "Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água / Subdobras. Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite empurrar o alvo atingido em 2 m ou criar um efeito hidrostático local, sem conceder deslocamento adicional.",
           "kind": "Traço"
         },
         {
           "stage": "II",
           "name": "Manto de Correnteza",
-          "description": "Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações. Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água ou Gelo, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica.",
+          "description": "Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações. Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água / Subdobras, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica.",
           "kind": "Habilidade"
         },
         {
           "stage": "IV",
           "name": "Implosão de Fossa",
-          "description": "Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo. O dano sofrido diminui em Constituição + Etapa, e um jato pressurizado causa 2d6 de dano Elemental / Água ao atacante.",
+          "description": "Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo. O dano sofrido diminui em Constituição, e um jato pressurizado empurra o atacante em 2 m, sem causar dano.",
           "kind": "Habilidade"
         },
         {
           "stage": "VI",
           "name": "Soberano do Leviatã",
-          "description": "Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas. Aliados na área recebem +2 m de deslocamento e Resistência 3 contra dano Elemental / Fogo e Marcial; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água, Gelo, Vapor ou Marcial causam um dado-base adicional de dano.",
+          "description": "Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas. Aliados na área recebem Resistência 3 exclusivamente contra dano Elemental / Fogo; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água / Subdobras ou Marcial causam um dado-base adicional de dano.",
           "kind": "Habilidade"
         }
       ],
@@ -2181,17 +2181,17 @@
         {
           "stage": "II",
           "name": "Manto de Correnteza",
-          "description": "Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações. Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água ou Gelo, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica."
+          "description": "Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações. Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água / Subdobras, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica."
         },
         {
           "stage": "IV",
           "name": "Implosão de Fossa",
-          "description": "Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo. O dano sofrido diminui em Constituição + Etapa, e um jato pressurizado causa 2d6 de dano Elemental / Água ao atacante."
+          "description": "Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo. O dano sofrido diminui em Constituição, e um jato pressurizado empurra o atacante em 2 m, sem causar dano."
         },
         {
           "stage": "VI",
           "name": "Soberano do Leviatã",
-          "description": "Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas. Aliados na área recebem +2 m de deslocamento e Resistência 3 contra dano Elemental / Fogo e Marcial; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água, Gelo, Vapor ou Marcial causam um dado-base adicional de dano."
+          "description": "Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas. Aliados na área recebem Resistência 3 exclusivamente contra dano Elemental / Fogo; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água / Subdobras ou Marcial causam um dado-base adicional de dano."
         }
       ]
     },
@@ -2223,19 +2223,19 @@
         {
           "stage": "I",
           "name": "Fenda de Horizonte",
-          "description": "Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação Livre, pode posicionar sua única Âncora do Vazio em um ponto visível a até 10 m. O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora.",
+          "description": "Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m. O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora. Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.",
           "kind": "Traço"
         },
         {
           "stage": "II",
           "name": "Passo de Fresta",
-          "description": "Uma vez por rodada, como Ação de Movimento ou como Reação pagando 1 Karma, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações. Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno.",
+          "description": "Uma vez por rodada, pagando 3 de Karma por uso e consumindo uma Ação de Movimento ou uma Reação, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações. Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno.",
           "kind": "Habilidade"
         },
         {
           "stage": "IV",
           "name": "Dobra de Singularidade",
-          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito + Etapa e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d10 de dano Elemental / Sombra, consumindo o eco armazenado.",
+          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado.",
           "kind": "Habilidade"
         },
         {
@@ -2249,12 +2249,12 @@
         {
           "stage": "II",
           "name": "Passo de Fresta",
-          "description": "Uma vez por rodada, como Ação de Movimento ou como Reação pagando 1 Karma, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações. Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno."
+          "description": "Uma vez por rodada, pagando 3 de Karma por uso e consumindo uma Ação de Movimento ou uma Reação, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações. Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno."
         },
         {
           "stage": "IV",
           "name": "Dobra de Singularidade",
-          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito + Etapa e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d10 de dano Elemental / Sombra, consumindo o eco armazenado."
+          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado."
         },
         {
           "stage": "VI",

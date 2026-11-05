@@ -8,7 +8,10 @@ export type PatchNote = {
 
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
-  {id:"patch-2-1-2026-11-05-linhagens",version:"2.1",label:"Patch 2.1 · 05/11/2026",title:"O que a linhagem deixa no golpe",highlights:[
+  {id:"patch-2-0-1-2026-11-05-linhagens",version:"2.0.1",label:"Patch 2.0.1 · 05/11/2026",title:"O que a linhagem deixa no golpe",highlights:[
+    "Balanceamento racial: somente o Demi-humano mantém metros extras de deslocamento. Tritão perde o contra-ataque de dano e a resistência Marcial da aura; sua defesa reduz dano apenas pela Constituição e suas interações usam Água / Subdobras.",
+    "Abissal posiciona ou move a Âncora com Ação de Movimento, paga +1 Karma por técnica através dela e 3 Karma por Passo de Fresta. Dobra de Singularidade reduz dano apenas por Espírito e armazena 1d4 de Sombra.",
+    "Regeneração Celular Voraz do Ghoul recupera apenas Constituição de Vida, sem somar a Etapa.",
     "O Humano recebe +6 Vida e +2 Karma na criação. Ímpeto acrescenta um d20 e +2 ao teste; Leitura de Brecha também amplia o dano.",
     "A mordida direta é a fonte de cura racial do Vampiro. Vitae alimenta seus golpes, e o Demônio recupera sua ligação com a Corrupção e os custos de seu revide.",
     "As nove linhagens recuperam seus ganhos de criação e têm novas heranças nas Etapas II, IV e VI.",

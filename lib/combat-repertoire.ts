@@ -8,7 +8,7 @@ export function usageCost(usage:string,passive=false){
  if(/além (?:de|do|dos)|sobre o custo|Karma adicionais|Karma adicional|Karma no lugar de|Karma em vez de/i.test(usage))return null;
  if(passive||/passiv[ao]|sem custo|gratuit[ao]/i.test(usage))return 0;
  const direct=fixedCost(usage);if(direct!==null)return direct;
- const all=[...usage.matchAll(/(?<![\d−-])(\d+)\s*Karma/gi)];
+ const all=[...usage.matchAll(/(?<![\d−-])(\d+)\s*(?:de\s+)?Karma/gi)];
  return all.length===1?Number(all[0][1]):null;
 }
 export function playerArts(d:CharacterPayload):CombatArt[]{
