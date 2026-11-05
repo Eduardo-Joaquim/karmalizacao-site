@@ -425,8 +425,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
       draft.allocations.progressionTranscendentalSkills,
     ),
   ];
-  const humanStageChoiceComplete=draft.race!=="Humano"||getStageIndex(draft.stage)<2||ALL_SKILLS.includes(draft.allocations.humanTraining as typeof ALL_SKILLS[number]);
-  const allAllocationsComplete = allocationChecks.every(Boolean)&&humanStageChoiceComplete;
+  const allAllocationsComplete = allocationChecks.every(Boolean);
   const classAbilitiesComplete = classDefinition
     ? draft.classAbilities.length === getClassAbilityLimit(draft.stage)
     : false;
@@ -993,14 +992,6 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
               </div>
 
               <div className="skill-allocation-grid">
-              {draft.race === "Humano" && getStageIndex(draft.stage) >= 2 && <label className="character-field">
-                <span>Leitura de Brecha · Perícia adicional</span>
-                <NativeSelect value={draft.allocations.humanTraining ?? ""} onChange={e => updateDraft("allocations", {...draft.allocations, humanTraining:e.target.value})}>
-                  <NativeSelectOption value="">Escolha uma perícia</NativeSelectOption>
-                  {ALL_SKILLS.map(skill => <NativeSelectOption key={skill} value={skill}>{skill}</NativeSelectOption>)}
-                </NativeSelect>
-                <small>Eleva uma perícia em um nível, respeitando o teto da Etapa.</small>
-              </label>}
               <AllocationPanel
                 title="Raça"
                 description="Bônus Comum: complete nível 1, sem ultrapassar esse teto."

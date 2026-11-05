@@ -36,10 +36,10 @@ test('registered matrix techniques pay Favor and Corruption risk atomically',()=
  const next=engine.applyCombatAction(d,{id:crypto.randomUUID(),actorName:'Player',title:'Incisão',type:'execute',techniqueId:'matrix-risk',cost:6,kind:'technique'});assert.equal(next.corruption.charge,8);assert.equal(next.combatState.currentLife,engine.liveState(d).currentLife-4);assert.equal(next.combatState.currentKarma,engine.liveState(d).currentKarma-6);
  d.techniques[0].matrix='Divino';d.divine.favor=0;assert.throws(()=>engine.applyCombatAction(d,{id:crypto.randomUUID(),actorName:'Player',title:'Incisão',type:'execute',techniqueId:'matrix-risk',cost:6,kind:'technique'}),/Favor/);assert.equal(d.corruption.charge,7);
 });
-test('human training and legacy signature records obey stage limits and survive validation',async()=>{
+test('legacy human training no longer grants levels and records survive validation',async()=>{
  const d=model.createBlankCharacter();d.name='Sentinela';d.race='Humano';d.stage='Etapa II';d.allocations.humanTraining='Luta';
  const level=()=>rules.getFinalSkill(d,rules.calculateAutomaticBonuses(d),'Luta');
- assert.equal(level(),1);d.skills.Luta.base=1;assert.equal(level(),1);d.stage='Etapa IV';assert.equal(level(),2);
+ assert.equal(level(),0);d.skills.Luta.base=1;assert.equal(level(),1);d.stage='Etapa IV';assert.equal(level(),1);
  d.techniques=[{id:'human-signature',name:'Corte',cost:'6 Karma'},{id:'other',name:'Estocada',cost:'6 Karma'}];
  d.allocations.humanSignature='human-signature';
  const {playerArts}=await vite.ssrLoadModule('/lib/combat-repertoire.ts');

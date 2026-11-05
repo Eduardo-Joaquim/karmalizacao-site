@@ -16,7 +16,7 @@ Você começa cada cena com 2 Ímpetos (Pontos de Ímpeto) (seu limite máximo i
 
 #### Etapa II — Leitura de Brecha
 
-Você recebe +1 ponto de treinamento em uma Perícia à escolha (respeitando o teto da sua Etapa). Sempre que você gastar Ímpeto em um ataque ou técnica ofensiva, você expõe uma brecha na guarda do alvo: o golpe soma +Etapa ao dano causado e, até o início do seu próximo turno, o próximo ataque seu ou de qualquer aliado contra aquele alvo reduz em 2 pontos os limiares de Acerto Parcial e de Acerto Total da defesa dele.
+Sempre que você gastar Ímpeto em um ataque ou técnica ofensiva, você expõe uma brecha na guarda do alvo: o golpe soma +Etapa ao dano causado e, até o início do seu próximo turno, o próximo ataque seu ou de qualquer aliado contra aquele alvo reduz em 2 pontos os limiares de Acerto Parcial e de Acerto Total da defesa dele.
 
 #### Etapa IV — Sobrevivência Indomável
 

@@ -601,16 +601,12 @@ export function getSkillLevelBreakdown(
   const sacrificedCommon = getSacrificedPoints(draft, skill);
   const baseCommon = Math.max(0, points.base - sacrificedCommon);
   const manualCommon = Math.max(0, points.bonus);
-  const racialTraining = draft.race === "Humano" && getStageIndex(draft.stage) >= 2 && draft.allocations.humanTraining === skill;
-  const grantsCommon = racialTraining && baseCommon + manualCommon + tierBonuses.common === 0;
-  const automaticCommon = Math.max(0, tierBonuses.common) + Number(grantsCommon);
+  const automaticCommon = Math.max(0, tierBonuses.common);
   const commonRaw = baseCommon + manualCommon + automaticCommon;
   const common = Math.min(1, commonRaw);
-  const grantsEvolutive = racialTraining && !grantsCommon && getStageIndex(draft.stage) >= 4 && tierBonuses.evolutive === 0;
-  const evolutiveRaw = Math.max(0, tierBonuses.evolutive) + Number(grantsEvolutive);
+  const evolutiveRaw = Math.max(0, tierBonuses.evolutive);
   const evolutive = common === 1 ? Math.min(1, evolutiveRaw) : 0;
-  const grantsTranscendental = racialTraining && !grantsCommon && !grantsEvolutive && common === 1 && evolutive === 1 && getStageIndex(draft.stage) === 7 && tierBonuses.transcendental === 0;
-  const transcendentalRaw = Math.max(0, tierBonuses.transcendental) + Number(grantsTranscendental);
+  const transcendentalRaw = Math.max(0, tierBonuses.transcendental);
   const transcendental = getStageIndex(draft.stage) === 7 && common === 1 && evolutive === 1
     ? Math.min(1, transcendentalRaw)
     : 0;
