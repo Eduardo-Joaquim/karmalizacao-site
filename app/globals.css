@@ -5008,3 +5008,36 @@ h4,
 .monster-skills-compact{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.45rem;margin:.85rem 0}
 .monster-skill-chip{padding:.5rem .6rem;border:1px solid #ffffff25;border-radius:.35rem;background:#0002}
 .monster-skill-chip>span{display:block;font-size:.84rem;line-height:1.5}
+
+.aeria-continent-card > div {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+  flex: 1;
+}
+.aeria-continent-card > div > span {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+.aeria-continent-card strong {
+  display: block;
+  margin: 0;
+  line-height: 1.2;
+}
+.aeria-continent-card p {
+  margin: 0;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.aeria-continent-card > svg {
+  flex-shrink: 0;
+}
+.aeria-continent-card > svg:last-child {
+  margin-left: auto;
+}
+@media (max-width: 600px) {
+  .aeria-continent-card { gap: 1rem; padding: 1.25rem; }
+  .aeria-continent-card strong { font-size: 1.875rem; }
+}
