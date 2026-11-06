@@ -1,12 +1,12 @@
-"""Render the two royal dossiers from the authored source, preserving other profiles."""
+"""Render the royal dossiers from the authored source, preserving other profiles."""
 from pathlib import Path
 import json,re
 root=Path(__file__).resolve().parents[1];data=json.loads((root/'data/thalassia-source.json').read_text());path=root/'docs/thalassia.md';doc=path.read_text()
 for p in data['people']:
- if p['id'] not in ['atargatis-kalypso','ummu-hubur']:continue
+ if p['id'] not in ['atargatis-kalypso','nammu-salacia','ummu-hubur']:continue
  text=f"### {p['name']} · {p['title']} {{#{p['id']}}}\n\n#### História e Origem {{#{p['id']}-historia}}\n\n"+'\n\n'.join(p['lore'])+f"\n\n#### Ficha de Combate {{#{p['id']}-ficha}}\n\n"
  attrs=' · '.join(f'{k} {v}' for k,v in zip(['Força','Agilidade','Constituição','Intelecto','Presença','Espírito'],p['attrs']))
- text+=f"**Identidade:** {'Tritã' if p['zone']=='halikarnos' else 'Abissal'} · {p['cls']} · Etapa {p['stage']} · {p['role']}. **Vida:** {p['life']}. **Karma:** {p['karma']}. **CA:** {p['ca']}. **Deslocamento:** {'9 m; natação 9 m' if p['zone']=='halikarnos' else '9 m'}. **Atributos:** {attrs}.\n\n**Perícias:** {p['skills']}\n\n**Reações:** {p['reactions']} Reações por rodada, recuperadas no início do próprio turno. Uma defesa por ocorrência; retaliação é ataque, não outra defesa gratuita.\n\n**Domínios:** {p['domains']}\n\n"
+ text+=f"**Identidade:** {'Tritã' if p['zone'] in ['halikarnos','apsu'] else 'Abissal'} · {p['cls']} · Etapa {p['stage']} · {p['role']}. **Vida:** {p['life']}. **Karma:** {p['karma']}. **CA:** {p['ca']}. **Deslocamento:** {'9 m; natação 9 m' if p['zone'] in ['halikarnos','apsu'] else '9 m'}. **Atributos:** {attrs}.\n\n**Perícias:** {p['skills']}\n\n**Reações:** {p['reactions']} Reações por rodada, recuperadas no início do próprio turno. Uma defesa por ocorrência; retaliação é ataque, não outra defesa gratuita.\n\n**Domínios:** {p['domains']}\n\n"
  text+='**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA Total; Acerto Parcial vai do limiar Parcial até a CA Total inclusive. Um 1 natural selecionado falha. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.\n\n'
  for i,t in enumerate(p['traits']):
   label=f'Traço {i+1}'

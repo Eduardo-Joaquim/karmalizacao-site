@@ -31,3 +31,10 @@ test('public integration, chronology and escape window remain explicit',()=>{
  for(const file of ['app/api/bestiario/route.ts','app/mcp/route.ts','lib/public-navigation.ts','components/bestiary-reader.tsx'])assert(read(file).includes('thalassia'));
  assert(json('data/bestiary.json').searchableText.includes('Ummu-Hubur'));assert.equal(d.navigation.filter(n=>n.id==='ummu-hubur').length,1);
 });
+
+test('Nammu remains an ordinary stage VI defender without royal resource inflation',()=>{
+ const n=json('data/thalassia-source.json').people.find(p=>p.id==='nammu-salacia'),compiled=json('data/thalassia.json').courtProfiles.find(p=>p.id===n.id);
+ assert.deepEqual([n.life,n.karma,n.ca,n.reactions],[150,96,26,2]);assert.deepEqual([compiled.life,compiled.karma,compiled.ca],[150,96,26]);assert.equal(n.stage,'VI');assert.equal(n.arts.length,8);
+ assert(n.domains.startsWith('Resistência.'));assert(!n.domains.includes('Superação'));assert(n.arts.filter(a=>a.damage).every(a=>a.damage==='2d8'));
+ assert(n.arts.find(a=>a.name==='Quota de Socorro').effect.includes('uma vez por combate'));assert(n.arts.find(a=>a.signature).effect.includes('reserva compartilhada de Escudo 2d8'));
+});

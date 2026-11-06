@@ -22,6 +22,10 @@ A Corte da Falsa Santa abriga os Pecados. Seus nomes atravessam os quatro contin
 
 
 
+
+
+
+
 <!-- geopolitics:start -->
 
 O mundo possui quatro grandes continentes: Gaéria, associado à Terra; Ignária, ao Fogo; Aéria, ao Vento; e Thalassia, à Água. Essas associações descrevem paisagens, tradições e centros de poder. Não obrigam ninguém a nascer com certo elemento nem tornam uma linhagem estrangeira em sua própria cidade. A divisão que atravessa os reinos é a posição social: acesso à terra, crédito, educação, cargos e proteção jurídica.
@@ -3200,99 +3204,131 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 ##### Ficha de Combate {#nammu-salacia-ficha}
 
-**Identidade:** Tritã · Tanque · Etapa VI · RAINHA TRITÃ SUBMERSA. **Vida:** 290. **Karma:** 175. **CA:** 27. **Deslocamento:** 9 m; natação 9 m. **Atributos:** Força 5 · Agilidade 5 · Constituição 10 · Intelecto 8 · Presença 8 · Espírito 9.
+**Identidade:** Tritã · Tanque · Etapa VI · RAINHA TRITÃ SUBMERSA. **Vida:** 150. **Karma:** 96. **CA:** 26. **Deslocamento:** 9 m; natação 9 m. **Atributos:** Força 5 · Agilidade 4 · Constituição 8 · Intelecto 6 · Presença 6 · Espírito 7.
 
-**Perícias:** Luta 2; Reflexos 2; Atletismo 3; Canalização de Karma 3; Controle Elemental 3; Liderança 3; Investigação 3; Percepção 2; demais 0.
+**Perícias:** Luta 2; Reflexos 2; Atletismo 3; Canalização de Karma 2; Controle Elemental 3; Liderança 2; Investigação 2; Percepção 2; demais 0.
 
-**Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
+**Reações:** 2 Reações por rodada, recuperadas no início do próprio turno. Uma defesa por ocorrência; retaliação é ataque, não outra defesa gratuita.
 
-**Domínios:** Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
+**Domínios:** Resistência. Nível máximo: Essência e um Refinamento de Permanência; Manifestação custa 3 Karma e Ação Extra, dura cinco rodadas. Uma ativação por combate. Não concede Reações ou ações adicionais.
 
-**Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA Total; Acerto Parcial vai do limiar Parcial até a CA Total inclusive. Um 1 natural selecionado falha. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
-**Traço 1:** Água e Pressão / Salmoura; defesas parentais de Água. Sem Vectis nem outorga divina copiada.
+**Traço 1:** Água e Pressão / Salmoura; defesas parentais de Água. Sem Vectis nem outorga divina copiada. A coroa é autoridade política; sua ficha usa o patamar comum de Etapa VI, sem fase adicional ou reserva oculta.
 
-**Traço 2:** Guarda das Basílicas: Reação, 4 Karma, uma vez por rodada, aliado voluntário a 5 m recebe Resistência 3 contra Água até o início do próximo turno. Não cobre dano Marcial.
+**Traço 2:** Guarda das Basílicas: Reação, 4 Karma, uma vez por rodada, um aliado voluntário a até 5 m recebe Resistência 2 contra Água até o início do próximo turno de Nammu. Não cobre dano Marcial, não acumula Resistência de Água já existente: use apenas a maior. Consome uma das duas Reações da ficha.
 
 ###### 1 · Arcada de Ápsu {#nammu-salacia-1}
 
-**Fonte e Grau:** Água IV. **Uso:** Reação, 9 Karma. **Alcance e alvos:** aliado a 15 m.
+**Descrição:** Nammu fecha a mão e ergue uma arcada de água sobre o ombro de quem protege. A lâmina líquida recebe o impacto, perde a forma e cai como chuva pesada; não se recompõe enquanto o ataque continua.
 
-**Preparação:** Sem preparação adicional. **Teste:** Automático.
+**Fonte e Grau:** Água III. **Uso:** Reação, 9 Karma. **Alcance e alvos:** um aliado a até 10 m.
 
-**Efeito:** Concede Escudo 2d8 até o próximo turno; não cria parede sólida.
+**Preparação:** Sem preparação adicional.
 
-**Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
+**Teste e limiares:** Automático.
+
+**Resolução mecânica:** Concede Escudo 1d8 a um aliado a até 10 m, antes de resolver um único ataque anunciado. O Escudo dura até o início do próximo turno de Nammu ou até se esgotar, o que ocorrer primeiro; não se acumula com outro Escudo: conserve o maior. Pague 9 Karma e uma Reação; não pode somar Balança de Pressão ou outra defesa de Nammu à mesma ocorrência.
+
+**Limites:** Uma vez por rodada, compartilhando as duas Reações da ficha; uma defesa por ocorrência.
 
 ###### 2 · Sentença Isobárica {#nammu-salacia-2}
 
-**Fonte e Grau:** Pressão / Salmoura IV. **Uso:** Principal, 11 Karma. **Alcance e alvos:** 20 m.
+**Descrição:** A água prende os tornozelos do alvo numa compressão baixa, firme como uma comporta fechada. Nammu precisa sustentar o ponto de contato; a sentença segura uma posição, sem esmagar todo o campo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Controle Elemental contra CA.
+**Fonte e Grau:** Pressão / Salmoura III. **Uso:** Principal, 11 Karma. **Alcance e alvos:** um alvo a até 15 m.
 
-**Efeito:** Dano-base 2d10 de dano Elemental / Pressão / Salmoura. No total aplica Enraizado por uma rodada; Principal e Atletismo CD 21 libertam.
+**Preparação:** Sem preparação adicional.
+
+**Teste e limiares:** Espírito + Controle Elemental contra CA.
+
+**Resolução mecânica:** Faça Espírito + Controle Elemental contra CA. Total: 2d8 de Água / Subdobras e Enraizado até o início do próximo turno de Nammu. Parcial: metade do dano, sem Enraizado; falha: nada. O alvo pode gastar Movimento e superar Constituição + Atletismo CD 18 para encerrar Enraizado antes disso. Enraizado impede deslocamento voluntário, sem retirar ataques ou Reações. Não renova a duração sobre um alvo já Enraizado por esta técnica.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
 ###### 3 · Canal de Evacuação {#nammu-salacia-3}
 
-**Fonte e Grau:** Água IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** linha de 15 m.
+**Descrição:** Uma corrente rente ao chão recolhe os detritos da rota. O corredor fica transitável, mas não carrega ninguém: cada fugitivo ainda precisa atravessá-lo com as próprias pernas.
 
-**Preparação:** Sem preparação adicional. **Teste:** Automático.
+**Fonte e Grau:** Água III. **Uso:** Principal, 10 Karma. **Alcance e alvos:** faixa de 10 m × 2 m, a até 10 m.
 
-**Efeito:** Aliados escolhidos ignoram terreno difícil no canal por duas rodadas, sem deslocamento adicional.
+**Preparação:** Sem preparação adicional.
+
+**Teste e limiares:** Automático.
+
+**Resolução mecânica:** Escolha uma faixa de 10 m de comprimento e 2 m de largura, visível a até 10 m. Até o início do segundo próximo turno de Nammu, até dois aliados escolhidos ignoram apenas o custo adicional de terreno difícil nessa faixa. Não concede metros, ações, teleporte, imunidade a perigos ou passagem por obstáculos sólidos. Uma faixa por vez.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
 ###### 4 · Escarpa de Gelo {#nammu-salacia-4}
 
-**Fonte e Grau:** Gelo IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 15 m.
+**Descrição:** O gelo sobe numa crista curta, quebradiça nas bordas. Seu impacto procura o apoio do inimigo; depois de atingi-lo, sobra uma faixa irregular que também obriga os aliados a medir o passo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Controle Elemental contra CA.
+**Fonte e Grau:** Gelo III. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 15 m.
 
-**Efeito:** Dano-base 2d10 de dano Elemental / Gelo. No total derruba; uma faixa de 3 m fica difícil por duas rodadas.
+**Preparação:** Sem preparação adicional.
+
+**Teste e limiares:** Espírito + Controle Elemental contra CA.
+
+**Resolução mecânica:** Espírito + Controle Elemental contra CA de um alvo. Total: 2d8 de Gelo e Caído; parcial: metade sem queda; falha: nada. Uma faixa de 3 m junto ao alvo torna-se terreno difícil para todos até o início do próximo turno de Nammu, sem dano repetido. Levantar consome o Movimento habitual.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
 ###### 5 · Quota de Socorro {#nammu-salacia-5}
 
-**Fonte e Grau:** Karma IV. **Uso:** Principal, 11 Karma. **Alcance e alvos:** dois aliados a 10 m.
+**Descrição:** A rainha recolhe a água ao redor da ferida e mantém suas margens juntas. O socorro estanca uma perda imediata; não refaz um membro nem apaga as consequências de um golpe grave.
 
-**Preparação:** Sem preparação adicional. **Teste:** Automático.
+**Fonte e Grau:** Karma III. **Uso:** Principal, 11 Karma. **Alcance e alvos:** dois aliados a 10 m.
 
-**Efeito:** Distribui entre os dois uma única cura de 2d8, rolada uma vez. Não ressuscita nem remove Ferimento Grave.
+**Preparação:** Sem preparação adicional.
+
+**Teste e limiares:** Automático.
+
+**Resolução mecânica:** Role uma única cura de 1d8 e distribua seus pontos inteiros entre até dois aliados vivos a até 10 m; o total compartilhado nunca excede o resultado. Não ultrapassa Vida máxima, não ressuscita, não remove Ferimento Grave nem Estado Grave. Cada criatura só pode receber Quota de Socorro uma vez por combate, mesmo de outra cópia da técnica.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
 ###### 6 · Balança de Pressão {#nammu-salacia-6}
 
-**Fonte e Grau:** Água IV. **Uso:** Reação, 9 Karma. **Alcance e alvos:** si ou aliado a 10 m.
+**Descrição:** Uma coluna de água se interpõe por um instante entre a vítima e o impacto. A pressão abre uma fuga para parte da força, mas a coluna racha: o golpe que a excede continua até o corpo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Automático.
+**Fonte e Grau:** Água III. **Uso:** Reação, 9 Karma. **Alcance e alvos:** si ou um aliado a até 5 m.
 
-**Efeito:** Reduz em Espírito o dano recebido e cancela um empurrão de até 3 m.
+**Preparação:** Sem preparação adicional.
 
-**Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
+**Teste e limiares:** Automático.
+
+**Resolução mecânica:** Antes de descontar o dano de um ataque acertado em si ou num aliado a até 5 m, pague 9 Karma e uma Reação para reduzir a parcela em metade do Espírito de Nammu, arredondada para baixo (3 nesta ficha), mínimo final 0. Se o mesmo golpe empurrar até 2 m, cancele esse empurrão; deslocamentos maiores permanecem integrais. Não cancela condições, áreas subsequentes ou dano contínuo. Uma defesa de Nammu por ocorrência; não combina com Arcada de Ápsu.
+
+**Limites:** Uma vez por rodada, compartilhando as duas Reações da ficha; uma defesa por ocorrência.
 
 ###### 7 · Mandato do Sinédrio {#nammu-salacia-7}
 
-**Fonte e Grau:** Karma IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 20 m.
+**Descrição:** Uma pulsação medida alcança a manifestação que ainda não tomou forma. Nammu não revoga um poder pronto; tenta quebrar a concentração no intervalo em que o conjurador ainda precisa mantê-la.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Fonte e Grau:** Karma III. **Uso:** Principal, 10 Karma. **Alcance e alvos:** um alvo a até 15 m.
 
-**Efeito:** Dano-base 2d10 de dano Kármico. No total desestabiliza uma técnica em preparação: o alvo faz Espírito + Canalização CD 21; falha interrompe, sem devolver custo. Não afeta assinaturas ou Domínios.
+**Preparação:** Sem preparação adicional.
+
+**Teste e limiares:** Espírito + Canalização de Karma contra CA.
+
+**Resolução mecânica:** Espírito + Canalização de Karma contra CA. Total: 2d8 Kármico; se o alvo estiver preparando uma técnica comum, faça Espírito + Canalização CD 18: falha interrompe a preparação sem devolver o custo. Parcial: metade do dano sem teste de interrupção; falha: nada. Não interrompe assinaturas, Domínios, técnicas já liberadas nem efeitos mantidos. Um mesmo alvo só sofre a tentativa de interrupção uma vez por combate.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
 ###### Assinatura · Claustrum Bathys {#nammu-salacia-8}
 
-**Fonte e Grau:** Água V. **Uso:** Principal, 18 Karma. **Alcance e alvos:** raio de 6 m.
+**Descrição:** Claustrum Bathys se fecha como um dique de emergência. As paredes respiram com o esforço da rainha: cada golpe abre uma rachadura que permanece, e proteger a passagem exige que ela abandone a ofensiva.
 
-**Preparação:** Sem preparação adicional. **Teste:** Automático.
+**Fonte e Grau:** Água V. **Uso:** Principal, 18 Karma. **Alcance e alvos:** até dois aliados num raio de 4 m.
 
-**Efeito:** Um dique de Água sustenta uma reserva compartilhada de Escudo 3d10 para aliados escolhidos por três rodadas. Nammu não pode usar Principal ofensiva enquanto mantiver o dique. Desmaio ou sair do centro encerra.
+**Preparação:** Sem preparação adicional.
 
-**Limites:** Uma vez por combate; 2 Karma de manutenção a partir da rodada seguinte.
+**Teste e limiares:** Automático.
+
+**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais.
+
+**Limites:** Uma vez por combate; uma reserva compartilhada, sem reposição. Manutenção de 2 Karma no turno seguinte.
 
 
 #### Beroso de Salmoura · Nomothetes {#beroso-salmoura}
