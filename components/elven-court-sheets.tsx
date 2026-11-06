@@ -1,3 +1,4 @@
+import {RoyalTechniqueTools} from "@/components/royal-technique-tools";
 import { DiceRoller } from "@/components/dice-roller";
 import { DossierReading } from "@/components/dossier-reading";
 import { bestiaryClassification } from "@/lib/bestiary-classification";
@@ -26,7 +27,7 @@ import { NobleOrnament } from "@/components/noble-ornament";
 import { NobleTraitCards } from "@/components/noble-details";
 import { SkillPanel } from "@/components/skill-panel";
 
-export type CourtProfile = Omit<(typeof elven.courtProfiles)[number],"abilities"> & {abilities:Array<{id:string;name:string;kind:string;source:string;grade:string;cost:string|number;action:string;fields:Array<{label:string;html:string}>;matrix?:string;damageType?:string;baseDamage?:string;damageFormulas?:string[]}>};
+export type CourtProfile = Omit<(typeof elven.courtProfiles)[number],"abilities"> & {abilities:Array<{id:string;name:string;kind:string;source:string;grade:string;cost:string|number;action:string;fields:Array<{label:string;html:string}>;matrix?:string;damageType?:string;baseDamage?:string;royalMechanics?:{reflectionMultiplier?:number;karmaMaxDecayPercent?:number};damageFormulas?:string[]}>};
 type Profile = CourtProfile;
 export type CourtIdentity = { role:string; stage:string; rank:string; Icon:LucideIcon; accent:string; jewel:string };
 type Ability = Profile["abilities"][number];
@@ -63,11 +64,11 @@ function AbilityCard({ ability, index, Mark=TreePine, showSource=false, owner }:
   return <section className={"elven-ability" + (signature ? " elven-signature" : "") + (reaction ? " elven-reaction" : "")} id={ability.id}>
     <header><span>{String(index+1).padStart(2,"0")}</span><div>{(signature||reaction)&&<p>{signature?"ASSINATURA":"REAÇÃO DA COROA"}</p>}<h5>{ability.name}</h5></div>{signature?<Crown aria-hidden="true"/>:reaction?<Orbit aria-hidden="true"/>:<Mark aria-hidden="true"/>}</header>
     <div className="elven-ability-meta">{ability.damageType&&<span>{ability.damageType}</span>}{showSource&&ability.source&&<span className="ability-source">{ability.source}</span>}{ability.grade&&<span>Grau {ability.grade}</span>}<span>{ability.cost}</span><span>{ability.action}</span></div>
-    <Fields fields={abilityCostFields(owner,ability.name,ability.fields)}/>{ability.damageFormulas?.length? <div className="thalassia-ability-rolls">{ability.damageFormulas.map(formula=><DiceRoller key={formula} formula={formula} label={ability.name}/>)}</div>:null}
+    <Fields fields={abilityCostFields(owner,ability.name,ability.fields)}/><RoyalTechniqueTools reflection={ability.royalMechanics?.reflectionMultiplier} entropy={ability.royalMechanics?.karmaMaxDecayPercent}/>{ability.damageFormulas?.length? <div className="thalassia-ability-rolls">{ability.damageFormulas.map(formula=><DiceRoller key={formula} formula={formula} successAtMost={formula==="1d100"?30:undefined} label={ability.name}/>)}</div>:null}
   </section>;
 }
 
-export function CourtDossier({ initialReading = "summary", profile, index, identity=identities[index], crest, motto="“Toda raiz é uma promessa feita ao que ainda não nasceu.”", arsenal="Arsenal de Nemeton", Mark=TreePine, solar=index===2, showSources=false, repertoire, afterCombat }: { initialReading?:string; repertoire?:ReactNode; afterCombat?:ReactNode; profile: Profile; index: number; identity?:CourtIdentity; crest?:ReactNode; motto?:string; arsenal?:string; Mark?:LucideIcon; solar?:boolean; showSources?:boolean }) {
+export function CourtDossier({ initialReading = "summary", profile, index, identity=identities[index], crest, motto="“Toda raiz é uma promessa feita ao que ainda não nasceu.”", arsenal="Arsenal de Nemeton", Mark=TreePine, solar=index===2, showSources=false, repertoire, afterCombat, className="" }: { className?:string; initialReading?:string; repertoire?:ReactNode; afterCombat?:ReactNode; profile: Profile; index: number; identity?:CourtIdentity; crest?:ReactNode; motto?:string; arsenal?:string; Mark?:LucideIcon; solar?:boolean; showSources?:boolean }) {
   const Icon=identity.Icon;
   const classification=bestiaryClassification(profile.identity,identity);
   const queen=index===0;
@@ -79,7 +80,7 @@ export function CourtDossier({ initialReading = "summary", profile, index, ident
   const reactions=profile.abilities.filter(a=>a.kind==="reaction");
   const signatures=profile.abilities.filter(a=>a.kind==="signature");
   const sources=techniques.reduce<Record<string,number>>((all,a)=>{if(a.source)all[a.source]=(all[a.source]??0)+1;return all;},{});
-  return <article className={"elven-sheet" + (queen ? " elven-sheet-queen" : "") + (duke ? " elven-sheet-solar" : "")} style={{"--elven-accent":identity.accent,"--elven-jewel":identity.jewel} as CSSProperties} aria-labelledby={profile.id}>
+  return <article className={"elven-sheet " + className + (queen ? " elven-sheet-queen" : "") + (duke ? " elven-sheet-solar" : "")} style={{"--elven-accent":identity.accent,"--elven-jewel":identity.jewel} as CSSProperties} aria-labelledby={profile.id}>
     <header className="elven-identity"><div className="elven-identity-copy"><p className="elven-eyebrow"><Icon aria-hidden="true"/>{identity.role}</p><h3 id={profile.id}>{profile.name.replace(/^(Rainha|Princesa|Duque|Marquesa|Marquês|Condessa|Viscondessa) /,"")}</h3><p className="elven-title">{profile.title}</p><div className="elven-tags"><span>{profile.identity.split(" · ").slice(0,2).join(" · ")}</span><span>{classification.stage==="—"?"Ofício civil":`Etapa ${classification.stage}`}</span>{classification.rank!=="—"&&<span title="Ranque de ameaça do encontro; não é a Etapa de progressão.">Ameaça {classification.rank}</span>}</div>{queen&&<p className="elven-motto">{motto}</p>}</div><NobleOrnament id={profile.id}/></header>
     <DossierReading initialView={initialReading}>
     <section className="elven-lore" aria-labelledby={profile.loreId}><div className="elven-part-heading"><BookOpen aria-hidden="true"/><p>História e Origem</p><span>I</span></div><h4 id={profile.loreId} className="sr-only">História e Origem de {profile.name}</h4><div dangerouslySetInnerHTML={{__html:profile.loreHtml}}/></section>

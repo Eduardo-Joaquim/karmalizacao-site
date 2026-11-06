@@ -43,3 +43,10 @@ A Torre mantém regras próprias de entrada, licença e exploração de seus and
 Gaéria depende das rotas marítimas para alcançar oficinas de Ignária e terminais de Aéria. Nidavellir vende máquinas e exige contratos verificáveis; Sárkora depende de abastecimento que não exponha seus cidadãos ao sol; Aqueronte tenta converter escoltas em influência. O bloqueio de Halikarnós encarece essas relações. Nammu pretende manter corredores de sobrevivência, enquanto Asteria evita que uma abertura diplomática entregue as coordenadas de Hubur. Nenhum acordo resolve todos esses interesses com uma assinatura única.
 
 As bênçãos conservam suas origens: Geometria do Amparo permanece com a linhagem de Minerva; Desespero com Valac e Kali; Sceleris com Belial e Marte; Concordato com Asmodeus e Thoth; Criação com Eirik e Hefesto. Atargatis recebe Ius Procellae de Susanoo e manifesta Vectis como herança Kalypso. Astrônoma, Fissão e Meia-Vida, Cinemática Relativística e Desastres Naturais possuem identidades próprias, sem copiar as dádivas registradas.
+
+
+## As duas potências de Thalassia
+
+Atargatis Kalypso · Thalassokrator possui 280 Vida e conserva a soberania militar de Halikarnós. Seu arsenal fecha distâncias, ergue barreiras de gelo e submete o campo ao calor do vapor e à pressão salina; Vectis dá à mutilação um contrapeso ofensivo, com uma inversão que devolve dados de dano em dobro e uma assinatura que concentra as três eclusas num único impacto. Nada disso altera a autonomia de Nammu em Ápsu.
+
+Ummu-Hubur · Kenoma possui 1200 Vida, 400 Karma e CA 32. Os cinco desastres naturais permanecem; Ordo Tenebrarum rompe proteções, Entropia corrói a reserva até a reparação em santuário, a Singularidade cobra cada turno de permanência no campo, e a Aniquilação desenha uma linha sem mitigação. Vitrum Fractum exige os cinco Domínios e 150 Karma em qualquer modo. A antiga rainha já não sustenta sua autoridade na sucessão de uma coroa: a Fratura Vítrea é a presença da Deusa Exterior impondo à matéria o risco de deixar de continuar inteira.

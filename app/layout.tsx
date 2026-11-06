@@ -12,6 +12,7 @@ import "./noble-dossiers.css";
 import "./table-play.css";
 import "./live-combat.css";
 import "./combat-cinema.css";
+import "@/styles/bestiary.css";
 import { DiceRollerOverlay } from "@/components/dice-roller-overlay";
 
 import { Toaster } from "@/components/ui/sonner";

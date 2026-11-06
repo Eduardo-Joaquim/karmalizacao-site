@@ -1,0 +1,31 @@
+/* Thalassia: a cold oceanic palette, isolated from the green court templates. */
+.thalassia-page { --thalassia-deep:#070d1b; --thalassia-mid:#10223b; --thalassia-edge:#1e3a5f; --thalassia-ink:#dce8f6; color:var(--thalassia-ink); background:radial-gradient(ellipse at 75% 0%,#1e3a5f88,transparent 55%),#070d1b; }
+.thalassia-page .realm-hero,.thalassia-directory .gaeria-entry { background:linear-gradient(135deg,#1e3a5f,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
+.thalassia-page .realm-section>h2,.thalassia-page .realm-intro,.thalassia-page .realm-section>div>p { color:#cfdded; }
+.thalassia-page .elven-sheet { --elven-accent:#92bad7; --elven-jewel:#1e3a5f; background:linear-gradient(145deg,#10223b,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
+.thalassia-page .elven-sheet .elven-identity,.thalassia-page .elven-sheet .elven-combat,.thalassia-page .elven-sheet .elven-lore { background:linear-gradient(130deg,#10223b,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
+.thalassia-page .elven-sheet :is(.elven-resource,.elven-attribute-grid>div,.noble-trait,.elven-ability,.dossier-reading-nav,.elven-tags>span,.skill-panel,.skill-entry) { background:linear-gradient(135deg,#10223b,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
+.thalassia-page .elven-sheet :is(.elven-resource dd,.elven-resource dt,.elven-attribute-grid dd,.elven-field,.noble-trait-content,.elven-lore p,.elven-fields,.skill-roll,.skill-entry-name,.skill-training) { color:#dce8f6!important; }
+.thalassia-page .elven-sheet :is(h3,h4,h5,.elven-title,.elven-eyebrow,.elven-field>span,.noble-trait header,.elven-ability-meta>span) { color:#adcde7!important; }
+.thalassia-page .elven-sheet .dossier-reading-nav button[aria-pressed=true],.thalassia-page .dice-trigger { background:#1e3a5f!important; border-color:#749bb9!important; color:#e1edf9!important; }
+.thalassia-page .elven-sheet .ability-description { color:#b8cde2!important; font-style:normal; line-height:1.9; }
+.thalassia-page .elven-sheet .elven-field { line-height:1.85!important; }
+.thalassia-page .elven-sheet .dice-roller>output { background:#070d1b; border-color:#1e3a5f; color:#dce8f6; }
+.thalassia-page .dice-roller>output b { color:#dce8f6; }
+.thalassia-directory { margin-block:1.5rem; }
+.atlas-region-content:has(.thalassia-directory) { background:linear-gradient(150deg,#10223b,#070d1b); border-color:#1e3a5f; color:#dce8f6; }
+.royal-technique-tools { display:flex; flex-wrap:wrap; gap:.7rem; padding:1rem; margin-top:1rem; background:#070d1b; border:1px solid #1e3a5f; border-radius:4px; }
+.royal-technique-tools label { display:grid; gap:.4rem; flex:1 1 140px; color:#adcde7; font-size:.8rem; }
+.royal-technique-tools input { width:100%; min-height:42px; border:1px solid #1e3a5f; padding:.5rem; color:#dce8f6; background:#10223b; }
+.royal-technique-tools output { display:grid; gap:.5rem; width:100%; padding:.6rem 0; color:#dce8f6; }
+.royal-technique-tools p { width:100%; font-size:.8rem; line-height:1.65; }
+/* Fractured borders are decoration only; they never clip text or controls. */
+.thalassia-page .boss-card-transcendental { --elven-accent:#dce8f6!important; --elven-jewel:#1e3a5f!important; position:relative; isolation:isolate; border:1px solid #99b4d0!important; border-radius:0!important; box-shadow:0 0 44px #1e3a5f88,inset 0 0 70px #070d1b!important; background:conic-gradient(from 24deg at 40% 20%,#070d1b,#1e3a5f 7deg,#070d1b 8deg,#10223b 80deg,#070d1b 81deg)!important; }
+.thalassia-page .boss-card-transcendental::before { content:""; position:absolute; inset:-3px; z-index:2; pointer-events:none; border:2px solid #cfdeef; clip-path:polygon(0 0,21% 0,20% 1%,43% 0,63% 0,61% 1%,100% 0,100% 18%,99% 20%,100% 49%,100% 70%,99% 72%,100% 100%,76% 100%,77% 99%,48% 100%,20% 100%,22% 99%,0 100%,0 71%,1% 73%,0 41%,0 15%,1% 17%); }
+.thalassia-page .boss-card-transcendental .elven-identity { min-height:330px; background:radial-gradient(circle at 79% 17%,#dce8f688 0 1px,transparent 2px),radial-gradient(circle at 63% 42%,#b7cde666 0 1px,transparent 2px),radial-gradient(circle at 87% 72%,#dce8f688 0 1px,transparent 2px),conic-gradient(from 30deg at 82% 35%,#070d1b,#1e3a5f 9deg,#070d1b 10deg,#10223b 90deg,#070d1b 91deg)!important; }
+.thalassia-page .boss-card-transcendental .elven-identity h3 { font-family:var(--font-display,Georgia,serif); font-size:clamp(2.4rem,6vw,5.6rem)!important; letter-spacing:-.035em; line-height:.98; color:#e2eaf5!important; text-shadow:1px 0 #7899ba,-1px 1px #1e3a5f,0 12px 32px #070d1b; }
+.thalassia-page .boss-card-transcendental .elven-title { color:#c2d1e5!important; letter-spacing:.12em; }
+.thalassia-page .boss-card-transcendental .elven-ability { border-left:2px solid #91acc8!important; background:linear-gradient(125deg,#10223b,#070d1b 70%)!important; }
+.thalassia-page .boss-card-transcendental .elven-signature { border:1px solid #c1d3e7!important; background:conic-gradient(from 100deg at 100% 0%,#070d1b,#1e3a5f 17deg,#070d1b 18deg)!important; }
+.thalassia-page .boss-card-transcendental .noble-ornament { opacity:.32; color:#c2d4e9; transform:rotate(0); }
+@media(max-width:700px) { .thalassia-page .boss-card-transcendental .elven-identity { min-height:275px; } .royal-technique-tools { padding:.75rem; } }
