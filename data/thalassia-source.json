@@ -188,7 +188,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -218,16 +218,16 @@
           "damage": "3d10",
           "action": "Principal",
           "limit": "Uma vez por combate; canalização interrompida por inconsciência ou perda da Principal, sem reembolso.",
-          "prep": "Uma Principal; requer Domínios de Técnica, Resistência e Espírito ativos; marca o cone.",
+          "prep": "Uma Principal; requer Domínios de Técnica, Resistência e Superação ativos; marca o cone.",
           "signature": true,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         }
       ],
       "zone": "halikarnos",
       "reactions": 3,
-      "domains": "Técnica, Resistência e Espírito. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
+      "domains": "Técnica, Resistência e Superação. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
       "skills": "Luta 3; Reflexos 3; Atletismo 2; Canalização de Karma 3; Controle Elemental 3; Manifestação de Bênção 3; Comunhão Divina 2; Liderança 3; Percepção 2; demais 0."
     },
     {
@@ -355,7 +355,7 @@
       ],
       "zone": "halikarnos",
       "reactions": 2,
-      "domains": "Agilidade e Técnica; Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
+      "domains": "Velocidade e Técnica; Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
       "skills": "Luta 2; Reflexos 2; Atletismo 2; Canalização de Karma 2; Percepção 2; Controle Elemental 2; demais 0."
     },
     {
@@ -1157,7 +1157,7 @@
       ],
       "zone": "apsu",
       "reactions": 3,
-      "domains": "Resistência, Espírito e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
+      "domains": "Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
       "skills": "Luta 2; Reflexos 2; Atletismo 3; Canalização de Karma 3; Controle Elemental 3; Liderança 3; Investigação 3; Percepção 2; demais 0."
     },
     {
@@ -1396,7 +1396,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Elemental",
           "damageType": "Elemental / Terra"
         },
@@ -1412,7 +1412,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Elemental",
           "damageType": "Elemental / Água"
         },
@@ -1428,7 +1428,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Elemental",
           "damageType": "Elemental / Vento"
         },
@@ -1444,7 +1444,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Uma Principal; fonte mineral e calor manifestados tornam a zona evidente.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Elemental",
           "damageType": "Elemental / Magma"
         },
@@ -1460,7 +1460,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Uma Principal; marca fixa; cobertura total subterrânea bloqueia.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Elemental",
           "damageType": "Elemental / Terra"
         },
@@ -1470,7 +1470,7 @@
           "grade": "V",
           "cost": 18,
           "range": "2 m",
-          "effect": "Exige Força e Agilidade manifestadas. Ummu firma um apoio onde o peso do adversário cairá: no total troca a posição relativa de ambos até 3 m, sem teleportar por obstáculos, e encerra o Movimento do alvo nesse turno.",
+          "effect": "Exige Força e Velocidade manifestadas. Ummu firma um apoio onde o peso do adversário cairá: no total troca a posição relativa de ambos até 3 m, sem teleportar por obstáculos, e encerra o Movimento do alvo nesse turno.",
           "damage": "3d8",
           "action": "Principal",
           "limit": "Uma vez por rodada; dois Domínios ativos; não dá ataque adicional.",
@@ -1547,7 +1547,7 @@
       ],
       "zone": "hubur",
       "reactions": 3,
-      "domains": "Força, Agilidade, Resistência, Espírito e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Exceção: três ativações de cada Domínio por combate, em vez de uma.",
+      "domains": "Força, Velocidade, Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Exceção: três ativações de cada Domínio por combate, em vez de uma.",
       "skills": "Luta 3; Reflexos 3; Atletismo 3; Canalização de Karma 3; Controle Elemental 3; Manifestação de Bênção 3; Controle da Corrupção 3; Investigação 3; Percepção 3; demais 0."
     },
     {
@@ -1574,7 +1574,7 @@
         "Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronômica literal. O universo de bolso oferece à princesa o controle que ela jamais teve sobre a própria cidade. A existência de uma saída que também pode salvar um inimigo é uma condição que escolheu conservar."
       ],
       "traits": [
-        "Gravidade é expressão própria da Bênção Astrônoma, registrada como dano Kármico; não cria um sétimo elemento primordial nem altera as nove raças.",
+        "Gravidade é expressão própria da Bênção Astrônoma, registrada como dano Kármico; não cria um sétimo elemento primordial nem altera as nove raças. A Convicção de Agilidade corresponde ao Domínio de Velocidade do Capítulo 11; não cria um sexto Domínio.",
         "Convicções Kármicas de Técnica e Agilidade: ambas Nível 2, maximizadas, com três usos independentes por combate. Enquanto a Manifestação de um desses Domínios estiver ativa, pode consumir um uso da Convicção correspondente em um teste para repetir um dos d20 concedidos por ela, aceitando o novo. Não repete dano, não soma Atributo e não renova ações ou assinaturas.",
         "Cosmogênese: não pode manter mais de três astros regulares simultâneos; invocar o quarto dissipa o mais antigo. Astros são estruturas da bênção, não invocações com turnos próprios."
       ],
@@ -1591,7 +1591,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1607,7 +1607,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1623,7 +1623,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1639,7 +1639,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1655,7 +1655,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1671,7 +1671,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1687,7 +1687,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1703,7 +1703,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1719,7 +1719,7 @@
           "limit": "Uma vez por rodada; um astro de até 3 m por técnica, duração máxima duas rodadas; não acumula reduções de movimento acima de 6 m por turno; destruir astro CA 20, Vida 15 encerra seu controle.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1751,14 +1751,14 @@
           "limit": "Uma vez por combate; exige Horizonte Cosmológico ainda ativo; não pode antecipar o 11º turno nem atingir quem escapou.",
           "prep": "Sem preparação adicional.",
           "signature": true,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         }
       ],
       "zone": "hubur",
       "reactions": 3,
-      "domains": "Agilidade, Técnica, Espírito e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Convicções de Técnica e Agilidade não concedem uma quarta ativação nem usos adicionais de Manifestação.",
+      "domains": "Velocidade, Técnica, Superação e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Convicções de Técnica e Velocidade não concedem uma quarta ativação nem usos adicionais de Manifestação.",
       "skills": "Luta 1; Reflexos 3; Atletismo 2; Canalização de Karma 3; Manifestação de Bênção 3; Ocultismo 3; Percepção 3; Investigação 3; demais 0."
     },
     {
@@ -1801,7 +1801,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1817,7 +1817,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1833,7 +1833,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1865,7 +1865,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1881,7 +1881,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1897,7 +1897,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1913,14 +1913,14 @@
           "limit": "Uma vez por combate; não soma o dano escrito no efeito ao dano-base novamente.",
           "prep": "Uma Principal; centro fixo e luminoso.",
           "signature": true,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         }
       ],
       "zone": "hubur",
       "reactions": 3,
-      "domains": "Resistência, Espírito, Técnica e Agilidade. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
+      "domains": "Resistência, Superação, Técnica e Velocidade. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
       "skills": "Luta 2; Reflexos 3; Atletismo 3; Criação 3; Medicina 3; Canalização de Karma 3; Manifestação de Bênção 3; Percepção 2; demais 0."
     },
     {
@@ -1963,7 +1963,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -1995,7 +1995,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -2043,7 +2043,7 @@
           "limit": "Uma vez por rodada; efeitos de mesmo nome não acumulam.",
           "prep": "Sem preparação adicional.",
           "signature": false,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         },
@@ -2072,17 +2072,17 @@
           "effect": "Exige uma Principal preparando e rota livre, descontada do deslocamento normal. Na liberação cruza o trajeto e escolhe até três inimigos adjacentes à rota: um teste contra cada CA e uma aplicação de 3d8 Marcial em cada. No total, −2 no próximo ataque deles até o turno seguinte. Imagens sucessivas não são ataques independentes. Se a rota for bloqueada, para antes do obstáculo e só alcança os alvos já cruzados.",
           "damage": "3d8",
           "action": "Principal",
-          "limit": "Uma vez por combate; exige Agilidade e Técnica manifestadas; não concede deslocamento além dos 12 m declarados nem ações extras.",
+          "limit": "Uma vez por combate; exige Velocidade e Técnica manifestadas; não concede deslocamento além dos 12 m declarados nem ações extras.",
           "prep": "Uma Principal; marca início, rota e destino.",
           "signature": true,
-          "test": "Espírito + Canalização de Karma contra CA",
+          "test": "Espírito + Manifestação de Bênção contra CA",
           "matrix": "Kármico",
           "damageType": "Kármico"
         }
       ],
       "zone": "hubur",
       "reactions": 3,
-      "domains": "Agilidade, Técnica, Força e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
+      "domains": "Velocidade, Técnica, Força e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.",
       "skills": "Luta 3; Reflexos 3; Atletismo 3; Acrobacia 3; Canalização de Karma 3; Controle Elemental 2; Manifestação de Bênção 3; Percepção 3; demais 0."
     }
   ]

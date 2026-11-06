@@ -12,6 +12,8 @@ A Corte da Falsa Santa abriga os Pecados. Seus nomes atravessam os quatro contin
 
 
 
+
+
 <!-- geopolitics:start -->
 
 O mundo possui quatro grandes continentes: Gaéria, associado à Terra; Ignária, ao Fogo; Aéria, ao Vento; e Thalassia, à Água. Essas associações descrevem paisagens, tradições e centros de poder. Não obrigam ninguém a nascer com certo elemento nem tornam uma linhagem estrangeira em sua própria cidade. A divisão que atravessa os reinos é a posição social: acesso à terra, crédito, educação, cargos e proteção jurídica.
@@ -2499,7 +2501,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Técnica, Resistência e Espírito. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
+**Domínios:** Técnica, Resistência e Superação. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
@@ -2593,7 +2595,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Fonte e Grau:** Vectis V. **Uso:** Principal, 13 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Kármico. No total muda a direção do impulso: desloca o alvo 4 m horizontalmente por rota livre; não produz queda automática nem atravessa corpo sólido.
 
@@ -2613,7 +2615,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Fonte e Grau:** Vectis V. **Uso:** Principal, 22 Karma. **Alcance e alvos:** cone de 20 m.
 
-**Preparação:** Uma Principal; requer Domínios de Técnica, Resistência e Espírito ativos; marca o cone. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Uma Principal; requer Domínios de Técnica, Resistência e Superação ativos; marca o cone. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Kármico. Converge Gelo, Vapor e Pressão / Salmoura num braço vetorial e inverte a frente. No total causa o dano de Água, empurra 5 m e aplica Lento por uma rodada; parcial só metade. Contra defesas parentais, cada componente segue Água / Subdobras; não soma três danos nem ignora Resistência.
 
@@ -2636,7 +2638,7 @@ Treina com uma lança curta sobre pontes estreitas. A mãe lhe confiou as listas
 
 **Reações:** 2 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Agilidade e Técnica; Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
+**Domínios:** Velocidade e Técnica; Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
@@ -3143,7 +3145,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Resistência, Espírito e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
+**Domínios:** Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
@@ -3384,7 +3386,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Força, Agilidade, Resistência, Espírito e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Exceção: três ativações de cada Domínio por combate, em vez de uma.
+**Domínios:** Força, Velocidade, Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Exceção: três ativações de cada Domínio por combate, em vez de uma.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
@@ -3400,7 +3402,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 16 Karma. **Alcance e alvos:** raio de 8 m a 30 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Elemental / Terra. O chão rompe em placas; no total derruba e torna o chão difícil por duas rodadas. Não derruba estruturas habitadas automaticamente.
 
@@ -3410,7 +3412,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 18 Karma. **Alcance e alvos:** linha de 30 m e 6 m de largura.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Elemental / Água. Exige massa de água contínua; no total arrasta 6 m até espaço livre. Não replica em terra sem água.
 
@@ -3420,7 +3422,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 17 Karma. **Alcance e alvos:** raio de 6 m a 30 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Elemental / Vento. No total empurra 4 m tangencialmente. A área impede projéteis leves por duas rodadas; cobertura total continua válida.
 
@@ -3430,7 +3432,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 20 Karma. **Alcance e alvos:** raio de 6 m a 30 m.
 
-**Preparação:** Uma Principal; fonte mineral e calor manifestados tornam a zona evidente. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Uma Principal; fonte mineral e calor manifestados tornam a zona evidente. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Elemental / Magma. Sinaliza o terreno por uma rodada; no total Queimando por duas rodadas, 1d4 por início de turno. Não acumula aplicações.
 
@@ -3440,7 +3442,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 22 Karma. **Alcance e alvos:** raio de 5 m a 40 m.
 
-**Preparação:** Uma Principal; marca fixa; cobertura total subterrânea bloqueia. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Uma Principal; marca fixa; cobertura total subterrânea bloqueia. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Elemental / Terra. Um corpo mineral condensado fica anunciado no alto por uma rodada; no total aplica Caído. O projétil é manifestação efêmera, sem massa permanente comerciável.
 
@@ -3452,7 +3454,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Preparação:** Sem preparação adicional. **Teste:** Agilidade + Luta contra CA.
 
-**Efeito:** Dano-base 3d8 de dano Marcial. Exige Força e Agilidade manifestadas. Ummu firma um apoio onde o peso do adversário cairá: no total troca a posição relativa de ambos até 3 m, sem teleportar por obstáculos, e encerra o Movimento do alvo nesse turno.
+**Efeito:** Dano-base 3d8 de dano Marcial. Exige Força e Velocidade manifestadas. Ummu firma um apoio onde o peso do adversário cairá: no total troca a posição relativa de ambos até 3 m, sem teleportar por obstáculos, e encerra o Movimento do alvo nesse turno.
 
 **Limites:** Uma vez por rodada; dois Domínios ativos; não dá ataque adicional.
 
@@ -3515,11 +3517,11 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Agilidade, Técnica, Espírito e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Convicções de Técnica e Agilidade não concedem uma quarta ativação nem usos adicionais de Manifestação.
+**Domínios:** Velocidade, Técnica, Superação e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Convicções de Técnica e Velocidade não concedem uma quarta ativação nem usos adicionais de Manifestação.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
-**Traço 1:** Gravidade é expressão própria da Bênção Astrônoma, registrada como dano Kármico; não cria um sétimo elemento primordial nem altera as nove raças.
+**Traço 1:** Gravidade é expressão própria da Bênção Astrônoma, registrada como dano Kármico; não cria um sétimo elemento primordial nem altera as nove raças. A Convicção de Agilidade corresponde ao Domínio de Velocidade do Capítulo 11; não cria um sexto Domínio.
 
 **Traço 2:** Convicções Kármicas de Técnica e Agilidade: ambas Nível 2, maximizadas, com três usos independentes por combate. Enquanto a Manifestação de um desses Domínios estiver ativa, pode consumir um uso da Convicção correspondente em um teste para repetir um dos d20 concedidos por ela, aceitando o novo. Não repete dano, não soma Atributo e não renova ações ou assinaturas.
 
@@ -3529,7 +3531,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 30 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d10 de dano Kármico. Um astro artificial de um metro percorre a rota anunciada; no total empurra 2 m. É técnica regular, não assinatura.
 
@@ -3539,7 +3541,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. Uma órbita externa reduz o próximo deslocamento do alvo em 3 m, até o próximo turno, mínimo 0.
 
@@ -3549,7 +3551,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total inverte o eixo de apoio e aplica Caído; levantar usa Movimento.
 
@@ -3559,7 +3561,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total um anel impede Ação Extra até o próximo turno; o alvo pode gastar Principal e Atletismo CD 20 para dissipá-lo antes.
 
@@ -3569,7 +3571,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total puxa 4 m em direção ao astro até espaço livre, sem atravessar cobertura; nunca termina dentro dele.
 
@@ -3579,7 +3581,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total desvia a mira: −2 no próximo ataque à distância antes do próximo turno.
 
@@ -3589,7 +3591,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total fixa uma faixa de 3 m de terreno difícil por duas rodadas; não transforma seres vivos em terreno.
 
@@ -3599,7 +3601,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total uma lente luminosa aplica Ofuscado por uma rodada; Reflexos CD 20 ao iniciar o turno encerra.
 
@@ -3609,7 +3611,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 20 m; um alvo.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 1d8 de dano Kármico. No total marca o próximo ponto de parada do alvo; a primeira vez que ele sair dali até o próximo turno, perde 2 m do deslocamento restante, sem dano adicional.
 
@@ -3629,7 +3631,7 @@ Cada planeta é uma ferramenta de órbita e gravidade, não uma cópia astronôm
 
 **Fonte e Grau:** Astrônoma V. **Uso:** Reação, 20 Karma. **Alcance e alvos:** todo o universo de bolso ainda ocupado.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Só dispara no 11º início do turno de Asteria, antes das ações normais, consumindo sua Reação e o custo. Causa 2d30 Kármico aos que não atravessaram a saída, incluindo Asteria se ainda estiver dentro. Uma rolagem de Espírito + Manifestação de Bênção contra cada CA; parcial metade, falha nada. Depois todos são devolvidos à posição de entrada livre mais próxima. Sair pelo portal evita completamente esse dano. Se Asteria estiver inconsciente, sem Reação ou Karma, a fronteira se desfaz sem explosão.
 
@@ -3654,7 +3656,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Resistência, Espírito, Técnica e Agilidade. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
+**Domínios:** Resistência, Superação, Técnica e Velocidade. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
@@ -3666,7 +3668,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 20 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d10 de dano Kármico. No total coloca um Contador de Decaimento, até dois por alvo; expiram no início do terceiro turno dela.
 
@@ -3676,7 +3678,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão IV. **Uso:** Principal, 11 Karma. **Alcance e alvos:** alvo com contador a 20 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d8 de dano Kármico. Consome um contador para reduzir à metade apenas o Escudo Temporário atual do alvo, arredondando para baixo, antes do dano. Se não houver Escudo, o alvo perde até 3 Karma, nunca metade do Karma máximo. Não altera Vida máxima nem CA-base.
 
@@ -3686,7 +3688,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão V. **Uso:** Principal, 15 Karma. **Alcance e alvos:** 20 m; alvo com dois contadores.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Kármico. Consome ambos; no total, reação em cadeia atinge um segundo alvo a até 3 m por 1d6 adicional, com CA própria; ninguém é atingido duas vezes.
 
@@ -3706,7 +3708,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão IV. **Uso:** Principal, 11 Karma. **Alcance e alvos:** raio de 3 m a 15 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d10 de dano Kármico. No total aplica Lento por uma rodada; estruturas comuns da área perdem até 10 Vida, sem ruína automática.
 
@@ -3716,7 +3718,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 20 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d10 de dano Kármico. No total impede recuperar Escudo até o próximo turno dela; cura de Vida continua possível.
 
@@ -3726,7 +3728,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** linha de 10 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d8 de dano Kármico. No total coloca um contador; não existe radiação permanente de campanha nem dano oculto depois da cena.
 
@@ -3736,7 +3738,7 @@ Discute com a mãe sobre os mortos que uma cadeia de reações produziria fora d
 
 **Fonte e Grau:** Fissão V. **Uso:** Principal, 20 Karma. **Alcance e alvos:** raio de 5 m a 20 m.
 
-**Preparação:** Uma Principal; centro fixo e luminoso. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Uma Principal; centro fixo e luminoso. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d10 de dano Kármico. Marca o centro por uma rodada inteira. Ao liberar, consome todos os contadores na área: causa 3d10 Kármico uma única vez e, no total, reduz pela metade o Escudo restante depois desse dano. Quem saiu evita tudo. Não reduz Vida máxima, não divide CA-base, não mata por proporção e não cria contadores novos.
 
@@ -3761,7 +3763,7 @@ Prefere levar pequenos grupos até a superfície a vencer batalhas que obriguem 
 
 **Reações:** 3 Reações por rodada, recuperadas no início do próprio turno.
 
-**Domínios:** Agilidade, Técnica, Força e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
+**Domínios:** Velocidade, Técnica, Força e Resistência. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
 **Resolução:** Uma Reação responde a um evento; não se acumulam duas defesas na mesma resolução. Ataques de área usam um teste contra cada CA; aliados também são atingidos, salvo seleção expressa. Parcial causa metade do dano, arredondada para baixo, sem efeito adicional; falha não causa dano nem condição. Um 20 natural que acerta dobra só os dados-base. Reduções de custo não reduzem custos extraordinários declarados.
 
@@ -3773,7 +3775,7 @@ Prefere levar pequenos grupos até a superfície a vencer batalhas que obriguem 
 
 **Fonte e Grau:** Cinemática IV. **Uso:** Principal, 10 Karma. **Alcance e alvos:** 2 m após mover ao menos 3 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d8 de dano Kármico. Comprime a aproximação em múltiplas imagens, mas resolve um único ataque e uma única aplicação de dano; no total reduz 2 de Resistência Marcial nesse golpe.
 
@@ -3793,7 +3795,7 @@ Prefere levar pequenos grupos até a superfície a vencer batalhas que obriguem 
 
 **Fonte e Grau:** Cinemática IV. **Uso:** Principal, 9 Karma. **Alcance e alvos:** 2 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d8 de dano Kármico. No total desloca o alvo 2 m lateralmente e pode ocupar o espaço que ele deixou se houver rota livre; não atravessa inimigos.
 
@@ -3823,7 +3825,7 @@ Prefere levar pequenos grupos até a superfície a vencer batalhas que obriguem 
 
 **Fonte e Grau:** Cinemática IV. **Uso:** Principal, 11 Karma. **Alcance e alvos:** 15 m.
 
-**Preparação:** Sem preparação adicional. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Sem preparação adicional. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 2d10 de dano Kármico. No total desfaz a cobertura parcial de uma criatura até o próximo turno; cobertura total não é afetada.
 
@@ -3843,11 +3845,11 @@ Prefere levar pequenos grupos até a superfície a vencer batalhas que obriguem 
 
 **Fonte e Grau:** Cinemática V. **Uso:** Principal, 20 Karma. **Alcance e alvos:** trajeto retilíneo de até 12 m.
 
-**Preparação:** Uma Principal; marca início, rota e destino. **Teste:** Espírito + Canalização de Karma contra CA.
+**Preparação:** Uma Principal; marca início, rota e destino. **Teste:** Espírito + Manifestação de Bênção contra CA.
 
 **Efeito:** Dano-base 3d8 de dano Kármico. Exige uma Principal preparando e rota livre, descontada do deslocamento normal. Na liberação cruza o trajeto e escolhe até três inimigos adjacentes à rota: um teste contra cada CA e uma aplicação de 3d8 Marcial em cada. No total, −2 no próximo ataque deles até o turno seguinte. Imagens sucessivas não são ataques independentes. Se a rota for bloqueada, para antes do obstáculo e só alcança os alvos já cruzados.
 
-**Limites:** Uma vez por combate; exige Agilidade e Técnica manifestadas; não concede deslocamento além dos 12 m declarados nem ações extras.
+**Limites:** Uma vez por combate; exige Velocidade e Técnica manifestadas; não concede deslocamento além dos 12 m declarados nem ações extras.
 
 
 
