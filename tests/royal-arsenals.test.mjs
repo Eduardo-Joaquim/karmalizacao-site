@@ -6,11 +6,11 @@ const read=p=>readFileSync(p,'utf8'),data=JSON.parse(read('data/thalassia-source
 const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:{'@':process.cwd()}},server:{middlewareMode:true,hmr:false}});after(()=>vite.close());
 const engine=await vite.ssrLoadModule('/lib/combat-engine.ts'),rules=await vite.ssrLoadModule('/lib/royal-technique-rules.ts');
 test('royal overrides retain requested costs grades dice and resources',()=>{
- const a=data.people.find(p=>p.id==='atargatis-kalypso'),u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(a.life,280);assert.deepEqual([u.life,u.karma,u.ca],[1200,400,32]);
- assert.deepEqual(a.arts.map(x=>x.cost),[15,30,20,25,18,35,12,20,30,25,60]);assert.deepEqual(a.arts.map(x=>x.grade),['II','IV','III','III','II','IV','II','III','IV','III','Assinatura Suprema']);assert.deepEqual(a.arts.map(x=>x.damage),['3d12','','4d10','2d8','3d10','4d12','3d10','','','','6d12']);
- assert.deepEqual(u.arts.slice(5).map(x=>x.cost),[40,70,90,110,150]);assert.deepEqual(u.arts.slice(5).map(x=>x.grade),['V','VI','VII','VII','Assinatura Divina']);assert.deepEqual(u.arts.slice(5).map(x=>x.requiredDomains),[2,4,5,5,5]);
+ const a=data.people.find(p=>p.id==='atargatis-kalypso'),u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(a.life,280);assert.deepEqual([u.life,u.karma,u.ca],[1200,240,35]);
+ assert.deepEqual(a.arts.map(x=>x.cost),[15,30,20,25,18,35,12,20,30,25,60]);assert.deepEqual(a.arts.map(x=>x.grade),['II','IV','III','III','II','IV','II','III','IV','III','Assinatura Suprema']);assert.deepEqual(a.arts.map(x=>x.damage),['2d6','','2d8','2d8','1d10','2d10','1d10','','','','6d12']);
+ assert.deepEqual(u.arts.slice(5).map(x=>x.cost),[32,56,72,88,120]);assert.deepEqual(u.arts.slice(5).map(x=>x.grade),['V','VI','VII','VII','Assinatura Divina']);assert.deepEqual(u.arts.slice(5).map(x=>x.requiredDomains),[2,4,5,5,5]);
  for(const person of [a,u])for(const art of person.arts){assert(art.description.length>240,art.name);for(const key of ['effect','test','prep','limit'])assert(art[key].length>10,art.name+key);}
- const compiled=JSON.parse(read('data/thalassia.json'));assert.equal(compiled.courtProfiles.find(p=>p.id==='atargatis-kalypso').life,280);const queen=compiled.courtProfiles.find(p=>p.id==='ummu-hubur');assert.equal(queen.abilities[6].grade,'VI');assert(queen.abilities[6].damageFormulas.includes('5d15'));assert(queen.abilities[8].damageFormulas.includes('6d25'));
+ const compiled=JSON.parse(read('data/thalassia.json'));assert.equal(compiled.courtProfiles.find(p=>p.id==='atargatis-kalypso').life,280);const queen=compiled.courtProfiles.find(p=>p.id==='ummu-hubur');assert.equal(queen.abilities[6].grade,'VI');assert(queen.abilities[6].damageFormulas.includes('5d12'));assert(queen.abilities[8].damageFormulas.includes('6d20'));
  assert(read('docs/bestiario.md').includes('Spearhead Glacial'));assert(read('docs/mundo.md').includes('1200 Vida'));assert(read('docs/mundo.md').includes('280 Vida'));
 });
 test('threshold overrides exclude only the specified armor contributions',()=>{
@@ -26,4 +26,12 @@ test('reflection doubles original base dice once, and d15/d25 remain supported',
 });
 test('oceanic theme and transcendental card are scoped and wired into the reader',()=>{
  const css=read('styles/bestiary.css');for(const token of ['#070d1b','#1e3a5f','.boss-card-transcendental','clip-path','conic-gradient'])assert(css.includes(token));assert(!/green|#a7d9d2|#25352b|#1b251c/i.test(css.replace(/\/\*[\s\S]*?\*\//g,'')));assert(read('app/layout.tsx').includes('@/styles/bestiary.css'));assert(read('components/thalassia-content.tsx').includes('boss-card-transcendental'));assert(read('components/elven-court-sheets.tsx').includes('RoyalTechniqueTools'));
+});
+
+test('Thalassia offensive bases fit the matrices except explicitly gated cosmic arts and signatures',async()=>{
+ const {MATRIX_DAMAGE}=await vite.ssrLoadModule('/lib/technique-matrices.ts');const grades=['I','II','III','IV','V'];const maximum=s=>{const m=/^(\d+)d(\d+)$/.exec(s);return m?Number(m[1])*Number(m[2]):0;};
+ for(const p of data.people)for(const a of p.arts){if(!a.damage||a.signature||(p.id==='ummu-hubur'&&a.requiredDomains))continue;assert(maximum(a.damage)<=maximum(MATRIX_DAMAGE[a.matrix][grades.indexOf(a.grade)]),p.name+': '+a.name);}
+ assert.equal(data.people.find(p=>p.id==='atargatis-kalypso').karma,220);const u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(u.karma,300*.8);
+ for(const a of u.arts.filter(a=>a.requiredDomains))assert.equal(a.cost,a.costBeforeDomainDiscount*.8);assert(u.arts[5].effect.includes('maior de 5d20'));
+ assert.equal(JSON.parse(read('data/thalassia-damage-audit.json')).length,98);
 });

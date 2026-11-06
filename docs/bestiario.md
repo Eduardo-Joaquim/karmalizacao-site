@@ -26,6 +26,18 @@ A Corte da Falsa Santa abriga os Pecados. Seus nomes atravessam os quatro contin
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- geopolitics:start -->
 
 O mundo possui quatro grandes continentes: Gaéria, associado à Terra; Ignária, ao Fogo; Aéria, ao Vento; e Thalassia, à Água. Essas associações descrevem paisagens, tradições e centros de poder. Não obrigam ninguém a nascer com certo elemento nem tornam uma linhagem estrangeira em sua própria cidade. A divisão que atravessa os reinos é a posição social: acesso à terra, crédito, educação, cargos e proteção jurídica.
@@ -75,9 +87,9 @@ As bênçãos conservam suas origens: Geometria do Amparo permanece com a linhag
 
 ### As duas potências de Thalassia
 
-Atargatis Kalypso · Thalassokrator possui 280 Vida e conserva a soberania militar de Halikarnós. Seu arsenal fecha distâncias, ergue barreiras de gelo e submete o campo ao calor do vapor e à pressão salina; Vectis dá à mutilação um contrapeso ofensivo, com uma inversão que devolve dados de dano em dobro e uma assinatura que concentra as três eclusas num único impacto. Nada disso altera a autonomia de Nammu em Ápsu.
+Atargatis Kalypso · Thalassokrator possui 280 Vida e 220 Karma e conserva a soberania militar de Halikarnós. Seu arsenal fecha distâncias, ergue barreiras de gelo e submete o campo ao calor do vapor e à pressão salina; Vectis dá à mutilação um contrapeso ofensivo, com uma inversão que devolve dados de dano em dobro e uma assinatura que concentra as três eclusas num único impacto. Nada disso altera a autonomia de Nammu em Ápsu.
 
-Ummu-Hubur · Kenoma possui 1200 Vida, 400 Karma e CA 32. Os cinco desastres naturais permanecem; Ordo Tenebrarum rompe proteções, Entropia corrói a reserva até a reparação em santuário, a Singularidade cobra cada turno de permanência no campo, e a Aniquilação desenha uma linha sem mitigação. Vitrum Fractum exige os cinco Domínios e 150 Karma em qualquer modo. A antiga rainha já não sustenta sua autoridade na sucessão de uma coroa: a Fratura Vítrea é a presença da Deusa Exterior impondo à matéria o risco de deixar de continuar inteira.
+Ummu-Hubur · Kenoma possui 1200 Vida, 240 Karma e CA 35. Os cinco desastres naturais permanecem; Ordo Tenebrarum rompe proteções, Entropia corrói a reserva até a reparação em santuário, a Singularidade cobra cada turno de permanência no campo, e a Aniquilação desenha uma linha sem mitigação. Vitrum Fractum exige os cinco Domínios e 120 Karma em qualquer modo. A antiga rainha já não sustenta sua autoridade na sucessão de uma coroa: a Fratura Vítrea é a presença da Deusa Exterior impondo à matéria o risco de deixar de continuar inteira.
 
 <!-- geopolitics:end -->
 
@@ -2514,7 +2526,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 ##### Ficha de Combate {#atargatis-kalypso-ficha}
 
-**Identidade:** Tritã · Elementalista · Etapa VII · ÁPICE TRITÃ · ECLUSAS DE HALIKARNÓS. **Vida:** 280. **Karma:** 210. **CA:** 28. **Deslocamento:** 9 m; natação 9 m. **Atributos:** Força 1 · Agilidade 5 · Constituição 10 · Intelecto 5 · Presença 10 · Espírito 12.
+**Identidade:** Tritã · Elementalista · Etapa VII · ÁPICE TRITÃ · ECLUSAS DE HALIKARNÓS. **Vida:** 280. **Karma:** 220. **CA:** 28. **Deslocamento:** 9 m; natação 9 m. **Atributos:** Força 1 · Agilidade 5 · Constituição 10 · Intelecto 5 · Presença 10 · Espírito 12.
 
 **Perícias:** Luta 3; Reflexos 3; Atletismo 2; Canalização de Karma 3; Controle Elemental 3; Manifestação de Bênção 3; Comunhão Divina 2; Liderança 3; Percepção 2; demais 0.
 
@@ -2542,7 +2554,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
-**Resolução mecânica:** Calcule a CA Parcial como máximo entre 0 e metade da CA arredondada para baixo menos 2; a CA Total permanece intacta. No Acerto Total, cause 3d12 Elemental / Gelo, com descritor perfurante. No Acerto Parcial, cause metade do dano, arredondada para baixo. Em qualquer acerto, o próximo deslocamento do alvo fica reduzido em 3 m, mínimo 0, até o início do próximo turno de Atargatis. Falha não causa dano nem redução. A redução não acumula consigo mesma; uma nova aplicação renova o prazo. Cobertura total bloqueia a trajetória.
+**Resolução mecânica:** Calcule a CA Parcial como máximo entre 0 e metade da CA arredondada para baixo menos 2; a CA Total permanece intacta. No Acerto Total, cause 2d6 Elemental / Gelo, com descritor perfurante. No Acerto Parcial, cause metade do dano, arredondada para baixo. Em qualquer acerto, o próximo deslocamento do alvo fica reduzido em 3 m, mínimo 0, até o início do próximo turno de Atargatis. Falha não causa dano nem redução. A redução não acumula consigo mesma; uma nova aplicação renova o prazo. Cobertura total bloqueia a trajetória.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -2570,7 +2582,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
-**Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 4d10 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
+**Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -2598,7 +2610,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
-**Resolução mecânica:** Total causa 3d10 de dano cortante puro, registrado como Marcial/cortante nesta execução; parcial causa metade. Puro significa que não há segunda parcela elemental, e não que ignora toda defesa. Após qualquer acerto, role 1d100 uma única vez: de 1 a 30 aplica Sangramento Profundo; de 31 a 100 não aplica. A condição afeta criaturas vivas, Abissais e constructos por perda de sangue, fluido ou integridade estrutural, sem exigir hemomancia. Causa 1d8 do mesmo tipo no início de cada um dos próximos três turnos do alvo. Uma Principal e Intelecto + Medicina CD 19, ou Intelecto + Criação CD 19 para constructos, encerram a condição em sucesso; falha gasta a ação. Outra aplicação renova o prazo sem duplicar pulsos. Falha no ataque não rola a chance. A imunidade a Sangrando comum não impede automaticamente esta lesão estrutural nomeada.
+**Resolução mecânica:** Total causa 1d10 de dano cortante puro, registrado como Marcial/cortante nesta execução; parcial causa metade. Puro significa que não há segunda parcela elemental, e não que ignora toda defesa. Após qualquer acerto, role 1d100 uma única vez: de 1 a 30 aplica Sangramento Profundo; de 31 a 100 não aplica. A condição afeta criaturas vivas, Abissais e constructos por perda de sangue, fluido ou integridade estrutural, sem exigir hemomancia. Causa 1d8 do mesmo tipo no início de cada um dos próximos três turnos do alvo. Uma Principal e Intelecto + Medicina CD 19, ou Intelecto + Criação CD 19 para constructos, encerram a condição em sucesso; falha gasta a ação. Outra aplicação renova o prazo sem duplicar pulsos. Falha no ataque não rola a chance. A imunidade a Sangrando comum não impede automaticamente esta lesão estrutural nomeada.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -2612,7 +2624,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
-**Resolução mecânica:** Total causa 4d12 Elemental / Pressão, descritor contundente; parcial causa metade. Após qualquer acerto, o alvo faz Constituição + Atletismo CD 19, a resistência física do sistema. Falha aplica Fratura de Compressão: −2 em testes físicos regidos por Força, Agilidade ou Constituição durante dois turnos próprios, encerrando ao fim do segundo. Constructos sofrem a mesma penalidade por deformação estrutural. Sucesso evita apenas a fratura, não o dano já acertado. A penalidade não acumula consigo; renovar reinicia o prazo. Falha no ataque não causa dano nem resistência secundária. Não use uma Perícia inexistente chamada Resistência.
+**Resolução mecânica:** Total causa 2d10 Elemental / Pressão, descritor contundente; parcial causa metade. Após qualquer acerto, o alvo faz Constituição + Atletismo CD 19, a resistência física do sistema. Falha aplica Fratura de Compressão: −2 em testes físicos regidos por Força, Agilidade ou Constituição durante dois turnos próprios, encerrando ao fim do segundo. Constructos sofrem a mesma penalidade por deformação estrutural. Sucesso evita apenas a fratura, não o dano já acertado. A penalidade não acumula consigo; renovar reinicia o prazo. Falha no ataque não causa dano nem resistência secundária. Não use uma Perícia inexistente chamada Resistência.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -2626,7 +2638,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Agilidade + Luta: maior de 3d20 +10 contra CA; 1 natural selecionado falha.
 
-**Resolução mecânica:** Ataque corpo a corpo com o braço direito; não exige que tenha sofrido dano antes e não é uma reação gratuita. Total causa 3d10 Marcial/contundente e empurra 4 m diretamente para longe dela. Parcial causa metade, sem empurrão; falha nada. O deslocamento forçado termina no primeiro obstáculo ou espaço ocupado e não produz outro dado de dano por colisão. Não atravessa paredes, não cria um ataque de oportunidade próprio e não derruba automaticamente. Um efeito que impeça empurrões preserva o dano do acerto.
+**Resolução mecânica:** Ataque corpo a corpo com o braço direito; não exige que tenha sofrido dano antes e não é uma reação gratuita. Total causa 1d10 Marcial/contundente e empurra 4 m diretamente para longe dela. Parcial causa metade, sem empurrão; falha nada. O deslocamento forçado termina no primeiro obstáculo ou espaço ocupado e não produz outro dado de dano por colisão. Não atravessa paredes, não cria um ataque de oportunidade próprio e não derruba automaticamente. Um efeito que impeça empurrões preserva o dano do acerto.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -3477,7 +3489,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 ##### Ficha de Combate {#ummu-hubur-ficha}
 
-**Identidade:** Abissal · Especialista · Etapa Kármica · DEUSA EXTERIOR · ANTIGA ÁPICE ABISSAL. **Vida:** 1200. **Karma:** 400. **CA:** 32. **Deslocamento:** 9 m. **Atributos:** Força 12 · Agilidade 10 · Constituição 10 · Intelecto 10 · Presença 12 · Espírito 12.
+**Identidade:** Abissal · Especialista · Etapa Kármica · DEUSA EXTERIOR · ANTIGA ÁPICE ABISSAL. **Vida:** 1200. **Karma:** 240. **CA:** 35. **Deslocamento:** 9 m. **Atributos:** Força 12 · Agilidade 10 · Constituição 10 · Intelecto 10 · Presença 12 · Espírito 12.
 
 **Perícias:** Luta 3; Reflexos 3; Atletismo 3; Canalização de Karma 3; Controle Elemental 3; Manifestação de Bênção 3; Controle da Corrupção 3; Investigação 3; Percepção 3; demais 0.
 
@@ -3496,6 +3508,8 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 **Traço 4:** Custos de Calamidade: o Karma escrito é integral e pago na declaração; não há uso gratuito por divindade nem redução racial implícita. Os perfis VI e VII não extrapolam por inferência a tabela mortal de pedágios corruptos. Entropia de Hubur cobra os 70 Karma declarados e a corrosão que inflige ao alvo; não acrescente ao emissor uma Carga ou uma perda de Vida sem outra regra expressa.
 
 **Traço 5:** Registro de Entropia: guarde o Karma máximo íntegro, anterior à maldição, separadamente do máximo acessível. Descanso comum, fim de cena, cura e dissipação do campo não removem a corrosão. Somente um descanso longo completo em santuário purificado encerra a marca de Entropia; depois restaure o máximo íntegro e resolva a recuperação de recursos desse descanso.
+
+**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 240 Karma, 20% abaixo dos 300 da Falsa Santa.
 
 ###### 1 · Terremoto {#ummu-hubur-1}
 
@@ -3571,13 +3585,13 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Descrição:** Ummu avança sem alcançar o corpo que escolheu ferir. Sua mão cruza o ar num gesto curto, quase sem peso, e o intervalo entre os dois deixa de conservar a própria medida. A linha do corte aparece atrás da armadura antes de aparecer diante dela. O metal permanece inteiro por um instante; a fronteira que separava sua face externa da carne já foi aberta como uma folha de papel. Não há lâmina a segurar nem estilhaço a aparar: há um espaço que aprendeu a terminar no lugar errado.
 
-**Fonte e Grau:** Marcial V. **Uso:** Principal, 40 Karma. **Alcance e alvos:** 12 m; uma criatura visível.
+**Fonte e Grau:** Marcial V. **Uso:** Principal, 32 Karma. **Alcance e alvos:** 12 m; uma criatura visível.
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
 **Teste e limiares:** Agilidade + Luta, maior de 5d20 +10; valide os dois Domínios antes de rolar.
 
-**Resolução mecânica:** Exige os Domínios de Força e Velocidade manifestados. Ataque de Agilidade + Luta, maior de 5d20 +10, contra a CA recalculada sem qualquer bônus de armadura vestida, armadura natural ou escudo mágico. Preserve CA-base, Agilidade, tamanho, classe, escudo físico e cobertura válida. Recalcule o limiar Parcial pela metade dessa CA efetiva. Total causa 4d20 Marcial/cortante espacial; parcial metade; falha nada. Ignore também Resistência ou redução especificamente concedida por armadura e não desconte Escudo Temporário de origem mágica: a parcela ultrapassa esse Escudo sem consumi-lo. Resistência intrínseca Marcial, votos e outras proteções sem origem em armadura ou escudo mágico continuam válidos. A técnica não destrói o equipamento que ultrapassou.
+**Resolução mecânica:** Exige os Domínios de Força e Velocidade manifestados. Ataque de Agilidade + Luta, maior de 5d20 +10, contra a CA recalculada sem qualquer bônus de armadura vestida, armadura natural ou escudo mágico. Preserve CA-base, Agilidade, tamanho, classe, escudo físico e cobertura válida. Recalcule o limiar Parcial pela metade dessa CA efetiva. Total causa 4d12 Marcial/cortante espacial; parcial metade; falha nada. Ignore também Resistência ou redução especificamente concedida por armadura e não desconte Escudo Temporário de origem mágica: a parcela ultrapassa esse Escudo sem consumi-lo. Resistência intrínseca Marcial, votos e outras proteções sem origem em armadura ou escudo mágico continuam válidos. A técnica não destrói o equipamento que ultrapassou.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -3585,13 +3599,13 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Descrição:** A emanação não tem a cor de uma chama. Ela passa pelos vasos como um frio morto e faz o sangue procurar duas mortes incompatíveis: ferver no interior das artérias e coagular antes de completar o caminho. Sob a pele, a corrupção desenha pequenas interrupções escuras; em corpos artificiais, cabos e canais de energia se tornam quebradiços por dentro. Quando o ataque termina, parte do poder da vítima continua faltando, como se sua reserva tivesse aprendido a alimentar um órgão que já apodreceu.
 
-**Fonte e Grau:** Corrupção VI. **Uso:** Principal, 70 Karma. **Alcance e alvos:** 25 m; uma criatura visível.
+**Fonte e Grau:** Corrupção VI. **Uso:** Principal, 56 Karma. **Alcance e alvos:** 25 m; uma criatura visível.
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
 **Teste e limiares:** Presença + Controle da Corrupção, maior de 6d20 +10; quatro Domínios na liberação.
 
-**Resolução mecânica:** Exige quatro Domínios distintos manifestados. Presença + Controle da Corrupção, maior de 6d20 +10, contra CA. Total causa 5d15 Corrupto/necrótico e corrói 10% do Karma máximo íntegro do alvo, arredondado para cima, mínimo 1 quando esse máximo for positivo. Parcial causa metade do dano, sem corrosão; falha nada. A corrosão reduz o máximo acessível e limita imediatamente o Karma atual a esse novo teto; não inflige outra perda se o atual já estiver abaixo dele. Registre a marca fora das condições que expiram por rodada. Não acumula consigo mesma: atingir novamente preserva a maior corrosão válida, sem retirar mais 10% de um máximo já reduzido. A marca persiste entre cenas até o alvo concluir um descanso longo em santuário purificado. Mortos, constructos e Abissais com reserva de Karma podem ter a reserva corroída; isso não depende de possuírem sangue.
+**Resolução mecânica:** Exige quatro Domínios distintos manifestados. Presença + Controle da Corrupção, maior de 6d20 +10, contra CA. Total causa 5d12 Corrupto/necrótico e corrói 10% do Karma máximo íntegro do alvo, arredondado para cima, mínimo 1 quando esse máximo for positivo. Parcial causa metade do dano, sem corrosão; falha nada. A corrosão reduz o máximo acessível e limita imediatamente o Karma atual a esse novo teto; não inflige outra perda se o atual já estiver abaixo dele. Registre a marca fora das condições que expiram por rodada. Não acumula consigo mesma: atingir novamente preserva a maior corrosão válida, sem retirar mais 10% de um máximo já reduzido. A marca persiste entre cenas até o alvo concluir um descanso longo em santuário purificado. Mortos, constructos e Abissais com reserva de Karma podem ter a reserva corroída; isso não depende de possuírem sangue.
 
 **Limites:** Uma marca de Entropia por alvo; custo 70 Karma a cada execução. Sem duração em rodadas e sem cura por descanso comum.
 
@@ -3599,7 +3613,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Descrição:** Um ponto do tamanho de uma semente nasce suspenso entre os combatentes. A luz ao redor se dobra para dentro dele; poeira, água e objetos soltos começam a riscar trajetórias que terminam no mesmo lugar. O campo perde seus ruídos sob um silêncio de pressão. Então o puxão chega aos corpos: roupas esticam, dedos procuram fendas e a matéria inteira parece recordar que já esteve comprimida antes de receber um nome. A gravidade é apresentada como infinita ao olhar, mas cada consequência em jogo tem medida e instante definidos.
 
-**Fonte e Grau:** Karma VII. **Uso:** Principal, 90 Karma. **Alcance e alvos:** centro a até 30 m; esfera de atração com raio de 15 m.
+**Fonte e Grau:** Karma VII. **Uso:** Principal, 72 Karma. **Alcance e alvos:** centro a até 30 m; esfera de atração com raio de 15 m.
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
@@ -3613,13 +3627,13 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Descrição:** Os olhos de Ummu deixam de devolver a claridade que recebem. Entre eles e o destino escolhido, surge uma faixa cinzenta onde a paisagem perde contorno, textura e profundidade. O feixe não queima a matéria para fazê-la desaparecer: impõe uma ausência que a atravessa antes que qualquer superfície consiga recebê-la. Depois do disparo, o ar conserva uma cicatriz sem brilho. Por horas, quem olha através dela sente que a distância foi cortada e recolocada sem encaixar por inteiro.
 
-**Fonte e Grau:** Karma VII. **Uso:** Principal, 110 Karma. **Alcance e alvos:** linha retilínea de 40 m de comprimento e 2 m de largura.
+**Fonte e Grau:** Karma VII. **Uso:** Principal, 88 Karma. **Alcance e alvos:** linha retilínea de 40 m de comprimento e 2 m de largura.
 
 **Preparação:** Uma Principal de preparação, trajetória anunciada e fixa; outra Principal libera.
 
 **Teste e limiares:** Espírito + Canalização de Karma, maior de 6d20 +10 contra cada CA.
 
-**Resolução mecânica:** Exige cinco Domínios manifestados. Uma Principal paga 110 Karma e anuncia com uma fenda cinzenta o segmento de 40 m; a Principal seguinte libera na mesma direção. Um teste de Espírito + Canalização, maior de 6d20 +10, é comparado individualmente à CA de cada criatura atravessada, incluindo aliados. Total causa 6d25 de dano puro de aniquilação; parcial metade; falha nada. Registre natureza Kármica/espacial com as flags de ignorar Resistência, reduções numéricas de dano e Escudo, descontando a parcela diretamente da Vida. Não subtraia essas proteções e não consuma o Escudo ultrapassado. A CA e a Evasão ainda resolvem se o alvo foi atingido; a descrição de apagar existência não executa automaticamente uma criatura com Vida restante. A cicatriz dura três horas como vestígio visual sem novo dano, sem portal e sem repetir a técnica. Objetos no traçado perdem Vida pelo mesmo dado se houver ficha estrutural; estruturas não são apagadas sem limite por analogia.
+**Resolução mecânica:** Exige cinco Domínios manifestados. Uma Principal paga 88 Karma e anuncia com uma fenda cinzenta o segmento de 40 m; a Principal seguinte libera na mesma direção. Um teste de Espírito + Canalização, maior de 6d20 +10, é comparado individualmente à CA de cada criatura atravessada, incluindo aliados. Total causa 6d20 de dano puro de aniquilação; parcial metade; falha nada. Registre natureza Kármica/espacial com as flags de ignorar Resistência, reduções numéricas de dano e Escudo, descontando a parcela diretamente da Vida. Não subtraia essas proteções e não consuma o Escudo ultrapassado. A CA e a Evasão ainda resolvem se o alvo foi atingido; a descrição de apagar existência não executa automaticamente uma criatura com Vida restante. A cicatriz dura três horas como vestígio visual sem novo dano, sem portal e sem repetir a técnica. Objetos no traçado perdem Vida pelo mesmo dado se houver ficha estrutural; estruturas não são apagadas sem limite por analogia.
 
 **Limites:** Uma vez por combate. Interromper a preparação por inconsciência, perda da Principal ou ausência dos cinco Domínios na liberação cancela sem reembolso.
 
@@ -3627,13 +3641,13 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Descrição:** A verdadeira natureza de Kenoma deixa de caber sob a forma que a cidade chama de corpo. Uma fissura atravessa o céu sem procurar nuvens; outra se abre no chão, e as duas passam a refletir a mesma imagem quebrada. Os ruídos se afundam num abafamento impossível, substituídos por um zumbido estelar que parece vir de dentro dos ossos. Armas, rostos e distâncias adquirem bordas de vidro espacial; não são cobertos por uma ilusão, mas alcançados por uma geometria que está ruindo. Ummu ergue a mão, e o campo compreende que a próxima fratura não precisa ocorrer na matéria para atravessar quem a ocupa.
 
-**Fonte e Grau:** Karma Assinatura Divina. **Uso:** Principal, 150 Karma. **Alcance e alvos:** linha 50 m × 10 m ou alvo a 2 m com área adjacente de raio 10 m.
+**Fonte e Grau:** Karma Assinatura Divina. **Uso:** Principal, 120 Karma. **Alcance e alvos:** linha 50 m × 10 m ou alvo a 2 m com área adjacente de raio 10 m.
 
 **Preparação:** Uma Principal inteira prepara e anuncia linha ou alvo/raio; a Principal seguinte libera. Fraturas visíveis revelam a área e o modo.
 
 **Teste e limiares:** Espírito + Canalização de Karma, maior de 6d20 +10; cinco Domínios distintos na liberação.
 
-**Resolução mecânica:** Exige os cinco Domínios manifestados em ambos os modos. Pague 150 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação. Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d20 de dano espacial irreduzível, parcial metade, falha nada. Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado. Modo Curto: alvo principal a até 2 m recebe 2d50 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais. A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas. No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total. Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso. A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
+**Resolução mecânica:** Exige os cinco Domínios manifestados em ambos os modos. Pague 120 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação. Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d12 de dano espacial irreduzível, parcial metade, falha nada. Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado. Modo Curto: alvo principal a até 2 m recebe 2d30 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais. A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas. No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total. Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso. A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
 
 **Limites:** Um único uso por combate, compartilhado entre os modos. Se interrompida, os 150 Karma não retornam. Não existe mais ativação parcial sem os cinco Domínios.
 

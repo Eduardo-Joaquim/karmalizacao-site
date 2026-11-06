@@ -1,0 +1,982 @@
+[
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Spearhead Glacial — Cuspis Glacialis",
+    "matrix": "Elemental",
+    "grade": "II",
+    "before": "3d12",
+    "after": "2d6",
+    "cost": 15,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Mausoléu de Zero Absoluto — Glacies Aeterna",
+    "matrix": "Elemental",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 30,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Geiser de Alta Enthalpia — Fons Fervidus",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "4d10",
+    "after": "2d8",
+    "cost": 20,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Sudário de Névoa Cauterizante — Vapor Caligo",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 25,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Lâmina de Salmoura Cortante — Gladius Salis",
+    "matrix": "Marcial",
+    "grade": "II",
+    "before": "3d10",
+    "after": "1d10",
+    "cost": 18,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Esmagamento de Fossa — Compressio Barometrica",
+    "matrix": "Elemental",
+    "grade": "IV",
+    "before": "4d12",
+    "after": "2d10",
+    "cost": 35,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Retaliação do Membro Oculto — Truncus Impetus",
+    "matrix": "Marcial",
+    "grade": "II",
+    "before": "3d10",
+    "after": "1d10",
+    "cost": 12,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Bloqueio de Alavanca Cinética — Repulsio Brachii",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 20,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Inversão de Vetor — Reflexio Vectoris",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 30,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Aceleração de Impulso Vetorial — Celeritas Vectoris",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 25,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Atargatis Kalypso",
+    "technique": "Vectis Thalassae — O Martelo das Três Eclusas",
+    "matrix": "Elemental",
+    "grade": "Assinatura Suprema",
+    "before": "6d12",
+    "after": "6d12",
+    "cost": 60,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Galateia Kalypso",
+    "technique": "Ponta de Cerração",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Galateia Kalypso",
+    "technique": "Guarda do Cais",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 6,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Galateia Kalypso",
+    "technique": "Estocada de Ponte",
+    "matrix": "Marcial",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 8,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Galateia Kalypso",
+    "technique": "Haste de Retorno",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "2d6",
+    "after": "2d6",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Galateia Kalypso",
+    "technique": "Passagem Jurada",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 6,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Galateia Kalypso",
+    "technique": "Hasta Maris",
+    "matrix": "Marcial",
+    "grade": "V",
+    "before": "3d8",
+    "after": "3d8",
+    "cost": 15,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Cymopoleia Kalypso",
+    "technique": "Êmbolo",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "2d6",
+    "after": "2d6",
+    "cost": 6,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Cymopoleia Kalypso",
+    "technique": "Vapor de Guarda",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 7,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Cymopoleia Kalypso",
+    "technique": "Contragolpe de Eclusa",
+    "matrix": "Marcial",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Cymopoleia Kalypso",
+    "technique": "Fecho de Ombro",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "2d6",
+    "after": "2d6",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Cymopoleia Kalypso",
+    "technique": "Pistão Horizontal",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 8,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Cymopoleia Kalypso",
+    "technique": "Impetus",
+    "matrix": "Marcial",
+    "grade": "V",
+    "before": "3d8",
+    "after": "3d8",
+    "cost": 16,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Glaukos de Halikarnós",
+    "technique": "Trava de Bronze",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "2d6",
+    "after": "2d6",
+    "cost": 6,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Glaukos de Halikarnós",
+    "technique": "Anteparo de Comporta",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Glaukos de Halikarnós",
+    "technique": "Linha de Escudos",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 7,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Glaukos de Halikarnós",
+    "technique": "Calço de Halikarnós",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 8,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Glaukos de Halikarnós",
+    "technique": "Phalanx",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 15,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Phorcys V. Pelágia",
+    "technique": "Arpão de Registro",
+    "matrix": "Marcial",
+    "grade": "III",
+    "before": "2d6",
+    "after": "2d6",
+    "cost": 6,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Phorcys V. Pelágia",
+    "technique": "Remoinho de Interdição",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 8,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Phorcys V. Pelágia",
+    "technique": "Linha de Retenção",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Phorcys V. Pelágia",
+    "technique": "Desvio de Corrente",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 6,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Phorcys V. Pelágia",
+    "technique": "Limen",
+    "matrix": "Marcial",
+    "grade": "V",
+    "before": "3d8",
+    "after": "3d8",
+    "cost": 14,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Proteus de Bathys",
+    "technique": "Inventário de Risco",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 6,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Proteus de Bathys",
+    "technique": "Interdição Documentada",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Proteus de Bathys",
+    "technique": "Saída de Inspeção",
+    "matrix": "Kármico",
+    "grade": "II",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 5,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Proteus de Bathys",
+    "technique": "Tabularius",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 10,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Triton V. Ápsu",
+    "technique": "Sutura Salina",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 6,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Triton V. Ápsu",
+    "technique": "Fio de Corrente",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Triton V. Ápsu",
+    "technique": "Resguardo do Hospital",
+    "matrix": "Elemental",
+    "grade": "II",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 5,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Triton V. Ápsu",
+    "technique": "Legatus",
+    "matrix": "Elemental",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 10,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Nereu de Eclusa",
+    "technique": "Válvula de Sangria",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 6,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Nereu de Eclusa",
+    "technique": "Pino de Retenção",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 7,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Nereu de Eclusa",
+    "technique": "Calço Reversível",
+    "matrix": "Kármico",
+    "grade": "II",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 5,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Nereu de Eclusa",
+    "technique": "Vectigal",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 10,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Arcada de Ápsu",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Sentença Isobárica",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 11,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Canal de Evacuação",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 10,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Escarpa de Gelo",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Quota de Socorro",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 11,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Balança de Pressão",
+    "matrix": "Elemental",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Mandato do Sinédrio",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Nammu Salácia",
+    "technique": "Claustrum Bathys",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 18,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Beroso de Salmoura",
+    "technique": "Artigo de Reserva",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Beroso de Salmoura",
+    "technique": "Testemunho Material",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 7,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Beroso de Salmoura",
+    "technique": "Caução",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Beroso de Salmoura",
+    "technique": "Nomothetes",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 15,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Adapa de Eclusa",
+    "technique": "Furo de Alívio",
+    "matrix": "Elemental",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Adapa de Eclusa",
+    "technique": "Comporta de Serviço",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Adapa de Eclusa",
+    "technique": "Medida de Segurança",
+    "matrix": "Kármico",
+    "grade": "III",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 7,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Adapa de Eclusa",
+    "technique": "Metron",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 15,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Terremoto",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 16,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Tsunami",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 18,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Furacão",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 17,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Vulcão em Erupção",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 20,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Meteoro",
+    "matrix": "Elemental",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 22,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Ordo Tenebrarum — O Corte da Fronteira Vazia",
+    "matrix": "Marcial",
+    "grade": "V",
+    "before": "4d20",
+    "after": "4d12",
+    "cost": 32,
+    "classification": "Exceção cósmica com Domínios"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Entropia de Hubur — Podridão do Vácuo",
+    "matrix": "Corrupto",
+    "grade": "VI",
+    "before": "5d15",
+    "after": "5d12",
+    "cost": 56,
+    "classification": "Exceção cósmica com Domínios"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Singularidade de Bolso — O Olho de Hubur",
+    "matrix": "Kármico",
+    "grade": "VII",
+    "before": "4d12",
+    "after": "4d12",
+    "cost": 72,
+    "classification": "Exceção cósmica com Domínios"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Aniquilação do Céu Morto — Corte do Horizonte",
+    "matrix": "Kármico",
+    "grade": "VII",
+    "before": "6d25",
+    "after": "6d20",
+    "cost": 88,
+    "classification": "Exceção cósmica com Domínios"
+  },
+  {
+    "person": "Ummu-Hubur",
+    "technique": "Vitrum Fractum — O Desastre Primordial / Fratura Vítrea",
+    "matrix": "Kármico",
+    "grade": "Assinatura Divina",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 120,
+    "classification": "Exceção cósmica com Domínios"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Estrela Cadente",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Netuno",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Urano",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Saturno",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Júpiter",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Marte",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Terra",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Vênus",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Mercúrio",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "1d8",
+    "after": "1d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Horizonte Cosmológico — Universo de Bolso Infinito",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 24,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Asteria V. Hubur",
+    "technique": "Big Bang",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 20,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Isótopo",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Meia-Vida",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 11,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Massa Crítica",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 15,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Captura Neutrônica",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Separação de Massa",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 11,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Janela de Decaimento",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Resíduo Físsil",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Lachesis V. Hubur",
+    "technique": "Prazo de Cisão",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "3d10",
+    "after": "3d10",
+    "cost": 20,
+    "classification": "Assinatura específica"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Blueshift",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Redshift",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 9,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Paralaxe",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Aberração Óptica",
+    "matrix": "Elemental",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 10,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Referencial Inercial",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "Sem dano-base",
+    "after": "Sem dano-base",
+    "cost": 8,
+    "classification": "Suporte / expressão específica"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Linha de Visada",
+    "matrix": "Kármico",
+    "grade": "IV",
+    "before": "2d10",
+    "after": "2d10",
+    "cost": 11,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Intervalo Próprio",
+    "matrix": "Marcial",
+    "grade": "IV",
+    "before": "2d8",
+    "after": "2d8",
+    "cost": 9,
+    "classification": "Dentro do teto da matriz"
+  },
+  {
+    "person": "Atropos V. Hubur",
+    "technique": "Doppler — Limite de Aproximação",
+    "matrix": "Kármico",
+    "grade": "V",
+    "before": "3d8",
+    "after": "3d8",
+    "cost": 20,
+    "classification": "Assinatura específica"
+  }
+]
