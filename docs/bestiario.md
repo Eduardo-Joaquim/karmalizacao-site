@@ -44,6 +44,10 @@ A Corte da Falsa Santa abriga os Pecados. Seus nomes atravessam os quatro contin
 
 
 
+
+
+
+
 <!-- geopolitics:start -->
 
 O mundo possui quatro grandes continentes: Gaéria, associado à Terra; Ignária, ao Fogo; Aéria, ao Vento; e Thalassia, à Água. Essas associações descrevem paisagens, tradições e centros de poder. Não obrigam ninguém a nascer com certo elemento nem tornam uma linhagem estrangeira em sua própria cidade. A divisão que atravessa os reinos é a posição social: acesso à terra, crédito, educação, cargos e proteção jurídica.
@@ -95,7 +99,7 @@ As bênçãos conservam suas origens: Geometria do Amparo permanece com a linhag
 
 Atargatis Kalypso · Thalassokrator possui 280 Vida e 220 Karma e conserva a soberania militar de Halikarnós. Seu arsenal fecha distâncias, ergue barreiras de gelo e submete o campo ao calor do vapor e à pressão salina; Vectis dá à mutilação um contrapeso ofensivo, com uma inversão que devolve dados de dano em dobro e uma assinatura que concentra as três eclusas num único impacto. Nada disso altera a autonomia de Nammu em Ápsu.
 
-Ummu-Hubur · Kenoma possui 1200 Vida, 288 Karma e CA 35. Os cinco desastres naturais permanecem; Ordo Tenebrarum rompe proteções, Entropia corrói a reserva até a reparação em santuário, a Singularidade cobra cada turno de permanência no campo, e a Aniquilação desenha uma linha sem mitigação. Vitrum Fractum exige os cinco Domínios e 120 Karma em qualquer modo. A antiga rainha já não sustenta sua autoridade na sucessão de uma coroa: a Fratura Vítrea é a presença da Deusa Exterior impondo à matéria o risco de deixar de continuar inteira.
+Ummu-Hubur · Kenoma possui 1200 Vida, 540 Karma e CA 35. Os cinco desastres naturais permanecem; Ordo Tenebrarum rompe proteções, Entropia corrói a reserva até a reparação em santuário, a Singularidade cobra cada turno de permanência no campo, e a Aniquilação desenha uma linha sem mitigação. Vitrum Fractum exige os cinco Domínios e 120 Karma em qualquer modo. A antiga rainha já não sustenta sua autoridade na sucessão de uma coroa: a Fratura Vítrea é a presença da Deusa Exterior impondo à matéria o risco de deixar de continuar inteira.
 
 <!-- geopolitics:end -->
 
@@ -3495,7 +3499,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 ##### Ficha de Combate {#ummu-hubur-ficha}
 
-**Identidade:** Abissal · Especialista · Etapa Kármica · DEUSA EXTERIOR · ANTIGA ÁPICE ABISSAL. **Vida:** 1200. **Karma:** 288. **CA:** 35. **Deslocamento:** 9 m. **Atributos:** Força 12 · Agilidade 10 · Constituição 10 · Intelecto 10 · Presença 12 · Espírito 12.
+**Identidade:** Abissal · Especialista · Etapa Kármica · DEUSA EXTERIOR · ANTIGA ÁPICE ABISSAL. **Vida:** 1200. **Karma:** 540. **CA:** 35. **Deslocamento:** 9 m. **Atributos:** Força 12 · Agilidade 10 · Constituição 10 · Intelecto 10 · Presença 12 · Espírito 12.
 
 **Perícias:** Luta 3; Reflexos 3; Atletismo 3; Canalização de Karma 3; Controle Elemental 3; Manifestação de Bênção 3; Controle da Corrupção 3; Investigação 3; Percepção 3; demais 0.
 
@@ -3507,7 +3511,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 
-**Traço 2:** Patamar Kármico: Vida 1200, Karma 288 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
+**Traço 2:** Patamar Kármico: Vida 1200, Karma 540 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
 
 **Traço 3:** Três manifestações por Domínio, por combate: Força, Velocidade, Resistência, Superação e Técnica conservam contadores independentes. Cada ativação custa 3 Karma e Ação Extra, dura seis rodadas e não acumula com outra do mesmo Domínio. Os dois Refinamentos são de Permanência. Exigências de dois, quatro ou cinco Domínios verificam manifestações diferentes ativas no instante da liberação; a Essência passiva isolada não basta.
 
@@ -3515,7 +3519,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Traço 5:** Registro de Entropia: guarde o Karma máximo íntegro, anterior à maldição, separadamente do máximo acessível. Descanso comum, fim de cena, cura e dissipação do campo não removem a corrosão. Somente um descanso longo completo em santuário purificado encerra a marca de Entropia; depois restaure o máximo íntegro e resolva a recuperação de recursos desse descanso.
 
-**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 288 Karma, 20% abaixo dos 360 da Falsa Santa.
+**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 540 Karma; a Falsa Santa possui 700 Karma. Ambas pertencem ao ranque Kármico.
 
 ###### 1 · Terremoto {#ummu-hubur-1}
 
@@ -5611,8 +5615,8 @@ A Falsa Santa primeiro nota o ferimento. Interrompe uma ameaça para corrigir a 
 
 | Característica | Valor |
 |---|---|
-| Raça · classe · posição | Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa VII · senhora da Corte |
-| Vida · Karma | 312 · 360 |
+| Raça · classe · posição | Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa Kármica · ranque Kármico · senhora da Corte |
+| Vida · Karma | 500 · 700 |
 | CA | 17 |
 | Pontos Corruptos | 20 |
 | Deslocamento | 9 m |
@@ -5626,7 +5630,7 @@ A Falsa Santa primeiro nota o ferimento. Interrompe uma ameaça para corrigir a 
 
 **Resolução:** Role a reserva indicada e selecione o maior d20, somando o bônus uma vez. Ataques usam a CA; no parcial, causam metade do dano, arredondada para baixo, sem condições secundárias, salvo descrição expressa. Falha não causa dano nem condição. Áreas usam um teste comparado separadamente com cada alvo, sujeito às defesas cabíveis. Em oposição, empate favorece quem resiste. Custos são pagos na declaração, inclusive em falha. Dano, cura e escudo usam os dados e bônus escritos; cura não supera a Vida máxima. Sem indicação contrária, efeitos de duas rodadas terminam no início do segundo turno seguinte da Falsa Santa. Alvos precisam ser percebidos e alcançáveis por linha de efeito. Críticos seguem as regras do livro, sem multiplicar bônus fixos, duração ou condições.
 
-**Reservatório Milenar:** Vida 312 e Karma 360 são seus máximos; a reserva já inclui o Karma acumulado durante sua longa existência. Não recupera recursos automaticamente em combate. Pontos Corruptos formam uma reserva própria de 20, compartilhada entre as técnicas que os exigem; não substituem Vida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou resistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não continua agindo por possuir reconstrução.
+**Reservatório Milenar:** Vida 500 e Karma 700 são seus máximos; a reserva já inclui o Karma acumulado durante sua longa existência. Não recupera recursos automaticamente em combate. Pontos Corruptos formam uma reserva própria de 20, compartilhada entre as técnicas que os exigem; não substituem Vida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou resistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não continua agindo por possuir reconstrução.
 
 **Conhecimento de incontáveis vidas:** Pode utilizar Medicina no lugar de Primeiros Socorros. Uma vez por cena, antes da rolagem de um aliado percebido a até 10 m, concede +2 ao teste por Intervenção Providencial; não altera dano, cura ou duração.
 

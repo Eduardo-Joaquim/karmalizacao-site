@@ -6,7 +6,7 @@ const read=p=>readFileSync(p,'utf8'),data=JSON.parse(read('data/thalassia-source
 const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:{'@':process.cwd()}},server:{middlewareMode:true,hmr:false}});after(()=>vite.close());
 const engine=await vite.ssrLoadModule('/lib/combat-engine.ts'),rules=await vite.ssrLoadModule('/lib/royal-technique-rules.ts');
 test('royal overrides retain requested costs grades dice and resources',()=>{
- const a=data.people.find(p=>p.id==='atargatis-kalypso'),u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(a.life,280);assert.deepEqual([u.life,u.karma,u.ca],[1200,288,35]);
+ const a=data.people.find(p=>p.id==='atargatis-kalypso'),u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(a.life,280);assert.deepEqual([u.life,u.karma,u.ca],[1200,540,35]);
  assert.deepEqual(a.arts.map(x=>x.cost),[15,30,20,25,18,35,12,20,30,25,60]);assert.deepEqual(a.arts.map(x=>x.grade),['II','IV','III','III','II','IV','II','III','IV','III','Assinatura Suprema']);assert.deepEqual(a.arts.map(x=>x.damage),['2d6','','2d8','2d8','1d10','2d10','1d10','','','','6d12']);
  assert.deepEqual(u.arts.slice(5).map(x=>x.cost),[32,56,72,88,120]);assert.deepEqual(u.arts.slice(5).map(x=>x.grade),['V','VI','VII','VII','Assinatura Divina']);assert.deepEqual(u.arts.slice(5).map(x=>x.requiredDomains),[2,4,5,5,5]);
  for(const person of [a,u])for(const art of person.arts){assert(art.description.length>240,art.name);for(const key of ['effect','test','prep','limit'])assert(art[key].length>10,art.name+key);}
@@ -31,12 +31,12 @@ test('oceanic theme and transcendental card are scoped and wired into the reader
 test('Thalassia offensive bases fit the matrices except explicitly gated cosmic arts and signatures',async()=>{
  const {MATRIX_DAMAGE}=await vite.ssrLoadModule('/lib/technique-matrices.ts');const grades=['I','II','III','IV','V'];const maximum=s=>{const m=/^(\d+)d(\d+)$/.exec(s);return m?Number(m[1])*Number(m[2]):0;};
  for(const p of data.people)for(const a of p.arts){if(!a.damage||a.signature||(p.id==='ummu-hubur'&&a.requiredDomains))continue;assert(maximum(a.damage)<=maximum(MATRIX_DAMAGE[a.matrix][grades.indexOf(a.grade)]),p.name+': '+a.name);}
- assert.equal(data.people.find(p=>p.id==='atargatis-kalypso').karma,220);const u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(u.karma,360*.8);assert(!JSON.stringify(u).includes('Karma 400'));assert(!u.arts.at(-1).limit.includes('150 Karma'));
+ assert.equal(data.people.find(p=>p.id==='atargatis-kalypso').karma,220);const u=data.people.find(p=>p.id==='ummu-hubur');assert.equal(u.karma,540);assert(!u.arts.at(-1).limit.includes('150 Karma'));
  for(const a of u.arts.filter(a=>a.requiredDomains))assert.equal(a.cost,a.costBeforeDomainDiscount*.8);assert(u.arts[5].effect.includes('maior de 5d20'));
  assert.equal(JSON.parse(read('data/thalassia-damage-audit.json')).length,98);
 });
 
-test('Falsa Santa resource buff keeps Hubur exactly twenty percent below her Karma',()=>{
- const court=JSON.parse(read('data/court-sheets.json'));const santa=court.find(p=>p.name==='Falsa Santa');assert(santa);assert.equal(Number(santa.life),240*1.3);assert.equal(Number(santa.karma),300*1.2);assert.equal(data.people.find(p=>p.id==='ummu-hubur').karma,Number(santa.karma)*.8);
- assert(read('docs/corte-da-falsa-santa.md').includes('Vida 312 e Karma 360'));
+test('Falsa Santa and Hubur preserve the latest explicit Karma reserves',()=>{
+ const court=JSON.parse(read('data/court-sheets.json'));const santa=court.find(p=>p.name==='Falsa Santa');assert(santa);assert.equal(santa.rank,"Kármico");assert(santa.role.includes("Etapa Kármica"));assert(!santa.role.includes("Etapa VII"));assert.equal(Number(santa.life),500);assert.equal(Number(santa.karma),700);assert.equal(data.people.find(p=>p.id==='ummu-hubur').karma,540);
+ assert(read('docs/corte-da-falsa-santa.md').includes('Vida 500 e Karma 700'));
 });

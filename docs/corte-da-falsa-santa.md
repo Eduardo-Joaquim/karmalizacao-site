@@ -476,8 +476,8 @@ A Falsa Santa primeiro nota o ferimento. Interrompe uma ameaça para corrigir a 
 
 | Característica | Valor |
 |---|---|
-| Raça · classe · posição | Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa VII · senhora da Corte |
-| Vida · Karma | 312 · 360 |
+| Raça · classe · posição | Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa Kármica · ranque Kármico · senhora da Corte |
+| Vida · Karma | 500 · 700 |
 | CA | 17 |
 | Pontos Corruptos | 20 |
 | Deslocamento | 9 m |
@@ -491,7 +491,7 @@ A Falsa Santa primeiro nota o ferimento. Interrompe uma ameaça para corrigir a 
 
 **Resolução:** Role a reserva indicada e selecione o maior d20, somando o bônus uma vez. Ataques usam a CA; no parcial, causam metade do dano, arredondada para baixo, sem condições secundárias, salvo descrição expressa. Falha não causa dano nem condição. Áreas usam um teste comparado separadamente com cada alvo, sujeito às defesas cabíveis. Em oposição, empate favorece quem resiste. Custos são pagos na declaração, inclusive em falha. Dano, cura e escudo usam os dados e bônus escritos; cura não supera a Vida máxima. Sem indicação contrária, efeitos de duas rodadas terminam no início do segundo turno seguinte da Falsa Santa. Alvos precisam ser percebidos e alcançáveis por linha de efeito. Críticos seguem as regras do livro, sem multiplicar bônus fixos, duração ou condições.
 
-**Reservatório Milenar:** Vida 312 e Karma 360 são seus máximos; a reserva já inclui o Karma acumulado durante sua longa existência. Não recupera recursos automaticamente em combate. Pontos Corruptos formam uma reserva própria de 20, compartilhada entre as técnicas que os exigem; não substituem Vida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou resistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não continua agindo por possuir reconstrução.
+**Reservatório Milenar:** Vida 500 e Karma 700 são seus máximos; a reserva já inclui o Karma acumulado durante sua longa existência. Não recupera recursos automaticamente em combate. Pontos Corruptos formam uma reserva própria de 20, compartilhada entre as técnicas que os exigem; não substituem Vida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou resistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não continua agindo por possuir reconstrução.
 
 **Conhecimento de incontáveis vidas:** Pode utilizar Medicina no lugar de Primeiros Socorros. Uma vez por cena, antes da rolagem de um aliado percebido a até 10 m, concede +2 ao teste por Intervenção Providencial; não altera dano, cura ou duração.
 

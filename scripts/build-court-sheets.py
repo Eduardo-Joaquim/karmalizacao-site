@@ -46,7 +46,7 @@ for profile in profiles:
         profile['phases'][0]['life'] = f'{life}–{half + 1} Vida'
         profile['phases'][1]['life'] = f'{half} Vida ou boneca tomada'
 
-profiles.append(dict(slug='prorrogadora-da-extincao', name='Falsa Santa', sin='Soberana', title='A Prorrogadora da Extinção', role='Suporte · Curandeiro · Etapa VII', rank='', life='312', karma='360', ca='17', movement='9 m', accent='#d7c8a7', attributes=[7,7,7,10,10,10], phases=[]))
+profiles.append(dict(slug='prorrogadora-da-extincao', name='Falsa Santa', sin='Soberana', title='A Prorrogadora da Extinção', role='Suporte · Curandeiro · Etapa Kármica', rank='Kármico', life='500', karma='700', ca='17', movement='9 m', accent='#d7c8a7', attributes=[7,7,7,10,10,10], phases=[]))
 
 records = re.split(r'^### ', source, flags=re.M)[1:]
 assert len(records) == len(profiles) == 8

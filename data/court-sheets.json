@@ -2116,10 +2116,10 @@
     "name": "Falsa Santa",
     "sin": "Soberana",
     "title": "A Prorrogadora da Extinção",
-    "role": "Suporte · Curandeiro · Etapa VII",
-    "rank": "",
-    "life": "312",
-    "karma": "360",
+    "role": "Suporte · Curandeiro · Etapa Kármica",
+    "rank": "Kármico",
+    "life": "500",
+    "karma": "700",
     "ca": "17",
     "movement": "9 m",
     "accent": "#d7c8a7",
@@ -2178,7 +2178,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Vida 312 e Karma 360 são seus máximos; a reserva já inclui o Karma\nacumulado durante sua longa existência. Não recupera recursos\nautomaticamente em combate. Pontos Corruptos formam uma reserva própria\nde 20, compartilhada entre as técnicas que os exigem; não substituem\nVida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou\nresistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não\ncontinua agindo por possuir reconstrução.</p>"
+            "html": "<p>Vida 500 e Karma 700 são seus máximos; a reserva já inclui o Karma\nacumulado durante sua longa existência. Não recupera recursos\nautomaticamente em combate. Pontos Corruptos formam uma reserva própria\nde 20, compartilhada entre as técnicas que os exigem; não substituem\nVida ou Karma. Seus máximos não concedem ações adicionais, imunidades ou\nresistência a dano. Ao chegar a 0 Vida, entra em Estado Crítico e não\ncontinua agindo por possuir reconstrução.</p>"
           }
         ],
         "grade": "",
@@ -2743,7 +2743,7 @@
     "facts": [
       {
         "label": "Raça · classe · posição",
-        "value": "Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa VII · senhora da Corte"
+        "value": "Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa Kármica · ranque Kármico · senhora da Corte"
       },
       {
         "label": "Ações",
