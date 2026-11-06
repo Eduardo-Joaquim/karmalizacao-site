@@ -1001,7 +1001,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 
-**Traço 2:** Patamar Kármico: Vida 1200, Karma 400 e CA 32. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
+**Traço 2:** Patamar Kármico: Vida 1200, Karma 240 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
 
 **Traço 3:** Três manifestações por Domínio, por combate: Força, Velocidade, Resistência, Superação e Técnica conservam contadores independentes. Cada ativação custa 3 Karma e Ação Extra, dura seis rodadas e não acumula com outra do mesmo Domínio. Os dois Refinamentos são de Permanência. Exigências de dois, quatro ou cinco Domínios verificam manifestações diferentes ativas no instante da liberação; a Essência passiva isolada não basta.
 
@@ -1107,7 +1107,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Resolução mecânica:** Exige quatro Domínios distintos manifestados. Presença + Controle da Corrupção, maior de 6d20 +10, contra CA. Total causa 5d12 Corrupto/necrótico e corrói 10% do Karma máximo íntegro do alvo, arredondado para cima, mínimo 1 quando esse máximo for positivo. Parcial causa metade do dano, sem corrosão; falha nada. A corrosão reduz o máximo acessível e limita imediatamente o Karma atual a esse novo teto; não inflige outra perda se o atual já estiver abaixo dele. Registre a marca fora das condições que expiram por rodada. Não acumula consigo mesma: atingir novamente preserva a maior corrosão válida, sem retirar mais 10% de um máximo já reduzido. A marca persiste entre cenas até o alvo concluir um descanso longo em santuário purificado. Mortos, constructos e Abissais com reserva de Karma podem ter a reserva corroída; isso não depende de possuírem sangue.
 
-**Limites:** Uma marca de Entropia por alvo; custo 70 Karma a cada execução. Sem duração em rodadas e sem cura por descanso comum.
+**Limites:** Uma marca de Entropia por alvo; custo 56 Karma a cada execução. Sem duração em rodadas e sem cura por descanso comum.
 
 ##### 8 · Singularidade de Bolso — O Olho de Hubur {#ummu-hubur-8}
 
@@ -1149,7 +1149,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Resolução mecânica:** Exige os cinco Domínios manifestados em ambos os modos. Pague 120 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação. Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d12 de dano espacial irreduzível, parcial metade, falha nada. Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado. Modo Curto: alvo principal a até 2 m recebe 2d30 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais. A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas. No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total. Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso. A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
 
-**Limites:** Um único uso por combate, compartilhado entre os modos. Se interrompida, os 150 Karma não retornam. Não existe mais ativação parcial sem os cinco Domínios.
+**Limites:** Um único uso por combate, compartilhado entre os modos. Se interrompida, os 120 Karma não retornam. Não existe mais ativação parcial sem os cinco Domínios.
 
 
 ### Asteria V. Hubur · Syzygia {#asteria-hubur}
