@@ -1003,7 +1003,7 @@ Resolução: escolha uma opção. Se a Perícia estiver em 0, trate-a como níve
 
 #### Ampliação — Competência de Batalha
 
-Uma vez por cena, pelo mesmo custo, escolha duas Perícias. Até o início do próximo turno, uma Perícia 0 é tratada como 1 e uma Perícia já treinada em 1 é tratada como 2, apenas nos testes. Perícias 2 ou 3 recebem +1d20 no primeiro teste de cada uma. Preserve as restrições de acesso.
+uma vez por cena, pelo mesmo custo, escolha duas Perícias. Até o início do próximo turno, uma Perícia 0 é tratada como 1 e uma Perícia já treinada em 1 é tratada como 2, apenas nos testes. Perícias 2 ou 3 recebem +1d20 no primeiro teste de cada uma. Preserve as restrições de acesso.
 
 #### Habilidade 2 — Repelir
 
@@ -1065,7 +1065,7 @@ Punho em Suspenso: uma vez por rodada, quando um inimigo percebido em seu alcanc
 
 #### Ampliação — Punhos Demolidores
 
-O dano-base passa a 1d10 e o adicional a 1d6. O ataque que consumir o benefício adicional também ignora 2 pontos de Resistência física. Não reduz CA, não ignora imunidade e não repete o benefício nos demais ataques.
+o dano-base passa a 1d10 e o adicional a 1d6. O ataque que consumir o benefício adicional também ignora 2 pontos de Resistência física. Não reduz CA, não ignora imunidade e não repete o benefício nos demais ataques.
 
 #### Habilidade 2 — Sequência Brutal
 
@@ -1075,7 +1075,7 @@ Resolução: gaste todos os pontos escolhidos antes de rolar e realize um ataque
 
 #### Ampliação — Combinação Crescente
 
-Cada ataque adicional acertado recebe +1d4 de dano antes do parcial. Se ao menos um deles obtiver total, recupere 1 Impulso depois de toda a sequência. Essa recuperação acontece no máximo uma vez por uso e não permite acrescentar golpes à sequência já encerrada.
+cada ataque adicional acertado recebe +1d4 de dano antes do parcial. Se ao menos um deles obtiver total, recupere 1 Impulso depois de toda a sequência. Essa recuperação acontece no máximo uma vez por uso e não permite acrescentar golpes à sequência já encerrada.
 
 #### Habilidade 3 — Golpe de Pressão
 
@@ -1085,7 +1085,7 @@ Resolução: acrescente 1d6 de impacto ao dano desse ataque. No parcial, divida 
 
 #### Ampliação — Ruptura Nervosa
 
-O adicional passa a 1d8 e a resistência usa CD 22. Na falha, além da Reação, o alvo perde 2 metros de Deslocamento até o fim do próximo turno dele, mínimo 1 antes de outras condições. O golpe continua sem modificar CA.
+o adicional passa a 1d8 e a resistência usa CD 22. Na falha, além da Reação, o alvo perde 2 metros de Deslocamento até o fim do próximo turno dele, mínimo 1 antes de outras condições. O golpe continua sem modificar CA.
 
 ### Progressão de status e desenvolvimento
 
@@ -1135,7 +1135,7 @@ Resolução: faça imediatamente um ataque básico com Força ou Agilidade + Lut
 
 #### Ampliação — Resposta Perfeita
 
-Uma vez por cena, ao declarar uma Evasão contra ataque corpo a corpo, pague 4 Karma para preparar a resposta. Se a Evasão vencer e o inimigo continuar ao alcance, execute Contra Golpe com a mesma Reação. Se falhar, não há ataque de resposta e o Karma permanece gasto. É uma exceção expressa que não concede uma Reação adicional.
+uma vez por cena, ao declarar uma Evasão contra ataque corpo a corpo, pague 4 Karma para preparar a resposta. Se a Evasão vencer e o inimigo continuar ao alcance, execute Contra Golpe com a mesma Reação. Se falhar, não há ataque de resposta e o Karma permanece gasto. É uma exceção expressa que não concede uma Reação adicional.
 
 #### Habilidade 3 — Estilo Impecável
 
@@ -1185,7 +1185,7 @@ Resolução: faça Presença ou Força + Intimidação contra Presença + Lidera
 
 #### Ampliação — Desafio da Muralha
 
-Pelo mesmo custo, desafie até três criaturas a até 15 metros. Faça uma rolagem de Intimidação e uma resistência por alvo. Contra ataques dos que perderem, você recebe +1 CA durante a provocação. Afetar vários alvos não concede Reações adicionais.
+pelo mesmo custo, desafie até três criaturas a até 15 metros. Faça uma rolagem de Intimidação e uma resistência por alvo. Contra ataques dos que perderem, você recebe +1 CA durante a provocação. Afetar vários alvos não concede Reações adicionais.
 
 #### Habilidade 2 — Interceptação
 
@@ -1195,7 +1195,7 @@ Resolução: mova-se até 3 m pela rota, contando terreno difícil nesse limite,
 
 #### Ampliação — Interposição Absoluta
 
-Receba +2 CA contra o ataque interceptado e reduza em 2 seu dano final antes do escudo. Após a resolução, o protegido pode recuar 2 metros por rota livre sem provocar reações de movimento do agressor; esse recuo é opcional e não concede ataque.
+receba +2 CA contra o ataque interceptado e reduza em 2 seu dano final antes do escudo. Após a resolução, o protegido pode recuar 2 metros por rota livre sem provocar reações de movimento do agressor; esse recuo é opcional e não concede ataque.
 
 #### Habilidade 3 — Inabalável
 
@@ -1205,7 +1205,7 @@ Duração: três rodadas, contando a ativação. Receba uma reserva de proteçã
 
 #### Ampliação — Corpo Fortaleza
 
-A reserva inicial aumenta em 10 pontos, o limite de absorção passa a 7 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena.
+a reserva inicial aumenta em 10 pontos, o limite de absorção passa a 7 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena.
 
 ### Progressão de status e desenvolvimento
 
@@ -1245,7 +1245,7 @@ Escolha um gatilho concreto: uma criatura cruzar uma passagem delimitada, sair d
 
 #### Ampliação — Mira Persistente
 
-Pode pagar 6 Karma em vez de 2 para manter a preparação por três rodadas, contando a ativação. Continua reservando um único disparo e não exige novas ações para manter a preparação; executar o disparo exige uma Reação disponível. No disparo, se acertar, acrescente 1d6 de dano antes do parcial; esse dado não dobra no crítico. O gatilho continua sendo executado somente fora do seu turno e todas as condições de encerramento permanecem. Não recebe um novo disparo por rodada.
+pode pagar 6 Karma em vez de 2 para manter a preparação por três rodadas, contando a ativação. Continua reservando um único disparo e não exige novas ações para manter a preparação; executar o disparo exige uma Reação disponível. No disparo, se acertar, acrescente 1d6 de dano antes do parcial; esse dado não dobra no crítico. O gatilho continua sendo executado somente fora do seu turno e todas as condições de encerramento permanecem. Não recebe um novo disparo por rodada.
 
 #### Habilidade 2 — Passo Fantasma
 
@@ -1255,7 +1255,7 @@ Resolução: mova até metade do seu Deslocamento, arredondada para baixo, sem p
 
 #### Ampliação — Reposicionamento Invisível
 
-Mova até seu Deslocamento completo. Se terminar em cobertura ou ocultação apropriada, faça imediatamente Agilidade + Furtividade contra Intelecto ou Espírito + Percepção de quem tenta acompanhá-lo. Quem perder deixa de conhecer sua posição; empate favorece o observador. Essa tentativa não custa outra ação.
+mova até seu Deslocamento completo. Se terminar em cobertura ou ocultação apropriada, faça imediatamente Agilidade + Furtividade contra Intelecto ou Espírito + Percepção de quem tenta acompanhá-lo. Quem perder deixa de conhecer sua posição; empate favorece o observador. Essa tentativa não custa outra ação.
 
 #### Habilidade 3 — Caçador Experiente
 
@@ -1265,7 +1265,7 @@ Resolução: durante três rodadas, localize a posição de criaturas na área m
 
 #### Ampliação — Predador do Horizonte
 
-Alcance de 30 metros. Uma vez por rodada, o primeiro ataque de Pontaria que acertar uma criatura localizada recebe +1d6 adicional e ignora 2 de Resistência física. Os benefícios não removem cobertura total nem concedem visão além dos 30 metros.
+alcance de 30 metros. Uma vez por rodada, o primeiro ataque de Pontaria que acertar uma criatura localizada recebe +1d6 adicional e ignora 2 de Resistência física. Os benefícios não removem cobertura total nem concedem visão além dos 30 metros.
 
 ### Progressão de status e desenvolvimento
 
@@ -1305,7 +1305,7 @@ Resolução: mova até seu Deslocamento e faça Agilidade + Furtividade com +1d2
 
 #### Ampliação — Ausência Perfeita
 
-Durante a mesma passagem, pode cruzar um trecho aberto de até 2 metros entre dois pontos de ocultação. Observadores recebem Desvantagem para opor Percepção a esse uso. Você ainda precisa vencer a oposição e terminar numa posição em que possa se esconder.
+durante a mesma passagem, pode cruzar um trecho aberto de até 2 metros entre dois pontos de ocultação. Observadores recebem Desvantagem para opor Percepção a esse uso. Você ainda precisa vencer a oposição e terminar numa posição em que possa se esconder.
 
 #### Habilidade 2 — Roubo Rápido
 
@@ -1315,7 +1315,7 @@ Resolução: faça Agilidade + Ladinagem contra Agilidade + Reflexos do alvo. Ao
 
 #### Ampliação — Mãos Impossíveis
 
-Pode tentar retirar também um item leve empunhado ou vestido de modo acessível, como anel, foco pequeno ou adaga. Nesse caso, o defensor escolhe Força + Luta ou Agilidade + Reflexos. A habilidade não arranca membro, armadura ou item cuja remoção exija desmontagem; uma arma retirada ainda pode ser substituída normalmente pelo adversário.
+pode tentar retirar também um item leve empunhado ou vestido de modo acessível, como anel, foco pequeno ou adaga. Nesse caso, o defensor escolhe Força + Luta ou Agilidade + Reflexos. A habilidade não arranca membro, armadura ou item cuja remoção exija desmontagem; uma arma retirada ainda pode ser substituída normalmente pelo adversário.
 
 #### Habilidade 3 — Arrombador
 
@@ -1325,7 +1325,7 @@ Resolução: receba +2d20 em Agilidade + Ladinagem. Use CD 10 para mecanismo sim
 
 #### Ampliação — Chave Universal
 
-Depois de abrir, desarmar ou sabotar um mecanismo com sucesso usando Arrombador, escolha uma aplicação compatível com sua construção, sem outra ação: conservar a aparência externa intacta, preparar o mecanismo para voltar a fechar ou travar mediante um gatilho físico simples declarado, ou retirar uma peça pequena para impedir seu funcionamento até ser reposta ou reparada. Não cria controle remoto ou inteligência. Conservar a aparência não torna a alteração indetectável: uma inspeção pertinente compara Investigação ao resultado original de Ladinagem. O gatilho precisa de componentes presentes e alcance físico; uma modificação que exija fabricação, explosivos ou trabalho prolongado conserva seus procedimentos normais. Mantém +2d20 e o custo de 1 Karma de Arrombador.
+depois de abrir, desarmar ou sabotar um mecanismo com sucesso usando Arrombador, escolha uma aplicação compatível com sua construção, sem outra ação: conservar a aparência externa intacta, preparar o mecanismo para voltar a fechar ou travar mediante um gatilho físico simples declarado, ou retirar uma peça pequena para impedir seu funcionamento até ser reposta ou reparada. Não cria controle remoto ou inteligência. Conservar a aparência não torna a alteração indetectável: uma inspeção pertinente compara Investigação ao resultado original de Ladinagem. O gatilho precisa de componentes presentes e alcance físico; uma modificação que exija fabricação, explosivos ou trabalho prolongado conserva seus procedimentos normais. Mantém +2d20 e o custo de 1 Karma de Arrombador.
 
 ### Progressão de status e desenvolvimento
 
@@ -1365,7 +1365,7 @@ Resolução: a marca é automática e dura até o fim da cena. Seus ataques dire
 
 #### Ampliação — Sentença Preparada
 
-O primeiro ataque que acertar o marcado em cada rodada recebe +3 de dano no lugar do +1; os demais conservam +1. Depois de observá-lo por uma Principal sem atacá-lo, seu próximo teste contra ele até o fim do turno seguinte recebe +1d20. Essa observação não acumula consigo.
+o primeiro ataque que acertar o marcado em cada rodada recebe +3 de dano no lugar do +1; os demais conservam +1. Depois de observá-lo por uma Principal sem atacá-lo, seu próximo teste contra ele até o fim do turno seguinte recebe +1d20. Essa observação não acumula consigo.
 
 #### Habilidade 2 — Execução Silenciosa
 
@@ -1375,7 +1375,7 @@ Resolução: use Força ou Agilidade + Luta, ou Agilidade + Pontaria, contra CA.
 
 #### Ampliação — Golpe Irrecuperável
 
-O ataque ignora 5 de Resistência física. Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece.
+o ataque ignora 5 de Resistência física. Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece.
 
 #### Habilidade 3 — Passo Sombrio
 
@@ -1385,7 +1385,7 @@ Resolução: teleporte-se para esse ponto sem percorrer os espaços intermediár
 
 #### Ampliação — Travessia Noturna
 
-Alcance de 15 m. Depois de chegar, receba +1d20 no próximo teste de Furtividade até o fim do turno. O benefício não se aplica a ataques, não concede Oculto automaticamente e não permite escolher um destino desconhecido. As demais condições e custos de Passo Sombrio permanecem.
+alcance de 15 m. Depois de chegar, receba +1d20 no próximo teste de Furtividade até o fim do turno. O benefício não se aplica a ataques, não concede Oculto automaticamente e não permite escolher um destino desconhecido. As demais condições e custos de Passo Sombrio permanecem.
 
 ### Progressão de status e desenvolvimento
 
@@ -1427,7 +1427,7 @@ Intervenção Clínica: no mesmo atendimento, escolha uma complicação física 
 
 #### Ampliação — Tratamento Milagroso
 
-Em sucesso, cure 2d8 + Constituição e encerre Sangramento comum. A falha, CD, ação, meia carga e limite de tratamento permanecem. Sangramento causado por Ferimento Grave pode retornar conforme sua fonte, porque o Ferimento não foi removido.
+em sucesso, cure 2d8 + Constituição e encerre Sangramento comum. A falha, CD, ação, meia carga e limite de tratamento permanecem. Sangramento causado por Ferimento Grave pode retornar conforme sua fonte, porque o Ferimento não foi removido.
 
 #### Habilidade 2 — Atendimento de Emergência
 
@@ -1437,7 +1437,7 @@ Resolução: a intervenção é automática. Se estiver em 0 e ainda vivo, o ali
 
 #### Ampliação — Equipe de Emergência
 
-Quando a mesma resolução atingir dois aliados elegíveis, pode atender ambos com uma Reação e um pagamento. Disponha 3d6 de escudo entre eles antes de rolar, ao menos um dado para cada. Cada um em 0 recebe 1 Vida. Se atender só um, ele recebe os três dados. Marque o uso por cena de cada beneficiário.
+quando a mesma resolução atingir dois aliados elegíveis, pode atender ambos com uma Reação e um pagamento. Disponha 3d6 de escudo entre eles antes de rolar, ao menos um dado para cada. Cada um em 0 recebe 1 Vida. Se atender só um, ele recebe os três dados. Marque o uso por cena de cada beneficiário.
 
 #### Habilidade 3 — Interferência Protetora
 
@@ -1447,7 +1447,7 @@ Resolução: sem teste, reduza esse dano pela metade, arredondando para baixo. A
 
 #### Ampliação — Proteção Convertida
 
-Depois de reduzir, role 2d6. O aliado recebe escudo temporário igual ao menor valor entre essa rolagem e o dano realmente evitado, até o início do próximo turno do Samaritano. Dano evitado 0 concede escudo 0. O recuo continua opcional e exige a Reação do protegido.
+depois de reduzir, role 2d6. O aliado recebe escudo temporário igual ao menor valor entre essa rolagem e o dano realmente evitado, até o início do próximo turno do Samaritano. Dano evitado 0 concede escudo 0. O recuo continua opcional e exige a Reação do protegido.
 
 ### Progressão de status e desenvolvimento
 
@@ -1487,7 +1487,7 @@ Resolução: recupere automaticamente 2d6 + Espírito de Vida. Se o paciente est
 
 #### Ampliação — Toque de Renovação
 
-A cura-base passa a 3d8 + Espírito; o adicional por baixa Vida continua 1d6. Se restaurar pelo menos 10 Vida reais, pode remover um Ferimento Grave, no máximo uma vez por dia por paciente, compartilhando o limite de cura sobrenatural do Capítulo 7. Para essa remoção, a ampliação satisfaz a exigência de restauração de Grau III; isso não atribui Grau III aos demais usos da habilidade.
+a cura-base passa a 3d8 + Espírito; o adicional por baixa Vida continua 1d6. Se restaurar pelo menos 10 Vida reais, pode remover um Ferimento Grave, no máximo uma vez por dia por paciente, compartilhando o limite de cura sobrenatural do Capítulo 7. Para essa remoção, a ampliação satisfaz a exigência de restauração de Grau III; isso não atribui Grau III aos demais usos da habilidade.
 
 #### Habilidade 2 — Purificação
 
@@ -1497,7 +1497,7 @@ Resolução: escolha e remova até duas condições simples negativas do mesmo p
 
 #### Ampliação — Purificação Maior
 
-Uma vez por cena, pelo mesmo custo, remova completamente uma condição grave de um alvo ou até três condições simples distribuídas entre até três criaturas a até 5 metros. A remoção completa ainda não destrói a fonte contínua. Exausto imposto como preço irremovível até descanso por uma regra específica respeita essa restrição.
+uma vez por cena, pelo mesmo custo, remova completamente uma condição grave de um alvo ou até três condições simples distribuídas entre até três criaturas a até 5 metros. A remoção completa ainda não destrói a fonte contínua. Exausto imposto como preço irremovível até descanso por uma regra específica respeita essa restrição.
 
 #### Habilidade 3 — Restauração Revigorante
 
@@ -1507,7 +1507,7 @@ Resolução: role uma vez 2d8 + Espírito; cada alvo recupera esse valor de Vida
 
 #### Ampliação — Renascimento Coletivo
 
-A primeira cura passa a 3d8 + Espírito e a recuperação posterior a 2d6. Os mesmos três alvos, ação, custo, prazo e limite por beneficiário permanecem. Proteção Vital verifica cada recuperação efetiva respeitando seu próprio limite por rodada.
+a primeira cura passa a 3d8 + Espírito e a recuperação posterior a 2d6. Os mesmos três alvos, ação, custo, prazo e limite por beneficiário permanecem. Proteção Vital verifica cada recuperação efetiva respeitando seu próprio limite por rodada.
 
 ### Progressão de status e desenvolvimento
 
@@ -1547,7 +1547,7 @@ Resolução: faça Intelecto + Criação CD 14 para uma forma simples ou CD 18 p
 
 #### Ampliação — Transmutação Superior
 
-Admite até 50 kg e dura até o fim da cena quando ativada em combate, ou até duas horas quando preparada fora dele. Com Criação 2 e acesso elemental pertinente, pode substituir o material por outro da mesma família e valor aproximado, CD 22, preservando massa. Permanência continua exigindo Etapa VII, Perícia apropriada 3 e uma técnica de Grau V com consequência; esta ampliação isolada não cria material permanente.
+admite até 50 kg e dura até o fim da cena quando ativada em combate, ou até duas horas quando preparada fora dele. Com Criação 2 e acesso elemental pertinente, pode substituir o material por outro da mesma família e valor aproximado, CD 22, preservando massa. Permanência continua exigindo Etapa VII, Perícia apropriada 3 e uma técnica de Grau V com consequência; esta ampliação isolada não cria material permanente.
 
 #### Habilidade 2 — Síntese Alquímica
 
@@ -1569,7 +1569,7 @@ Encerramento: todos os modos dependem das runas, CA 14 e 10 Vida. Destruir as ru
 
 #### Ampliação — Transmutação em Cadeia
 
-Mantenha até dois círculos. Ao criar um, pode pagar mais 2 Karma para repetir o mesmo modo numa área contígua no início do próximo turno, desde que haja matéria, superfície válida e uma vaga. A cópia ocupa essa vaga, exige seu próprio teste quando houver e conserva o término do original; não pode gerar outra cópia. Registre runas e Vida separadamente. Sobreposição não repete dano no mesmo alvo na rodada.
+mantenha até dois círculos. Ao criar um, pode pagar mais 2 Karma para repetir o mesmo modo numa área contígua no início do próximo turno, desde que haja matéria, superfície válida e uma vaga. A cópia ocupa essa vaga, exige seu próprio teste quando houver e conserva o término do original; não pode gerar outra cópia. Registre runas e Vida separadamente. Sobreposição não repete dano no mesmo alvo na rodada.
 
 ### Progressão de status e desenvolvimento
 
@@ -1599,7 +1599,7 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 #### Traço de Classe — Oficina de Campanha
 
-Registre projetos autorais conforme sua Etapa, usando os limites de Dispositivo Autoral. Você escolhe nome, forma, materiais, montagem e função; torre é apenas um exemplo. Cada projeto registra Carga, CA, Vida, função, alcance, duração, ação de operação, munição/energia e limitações. Um dispositivo simples ocupa 2 espaços; tração ou cada função adicional acrescenta 1 espaço; suportes e componentes adicionais contam separadamente. Empunhado, exige mãos; instalado, exige apoio físico; fixado em alguém, exige consentimento e não altera automaticamente sua CA ou concede uso gratuito. Construção exige kit, peças e tempo da tabela de projetos e Intelecto + Criação CD 14 (simples), 18 (articulado, móvel ou multifuncional) ou 22 (integração tecno-kármica). Falha consome tempo e 25% das peças, arredondado para cima; nova tentativa exige repor a perda e repetir o trabalho. O custo da tabela cobre um chassi e uma função; cada função adicional acrescenta 50% desse custo, arredondado para cima. Preparar um dispositivo ocupa uma vaga, inclusive duplicatas; desativar não libera a vaga. Retirar um dispositivo do conjunto preparado exige 1 TE na oficina e o torna indisponível para habilidades de classe até nova preparação de 1 TE; não cria outro exemplar. Na criação, receba um dispositivo simples preparado em lugar de outro foco inicial, inclusive se escolher Sobrecarga como primeira habilidade. Repare um dispositivo de classe em 1 TE, com kit, peças de 2 m e Criação CD 14: sucesso restaura sua Vida física e retira Danificado; falha gasta peças e tempo. Um destruído exige reconstrução. Esse procedimento não repara veículos ou equipamento industrial pelos mesmos valores. Materiais, munições especiais, fontes e licenças seguem o Capítulo 20. Criação 2 inicial é uma exceção de treinamento do Inventor, sem dispensar requisitos de Etapa, fontes ou complexidade dos projetos.
+registre projetos autorais conforme sua Etapa, usando os limites de Dispositivo Autoral. Você escolhe nome, forma, materiais, montagem e função; torre é apenas um exemplo. Cada projeto registra Carga, CA, Vida, função, alcance, duração, ação de operação, munição/energia e limitações. Um dispositivo simples ocupa 2 espaços; tração ou cada função adicional acrescenta 1 espaço; suportes e componentes adicionais contam separadamente. Empunhado, exige mãos; instalado, exige apoio físico; fixado em alguém, exige consentimento e não altera automaticamente sua CA ou concede uso gratuito. Construção exige kit, peças e tempo da tabela de projetos e Intelecto + Criação CD 14 (simples), 18 (articulado, móvel ou multifuncional) ou 22 (integração tecno-kármica). Falha consome tempo e 25% das peças, arredondado para cima; nova tentativa exige repor a perda e repetir o trabalho. O custo da tabela cobre um chassi e uma função; cada função adicional acrescenta 50% desse custo, arredondado para cima. Preparar um dispositivo ocupa uma vaga, inclusive duplicatas; desativar não libera a vaga. Retirar um dispositivo do conjunto preparado exige 1 TE na oficina e o torna indisponível para habilidades de classe até nova preparação de 1 TE; não cria outro exemplar. Na criação, receba um dispositivo simples preparado em lugar de outro foco inicial, inclusive se escolher Sobrecarga como primeira habilidade. Repare um dispositivo de classe em 1 TE, com kit, peças de 2 m e Criação CD 14: sucesso restaura sua Vida física e retira Danificado; falha gasta peças e tempo. Um destruído exige reconstrução. Esse procedimento não repara veículos ou equipamento industrial pelos mesmos valores. Materiais, munições especiais, fontes e licenças seguem o Capítulo 20. Criação 2 inicial é uma exceção de treinamento do Inventor, sem dispensar requisitos de Etapa, fontes ou complexidade dos projetos.
 
 #### Habilidade 1 — Dispositivo Autoral
 
@@ -1619,7 +1619,7 @@ Resolução: o campo possui uma reserva compartilhada de 14 pontos de proteção
 
 #### Ampliação — Bastião Cinético
 
-A reserva passa a 20 e, mediante preparação da oficina, o emissor passa a CA 18 e Vida máxima 12, preservando dano existente. Aliados dentro recebem +1 CA contra ataques vindos de fora enquanto a reserva ainda tiver ao menos 1 ponto.
+a reserva passa a 20 e, mediante preparação da oficina, o emissor passa a CA 18 e Vida máxima 12, preservando dano existente. Aliados dentro recebem +1 CA contra ataques vindos de fora enquanto a reserva ainda tiver ao menos 1 ponto.
 
 #### Habilidade 3 — Sobrecarga
 
@@ -1629,7 +1629,7 @@ Funciona mesmo sem conhecer Dispositivo Autoral ou Escudo Cinético: sua Oficina
 
 #### Ampliação — Sobrecarga Crítica
 
-No modo seguro, use os benefícios do modo forçado sem desgaste. No modo forçado, o ataque recebe +3 e +3d6, o Escudo Cinético até 16 pontos temporários, a ferramenta +5 no teste ou o manipulador capacidade de 10 espaços. O desgaste passa a 6 Vida física após resolver. Uma vez por cena, ao ativar uma Sobrecarga forçada, dispense esse desgaste. Mantém Extra, 4 Karma e todos os limites de operação, sem ataques adicionais.
+no modo seguro, use os benefícios do modo forçado sem desgaste. No modo forçado, o ataque recebe +3 e +3d6, o Escudo Cinético até 16 pontos temporários, a ferramenta +5 no teste ou o manipulador capacidade de 10 espaços. O desgaste passa a 6 Vida física após resolver. Uma vez por cena, ao ativar uma Sobrecarga forçada, dispense esse desgaste. Mantém Extra, 4 Karma e todos os limites de operação, sem ataques adicionais.
 
 ### Progressão dos projetos
 
@@ -1693,7 +1693,7 @@ Resolução: cada escolhido recebe +2 em um teste de ataque antes do início do 
 
 #### Ampliação — Marcha dos Heróis
 
-Os três benefícios duram duas rodadas e cada um acrescenta também +1d20 ao ataque escolhido, respeitando o teto de dados. Ao receber a inspiração, cada aliado pode mover 2 metros por rota livre uma única vez, se estiver apto; esse deslocamento não concede imunidade a gatilhos de movimento.
+os três benefícios duram duas rodadas e cada um acrescenta também +1d20 ao ataque escolhido, respeitando o teto de dados. Ao receber a inspiração, cada aliado pode mover 2 metros por rota livre uma única vez, se estiver apto; esse deslocamento não concede imunidade a gatilhos de movimento.
 
 #### Habilidade 2 — Sonata Calmante
 
@@ -1713,7 +1713,7 @@ Exige a atuação registrada e Extra nos turnos seguintes para manter; encerrar 
 
 #### Ampliação — Concerto Lendário
 
-Duração de quatro rodadas e alcance de 30 m. Uma vez por ativação, ao escolher o movimento na ativação ou no início do turno, mantenha dois movimentos distintos até o início do próximo turno. Cada movimento conserva seus limites.
+duração de quatro rodadas e alcance de 30 m. Uma vez por ativação, ao escolher o movimento na ativação ou no início do turno, mantenha dois movimentos distintos até o início do próximo turno. Cada movimento conserva seus limites.
 
 ### Progressão de status e desenvolvimento
 
@@ -1753,7 +1753,7 @@ Resolução: faça Espírito + Ocultismo contra Presença + Liderança ou Espír
 
 #### Ampliação — Maldição Persistente
 
-Pague 5 Karma, a penalidade se torna −3 e duração de duas rodadas. O alvo pode gastar uma Principal para tentar romper, com a mesma combinação defensiva contra o resultado original registrado; igualdade ou resultado maior encerra. Use o resultado original registrado como CD, sem nova rolagem do Ocultista;
+pague 5 Karma, a penalidade se torna −3 e duração de duas rodadas. O alvo pode gastar uma Principal para tentar romper, com a mesma combinação defensiva contra o resultado original registrado; igualdade ou resultado maior encerra. Use o resultado original registrado como CD, sem nova rolagem do Ocultista;
 
 #### Habilidade 2 — Correntes Espirituais
 
@@ -1763,7 +1763,7 @@ Resolução: faça Espírito + Ocultismo contra a CA do alvo. Total aplica Lento
 
 #### Ampliação — Cárcere Invisível
 
-Pague 7 Karma e afete até dois alvos a até 5 metros um do outro, ambos no alcance. Faça uma rolagem de ataque comparada às duas CAs, com defesas individuais. Se pagar o preço corrompido, escolha um deles antes de rolar: num total contra ele, substitua Lento por Imobilizado até o início do próximo turno do Ocultista, voltando a Lento pelo tempo restante. O outro alvo não recebe Imobilizado.
+pague 7 Karma e afete até dois alvos a até 5 metros um do outro, ambos no alcance. Faça uma rolagem de ataque comparada às duas CAs, com defesas individuais. Se pagar o preço corrompido, escolha um deles antes de rolar: num total contra ele, substitua Lento por Imobilizado até o início do próximo turno do Ocultista, voltando a Lento pelo tempo restante. O outro alvo não recebe Imobilizado.
 
 #### Habilidade 3 — Ritual Profano
 
@@ -1773,7 +1773,7 @@ Preparação: Controle da Corrupção 1, acesso à fonte e um foco pequeno, prep
 
 #### Ampliação — Condenação Profana
 
-O dano passa a 2d8 + Presença. No primeiro pulso que retirar Vida, o alvo faz Presença + Controle da Corrupção CD 18; falha acrescenta 1 Carga, sucesso não acrescenta. Quem não puder possuir Carga ignora apenas essa consequência. A tentativa acontece uma única vez por ritual, sem novo teste em cada pulso.
+o dano passa a 2d8 + Presença. No primeiro pulso que retirar Vida, o alvo faz Presença + Controle da Corrupção CD 18; falha acrescenta 1 Carga, sucesso não acrescenta. Quem não puder possuir Carga ignora apenas essa consequência. A tentativa acontece uma única vez por ritual, sem novo teste em cada pulso.
 
 ### Progressão de status e desenvolvimento
 
@@ -1813,7 +1813,7 @@ Resolução: por três rodadas, no primeiro ataque ou manobra do seu turno contr
 
 #### Ampliação — Caça Metódica
 
-Duração até o fim da cena. O primeiro acerto total de cada rodada contra o Foco recebe +1d6 adicional e ignora 2 de Resistência pertinente ao ataque. Se o Foco tentar se ocultar, oponha Intelecto + Percepção à sua Furtividade, quando você ainda puder acompanhá-lo; a ampliação não enxerga através de cobertura total.
+duração até o fim da cena. O primeiro acerto total de cada rodada contra o Foco recebe +1d6 adicional e ignora 2 de Resistência pertinente ao ataque. Se o Foco tentar se ocultar, oponha Intelecto + Percepção à sua Furtividade, quando você ainda puder acompanhá-lo; a ampliação não enxerga através de cobertura total.
 
 #### Habilidade 2 — Zona de Interdição
 
@@ -1823,7 +1823,7 @@ Resolução: instale a zona automaticamente por duas rodadas. A primeira vez em 
 
 #### Ampliação — Cerco Modular
 
-Duração de três rodadas e CD 18. Numa falha, pode substituir os dois efeitos por Imobilizado até o fim do turno afetado. Uma vez por turno, com Extra, reposicione o centro até 3 metros em superfície válida e dentro do alcance; o movimento da área não gera teste imediato, que acontece no próximo gatilho normal. A linha de tiro pode ser reorientada. Uma armadilha exige alguém ao alcance capaz de movê-la ou um mecanismo de deslocamento registrado; a Extra não a teleporta nem concede alcance físico. Um selo conserva seus requisitos de fonte e superfície. Nenhum método atravessa cobertura total.
+duração de três rodadas e CD 18. Numa falha, pode substituir os dois efeitos por Imobilizado até o fim do turno afetado. Uma vez por turno, com Extra, reposicione o centro até 3 metros em superfície válida e dentro do alcance; o movimento da área não gera teste imediato, que acontece no próximo gatilho normal. A linha de tiro pode ser reorientada. Uma armadilha exige alguém ao alcance capaz de movê-la ou um mecanismo de deslocamento registrado; a Extra não a teleporta nem concede alcance físico. Um selo conserva seus requisitos de fonte e superfície. Nenhum método atravessa cobertura total.
 
 #### Habilidade 3 — Interceptação Cirúrgica
 
@@ -1833,7 +1833,7 @@ Resolução: faça um ataque básico com a combinação normal da arma contra CA
 
 #### Ampliação — Supressão Perfeita
 
-Limite de percepção de 30 metros, ainda respeitando a arma, e +1d20 no ataque. Num total contra ação hostil, além de Abalado, retire uma Reação disponível do alvo, sem dívida se nenhuma estiver disponível, até o fim do turno atual e aplique −2 ao resultado dessa ação antes da comparação. Esses efeitos não apagam uma ação já concluída.
+limite de percepção de 30 metros, ainda respeitando a arma, e +1d20 no ataque. Num total contra ação hostil, além de Abalado, retire uma Reação disponível do alvo, sem dívida se nenhuma estiver disponível, até o fim do turno atual e aplique −2 ao resultado dessa ação antes da comparação. Esses efeitos não apagam uma ação já concluída.
 
 ### Progressão de status e desenvolvimento
 
@@ -1873,7 +1873,7 @@ Resolução: chame a criatura imediatamente, sem teste adicional para um pacto e
 
 #### Ampliação — Resposta ao Chamado
 
-A primeira criatura chamada por esta habilidade na cena pode receber imediatamente um comando sem gastar outra ação, contado no teto normal. Uma vez por cena, pode pagar mais 2 Karma para fazer Chamado Rápido como Livre no próprio turno; esse uso consome uma das duas ativações, não uma terceira.
+a primeira criatura chamada por esta habilidade na cena pode receber imediatamente um comando sem gastar outra ação, contado no teto normal. Uma vez por cena, pode pagar mais 2 Karma para fazer Chamado Rápido como Livre no próprio turno; esse uso consome uma das duas ativações, não uma terceira.
 
 #### Habilidade 2 — Elo Protetor
 
@@ -1883,7 +1883,7 @@ Resolução: reduza o dano do protegido em 1d6 + Presença, mínimo 0 de dano re
 
 #### Ampliação — Vínculo Inquebrável
 
-Redução de 2d6 + Presença. Se reduzir o dano a 0, o protegido pode deslocar-se 2 metros por rota livre depois da resolução, sem provocar reações de movimento do agressor. Esse ajuste não é comando, não concede ataque e não aumenta o teto de ordens.
+redução de 2d6 + Presença. Se reduzir o dano a 0, o protegido pode deslocar-se 2 metros por rota livre depois da resolução, sem provocar reações de movimento do agressor. Esse ajuste não é comando, não concede ataque e não aumenta o teto de ordens.
 
 #### Habilidade 3 — Ordem Dupla
 
@@ -1893,7 +1893,7 @@ Resolução: dê um comando diferente a cada criatura, escolhendo Atacar, Guarda
 
 #### Ampliação — Comando de Legião
 
-A mesma Extra pode comandar até três criaturas elegíveis, uma vez cada, atingindo o teto total do turno. Com apenas uma elegível, além do +2, conceda um Movimento adicional depois do comando, sem ataque ou técnica extra. Nenhuma versão concede outra Reação, cura ou segundo comando à mesma criatura.
+a mesma Extra pode comandar até três criaturas elegíveis, uma vez cada, atingindo o teto total do turno. Com apenas uma elegível, além do +2, conceda um Movimento adicional depois do comando, sem ataque ou técnica extra. Nenhuma versão concede outra Reação, cura ou segundo comando à mesma criatura.
 
 ### Progressão de status e desenvolvimento
 
@@ -1933,7 +1933,7 @@ Resolução: escolha uma função coerente com o elemento. Cobertura concede +2 
 
 #### Ampliação — Campo Soberano
 
-Raio de 5 metros e duração de cinco rodadas. Nomeie os aliados que serão poupados: eles ignoram terreno e ocultação produzidos pelo campo, e seus ataques atravessam a cobertura criada sem conceder seu bônus ao inimigo. A seleção não altera cobertura natural ou efeitos de outra fonte.
+raio de 5 metros e duração de cinco rodadas. Nomeie os aliados que serão poupados: eles ignoram terreno e ocultação produzidos pelo campo, e seus ataques atravessam a cobertura criada sem conceder seu bônus ao inimigo. A seleção não altera cobertura natural ou efeitos de outra fonte.
 
 #### Habilidade 2 — Intervenção Elemental
 
@@ -1943,7 +1943,7 @@ Resolução: automaticamente reduza em um grau o resultado contra um único prot
 
 #### Ampliação — Contrafluxo Absoluto
 
-Uma vez por cena, pague 8 Karma no lugar de 5 para reduzir dois graus, podendo anular um total. Se anular, pode criar no ponto de interceptação um campo de Domínio Elemental básico até o início do próximo turno, sem custo ou ação adicional. Ele ocupa sua única vaga e encerra outro campo seu; é um efeito defensivo, sem ativar Assinatura ou outro ataque.
+uma vez por cena, pague 8 Karma no lugar de 5 para reduzir dois graus, podendo anular um total. Se anular, pode criar no ponto de interceptação um campo de Domínio Elemental básico até o início do próximo turno, sem custo ou ação adicional. Ele ocupa sua única vaga e encerra outro campo seu; é um efeito defensivo, sem ativar Assinatura ou outro ataque.
 
 #### Habilidade 3 — Forma Soberana
 
@@ -1967,7 +1967,7 @@ Expressões elementais: aplique somente a expressão correspondente ao elemento 
 
 #### Ampliação — Forma Primordial
 
-Duração de cinco rodadas e desconto de 3, mínimo 1. A Assinatura pode ativar duas vezes no próprio turno, em duas técnicas distintas; uma técnica com vários alvos ou pulsos não conta duas vezes. Bônus idênticos de CA, Vantagem ou Desvantagem continuam sem acumular.
+duração de cinco rodadas e desconto de 3, mínimo 1. A Assinatura pode ativar duas vezes no próprio turno, em duas técnicas distintas; uma técnica com vários alvos ou pulsos não conta duas vezes. Bônus idênticos de CA, Vantagem ou Desvantagem continuam sem acumular.
 
 ### Progressão de status e desenvolvimento
 
@@ -2439,9 +2439,9 @@ Um ritual exige foco e tempo de preparação. Registre a técnica ou improvisaç
 
 Reduzir o custo final em 1 por rodada de preparação, até o máximo de 5;
 
-Receber +1 dado no teste principal; ou
+receber +1 dado no teste principal; ou
 
-Aplicar sem custo um modificador de valor 2 ou menor do Capítulo 10.
+aplicar sem custo um modificador de valor 2 ou menor do Capítulo 10.
 
 Até duas pessoas treinadas podem Ajudar. Todos os participantes compartilham a consequência direta de uma falha.
 

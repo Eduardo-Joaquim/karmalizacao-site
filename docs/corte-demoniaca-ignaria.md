@@ -8,6 +8,8 @@ Os terraços de Aqueronte se erguem entre cânions de cinza e canais de lava ant
 
 Valac exige juramentos públicos e mantém suas quatro filhas em condições de disputar o trono. As três mais velhas acumulam aliados, espionam as fortalezas umas das outras e sabem que a mãe aprovaria uma sucessão comprada com suas mortes. Bael, a mais nova, continua enviando cartas às irmãs sem cobrar resposta. Os criados reconhecem seus selos porque são os únicos que não precisam ser abertos sobre uma bandeja de metal.
 
+Depois da posse de Atargatis Kalypso em Halikarnós, Valac arrancou-lhe o braço esquerdo em confronto direto. Atargatis sobreviveu, manteve a coroa de superfície e fechou as eclusas de Thalassia; Nammu Salácia conservou a soberania de Ápsu. O bloqueio é posterior aos três anos de crise sucessória tritã, não uma guerra travada pelas herdeiras antes de nascerem.
+
 O Ducado de Agares guarda as passagens do sul. Os marquesados de Andras e Marchosias protegem o palácio por caminhos diferentes: um conhece os nomes que devem desaparecer; o outro reúne os soldados que entram depois. Os seus vínculos com a coroa são políticos. Nenhum decreto transforma todos os demônios em cúmplices das escolhas de Valac.
 
 ## A rainha e suas herdeiras {#corte-lucifero}

@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const grants=json('data/world-blessings.json'),gods=json('data/pantheon-deities.json');
-const files=['gaeria','elven-gaeria','vampire-ignaria','demon-ignaria','nidavellir','demi-aeria','court-sheets'];
-test('all sixteen outorgas have distinct compiled cards and named grantors',()=>{
- assert.equal(grants.length,16);assert.equal(new Set(grants.map(g=>g.id)).size,16);
+const files=['gaeria','elven-gaeria','vampire-ignaria','demon-ignaria','nidavellir','demi-aeria','court-sheets','thalassia'];
+test('all seventeen outorgas have distinct compiled cards and named grantors',()=>{
+ assert.equal(grants.length,17);assert.equal(new Set(grants.map(g=>g.id)).size,17);
  const text=files.map(f=>JSON.stringify(json(`data/${f}.json`))).join(' ');
  for(const g of grants){assert(gods.some(d=>d.id===g.deityId),g.owner);assert(text.includes(g.id),g.id);for(const field of ['origin','description','motivation','nature'])assert(g[field].length>10);}
  assert.equal(grants.filter(g=>g.owner==='Eirik').length,2);

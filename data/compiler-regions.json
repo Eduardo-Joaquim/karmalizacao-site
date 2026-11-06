@@ -126,5 +126,46 @@
       5,
       5
     ]
+  },
+  "--thalassia": {
+    "source": "docs/thalassia.md",
+    "file": "data/thalassia.json",
+    "title": "Thalassia · Os três tronos do oceano",
+    "slug": "thalassia",
+    "url": "/mundo/thalassia",
+    "characters": [
+      "atargatis-kalypso",
+      "galateia-kalypso",
+      "cymopoleia-kalypso",
+      "glaukos-halikarnos",
+      "phorcys-pelagia",
+      "proteus-bathys",
+      "triton-apsu",
+      "nereu-eclusa",
+      "nammu-salacia",
+      "beroso-salmoura",
+      "adapa-eclusa",
+      "ummu-hubur",
+      "asteria-hubur",
+      "lachesis-hubur",
+      "atropos-hubur"
+    ],
+    "counts": [
+      11,
+      6,
+      6,
+      5,
+      5,
+      4,
+      4,
+      4,
+      8,
+      4,
+      4,
+      10,
+      11,
+      8,
+      8
+    ]
   }
 }

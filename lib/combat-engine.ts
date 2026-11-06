@@ -1,3 +1,4 @@
+import { rollDiceExpression } from "@/lib/dice-expression";
 import {calculateElementalDefense, CORRUPT_CONTROL_BASE,corruptionMatrixRisk} from '@/lib/technique-matrices';
 import {calculateInvocationStats} from '@/lib/invocation-rules';
 import { visualFromRoll } from '@/lib/combat-visuals';
@@ -58,11 +59,7 @@ export function skillRoll(draft:CharacterPayload, skill:string, approach?:Attrib
   return { ...result, dice, selection:worst?'menor' as const:'maior' as const, formula:`${worst?'menor':'maior'} de ${count}d20 ${test.bonus+extraBonus>=0?'+':''}${test.bonus+extraBonus}`, test };
 }
 export function damageDice(text:string, critical=false, diceSource=randomDice) {
-  const match=text.match(/(?<![\w])(\d{1,2}d(?:20|12|10|8|6|4)(?:\s*\+\s*\d{1,3}(?:d(?:20|12|10|8|6|4))?)*)(?!\d)/i);
-  if(!match) return null;
-  const terms=match[1].replace(/\s+/g,'').split('+');let bonus=0;const dice:number[]=[];const formulas:string[]=[];
-  for(const term of terms){const m=term.match(/^(\d+)d(\d+)$/i);if(!m){bonus+=Number(term);continue;}const count=Math.min(30,Number(m[1]))*(critical?2:1);if(dice.length+count>60)throw Error('Fórmula excede 60 dados.');dice.push(...diceSource(count,Number(m[2])));formulas.push(`${count}d${m[2]}`);}
-  return {formula:formulas.join('+')+(bonus?`+${bonus}`:''),dice,total:dice.reduce((a,b)=>a+b,0)+bonus};
+  return rollDiceExpression(text,critical,diceSource);
 }
 export function fixedCost(text:string):number|null {
   if (/^\s*(?:0|gratuit[ao]|passiv[ao])(?:\s*Karma)?\s*$/i.test(text)) return 0;

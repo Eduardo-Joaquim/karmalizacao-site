@@ -1,3 +1,4 @@
+import { DiceRoller } from "@/components/dice-roller";
 import { DossierReading } from "@/components/dossier-reading";
 import { bestiaryClassification } from "@/lib/bestiary-classification";
 import { abilityCostFields } from "@/lib/ability-cost-fields";
@@ -25,7 +26,7 @@ import { NobleOrnament } from "@/components/noble-ornament";
 import { NobleTraitCards } from "@/components/noble-details";
 import { SkillPanel } from "@/components/skill-panel";
 
-export type CourtProfile = Omit<(typeof elven.courtProfiles)[number],"abilities"> & {abilities:Array<{id:string;name:string;kind:string;source:string;grade:string;cost:string|number;action:string;fields:Array<{label:string;html:string}>;matrix?:string;damageType?:string;baseDamage?:string}>};
+export type CourtProfile = Omit<(typeof elven.courtProfiles)[number],"abilities"> & {abilities:Array<{id:string;name:string;kind:string;source:string;grade:string;cost:string|number;action:string;fields:Array<{label:string;html:string}>;matrix?:string;damageType?:string;baseDamage?:string;damageFormulas?:string[]}>};
 type Profile = CourtProfile;
 export type CourtIdentity = { role:string; stage:string; rank:string; Icon:LucideIcon; accent:string; jewel:string };
 type Ability = Profile["abilities"][number];
@@ -62,7 +63,7 @@ function AbilityCard({ ability, index, Mark=TreePine, showSource=false, owner }:
   return <section className={"elven-ability" + (signature ? " elven-signature" : "") + (reaction ? " elven-reaction" : "")} id={ability.id}>
     <header><span>{String(index+1).padStart(2,"0")}</span><div>{(signature||reaction)&&<p>{signature?"ASSINATURA":"REAÇÃO DA COROA"}</p>}<h5>{ability.name}</h5></div>{signature?<Crown aria-hidden="true"/>:reaction?<Orbit aria-hidden="true"/>:<Mark aria-hidden="true"/>}</header>
     <div className="elven-ability-meta">{ability.damageType&&<span>{ability.damageType}</span>}{showSource&&ability.source&&<span className="ability-source">{ability.source}</span>}{ability.grade&&<span>Grau {ability.grade}</span>}<span>{ability.cost}</span><span>{ability.action}</span></div>
-    <Fields fields={abilityCostFields(owner,ability.name,ability.fields)}/>
+    <Fields fields={abilityCostFields(owner,ability.name,ability.fields)}/>{ability.damageFormulas?.length? <div className="thalassia-ability-rolls">{ability.damageFormulas.map(formula=><DiceRoller key={formula} formula={formula} label={ability.name}/>)}</div>:null}
   </section>;
 }
 

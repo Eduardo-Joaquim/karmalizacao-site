@@ -1,3 +1,4 @@
+import thalassia from "@/data/thalassia.json";
 import threats from "@/data/early-threats.json";
 import nidavellir from "@/data/nidavellir.json";
 import aeria from "@/data/demi-aeria.json";
@@ -14,7 +15,7 @@ export function GET(request: Request) {
   if (["ignaria", "sarkora"].includes(params.get("regiao") ?? "")) return Response.json(vampires);
   if (params.get("regiao") === "gaeria") return Response.json(gaeria);
   if (params.get("regiao") === "elaranth") return Response.json(elven);
-  const additions:Record<string,unknown>={demonios:demons,ghouls,lunaviel,aeria,nidavellir};
+  const additions:Record<string,unknown>={demonios:demons,ghouls,lunaviel,aeria,nidavellir,thalassia};
   if (params.get("regiao") && additions[params.get("regiao")!]) return Response.json(additions[params.get("regiao")!]);
   const slug = params.get("integrante");
   if (!slug) return Response.json({ members: court });

@@ -2,6 +2,8 @@
 
 #### História e Origem {#euphere-historia}
 
+Há dois mil anos, a Falsa Santa, sua Corte e os Pecados daquele período conduziram o expurgo dos Abissais. Os cargos tiveram sucessão; a composição inteira da corte atual não é atribuída retroativamente à campanha. Euphere foi uma das sobreviventes, assim como Ummu-Hubur, hoje Deusa Exterior em Hubur.
+
 Antes de ser chamada de Ira, Euphere era uma das maiores guerreiras abissais e discípula de Davocar. Durante o extermínio de seu povo, comandou a resistência e matou a criatura que então carregava esse título. A vitória não lhe trouxe liberdade. Capturada pela Falsa Santa, foi obrigada a ocupar o lugar da inimiga que destruíra.
 
 O nome, porém, resistiu. Nas capas dos livros, nas salas de aula e nas dedicatórias, ela continua sendo Euphere. Seus romances guardam cidades perdidas, formações militares e lembranças que a corte tenta transformar em silêncio. O Quarto sem Mar fala de aprisionamento; Cinzas no Fundo da Garganta conserva a memória dos combatentes; A Carta que Chegou Tarde procura alguém que já não pode responder; Quando a Água Aprendeu a Odiar descreve o dragão negro que envolve seu corpo.

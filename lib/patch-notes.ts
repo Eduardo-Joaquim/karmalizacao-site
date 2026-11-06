@@ -8,6 +8,7 @@ export type PatchNote = {
 
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
+  {id:"patch-2-0-2-2026-11-05-thalassia",version:"2.0.2",label:"Patch 2.0.2 · 05/11/2026",title:"Thalassia e as soberanias do mundo",highlights:["Thalassia recebeu os três estratos de poder, quinze histórias e fichas completas, com 98 técnicas e assinaturas.","Atargatis, Nammu, Ummu-Hubur e as três princesas abissais possuem jurisdições e poderes distintos. A sucessão tritã foi ligada aos confrontos de Al-Aqwa e Valac.","A política dos nove povos e dos quatro continentes foi unificada, com Nidavellir como república de Aéria e a Torre com jurisdição própria.","Rolagens de dano aceitam d30, d50 e outras quantidades de faces; as assinaturas cósmicas têm botões próprios."]},
   {id:"patch-2-0-1-2026-11-05-editorial-r3",version:"2.0.1",label:"Patch 2.0.1 · 05/11/2026",title:"Regras afinadas, leitura renovada",highlights:[
     "Etapas raciais e habilidades de classe ganharam cartões, tópicos e destaques para custos, ações e resultados. Tabelas e exemplos têm nova apresentação editorial.",
     "Catalisadores, referências entre classes e exemplos de dano foram alinhados às cinco matrizes. Escudo pesado reduz 1 m e impõe Desvantagem em Evasão e Acrobacia.",

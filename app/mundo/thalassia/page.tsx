@@ -1,0 +1,6 @@
+import data from '@/data/thalassia.json';
+import { CrownNavigation } from '@/components/crown-navigation';
+import { ThalassiaContent } from '@/components/thalassia-content';
+import { SITE_ORIGIN } from '@/lib/public-navigation';
+export const metadata={title:data.title,description:'Halikarnós, Ápsu e Hubur: duas coroas tritãs, uma Deusa Exterior e as três princesas abissais.',alternates:{canonical:SITE_ORIGIN+'/mundo/thalassia'}};
+export default function Page(){return <div className="site-page realm-page realm-with-index thalassia-page"><CrownNavigation entries={data.navigation} title={data.title} region="thalassia" home="/regras/21-bestiario?regiao=thalassia" homeLabel="Thalassia · Voltar ao Bestiário"/><main className="site-shell realm-shell"><header className="realm-hero"><p className="atlas-overline">THALASSIA · CONTINENTE DA ÁGUA</p><h1>Três tronos.<br/>Um oceano fechado.</h1><p>As Eclusas de Halikarnós, as Basílicas de Ápsu e a Fossa de Hubur.</p><p><a href="/mundo/politica">Consultar a política dos nove povos →</a></p><div className="realm-summary"><div><strong>15</strong><span>Figuras</span></div><div><strong>98</strong><span>Técnicas e assinaturas</span></div></div></header><ThalassiaContent/></main></div>;}

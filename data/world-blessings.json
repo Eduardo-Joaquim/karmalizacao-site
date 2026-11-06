@@ -158,5 +158,15 @@
     "origin": "A Tecelã Exterior entregou os fios à curandeira. Sua natureza permanece fora das nove Asas.",
     "motivation": "A entidade pode desejar que toda vida prolongada permaneça ligada à sua trama. A própria portadora interpreta essa escolha como um dever de amparo.",
     "description": "Os fios aproximam carne, conduzem energia e tornam a continuidade da vida uma obra que pode ser costurada. A dádiva sustenta sua vocação de curandeira; os usos corruptos continuam sendo técnicas próprias, sem legitimá-la como Santa."
+  },
+  {
+    "id": "outorga-17",
+    "owner": "Atargatis",
+    "name": "Ius Procellae",
+    "deityId": "susanoo",
+    "nature": "Outorga pessoal",
+    "origin": "A evacuação de uma cidade durante a tempestade que a própria soberana provocara.",
+    "motivation": "Susanoo exige que Atargatis enfrente as consequências do próprio bloqueio e preserve os indefesos.",
+    "description": "Uma guarda de pressão protege aqueles que a decisão da soberana colocou em perigo. Não governa vetores; Vectis é uma herança Kalypso distinta."
   }
 ]

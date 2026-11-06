@@ -11,6 +11,7 @@ subprocess.run(['python3', str(root / 'scripts/build-gaeria.py')], check=True)
 subprocess.run(['python3', str(root / 'scripts/build-vampire-ignaria.py')], check=True)
 subprocess.run(['python3', str(root / 'scripts/build-aeria.py')], check=True)
 subprocess.run(['python3', str(root / 'scripts/build-early-threats.py')], check=True)
+subprocess.run(['python3', str(root / 'scripts/build-thalassia.py')], check=True)
 source = (root / 'docs/bestiario.md').read_text()
 body = source.split('\n', 1)[1]
 html = subprocess.check_output(['pandoc', '-f', 'markdown', '-t', 'html5'], input=body, text=True)

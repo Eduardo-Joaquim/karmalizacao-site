@@ -1,3 +1,5 @@
+import thalassia from "@/data/thalassia.json";
+import {ThalassiaArchive} from "@/components/thalassia-content";
 import nidavellir from "@/data/nidavellir.json";
 "use client";
 import aeria from "@/data/demi-aeria.json";
@@ -45,7 +47,7 @@ export function BestiaryReader({ initialMember = "", initialMode = "combat", ini
   useEffect(() => {
     function followHash() {
       const hash = decodeURIComponent(window.location.hash.slice(1));
-      for (const collection of [demons,ghouls,lunaviel,aeria,nidavellir]) { if(collection.anchors.includes(hash)){window.location.replace(`${collection.url}#${encodeURIComponent(hash)}`); return;} }
+      for (const collection of [demons,ghouls,lunaviel,aeria,nidavellir,thalassia]) { if(collection.anchors.includes(hash)){window.location.replace(`${collection.url}#${encodeURIComponent(hash)}`); return;} }
       if (vampires.anchors.includes(hash)) { window.location.replace(`/mundo/ignaria/corte-vampirica#${encodeURIComponent(hash)}`); return; }
       if (gaeriaAnchors.includes(hash) || hash === "reino-humano-valdaria") { window.location.replace(`/mundo/gaeria/reino-humano#${hash === "reino-humano-valdaria" ? "valdaria" : encodeURIComponent(hash)}`); return; }
       if (elven.anchors.includes(hash) || hash === "reino-elfico-elaranth") { window.location.replace(`/mundo/gaeria/reino-elfico#${hash === "reino-elfico-elaranth" ? "elaranth" : encodeURIComponent(hash)}`); return; }
@@ -76,14 +78,14 @@ export function BestiaryReader({ initialMember = "", initialMode = "combat", ini
         <div><p className="atlas-overline">KARMALIZAÇÃO / CÓDICE XXI</p><h1>Bestiário<span>.</span></h1><p>Conheça os nomes que o mundo aprendeu a temer.</p></div>
         <div className="atlas-heading-mark" aria-hidden="true"><Skull /><span>ARCHIVUM<br />KARMALIZAÇÃO</span></div>
       </header>
-      <div className="dossier-reading-nav"><a href="/bestiario/ameacas">Monstros e ameaças · Etapas I–IV</a><a href="/mesa">Mestre em combate · duas fichas</a></div><nav className="atlas-regions" aria-label="Seções do Bestiário">
+      <div className="dossier-reading-nav"><a href="/mundo/politica">Povos e soberanias · As nove raças</a><a href="/bestiario/ameacas">Monstros e ameaças · Etapas I–IV</a><a href="/mesa">Mestre em combate · duas fichas</a></div><nav className="atlas-regions" aria-label="Seções do Bestiário">
         {regions.map((item, index) => <button type="button" key={item.id} aria-pressed={region === item.id} onClick={() => { setRegion(item.id); window.history.replaceState(null, "", `#${item.id}`); }}><span>0{index + 1}</span>{item.name}</button>)}
         <button type="button" aria-pressed={region === "cortes"} onClick={() => { setRegion("cortes"); window.history.replaceState(null, "", "#cortes"); }}><span>05</span>As duas cortes</button>
       </nav>
 
       {activeRegion ? <section className="atlas-region-content" aria-labelledby="region-title">
         <activeRegion.Icon aria-hidden="true" /><p className="atlas-overline">CONTINENTE · {activeRegion.element}</p><h2 id="region-title">{activeRegion.name}</h2><p>{activeRegion.text}</p>
-        {region === "gaeria" ? <GaeriaArchive/> : region === "ignaria" ? <IgnariaArchive/> : region === "aeria" ? <AeriaArchive/> : <div className="atlas-region-categories">{["Monstros locais", "Organizações e nobres", "Rainha e herdeiras"].map((name,i)=><div key={name}><span>0{i+1}</span><h3>{name}</h3><p>Sem registros neste catálogo.</p></div>)}</div>}
+        {region === "gaeria" ? <GaeriaArchive/> : region === "ignaria" ? <IgnariaArchive/> : region === "aeria" ? <AeriaArchive/> : region === "thalassia" ? <ThalassiaArchive/> : <div className="atlas-region-categories">{["Monstros locais", "Organizações e nobres", "Rainha e herdeiras"].map((name,i)=><div key={name}><span>0{i+1}</span><h3>{name}</h3><p>Sem registros neste catálogo.</p></div>)}</div>}
       </section> : <>
         <section className="court-intro"><div><p className="atlas-overline">A CORTE DA FALSA SANTA</p><h2>Sete pecados.<br /><em>Uma falsa salvação.</em></h2></div><p>A Prorrogadora da Extinção e os sete pecados de sua corte. Por trás de cada título, uma história que ainda respira.</p><span className="court-count" aria-hidden="true">VII</span></section>
         <nav className="court-roster" aria-label="Integrantes da Corte da Falsa Santa">

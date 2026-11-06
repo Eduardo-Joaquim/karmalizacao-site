@@ -5038,3 +5038,13 @@ h4,
 
 .rule-content .tome-ability-card { margin-block: 1.5rem; padding: 0 .85rem .65rem; border: 1px solid rgba(194,166,109,.16); border-radius: 8px; background: rgba(20,17,26,.22); }
 .rule-content .tome-ability-card > h4 { margin-top: 0; margin-inline: -.85rem; }
+
+.thalassia-page { --elven-accent:#a7d9d2; background:radial-gradient(ellipse at 70% 0%,#17394144,transparent 55%),#0d101a; }
+.thalassia-page .realm-hero { border-color:#5fa6b144; background:linear-gradient(135deg,#1b3c4944,#15122588); }
+.thalassia-damage-rolls { padding:1.2rem; border:1px solid #8bbdca44; border-radius:8px; }
+.thalassia-damage-rolls > section { padding:.8rem 0; border-top:1px solid #8bbdca22; }
+.thalassia-damage-rolls > section > div { display:flex; flex-wrap:wrap; gap:.5rem; }
+.thalassia-directory { margin-block:1.5rem; }
+
+.dice-roller > output { display:grid; gap:.3rem; margin-top:.5rem; padding:.65rem .8rem; border:1px solid #8bbdca44; border-radius:5px; }
+.dice-roller > output b { color:#e7d6a5; font-size:1.2rem; }
