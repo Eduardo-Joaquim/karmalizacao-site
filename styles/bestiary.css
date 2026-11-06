@@ -29,3 +29,8 @@
 .thalassia-page .boss-card-transcendental .elven-signature { border:1px solid #c1d3e7!important; background:conic-gradient(from 100deg at 100% 0%,#070d1b,#1e3a5f 17deg,#070d1b 18deg)!important; }
 .thalassia-page .boss-card-transcendental .noble-ornament { opacity:.32; color:#c2d4e9; transform:rotate(0); }
 @media(max-width:700px) { .thalassia-page .boss-card-transcendental .elven-identity { min-height:275px; } .royal-technique-tools { padding:.75rem; } }
+
+.thalassia-page :is(.gaeria-bestiary-return,.crown-navigation-toggle,.crown-navigation-panel) { background:#070d1bf5; border-color:#1e3a5f; color:#dce8f6; }
+.thalassia-page :is(.gaeria-bestiary-return:hover,.crown-navigation-toggle:hover,.crown-navigation-panel a[aria-current]) { background:#1e3a5f; border-color:#92bad7; }
+.thalassia-page .crown-navigation :is(strong,small,span,p,.crown-index-home) { color:#adcde7; }
+.thalassia-page .gaeria-bestiary-return:focus-visible { outline-color:#92bad7; }
