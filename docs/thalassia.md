@@ -989,7 +989,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 #### Ficha de Combate {#ummu-hubur-ficha}
 
-**Identidade:** Abissal · Especialista · Etapa Kármica · DEUSA EXTERIOR · ANTIGA ÁPICE ABISSAL. **Vida:** 1200. **Karma:** 240. **CA:** 35. **Deslocamento:** 9 m. **Atributos:** Força 12 · Agilidade 10 · Constituição 10 · Intelecto 10 · Presença 12 · Espírito 12.
+**Identidade:** Abissal · Especialista · Etapa Kármica · DEUSA EXTERIOR · ANTIGA ÁPICE ABISSAL. **Vida:** 1200. **Karma:** 288. **CA:** 35. **Deslocamento:** 9 m. **Atributos:** Força 12 · Agilidade 10 · Constituição 10 · Intelecto 10 · Presença 12 · Espírito 12.
 
 **Perícias:** Luta 3; Reflexos 3; Atletismo 3; Canalização de Karma 3; Controle Elemental 3; Manifestação de Bênção 3; Controle da Corrupção 3; Investigação 3; Percepção 3; demais 0.
 
@@ -1001,7 +1001,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 
-**Traço 2:** Patamar Kármico: Vida 1200, Karma 240 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
+**Traço 2:** Patamar Kármico: Vida 1200, Karma 288 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
 
 **Traço 3:** Três manifestações por Domínio, por combate: Força, Velocidade, Resistência, Superação e Técnica conservam contadores independentes. Cada ativação custa 3 Karma e Ação Extra, dura seis rodadas e não acumula com outra do mesmo Domínio. Os dois Refinamentos são de Permanência. Exigências de dois, quatro ou cinco Domínios verificam manifestações diferentes ativas no instante da liberação; a Essência passiva isolada não basta.
 
@@ -1009,7 +1009,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Traço 5:** Registro de Entropia: guarde o Karma máximo íntegro, anterior à maldição, separadamente do máximo acessível. Descanso comum, fim de cena, cura e dissipação do campo não removem a corrosão. Somente um descanso longo completo em santuário purificado encerra a marca de Entropia; depois restaure o máximo íntegro e resolva a recuperação de recursos desse descanso.
 
-**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 240 Karma, 20% abaixo dos 300 da Falsa Santa.
+**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 288 Karma, 20% abaixo dos 360 da Falsa Santa.
 
 ##### 1 · Terremoto {#ummu-hubur-1}
 
