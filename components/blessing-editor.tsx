@@ -1,7 +1,9 @@
 "use client";
+import { useState } from "react";
+import { PantheonBlessingsPortal } from "@/components/pantheon-blessings-portal";
 import { ATTRIBUTES, type CharacterPayload, type DivineState, type BlessingGrant } from '@/lib/character-data';
 import { PANTHEONS, calculateAutomaticBonuses, getSkillTest } from '@/lib/character-rules';
-import { deities, blessingGrants, withBlessings, newBlessing, blessingAttribute } from '@/lib/divine-blessings';
+import { deities, blessingGrants, withBlessings, newBlessing, blessingAttribute, catalogBlessingGrant } from '@/lib/divine-blessings';
 
 export function DivineRoll({draft,attribute,skill}:{draft:CharacterPayload;attribute:string;skill:string}){
  const regent=blessingAttribute(attribute);
@@ -14,11 +16,21 @@ function Text({label,value,onChange,long=false}:{label:string;value:string;onCha
  return <label className="divine-field"><span>{label}</span>{long?<textarea maxLength={label==='Manifestação ativa'?2500:label==='Núcleo'?800:label==='Preceito'||label==='Profanação'?600:1000} rows={3} value={value} onChange={e=>onChange(e.target.value)}/>:<input maxLength={120} value={value} onChange={e=>onChange(e.target.value)}/>}</label>;
 }
 export function BlessingEditor({draft,onChange}:{draft:CharacterPayload;onChange:(patch:Partial<DivineState>)=>void}){
+ const [catalogNotice, setCatalogNotice] = useState("");
  const d=draft.divine, grants=blessingGrants(d);
  const update=(i:number,patch:Partial<BlessingGrant>)=>onChange(withBlessings(d,grants.map((b,j)=>j===i?{...b,...patch}:b)));
  return <div className="divine-editor">
  <label className="divine-field"><span>Expressão do Poder Divino</span><select value={d.expression} onChange={e=>onChange({expression:e.target.value})}>{['Bênção','Comunhão Divina','Bênção + Comunhão Divina'].map(v=><option key={v}>{v}</option>)}</select></label>
- {d.expression.includes('Bênção')&&<><p className="divine-intro">Uma dádiva tem nome, origem e propósito. Registre sua outorga e a capacidade que ela desperta em você.</p>{grants.map((b,i)=>{const selected=deities.find(g=>g.id===b.deityId&&g.pantheon===b.pantheon);return <article className="divine-altar" key={b.id}>
+ {d.expression.includes('Bênção')&&<><PantheonBlessingsPortal selected={grants.map(grant => Number(grant.id.replace('catalog-blessing-', '')))} onSelect={(blessing, deity, pantheon) => {
+   if (grants.length >= 8) { setCatalogNotice("A ficha aceita até oito Bênçãos."); return; }
+   if (grants.some(grant => grant.id === `catalog-blessing-${blessing.id}`)) return;
+   onChange(withBlessings(d, [...grants, catalogBlessingGrant(blessing, deity, pantheon)]));
+   setCatalogNotice(`${blessing.title} registrada. Escolha o atributo regente nos dados da Bênção.`);
+ }} onAuthor={() => {
+   if (grants.length >= 8) { setCatalogNotice("A ficha aceita até oito Bênçãos."); return; }
+   onChange(withBlessings(d, [...grants, newBlessing()]));
+   setCatalogNotice("Registro autoral criado abaixo.");
+ }} /><p role="status">{catalogNotice}</p><p className="divine-intro">Uma dádiva tem nome, origem e propósito. Registre sua outorga e a capacidade que ela desperta em você.</p>{grants.map((b,i)=>{const selected=deities.find(g=>g.id===b.deityId&&g.pantheon===b.pantheon);return <article className="divine-altar" key={b.id}>
  <header><small>{i===0?'BÊNÇÃO PRINCIPAL':'BÊNÇÃO ADICIONAL'}</small><h3>{b.name||'Sua Bênção'}</h3><p>{b.deity||'Escolha o deus outorgante'}{b.deityEpithet&&` · ${b.deityEpithet}`}</p></header>
  <div className="divine-grid"><Text label="Nome da Bênção" value={b.name} onChange={name=>update(i,{name})}/><label className="divine-field"><span>Panteão / Asa</span><select value={b.pantheon} onChange={e=>update(i,{pantheon:e.target.value,deityId:undefined,deity:'',deityEpithet:''})}><option value="">Escolha o panteão</option>{PANTHEONS.map(p=><option key={p}>{p}</option>)}</select></label></div>
  <div className="deity-picker" aria-label="Deuses outorgantes">{deities.filter(g=>g.pantheon===b.pantheon).map(g=><button type="button" key={g.id} aria-pressed={selected?.id===g.id} onClick={()=>update(i,{deityId:g.id,deity:g.name,deityEpithet:g.epithet})}><strong>{g.name}</strong><span>{g.epithet}</span><small>{g.spheres.join(' · ')}</small></button>)}{b.pantheon&&<button type="button" aria-pressed={!b.deityId} onClick={()=>update(i,{deityId:undefined,deity:'',deityEpithet:''})}>Outra divindade deste panteão</button>}</div>

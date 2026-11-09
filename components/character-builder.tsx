@@ -1,4 +1,7 @@
 "use client";
+import blessingsCatalog from "@/data/pantheon-blessings.json";
+import { blessingGrants, catalogBlessingGrant, withBlessings } from "@/lib/divine-blessings";
+import { PANTHEONS } from "@/lib/character-rules";
 
 import { useEffect, useMemo, useState } from "react";
 import {
@@ -251,11 +254,11 @@ async function fetchOwnedCharacter(id: string, signal?: AbortSignal): Promise<Sa
   return { ...data.character, payload: normalizeCharacterPayload(data.character.payload) };
 }
 
-export function CharacterBuilder({ displayName, authenticated = true }: { displayName: string; authenticated?: boolean }) {
+export function CharacterBuilder({ displayName, authenticated = true, initialBlessing, openPowers = false }: { displayName: string; authenticated?: boolean; initialBlessing?: number; openPowers?: boolean }) {
   const [characters, setCharacters] = useState<SavedCharacter[]>([]);
   const [activeId, setActiveId] = useState<string | null>(null);
   const [draft, setDraft] = useState<CharacterPayload>(() => createBlankCharacter());
-  const [activeTab, setActiveTab] = useState("essencia");
+  const [activeTab, setActiveTab] = useState(openPowers ? "poderes" : "essencia");
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [dirty, setDirty] = useState(false);
@@ -721,6 +724,18 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
     }
   }
 
+  const requestedBlessing = blessingsCatalog.flatMap(p => p.deities.flatMap(god => god.blessings.map(blessing => ({ blessing, god, pantheon: PANTHEONS[p.id - 1] })))).find(entry => entry.blessing.id === initialBlessing);
+  const [dismissedBlessing, dismissBlessing] = useState(false);
+  function acceptCatalogBlessing() {
+    if (!requestedBlessing) return;
+    const grants = blessingGrants(draft.divine);
+    const grant = catalogBlessingGrant(requestedBlessing.blessing, requestedBlessing.god, requestedBlessing.pantheon);
+    if (grants.some(value => value.id === grant.id)) { dismissBlessing(true); return; }
+    if (grants.length >= 8) { toast.error("A ficha aceita até oito Bênçãos."); return; }
+    const expression = draft.divine.expression === "Comunhão Divina" ? "Bênção + Comunhão Divina" : draft.divine.expression;
+    commitDraft({...draft, divine: withBlessings({...draft.divine, enabled:true, expression}, [...grants, grant])});
+    dismissBlessing(true);
+  }
   const widePage = activeTab === "poderes" || activeTab === "ficha";
 
   return (
@@ -1163,6 +1178,7 @@ export function CharacterBuilder({ displayName, authenticated = true }: { displa
                   <p>Configure todas as fontes da personagem e use os tópicos à direita para navegar.</p>
                 </div>
               </div>
+              {requestedBlessing && !dismissedBlessing && <div className="guest-notice"><strong>{requestedBlessing.blessing.title}</strong><p>Outorga de {requestedBlessing.god.name}. Adicione ao rascunho aberto e escolha seu atributo regente.</p><button type="button" disabled={loading} onClick={acceptCatalogBlessing}>Adicionar Bênção à ficha</button></div>}
               <CharacterPowerEditor draft={draft} automatic={automatic} onChange={commitDraft} />
             </TabsContent>
 

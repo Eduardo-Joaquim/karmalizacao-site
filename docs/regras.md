@@ -909,7 +909,7 @@ Para criar nova raça, escolha uma capacidade de ambiente, uma capacidade ativa 
 
 # Capítulo 6 - Classes
 
-As dezessete classes oferecem funções distintas em combate e exploração. Cada uma apresenta um traço, três habilidades e suas ampliações, com procedimentos de ativação, preparação, custo, resistência e encerramento. Os bônus iniciais e os crescimentos acompanham a progressão de sete Etapas.
+As dezoito classes oferecem funções distintas em combate e exploração. Cada uma apresenta um traço, três habilidades e suas ampliações, com procedimentos de ativação, preparação, custo, resistência e encerramento. Os bônus iniciais e os crescimentos acompanham a progressão de sete Etapas.
 
 ## Como usar as classes
 
@@ -2043,6 +2043,70 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 | Etapa VI  | +2 Karma máximo.                        | +4 Karma máximo; +1 ponto de Atributo à escolha. | Primeira ampliação.                                                   |
 | Etapa VII | +4 Vida máxima; +2 Karma máximo; +1 CA. | +3 Vida máxima; +4 Karma máximo.                 | Técnica de Assinatura Grau V, com Perícia 3; segunda ampliação.       |
 
+## Escriba Kármico
+
+**Função:** Preparação rúnica, controle de campo e detonações combinadas.
+
+**Identidade:** Calígrafos espirituais tratam Karma como linguagem. Gravam glifos em armas, armaduras, sangue e superfícies para escolher onde e quando a energia se libera.
+
+**Bônus inicial:** +1 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
+
+**Atributos recomendados:** Intelecto e Espírito.
+
+**Perícias recomendadas:** Canalização de Karma, Tática, Criação e Ocultismo.
+
+#### Traço de Classe — Caligrafia de Combate (Escrita Viva)
+
+Você mantém duas Runas adicionais no limite pessoal. Use Intelecto + Canalização de Karma para gravar selos e realizar ataques rúnicos, com Bônus Analítico quando aplicável. A CD das suas runas é 12 + Intelecto + nível de Canalização de Karma. Pode gravar uma Runa de Grau igual ou inferior à Etapa usando Movimento ou Extra. O Karma Retido volta a ficar disponível uma rodada após o Estouro.
+
+#### Habilidade 1 — Inscrição Projetada (Glifo no Ar)
+
+**Uso:** Movimento ou Principal · Custo: 2 de Karma (+ o Karma Retido da Runa escolhida) · Alcance: 12 metros.
+
+Permite desenhar uma Runa de Campo/Selo ou Runa de Armadura/Arma diretamente a distância (em um piso, parede, aliado ou equipamento a até 12m) sem precisar tocar fisicamente a superfície. Se usada como Ação Principal contra um inimigo, realiza um teste de Intelecto + Canalização de Karma contra a CA do alvo para cravar uma Runa de Selo diretamente no corpo dele, aplicando o efeito passivo da runa imediatamente.
+
+#### Ampliação — Inscrição no alvo
+
+A variante de Ação Principal permite inscrever um selo no inimigo, mediante teste contra CA.
+
+#### Habilidade 2 — Palavra Rúnica (Sintaxe Composta)
+
+**Uso:** Principal · Custo: 3 de Karma (além de estourar as Runas combinadas) · Frequência: 1 vez por rodada.
+
+Você conecta e detona 2 Runas ativas (ou 3 Runas a partir da Etapa V) no mesmo turno, fundindo seus efeitos em uma Sentença Rúnica:
+
+Lexema Duplo (2 Runas): Soma os efeitos de estouro de ambas as runas em um único alvo ou área, aumenta o alcance em +4m e reduz os limiares de CA Parcial e Total do alvo em -2 contra a detonação combinada.
+
+Sentença Tripla (3 Runas — Etapa V+): Além dos benefícios do Lexema Duplo, adiciona +2d10 de dano kármico puro antes do parcial e recupera 4 de Karma da reserva após o disparo.
+
+#### Ampliação — Sentença Tripla
+
+Da Etapa V em diante, pode combinar três Runas nos termos da habilidade.
+
+#### Habilidade 3 — Sobrescrita de Vetor (Transcrição Reativa)
+
+**Uso:** Reação (ao ser alvo de uma técnica ou ataque kármico/elemental/divino a até 15m) · Custo: 4 de Karma.
+
+Você traça um glifo de interceptação no ar, realizando um teste de Intelecto + Tática (ou Canalização de Karma) para amortecer a fórmula inimiga: você reduz o dano recebido em 1d10 + Intelecto + Etapa. Se o dano for reduzido a zero (ou se o ataque inimigo atingir apenas a faixa Parcial), você converte a energia dissipada em 1 Runa de Grau I ou II armada gratuitamente (sem consumir seu próprio Karma Retido) até o final do seu próximo turno.
+
+#### Ampliação — Energia interceptada
+
+Uma Runa de Grau I ou II obtida pela interceptação dura até o fim do seu próximo turno e ocupa espaço de Runa ativa.
+
+### Progressão de status e desenvolvimento
+
+Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de classe se somam; não reaplique o bônus inicial. As escolhas de Atributo precisam ser registradas.
+
+| Etapa     | Aumento geral                            | Extra da classe | Desenvolvimento             |
+|-----------|------------------------------------------|-----------------|-----------------------------|
+| Etapa I   | +2 Vida máxima.                          | —               | Progressão geral de Etapa.  |
+| Etapa II  | +2 Karma máximo.                         | —               | Progressão geral de Etapa.  |
+| Etapa III | +2 Vida máxima e +1 CA.                  | —               | Progressão geral de Etapa.  |
+| Etapa IV  | +2 Karma máximo.                         | —               | Progressão geral de Etapa.  |
+| Etapa V   | +2 Vida máxima, +2 Karma máximo e +1 CA. | —               | Sentença Tripla disponível. |
+| Etapa VI  | +2 Karma máximo.                         | —               | Progressão geral de Etapa.  |
+| Etapa VII | +4 Vida máxima, +2 Karma máximo e +1 CA. | —               | Progressão geral de Etapa.  |
+
 ## Exemplo de resolução de uma habilidade
 
 O Pugilista possui Força 5, Luta 1, 2 Impulsos e conhece Impiedoso e Sequência Brutal. Ele começa com reserva de 3d20, +2 de treinamento e +2 dos Impulsos. Ataca um alvo com CA 17; seleciona 16 e obtém 20, um total. Depois das defesas, rola o dano-base de 1d8.
@@ -2566,6 +2630,61 @@ Descanso longo seguro de 12 TE restaura Vida e Karma até os máximos disponíve
 
 Poções, habilidades, fontes e rituais nunca restauram acima do máximo disponível. Karma investido continua indisponível até o vínculo, item ou efeito terminar.
 
+## Runas Kármicas {#runas-karmicas}
+
+Uma runa retém Karma em um suporte até que seu desenho libere a energia. Grave uma Runa com uma Ação Principal ou prepare-a antes da cena. O Escriba Kármico pode gravar runas de Grau igual ou inferior à sua Etapa com Movimento ou Extra. A CD do Escriba é 12 + Intelecto + nível de Canalização de Karma. Uma runa ligada a um ataque segue o teste desse ataque. Quando o efeito oferecer resistência, resolva o teste indicado antes de aplicar a consequência.
+
+O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas inscritas nos espaços nativos de uma arma ocupam os espaços dessa arma e retêm Karma normalmente.
+
+O Karma Retido continua na reserva total e fica indisponível para gastos enquanto a runa está armada. O Estouro encerra a passiva e ocupa apenas a ação escrita na runa ou no ataque associado. Sem ação adicional expressa, resolva no gatilho indicado. Após o Estouro, o espaço de runa fica livre. O Karma preso volta a ficar disponível no fim da cena, ou após uma rodada para o Escriba.
+
+Na tabela, Vontade se refere à resistência interior, resolvida com Espírito + Canalização de Karma. Resistência física usa Constituição + Atletismo quando o efeito não designa outra combinação.
+
+
+### Arma
+
+| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
+|---|---|---|---|---|
+| Runa da Brasa Cortante (Kenaz) | I | 2 | Converte o dano da arma em térmico/kármico e soma +1 no dano final. | Adiciona +1d8 de dano antes do parcial e ilumina o alvo (impede furtividade por 1 rodada). |
+| Runa do Alcance Estendido (Elhaz) | I | 2 | Aumenta o alcance de ataques corpo a corpo em +1,5m ou à distância em +6m. | O ataque ignora cobertura parcial e soma +2 no teste de acerto. |
+| Runa da Fenda de Guarda (Thurisaz) | II | 3 | Ataques com a arma reduzem em -1 a CA Parcial do alvo. | Causa +1d10 de dano e destrói até 8 pontos de Escudo Temporário do alvo antes de aplicar o dano. |
+| Runa da Hélice Dupla (Jera) | III | 4 | Ao errar um ataque (Falha), você recupera 1m de deslocamento livre. | Cria um eco kármico do golpe: causa +2d6 de dano e atinge também um segundo inimigo a até 2m do primeiro. |
+| Runa do Dreno Espiritual (Othala) | III | 4 | Acertos Totais com a arma recuperam 1 de Karma para o portador. | Causa +2d8 de dano kármico e drena 3 de Karma do alvo atingido (transferindo-os para você). |
+| Runa da Ruptura de Essência (Hagalaz) | IV | 6 | A arma ignora Redução de Dano física e elemental de até 3 pontos. | Causa +2d10 de dano e aplica Sangramento e Abalado sem permitir redução por armadura. |
+| Runa do Julgamento Final (Tiwaz-Omega) | V | 10 | Soma +2 no teste de ataque e +3 no dano fixo de todos os golpes da arma. | Golpe cataclísmico: adiciona +3d10 de dano antes do parcial e reduz a CA Total do alvo em -3 até o fim da rodada. |
+
+### Armadura e guarda
+
+| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
+|---|---|---|---|---|
+| Runa do Casco de Pedra (Uruz) | I | 2 | Concede +1 de Redução de Dano contra ataques físicos. | Ao sofrer dano: Absorve 1d10 + Constituição do dano recebido naquele golpe. |
+| Runa do Passo Deslizante (Laguz) | II | 3 | Soma +1 em testes de Reflexos e Acrobacia. | Ao ser alvo de ataque: Permite recuar 3 metros como Reação livre e soma +3 na CA Parcial e Total contra o golpe. |
+| Runa do Espelho de Espinhos (Eihwaz) | II | 3 | Inimigos que agarrem você sofrem 3 de dano kármico automático. | Ao sofrer Acerto Total corpo a corpo: Reduz o dano em 1d8 e reflete 2d6 de dano kármico no atacante. |
+| Runa da Restauração Estrutural (Berkano) | III | 4 | Aumenta a cura recebida de poções, técnicas ou reparos em +3. | Ao cair para metade da Vida ou menos: Dispara sozinha restaurando 2d8 + Etapa de Vida e limpando 1 condição física menor. |
+| Runa da Dissipação Prismática (Sowilo) | IV | 6 | Concede +2 na CA contra técnicas elementais, kármicas e divinas. | Ao ser atingido por técnica de área ou feixe: Reduz o dano recebido pela metade e concede imunidade à condição secundária do golpe. |
+| Runa da Fortaleza Imortal (Algiz-Mater) | V | 10 | Concede +2 na CA Total e imunidade a deslocamento forçado (empurrões/puxões). | Ao sofrer dano que levaria a 0 de Vida: Mantém o usuário de pé com 1 de Vida e concede 3d10 de Escudo Temporário por 1 rodada. |
+
+### Campo e selo
+
+| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
+|---|---|---|---|---|
+| Runa do Limiar Cortante (Ansuz) | I | 2 | Vigia um raio de 2m no solo ou parede de forma invisível a olho nu. | Inimigo pisa na área: Dispara lâminas de ar comprimido causando 1d10 de dano e reduzindo o movimento em 2m. |
+| Runa da Âncora de Chumbo (Isa) | II | 3 | Cravada no alvo ou em 3m no solo: o terreno conta como difícil para inimigos. | Detonação: Prende as sombras em 3m; alvos sofrem 2d6 de dano, ficam Lentos e perdem voo/levitação por 2 rodadas. |
+| Runa do Silêncio Hermético (Mannaz) | III | 4 | Em 3m ao redor do selo, sons não entram nem saem. | Quando inimigo tenta conjurar na área: Estoura causando 2d8 de dano mental/kármico e exige +3 de Karma para a técnica dele não falhar. |
+| Runa do Vórtice de Tração (Raidho) | III | 4 | Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito. | Detonação: Puxa todos os inimigos em um raio de 4m para o centro da runa, causando 2d8 de dano contundente. |
+| Runa da Jaula Geométrica (Nauthiz) | IV | 6 | Cravada em um alvo: toda vez que ele se move, sofre 2 de dano por metro percorrido. | Detonação: Ergue paredes translúcidas de 3m de raio por 1 rodada e causa 2d10 de dano a quem tentar atravessar a borda. |
+| Runa do Colapso Espacial (Ginnungagap) | V | 10 | Em 6m ao redor do selo, inimigos sofrem -2 em testes de Reflexos e Iniciativa. | Detonação em Área (6m): Implosão gravitacional que causa 3d10 de dano kármico, deixa os alvos Caídos e destrói coberturas. |
+
+### Sangue e corpo
+
+| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
+|---|---|---|---|---|
+| Runa da Câmara Reserva (Fehu) | I | 3 | Pulsa no pulso do usuário estabilizando o fluxo espiritual (+1 em Vontade). | Ação Livre: Converte a runa em energia imediata, reduzindo em -5 de Karma o custo da próxima técnica ou habilidade no turno. |
+| Runa daPupila de Cristal (Dagaz) | II | 3 | Enxerga fluxos de Karma através de fumaça/escuridão a até 12m (+2 em Percepção). | Ação Livre: Seu próximo ataque ou técnica no turno recebe +1d20 na Reserva e ignora camuflagem total. |
+| Runa dos Tendões de Relâmpago (Ehwaz) | III | 4 | Aumenta o deslocamento em +2m e a distância de saltos em +3m. | Ação Livre: Concede uma Ação de Movimento extra imediata no turno e soma +2 na CA até a próxima rodada. |
+| Runa da Fornalha Cardíaca (Wunjo) | III | 4 | Impede que o usuário fique Abalado ou Lento por frio/exaustão. | Ao gastar 3 de Vida: Todos os ataques e técnicas do usuário neste turno somam +1d8 de dano adicional antes do parcial. |
+| Runa da Mente Bipartida (Ingwaz) | IV | 6 | Concede +2 em testes de Tática, Criação e Canalização de Karma. | Ação Livre: Permite sustentar duas técnicas de concentração ao mesmo tempo ou realizar 1 Ação Extra gratuita para usar item/runa. |
+| Runa da Apoteose Efêmera (Odinn-Selo) | V | 10 | Aumenta em +1d20 a Reserva de todos os testes baseados em Intelecto ou Espírito. | Ação Livre: Por 2 rodadas, todas as suas técnicas custam metade do Karma e causam +1 dado de dano extra da respectiva Matriz. |
 
 # Capítulo 10 - Criação de técnicas
 
@@ -3185,13 +3304,49 @@ Cada Domínio permite dois Refinamentos, obtidos por acontecimentos e treinament
 
 A rerrolagem de Precisão aceita o resultado novo. Ela não rerrola o dano nem um dado de outra fonte. Refinamentos não concedem uma segunda ativação na mesma cena.
 
-## O Caminho
+## O Caminho {#o-caminho}
 
-Um portador de Caminho não possui apenas um bônus maior. Ele consegue afirmar que, dentro de uma fronteira concreta, sua história tem peso de lei. Uma defesa construída para deter uma técnica comum precisa enfrentar a soma de dois resultados quando essa Lei é afirmada. O efeito é perceptível no mundo: testemunhas reconhecem que o conflito passou a obedecer também à identidade do portador.
+O Caminho é a forma que mente, corpo, técnica e Karma assumem quando uma criatura ultrapassa o limite que até então dava sentido à sua vida. Para as divindades das Nove Asas, que já atingiram o ápice de seus conceitos, uma Bênção é um fragmento desse Caminho entregue a alguém que ainda pode mudar. O risco mortal aperfeiçoa o fragmento. Quando o portador morre ou a Bênção retorna, a divindade recolhe o poder emprestado e a evolução que ele acumulou. Essa colheita não se aplica a um vínculo já rompido por Emancipação.
 
-**Acesso:** possua uma Técnica de Assinatura, um Domínio com dois Refinamentos e conclua um arco composto por Confronto, Escolha e Resposta. No Confronto, sua identidade é posta em risco; na Escolha, você assume um preço que poderia evitar; na Resposta, a campanha demonstra o que essa decisão passou a significar. Três combates isolados não substituem esse arco.
+### Despertar na Etapa III
 
-Cada pessoa possui um Caminho. Copiar uma Técnica de Assinatura não copia sua Lei, sua história ou sua Imposição.
+A partir da Etapa III, você pode despertar o Caminho antes de possuir um Domínio. Exige uma crise em cena: estar com metade da Vida ou menos, enfrentar ameaça de Etapa igual ou superior, ou pôr uma convicção vital em risco direto. Faça Espírito ou o Atributo-chave do Caminho + Canalização de Karma. Vontade designa a resistência interior da cena, resolvida por esse teste no sistema atual.
+
+| Tentativa | Despertar puro | Despertar sob Outorga ou doutrina |
+|---|---|---|
+| Obstáculo | Tábula rasa kármica | Inércia de dependência espiritual |
+| Teste | CD 20 | CD 24 e −1d20 na reserva, conforme a regra de Desvantagem |
+| Preço da tentativa | 6 Karma, ou uma Fratura ou Exaustão se não houver Karma disponível | 10 Karma e 2d6 de dano kármico irreduzível |
+| Falha | Não desperta na cena. Some +1 acumulado à próxima tentativa em sessão futura | Mesmo bônus acumulado. As habilidades da Bênção custam +2 Karma até o fim da cena |
+
+O despertar reduz em 20% a CD, as Marcas exigidas e o custo de abertura dos Domínios. Arredonde ao inteiro mais próximo, com mínimo de 1 para requisito ou custo positivo, e calcule o custo depois dos Refinamentos de Eficiência. O atributo regente exigido e os demais requisitos de Domínio continuam valendo.
+
+### Vertentes do Caminho despertado
+
+**Independente.** Quem não possui Bênção recebe Reserva Soberana (+4 Karma máximo e +2 no resultado de resistências contra Matriz Divina e presença de Asas) e escolhe um Axioma.
+
+**Subversão.** Conserva a Bênção e recebe um Axioma. Técnicas podem combinar a Bênção com a regra do Axioma. Usos de sobrecarga divina custam o dobro.
+
+**Emancipação.** Rompe o vínculo de colheita, converte a estrutura da Bênção em técnica própria, recebe um Axioma e +4 Karma máximo. Registre a técnica resultante com os custos e limites acordados na mesa.
+
+A Lei pessoal, a Afirmação e a Culminação continuam sendo registros da expressão avançada do Caminho. Seus custos de manifestação são próprios e distintos do teste de despertar.
+
+### Axiomas Autorais {#axiomas-autorais}
+
+Escolha um Axioma ao despertar e registre seu nome na ficha.
+
+| Axioma | Arquétipo | Benefício |
+|---|---|---|
+| Quebra de Limite Físico | Força Bruta / Vanguarda Marcial | Seus ataques da Matriz Marcial ignoram os primeiros 4 pontos de Redução de Dano ou Escudo Temporário do alvo. Uma vez por turno, ao acertar um golpe corpo a corpo Total, você empurra o alvo em 2m e soma +Etapa ao dano causado. |
+| Anatomia do Ponto Fatal | Letalidade / Precisão / Crítico | Reduz em -2 o limiar de CA Total de qualquer alvo que já tenha sofrido dano na rodada ou que esteja fora do alcance de aliados dele. Seus ataques que atinjam a CA Total aplicam Sangramento ou reduzem a cura recebida pelo alvo pela metade por 1 rodada. |
+| Passo de Horizonte Curto | Velocidade / Mobilidade / Espaço | Aumenta seu Movimento base em +3 metros permanentes. Você ignora terreno difícil e, uma vez por rodada como Ação Livre (custo: 1 Karma), pode percorrer até 3m sem provocar ataques de oportunidade antes ou depois de atacar. |
+| Bastião Inquebrável | Defesa Pesada / Guardião / Sobrevivência | Aumenta sua CA Parcial e Total em +1 e sua Vida Máxima em +2 por Etapa. Sempre que você usar uma Reação defensiva ou receber um Escudo Temporário, o valor de absorção ou redução de dano aumenta em +Etapa. |
+| Circuito Rúnico Autônomo | Escriba / Especialista Rúnico | Amplia seu limite máximo de Runas Kármicas ativas em +2. A primeira Runa que você estourar em cada cena recupera 3 de Karma para sua reserva e tem sua Classe de Dificuldade (CD) ou bônus de acerto aumentado em +2. |
+| Soberania Elemental | Elementalista / Conjurador de Área | Técnicas da Matriz Elemental recebem +1 dado do mesmo tipo no cálculo de dano antes do parcial e ignoram resistências elementais leves. Além disso, você pode excluir até 2 aliados da área de efeito das suas próprias técnicas elementais. |
+| Regência de Comando Neural | Invocador / Criador de Constructos | Reduz em -1 de Karma (mínimo 1) o custo de Manutenção de todas as suas Invocações e dispositivos ativos. Suas invocações somam +2 na CA e nos testes de ataque, e uma delas pode receber ordens por turno mesmo sem linha de visão direta. |
+| Síntese Alquímica de Campo | Alquimista / Suporte Tático | Aumenta seu limiar seguro de Saturação Alquímica em +2. Permite consumir ou aplicar elixires, munições especiais e reparos táticos reduzindo a ação exigida em um passo (Principal → Movimento → Livre) uma vez por rodada, somando +Etapa à cura ou escudo gerado. |
+| Vácuo de Anulação Kármica | Antimago / Caçador de Conjuradores | Quando você acerta um alvo com arma ou técnica, pode queimar 2 de Karma para destruir 4 de Karma da reserva do alvo (ou encerrar 1 efeito sustentado de Grau igual ou inferior à sua Etapa). Concede +2 na CA contra técnicas das Matrizes Kármica e Divina. |
+| Predação de Sombra Viva | Subterfúgio / Furtividade / Emboscada | Atacar a partir de cobertura, furtividade ou flanco adiciona +1d20 na Reserva do ataque e impede que o alvo utilize Reações até o início do próximo turno dele. Abater ou deixar um inimigo em estado crítico permite entrar em furtividade como Ação Livre. |
 
 ### Registro da Lei pessoal
 
@@ -3796,6 +3951,798 @@ Os nomes sugeridos não limitam o panteão. Para incluir outra divindade, regist
 
 Título amplo não concede Perícia, dano ou imunidade. Manifestação própria é criada como Milagre do Grau correspondente. Nenhuma divindade fornece ações ilimitadas, Favor infinito, redução permanente de Karma ou autoridade sobre todas as Jurisdições.
 
+## Portal das Nove Asas {#portal-das-nove-asas}
+
+Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização de Karma. Se a extensão pedir resistência sem CD, use oposição contra a Manifestação da Bênção, com empate a favor do defensor.
+
+### Asa da Glória · Panteão Grego
+
+#### Zeus · O Soberano do Éter e da Tempestade
+
+**1. Coroa de Ozônio Vivo** · Ionização Atmosférica · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu corpo mantém carga eletrostática contínua que ioniza o ar em 4,5m. Metais inimigos na zona ficam magnetizados (-1 no acerto contra você).
+
+1. Arco de Descarga (Extra · 3 Karma): Salta um raio instantâneo no inimigo mais próximo com armadura ou arma metálica a até 9m, causando 2d6 elétrico sem permitir esquiva parcial.
+2. Gaiola de Faraday (Reação · 4 Karma): Converte um projétil ou feixe recebido em carga estática, reduzindo o dano em 2d8 e eletrocutando quem estiver a 2m.
+
+**Safra na Morte.** Zeus absorve o controle de microcampos eletromagnéticos em ambientes fechados.
+
+**2. Voz de Trovão Capitolino** · Decreto Soberano · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Sua voz carrega pressão barométrica física; ordens curtas de uma palavra empurram o ar como ondas de choque.
+
+1. Palavra de Ajoelhar (Principal · 4 Karma · 9m): Dispara uma ordem sônica que causa 2d8 contundente e força o alvo a cair Caído se não superar sua CD em Fortitude.
+2. Édito de Silêncio Aéreo (Reação · 3 Karma): Estoura um trovão seco que anula projéteis leves no ar e aplica Desorientado em 3m.
+
+**Safra na Morte.** Zeus colhe a modulação de ondas de choque sônicas concentradas por cordas vocais mortais.
+
+**3. Passo de Fulgor Branco** · Relâmpago Corporal · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus nervos conduzem impulsos na velocidade de descargas elétricas, permitindo converter deslocamento em linha reta em um feixe de plasma curto.
+
+1. Investida de Raio (Movimento + Principal · 4 Karma): Você atravessa até 9m em linha reta passando por dentro do espaço de inimigos; o alvo principal sofre 2d10 perfurante/elétrico e você termina às costas dele.
+2. Pós-Imagem Voltaica (Reação · 3 Karma): Ao sofrer um ataque, deixa uma estátua de eletricidade estática no lugar que explode em 1d10 enquanto você recua 3m.
+
+**Safra na Morte.** Zeus recolhe a técnica de conversão biológica de massa muscular em plasma condutor.
+
+#### Apolo · O Deus do Sol, da Profecia e da Peste
+
+**4. Câmera Escura de Luz Sólida** · Óptica Solar · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Solidifica feixes de luz ambiente em até 3 lentes/espelhos translúcidos suspensos no ar a até 15m durante a cena.
+
+1. Ricochete de Ângulo Cego (2 Karma): Disparos ou feixes que atravessem uma lente dobram em até 90°, ganham +6m de alcance, ignoram cobertura total e aplicam -2 na CA Parcial.
+2. Foco Ustório (Principal · 4 Karma): Alinha as 3 lentes em um laser térmico que causa 2d8 e aplica Desorientado.
+
+**Safra na Morte.** Apolo reabsorve a geometria de refração, tornando sua própria luz capaz de fazer curvas.
+
+**5. Fita de Futuro Previsto** · Oráculo de Delfos · Runa Kármica Primordial
+
+**Fenômeno base.** Seus olhos enxergam uma silhueta dourada 2 segundos à frente do movimento de qualquer criatura a até 12m.
+
+1. Disparo Antecipado (Livre no ataque · 3 Karma): Você atira para onde o alvo vai estar, ignorando bônus de Agilidade ou Reflexos na CA dele e somando +1d20 na Reserva.
+2. Aviso de Cassandra (Reação · 4 Karma): Revela em voz alta o movimento de um inimigo para um aliado a 12m, somando +4 na CA do aliado contra aquele golpe.
+
+**Safra na Morte.** Apolo colhe o processamento preditivo de microexpressões e vetores de combate.
+
+**6. Coroa de Radiação Febril** · Flechas da Peste · Dobra Elemental Anômala
+
+**Fenômeno base.** Seus ataques imbuídos de Karma deixam partículas de calor ultravioleta invisível que provocam febre celular instantânea no alvo.
+
+1. Seta de Insolação (Principal · 4 Karma · 18m): Causa 2d8 radiante/térmico e aplica Febre Solar (o alvo sofre -1d20 em testes físicos e perde 3 de Vida sempre que correr ou gastar mais de 3 de Karma no turno).
+2. Purgação Térmica (Extra · 3 Karma): Queima venenos ou doenças no próprio sangue ou de um aliado adjacente, convertendo a condição removida em +2d6 de Escudo Temporário.
+
+**Safra na Morte.** Apolo absorve cepas de radiação térmica seletiva desenvolvidas pelo organismo mortal.
+
+#### Ares · O Deus da Carnificina, do Impacto e do Motim
+
+**7. Ponto de Impacto Retido** · Inércia de Violência · Método de Luta Exclusivo
+
+**Fenômeno base.** Ao acertar um golpe físico ou projétil curto, congela o impacto cinético no local atingido por até 2 rodadas (causa metade do dano na hora e grava um Vetor Armazenado).
+
+1. Detonação em Cadeia (Livre · 2 Karma): Estoura todos os Vetores Armazenados no próximo acerto, somando o dano retido e aplicando -2 na CA Total contra o estouro.
+2. Degrau Estático (Movimento · 1 Karma): Congela um destroço ou projétil no ar por 1 rodada para usar como escudo ou apoio de salto.
+
+**Safra na Morte.** Ares absorve o cálculo de impacto retardado e acúmulo de energia cinética.
+
+**8. Vapor de Adrenalina Vermelha** · Frenesi de Campo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seu corpo exala feromônios de agressão que aceleram o batimento cardíaco de todos em 6m; cada ferimento na área alimenta sua força.
+
+1. Sede de Primeira Linha (Passiva Ativável · 3 Karma): Enquanto houver ao menos uma criatura com Sangramento a até 6m, você recebe +2 no acerto, +4 no dano marcial e ignora penalidades de dor/medo.
+2. Grito de Motim (Principal · 5 Karma): Força dois inimigos adjacentes entre si a desferirem um ataque básico imediato um contra o outro se falharem em Vontade.
+
+**Safra na Morte.** Ares colhe a manipulação neuroquímica da fúria em grupos armados.
+
+**9. Forja de Hematita Crua** · Arsenal de Osso e Sangue · Dobra Elemental Anômala
+
+**Fenômeno base.** O sangue derramado por você ou por inimigos a até 4,5m cristaliza instantaneamente em lâminas de hematita vermelha rígida como aço.
+
+1. Lança de Coágulo (Extra · 3 Karma): Converte o sangue de um ferimento recente em um dardo ou lâmina que causa 2d6 perfurante e não consome munição.
+2. Paliçada de Lancetas (Principal · 4 Karma): Ergue espinhos de sangue cristalizado sob os pés de um alvo ferido a até 9m, causando 2d8 e deixando-o Lento.
+
+**Safra na Morte.** Ares absorve a cristalização mineral rápida de fluidos vitais em campo de batalha.
+
+#### Hefesto · O Deus da Forja, do Magma e dos Autômatos
+
+**10. Sangue de Escória Magnética** · Metalurgia Líquida · Dobra Elemental Anômala
+
+**Fenômeno base.** O ferro do seu sangue e sucatas a até 6m respondem ao seu pulso magnético como um ferrofluido denso sempre que você sofre dano ou gasta 2 de Vida.
+
+1. Morfologia de Bigorna (Livre · 2 Karma): Molda o ferrofluido por 1 rodada em Aguilhões (4m de alcance), Carapaça (+2 CA Total) ou Cabo Magnético (puxa itens/ancora a 9m).
+2. Cravo Polarizado (Principal · 4 Karma): Dispara uma agulha de 2d6 que magnetiza o alvo, dando +2 no acerto de ataques metálicos contra ele.
+
+**Safra na Morte.** Hefesto colhe a metalurgia orgânica moldada sob perda de sangue mortal.
+
+**11. Pulmão de Fole Incandescente** · Fornalha Vulcânica · Método de Luta Exclusivo
+
+**Fenômeno base.** Sua caixa torácica funciona como uma fornalha de alta pressão; cada inspiração aquece seu sangue e armadura, liberando jatos de vapor superaquecido pelas juntas.
+
+1. Soco de Pistão Térmico (Principal · 4 Karma): Libera o vapor comprimido pelo cotovelo no instante do golpe, causando 2d8 contundente/térmico e empurrando o alvo em 4m.
+2. Têmpera a Frio (Reação · 3 Karma): Libera uma nuvem de vapor denso ao sofrer um ataque, ganhando camuflagem parcial e +3 de Redução de Dano.
+
+**Safra na Morte.** Hefesto absorve a termodinâmica de compressão pulmonar aplicada às artes marciais.
+
+**12. Olho de Fadiga da Matéria** · Falha Estrutural · Runa Kármica Primordial
+
+**Fenômeno base.** Ao observar qualquer objeto, armadura, parede ou corpo a até 9m, você enxerga linhas luminosas indicando onde a tensão estrutural é mais frágil.
+
+1. Toque de Desmontagem (Principal · 4 Karma): Golpeia exatamente o nó de tensão do alvo; ignora toda a CA de armadura/escudo (atacando a CA Desprevenida) e causa 2d8 de dano, aplicando Danificado no equipamento inimigo.
+2. Solda Instantânea (Movimento · 2 Karma): Funde duas superfícies metálicas ou de pedra ao toque, trancando portas, armas em bainhas ou restaurando 2d6 de Vida de um constructo.
+
+**Safra na Morte.** Hefesto recolhe o catálogo de pontos de ruptura molecular descobertos pelo usuário.
+
+#### Atena · A Deusa da Estratégia, da Égide e da Geometria de Guerra
+
+**13. Vetor de Reflexão Hexagonal** · Geometria da Égide · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você projeta escudos geométricos planos e translúcidos a até 6m que alteram o ângulo de forças cinéticas e kármicas.
+
+1. Deflexão Calculada (Reação · 4 Karma): Redireciona um ataque à distância que atingiria você ou um aliado adjacente na faixa Parcial de volta contra um inimigo a até 9m, causando 2d6 de dano.
+2. Cunha de Falange (Extra · 3 Karma): Posiciona 2 hexágonos que concedem cobertura parcial (+2 CA) e empurram inimigos que tentem cruzar a linha.
+
+**Safra na Morte.** Atena absorve novos teoremas de deflexão balística em combate urbano e na Torre.
+
+**14. Xadrez de Três Movimentos** · Leitura de Algoritmo · Runa Kármica Primordial
+
+**Fenômeno base.** Sempre que um inimigo usa uma técnica ou ataque contra você pela primeira vez na cena, sua mente decodifica o padrão muscular e kármico dele.
+
+1. Contra-Regra (Passiva + 2 Karma na Reação): Contra qualquer habilidade que você já tenha visto na cena, sua CA sobe em +3 e você pode dar um passo de 2m livre antes do impacto.
+2. Xeque Tático (Extra · 3 Karma): Declara uma ação específica (ex.: "usar técnica", "recuar"); se o alvo marcado fizer essa ação no próximo turno dele, sofre 2d8 de dano mental/kármico automático.
+
+**Safra na Morte.** Atena colhe milhares de árvores de decisão tática processadas sob pressão mortal.
+
+**15. Fio de Axioma Cortante** · Lança da Sabedoria · Método de Luta Exclusivo
+
+**Fenômeno base.** Sua arma brilha com uma linha fina de luz prateada que corta proporcionalmente à sua precisão intelectual, e não à sua força muscular.
+
+1. Corte Demonstrativo (Principal · 4 Karma): Realiza um ataque corpo a corpo usando Intelecto (com Bônus Analítico), causando 2d8 de dano que ignora escudos espirituais e revela todas as resistências e o Karma atual do alvo.
+2. Comando de Sincronia (Movimento · 3 Karma): Concede a um aliado a até 9m uma reação imediata de ataque ou movimento usando a sua Reserva de Intelecto.
+
+**Safra na Morte.** Atena absorve a substituição de força cinética por precisão geométrica pura.
+
+#### Poseidon · O Deus dos Mares, da Pressão Abissal e dos Terremotos
+
+**16. Hidrólise de Impacto** · Pressão Hidrostática · Dobra Elemental Anômala
+
+**Fenômeno base.** Seus golpes entram em ressonância com a umidade do ar e com os líquidos internos do alvo, transformando o próprio corpo inimigo em condutor de choque hidrostático.
+
+1. Reverberação Subcutânea (Extra · 3 Karma): Mesmo em Acerto Parcial, o golpe transmite uma onda interna que causa +1d8 contundente direto e empurra 2m.
+2. Cortina de Cavitação (Reação · 4 Karma): Golpeia o ar criando bolhas de vácuo na umidade atmosférica, somando +3 na CA Parcial e Total contra projéteis.
+
+**Safra na Morte.** Poseidon colhe técnicas de combate hidrostático adaptadas para ambientes secos.
+
+**17. Zona de Atmosfera Submersa** · Fossa Abissal · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Em um raio de 4,5m ao seu redor, a densidade do ar torna-se pesada e viscosa como o fundo do oceano para seus inimigos, enquanto você nada livremente por ela.
+
+1. Esmagamento Barométrico (Principal · 4 Karma): Comprime a zona sobre um alvo a até 6m, causando 2d8 contundente e aplicando Lento e -2 em ataques físicos por 1 rodada.
+2. Impulso de Correnteza (Movimento · 2 Karma): Desliza na densidade do ar ganhando +4,5m de deslocamento e podendo subir verticalmente até 3m como se nadasse no ar.
+
+**Safra na Morte.** Poseidon absorve a manipulação de pressão atmosférica sem necessidade de massas de água.
+
+**18. Diapasão de Falha Tectônica** · Abalo Sísmico · Runa Kármica Primordial
+
+**Fenômeno base.** Seus pés e sua arma transmitem vibrações de baixa frequência diretamente para o piso, colunas e fundações.
+
+1. Onda de Liquefação (Principal · 4 Karma): Bate no solo transformando uma linha de 9m × 2m em rocha trêmula; causa 2d8 contundente e derruba (Caído) quem falhar em Reflexos/Acrobacia.
+2. Ressonância de Armadura (Extra · 3 Karma): Faz a armadura rígida do alvo vibrar na frequência de quebra, reduzindo a CA dele em -2 até o próximo turno.
+
+**Safra na Morte.** Poseidon recolhe o mapeamento de frequências de ressonância sísmica em estruturas artificiais.
+
+#### Hades · O Deus do Submundo, da Invisibilidade e dos Metais Profundos
+
+**19. Manto de Ausência Estígia** · Elmo da Invisibilidade · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Em vez de apenas esconder sua imagem, você apaga sua "presença de ameaça" da percepção sensorial e espiritual dos inimigos.
+
+1. Passo Inexistente (Movimento · 3 Karma): Até o início do seu próximo turno (ou até causar dano), inimigos a mais de 2m não conseguem focar você com ataques ou técnicas de alvo único, e seu primeiro ataque recebe +1d20 e +2 no acerto.
+2. Sequestro de Sombra (Reação · 4 Karma): Puxa um aliado adjacente para dentro do seu manto, anulando um ataque mirado nele.
+
+**Safra na Morte.** Hades absorve técnicas de supressão de assinatura kármica contra radares modernos e sobrenaturais.
+
+**20. Gravidade de Óbolo Funerário** · O Peso dos Mortos · Runa Kármica Primordial
+
+**Fenômeno base.** Cada ponto de Vida ou de Karma que um inimigo perde perto de você condensa-se em "moedas espirituais invisíveis" que pesam sobre os ombros dele.
+
+1. Cobrança do Barqueiro (Principal · 4 Karma · 12m): Contra um alvo que já tenha perdido Vida ou Karma na cena, detona o peso acumulado causando 2d8 necrótico/kármico (+1d6 se o alvo estiver abaixo da metade da Vida) e zerando a reação dele.
+2. Pedágio de Passagem (Extra · 2 Karma): Impõe uma taxa espiritual ao alvo: para se mover ou usar técnica no próximo turno, ele deve pagar +2 de Karma extra.
+
+**Safra na Morte.** Hades colhe o sistema de tributação cinética sobre o desgaste vital dos adversários.
+
+**21. Cristais de Obsidiana Plutônica** · Riqueza Subterrânea · Dobra Elemental Anômala
+
+**Fenômeno base.** Você faz brotar cristais negros e afiados de obsidiana e metais pesados a partir de qualquer piso de pedra, terra ou concreto, que drenam calor da área.
+
+1. Geodo Empalador (Principal · 4 Karma · 9m): Ergue um aglomerado cristalino sob o alvo causando 2d8 perfurante e criando uma cobertura sólida de 1,5m (Vida 15) no local.
+2. Estilhaço de Gelo Negro (Extra · 3 Karma): Explode um cristal criado anteriormente causando 2d6 em 3m e reduzindo a cura dos atingidos pela metade.
+
+**Safra na Morte.** Hades absorve a cristalografia tática de minerais abissais em superfície.
+
+#### Ártemis · A Deusa da Caça, das Fases da Lua e da Natureza Selvagem
+
+**22. Vetor de Perseguição Lunar** · Marca da Caçada · Runa Kármica Primordial
+
+**Fenômeno base.** O primeiro alvo que você fere na cena recebe um crescente prateado luminoso sobre o peito; você sente a direção e distância exata dele através de paredes.
+
+1. Flecha Perseguidora (Extra no disparo · 3 Karma): Seu projétil corrige a própria trajetória no ar para buscar o alvo marcado, ignorando cobertura parcial/total (desde que haja caminho físico) e somando +2 no acerto e +1d8 no dano.
+2. Salto de Espreita (Reação · 2 Karma): Sempre que o alvo marcado se afastar de você, você pode avançar 4,5m na direção dele gratuitamente.
+
+**Safra na Morte.** Ártemis colhe algoritmos de rastreamento balístico em ambientes labirínticos.
+
+**23. Arco das Fases Prateadas** · Ciclo de Quatro Luas · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus ataques alternam ciclicamente entre 4 estados lunares (Nova, Crescente, Cheia, Minguante), mudando a propriedade física de cada golpe.
+
+1. Disparo de Fase (Livre · 2 Karma): Escolhe a fase do ataque: Lua Nova (silencioso, -2 na CA Parcial do alvo), Lua Cheia (explode em 2m causando +1d6 nos adjacentes) ou Lua Minguante (drena 2m de movimento e 2 de Karma do alvo).
+2. Eclipse de Prata (Principal · 5 Karma): Dispara duas fases simultâneas causando 2d10 de dano e aplicando Desorientado.
+
+**Safra na Morte.** Ártemis absorve a modulação cíclica de projéteis kármicos.
+
+**24. Sinapse de Predador Alfa** · Senhora das Feras · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seus sentidos operam em frequência animal aguda; você enxerga batimentos cardíacos pelo calor e coordena aliados como uma matilha sincronizada.
+
+1. Cerco de Matilha (Passiva + 3 Karma como Extra): Enquanto você e ao menos 1 aliado estiverem a até 9m do mesmo inimigo, ambos recebem +2 para atingir a CA Total daquele alvo e +1d6 de dano.
+2. Reflexo de Fera Acuada (Reação · 3 Karma): Ao sofrer um ataque corpo a corpo, desfere um contra-ataque imediato de 1d10 cortante e salta 3m para trás.
+
+**Safra na Morte.** Ártemis recolhe o instinto neural de coordenação de esquadrão sem comunicação verbal.
+
+#### Hermes · O Deus das Fronteiras, da Velocidade e dos Ladrões
+
+**25. Compressão em Fita Plana** · Catalogação e Mensagem · Runa Kármica Primordial
+
+**Fenômeno base.** A palma da sua mão possui um glifo que achata objetos soltos (até 4 espaços), armadilhas ou projéteis interceptados em fitas bidimensionais de papel sem peso.
+
+1. Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.
+2. Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade.
+
+**Safra na Morte.** Hermes recolhe o método de compressão bidimensional de matéria e projéteis.
+
+**26. Furto de Conceito Tático** · Príncipe dos Ladrões · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Ao tocar ou acertar um inimigo de raspão, seus dedos podem "roubar" temporariamente propriedades intangíveis dele (velocidade, equilíbrio ou foco).
+
+1. Mão Leve de Atributo (Principal · 4 Karma): Ataque corpo a corpo ou a 3m (2d6 de dano); rouba 3 metros de Movimento ou 2 pontos de CA do alvo até o final do seu próximo turno, somando-os diretamente à sua própria ficha.
+2. Troca de Bolso (Reação · 3 Karma): Troca um item empunhado ou uma condição menor (Lento / Abalado) sua por um consumível ou bônus temporário do inimigo adjacente.
+
+**Safra na Morte.** Hermes absorve a capacidade de extrair propriedades abstratas e estatísticas de outros seres vivos.
+
+**27. Passo de Atrito Zero** · Sandálias Aladas · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus pés anulam o coeficiente de atrito com qualquer superfície (chão, paredes, água ou cabos), permitindo patinar em velocidade balística e correr pelas paredes.
+
+1. Órbita Centrípeta (Movimento + 3 Karma): Corre em círculo fechado ao redor do alvo (incluindo pelas paredes), deixando-o Desorientado e somando +2d6 de dano por velocidade no próximo golpe.
+2. Deslizamento de Esquiva (Reação · 3 Karma): Quando um ataque erra você ou acerta apenas a CA Parcial, a própria onda de impacto faz você deslizar 4,5m para qualquer direção sem custo.
+
+**Safra na Morte.** Hermes colhe a cinemática de combate em superfícies verticais sob atrito nulo.
+
+### Asa da Autoridade · Panteão Romano
+
+#### Júpiter · O Juiz Supremo do Império e do Céu
+
+**28. Domo de Lei Capitolina** · Jurisdição Territorial · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você demarca uma área de 6m de raio onde uma "Lei de Combate" simples declarada por você passa a vigorar fisicamente sobre todos.
+
+1. Promulgar Artigo (Extra · 4 Karma): Declara uma restrição por 1 rodada na zona (ex.: "Proibido atacar alvos Caídos", "Proibido recuar" ou "Proibido gastar mais de 4 de Karma"); quem violar a lei na zona sofre 2d8 de dano elétrico/divino imediato.
+2. Indulto Imperial (Reação · 3 Karma): Concede a um aliado dentro da zona imunidade ao efeito de uma condição recém-aplicada.
+
+**Safra na Morte.** Júpiter absorve códigos jurídicos táticos que vinculam leis abstratas a punições kármicas automáticas.
+
+**29. Fulgor de Execução Sumária** · Raio de Julgamento · Dobra Elemental Anômala
+
+**Fenômeno base.** Seus raios são dourados, densos e caem verticalmente do teto ou do céu sobre alvos que já tenham ferido você ou seus aliados na cena.
+
+1. Sentença Vertical (Principal · 4 Karma · 15m): Cai uma coluna de raio dourado sobre o alvo causando 2d8 de dano (+1d8 se o alvo já tiver causado dano a um aliado seu nesta rodada).
+2. Marca de Rebelde (Livre · 2 Karma): O alvo atingido pela Sentença recebe -2 em testes de ataque contra qualquer pessoa que não seja você.
+
+**Safra na Morte.** Júpiter colhe o direcionamento seletivo de descargas atmosféricas baseadas em hostilidade prévia.
+
+**30. Gravidade da Coroa de Louros** · Soberania Absoluta · Runa Kármica Primordial
+
+**Fenômeno base.** Quanto mais ereta e inabalável for sua postura (sem recuar no turno), maior é a pressão gravitacional que emana dos seus ombros contra inimigos próximos.
+
+1. Peso da Hierarquia (Passiva + 3 Karma como Extra): Inimigos a até 3m de você gastam o dobro de movimento para se aproximar e sofrem -1 na CA Total enquanto você não tiver recuado na rodada.
+2. Submissão pelo Olhar (Principal · 4 Karma): Teste de Espírito/Presença contra a Vontade do alvo a 6m; causa 2d6 mental e impede o alvo de usar ações Extras ou Reações por 1 rodada.
+
+**Safra na Morte.** Júpiter recolhe a conversão de presença psicológica em vetor gravitacional físico.
+
+#### Marte · O Deus das Legiões, da Conquista e da Disciplina Militar
+
+**31. Falange de Espectros de Ferro** · Legião Fantasma · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Sempre que você assume postura de guarda ou avança em linha reta, até 2 soldados espectrais de bronze surgem flanqueando seus ombros, copiando seus golpes com 1 segundo de atraso.
+
+1. Estocada Tripla de Coorte (Principal · 4 Karma): Seu ataque corpo a corpo é repetido pelos espectros, causando 2d8 perfurante e atingindo em linha de 3m.
+2. Parede de Escudos (Scutum) (Reação · 3 Karma): Os dois espectros cruzam escudos romanos à sua frente, somando +4 na sua CA Parcial e Total contra um ataque frontal.
+
+**Safra na Morte.** Marte absorve táticas de formação militar executadas por um único combatente solitário.
+
+**32. Marco de Terreno Tomado** · Direito de Conquista · Runa Kármica Primordial
+
+**Fenômeno base.** O espaço exato de onde você expulsa, derruba ou abate um inimigo torna-se "Solo Conquistado", brilhando com insígnias rubras pelo resto da cena.
+
+1. Bastião do Conquistador (Passiva + 2 Karma): Enquanto você ou seus aliados pisarem em um Solo Conquistado, recebem +2 no dano e regeneram 3 de Vida no início do turno.
+2. Avanço de Fronteira (Extra · 3 Karma): Teleporta ou salta instantaneamente entre dois pontos de Solo Conquistado a até 9m, desferindo um golpe com +1d8 de dano.
+
+**Safra na Morte.** Marte colhe a geometria de dominação territorial progressiva em combate.
+
+**33. Pilum de Ruptura de Guarda** · Armamento Legionário · Método de Luta Exclusivo
+
+**Fenômeno base.** Qualquer arma ou projétil arremessado ou estocado por você deforma-se no impacto para entortar e inutilizar a defesa do adversário.
+
+1. Cravar no Escudo (Principal · 4 Karma · 9m): Causa 2d6 perfurante e deixa uma haste kármica pesada presa no alvo: enquanto ele não gastar 1 Ação de Movimento para arrancá-la, sofre -3 na CA Total e fica Lento.
+2. Arranco de Haste (Extra · 2 Karma): Puxa a haste cravada de volta à distância, rasgando 1d10 de dano adicional e puxando o alvo 2m.
+
+**Safra na Morte.** Marte recolhe a balística de neutralização de armaduras pesadas.
+
+#### Janus · O Deus dos Portais, dos Começos e das Duas Faces
+
+**34. Portais de Duas Faces** · Guardião dos Limiares · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você pode abrir duas fendas circulares planas de 1m de diâmetro conectadas entre si a até 12m de distância, permitindo passar braços, ataques ou projéteis através delas.
+
+1. Golpe Transposto (Extra no ataque · 3 Karma): Desfere um ataque corpo a corpo ou disparo através da fenda, atingindo o inimigo a até 12m pelas costas (-2 na CA dele e ignora cobertura).
+2. Inversão de Limiar (Reação · 4 Karma): Quando um inimigo avança contra você, faz com que ele atravesse a fenda e saia 4m atrás de onde começou o movimento.
+
+**Safra na Morte.** Janus absorve o uso ofensivo de microfendas espaciais em combate de curto alcance.
+
+**35. Rebobinamento do Primeiro Passo** · O Começo e o Fim · Runa Kármica Primordial
+
+**Fenômeno base.** No início de cada turno seu, uma silhueta de bronze marca a posição e o estado físico exato em que você estava ao começar a rodada.
+
+1. Retorno ao Ponto Zero (Reação ou Livre · 4 Karma): Volta instantaneamente para a marca do início do turno, recuperando metade da Vida perdida naquela rodada e encerrando condições de agarrão/imobilização.
+2. Dupla Face de Abertura (Passiva na Rodada 1): Na primeira rodada de qualquer combate, você age duas vezes na Iniciativa (recebendo 1 Ação Principal extra no Turno 1).
+
+**Safra na Morte.** Janus colhe a ancoragem temporal de estados iniciais de combate.
+
+**36. Tranca de Conceito Fechado** · Senhor das Chaves · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seus dedos projetam uma chave espectral de ouro e ferro capaz de "trancar" ou "destrancar" objetos físicos, ferimentos ou até uma técnica específica de um alvo.
+
+1. Girar a Chave (Principal · 4 Karma · Toque/3m): Causa 2d6 kármico e "tranca" a última habilidade/técnica que o inimigo usou, impedindo-o de repeti-la na próxima rodada.
+2. Estancar Ferida (Extra · 3 Karma): "Tranca" o sangue de um aliado adjacente, encerrando Sangramento e convertendo o dano contínuo que ele sofreria em +2d6 de Escudo Temporário.
+
+**Safra na Morte.** Janus absorve a aplicação do conceito de fechadura sobre processos biológicos e espirituais.
+
+#### Saturno · O Deus do Tempo, da Entropia e da Colheita
+
+**37. Quadros de Projeção (24fps)** · Cinemática Temporal · Método de Luta Exclusivo
+
+**Fenômeno base.** Divide cada rodada em uma sequência de 24 quadros fotográficos, exigindo declarar no início do turno a trajetória exata que será percorrida.
+
+1. Corrida de Quadro Cortado (Movimento + 3 Karma): Seguir a trajetória declarada concede +6m de Movimento e +2 para atingir a CA Total.
+2. Congelamento de Quadro (Principal · 5 Karma): Alvo atingido que falhe em Reflexos fica preso em uma moldura plana (Lento/Imóvel), sofrendo +2d8 no primeiro golpe que quebrar o quadro.
+
+**Safra na Morte.** Saturno absorve a compressão de intervalos de ação em corpos mortais.
+
+**38. Ferrugem de Entropia Acelerada** · Desgaste dos Séculos · Dobra Elemental Anômala
+
+**Fenômeno base.** Uma aura cinzenta nas suas mãos acelera a passagem de décadas em segundos sobre materiais inorgânicos, escudos e equipamentos que você toca.
+
+1. Toque de Pó e Ferrugem (Principal · 4 Karma): Causa 2d8 de dano kármico/entrópico; apodrece a estrutura da armadura ou cobertura do alvo, reduzindo a CA dele em -2 até o fim da cena.
+2. Envelhecer Projétil (Reação · 3 Karma): Desintegra em poeira um projétil físico ou reduz em 2d8 o dano de um ataque armado contra você.
+
+**Safra na Morte.** Saturno colhe o controle localizado da entropia sobre ligas metálicas e barreiras.
+
+**39. Empréstimo do Turno Futuro** · A Foice da Safra · Runa Kármica Primordial
+
+**Fenômeno base.** Você pode "pedir emprestado" o seu próprio tempo do futuro para agir duas vezes no presente, pagando a conta depois.
+
+1. Safra Antecipada (Livre · 5 Karma · 1x por cena): Realiza imediatamente 1 Ação Principal extra neste turno; em troca, no seu próximo turno você não possui Ação de Movimento e sofre -2 na CA.
+2. Atrasar Relógio Biológico (Reação · 3 Karma): Adia qualquer dano ou condição que você acabou de sofrer para só fazer efeito no final do seu próximo turno.
+
+**Safra na Morte.** Saturno recolhe a mecânica de crédito e débito temporal em organismos vivos.
+
+#### Minerva · A Deusa da Mente Coletiva, das Artes e da Tática Defensiva
+
+**40. Sinapse de Coruja Branca** · Rede Estratégica · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Conecta mentalmente você e até 3 aliados a até 15m em uma rede silenciosa de cálculo tático compartilhado.
+
+1. Visão Triangular (Passiva da Rede + 2 Karma): Você pode traçar linha de visão para suas técnicas e ataques a partir dos olhos de qualquer aliado conectado na rede.
+2. Manobra Coordenada (Extra · 3 Karma): Dois aliados conectados podem trocar de posição entre si (movendo até 3m cada) ou somar +2 em um ataque conjunto contra o mesmo alvo.
+
+**Safra na Morte.** Minerva absorve protocolos de comunicação telepática instantânea de esquadrão.
+
+**41. Tecelagem de Fios de Aço** · Artesania Perfeita · Dobra Elemental Anômala
+
+**Fenômeno base.** Você desfia qualquer pedaço de metal, tecido ou escombro em fios prateados ultrarresistentes para costurar barreiras ou armadilhas instantâneas.
+
+1. Bastidor de Contenção (Principal · 4 Karma · 9m): Tece uma grade cortante ao redor do inimigo causando 2d6 cortante e aplicando Lento (se o alvo correr, sofre mais 1d8).
+2. Remendo de Batalha (Extra · 3 Karma): Costura uma armadura aliada ou o próprio traje, concedendo 2d6 + Intelecto de Escudo Temporário.
+
+**Safra na Morte.** Minerva colhe técnicas de tecelagem balística de emergência.
+
+**42. Dissecação de Fórmula Hostil** · Engenharia Reversa · Runa Kármica Primordial
+
+**Fenômeno base.** Ao observar ou sofrer uma técnica inimiga, a runa na sua testa decompõe a matriz dela em equações compreensíveis.
+
+1. Copiar Esboço (Reação · 5 Karma): Após um inimigo lançar uma técnica de Grau igual ou inferior à sua Etapa a até 12m, você grava a estrutura dela: no seu próximo turno, você pode disparar uma versão kármica daquela mesma técnica pagando o custo normal.
+2. Desmontar Matriz (Principal · 4 Karma): Dispara um feixe disruptivo (2d6) que encerra um buff ou escudo ativo no alvo.
+
+**Safra na Morte.** Minerva recolhe o catálogo de técnicas raras dissecadas e replicadas pelo mortal.
+
+#### Vulcano · O Deus das Erupções, da Combustão e da Forja Pesada
+
+**43. Nuvem Piroclástica Sólida** · Cinza de Pompeia · Dobra Elemental Anômala
+
+**Fenômeno base.** Você libera cinza vulcânica densa e superaquecida que pode se solidificar instantaneamente em pedra-pomes ao seu comando, prendendo quem estiver dentro.
+
+1. Estátua de Cinza (Principal · 4 Karma · 9m): Envolve o alvo em cinza incandescente (2d8 térmico) que endurece na hora, reduzindo o deslocamento dele a 0m até que quebre a crosta (ou sofra um golpe pesado).
+2. Cortina Vesuviana (Extra · 3 Karma): Cria uma zona de 4m de fumaça vulcânica que bloqueia visão inimiga e causa 4 de dano térmico a quem terminar o turno nela.
+
+**Safra na Morte.** Vulcano absorve o controle de transição rápida entre gás piroclástico e rocha sólida.
+
+**44. Coração de Caldeira a Diesel** · Motor de Combustão · Método de Luta Exclusivo
+
+**Fenômeno base.** Seu metabolismo queima Karma como combustível de alta octanagem; seus socos e golpes liberam explosões secas de impacto pelo impacto mecânico.
+
+1. Ignição de Segundo Estágio (Livre no ataque · 3 Karma): Quando acerta um ataque na faixa Parcial ou Total, provoca uma segunda explosão no ponto de contato que soma +2d6 de dano de fogo/contundente e ignora 3 de Redução de Dano.
+2. Purga de Escape (Reação · 3 Karma): Explode chamas pelas costas para impulsionar uma esquiva ou avançar 4,5m em linha reta.
+
+**Safra na Morte.** Vulcano colhe a integração da engenharia de motores de combustão do século XX ao corpo humano.
+
+**45. Soldagem de Carne e Liga** · Fusão de Materiais · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você pode fundir temporariamente armas, placas de aço ou escudos ao próprio corpo (ou ao corpo de aliados consentidos) sem causar rejeição biológica.
+
+1. Enxerto de Blindagem (Movimento · 3 Karma): Funde um escudo ou peça metálica ao braço pela cena: você não pode ser desarmado, recebe +2 na CA e seus ataques desarmados usam o dado e as propriedades da arma fundida.
+2. Superaquecer Arma Inimiga (Principal · 4 Karma · 6m): Faz a arma metálica do inimigo brilhar em brasa viva, causando 2d6 térmico nele e forçando-o a largá-la ou sofrer -2 no acerto.
+
+**Safra na Morte.** Vulcano recolhe a biomecânica de fusão entre tecido vivo e metalurgia pesada.
+
+#### Plutão · O Deus da Usura Subterrânea, das Dívidas e do Subsolo
+
+**46. Livro-Razão de Sangue e Karma** · Contrato de Usura · Runa Kármica Primordial
+
+**Fenômeno base.** Qualquer dano que você sofre de um inimigo é registrado como uma "Dívida Aberta" daquele inimigo com você, acumulando juros a cada rodada.
+
+1. Executar Hipoteca (Principal · 4 Karma · 9m): Contra um inimigo que tenha causado dano a você na cena, desfere um golpe de cobrança que causa 2d8 + metade do dano que ele lhe causou na última rodada (máximo +10).
+2. Empréstimo de Emergência (Livre · 0 Karma · 1x/cena): Recebe 8 de Karma imediatos do Deus; em troca, ao final de 3 rodadas, você perde 10 de Karma (ou 10 de Vida).
+
+**Safra na Morte.** Plutão absorve modelos matemáticos de alavancagem de risco em combates de vida ou morte.
+
+**47. Transmutação em Chumbo Dourado** · Ouro Maldito · Dobra Elemental Anômala
+
+**Fenômeno base.** O toque da sua arma converte a camada superficial da roupa, armadura ou pele do alvo em ouro maciço extremamente denso e pesado.
+
+1. Fardo de Midas (Principal · 4 Karma): Ataque que causa 2d6 contundente e reveste as pernas ou braços do alvo de ouro pesado, aplicando Lento e -2 em Reflexos e Agilidade por 2 rodadas.
+2. Estilhaçar Lingote (Extra · 3 Karma): Contra um alvo sob Fardo de Midas, quebra a crosta dourada causando 2d8 perfurante adicional.
+
+**Safra na Morte.** Plutão colhe a alquimia de petrificação metálica parcial em combate.
+
+**48. Sumidouro do Averno** · Fenda Abissal · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você transforma o piso sólido a até 9m em uma boca escura de terra movediça gravitacional que puxa os pés dos inimigos para baixo.
+
+1. Afundar até os Joelhos (Principal · 4 Karma · Raio 3m): Causa 2d6 de dano e prende os alvos no solo (imobilizados no lugar até gastarem 1 ação de Movimento ou vencerem Atletismo).
+2. Mergulho Subterrâneo (Reação · 4 Karma): Afunda no próprio chão como em água escura para escapar de um ataque de área e emerge a até 4,5m de distância.
+
+**Safra na Morte.** Plutão recolhe a manipulação de permeabilidade do solo urbano e rochoso.
+
+#### Netuno · O Deus das Marés, da Neblina Marinha e dos Monstros Oceânicos
+
+**49. Maré de Água-Régia Abissal** · Salmoura Corrosiva · Dobra Elemental Anômala
+
+**Fenômeno base.** A água conjurada ou manipulada por você possui concentração salina e ácida extrema, capaz de oxidar aço e queimar feridas abertas.
+
+1. Chicote de Salmoura (Principal · 4 Karma · 6m): Causa 2d8 cortante/ácido; se o alvo já estiver ferido ou com Sangramento, a dor do sal impõe -1d20 no próximo teste dele.
+2. Crosta de Sal Seco (Extra · 3 Karma): Cristaliza o sal sobre seu corpo formando uma couraça branca que absorve 12 pontos de dano antes de quebrar.
+
+**Safra na Morte.** Netuno absorve a química de soluções salinas hiperconcentradas para corrosão rápida.
+
+**50. Miragem de Espuma e Nevoeiro** · Bruma dos Naufrágios · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você exala uma neblina úmida que refrata imagens e sons, fazendo com que os inimigos vejam sua silhueta deslocada em 2 metros da sua posição real.
+
+1. Banco de Cerração (Extra · 3 Karma · Raio 4,5m): Enquanto estiver na neblina, ataques contra você sofrem -2 para atingir a CA Parcial e Total.
+2. Fantasma do Convés (Principal · 4 Karma): Cria um duplo de espuma condensada que avança e explode ao ser tocado ou atacar, causando 2d8 de dano frio/kármico.
+
+**Safra na Morte.** Netuno colhe o domínio de ilusão óptica por dispersão de aerossóis líquidos.
+
+**51. Turbilhão de Arrasto Centrípeto** · Redemoinho de Caríbdis · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus movimentos giratórios de arma criam correntes de sucção espiral no ar e na água, puxando inimigos e projéteis para a órbita do seu golpe.
+
+1. Espiral de Tridente (Principal · 4 Karma): Golpe giratório em 3m ao seu redor que puxa todos os inimigos próximos em 2m na sua direção e causa 2d8 cortante.
+2. Engolir Disparo (Reação · 3 Karma): Captura um projétil na corrente espiral da arma, anulando o dano e arremessando-o de volta com 1d10 de dano.
+
+**Safra na Morte.** Netuno recolhe a hidrodinâmica de vórtices aplicada ao combate com armas de haste.
+
+#### Vênus · A Deusa da Atração, da Empatia Espelhada e do Encanto
+
+**52. Gravidade de Estrela da Manhã** · Atração Irresistível · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você pode transformar o próprio corpo (ou um objeto que você toque) em um polo de atração gravitacional seletiva contra um alvo específico.
+
+1. Puxão de Órbita (Extra · 3 Karma · 9m): O alvo marcado é puxado 4 metros na sua direção (ou na direção do objeto marcado, como uma parede ou armadilha); se colidir, sofre 2d6 contundente.
+2. Desvio de Olhar e Lâmina (Reação · 4 Karma): Atrai magneticamente o braço ou arma do inimigo que atacava um aliado seu, forçando o ataque a errar ou bater no chão.
+
+**Safra na Morte.** Vênus absorve a conversão do conceito de desejo/atração em força vetorial física.
+
+**53. Vínculo de Dano Compartilhado** · Espelho de Vênus · Runa Kármica Primordial
+
+**Fenômeno base.** Ao tocar um inimigo ou ser ferido por ele, você estabelece um fio cor-de-rosa translúcido de empatia forçada entre o seu sistema nervoso e o dele.
+
+1. Reflexo de Narciso (Reação · 4 Karma): Quando o inimigo vinculado causa dano a você, você reduz o dano sofrido em 1d10 e o próprio atacante recebe exatamente o mesmo valor de dano final que causou em você.
+2. Inversão de Charme (Principal · 4 Karma): Teste de Presença/Espírito contra Vontade; o alvo vinculado não consegue atacar você diretamente por 1 rodada sem antes sofrer 2d6 de dano mental.
+
+**Safra na Morte.** Vênus colhe o espelhamento sináptico de dor entre agressor e vítima.
+
+**54. Perfume de Torpor Neural** · Jardim de Rosas e Espinhos · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu sangue e seu Karma liberam uma fragrância adocicada invisível que entorpece os reflexos motores dos adversários a cada respiração.
+
+1. Névoa de Ambrosia (Extra · 3 Karma · Cone 4,5m): Alvos na área sofrem -2 em Iniciativa, Reflexos e Percepção por 2 rodadas.
+2. Espinho Despertador (Principal · 4 Karma): Golpe perfurante contra um alvo sob efeito da névoa; causa 2d8 + 4 de dano e converte o torpor em condição Desorientado.
+
+**Safra na Morte.** Vênus absorve neurotoxinas aromáticas de ação rápida para controle de multidões.
+
+### Asa do Destino · Panteão Nórdico
+
+#### Odin · O Pai de Todos, Senhor das Runas, da Forca e de Gungnir
+
+**55. Vetor que Não Conhece Desvio** · A Lança Gungnir · Runa Kármica Primordial
+
+**Fenômeno base.** Uma inscrição na sua mão dominante altera a causalidade de um ataque: uma vez lançado, o golpe dobra o espaço para buscar o coração do alvo.
+
+1. Juramento de Gungnir (Livre no ataque · 4 Karma): Seu ataque ignora penalidades de distância, cobertura e camuflagem, e converte automaticamente um resultado de Falha em Acerto Parcial (ou soma +3 para atingir a CA Total).
+2. Perfuração de Linha (Extra · 3 Karma): O golpe atravessa o primeiro alvo causando 2d6 também no inimigo posicionado logo atrás dele.
+
+**Safra na Morte.** Odin absorve a manipulação de probabilidade e certeza de impacto em combate mortal.
+
+**56. Sabedoria pela Agonia** · Sacrifício de Yggdrasil · Método de Luta Exclusivo
+
+**Fenômeno base.** Assim como Odin se feriu com a própria lança para ler as runas, seu corpo converte perda de sangue e Vida diretamente em clareza mental e poder kármico.
+
+1. Tributo do Caolho (Livre · 0 Karma + 4 de Vida irreduzível): Sacrifica a própria Vida para recuperar imediatamente 6 de Karma (ou gravar 1 Runa de Grau até III sem gastar ação) e receber +1d20 no próximo teste.
+2. Olho do Poço de Mimir (Passiva): Enquanto estiver com metade da Vida ou menos, a CD de todas as suas técnicas e runas sobe em +2.
+
+**Safra na Morte.** Odin colhe os segredos rúnicos arrancados pelo mortal no limiar da própria morte.
+
+**57. Corvos de Pensamento e Memória** · Hugin e Munin · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Dois corvos feitos de sombra e tinta rúnica pousam nos seus ombros, podendo desprender-se do seu corpo para atuar como extensões da sua mente a até 18m.
+
+1. Rasante de Munin (Memória) (Extra · 3 Karma): O corvo bica a têmpora do alvo a 12m causando 1d10 mental e apagando a memória muscular de curto prazo dele (-2 na CA e impede o alvo de usar Reações até o próximo turno).
+2. Olhos de Hugin (Pensamento) (Movimento · 2 Karma): Envia o corvo pelo mapa; você enxerga tudo em 360° ao redor dele e pode lançar técnicas usando o corvo como ponto de origem.
+
+**Safra na Morte.** Odin recolhe todas as memórias de batalha registradas pelos dois corvos durante a vida do usuário.
+
+#### Thor · O Deus do Trovão, da Força Bruta e do Martelo Mjolnir
+
+**58. Chamado de Inércia Reversa** · Retorno de Mjolnir · Runa Kármica Primordial
+
+**Fenômeno base.** Qualquer arma ou objeto que você empunhe possui um selo de retorno: após ser arremessado ou solto, ele volta voando para a sua mão com o dobro da velocidade.
+
+1. Ida e Volta (Principal · 4 Karma · 9m): Arremessa sua arma contra o alvo (2d6 de dano na ida) e puxa-a de volta no fim do turno atingindo o alvo pelas costas (+1d10 de dano na volta, ignorando escudo frontal).
+2. Puxar pelo Cabo (Movimento · 3 Karma): Em vez de puxar a arma para a mão, você se deixa puxar pelo voo da arma arremessada, voando 6m até ela e derrubando quem estiver no caminho.
+
+**Safra na Morte.** Thor absorve manobras acrobáticas e balísticas de vetores bidirecionais.
+
+**59. Duplicação de Torque Muscular** · Cinturão Megingjord · Método de Luta Exclusivo
+
+**Fenômeno base.** Uma faixa de energia elétrica envolve sua cintura; ao firmar os pés no chão, a massa efetiva dos seus golpes dobra sem aumentar o peso do seu corpo.
+
+1. Impacto de Montanha (Principal · 4 Karma): Golpe pesado que causa 2d10 contundente, destrói coberturas físicas ou portas reforçadas automaticamente e lança o alvo 3m para trás.
+2. Firmeza de Rocha (Reação · 2 Karma): Anula qualquer tentativa de empurrão, queda ou desarme contra você e causa 1d8 elétrico no agressor.
+
+**Safra na Morte.** Thor colhe o aperfeiçoamento da geração de torque mecânico em corpos de porte médio.
+
+**60. Sobrecarga de Arco Voltaico** · Tempestade de Asgard · Dobra Elemental Anômala
+
+**Fenômeno base.** Cada golpe físico que você desfere ou recebe acumula cargas de relâmpago azul nos seus punhos e arma, saltando em faíscas para quem estiver perto.
+
+1. Trovão em Cadeia (Extra · 3 Karma): Após acertar um alvo, descarrega um arco voltaico que salta para até 2 outros inimigos a 3m do primeiro, causando 1d10 elétrico em cada um.
+2. Queda do Céu (Principal · 5 Karma): Salta alto e desaba em um ponto a 6m, causando 2d8 em área de 3m e aplicando Desorientado.
+
+**Safra na Morte.** Thor recolhe a condução de correntes alternadas de alta voltagem através de combates corpo a corpo.
+
+#### Loki · O Deus da Trapaça, da Inversão e da Metamorfose
+
+**61. Permuta de Momento** · Trapaça Espacial · Runa Kármica Primordial
+
+**Fenômeno base.** Marca até 2 alvos ou objetos tocados a até 15m por 2 rodadas, permitindo trocar instantaneamente o vetor de velocidade e movimento entre eles.
+
+1. Transferência de Investida (Reação/Extra · 4 Karma): Transfere o impacto de uma queda, empurrão ou rocha arremessada para o inimigo marcado, lançando-o 4m com 2d6 de dano e aplicando Caído.
+2. Parada Súbita (Movimento · 2 Karma): Troca a própria inércia pela estática de um pilar para mudar de direção em 90° no ar.
+
+**Safra na Morte.** Loki colhe as equações de conservação de momento e trapaça cinética.
+
+**62. Dublê de Casca Ilusória** · Mentira Tangível · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você cria uma cópia visual e sonora idêntica de si mesmo que possui peso leve o suficiente para pisar em armadilhas e atrair mira, durando até ser atingida.
+
+1. Troca de Palco (Reação · 4 Karma): Quando você sofre um ataque e seu Dublê está a até 9m, você revela que o alvo atingido era a cópia (que se desfaz em risadas e fumaça verde causando 1d8 mental no atacante), enquanto você surge ileso na posição onde a cópia estava.
+2. Finta Dupla (Extra · 2 Karma): Move o Dublê 6m para flanquear o inimigo, reduzindo a CA Parcial dele em -2 contra seu próximo golpe.
+
+**Safra na Morte.** Loki absorve o teatro tático de iscas físicas e inversão de posicionamento.
+
+**63. Anatomia de Fraude Biológica** · Sangue Mutante · Dobra Elemental Anômala
+
+**Fenômeno base.** Seus órgãos vitais e articulações não ficam fixos no lugar padrão; você pode deslocar o próprio coração de lugar, esticar membros ou imitar a voz e o rosto de outros.
+
+1. Órgão Deslocado (Reação · 3 Karma): Quando sofre um Acerto Total ou crítico perfurante/cortante, desliza seus órgãos internos de lugar, convertendo o Acerto Total em Acerto Parcial (metade do dano).
+2. Chicote de Articulação Solta (Principal · 4 Karma): Desloca o ombro e o pulso para esticar o ataque em +3m por um ângulo impossível, causando 2d8 e ignorando bloqueio frontal.
+
+**Safra na Morte.** Loki recolhe o controle voluntário de mutação anatômica e evasão visceral.
+
+#### Freya · A Deusa do Seidr, das Valquírias e do Colar Brísingamen
+
+**64. Conversão de Dor em Fulgor** · O Colar Brísingamen · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Uma joia espectral de âmbar na sua garganta absorve metade do choque emocional e físico que você sofre, armazenando-o como luz dourada.
+
+1. Explosão de Âmbar (Principal · 4 Karma): Libera a luz acumulada em um feixe ou pulso de 4,5m que causa 2d8 radiante/kármico nos inimigos e cura 1d8 + Espírito em um aliado na área.
+2. Deslumbramento de Vanaheim (Reação · 3 Karma): Brilha intensamente quando atacada corpo a corpo, aplicando -2 no teste de ataque do inimigo.
+
+**Safra na Morte.** Freya absorve a reciclagem de trauma físico em energia radiante de suporte e ataque.
+
+**65. Plumas de Voo Cortante** · Manto de Penas de Falcão · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu manto ou braços desfazem-se em dezenas de penas de falcão afiadas como navalhas que sustentam seu peso no ar e respondem ao seu comando.
+
+1. Rajada de Penas de Aço (Principal · 4 Karma · Cone 6m): Dispara uma tempestade de plumas que causa 2d8 cortante e permite a você planar 4,5m para trás acima do solo.
+2. Resgate de Valquíria (Movimento · 3 Karma): Envolve a si mesmo ou um aliado caído a 6m em um redemoinho de penas, erguendo-o do chão e movendo-o 4,5m pelo ar sem ataques de oportunidade.
+
+**Safra na Morte.** Freya colhe a aerodinâmica de dispersão e recomposição em plumas cortantes.
+
+**66. Fios de Destino Entrelaçado** · Magia Seidr · Runa Kármica Primordial
+
+**Fenômeno base.** Você enxerga e dedilha os fios dourados de sorte que cercam as criaturas na cena, podendo puxar um fio para favorecer um aliado ou dar um nó no fio de um inimigo.
+
+1. Nó de Azar (Reação · 4 Karma · 12m): Quando um inimigo rola um teste de ataque ou resistência, você puxa o fio dele: força o inimigo a descartar o maior d20 rolado na Reserva dele (ou impõe -3 no resultado final se ele tiver apenas 1 dado).
+2. Trama de Favor (Extra · 3 Karma): Concede a um aliado a até 9m +1d20 e +2 no próximo teste dele nesta rodada.
+
+**Safra na Morte.** Freya recolhe métodos de manipulação direta das reservas de probabilidade em combate.
+
+#### Tyr · O Deus do Duelo Justo, da Corrente Gleipnir e do Sacrifício da Mão
+
+**67. Penhora de Membro em Aposta** · A Mão na Boca de Fenrir · Método de Luta Exclusivo
+
+**Fenômeno base.** Você pode deixar um ataque inimigo acertar seu braço ou guarda de propósito para travar a arma ou o membro do agressor sem escapatória.
+
+1. Mordida Aceita (Reação ao sofrer dano corpo a corpo · 3 Karma): Você recebe o dano normalmente, mas trava o atacante adjacente: ele fica Imóvel, sofre -3 na CA Total e o seu próximo ataque contra ele no seu turno é um Acerto Total automático com +1d10 de dano.
+2. Punho Fantasma de Tyr (Passiva): Mesmo que seu braço esteja ferido, ocupado ou com condição física, você projeta um braço kármico invisível para empunhar armas de duas mãos ou escudos sem penalidade.
+
+**Safra na Morte.** Tyr absorve a psicologia e a biomecânica do contra-ataque por sacrifício calculado.
+
+**68. Laço de Coisas Impossíveis** · A Fita Gleipnir · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você conjura uma fita fina e macia como seda (feita de conceitos intangíveis como o som do passo de um gato e o fôlego de um peixe) que fica mais forte quanto mais força bruta o inimigo usa contra ela.
+
+1. Atar o Lobo (Principal · 4 Karma · 6m): Enlaça o alvo causando 2d6 kármico; o alvo não pode usar Força para escapar (qualquer tentativa de quebrar a fita à força causa mais 1d10 de dano nele mesmo), exigindo técnica fina ou ajuda externa.
+2. Esticar Limite (Extra · 3 Karma): Usa a fita para amarrar a arma do inimigo ao chão, aplicando -2 nos ataques dele por 1 rodada.
+
+**Safra na Morte.** Tyr colhe o uso de amarras conceituais que invertem a Força física do oponente contra ele mesmo.
+
+**69. Arena de Paridade Absoluta** · Tribunal de Guerra · Runa Kármica Primordial
+
+**Fenômeno base.** Você crava sua arma no chão desafiando um inimigo a até 6m para um duelo sob o olho de Tyr, nivelando covardias e interferências externas.
+
+1. Declarar Holmgang (Extra · 4 Karma): Vincula você e 1 inimigo por 2 rodadas: ataques de terceiros vindos de fora contra vocês dois causam apenas metade do dano, e se o inimigo tentar atacar outra pessoa que não seja você, sofre 2d8 de dano divino automático.
+2. Balança de Honra (Reação · 2 Karma): Se o inimigo vinculado receber cura ou buff externo, você recebe metade daquele mesmo valor gratuitamente.
+
+**Safra na Morte.** Tyr recolhe a imposição de regras de duelo isolado no meio de batalhas caóticas.
+
+#### Hel · A Deusa de Niflheim, Metade Viva e Metade Cadavérica
+
+**70. Dualidade de Carne e Cadáver** · Corpo Bipartido · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seu corpo pode alternar entre o Lado Vivo (quente, regenerativo) e o Lado Morto (frio, insensível à dor e necrótico) no início de cada turno.
+
+1. Mudança de Semblante (Livre no turno · 2 Karma): No Lado Vivo, você regenera Etapa de Vida no turno e recebe +2 em testes sociais/mentais; no Lado Morto, você recebe Redução de Dano 3 contra tudo, fica imune a veneno/sangramento e seus golpes somam +1d6 necrótico.
+2. Choque Térmico de Hel (Principal · 4 Karma): Golpeia com as duas mãos ao mesmo tempo (vida e morte), causando 2d10 de dano e aplicando Abalado.
+
+**Safra na Morte.** Hel absorve a homeostase entre metabolismo vivo e estase cadavérica.
+
+**71. Névoa deFrio Necrótico** · Geada de Niflheim · Dobra Elemental Anômala
+
+**Fenômeno base.** O frio que você emana não congela apenas a água, mas adormece o próprio Karma e os nervos dos inimigos que respiram o vapor azulado.
+
+1. Sopro dos Nove Mundos Frios (Principal · 4 Karma · Cone 4,5m): Causa 2d8 de dano frio/necrótico e congela 3 pontos de Karma da reserva dos alvos atingidos (eles não podem gastar esses 3 pontos até o final do próximo turno).
+2. Piso de Geada Negra (Movimento · 2 Karma): Deixa um rastro congelado por onde anda que reduz o movimento de perseguidores pela metade.
+
+**Safra na Morte.** Hel colhe a criogenia espiritual capaz de congelar reservas de Karma em combate.
+
+**72. Mão que Puxa do Túmulo** · Senhora dos Mortos Sem Glória · Runa Kármica Primordial
+
+**Fenômeno base.** Onde houver sombras ou cadáveres na cena, braços pálidos e gelados brotam do chão sob seu comando para agarrar os tornozelos dos vivos.
+
+1. Agarrão dos Esquecidos (Extra · 3 Karma · 9m): Braços brotam sob um inimigo causando 1d10 necrótico e reduzindo a CA de esquiva/Agilidade dele em -2 até o próximo turno.
+2. Recusar o Valhala (Reação · 5 Karma · 1x/cena): Quando um aliado a até 9m cairia a 0 de Vida, as mãos de Hel seguram a alma dele no corpo, mantendo-o com 1 de Vida e de pé por mais 1 rodada completa.
+
+**Safra na Morte.** Hel recolhe a ancoragem de almas à beira do óbito.
+
+#### Heimdall · O Sentinela de Asgard, da Trombeta Gjallarhorn e da Bifrost
+
+**73. Câmara de Vácuo Acústico** · Audição Absoluta · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Projeta uma esfera invisível de 4m de raio a até 12m onde nenhum som se propaga; todo ruído suprimido acumula-se como energia mecânica no centro da bolha.
+
+1. Emboscada Muda (2 Karma): Aliados na esfera recebem +1d20 em Furtividade e inimigos dentro dela não podem usar comandos de voz.
+2. Colapso de Decibéis (Principal · 5 Karma): Detona a bolha liberando todo o som reprimido, causando 2d8 de dano em 4m e aplicando Desorientado.
+
+**Safra na Morte.** Heimdall absorve o armazenamento de ondas mecânicas via privação sensorial.
+
+**74. Trilho de Luz Prismática** · Guardião da Bifrost · Dobra Elemental Anômala
+
+**Fenômeno base.** Você cria pontes e rampas curtas de luz sólida multicolorida no ar, que queimam pés inimigos mas aceleram o passo de aliados.
+
+1. Passarela do Arco-Íris (Movimento · 3 Karma): Cria uma rampa de luz de 9m (inclusive subindo para telhados ou sobre abismos); você e aliados que corram por ela ganham +3m de movimento, enquanto inimigos que toquem a ponte sofrem 2d6 radiante.
+2. Corte de Sete Cores (Principal · 4 Karma): Desfaz a ponte em um feixe prismático contra um alvo a 9m, causando 2d8 de dano que ignora resistências elementais.
+
+**Safra na Morte.** Heimdall colhe a engenharia de pontes fotônicas táticas de curta distância.
+
+**75. Vigília do Horizonte Branco** · Olhos que Não Dormem · Runa Kármica Primordial
+
+**Fenômeno base.** Seus olhos dourados enxergam em 360 graus através de paredes finas, fumaça e ilusões a até 15m; é impossível pegar você desprevenido.
+
+1. Toque de Gjallarhorn (Reação no início do combate · 3 Karma): Você nunca fica surpreso, soma +4 na sua Iniciativa e concede +2 na Iniciativa e na CA de todos os aliados a até 9m na primeira rodada.
+2. Sentinela Implacável (Reação · 3 Karma): Quando um inimigo tenta entrar ou sair de furtividade/teleporte a até 12m, você desfere um ataque imediato contra ele com +2 no acerto.
+
+**Safra na Morte.** Heimdall recolhe protocolos de detecção contra infiltração e teletransporte.
+
+#### Skadi · A Deusa das Montanhas Geladas, dos Esquis e da Caça de Inverno
+
+**76. Patinação em Geada Espelhada** · Esquis de Vento Gelado · Método de Luta Exclusivo
+
+**Fenômeno base.** Suas botas condensam lâminas finas de gelo sob as solas que permitem deslizar sobre qualquer terreno (terra, pedra, escadas ou água) em alta velocidade mantendo as duas mãos livres para atirar ou golpear.
+
+1. Tiro em Curva de Avalancha (Movimento + Principal · 4 Karma): Desliza até 9m em arco ao redor do alvo enquanto dispara ou golpeia, causando 2d8 perfurante/frio e somando +2 na sua própria CA até o próximo turno.
+2. Rastro Cortante (Extra · 2 Karma): Quem cruzar a linha de gelo que você deixou no chão neste turno sofre 1d8 frio e precisa vencer Acrobacia ou fica Caído.
+
+**Safra na Morte.** Skadi absorve a cinemática de tiro em movimento contínuo sobre superfícies congeladas.
+
+**77. Zero Absoluto de Perseguição** · Inverno Implacável · Dobra Elemental Anômala
+
+**Fenômeno base.** Cada ataque seu que acerta um inimigo rouba calor cinético dele, cobrindo as juntas do alvo com camadas cumulativas de geada branca.
+
+1. Flecha de Estalactite (Principal · 4 Karma · 18m): Causa 2d8 perfurante/frio e reduz o Movimento do alvo em -3m (-6m se ele já estiver Lento).
+2. Estilhaçar Geada (Extra · 3 Karma): Contra um alvo que esteja Lento ou com geada acumulada, explode o gelo no corpo dele causando 2d6 adicional e aplicando -2 nos ataques dele por 1 rodada.
+
+**Safra na Morte.** Skadi colhe o método de desaceleração térmica progressiva de alvos velozes.
+
+**78. Camuflagem de Nevasca Branca** · Predadora das Cumeadas · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Ao ficar imóvel perto de uma parede, coluna ou cobertura, a luz ao seu redor se espalha como reflexo de neve, tornando seu contorno quase invisível à distância.
+
+1. Emboscada da Montanha (Passiva + 3 Karma no ataque): Se você não se moveu mais que 1,5m no turno antes de atacar à distância, seu ataque ganha +6m de alcance, +1d20 na Reserva e soma +Etapa ao dano.
+2. Vento de Cume (Reação · 3 Karma): Rajada de ar gelado que desvia projéteis inimigos (+3 na CA contra ataques à distância).
+
+**Safra na Morte.** Skadi recolhe técnicas de franco-atirador e camuflagem óptica em relevos elevados.
+
+#### Baldur · O Deus da Luz Incorruptível, da Invulnerabilidade e do Renascimento
+
+**79. Invulnerabilidade de Exceção Única** · Pacto de Frigg · Runa Kármica Primordial
+
+**Fenômeno base.** Sua pele carrega o juramento que protegeu Baldur: no início da cena (ou ao ativar), seu corpo torna-se quase impenetrável contra uma natureza específica de ataque, mantendo apenas um ponto cego.
+
+1. Juramento das Coisas (Extra · 4 Karma): Escolha 1 tipo de dano (Cortante, Perfurante, Contundente, Elemental ou Kármico): até o fim do seu próximo turno, você recebe Redução de Dano 6 contra aquele tipo e imunidade a Acertos Críticos dele (em troca, sofre +2 de dano de um único outro tipo à sua escolha, o seu "Visco").
+2. Desviar Ameaça (Reação · 3 Karma): Armas comuns que atinjam apenas sua CA Parcial escorregam sem causar dano algum.
+
+**Safra na Morte.** Baldur absorve a adaptação dinâmica de imunidades seletivas em combate.
+
+**80. Aura de Hesitação e Paz Forçada** · OMais Amado · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Uma luz serena e quente emana de você; ferir você parece um ato antinatural para a mente subconsciente de qualquer criatura viva.
+
+1. Peso da Culpa (Passiva + 3 Karma na Reação): Quando um inimigo declara um ataque contra você, ele sofre -2 no teste de acerto; se mesmo assim ele lhe causar dano, sofre 2d6 de dano mental/radiante imediato pelo rebote espiritual.
+2. Trégua de Solstício (Principal · 4 Karma · 9m): Remove Abalado / Desorientado de até 2 aliados e concede 1d10 + Espírito de Escudo Temporário a eles.
+
+**Safra na Morte.** Baldur colhe o bloqueio psicológico de intenção assassina em combatentes hostis.
+
+**81. Centelha de Renascimento Dourado** · Sol Após o Ragnarok · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu Karma queima com a promessa do mundo que renasce das cinzas; quanto mais destruído estiver o campo de batalha ou seu próprio corpo, mais forte brilha sua chama dourada.
+
+1. Fulgor de Novo Mundo (Principal · 4 Karma · 9m): Dispara uma onda de luz dourada que causa 2d8 radiante nos inimigos e faz brotar luz curativa no chão, restaurando 1d8 de Vida em você ou em um aliado na área.
+2. Erguer das Cinzas (Reação · 6 Karma · 1x/cena): Ao cair a 0 de Vida ou sofrer uma Fratura, explode em luz (2d6 nos inimigos a 3m) e recupera imediatamente 2d10 + Etapa de Vida.
+
+**Safra na Morte.** Baldur recolhe a ignição de autorressurreição celular movida pelo Karma residual.
 
 # Capítulo 14 - Corrupção e a Marca
 
@@ -4477,23 +5424,45 @@ Florete troca força bruta por acesso à Agilidade e dano menor. Haste mantém i
 
 Flechas comuns não recebem o efeito de uma munição de fogo pelo mesmo nome. Depois de um combate com acesso seguro à área, recupere metade das flechas, virotes e dardos usados, arredondada para baixo; os demais foram perdidos ou danificados. Não recupere projéteis consumidos por efeito sobrenatural nem aqueles deixados em terreno inacessível.
 
-## Focos e armas de conjuradores
+## Armas de magos
 
-Focos não concedem técnicas gratuitas. O disparo básico possui seu alcance e usa Principal, 0 Karma, um alvo e linha de efeito. Não aceita Ampliação Kármica como se fosse uma técnica aprendida. A lâmina rúnica permanece uma arma de Luta; Condutora permite usar nela uma técnica conhecida sem trocar seu ataque básico por Ocultismo.
+O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. Cada arma possui espaços rúnicos próprios. As runas nesses espaços ficam fora do limite pessoal, mas ainda retêm Karma.
 
-| Nome do Item                                                  | Preço (m) | Dano / Efeito                          | Carga (Espaços) | Requisito de Força | Alcance e Propriedades                                                             |
-|---------------------------------------------------------------|-----------|----------------------------------------|-----------------|--------------------|------------------------------------------------------------------------------------|
-| <span item="varinha">Varinha</span>                           | 10        | 1d6 Karma                              | 1               | —                  | 15 m; Leve; uma mão; Focal, Precisa                                                |
-| <span item="cajado">Cajado</span>                             | 20        | 1d8 Karma                              | 2               | 1                  | 30 m; Média; duas mãos; Focal, Condutora                                           |
-| <span item="lamina-runica">Lâmina rúnica</span>               | 22        | 2d4 cortante                           | 2               | 1                  | 2 m; Média; uma mão; Precisa, Condutora                                            |
-| <span item="grimorio">Grimório</span>                         | 35        | 1d10 Karma                             | 1               | —                  | 15 m; Leve; uma mão para sustentar e outra para gestos; Focal, Ritualística        |
-| <span item="orbe-de-convergencia">Orbe de convergência</span> | 75        | 1d6 Karma                              | 1               | —                  | 15 m; superior de origem; Focal, Condutora, Origem Remota                          |
-| <span item="amuleto-de-vinculo">Amuleto de vínculo</span>     | 60        | 1d8 Karma                              | 0,5             | —                  | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
-| <span item="cetro-de-combate">Cetro de combate</span>         | 28        | 1d8 Karma                              | 2               | 1                  | 15 m; Média; uma mão; Focal, Defensiva apenas se usado em contato                  |
-| <span item="placa-de-inscricoes">Placa de inscrições</span>   | 18        | Foco de preparação, sem ataque próprio | 1               | —                  | Toque; Ritualística; uma família de ritos                                          |
-| <span item="fio-de-ancoragem">Fio de ancoragem</span>         | 16        | Foco para técnica conhecida de vínculo | 0,5             | —                  | 5 m; Condutora de Conjuração; não invoca sozinho                                   |
+| Nome do Item                                                      | Preço (m) | Dano / Efeito                | Carga (Espaços) | Requisito de Força | Alcance e Propriedades                                                       |
+|-------------------------------------------------------------------|-----------|------------------------------|-----------------|--------------------|------------------------------------------------------------------------------|
+| <span item="grimorio">Grimório Catalisador</span>                 | 35        | 1d6 Kármico                  | 1               | 0                  | 12 m · Focal, Ritualística, Uma Mão · 3 espaços rúnicos                      |
+| <span item="orbe-de-convergencia">Orbe de Ressonância</span>      | 75        | 1d8 Elemental / Kármico      | 1               | 0                  | 15 m · Focal, Condutora, Flutuante · 2 espaços rúnicos                       |
+| <span item="cajado">Cajado Rúnico</span>                          | 20        | 1d10 Contundente / Kármico   | 2               | 1                  | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos · 3 espaços rúnicos   |
+| <span item="cetro-de-combate">Cetro de Comando</span>             | 28        | 1d8 Contundente              | 1               | 1                  | 12 m · Focal, Precisa, Uma Mão · 2 espaços rúnicos                           |
+| <span item="luvas-canalizadoras">Luvas Canalizadoras</span>       | A definir | 1d6 Contundente / Kármico    | 0,5             | 0                  | toque (1,5 m) / 9 m · Focal, Condutora, Leve · 2 espaços rúnicos             |
+| <span item="lamina-runica">Lâmina Rúnica</span>                   | 22        | 1d8 Cortante / Kármico       | 1               | 1                  | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão · 2 espaços rúnicos |
+| <span item="lanterna-astral">Lanterna Astral</span>               | A definir | 1d8 Divino / Kármico         | 1               | 0                  | 12 m · Focal, Ritualística, Iluminação · 2 espaços rúnicos                   |
+| <span item="correntes-de-selamento">Correntes de Selamento</span> | A definir | 1d8 Contundente / Perfurante | 1,5             | 1                  | 4,5 m · Focal, Condutora, Alcance · 2 espaços rúnicos                        |
 
-Pôr o orbe a flutuar adjacente ou movê-lo até 5 m usa a interação simples; isso não reduz a carga contada nem libera prontidão. O usuário pode manter uma mão livre enquanto o orbe está suspenso, mas continua concentrando e percebendo pelos próprios sentidos. O amuleto não sustenta concentração por conta própria. O grimório pode ser fechado como interação simples; não recebe seu disparo ou benefício ritual enquanto fechado.
+**Grimório Catalisador.** +1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior.
+
+**Orbe de Ressonância.** +2 no resultado final de testes de Canalização de Karma. Por flutuar ao redor do pulso, deixa a mão livre para gestos e amplia o raio ou cone de técnicas de área em +1,5m.
+
+**Cajado Rúnico.** +2 na CD de todas as suas Técnicas e Runas. Ao bater a base do cajado no chão (Movimento), o alcance de todas as suas técnicas sobe em +6m e o dano soma +Etapa até o próximo turno.
+
+**Cetro de Comando.** +1 em Espírito (aumentando o Karma Máximo em +2) e +2 em testes de ataque e CA das suas Invocações/Constructos. Permite redirecionar o ponto de origem de uma técnica para o espaço de uma invocação aliada a até 12m.
+
+**Luvas Canalizadoras.** +1 em Agilidade (para Iniciativa e Pontaria/Luta com técnicas) e mantém ambas as mãos livres. Permite cravar Runas de Selo ou técnicas de toque como parte de um ataque desarmado ou disparo curto com +2 no acerto.
+
+**Lâmina Rúnica.** Arma híbrida para magos de combate: Permite usar Intelecto ou Espírito no lugar de Força/Agilidade para ataques com a lâmina. Sempre que acertar um golpe físico Total, reduz em -2 de Karma a próxima técnica usada no mesmo turno.
+
+**Lanterna Astral.** Emite luz espiritual em 6m de raio que revela inimigos furtivos/invisíveis e concede +1 na CA Parcial para aliados dentro do facho. Técnicas de suporte, barreira ou controle lançadas através da lanterna somam +1d8 de potência.
+
+**Correntes de Selamento.** Permite atacar e transferir Runas de Campo/Selo a até 4,5m de distância. Em caso de Acerto Total, além do dano, aplica a condição Lento (ou impede o alvo de se afastar mais de 4,5m de você por 1 rodada).
+
+### Outros focos e acessórios
+
+| Nome do Item                                                | Preço (m) | Dano / Efeito                          | Carga (Espaços) | Requisito de Força | Alcance e Propriedades                                                             |
+|-------------------------------------------------------------|-----------|----------------------------------------|-----------------|--------------------|------------------------------------------------------------------------------------|
+| <span item="varinha">Varinha</span>                         | 10        | 1d6 Karma                              | 1               | —                  | 15 m; Leve; uma mão; Focal, Precisa                                                |
+| <span item="amuleto-de-vinculo">Amuleto de vínculo</span>   | 60        | 1d8 Karma                              | 0,5             | —                  | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
+| <span item="placa-de-inscricoes">Placa de inscrições</span> | 18        | Foco de preparação, sem ataque próprio | 1               | —                  | Toque; Ritualística; uma família de ritos                                          |
+| <span item="fio-de-ancoragem">Fio de ancoragem</span>       | 16        | Foco para técnica conhecida de vínculo | 0,5             | —                  | 5 m; Condutora de Conjuração; não invoca sozinho                                   |
 
 ## Armaduras, escudos e vestimentas
 

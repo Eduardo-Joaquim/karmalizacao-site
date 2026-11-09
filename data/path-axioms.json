@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Quebra de Limite Físico",
+    "focus": "Força Bruta / Vanguarda Marcial",
+    "effect": "Seus ataques da Matriz Marcial ignoram os primeiros 4 pontos de Redução de Dano ou Escudo Temporário do alvo. Uma vez por turno, ao acertar um golpe corpo a corpo Total, você empurra o alvo em 2m e soma +Etapa ao dano causado."
+  },
+  {
+    "id": 2,
+    "name": "Anatomia do Ponto Fatal",
+    "focus": "Letalidade / Precisão / Crítico",
+    "effect": "Reduz em -2 o limiar de CA Total de qualquer alvo que já tenha sofrido dano na rodada ou que esteja fora do alcance de aliados dele. Seus ataques que atinjam a CA Total aplicam Sangramento ou reduzem a cura recebida pelo alvo pela metade por 1 rodada."
+  },
+  {
+    "id": 3,
+    "name": "Passo de Horizonte Curto",
+    "focus": "Velocidade / Mobilidade / Espaço",
+    "effect": "Aumenta seu Movimento base em +3 metros permanentes. Você ignora terreno difícil e, uma vez por rodada como Ação Livre (custo: 1 Karma), pode percorrer até 3m sem provocar ataques de oportunidade antes ou depois de atacar."
+  },
+  {
+    "id": 4,
+    "name": "Bastião Inquebrável",
+    "focus": "Defesa Pesada / Guardião / Sobrevivência",
+    "effect": "Aumenta sua CA Parcial e Total em +1 e sua Vida Máxima em +2 por Etapa. Sempre que você usar uma Reação defensiva ou receber um Escudo Temporário, o valor de absorção ou redução de dano aumenta em +Etapa."
+  },
+  {
+    "id": 5,
+    "name": "Circuito Rúnico Autônomo",
+    "focus": "Escriba / Especialista Rúnico",
+    "effect": "Amplia seu limite máximo de Runas Kármicas ativas em +2. A primeira Runa que você estourar em cada cena recupera 3 de Karma para sua reserva e tem sua Classe de Dificuldade (CD) ou bônus de acerto aumentado em +2."
+  },
+  {
+    "id": 6,
+    "name": "Soberania Elemental",
+    "focus": "Elementalista / Conjurador de Área",
+    "effect": "Técnicas da Matriz Elemental recebem +1 dado do mesmo tipo no cálculo de dano antes do parcial e ignoram resistências elementais leves. Além disso, você pode excluir até 2 aliados da área de efeito das suas próprias técnicas elementais."
+  },
+  {
+    "id": 7,
+    "name": "Regência de Comando Neural",
+    "focus": "Invocador / Criador de Constructos",
+    "effect": "Reduz em -1 de Karma (mínimo 1) o custo de Manutenção de todas as suas Invocações e dispositivos ativos. Suas invocações somam +2 na CA e nos testes de ataque, e uma delas pode receber ordens por turno mesmo sem linha de visão direta."
+  },
+  {
+    "id": 8,
+    "name": "Síntese Alquímica de Campo",
+    "focus": "Alquimista / Suporte Tático",
+    "effect": "Aumenta seu limiar seguro de Saturação Alquímica em +2. Permite consumir ou aplicar elixires, munições especiais e reparos táticos reduzindo a ação exigida em um passo (Principal → Movimento → Livre) uma vez por rodada, somando +Etapa à cura ou escudo gerado."
+  },
+  {
+    "id": 9,
+    "name": "Vácuo de Anulação Kármica",
+    "focus": "Antimago / Caçador de Conjuradores",
+    "effect": "Quando você acerta um alvo com arma ou técnica, pode queimar 2 de Karma para destruir 4 de Karma da reserva do alvo (ou encerrar 1 efeito sustentado de Grau igual ou inferior à sua Etapa). Concede +2 na CA contra técnicas das Matrizes Kármica e Divina."
+  },
+  {
+    "id": 10,
+    "name": "Predação de Sombra Viva",
+    "focus": "Subterfúgio / Furtividade / Emboscada",
+    "effect": "Atacar a partir de cobertura, furtividade ou flanco adiciona +1d20 na Reserva do ataque e impede que o alvo utilize Reações até o início do próximo turno dele. Abater ou deixar um inimigo em estado crítico permite entrar em furtividade como Ação Livre."
+  }
+]

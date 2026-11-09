@@ -1,3 +1,4 @@
+import { PantheonBlessingsPortal } from "@/components/pantheon-blessings-portal";
 import {MarkdownArticle} from "@/components/markdown-article";
 import { RuleOrnament } from "@/components/rule-ornament";
 import court from "@/data/court-sheets.json";
@@ -76,7 +77,8 @@ export default async function RuleChapterPage({ params, searchParams }: PageProp
             </div>
           </header>
 
-          <MarkdownArticle html={chapter.html} chapter={chapter.number}/>
+          <MarkdownArticle html={chapter.number === 13 ? chapter.html.split('<h2 id="portal-das-nove-asas">')[0] : chapter.html} chapter={chapter.number}/>
+          {chapter.number === 13 && <PantheonBlessingsPortal />}
 
           <nav className="chapter-pagination" aria-label="Capítulos anterior e próximo">
             {previous ? (

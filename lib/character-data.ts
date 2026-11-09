@@ -96,6 +96,8 @@ export function normalizeCharacterPayload(
   const old = payload.combat, live = payload.combatState;
   normalized.combatState = {
     summons:live?.summons??{},
+    runes:live?.runes??[],
+    runeBurstUsed:live?.runeBurstUsed??false,
     inCombat: live?.inCombat ?? false,
     currentLife: Math.max(0, Math.min(max.life, live?.currentLife ?? old?.life ?? max.life)),
     currentKarma: Math.max(0, Math.min(max.karma, live?.currentKarma ?? old?.karma ?? max.karma)),

@@ -1,0 +1,1157 @@
+[
+  {
+    "id": 1,
+    "name": "Grego",
+    "wing": "Asa da Glória",
+    "deities": [
+      {
+        "name": "Zeus",
+        "epithet": "O Soberano do Éter e da Tempestade",
+        "blessings": [
+          {
+            "id": 1,
+            "facet": "Ionização Atmosférica",
+            "title": "Coroa de Ozônio Vivo",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seu corpo mantém carga eletrostática contínua que ioniza o ar em 4,5m. Metais inimigos na zona ficam magnetizados (-1 no acerto contra você).",
+            "extensions": [
+              "Arco de Descarga (Extra · 3 Karma): Salta um raio instantâneo no inimigo mais próximo com armadura ou arma metálica a até 9m, causando 2d6 elétrico sem permitir esquiva parcial.",
+              "Gaiola de Faraday (Reação · 4 Karma): Converte um projétil ou feixe recebido em carga estática, reduzindo o dano em 2d8 e eletrocutando quem estiver a 2m."
+            ],
+            "harvest": "Zeus absorve o controle de microcampos eletromagnéticos em ambientes fechados."
+          },
+          {
+            "id": 2,
+            "facet": "Decreto Soberano",
+            "title": "Voz de Trovão Capitolino",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Sua voz carrega pressão barométrica física; ordens curtas de uma palavra empurram o ar como ondas de choque.",
+            "extensions": [
+              "Palavra de Ajoelhar (Principal · 4 Karma · 9m): Dispara uma ordem sônica que causa 2d8 contundente e força o alvo a cair Caído se não superar sua CD em Fortitude.",
+              "Édito de Silêncio Aéreo (Reação · 3 Karma): Estoura um trovão seco que anula projéteis leves no ar e aplica Desorientado em 3m."
+            ],
+            "harvest": "Zeus colhe a modulação de ondas de choque sônicas concentradas por cordas vocais mortais."
+          },
+          {
+            "id": 3,
+            "facet": "Relâmpago Corporal",
+            "title": "Passo de Fulgor Branco",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Seus nervos conduzem impulsos na velocidade de descargas elétricas, permitindo converter deslocamento em linha reta em um feixe de plasma curto.",
+            "extensions": [
+              "Investida de Raio (Movimento + Principal · 4 Karma): Você atravessa até 9m em linha reta passando por dentro do espaço de inimigos; o alvo principal sofre 2d10 perfurante/elétrico e você termina às costas dele.",
+              "Pós-Imagem Voltaica (Reação · 3 Karma): Ao sofrer um ataque, deixa uma estátua de eletricidade estática no lugar que explode em 1d10 enquanto você recua 3m."
+            ],
+            "harvest": "Zeus recolhe a técnica de conversão biológica de massa muscular em plasma condutor."
+          }
+        ]
+      },
+      {
+        "name": "Apolo",
+        "epithet": "O Deus do Sol, da Profecia e da Peste",
+        "blessings": [
+          {
+            "id": 4,
+            "facet": "Óptica Solar",
+            "title": "Câmera Escura de Luz Sólida",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Solidifica feixes de luz ambiente em até 3 lentes/espelhos translúcidos suspensos no ar a até 15m durante a cena.",
+            "extensions": [
+              "Ricochete de Ângulo Cego (2 Karma): Disparos ou feixes que atravessem uma lente dobram em até 90°, ganham +6m de alcance, ignoram cobertura total e aplicam -2 na CA Parcial.",
+              "Foco Ustório (Principal · 4 Karma): Alinha as 3 lentes em um laser térmico que causa 2d8 e aplica Desorientado."
+            ],
+            "harvest": "Apolo reabsorve a geometria de refração, tornando sua própria luz capaz de fazer curvas."
+          },
+          {
+            "id": 5,
+            "facet": "Oráculo de Delfos",
+            "title": "Fita de Futuro Previsto",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Seus olhos enxergam uma silhueta dourada 2 segundos à frente do movimento de qualquer criatura a até 12m.",
+            "extensions": [
+              "Disparo Antecipado (Livre no ataque · 3 Karma): Você atira para onde o alvo vai estar, ignorando bônus de Agilidade ou Reflexos na CA dele e somando +1d20 na Reserva.",
+              "Aviso de Cassandra (Reação · 4 Karma): Revela em voz alta o movimento de um inimigo para um aliado a 12m, somando +4 na CA do aliado contra aquele golpe."
+            ],
+            "harvest": "Apolo colhe o processamento preditivo de microexpressões e vetores de combate."
+          },
+          {
+            "id": 6,
+            "facet": "Flechas da Peste",
+            "title": "Coroa de Radiação Febril",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seus ataques imbuídos de Karma deixam partículas de calor ultravioleta invisível que provocam febre celular instantânea no alvo.",
+            "extensions": [
+              "Seta de Insolação (Principal · 4 Karma · 18m): Causa 2d8 radiante/térmico e aplica Febre Solar (o alvo sofre -1d20 em testes físicos e perde 3 de Vida sempre que correr ou gastar mais de 3 de Karma no turno).",
+              "Purgação Térmica (Extra · 3 Karma): Queima venenos ou doenças no próprio sangue ou de um aliado adjacente, convertendo a condição removida em +2d6 de Escudo Temporário."
+            ],
+            "harvest": "Apolo absorve cepas de radiação térmica seletiva desenvolvidas pelo organismo mortal."
+          }
+        ]
+      },
+      {
+        "name": "Ares",
+        "epithet": "O Deus da Carnificina, do Impacto e do Motim",
+        "blessings": [
+          {
+            "id": 7,
+            "facet": "Inércia de Violência",
+            "title": "Ponto de Impacto Retido",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Ao acertar um golpe físico ou projétil curto, congela o impacto cinético no local atingido por até 2 rodadas (causa metade do dano na hora e grava um Vetor Armazenado).",
+            "extensions": [
+              "Detonação em Cadeia (Livre · 2 Karma): Estoura todos os Vetores Armazenados no próximo acerto, somando o dano retido e aplicando -2 na CA Total contra o estouro.",
+              "Degrau Estático (Movimento · 1 Karma): Congela um destroço ou projétil no ar por 1 rodada para usar como escudo ou apoio de salto."
+            ],
+            "harvest": "Ares absorve o cálculo de impacto retardado e acúmulo de energia cinética."
+          },
+          {
+            "id": 8,
+            "facet": "Frenesi de Campo",
+            "title": "Vapor de Adrenalina Vermelha",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Seu corpo exala feromônios de agressão que aceleram o batimento cardíaco de todos em 6m; cada ferimento na área alimenta sua força.",
+            "extensions": [
+              "Sede de Primeira Linha (Passiva Ativável · 3 Karma): Enquanto houver ao menos uma criatura com Sangramento a até 6m, você recebe +2 no acerto, +4 no dano marcial e ignora penalidades de dor/medo.",
+              "Grito de Motim (Principal · 5 Karma): Força dois inimigos adjacentes entre si a desferirem um ataque básico imediato um contra o outro se falharem em Vontade."
+            ],
+            "harvest": "Ares colhe a manipulação neuroquímica da fúria em grupos armados."
+          },
+          {
+            "id": 9,
+            "facet": "Arsenal de Osso e Sangue",
+            "title": "Forja de Hematita Crua",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "O sangue derramado por você ou por inimigos a até 4,5m cristaliza instantaneamente em lâminas de hematita vermelha rígida como aço.",
+            "extensions": [
+              "Lança de Coágulo (Extra · 3 Karma): Converte o sangue de um ferimento recente em um dardo ou lâmina que causa 2d6 perfurante e não consome munição.",
+              "Paliçada de Lancetas (Principal · 4 Karma): Ergue espinhos de sangue cristalizado sob os pés de um alvo ferido a até 9m, causando 2d8 e deixando-o Lento."
+            ],
+            "harvest": "Ares absorve a cristalização mineral rápida de fluidos vitais em campo de batalha."
+          }
+        ]
+      },
+      {
+        "name": "Hefesto",
+        "epithet": "O Deus da Forja, do Magma e dos Autômatos",
+        "blessings": [
+          {
+            "id": 10,
+            "facet": "Metalurgia Líquida",
+            "title": "Sangue de Escória Magnética",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "O ferro do seu sangue e sucatas a até 6m respondem ao seu pulso magnético como um ferrofluido denso sempre que você sofre dano ou gasta 2 de Vida.",
+            "extensions": [
+              "Morfologia de Bigorna (Livre · 2 Karma): Molda o ferrofluido por 1 rodada em Aguilhões (4m de alcance), Carapaça (+2 CA Total) ou Cabo Magnético (puxa itens/ancora a 9m).",
+              "Cravo Polarizado (Principal · 4 Karma): Dispara uma agulha de 2d6 que magnetiza o alvo, dando +2 no acerto de ataques metálicos contra ele."
+            ],
+            "harvest": "Hefesto colhe a metalurgia orgânica moldada sob perda de sangue mortal."
+          },
+          {
+            "id": 11,
+            "facet": "Fornalha Vulcânica",
+            "title": "Pulmão de Fole Incandescente",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Sua caixa torácica funciona como uma fornalha de alta pressão; cada inspiração aquece seu sangue e armadura, liberando jatos de vapor superaquecido pelas juntas.",
+            "extensions": [
+              "Soco de Pistão Térmico (Principal · 4 Karma): Libera o vapor comprimido pelo cotovelo no instante do golpe, causando 2d8 contundente/térmico e empurrando o alvo em 4m.",
+              "Têmpera a Frio (Reação · 3 Karma): Libera uma nuvem de vapor denso ao sofrer um ataque, ganhando camuflagem parcial e +3 de Redução de Dano."
+            ],
+            "harvest": "Hefesto absorve a termodinâmica de compressão pulmonar aplicada às artes marciais."
+          },
+          {
+            "id": 12,
+            "facet": "Falha Estrutural",
+            "title": "Olho de Fadiga da Matéria",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Ao observar qualquer objeto, armadura, parede ou corpo a até 9m, você enxerga linhas luminosas indicando onde a tensão estrutural é mais frágil.",
+            "extensions": [
+              "Toque de Desmontagem (Principal · 4 Karma): Golpeia exatamente o nó de tensão do alvo; ignora toda a CA de armadura/escudo (atacando a CA Desprevenida) e causa 2d8 de dano, aplicando Danificado no equipamento inimigo.",
+              "Solda Instantânea (Movimento · 2 Karma): Funde duas superfícies metálicas ou de pedra ao toque, trancando portas, armas em bainhas ou restaurando 2d6 de Vida de um constructo."
+            ],
+            "harvest": "Hefesto recolhe o catálogo de pontos de ruptura molecular descobertos pelo usuário."
+          }
+        ]
+      },
+      {
+        "name": "Atena",
+        "epithet": "A Deusa da Estratégia, da Égide e da Geometria de Guerra",
+        "blessings": [
+          {
+            "id": 13,
+            "facet": "Geometria da Égide",
+            "title": "Vetor de Reflexão Hexagonal",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você projeta escudos geométricos planos e translúcidos a até 6m que alteram o ângulo de forças cinéticas e kármicas.",
+            "extensions": [
+              "Deflexão Calculada (Reação · 4 Karma): Redireciona um ataque à distância que atingiria você ou um aliado adjacente na faixa Parcial de volta contra um inimigo a até 9m, causando 2d6 de dano.",
+              "Cunha de Falange (Extra · 3 Karma): Posiciona 2 hexágonos que concedem cobertura parcial (+2 CA) e empurram inimigos que tentem cruzar a linha."
+            ],
+            "harvest": "Atena absorve novos teoremas de deflexão balística em combate urbano e na Torre."
+          },
+          {
+            "id": 14,
+            "facet": "Leitura de Algoritmo",
+            "title": "Xadrez de Três Movimentos",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Sempre que um inimigo usa uma técnica ou ataque contra você pela primeira vez na cena, sua mente decodifica o padrão muscular e kármico dele.",
+            "extensions": [
+              "Contra-Regra (Passiva + 2 Karma na Reação): Contra qualquer habilidade que você já tenha visto na cena, sua CA sobe em +3 e você pode dar um passo de 2m livre antes do impacto.",
+              "Xeque Tático (Extra · 3 Karma): Declara uma ação específica (ex.: \"usar técnica\", \"recuar\"); se o alvo marcado fizer essa ação no próximo turno dele, sofre 2d8 de dano mental/kármico automático."
+            ],
+            "harvest": "Atena colhe milhares de árvores de decisão tática processadas sob pressão mortal."
+          },
+          {
+            "id": 15,
+            "facet": "Lança da Sabedoria",
+            "title": "Fio de Axioma Cortante",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Sua arma brilha com uma linha fina de luz prateada que corta proporcionalmente à sua precisão intelectual, e não à sua força muscular.",
+            "extensions": [
+              "Corte Demonstrativo (Principal · 4 Karma): Realiza um ataque corpo a corpo usando Intelecto (com Bônus Analítico), causando 2d8 de dano que ignora escudos espirituais e revela todas as resistências e o Karma atual do alvo.",
+              "Comando de Sincronia (Movimento · 3 Karma): Concede a um aliado a até 9m uma reação imediata de ataque ou movimento usando a sua Reserva de Intelecto."
+            ],
+            "harvest": "Atena absorve a substituição de força cinética por precisão geométrica pura."
+          }
+        ]
+      },
+      {
+        "name": "Poseidon",
+        "epithet": "O Deus dos Mares, da Pressão Abissal e dos Terremotos",
+        "blessings": [
+          {
+            "id": 16,
+            "facet": "Pressão Hidrostática",
+            "title": "Hidrólise de Impacto",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seus golpes entram em ressonância com a umidade do ar e com os líquidos internos do alvo, transformando o próprio corpo inimigo em condutor de choque hidrostático.",
+            "extensions": [
+              "Reverberação Subcutânea (Extra · 3 Karma): Mesmo em Acerto Parcial, o golpe transmite uma onda interna que causa +1d8 contundente direto e empurra 2m.",
+              "Cortina de Cavitação (Reação · 4 Karma): Golpeia o ar criando bolhas de vácuo na umidade atmosférica, somando +3 na CA Parcial e Total contra projéteis."
+            ],
+            "harvest": "Poseidon colhe técnicas de combate hidrostático adaptadas para ambientes secos."
+          },
+          {
+            "id": 17,
+            "facet": "Fossa Abissal",
+            "title": "Zona de Atmosfera Submersa",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Em um raio de 4,5m ao seu redor, a densidade do ar torna-se pesada e viscosa como o fundo do oceano para seus inimigos, enquanto você nada livremente por ela.",
+            "extensions": [
+              "Esmagamento Barométrico (Principal · 4 Karma): Comprime a zona sobre um alvo a até 6m, causando 2d8 contundente e aplicando Lento e -2 em ataques físicos por 1 rodada.",
+              "Impulso de Correnteza (Movimento · 2 Karma): Desliza na densidade do ar ganhando +4,5m de deslocamento e podendo subir verticalmente até 3m como se nadasse no ar."
+            ],
+            "harvest": "Poseidon absorve a manipulação de pressão atmosférica sem necessidade de massas de água."
+          },
+          {
+            "id": 18,
+            "facet": "Abalo Sísmico",
+            "title": "Diapasão de Falha Tectônica",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Seus pés e sua arma transmitem vibrações de baixa frequência diretamente para o piso, colunas e fundações.",
+            "extensions": [
+              "Onda de Liquefação (Principal · 4 Karma): Bate no solo transformando uma linha de 9m × 2m em rocha trêmula; causa 2d8 contundente e derruba (Caído) quem falhar em Reflexos/Acrobacia.",
+              "Ressonância de Armadura (Extra · 3 Karma): Faz a armadura rígida do alvo vibrar na frequência de quebra, reduzindo a CA dele em -2 até o próximo turno."
+            ],
+            "harvest": "Poseidon recolhe o mapeamento de frequências de ressonância sísmica em estruturas artificiais."
+          }
+        ]
+      },
+      {
+        "name": "Hades",
+        "epithet": "O Deus do Submundo, da Invisibilidade e dos Metais Profundos",
+        "blessings": [
+          {
+            "id": 19,
+            "facet": "Elmo da Invisibilidade",
+            "title": "Manto de Ausência Estígia",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Em vez de apenas esconder sua imagem, você apaga sua \"presença de ameaça\" da percepção sensorial e espiritual dos inimigos.",
+            "extensions": [
+              "Passo Inexistente (Movimento · 3 Karma): Até o início do seu próximo turno (ou até causar dano), inimigos a mais de 2m não conseguem focar você com ataques ou técnicas de alvo único, e seu primeiro ataque recebe +1d20 e +2 no acerto.",
+              "Sequestro de Sombra (Reação · 4 Karma): Puxa um aliado adjacente para dentro do seu manto, anulando um ataque mirado nele."
+            ],
+            "harvest": "Hades absorve técnicas de supressão de assinatura kármica contra radares modernos e sobrenaturais."
+          },
+          {
+            "id": 20,
+            "facet": "O Peso dos Mortos",
+            "title": "Gravidade de Óbolo Funerário",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Cada ponto de Vida ou de Karma que um inimigo perde perto de você condensa-se em \"moedas espirituais invisíveis\" que pesam sobre os ombros dele.",
+            "extensions": [
+              "Cobrança do Barqueiro (Principal · 4 Karma · 12m): Contra um alvo que já tenha perdido Vida ou Karma na cena, detona o peso acumulado causando 2d8 necrótico/kármico (+1d6 se o alvo estiver abaixo da metade da Vida) e zerando a reação dele.",
+              "Pedágio de Passagem (Extra · 2 Karma): Impõe uma taxa espiritual ao alvo: para se mover ou usar técnica no próximo turno, ele deve pagar +2 de Karma extra."
+            ],
+            "harvest": "Hades colhe o sistema de tributação cinética sobre o desgaste vital dos adversários."
+          },
+          {
+            "id": 21,
+            "facet": "Riqueza Subterrânea",
+            "title": "Cristais de Obsidiana Plutônica",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Você faz brotar cristais negros e afiados de obsidiana e metais pesados a partir de qualquer piso de pedra, terra ou concreto, que drenam calor da área.",
+            "extensions": [
+              "Geodo Empalador (Principal · 4 Karma · 9m): Ergue um aglomerado cristalino sob o alvo causando 2d8 perfurante e criando uma cobertura sólida de 1,5m (Vida 15) no local.",
+              "Estilhaço de Gelo Negro (Extra · 3 Karma): Explode um cristal criado anteriormente causando 2d6 em 3m e reduzindo a cura dos atingidos pela metade."
+            ],
+            "harvest": "Hades absorve a cristalografia tática de minerais abissais em superfície."
+          }
+        ]
+      },
+      {
+        "name": "Ártemis",
+        "epithet": "A Deusa da Caça, das Fases da Lua e da Natureza Selvagem",
+        "blessings": [
+          {
+            "id": 22,
+            "facet": "Marca da Caçada",
+            "title": "Vetor de Perseguição Lunar",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "O primeiro alvo que você fere na cena recebe um crescente prateado luminoso sobre o peito; você sente a direção e distância exata dele através de paredes.",
+            "extensions": [
+              "Flecha Perseguidora (Extra no disparo · 3 Karma): Seu projétil corrige a própria trajetória no ar para buscar o alvo marcado, ignorando cobertura parcial/total (desde que haja caminho físico) e somando +2 no acerto e +1d8 no dano.",
+              "Salto de Espreita (Reação · 2 Karma): Sempre que o alvo marcado se afastar de você, você pode avançar 4,5m na direção dele gratuitamente."
+            ],
+            "harvest": "Ártemis colhe algoritmos de rastreamento balístico em ambientes labirínticos."
+          },
+          {
+            "id": 23,
+            "facet": "Ciclo de Quatro Luas",
+            "title": "Arco das Fases Prateadas",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Seus ataques alternam ciclicamente entre 4 estados lunares (Nova, Crescente, Cheia, Minguante), mudando a propriedade física de cada golpe.",
+            "extensions": [
+              "Disparo de Fase (Livre · 2 Karma): Escolhe a fase do ataque: Lua Nova (silencioso, -2 na CA Parcial do alvo), Lua Cheia (explode em 2m causando +1d6 nos adjacentes) ou Lua Minguante (drena 2m de movimento e 2 de Karma do alvo).",
+              "Eclipse de Prata (Principal · 5 Karma): Dispara duas fases simultâneas causando 2d10 de dano e aplicando Desorientado."
+            ],
+            "harvest": "Ártemis absorve a modulação cíclica de projéteis kármicos."
+          },
+          {
+            "id": 24,
+            "facet": "Senhora das Feras",
+            "title": "Sinapse de Predador Alfa",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Seus sentidos operam em frequência animal aguda; você enxerga batimentos cardíacos pelo calor e coordena aliados como uma matilha sincronizada.",
+            "extensions": [
+              "Cerco de Matilha (Passiva + 3 Karma como Extra): Enquanto você e ao menos 1 aliado estiverem a até 9m do mesmo inimigo, ambos recebem +2 para atingir a CA Total daquele alvo e +1d6 de dano.",
+              "Reflexo de Fera Acuada (Reação · 3 Karma): Ao sofrer um ataque corpo a corpo, desfere um contra-ataque imediato de 1d10 cortante e salta 3m para trás."
+            ],
+            "harvest": "Ártemis recolhe o instinto neural de coordenação de esquadrão sem comunicação verbal."
+          }
+        ]
+      },
+      {
+        "name": "Hermes",
+        "epithet": "O Deus das Fronteiras, da Velocidade e dos Ladrões",
+        "blessings": [
+          {
+            "id": 25,
+            "facet": "Catalogação e Mensagem",
+            "title": "Compressão em Fita Plana",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "A palma da sua mão possui um glifo que achata objetos soltos (até 4 espaços), armadilhas ou projéteis interceptados em fitas bidimensionais de papel sem peso.",
+            "extensions": [
+              "Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.",
+              "Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade."
+            ],
+            "harvest": "Hermes recolhe o método de compressão bidimensional de matéria e projéteis."
+          },
+          {
+            "id": 26,
+            "facet": "Príncipe dos Ladrões",
+            "title": "Furto de Conceito Tático",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Ao tocar ou acertar um inimigo de raspão, seus dedos podem \"roubar\" temporariamente propriedades intangíveis dele (velocidade, equilíbrio ou foco).",
+            "extensions": [
+              "Mão Leve de Atributo (Principal · 4 Karma): Ataque corpo a corpo ou a 3m (2d6 de dano); rouba 3 metros de Movimento ou 2 pontos de CA do alvo até o final do seu próximo turno, somando-os diretamente à sua própria ficha.",
+              "Troca de Bolso (Reação · 3 Karma): Troca um item empunhado ou uma condição menor (Lento / Abalado) sua por um consumível ou bônus temporário do inimigo adjacente."
+            ],
+            "harvest": "Hermes absorve a capacidade de extrair propriedades abstratas e estatísticas de outros seres vivos."
+          },
+          {
+            "id": 27,
+            "facet": "Sandálias Aladas",
+            "title": "Passo de Atrito Zero",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Seus pés anulam o coeficiente de atrito com qualquer superfície (chão, paredes, água ou cabos), permitindo patinar em velocidade balística e correr pelas paredes.",
+            "extensions": [
+              "Órbita Centrípeta (Movimento + 3 Karma): Corre em círculo fechado ao redor do alvo (incluindo pelas paredes), deixando-o Desorientado e somando +2d6 de dano por velocidade no próximo golpe.",
+              "Deslizamento de Esquiva (Reação · 3 Karma): Quando um ataque erra você ou acerta apenas a CA Parcial, a própria onda de impacto faz você deslizar 4,5m para qualquer direção sem custo."
+            ],
+            "harvest": "Hermes colhe a cinemática de combate em superfícies verticais sob atrito nulo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Romano",
+    "wing": "Asa da Autoridade",
+    "deities": [
+      {
+        "name": "Júpiter",
+        "epithet": "O Juiz Supremo do Império e do Céu",
+        "blessings": [
+          {
+            "id": 28,
+            "facet": "Jurisdição Territorial",
+            "title": "Domo de Lei Capitolina",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você demarca uma área de 6m de raio onde uma \"Lei de Combate\" simples declarada por você passa a vigorar fisicamente sobre todos.",
+            "extensions": [
+              "Promulgar Artigo (Extra · 4 Karma): Declara uma restrição por 1 rodada na zona (ex.: \"Proibido atacar alvos Caídos\", \"Proibido recuar\" ou \"Proibido gastar mais de 4 de Karma\"); quem violar a lei na zona sofre 2d8 de dano elétrico/divino imediato.",
+              "Indulto Imperial (Reação · 3 Karma): Concede a um aliado dentro da zona imunidade ao efeito de uma condição recém-aplicada."
+            ],
+            "harvest": "Júpiter absorve códigos jurídicos táticos que vinculam leis abstratas a punições kármicas automáticas."
+          },
+          {
+            "id": 29,
+            "facet": "Raio de Julgamento",
+            "title": "Fulgor de Execução Sumária",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seus raios são dourados, densos e caem verticalmente do teto ou do céu sobre alvos que já tenham ferido você ou seus aliados na cena.",
+            "extensions": [
+              "Sentença Vertical (Principal · 4 Karma · 15m): Cai uma coluna de raio dourado sobre o alvo causando 2d8 de dano (+1d8 se o alvo já tiver causado dano a um aliado seu nesta rodada).",
+              "Marca de Rebelde (Livre · 2 Karma): O alvo atingido pela Sentença recebe -2 em testes de ataque contra qualquer pessoa que não seja você."
+            ],
+            "harvest": "Júpiter colhe o direcionamento seletivo de descargas atmosféricas baseadas em hostilidade prévia."
+          },
+          {
+            "id": 30,
+            "facet": "Soberania Absoluta",
+            "title": "Gravidade da Coroa de Louros",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Quanto mais ereta e inabalável for sua postura (sem recuar no turno), maior é a pressão gravitacional que emana dos seus ombros contra inimigos próximos.",
+            "extensions": [
+              "Peso da Hierarquia (Passiva + 3 Karma como Extra): Inimigos a até 3m de você gastam o dobro de movimento para se aproximar e sofrem -1 na CA Total enquanto você não tiver recuado na rodada.",
+              "Submissão pelo Olhar (Principal · 4 Karma): Teste de Espírito/Presença contra a Vontade do alvo a 6m; causa 2d6 mental e impede o alvo de usar ações Extras ou Reações por 1 rodada."
+            ],
+            "harvest": "Júpiter recolhe a conversão de presença psicológica em vetor gravitacional físico."
+          }
+        ]
+      },
+      {
+        "name": "Marte",
+        "epithet": "O Deus das Legiões, da Conquista e da Disciplina Militar",
+        "blessings": [
+          {
+            "id": 31,
+            "facet": "Legião Fantasma",
+            "title": "Falange de Espectros de Ferro",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Sempre que você assume postura de guarda ou avança em linha reta, até 2 soldados espectrais de bronze surgem flanqueando seus ombros, copiando seus golpes com 1 segundo de atraso.",
+            "extensions": [
+              "Estocada Tripla de Coorte (Principal · 4 Karma): Seu ataque corpo a corpo é repetido pelos espectros, causando 2d8 perfurante e atingindo em linha de 3m.",
+              "Parede de Escudos (Scutum) (Reação · 3 Karma): Os dois espectros cruzam escudos romanos à sua frente, somando +4 na sua CA Parcial e Total contra um ataque frontal."
+            ],
+            "harvest": "Marte absorve táticas de formação militar executadas por um único combatente solitário."
+          },
+          {
+            "id": 32,
+            "facet": "Direito de Conquista",
+            "title": "Marco de Terreno Tomado",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "O espaço exato de onde você expulsa, derruba ou abate um inimigo torna-se \"Solo Conquistado\", brilhando com insígnias rubras pelo resto da cena.",
+            "extensions": [
+              "Bastião do Conquistador (Passiva + 2 Karma): Enquanto você ou seus aliados pisarem em um Solo Conquistado, recebem +2 no dano e regeneram 3 de Vida no início do turno.",
+              "Avanço de Fronteira (Extra · 3 Karma): Teleporta ou salta instantaneamente entre dois pontos de Solo Conquistado a até 9m, desferindo um golpe com +1d8 de dano."
+            ],
+            "harvest": "Marte colhe a geometria de dominação territorial progressiva em combate."
+          },
+          {
+            "id": 33,
+            "facet": "Armamento Legionário",
+            "title": "Pilum de Ruptura de Guarda",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Qualquer arma ou projétil arremessado ou estocado por você deforma-se no impacto para entortar e inutilizar a defesa do adversário.",
+            "extensions": [
+              "Cravar no Escudo (Principal · 4 Karma · 9m): Causa 2d6 perfurante e deixa uma haste kármica pesada presa no alvo: enquanto ele não gastar 1 Ação de Movimento para arrancá-la, sofre -3 na CA Total e fica Lento.",
+              "Arranco de Haste (Extra · 2 Karma): Puxa a haste cravada de volta à distância, rasgando 1d10 de dano adicional e puxando o alvo 2m."
+            ],
+            "harvest": "Marte recolhe a balística de neutralização de armaduras pesadas."
+          }
+        ]
+      },
+      {
+        "name": "Janus",
+        "epithet": "O Deus dos Portais, dos Começos e das Duas Faces",
+        "blessings": [
+          {
+            "id": 34,
+            "facet": "Guardião dos Limiares",
+            "title": "Portais de Duas Faces",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você pode abrir duas fendas circulares planas de 1m de diâmetro conectadas entre si a até 12m de distância, permitindo passar braços, ataques ou projéteis através delas.",
+            "extensions": [
+              "Golpe Transposto (Extra no ataque · 3 Karma): Desfere um ataque corpo a corpo ou disparo através da fenda, atingindo o inimigo a até 12m pelas costas (-2 na CA dele e ignora cobertura).",
+              "Inversão de Limiar (Reação · 4 Karma): Quando um inimigo avança contra você, faz com que ele atravesse a fenda e saia 4m atrás de onde começou o movimento."
+            ],
+            "harvest": "Janus absorve o uso ofensivo de microfendas espaciais em combate de curto alcance."
+          },
+          {
+            "id": 35,
+            "facet": "O Começo e o Fim",
+            "title": "Rebobinamento do Primeiro Passo",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "No início de cada turno seu, uma silhueta de bronze marca a posição e o estado físico exato em que você estava ao começar a rodada.",
+            "extensions": [
+              "Retorno ao Ponto Zero (Reação ou Livre · 4 Karma): Volta instantaneamente para a marca do início do turno, recuperando metade da Vida perdida naquela rodada e encerrando condições de agarrão/imobilização.",
+              "Dupla Face de Abertura (Passiva na Rodada 1): Na primeira rodada de qualquer combate, você age duas vezes na Iniciativa (recebendo 1 Ação Principal extra no Turno 1)."
+            ],
+            "harvest": "Janus colhe a ancoragem temporal de estados iniciais de combate."
+          },
+          {
+            "id": 36,
+            "facet": "Senhor das Chaves",
+            "title": "Tranca de Conceito Fechado",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Seus dedos projetam uma chave espectral de ouro e ferro capaz de \"trancar\" ou \"destrancar\" objetos físicos, ferimentos ou até uma técnica específica de um alvo.",
+            "extensions": [
+              "Girar a Chave (Principal · 4 Karma · Toque/3m): Causa 2d6 kármico e \"tranca\" a última habilidade/técnica que o inimigo usou, impedindo-o de repeti-la na próxima rodada.",
+              "Estancar Ferida (Extra · 3 Karma): \"Tranca\" o sangue de um aliado adjacente, encerrando Sangramento e convertendo o dano contínuo que ele sofreria em +2d6 de Escudo Temporário."
+            ],
+            "harvest": "Janus absorve a aplicação do conceito de fechadura sobre processos biológicos e espirituais."
+          }
+        ]
+      },
+      {
+        "name": "Saturno",
+        "epithet": "O Deus do Tempo, da Entropia e da Colheita",
+        "blessings": [
+          {
+            "id": 37,
+            "facet": "Cinemática Temporal",
+            "title": "Quadros de Projeção (24fps)",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Divide cada rodada em uma sequência de 24 quadros fotográficos, exigindo declarar no início do turno a trajetória exata que será percorrida.",
+            "extensions": [
+              "Corrida de Quadro Cortado (Movimento + 3 Karma): Seguir a trajetória declarada concede +6m de Movimento e +2 para atingir a CA Total.",
+              "Congelamento de Quadro (Principal · 5 Karma): Alvo atingido que falhe em Reflexos fica preso em uma moldura plana (Lento/Imóvel), sofrendo +2d8 no primeiro golpe que quebrar o quadro."
+            ],
+            "harvest": "Saturno absorve a compressão de intervalos de ação em corpos mortais."
+          },
+          {
+            "id": 38,
+            "facet": "Desgaste dos Séculos",
+            "title": "Ferrugem de Entropia Acelerada",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Uma aura cinzenta nas suas mãos acelera a passagem de décadas em segundos sobre materiais inorgânicos, escudos e equipamentos que você toca.",
+            "extensions": [
+              "Toque de Pó e Ferrugem (Principal · 4 Karma): Causa 2d8 de dano kármico/entrópico; apodrece a estrutura da armadura ou cobertura do alvo, reduzindo a CA dele em -2 até o fim da cena.",
+              "Envelhecer Projétil (Reação · 3 Karma): Desintegra em poeira um projétil físico ou reduz em 2d8 o dano de um ataque armado contra você."
+            ],
+            "harvest": "Saturno colhe o controle localizado da entropia sobre ligas metálicas e barreiras."
+          },
+          {
+            "id": 39,
+            "facet": "A Foice da Safra",
+            "title": "Empréstimo do Turno Futuro",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Você pode \"pedir emprestado\" o seu próprio tempo do futuro para agir duas vezes no presente, pagando a conta depois.",
+            "extensions": [
+              "Safra Antecipada (Livre · 5 Karma · 1x por cena): Realiza imediatamente 1 Ação Principal extra neste turno; em troca, no seu próximo turno você não possui Ação de Movimento e sofre -2 na CA.",
+              "Atrasar Relógio Biológico (Reação · 3 Karma): Adia qualquer dano ou condição que você acabou de sofrer para só fazer efeito no final do seu próximo turno."
+            ],
+            "harvest": "Saturno recolhe a mecânica de crédito e débito temporal em organismos vivos."
+          }
+        ]
+      },
+      {
+        "name": "Minerva",
+        "epithet": "A Deusa da Mente Coletiva, das Artes e da Tática Defensiva",
+        "blessings": [
+          {
+            "id": 40,
+            "facet": "Rede Estratégica",
+            "title": "Sinapse de Coruja Branca",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Conecta mentalmente você e até 3 aliados a até 15m em uma rede silenciosa de cálculo tático compartilhado.",
+            "extensions": [
+              "Visão Triangular (Passiva da Rede + 2 Karma): Você pode traçar linha de visão para suas técnicas e ataques a partir dos olhos de qualquer aliado conectado na rede.",
+              "Manobra Coordenada (Extra · 3 Karma): Dois aliados conectados podem trocar de posição entre si (movendo até 3m cada) ou somar +2 em um ataque conjunto contra o mesmo alvo."
+            ],
+            "harvest": "Minerva absorve protocolos de comunicação telepática instantânea de esquadrão."
+          },
+          {
+            "id": 41,
+            "facet": "Artesania Perfeita",
+            "title": "Tecelagem de Fios de Aço",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Você desfia qualquer pedaço de metal, tecido ou escombro em fios prateados ultrarresistentes para costurar barreiras ou armadilhas instantâneas.",
+            "extensions": [
+              "Bastidor de Contenção (Principal · 4 Karma · 9m): Tece uma grade cortante ao redor do inimigo causando 2d6 cortante e aplicando Lento (se o alvo correr, sofre mais 1d8).",
+              "Remendo de Batalha (Extra · 3 Karma): Costura uma armadura aliada ou o próprio traje, concedendo 2d6 + Intelecto de Escudo Temporário."
+            ],
+            "harvest": "Minerva colhe técnicas de tecelagem balística de emergência."
+          },
+          {
+            "id": 42,
+            "facet": "Engenharia Reversa",
+            "title": "Dissecação de Fórmula Hostil",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Ao observar ou sofrer uma técnica inimiga, a runa na sua testa decompõe a matriz dela em equações compreensíveis.",
+            "extensions": [
+              "Copiar Esboço (Reação · 5 Karma): Após um inimigo lançar uma técnica de Grau igual ou inferior à sua Etapa a até 12m, você grava a estrutura dela: no seu próximo turno, você pode disparar uma versão kármica daquela mesma técnica pagando o custo normal.",
+              "Desmontar Matriz (Principal · 4 Karma): Dispara um feixe disruptivo (2d6) que encerra um buff ou escudo ativo no alvo."
+            ],
+            "harvest": "Minerva recolhe o catálogo de técnicas raras dissecadas e replicadas pelo mortal."
+          }
+        ]
+      },
+      {
+        "name": "Vulcano",
+        "epithet": "O Deus das Erupções, da Combustão e da Forja Pesada",
+        "blessings": [
+          {
+            "id": 43,
+            "facet": "Cinza de Pompeia",
+            "title": "Nuvem Piroclástica Sólida",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Você libera cinza vulcânica densa e superaquecida que pode se solidificar instantaneamente em pedra-pomes ao seu comando, prendendo quem estiver dentro.",
+            "extensions": [
+              "Estátua de Cinza (Principal · 4 Karma · 9m): Envolve o alvo em cinza incandescente (2d8 térmico) que endurece na hora, reduzindo o deslocamento dele a 0m até que quebre a crosta (ou sofra um golpe pesado).",
+              "Cortina Vesuviana (Extra · 3 Karma): Cria uma zona de 4m de fumaça vulcânica que bloqueia visão inimiga e causa 4 de dano térmico a quem terminar o turno nela."
+            ],
+            "harvest": "Vulcano absorve o controle de transição rápida entre gás piroclástico e rocha sólida."
+          },
+          {
+            "id": 44,
+            "facet": "Motor de Combustão",
+            "title": "Coração de Caldeira a Diesel",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Seu metabolismo queima Karma como combustível de alta octanagem; seus socos e golpes liberam explosões secas de impacto pelo impacto mecânico.",
+            "extensions": [
+              "Ignição de Segundo Estágio (Livre no ataque · 3 Karma): Quando acerta um ataque na faixa Parcial ou Total, provoca uma segunda explosão no ponto de contato que soma +2d6 de dano de fogo/contundente e ignora 3 de Redução de Dano.",
+              "Purga de Escape (Reação · 3 Karma): Explode chamas pelas costas para impulsionar uma esquiva ou avançar 4,5m em linha reta."
+            ],
+            "harvest": "Vulcano colhe a integração da engenharia de motores de combustão do século XX ao corpo humano."
+          },
+          {
+            "id": 45,
+            "facet": "Fusão de Materiais",
+            "title": "Soldagem de Carne e Liga",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você pode fundir temporariamente armas, placas de aço ou escudos ao próprio corpo (ou ao corpo de aliados consentidos) sem causar rejeição biológica.",
+            "extensions": [
+              "Enxerto de Blindagem (Movimento · 3 Karma): Funde um escudo ou peça metálica ao braço pela cena: você não pode ser desarmado, recebe +2 na CA e seus ataques desarmados usam o dado e as propriedades da arma fundida.",
+              "Superaquecer Arma Inimiga (Principal · 4 Karma · 6m): Faz a arma metálica do inimigo brilhar em brasa viva, causando 2d6 térmico nele e forçando-o a largá-la ou sofrer -2 no acerto."
+            ],
+            "harvest": "Vulcano recolhe a biomecânica de fusão entre tecido vivo e metalurgia pesada."
+          }
+        ]
+      },
+      {
+        "name": "Plutão",
+        "epithet": "O Deus da Usura Subterrânea, das Dívidas e do Subsolo",
+        "blessings": [
+          {
+            "id": 46,
+            "facet": "Contrato de Usura",
+            "title": "Livro-Razão de Sangue e Karma",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Qualquer dano que você sofre de um inimigo é registrado como uma \"Dívida Aberta\" daquele inimigo com você, acumulando juros a cada rodada.",
+            "extensions": [
+              "Executar Hipoteca (Principal · 4 Karma · 9m): Contra um inimigo que tenha causado dano a você na cena, desfere um golpe de cobrança que causa 2d8 + metade do dano que ele lhe causou na última rodada (máximo +10).",
+              "Empréstimo de Emergência (Livre · 0 Karma · 1x/cena): Recebe 8 de Karma imediatos do Deus; em troca, ao final de 3 rodadas, você perde 10 de Karma (ou 10 de Vida)."
+            ],
+            "harvest": "Plutão absorve modelos matemáticos de alavancagem de risco em combates de vida ou morte."
+          },
+          {
+            "id": 47,
+            "facet": "Ouro Maldito",
+            "title": "Transmutação em Chumbo Dourado",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "O toque da sua arma converte a camada superficial da roupa, armadura ou pele do alvo em ouro maciço extremamente denso e pesado.",
+            "extensions": [
+              "Fardo de Midas (Principal · 4 Karma): Ataque que causa 2d6 contundente e reveste as pernas ou braços do alvo de ouro pesado, aplicando Lento e -2 em Reflexos e Agilidade por 2 rodadas.",
+              "Estilhaçar Lingote (Extra · 3 Karma): Contra um alvo sob Fardo de Midas, quebra a crosta dourada causando 2d8 perfurante adicional."
+            ],
+            "harvest": "Plutão colhe a alquimia de petrificação metálica parcial em combate."
+          },
+          {
+            "id": 48,
+            "facet": "Fenda Abissal",
+            "title": "Sumidouro do Averno",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você transforma o piso sólido a até 9m em uma boca escura de terra movediça gravitacional que puxa os pés dos inimigos para baixo.",
+            "extensions": [
+              "Afundar até os Joelhos (Principal · 4 Karma · Raio 3m): Causa 2d6 de dano e prende os alvos no solo (imobilizados no lugar até gastarem 1 ação de Movimento ou vencerem Atletismo).",
+              "Mergulho Subterrâneo (Reação · 4 Karma): Afunda no próprio chão como em água escura para escapar de um ataque de área e emerge a até 4,5m de distância."
+            ],
+            "harvest": "Plutão recolhe a manipulação de permeabilidade do solo urbano e rochoso."
+          }
+        ]
+      },
+      {
+        "name": "Netuno",
+        "epithet": "O Deus das Marés, da Neblina Marinha e dos Monstros Oceânicos",
+        "blessings": [
+          {
+            "id": 49,
+            "facet": "Salmoura Corrosiva",
+            "title": "Maré de Água-Régia Abissal",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "A água conjurada ou manipulada por você possui concentração salina e ácida extrema, capaz de oxidar aço e queimar feridas abertas.",
+            "extensions": [
+              "Chicote de Salmoura (Principal · 4 Karma · 6m): Causa 2d8 cortante/ácido; se o alvo já estiver ferido ou com Sangramento, a dor do sal impõe -1d20 no próximo teste dele.",
+              "Crosta de Sal Seco (Extra · 3 Karma): Cristaliza o sal sobre seu corpo formando uma couraça branca que absorve 12 pontos de dano antes de quebrar."
+            ],
+            "harvest": "Netuno absorve a química de soluções salinas hiperconcentradas para corrosão rápida."
+          },
+          {
+            "id": 50,
+            "facet": "Bruma dos Naufrágios",
+            "title": "Miragem de Espuma e Nevoeiro",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você exala uma neblina úmida que refrata imagens e sons, fazendo com que os inimigos vejam sua silhueta deslocada em 2 metros da sua posição real.",
+            "extensions": [
+              "Banco de Cerração (Extra · 3 Karma · Raio 4,5m): Enquanto estiver na neblina, ataques contra você sofrem -2 para atingir a CA Parcial e Total.",
+              "Fantasma do Convés (Principal · 4 Karma): Cria um duplo de espuma condensada que avança e explode ao ser tocado ou atacar, causando 2d8 de dano frio/kármico."
+            ],
+            "harvest": "Netuno colhe o domínio de ilusão óptica por dispersão de aerossóis líquidos."
+          },
+          {
+            "id": 51,
+            "facet": "Redemoinho de Caríbdis",
+            "title": "Turbilhão de Arrasto Centrípeto",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Seus movimentos giratórios de arma criam correntes de sucção espiral no ar e na água, puxando inimigos e projéteis para a órbita do seu golpe.",
+            "extensions": [
+              "Espiral de Tridente (Principal · 4 Karma): Golpe giratório em 3m ao seu redor que puxa todos os inimigos próximos em 2m na sua direção e causa 2d8 cortante.",
+              "Engolir Disparo (Reação · 3 Karma): Captura um projétil na corrente espiral da arma, anulando o dano e arremessando-o de volta com 1d10 de dano."
+            ],
+            "harvest": "Netuno recolhe a hidrodinâmica de vórtices aplicada ao combate com armas de haste."
+          }
+        ]
+      },
+      {
+        "name": "Vênus",
+        "epithet": "A Deusa da Atração, da Empatia Espelhada e do Encanto",
+        "blessings": [
+          {
+            "id": 52,
+            "facet": "Atração Irresistível",
+            "title": "Gravidade de Estrela da Manhã",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você pode transformar o próprio corpo (ou um objeto que você toque) em um polo de atração gravitacional seletiva contra um alvo específico.",
+            "extensions": [
+              "Puxão de Órbita (Extra · 3 Karma · 9m): O alvo marcado é puxado 4 metros na sua direção (ou na direção do objeto marcado, como uma parede ou armadilha); se colidir, sofre 2d6 contundente.",
+              "Desvio de Olhar e Lâmina (Reação · 4 Karma): Atrai magneticamente o braço ou arma do inimigo que atacava um aliado seu, forçando o ataque a errar ou bater no chão."
+            ],
+            "harvest": "Vênus absorve a conversão do conceito de desejo/atração em força vetorial física."
+          },
+          {
+            "id": 53,
+            "facet": "Espelho de Vênus",
+            "title": "Vínculo de Dano Compartilhado",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Ao tocar um inimigo ou ser ferido por ele, você estabelece um fio cor-de-rosa translúcido de empatia forçada entre o seu sistema nervoso e o dele.",
+            "extensions": [
+              "Reflexo de Narciso (Reação · 4 Karma): Quando o inimigo vinculado causa dano a você, você reduz o dano sofrido em 1d10 e o próprio atacante recebe exatamente o mesmo valor de dano final que causou em você.",
+              "Inversão de Charme (Principal · 4 Karma): Teste de Presença/Espírito contra Vontade; o alvo vinculado não consegue atacar você diretamente por 1 rodada sem antes sofrer 2d6 de dano mental."
+            ],
+            "harvest": "Vênus colhe o espelhamento sináptico de dor entre agressor e vítima."
+          },
+          {
+            "id": 54,
+            "facet": "Jardim de Rosas e Espinhos",
+            "title": "Perfume de Torpor Neural",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seu sangue e seu Karma liberam uma fragrância adocicada invisível que entorpece os reflexos motores dos adversários a cada respiração.",
+            "extensions": [
+              "Névoa de Ambrosia (Extra · 3 Karma · Cone 4,5m): Alvos na área sofrem -2 em Iniciativa, Reflexos e Percepção por 2 rodadas.",
+              "Espinho Despertador (Principal · 4 Karma): Golpe perfurante contra um alvo sob efeito da névoa; causa 2d8 + 4 de dano e converte o torpor em condição Desorientado."
+            ],
+            "harvest": "Vênus absorve neurotoxinas aromáticas de ação rápida para controle de multidões."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Nórdico",
+    "wing": "Asa do Destino",
+    "deities": [
+      {
+        "name": "Odin",
+        "epithet": "O Pai de Todos, Senhor das Runas, da Forca e de Gungnir",
+        "blessings": [
+          {
+            "id": 55,
+            "facet": "A Lança Gungnir",
+            "title": "Vetor que Não Conhece Desvio",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Uma inscrição na sua mão dominante altera a causalidade de um ataque: uma vez lançado, o golpe dobra o espaço para buscar o coração do alvo.",
+            "extensions": [
+              "Juramento de Gungnir (Livre no ataque · 4 Karma): Seu ataque ignora penalidades de distância, cobertura e camuflagem, e converte automaticamente um resultado de Falha em Acerto Parcial (ou soma +3 para atingir a CA Total).",
+              "Perfuração de Linha (Extra · 3 Karma): O golpe atravessa o primeiro alvo causando 2d6 também no inimigo posicionado logo atrás dele."
+            ],
+            "harvest": "Odin absorve a manipulação de probabilidade e certeza de impacto em combate mortal."
+          },
+          {
+            "id": 56,
+            "facet": "Sacrifício de Yggdrasil",
+            "title": "Sabedoria pela Agonia",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Assim como Odin se feriu com a própria lança para ler as runas, seu corpo converte perda de sangue e Vida diretamente em clareza mental e poder kármico.",
+            "extensions": [
+              "Tributo do Caolho (Livre · 0 Karma + 4 de Vida irreduzível): Sacrifica a própria Vida para recuperar imediatamente 6 de Karma (ou gravar 1 Runa de Grau até III sem gastar ação) e receber +1d20 no próximo teste.",
+              "Olho do Poço de Mimir (Passiva): Enquanto estiver com metade da Vida ou menos, a CD de todas as suas técnicas e runas sobe em +2."
+            ],
+            "harvest": "Odin colhe os segredos rúnicos arrancados pelo mortal no limiar da própria morte."
+          },
+          {
+            "id": 57,
+            "facet": "Hugin e Munin",
+            "title": "Corvos de Pensamento e Memória",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Dois corvos feitos de sombra e tinta rúnica pousam nos seus ombros, podendo desprender-se do seu corpo para atuar como extensões da sua mente a até 18m.",
+            "extensions": [
+              "Rasante de Munin (Memória) (Extra · 3 Karma): O corvo bica a têmpora do alvo a 12m causando 1d10 mental e apagando a memória muscular de curto prazo dele (-2 na CA e impede o alvo de usar Reações até o próximo turno).",
+              "Olhos de Hugin (Pensamento) (Movimento · 2 Karma): Envia o corvo pelo mapa; você enxerga tudo em 360° ao redor dele e pode lançar técnicas usando o corvo como ponto de origem."
+            ],
+            "harvest": "Odin recolhe todas as memórias de batalha registradas pelos dois corvos durante a vida do usuário."
+          }
+        ]
+      },
+      {
+        "name": "Thor",
+        "epithet": "O Deus do Trovão, da Força Bruta e do Martelo Mjolnir",
+        "blessings": [
+          {
+            "id": 58,
+            "facet": "Retorno de Mjolnir",
+            "title": "Chamado de Inércia Reversa",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Qualquer arma ou objeto que você empunhe possui um selo de retorno: após ser arremessado ou solto, ele volta voando para a sua mão com o dobro da velocidade.",
+            "extensions": [
+              "Ida e Volta (Principal · 4 Karma · 9m): Arremessa sua arma contra o alvo (2d6 de dano na ida) e puxa-a de volta no fim do turno atingindo o alvo pelas costas (+1d10 de dano na volta, ignorando escudo frontal).",
+              "Puxar pelo Cabo (Movimento · 3 Karma): Em vez de puxar a arma para a mão, você se deixa puxar pelo voo da arma arremessada, voando 6m até ela e derrubando quem estiver no caminho."
+            ],
+            "harvest": "Thor absorve manobras acrobáticas e balísticas de vetores bidirecionais."
+          },
+          {
+            "id": 59,
+            "facet": "Cinturão Megingjord",
+            "title": "Duplicação de Torque Muscular",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Uma faixa de energia elétrica envolve sua cintura; ao firmar os pés no chão, a massa efetiva dos seus golpes dobra sem aumentar o peso do seu corpo.",
+            "extensions": [
+              "Impacto de Montanha (Principal · 4 Karma): Golpe pesado que causa 2d10 contundente, destrói coberturas físicas ou portas reforçadas automaticamente e lança o alvo 3m para trás.",
+              "Firmeza de Rocha (Reação · 2 Karma): Anula qualquer tentativa de empurrão, queda ou desarme contra você e causa 1d8 elétrico no agressor."
+            ],
+            "harvest": "Thor colhe o aperfeiçoamento da geração de torque mecânico em corpos de porte médio."
+          },
+          {
+            "id": 60,
+            "facet": "Tempestade de Asgard",
+            "title": "Sobrecarga de Arco Voltaico",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Cada golpe físico que você desfere ou recebe acumula cargas de relâmpago azul nos seus punhos e arma, saltando em faíscas para quem estiver perto.",
+            "extensions": [
+              "Trovão em Cadeia (Extra · 3 Karma): Após acertar um alvo, descarrega um arco voltaico que salta para até 2 outros inimigos a 3m do primeiro, causando 1d10 elétrico em cada um.",
+              "Queda do Céu (Principal · 5 Karma): Salta alto e desaba em um ponto a 6m, causando 2d8 em área de 3m e aplicando Desorientado."
+            ],
+            "harvest": "Thor recolhe a condução de correntes alternadas de alta voltagem através de combates corpo a corpo."
+          }
+        ]
+      },
+      {
+        "name": "Loki",
+        "epithet": "O Deus da Trapaça, da Inversão e da Metamorfose",
+        "blessings": [
+          {
+            "id": 61,
+            "facet": "Trapaça Espacial",
+            "title": "Permuta de Momento",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Marca até 2 alvos ou objetos tocados a até 15m por 2 rodadas, permitindo trocar instantaneamente o vetor de velocidade e movimento entre eles.",
+            "extensions": [
+              "Transferência de Investida (Reação/Extra · 4 Karma): Transfere o impacto de uma queda, empurrão ou rocha arremessada para o inimigo marcado, lançando-o 4m com 2d6 de dano e aplicando Caído.",
+              "Parada Súbita (Movimento · 2 Karma): Troca a própria inércia pela estática de um pilar para mudar de direção em 90° no ar."
+            ],
+            "harvest": "Loki colhe as equações de conservação de momento e trapaça cinética."
+          },
+          {
+            "id": 62,
+            "facet": "Mentira Tangível",
+            "title": "Dublê de Casca Ilusória",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você cria uma cópia visual e sonora idêntica de si mesmo que possui peso leve o suficiente para pisar em armadilhas e atrair mira, durando até ser atingida.",
+            "extensions": [
+              "Troca de Palco (Reação · 4 Karma): Quando você sofre um ataque e seu Dublê está a até 9m, você revela que o alvo atingido era a cópia (que se desfaz em risadas e fumaça verde causando 1d8 mental no atacante), enquanto você surge ileso na posição onde a cópia estava.",
+              "Finta Dupla (Extra · 2 Karma): Move o Dublê 6m para flanquear o inimigo, reduzindo a CA Parcial dele em -2 contra seu próximo golpe."
+            ],
+            "harvest": "Loki absorve o teatro tático de iscas físicas e inversão de posicionamento."
+          },
+          {
+            "id": 63,
+            "facet": "Sangue Mutante",
+            "title": "Anatomia de Fraude Biológica",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seus órgãos vitais e articulações não ficam fixos no lugar padrão; você pode deslocar o próprio coração de lugar, esticar membros ou imitar a voz e o rosto de outros.",
+            "extensions": [
+              "Órgão Deslocado (Reação · 3 Karma): Quando sofre um Acerto Total ou crítico perfurante/cortante, desliza seus órgãos internos de lugar, convertendo o Acerto Total em Acerto Parcial (metade do dano).",
+              "Chicote de Articulação Solta (Principal · 4 Karma): Desloca o ombro e o pulso para esticar o ataque em +3m por um ângulo impossível, causando 2d8 e ignorando bloqueio frontal."
+            ],
+            "harvest": "Loki recolhe o controle voluntário de mutação anatômica e evasão visceral."
+          }
+        ]
+      },
+      {
+        "name": "Freya",
+        "epithet": "A Deusa do Seidr, das Valquírias e do Colar Brísingamen",
+        "blessings": [
+          {
+            "id": 64,
+            "facet": "O Colar Brísingamen",
+            "title": "Conversão de Dor em Fulgor",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Uma joia espectral de âmbar na sua garganta absorve metade do choque emocional e físico que você sofre, armazenando-o como luz dourada.",
+            "extensions": [
+              "Explosão de Âmbar (Principal · 4 Karma): Libera a luz acumulada em um feixe ou pulso de 4,5m que causa 2d8 radiante/kármico nos inimigos e cura 1d8 + Espírito em um aliado na área.",
+              "Deslumbramento de Vanaheim (Reação · 3 Karma): Brilha intensamente quando atacada corpo a corpo, aplicando -2 no teste de ataque do inimigo."
+            ],
+            "harvest": "Freya absorve a reciclagem de trauma físico em energia radiante de suporte e ataque."
+          },
+          {
+            "id": 65,
+            "facet": "Manto de Penas de Falcão",
+            "title": "Plumas de Voo Cortante",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seu manto ou braços desfazem-se em dezenas de penas de falcão afiadas como navalhas que sustentam seu peso no ar e respondem ao seu comando.",
+            "extensions": [
+              "Rajada de Penas de Aço (Principal · 4 Karma · Cone 6m): Dispara uma tempestade de plumas que causa 2d8 cortante e permite a você planar 4,5m para trás acima do solo.",
+              "Resgate de Valquíria (Movimento · 3 Karma): Envolve a si mesmo ou um aliado caído a 6m em um redemoinho de penas, erguendo-o do chão e movendo-o 4,5m pelo ar sem ataques de oportunidade."
+            ],
+            "harvest": "Freya colhe a aerodinâmica de dispersão e recomposição em plumas cortantes."
+          },
+          {
+            "id": 66,
+            "facet": "Magia Seidr",
+            "title": "Fios de Destino Entrelaçado",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Você enxerga e dedilha os fios dourados de sorte que cercam as criaturas na cena, podendo puxar um fio para favorecer um aliado ou dar um nó no fio de um inimigo.",
+            "extensions": [
+              "Nó de Azar (Reação · 4 Karma · 12m): Quando um inimigo rola um teste de ataque ou resistência, você puxa o fio dele: força o inimigo a descartar o maior d20 rolado na Reserva dele (ou impõe -3 no resultado final se ele tiver apenas 1 dado).",
+              "Trama de Favor (Extra · 3 Karma): Concede a um aliado a até 9m +1d20 e +2 no próximo teste dele nesta rodada."
+            ],
+            "harvest": "Freya recolhe métodos de manipulação direta das reservas de probabilidade em combate."
+          }
+        ]
+      },
+      {
+        "name": "Tyr",
+        "epithet": "O Deus do Duelo Justo, da Corrente Gleipnir e do Sacrifício da Mão",
+        "blessings": [
+          {
+            "id": 67,
+            "facet": "A Mão na Boca de Fenrir",
+            "title": "Penhora de Membro em Aposta",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Você pode deixar um ataque inimigo acertar seu braço ou guarda de propósito para travar a arma ou o membro do agressor sem escapatória.",
+            "extensions": [
+              "Mordida Aceita (Reação ao sofrer dano corpo a corpo · 3 Karma): Você recebe o dano normalmente, mas trava o atacante adjacente: ele fica Imóvel, sofre -3 na CA Total e o seu próximo ataque contra ele no seu turno é um Acerto Total automático com +1d10 de dano.",
+              "Punho Fantasma de Tyr (Passiva): Mesmo que seu braço esteja ferido, ocupado ou com condição física, você projeta um braço kármico invisível para empunhar armas de duas mãos ou escudos sem penalidade."
+            ],
+            "harvest": "Tyr absorve a psicologia e a biomecânica do contra-ataque por sacrifício calculado."
+          },
+          {
+            "id": 68,
+            "facet": "A Fita Gleipnir",
+            "title": "Laço de Coisas Impossíveis",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Você conjura uma fita fina e macia como seda (feita de conceitos intangíveis como o som do passo de um gato e o fôlego de um peixe) que fica mais forte quanto mais força bruta o inimigo usa contra ela.",
+            "extensions": [
+              "Atar o Lobo (Principal · 4 Karma · 6m): Enlaça o alvo causando 2d6 kármico; o alvo não pode usar Força para escapar (qualquer tentativa de quebrar a fita à força causa mais 1d10 de dano nele mesmo), exigindo técnica fina ou ajuda externa.",
+              "Esticar Limite (Extra · 3 Karma): Usa a fita para amarrar a arma do inimigo ao chão, aplicando -2 nos ataques dele por 1 rodada."
+            ],
+            "harvest": "Tyr colhe o uso de amarras conceituais que invertem a Força física do oponente contra ele mesmo."
+          },
+          {
+            "id": 69,
+            "facet": "Tribunal de Guerra",
+            "title": "Arena de Paridade Absoluta",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Você crava sua arma no chão desafiando um inimigo a até 6m para um duelo sob o olho de Tyr, nivelando covardias e interferências externas.",
+            "extensions": [
+              "Declarar Holmgang (Extra · 4 Karma): Vincula você e 1 inimigo por 2 rodadas: ataques de terceiros vindos de fora contra vocês dois causam apenas metade do dano, e se o inimigo tentar atacar outra pessoa que não seja você, sofre 2d8 de dano divino automático.",
+              "Balança de Honra (Reação · 2 Karma): Se o inimigo vinculado receber cura ou buff externo, você recebe metade daquele mesmo valor gratuitamente."
+            ],
+            "harvest": "Tyr recolhe a imposição de regras de duelo isolado no meio de batalhas caóticas."
+          }
+        ]
+      },
+      {
+        "name": "Hel",
+        "epithet": "A Deusa de Niflheim, Metade Viva e Metade Cadavérica",
+        "blessings": [
+          {
+            "id": 70,
+            "facet": "Corpo Bipartido",
+            "title": "Dualidade de Carne e Cadáver",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Seu corpo pode alternar entre o Lado Vivo (quente, regenerativo) e o Lado Morto (frio, insensível à dor e necrótico) no início de cada turno.",
+            "extensions": [
+              "Mudança de Semblante (Livre no turno · 2 Karma): No Lado Vivo, você regenera Etapa de Vida no turno e recebe +2 em testes sociais/mentais; no Lado Morto, você recebe Redução de Dano 3 contra tudo, fica imune a veneno/sangramento e seus golpes somam +1d6 necrótico.",
+              "Choque Térmico de Hel (Principal · 4 Karma): Golpeia com as duas mãos ao mesmo tempo (vida e morte), causando 2d10 de dano e aplicando Abalado."
+            ],
+            "harvest": "Hel absorve a homeostase entre metabolismo vivo e estase cadavérica."
+          },
+          {
+            "id": 71,
+            "facet": "Geada de Niflheim",
+            "title": "Névoa deFrio Necrótico",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "O frio que você emana não congela apenas a água, mas adormece o próprio Karma e os nervos dos inimigos que respiram o vapor azulado.",
+            "extensions": [
+              "Sopro dos Nove Mundos Frios (Principal · 4 Karma · Cone 4,5m): Causa 2d8 de dano frio/necrótico e congela 3 pontos de Karma da reserva dos alvos atingidos (eles não podem gastar esses 3 pontos até o final do próximo turno).",
+              "Piso de Geada Negra (Movimento · 2 Karma): Deixa um rastro congelado por onde anda que reduz o movimento de perseguidores pela metade."
+            ],
+            "harvest": "Hel colhe a criogenia espiritual capaz de congelar reservas de Karma em combate."
+          },
+          {
+            "id": 72,
+            "facet": "Senhora dos Mortos Sem Glória",
+            "title": "Mão que Puxa do Túmulo",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Onde houver sombras ou cadáveres na cena, braços pálidos e gelados brotam do chão sob seu comando para agarrar os tornozelos dos vivos.",
+            "extensions": [
+              "Agarrão dos Esquecidos (Extra · 3 Karma · 9m): Braços brotam sob um inimigo causando 1d10 necrótico e reduzindo a CA de esquiva/Agilidade dele em -2 até o próximo turno.",
+              "Recusar o Valhala (Reação · 5 Karma · 1x/cena): Quando um aliado a até 9m cairia a 0 de Vida, as mãos de Hel seguram a alma dele no corpo, mantendo-o com 1 de Vida e de pé por mais 1 rodada completa."
+            ],
+            "harvest": "Hel recolhe a ancoragem de almas à beira do óbito."
+          }
+        ]
+      },
+      {
+        "name": "Heimdall",
+        "epithet": "O Sentinela de Asgard, da Trombeta Gjallarhorn e da Bifrost",
+        "blessings": [
+          {
+            "id": 73,
+            "facet": "Audição Absoluta",
+            "title": "Câmara de Vácuo Acústico",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Projeta uma esfera invisível de 4m de raio a até 12m onde nenhum som se propaga; todo ruído suprimido acumula-se como energia mecânica no centro da bolha.",
+            "extensions": [
+              "Emboscada Muda (2 Karma): Aliados na esfera recebem +1d20 em Furtividade e inimigos dentro dela não podem usar comandos de voz.",
+              "Colapso de Decibéis (Principal · 5 Karma): Detona a bolha liberando todo o som reprimido, causando 2d8 de dano em 4m e aplicando Desorientado."
+            ],
+            "harvest": "Heimdall absorve o armazenamento de ondas mecânicas via privação sensorial."
+          },
+          {
+            "id": 74,
+            "facet": "Guardião da Bifrost",
+            "title": "Trilho de Luz Prismática",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Você cria pontes e rampas curtas de luz sólida multicolorida no ar, que queimam pés inimigos mas aceleram o passo de aliados.",
+            "extensions": [
+              "Passarela do Arco-Íris (Movimento · 3 Karma): Cria uma rampa de luz de 9m (inclusive subindo para telhados ou sobre abismos); você e aliados que corram por ela ganham +3m de movimento, enquanto inimigos que toquem a ponte sofrem 2d6 radiante.",
+              "Corte de Sete Cores (Principal · 4 Karma): Desfaz a ponte em um feixe prismático contra um alvo a 9m, causando 2d8 de dano que ignora resistências elementais."
+            ],
+            "harvest": "Heimdall colhe a engenharia de pontes fotônicas táticas de curta distância."
+          },
+          {
+            "id": 75,
+            "facet": "Olhos que Não Dormem",
+            "title": "Vigília do Horizonte Branco",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Seus olhos dourados enxergam em 360 graus através de paredes finas, fumaça e ilusões a até 15m; é impossível pegar você desprevenido.",
+            "extensions": [
+              "Toque de Gjallarhorn (Reação no início do combate · 3 Karma): Você nunca fica surpreso, soma +4 na sua Iniciativa e concede +2 na Iniciativa e na CA de todos os aliados a até 9m na primeira rodada.",
+              "Sentinela Implacável (Reação · 3 Karma): Quando um inimigo tenta entrar ou sair de furtividade/teleporte a até 12m, você desfere um ataque imediato contra ele com +2 no acerto."
+            ],
+            "harvest": "Heimdall recolhe protocolos de detecção contra infiltração e teletransporte."
+          }
+        ]
+      },
+      {
+        "name": "Skadi",
+        "epithet": "A Deusa das Montanhas Geladas, dos Esquis e da Caça de Inverno",
+        "blessings": [
+          {
+            "id": 76,
+            "facet": "Esquis de Vento Gelado",
+            "title": "Patinação em Geada Espelhada",
+            "nature": "Método de Luta Exclusivo",
+            "phenomenon": "Suas botas condensam lâminas finas de gelo sob as solas que permitem deslizar sobre qualquer terreno (terra, pedra, escadas ou água) em alta velocidade mantendo as duas mãos livres para atirar ou golpear.",
+            "extensions": [
+              "Tiro em Curva de Avalancha (Movimento + Principal · 4 Karma): Desliza até 9m em arco ao redor do alvo enquanto dispara ou golpeia, causando 2d8 perfurante/frio e somando +2 na sua própria CA até o próximo turno.",
+              "Rastro Cortante (Extra · 2 Karma): Quem cruzar a linha de gelo que você deixou no chão neste turno sofre 1d8 frio e precisa vencer Acrobacia ou fica Caído."
+            ],
+            "harvest": "Skadi absorve a cinemática de tiro em movimento contínuo sobre superfícies congeladas."
+          },
+          {
+            "id": 77,
+            "facet": "Inverno Implacável",
+            "title": "Zero Absoluto de Perseguição",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Cada ataque seu que acerta um inimigo rouba calor cinético dele, cobrindo as juntas do alvo com camadas cumulativas de geada branca.",
+            "extensions": [
+              "Flecha de Estalactite (Principal · 4 Karma · 18m): Causa 2d8 perfurante/frio e reduz o Movimento do alvo em -3m (-6m se ele já estiver Lento).",
+              "Estilhaçar Geada (Extra · 3 Karma): Contra um alvo que esteja Lento ou com geada acumulada, explode o gelo no corpo dele causando 2d6 adicional e aplicando -2 nos ataques dele por 1 rodada."
+            ],
+            "harvest": "Skadi colhe o método de desaceleração térmica progressiva de alvos velozes."
+          },
+          {
+            "id": 78,
+            "facet": "Predadora das Cumeadas",
+            "title": "Camuflagem de Nevasca Branca",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Ao ficar imóvel perto de uma parede, coluna ou cobertura, a luz ao seu redor se espalha como reflexo de neve, tornando seu contorno quase invisível à distância.",
+            "extensions": [
+              "Emboscada da Montanha (Passiva + 3 Karma no ataque): Se você não se moveu mais que 1,5m no turno antes de atacar à distância, seu ataque ganha +6m de alcance, +1d20 na Reserva e soma +Etapa ao dano.",
+              "Vento de Cume (Reação · 3 Karma): Rajada de ar gelado que desvia projéteis inimigos (+3 na CA contra ataques à distância)."
+            ],
+            "harvest": "Skadi recolhe técnicas de franco-atirador e camuflagem óptica em relevos elevados."
+          }
+        ]
+      },
+      {
+        "name": "Baldur",
+        "epithet": "O Deus da Luz Incorruptível, da Invulnerabilidade e do Renascimento",
+        "blessings": [
+          {
+            "id": 79,
+            "facet": "Pacto de Frigg",
+            "title": "Invulnerabilidade de Exceção Única",
+            "nature": "Runa Kármica Primordial",
+            "phenomenon": "Sua pele carrega o juramento que protegeu Baldur: no início da cena (ou ao ativar), seu corpo torna-se quase impenetrável contra uma natureza específica de ataque, mantendo apenas um ponto cego.",
+            "extensions": [
+              "Juramento das Coisas (Extra · 4 Karma): Escolha 1 tipo de dano (Cortante, Perfurante, Contundente, Elemental ou Kármico): até o fim do seu próximo turno, você recebe Redução de Dano 6 contra aquele tipo e imunidade a Acertos Críticos dele (em troca, sofre +2 de dano de um único outro tipo à sua escolha, o seu \"Visco\").",
+              "Desviar Ameaça (Reação · 3 Karma): Armas comuns que atinjam apenas sua CA Parcial escorregam sem causar dano algum."
+            ],
+            "harvest": "Baldur absorve a adaptação dinâmica de imunidades seletivas em combate."
+          },
+          {
+            "id": 80,
+            "facet": "OMais Amado",
+            "title": "Aura de Hesitação e Paz Forçada",
+            "nature": "Técnica Divina / Fenômeno",
+            "phenomenon": "Uma luz serena e quente emana de você; ferir você parece um ato antinatural para a mente subconsciente de qualquer criatura viva.",
+            "extensions": [
+              "Peso da Culpa (Passiva + 3 Karma na Reação): Quando um inimigo declara um ataque contra você, ele sofre -2 no teste de acerto; se mesmo assim ele lhe causar dano, sofre 2d6 de dano mental/radiante imediato pelo rebote espiritual.",
+              "Trégua de Solstício (Principal · 4 Karma · 9m): Remove Abalado / Desorientado de até 2 aliados e concede 1d10 + Espírito de Escudo Temporário a eles."
+            ],
+            "harvest": "Baldur colhe o bloqueio psicológico de intenção assassina em combatentes hostis."
+          },
+          {
+            "id": 81,
+            "facet": "Sol Após o Ragnarok",
+            "title": "Centelha de Renascimento Dourado",
+            "nature": "Dobra Elemental Anômala",
+            "phenomenon": "Seu Karma queima com a promessa do mundo que renasce das cinzas; quanto mais destruído estiver o campo de batalha ou seu próprio corpo, mais forte brilha sua chama dourada.",
+            "extensions": [
+              "Fulgor de Novo Mundo (Principal · 4 Karma · 9m): Dispara uma onda de luz dourada que causa 2d8 radiante nos inimigos e faz brotar luz curativa no chão, restaurando 1d8 de Vida em você ou em um aliado na área.",
+              "Erguer das Cinzas (Reação · 6 Karma · 1x/cena): Ao cair a 0 de Vida ou sofrer uma Fratura, explode em luz (2d6 nos inimigos a 3m) e recupera imediatamente 2d10 + Etapa de Vida."
+            ],
+            "harvest": "Baldur recolhe a ignição de autorressurreição celular movida pelo Karma residual."
+          }
+        ]
+      }
+    ]
+  }
+]

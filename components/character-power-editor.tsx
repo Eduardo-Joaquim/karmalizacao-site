@@ -1,4 +1,9 @@
 "use client";
+import axioms from "@/data/path-axioms.json";
+import { equippedRuneWeapons, personalRuneLimit } from "@/lib/karmic-runes";
+import runes from "@/data/karmic-runes.json";
+import { domainPathDiscount, hasAwakenedPath, pathAxiom } from "@/lib/personal-path";
+import { getStageIndex, getFinalSkill } from "@/lib/character-rules";
 import {TechniqueMatrixEditor} from "@/components/technique-matrix-editor";
 
 import { BlessingEditor } from "@/components/blessing-editor";
@@ -425,7 +430,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       <div className="domain-mark-control">
                         <span>
                           <strong>{domain.marks}</strong>
-                          <small>Marcas</small>
+                          <small>Marcas · requer {domainPathDiscount(3, hasAwakenedPath(draft))}</small>
                         </span>
                         <Slider
                           min={0}
@@ -489,6 +494,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                 <h3>Caminho Pessoal</h3>
               </div>
               <Switch
+                disabled={getStageIndex(draft.stage) < 3 && !draft.personalPath.enabled}
                 checked={draft.personalPath.enabled}
                 onCheckedChange={(enabled) =>
                   update("personalPath", { ...draft.personalPath, enabled })
@@ -512,7 +518,11 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     update("personalPath", { ...draft.personalPath, signatureTechnique })
                   }
                 />
-                <p className="field-full">Exige Técnica de Assinatura, um Domínio com dois Refinamentos e arco de Confronto, Escolha e Resposta. Imposição: Extra, 8 Karma, uma vez por cena; manutenção 1 Karma por turno.</p>
+                <p className="field-full">Despertar em crise na Etapa III. CD 20 e 6 Karma no despertar puro. Sob Outorga ou doutrina, CD 24, −1d20, 10 Karma e 2d6 de dano irreduzível. Registre o despertar após resolver a tentativa em mesa.</p>
+                <label>Vertente<select value={draft.personalPath.branch ?? ""} onChange={event => update("personalPath", {...draft.personalPath, branch: (event.target.value || undefined) as CharacterPayload["personalPath"]["branch"]})}><option value="">Escolha uma vertente</option><option value="independente">Independente</option><option value="subversao">Subversão</option><option value="emancipacao">Emancipação</option></select></label>
+                <label>Axioma Autoral<select value={draft.personalPath.axiom ?? ""} onChange={event => update("personalPath", {...draft.personalPath, axiom: Number(event.target.value) || undefined})}><option value="">Escolha um Axioma</option>{axioms.map(axiom => <option key={axiom.id} value={axiom.id}>{axiom.name}</option>)}</select></label>
+                {pathAxiom(draft) && <p className="field-full">{pathAxiom(draft)?.effect}</p>}
+                <label>Bônus acumulado por falhas<input type="number" min={0} max={999} value={draft.personalPath.failedAttempts ?? 0} onChange={event => update("personalPath", {...draft.personalPath, failedAttempts: Math.min(999,Math.max(0,Math.floor(Number(event.target.value)||0)))})}/></label>
                 <TextField id="personal-path-rupture" label="Afirmação — resolução, alvos e limites" value={draft.personalPath.rupture} multiline wide onChange={(rupture)=>update("personalPath",{...draft.personalPath,rupture})}/>
                 <TextField id="personal-path-price" label="Culminação — efeito, preço e encerramento" value={draft.personalPath.price} multiline wide onChange={(price)=>update("personalPath",{...draft.personalPath,price})}/>
                 <TextField
@@ -818,6 +828,12 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
               <p className="empty-power-copy">Ative para registrar uma Bênção ou Comunhão Divina.</p>
             )}
           </div>
+        </section>
+
+        <section className="power-section" id="poder-runas"><h2>Runas Kármicas</h2>
+          <p>Limite pessoal de {personalRuneLimit(draft)} Runas. Espaços de armas são separados.</p>
+          {draft.className === "Escriba Kármico" && <p>CD rúnica {12 + getFinalAttribute(draft,automatic,"Intelecto") + getFinalSkill(draft,automatic,"Canalização de Karma") + (equippedRuneWeapons(draft).some(({weapon}) => weapon.id === "grimorio") ? 1 : 0) + (equippedRuneWeapons(draft).some(({weapon}) => weapon.id === "cajado") ? 2 : 0)}. Testes rúnicos usam Intelecto + Canalização de Karma.</p>}
+          <details><summary>Consultar as 25 Runas</summary>{runes.map(rune => <details key={rune.id}><summary>{rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido</summary><p>{rune.category}</p><p><strong>Enquanto armada.</strong> {rune.passive}</p><p><strong>Estouro.</strong> {rune.burst}</p></details>)}</details>
         </section>
 
         <InvocationEditor draft={draft} onChange={onChange} />

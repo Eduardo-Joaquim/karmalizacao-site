@@ -1078,3 +1078,68 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 | Etapa VI | +2 Karma máximo. | +4 Karma máximo; +1 ponto de Atributo à escolha. | Primeira ampliação. |
 | Etapa VII | +4 Vida máxima; +2 Karma máximo; +1 CA. | +3 Vida máxima; +4 Karma máximo. | Técnica de Assinatura Grau V, com Perícia 3; segunda ampliação. |
 
+
+## Escriba Kármico
+
+**Função:** Preparação rúnica, controle de campo e detonações combinadas.
+
+**Identidade:** Calígrafos espirituais tratam Karma como linguagem. Gravam glifos em armas, armaduras, sangue e superfícies para escolher onde e quando a energia se libera.
+
+**Bônus inicial:** +1 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
+
+**Atributos recomendados:** Intelecto e Espírito.
+
+**Perícias recomendadas:** Canalização de Karma, Tática, Criação e Ocultismo.
+
+#### Traço de Classe — Caligrafia de Combate (Escrita Viva)
+
+Você mantém duas Runas adicionais no limite pessoal. Use Intelecto + Canalização de Karma para gravar selos e realizar ataques rúnicos, com Bônus Analítico quando aplicável. A CD das suas runas é 12 + Intelecto + nível de Canalização de Karma. Pode gravar uma Runa de Grau igual ou inferior à Etapa usando Movimento ou Extra. O Karma Retido volta a ficar disponível uma rodada após o Estouro.
+
+#### Habilidade 1 — Inscrição Projetada (Glifo no Ar)
+
+**Uso:** Movimento ou Principal · Custo: 2 de Karma (+ o Karma Retido da Runa escolhida) · Alcance: 12 metros.
+
+Permite desenhar uma Runa de Campo/Selo ou Runa de Armadura/Arma diretamente a distância (em um piso, parede, aliado ou equipamento a até 12m) sem precisar tocar fisicamente a superfície. Se usada como Ação Principal contra um inimigo, realiza um teste de Intelecto + Canalização de Karma contra a CA do alvo para cravar uma Runa de Selo diretamente no corpo dele, aplicando o efeito passivo da runa imediatamente.
+
+#### Ampliação — Inscrição no alvo
+
+A variante de Ação Principal permite inscrever um selo no inimigo, mediante teste contra CA.
+
+#### Habilidade 2 — Palavra Rúnica (Sintaxe Composta)
+
+**Uso:** Principal · Custo: 3 de Karma (além de estourar as Runas combinadas) · Frequência: 1 vez por rodada.
+
+Você conecta e detona 2 Runas ativas (ou 3 Runas a partir da Etapa V) no mesmo turno, fundindo seus efeitos em uma Sentença Rúnica:
+
+Lexema Duplo (2 Runas): Soma os efeitos de estouro de ambas as runas em um único alvo ou área, aumenta o alcance em +4m e reduz os limiares de CA Parcial e Total do alvo em -2 contra a detonação combinada.
+
+Sentença Tripla (3 Runas — Etapa V+): Além dos benefícios do Lexema Duplo, adiciona +2d10 de dano kármico puro antes do parcial e recupera 4 de Karma da reserva após o disparo.
+
+#### Ampliação — Sentença Tripla
+
+Da Etapa V em diante, pode combinar três Runas nos termos da habilidade.
+
+#### Habilidade 3 — Sobrescrita de Vetor (Transcrição Reativa)
+
+**Uso:** Reação (ao ser alvo de uma técnica ou ataque kármico/elemental/divino a até 15m) · Custo: 4 de Karma.
+
+Você traça um glifo de interceptação no ar, realizando um teste de Intelecto + Tática (ou Canalização de Karma) para amortecer a fórmula inimiga: você reduz o dano recebido em 1d10 + Intelecto + Etapa. Se o dano for reduzido a zero (ou se o ataque inimigo atingir apenas a faixa Parcial), você converte a energia dissipada em 1 Runa de Grau I ou II armada gratuitamente (sem consumir seu próprio Karma Retido) até o final do seu próximo turno.
+
+#### Ampliação — Energia interceptada
+
+Uma Runa de Grau I ou II obtida pela interceptação dura até o fim do seu próximo turno e ocupa espaço de Runa ativa.
+
+### Progressão de status e desenvolvimento
+
+Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de classe se somam; não reaplique o bônus inicial. As escolhas de Atributo precisam ser registradas.
+
+| Etapa | Aumento geral | Extra da classe | Desenvolvimento |
+|---|---|---|---|
+| Etapa I | +2 Vida máxima. | — | Progressão geral de Etapa. |
+| Etapa II | +2 Karma máximo. | — | Progressão geral de Etapa. |
+| Etapa III | +2 Vida máxima e +1 CA. | — | Progressão geral de Etapa. |
+| Etapa IV | +2 Karma máximo. | — | Progressão geral de Etapa. |
+| Etapa V | +2 Vida máxima, +2 Karma máximo e +1 CA. | — | Sentença Tripla disponível. |
+| Etapa VI | +2 Karma máximo. | — | Progressão geral de Etapa. |
+| Etapa VII | +4 Vida máxima, +2 Karma máximo e +1 CA. | — | Progressão geral de Etapa. |
+

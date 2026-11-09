@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "Runa da Brasa Cortante (Kenaz)",
+    "grade": "I",
+    "retained": 2,
+    "category": "Arma",
+    "passive": "Converte o dano da arma em térmico/kármico e soma +1 no dano final.",
+    "burst": "Adiciona +1d8 de dano antes do parcial e ilumina o alvo (impede furtividade por 1 rodada)."
+  },
+  {
+    "id": 2,
+    "name": "Runa do Alcance Estendido (Elhaz)",
+    "grade": "I",
+    "retained": 2,
+    "category": "Arma",
+    "passive": "Aumenta o alcance de ataques corpo a corpo em +1,5m ou à distância em +6m.",
+    "burst": "O ataque ignora cobertura parcial e soma +2 no teste de acerto."
+  },
+  {
+    "id": 3,
+    "name": "Runa da Fenda de Guarda (Thurisaz)",
+    "grade": "II",
+    "retained": 3,
+    "category": "Arma",
+    "passive": "Ataques com a arma reduzem em -1 a CA Parcial do alvo.",
+    "burst": "Causa +1d10 de dano e destrói até 8 pontos de Escudo Temporário do alvo antes de aplicar o dano."
+  },
+  {
+    "id": 4,
+    "name": "Runa da Hélice Dupla (Jera)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Arma",
+    "passive": "Ao errar um ataque (Falha), você recupera 1m de deslocamento livre.",
+    "burst": "Cria um eco kármico do golpe: causa +2d6 de dano e atinge também um segundo inimigo a até 2m do primeiro."
+  },
+  {
+    "id": 5,
+    "name": "Runa do Dreno Espiritual (Othala)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Arma",
+    "passive": "Acertos Totais com a arma recuperam 1 de Karma para o portador.",
+    "burst": "Causa +2d8 de dano kármico e drena 3 de Karma do alvo atingido (transferindo-os para você)."
+  },
+  {
+    "id": 6,
+    "name": "Runa da Ruptura de Essência (Hagalaz)",
+    "grade": "IV",
+    "retained": 6,
+    "category": "Arma",
+    "passive": "A arma ignora Redução de Dano física e elemental de até 3 pontos.",
+    "burst": "Causa +2d10 de dano e aplica Sangramento e Abalado sem permitir redução por armadura."
+  },
+  {
+    "id": 7,
+    "name": "Runa do Julgamento Final (Tiwaz-Omega)",
+    "grade": "V",
+    "retained": 10,
+    "category": "Arma",
+    "passive": "Soma +2 no teste de ataque e +3 no dano fixo de todos os golpes da arma.",
+    "burst": "Golpe cataclísmico: adiciona +3d10 de dano antes do parcial e reduz a CA Total do alvo em -3 até o fim da rodada."
+  },
+  {
+    "id": 8,
+    "name": "Runa do Casco de Pedra (Uruz)",
+    "grade": "I",
+    "retained": 2,
+    "category": "Armadura e guarda",
+    "passive": "Concede +1 de Redução de Dano contra ataques físicos.",
+    "burst": "Ao sofrer dano: Absorve 1d10 + Constituição do dano recebido naquele golpe."
+  },
+  {
+    "id": 9,
+    "name": "Runa do Passo Deslizante (Laguz)",
+    "grade": "II",
+    "retained": 3,
+    "category": "Armadura e guarda",
+    "passive": "Soma +1 em testes de Reflexos e Acrobacia.",
+    "burst": "Ao ser alvo de ataque: Permite recuar 3 metros como Reação livre e soma +3 na CA Parcial e Total contra o golpe."
+  },
+  {
+    "id": 10,
+    "name": "Runa do Espelho de Espinhos (Eihwaz)",
+    "grade": "II",
+    "retained": 3,
+    "category": "Armadura e guarda",
+    "passive": "Inimigos que agarrem você sofrem 3 de dano kármico automático.",
+    "burst": "Ao sofrer Acerto Total corpo a corpo: Reduz o dano em 1d8 e reflete 2d6 de dano kármico no atacante."
+  },
+  {
+    "id": 11,
+    "name": "Runa da Restauração Estrutural (Berkano)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Armadura e guarda",
+    "passive": "Aumenta a cura recebida de poções, técnicas ou reparos em +3.",
+    "burst": "Ao cair para metade da Vida ou menos: Dispara sozinha restaurando 2d8 + Etapa de Vida e limpando 1 condição física menor."
+  },
+  {
+    "id": 12,
+    "name": "Runa da Dissipação Prismática (Sowilo)",
+    "grade": "IV",
+    "retained": 6,
+    "category": "Armadura e guarda",
+    "passive": "Concede +2 na CA contra técnicas elementais, kármicas e divinas.",
+    "burst": "Ao ser atingido por técnica de área ou feixe: Reduz o dano recebido pela metade e concede imunidade à condição secundária do golpe."
+  },
+  {
+    "id": 13,
+    "name": "Runa da Fortaleza Imortal (Algiz-Mater)",
+    "grade": "V",
+    "retained": 10,
+    "category": "Armadura e guarda",
+    "passive": "Concede +2 na CA Total e imunidade a deslocamento forçado (empurrões/puxões).",
+    "burst": "Ao sofrer dano que levaria a 0 de Vida: Mantém o usuário de pé com 1 de Vida e concede 3d10 de Escudo Temporário por 1 rodada."
+  },
+  {
+    "id": 14,
+    "name": "Runa do Limiar Cortante (Ansuz)",
+    "grade": "I",
+    "retained": 2,
+    "category": "Campo e selo",
+    "passive": "Vigia um raio de 2m no solo ou parede de forma invisível a olho nu.",
+    "burst": "Inimigo pisa na área: Dispara lâminas de ar comprimido causando 1d10 de dano e reduzindo o movimento em 2m."
+  },
+  {
+    "id": 15,
+    "name": "Runa da Âncora de Chumbo (Isa)",
+    "grade": "II",
+    "retained": 3,
+    "category": "Campo e selo",
+    "passive": "Cravada no alvo ou em 3m no solo: o terreno conta como difícil para inimigos.",
+    "burst": "Detonação: Prende as sombras em 3m; alvos sofrem 2d6 de dano, ficam Lentos e perdem voo/levitação por 2 rodadas."
+  },
+  {
+    "id": 16,
+    "name": "Runa do Silêncio Hermético (Mannaz)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Campo e selo",
+    "passive": "Em 3m ao redor do selo, sons não entram nem saem.",
+    "burst": "Quando inimigo tenta conjurar na área: Estoura causando 2d8 de dano mental/kármico e exige +3 de Karma para a técnica dele não falhar."
+  },
+  {
+    "id": 17,
+    "name": "Runa do Vórtice de Tração (Raidho)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Campo e selo",
+    "passive": "Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito.",
+    "burst": "Detonação: Puxa todos os inimigos em um raio de 4m para o centro da runa, causando 2d8 de dano contundente."
+  },
+  {
+    "id": 18,
+    "name": "Runa da Jaula Geométrica (Nauthiz)",
+    "grade": "IV",
+    "retained": 6,
+    "category": "Campo e selo",
+    "passive": "Cravada em um alvo: toda vez que ele se move, sofre 2 de dano por metro percorrido.",
+    "burst": "Detonação: Ergue paredes translúcidas de 3m de raio por 1 rodada e causa 2d10 de dano a quem tentar atravessar a borda."
+  },
+  {
+    "id": 19,
+    "name": "Runa do Colapso Espacial (Ginnungagap)",
+    "grade": "V",
+    "retained": 10,
+    "category": "Campo e selo",
+    "passive": "Em 6m ao redor do selo, inimigos sofrem -2 em testes de Reflexos e Iniciativa.",
+    "burst": "Detonação em Área (6m): Implosão gravitacional que causa 3d10 de dano kármico, deixa os alvos Caídos e destrói coberturas."
+  },
+  {
+    "id": 20,
+    "name": "Runa da Câmara Reserva (Fehu)",
+    "grade": "I",
+    "retained": 3,
+    "category": "Sangue e corpo",
+    "passive": "Pulsa no pulso do usuário estabilizando o fluxo espiritual (+1 em Vontade).",
+    "burst": "Ação Livre: Converte a runa em energia imediata, reduzindo em -5 de Karma o custo da próxima técnica ou habilidade no turno."
+  },
+  {
+    "id": 21,
+    "name": "Runa daPupila de Cristal (Dagaz)",
+    "grade": "II",
+    "retained": 3,
+    "category": "Sangue e corpo",
+    "passive": "Enxerga fluxos de Karma através de fumaça/escuridão a até 12m (+2 em Percepção).",
+    "burst": "Ação Livre: Seu próximo ataque ou técnica no turno recebe +1d20 na Reserva e ignora camuflagem total."
+  },
+  {
+    "id": 22,
+    "name": "Runa dos Tendões de Relâmpago (Ehwaz)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Sangue e corpo",
+    "passive": "Aumenta o deslocamento em +2m e a distância de saltos em +3m.",
+    "burst": "Ação Livre: Concede uma Ação de Movimento extra imediata no turno e soma +2 na CA até a próxima rodada."
+  },
+  {
+    "id": 23,
+    "name": "Runa da Fornalha Cardíaca (Wunjo)",
+    "grade": "III",
+    "retained": 4,
+    "category": "Sangue e corpo",
+    "passive": "Impede que o usuário fique Abalado ou Lento por frio/exaustão.",
+    "burst": "Ao gastar 3 de Vida: Todos os ataques e técnicas do usuário neste turno somam +1d8 de dano adicional antes do parcial."
+  },
+  {
+    "id": 24,
+    "name": "Runa da Mente Bipartida (Ingwaz)",
+    "grade": "IV",
+    "retained": 6,
+    "category": "Sangue e corpo",
+    "passive": "Concede +2 em testes de Tática, Criação e Canalização de Karma.",
+    "burst": "Ação Livre: Permite sustentar duas técnicas de concentração ao mesmo tempo ou realizar 1 Ação Extra gratuita para usar item/runa."
+  },
+  {
+    "id": 25,
+    "name": "Runa da Apoteose Efêmera (Odinn-Selo)",
+    "grade": "V",
+    "retained": 10,
+    "category": "Sangue e corpo",
+    "passive": "Aumenta em +1d20 a Reserva de todos os testes baseados em Intelecto ou Espírito.",
+    "burst": "Ação Livre: Por 2 rodadas, todas as suas técnicas custam metade do Karma e causam +1 dado de dano extra da respectiva Matriz."
+  }
+]

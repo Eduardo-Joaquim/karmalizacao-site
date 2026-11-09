@@ -48,6 +48,9 @@ const domainSchema = z.object({
 });
 
 const personalPathSchema = z.object({
+  axiom: z.number().int().min(1).max(10).optional(),
+  branch: z.enum(["independente", "subversao", "emancipacao"]).optional(),
+  failedAttempts: z.number().int().min(0).max(999).optional(),
   enabled: z.boolean().default(false),
   name: shortText.default(""),
   signatureTechnique: shortText.default(""),
@@ -142,6 +145,7 @@ const techniqueSchema = z.object({
 });
 
 const inventoryItemSchema = z.object({
+  catalogId: shortText.optional(),
   category:z.enum(["weapon","armor","shield","ammo","focus","gear"]).optional(),
   equipped:z.boolean().optional(),
   location:z.enum(["ready","backpack","external"]).optional(),
@@ -222,6 +226,8 @@ export const combatLogSchema = z.object({
   karmaSpent:z.number().int().min(0).max(99999).optional(), lifeDelta:z.number().int().min(-99999).max(99999).optional(), details:longText(2000).optional(),
 });
 export const liveCombatSchema = z.object({
+  runes: z.array(z.object({ id:shortText, runeId:z.number().int().min(1).max(25), weaponId:shortText.optional(), spent:z.boolean().optional(), releaseRound:z.number().int().min(1).max(99999).optional() })).max(100).optional(),
+  runeBurstUsed:z.boolean().optional(),
   summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean()})).default({}),
   impetus:z.number().int().min(0).max(4).optional(),impetusBloodied:z.boolean().optional(),
   inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),

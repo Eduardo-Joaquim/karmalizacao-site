@@ -1,0 +1,33 @@
+.pantheon-portal { display:grid; gap:1rem; margin:2rem 0; min-width:0; }
+.pantheon-portal-card { --wing:#d2ad6a; border:1px solid color-mix(in srgb,var(--wing),transparent 60%); background:#15131c; border-radius:.6rem; }
+.pantheon-portal-card[data-wing="2"] { --wing:#eb9d91; }
+.pantheon-portal-card[data-wing="3"] { --wing:#9bd4e5; }
+.pantheon-portal-card[data-wing="4"] { --wing:#e7c87c; }
+.pantheon-portal-card[data-wing="5"] { --wing:#edaa72; }
+.pantheon-portal-card[data-wing="6"] { --wing:#efb8c9; }
+.pantheon-portal-card[data-wing="7"] { --wing:#a7d5be; }
+.pantheon-portal-card[data-wing="8"] { --wing:#a8ce84; }
+.pantheon-portal-card[data-wing="9"] { --wing:#c3b3ef; }
+.pantheon-portal-card summary { display:flex; align-items:center; flex-wrap:wrap; gap:1rem; padding:1.2rem; cursor:pointer; list-style:none; background:linear-gradient(120deg,color-mix(in srgb,var(--wing),transparent 88%),transparent); }
+.pantheon-portal-card summary::-webkit-details-marker { display:none; }
+.pantheon-summary { display:grid; gap:.3rem; flex:1 1 220px; }
+.pantheon-summary strong { font-size:1.35rem; color:var(--wing); }
+.pantheon-summary b,.pantheon-summary small { font-size:.8rem; }
+.pantheon-crest { display:grid; place-items:center; inline-size:2.75rem; block-size:2.75rem; border:1px solid var(--wing); color:var(--wing); font-size:1.5rem; border-radius:50%; }
+.pantheon-open { color:var(--wing); font-weight:600; }
+.pantheon-open span:last-child,.pantheon-portal-card[open] .pantheon-open span:first-child { display:none; }
+.pantheon-portal-card[open] .pantheon-open span:last-child { display:inline; }
+.pantheon-content { padding:clamp(.8rem,3vw,1.5rem); border-top:1px solid #ffffff22; }
+.pantheon-search { display:grid; gap:.5rem; }
+.pantheon-search input { width:100%; padding:.65rem; background:#0d0c14; border:1px solid #ffffff45; border-radius:.3rem; }
+.pantheon-deities { display:flex; flex-wrap:wrap; gap:.45rem; margin:1rem 0; }
+.pantheon-portal button,.pantheon-blessing a { min-height:2.75rem; padding:.5rem .8rem; border:1px solid #ffffff45; border-radius:.3rem; }
+.pantheon-deities button[aria-pressed="true"] { border-color:var(--wing); color:var(--wing); }
+.pantheon-blessings-grid { display:grid; gap:1.5rem; grid-template-columns:minmax(0,1fr); }
+@media(min-width:1200px) { .pantheon-blessings-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+.pantheon-blessing { min-width:0; display:flex; flex-direction:column; gap:.55rem; padding:1rem; border:1px solid #ffffff2a; background:#1d1926; overflow-wrap:anywhere; }
+.pantheon-blessing :is(h4,h5,p,ol) { margin:0; }
+.pantheon-blessing h4,.pantheon-blessing h5,.pantheon-blessing small { color:var(--wing); }
+.pantheon-blessing ol { padding-inline-start:1.3rem; }
+.pantheon-blessing li + li { margin-top:.7rem; }
+.pantheon-blessing :is(button,a) { margin-top:auto; }

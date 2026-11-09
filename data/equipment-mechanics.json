@@ -317,15 +317,17 @@
     "armorClass": 0,
     "agilityCap": 99,
     "movementPenalty": 0,
-    "spaces": 2.0
+    "spaces": 2,
+    "runeSlots": 3
   },
   "lamina-runica": {
-    "category": "focus",
+    "category": "weapon",
     "minStrength": 1,
     "armorClass": 0,
     "agilityCap": 99,
     "movementPenalty": 0,
-    "spaces": 2.0
+    "spaces": 1,
+    "runeSlots": 2
   },
   "grimorio": {
     "category": "focus",
@@ -333,7 +335,8 @@
     "armorClass": 0,
     "agilityCap": 99,
     "movementPenalty": 0,
-    "spaces": 1.0
+    "spaces": 1,
+    "runeSlots": 3
   },
   "orbe-de-convergencia": {
     "category": "focus",
@@ -341,7 +344,8 @@
     "armorClass": 0,
     "agilityCap": 99,
     "movementPenalty": 0,
-    "spaces": 1.0
+    "spaces": 1,
+    "runeSlots": 2
   },
   "amuleto-de-vinculo": {
     "category": "focus",
@@ -357,7 +361,8 @@
     "armorClass": 0,
     "agilityCap": 99,
     "movementPenalty": 0,
-    "spaces": 2.0
+    "spaces": 1,
+    "runeSlots": 2
   },
   "placa-de-inscricoes": {
     "category": "focus",
@@ -1630,5 +1635,32 @@
     "agilityCap": 99,
     "movementPenalty": 0,
     "spaces": 6.0
+  },
+  "luvas-canalizadoras": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 0.5,
+    "runeSlots": 2
+  },
+  "lanterna-astral": {
+    "category": "focus",
+    "minStrength": 0,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1,
+    "runeSlots": 2
+  },
+  "correntes-de-selamento": {
+    "category": "weapon",
+    "minStrength": 1,
+    "armorClass": 0,
+    "agilityCap": 99,
+    "movementPenalty": 0,
+    "spaces": 1.5,
+    "runeSlots": 2
   }
 }

@@ -1,3 +1,4 @@
+import { domainPathDiscount } from "@/lib/personal-path";
 import type { CharacterPayload, DomainState } from "@/lib/character-data";
 
 export type CombatState = { life: number; karma: number; shield: number; temporaryCharges: number; round: number; domainRounds: Record<string, number> };
@@ -5,8 +6,8 @@ export function combatState(draft: CharacterPayload, max: { life: number; karma:
   const s = draft.combat;
   return { life: Math.min(max.life, s?.life ?? max.life), karma: Math.min(max.karma, s?.karma ?? max.karma), shield: s?.shield ?? 0, temporaryCharges: s?.temporaryCharges ?? 0, round: s?.round ?? 1, domainRounds: s?.domainRounds ?? {} };
 }
-export function domainActivation(domain: DomainState) {
-  return { cost: Math.max(1, 3 - domain.refinements.filter(r => r === "Eficiência").length), rounds: 4 + domain.refinements.filter(r => r === "Permanência").length };
+export function domainActivation(domain: DomainState, awakenedPath = false) {
+  return { cost: domainPathDiscount(Math.max(1, 3 - domain.refinements.filter(r => r === "Eficiência").length), awakenedPath), rounds: 4 + domain.refinements.filter(r => r === "Permanência").length };
 }
 export function advanceRound(s: CombatState): CombatState {
   return { ...s, round: s.round + 1, domainRounds: Object.fromEntries(Object.entries(s.domainRounds).map(([name, n]) => [name, Math.max(0, n - 1)])) };

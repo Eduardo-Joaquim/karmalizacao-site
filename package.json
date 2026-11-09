@@ -14,7 +14,7 @@
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
     "test:legacy": "node --test tests/character-rules.test.mjs tests/patch-1.2.test.mjs",
-    "content:build": "python3 scripts/build-bestiary.py && python3 scripts/build-equipment.py && python3 scripts/build-alchemy.py && python3 scripts/build-corruption.py && python3 scripts/build-size-rules.py && python3 scripts/build-class-revision.py && python3 scripts/build-patch-2.py"
+    "content:build": "python3 scripts/build-bestiary.py && python3 scripts/build-equipment.py && python3 scripts/build-alchemy.py && python3 scripts/build-corruption.py && python3 scripts/build-size-rules.py && python3 scripts/build-class-revision.py && python3 scripts/build-patch-2.py && python3 scripts/build-path-runes.py"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

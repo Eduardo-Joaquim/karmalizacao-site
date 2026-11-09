@@ -1,3 +1,5 @@
+import { hasAwakenedPath, hasAxiom } from "@/lib/personal-path";
+import mageWeapons from "@/data/mage-weapons.json";
 import { sizeFromHeight, SIZE_RULES } from "@/lib/character-model";
 import { corruptedFormState } from "@/lib/corrupted-form";
 import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
@@ -149,6 +151,7 @@ for (const [name, {creation}] of Object.entries(lineage)) {
 export function racialFeatures(draft:CharacterPayload){const step=Math.max(1,getStageIndex(draft.stage));return getRaceRule(draft.race)?.features.filter(f=>!f.stage||['I','II','III','IV','V','VI','VII'].indexOf(f.stage)+1<=step)??[];}
 
 const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
+  "Escriba Kármico": { automatic: { attributes: { Intelecto: 1, Espírito: 1 }, skills: { "Canalização de Karma": 1, Tática: 1 } } },
   Conjurador: { automatic: { life: 4, karma: 10, attributes: { Espírito: 1 }, skills: { "Canalização de Karma": 1 } } },
   Mercenário: {
     automatic: { life: 8, karma: 6, skills: { Percepção: 1 } },
@@ -555,6 +558,16 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
     });
   }
 
+  if (hasAwakenedPath(draft)) {
+    const branch = draft.personalPath.branch;
+    if (branch === "emancipacao" || (branch === "independente" && !draft.divine.enabled)) result.karma += 4;
+    if (hasAxiom(draft, 3)) result.movement += 3;
+    if (hasAxiom(draft, 4)) { result.life += 2 * stageIndex; result.armor += 1; }
+  }
+  const strength = getFinalAttribute(draft, result, "Força");
+  if (draft.inventory.some(item => item.catalogId === "cetro-de-combate" && item.equipped && item.quantity > 0 && item.location !== "external" && strength >= (mageWeapons.find(weapon => weapon.id === item.catalogId)?.strength ?? Infinity))) {
+    result.attributes.Espírito += 1;
+  }
   const awakenedDomains = draft.domains.filter((domain) => domain.enabled && domain.awakened);
   if (awakenedDomains.some((domain) => domain.name === "Velocidade")) {
     result.armor += 1;
@@ -724,8 +737,12 @@ export function getSkillTest(
   const racialDice=Number(draft.race==='Demônio'&&racialStage>=4&&['Intimidação','Comunhão Divina','Controle da Corrupção'].includes(skill));
   const formDice=racialDice+(form.active&&form.selected.includes("instinto")&&(draft.corruption.formFocus===testPurpose&&((testPurpose==="evasion"&&skill==="Reflexos")||(testPurpose==="movement"&&skill==="Atletismo")||(testPurpose==="perception"&&skill==="Percepção")))?1:0);
   const inventoryPenalty=inventoryTestPenalty(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0,skill,["Força","Agilidade","Constituição"].includes(attribute)||["Atletismo","Acrobacia","Furtividade","Luta","Reflexos","Evasão"].includes(skill));
-  const analyticBonus = attribute === "Intelecto" && (mental || social) && level > 0 && value > 0
-    ? Math.min(3, Math.floor(intellect / 2)) : 0;
+  const equipped = (id: string) => draft.inventory.some(item => item.catalogId === id && item.equipped && item.quantity > 0 && item.location !== "external");
+  const analyticIntellect = intellect + (equipped("grimorio") ? 1 : 0);
+  const runeAnalytic = draft.className === "Escriba Kármico" && skill === "Canalização de Karma" && testPurpose === "technique";
+  const focusBonus = skill === "Canalização de Karma" && equipped("orbe-de-convergencia") ? 2 : 0;
+  const analyticBonus = attribute === "Intelecto" && (mental || social || runeAnalytic) && level > 0 && value > 0
+    ? Math.min(3, Math.floor(analyticIntellect / 2)) : 0;
   const manifested = (name: string) => draft.domains.some(d => d.name === name && d.enabled && d.awakened) && (draft.combat?.domainRounds[name] ?? 0) > 0;
   const domainDice = Number(attribute === "Força" && ["Luta", "Atletismo"].includes(skill) && manifested("Força"))
     + Number(attribute === "Agilidade" && ["Luta", "Pontaria", "Reflexos", "Acrobacia"].includes(skill) && manifested("Velocidade"))
@@ -734,7 +751,7 @@ export function getSkillTest(
     + Number(["Presença", "Espírito"].includes(attribute) && testPurpose === "technique" && manifested("Superação"));
   return {
     attribute, value, level, permanentLevel, analyticBonus, oneUse, inventoryPenalty, formDice, domainDice,
-    bonus: value === 0 ? -4 : (oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0)) + analyticBonus + (attribute === "Intelecto" && (mental || social) && level > 0 && draft.domains.some(d => d.name === "Técnica" && d.enabled && d.awakened) ? 1 : 0),
+    bonus: value === 0 ? -4 : (oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0)) + analyticBonus + focusBonus + (attribute === "Intelecto" && (mental || social) && level > 0 && draft.domains.some(d => d.name === "Técnica" && d.enabled && d.awakened) ? 1 : 0),
     dice: Math.max(1,(value === 0 || level === 0 ? 1 : Math.ceil(value / 2))+formDice+domainDice-inventoryPenalty.dicePenalty),
     selection: "maior",
   };

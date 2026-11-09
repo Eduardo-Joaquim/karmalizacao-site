@@ -34,7 +34,7 @@ test('derived CA and movement use load tiers and equipped armor',()=>{
  d.inventory=[item({spaces:29})];assert.equal(rules.calculateDerivedStats(d,a).movement,0);
 });
 test('catalog and chapters include load, armor and complete equipment content',()=>{
- const catalog=JSON.parse(readFileSync('data/equipment-catalog.json'));assert.equal(catalog.length,204);assert(catalog.every(i=>Number.isFinite(i.spaces)&&i.spaces>=0));assert(catalog.some(i=>i.category==='ammo'));assert.equal(catalog.find(i=>i.name==='Colete balístico experimental').armorClass,0);
+ const catalog=JSON.parse(readFileSync('data/equipment-catalog.json'));assert.equal(catalog.length,207);assert(catalog.every(i=>Number.isFinite(i.spaces)&&i.spaces>=0));assert(catalog.some(i=>i.category==='ammo'));assert.equal(catalog.find(i=>i.name==='Colete balístico experimental').armorClass,0);
  const book=JSON.parse(readFileSync('data/rules.json'));for(const n of [17,20]){const c=book.chapters.find(c=>c.number===n);assert(c.wordCount>3000);assert(c.html.includes('Carga'));assert(c.sections.some(s=>s.searchableText.length>100));}
 });
 

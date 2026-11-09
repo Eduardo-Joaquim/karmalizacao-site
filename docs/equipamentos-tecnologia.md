@@ -174,23 +174,45 @@ Florete troca força bruta por acesso à Agilidade e dano menor. Haste mantém i
 
 Flechas comuns não recebem o efeito de uma munição de fogo pelo mesmo nome. Depois de um combate com acesso seguro à área, recupere metade das flechas, virotes e dardos usados, arredondada para baixo; os demais foram perdidos ou danificados. Não recupere projéteis consumidos por efeito sobrenatural nem aqueles deixados em terreno inacessível.
 
-## Focos e armas de conjuradores
+## Armas de magos {#focos-e-armas-de-conjuradores}
 
-Focos não concedem técnicas gratuitas. O disparo básico possui seu alcance e usa Principal, 0 Karma, um alvo e linha de efeito. Não aceita Ampliação Kármica como se fosse uma técnica aprendida. A lâmina rúnica permanece uma arma de Luta; Condutora permite usar nela uma técnica conhecida sem trocar seu ataque básico por Ocultismo.
+O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. Cada arma possui espaços rúnicos próprios. As runas nesses espaços ficam fora do limite pessoal, mas ainda retêm Karma.
+
+| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+|---|---|---|---|---|---|
+| <span data-item="grimorio">Grimório Catalisador</span> | 35 | 1d6 Kármico | 1 | 0 | 12 m · Focal, Ritualística, Uma Mão · 3 espaços rúnicos |
+| <span data-item="orbe-de-convergencia">Orbe de Ressonância</span> | 75 | 1d8 Elemental / Kármico | 1 | 0 | 15 m · Focal, Condutora, Flutuante · 2 espaços rúnicos |
+| <span data-item="cajado">Cajado Rúnico</span> | 20 | 1d10 Contundente / Kármico | 2 | 1 | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos · 3 espaços rúnicos |
+| <span data-item="cetro-de-combate">Cetro de Comando</span> | 28 | 1d8 Contundente | 1 | 1 | 12 m · Focal, Precisa, Uma Mão · 2 espaços rúnicos |
+| <span data-item="luvas-canalizadoras">Luvas Canalizadoras</span> | A definir | 1d6 Contundente / Kármico | 0,5 | 0 | toque (1,5 m) / 9 m · Focal, Condutora, Leve · 2 espaços rúnicos |
+| <span data-item="lamina-runica">Lâmina Rúnica</span> | 22 | 1d8 Cortante / Kármico | 1 | 1 | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão · 2 espaços rúnicos |
+| <span data-item="lanterna-astral">Lanterna Astral</span> | A definir | 1d8 Divino / Kármico | 1 | 0 | 12 m · Focal, Ritualística, Iluminação · 2 espaços rúnicos |
+| <span data-item="correntes-de-selamento">Correntes de Selamento</span> | A definir | 1d8 Contundente / Perfurante | 1,5 | 1 | 4,5 m · Focal, Condutora, Alcance · 2 espaços rúnicos |
+
+**Grimório Catalisador.** +1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior.
+
+**Orbe de Ressonância.** +2 no resultado final de testes de Canalização de Karma. Por flutuar ao redor do pulso, deixa a mão livre para gestos e amplia o raio ou cone de técnicas de área em +1,5m.
+
+**Cajado Rúnico.** +2 na CD de todas as suas Técnicas e Runas. Ao bater a base do cajado no chão (Movimento), o alcance de todas as suas técnicas sobe em +6m e o dano soma +Etapa até o próximo turno.
+
+**Cetro de Comando.** +1 em Espírito (aumentando o Karma Máximo em +2) e +2 em testes de ataque e CA das suas Invocações/Constructos. Permite redirecionar o ponto de origem de uma técnica para o espaço de uma invocação aliada a até 12m.
+
+**Luvas Canalizadoras.** +1 em Agilidade (para Iniciativa e Pontaria/Luta com técnicas) e mantém ambas as mãos livres. Permite cravar Runas de Selo ou técnicas de toque como parte de um ataque desarmado ou disparo curto com +2 no acerto.
+
+**Lâmina Rúnica.** Arma híbrida para magos de combate: Permite usar Intelecto ou Espírito no lugar de Força/Agilidade para ataques com a lâmina. Sempre que acertar um golpe físico Total, reduz em -2 de Karma a próxima técnica usada no mesmo turno.
+
+**Lanterna Astral.** Emite luz espiritual em 6m de raio que revela inimigos furtivos/invisíveis e concede +1 na CA Parcial para aliados dentro do facho. Técnicas de suporte, barreira ou controle lançadas através da lanterna somam +1d8 de potência.
+
+**Correntes de Selamento.** Permite atacar e transferir Runas de Campo/Selo a até 4,5m de distância. Em caso de Acerto Total, além do dano, aplica a condição Lento (ou impede o alvo de se afastar mais de 4,5m de você por 1 rodada).
+
+### Outros focos e acessórios
 
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="varinha">Varinha</span> | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa |
-| <span data-item="cajado">Cajado</span> | 20 | 1d8 Karma | 2 | 1 | 30 m; Média; duas mãos; Focal, Condutora |
-| <span data-item="lamina-runica">Lâmina rúnica</span> | 22 | 2d4 cortante | 2 | 1 | 2 m; Média; uma mão; Precisa, Condutora |
-| <span data-item="grimorio">Grimório</span> | 35 | 1d10 Karma | 1 | — | 15 m; Leve; uma mão para sustentar e outra para gestos; Focal, Ritualística |
-| <span data-item="orbe-de-convergencia">Orbe de convergência</span> | 75 | 1d6 Karma | 1 | — | 15 m; superior de origem; Focal, Condutora, Origem Remota |
 | <span data-item="amuleto-de-vinculo">Amuleto de vínculo</span> | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
-| <span data-item="cetro-de-combate">Cetro de combate</span> | 28 | 1d8 Karma | 2 | 1 | 15 m; Média; uma mão; Focal, Defensiva apenas se usado em contato |
 | <span data-item="placa-de-inscricoes">Placa de inscrições</span> | 18 | Foco de preparação, sem ataque próprio | 1 | — | Toque; Ritualística; uma família de ritos |
 | <span data-item="fio-de-ancoragem">Fio de ancoragem</span> | 16 | Foco para técnica conhecida de vínculo | 0,5 | — | 5 m; Condutora de Conjuração; não invoca sozinho |
-
-Pôr o orbe a flutuar adjacente ou movê-lo até 5 m usa a interação simples; isso não reduz a carga contada nem libera prontidão. O usuário pode manter uma mão livre enquanto o orbe está suspenso, mas continua concentrando e percebendo pelos próprios sentidos. O amuleto não sustenta concentração por conta própria. O grimório pode ser fechado como interação simples; não recebe seu disparo ou benefício ritual enquanto fechado.
 
 ## Armaduras, escudos e vestimentas
 

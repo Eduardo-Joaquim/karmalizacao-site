@@ -6,7 +6,10 @@ export type CombatLog = {
   visual?: CombatVisual; karmaDelta?: number; shieldDelta?: number;
   karmaSpent?: number; lifeDelta?: number; details?: string;
 };
+export type LiveRune = { id:string; runeId:number; weaponId?:string; spent?:boolean; releaseRound?:number };
 export type LiveCombatState = {
+  runes?: LiveRune[];
+  runeBurstUsed?: boolean;
   impetus?:number; impetusBloodied?:boolean;
   inCombat: boolean; currentLife: number; currentKarma: number; tempShield: number;
   activeConditions: string[]; lastActionLog: CombatLog | null; combatFeed: CombatLog[];
@@ -26,6 +29,8 @@ export type CombatAction = {
   | { type: 'phase'; phase: PhaseNotice }
   | { type: 'spectacle'; rollFormula:string; diceResults:number[]; total:number; selection:DiceSelection; details?:string }
   | { type: 'domain'; name: string }
+  | { type: 'armRune'; runeId: number; weaponId?: string }
+  | { type: 'burstRune'; inscriptionId: string }
   | { type: 'form'; active: boolean }
   | { type: 'barrier'; reinforced: boolean }
   | { type: 'round' }

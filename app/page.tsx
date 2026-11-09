@@ -136,7 +136,7 @@ export default async function Home() {
               <span>Perícias treináveis</span>
             </div>
             <div>
-              <span className="system-value">17</span>
+              <span className="system-value">18</span>
               <span>Classes primordiais</span>
             </div>
           </div>

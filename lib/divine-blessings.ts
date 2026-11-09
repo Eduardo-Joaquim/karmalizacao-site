@@ -12,3 +12,20 @@ export function withBlessings(d: DivineState, blessings: BlessingGrant[]): Divin
  return {...d,blessings,...(b?{blessingName:b.name,pantheon:b.pantheon,deity:b.deity,deityId:b.deityId,deityEpithet:b.deityEpithet,grantOrigin:b.grantOrigin,grantReason:b.grantReason,regentAttribute:b.regentAttribute,core:b.core,initialGift:b.initialGift,activeManifestation:b.activeManifestation,essentialLimits:b.essentialLimits,precept:b.precept??d.precept,profanation:b.profanation??d.profanation}:{blessingName:'',core:'',initialGift:'',activeManifestation:''})};
 }
 export function blessingAttribute(value:string): AttributeName|undefined {return ATTRIBUTES.find(a=>a===value);}
+
+export function catalogBlessingGrant(
+  blessing: {id:number;title:string;facet:string;nature:string;phenomenon:string;extensions:string[];harvest:string},
+  deity: {name:string;epithet:string},
+  pantheon:string,
+): BlessingGrant {
+  const patron = deities.find(entry => entry.name === deity.name && entry.pantheon === pantheon);
+  return {
+    id: `catalog-blessing-${blessing.id}`, name: blessing.title, pantheon,
+    deity: deity.name, deityId: patron?.id, deityEpithet: deity.epithet,
+    grantOrigin: "Fragmento do Caminho divino", regentAttribute: "", tier: blessing.nature,
+    core: blessing.facet, initialGift: blessing.phenomenon,
+    activeManifestation: blessing.extensions.join("\n\n"),
+    essentialLimits: `Safra na Morte. ${blessing.harvest}`,
+    precept: patron?.precept, profanation: patron?.profanation,
+  };
+}

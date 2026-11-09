@@ -11,6 +11,8 @@ export const combatActionSchema=z.discriminatedUnion('type',[
  base.extend({type:z.literal('execute'),techniqueId:z.string().min(1).max(80).optional(),succeeded:z.boolean().optional(),impetus:z.boolean().optional(),cost:num,kind:z.enum(['skill','attack','technique','ability']),selection:z.enum(['maior','menor']).optional(),rollFormula:z.string().max(120).optional(),diceResults:z.array(z.number().int().min(1).max(100)).max(60).optional(),total:z.number().finite().min(-99999).max(99999).optional(),details:z.string().max(1500).optional()}),
  base.extend({type:z.literal('phase'),phase:phaseNoticeSchema}),
  base.extend({type:z.literal('spectacle'),rollFormula:z.string().max(120),diceResults:z.array(z.number().int().min(1).max(20)).min(1).max(30),total:z.number().finite().min(-99999).max(99999),selection:z.enum(['maior','menor']),details:z.string().max(1500).optional()}),
+ base.extend({type:z.literal('armRune'),runeId:z.number().int().min(1).max(25),weaponId:z.string().min(1).max(120).optional()}),
+ base.extend({type:z.literal('burstRune'),inscriptionId:z.string().min(1).max(80)}),
  base.extend({type:z.literal('domain'),name:z.string().max(80)}),base.extend({type:z.literal('form'),active:z.boolean()}),
  base.extend({type:z.literal('barrier'),reinforced:z.boolean()}),
  base.extend({type:z.literal('round')}),base.extend({type:z.literal('scene')}),base.extend({type:z.literal('rest')}),base.extend({type:z.literal('toggle'),active:z.boolean()}),

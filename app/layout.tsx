@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./divine.css";
+import "./pantheon-portal.css";
 import "./bestiary.css";
 import "./gaeria.css";
 import "./vampire.css";

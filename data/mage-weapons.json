@@ -1,0 +1,90 @@
+[
+  {
+    "id": "grimorio",
+    "name": "Grimório Catalisador",
+    "damage": "1d6 Kármico",
+    "reach": "12 m",
+    "strength": 0,
+    "spaces": 1,
+    "properties": "Focal, Ritualística, Uma Mão",
+    "slots": 3,
+    "effect": "+1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior."
+  },
+  {
+    "id": "orbe-de-convergencia",
+    "name": "Orbe de Ressonância",
+    "damage": "1d8 Elemental / Kármico",
+    "reach": "15 m",
+    "strength": 0,
+    "spaces": 1,
+    "properties": "Focal, Condutora, Flutuante",
+    "slots": 2,
+    "effect": "+2 no resultado final de testes de Canalização de Karma. Por flutuar ao redor do pulso, deixa a mão livre para gestos e amplia o raio ou cone de técnicas de área em +1,5m."
+  },
+  {
+    "id": "cajado",
+    "name": "Cajado Rúnico",
+    "damage": "1d10 Contundente / Kármico",
+    "reach": "2 m / 18 m",
+    "strength": 1,
+    "spaces": 2,
+    "properties": "Focal, Condutora, Ritualística, Duas Mãos",
+    "slots": 3,
+    "effect": "+2 na CD de todas as suas Técnicas e Runas. Ao bater a base do cajado no chão (Movimento), o alcance de todas as suas técnicas sobe em +6m e o dano soma +Etapa até o próximo turno."
+  },
+  {
+    "id": "cetro-de-combate",
+    "name": "Cetro de Comando",
+    "damage": "1d8 Contundente",
+    "reach": "12 m",
+    "strength": 1,
+    "spaces": 1,
+    "properties": "Focal, Precisa, Uma Mão",
+    "slots": 2,
+    "effect": "+1 em Espírito (aumentando o Karma Máximo em +2) e +2 em testes de ataque e CA das suas Invocações/Constructos. Permite redirecionar o ponto de origem de uma técnica para o espaço de uma invocação aliada a até 12m."
+  },
+  {
+    "id": "luvas-canalizadoras",
+    "name": "Luvas Canalizadoras",
+    "damage": "1d6 Contundente / Kármico",
+    "reach": "toque (1,5 m) / 9 m",
+    "strength": 0,
+    "spaces": 0.5,
+    "properties": "Focal, Condutora, Leve",
+    "slots": 2,
+    "effect": "+1 em Agilidade (para Iniciativa e Pontaria/Luta com técnicas) e mantém ambas as mãos livres. Permite cravar Runas de Selo ou técnicas de toque como parte de um ataque desarmado ou disparo curto com +2 no acerto."
+  },
+  {
+    "id": "lamina-runica",
+    "name": "Lâmina Rúnica",
+    "damage": "1d8 Cortante / Kármico",
+    "reach": "1,5 m / 6 m (feixe)",
+    "strength": 1,
+    "spaces": 1,
+    "properties": "Focal, Condutora, Precisa, Uma Mão",
+    "slots": 2,
+    "effect": "Arma híbrida para magos de combate: Permite usar Intelecto ou Espírito no lugar de Força/Agilidade para ataques com a lâmina. Sempre que acertar um golpe físico Total, reduz em -2 de Karma a próxima técnica usada no mesmo turno."
+  },
+  {
+    "id": "lanterna-astral",
+    "name": "Lanterna Astral",
+    "damage": "1d8 Divino / Kármico",
+    "reach": "12 m",
+    "strength": 0,
+    "spaces": 1,
+    "properties": "Focal, Ritualística, Iluminação",
+    "slots": 2,
+    "effect": "Emite luz espiritual em 6m de raio que revela inimigos furtivos/invisíveis e concede +1 na CA Parcial para aliados dentro do facho. Técnicas de suporte, barreira ou controle lançadas através da lanterna somam +1d8 de potência."
+  },
+  {
+    "id": "correntes-de-selamento",
+    "name": "Correntes de Selamento",
+    "damage": "1d8 Contundente / Perfurante",
+    "reach": "4,5 m",
+    "strength": 1,
+    "spaces": 1.5,
+    "properties": "Focal, Condutora, Alcance",
+    "slots": 2,
+    "effect": "Permite atacar e transferir Runas de Campo/Selo a até 4,5m de distância. Em caso de Acerto Total, além do dano, aplica a condição Lento (ou impede o alvo de se afastar mais de 4,5m de você por 1 rodada)."
+  }
+]

@@ -6,8 +6,8 @@ const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:
 const model=await vite.ssrLoadModule('/lib/character-data.ts'),rules=await vite.ssrLoadModule('/lib/character-rules.ts'),engine=await vite.ssrLoadModule('/lib/combat-engine.ts'),schema=await vite.ssrLoadModule('/lib/character-schema.ts'),validation=await vite.ssrLoadModule('/lib/combat-validation.ts'),arts=await vite.ssrLoadModule('/lib/combat-repertoire.ts');
 const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const action=x=>({id:crypto.randomUUID(),actorName:'Mara',title:'Teste',...x});
-test('all seventeen classes have a coherent progression and linked amplifications',()=>{
- const classes=json('data/character-rules.json').classes;assert.equal(classes.length,17);assert.equal(new Set(classes.map(c=>c.name)).size,17);
+test('all eighteen classes have a coherent progression and linked amplifications',()=>{
+ const classes=json('data/character-rules.json').classes;assert.equal(classes.length,18);assert.equal(new Set(classes.map(c=>c.name)).size,18);
  for(const c of classes){assert(model.CLASSES.includes(c.name));assert.equal(c.abilities.length,3);assert.equal(c.amplifications.length,3);assert.equal(c.progression.length,7);for(const a of c.amplifications)assert(c.abilities.some(b=>b.name===a.abilityName));for(const r of c.progression){assert(r.systemStatus);assert(r.classStatus);}}
 });
 test('renamed learned choices migrate and Conjurador has its own grants and casting tools',()=>{

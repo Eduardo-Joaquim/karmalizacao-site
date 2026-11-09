@@ -50,6 +50,7 @@ export const CLASSES = [
   "Invocador",
   "Elementalista",
   "Conjurador",
+  "Escriba Kármico",
 ] as const;
 
 export const PATHS = [
@@ -237,6 +238,9 @@ export type DomainState = {
 };
 
 export type PersonalPathState = {
+  axiom?: number;
+  branch?: "independente" | "subversao" | "emancipacao";
+  failedAttempts?: number;
   enabled: boolean;
   name: string;
   signatureTechnique: string;
@@ -335,6 +339,7 @@ export type TechniqueRecord = {
 };
 
 export type InventoryItem = {
+  catalogId?: string;
   category?: "weapon"|"armor"|"shield"|"ammo"|"focus"|"gear";
   equipped?: boolean;
   location?: "ready"|"backpack"|"external";
