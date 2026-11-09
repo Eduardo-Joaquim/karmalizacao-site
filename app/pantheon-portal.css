@@ -8,15 +8,12 @@
 .pantheon-portal-card[data-wing="7"] { --wing:#a7d5be; }
 .pantheon-portal-card[data-wing="8"] { --wing:#a8ce84; }
 .pantheon-portal-card[data-wing="9"] { --wing:#c3b3ef; }
-.pantheon-portal-card summary { display:flex; align-items:center; flex-wrap:wrap; gap:1rem; padding:1.2rem; cursor:pointer; list-style:none; background:linear-gradient(120deg,color-mix(in srgb,var(--wing),transparent 88%),transparent); }
-.pantheon-portal-card summary::-webkit-details-marker { display:none; }
+.pantheon-portal .pantheon-card-toggle { width:100%; text-align:left; border:0; display:flex; align-items:center; flex-wrap:wrap; gap:1rem; padding:1.2rem; cursor:pointer; list-style:none; background:linear-gradient(120deg,color-mix(in srgb,var(--wing),transparent 88%),transparent); }
 .pantheon-summary { display:grid; gap:.3rem; flex:1 1 220px; }
 .pantheon-summary strong { font-size:1.35rem; color:var(--wing); }
 .pantheon-summary b,.pantheon-summary small { font-size:.8rem; }
 .pantheon-crest { display:grid; place-items:center; inline-size:2.75rem; block-size:2.75rem; border:1px solid var(--wing); color:var(--wing); font-size:1.5rem; border-radius:50%; }
 .pantheon-open { color:var(--wing); font-weight:600; }
-.pantheon-open span:last-child,.pantheon-portal-card[open] .pantheon-open span:first-child { display:none; }
-.pantheon-portal-card[open] .pantheon-open span:last-child { display:inline; }
 .pantheon-content { padding:clamp(.8rem,3vw,1.5rem); border-top:1px solid #ffffff22; }
 .pantheon-search { display:grid; gap:.5rem; }
 .pantheon-search input { width:100%; padding:.65rem; background:#0d0c14; border:1px solid #ffffff45; border-radius:.3rem; }
@@ -31,3 +28,7 @@
 .pantheon-blessing ol { padding-inline-start:1.3rem; }
 .pantheon-blessing li + li { margin-top:.7rem; }
 .pantheon-blessing :is(button,a) { margin-top:auto; }
+
+.pantheon-god-heading { border-inline-start:3px solid var(--wing); padding-inline-start:.85rem; }
+.pantheon-god-heading h3,.pantheon-god-heading p { margin:0; }
+.pantheon-blessing li > small { display:block; margin:.15rem 0 .3rem; }

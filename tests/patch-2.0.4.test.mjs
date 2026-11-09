@@ -10,6 +10,7 @@ const { retainedKarma, availableKarma } = await vite.ssrLoadModule('/lib/karmic-
 const { calculateAutomaticBonuses, getFinalSkill } = await vite.ssrLoadModule('/lib/character-rules.ts');
 const { catalogBlessingGrant, withBlessings } = await vite.ssrLoadModule('/lib/divine-blessings.ts');
 const { characterPayloadSchema } = await vite.ssrLoadModule('/lib/character-schema.ts');
+const { lerExtensaoBencao } = await vite.ssrLoadModule('/lib/patch-v204-types.ts');
 const { PANTHEONS } = await vite.ssrLoadModule('/lib/character-rules.ts');
 const read = name => JSON.parse(readFileSync('data/' + name + '.json','utf8'));
 const act = (d, op) => applyCombatAction(d,{...op,id:crypto.randomUUID(),actorName:'Escriba',title:'Teste'});
@@ -44,7 +45,7 @@ test('Scribe training and weapon slots remain separate from personal limit', () 
   draft = act(draft,{type:'armRune',runeId:1});
   assert.equal(retainedKarma(liveState(draft)),8);
 });
-test('all 162 catalog grants preserve both extensions and validate as saved sheets', () => {
+test('all 243 catalog grants preserve both extensions and validate as saved sheets', () => {
   const catalog = read('pantheon-blessings');
   const seen = new Set();
   for (const p of catalog) for (const god of p.deities) for (const blessing of god.blessings) {
@@ -52,9 +53,14 @@ test('all 162 catalog grants preserve both extensions and validate as saved shee
     const grant = catalogBlessingGrant(blessing,god,PANTHEONS[p.id-1]);
     draft.divine = withBlessings({...draft.divine,enabled:true},[grant]);
     assert(!seen.has(grant.id)); seen.add(grant.id);
+    assert.equal(god.blessings.length,3);
     assert.equal(blessing.extensions.length,2);
+    for (const extension of blessing.extensions) {
+      const { nome, acaoECusto, efeito } = lerExtensaoBencao(extension);
+      assert.equal(`${nome} (${acaoECusto}): ${efeito}`, extension);
+    }
     assert(characterPayloadSchema.safeParse(draft).success,grant.name);
   }
-  assert.deepEqual(catalog.map(p => [p.id,p.deities.length]), [[1,9],[2,9],[3,9],[4,9],[5,9],[6,9]]);
-  assert.deepEqual([...seen], Array.from({length:162}, (_, index) => `catalog-blessing-${index + 1}`));
+  assert.deepEqual(catalog.map(p => [p.id,p.deities.length]), Array.from({length:9}, (_, index) => [index + 1, 9]));
+  assert.deepEqual([...seen], Array.from({length:243}, (_, index) => `catalog-blessing-${index + 1}`));
 });

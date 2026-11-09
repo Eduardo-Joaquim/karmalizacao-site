@@ -5533,6 +5533,795 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Safra na Morte.** Kagu-Tsuchi recolhe a canalização de pressão geotérmica através de pisos artificiais.
 
+### Asa do Mandato · Panteão Taoísta
+
+#### Imperador De Jade — Yu Huang · O Soberano da Burocracia Celeste, do Selo de Jade e do Mandato
+
+**163. Carimbo de Decreto Físico** · O Selo Imperial de Jade · Runa Kármica Primordial
+
+**Fenômeno base.** Você projeta um selo quadrado de jade translúcido no ar ou no solo; tudo o que é carimbado por ele fica sujeito à burocracia celeste, precisando de "autorização" kármica para alterar seu estado.
+
+1. Carimbar Veto (Principal · 4 Karma · 12m): Desce um selo de jade pesado sobre o alvo causando 2d8 contundente/divino e "embargando" uma categoria de ação dele no próximo turno (Movimento, Técnicas ou Reações): para usar a categoria embargada, o inimigo precisa pagar +3 de Karma.
+2. Alvará de Passagem (Extra · 2 Karma): Carimba um aliado a 9m, concedendo a ele +2 na CA e imunidade a terreno difícil e ataques de oportunidade por 1 rodada.
+
+**Safra na Morte.** O Imperador de Jade absorve protocolos de restrição contratual aplicados ao combate rápido.
+
+**164. Requisição dos Quatro Departamentos** · O Ministério Celestial · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você pode emitir ordens curtas que requisitam recursos temporários dos quatro ministérios do Céu (Trovão, Fogo, Epidemia e Riqueza) diretamente para o seu espaço de batalha.
+
+1. Despacho Ministerial (Extra · 3 Karma): Escolha um despacho para o seu próximo ataque neste turno: Ministério do Trovão (soma +1d8 elétrico e empurra 2m), Ministério do Fogo (explode em 2m ao redor do alvo) ou Ministério da Riqueza (se o ataque acertar na faixa Total, você recupera 3 de Karma).
+2. Auditoria de Campo (Reação · 3 Karma): Quando um inimigo gasta Karma a até 12m, você confisca 1 ponto desse Karma para si.
+
+**Safra na Morte.** Yu Huang colhe a logística de distribuição energética instantânea em conflitos mortais.
+
+**165. Contabilidade de Karma Celeste** · A Balança do Mérito e Demérito · Runa Kármica Primordial
+
+**Fenômeno base.** Um ábaco de jade invisível registra cada golpe trocado na cena: proteger aliados gera Mérito (fichas brancas) e sofrer ataques gera Demérito (fichas negras) contra o agressor.
+
+1. Liquidar Deméritos (Principal · 4 Karma · 12m): Causa 2d8 divino no alvo + +2 de dano verdadeiro para cada vez que ele feriu você ou um aliado na cena (máximo +8).
+2. Converter Mérito em Graça (Reação · 3 Karma): Reduz o dano sofrido por um aliado a 9m em 2d6 + Espírito e concede +2 no próximo teste dele.
+
+**Safra na Morte.** Yu Huang recolhe o algoritmo de conversão moral em pressão kármica direta.
+
+#### Nezha · O Terceiro Príncipe de Lótus, das Rodas de Vento-Fogo e da Faixa Vermelha
+
+**166. Anatomia Vegetal Sem Sangue** · O Corpo Renascido de Raiz de Lótus · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Assim como Nezha teve seu corpo reconstruído com raízes e pétalas de lótus sagrado após devolver seus ossos aos pais, sua estrutura interna não depende de órgãos comuns e resiste a venenos e sangramentos.
+
+1. Fisiologia de Lótus (Passiva + 3 Karma ao ativar): Você possui resistência permanente a dano de Veneno/Corrupção e imunidade a Sangramento; ao gastar 3 de Karma como Ação Livre, pétalas douradas reconstroem seus tecidos curando 2d6 + Etapa de Vida.
+2. Desabrochar de Três Cabeças (Extra · 4 Karma): Por 1 rodada, projeta braços e faces extras de lótus que concedem +1d20 em ataques e impedem flanqueamento.
+
+**Safra na Morte.** Nezha absorve a adaptação de tecidos sintéticos vegetais para suportar traumas balísticos e cortantes.
+
+**167. Propulsão Giroscópica Incandescente** · As Rodas de Vento e Fogo · Método de Luta Exclusivo
+
+**Fenômeno base.** Dois anéis ardentes de vento e fogo giram sob a sola dos seus pés, transformando cada passo em um voo rasante supersônico que deixa trilhas de labaredas pelo chão.
+
+1. Rasante das Duas Rodas (Movimento + Principal · 4 Karma): Desliza até 9m ignorando o chão (sobre água, buracos ou paredes) e desfere um chute ou golpe giratório que causa 2d8 térmico/contundente; o rastro de fogo deixado no caminho causa 4 de dano a quem cruzá-lo.
+2. Arrancada de Turbina (Reação · 3 Karma): Ao ser alvo de ataque em área ou corpo a corpo, dispara 4,5m para fora da zona, reduzindo o dano à metade.
+
+**Safra na Morte.** Nezha colhe manobras de combate aéreo de baixa altitude em corredores estreitos.
+
+**168. Fita que Agita os Oceanos** · A Faixa de Seda Vermelha Hun Tian Ling · Dobra Elemental Anômala
+
+**Fenômeno base.** Uma faixa longa de seda vermelha flutua ao redor dos seus ombros como uma serpente viva; embora pareça tecido leve, ela pode assumir o peso de uma viga de ferro ou prender alvos a distância.
+
+1. Laço que Revira o Mar (Principal · 4 Karma · 9m): A faixa estica, enrola-se no inimigo causando 2d6 contundente e o arremessa 3m em qualquer direção (ou o deixa Lento e com -2 na CA Parcial).
+2. Redoma de Seda Carmesim (Reação · 3 Karma): A faixa gira em esfera ao seu redor, somando +3 na CA Total contra projéteis e lâminas.
+
+**Safra na Morte.** Nezha recolhe a dinâmica de tecidos flexíveis endurecidos por fluxo kármico.
+
+#### Erlang Shen · O Guerreiro de Três Olhos, das 72 Transformações e do Cão Celestial
+
+**169. Fenda que Desmascara Formas** · O Olho da Verdade na Testa · Runa Kármica Primordial
+
+**Fenômeno base.** O olho vertical na sua fronte enxerga a estrutura original de qualquer técnica, ilusão, metamorfose ou ponto fraco, impedindo que mentiras visuais funcionem contra você.
+
+1. Raio de Desmistificação (Principal · 4 Karma · 15m): Dispara um feixe prateado da testa que causa 2d8 radiante/kármico, encerra qualquer invisibilidade, clone ou metamorfose do alvo e expõe o ponto vital dele (-2 nos limiares de CA Parcial e Total até o próximo turno).
+2. Leitura de Postura (Livre · 2 Karma): Descobre imediatamente a CA exata, a Vida atual e as reações disponíveis de um alvo a 12m.
+
+**Safra na Morte.** Erlang Shen absorve o diagnóstico óptico instantâneo de fraquezas estruturais.
+
+**170. Polimorfia Tática de Combate** · As 72 Transformações Terrestres · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seu corpo altera densidade, forma e escala em frações de segundo durante o próprio movimento de ataque ou esquiva (virando pedra no impacto, ave no salto ou lâmina no giro).
+
+1. Mutação de Golpe (Livre no turno · 3 Karma): Escolha uma transformação para esta rodada: Escala de Titã (seus ataques causam +1d8 contundente e empurram 3m), Passo de Pardal (voa 6m e passa por frestas de 15 cm sem ataques de oportunidade) ou Casca de Ferro (recebe Redução de Dano 5).
+2. Mimetismo de Objeto (Reação · 3 Karma): Transforma-se em pedra ou estátua por 1 segundo para ignorar um efeito mental/sensorial e reduzir um dano físico em 2d6.
+
+**Safra na Morte.** Erlang Shen colhe sequências de transmutação rápida de massa em combate armado.
+
+**171. Sombra do Mastim Caçador** · Xiaotian Quan · O Cão Uivador Celestial · Método de Luta Exclusivo
+
+**Fenômeno base.** Sua própria sombra se destaca do chão na forma de um cão de caça negro e feroz que corre junto com seus golpes de lança ou lâmina para morder os tendões do inimigo.
+
+1. Mordida no Calcanhar (Extra após atacar · 3 Karma): O cão de sombra morde a perna do alvo que você acabou de atacar, causando 1d10 perfurante/kármico e impedindo o alvo de recuar ou usar ações de Movimento para fugir de você por 1 rodada.
+2. Faro de Eclipse (Passiva): Você rastreia qualquer alvo que já tenha ferido na cena a até 30m, mesmo através de paredes.
+
+**Safra na Morte.** Erlang Shen recolhe a sincronia entre artes de haste e contenção por invocação de sombra.
+
+#### Laozi — Taishang Laojun · O Patriarca do Tao, do Forno de Oito Trigramas e do Wu Wei
+
+**172. Redirecionamento de Fluxo Vazio** · Wu Wei · A Ação pela Não-Ação · Método de Luta Exclusivo
+
+**Fenômeno base.** Você não oferece resistência rígida à força do oponente; seu corpo cede como a água e usa a própria velocidade e violência do inimigo para jogá-lo contra o chão.
+
+1. Ceder para Vencer (Reação ao ser atacado corpo a corpo · 4 Karma): Soma +3 na sua CA; se o inimigo errar ou acertar apenas na faixa Parcial, você desvia o vetor dele fazendo-o sofrer 2d8 contundente da própria força e cair Caído adjacente a você.
+2. Passo de Água Corrente (Passiva): Enquanto você não usar armadura pesada, empurrões ou puxões inimigos permitem que você escolha para qual direção deslizar.
+
+**Safra na Morte.** Laozi absorve a aplicação prática do Wu Wei contra armas modernas e técnicas pesadas.
+
+**173. Crisol de Refino Alquímico** · O Forno de Oito Trigramas Bagua · Dobra Elemental Anômala
+
+**Fenômeno base.** Você projeta um octógono de linhas flamejantes (Fogo Samadhi) no chão ou ao redor do alvo, que derrete ataques impuros e refina elixires no calor da luta.
+
+1. Chamas do Crisol (Principal · 4 Karma · Raio 3m a 9m): Ergue o octógono de fogo branco e dourado que causa 2d8 térmico/kármico nos inimigos e queima 2 pontos de Karma deles.
+2. Destilação em Combate (Extra · 3 Karma): Reduz a sua Saturação Alquímica (ou de um aliado adjacente) em -1 e converte a toxina purgada em +2d6 de Escudo Temporário.
+
+**Safra na Morte.** Laozi colhe processos de purificação alquímica acelerada sob estresse.
+
+**174. Aro de Absorção de Armas** · O Bracelete de Diamante Jingangzhuo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Um aro metálico prateado flutua no seu pulso; ao ser lançado girando, ele gera um campo gravitacional que suga armas soltas, projéteis e focos da mão dos inimigos.
+
+1. Confiscar Instrumento (Principal · 4 Karma · 9m): O aro atinge o alvo causando 2d6 contundente e força um teste contra desarme: em caso de sucesso, a arma ou foco do inimigo é puxada por 3m para o chão (ou o alvo sofre -3 nos ataques com ela por 1 rodada se for arma natural/fixa).
+2. Engolir Munição (Reação · 3 Karma): O aro absorve um disparo ou projétil mágico no ar, anulando o dano e convertendo-o em +2 no seu próximo ataque.
+
+**Safra na Morte.** Laozi recolhe a neutralização magnética e gravitacional de armamentos inimigos.
+
+#### Xi Wangmu · A Rainha Mãe do Oeste, dos Pêssegos da Imortalidade e do Jardim Kunlun
+
+**175. Fruto de Longevidade Condensada** · O Pomar dos Pêssegos de Três Mil Anos · Técnica Divina / Fenômeno
+
+**Fenômeno base.** A cada cena, seu Karma condensa até 2 frutos translúcidos de jade e ouro que contêm vitalidade imortal concentrada, podendo ser consumidos ou lançados a aliados.
+
+1. Ofertar Pêssego de Kunlun (Extra · 3 Karma · 6m): O aliado (ou você) que consome o fruto recupera imediatamente 2d8 + Espírito de Vida, remove 1 condição de Exaustão / Envenenado / Sangramento e recebe +1d20 no próximo teste.
+2. Semente de Espinheiro Real (Principal · 4 Karma): Arremessa o caroço sagrado contra o inimigo a 9m, que germina no impacto causando 2d6 perfurante e prendendo-o no lugar (Lento).
+
+**Safra na Morte.** Xi Wangmu absorve a síntese rápida de vitalidade biológica em corpos mortais feridos.
+
+**176. Traço que Rasga Rios no Chão** · O Grampo de Cabelo de Fênix · Runa Kármica Primordial
+
+**Fenômeno base.** Ao riscar o ar ou o chão com sua arma, dedo ou grampo metálico, você abre uma fenda luminosa pela qual jorra uma torrente de água celestial prateada que separa você dos inimigos.
+
+1. Riscar o Rio Celeste (Principal · 4 Karma · Linha de 9m): Abre uma torrente que causa 2d8 contundente/kármico em todos na linha e cria uma barreira líquida por 1 rodada (inimigos precisam gastar +3m de Movimento para atravessá-la).
+2. Agulha da Fênix (Extra · 2 Karma): Dispara o grampo de luz causando 1d10 perfurante que ignora cobertura parcial.
+
+**Safra na Morte.** Xi Wangmu colhe a criação de divisórias topográficas instantâneas em combate.
+
+**177. Vento de geada do Monte Kunlun** · Guardiã da Punição Celeste · Dobra Elemental Anômala
+
+**Fenômeno base.** Antes de ser associada apenas aos jardins imortais, Xi Wangmu regia as pragas celestes com dentes de tigre; você exala um vento frio de alta montanha que pune quem avança sem reverência.
+
+1. Sopro da Montanha de Jade (Principal · 4 Karma · Cone 6m): Causa 2d8 frio/cortante e congela o ímpeto dos atingidos (eles não podem realizar ataques de oportunidade nem usar ações Extras no próximo turno).
+2. Manto de Geada Real (Reação · 3 Karma): Reduz o dano recebido em 2d6 e deixa o atacante Lento.
+
+**Safra na Morte.** Xi Wangmu recolhe o controle criogênico de ventos de grandes altitudes.
+
+#### Lei Gong · O Duque do Trovão, do Cinzel Punitivo e do Tambor dos Céus
+
+**178. Percussão de Duplo Impacto** · O Martelo e o Cinzel do Trovão · Método de Luta Exclusivo
+
+**Fenômeno base.** Suas duas mãos operam como o Martelo (que gera o trovão sônico) e o Cinzel (que crava o raio perfurante): acertar com um prepara a destruição exata do outro.
+
+1. Cravar o Cinzel e Bater o Martelo (Principal · 4 Karma): Desfere dois golpes rápidos no mesmo alvo: o Cinzel abre uma fissura elétrica (-2 na CA Total do alvo) e o Martelo detona a fissura causando 2d10 elétrico/contundente.
+2. Estilhaço Condutor (Extra · 2 Karma): Deixa uma ponta elétrica cravada no alvo que causa 4 de dano automático se ele usar qualquer técnica no próximo turno.
+
+**Safra na Morte.** Lei Gong absorve a técnica marcial de impacto duplo (perfuração seguida de detonação elétrica).
+
+**179. Voo de Nuvem de Tempestade** · Asas de Trovão Negro · Dobra Elemental Anômala
+
+**Fenômeno base.** Asas escuras de nuvem carregada e eletricidade projetam-se das suas costas, permitindo pairar acima de obstáculos terrestres e desabar com o peso de uma tempestade.
+
+1. Mergulho do Duque do Trovão (Movimento + Principal · 4 Karma): Voa até 9m ignorando terreno e desaba sobre o alvo causando 2d8 elétrico em 2m de raio e deixando o alvo principal Desorientado.
+2. Pluma Para-Raios (Reação · 3 Karma): Fecha as asas contra um ataque, ganhando +3 na CA e eletrocutando armas metálicas que toquem você (1d8).
+
+**Safra na Morte.** Lei Gong colhe vetores de propulsão eletrostática em baixa altitude.
+
+**180. Raio que Busca a Culpa** · O Castigo dos Ocultos · Runa Kármica Primordial
+
+**Fenômeno base.** O raio de Lei Gong foi criado para atingir malfeitores que se escondem dos olhos humanos; seus ataques elétricos ignoram tetos, paredes finas e furtividade contra quem já agiu na rodada.
+
+1. Clarão Desmascarador (Principal · 4 Karma · 15m): Dispara um raio em ziguezague que faz curvas ao redor de pilares ou coberturas para atingir um inimigo oculto ou em cobertura total, causando 2d8 elétrico e revelando a posição dele para todos.
+2. Marca do Trovão Punitivo (Livre · 2 Karma): Se o alvo marcado atacar um aliado seu pelas costas ou em flanco, sofre 2d6 elétrico imediato.
+
+**Safra na Morte.** Lei Gong recolhe algoritmos de condução elétrica não linear através de obstáculos.
+
+#### Mazu — Tianhou · A Imperatriz dos Mares, da Lanterna Guia e da Calmaria
+
+**181. Farol de Retorno Seguro** · A Lanterna Vermelha no Mastro · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você mantém uma lanterna espiritual vermelha acesa na mão ou flutuando a até 12m; a luz dela guia aliados perdidos ou sob condições mentais e puxa companheiros feridos para longe do naufrágio.
+
+1. Luz que Guia ao Porto (Extra · 3 Karma · 12m): Remove imediatamente Desorientado, Abalado ou Cego de um aliado na luz da lanterna e permite que ele se mova 4,5m na sua direção como Reação livre sem sofrer ataques de oportunidade.
+2. Fogo de Santelmo (Principal · 4 Karma): A lanterna dispara um feixe rubro que causa 2d8 radiante/térmico e reduz a CA Parcial do inimigo em -2.
+
+**Safra na Morte.** Mazu absorve sistemas de navegação luminosa e extração de aliados sob pressão.
+
+**182. Olhos de Mil Milhas e Ouvidos no Vento** · Qianliyan e Shunfeng'er · Runa Kármica Primordial
+
+**Fenômeno base.** Os dois generais guardiões de Mazu emprestam seus sentidos a você: você enxerga detalhes microscópicos a longa distância e escuta o sussurro ou o puxar de um gatilho antes de o som chegar.
+
+1. Antecipação de Mil Milhas (Passiva + 2 Karma na Reação): Aumenta o alcance de todas as suas armas e técnicas à distância em +6m; ao gastar 2 de Karma como Reação, você avisa um aliado ou a si mesmo de um tiro/emboscada, somando +4 na CA contra aquele ataque.
+2. Ouvir o Ponto Fraco (Extra · 2 Karma): Soma +1d20 no próximo ataque contra um alvo cujo movimento você ouviu nesta rodada.
+
+**Safra na Morte.** Mazu colhe a integração sensorial de longo alcance para tiro de precisão e defesa.
+
+**183. Zona de Maré Serena** · Acalmar a Tempestade · Dobra Elemental Anômala
+
+**Fenômeno base.** Ao abrir os braços, as águas e o ar turbulento ao seu redor tornam-se calmos como um espelho, amortecendo explosões, chamas e investidas violentas.
+
+1. Decreto de Mar Calmo (Reação · 4 Karma · Raio 4,5m): Quando uma técnica de área ou explosão atinge você e seus aliados no raio, a água serena absorve o pico de energia, reduzindo o dano recebido por todos vocês em 2d6 + Espírito.
+2. Onda de Ressaca Suave (Principal · 4 Karma): Empurra suavemente todos os inimigos a 3m para longe (3m de recuo) causando 2d6 contundente e curando 1d6 de Vida em você.
+
+**Safra na Morte.** Mazu recolhe técnicas de dissipação de ondas de choque e energia cinética em área.
+
+#### Zhong Kui · O Caçador de Demônios, da Espada Exorcista e da Manga Capturadora
+
+**184. Prisão de Bolso para Invocações** · O Saco e a Manga de Captura · Técnica Divina / Fenômeno
+
+**Fenômeno base.** A manga da sua veste (ou uma cabaça na cintura) abre-se como um vórtice escuro capaz de engolir projéteis sobrenaturais, maldições e até invocações ou constructos inimigos enfraquecidos.
+
+1. Engolir na Manga (Principal ou Reação · 4 Karma · 6m): Absorve um projétil kármico/elemental (anulando o dano) ou suga uma invocação/inimigo espiritual causando 2d8 de dano kármico e prendendo-o por 1 rodada se falhar em Vontade/Força.
+2. Devolver Capturado (Extra · 3 Karma): Dispara de volta a energia ou destroço absorvido anteriormente na manga, causando 2d8 de dano a até 9m.
+
+**Safra na Morte.** Zhong Kui absorve técnicas de contenção dimensional de bolso contra entidades conjuradas.
+
+**185. Semblante de Terror Justo** · O Olhar que Assusta Fantasmas · Runa Kármica Primordial
+
+**Fenômeno base.** Conta a lenda que Zhong Kui era tão feroz que até os demônios tremiam diante de sua pintura; sua presença esmaga a moral de inimigos corruptos, covardes ou invocadores.
+
+1. Encarada do Juiz do Inferno (Extra · 3 Karma · 9m): Teste de Espírito/Presença (ou Intelecto) contra a Vontade do alvo: aplica Abalado e faz com que o alvo sofra +1d6 de dano de todos os seus ataques enquanto estiver com medo.
+2. Expulsar Possessão (Principal · 4 Karma): Golpe que causa 2d8 divino/kármico e encerra imediatamente qualquer controle mental, charme ou condição sobrenatural em um aliado.
+
+**Safra na Morte.** Zhong Kui colhe a projeção de autoridade intimidadora como arma de supressão espiritual.
+
+**186. Fio Matador de Anomalias** · A Espada de Sete Estrelas Qixing · Método de Luta Exclusivo
+
+**Fenômeno base.** Sua lâmina ou arma brilha com a constelação da Ursa Maior (Sete Estrelas), cortando com facilidade redobrada qualquer ser que use Karma, Bênçãos ou Corrupção.
+
+1. Corte das Sete Estrelas (Principal · 4 Karma): Causa 2d8 cortante/divino; se o alvo possuir qualquer Bênção, Corrupção ou estiver sustentando uma técnica/invocação, o golpe soma +1d8 de dano adicional e reduz o Karma dele em 3.
+2. Passo da Ursa Maior (Movimento · 2 Karma): Move-se em ziguezague pelas 7 posições da constelação (6m), ganhando +2 na CA até o próximo turno.
+
+**Safra na Morte.** Zhong Kui recolhe a esgrima especializada em romper defesas sobrenaturais.
+
+#### Guan Yu — Guandi · O Deus Marcial da Lealdade, da Lâmina Dragão Verde e da Honra
+
+**187. Peso de Oitenta e Dois Jin** · A Alabarda Crescente do Dragão Verde · Método de Luta Exclusivo
+
+**Fenômeno base.** O espírito de um dragão verde esmeralda enrola-se na sua arma; o primeiro golpe que você desfere após se aproximar de um inimigo carrega um momento angular devastador que parte escudos ao meio.
+
+1. Corte da Lua Crescente (Principal · 4 Karma): Ataque amplo que atinge o alvo principal e até 1 inimigo adjacente a ele, causando 2d10 cortante, ignorando 4 pontos de Redução de Dano e reduzindo a CA Parcial dos atingidos em -2.
+2. Guardar o Portão (Reação · 3 Karma): Crava a arma no chão impedindo qualquer inimigo de passar pelo seu espaço ou pelos 2m adjacentes a você nesta rodada.
+
+**Safra na Morte.** Guan Yu absorve o domínio de armas pesadas em espaços confinados e modernos.
+
+**188. Vínculo de Irmandade de Sangue** · O Juramento do Jardim dos Pêssegos · Runa Kármica Primordial
+
+**Fenômeno base.** No início da cena, você declara até 2 aliados como seus "Irmãos de Juramento": enquanto lutarem na mesma cena, o sangue e a coragem de um sustentam a vida do outro.
+
+1. Vingar o Irmão (Reação · 3 Karma): Sempre que um aliado juramentado a até 9m sofrer dano de um inimigo, você pode avançar 4,5m na direção daquele inimigo e desferir um ataque básico com +1d20 na Reserva.
+2. Dividir o Cálice Amargo (Reação · 3 Karma): Transfere metade do dano que um aliado juramentado acabou de sofrer para si mesmo (reduzindo essa metade transferida em Etapa pontos).
+
+**Safra na Morte.** Guan Yu colhe a sinergia tática de proteção mútua entre companheiros de esquadrão.
+
+**189. Estoicismo Imune à Dor** · Raspar o Osso Enquanto Joga Go · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Conta a história que Guan Yu jogou uma partida de Go calmamente enquanto o médico raspava o veneno diretamente do osso do seu braço sem anestesia; você ignora completamente o choque da dor física.
+
+1. Partida Inabalável (Livre ou Reação · 3 Karma): Você ignora todas as penalidades de dados causadas por ferimentos, Sangramento, Envenenado, Lento ou Fraturas por 2 rodadas e recebe 2d8 + Constituição de Escudo Temporário.
+2. Olhar do Rosto Vermelho (Extra · 2 Karma): Quando você sofre um ataque e não recua nem um centímetro, o atacante fica Abalado pela sua frieza.
+
+**Safra na Morte.** Guan Yu recolhe o bloqueio neural voluntário de receptores de dor em combate extremo.
+
+### Asa do Assombro · Panteão Tupi-Guarani
+
+#### Tupã · O Espírito Supremo do Trovão, do Clarão da Selva e da Chuva Torrencial
+
+**190. Estrondo que Estremece a Copa** · A Voz de Tupã-Cininga · Dobra Elemental Anômala
+
+**Fenômeno base.** Seus golpes carregam o trovão tropical úmido e pesado que sacode o chão e as árvores antes mesmo de o raio cair, paralisando a presa pelo choque acústico.
+
+1. Trovão da Mata Fechada (Principal · 4 Karma · 9m): Causa 2d8 elétrico/sônico no alvo e em 2m ao redor dele; os atingidos perdem a Reação até o próximo turno e sofrem -2 na CA de esquiva.
+2. Eco de Tempestade (Extra · 3 Karma): No início do seu próximo turno, o estrondo reverbera no mesmo local causando mais 1d8 sônico em quem permaneceu ali.
+
+**Safra na Morte.** Tupã absorve a propagação de ondas acústicas de baixa frequência em ambientes densos.
+
+**191. Salto de Fulgor Entre Galhos** · Tupã-Beraba · O Relâmpago da Canoa · Método de Luta Exclusivo
+
+**Fenômeno base.** Você se move como o raio que salta da nuvem para a copa mais alta: seu corpo ricocheteia entre paredes, colunas ou árvores transformado em eletricidade dourada.
+
+1. Ricochete de Relâmpago (Movimento + Principal · 4 Karma): Salta em até 2 superfícies verticais (percorrendo até 9m sem tocar o chão) e desaba sobre o inimigo com +2 no acerto, causando 2d10 perfurante/elétrico.
+2. Aterramento Brusco (Reação · 3 Karma): Descarrega a eletricidade de um golpe recebido diretamente para o solo, reduzindo o dano em 2d6 e eletrificando 2m ao redor.
+
+**Safra na Morte.** Tupã colhe a cinemática de ricochete tridimensional em estruturas verticais.
+
+**192. Dilúvio de Renovação Selvagem** · A Chuva que Dá a Vida · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Uma chuva morna e carregada de ozônio cai em 4,5m ao seu redor, lavando ferimentos e revigorando a musculatura dos aliados enquanto pesa sobre as roupas dos inimigos.
+
+1. Aguaceiro Sagrado (Extra · 3 Karma · Raio 4,5m): Apaga chamas/ácidos na área, restaura 1d8 + Espírito de Vida em você e em um aliado no raio, e deixa os inimigos na chuva Encharcados (eles sofrem +4 de dano de qualquer ataque elétrico ou frio).
+2. Cortina d'Água (Reação · 3 Karma): A chuva engrossa por um segundo, impondo -2 em ataques à distância contra quem está dentro.
+
+**Safra na Morte.** Tupã recolhe a sinergia entre precipitação atmosférica e condução bioelétrica.
+
+#### Jaci · A Mãe Lua, do Orvalho Prateado, das Plantas Noturnas e da Saudade
+
+**193. Condensação de Prata Curativa** · O Orvalho da Madrugada · Dobra Elemental Anômala
+
+**Fenômeno base.** A luz fria da lua condensa gotas de orvalho prateado sobre sua pele e armas; esse líquido fecha cortes ao contato com aliados e adormece os nervos de quem você fere.
+
+1. Lâmina de Orvalho Frio (Principal · 4 Karma): Ataque que causa 2d8 frio/kármico e entorpece o membro atingido (-2 nos ataques do alvo por 1 rodada); ao mesmo tempo, o orvalho respinga curando 1d8 de Vida em você ou em um aliado adjacente.
+2. Bruma de Jaci (Extra · 3 Karma): Cria um véu prateado de 3m que concede camuflagem parcial (+2 CA) e limpa venenos leves.
+
+**Safra na Morte.** Jaci absorve o uso de condensação térmica noturna para analgesia e cicatrização rápida.
+
+**194. Puxão de Lua Cheia** · A Gravidade das Marés e da Seiva · Runa Kármica Primordial
+
+**Fenômeno base.** Assim como Jaci puxa as marés dos rios e faz a seiva subir pelas árvores à noite, você exerce uma tração gravitacional silenciosa sobre o sangue e o equilíbrio dos corpos a até 12m.
+
+1. Maré Alta Interna (Principal · 4 Karma · 12m): Puxa os fluidos e o centro de gravidade do alvo, causando 2d6 kármico, arrastando-o 3m na direção que você escolher e deixando-o Desorientado.
+2. Flutuação de Maré Baixa (Movimento · 2 Karma): Reduz o próprio peso sob a luz lunar, saltando até 6m sem precisar de corrida e caindo sem sofrer dano de queda.
+
+**Safra na Morte.** Jaci colhe o controle gravitacional sutil sobre líquidos corporais em combate.
+
+**195. Melancolia Paralítica** · O Feitiço da Saudade Noturna · Técnica Divina / Fenômeno
+
+**Fenômeno base.** O brilho nos seus olhos desperta no peito do adversário uma saudade súbita e avassaladora de casa e de quem ele ama, esvaziando a vontade dele de lutar até a morte.
+
+1. Luar da Saudade (Principal · 4 Karma · 9m): Teste contra a Vontade do alvo; causa 2d6 mental e faz o inimigo hesitar profundamente: ele fica impedido de realizar ataques ofensivos contra você no próximo turno (a menos que gaste 3 de Karma para forçar a mente) e sofre -2 na CA Parcial.
+2. Consolo Materno (Reação · 3 Karma): Concede +2d6 de Escudo Temporário a um aliado que acabou de sofrer um ataque crítico ou mental.
+
+**Safra na Morte.** Jaci recolhe a manipulação de memórias afetivas para desarme psicológico de agressores.
+
+#### Guaraci · O Pai Sol, do Mormaço Equatorial e do Olho da Floresta
+
+**196. Zona de Exaustão Térmica** · O Mormaço Equatorial · Dobra Elemental Anômala
+
+**Fenômeno base.** Ao seu redor o ar torna-se úmido, abafado e escaldante como o meio-dia na linha do equador; respirar e mover-se com armadura perto de você drena o fôlego dos inimigos rapidamente.
+
+1. Onda de Insolação (Principal · 4 Karma · Raio 4,5m): Causa 2d8 térmico em todos os inimigos na área e impõe Fadiga de Mormaço por 1 rodada (qualquer inimigo na área que correr ou usar ataque corpo a corpo pesado perde 2 de Karma ou sofre 4 de dano térmico).
+2. Suor de Brasa (Passiva na Zona): Você recebe +2 em Fortitude e ignora penalidades de calor ou fumaça.
+
+**Safra na Morte.** Guaraci absorve a termodinâmica de calor úmido para desgaste acelerado de vigor inimigo.
+
+**197. Lâminas de Luz Filtrada** · Frestas de Sol na Mata Densa · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você faz descer feixes finos e diagonais de luz solar intensa (como os raios que atravessam a copa fechada da floresta), criando pilares luminosos que queimam inimigos e curam aliados.
+
+1. Feixe de Clareira (Principal · 4 Karma · 15m): Desce um raio de luz concentrada que ignora cobertura parcial, causa 2d8 radiante no inimigo e ilumina o espaço dele (aliados que atacarem aquele espaço até o próximo turno recebem +2 no acerto).
+2. Passo entre Feixes (Movimento · 3 Karma): Teleporta-se instantaneamente de um ponto iluminado para outro a até 6m.
+
+**Safra na Morte.** Guaraci colhe a canalização de feixes solares estreitos em ambientes cobertos e subterrâneos.
+
+**198. Pulso de Vigor Fototrópico** · O Criador dos Seres Diurnos · Runa Kármica Primordial
+
+**Fenômeno base.** Sua presença desperta o metabolismo diurno máximo nos corpos aliados: músculos respondem mais rápido, pupilas se ajustam e o medo do escuro desaparece.
+
+1. Despertar do Sol Alto (Extra · 3 Karma · 9m): Você e até 2 aliados a 9m ganham +3m de Movimento, +1d20 em testes de Percepção/Iniciativa e somam +1d6 radiante no primeiro ataque que acertarem nesta rodada.
+2. Clarão de Meio-Dia (Reação · 3 Karma): Quando atacado de surpresa ou por inimigo furtivo, emite um flash solar que anula a vantagem do inimigo e aplica Desorientado nele.
+
+**Safra na Morte.** Guaraci recolhe o estímulo biofotonico sobre reflexos neuromusculares.
+
+#### Anhangá · O Cervo Branco de Olhos de Fogo, do Delírio da Mata e da Caça Proibida
+
+**199. Esquiva de Miragem da Floresta** · O Cervo Branco Intocável · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Quanto mais furiosamente um inimigo tenta caçar ou focar você, mais sua silhueta parece escapar por entre árvores fantasmas, deixando o caçador exausto e perdido.
+
+1. Passo do Cervo Branco (Reação ao ser atacado · 3 Karma): Sua imagem se desfaz em névoa branca e olhos de brasa; você soma +3 na CA contra o ataque e se move 3m sem provocar ataques de oportunidade (se o inimigo errar, ele perde 2m de Movimento no próximo turno).
+2. Galhada de Brasa (Principal · 4 Karma): Investida espectral que causa 2d8 perfurante/térmico e empurra o alvo em 3m.
+
+**Safra na Morte.** Anhangá absorve técnicas de evasão psicológica que induzem o erro por excesso de agressividade do atacante.
+
+**200. Maldição da Presa Protegida** · O Castigo do Caçador Cruel · Runa Kármica Primordial
+
+**Fenômeno base.** Anhangá pune implacavelmente quem ataca filhotes ou seres indefesos; você marca o aliado mais ferido do seu grupo com a proteção sagrada da mata.
+
+1. Marca de Caça Proibida (Extra · 3 Karma · 12m): Protege um aliado por 2 rodadas: qualquer inimigo que atacar esse aliado sofre imediatamente 2d6 de dano mental/térmico pelos olhos de fogo de Anhangá e fica Abalado.
+2. Vingança da Mata (Principal · 4 Karma): Contra um inimigo que tenha ferido um aliado seu na última rodada, seu ataque causa 2d8 + Etapa de dano e reduz a CA Total dele em -2.
+
+**Safra na Morte.** Anhangá colhe gatilhos kármicos de retaliação automática contra agressores de alvos vulneráveis.
+
+**201. Alucinação de Olhos de Fogo** · O Assombro que Enlouquece · Dobra Elemental Anômala
+
+**Fenômeno base.** Seus olhos brilham como duas brasas vermelhas no escuro; encarar você faz o inimigo ver o cenário se contorcer em galhos secos, vultos e ruídos que não existem.
+
+1. Delírio de Anhangá (Principal · 4 Karma · 9m): Causa 2d6 mental/kármico e embaralha os sentidos do alvo por 1 rodada: para o alvo, aliados e inimigos parecem vultos idênticos (ele sofre -3 no acerto e não pode fazer ataques de oportunidade).
+2. Assovio daNoite (Extra · 2 Karma): Faz um som fantasma surgir atrás do inimigo, virando a guarda dele e reduzindo a CA Parcial dele em -2.
+
+**Safra na Morte.** Anhangá recolhe o sequestro do córtex visual e auditivo por estímulos kármicos de medo.
+
+#### Boitatá · A Grande Serpente de Fogo-Fátuo, dos Olhos Cegantes e das Campinas
+
+**202. Chama Fria Seletiva** · Mboi-Tatá · O Fogo que Não Queima a Mata · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu fogo-fátuo azul e esverdeado possui inteligência seletiva: ele desliza sobre plantas, madeira, aliados e seus próprios equipamentos sem chamuscá-los, queimando exclusivamente a carne e o Karma dos invasores/inimigos.
+
+1. Serpente de Fogo-Fátuo (Principal · 4 Karma · Linha sinuosa de 9m): Uma língua de chama azul serpenteia entre aliados sem feri-los e atinge até 2 inimigos, causando 2d8 térmico/kármico no primeiro e 1d8 no segundo.
+2. Anel Protetor de Campina (Extra · 3 Karma): Cria um círculo de chamas azuis ao redor de si ou de um aliado; aliados dentro não sofrem nada, mas inimigos que entrarem sofrem 2d6 de dano.
+
+**Safra na Morte.** Boitatá absorve o controle de combustão seletiva por reconhecimento de assinatura kármica.
+
+**203. Clarão de Cegueira Absoluta** · Os Mil Olhos Devorados · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Segundo a lenda, o Boitatá ficou transparente e luminoso após comer apenas os olhos dos animais mortos no dilúvio; seu corpo acumula luz interna que pode estourar em um clarão ofuscante insuportável.
+
+1. Clarão dos Mil Olhos (Extra ou Reação · 4 Karma · Raio 4,5m): Seu corpo brilha como um sol azulado por um segundo: todos os inimigos a até 4,5m que estiverem olhando na sua direção sofrem 1d10 radiante e ficam Desorientados / Cegos (-3 no acerto e na Percepção) até o final do próximo turno.
+2. Olhar Predador (Passiva): Você enxerga perfeitamente na escuridão total e percebe a direção para onde cada inimigo está olhando.
+
+**Safra na Morte.** Boitatá colhe a sobrecarga de fotorreceptores oculares em combate aproximado.
+
+**204. Enrolar de Escamas de Brasa** · O Constritor Incandescente · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus movimentos de luta de solo, esquiva e agarrão imitam o bote elástico de uma jiboia de fogo líquido, deslizando por baixo da guarda inimiga para sufocar e queimar ao mesmo tempo.
+
+1. Bote de Espiral Azul (Principal · 4 Karma): Avança 3m rasteiro e se enrola no ataque contra o alvo, causando 2d8 contundente/térmico e prendendo o alvo (ele fica Lento e sofre 4 de dano de fogo no início do turno se não se soltar).
+2. Troca de Pele de Cinza (Reação · 3 Karma): Escapa instantaneamente de qualquer agarrão, imobilização ou rede deixando uma casca de fogo que explode em 1d8 no agressor.
+
+**Safra na Morte.** Boitatá recolhe técnicas de luta agarrada combinadas com transferência térmica contínua.
+
+#### Curupira · O Guardião de Pés Virados, do Rastro Invertido e da Fúria da Selva
+
+**205. Cinemática de Vetor Invertido** · Os Pés Virados para Trás · Método de Luta Exclusivo
+
+**Fenômeno base.** A direção para onde seu corpo aponta nunca é a direção real do seu movimento; seus tornozelos e quadris operam com vetores invertidos que enganam completamente a leitura corporal de qualquer adversário.
+
+1. Passo para Trás que Avança (Movimento + Livre · 3 Karma): Quando você parece recuar, na verdade surge às costas do inimigo (ou vice-versa): você se move 6m ignorando ataques de oportunidade e seu próximo ataque atinge o alvo como se ele estivesse Desprevenido (-3 na CA Parcial e Total dele).
+2. Rastro Enganoso (Reação · 3 Karma): Quando um inimigo avança para atacar você, ele erra a leitura da sua direção, parando a 2m do seu espaço real e perdendo o ataque se obtiver apenas acerto Parcial.
+
+**Safra na Morte.** Curupira absorve a biomecânica de fintas de inversão vetorial contra artistas marciais e atiradores.
+
+**206. Eco Acústico de Labirinto** · O Assovio que Desorienta · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você emite um assovio agudo cujo som bate nas superfícies e parece vir de todas as direções ao mesmo tempo, destruindo o senso de direção e equilíbrio do ouvido interno inimigo.
+
+1. Assovio de Perdição (Principal · 4 Karma · 12m): Causa 2d6 sônico/mental no alvo; no próximo turno dele, o senso de direção dele se inverte (para se mover na direção que deseja, ele precisa gastar o dobro de Movimento e vencer um teste de Vontade, ou caminha na direção escolhida por você).
+2. Batida no Tronco (Sapopema) (Extra · 2 Karma): Bate o calcanhar no chão ou parede enviando um sinal sônico que concede +2 na CA e na Iniciativa de aliados a 12m.
+
+**Safra na Morte.** Curupira colhe a manipulação do sistema vestibular humano por frequências acústicas.
+
+**207. Laço de Timbó e Jiboia** · Cipós e Espinhos da Mata · Dobra Elemental Anômala
+
+**Fenômeno base.** Raízes e cipós fibrosos brotam de frestas no piso, madeira ou da sua própria cintura para dar rasteiras e amarrar os tornozelos de quem invade seu território.
+
+1. Armadilha de Cipó Tenso (Principal · 4 Karma · 9m): Cipós chicoteiam as pernas do alvo causando 2d8 contundente/cortante e derrubando-o (Caído).
+2. Casca de Árvore-Ferro (Reação · 3 Karma): Endurece a pele com fibras de madeira avermelhada, recebendo Redução de Dano 5 contra o golpe recebido.
+
+**Safra na Morte.** Curupira recolhe o uso de fibras vegetais de alta tração como armadilhas de acionamento instantâneo.
+
+#### Iara · A Mãe d'Água, do Canto Hipnótico e do Redemoinho de Rio Escuro
+
+**208. Ressonância de Fascínio Letal** · O Canto da Mãe d'Água · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Sua voz (ou o som harmônico da sua arma cortando o ar) cria uma melodia hipnótica que desliga o instinto de autodefesa do alvo, fazendo-o caminhar docilmente na direção do próprio fim.
+
+1. Chamado para o Fundo (Principal · 4 Karma · 12m): Teste contra a Vontade do alvo: causa 2d6 mental e faz o inimigo caminhar imediatamente 4,5m na sua direção (entrando em armadilhas, bordas ou no alcance corpo a corpo dos seus aliados) com a guarda aberta (-2 na CA Total até o próximo turno).
+2. Voz que Acalma a Dor (Extra · 3 Karma): Canta uma nota curta que limpa Abalado de um aliado a 9m e concede a ele 1d10 + Presença/Espírito de Escudo Temporário.
+
+**Safra na Morte.** Iara absorve frequências vocais de indução hipnótica que superam o barulho de combate.
+
+**209. Espelho d'Água no Chão Seco** · O Remanso do Rio Negro · Dobra Elemental Anômala
+
+**Fenômeno base.** O chão num raio de 3m ao seu redor adquire o reflexo e a profundidade ilusória de um rio escuro; você desliza como se nadasse, enquanto inimigos sentem a água fria puxando suas pernas.
+
+1. Redemoinho de Igapó (Principal · 4 Karma · 6m): Cria um vórtice de água escura sob o alvo causando 2d8 contundente/frio e deixando-o Lento e sem poder saltar.
+2. Submergir no Reflexo (Reação · 4 Karma): Quando atacado, mergulha no "espelho d'água" do piso reduzindo o dano em 2d8 e emergindo a 3m de distância.
+
+**Safra na Morte.** Iara colhe a transmutação superficial de pisos sólidos em lâminas d'água táticas.
+
+**210. Asfixia de Água Doce** · O Beijo que Rouba o Fôlego · Runa Kármica Primordial
+
+**Fenômeno base.** Ao tocar ou acertar um inimigo, você condensa umidade diretamente dentro das vias aéreas dele, provocando a sensação imediata de afogamento em terra firme.
+
+1. Pulmão Alagado (Principal · 4 Karma · Toque/6m): Causa 2d8 necrótico/frio e priva o alvo de ar: o alvo fica Silenciado (não pode falar nem usar comandos vocais) e sofre -1d20 em todos os testes físicos até recuperar o fôlego no fim do próximo turno.
+2. Respiração Anfíbia (Passiva): Você nunca sufoca em água, fumaça ou gases tóxicos.
+
+**Safra na Morte.** Iara recolhe técnicas de privação de oxigênio por condensação interna.
+
+#### Ceuci · A Senhora das Lavouras, da Mandioca Venenosa/Nutritiva e do Ciclo da Terra
+
+**211. Alquimia de Cianeto e Pão** · Mani · A Raiz Branca de Duas Faces · Dobra Elemental Anômala
+
+**Fenômeno base.** Assim como a mandioca brava é um veneno mortal quando crua (manipueira), mas torna-se o alimento que sustenta a vida quando processada pelo fogo e pela prensa, você domina a conversão instantânea entre toxina letal e cura pura.
+
+1. Extrair Manipueira (Principal · 4 Karma · 9m): Dispara seiva leitosa tóxica que causa 2d8 de dano de veneno/ácido e aplica Envenenado (o alvo perde 4 de Vida no início do turno e sofre -2 em Fortitude).
+2. Prensar em Alimento (Extra · 3 Karma): Drena a condição Envenenado de um inimigo (ou usa suas próprias reservas) para criar um bolo de energia branca que cura 2d8 + Espírito de Vida em você ou em um aliado a 6m.
+
+**Safra na Morte.** Ceuci absorve a bioquímica de reversão molecular entre alcaloides tóxicos e nutrientes celulares.
+
+**212. Germinação sobre o Sangue Caído** · O Túmulo que Brotou em Vida · Runa Kármica Primordial
+
+**Fenômeno base.** No mito, a raiz sagrada brotou da terra onde o corpo de Mani foi enterrado; qualquer ponto do campo onde você ou um aliado tenha perdido Vida torna-se solo fértil que brota proteção e força.
+
+1. Brotar da Terra (Reação ao sofrer dano ou Extra · 3 Karma): O local onde você sangrou floresce em raízes brancas que concedem 2d6 + Constituição de Escudo Temporário a você (ou a um aliado pisando ali) e aumentam o dano do próximo ataque em +4.
+2. Colheita de Raízes (Principal · 4 Karma): Faz as raízes do solo fértil chicotearem os inimigos a até 6m, causando 2d8 contundente.
+
+**Safra na Morte.** Ceuci colhe o ciclo de reciclagem de dano vital em fortificação de terreno.
+
+**213. Ritmo das Estações Agrícolas** · A Estrela D'Alva da Plantação · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seu Karma alterna entre o tempo de Plantar (preparar e acumular energia em silêncio) e o tempo de Colher (descarregar tudo com rendimento multiplicado).
+
+1. Semear no Turno (Extra · 2 Karma): Planta uma semente de Karma no chão ou no próprio peito; no próximo turno (Colheita), ela germina devolvendo 4 de Karma (lucro líquido de +2 Karma) ou somando +2d6 de dano à sua primeira técnica.
+2. Terra Arada (Movimento · 2 Karma): Transforma 4,5m de piso à sua frente em terra macia que anula dano de queda para aliados e reduz o movimento inimigo pela metade.
+
+**Safra na Morte.** Ceuci recolhe a economia de investimento retardado de Karma em combates prolongados.
+
+#### Jurupari · O Legislador da Noite, da Flauta Proibida e do Pesadelo Lúcido
+
+**214. Peso da Sombra Noturna** · O Pesadelo que Sufoca Dormindo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Jurupari visita os adormecidos sentando-se sobre o peito deles e travando seus membros e gritos; você projeta essa paralisia do sono sobre inimigos acordados em pleno combate.
+
+1. Paralisia de Pesadelo (Principal · 4 Karma · 9m): Sua sombra salta sobre o peito do alvo causando 2d8 mental/necrótico; se o alvo não superar sua CD em Vontade/Fortitude, seus membros travam (Lento, -2 na CA Total e impedido de gritar ou usar Reações por 1 rodada).
+2. Alimentar-se do Pavor (Passiva): Contra alvos que estejam Abalados, Lentos ou Silenciados, seus ataques somam +1d6 de dano e recuperam 2 de Vida.
+
+**Safra na Morte.** Jurupari absorve a indução de atonia muscular REM em adversários conscientes.
+
+**215. Tabu do Som Proibido** · As Flautas Sagradas de Paxiúba · Runa Kármica Primordial
+
+**Fenômeno base.** O som grave que emana das suas armas ou da sua respiração carrega as Leis Secretas de Jurupari: quem não tem permissão para ouvir ou olhar para o ritual sofre punição espiritual imediata.
+
+1. Sopro da Flauta de Osso (Extra · 3 Karma · Raio 6m): Emite uma nota grave por 1 rodada; inimigos dentro de 6m que olharem diretamente para você para declarar um ataque sofrem 1d10 de dano mental/sônico automático antes de rolarem o ataque (ou precisam atacar de olhos fechados com -3 no acerto).
+2. Segredo de Iniciação (Reação · 3 Karma): Torna a técnica de um aliado a 9m invisível e silenciosa, reduzindo em -2 a defesa do inimigo contra ela.
+
+**Safra na Morte.** Jurupari colhe o uso de tabus sensoriais como escudo psicológico ativo.
+
+**216. Engolir no Breu da Mata** · A Boca da Noite Escura · Dobra Elemental Anômala
+
+**Fenômeno base.** Você condensa a escuridão espessa da floresta meia-noite ao redor do seu manto ou arma, apagando fontes de luz e engolindo projéteis que entram no breu.
+
+1. Manto de Breu Fechado (Principal · 4 Karma · 9m): Envolve o alvo em uma esfera de escuridão absoluta de 2m causando 2d8 necrótico/kármico e isolando a visão dele do resto do campo por 1 rodada.
+2. Passo na Escuridão (Movimento · 2 Karma): Enquanto estiver em sombra ou penumbra, você ganha +3m de Movimento e +1d20 em Furtividade/Acrobacia.
+
+**Safra na Morte.** Jurupari recolhe técnicas de privação luminosa localizada contra esquadrões táticos.
+
+### Asa do Axé · Panteão Iorubá
+
+#### Ogum · O Senhor do Ferro, da Forja Tecnológica e do Facão que Abre Caminhos
+
+**217. Ressonância de Todas as Ferramentas** · Orixá do Ferro e da Tecnologia · Dobra Elemental Anômala
+
+**Fenômeno base.** Todo o ferro, aço, engrenagem ou arma de fogo em um raio de 9m reconhece você como seu senhor; suas armas nunca travam, e o metal na mão dos seus inimigos hesita em ferir você.
+
+1. Domínio da Bigorna e do Trilho (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma metálica (ou constructo/dispositivo) recebe +2 no acerto, +1d8 de dano perfurante/cortante e ignora toda Redução de Dano de armaduras metálicas inimigas.
+2. Repulsão de Lâmina Alheia (Reação · 3 Karma): Faz o ferro da arma ou bala inimiga desviar no último centímetro, somando +3 na sua CA contra ataques metálicos.
+
+**Safra na Morte.** Ogum absorve o domínio eletromagnético e mecânico sobre ligas industriais modernas.
+
+**218. Golpe Desbravador de Linha** · Alakoro · O que Abre os Caminhos na Mata · Método de Luta Exclusivo
+
+**Fenômeno base.** Ogum é aquele que vai na frente abrindo a trilha com o facão para que os outros possam passar; seu avanço corta obstáculos, teias, barreiras e formações inimigas de ponta a ponta.
+
+1. Abrir Picada de Ferro (Movimento + Principal · 4 Karma): Avança 6m em linha reta cortando tudo à frente: destrói armadilhas/barreiras no caminho, causa 2d8 cortante no inimigo principal e deixa uma "Trilha Aberta" atrás de si (todos os aliados que passarem por essa linha até o próximo turno ganham +3m de Movimento livre e +2 no ataque).
+2. Romper Imobilização (Livre · 2 Karma): Corta instantaneamente qualquer condição de Lento, Agarrado ou Imóvel em si ou em um aliado adjacente.
+
+**Safra na Morte.** Ogum colhe doutrinas de vanguarda e abertura de brechas para avanço de tropa.
+
+**219. Falange de Lâminas Forjadas** · As Sete Espadas de Ogum · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Sete lâminas de ferro forjado em brasa azulada flutuam ao redor das suas costas em formação de leque, atacando em conjunto com seus golpes ou cravando-se no chão para proteger o grupo.
+
+1. Revoada das Sete Ferramentas (Principal · 4 Karma · 9m): Dispara as lâminas contra um ou dois alvos causando 2d8 + 3 de dano cortante/kármico e aplicando Sangramento.
+2. Paliçada de Aço Vivo (Reação · 3 Karma): Crava as 7 espadas no chão à frente de você ou de um aliado, absorvendo 2d8 de dano e causando 1d6 em quem bater nelas.
+
+**Safra na Morte.** Ogum recolhe a regência telecinética de múltiplas lâminas de aço em combate.
+
+#### Xangô · O Rei de Oyó, do Machado Duplo Oxê e das Pedras de Raio Edun Ará
+
+**220. Meteoro de Trovão e Basalto** · Edun Ará · A Pedra de Raio · Dobra Elemental Anômala
+
+**Fenômeno base.** O fogo e o raio de Xangô não são gás efêmero, mas condensam-se em pedras negras incandescentes (Edun Ará) que caem com impacto cinético devastador e explodem em chamas reais.
+
+1. Queda de Edun Ará (Principal · 4 Karma · 12m): Arremessa ou faz cair uma pedra de raio sobre o alvo, causando 2d8 contundente/elétrico, derrubando-o (Caído) se atingir a CA Total e deixando uma brasa no chão.
+2. Recolher a Pedra (Extra · 2 Karma): Puxa a pedra de raio de volta para a mão, incendiando todos os inimigos na linha de retorno em 1d8 térmico.
+
+**Safra na Morte.** Xangô absorve a balística de plasma solidificado em projéteis de alta massa.
+
+**221. Balança de Golpe e Contragolpe** · O Machado de Duas Lâminas Oxê · Método de Luta Exclusivo
+
+**Fenômeno base.** O Oxê possui duas lâminas simétricas porque a justiça de Xangô corta para os dois lados: todo golpe que você recebe carrega a primeira lâmina, e o seu ataque devolve o peso dobrado na segunda lâmina.
+
+1. Corte das Duas Lâminas (Principal · 4 Karma): Causa 2d8 cortante/térmico; se você tiver sofrido dano desde o seu último turno, a segunda lâmina brilha somando +1d10 de dano adicional e ignorando escudos.
+2. Peso da Sentença Real (Reação · 3 Karma): Quando um inimigo ataca um aliado seu sem ter sido provocado por ele, um trovão seco atinge o inimigo aplicando -2 no teste dele e 1d6 de dano.
+
+**Safra na Morte.** Xangô colhe o equilíbrio mecânico de conversão de impacto sofrido em torque ofensivo.
+
+**222. Sopro da Corte Real** · O Alafin de Oyó queCospe Fogo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Ao falar ou rugir, labaredas douradas e vermelhas saem da sua boca com a autoridade de um rei em seu trono, incendiando a coragem dos aliados e derretendo mentiras e covardias.
+
+1. Rugido de Ajaká e Xangô (Principal · 4 Karma · Cone 6m): Sopro de fogo real que causa 2d8 térmico/divino e empurra os inimigos em 2m; aliados dentro de 6m que ouvirem o rugido ganham +2 no dano até o próximo turno.
+2. Coroa de Brasa (Passiva): Você possui resistência a dano de Fogo e Elétrico e soma +2 em testes de Liderança / Intimidação.
+
+**Safra na Morte.** Xangô recolhe a projeção de chamas pressurizadas combinadas com comando vocal.
+
+#### Iansã — Oyá · A Senhora dos Ventos, dos Raios Vermelhos e do Erukerê de Eguns
+
+**223. Vendaval de Deslocamento Rápido** · O Vento que Preceda a Tempestade · Dobra Elemental Anômala
+
+**Fenômeno base.** Oyá é a mudança brusca de tempo; o ar ao seu redor gira em lufadas quentes e elétricas que mudam sua posição no campo antes que o inimigo consiga fechar a mira.
+
+1. Redemoinho de Oyá (Movimento + Extra · 3 Karma): Transforma seu movimento em uma rajada de vento que percorre até 9m passando por dentro de inimigos: cada inimigo atravessado sofre 1d8 cortante/elétrico e perde o equilíbrio (-2 na CA Parcial até o fim do turno).
+2. Desviar com a Brisa (Reação · 3 Karma): Uma lufada súbita empurra você 3m para o lado quando atacado, somando +3 na CA.
+
+**Safra na Morte.** Iansã absorve a aerodinâmica de mudança instantânea de vetor em combate aproximado.
+
+**224. Domínio sobre os Espíritos e a Morte** · O Erukerê de Crina de Búfalo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Como única divindade que não teme os Eguns (espíritos dos mortos) e os guia com seu Erukerê, você comanda as sombras residuais do campo de batalha e anula qualquer poder necrótico ou de terror.
+
+1. Chicotada do Erukerê (Principal · 4 Karma · 9m): Varre o ar liberando vultos de vento e luz rubra que causam 2d8 kármico/divino, empurram o alvo em 3m e encerram qualquer invocação menor ou condição de medo/necrótica na área.
+2. Soberana do Balé dos Mortos (Passiva): Você é imune à condição Abalado e recebe +2 na CA contra invocações e técnicas necróticas/corruptas.
+
+**Safra na Morte.** Iansã colhe métodos de expurgo espiritual e controle de entidades desencarnadas.
+
+**225. Investida de Cobre Incandescente** · A Mulher-Búfalo e a Espada de Cobre · Método de Luta Exclusivo
+
+**Fenômeno base.** Quando você parte para o ataque total, sua aura assume a força imparável do búfalo africano combinada ao fio elétrico de uma cimitarra de cobre em brasa.
+
+1. Corte do Raio Vermelho (Principal · 4 Karma): Golpe veloz que causa 2d8 + 2 cortante/elétrico; em caso de Acerto Total, a descarga vermelha salta para outro inimigo a 3m causando 1d8 de dano.
+2. Fúria de Chifres de Vento (Reação ao sofrer dano · 3 Karma): Contra-ataca imediatamente o agressor a até 3m causando 1d10 de dano e empurrando-o 2m.
+
+**Safra na Morte.** Iansã recolhe a fusão entre esgrima ágil de cimitarra e impacto de investida pesada.
+
+#### Oxóssi · O Rei de Ketu, da Flecha Única Ofá e do Conhecimento da Mata
+
+**226. Doutrina do Disparo Único** · Oketu · O Caçador de Uma Flecha Só · Método de Luta Exclusivo
+
+**Fenômeno base.** Oxóssi nunca precisa de uma segunda flecha porque a primeira jamais erra seu propósito; quando você concentra todos os seus recursos em um único ataque no turno, a letalidade dele torna-se cirúrgica.
+
+1. A Flecha que Não Volta Vazia (Principal · 4 Karma · Alcance da Arma + 6m): Exige que você faça apenas 1 único ataque nesta rodada: o disparo recebe +1d20 na Reserva, ignora cobertura parcial e total (curvando-se pelas frestas da mata/cenário), reduz o limiar de CA Total do alvo em -3 e soma +1d10 ao dano.
+2. Recuperar o Ofá (Livre): Se por qualquer motivo um ataque seu falhar completamente, você recupera 2 de Karma imediatamente.
+
+**Safra na Morte.** Oxóssi absorve o cálculo balístico de precisão extrema com economia máxima de munição.
+
+**227. Abundância Compartilhada** · A Fartura da Caça para a Tribo · Runa Kármica Primordial
+
+**Fenômeno base.** O caçador sagrado não caça por crueldade, mas para alimentar seu povo; cada acerto preciso que você conquista em combate nutre o vigor e o Karma dos seus companheiros.
+
+1. Dividir a Presa (Passiva + 2 Karma ao acertar na faixa Total): Sempre que você acertar um ataque na faixa Total (ou abater um inimigo), você e um aliado a até 12m recuperam 1d8 + Etapa de Vida (ou 2 de Karma).
+2. Armadilha de Caçador (Extra · 3 Karma): Marca um ponto de 2m a até 12m; quem pisar ali fica Lento e exposto (-2 na CA contra o grupo).
+
+**Safra na Morte.** Oxóssi colhe o ciclo de sustentação logística do grupo através da precisão ofensiva.
+
+**228. Passo que Não Quebra Galho** · O Senhor da Floresta Fechada · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você se move em harmonia absoluta com o ambiente (seja selva ou ruínas urbanas); o cenário parece abrir espaço para a sua passagem e fechar-se sobre quem tenta perseguir você.
+
+1. Camuflagem de Folhagem e Sombra (Movimento · 3 Karma): Move-se até seu deslocamento completo podendo atirar no meio do caminho e terminando o movimento em Furtividade / Cobertura Parcial mesmo em terreno aberto (+2 na CA até o próximo turno).
+2. Assobio dePássaro Guia (Extra · 2 Karma): Revela a posição exata de todos os inimigos ocultos a 15m e concede +2 no próximo ataque de um aliado.
+
+**Safra na Morte.** Oxóssi recolhe táticas de guerrilha móvel e mimetismo ambiental.
+
+#### Oxum · A Senhora das Águas Doces, do Espelho Abebé de Latão e do Ouro Líquido
+
+**229. Espelho de Encanto e Reflexão** · O Abebé de Latão Dourado · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Um espelho circular dourado (Abebé) reflete a luz das águas doces nas suas mãos; quem olha para o brilho dele durante um ataque perde o foco pelo deslumbramento, abrindo o peito para o seu contragolpe.
+
+1. Reflexo Deslumbrante do Abebé (Reação · 4 Karma): Quando um inimigo a até 9m ataca você ou um aliado, o brilho dourado do espelho impõe -3 no teste de ataque dele; se o ataque errar ou for apenas Parcial, o inimigo fica Desorientado e sofre 2d6 radiante/kármico.
+2. Luz de Ouro Líquido (Principal · 4 Karma): Dispara um feixe dourado da superfície do espelho que causa 2d8 de dano e reduz a iniciativa/reação do alvo.
+
+**Safra na Morte.** Oxum absorve o uso de óptica reflexiva dourada para desorientação e contra-ataque.
+
+**230. Fluidez de Água Doce Profunda** · A Cachoeira que Esculpe a Rocha · Dobra Elemental Anômala
+
+**Fenômeno base.** A água doce parece suave, mas fura a pedra mais dura com constância; suas técnicas e golpes fluem por dentro das frestas da armadura inimiga, aumentando de dano a cada acerto consecutivo.
+
+1. Véu da Cachoeira (Principal · 4 Karma · 9m): Envolve o golpe em correntes de água dourada causando 2d8 contundente/kármico que ignora toda a CA de armadura pesada ou escudo (usando o limiar base do alvo) e limpa condições negativas de você.
+2. Banho de Rio Doce (Extra · 3 Karma · 6m): Água fresca envolve um aliado, curando 2d6 + Espírito de Vida e concedendo +2 em testes sociais/mentais e de Vontade.
+
+**Safra na Morte.** Oxum colhe a hidrodinâmica de infiltração em defesas rígidas.
+
+**231. Aura de Preciosidade Intocável** · Senhora da Riqueza, do Ouro e da Diplomacia · Runa Kármica Primordial
+
+**Fenômeno base.** Fios finos de ouro e perfume de rio cercam sua presença; sua própria energia kármica rende juros e protege seu corpo como uma joia sagrada.
+
+1. Couraça de Ouro Maleável (Extra · 3 Karma): Reveste a si mesmo ou a um aliado com uma película dourada que concede 2d8 + Presença/Espírito de Escudo Temporário; enquanto esse escudo durar, quem atacar o protegido sofre -2 em Vontade e não pode aplicar acertos críticos.
+2. Prosperidade do Axé (Passiva): Uma vez por cena, ao ajudar um aliado ou usar uma técnica de suporte/controle, você recupera 3 de Karma.
+
+**Safra na Morte.** Oxum recolhe a condensação de reservas kármicas em barreiras protetoras de alta densidade.
+
+#### Iemanjá · A Grande Mãe dos Oceanos, Guardiã do Ori e da Ressaca Marinha
+
+**232. Fortaleza da Mente Serena** · Guardiã do Ori · A Cabeça Sagrada · Runa Kármica Primordial
+
+**Fenômeno base.** Na tradição iorubá, Iemanjá é quem molda e equilibra o Ori (a cabeça, a consciência e o destino individual); sob sua bênção, a mente sua e dos seus aliados torna-se um oceano profundo imune ao desespero e à loucura.
+
+1. Lavar o Ori (Extra ou Reação · 3 Karma · 9m): Remove instantaneamente qualquer condição mental (Abalado, Desorientado, Confuso, Controle Mental ou Dissonância) de você ou de um aliado a 9m, concedendo +1d20 e +2 no próximo teste daquele personagem.
+2. Paz das Águas Profundas (Passiva): Você recebe +3 permanente em Vontade contra efeitos mentais ou de Corrupção.
+
+**Safra na Morte.** Iemanjá absorve arquiteturas de blindagem psíquica contra traumas de combate e corrupção.
+
+**233. Maré que Leva e Devolve** · As Sete Ondas da Ressaca · Dobra Elemental Anômala
+
+**Fenômeno base.** O movimento da água salgada de Iemanjá tem dois tempos: a onda que avança para proteger os seus e a corrente de retorno (ressaca) que arrasta os agressores para longe.
+
+1. Vaga de Espuma Branca (Principal · 4 Karma · Cone ou Linha 6m): Uma onda pesada de água salgada avança causando 2d8 contundente nos inimigos e arrastando todos eles 3 metros para trás (deixando o terreno escorregadio).
+2. Abraço da Maré Materna (Reação · 4 Karma): Quando um aliado a até 6m sofre um golpe que o deixaria abaixo da metade da Vida, uma onda o envolve reduzindo o dano em 2d8 e o puxa 3m para trás em segurança.
+
+**Safra na Morte.** Iemanjá colhe o controle de massas líquidas para reposicionamento defensivo de grupo.
+
+**234. Espelho de Lua Cheia no Oceano** · O Abebé Prateado da Sereia do Mar · Técnica Divina / Fenômeno
+
+**Fenômeno base.** A luz prateada que reflete do seu foco/espelho cria a pressão e o silêncio do alto-mar ao seu redor, afogando o ímpeto ofensivo dos adversários.
+
+1. Pressão de Alto-Mar (Principal · 4 Karma · Raio 4,5m): O ar na área ganha o peso das águas oceânicas: inimigos sofrem 2d6 frio/kármico, ficam Lentos e sofrem -2 no dano de todos os ataques físicos por 1 rodada.
+2. Canto das Conchas (Extra · 2 Karma): Restaura 1d8 de Vida em todos os aliados adjacentes a você.
+
+**Safra na Morte.** Iemanjá recolhe a modulação de pressão hidrostática para amortecimento de ataques em área.
+
+#### Obaluaê — Omolu · O Senhor da Terra Quente, da Palha daCosta e da Cura das Chagas
+
+**235. Mistério Intocável sob a Palha** · O Azê · O Capuz de Palha da Costa · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Franjas espirituais de palha dourada (Mariwô / Palha da Costa) cobrem seu contorno; ninguém consegue enxergar sua verdadeira abertura física, e quem ousa levantar a palha para atacá-lo de perto encara o clarão insuportável do Sol da Terra.
+
+1. Véu de Palha Sagrada (Passiva + 3 Karma na Reação): Inimigos não podem aplicar acertos críticos ou bônus de precisão/brecha contra você; ao gastar 3 de Karma quando atacado corpo a corpo, as palhas se abrem liberando um clarão febril que causa 2d6 radiante/necrótico no atacante e reduz o acerto dele em -3.
+2. Varredura do Xaxará (Extra · 3 Karma): Varre 3m à frente com o feixe de nervuras de palmeira, limpando miasmas, runas inimigas de solo ou venenos.
+
+**Safra na Morte.** Obaluaê absorve técnicas de ocultação de pontos vitais e contra-ataque por radiação de curto alcance.
+
+**236. Transmutação de Chaga em Flor** · Senhor da Varíola e da Cura · Dobra Elemental Anômala
+
+**Fenômeno base.** Assim como Obaluaê transforma as feridas da peste em pipocas brancas (Deburu) que limpam o corpo do doente, você pode arrancar doenças, sangramentos e dores dos seus aliados e devolvê-las como praga contra os inimigos.
+
+1. Florescer de Deburu (Principal · 4 Karma · 9m): Escolha um aliado (ou você) e um inimigo a até 9m: você remove até 2 condições negativas do aliado e restaura 2d6 + Espírito de Vida nele, enquanto o inimigo sofre 2d8 necrótico e recebe as condições removidas (ou Envenenado / Abalado).
+2. Imunidade pelas Cicatrizes (Passiva): Sempre que uma condição negativa termina em você, você recebe +4 de Escudo Temporário.
+
+**Safra na Morte.** Obaluaê colhe a transferência vetorial de patologias e traumas físicos entre organismos.
+
+**237. Tremor de Febre Telúrica** · A Terra Quente do Meio-Dia · Runa Kármica Primordial
+
+**Fenômeno base.** Cada passo seu transmite o calor profundo do interior da terra; o chão sob os pés dos seus inimigos queima como brasa seca e puxa a força das pernas deles.
+
+1. Chão de Terra Ardente (Principal · 4 Karma · Raio 3m a 9m): Aquece a terra sob os inimigos causando 2d8 térmico/necrótico e aplicando Lento e -2 em Fortitude por 2 rodadas.
+2. Passo Pesado de Omolu (Movimento · 2 Karma): Caminha ignorando qualquer empurrão ou terreno difícil, ganhando Redução de Dano 3 até o próximo turno.
+
+**Safra na Morte.** Obaluaê recolhe o acoplamento entre febre biológica e radiação geotérmica do solo.
+
+#### Exu · O Senhor das Encruzilhadas, do Movimento Dinâmico e da Pedra Atemporal
+
+**238. Disparo de Causalidade Invertida** · A Pedra que Matou Ontem o Pássaro de Hoje · Runa Kármica Primordial
+
+**Fenômeno base.** Provérbio iorubá sagrado de Exu: "Exu matou um pássaro ontem com uma pedra que só arremessou hoje". Você pode aplicar o efeito do seu ataque ou truque no presente e "pagar/disparar" o movimento no turno seguinte, invertendo a ordem de causa e efeito.
+
+1. Pedra de Ontem (Livre ou Reação · 4 Karma · 12m): O inimigo sofre imediatamente 2d8 de dano contundente/kármico (ou recebe -2 na CA Total dele agora) como se já tivesse sido atingido antes, sem que você gaste sua Ação Principal neste instante (o tiro real ocorre automaticamente como eco durante o seu próximo movimento).
+2. Trocar o Caminho do Tiro (Reação · 3 Karma): Faz um projétil que erraria o alvo curvar na encruzilhada do ar para acertar na faixa Parcial.
+
+**Safra na Morte.** Exu absorve paradoxos de inversão causal aplicados à troca de tiros e golpes rápidos.
+
+**239. Domínio dos Quatro Caminhos** · O Senhor da Encruzilhada · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Onde duas linhas de movimento se cruzam no mapa, você cria uma Encruzilhada de Exu; nada passa, entra ou sai daquele cruzamento sem pagar pedágio ao mensageiro.
+
+1. Abrir Encruzilhada (Extra · 3 Karma · 9m): Marca um cruzamento de 3m no chão: aliados que passarem por ali podem mudar de direção e ganhar +3m de Movimento livre, enquanto inimigos que cruzarem o ponto sofrem 2d6 kármico (ou têm seu ataque redirecionado para outro ponto à sua escolha).
+2. Troca de Esquina (Movimento · 3 Karma): Troca instantaneamente de posição com um aliado (ou objeto solto) que esteja a até 9m de você.
+
+**Safra na Morte.** Exu colhe a geometria tática de controle de fluxos e cruzamentos urbanos.
+
+**240. Mensageiro Entre Dois Mundos** · O Ogó · O Bastão que Transporta em Segundos · Método de Luta Exclusivo
+
+**Fenômeno base.** Exu é o princípio do movimento e da comunicação que conecta o Orum e o Aiyê; você nunca pode ser totalmente contido, e pode entregar a técnica de um aliado diretamente através do seu próprio golpe.
+
+1. Entregar o Ebó (Principal · 4 Karma): Você realiza um ataque corpo a corpo ou à distância (2d8 de dano) e pode carregar junto uma técnica ou runa de um aliado (com o consentimento dele), fazendo-a explodir diretamente no ponto que você acertou com +2 na CD.
+2. Gargalhada na Fresta (Reação · 3 Karma): Escapa de qualquer prisão, agarrão ou área fechada reaparecendo a 4,5m fora dela.
+
+**Safra na Morte.** Exu recolhe protocolos de transmissão cinética de técnicas combinadas entre aliados.
+
+#### Oxalá · O Grande Orixá do Pano Branco Alá, do Cajado Opaxorô e do Silêncio Criador
+
+**241. Redoma de Paz e Alvorada** · O Grande Alá · O Pano Branco que Tudo Cobre · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Um manto imenso de tecido espiritual branco e luminoso (Alá) estende-se sobre você e os aliados próximos; debaixo do pano branco de Oxalá, a violência perde força e o sangue para de jorrar.
+
+1. Estender o Alá (Principal ou Reação · 4 Karma · Raio 4,5m): Até o início do seu próximo turno, você e todos os aliados sob o manto branco recebem Redução de Dano 4 contra todas as fontes, curam 1d6 de Vida e têm qualquer condição de Sangramento ou Queimadura encerrada.
+2. Dobrar a Violência (Reação · 3 Karma): Quando um inimigo desfere um Acerto Total contra alguém sob o Alá, o pano amortece o impacto convertendo-o em Acerto Parcial.
+
+**Safra na Morte.** Oxalá absorve a dissipação de energia cinética letal através de campos de serenidade espiritual.
+
+**242. Dualidade do Jovem Guerreiro e do Sábio** · O Cajado Opaxorô de Oxaguiã e Oxalufã · Método de Luta Exclusivo
+
+**Fenômeno base.** Você manifesta os dois aspectos de Oxalá: a paciência imóvel e inabalável de Oxalufã (o sábio apoiado no cajado) e o ímpeto fulminante de Oxaguiã (o jovem guerreiro do pilão e da espada branca).
+
+1. Postura de Oxalufã (Quando você não se move no turno · Passiva + 2 Karma): Você recebe +2 na CA Total, +2 na CD das suas técnicas e recupera 2 de Karma.
+2. Salto de Oxaguiã (Principal · 4 Karma): Quando você decide avançar após um turno em postura calma, explode em velocidade branca avançando 6m e desferindo um golpe que causa 2d10 radiante/contundente e empurra o alvo em 3m.
+
+**Safra na Morte.** Oxalá colhe o ritmo marcial de transição entre imobilidade meditativa e explosão ofensiva.
+
+**243. Argila Primordial Imaculada** · O Modelador dos Corpos e do Sopro Vital · Runa Kármica Primordial
+
+**Fenômeno base.** Foi Oxalá quem modelou a forma dos seres vivos antes de receberem o sopro; suas mãos podem remodelar tecidos feridos de volta à perfeição original e silenciar anomalias corruptas.
+
+1. Remodelar na Argila Branca (Principal · 4 Karma · Toque/6m): Restaura 2d8 + Espírito + Etapa de Vida em um aliado (ou em si mesmo), remove penalidades temporárias de atributos/fraturas menores e concede +2 na CA por 1 rodada.
+2. Silêncio de Criação (Principal · 4 Karma · 9m): Impõe uma luz branca silenciosa sobre um inimigo causando 2d8 divino e impedindo-o de usar habilidades da Matriz Corrupta ou Sobrecargas por 1 rodada.
+
+**Safra na Morte.** Oxalá recolhe a memória morfogenética de restauração celular completa em combate.
+
 # Capítulo 14 - Corrupção e a Marca
 
 Corrupção é uma presença que aprende. A Voz começa oferecendo uma solução precisa para aquilo que o personagem deseja. Cada concessão lhe ensina vocabulário, afetos e justificativas; depois, a Marca passa a oferecer uma anatomia capaz de executar essas promessas em vários lugares ao mesmo tempo.
