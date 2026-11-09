@@ -60,7 +60,7 @@ function PantheonCard({ index, onSelect, selected }: { index:number; onSelect?: 
 export function PantheonBlessingsPortal({ onSelect, selected, onAuthor }: { onSelect?: (blessing:CatalogBlessing, deity:Deity, pantheon:string)=>void; selected?:number[]; onAuthor?:()=>void }) {
   return <section className="pantheon-portal" id="portal-das-nove-asas" aria-label="Portal das Nove Asas">
     <h2>Portal das Nove Asas</h2>
-    <p>81 Bênçãos publicadas nas Asas da Glória, da Autoridade e do Destino.</p>
+    <p>{catalog.reduce((total, pantheon) => total + pantheon.deities.reduce((count, deity) => count + deity.blessings.length, 0), 0)} Bênçãos publicadas em {catalog.length} panteões.</p>
     <p>Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização de Karma. Quando a extensão pedir resistência sem CD, use oposição contra a Manifestação da Bênção, com empate a favor do defensor.</p>
     {PANTHEONS.slice(0, 9).map((pantheon, index) => <PantheonCard key={pantheon} index={index} onSelect={onSelect} selected={selected} />)}
     {onAuthor ? <button type="button" onClick={onAuthor}>Criar Bênção Autoral</button> : <a href="/personagem?poder=divino">Criar Bênção Autoral</a>}

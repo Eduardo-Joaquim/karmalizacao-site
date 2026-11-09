@@ -4744,6 +4744,795 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Safra na Morte.** Baldur recolhe a ignição de autorressurreição celular movida pelo Karma residual.
 
+### Asa da Balança · Panteão Egípcio
+
+#### Rá · O Deus do Sol Zênite, da Barca Solar e da Luz Criadora
+
+**82. Ponto de Zênite Sem Sombra** · O Sol ao Meio-Dia · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Acima da sua cabeça flutua uma esfera de plasma dourado que projeta luz vertical absoluta em 6m de raio, extinguindo fisicamente as sombras de todos os objetos e criaturas na área.
+
+1. Julgamento de Meio-Dia (Principal · 4 Karma · 9m): Alvos sem sombra dentro da sua zona perdem camuflagem e sofrem -2 na CA Parcial; você descarrega um pilar solar vertical que causa 2d8 radiante/térmico e aplica Desorientado.
+2. Miragem de Areia Quente (Reação · 3 Karma): Dobra a luz através do ar superaquecido ao redor do seu corpo, impondo -3 no teste de acerto de um ataque mirado em você.
+
+**Safra na Morte.** Rá absorve a manipulação de ângulos de incidência luminosa para anular técnicas baseadas em sombras e furtividade.
+
+**83. Convés de Travessia Celeste** · A Barca de Milhões de Anos · Runa Kármica Primordial
+
+**Fenômeno base.** Você projeta sob seus pés uma plataforma translúcida em forma de proa solar (3m × 1,5m) que desliza a 30 cm acima do solo, ignorando terreno difícil, líquidos e armadilhas de piso.
+
+1. Abalroamento da Barca (Movimento + 3 Karma): Desliza até 9m em linha reta levando até 1 aliado adjacente junto; inimigos no caminho sofrem 2d6 radiante e são empurrados 2m para os lados.
+2. Remos de Luz (Extra · 2 Karma): A plataforma ergue bordas de luz dourada que concedem cobertura parcial (+2 CA) contra ataques vindos de cotas inferiores.
+
+**Safra na Morte.** Rá colhe o método de locomoção vetorial suspensa para transporte tático de esquadrão.
+
+**84. Lente de Calcinação Vítrea** · O Olho Destruidor de Rá · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu calor não apenas queima, mas vitrifica a poeira do ar e o solo sob o impacto, transformando terra, concreto ou areia em vidro incandescente e escorregadio.
+
+1. Sopro de Vidro Líquido (Principal · 4 Karma · Cone 4,5m): Causa 2d8 térmico e transforma o piso da área em vidro derretido por 2 rodadas (quem se mover ali sofre 4 de dano térmico e precisa vencer Acrobacia ou fica Caído).
+2. Couraça de Quartzo Solar (Extra · 3 Karma): Vitrifica a poeira sobre a própria armadura, ganhando 2d6 + Espírito de Escudo Temporário que reflete 4 de dano radiante em atacantes corpo a corpo.
+
+**Safra na Morte.** Rá recolhe o processo de vitrificação rápida de silicatos para controle de terreno.
+
+#### Anúbis · O Deus do Embalsamamento, da Pesagem de Maat e dos Túmulos
+
+**85. Sutura de Sombra e Anatomia** · O Embalsamador · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Projeta linhas e faixas cirúrgicas espectrais a até 6m capazes de costurar ou abrir fechos entre sombras, objetos e tecidos vivos como peças de um manequim.
+
+1. Costura de Sombra (Principal · 4 Karma): Costura a sombra do alvo ao chão (2d6 kármico; impede o alvo de se afastar mais de 3m do ponto até rasgar os fios).
+2. Transplante de Fratura (Reação · 5 Karma): Transfere 2d8 de dano sofrido por um aliado e uma condição de Sangramento/Lento para uma estrutura ou escudo próximo.
+
+**Safra na Morte.** Anúbis absorve o domínio cirúrgico entre matéria viva e inanimada.
+
+**86. Veredito do Coração Pesado** · A Balança da Pena · Runa Kármica Primordial
+
+**Fenômeno base.** Uma runa em forma de balança flutua sobre a sua mão; ela mede instantaneamente a diferença entre o Karma gasto por um inimigo e o Karma gasto por você na rodada.
+
+1. Peso da Culpa Kármica (Principal · 4 Karma · 12m): Contra um alvo que tenha gasto Karma ou causado dano na última rodada, causa 2d8 necrótico/divino + 2 de dano extra para cada ponto de Karma que o alvo gastou no último turno dele (máximo +8).
+2. Igualar os Pratos (Reação · 3 Karma): Quando um inimigo recebe cura ou Escudo Temporário a até 12m, metade desse valor é desviada para você ou para o aliado mais ferido na cena.
+
+**Safra na Morte.** Anúbis colhe equações de auditoria energética sobre o gasto espiritual de adversários.
+
+**87. Ataduras de Múmia de Ferro** · Guardião da Necrópole · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus braços e arma são envolvidos por longas bandagens de linho funerário tratadas com betume e sais kármicos que se esticam como chicotes rígidos ou se contraem como talas médicas.
+
+1. Enfaixamento Constritor (Principal · 4 Karma · 6m): Ataque que causa 2d6 contundente e enrola uma faixa no membro do alvo, aplicando -2 nos ataques dele (ou Lento) e permitindo puxá-lo 3m.
+2. Preservação em Resina (Extra · 3 Karma): Enfaixa um ferimento seu ou de um aliado adjacente, estancando Sangramento, curando 1d8 + Intelecto e reduzindo o próximo dano recebido em 4.
+
+**Safra na Morte.** Anúbis recolhe técnicas de imobilização têxtil combinadas com medicina de preservação em combate.
+
+#### Thoth · O Deus da Escrita Hieroglífica, da Geometria Sagrada e da Lua
+
+**88. Arquivo de Fita Plana (2D)** · O Papiro do Mundo · Runa Kármica Primordial
+
+**Fenômeno base.** Na palma da sua mão existe um glifo que achata objetos soltos (até 4 espaços), armadilhas ou projéteis interceptados em fitas bidimensionais de papiro sem peso.
+
+1. Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.
+2. Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade.
+
+**Safra na Morte.** Thoth recolhe o método de compressão bidimensional de matéria e projéteis.
+
+**89. Edição de Adjetivo Físico** · Hieróglifos Vivos · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Ao tocar uma superfície, arma ou inimigo, você escreve um hieróglifo luminoso que altera temporariamente uma propriedade descritiva simples daquilo (Pesado, Escorregadio, Frágil ou Silencioso).
+
+1. 1.Reescrever Propriedade (Principal · 4 Karma · 6m): Crava um glifo no alvo causando 2d6 kármico e impondo uma palavra por 1 rodada: "Frágil" (-2 na CA Parcial e Total do alvo), "Pesado" (o alvo fica Lento e não pode saltar) ou "Cego" (alcance visual do alvo cai para 3m).
+2. Nota de Rodapé (Reação · 3 Karma): Altera a trajetória de uma técnica em área para abrir um buraco seguro de 1,5m onde você ou um aliado está pisando.
+
+**Safra na Morte.** Thoth absorve a gramática kármica capaz de sobrescrever estados físicos da matéria.
+
+**90. Equação de Bico de Íbis** · O Contador do Tempo Lunar · Método de Luta Exclusivo
+
+**Fenômeno base.** Sua mente enxerga o campo de batalha como uma grade trigonométrica numerada; cada passo ou golpe seu é calculado pelo ângulo exato de menor esforço.
+
+1. Vetor de Hipotenusa (Extra · 3 Karma): Substitui o atributo de qualquer ataque ou teste de esquiva neste turno por Intelecto (aplicando o Bônus Analítico de até +3) e aumenta o alcance da sua arma ou técnica em +3m.
+2. Zeramento de Variável (Reação · 4 Karma): Anula todos os dados de bônus ou vantagem de um ataque inimigo contra você, forçando-o a rolar apenas a reserva base seca.
+
+**Safra na Morte.** Thoth colhe modelos matemáticos de otimização cinética aplicados ao corpo mortal.
+
+#### Ísis · A Deusa dos Nomes Secretos, da Restauração e da Devoção Alada
+
+**91. Rastreio de Assinatura Ontológica** · O Nome Verdadeiro de Rá · Runa Kármica Primordial
+
+**Fenômeno base.** Sempre que uma criatura fala, sangra ou gasta Karma perto de você, você decifra uma sílaba do "Nome Secreto" da alma dela, ganhando autoridade progressiva sobre ela.
+
+1. Pronunciar Sílabas (Principal · 4 Karma · 12m): Contra um alvo que você já tenha ferido ou visto gastar Karma na cena, pronuncia a frequência espiritual dele: causa 2d8 kármico/mental que ignora cobertura e reduz em -2 os testes de resistência dele contra você até o fim da cena.
+2. Voz de Comando Íntimo (Reação · 3 Karma): Interrompe o movimento de um alvo cujo "Nome" você já marcou, reduzindo o passo dele pela metade.
+
+**Safra na Morte.** Ísis absorve a decodificação de frequências de identidade espiritual de outras raças e criaturas.
+
+**92. Fio de Ouro Restaurador** · A Recomposição de Osíris · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Suas mãos emitem filamentos dourados que lembram o estado íntegro original de corpos e objetos, puxando carne rasgada ou metal quebrado de volta ao lugar.
+
+1. Reconstruir o Despedaçado (Principal · 4 Karma · 6m): Restaura 2d8 + Espírito + Etapa de Vida em um aliado (ou em uma invocação/dispositivo) e remove Sangramento ou Danificado.
+2. Empréstimo de Integridade (Reação · 3 Karma): Quando um aliado a até 9m sofre dano pesado, os fios seguram o corpo dele, concedendo 2d6 de Escudo Temporário imediato.
+
+**Safra na Morte.** Ísis colhe técnicas de reversão de trauma celular e estrutural sob fogo inimigo.
+
+**93. Rajada de Abrigo Dourado** · Asas do Milhafre Real · Dobra Elemental Anômala
+
+**Fenômeno base.** Duas asas translúcidas de vento e luz dourada abrem-se a partir das suas omoplatas, varrendo miasmas, gases e projéteis para longe.
+
+1. Bater de Asas Purificador (Principal · 4 Karma · Cone 6m): Dispara uma lufada cortante que causa 2d6 de dano, empurra inimigos em 3m e limpa qualquer nuvem tóxica, fogo ou zona hostil na área.
+2. Abraço de Plumas (Reação · 3 Karma): Fecha as asas ao redor de si ou de um aliado adjacente, somando +3 na CA Total e concedendo resistência elemental até o próximo turno.
+
+**Safra na Morte.** Ísis recolhe a aerodinâmica de barreiras eólicas protetoras.
+
+#### Hórus · O Deus Falcão do Céu, do Olho Udjat e da Realeza
+
+**94. Visão das Seis Frações** · O Olho Udjat Fracionado · Runa Kármica Primordial
+
+**Fenômeno base.** Sua pupila exibe o símbolo do Olho de Hórus dividido nas 6 frações matemáticas egípcias (1/2, 1/4, 1/8...), permitindo enxergar a grandes distâncias e dividir a mira entre múltiplos pontos.
+
+1. Foco Fracionado (Extra · 3 Karma): Seu próximo ataque à distância ou técnica de feixe divide-se no ar para atingir 2 alvos diferentes a até 15m (causando o dano normal no primeiro e 1d10 no segundo) ou concentra todas as frações em 1 único ponto (+3 para atingir a CA Total).
+2. Olho que Cura (Movimento · 3 Karma): Sacrifica o bônus visual por 1 rodada para projetar luz curativa do olho, restaurando 1d10 + Espírito de Vida em um aliado a 9m.
+
+**Safra na Morte.** Hórus absorve a geometria óptica de divisão e convergência de feixes.
+
+**95. Mergulho Estratosférico** · O Falcão Peregrino · Método de Luta Exclusivo
+
+**Fenômeno base.** Você pode impulsionar saltos verticais extremos e pairar por um instante no ponto mais alto antes de desabar diagonalmente como um falcão em caça a mais de 300 km/h.
+
+1. Picada Real (Movimento + Principal · 4 Karma): Salta acima do campo (ignorando obstáculos e ataques de oportunidade) e cai sobre um alvo a até 9m, causando 2d10 perfurante/contundente e deixando-o Caído em caso de Acerto Total.
+2. Ascensão de Garras (Reação · 3 Karma): Ao ser atacado no solo, salta 4,5m na vertical ou para trás, somando +3 na CA contra o golpe.
+
+**Safra na Morte.** Hórus colhe a cinemática de ataques aéreos de queda livre em ambientes urbanos e internos.
+
+**96. Aura de Realeza Incontestável** · O Direito do Trono · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Uma coroa dupla invisível (branca e vermelha) impõe uma diferença de hierarquia kármica: inimigos que estejam em cota inferior ou com menos Vida percentual que você sentem seus movimentos travarem.
+
+1. Decreto do Céu Alto (Passiva + 3 Karma como Extra): Contra qualquer inimigo que esteja fisicamente mais baixo que você, Caído ou com menos Vida atual que você, seus ataques somam +2 no acerto e +1d8 no dano.
+2. Repelir Usurpador (Reação · 3 Karma): Quando um inimigo entra no seu alcance corpo a corpo, uma onda de pressão dourada exige que ele gaste +2m de movimento ou pare a 2m de você.
+
+**Safra na Morte.** Hórus recolhe o condicionamento de superioridade posicional e psicológica em combate.
+
+#### Set · O Deus da Tempestade de Areia, do Caos Desértico e da Usurpação
+
+**97. Abrasão de Areia de Quartzo** · O Simoom Vermelho · Dobra Elemental Anômala
+
+**Fenômeno base.** Ao seu redor gira um redemoinho constante de areia vermelha fina em altíssima velocidade, que funciona como uma lixa industrial capaz de esfolar carne e cegar olhos.
+
+1. Jato de Jateamento (Principal · 4 Karma · Linha 9m): Dispara um feixe de areia pressurizada que causa 2d8 cortante, aplica Sangramento e reduz a CA de armadura do alvo em -1 pela erosão.
+2. Redoma do Deserto (Extra · 3 Karma): Expande a areia em 3m de raio por 1 rodada; ataques à distância contra você sofrem -2 e inimigos que entrarem na área ficam Desorientados.
+
+**Safra na Morte.** Set absorve o uso de partículas sólidas em suspensão supersônica para corte e erosão balística.
+
+**98. Roubo de Estado Positivo** · O Usurpador do Trono · Runa Kármica Primordial
+
+**Fenômeno base.** Seu cetro ou mão carrega a marca do regicídio: você não apenas destrói as vantagens do inimigo, mas toma para si aquilo que pertencia a ele.
+
+1. Golpe de Estado (Principal · 4 Karma · Toque/Arma): Causa 2d6 kármico e rouba até 8 pontos de Escudo Temporário ou 1 efeito de bônus positivo (buff) que esteja ativo no inimigo, transferindo-o imediatamente para você.
+2. Desarmar o Rei (Reação · 3 Karma): Quando um inimigo usa Ímpeto ou um bônus de dados contra você, você drena 2 de Karma dele para a sua reserva.
+
+**Safra na Morte.** Set colhe a mecânica de parasitismo e apropriação direta de escudos e melhorias inimigas.
+
+**99. Anatomia de Desordem Imprevisível** · A Besta Sha · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus movimentos têm espasmos angulares impossíveis de ler; até mesmo as técnicas de previsão ou leitura tática falham ao tentar calcular seu próximo passo.
+
+1. Passo Errático (Livre · 2 Karma): Seu movimento e ataque neste turno tornam-se imunes a Reações inimigas (como contra-ataques ou escudos reativos) e ignoram bônus defensivos baseados em Intelecto/Tática do alvo.
+2. Mordida de Ferro Meteórico (Principal · 4 Karma): Ataque brutal que causa 2d8 perfurante e aplica uma condição aleatória severa (Sangramento, Lento ou Abalado).
+
+**Safra na Morte.** Set recolhe padrões de movimento caótico que quebram leituras preditivas.
+
+#### Sekhmet · A Deusa Leoa da Peste Vermelha, do Massacre e da Cura
+
+**100. Motor de Hematofagia Solar** · A Embriaguez de Sangue · Método de Luta Exclusivo
+
+**Fenômeno base.** O sangue derramado em combate evapora em uma névoa escarlate quente que você inala, convertendo a violência ao redor em regeneração e potência muscular.
+
+1. Banquete da Leoa (Passiva + 3 Karma ao acertar): Sempre que você causar dano a um alvo que já esteja ferido ou com Sangramento, você soma +1d8 ao dano e recupera Etapa + Constituição de Vida.
+2. Rugido de Sol Vermelho (Principal · 5 Karma · Cone 6m): Causa 2d8 sônico/térmico e aplica Abalado em todos os inimigos atingidos.
+
+**Safra na Morte.** Sekhmet absorve o ciclo metabólico de conversão de hemoglobina evaporada em vigor físico.
+
+**101. Miasma de Febre Escarlate** · As Sete Flechas da Peste · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu calor corporal gera patógenos kármicos efêmeros que inflamam os músculos dos inimigos, mas morrem instantaneamente ao seu comando.
+
+1. Inoculação Ardente (Principal · 4 Karma · 9m): Causa 2d6 térmico/necrótico e contamina o alvo por 2 rodadas: o alvo sofre 4 de dano no início do turno e causa -2 de dano em todos os seus ataques pela fraqueza muscular.
+2. Contágio de Proximidade (Livre · 2 Karma): Se um alvo contaminado terminar o turno adjacente a outro inimigo, a febre salta para o segundo inimigo.
+
+**Safra na Morte.** Sekhmet colhe cepas de exaustão térmica controlada para enfraquecimento de chefes e tropas.
+
+**102. Cauterização de Choque** · Senhora da Vida e dos Médicos · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Assim como Sekhmet traz a praga, ela detém a cura absoluta pelo calor; suas garras podem queimar a doença e fechar artérias abertas instantaneamente.
+
+1. Toque de Cautério (Extra · 3 Karma · Toque): Fecha ferimentos a fogo sagrado em você ou em um aliado: encerra todas as condições físicas negativas (Sangramento, Envenenado, Lento), restaura 2d6 de Vida e concede +2 em Força/Agilidade por 1 rodada pela descarga de adrenalina.
+2. Reverter Toxina (Reação · 3 Karma): Converte um dano de veneno, ácido ou corrupção recebido em metade desse valor como cura de Vida.
+
+**Safra na Morte.** Sekhmet recolhe técnicas médicas de choque térmico e imunização instantânea.
+
+#### Osíris · O Senhor do Duat, da Ressurreição Vegetal e do Trono Cinzento
+
+**103. Protocolo de Segunda Vida** · O Rei que Morreu e Voltou · Runa Kármica Primordial
+
+**Fenômeno base.** Seu corpo já carrega a memória da própria morte; cair em combate não encerra sua ação, mas desperta sua forma mais fria e lúcida.
+
+1. Trono Cinzento (Reação ao cair a 0 de Vida ou abaixo de 25% · 5 Karma · 1x/cena): Você não cai inconsciente; recupera imediatamente 2d10 + Espírito de Vida, limpa condições mentais e, por 2 rodadas, seus ataques somam +2 no acerto e +1d8 de dano necrótico.
+2. Sangue Frio de Osíris (Passiva): Você não sofre penalidades por estar ferido ou próximo da morte e estabiliza automaticamente.
+
+**Safra na Morte.** Osíris absorve a resiliência psicológica e espiritual de quem luta além do limite clínico do óbito.
+
+**104. Raízes do Submundo** · O Nilo Negro Fértil · Dobra Elemental Anômala
+
+**Fenômeno base.** De qualquer lugar onde sangue ou Karma tenha tocado o chão, você faz germinar raízes negras e espigas espinhosas que drenam a força dos vivos para alimentar seus aliados.
+
+1. Safra do Duat (Principal · 4 Karma · Raio 3m a 9m): Raízes prendem os inimigos na área causando 2d6 perfurante e aplicando Lento; para cada inimigo atingido, um aliado na área recupera 4 de Vida.
+2. Casulo de Junco Negro (Reação · 3 Karma): Ergue raízes trançadas ao redor de si ou de um aliado, absorvendo 1d10 + Etapa de dano.
+
+**Safra na Morte.** Osíris colhe a botânica kármica de transferência vital pelo solo.
+
+**105. Duplo Decreto de Pastoreio e Punição** · O Cajado e o Mangual · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Suas duas mãos manifestam as insígnias reais do submundo: o Heka (gancho que puxa e guia) e o Nekhakha (mangual que pune e afasta).
+
+1. Gancho Heka (Extra · 3 Karma · 9m): Puxa um aliado até 4,5m para fora de perigo (concedendo +2 na CA dele) ou puxa um inimigo 3m quebrando sua postura (-2 na CA Parcial).
+2. Mangual Nekhakha (Principal · 4 Karma): Golpe em cone curto de 3m que causa 2d8 kármico e impede os atingidos de se aproximarem de você no próximo turno.
+
+**Safra na Morte.** Osíris recolhe o controle posicional simultâneo de aliados e inimigos.
+
+#### Sobek · O Deus Crocodilo do Nilo, da Voracidade e da Força Bruta
+
+**106. Torção Hidráulica de Mandíbula** · O Giro da Morte · Método de Luta Exclusivo
+
+**Fenômeno base.** Quando você agarra ou acerta um inimigo a curta distância, seu corpo inteiro gira em espiral com o torque de um crocodilo gigante, triturando armaduras e articulações.
+
+1. Giro do Nilo (Principal · 4 Karma): Ataque corpo a corpo que causa 2d10 contundente/cortante, derruba o alvo (Caído) e reduz a CA Total dele em -2 até o início do seu próximo turno.
+2. Trava de Mandíbula (Reação · 3 Karma): Quando um inimigo adjacente tenta recuar ou usar Movimento, você o trava no lugar causando 1d10 de dano e zerando o deslocamento dele.
+
+**Safra na Morte.** Sobek absorve técnicas de alavanca rotacional para destruição de armaduras pesadas.
+
+**107. Escamas de Couraça Ribeirinha** · Couro de Placas Ósseas · Dobra Elemental Anômala
+
+**Fenômeno base.** A pele dos seus antebraços, costas e ombros condensa osteodermos (placas ósseas esverdeadas e pétreas) que desviam lâminas e tiros em ângulo raso.
+
+1. Endurecer Dorso (Reação ou Extra · 3 Karma): Até o início do seu próximo turno, você recebe Redução de Dano 5 contra ataques físicos e imunidade a Sangramento.
+2. Golpe de Cauda Hidrostática (Extra · 3 Karma): Uma onda de impacto varre 2m ao seu redor, causando 1d8 contundente e empurrando inimigos adjacentes em 2m.
+
+**Safra na Morte.** Sobek colhe a calcificação dérmica rápida contra armamento perfurante moderno.
+
+**108. Emboscada de Águas Turvas** · Predador Submerso · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você trata pisos sólidos, lama ou sombras rasas como a superfície de um rio turvo, podendo deslizar rente ao chão com apenas os olhos visíveis.
+
+1. Bote da Margem (Movimento + Principal · 4 Karma): Desliza 6m rente ao solo ignorando linha de tiro à distância e salta na garganta do alvo com +1d20 na Reserva, causando 2d8 perfurante.
+2. Arrastar para o Fundo (Extra · 2 Karma): Puxa um alvo Caído por 3m pelo chão junto com você, impedindo-o de se levantar sem gastar 2 ações de Movimento (ou vencer Força).
+
+**Safra na Morte.** Sobek recolhe táticas de infiltração rasteira e neutralização de alvos isolados.
+
+### Asa do Dharma · Panteão Hindu
+
+#### Shiva · O Destruidor, Senhor da Dança Tandava e do Terceiro Olho
+
+**109. Feixe de Desconstrução Atômica** · O Terceiro Olho Vertical · Técnica Divina / Fenômeno
+
+**Fenômeno base.** No centro da sua testa existe uma fenda vertical fechada; quando aberta por um segundo, ela não dispara fogo comum, mas desfaz a coesão molecular do que estiver na linha focal.
+
+1. Abrir o Terceiro Olho (Principal · 5 Karma · Linha 12m): Dispara um feixe fino que causa 2d10 kármico/divino, destrói qualquer cobertura física não mágica na linha e ignora completamente escudos temporários e reduções de dano.
+2. Cinza de Vibhuti (Extra · 2 Karma): A matéria desintegrada vira cinza branca sagrada que cobre seu corpo, concedendo +2 na CA e em Vontade por 1 rodada.
+
+**Safra na Morte.** Shiva absorve a focalização cirúrgica da entropia destrutiva em feixes estreitos.
+
+**110. Compasso de Ruína e Criação** · Nataraja · A Dança Tandava · Método de Luta Exclusivo
+
+**Fenômeno base.** Seu combate segue uma cadência rítmica contínua: enquanto você não parar de se mover e atacar a cada rodada, sua velocidade e impacto crescem exponencialmente.
+
+1. Passo de Tandava (Passiva de Ritmo + 3 Karma): A cada turno consecutivo em que você se mover ao menos 3m e realizar um ataque, você acumula 1 Compasso (máximo 3): cada Compasso concede +1 no acerto, +1 na CA de esquiva e +1d6 de dano térmico/contundente.
+2. Batida do Tambor Damaru (Principal · 4 Karma): Consome os Compassos para liberar uma onda de choque em 4m que causa 2d8 e derruba os inimigos.
+
+**Safra na Morte.** Shiva colhe variações cinéticas de combate contínuo baseadas em cadência rítmica mortal.
+
+**111. Retenção de Veneno Cósmico** · Neelakantha · A Garganta Azul · Runa Kármica Primordial
+
+**Fenômeno base.** Uma marca azul-escura no seu pescoço permite engolir e reter na garganta venenos, maldições, corrupção ou até técnicas hostis sem deixá-las descer para o coração.
+
+1. Engolir o Halahala (Reação · 4 Karma): Quando você sofre dano de Veneno, Ácido, Corrupção ou Matriz Kármica, reduz o dano à metade e armazena a energia retida na garganta.
+2. Cuspir Peçonha Retida (Principal · 3 Karma · Cone 4,5m): Expulsa a carga armazenada na garganta causando 2d8 de dano corrosivo/kármico e aplicando a condição que você havia absorvido.
+
+**Safra na Morte.** Shiva recolhe a filtragem biológica de energias corruptas e letais.
+
+#### Vishnu · O Preservador, Senhor dos Dez Avatares e do Chakra Sudarshana
+
+**112. Anel de Serrilha Orbital** · O Disco Sudarshana · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Um disco luminoso de 108 dentes gira em alta rotação ao redor do seu pulso ou ombro, podendo ser lançado em trajetórias curvas que cortam múltiplos alvos antes de retornar.
+
+1. Trajetória de Bumerangue Solar (Principal · 4 Karma · 15m): O disco voa atingindo até 2 inimigos em linha ou curva, causando 2d8 cortante/radiante no primeiro e 1d8 no segundo, e retorna à sua mão.
+2. Órbita Guardiã (Extra · 3 Karma): O disco permanece girando a 1,5m ao seu redor por 1 rodada, somando +2 na CA e causando 1d6 automático em quem atacar você corpo a corpo.
+
+**Safra na Morte.** Vishnu absorve o controle giroscópico de armas circulares autopropulsadas.
+
+**113. Adaptação Evolutiva Instantânea** · Dashavatara · Os Avatares · Dobra Elemental Anômala
+
+**Fenômeno base.** Sua biologia e seu Karma reagem ao ambiente e ao tipo de ameaça mudando de "Avatar" (Aquático, Couraça de Tartaruga, Presas de Javali ou Garras de Leão) conforme a necessidade.
+
+1. Assumir Forma de Preservação (Livre no início do turno · 3 Karma): Escolha uma adaptação até o próximo turno: Kurma (Tartaruga) (+3 CA Total e imunidade a empurrão), Narasimha (Leão) (+2d6 de dano cortante em ataques corpo a corpo e ignora escudos) ou Garuda/Vamana (+4,5m de Movimento e salto livre).
+2. Transição Fluida (Reação · 2 Karma): Muda de adaptação no instante em que sofre um ataque.
+
+**Safra na Morte.** Vishnu colhe a plasticidade morfogenética sob condições extremas de combate.
+
+**114. Âncora de Estabilidade Cósmica** · O Preservador da Ordem · Runa Kármica Primordial
+
+**Fenômeno base.** Você emite um campo de harmonia que impede mudanças bruscas e catastróficas na realidade e na integridade física dos seus aliados.
+
+1. Decreto de Preservação (Reação · 4 Karma · 12m): Quando você ou um aliado sofrer um Acerto Total ou crítico que causaria mais de um terço da Vida máxima em um único golpe, você suaviza a realidade: converte o golpe em Acerto Parcial e concede Etapa de regeneração no próximo turno.
+2. Selar Anomalia (Principal · 4 Karma): Causa 2d6 divino e desativa por 1 rodada o traço especial de uma invocação ou mutação inimiga.
+
+**Safra na Morte.** Vishnu recolhe protocolos de amortecimento de picos de dano letal.
+
+#### Kali · A Devoradora do Tempo, do Sangue de Raktabija e da Libertação
+
+**115. Sorvedouro de Regeneração Alheia** · O Sangue de Raktabija · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Nenhuma gota de sangue ou energia regenerativa dos seus inimigos toca o chão sem ser devorada pela sua aura rubra; você anula a imortalidade e a cura dos oponentes.
+
+1. Língua que Seca o Sangue (Passiva + 3 Karma no ataque): Inimigos feridos por você ficam impedidos de recuperar Vida ou receber Escudos Temporários por 2 rodadas; se tentarem se curar, você absorve essa cura para si e causa +1d8 de dano neles.
+2. Frenesi da Taça (Extra · 3 Karma): Consome uma condição de Sangramento ativa em um inimigo a 6m para causar 2d6 imediato nele e recuperar 3 de Karma.
+
+**Safra na Morte.** Kali absorve técnicas de bloqueio metabólico contra seres regenerativos e imortais.
+
+**116. Membros Espectrais de Execução** · Quatro Braços de Extermínio · Método de Luta Exclusivo
+
+**Fenômeno base.** Dois braços adicionais feitos de sombra negra e Karma denso brotam das suas costas, permitindo empunhar armas extras, segurar o inimigo enquanto o corta ou aparar golpes simultâneos.
+
+1. Golpe Quádruplo (Principal · 4 Karma): Ataca com seus braços reais e os braços espectrais ao mesmo tempo, somando +1d20 na Reserva, causando 2d8 + 4 de dano cortante e impedindo o alvo de usar escudo/parry.
+2. Agarrar e Decapitar (Extra · 3 Karma): Os braços extras seguram os pulsos de um inimigo adjacente, aplicando -2 na CA Total dele até o fim do turno.
+
+**Safra na Morte.** Kali colhe a coordenação motora de múltiplos membros independentes em combate fechado.
+
+**117. Troféus de Momento Abatido** · O Colar de Crânios · Runa Kármica Primordial
+
+**Fenômeno base.** Cada vez que um inimigo (ou invocação hostil) é derrotado ou sofre um ferimento grave na cena, um glifo em forma de pequeno crânio luminoso acende ao redor do seu pescoço (máximo de 3).
+
+1. Dança sobre o Fim (Passiva por Crânio): Cada Crânio aceso concede +1 em todos os ataques, +1m de Movimento e +2 no dano.
+2. Estourar o Colar (Livre ou Reação · 3 Karma): Quebra um Crânio aceso para somar +2d8 de dano necrótico/kármico em um golpe ou para ignorar completamente uma condição mental/física recém-sofrida.
+
+**Safra na Morte.** Kali recolhe a conversão da morte de combatentes próximos em combustível cinético.
+
+#### Indra · O Rei dos Devas, Senhor do Vajra e das Monções
+
+**118. Fulminação de Diamante e Raio** · A Arma Vajra · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu Karma condensa eletricidade em uma estrutura cristalina indestrutível como diamante ao redor do seu punho ou foco, combinando dureza física absoluta com descarga elétrica.
+
+1. Impacto de Vajra (Principal · 4 Karma · 6m): Golpe ou disparo que causa 2d8 elétrico/contundente; em caso de Acerto Total, o choque paralisa os nervos do alvo, retirando a Ação de Movimento dele no próximo turno.
+2. Corpo Indestrutível de Indra (Reação · 3 Karma): Reveste a pele com a dureza do diamante contra um golpe, ganhando Redução de Dano 8 contra aquele ataque.
+
+**Safra na Morte.** Indra absorve a fusão de rigidez cristalina com condutividade elétrica de alta tensão.
+
+**119. Malha de Joias Reflexivas** · A Rede de Indra · Runa Kármica Primordial
+
+**Fenômeno base.** Você espalha pequenos pontos de luz (joias de Karma) pelo campo a até 12m; como no mito da Rede de Indra, o que acontece em uma joia reflete instantaneamente em todas as outras.
+
+1. Ressonância em Rede (Principal · 4 Karma): Dispara uma técnica ou ataque contra uma das joias: o efeito se multiplica refletindo contra até 2 inimigos que estejam a 3m de qualquer outra joia da rede, causando 2d6 de dano em cada.
+2. Troca de Reflexo (Movimento · 3 Karma): Teleporta-se instantaneamente para a posição de uma joia ativa a até 9m.
+
+**Safra na Morte.** Indra colhe a topologia de redes de transmissão instantânea de energia em espaço tridimensional.
+
+**120. Carga de Nuvem Branca** · Senhor das Monções e de Airavata · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Nuvens brancas densas e pesadas como chumbo formam-se ao seu redor, avançando com a massa esmagadora do elefante celestial de três cabeças.
+
+1. Estampido de Monção (Principal · 4 Karma · Linha 6m × 3m): Uma massa de nuvem pressurizada e trovão atropela a linha causando 2d8 contundente e empurrando todos os alvos em 3m.
+2. Chuva Revigorante de Svarga (Extra · 3 Karma): Faz chover sobre 4,5m, apagando chamas, limpando ácido/veneno e restaurando 1d8 de Vida nos aliados na área.
+
+**Safra na Morte.** Indra recolhe o controle de massas atmosféricas de alta densidade em baixa altitude.
+
+#### Agni · O Deus do Fogo Sacrificial, da Digestão Espiritual e das Duas Faces
+
+**121. Combustão de Conversão Kármica** · O Mensageiro das Oferendas · Runa Kármica Primordial
+
+**Fenômeno base.** Qualquer item mundano, poção, munição ou até mesmo um projétil inimigo que você queime na sua mão de fogo é "ofertado" e convertido diretamente em Karma puro ou cura.
+
+1. Queimar Oferenda (Extra ou Reação · 2 Karma): Consome um item de inventário (ou incinera um projétil físico atirado contra você) para recuperar 1d6 + 2 de Karma ou somar +2d6 de dano de fogo no próximo ataque.
+2. Chama que Leva ao Céu (Principal · 4 Karma · 12m): Fogo teleguiado que sobe do chão sob o alvo causando 2d8 térmico sem poder ser bloqueado por escudos laterais.
+
+**Safra na Morte.** Agni absorve a conversão termoquímica de matéria sólida em reserva espiritual.
+
+**122. Fornalha Metabólica Interna** · Jatharagni · O Fogo Digestivo · Método de Luta Exclusivo
+
+**Fenômeno base.** Uma chama sagrada arde no seu plexo solar, digerindo fadiga, toxinas e impactos físicos para manter seu corpo em temperatura e velocidade sobre-humanas.
+
+1. Sangue em Ebulição (Livre · 3 Karma): Por 2 rodadas, seu corpo brilha em brasa: você fica imune a Lento/Envenenado, ganha +3m de Movimento e seus ataques corpo a corpo somam +1d8 térmico.
+2. Expiração de Cinza Quente (Reação · 3 Karma): Ao sofrer um golpe corpo a corpo, sopra fogo a queima-roupa no rosto do agressor causando 2d6 e aplicando -2 no próximo teste dele.
+
+**Safra na Morte.** Agni colhe a regulação endotérmica extrema do corpo humano sob estresse.
+
+**123. Dupla Natureza da Chama** · O Deus de Duas Cabeças · Dobra Elemental Anômala
+
+**Fenômeno base.** Suas mãos controlam dois tipos opostos de fogo simultaneamente: a Chama Destrutiva (Vermelha) na mão direita e a Chama do Lar (Dourada) na mão esquerda.
+
+1. Feixe Bipartido (Principal · 4 Karma · 9m): Dispara ambas as chamas: a vermelha atinge o inimigo causando 2d8 térmico, enquanto a dourada curva-se para um aliado a até 6m concedendo 1d8 + Espírito de Escudo Temporário quente.
+2. Troca de Polaridade Térmica (Extra · 2 Karma): Absorve o calor de um incêndio ou ataque de fogo na área para curar 1d10 da própria Vida.
+
+**Safra na Morte.** Agni recolhe o controle seletivo de radiação térmica benigna e letal no mesmo disparo.
+
+#### Ganesha · O Removedor de Obstáculos, Senhor dos Portões e da Sabedoria
+
+**124. Permissão de Passagem Absoluta** · Vighnaharta · O Removedor de Obstáculos · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Nenhuma barreira física, parede fina, tranca ou bloqueio tático consegue deter seu avanço ou a linha de ação dos seus aliados quando você decreta a abertura do caminho.
+
+1. Abrir o Caminho (Movimento · 3 Karma): Neste turno, você e até 2 aliados a 6m ignoram terreno difícil, passam livremente por espaços ocupados por inimigos, atravessam barreiras/paredes de até 1m de espessura como se fossem fumaça e não provocam ataques de oportunidade.
+2. Quebrar Obstrução (Principal · 4 Karma): Golpe que causa 2d8 contundente e destrói instantaneamente qualquer parede, escudo erguido ou zona de bloqueio inimiga.
+
+**Safra na Morte.** Ganesha absorve a dissolução conceitual de barreiras físicas e espaciais.
+
+**125. Imposição de Limiar Intransponível** · O Criador de Obstáculos · Runa Kármica Primordial
+
+**Fenômeno base.** Assim como remove barreiras para os justos, Ganesha ergue obstáculos invisíveis e colossais diante daqueles que avançam sem permissão.
+
+1. Portão de Marfim (Reação · 4 Karma · 9m): Quando um inimigo declara um movimento ou investida na direção sua ou de um aliado, você crava um selo no chão à frente dele: o inimigo bate contra uma parede invisível de força, sofrendo 2d6 contundente e encerrando o movimento imediatamente.
+2. Peso do Passo Injusto (Extra · 3 Karma): Pelas próximas 2 rodadas, cada metro que o alvo marcado andar na sua direção custa 2m de Movimento e 1 de Karma.
+
+**Safra na Morte.** Ganesha colhe a geometria de contenção vetorial sem necessidade de muros físicos.
+
+**126. Inscrição de Sabedoria Ininterrupta** · A Presa Quebrada do Escriba · Método de Luta Exclusivo
+
+**Fenômeno base.** Conta o mito que Ganesha quebrou a própria presa para continuar escrevendo o Mahabharata sem parar; você nunca perde a concentração e transforma qualquer arma ou foco quebrado/sacrificado em poder imediato.
+
+1. Concentração Inabalável (Passiva): Suas técnicas, runas e canalizações nunca podem ser interrompidas por dano ou condições menores, e você soma +2 em Tática e Criação.
+2. Estocada da Presa de Marfim (Principal · 4 Karma): Dispara um projétil ou estocada de osso espiritual que causa 2d8 perfurante e grava 1 Runa ou condição de -2 na CA do alvo automaticamente.
+
+**Safra na Morte.** Ganesha recolhe métodos de manutenção de foco mental absoluto sob trauma físico.
+
+#### Durga · A Invencível de Dez Braços, Matadora de Titãs e Fortaleza
+
+**127. Roda de Armas Celestiais** · Arsenal dos Dez Braços · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Uma auréola dourada às suas costas mantém suspensas as silhuetas de diferentes armas divinas (Tridente, Arco, Espada, Maça, Disco, Concha), permitindo alternar o alcance e a natureza de cada golpe instantaneamente.
+
+1. Troca de Insígnia (Livre no ataque · 2 Karma): Escolhe a arma espiritual do golpe: Arco (alcance 18m, perfurante), Maça (esmaga 4 de RD e empurra 2m), Tridente (+2 para atingir a CA Total) ou Concha (causa dano sônico em cone de 3m).
+2. Descarga das Dez Armas (Principal · 5 Karma): Dispara todas as armas espectrais sobre um alvo a até 9m, causando 2d10 + 4 de dano misto.
+
+**Safra na Morte.** Durga absorve a versatilidade de transição instantânea entre múltiplos estilos de armamento.
+
+**128. Alavanca Contra Superiores** · Mahishasuramardini · Matadora de Gigantes · Método de Luta Exclusivo
+
+**Fenômeno base.** Seu poder cresce proporcionalmente ao tamanho, Etapa ou quantidade de Vida máxima do inimigo que você enfrenta; quanto maior o monstro ou chefe, mais letal você se torna.
+
+1. Caçadora de Titãs (Passiva + 3 Karma no ataque): Contra inimigos de porte Grande ou maior, ou que possuam mais Vida máxima que você, você recebe +2 no acerto, +2 na CA e soma +1d8 ao dano de todos os ataques.
+2. Pisar no Pescoço da Fera (Extra · 3 Karma): Ao acertar um ataque Total em um alvo maior ou com mais Vida, aplica Caído ou Lento mesmo que ele normalmente tenha vantagem física.
+
+**Safra na Morte.** Durga colhe técnicas de inversão de massa para abater criaturas colossais.
+
+**129. Bastião da Deusa Leoa** · Durg · A Fortaleza Inacessível · Runa Kármica Primordial
+
+**Fenômeno base.** Quando você se posiciona entre um aliado ferido e o inimigo, seu corpo e seu escudo ancoram-se na realidade como a muralha de uma cidadela dourada.
+
+1. Muralha Invencível (Reação · 4 Karma): Quando um aliado a até 6m é alvo de um ataque, você salta para a frente dele, aumenta sua própria CA em +3 contra o golpe e, se o ataque errar ou for apenas Parcial, você desfere um contra-ataque imediato de 2d6 de dano.
+2. Rugido do Leão Dawon (Extra · 2 Karma): Concede +2 em Vontade e imunidade a Abalado para todos os aliados a até 6m.
+
+**Safra na Morte.** Durga recolhe doutrinas de guarda-costas e contra-ataque defensivo perfeito.
+
+#### Surya · O Deus da Carruagem de Sete Cavalos, da Radiação Vital e da Verdade
+
+**130. Decomposição Espectral de Velocidade** · Os Sete Cavalos do Prisma · Dobra Elemental Anômala
+
+**Fenômeno base.** Ao correr, sua silhueta se divide nas 7 cores do espectro da luz solar, confundindo a mira inimiga e deixando trilhas térmicas pelo caminho.
+
+1. Carga de Sete Espectros (Movimento + Principal · 4 Karma): Avança até 9m; as 7 imagens coloridas atacam o alvo simultaneamente de ângulos distintos, reduzindo a CA Parcial e Total dele em -2 e causando 2d8 radiante.
+2. Refração Evasiva (Reação · 3 Karma): Ao sofrer um ataque, uma das 7 cores absorve o impacto (reduzindo o dano em 2d6) e cega o atacante (-2 no próximo acerto).
+
+**Safra na Morte.** Surya absorve a dispersão cromática de corpos físicos em alta velocidade.
+
+**131. Fotossíntese Kármica** · Prana Solar · Runa Kármica Primordial
+
+**Fenômeno base.** Sua pele e seus pulmões convertem qualquer fonte de luz (solar, artificial, chamas ou técnicas radiantes) em vigor celular e reserva espiritual.
+
+1. Pulso de Alvorada (Extra · 3 Karma): Emite um clarão quente em 6m que restaura 1d8 + Espírito de Vida em você e em um aliado na área, além de remover condições de frio ou fadiga.
+2. Baterias Solares (Passiva): Sempre que você sofrer dano térmico, elétrico ou radiante, você recupera 2 de Karma automaticamente.
+
+**Safra na Morte.** Surya colhe o metabolismo de conversão direta de fótons em energia vital humana.
+
+**132. Malha Solar Nata** · A Armadura Kavacha · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Assim como Karna nasceu com a armadura solar fundida à própria pele, placas de luz dourada aderem ao seu torso como uma segunda epiderme.
+
+1. Revestimento de Kavacha (Passiva + 3 Karma ao ativar): Concede permanentemente +1 na CA Total e Redução de Dano 2; ao gastar 3 de Karma como Ação Livre, a armadura brilha intensamente concedendo 2d8 de Escudo Temporário e queimando quem o agarrar em 4 de dano.
+2. Rasgar a Própria Couraça (Livre · 0 Karma · 1x/cena): Sacrifica o bônus da armadura pelo resto da cena para disparar uma lança solar infalível (Vasavi Shakti) que causa 3d10 de dano direto a até 15m.
+
+**Safra na Morte.** Surya recolhe a simbiose biológica entre tecido epidérmico e blindagem fotônica.
+
+#### Yama · O Primeiro Mortal, Senhor do Laço da Morte e do Juízo Kármico
+
+**133. Corda de Extração de Fôlego** · Kalapasha · O Laço do Tempo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você projeta um laço vermelho-escuro trançado com o tempo de vida restante das criaturas; ele ignora armaduras físicas para laçar diretamente o fluxo de Karma e o fôlego do alvo.
+
+1. Laçar o Prazo (Principal · 4 Karma · 9m): Causa 2d8 kármico/necrótico, puxa o alvo em 3m e prende o fôlego dele: no próximo turno do alvo, ele perde a Ação Extra/Reação e sofre -2 na CA.
+2. Puxão do Além (Reação · 3 Karma): Usa o laço para puxar um aliado inconsciente ou sob ataque a até 9m diretamente para o seu lado.
+
+**Safra na Morte.** Yama absorve técnicas de apreensão direta da força vital sem necessidade de dano anatômico.
+
+**134. Auditoria de Ações Passadas** · O Registro de Chitragupta · Runa Kármica Primordial
+
+**Fenômeno base.** Sobre a cabeça de cada combatente você enxerga o pergaminho invisível de Chitragupta listando exatamente tudo o que aquele ser fez desde o início do combate.
+
+1. Sentença Retroativa (Principal · 4 Karma · 12m): Escolha um inimigo; o dano deste ataque é 2d6 + 3 de dano verdadeiro para cada vez que esse inimigo atacou ou feriu alguém nesta cena (máximo +9).
+2. Proibir Reincidência (Extra · 3 Karma): Marca a última ação que o inimigo realizou; se ele repetir a exata mesma ação no próximo turno, sofre 2d6 de dano mental automático.
+
+**Safra na Morte.** Yama colhe algoritmos de punição cumulativa baseados no histórico de hostilidade do combate.
+
+**135. Rastreio de Cheiro de Morte** · Os Olhos de Quatro Cães · Método de Luta Exclusivo
+
+**Fenômeno base.** Dois mastins espectrais de quatro olhos acompanham sua sombra, farejando o medo, a queda de pressão sanguínea e a abertura na guarda de quem está prestes a cair.
+
+1. Execução do Primeiro Mortal (Principal · 4 Karma): Contra qualquer alvo que esteja abaixo da metade da Vida (ou com Sangramento / Abalado), seu ataque recebe +1d20 na Reserva, +2 para atingir a CA Total e soma +2d6 ao dano.
+2. Ladrido do Crepúsculo (Extra · 2 Karma): Os cães avançam sobre a sombra do alvo a 6m, aplicando Abalado e reduzindo o deslocamento dele em 3m.
+
+**Safra na Morte.** Yama recolhe o instinto de finalização cirúrgica contra oponentes debilitados.
+
+### Asa da Pureza · Panteão Xintoísta
+
+#### Amaterasu · A Deusa do Sol Nascente, do Espelho Yata e dos Campos Celestiais
+
+**136. Reflexão de Verdade Nua** · Yata no Kagami · O Espelho Sagrado · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Um espelho octogonal de bronze polido e luz branca flutua à sua frente; ele não apenas bloqueia feixes e técnicas, mas reflete a "natureza real" do ataque de volta ao emissor.
+
+1. Espelho de Oito Palmos (Reação · 4 Karma): Quando você é alvo de uma técnica elemental, kármica ou divina a até 15m, reduz o dano recebido em 2d8 + Espírito e dispara de volta um feixe branco que causa 2d6 radiante no atacante.
+2. Revelar Ilusão (Livre · 2 Karma): O brilho do espelho desfaz clones ilusórios, camuflagens e invisibilidades em um cone de 9m.
+
+**Safra na Morte.** Amaterasu absorve o polimento de superfícies kármicas capazes de inverter o vetor de técnicas complexas.
+
+**137. Retiro de Eclipse Total** · A Caverna Ama-no-Iwato · Runa Kármica Primordial
+
+**Fenômeno base.** Você pode selar a si mesmo (ou um aliado) dentro de uma fenda rochosa dimensional de escuridão e silêncio por 1 rodada, mergulhando os inimigos ao redor em um frio escuro enquanto você se recupera lá dentro.
+
+1. Fechar a Rocha Celeste (Reação ou Principal · 5 Karma · 1x/cena): Você fica invulnerável e intangível até o início do seu próximo turno, recuperando 2d8 de Vida e 3 de Karma; quando a rocha se abre no turno seguinte, a explosão do Sol Nascente cega os inimigos em 4,5m (Desorientado) e soma +2d6 ao seu primeiro ataque.
+2. Penumbra Súbita (Extra · 2 Karma): Escurece a visão de um inimigo a 9m, reduzindo o alcance dele para 3m.
+
+**Safra na Morte.** Amaterasu colhe a tática de alternância brusca entre privação luminosa e clarão de abertura.
+
+**138. Purificação de Sol Branco** · Fulgor de Takamagahara · Dobra Elemental Anômala
+
+**Fenômeno base.** Suas chamas são brancas, silenciosas e purificadoras: elas não produzem fumaça e queimam com o dobro de intensidade qualquer alvo que possua Corrupção, maldições ou condições negativas.
+
+1. Alvorada Imaculada (Principal · 4 Karma · 12m): Dispara uma lâmina de fogo branco que causa 2d8 radiante (+1d8 contra inimigos da Matriz Corrupta ou com condições ativas) e limpa 1 condição negativa de um aliado próximo ao alvo.
+2. Solo Santificado (Extra · 3 Karma): Ilumina 3m no chão; aliados ali dentro recebem +2 em testes de resistência e regeneram 3 de Vida por rodada.
+
+**Safra na Morte.** Amaterasu recolhe o método de incineração seletiva de impurezas e corrupção kármica.
+
+#### Susanoo · O Deus do Tufão, da Espada Kusanagi e do Mar Bravio
+
+**139. Lâmina Cortadora de Relva e Vento** · Ame-no-Murakumo / Kusanagi · Método de Luta Exclusivo
+
+**Fenômeno base.** Todo corte que você desfere com uma arma ou com a mão aberta projeta uma lâmina de vácuo atmosférico que prolonga o fio do golpe por metros à frente, cortando tudo na linha.
+
+1. Corte da Nuvem Celestial (Principal · 4 Karma · Linha ou Cone 6m): Desfere um golpe que varre a área causando 2d8 cortante, destrói projéteis em voo na direção do corte e empurra os atingidos em 2m.
+2. Redemoinho de Repulsão (Reação · 3 Karma): Ao ser cercado ou atacado corpo a corpo, gira a lâmina criando uma barreira de vento que soma +3 na CA e causa 1d8 cortante em quem estiver a 1,5m.
+
+**Safra na Morte.** Susanoo absorve o prolongamento aerodinâmico de golpes de espada em ondas de vácuo.
+
+**140. Destruidor de Múltiplas Cabeças** · O Matador de Yamata-no-Orochi · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seu espírito rebelde se inflama quando você está em desvantagem numérica ou enfrentando inimigos com múltiplas partes/invocações; quanto mais alvos cercarem você, mais golpes você desfere.
+
+1. Fúria de Oito Frentes (Principal · 4 Karma): Ataca um alvo causando 2d8 de dano; se houver um segundo ou terceiro inimigo a até 3m de você, você desfere um golpe extra gratuito de 1d10 contra cada um deles no mesmo movimento.
+2. Extrair Tesouro da Cauda (Passiva): Sempre que você abater um inimigo ou destruir uma invocação/dispositivo inimigo, você recupera 4 de Karma e ganha +2 no próximo ataque.
+
+**Safra na Morte.** Susanoo colhe técnicas de combate assimétrico contra múltiplos oponentes simultâneos.
+
+**141. Olho do Ciclone Marítimo** · O Tufão Rebelde · Dobra Elemental Anômala
+
+**Fenômeno base.** Ventos de tufão e chuva salgada giram furiosamente ao redor dos seus pés, arrancando a estabilidade de qualquer um que tente manter postura perto de você.
+
+1. Parede de Tufão (Extra · 3 Karma · Raio 3m): Pelas próximas 2 rodadas, o vento ao seu redor desvia tiros comuns (+3 na CA contra distância) e puxa inimigos a 4,5m para perto da sua lâmina.
+2. Estouro Barométrico (Principal · 4 Karma): Descarrega a pressão do ciclone em um golpe de água e vento que causa 2d8 contundente e aplica Caído.
+
+**Safra na Morte.** Susanoo recolhe a compressão de ciclones tropicais em escala de combate individual.
+
+#### Tsukuyomi · O Deus da Lua Silenciosa, do Calendário Noturno e do Corte Frio
+
+**142. Decapitação de Luar Silencioso** · O Corte que Matou Uke-Mochi · Método de Luta Exclusivo
+
+**Fenômeno base.** Seus ataques não produzem som nem deslocamento de ar; o inimigo só percebe que foi cortado um segundo depois de você embainhar a arma ou concluir o passo.
+
+1. Corte de Atraso Lunar (Principal · 4 Karma): Você passa a até 2m do alvo durante seu movimento e realiza o corte: o alvo sofre 2d8 cortante/frio no final do turno dele (ignorando escudos reativos ativados na hora do golpe) e fica impedido de fazer Reações até lá.
+2. Passo Sem Eco (Movimento · 2 Karma): Move-se 6m em silêncio absoluto, ficando invisível para percepção auditiva ou tremores.
+
+**Safra na Morte.** Tsukuyomi absorve a execução de cortes de velocidade subsônica sem assinatura acústica.
+
+**143. Sincronia das Trinta Noites** · O Regente do Calendário · Runa Kármica Primordial
+
+**Fenômeno base.** Você impõe a ordem fria e matemática do calendário lunar sobre o caos do combate, fixando valores que normalmente dependeriam da sorte.
+
+1. Noite Fixa (Livre antes de rolar · 3 Karma): Em vez de rolar os dados da sua Reserva em um teste de ataque ou perícia, você pode decretar que o dado selecionado vale automaticamente 15 (somando seus bônus normais de perícia e treinamento em cima disso).
+2. Adiantar a Meia-Noite (Reação · 3 Karma · 12m): Reduz a duração de um efeito positivo inimigo ou de uma condição negativa em um aliado em 1 rodada.
+
+**Safra na Morte.** Tsukuyomi colhe o domínio de estabilização determinística sobre variáveis caóticas de batalha.
+
+**144. Reflexo no Espelho d'Água** · Luar de Prata Fria · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Assim como a lua reflete na água sem jamais se molhar, sua presença real permanece intocável enquanto o inimigo golpeia apenas o seu reflexo prateado.
+
+1. Lua na Água (Reação · 4 Karma): Quando sofre um ataque corpo a corpo, seu corpo se desfaz em ondulações prateadas como água tocada: você anula o dano de um Acerto Parcial (ou reduz um Acerto Total à metade) e reaparece 3m atrás do atacante.
+2. Frio da Noite Clara (Principal · 4 Karma · 9m): Um feixe de luar pálido causa 2d8 frio/mental e reduz a Iniciativa e o Movimento do alvo em -3.
+
+**Safra na Morte.** Tsukuyomi recolhe a projeção de miragens táteis baseadas em reflexão luminosa noturna.
+
+#### Inari · A Divindade das Raposas Brancas, da Forja de Espadas e da Prosperidade
+
+**145. Lanternas de Raposa Branca** · Kitsune-bi · O Fogo de Raposa · Dobra Elemental Anômala
+
+**Fenômeno base.** Você mantém até 3 chamas azuis flutuantes (Kitsune-bi) orbitando sua cintura; elas não queimam a matéria física, mas queimam diretamente o Karma e a percepção de quem encosta nelas.
+
+1. Enxame de Fogo-Fátuo (Principal · 4 Karma · 12m): Envia as 3 chamas contra um ou mais alvos, causando 2d8 kármico/espiritual no total e iluminando a alma do alvo (o próximo ataque contra ele recebe +2 no acerto).
+2. Escudo de Nove Caudas (Reação · 3 Karma): Consome uma chama orbital para absorver 1d10 + Espírito de dano e criar uma ilusão momentânea que desloca você 2m.
+
+**Safra na Morte.** Inari absorve a manipulação de plasma espiritual frio guiado à distância.
+
+**146. Corredor de Portais Vermelhos** · Portões de Mil Torii · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você faz surgir portões vermelhos (Torii) translúcidos em sequência no campo; atravessar um Torii acelera o aliado e limpa maldições, mas comprime o espaço contra inimigos.
+
+1. Passagem de Fushimi (Movimento · 3 Karma): Ergue 2 portões Torii conectados a até 9m um do outro; você e seus aliados podem entrar em um e sair imediatamente no outro sem gastar o movimento intermediário e ganhando +2 no próximo teste.
+2. Queda do Portão Sagrado (Principal · 4 Karma): Faz um Torii materializar-se caindo sobre o inimigo a 9m, causando 2d8 contundente/divino e prendendo-o no lugar (Lento).
+
+**Safra na Morte.** Inari colhe a arquitetura de corredores de teletransporte curto em terreno aberto.
+
+**147. Martelo da Raposa Auxiliar** · Padroeiro dos Ferreiros Munechika · Runa Kármica Primordial
+
+**Fenômeno base.** Quando você empunha uma arma ou opera um dispositivo, um espírito de raposa invisível bate o segundo martelo em sincronia perfeita com você, dobrando o fio e a qualidade do equipamento.
+
+1. Fio de Munechika (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma (ou a de um aliado tocado) sobe um passo no dado de dano (ex.: de 1d8 para 1d10, ou soma +1d6) e reduz em -1 o limiar de CA Total do alvo.
+2. Prosperidade de Colheita (Passiva): Uma vez por cena, ao obter um 20 natural ou abater um inimigo, recupera 3 de Karma e 1 carga de consumível/munição comum.
+
+**Safra na Morte.** Inari recolhe técnicas de afiação kármica e sincronia de forja em tempo real.
+
+#### Raijin · O Deus dos Tambores de Trovão, do Pulso Elétrico e do Estrondo
+
+**148. Percussão de Choque Eletroacústico** · O Anel de Tambores Tomoe · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Três tambores espirituais com o símbolo Tomoe flutuam atrás dos seus ombros; cada golpe seu ressoa nos tambores, somando ondas sônicas de concussão às suas descargas elétricas.
+
+1. Rufo de Trovão Duplo (Principal · 4 Karma · 9m): Dispara um pulso que combina som e raio, causando 2d8 elétrico/sônico e empurrando o alvo em 3m (se bater em uma parede ou outro inimigo, sofre +1d6).
+2. Batida de Contra-Fase (Reação · 3 Karma): Toca um tambor para gerar uma onda de choque que explode projéteis ou reduz o dano corpo a corpo recebido em 2d6.
+
+**Safra na Morte.** Raijin absorve o acoplamento entre frequência acústica e descarga elétrica.
+
+**149. Disparo Neuromuscular Instantâneo** · Pulso de Sinapse Elétrica · Método de Luta Exclusivo
+
+**Fenômeno base.** Você estimula os próprios músculos com microchoques dos tambores de Raijin, eliminando o tempo de reação humana entre o pensamento e o golpe.
+
+1. Saque de Relâmpago (Livre ou Reação · 3 Karma): Você recebe +4 na Iniciativa; uma vez por rodada, quando um inimigo a até 4,5m declara um ataque contra você, você pode resolver o seu ataque básico antes do ataque dele (se o seu golpe deixar o inimigo Caído, Desorientado ou a 0 PV, o ataque dele é cancelado).
+2. Curto-Circuito Motor (Extra · 2 Karma): Seu próximo acerto aplica espasmos elétricos que reduzem o deslocamento do alvo pela metade.
+
+**Safra na Morte.** Raijin colhe o controle de bioeletricidade para antecipação de ataques.
+
+**150. Para-Raios de Carne e Ferro** · Pilar de Raio Descendente · Dobra Elemental Anômala
+
+**Fenômeno base.** Você magnetiza um ponto do chão ou um inimigo como um para-raios positivo, fazendo com que toda a eletricidade estática da área desabe sobre aquele ponto após um breve intervalo.
+
+1. Cravar Ionização (Principal · 4 Karma · 12m): Causa 2d6 elétrico no alvo e o magnetiza; no final do turno desse alvo, um segundo raio cai automaticamente sobre a cabeça dele causando mais 1d10 elétrico sem gastar sua ação.
+2. Salto pelo Conduíte (Movimento · 3 Karma): Transforma-se em faísca para saltar instantaneamente até 6m na direção do alvo magnetizado.
+
+**Safra na Morte.** Raijin recolhe técnicas de indução de descargas retardadas por polarização do alvo.
+
+#### Fujin · O Deus da Bolsa dos Ventos, do Vácuo Cortante e das Correntes Aéreas
+
+**151. Compressão e Soltura de Vendaval** · A Bolsa de Vento Kazebukuro · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Você carrega um fole ou manto dimensional que suga o ar do ambiente (criando vácuo) e o armazena sob pressão extrema para liberá-lo de uma só vez.
+
+1. Suco de Vácuo (Extra · 3 Karma · Cone 6m): Suga o ar puxando todos os inimigos no cone em 3m na sua direção e desequilibrando-os (-2 na CA Parcial deles neste turno).
+2. Soltar os Quatro Ventos (Principal · 4 Karma): Libera o ar comprimido em um canhão eólico que causa 2d8 contundente/cortante e arremessa os inimigos 4,5m para trás.
+
+**Safra na Morte.** Fujin absorve o ciclo mecânico de sucção a vácuo seguida de propulsão pneumática.
+
+**152. Zona de Bolsões de Vácuo Cortante** · Kamaitachi · A Foice de Vento · Dobra Elemental Anômala
+
+**Fenômeno base.** Você cria redemoinhos finos como fios de navalha invisíveis onde a queda súbita de pressão atmosférica abre cortes na pele e nas juntas sem que o inimigo veja a lâmina.
+
+1. Três Cortes de Kamaitachi (Principal · 4 Karma · 12m): O primeiro vento desequilibra, o segundo rasga (2d8 cortante, ignorando cobertura parcial) e o terceiro anestesia pelo frio (o alvo sofre Sangramento e -2 em Percepção/Reflexos).
+2. Armadilha de Corrente de Ar (Extra · 2 Karma): Deixa um bolso de vento cortante em um espaço de 2m; o primeiro inimigo a pisar ali sofre 1d10 cortante automático.
+
+**Safra na Morte.** Fujin colhe a balística de lâminas de descompressão barométrica invisíveis.
+
+**153. Passo de Brisa Sem Peso** · Senhor das Correntes Superiores · Método de Luta Exclusivo
+
+**Fenômeno base.** Seu corpo pesa menos que uma folha seca para as correntes de ar; qualquer movimento ou ataque inimigo que desloque o ar perto de você impulsiona seu corpo para fora do perigo.
+
+1. Cavalgar a Onda de Impacto (Reação · 3 Karma): Quando um ataque corpo a corpo ou explosão atinge você ou passa perto, você flutua na corrente de ar do próprio golpe inimigo, reduzindo o dano em 2d6 e planando 4,5m para o alto ou para trás sem tocar o chão.
+2. Impulso de Cauda (Livre · 2 Karma): Soma +4,5m de deslocamento aéreo/salto neste turno e permite atacar enquanto plana no ar com +2 no acerto.
+
+**Safra na Morte.** Fujin recolhe a arte marcial de redirecionamento de deslocamento atmosférico hostil.
+
+#### Hachiman · O Deus dos Oito Estandartes, do Arco Zen e do Espírito Guerreiro
+
+**154. Certeza de Mente Vazia** · Kyudo · O Arco que Já Acertou · Método de Luta Exclusivo
+
+**Fenômeno base.** Na filosofia do arco de Hachiman, o acerto ocorre no coração do arqueiro antes de a corda ser solta; quanto mais calma e imóvel estiver sua mente, menos a distância e os obstáculos importam.
+
+1. Disparo de Mente Vazia (Mushin) (Extra + Principal · 4 Karma): Se você gastar sua ação Extra para respirar e focar antes do tiro/golpe, o ataque ganha +1d20 na Reserva, dobra o alcance normal, ignora toda cobertura que não seja uma sala totalmente fechada e soma +Etapa ao dano (2d8 + Etapa).
+2. Flecha que Divide Flecha (Reação · 3 Karma): Dispara ou golpeia interceptando um projétil ou feixe inimigo no ar, anulando-o completamente.
+
+**Safra na Morte.** Hachiman absorve o estado psicológico de precisão absoluta sob fogo cruzado.
+
+**155. Insígnia de Comando de Clã** · Os Oito Estandartes Brancos · Runa Kármica Primordial
+
+**Fenômeno base.** Um estandarte espiritual branco flutua às suas costas (ou onde você o cravar no chão), irradiando disciplina marcial para todos os aliados sob sua bandeira.
+
+1. Erguer os Oito Estandartes (Extra · 4 Karma · Raio 6m): Pelas próximas 2 rodadas, você e todos os aliados a até 6m do estandarte recebem +1 na CA Total, +2 no dano de ataques básicos e imunidade a Abalado.
+2. Ordem de Carga Sincronizada (Principal · 4 Karma): Você realiza um ataque (2d6) e permite que 1 aliado dentro da área do estandarte avance 3m e realize um ataque básico imediato como Reação.
+
+**Safra na Morte.** Hachiman colhe táticas modernas de comando de pelotão e moral coletiva.
+
+**156. Revoada de Aviso e Abertura** · Pombas Mensageiras de Hachiman · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Seus golpes e disparos liberam pombas feitas de papel e luz branca que voam ao redor do rosto do inimigo, abrindo brechas na guarda dele para o próximo golpe.
+
+1. Revoada Desconcertante (Extra · 3 Karma · 12m): As aves de luz cercam o alvo causando 1d8 radiante e distraindo-o: o próximo ataque seu ou de qualquer aliado contra ele até o fim da rodada reduz a CA Parcial e Total dele em -2.
+2. Mensagem de Socorro (Reação · 3 Karma): As pombas voam até um aliado a 12m limpando Desorientado e puxando-o 2m para fora de uma área de risco.
+
+**Safra na Morte.** Hachiman recolhe o uso de enxames luminosos para quebra de foco visual do oponente.
+
+#### Izanami · A Matriarca de Yomi, da Podridão Primordial e das Mil Mortes
+
+**157. Contagem Regressiva de Yomi** · O Decreto das Mil Mortes Diárias · Runa Kármica Primordial
+
+**Fenômeno base.** Quando um inimigo fere você ou rompe um acordo/recua diante de você, você crava nele a sentença de Izanami: um contador espiritual que apressa o colapso do corpo dele a cada rodada.
+
+1. Promessa de Mil Mortes (Principal · 4 Karma · 9m): Causa 2d6 necrótico e crava a marca por 3 rodadas: no final de cada turno do alvo marcado, ele sofre 4 de dano necrótico irreduzível (6 se tentar se afastar de você).
+2. Agravar Sentença (Extra · 3 Karma): Contra o alvo marcado, seu ataque soma +1d8 de dano e reduz a cura recebida por ele a zero naquela rodada.
+
+**Safra na Morte.** Izanami absorve maldições de deterioração progressiva atreladas ao comportamento do alvo.
+
+**158. Cabos de Cabelo e Cinza Negra** · Yomotsu-Shikome · As Fúrias do Submundo · Técnica Divina / Fenômeno
+
+**Fenômeno base.** Sua sombra e suas vestes projetam mechas longas de cinza e sombra faminta que perseguem incansavelmente quem tenta fugir do seu alcance.
+
+1. Perseguição de Yomi (Principal · 4 Karma · 9m): As mechas avançam pelo chão agarrando o alvo, causando 2d8 contundente/necrótico e puxando-o 4,5m para perto de você (deixando-o Lento).
+2. Pêssegos da Fronteira (Reação · 3 Karma): Consome um fruto espiritual do submundo para anular um efeito de medo/mental ou recuperar 1d8 + Constituição de Vida ao sofrer dano.
+
+**Safra na Morte.** Izanami colhe vetores de captura e contenção de alvos velozes.
+
+**159. Maturação de Miasma Elétrico** · Os Oito Trovões do Cadáver · Dobra Elemental Anômala
+
+**Fenômeno base.** No mito, oito deuses do trovão nasceram do corpo em decomposição de Izanami; seu sangue libera uma névoa escura condutora que explode em raios negros quando você é atacado.
+
+1. Trovão da Carne Caída (Reação ao sofrer dano · 3 Karma): A névoa ao redor do seu ferimento detona em um raio negro curto que causa 2d6 elétrico/necrótico no atacante e reduz a CA dele em -1.
+2. Nuvem dos Oito Trovões (Principal · 4 Karma · Raio 3m): Libera o miasma elétrico ao seu redor causando 2d8 em todos os inimigos na área e aplicando Envenenado / Abalado.
+
+**Safra na Morte.** Izanami recolhe a bioquímica de descargas bioelétricas geradas por tecido necrosado.
+
+#### Kagu-Tsuchi · O Deus do Fogo Nascente, da Lâmina Vulcânica e da Cinza
+
+**160. Ignição de Contato Incontrolável** · A Chama que Queimou a Mãe ao Nascer · Dobra Elemental Anômala
+
+**Fenômeno base.** Seu fogo é tão jovem e violento que não precisa ser lançado: qualquer arma, punho ou projétil que toque você (ou que você toque) entra em combustão imediata pelo simples contato.
+
+1. Nascimento Incandescente (Livre · 3 Karma): Por 2 rodadas, sua pele e arma atingem temperatura crítica: qualquer inimigo que acertar você corpo a corpo sofre 1d8 de dano térmico automático, e todos os seus ataques somam +1d8 de fogo antes do parcial.
+2. Derreter o Aço (Principal · 4 Karma): Golpe que causa 2d8 térmico e derrete a guarda do inimigo, ignorando toda a Redução de Dano física dele.
+
+**Safra na Morte.** Kagu-Tsuchi absorve a geração de plasma térmico de contato imediato.
+
+**161. Gotejamento de Magma na Lâmina** · Os Oito Deuses Nascidos do Sangue na Espada · Método de Luta Exclusivo
+
+**Fenômeno base.** Quando Kagu-Tsuchi foi decapitado, o sangue que escorreu pela espada de Izanagi gerou novos deuses; cada gota de fogo e sangue que respinga da sua arma no chão vira uma mina incandescente.
+
+1. Corte de Respingo Vulcânico (Principal · 4 Karma): Causa 2d8 cortante/térmico no alvo e espalha 3 Brasas de Magma nos espaços adjacentes a ele; qualquer inimigo que pisar ou terminar o turno sobre uma Brasa sofre 1d6 térmico.
+2. Detonar Respingos (Extra · 2 Karma): Explode todas as Brasas no chão de uma só vez, causando 2d6 térmico em quem estiver a 1,5m delas.
+
+**Safra na Morte.** Kagu-Tsuchi colhe o controle de área por respingos balísticos de escória em brasa.
+
+**162. Fissura de Cratera Súbita** · Montanhas Vulcânicas do Japão · Runa Kármica Primordial
+
+**Fenômeno base.** Ao cravar a ponta da sua arma ou o calcanhar no chão, você desenha uma linha de fratura magmática sob o piso que explode segundos depois sob os pés da linha de trás inimiga.
+
+1. Gêiser de Cratera (Principal · 4 Karma · 12m): Faz o chão explodir em um pilar de fogo e rocha sob um ponto a até 12m, causando 2d8 térmico/contundente em 2m de raio e lançando o alvo 2m para o alto (Desorientado).
+2. Cinza de Resfriamento Rápido (Reação · 3 Karma): Endurece uma camada de rocha basáltica negra sobre o próprio peito contra um golpe, reduzindo o dano em 2d8.
+
+**Safra na Morte.** Kagu-Tsuchi recolhe a canalização de pressão geotérmica através de pisos artificiais.
+
 # Capítulo 14 - Corrupção e a Marca
 
 Corrupção é uma presença que aprende. A Voz começa oferecendo uma solução precisa para aquilo que o personagem deseja. Cada concessão lhe ensina vocabulário, afetos e justificativas; depois, a Marca passa a oferecer uma anatomia capaz de executar essas promessas em vários lugares ao mesmo tempo.

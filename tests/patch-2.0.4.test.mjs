@@ -44,7 +44,7 @@ test('Scribe training and weapon slots remain separate from personal limit', () 
   draft = act(draft,{type:'armRune',runeId:1});
   assert.equal(retainedKarma(liveState(draft)),8);
 });
-test('all 81 catalog grants preserve both extensions and validate as saved sheets', () => {
+test('all 162 catalog grants preserve both extensions and validate as saved sheets', () => {
   const catalog = read('pantheon-blessings');
   const seen = new Set();
   for (const p of catalog) for (const god of p.deities) for (const blessing of god.blessings) {
@@ -55,5 +55,6 @@ test('all 81 catalog grants preserve both extensions and validate as saved sheet
     assert.equal(blessing.extensions.length,2);
     assert(characterPayloadSchema.safeParse(draft).success,grant.name);
   }
-  assert.equal(seen.size,81);
+  assert.deepEqual(catalog.map(p => [p.id,p.deities.length]), [[1,9],[2,9],[3,9],[4,9],[5,9],[6,9]]);
+  assert.deepEqual([...seen], Array.from({length:162}, (_, index) => `catalog-blessing-${index + 1}`));
 });

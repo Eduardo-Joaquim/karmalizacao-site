@@ -1132,35 +1132,46 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
                             data-invalid={breakdown.hasInvalidPoints}
                             key={skill}
                           >
-                            <div className="skill-row-head"><strong>{skill}</strong><small className="skill-test-preview">{test.attribute} · {test.dice}d20 {test.bonus<0?"−":"+"} {Math.abs(test.bonus)}</small></div>
-                            <div className="skill-row-controls">
-                            <small>{["Destreinado","Treinado +2","Veterano +5","Transcendental +10"][total]}{breakdown.hasInvalidPoints?" · revise os pontos":""}{breakdown.sacrificedCommon?` · ${breakdown.sacrificedCommon} suspenso(s)`:""}</small>
-                            <div className="skill-row-inputs">
-                            <PointStepper
-                              label={`${skill}, pontos-base`}
-                              value={points.base}
-                              min={getSacrificedPoints(draft, skill)}
-                              max={baseLimit}
-                              disableIncrease={
-                                baseSkillPoints >= BASE_SKILL_POINT_BUDGET
-                              }
-                              onChange={(value) => updateSkill(skill, "base", value)}
-                            />
-                            <div className="skill-bonus">
-                              <label htmlFor={`skill-bonus-${skill}`}>Ajuste</label>
-                              <NativeSelect
-                                id={`skill-bonus-${skill}`}
-                                value={String(Math.min(points.bonus, manualLimit))}
-                                onChange={(event) =>
-                                  updateSkill(skill, "bonus", Number(event.target.value))
-                                }
-                              >
-                                {Array.from({ length: manualLimit + 1 }, (_, value) => value).map((value) => (
-                                  <NativeSelectOption value={String(value)} key={value}>+{value}</NativeSelectOption>
-                                ))}
-                              </NativeSelect>
+                            <div className="skill-row-head">
+                              <strong>{skill}</strong>
+                              <small className="skill-row-training" data-trained={total > 0}>
+                                {["Destreinado", "Treinado +2", "Veterano +5", "Transcendental +10"][total]}
+                              </small>
                             </div>
-                            </div></div>
+                            <small className="skill-test-preview">
+                              {test.attribute} · <span>{test.dice}d20 {test.bonus < 0 ? "−" : "+"} {Math.abs(test.bonus)}</span>
+                            </small>
+                            {(breakdown.hasInvalidPoints || breakdown.sacrificedCommon > 0) && (
+                              <small className="skill-row-notice">
+                                {[breakdown.hasInvalidPoints && "Revise os pontos", breakdown.sacrificedCommon > 0 && `${breakdown.sacrificedCommon} ponto(s) suspenso(s)`].filter(Boolean).join(" · ")}
+                              </small>
+                            )}
+                            <div className="skill-row-inputs">
+                              <div className="skill-input-field">
+                                <span>Pontos-base</span>
+                                <PointStepper
+                                  label={`${skill}, pontos-base`}
+                                  value={points.base}
+                                  min={getSacrificedPoints(draft, skill)}
+                                  max={baseLimit}
+                                  disableIncrease={baseSkillPoints >= BASE_SKILL_POINT_BUDGET}
+                                  onChange={(value) => updateSkill(skill, "base", value)}
+                                />
+                              </div>
+                              <div className="skill-input-field skill-bonus">
+                                <label htmlFor={`skill-bonus-${skill}`}>Ajuste</label>
+                                <NativeSelect
+                                  id={`skill-bonus-${skill}`}
+                                  aria-label={`Ajuste de ${skill}`}
+                                  value={String(Math.min(points.bonus, manualLimit))}
+                                  onChange={(event) => updateSkill(skill, "bonus", Number(event.target.value))}
+                                >
+                                  {Array.from({ length: manualLimit + 1 }, (_, value) => (
+                                    <NativeSelectOption value={String(value)} key={value}>+{value}</NativeSelectOption>
+                                  ))}
+                                </NativeSelect>
+                              </div>
+                            </div>
                           </div>
                         );
                       })}
