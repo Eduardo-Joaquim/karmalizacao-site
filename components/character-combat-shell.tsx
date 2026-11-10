@@ -23,7 +23,7 @@ export function CharacterCombatShell({draft,onChange,id,token,onShare,children}:
 export function SharedCombatCharacter({initial,id,token,children}:{initial:CharacterPayload;id:string;token:string;children?:ReactNode}){
  const [draft,setDraft]=useState(initial);
  const automatic=calculateAutomaticBonuses(draft),derived=calculateDerivedStats(draft,automatic);
- return <CharacterCombatShell draft={draft} onChange={setDraft} id={id} token={token}>{children??(send=><CharacterSheetView draft={draft} automatic={automatic} derived={derived} readOnly onInventoryUse={(change)=>send({
+ return <CharacterCombatShell draft={draft} onChange={setDraft} id={id} token={token}>{children??(send=><CharacterSheetView draft={draft} automatic={automatic} derived={derived} readOnly onCombatAction={send} onInventoryUse={(change)=>send({
    ...change, type:'inventoryUse', id:combatId(), actorName:draft.name||'Personagem', title:'Usar inventário',
  })}/>)}</CharacterCombatShell>;
 }

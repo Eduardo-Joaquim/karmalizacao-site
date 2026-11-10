@@ -1,6 +1,6 @@
 "use client";
 import axioms from "@/data/path-axioms.json";
-import { equippedRuneWeapons, personalRuneLimit } from "@/lib/karmic-runes";
+import { equippedRuneWeapons, personalRuneLimit, runeTraining } from "@/lib/karmic-runes";
 import runes from "@/data/karmic-runes.json";
 import { domainPathDiscount, hasAwakenedPath, pathAxiom } from "@/lib/personal-path";
 import { getStageIndex, getFinalSkill } from "@/lib/character-rules";
@@ -841,7 +841,8 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
         </section>
 
         <section className="power-section" id="poder-runas"><h2>Runas Kármicas</h2>
-          <p>Limite pessoal de {personalRuneLimit(draft)} Runas. Espaços de armas são separados.</p>
+          <p>Canalização de Karma 1 permite inscrever Runas. Limite pessoal de {personalRuneLimit(draft)}. Armas com espaços nativos têm vagas próprias.</p>
+          <p>{runeTraining(draft).level ? `Canalização ${runeTraining(draft).level}. Consulte os requisitos por Grau no Capítulo 9.` : "Treine Canalização de Karma para registrar uma inscrição."} Abra o item na ficha final e use <strong>Runas do item</strong>.</p>
           {draft.className === "Escriba Kármico" && <p>CD rúnica {12 + getFinalAttribute(draft,automatic,"Intelecto") + getFinalSkill(draft,automatic,"Canalização de Karma") + (equippedRuneWeapons(draft).some(({weapon}) => weapon.id === "grimorio") ? 1 : 0) + (equippedRuneWeapons(draft).some(({weapon}) => weapon.id === "cajado") ? 2 : 0)}. Testes rúnicos usam Intelecto + Canalização de Karma.</p>}
           <details><summary>Consultar as 25 Runas</summary>{runes.map(rune => <details key={rune.id}><summary>{rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido</summary><p>{rune.category}</p><p><strong>Enquanto armada.</strong> {rune.passive}</p><p><strong>Estouro.</strong> {rune.burst}</p></details>)}</details>
         </section>

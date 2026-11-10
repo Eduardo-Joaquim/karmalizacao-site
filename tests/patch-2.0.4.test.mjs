@@ -19,6 +19,7 @@ test('retained Karma cannot be spent and releases on the right boundary', () => 
   for (const scribe of [false,true]) {
     let draft = createBlankCharacter();
     if (scribe) draft.className = 'Escriba Kármico';
+    else draft.skills['Canalização de Karma'].base = 1;
     draft = act(draft,{type:'armRune',runeId:1});
     draft = normalizeCharacterPayload(draft);
     const state = liveState(draft);
@@ -106,4 +107,25 @@ test('the complete Bestiary index stays outside the selector and the saved playe
   const [canonical] = playableBlessingGrants(normalizeCharacterPayload(draft).divine);
   assert.equal(canonical.name, selectable.find(blessing => blessing.id === 10).title);
   assert.notEqual(canonical.activeManifestation, migrated.activeManifestation);
+});
+
+test('ordinary trained characters inscribe compatible items using their personal slots', () => {
+  let draft = createBlankCharacter();
+  draft.inventory = [
+    {id:'test-sword', name:'Espada', category:'weapon', location:'ready', quantity:1, spaces:1, notes:''},
+    {id:'test-shield', name:'Escudo', category:'shield', location:'ready', quantity:1, spaces:1, notes:''},
+  ];
+  assert.throws(() => act(draft,{type:'armRune',runeId:1,weaponId:'test-sword'}), /Canalização/);
+  draft.skills['Canalização de Karma'].base = 1;
+  assert.throws(() => act(draft,{type:'armRune',runeId:7,weaponId:'test-sword'}), /Etapa/);
+  assert.throws(() => act(draft,{type:'armRune',runeId:1,weaponId:'test-shield'}), /incompatível/);
+  draft = act(draft,{type:'armRune',runeId:1,weaponId:'test-sword'});
+  const rune = liveState(draft).runes[0];
+  assert.equal(rune.weaponId,'test-sword');
+  assert.throws(() => act(draft,{type:'armRune',runeId:8,weaponId:'test-shield'}), /Limite/);
+  draft = act(draft,{type:'burstRune',inscriptionId:rune.id,disarm:true});
+  assert.equal(liveState(draft).runeBurstUsed,false);
+  assert.equal(retainedKarma(liveState(draft)),2);
+  draft = act(draft,{type:'armRune',runeId:8,weaponId:'test-shield'});
+  assert.equal(liveState(draft).runes[1].weaponId,'test-shield');
 });

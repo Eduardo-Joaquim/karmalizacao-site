@@ -2632,11 +2632,24 @@ Poções, habilidades, fontes e rituais nunca restauram acima do máximo dispon�
 
 ## Runas Kármicas {#runas-karmicas}
 
-Uma runa retém Karma em um suporte até que seu desenho libere a energia. Grave uma Runa com uma Ação Principal ou prepare-a antes da cena. O Escriba Kármico pode gravar runas de Grau igual ou inferior à sua Etapa com Movimento ou Extra. A CD do Escriba é 12 + Intelecto + nível de Canalização de Karma. Uma runa ligada a um ataque segue o teste desse ataque. Quando o efeito oferecer resistência, resolva o teste indicado antes de aplicar a consequência.
+Uma runa retém Karma em um suporte até que seu desenho libere a energia. **Qualquer personagem com Canalização de Karma 1 ou superior pode aprender e inscrever Runas Kármicas.** Aprenda a fórmula com um instrutor, um grimório ou uma inscrição que possa estudar, conforme a campanha. O Mestre confirma as fórmulas conhecidas.
 
-O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas inscritas nos espaços nativos de uma arma ocupam os espaços dessa arma e retêm Karma normalmente.
+| Grau da runa | Requisito de inscrição comum |
+|---|---|
+| I e II | Canalização de Karma 1 |
+| III | Etapa III e Canalização de Karma 1 |
+| IV | Etapa V e Canalização de Karma 2 |
+| V | Etapa VII e Canalização de Karma 3 |
 
-O Karma Retido continua na reserva total e fica indisponível para gastos enquanto a runa está armada. O Estouro encerra a passiva e ocupa apenas a ação escrita na runa ou no ataque associado. Sem ação adicional expressa, resolva no gatilho indicado. Após o Estouro, o espaço de runa fica livre. O Karma preso volta a ficar disponível no fim da cena, ou após uma rodada para o Escriba.
+**Para inscrever**, escolha uma fórmula conhecida e um suporte compatível ao alcance do toque. Grave com uma Ação Principal ou prepare antes da cena. Reserve o Karma indicado na tabela e conte uma vaga. Com tempo e condições adequadas, a inscrição é direta. Se houver risco de erro ou oposição, teste Espírito + Canalização de Karma contra a dificuldade da situação indicada pelo Mestre. A inscrição só arma a runa quando concluída.
+
+Uma runa ligada a um ataque segue o teste desse ataque. Se o efeito pedir resistência, use o teste indicado na runa. Para uma runa comum que peça resistência sem fixar a CD, use oposição contra Espírito + Canalização de Karma de quem a inscreveu, com empate a favor de quem resiste. O **Escriba Kármico** usa Intelecto + Canalização, com Analítico quando aplicável, e sua CD rúnica é 12 + Intelecto + nível de Canalização. Sua Caligrafia de Combate também permite gravar com Movimento ou Extra uma runa de Grau igual ou inferior à sua Etapa, mesmo quando a tabela comum só permitiria um Grau menor.
+
+O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas de Arma podem ser inscritas em armas e nos equipamentos de mago com espaços rúnicos nativos. Runas de Armadura e Guarda vão em armaduras ou escudos. Uma arma, armadura ou escudo comum consome uma vaga pessoal por runa. Um espaço nativo usa a capacidade do próprio item e retém Karma da mesma forma. Runas de Campo e Selo e de Sangue e Corpo usam seus suportes descritos e são registradas no espaço pessoal.
+
+Na ficha, equipe o suporte ou deixe-o em Prontidão. Abra **Inventário e Carga → Runas do item**, selecione uma fórmula compatível e registre a inscrição depois de resolvê-la. Em ficha salva, salve primeiro qualquer mudança de treino ou equipamento. Se o suporte estiver fora do alcance ou indisponível, sua inscrição não concede os efeitos que exigem contato, porte ou uso desse suporte.
+
+O Karma Retido continua na reserva total e fica indisponível para gastos enquanto a runa está armada. O Estouro encerra a passiva e ocupa apenas a ação escrita na runa ou no ataque associado. Sem ação adicional expressa, resolva no gatilho indicado. Após o Estouro, o espaço de runa fica livre. O Karma preso volta a ficar disponível no fim da cena, ou após uma rodada para o Escriba. Desarmar uma runa sem Estouro encerra seus efeitos, libera a vaga e mantém o mesmo prazo de retorno do Karma, sem disparar o efeito nem benefícios de Estouro.
 
 Na tabela, Vontade se refere à resistência interior, resolvida com Espírito + Canalização de Karma. Resistência física usa Constituição + Atletismo quando o efeito não designa outra combinação.
 
@@ -2645,24 +2658,24 @@ Na tabela, Vontade se refere à resistência interior, resolvida com Espírito +
 
 | Runa | Grau | Karma Retido | Enquanto armada | Estouro |
 |---|---|---|---|---|
-| Runa da Brasa Cortante (Kenaz) | I | 2 | Converte o dano da arma em térmico/kármico e soma +1 no dano final. | Adiciona +1d8 de dano antes do parcial e ilumina o alvo (impede furtividade por 1 rodada). |
+| Runa da Brasa Cortante (Kenaz) | I | 2 | Converte o dano da arma em térmico/kármico e soma +1 no dano final. | Adiciona +1d6 de dano antes do parcial e ilumina o alvo (impede furtividade por 1 rodada). |
 | Runa do Alcance Estendido (Elhaz) | I | 2 | Aumenta o alcance de ataques corpo a corpo em +1,5m ou à distância em +6m. | O ataque ignora cobertura parcial e soma +2 no teste de acerto. |
-| Runa da Fenda de Guarda (Thurisaz) | II | 3 | Ataques com a arma reduzem em -1 a CA Parcial do alvo. | Causa +1d10 de dano e destrói até 8 pontos de Escudo Temporário do alvo antes de aplicar o dano. |
+| Runa da Fenda de Guarda (Thurisaz) | II | 3 | Ataques com a arma reduzem em -1 a CA Parcial do alvo. | Causa +1d8 de dano e destrói até 7 pontos de Escudo Temporário do alvo antes de aplicar o dano. |
 | Runa da Hélice Dupla (Jera) | III | 4 | Ao errar um ataque (Falha), você recupera 1m de deslocamento livre. | Cria um eco kármico do golpe: causa +2d6 de dano e atinge também um segundo inimigo a até 2m do primeiro. |
-| Runa do Dreno Espiritual (Othala) | III | 4 | Acertos Totais com a arma recuperam 1 de Karma para o portador. | Causa +2d8 de dano kármico e drena 3 de Karma do alvo atingido (transferindo-os para você). |
-| Runa da Ruptura de Essência (Hagalaz) | IV | 6 | A arma ignora Redução de Dano física e elemental de até 3 pontos. | Causa +2d10 de dano e aplica Sangramento e Abalado sem permitir redução por armadura. |
-| Runa do Julgamento Final (Tiwaz-Omega) | V | 10 | Soma +2 no teste de ataque e +3 no dano fixo de todos os golpes da arma. | Golpe cataclísmico: adiciona +3d10 de dano antes do parcial e reduz a CA Total do alvo em -3 até o fim da rodada. |
+| Runa do Dreno Espiritual (Othala) | III | 4 | Acertos Totais com a arma recuperam 1 de Karma para o portador. | Causa +2d6 de dano kármico e drena 3 de Karma do alvo atingido (transferindo-os para você). |
+| Runa da Ruptura de Essência (Hagalaz) | IV | 6 | A arma ignora Redução de Dano física e elemental de até 2 pontos. | Causa +2d8 de dano e aplica Sangramento e Abalado sem permitir redução por armadura. |
+| Runa do Julgamento Final (Tiwaz-Omega) | V | 10 | Soma +2 no teste de ataque e +2 no dano fixo de todos os golpes da arma. | Golpe cataclísmico: adiciona +3d8 de dano antes do parcial e reduz a CA Total do alvo em -3 até o fim da rodada. |
 
 ### Armadura e guarda
 
 | Runa | Grau | Karma Retido | Enquanto armada | Estouro |
 |---|---|---|---|---|
-| Runa do Casco de Pedra (Uruz) | I | 2 | Concede +1 de Redução de Dano contra ataques físicos. | Ao sofrer dano: Absorve 1d10 + Constituição do dano recebido naquele golpe. |
+| Runa do Casco de Pedra (Uruz) | I | 2 | Concede +1 de Redução de Dano contra ataques físicos. | Ao sofrer dano: Absorve 1d8 + Constituição do dano recebido naquele golpe. |
 | Runa do Passo Deslizante (Laguz) | II | 3 | Soma +1 em testes de Reflexos e Acrobacia. | Ao ser alvo de ataque: Permite recuar 3 metros como Reação livre e soma +3 na CA Parcial e Total contra o golpe. |
-| Runa do Espelho de Espinhos (Eihwaz) | II | 3 | Inimigos que agarrem você sofrem 3 de dano kármico automático. | Ao sofrer Acerto Total corpo a corpo: Reduz o dano em 1d8 e reflete 2d6 de dano kármico no atacante. |
+| Runa do Espelho de Espinhos (Eihwaz) | II | 3 | Inimigos que agarrem você sofrem 2 de dano kármico automático. | Ao sofrer Acerto Total corpo a corpo: Reduz o dano em 1d6 e reflete 2d4 de dano kármico no atacante. |
 | Runa da Restauração Estrutural (Berkano) | III | 4 | Aumenta a cura recebida de poções, técnicas ou reparos em +3. | Ao cair para metade da Vida ou menos: Dispara sozinha restaurando 2d8 + Etapa de Vida e limpando 1 condição física menor. |
-| Runa da Dissipação Prismática (Sowilo) | IV | 6 | Concede +2 na CA contra técnicas elementais, kármicas e divinas. | Ao ser atingido por técnica de área ou feixe: Reduz o dano recebido pela metade e concede imunidade à condição secundária do golpe. |
-| Runa da Fortaleza Imortal (Algiz-Mater) | V | 10 | Concede +2 na CA Total e imunidade a deslocamento forçado (empurrões/puxões). | Ao sofrer dano que levaria a 0 de Vida: Mantém o usuário de pé com 1 de Vida e concede 3d10 de Escudo Temporário por 1 rodada. |
+| Runa da Dissipação Prismática (Sowilo) | IV | 6 | Concede +1 na CA contra técnicas elementais, kármicas e divinas. | Ao ser atingido por técnica de área ou feixe: Reduz em um quarto o dano recebido, arredondando a redução para baixo, e concede imunidade à condição secundária do golpe. |
+| Runa da Fortaleza Imortal (Algiz-Mater) | V | 10 | Concede +1 no limiar de Acerto Total contra você e imunidade a deslocamento forçado (empurrões/puxões). | Ao sofrer dano que levaria a 0 de Vida: Mantém o usuário de pé com 1 de Vida e concede 3d8 de Escudo Temporário por 1 rodada. |
 
 ### Campo e selo
 
@@ -2670,10 +2683,10 @@ Na tabela, Vontade se refere à resistência interior, resolvida com Espírito +
 |---|---|---|---|---|
 | Runa do Limiar Cortante (Ansuz) | I | 2 | Vigia um raio de 2m no solo ou parede de forma invisível a olho nu. | Inimigo pisa na área: Dispara lâminas de ar comprimido causando 1d10 de dano e reduzindo o movimento em 2m. |
 | Runa da Âncora de Chumbo (Isa) | II | 3 | Cravada no alvo ou em 3m no solo: o terreno conta como difícil para inimigos. | Detonação: Prende as sombras em 3m; alvos sofrem 2d6 de dano, ficam Lentos e perdem voo/levitação por 2 rodadas. |
-| Runa do Silêncio Hermético (Mannaz) | III | 4 | Em 3m ao redor do selo, sons não entram nem saem. | Quando inimigo tenta conjurar na área: Estoura causando 2d8 de dano mental/kármico e exige +3 de Karma para a técnica dele não falhar. |
-| Runa do Vórtice de Tração (Raidho) | III | 4 | Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito. | Detonação: Puxa todos os inimigos em um raio de 4m para o centro da runa, causando 2d8 de dano contundente. |
-| Runa da Jaula Geométrica (Nauthiz) | IV | 6 | Cravada em um alvo: toda vez que ele se move, sofre 2 de dano por metro percorrido. | Detonação: Ergue paredes translúcidas de 3m de raio por 1 rodada e causa 2d10 de dano a quem tentar atravessar a borda. |
-| Runa do Colapso Espacial (Ginnungagap) | V | 10 | Em 6m ao redor do selo, inimigos sofrem -2 em testes de Reflexos e Iniciativa. | Detonação em Área (6m): Implosão gravitacional que causa 3d10 de dano kármico, deixa os alvos Caídos e destrói coberturas. |
+| Runa do Silêncio Hermético (Mannaz) | III | 4 | Em 3m ao redor do selo, sons não entram nem saem. | Quando inimigo tenta conjurar na área: Estoura causando 2d6 de dano mental/kármico e exige +3 de Karma para a técnica dele não falhar. |
+| Runa do Vórtice de Tração (Raidho) | III | 4 | Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito. | Detonação: Puxa todos os inimigos em um raio de 4m para o centro da runa, causando 2d6 de dano contundente. |
+| Runa da Jaula Geométrica (Nauthiz) | IV | 6 | Cravada em um alvo: toda vez que ele se move, sofre 1 de dano por metro percorrido, até 4 de dano por rodada. | Detonação: Ergue paredes translúcidas de 3m de raio por 1 rodada e causa 2d8 de dano na primeira tentativa de cada alvo de atravessar a borda. |
+| Runa do Colapso Espacial (Ginnungagap) | V | 10 | Em 6m ao redor do selo, inimigos sofrem -2 em testes de Reflexos e Iniciativa. | Detonação em Área (6m): Implosão gravitacional que causa 3d8 de dano kármico, deixa os alvos Caídos e destrói coberturas. |
 
 ### Sangue e corpo
 
@@ -2684,7 +2697,7 @@ Na tabela, Vontade se refere à resistência interior, resolvida com Espírito +
 | Runa dos Tendões de Relâmpago (Ehwaz) | III | 4 | Aumenta o deslocamento em +2m e a distância de saltos em +3m. | Ação Livre: Concede uma Ação de Movimento extra imediata no turno e soma +2 na CA até a próxima rodada. |
 | Runa da Fornalha Cardíaca (Wunjo) | III | 4 | Impede que o usuário fique Abalado ou Lento por frio/exaustão. | Ao gastar 3 de Vida: Todos os ataques e técnicas do usuário neste turno somam +1d8 de dano adicional antes do parcial. |
 | Runa da Mente Bipartida (Ingwaz) | IV | 6 | Concede +2 em testes de Tática, Criação e Canalização de Karma. | Ação Livre: Permite sustentar duas técnicas de concentração ao mesmo tempo ou realizar 1 Ação Extra gratuita para usar item/runa. |
-| Runa da Apoteose Efêmera (Odinn-Selo) | V | 10 | Aumenta em +1d20 a Reserva de todos os testes baseados em Intelecto ou Espírito. | Ação Livre: Por 2 rodadas, todas as suas técnicas custam metade do Karma e causam +1 dado de dano extra da respectiva Matriz. |
+| Runa da Apoteose Efêmera (Odinn-Selo) | V | 10 | Aumenta em +1d20 a Reserva de todos os testes baseados em Intelecto ou Espírito. | Ação Livre: Por 2 rodadas, todas as suas técnicas custam metade do Karma e causam +1 dado de dano extra, um passo abaixo do dado-base da Matriz (mínimo d4). |
 
 # Capítulo 10 - Criação de técnicas
 

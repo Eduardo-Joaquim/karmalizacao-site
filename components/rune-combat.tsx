@@ -1,36 +1,75 @@
 "use client";
 
 import { useState } from "react";
+import { combatId } from "@/lib/combat-id";
 import type { CharacterPayload } from "@/lib/character-model";
-import type { LiveCombatState } from "@/lib/combat-types";
-import { availableKarma, equippedRuneWeapons, karmicRunes, personalRuneLimit, retainedKarma } from "@/lib/karmic-runes";
+import type { CombatAction, LiveCombatState } from "@/lib/combat-types";
+import { availableKarma, karmicRunes, personalRuneCount, personalRuneLimit, retainedKarma, runeInscriptionAction, runeInscriptionError, runeSupport } from "@/lib/karmic-runes";
 
-export function RuneCombat({ draft, state, pending, onArm, onBurst }: {
+export function RuneCombat({ draft, state, send, pending = false, itemId }: {
   draft: CharacterPayload;
   state: LiveCombatState;
-  pending: boolean;
-  onArm: (runeId:number, title:string, weaponId?:string)=>void;
-  onBurst: (id:string, title:string)=>void;
+  send: (action: CombatAction) => Promise<void>;
+  pending?: boolean;
+  itemId?: string;
 }) {
-  const [runeId, setRuneId] = useState(1);
-  const [weaponId, setWeaponId] = useState("");
-  const support = equippedRuneWeapons(draft);
+  const [runeId, setRuneId] = useState(0);
+  const [selectedItem, setSelectedItem] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState("");
+  const items = draft.inventory.flatMap(item => {
+    const support = runeSupport(item);
+    return support?.accessible ? [{ item, support }] : [];
+  });
+  const targetId = itemId ?? (items.some(({ item }) => item.id === selectedItem) ? selectedItem : "");
+  const target = draft.inventory.find(item => item.id === targetId);
+  const support = target && runeSupport(target);
   const active = (state.runes ?? []).filter(rune => !rune.spent);
-  const picked = karmicRunes.find(rune => rune.id === runeId)!;
-  return <details className="live-rune-controls">
-    <summary>Runas Kármicas · {retainedKarma(state)} Karma retidos</summary>
-    <p>{availableKarma(state)} Karma disponíveis. {active.filter(rune => !rune.weaponId).length}/{personalRuneLimit(draft)} espaços pessoais ocupados.</p>
+  const attached = itemId ? active.filter(rune => rune.weaponId === itemId) : active;
+  const compatible = support ? karmicRunes.filter(rune => rune.category === support.category) : karmicRunes;
+  const picked = compatible.find(rune => rune.id === runeId) ?? compatible[0];
+  const issue = runeInscriptionError(draft, state, picked, targetId || undefined);
+  const occupied = support?.slots ? active.filter(entry => entry.weaponId === targetId).length : personalRuneCount(draft, state);
+  const capacity = support?.slots || personalRuneLimit(draft);
+
+  async function record(data: Pick<Extract<CombatAction, { type: "armRune" }>, "type" | "runeId" | "weaponId"> | Pick<Extract<CombatAction, { type: "burstRune" }>, "type" | "inscriptionId" | "disarm">, title: string) {
+    setBusy(true);
+    setMessage("");
+    try {
+      await send({ ...data, id: combatId(), actorName: draft.name || "Personagem", title });
+      setMessage("Registro atualizado.");
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "Não foi possível registrar a runa.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return <details className="live-rune-controls inventory-rune-controls">
+    <summary>{itemId ? `Runas do item · ${attached.length} armadas` : `Runas Kármicas · ${retainedKarma(state)} Karma retidos`}</summary>
+    <p>{availableKarma(state)} Karma disponíveis · {occupied}/{capacity} espaços {support?.slots ? "do item" : "pessoais"} ocupados.</p>
     <div className="live-controls">
-      <label>Runa <select value={runeId} onChange={event => setRuneId(Number(event.target.value))}>{karmicRunes.map(rune => <option key={rune.id} value={rune.id}>{rune.name} · {rune.retained} Karma</option>)}</select></label>
-      <label>Suporte <select value={weaponId} onChange={event => setWeaponId(event.target.value)}><option value="">Espaço pessoal</option>{support.map(({item,weapon}) => <option key={item.id} value={item.id}>{item.name} · {active.filter(rune => rune.weaponId === item.id).length}/{weapon.slots}</option>)}</select></label>
-      <button type="button" disabled={pending || availableKarma(state) < picked.retained} onClick={() => onArm(runeId, `Armar ${picked.name}`, weaponId || undefined)}>Armar após resolver a inscrição</button>
+      {!itemId && <label>Suporte<select value={targetId} onChange={event => setSelectedItem(event.target.value)}><option value="">Espaço pessoal · suporte em mesa</option>{items.map(({ item }) => <option key={item.id} value={item.id}>{item.name}</option>)}</select></label>}
+      <label>Runa<select value={picked.id} onChange={event => setRuneId(Number(event.target.value))}>{compatible.map(rune => <option key={rune.id} value={rune.id}>{rune.name} · {rune.retained} Karma</option>)}</select></label>
+      <button type="button" disabled={pending || busy || Boolean(issue)} onClick={() => void record({ type: "armRune", runeId: picked.id, weaponId: targetId || undefined }, `Inscrever ${picked.name}`)}>Registrar inscrição</button>
     </div>
-    <p>{picked.category} · Grau {picked.grade}. {picked.passive}</p>
-    <p>Estouro. {picked.burst}</p>
-    {active.map(inscription => {
+    {issue && <p>{issue}</p>}
+    <p><strong>{picked.category} · Grau {picked.grade} · {runeInscriptionAction(draft, picked)}</strong> {picked.passive}</p>
+    <p><strong>Estouro</strong> {picked.burst}</p>
+    {attached.map(inscription => {
       const rune = karmicRunes.find(entry => entry.id === inscription.runeId);
-      return rune && <article key={inscription.id}><h3>{rune.name}</h3><p>{rune.passive}</p><p>{rune.burst}</p><button type="button" disabled={pending} onClick={() => onBurst(inscription.id, `Estourar ${rune.name}`)}>Registrar Estouro</button></article>;
+      const item = draft.inventory.find(entry => entry.id === inscription.weaponId);
+      return rune && <article key={inscription.id}>
+        <h3>{rune.name}</h3>
+        {!itemId && <small>{item?.name ?? (inscription.weaponId ? "Suporte removido" : "Espaço pessoal")}</small>}
+        <p>{rune.passive}</p><p>{rune.burst}</p>
+        <div className="live-controls">
+          <button type="button" disabled={pending || busy} onClick={() => void record({ type: "burstRune", inscriptionId: inscription.id }, `Estourar ${rune.name}`)}>Registrar Estouro</button>
+          <button type="button" disabled={pending || busy} onClick={() => void record({ type: "burstRune", inscriptionId: inscription.id, disarm: true }, `Desarmar ${rune.name}`)}>Desarmar</button>
+        </div>
+      </article>;
     })}
-    <small>Resolva o gatilho, a ação e o efeito em mesa. O registro controla vagas e Karma Retido.</small>
+    <p role="status">{message}</p>
+    <small>Registre depois de resolver a inscrição ou o gatilho em mesa. O site controla vagas e Karma Retido.</small>
   </details>;
 }

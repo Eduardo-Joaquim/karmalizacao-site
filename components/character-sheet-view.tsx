@@ -6,6 +6,7 @@ import { hasAwakenedPath } from "@/lib/personal-path";
 import { registeredTechniqueCost } from "@/lib/combat-engine";
 import { TechniqueCost } from "@/components/technique-cost";
 import { CorruptedFormEditor } from "@/components/corrupted-form-editor";
+import type { CombatAction } from "@/lib/combat-types";
 import { WorkshopPanel } from "@/components/workshop-panel";
 import { InventoryManager, type InventoryUse } from "@/components/inventory-manager";
 
@@ -66,6 +67,7 @@ type CharacterSheetViewProps = {
   derived: DerivedStats;
   onChange?: (next: CharacterPayload) => void;
   readOnly?: boolean;
+  onCombatAction?: (action: CombatAction) => Promise<void>;
   onInventoryUse?: (change: InventoryUse) => Promise<void>;
 };
 
@@ -114,6 +116,7 @@ export function CharacterSheetView({
   onChange,
   readOnly = false,
   onInventoryUse,
+  onCombatAction,
 }: CharacterSheetViewProps) {
   const race = getRaceRule(draft.race);
   const classDefinition = getClassDefinition(draft.className);
@@ -487,7 +490,7 @@ export function CharacterSheetView({
         </SheetSection>
       ) : null}
 
-      <InventoryManager draft={draft} onChange={onChange} readOnly={readOnly} onInventoryUse={onInventoryUse}/>
+      <InventoryManager draft={draft} onChange={onChange} readOnly={readOnly} onInventoryUse={onInventoryUse} onCombatAction={onCombatAction}/>
     </div>
   );
 }

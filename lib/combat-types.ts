@@ -31,7 +31,7 @@ export type CombatAction = {
   | { type: 'spectacle'; rollFormula:string; diceResults:number[]; total:number; selection:DiceSelection; details?:string }
   | { type: 'domain'; name: string }
   | { type: 'armRune'; runeId: number; weaponId?: string }
-  | { type: 'burstRune'; inscriptionId: string }
+  | { type: 'burstRune'; inscriptionId: string; disarm?: boolean }
   | { type: 'form'; active: boolean }
   | { type: 'barrier'; reinforced: boolean }
   | { type: 'round' }

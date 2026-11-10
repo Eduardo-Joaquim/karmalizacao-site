@@ -750,6 +750,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
   return (
     <main className="site-shell character-main">
       <CharacterCombatShell draft={draft} onChange={setDraft} id={activeId} onShare={() => void enableOrCopySharing()}>
+      {send => <>
       {!authenticated && <aside className="guest-notice"><strong>Modo visitante</strong><p>Experimente a criação completa. Seu rascunho fica somente neste navegador.</p><a href="/signin-with-chatgpt?return_to=%2Fpersonagem" target="_top">Entrar para salvar na nuvem</a><button type="button" onClick={() => { const blob = new Blob([JSON.stringify(draft, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = "karmalizacao-ficha.json"; a.click(); URL.revokeObjectURL(url); }}>Exportar rascunho</button></aside>}
       <CharacterStepNavigation activeStep={activeTab} onSelect={setActiveTab} />
       <header className="character-page-heading">
@@ -1221,7 +1222,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
                   <div className="character-share-actions"><Button type="button" onClick={() => void enableOrCopySharing(false)} disabled={saving}><Copy aria-hidden="true" /> Salvar e copiar link</Button><Button type="button" variant="outline" onClick={() => void enableOrCopySharing(true)} disabled={saving}>Gerar novo link</Button><Button type="button" variant="ghost" onClick={() => void disableSharing()} disabled={saving}><Unlink aria-hidden="true" /> Desativar</Button></div>
                 </> : <Button type="button" className="karma-button" onClick={() => void enableOrCopySharing(false)} disabled={saving}><Link2 aria-hidden="true" /> Criar e copiar link público</Button>}
               </section>
-              <CharacterSheetView draft={draft} automatic={automatic} derived={derived} onChange={commitDraft} />
+              <CharacterSheetView draft={draft} automatic={automatic} derived={derived} onChange={commitDraft} onCombatAction={send} />
             </TabsContent>
           </Tabs>
         </section>
@@ -1295,6 +1296,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+      </>}
       </CharacterCombatShell>
     </main>
   );

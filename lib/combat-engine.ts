@@ -1,4 +1,4 @@
-import { availableKarma, equippedRuneWeapons, karmicRunes, personalRuneLimit } from "@/lib/karmic-runes";
+import { availableKarma, karmicRunes, runeInscriptionAction, runeInscriptionError } from "@/lib/karmic-runes";
 import { hasAwakenedPath, hasAxiom } from "@/lib/personal-path";
 import { rollDiceExpression } from "@/lib/dice-expression";
 import {calculateElementalDefense, CORRUPT_CONTROL_BASE,corruptionMatrixRisk,techniqueGradeIndex} from '@/lib/technique-matrices';
@@ -192,15 +192,11 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
     const rune = karmicRunes.find(entry => entry.id === op.runeId);
     if (!rune) throw Error('Runa desconhecida.');
     const inscriptions = s.runes ?? [];
-    const active = inscriptions.filter(entry => !entry.spent && entry.weaponId === op.weaponId);
-    const support = equippedRuneWeapons(draft).find(entry => entry.item.id === op.weaponId);
-    if (op.weaponId && !support) throw Error('Empunhe a arma escolhida antes de inscrever a Runa.');
-    const limit = support ? support.weapon.slots : personalRuneLimit(draft);
-    if (active.length >= limit || inscriptions.length >= 100) throw Error('Limite de Runas atingido.');
-    if (availableKarma(s) < rune.retained) throw Error('Karma disponível insuficiente para reter a Runa.');
+    const error = runeInscriptionError(draft, s, rune, op.weaponId);
+    if (error) throw Error(error);
     s.runes = [...inscriptions, { id:op.id, runeId:rune.id, weaponId:op.weaponId }];
     event.kind = 'ability';
-    event.details = `${rune.retained} Karma retidos. ${rune.passive}`;
+    event.details = `${runeInscriptionAction(draft, rune)} · ${rune.retained} Karma retidos. ${rune.passive}`;
   }
   if (op.type === 'burstRune') {
     const inscription = s.runes?.find(entry => entry.id === op.inscriptionId && !entry.spent);
@@ -208,11 +204,11 @@ export function applyCombatAction(draft:CharacterPayload, op:CombatAction, times
     if (!inscription || !rune) throw Error('Runa armada não encontrada.');
     const releaseRound = draft.className === 'Escriba Kármico' ? Math.min(99999,s.round + 1) : undefined;
     s.runes = s.runes?.map(entry => entry.id === inscription.id ? { ...entry, spent:true, releaseRound } : entry);
-    const circuit = hasAxiom(draft,5) && !s.runeBurstUsed;
+    const circuit = !op.disarm && hasAxiom(draft,5) && !s.runeBurstUsed;
     if (circuit) s.currentKarma = Math.min(max.karma,s.currentKarma + 3);
-    s.runeBurstUsed = true;
+    if (!op.disarm) s.runeBurstUsed = true;
     event.kind = 'ability';
-    event.details = `${rune.burst}${circuit ? ' Circuito Rúnico Autônomo: +2 na CD ou no acerto e recuperação de até 3 Karma.' : ''}`;
+    event.details = `${op.disarm ? "Runa desarmada sem ativar o Estouro. O Karma retorna no prazo normal." : rune.burst}${circuit ? ' Circuito Rúnico Autônomo: +2 na CD ou no acerto e recuperação de até 3 Karma.' : ''}`;
   }
   if(op.type==='domain'){
     const d=draft.domains.find(d=>d.name===op.name&&d.enabled&&d.awakened);if(!d)throw Error('Domínio não despertado.');

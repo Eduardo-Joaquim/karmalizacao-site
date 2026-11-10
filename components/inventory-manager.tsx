@@ -1,8 +1,11 @@
 "use client";
 import { AlchemyMeter } from "@/components/alchemy-meter";
+import { RuneCombat } from "@/components/rune-combat";
+import { liveState } from "@/lib/combat-engine";
+import { runeSupport } from "@/lib/karmic-runes";
 import { ItemCatalogPicker } from "@/components/item-catalog-picker";
 import { useState } from "react";
-import { Backpack, Plus, Trash2, Shield, Footprints, AlertTriangle } from "lucide-react";
+import { Backpack, Plus, Trash2, Shield, Footprints, AlertTriangle, ChevronDown } from "lucide-react";
 import mageWeapons from "@/data/mage-weapons.json";
 import catalog from "@/data/equipment-catalog.json";
 import type { CombatAction } from "@/lib/combat-types";
@@ -14,7 +17,7 @@ const categories={weapon:"Arma",armor:"Armadura",shield:"Escudo",ammo:"Munição
 export type InventoryUse = Omit<Extract<CombatAction, { type: "inventoryUse" }>, "id" | "actorName" | "title" | "type">;
 const locations = { backpack: "Mochila / guardado", ready: "Prontidão", external: "Veículo / depósito externo" };
 
-export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse}:{draft:CharacterPayload;onChange?:(draft:CharacterPayload)=>void;readOnly?:boolean;onInventoryUse?:(change:InventoryUse)=>Promise<void>}){
+export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse,onCombatAction}:{draft:CharacterPayload;onChange?:(draft:CharacterPayload)=>void;readOnly?:boolean;onInventoryUse?:(change:InventoryUse)=>Promise<void>;onCombatAction?:(action:CombatAction)=>Promise<void>}){
  const [selected,setSelected]=useState("");
  const [editing,setEditing]=useState<string|null>(null),[feedback,setFeedback]=useState(""),[pending,setPending]=useState(false);
  async function useItem(change:InventoryUse){
@@ -24,6 +27,7 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse}:
    catch(error) { setFeedback(error instanceof Error ? error.message : "O uso não foi salvo."); }
    finally { setPending(false); }
  }
+ const combat=liveState(draft);
  const automatic=calculateAutomaticBonuses(draft);const derived=calculateDerivedStats(draft,automatic);
  const state=inventoryState(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),(draft.loadModifier??0)+(draft.race==="Anão"?2:0));
  const update=(id:string,patch:Partial<InventoryItem>)=>onChange?.({...draft,inventory:draft.inventory.map(i=>i.id===id?{...i,...patch}:i)});
@@ -40,15 +44,26 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse}:
  const spaces=item.quantity*item.spaces;
  const editable=Boolean(!readOnly||onInventoryUse);
  const editingThis=editable&&editing===item.id;
+ const armed=(combat.runes??[]).filter(rune=>!rune.spent&&rune.weaponId===item.id).length;
+ const runeSlots=runeSupport(item);
  return <details className="inventory-item" key={item.id} data-equipped={item.equipped}>
  <summary className="inventory-compact-summary">
-   <span aria-hidden="true">{String(index+1).padStart(2,"0")}</span><strong>{item.name}</strong>
-   <span>{categories[item.category??"gear"]}</span><span>{fmt(spaces)} {spaces===1?"espaço":"espaços"}</span>
-   <span>{item.equipped?"Equipado / ":""}{locations[item.location??"backpack"]}</span>
-   {item.notes&&<span className="inventory-effect-preview">{item.notes}</span>}
+   <span aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+   <div className="inventory-summary-copy">
+     <strong>{item.name}</strong>
+     <div className="inventory-summary-meta">
+       <span>{categories[item.category??"gear"]}</span>
+       <span>{fmt(spaces)} {spaces===1?"espaço":"espaços"}</span>
+       <span>{item.equipped?"Equipado":locations[item.location??"backpack"]}</span>
+       {(armed>0||Boolean(runeSlots?.slots))&&<span>{armed}{runeSlots?.slots ? `/${runeSlots.slots}` : ""} runa(s)</span>}
+     </div>
+     {item.notes&&<p className="inventory-effect-preview">{item.notes}</p>}
+   </div>
+   <ChevronDown aria-hidden="true" size={16} />
  </summary>
  <div className="inventory-item-content">
  <p>{item.quantity} unidade(s){item.notes ? ` · ${item.notes}` : ""}</p>
+ {onCombatAction&&(runeSlots||armed>0)&&<RuneCombat draft={draft} state={combat} itemId={item.id} send={onCombatAction}/>}
  {editable&&<button type="button" aria-expanded={editingThis} onClick={()=>setEditing(editingThis?null:item.id)}>{editingThis?"Concluir":readOnly?"Editar Item · uso":"Editar Item"}</button>}
  {editingThis&&readOnly&&<div className="inventory-item-fields">
    <label>Local<select disabled={pending} value={item.location??"backpack"} onChange={event=>void useItem({itemId:item.id,location:event.target.value as InventoryUse["location"]})}>{Object.entries(locations).map(([id,label])=><option value={id} key={id}>{label}</option>)}</select></label>
@@ -56,7 +71,7 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse}:
    <button type="button" disabled={pending||item.quantity===0} onClick={()=>void useItem({itemId:item.id,consume:1})}>Consumir 1 unidade</button>
  </div>}
  {editingThis&&!readOnly&&<>
- <div className="inventory-item-heading"><label className="sr-only" htmlFor={`item-name-${item.id}`}>Nome do item {index+1}</label><input id={`item-name-${item.id}`} value={item.name} maxLength={120} onChange={e=>update(item.id,{name:e.target.value})}/><button type="button" aria-label={`Remover ${item.name}`} onClick={()=>onChange?.({...draft,inventory:draft.inventory.filter(i=>i.id!==item.id)})}><Trash2 aria-hidden="true"/></button></div>
+ <div className="inventory-item-heading"><label className="sr-only" htmlFor={`item-name-${item.id}`}>Nome do item {index+1}</label><input id={`item-name-${item.id}`} value={item.name} maxLength={120} onChange={e=>update(item.id,{name:e.target.value})}/><button type="button" aria-label={`Remover ${item.name}`} disabled={armed>0} title={armed>0?"Desarme as runas antes de remover o item.":undefined} onClick={()=>onChange?.({...draft,inventory:draft.inventory.filter(i=>i.id!==item.id)})}><Trash2 aria-hidden="true"/></button></div>
  <div className="inventory-item-fields"><label>Categoria<select disabled={readOnly} value={item.category??"gear"} onChange={e=>update(item.id,{category:e.target.value as InventoryItem["category"]})}>{Object.entries(categories).map(([key,label])=><option key={key} value={key}>{label}</option>)}</select></label><label>Quantidade<input type="number" min={0} max={999} disabled={readOnly} value={item.quantity} onChange={e=>update(item.id,{quantity:Math.max(0,Math.min(999,Math.floor(+e.target.value)||0))})}/></label><label>Espaços por unidade<input type="number" min={0} max={9999} step="any" disabled={readOnly} value={item.spaces} onChange={e=>update(item.id,{spaces:Math.max(0,Math.min(9999,+e.target.value||0))})}/></label><label>Local<select disabled={readOnly} value={item.location??"backpack"} onChange={e=>update(item.id,{location:e.target.value as InventoryItem["location"],...(e.target.value==="external"?{equipped:false}:{})})}><option value="backpack">Mochila / guardado</option><option value="ready">Prontidão</option><option value="external">Veículo / depósito externo</option></select></label><label className="inventory-equip"><input type="checkbox" disabled={readOnly||item.location==="external"||item.quantity===0} checked={item.equipped??false} onChange={e=>update(item.id,{equipped:e.target.checked})}/> Equipado / empunhado</label></div>
  {(item.category==="armor"||item.category==="shield")&&<div className="inventory-item-fields">{([["armorClass","Bônus de CA",20],["agilityCap","Agilidade máxima na CA",99],["movementPenalty","Redução de movimento",20],["minStrength","Força mínima",20]] as const).map(([key,label,max])=><label key={key}>{label}<input type="number" min={0} max={max} disabled={readOnly} value={item[key]??(key==="agilityCap"?99:0)} onChange={e=>update(item.id,{[key]:Math.max(0,Math.min(max,+e.target.value||0))})}/></label>)}</div>}
  {mageWeapons.filter(weapon => weapon.id === item.catalogId).map(weapon => <p key={weapon.id}><strong>{weapon.slots} espaços rúnicos.</strong> {weapon.effect}</p>)}
