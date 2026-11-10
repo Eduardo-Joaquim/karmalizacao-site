@@ -7,7 +7,7 @@ import { GmCombatWindow } from '@/components/gm-combat-window';
 import { EncounterDesk } from '@/components/encounter-desk';
 import { GeppetoSummons } from '@/components/geppeto-summons';
 import summons from '@/data/geppeto-summons.json';
-import { earlyPresets, type NpcTemplate } from '@/lib/combat-catalog';
+import { combatCatalog, earlyPresets, type NpcTemplate } from '@/lib/combat-catalog';
 import { quickTechnique, TECH_GRADES, vowJudgement } from '@/lib/gm-rules';
 import { alchemyState } from '@/lib/alchemy';
 import { ATTRIBUTES } from '@/lib/character-data';
@@ -19,6 +19,15 @@ export function GmPage(){
  const [matrix,setMatrix]=useState<TechniqueMatrix>("Kármico");
  const [library,setLibrary]=useState<NpcTemplate[]>([]),[libraryReady,setLibraryReady]=useState(false),[libraryMessage,setLibraryMessage]=useState('');
  useEffect(()=>{try{const raw=localStorage.getItem(FORGE_LIBRARY_KEY);if(raw)setLibrary(parseForgeLibrary(JSON.parse(raw)));setLibraryReady(true);}catch{setLibraryMessage('Biblioteca local inválida; os dados existentes foram preservados.');}},[]);
+ useEffect(()=>{
+  const url=new URL(window.location.href);
+  const requested=url.searchParams.get("npc");
+  if(!requested)return;
+  const npc=combatCatalog.find(entry=>entry.id===requested);
+  url.searchParams.delete("npc");
+  window.history.replaceState(null,"",url);
+  if(npc)setIncoming(structuredClone(npc));
+ },[]);
  function persistLibrary(next:NpcTemplate[]){try{localStorage.setItem(FORGE_LIBRARY_KEY,JSON.stringify(next));setLibrary(next);setLibraryMessage('Biblioteca atualizada neste navegador.');}catch{setLibraryMessage('Não foi possível guardar a biblioteca. Verifique o espaço do navegador.');}}
  const t=quickTechnique(grade,({Principal:0,Movimento:1,Reação:1,Livre:4} as Record<string,number>)[action],range,duration,minor,matrix),vow=vowJudgement(weight),alch=alchemyState(constitution,saturation),maxGrade=stage>=7?4:stage>=5?3:stage>=3?2:1;
  function forge(save=false){if(!name.trim()){setLibraryMessage('Informe o nome da criatura antes de continuar.');return;}if(!techName.trim()){setLibraryMessage('Informe o nome da técnica principal da criatura.');return;}if(!effect.trim()){setLibraryMessage('Descreva o efeito mecânico da técnica da criatura.');return;}if(grade>maxGrade){setLibraryMessage('O Grau escolhido excede o limite permitido para a Etapa selecionada.');return;}const id=combatId();const npc:NpcTemplate={id,name:name.trim(),source:'Forja do Mestre',stage:`Etapa ${['I','II','III','IV','V','VI','VII'][stage-1]} · ${role}`,life,karma,ca,movement:'7 m',attributes:attrs,skills,traits,resistance:0,reactions,arts:[{id:'forged',name:techName,cost:t.cost,text:`Matriz ${matrix} · Dano universal ${matrix==='Marcial'?'Físico':'Kármico'}. ${primary}: ${effect}. ${primary==='Ataque'?`Total ${t.damage}; parcial metade do dano, sem efeito menor. Falha: nada.`:'Registre a resolução, o encerramento e a defesa no efeito.'} ${minor?'Inclui apenas um efeito menor descrito.':''}`,roll,damage:primary==='Ataque'?t.damage:'',attack:primary==='Ataque',action,calculation:t.calculation}]};try{npcTemplateSchema.parse(npc);if(save){if(!libraryReady)throw Error('Biblioteca indisponível.');persistLibrary(addToForgeLibrary(library,npc));}else {setIncoming(npc);setLibraryMessage(`"${npc.name}" foi enviado para a Janela de Combate!`);document.querySelector('.gm-combat')?.scrollIntoView({behavior:'smooth',block:'start'});}}catch(e){setLibraryMessage((e as Error).message);}}

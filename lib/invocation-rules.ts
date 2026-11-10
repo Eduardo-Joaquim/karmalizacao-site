@@ -1,3 +1,4 @@
+import { extractDiceExpression } from "@/lib/dice-expression";
 import type { InvocationGrade, InvocationRecord } from "@/lib/character-data";
 
 export const INVOCATION_GRADE_RULES: Record<InvocationGrade, {
@@ -99,8 +100,31 @@ export function calculateInvocationStats(invocation: InvocationRecord): Invocati
   };
 }
 
+function averageDamage(formula: string): number {
+  return (extractDiceExpression(formula) ?? "").split("+").reduce((sum, term) => {
+    const [dice, sides] = term.toLowerCase().split("d").map(Number);
+    return sum + (sides ? dice * (sides + 1) / 2 : dice);
+  }, 0);
+}
+
+export function invocationDamageOptions(invocation: InvocationRecord): string[] {
+  const basic = calculateInvocationStats(invocation).damage;
+  const next = HIGHER_DAMAGE[basic];
+  return next ? [basic, next] : [basic];
+}
+
+export function invocationAbilityDamageError(invocation: InvocationRecord): string | undefined {
+  const { ability } = invocation;
+  const legacyPaid = /[1-9]\d*\s*(?:de\s+)?Karma/i.test(ability.calculation);
+  const damage = ability.damage ?? (legacyPaid ? extractDiceExpression(ability.effect.match(/[^.!?]*dano[^.!?]*/i)?.[0] ?? "") : null);
+  if ((ability.karma ?? Number(legacyPaid)) > 0 && damage && averageDamage(damage) < averageDamage(calculateInvocationStats(invocation).damage)) {
+    return "O dano de uma habilidade paga deve alcançar pelo menos o dano médio do ataque básico.";
+  }
+}
 export function getInvocationWarnings(invocation: InvocationRecord): string[] {
   const warnings: string[] = [];
+  const damageError = invocationAbilityDamageError(invocation);
+  if (damageError) warnings.push(damageError);
   if (!isInvocationFormAllowed(invocation.callForm, invocation.grade)) warnings.push("Fusão exige uma Invocação de Grau III ou maior.");
   if (invocation.ability.grade && invocationGradeIndex(invocation.ability.grade) > invocationGradeIndex(invocation.grade)) warnings.push("A habilidade não pode ter Grau maior que a própria Invocação.");
   if (invocation.secondaryAttributes.length > 1) warnings.push("Escolha somente um Atributo secundário.");

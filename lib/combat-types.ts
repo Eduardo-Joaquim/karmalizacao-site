@@ -4,7 +4,7 @@ export type CombatLog = {
   kind: 'skill' | 'attack' | 'technique' | 'ability' | 'damage' | 'heal' | 'resource';
   title: string; rollFormula?: string; diceResults?: number[]; total?: number;
   visual?: CombatVisual; karmaDelta?: number; shieldDelta?: number;
-  karmaSpent?: number; lifeDelta?: number; details?: string;
+  karmaSpent?: number; lifeDelta?: number; details?: string; inventoryItemId?: string;
 };
 export type LiveRune = { id:string; runeId:number; weaponId?:string; spent?:boolean; releaseRound?:number };
 export type LiveCombatState = {
@@ -12,8 +12,8 @@ export type LiveCombatState = {
   runeBurstUsed?: boolean;
   impetus?:number; impetusBloodied?:boolean;
   inCombat: boolean; currentLife: number; currentKarma: number; tempShield: number;
-  activeConditions: string[]; lastActionLog: CombatLog | null; combatFeed: CombatLog[];
-  summons?:Record<string,{life:number;active:boolean}>;
+  activeConditions: string[]; conditionRounds?: Record<string, number>; lastActionLog: CombatLog | null; combatFeed: CombatLog[];
+  summons?:Record<string,{life:number;active:boolean;fractures?:number;maintainedThroughRound?:number}>;
   bossPhases?: Record<string, PhaseNotice>;
   reactions: number; round: number; domainRounds: Record<string, number>;
 };
@@ -21,10 +21,11 @@ export type CombatAction = {
   id: string; actorName: string; title: string;
 } & (
   | { type: 'damage'; amount: number; resistance: number; incomingElement?:string; primaryDefenses?:Record<string,number>; bypassShield?: boolean }
-  | {type:'summon';invocationId:string;operation:'call'|'maintain'|'life'|'dismiss';delta?:number}
+  | {type:'summon';invocationId:string;operation:'call'|'maintain'|'life'|'dismiss'|'fracture';delta?:number}
   | { type: 'heal'; amount: number }
   | { type: 'resource'; resource: 'karma' | 'life' | 'shield' | 'saturation' | 'charge' | 'reactions' | 'favor'; delta: number }
-  | { type: 'condition'; condition: string; remove: boolean }
+  | { type: 'condition'; condition: string; remove: boolean; rounds?: number }
+  | { type: 'inventoryUse'; itemId: string; location?: 'backpack' | 'ready' | 'external'; equipped?: boolean; consume?: number }
   | { type: 'execute'; techniqueId?:string; succeeded?:boolean; impetus?:boolean; cost: number; kind: 'skill' | 'attack' | 'technique' | 'ability'; rollFormula?: string; diceResults?: number[]; total?: number; selection?: DiceSelection; details?: string }
   | { type: 'phase'; phase: PhaseNotice }
   | { type: 'spectacle'; rollFormula:string; diceResults:number[]; total:number; selection:DiceSelection; details?:string }

@@ -6,13 +6,15 @@ import { applyCombatAction, mergeCombat } from '@/lib/combat-engine';
 export function useCombatSync(link:CombatLink|null,draft:CharacterPayload,onChange:(d:CharacterPayload)=>void){
  const latest=useRef({draft,onChange,link});latest.current={draft,onChange,link};
  const [status,setStatus]=useState(link?'Conectando…':'Local · sem vínculo'),[error,setError]=useState(''),[pending,setPending]=useState(0);
+ const inventorySnapshot=useRef(draft.inventory);
+ function merge(payload:CharacterPayload){const next=mergeCombat(payload,latest.current.draft,inventorySnapshot.current);inventorySnapshot.current=payload.inventory;return next;}
  const etag=useRef(''),queue=useRef(Promise.resolve()),channel=useRef<BroadcastChannel|null>(null),version=useRef(''),generation=useRef(0);
  useEffect(()=>{
-  etag.current='';version.current='';const current=++generation.current;let alive=true,busy=false,timer:ReturnType<typeof setTimeout>;
+  inventorySnapshot.current=latest.current.draft.inventory;etag.current='';version.current='';const current=++generation.current;let alive=true,busy=false,timer:ReturnType<typeof setTimeout>;
   const bc=typeof BroadcastChannel==='undefined'?null:new BroadcastChannel('karmalizacao:combat-sync');channel.current=bc;
   const accept=(payload:CharacterPayload,updatedAt:string)=>{
    if(!alive||current!==generation.current||updatedAt<version.current)return;
-   version.current=updatedAt;latest.current.onChange(mergeCombat(payload,latest.current.draft));setStatus('Ao vivo · 1,5 s');setError('');
+   version.current=updatedAt;latest.current.onChange(merge(payload));setStatus('Ao vivo · 1,5 s');setError('');
   };
   if(bc)bc.onmessage=e=>{const d=e.data;if(d?.id===link?.id&&d?.payload&&typeof d.updatedAt==='string'){accept(d.payload,d.updatedAt);}};
   async function poll(){
@@ -38,7 +40,7 @@ export function useCombatSync(link:CombatLink|null,draft:CharacterPayload,onChan
      const r=await fetch('/api/combate/sync',{method:'POST',headers:{'Content-Type':'application/json',...(captured.token?{'X-Combat-Token':captured.token}:{})},body:JSON.stringify({id:captured.id,action})});
      const data=await r.json() as {error?:string;payload:CharacterPayload;updatedAt:string};if(!r.ok){if(r.status!==409&&r.status<500)throw Object.assign(Error(data.error??'Ação recusada.'),{final:true});throw Error(data.error??'Servidor indisponível.');}
      if(current!==generation.current)return;
-     if(data.updatedAt>=version.current){version.current=data.updatedAt;etag.current=r.headers.get('ETag')??'';latest.current.onChange(mergeCombat(data.payload,latest.current.draft));}
+     if(data.updatedAt>=version.current){version.current=data.updatedAt;etag.current=r.headers.get('ETag')??'';latest.current.onChange(merge(data.payload));}
      channel.current?.postMessage({id:captured.id,payload:data.payload,updatedAt:data.updatedAt});setStatus('Ao vivo · ação salva');setError('');return;
     }catch(e){lastError=e;if((e as {final?:boolean}).final)break;}
    }

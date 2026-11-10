@@ -71,6 +71,7 @@ import {
   calculateAutomaticBonuses,
   calculateDerivedStats,
   getSkillTest,
+  skillBonusExplanation,
   getSacrificedPoints,
   getVowErrors,
   SIZE_RULES,
@@ -764,7 +765,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
           </p>
         </div>
         <div className="character-heading-actions">
-          {authenticated && <Button type="button" variant="outline" onClick={() => { const raw = localStorage.getItem("karmalizacao-guest-draft-v1"); if (!raw) { toast.error("Nenhum rascunho de visitante encontrado neste navegador."); return; } if (dirty && !window.confirm("Abrir o rascunho de visitante e descartar alterações não salvas?")) return; try { const restored = normalizeCharacterPayload(JSON.parse(raw)); setActiveId(null); commitDraft({ ...restored, sharing: { enabled: false, token: "" } }); setActiveTab("ficha"); } catch { toast.error("O rascunho não pôde ser aberto."); } }}>Recuperar rascunho visitante</Button>}
+          {authenticated && !activeId && <Button type="button" variant="outline" onClick={() => { const raw = localStorage.getItem("karmalizacao-guest-draft-v1"); if (!raw) { toast.error("Nenhum rascunho de visitante encontrado neste navegador."); return; } if (dirty && !window.confirm("Abrir o rascunho de visitante e descartar alterações não salvas?")) return; try { const restored = normalizeCharacterPayload(JSON.parse(raw)); setActiveId(null); commitDraft({ ...restored, sharing: { enabled: false, token: "" } }); setActiveTab("ficha"); } catch { toast.error("O rascunho não pôde ser aberto."); } }}>Recuperar rascunho visitante</Button>}
           <Button type="button" variant="outline" onClick={newCharacter}>
             <Plus aria-hidden="true" /> Nova ficha
           </Button>
@@ -1146,9 +1147,10 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
                                 {["Destreinado", "Treinado +2", "Veterano +5", "Transcendental +10"][total]}
                               </small>
                             </div>
-                            <small className="skill-test-preview">
-                              {test.attribute} · <span>{test.dice}d20 {test.bonus < 0 ? "−" : "+"} {Math.abs(test.bonus)}</span>
+                            <small className="skill-test-preview" title={skillBonusExplanation(test)}>
+                              {test.attribute} · <span>{test.selection === "menor" ? "menor de " : ""}{test.dice}d20 {test.bonus < 0 ? "−" : "+"} {Math.abs(test.bonus)}</span>
                             </small>
+                            {test.value === 0 && <small className="skill-row-notice">Atributo 0: −4, mesmo com treinamento.</small>}
                             {(breakdown.hasInvalidPoints || breakdown.sacrificedCommon > 0) && (
                               <small className="skill-row-notice">
                                 {[breakdown.hasInvalidPoints && "Revise os pontos", breakdown.sacrificedCommon > 0 && `${breakdown.sacrificedCommon} ponto(s) suspenso(s)`].filter(Boolean).join(" · ")}
@@ -1212,7 +1214,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
               <section className="character-share-panel" data-enabled={draft.sharing.enabled}>
                 <div className="character-share-heading">
                   <span aria-hidden="true"><Share2 /></span>
-                  <div><small>Somente visualização</small><h3>Compartilhar esta ficha</h3><p>Quem possui o link pode consultar a ficha e ajustar recursos e condições em combate. A criação permanece protegida e o e-mail da conta não é exibido. Revogue ou renove o link para encerrar o acesso.</p></div>
+                  <div><small>Modo Jogo · Recursos e Inventário Editáveis · Criação Protegida</small><h3>Compartilhar esta ficha</h3><p>Quem possui o link pode consultar a ficha, ajustar recursos e usar itens do inventário. A criação permanece protegida e o e-mail da conta não é exibido. Revogue ou renove o link para encerrar o acesso.</p></div>
                 </div>
                 {draft.sharing.enabled && activeId && draft.sharing.token ? <>
                   <div className="character-share-link"><Link2 aria-hidden="true" /><Input aria-label="Caminho público da ficha" readOnly value={`/ficha/${activeId}/${draft.sharing.token}`} /></div>

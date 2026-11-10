@@ -109,7 +109,7 @@ Projeção afeta seres imateriais, mas não explora vulnerabilidade elemental ne
 
 Quando um ataque percebido estiver prestes a ser comparado com a CA do protegido, condense uma superfície kármica na trajetória e conceda **+2 CA somente contra aquela resolução**. Pode declarar depois de conhecer a rolagem, mas antes de definir o acerto e aplicar dano ou condições. Pague **5 Karma no total** para receber **+4 CA**, em vez de +2.
 
-A ativação é automática: não exige outra rolagem, CD ou concentração. Recalcule a faixa de acerto parcial e total com a CA temporária. Um resultado igual à CA continua parcial; total exige superar a CA. Um 1 natural selecionado continua falhando, e o 20 natural conserva a regra de crítico sem dispensar a resolução do acerto.
+A ativação é automática: não exige outra rolagem, CD ou concentração. Recalcule a faixa de acerto parcial e total com a CA temporária. Um resultado igual à CA é total. Contra CA, inclusive com 1 natural, use as faixas do ataque. O 20 natural conserva a regra de crítico sem dispensar a resolução do acerto.
 
 Essa Reação não inclui Esquiva ou Bloqueio. Não some duas Barreiras Kármicas sobre o mesmo protegido contra a mesma incidência; use o maior bônus. A proteção termina depois da resolução, mesmo se o ataque falhar. Ela não acumula pontos de absorção, não cura e não muda a CA permanente da ficha.
 

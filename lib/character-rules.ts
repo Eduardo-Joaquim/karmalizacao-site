@@ -284,7 +284,7 @@ export const DOMAIN_RULES: Record<
   },
   "Técnica": {
     regent: "Intelecto 5+",
-    essence: "+1 no resultado de testes mentais ou sociais treinados efetivamente regidos por Intelecto. Esse bônus é separado do bônus Analítico.",
+    essence: "+1 no resultado de testes mentais treinados regidos por Intelecto. Esse bônus é separado do bônus Analítico.",
     manifestation:
       "acrescente +1d20 ao teste principal de qualquer técnica utilizada, qualquer que seja seu Atributo regente, desde que o alvo ou a situação seja percebido. Intelecto é o regente de acesso ao Domínio; uma técnica de Presença, Espírito, Força ou Agilidade também recebe o dado. Uma vez por turno, após o acerto total de uma técnica, realize Derrubar, Empurrar ou Desarmar contra um alvo atingido sem gastar outra ação, com o teste oposto normal e um meio coerente para executá-la.",
     fissure: "Alvos não percebidos, múltiplas fontes ocultas, cobertura total e mudança de padrão preservam seus efeitos.",
@@ -712,6 +712,27 @@ export function calculateDerivedStats(draft: CharacterPayload, automatic: Automa
 
 export { PRESENCE_SKILLS };
 
+export function defaultApproach(skill: string): AttributeName {
+  if (["Luta", "Atletismo"].includes(skill)) return "Força";
+  if (["Acrobacia", "Furtividade", "Pontaria", "Reflexos", "Ladinagem", "Condução"].includes(skill)) return "Agilidade";
+  if (skill === "Sobrevivência") return "Constituição";
+  if ((MENTAL_SKILLS as readonly string[]).includes(skill)) return "Intelecto";
+  if ((SOCIAL_SKILLS as readonly string[]).includes(skill) || PRESENCE_SKILLS.includes(skill)) return "Presença";
+  return "Espírito";
+}
+
+export function skillBonusExplanation(test: ReturnType<typeof getSkillTest>): string {
+  if (test.value === 0) return `${test.attribute} 0: −4. Treinamento e bônus de atributo não se aplicam.`;
+  if (!test.level) return "Perícia destreinada: 1d20 de base, sem treinamento nem Analítico.";
+  const parts = [
+    `${test.trainingBonus} Treinamento`,
+    test.analyticBonus && `${test.analyticBonus} Analítico`,
+    test.domainBonus && `${test.domainBonus} Domínio da Técnica`,
+    test.focusBonus && `${test.focusBonus} Foco`,
+  ].filter(Boolean);
+  return `+${parts.join(" + ")} = +${test.bonus}`;
+}
+
 export function getSkillTest(
   draft: CharacterPayload,
   automatic: AutomaticBonuses,
@@ -721,12 +742,10 @@ export function getSkillTest(
   testPurpose?: "evasion" | "movement" | "perception" | "technique",
 ) {
   const intellect = getFinalAttribute(draft, automatic, "Intelecto");
-  const presence = getFinalAttribute(draft, automatic, "Presença");
   const mental = (MENTAL_SKILLS as readonly string[]).includes(skill);
-  const social = (SOCIAL_SKILLS as readonly string[]).includes(skill);
   const attribute: AttributeName = PRESENCE_SKILLS.includes(skill)
     ? "Presença"
-    : approach ?? (mental ? "Intelecto" : social ? (intellect > presence ? "Intelecto" : "Presença") : "Espírito");
+    : approach ?? defaultApproach(skill);
   const value = getFinalAttribute(draft, automatic, attribute);
   const permanentLevel = getFinalSkill(draft, automatic, skill);
   const vow = draft.vows.find((item) => item.id === oneUseVowId);
@@ -740,8 +759,8 @@ export function getSkillTest(
   const equipped = (id: string) => draft.inventory.some(item => item.catalogId === id && item.equipped && item.quantity > 0 && item.location !== "external");
   const analyticIntellect = intellect + (equipped("grimorio") ? 1 : 0);
   const runeAnalytic = draft.className === "Escriba Kármico" && skill === "Canalização de Karma" && testPurpose === "technique";
-  const focusBonus = skill === "Canalização de Karma" && equipped("orbe-de-convergencia") ? 2 : 0;
-  const analyticBonus = attribute === "Intelecto" && (mental || social || runeAnalytic) && level > 0 && value > 0
+  const focusBonus = level > 0 && value > 0 && skill === "Canalização de Karma" && equipped("orbe-de-convergencia") ? 2 : 0;
+  const analyticBonus = attribute === "Intelecto" && (mental || runeAnalytic) && level > 0 && value > 0
     ? Math.min(3, Math.floor(analyticIntellect / 2)) : 0;
   const manifested = (name: string) => draft.domains.some(d => d.name === name && d.enabled && d.awakened) && (draft.combat?.domainRounds[name] ?? 0) > 0;
   const domainDice = Number(attribute === "Força" && ["Luta", "Atletismo"].includes(skill) && manifested("Força"))
@@ -749,11 +768,18 @@ export function getSkillTest(
     + Number(attribute === "Constituição" && ["Atletismo", "Sobrevivência"].includes(skill) && manifested("Resistência"))
     + Number(testPurpose === "technique" && manifested("Técnica"))
     + Number(["Presença", "Espírito"].includes(attribute) && testPurpose === "technique" && manifested("Superação"));
+  const trainingBonus = value === 0 ? 0 : oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0);
+  const domainBonus = Number(attribute === "Intelecto" && mental && intellect >= 5 && level > 0
+    && draft.domains.some(domain => domain.name === "Técnica" && domain.enabled && domain.awakened));
+  const trainedPool = value > 0 && level > 0;
+  const baseDice = trainedPool ? Math.ceil(value / 2) + formDice + domainDice : 1;
+  const pool = baseDice - inventoryPenalty.dicePenalty;
   return {
-    attribute, value, level, permanentLevel, analyticBonus, oneUse, inventoryPenalty, formDice, domainDice,
-    bonus: value === 0 ? -4 : (oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0)) + analyticBonus + focusBonus + (attribute === "Intelecto" && (mental || social) && level > 0 && draft.domains.some(d => d.name === "Técnica" && d.enabled && d.awakened) ? 1 : 0),
-    dice: Math.max(1,(value === 0 || level === 0 ? 1 : Math.ceil(value / 2))+formDice+domainDice-inventoryPenalty.dicePenalty),
-    selection: "maior",
+    attribute, value, level, permanentLevel, analyticBonus, domainBonus, trainingBonus, focusBonus, oneUse, inventoryPenalty,
+    formDice: trainedPool ? formDice : 0, domainDice: trainedPool ? domainDice : 0, baseDice,
+    bonus: value === 0 ? -4 : trainingBonus + analyticBonus + focusBonus + domainBonus,
+    dice: pool <= 0 ? 2 : pool,
+    selection: pool <= 0 ? "menor" as const : "maior" as const,
   };
 }
 

@@ -5,13 +5,11 @@ import { notFound } from "next/navigation";
 
 import { chatGPTSignInPath } from "@/app/chatgpt-auth";
 import { SharedCombatCharacter } from "@/components/character-combat-shell";
-import { CharacterSheetView } from "@/components/character-sheet-view";
 import { SiteHeader } from "@/components/site-header";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { getD1 } from "@/db";
 import { normalizeCharacterPayload, type CharacterPayload } from "@/lib/character-data";
-import { calculateAutomaticBonuses, calculateDerivedStats } from "@/lib/character-rules";
 import { characterPayloadSchema } from "@/lib/character-schema";
 
 export const dynamic = "force-dynamic";
@@ -37,14 +35,11 @@ export default async function SharedCharacterPage({ params }: PageProps) {
   catch { notFound(); }
   if (!draft.sharing.enabled || draft.sharing.token !== token) notFound();
 
-  const automatic = calculateAutomaticBonuses(draft);
-  const derived = calculateDerivedStats(draft, automatic);
-
   return <div className="site-page shared-character-page">
     <SiteHeader user={null} />
     <main className="site-shell shared-character-main">
       <header className="shared-character-banner">
-        <div><Badge variant="outline"><Eye aria-hidden="true" /> ficha compartilhada</Badge><h1>Registro público de personagem</h1><p>Quem possui este link pode acompanhar e ajustar Vida, Karma, condições e recursos de combate. Atributos, técnicas e escolhas da ficha só podem ser editados pelo proprietário.</p></div>
+        <div><Badge variant="outline"><Eye aria-hidden="true" /> Modo Jogo · Recursos e Inventário Editáveis · Criação Protegida</Badge><h1>Registro público de personagem</h1><p>Quem possui este link pode acompanhar e ajustar Vida, Karma, condições e o uso do inventário. Atributos, técnicas e escolhas da ficha só podem ser editados pelo proprietário.</p></div>
         <div className="shared-character-trust"><ShieldCheck aria-hidden="true" /><span><strong>Combate compartilhado</strong>O e-mail e os dados da conta não são exibidos.</span></div>
       </header>
       <SharedCombatCharacter initial={draft} id={id} token={token}/>

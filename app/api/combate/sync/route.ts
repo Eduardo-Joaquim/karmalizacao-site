@@ -35,7 +35,7 @@ export async function POST(request:Request){
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return response({error:'Envie JSON.'},415);
  const raw=await request.text();if(raw.length>12000)return response({error:'Ação muito grande.'},413);
  let value;try{value=JSON.parse(raw);}catch{return response({error:'JSON inválido.'},400);}
- const parsed=combatRequestSchema.safeParse(value);if(!parsed.success)return response({error:'Ação inválida.'},400);
+ const parsed=combatRequestSchema.safeParse(value);if(!parsed.success)return response({error:'Ação inválida. A criação da ficha é protegida.'},400);
  try{
   const {token,email}=await identity(request);if(!token&&!email)return response({error:'Autenticação ou link necessário.'},401);
   const db=await getD1(), {id,action}=parsed.data;

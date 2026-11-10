@@ -61,6 +61,7 @@ export function PatchNotes() {
             <ul>{selected.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
           </section>
         </div>
+      <a href="/atualizacoes">Ver todas as atualizações</a>
       </DialogContent>
     </Dialog>
   );

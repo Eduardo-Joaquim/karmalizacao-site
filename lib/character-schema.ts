@@ -1,3 +1,5 @@
+import { invocationAbilityDamageError } from "@/lib/invocation-rules";
+import { workshopProfile } from "@/lib/workshop-rules";
 import { divineBlessingError } from "@/lib/divine-blessings";
 import {DAMAGE_TYPES} from "./technique-matrices";
 import { combatVisualSchema, phaseNoticeSchema } from "@/lib/combat-visual-schema";
@@ -7,6 +9,8 @@ import {
   CHARACTER_SIZES,
   DOMAIN_NAMES,
   INVOCATION_GRADES,
+  INVOCATION_ACTIONS,
+  INVOCATION_RANGES,
   INVOCATION_CALL_FORMS,
   INVOCATION_NATURES,
   INVOCATION_PROFILES,
@@ -124,6 +128,7 @@ const elementalSchema = z.object({
 });
 
 const techniqueSchema = z.object({
+  effect: longText(2500).optional(),
   matrix:z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"]).optional(),damageType:z.enum([...DAMAGE_TYPES,"Físico"] as const).optional(),lineageCatalyst:shortText.optional(),doctrine:shortText.optional(),matrixExtras:z.number().min(0).max(999).optional(),matrixDiscount:z.number().min(0).max(3).optional(),
   id: shortText,
   name: shortText.default(""),
@@ -162,6 +167,10 @@ const inventoryItemSchema = z.object({
 });
 
 const invocationAbilitySchema = z.object({
+  action: z.enum(INVOCATION_ACTIONS).optional(),
+  karma: z.number().int().min(0).max(99).optional(),
+  range: z.enum(INVOCATION_RANGES).optional(),
+  damage: z.string().regex(/^\d{1,2}d(?:4|6|8|10|12)$/).optional(),
   name: shortText.default(""),
   grade: z.enum(INVOCATION_GRADES).default("I"),
   concept: longText(1000).default(""),
@@ -224,15 +233,16 @@ export const combatLogSchema = z.object({
   kind:z.enum(['skill','attack','technique','ability','damage','heal','resource']), title:shortText,
   rollFormula:shortText.optional(), diceResults:z.array(z.number().int().min(1).max(100)).max(60).optional(), total:z.number().finite().min(-99999).max(99999).optional(),
   visual:combatVisualSchema.optional(),karmaDelta:z.number().int().min(-99999).max(99999).optional(),shieldDelta:z.number().int().min(-9999).max(9999).optional(),
+  inventoryItemId:shortText.optional(),
   karmaSpent:z.number().int().min(0).max(99999).optional(), lifeDelta:z.number().int().min(-99999).max(99999).optional(), details:longText(2000).optional(),
 });
 export const liveCombatSchema = z.object({
   runes: z.array(z.object({ id:shortText, runeId:z.number().int().min(1).max(25), weaponId:shortText.optional(), spent:z.boolean().optional(), releaseRound:z.number().int().min(1).max(99999).optional() })).max(100).optional(),
   runeBurstUsed:z.boolean().optional(),
-  summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean()})).default({}),
+  summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean(),fractures:z.number().int().min(0).max(3).optional(),maintainedThroughRound:z.number().int().min(1).max(99999).optional()})).default({}),
   impetus:z.number().int().min(0).max(4).optional(),impetusBloodied:z.boolean().optional(),
   inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),
-  activeConditions:z.array(z.string().min(1).max(80)).max(20),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
+  activeConditions:z.array(z.string().min(1).max(80)).max(20),conditionRounds:z.record(z.string().min(1).max(80),z.number().int().min(1).max(99)).optional(),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
   bossPhases:z.record(z.string().max(80),phaseNoticeSchema).refine(v=>Object.keys(v).length<=20).optional(),
   reactions:z.number().int().min(0).max(10).default(1),round:z.number().int().min(1).max(99999).default(1),domainRounds:z.record(z.enum(DOMAIN_NAMES),z.number().int().min(0).max(6)).default({}),
 });
@@ -271,6 +281,12 @@ export const characterPayloadSchema = z.object({
   elemental: elementalSchema.optional(),
   techniques: z.array(techniqueSchema).max(30).optional(),
   invocations: z.array(invocationSchema).max(10).optional(),
+  workshopDevices: z.array(z.object({
+    id: shortText,
+    name: z.string().trim().min(1).max(80),
+    kind: z.enum(["Ofensivo", "Ferramenta", "Manipulação", "Emissor de Escudo Cinético"]),
+    active: z.boolean(),
+  })).max(8).optional(),
   alchemicalSaturation:z.number().int().min(0).max(999).optional(),
   loadModifier:z.number().finite().min(-100).max(200).optional(),
   inventory: z.array(inventoryItemSchema).max(100).optional(),
@@ -287,6 +303,17 @@ export const saveCharacterSchema = z.object({
   name: z.string().trim().min(1).max(80),
   payload: characterPayloadSchema,
 }).superRefine(({ payload }, ctx) => {
+  for (const [index, invocation] of (payload.invocations ?? []).entries()) {
+    if (!invocation.ability.damage) continue;
+    const error = invocationAbilityDamageError(invocation);
+    if (error) ctx.addIssue({ code: "custom", message: error, path: ["payload", "invocations", index, "ability", "damage"] });
+  }
+  const devices = payload.workshopDevices ?? [];
+  const profile = workshopProfile(payload.stage);
+  if (payload.className === "Inventor" && (devices.length > profile.prepared || devices.filter(device => device.active).length > profile.active
+    || devices.filter(device => device.active && device.kind === "Emissor de Escudo Cinético").length > 1)) {
+    ctx.addIssue({ code: "custom", message: "A Oficina ultrapassa o limite de dispositivos da Etapa.", path: ["payload", "workshopDevices"] });
+  }
   if (!payload.divine) return;
   const error = divineBlessingError(payload.divine);
   if (error) ctx.addIssue({ code: "custom", message: error, path: ["payload", "divine"] });

@@ -25,7 +25,7 @@ for c in classes:
   s+=effect+'\n\n';amp=next(x for x in c['amplifications'] if x['abilityName']==a['name']);s+=f"#### Ampliação — {amp['name']}\n\n{amp['description']}\n\n"
  if c['name']=='Inventor':
   rows=json.loads((root/'data/inventor-projects.json').read_text())['stages']
-  s+='### Progressão dos projetos\n\n| Etapa | Preparados | Ativos | Peças (m) | Construção (TE) | Carga básica |\n|---|---|---|---|---|---|\n'
+  s+='### Progressão dos projetos\n\n| Etapa | Preparados | Ativos | Peças (M$) | Construção (TE) | Carga básica |\n|---|---|---|---|---|---|\n'
   for r in rows:s+='| '+' | '.join(str(r[k]) for k in ['stage','prepared','active','parts','timeTE'])+' | 2 espaços |\n'
   s+='\n| Etapa | CA | Vida | Dano | Alcance (m) | Duração (rodadas) |\n|---|---|---|---|---|---|\n'
   for r in rows:s+='| '+' | '.join(str(r[k]) for k in ['stage','ca','life','damage','range','duration'])+' |\n'

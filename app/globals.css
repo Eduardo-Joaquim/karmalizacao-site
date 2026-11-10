@@ -5212,3 +5212,30 @@ h4,
 
 .dice-roller > output { display:grid; gap:.3rem; margin-top:.5rem; padding:.65rem .8rem; border:1px solid #8bbdca44; border-radius:5px; }
 .dice-roller > output b { color:#e7d6a5; font-size:1.2rem; }
+
+.brand-lockup, .sheet-cover-copy > div, .sheet-ability-list > div {
+  column-gap: 0.65rem;
+}
+.sheet-ability-list [data-slot="badge"] { margin-inline-end: 0.45rem; }
+.character-tabs-list, .canon-table-wrap {
+  max-inline-size: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.attribute-grid, .sheet-attribute-grid, .divine-editor .deity-picker {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+.attribute-grid > *, .deity-picker > * { min-width: 0; overflow-wrap: anywhere; }
+.canon-table-wrap:focus-visible, .character-tabs-list:focus-visible { outline: 2px solid var(--karma); }
+.workshop-panel, .domain-expansion {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 0.65rem;
+}
+.workshop-panel li + li { margin-top: 0.7rem; }
+.npc-combat-link { display: inline-block; padding: 0.35rem 0.55rem; color: var(--karma-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .character-tabs-list, .canon-table-wrap { scroll-behavior: auto; }
+}

@@ -54,3 +54,24 @@ test('grouped NPC skills and initiative use every trained skill without attribut
 test('encounter and forge imports validate bounds and never export share tokens',async()=>{
  const f=await vite.ssrLoadModule('/lib/gm-encounter.ts'),c=await vite.ssrLoadModule('/lib/combat-catalog.ts');const npc=c.earlyPresets[0],participant={key:'npc-test-123456',team:'Inimigos',initiative:12,npc,life:npc.life,karma:npc.karma,shield:0,conditions:[],reactions:1,domainRounds:{}};const player={...participant,key:'player-test-123456',npc:undefined,link:{id,token},payload:sheet()};const json=JSON.stringify(f.exportEncounter([participant,player],3,participant.key));assert(!json.includes(token));const imported=f.importEncounter(json);assert.equal(imported.round,3);assert.equal(imported.participants.length,1);assert.equal(imported.players.length,1);assert.throws(()=>f.importEncounter('{bad'));assert.throws(()=>f.importEncounter(JSON.stringify({...JSON.parse(json),round:-1})));assert.throws(()=>f.importEncounter(JSON.stringify({...JSON.parse(json),participants:[{...participant,life:99999}]})));assert.throws(()=>f.addToForgeLibrary(Array(30).fill(npc),npc));assert.equal(f.addToForgeLibrary([],npc).length,1);
 });
+
+test('shared inventory use survives retries and a stale owner save without granting creation access', async () => {
+ const stale=seed();
+ const item=stale.inventory[0];
+ assert(item?.quantity>0);
+ const use=action({type:'inventoryUse',itemId:item.id,consume:1,location:'ready'});
+ assert.equal((await api.POST(request({...use,name:'Item adulterado'}))).status,400);
+ assert.equal((await api.POST(request(use))).status,200);
+ assert.equal((await api.POST(request(use))).status,200);
+ const remote=(await (await get()).json()).payload;
+ assert.equal(remote.inventory[0].quantity,item.quantity-1);
+ assert.equal(remote.inventory[0].name,item.name);
+ auth.setUser({email});
+ stale.concept='Conceito do proprietário';
+ const result=await save.POST(new Request('http://example.test/api/personagens',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,name:stale.name,payload:stale})}));
+ assert.equal(result.status,200);
+ const saved=(await result.json()).character.payload;
+ assert.equal(saved.inventory[0].quantity,item.quantity-1);
+ assert.equal(saved.inventory[0].location,'ready');
+ assert.equal(saved.concept,'Conceito do proprietário');
+});

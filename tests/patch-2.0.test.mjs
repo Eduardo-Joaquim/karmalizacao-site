@@ -59,3 +59,70 @@ test('legacy human training no longer grants levels and records survive validati
  assert.equal(parsed.allocations.humanTraining,'Luta');assert.equal(parsed.allocations.humanSignature,'human-signature');
  d.race='Ghoul';assert.equal(level(),1);
 });
+
+test('skill previews and rolls use final attributes, explicit social approaches and separate bonuses', () => {
+ const d=model.createBlankCharacter();
+ d.attributes.Agilidade.base=3;
+ d.attributes.Intelecto.base=6;
+ d.skills.Reflexos.base=1;
+ d.skills.Persuasão.base=1;
+ d.skills.História.base=1;
+ d.domains=d.domains.map(domain=>domain.name==='Técnica'?{...domain,enabled:true,awakened:true}:domain);
+ const automatic=rules.calculateAutomaticBonuses(d);
+ automatic.attributes.Agilidade=2;
+ const reflex=rules.getSkillTest(d,automatic,'Reflexos');
+ assert.deepEqual([reflex.attribute,reflex.value,reflex.dice,reflex.bonus],['Agilidade',5,3,2]);
+ const social=rules.getSkillTest(d,automatic,'Persuasão');
+ assert.deepEqual([social.attribute,social.dice,social.bonus],['Presença',1,-4]);
+ assert.equal(rules.getSkillTest(d,automatic,'Persuasão','Intelecto').analyticBonus,0);
+ const mental=rules.getSkillTest(d,automatic,'História');
+ assert.deepEqual([mental.trainingBonus,mental.analyticBonus,mental.domainBonus,mental.bonus],[2,3,1,6]);
+ assert.deepEqual([rules.getSkillTest(d,automatic,'Acrobacia').dice,rules.getSkillTest(d,automatic,'Acrobacia').bonus],[1,0]);
+});
+
+test('combat deducts maintenance once, expires counters and reports bloodied and natural 20', () => {
+ let draft=model.createBlankCharacter();
+ draft.race='Humano';
+ const max=engine.characterMax(draft);
+ draft.invocations=[{id:'test-invocation',name:'Sentinela',grade:'II',callForm:'Manifestação',profile:'Sem ajuste'}];
+ const start=engine.liveState(draft);
+ draft=engine.withLiveState(draft,{...start,impetus:0,currentKarma:6,domainRounds:{Força:2},summons:{'test-invocation':{life:10,active:true}}});
+ const act=(data)=>{draft=engine.applyCombatAction(draft,{id:crypto.randomUUID(),actorName:'Teste',title:'Teste',...data});return engine.liveState(draft);};
+ const hit=act({type:'damage',amount:Math.ceil(max.life/2),resistance:0});
+ assert.equal(hit.impetus,1);
+ assert.match(hit.lastActionLog.details,/Metade da Vida/);
+ assert.equal(act({type:'damage',amount:1,resistance:0}).impetus,1);
+ const critical=act({type:'execute',kind:'skill',cost:0,diceResults:[3,20],selection:'maior'});
+ assert.equal(critical.impetus,2);
+ assert.match(critical.lastActionLog.details,/20 natural/);
+ act({type:'condition',condition:'Lento',remove:false,rounds:1});
+ assert.equal(act({type:'summon',invocationId:'test-invocation',operation:'maintain'}).currentKarma,5);
+ const advanced=act({type:'round'});
+ assert.equal(advanced.currentKarma,5);
+ assert.equal(advanced.domainRounds.Força,1);
+ assert.deepEqual(advanced.activeConditions,[]);
+ assert.equal(act({type:'round'}).currentKarma,4);
+});
+
+test('shared inventory operations touch only existing item usage and refuse authored fields', async () => {
+ const {combatRequestSchema}=await vite.ssrLoadModule('/lib/combat-validation.ts');
+ const draft=model.createBlankCharacter();
+ draft.inventory=[{id:'item-test',name:'Frasco',notes:'Texto original',spaces:0.25,quantity:2,category:'gear',location:'backpack',equipped:false}];
+ const action={id:crypto.randomUUID(),actorName:'Teste',title:'Uso',type:'inventoryUse',itemId:'item-test',location:'ready',consume:1};
+ assert(combatRequestSchema.safeParse({id:crypto.randomUUID(),action}).success);
+ assert(!combatRequestSchema.safeParse({id:crypto.randomUUID(),action:{...action,race:'Elfo'}}).success);
+ const next=engine.applyCombatAction(draft,action);
+ assert.deepEqual(next.inventory,[{...draft.inventory[0],location:'ready',quantity:1}]);
+ assert.equal(next.race,draft.race);
+ assert.throws(()=>engine.applyCombatAction(draft,{...action,consume:3}),/Quantidade insuficiente/);
+ assert.equal(engine.mergeCombat(next,draft,draft.inventory).inventory[0].quantity,1);
+ assert.equal(engine.mergeCombat(next,{...draft,inventory:[{...draft.inventory[0],quantity:4}]},draft.inventory).inventory[0].quantity,4);
+});
+
+test('paid invocation damage and fixed technique discounts stay consistent with registered values', () => {
+ const creature={grade:'IV',profile:'Sem ajuste',callForm:'Manifestação',ability:{karma:6,damage:'2d8'}};
+ assert(inv.invocationAbilityDamageError(creature));
+ assert.equal(inv.invocationAbilityDamageError({...creature,ability:{karma:6,damage:'3d8'}}),undefined);
+ assert.deepEqual(engine.registeredTechniqueCost({cost:'4 Karma',limits:'−1 Karma'}),{base:4,reduction:1,total:3});
+ assert.equal(engine.registeredTechniqueCost({cost:'4 Karma',limits:'−1 Karma sob condição'}).total,4);
+});

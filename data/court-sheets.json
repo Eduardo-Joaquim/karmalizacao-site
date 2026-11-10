@@ -23,22 +23,22 @@
       {
         "name": "Sem armadura",
         "ca": 23,
-        "partial": "11–23",
-        "total": "24+",
+        "partial": "11–22",
+        "total": "23+",
         "life": "180 Vida"
       },
       {
         "name": "Dragão Negro · I",
         "ca": 27,
-        "partial": "13–27",
-        "total": "28+",
+        "partial": "13–26",
+        "total": "27+",
         "life": "180–91 Vida"
       },
       {
         "name": "Dragão Negro · II",
         "ca": 27,
-        "partial": "13–27",
-        "total": "28+",
+        "partial": "13–26",
+        "total": "27+",
         "life": "90–1 Vida"
       }
     ],
@@ -64,7 +64,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -348,7 +348,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -637,8 +637,8 @@
             "limits": "Uma ordem Manifestar ativa um poder copiado, não os dois ao mesmo tempo. Os usos por cena ficam registrados por poder e não reiniciam ao copiar de novo. A cópia não retira a Bênção do original, não concede Comunhão, traços raciais ou transcendência, e não permite copiar técnica de Grau V."
           }
         ],
-        "partial": "12–25",
-        "total": "26+",
+        "partial": "12–24",
+        "total": "25+",
         "tests": [
           {
             "name": "Puxar os Fios / Cópia Vinculada",
@@ -701,8 +701,8 @@
             "construction": "Grau II: 3 Base II, 1 Reação, 2 Médio, 2 Controle secundário I = 8 Karma."
           }
         ],
-        "partial": "9–19",
-        "total": "20+",
+        "partial": "9–18",
+        "total": "19+",
         "tests": [
           {
             "name": "Percepção de pistas",
@@ -768,8 +768,8 @@
             "construction": "Grau II: 3 Base II = 3 Karma."
           }
         ],
-        "partial": "10–21",
-        "total": "22+",
+        "partial": "10–20",
+        "total": "21+",
         "tests": []
       },
       {
@@ -828,8 +828,8 @@
             "limits": "Capturar o Gato ou negociar permite recuperar o conteúdo. Um personagem que o tenha Agarrado pode gastar Principal para exigir a voz: o Gato escolhe devolver ou dissipar-se. O fim do Silenciado devolve a voz, mas não transporta documentos de volta."
           }
         ],
-        "partial": "9–19",
-        "total": "20+",
+        "partial": "9–18",
+        "total": "19+",
         "tests": [
           {
             "name": "Roubo de Voz / Furtividade",
@@ -894,8 +894,8 @@
             "limits": "Não copia lembranças, senhas desconhecidas, autoridade sobrenatural ou documentos."
           }
         ],
-        "partial": "9–19",
-        "total": "20+",
+        "partial": "9–18",
+        "total": "19+",
         "tests": [
           {
             "name": "Enganação / Persuasão",
@@ -959,8 +959,8 @@
             "limits": "A Âncora continua acessível para sabotagem; o transporte não cria uma décima Âncora. Em interiores, manifesta apenas a parte do corpo compatível com o espaço."
           }
         ],
-        "partial": "11–23",
-        "total": "24+",
+        "partial": "11–22",
+        "total": "23+",
         "tests": [
           {
             "name": "Engolir o Cenário",
@@ -1021,8 +1021,8 @@
             "limits": "Dissipar Pavio ou encerrar a cena também remove as marcas. Danos apenas adiados continuam devidos."
           }
         ],
-        "partial": "10–21",
-        "total": "22+",
+        "partial": "10–20",
+        "total": "21+",
         "tests": []
       }
     ],
@@ -1047,7 +1047,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1334,7 +1334,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1510,7 +1510,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1740,7 +1740,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",
@@ -1932,15 +1932,15 @@
       {
         "name": "A mãe das vidas roubadas",
         "ca": 25,
-        "partial": "12–25",
-        "total": "26+",
+        "partial": "12–24",
+        "total": "25+",
         "life": "120–61 Vida"
       },
       {
         "name": "Mãe do Vazio",
         "ca": 25,
-        "partial": "12–25",
-        "total": "26+",
+        "partial": "12–24",
+        "total": "25+",
         "life": "60 Vida ou boneca tomada"
       }
     ],
@@ -1966,7 +1966,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total exige superar a CA; parcial vai de metade da CA,\narredondada para baixo, até a própria CA. Dados de dano são somados:\n3d10 significa rolar três d10 e somar os três resultados. Não some\nAtributo ao dano sem uma regra expressa. No parcial, role o dano\nindicado e divida por dois, arredondando para baixo, antes de aplicar\nResistência e escudo. Falha não causa dano ou condição, salvo efeito\nexpresso. Condições, empurrões e duração só se aplicam como descritos em\ncada habilidade. Um 1 natural selecionado falha; um 20 natural dobra\napenas os dados de dano-base quando o ataque produz efeito. Dados\nadicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos\nao igualar ou superar a dificuldade; em oposição, empate favorece quem\nresiste. Ataques de área usam uma rolagem comparada separadamente à CA\nde cada alvo.</p>"
+            "html": "<p>Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma\núnica vez. Acerto total iguala ou supera a CA; parcial vai de metade da\nCA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10\nsignifica rolar três d10 e somar os três resultados. Não some Atributo\nao dano sem uma regra expressa. No parcial, role o dano indicado e\ndivida por dois, arredondando para baixo, antes de aplicar Resistência e\nescudo. Falha não causa dano ou condição, salvo efeito expresso.\nCondições, empurrões e duração só se aplicam como descritos em cada\nhabilidade. Em ataques contra CA, use a faixa do resultado total. Um 20\nnatural dobra apenas os dados de dano-base quando o ataque produz\nefeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são\nbem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate\nfavorece quem resiste. Ataques de área usam uma rolagem comparada\nseparadamente à CA de cada alvo.</p>"
           }
         ],
         "grade": "",

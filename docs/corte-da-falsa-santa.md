@@ -17,14 +17,14 @@ De pele parda e cabelos azul-escuros, Euphere fala baixo e observa as saídas an
 | Raça · classe · posição | Abissal · Especialista · chefe SS, Etapa VI |
 | Vida · Karma | 180 · 126 |
 | CA | 23 sem armadura; 27 nas duas fases da armadura |
-| Parcial / total | CA 23: 11–23 / 24+; CA 27: 13–27 / 28+ |
+| Parcial / total | CA 23: 11–22 / 23+; CA 27: 13–26 / 27+ |
 | Deslocamento | 11 m; voo 12 m com asas |
 | Atributos | FOR 7 · AGI 4 · CON 5 · INT 8 · PRE 5 · ESP 6 |
 | Reações | Uma comum e uma adicional para defesa ou movimento |
 
 **Perícias:** Luta 2, Reflexos 2, Atletismo 2, Canalização de Karma 2, Controle de Água 2; Tática 2 e Investigação 2 com Intelecto e Analítico. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Bênção — Dragão Negro:** <span data-divine-grant="tiamat">Outorgada por Tiamat · Entidade Primordial.</span><span data-world-blessing="outorga-15"></span> O Dragão Negro é uma carapaça viva, distribuída entre placas, garras e asas. Euphere molda essa presença com a massa disponível; Nadir reúne sua matéria, plasma e Karma em uma única assinatura.
 
@@ -75,7 +75,7 @@ Na corte, Gula possui duas vozes. João enfraquece a resistência e conduz as v�
 
 **Perícias:** João: Controle de Trevas 2, Ocultismo 2 e Reflexos 2. Maria: Controle de Terra 2, Controle de Fogo 2, Pontaria 2 e Reflexos 2. Cada combinação usa o Atributo do próprio corpo. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Coração da Gula:** Resolva defesa, Resistência e escudo no corpo atingido; retire o dano restante uma vez da reserva comum. Condições e Ferimentos pertencem ao corpo afetado. Uma cura que alcance os dois na mesma resolução restaura a reserva uma única vez. A 0 Vida, ambos ficam Morrendo e Inconscientes e usam um único marcador de morte. Karma, ações e concentração são individuais; ambos estão na Etapa V e não possuem ápice de Grau V.
 
@@ -111,13 +111,13 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 |---|---|
 | Classe · posição | Invocador · chefe S, Etapa V |
 | Vida · Karma · CA | 80 · 124 · 23 |
-| Parcial / total | 11–23 / 24+ |
+| Parcial / total | 11–22 / 23+ |
 | Atributos | FOR 1 · AGI 2 · CON 4 · INT 5 · PRE 7 · ESP 6 |
 | Deslocamento · Reações | 7 m · uma comum e uma defensiva adicional |
 
 **Perícias:** Conjuração Vincular 2 com Presença, Canalização de Karma 2 com Espírito, Reflexos 2, Ocultismo 2 e Tática 2. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Estilete de Fio:** Principal, 0 Karma, 5 m; 2d8 kármicos no total, metade no parcial.
 
@@ -145,7 +145,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Pinóquio · O Menino de Madeira
 
-**Ficha da invocação:** Grau IV; Vida 45; CA 25; parcial 12–25; total 26+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
+**Ficha da invocação:** Grau IV; Vida 45; CA 25; parcial 12–24; total 25+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
 
 **Atributos:** FOR 2 · AGI 10 · CON 2 · INT 2 · PRE 12 · ESP 2.
 
@@ -165,7 +165,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Grilo Falante · A Consciência
 
-**Ficha da invocação:** Grau II; Vida 17; CA 19; parcial 9–19; total 20+; deslocamento 15 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 17; CA 19; parcial 9–18; total 19+; deslocamento 15 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 7 · PRE 4 · ESP 2.
 
@@ -185,7 +185,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Fada Azul · A Promessa
 
-**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–21; total 22+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
+**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; total 21+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 2 · PRE 10 · ESP 7.
 
@@ -203,7 +203,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Gato · O Ladrão de Voz
 
-**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–19; total 20+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; total 19+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 7 · CON 2 · INT 4 · PRE 2 · ESP 2.
 
@@ -223,7 +223,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Raposa · A Negociadora
 
-**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–19; total 20+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; total 19+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 4 · PRE 7 · ESP 2.
 
@@ -243,7 +243,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Baleia · O Ventre do Mundo
 
-**Ficha da invocação:** Grau IV; Vida 56; CA 23; parcial 11–23; total 24+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
+**Ficha da invocação:** Grau IV; Vida 56; CA 23; parcial 11–22; total 23+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
 
 **Atributos:** FOR 10 · AGI 2 · CON 12 · INT 2 · PRE 2 · ESP 2.
 
@@ -263,7 +263,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Pavio · O Convite ao Abandono
 
-**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–21; total 22+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
+**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; total 21+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
 
 **Atributos:** FOR 2 · AGI 7 · CON 2 · INT 2 · PRE 10 · ESP 2.
 
@@ -301,7 +301,7 @@ De cabelos brancos muito longos, olhos vermelhos e vestes nobres claras, Ganânc
 |---|---|
 | Raça · classe · posição | Vampiro · Ladrão com prática Elementalista · chefe S, Etapa V |
 | Vida · Karma · CA | 120 · 91 · 25 |
-| Parcial / total | 12–25 / 26+ |
+| Parcial / total | 12–24 / 25+ |
 | Atributos | FOR 4 · AGI 6 · CON 5 · INT 8 · PRE 7 · ESP 6 |
 | Deslocamento · Resistência física | 9 m · 0 |
 | Ataques de precisão / Evasão | Maior de 3d20 +5 / maior de 3d20 +5 |
@@ -309,7 +309,7 @@ De cabelos brancos muito longos, olhos vermelhos e vestes nobres claras, Ganânc
 
 **Perícias:** Luta 2, Reflexos 2, Ladinagem 2, Controle de Luz 2, Controle de Trevas 2 e Canalização de Karma 2. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Rapieira:** Principal, 0 Karma, 2 m; 1d8 perfurante, metade no parcial. **Guarda de Rapieira:** Reação, 3 Karma, antes de um ataque corpo a corpo percebido; CA 27 apenas contra ele, sem outra defesa na mesma resolução.
 
@@ -343,14 +343,14 @@ Ele protege o ritual antes de perseguir adversários. Libertar uma oferenda muda
 |---|---|
 | Posição · porte | Chefe S · Etapa V · 3 m |
 | Vida · Karma · CA | 120 · 54 · 25 |
-| Parcial / total | 12–25 / 26+ |
+| Parcial / total | 12–24 / 25+ |
 | Atributos | FOR 5 · AGI 1 · CON 5 · INT 1 · PRE 3 · ESP 5 |
 | Deslocamento | 7 m; 14 m sob o solo; 10 m na segunda fase |
 | Reações | Uma comum e uma defensiva adicional |
 
 **Perícias:** Luta 2, Atletismo 2, Canalização de Karma 2 e Controle de Terra 2; Percepção 1. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Corpo de solo e lenho:** Imune a Sangramento, veneno e sufocamento. Fogo suspende suas proteções de casca e raiz enquanto a queimadura estiver ativa; não impede que outras criaturas o tratem como alvo.
 
@@ -393,7 +393,7 @@ As maçãs acompanham seus encontros como um sinal reconhecível. Uma superfíci
 
 **Perícias:** Luta 2, Pontaria 2, Furtividade 2, Reflexos 2, Controle de Água 2, Controle de Terra 2, Controle de Ar 2 e Controle da Corrupção 2. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 | Técnica | Ação · custo | Resolução |
 |---|---|---|
@@ -430,7 +430,7 @@ Os cabelos castanhos descem até metade das costas; a cicatriz acompanha o olho 
 |---|---|
 | Classe · posição | Samaritano · chefe S, Etapa V |
 | Vida · Karma · Pontos Corruptos | 120 · 89 · 18 |
-| CA / parcial / total | 25 / 12–25 / 26+ |
+| CA / parcial / total | 25 / 12–24 / 25+ |
 | Deslocamento · Reações | 7 m · uma comum e uma defensiva adicional |
 | Atributos | FOR 2 · AGI 3 · CON 4 · INT 5 · PRE 6 · ESP 5 |
 | Domínios | Resistência e Superação |
@@ -438,7 +438,7 @@ Os cabelos castanhos descem até metade das costas; a cicatriz acompanha o olho 
 
 **Perícias:** Medicina 2, Controle da Corrupção 2, Resistência à Corrupção 2, Canalização de Karma 2 e Ocultismo 2; Reflexos 1. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total exige superar a CA; parcial vai de metade da CA, arredondada para baixo, até a própria CA. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Um 1 natural selecionado falha; um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Argila Viva:** Subdobra avançada de Terra que molda ferramentas, barreiras e construções animadas. A Corrupção grava memórias na matéria. As cópias não possuem alma.
 

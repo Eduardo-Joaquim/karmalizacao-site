@@ -60,8 +60,8 @@
         "limits": "Uma ordem Manifestar ativa um poder copiado, não os dois ao mesmo tempo. Os usos por cena ficam registrados por poder e não reiniciam ao copiar de novo. A cópia não retira a Bênção do original, não concede Comunhão, traços raciais ou transcendência, e não permite copiar técnica de Grau V."
       }
     ],
-    "partial": "12–25",
-    "total": "26+",
+    "partial": "12–24",
+    "total": "25+",
     "tests": [
       {
         "name": "Puxar os Fios / Cópia Vinculada",
@@ -124,8 +124,8 @@
         "construction": "Grau II: 3 Base II, 1 Reação, 2 Médio, 2 Controle secundário I = 8 Karma."
       }
     ],
-    "partial": "9–19",
-    "total": "20+",
+    "partial": "9–18",
+    "total": "19+",
     "tests": [
       {
         "name": "Percepção de pistas",
@@ -191,8 +191,8 @@
         "construction": "Grau II: 3 Base II = 3 Karma."
       }
     ],
-    "partial": "10–21",
-    "total": "22+",
+    "partial": "10–20",
+    "total": "21+",
     "tests": []
   },
   {
@@ -251,8 +251,8 @@
         "limits": "Capturar o Gato ou negociar permite recuperar o conteúdo. Um personagem que o tenha Agarrado pode gastar Principal para exigir a voz: o Gato escolhe devolver ou dissipar-se. O fim do Silenciado devolve a voz, mas não transporta documentos de volta."
       }
     ],
-    "partial": "9–19",
-    "total": "20+",
+    "partial": "9–18",
+    "total": "19+",
     "tests": [
       {
         "name": "Roubo de Voz / Furtividade",
@@ -317,8 +317,8 @@
         "limits": "Não copia lembranças, senhas desconhecidas, autoridade sobrenatural ou documentos."
       }
     ],
-    "partial": "9–19",
-    "total": "20+",
+    "partial": "9–18",
+    "total": "19+",
     "tests": [
       {
         "name": "Enganação / Persuasão",
@@ -382,8 +382,8 @@
         "limits": "A Âncora continua acessível para sabotagem; o transporte não cria uma décima Âncora. Em interiores, manifesta apenas a parte do corpo compatível com o espaço."
       }
     ],
-    "partial": "11–23",
-    "total": "24+",
+    "partial": "11–22",
+    "total": "23+",
     "tests": [
       {
         "name": "Engolir o Cenário",
@@ -444,8 +444,8 @@
         "limits": "Dissipar Pavio ou encerrar a cena também remove as marcas. Danos apenas adiados continuam devidos."
       }
     ],
-    "partial": "10–21",
-    "total": "22+",
+    "partial": "10–20",
+    "total": "21+",
     "tests": []
   }
 ]

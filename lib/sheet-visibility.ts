@@ -7,7 +7,7 @@ export function hasSheetText(value: unknown): value is string {
 
 export function hasTechniqueContent(record: TechniqueRecord): boolean {
   // Default grade/action and an auto-generated id do not make a technique owned.
-  return [record.name, record.concept, record.source, record.attribute, record.skill, record.range, record.cost, record.calculation, record.test, record.targetAreaDuration, record.totalSuccess, record.partialSuccess, record.failure, record.limits].some(hasSheetText);
+  return [record.name, record.concept, record.effect, record.source, record.attribute, record.skill, record.range, record.cost, record.calculation, record.test, record.targetAreaDuration, record.totalSuccess, record.partialSuccess, record.failure, record.limits].some(hasSheetText);
 }
 
 export function hasSubBendingContent(record: SubBending): boolean {
@@ -19,5 +19,5 @@ export function hasElementalContent(draft: CharacterPayload): boolean {
 }
 
 export function hasInvocationContent(record: InvocationRecord): boolean {
-  return Boolean(record.image) || [record.name, record.nature, record.desire, record.service, record.limit, record.price, record.sign, record.mainAttribute, record.weakSkill, record.senses, record.trait, record.weakness, record.command, record.dissipation, record.ability.name, record.ability.concept, record.ability.calculation, record.ability.effect, record.ability.limits].some(hasSheetText) || record.secondaryAttributes.some(hasSheetText) || record.mainSkills.some(hasSheetText) || record.fractures > 0;
+  return Boolean(record.image) || [record.name, record.nature, record.desire, record.service, record.limit, record.price, record.sign, record.mainAttribute, record.weakSkill, record.senses, record.trait, record.weakness, record.command, record.dissipation, record.ability.name, record.ability.action, record.ability.range, record.ability.damage, record.ability.concept, record.ability.calculation, record.ability.effect, record.ability.limits].some(hasSheetText) || record.secondaryAttributes.some(hasSheetText) || record.mainSkills.some(hasSheetText) || record.fractures > 0;
 }

@@ -93,7 +93,7 @@ Exausto altera o valor numérico, mas naturais usam a face original do dado sele
 
 Um 20 natural no dado normalmente selecionado é crítico, mas não supera automaticamente CA ou CD. Se o teste produzir efeito, multiplique por 2 os dados-base de dano, cura ou escudo; role os dados adicionais depois. Bônus fixos são somados uma vez. Informação, condições e duração só recebem ampliação quando a regra específica a descrever. Em ataque parcial crítico, calcule o crítico antes de dividir pela metade.
 
-Um 1 natural é uma complicação. A ação falha e o Mestre introduz uma consequência coerente, mas não destrói equipamento nem mutila personagem sem risco previamente anunciado.
+Um 1 natural fora de ataques contra CA é uma falha com complicação. O Mestre introduz uma consequência coerente, sem destruir equipamento ou mutilar personagem sem risco anunciado. Ataques contra CA usam o resultado total para determinar a faixa de acerto.
 
 ### Distâncias
 
@@ -186,15 +186,15 @@ Perícias descrevem treinamento. O Atributo muda conforme a abordagem: Intimida�
 
 ## Intelecto compreensão que se torna vantagem
 
-**Bônus Analítico:** em teste mental ou social treinado efetivamente regido por Intelecto, some o menor valor entre 3 e metade do Intelecto final, arredondada para baixo. Resultado = dado selecionado + treinamento (+2, +5 ou +10) + mínimo entre 3 e piso de Intelecto ÷ 2. Aplique uma vez, sem acrescentar níveis, dano, cura, duração, CA ou pré-requisitos.
+**Bônus Analítico:** em teste mental treinado regido por Intelecto, some o menor valor entre 3 e metade do Intelecto final, arredondada para baixo. Resultado = dado selecionado + treinamento (+2, +5 ou +10) + mínimo entre 3 e piso de Intelecto ÷ 2. Aplique uma vez, sem acrescentar níveis, dano, cura, duração, CA ou pré-requisitos.
 
 **São mentais:** Criação, História, Investigação, Medicina, Ocultismo, Percepção, Religião, Tática e Condução. São sociais: Atuação, Enganação, Intimidação, Liderança, Persuasão, Trato com Animais e Submundo. Nenhuma Perícia foi criada. A abrangência vem da abordagem, não de renomear ou duplicar treinamento.
 
-**Abordagem racional social:** antes de rolar, descreva argumento, leitura de comportamento, preparação, estratégia ou conhecimento do contexto. Nessa abordagem, use Intelecto no lugar de Presença se Intelecto for maior; some o bônus Analítico apenas se Intelecto for realmente usado e a Perícia for treinada. Não some os dois Atributos. Presença continua adequada para carisma imediato, autoridade e expressão; influência não controla a mente nem remove consentimento.
+**Abordagem racional social:** Presença é o Atributo padrão. Use outro Atributo apenas quando uma técnica ou Domínio autorizar a substituição. Declare-a antes de rolar. A substituição não concede automaticamente Analítico nem a Essência da Técnica a uma Perícia Social. Presença continua adequada para carisma imediato, autoridade e expressão; influência não controla a mente nem remove consentimento.
 
 Percepção só usa o bônus Analítico quando a tarefa é interpretar pistas; notar um ruído por instinto pode usar outro Atributo. Condução recebe o bônus ao planejar uma manobra ou compreender a máquina, não automaticamente ao reagir com Agilidade. Medicina pode aprimorar o teste de diagnóstico; o bônus não se soma à cura. Uma Perícia mental realizada com Espírito não recebe também o bônus de Intelecto.
 
-**Exemplo:** Intelecto 6, Presença 2 e Persuasão 2 permitem, em argumento racional coerente, 3d20 +8: +5 de treinamento e +3 Analítico. Com Presença, seriam 1d20 +5. Se Persuasão fosse 0, a abordagem racional usaria 1d20, sem Analítico. Ter bônus maior não altera o nível da Perícia.
+**Exemplo:** Com Intelecto 6, Presença 2 e Persuasão 2, o teste padrão é 1d20 +5. Se uma técnica permitir usar Intelecto, a reserva passa a 3d20 +5. A Persuasão continua no nível 2.
 
 ## Presença regência exclusiva dos vínculos
 
@@ -944,9 +944,9 @@ Uma habilidade fixa não recebe um Grau por comparação com sua aparência. Des
 
 ### Testes CDs e resultados
 
-Um efeito automático não exige rolagem e não pode obter crítico. Quando houver teste, use o Atributo, a Perícia e a defesa indicados no bloco. Perícia 0 e Atributo 0 conservam suas regras. O bônus Analítico só entra numa abordagem mental ou social efetivamente regida por Intelecto; não é somado a dano, cura ou escudo.
+Um efeito automático não exige rolagem e não pode obter crítico. Quando houver teste, use o Atributo, a Perícia e a defesa indicados no bloco. Perícia 0 e Atributo 0 conservam suas regras. O bônus Analítico só entra numa abordagem mental efetivamente regida por Intelecto; não é somado a dano, cura ou escudo.
 
-As CDs fixas próprias deste capítulo são 10, 14, 18 e 22. Testes contra CD têm sucesso ao atingir ou superar o valor indicado; abaixo dele, falham. Testes opostos são vencidos pelo maior resultado, e empate preserva o defensor. Ataques usam CA: total acima da CA, parcial entre metade da CA arredondada para baixo e a própria CA, e falha abaixo dessa faixa. Não crie um parcial em um teste oposto apenas porque a habilidade possui uma versão de ataque.
+As CDs fixas próprias deste capítulo são 10, 14, 18 e 22. Testes contra CD têm sucesso ao atingir ou superar o valor indicado; abaixo dele, falham. Testes opostos são vencidos pelo maior resultado, e empate preserva o defensor. Ataques usam CA: total ao igualar ou superar a CA, parcial da metade da CA arredondada para baixo até CA − 1, e falha abaixo dessa faixa. Não crie um parcial em um teste oposto apenas porque a habilidade possui uma versão de ataque.
 
 Um acerto só ativa habilidades depois de resolvidas as defesas que possam evitá-lo. A menos que o texto exija dano efetivo, parcial e total contam como acerto mesmo quando a Resistência absorve o dano. Evasão bem-sucedida não conta. Efeitos acrescentados a um ataque entram antes da divisão do parcial; dados adicionais não são multiplicados por crítico. No parcial de um ataque, arredonde o dano dividido para baixo. Resistência e reduções aplicadas depois ainda podem levá-lo a 0.
 
@@ -1599,13 +1599,13 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 #### Traço de Classe — Oficina de Campanha
 
-registre projetos autorais conforme sua Etapa, usando os limites de Dispositivo Autoral. Você escolhe nome, forma, materiais, montagem e função; torre é apenas um exemplo. Cada projeto registra Carga, CA, Vida, função, alcance, duração, ação de operação, munição/energia e limitações. Um dispositivo simples ocupa 2 espaços; tração ou cada função adicional acrescenta 1 espaço; suportes e componentes adicionais contam separadamente. Empunhado, exige mãos; instalado, exige apoio físico; fixado em alguém, exige consentimento e não altera automaticamente sua CA ou concede uso gratuito. Construção exige kit, peças e tempo da tabela de projetos e Intelecto + Criação CD 14 (simples), 18 (articulado, móvel ou multifuncional) ou 22 (integração tecno-kármica). Falha consome tempo e 25% das peças, arredondado para cima; nova tentativa exige repor a perda e repetir o trabalho. O custo da tabela cobre um chassi e uma função; cada função adicional acrescenta 50% desse custo, arredondado para cima. Preparar um dispositivo ocupa uma vaga, inclusive duplicatas; desativar não libera a vaga. Retirar um dispositivo do conjunto preparado exige 1 TE na oficina e o torna indisponível para habilidades de classe até nova preparação de 1 TE; não cria outro exemplar. Na criação, receba um dispositivo simples preparado em lugar de outro foco inicial, inclusive se escolher Sobrecarga como primeira habilidade. Repare um dispositivo de classe em 1 TE, com kit, peças de 2 m e Criação CD 14: sucesso restaura sua Vida física e retira Danificado; falha gasta peças e tempo. Um destruído exige reconstrução. Esse procedimento não repara veículos ou equipamento industrial pelos mesmos valores. Materiais, munições especiais, fontes e licenças seguem o Capítulo 20. Criação 2 inicial é uma exceção de treinamento do Inventor, sem dispensar requisitos de Etapa, fontes ou complexidade dos projetos.
+registre projetos autorais conforme sua Etapa, usando os limites de Dispositivo Autoral. Você escolhe nome, forma, materiais, montagem e função; torre é apenas um exemplo. Cada projeto registra Carga, CA, Vida, função, alcance, duração, ação de operação, munição/energia e limitações. Um dispositivo simples ocupa 2 espaços; tração ou cada função adicional acrescenta 1 espaço; suportes e componentes adicionais contam separadamente. Empunhado, exige mãos; instalado, exige apoio físico; fixado em alguém, exige consentimento e não altera automaticamente sua CA ou concede uso gratuito. Construção exige kit, peças e tempo da tabela de projetos e Intelecto + Criação CD 14 (simples), 18 (articulado, móvel ou multifuncional) ou 22 (integração tecno-kármica). Falha consome tempo e 25% das peças, arredondado para cima; nova tentativa exige repor a perda e repetir o trabalho. O custo da tabela cobre um chassi e uma função; cada função adicional acrescenta 50% desse custo, arredondado para cima. Preparar um dispositivo ocupa uma vaga, inclusive duplicatas; desativar não libera a vaga. Retirar um dispositivo do conjunto preparado exige 1 TE na oficina e o torna indisponível para habilidades de classe até nova preparação de 1 TE; não cria outro exemplar. Na criação, receba um dispositivo simples preparado em lugar de outro foco inicial, inclusive se escolher Sobrecarga como primeira habilidade. Repare um dispositivo de classe em 1 TE, com kit, peças de 2 M\$ e Criação CD 14: sucesso restaura sua Vida física e retira Danificado; falha gasta peças e tempo. Um destruído exige reconstrução. Esse procedimento não repara veículos ou equipamento industrial pelos mesmos valores. Materiais, munições especiais, fontes e licenças seguem o Capítulo 20. Criação 2 inicial é uma exceção de treinamento do Inventor, sem dispensar requisitos de Etapa, fontes ou complexidade dos projetos.
 
 #### Habilidade 1 — Dispositivo Autoral
 
 **Uso:** Principal, 3 Karma por ativação. Exige dispositivo preparado e fisicamente acessível; instalação em espaço livre ao alcance de 2 m, uso empunhado ou fixação registrada no projeto.
 
-A ativação é automática, não reconstrói nem cura o objeto. Escolha ao projetar uma função: ofensiva, ferramenta especializada ou manipulação mecânica. Ofensiva: uma vez no próprio turno, uma ordem Livre permite um ataque de Intelecto + Criação contra CA, admitindo Analítico quando a mira for efetivamente mental; total causa o dano físico da Etapa, parcial metade e falha zero. Arcos, lançadores, torres, braços de impacto e mecanismos semelhantes usam o mesmo perfil, sem herdar alcance ou dano superiores pelo nome. Projetos corpo a corpo usam alcance 2 m; os demais usam até o alcance máximo da tabela. Uma carga ofensiva fornece seis utilizações comuns, repostas por 1 m e 1 minuto; cada tiro ou golpe motorizado consome uma, sem fabricar explosivos ou munição especial. Ferramenta especializada: concede +1d20 a um único tipo de teste concreto registrado, como Criação para reparar motores ou Percepção para notar vibrações de uma superfície em contato; exige a ação e o teste normais do operador, não empilha bônus equivalentes de kit e não revela alvos automaticamente. Manipulação mecânica: com Movimento do operador, move ou sustenta um objeto solto e consentido de até 4 espaços por até 2 m, com meio físico alcançando o objeto; não afeta equipamento disputado, não imobiliza criaturas e não concede voo ou ações extras. Outros efeitos exigem perfil escrito antes da construção, avaliado pelas regras de equipamentos ou técnicas, sem superar a potência do projeto. A aparência não concede propriedades extras. Em todos os dispositivos juntos, emita no máximo uma ordem ofensiva Livre por turno: várias máquinas não multiplicam ataques. Uma máquina não recebe turno, ações ou Reações próprios; sem comando válido não age. Dispositivos exigem percepção ou comunicação física válida dentro do alcance de comando do perfil. Multifunção não acumula funções na mesma rodada. Ao fim da duração, o chassi permanece com Vida e consumíveis restantes; reativar paga novamente Principal e 3 Karma. Limites: Etapa I: 2 preparados/1 ativos, CA 14, Vida 12, dano 1d6, alcance 15 m, 3 rodadas, peças 5 m/1 TE; Etapa II: 3 preparados/1 ativos, CA 14, Vida 14, dano 1d6, alcance 15 m, 3 rodadas, peças 6 m/1 TE; Etapa III: 4 preparados/2 ativos, CA 15, Vida 16, dano 1d8, alcance 20 m, 4 rodadas, peças 8 m/2 TE; Etapa IV: 5 preparados/2 ativos, CA 15, Vida 18, dano 1d8, alcance 20 m, 4 rodadas, peças 10 m/2 TE; Etapa V: 6 preparados/3 ativos, CA 16, Vida 20, dano 1d10, alcance 25 m, 5 rodadas, peças 14 m/3 TE; Etapa VI: 7 preparados/3 ativos, CA 17, Vida 22, dano 1d10, alcance 25 m, 5 rodadas, peças 18 m/3 TE; Etapa VII: 8 preparados/4 ativos, CA 18, Vida 24, dano 1d12, alcance 30 m, 6 rodadas, peças 24 m/4 TE. Vagas ativas incluem Escudo Cinético e qualquer dispositivo operando em modo de classe. A disponibilidade não concede energia, comando ou manutenção gratuitos. Os limites de complexidade são cumulativos: I, uma função simples fixa ou empunhada; II, suportes articulados e comando por fio; III, tração terrestre de até 4 m por Movimento do operador, com terreno difícil e perigos normais; IV, duas funções registradas; V, integração de uma fonte tecno-kármica legitimamente possuída, com seus testes e custos; VI, rádio de comando no alcance do perfil, sujeito a interferência; VII, três funções registradas. Funções ofensivas continuam limitadas a uma ordem por turno. Rádio não concede visão ou identificação automática. Máquinas grandes, veículos, armamento industrial e pesquisa além da época seguem o Capítulo 20 com equipe, orçamento e componentes próprios, sem receber o custo reduzido dos dispositivos portáteis. Projetos ofensivos sobrenaturais, áreas, controle de criaturas, cura ou outra exceção de poder exigem técnica e fonte compatíveis; a Etapa não as concede automaticamente.
+A ativação é automática, não reconstrói nem cura o objeto. Escolha ao projetar uma função: ofensiva, ferramenta especializada ou manipulação mecânica. Ofensiva: uma vez no próprio turno, uma ordem Livre permite um ataque de Intelecto + Criação contra CA, admitindo Analítico quando a mira for efetivamente mental; total causa o dano físico da Etapa, parcial metade e falha zero. Arcos, lançadores, torres, braços de impacto e mecanismos semelhantes usam o mesmo perfil, sem herdar alcance ou dano superiores pelo nome. Projetos corpo a corpo usam alcance 2 m; os demais usam até o alcance máximo da tabela. Uma carga ofensiva fornece seis utilizações comuns, repostas por 1 M\$ e 1 minuto; cada tiro ou golpe motorizado consome uma, sem fabricar explosivos ou munição especial. Ferramenta especializada: concede +1d20 a um único tipo de teste concreto registrado, como Criação para reparar motores ou Percepção para notar vibrações de uma superfície em contato; exige a ação e o teste normais do operador, não empilha bônus equivalentes de kit e não revela alvos automaticamente. Manipulação mecânica: com Movimento do operador, move ou sustenta um objeto solto e consentido de até 4 espaços por até 2 m, com meio físico alcançando o objeto; não afeta equipamento disputado, não imobiliza criaturas e não concede voo ou ações extras. Outros efeitos exigem perfil escrito antes da construção, avaliado pelas regras de equipamentos ou técnicas, sem superar a potência do projeto. A aparência não concede propriedades extras. Em todos os dispositivos juntos, emita no máximo uma ordem ofensiva Livre por turno: várias máquinas não multiplicam ataques. Uma máquina não recebe turno, ações ou Reações próprios; sem comando válido não age. Dispositivos exigem percepção ou comunicação física válida dentro do alcance de comando do perfil. Multifunção não acumula funções na mesma rodada. Ao fim da duração, o chassi permanece com Vida e consumíveis restantes; reativar paga novamente Principal e 3 Karma. Limites: Etapa I: 2 preparados/1 ativos, CA 14, Vida 12, dano 1d6, alcance 15 m, 3 rodadas, peças 5 M<span class="math inline">/1*TE*; *EtapaII* : 3*preparados*/1*ativos*, *CA*14, *Vida*14, *dano*1*d*6, *alcance*15*m*, 3*rodadas*, *peças*6*M*</span>/1 TE; Etapa III: 4 preparados/2 ativos, CA 15, Vida 16, dano 1d8, alcance 20 m, 4 rodadas, peças 8 M<span class="math inline">/2*TE*; *EtapaIV* : 5*preparados*/2*ativos*, *CA*15, *Vida*18, *dano*1*d*8, *alcance*20*m*, 4*rodadas*, *peças*10*M*</span>/2 TE; Etapa V: 6 preparados/3 ativos, CA 16, Vida 20, dano 1d10, alcance 25 m, 5 rodadas, peças 14 M<span class="math inline">/3*TE*; *EtapaVI* : 7*preparados*/3*ativos*, *CA*17, *Vida*22, *dano*1*d*10, *alcance*25*m*, 5*rodadas*, *peças*18*M*</span>/3 TE; Etapa VII: 8 preparados/4 ativos, CA 18, Vida 24, dano 1d12, alcance 30 m, 6 rodadas, peças 24 M\$/4 TE. Vagas ativas incluem Escudo Cinético e qualquer dispositivo operando em modo de classe. A disponibilidade não concede energia, comando ou manutenção gratuitos. Os limites de complexidade são cumulativos: I, uma função simples fixa ou empunhada; II, suportes articulados e comando por fio; III, tração terrestre de até 4 m por Movimento do operador, com terreno difícil e perigos normais; IV, duas funções registradas; V, integração de uma fonte tecno-kármica legitimamente possuída, com seus testes e custos; VI, rádio de comando no alcance do perfil, sujeito a interferência; VII, três funções registradas. Funções ofensivas continuam limitadas a uma ordem por turno. Rádio não concede visão ou identificação automática. Máquinas grandes, veículos, armamento industrial e pesquisa além da época seguem o Capítulo 20 com equipe, orçamento e componentes próprios, sem receber o custo reduzido dos dispositivos portáteis. Projetos ofensivos sobrenaturais, áreas, controle de criaturas, cura ou outra exceção de poder exigem técnica e fonte compatíveis; a Etapa não as concede automaticamente.
 
 #### Ampliação — Engenharia Modular
 
@@ -1633,15 +1633,15 @@ no modo seguro, use os benefícios do modo forçado sem desgaste. No modo força
 
 ### Progressão dos projetos
 
-| Etapa     | Preparados | Ativos | Peças (m) | Construção (TE) | Carga básica |
-|-----------|------------|--------|-----------|-----------------|--------------|
-| Etapa I   | 2          | 1      | 5         | 1               | 2 espaços    |
-| Etapa II  | 3          | 1      | 6         | 1               | 2 espaços    |
-| Etapa III | 4          | 2      | 8         | 2               | 2 espaços    |
-| Etapa IV  | 5          | 2      | 10        | 2               | 2 espaços    |
-| Etapa V   | 6          | 3      | 14        | 3               | 2 espaços    |
-| Etapa VI  | 7          | 3      | 18        | 3               | 2 espaços    |
-| Etapa VII | 8          | 4      | 24        | 4               | 2 espaços    |
+| Etapa     | Preparados | Ativos | Peças (M\$) | Construção (TE) | Carga básica |
+|-----------|------------|--------|-------------|-----------------|--------------|
+| Etapa I   | 2          | 1      | 5           | 1               | 2 espaços    |
+| Etapa II  | 3          | 1      | 6           | 1               | 2 espaços    |
+| Etapa III | 4          | 2      | 8           | 2               | 2 espaços    |
+| Etapa IV  | 5          | 2      | 10          | 2               | 2 espaços    |
+| Etapa V   | 6          | 3      | 14          | 3               | 2 espaços    |
+| Etapa VI  | 7          | 3      | 18          | 3               | 2 espaços    |
+| Etapa VII | 8          | 4      | 24          | 4               | 2 espaços    |
 
 | Etapa     | CA  | Vida | Dano | Alcance (m) | Duração (rodadas) |
 |-----------|-----|------|------|-------------|-------------------|
@@ -2134,15 +2134,15 @@ CA = 12 + Agilidade permitida pela armadura + armadura + escudo ativo + ajuste d
 
 A CA funciona em três faixas. Calcule o limiar parcial dividindo a CA por dois e arredondando para baixo.
 
-**Acerto total:** resultado do ataque maior que a CA. Aplique dano e efeitos totais.
+**Acerto total:** resultado do ataque igual ou superior à CA. Aplique dano e efeitos totais.
 
-**Sucesso parcial:** resultado do ataque igual à CA ou entre a CA e o limiar parcial, inclusive. Aplique metade do dano e dos efeitos.
+**Sucesso parcial:** resultado do ataque entre o limiar parcial e CA − 1, inclusive. Aplique metade do dano e dos efeitos.
 
 **Falha:** resultado do ataque menor que o limiar parcial. Nenhum dano ou efeito direto é aplicado.
 
-**Exemplo:** uma criatura possui CA 15. Seu limiar parcial é 7. Um ataque 16 ou maior é acerto total; de 7 a 15 é sucesso parcial; 6 ou menos é falha. O valor 15 não é acerto total, porque o ataque precisa passar a CA.
+**Exemplo:** uma criatura possui CA 15. Seu limiar parcial é 7. Um ataque 15 ou maior é acerto total; de 7 a 14 é sucesso parcial; 6 ou menos é falha.
 
-No parcial, calcule o dano-base, o crítico cabível, os dados adicionais e os bônus fixos; divida por dois e arredonde para baixo, mínimo 1 se o dano antes da divisão era positivo. Aplique Resistência e demais reduções depois: elas podem reduzir o dano a 0. Só então desconte escudo temporário e Vida. Efeitos indivisíveis usam a Forma reduzida declarada; uma porção originalmente 0 continua 0.
+No parcial, calcule o dano-base, o crítico cabível, os dados adicionais e os bônus fixos; divida por dois e arredonde para baixo. Aplique Resistência e demais reduções depois: elas podem reduzir o dano a 0. Só então desconte escudo temporário e Vida. Efeitos indivisíveis usam a Forma reduzida declarada; uma porção originalmente 0 continua 0.
 
 ### Armaduras
 
@@ -2548,7 +2548,7 @@ Projeção afeta seres imateriais, mas não explora vulnerabilidade elemental ne
 
 Quando um ataque percebido estiver prestes a ser comparado com a CA do protegido, condense uma superfície kármica na trajetória e conceda **+2 CA somente contra aquela resolução**. Pode declarar depois de conhecer a rolagem, mas antes de definir o acerto e aplicar dano ou condições. Pague **5 Karma no total** para receber **+4 CA**, em vez de +2.
 
-A ativação é automática: não exige outra rolagem, CD ou concentração. Recalcule a faixa de acerto parcial e total com a CA temporária. Um resultado igual à CA continua parcial; total exige superar a CA. Um 1 natural selecionado continua falhando, e o 20 natural conserva a regra de crítico sem dispensar a resolução do acerto.
+A ativação é automática: não exige outra rolagem, CD ou concentração. Recalcule a faixa de acerto parcial e total com a CA temporária. Um resultado igual à CA é total. Contra CA, inclusive com 1 natural, use as faixas do ataque. O 20 natural conserva a regra de crítico sem dispensar a resolução do acerto.
 
 Essa Reação não inclui Esquiva ou Bloqueio. Não some duas Barreiras Kármicas sobre o mesmo protegido contra a mesma incidência; use o maior bônus. A proteção termina depois da resolução, mesmo se o ataque falhar. Ela não acumula pontos de absorção, não cura e não muda a CA permanente da ficha.
 
@@ -2976,7 +2976,7 @@ Escolha a resolução pela natureza da ação. Um ataque que tenta impor dano ou
 
 | **Resolução**        | **Resultado favorável**         | **Como tratar o parcial**                                              |
 |----------------------|---------------------------------|------------------------------------------------------------------------|
-| Ataque contra CA     | Superar a CA                    | Da metade da CA arredondada para baixo até a própria CA                |
+| Ataque contra CA     | Igualar ou superar a CA         | Da metade da CA arredondada para baixo até CA − 1                      |
 | Teste contra CD      | Igualar ou superar a CD         | Só existe se a regra específica o declarar                             |
 | Teste oposto         | Superar o resultado do oponente | Só existe se a regra específica o declarar; empate preserva a situação |
 | Efeito sem incerteza | Cumprir as condições da ficha   | Não há rolagem nem resultado parcial                                   |
@@ -2987,9 +2987,9 @@ Quando houver teste, a reserva vem do Atributo. Depois de selecionar o dado, som
 
 ### Escreva cada resultado por inteiro
 
-**Total ou sucesso:** descreva o valor completo e os efeitos comprados. Informe o alvo de cada benefício e o instante em que ele começa. Em um ataque contra CA, total exige ultrapassar a defesa; igualar a CA continua sendo parcial.
+**Total ou sucesso:** descreva o valor completo e os efeitos comprados. Informe o alvo de cada benefício e o instante em que ele começa. Em um ataque contra CA, total exige igualar ou superar a defesa.
 
-**Parcial:** quando a resolução permitir, reduza à metade os valores numéricos, arredondando para baixo. Dano positivo tem mínimo 1 antes de Resistência e outras reduções. Para condições, use a duração ou a Forma reduzida do Capítulo 7; não tente aplicar “metade de Silenciado”. Efeitos indivisíveis precisam de uma versão reduzida escrita. Se a resolução não admitir parcial, registre “não se aplica”.
+**Parcial:** quando a resolução permitir, reduza à metade os valores numéricos, arredondando para baixo. Para condições, use a duração ou a Forma reduzida do Capítulo 7; não tente aplicar “metade de Silenciado”. Efeitos indivisíveis precisam de uma versão reduzida escrita. Se a resolução não admitir parcial, registre “não se aplica”.
 
 **Falha:** o efeito direto não acontece. Ação, Karma, materiais e consequências já declaradas permanecem gastos ou aplicados. A exceção do Capítulo 9 devolve o custo quando a ação era impossível por informação que o personagem não poderia conhecer. Falhar contra uma defesa, ser interrompido ou desistir depois de conhecer a rolagem não aciona essa devolução.
 
@@ -3282,7 +3282,7 @@ Os dados concedidos por Manifestações ativas ficam fora do teto geral de dados
 
 ### Domínio da Técnica
 
-**Essência:** +1 no resultado de testes mentais ou sociais treinados efetivamente regidos por Intelecto. Esse bônus é separado do bônus Analítico.
+**Essência:** +1 no resultado de testes mentais treinados regidos por Intelecto. Esse bônus é separado do bônus Analítico.
 
 **Manifestação:** acrescente +1d20 ao teste principal de qualquer técnica utilizada, qualquer que seja seu Atributo regente, desde que o alvo ou a situação seja percebido. Intelecto é o regente de acesso ao Domínio; uma técnica de Presença, Espírito, Força ou Agilidade também recebe o dado. Uma vez por turno, após o acerto total de uma técnica, realize Derrubar, Empurrar ou Desarmar contra um alvo atingido sem gastar outra ação, com o teste oposto normal e um meio coerente para executá-la.
 
@@ -6673,7 +6673,7 @@ Aplique no máximo um ajuste sobre a base, antes da forma de chamada.
 
 ### Habilidade própria
 
-Cada criatura possui uma habilidade da fonte Invocação, de Grau até o seu, construída pelo Capítulo 10. Registre a combinação de teste, custo, ação e resultados. O invocador paga o Karma; a criatura não ganha reserva separada. Dano ou cura da habilidade substitui seu valor básico, salvo função secundária calculada. Reconstruir exige renegociação entre missões.
+Cada criatura possui uma habilidade da fonte Invocação, de Grau até o seu, construída pelo Capítulo 10. Registre a combinação de teste, custo, ação, alcance e resultados. Uma habilidade ofensiva paga deve igualar ou superar o dano médio do ataque básico da criatura. O invocador paga o Karma; a criatura não ganha reserva separada. Dano ou cura da habilidade substitui seu valor básico, salvo função secundária calculada. Reconstruir exige renegociação entre missões.
 
 ## Chamada e manutenção
 
@@ -6681,7 +6681,7 @@ Invocar exige Ação Principal, custo da tabela e um espaço válido em alcance 
 
 A chamada de um pacto válido é automática, sem CD, materiais consumíveis ou preparo adicional, salvo preço expresso do próprio pacto. A criatura surge em espaço percebido, desocupado e compatível a até 5 metros, com linha de efeito. Pague a chamada, não a manutenção, no instante inicial. Ela permanece até dispensa, incapacidade de pagar, 0 Vida ou limite específico; Fusão dura uma cena. Dispensar é Livre no turno do invocador, sem devolver Karma. Grau V consome seu ápice da cena ao chamar; estar ativo depois não cria outro ápice.
 
-Pague manutenção a cada dez rodadas de permanência em combate ou na transição de cena em exploração. Uma mesma transição não cobra os dois critérios. Registre o último pagamento; trocar artificialmente o nome de uma cena não elimina a manutenção. Sem pagamento, a criatura retorna ou se desfaz conforme o pacto.
+Pague manutenção ao iniciar cada rodada seguinte à chamada em combate ou na transição de cena em exploração. Uma mesma transição não cobra os dois critérios. Registre o último pagamento; trocar artificialmente o nome de uma cena não elimina a manutenção. Sem pagamento, a criatura retorna ou se desfaz conforme o pacto.
 
 Cada criatura além da primeira custa +1 Karma na própria chamada e +1 na própria manutenção. O acréscimo é fixo por criatura adicional: a terceira também recebe +1, não +2. Não aplique um segundo aumento só por possuir Conjuração maior. Registre uma criatura como primeira; ao dispensá-la, escolha entre as restantes a isenta a partir do próximo pagamento, sem devolver custos anteriores.
 

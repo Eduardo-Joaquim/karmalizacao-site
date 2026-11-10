@@ -313,6 +313,7 @@ export type ElementalState = {
 };
 
 export type TechniqueRecord = {
+  effect?: string;
   matrix?:"Kármico"|"Elemental"|"Divino"|"Marcial"|"Corrupto";
   damageType?:import("./technique-matrices").DamageType|"Físico";
   lineageCatalyst?:string;
@@ -354,7 +355,14 @@ export type InventoryItem = {
   notes: string;
 };
 
+export const INVOCATION_ACTIONS = ["Ação Principal", "Ação Extra", "Ação de Movimento", "Ação Livre", "Reação", "Passiva"] as const;
+export const INVOCATION_RANGES = ["Pessoal", "Toque", "2 m", "5 m", "10 m", "15 m", "25 m", "30 m"] as const;
+
 export type InvocationAbility = {
+  action?: typeof INVOCATION_ACTIONS[number];
+  karma?: number;
+  range?: typeof INVOCATION_RANGES[number];
+  damage?: string;
   name: string;
   grade: InvocationGrade;
   concept: string;
@@ -429,6 +437,7 @@ export type CharacterPayload = {
   elemental: ElementalState;
   techniques: TechniqueRecord[];
   invocations: InvocationRecord[];
+  workshopDevices?: { id: string; name: string; kind: "Ofensivo" | "Ferramenta" | "Manipulação" | "Emissor de Escudo Cinético"; active: boolean }[];
   inventory: InventoryItem[];
   loadModifier?: number;
   alchemicalSaturation?: number;

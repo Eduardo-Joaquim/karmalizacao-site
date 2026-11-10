@@ -1,9 +1,13 @@
 "use client";
 import { DivineAltar } from "@/components/divine-altar";
 import { CombatPanel } from "@/components/combat-panel";
+import { domainActivation, domainRefinementLabels } from "@/lib/table-play";
+import { hasAwakenedPath } from "@/lib/personal-path";
+import { registeredTechniqueCost } from "@/lib/combat-engine";
 import { TechniqueCost } from "@/components/technique-cost";
 import { CorruptedFormEditor } from "@/components/corrupted-form-editor";
-import { InventoryManager } from "@/components/inventory-manager";
+import { WorkshopPanel } from "@/components/workshop-panel";
+import { InventoryManager, type InventoryUse } from "@/components/inventory-manager";
 
 import {
   Backpack,
@@ -39,6 +43,7 @@ import {
   getFinalSkill,
   getRaceRule, racialFeatures,
   getSkillTest,
+  skillBonusExplanation,
   getSacrificedPoints,
   VOW_WEIGHTS,
   type AutomaticBonuses,
@@ -61,6 +66,7 @@ type CharacterSheetViewProps = {
   derived: DerivedStats;
   onChange?: (next: CharacterPayload) => void;
   readOnly?: boolean;
+  onInventoryUse?: (change: InventoryUse) => Promise<void>;
 };
 
 function ReadonlyValue({ label, children }: { label: string; children?: React.ReactNode }) {
@@ -107,6 +113,7 @@ export function CharacterSheetView({
   derived,
   onChange,
   readOnly = false,
+  onInventoryUse,
 }: CharacterSheetViewProps) {
   const race = getRaceRule(draft.race);
   const classDefinition = getClassDefinition(draft.className);
@@ -132,8 +139,8 @@ export function CharacterSheetView({
         <div className="sheet-lock-note">
           <Shield aria-hidden="true" />
           <span>
-            <strong>{readOnly ? "Visualização compartilhada" : "Ficha protegida"}</strong>
-            {readOnly ? "Este link permite consultar a ficha, nunca editá-la." : "Os recursos de combate e o inventário podem ser ajustados aqui. Salve a ficha para guardar as alterações."}
+            <strong>{readOnly ? "Modo Jogo · Criação Protegida" : "Ficha protegida"}</strong>
+            {readOnly ? "Recursos de combate e uso do inventário são editáveis. A criação fica protegida." : "Os recursos de combate e o inventário podem ser ajustados aqui. Salve a ficha para guardar as alterações."}
           </span>
         </div>
       </header>
@@ -217,7 +224,7 @@ export function CharacterSheetView({
                     <div key={skill} data-trained={total > 0}>
                       <span>{skill}</span>
                       <strong>{total}</strong>
-                      <small>{test.dice}d20 {test.bonus<0?"−":"+"} {Math.abs(test.bonus)}</small>
+                      <small title={skillBonusExplanation(test)}>{test.selection === "menor" ? "menor de " : ""}{test.dice}d20 {test.bonus<0?"−":"+"} {Math.abs(test.bonus)}</small>
                     </div>
                   );
                 })}
@@ -284,19 +291,29 @@ export function CharacterSheetView({
       {activeDomains.length || draft.personalPath.enabled ? <SheetSection icon={CircleDot} title={activeDomains.length && draft.personalPath.enabled ? "Domínios & Caminho Pessoal" : activeDomains.length ? "Domínios" : "Caminho Pessoal"}>
         {activeDomains.length ? (
           <div className="sheet-domain-grid">
-            {activeDomains.map((domain) => (
+            {activeDomains.map((domain) => {
+              const activation = domainActivation(domain, hasAwakenedPath(draft));
+              const base = domainActivation(domain);
+              return (
               <article key={domain.name}>
                 <div>
                   <small>{DOMAIN_RULES[domain.name].regent}</small>
                   <h3>Domínio da {domain.name}</h3>
                   <Badge variant="outline">{domain.marks} Marca(s)</Badge>
                 </div>
-                {domain.awakened ? <p><strong>Essência:</strong> {DOMAIN_RULES[domain.name].essence}</p> : null}
-                {domain.refinements.some(hasSheetText) ? <p><strong>Refinamentos:</strong> {domain.refinements.filter(hasSheetText).join(", ")}</p> : null}
+                {domain.awakened && <>
+                  <p><strong>Essência:</strong> {DOMAIN_RULES[domain.name].essence}</p>
+                  <section className="domain-expansion"><h4>Manifestação do Domínio</h4>
+                    <ReadonlyValue label="Custo">{`${activation.cost} Karma · ${activation.rounds} rodadas${hasAwakenedPath(draft) ? ` · Caminho −20% sobre ${base.cost}, com arredondamento` : ""}`}</ReadonlyValue>
+                    <ReadonlyValue label="Efeito mecânico">{DOMAIN_RULES[domain.name].manifestation}</ReadonlyValue>
+                    <ReadonlyValue label="Condição / limite">{`${domain.marks}/3 marcas da Parede · ${DOMAIN_RULES[domain.name].fissure}`}</ReadonlyValue>
+                  </section>
+                </>}
+                {domain.refinements.some(hasSheetText) ? <p><strong>Refinamentos:</strong> {domainRefinementLabels(domain.refinements).join(", ")}</p> : null}
                 {domain.signal ? <p><strong>Sinal:</strong> {domain.signal}</p> : null}
                 {domain.notes ? <p><strong>Notas:</strong> {domain.notes}</p> : null}
               </article>
-            ))}
+            );})}
           </div>
         ) : null}
         {draft.personalPath.enabled ? (
@@ -362,6 +379,8 @@ export function CharacterSheetView({
         </SheetSection>
       ) : null}
 
+      {draft.className === "Inventor" && <SheetSection icon={Package} title="Oficina de Campanha"><WorkshopPanel draft={draft} /></SheetSection>}
+
       {visibleInvocations.length ? <SheetSection icon={Ghost} title="Invocações">
         <div className="sheet-invocation-list">
           {visibleInvocations.map((invocation) => {
@@ -384,7 +403,7 @@ export function CharacterSheetView({
                 <ReadonlyValue label="Limite ou recusa">{invocation.limit}</ReadonlyValue>
                 <ReadonlyValue label="Preço">{invocation.price}</ReadonlyValue>
                 <ReadonlyValue label="Sinal">{invocation.sign}</ReadonlyValue>
-                <ReadonlyValue label="Fraturas">{invocation.fractures}/3</ReadonlyValue>
+                <ReadonlyValue label="Fraturas">{draft.combatState?.summons?.[invocation.id]?.fractures ?? invocation.fractures}/3</ReadonlyValue>
                 <ReadonlyValue label="Atributo principal">{invocation.mainAttribute ? `${invocation.mainAttribute} ${stats.mainAttribute}` : ""}</ReadonlyValue>
                 <ReadonlyValue label="Atributo secundário">{invocation.secondaryAttributes.length ? `${invocation.secondaryAttributes[0]} ${stats.secondaryAttribute}` : ""}</ReadonlyValue>
                 <ReadonlyValue label="Demais Atributos">{otherAttributes.length ? `${otherAttributes.join(", ")} ${stats.otherAttribute}` : ""}</ReadonlyValue>
@@ -411,7 +430,7 @@ export function CharacterSheetView({
               <article key={technique.id}>
                 <header>
                   <div>
-                    {hasSheetText(technique.source) ? <span>{technique.source}</span> : null}
+                    {hasSheetText(technique.source) ? <span>Origem · {technique.source}</span> : null}
                     <h3>{technique.name || "Técnica sem nome"}</h3>
                   </div>
                   <div>
@@ -424,11 +443,15 @@ export function CharacterSheetView({
                   <ReadonlyValue label="Teste">{[technique.attribute, technique.skill].filter(hasSheetText).join(" + ") || technique.test}</ReadonlyValue>
                   <ReadonlyValue label="Ação">{technique.action}</ReadonlyValue>
                   <ReadonlyValue label="Alcance">{technique.range}</ReadonlyValue>
-                  <ReadonlyValue label="Custo">{technique.cost}</ReadonlyValue>
+                  <ReadonlyValue label="Custo final">{(() => {
+                    const cost = registeredTechniqueCost(technique);
+                    return cost?.reduction ? <Badge variant="outline">{cost.total} Karma ({cost.base} base − {cost.reduction} limite)</Badge> : technique.cost;
+                  })()}</ReadonlyValue>
                   <ReadonlyValue label="Alvo / área / duração">{technique.targetAreaDuration}</ReadonlyValue>
 
                 </div>
-                <TechniqueCost>{technique.calculation?.trim() || "Esta técnica ainda não possui uma composição de custo registrada."}</TechniqueCost>
+                {technique.calculation?.trim() && <TechniqueCost>{technique.calculation}</TechniqueCost>}
+                <ReadonlyValue label="Efeito">{technique.effect?.trim() || technique.totalSuccess || technique.concept}</ReadonlyValue>
                 <div className="technique-results">
                   <ReadonlyValue label="Sucesso total">{technique.totalSuccess}</ReadonlyValue>
                   <ReadonlyValue label="Sucesso parcial">{technique.partialSuccess}</ReadonlyValue>
@@ -464,7 +487,7 @@ export function CharacterSheetView({
         </SheetSection>
       ) : null}
 
-      <InventoryManager draft={draft} onChange={onChange} readOnly={readOnly}/>
+      <InventoryManager draft={draft} onChange={onChange} readOnly={readOnly} onInventoryUse={onInventoryUse}/>
     </div>
   );
 }

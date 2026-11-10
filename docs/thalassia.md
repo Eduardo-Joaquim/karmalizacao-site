@@ -34,7 +34,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Domínios:** Técnica, Resistência e Superação. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
-**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA Total; Acerto Parcial vai do limiar Parcial até a CA Total inclusive. Um 1 natural selecionado falha. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total iguala ou supera a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
 **Traço 1:** Glaciação Criogênica, Caldeira Termobárica e Pressão / Salmoura são três expressões mestras de Água. Gelo e Pressão usam metade da defesa parental de Água, arredondada para baixo; Vapor usa metade da maior defesa entre Água e Fogo. Descritores perfurante, cortante e contundente não geram uma segunda parcela de dano.
 
@@ -52,7 +52,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
 **Resolução mecânica:** Calcule a CA Parcial como máximo entre 0 e metade da CA arredondada para baixo menos 2; a CA Total permanece intacta. No Acerto Total, cause 2d6 Elemental / Gelo, com descritor perfurante. No Acerto Parcial, cause metade do dano, arredondada para baixo. Em qualquer acerto, o próximo deslocamento do alvo fica reduzido em 3 m, mínimo 0, até o início do próximo turno de Atargatis. Falha não causa dano nem redução. A redução não acumula consigo mesma; uma nova aplicação renova o prazo. Cobertura total bloqueia a trajetória.
 
@@ -80,7 +80,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
 **Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
 
@@ -108,7 +108,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
 **Resolução mecânica:** Total causa 1d10 de dano cortante puro, registrado como Marcial/cortante nesta execução; parcial causa metade. Puro significa que não há segunda parcela elemental, e não que ignora toda defesa. Após qualquer acerto, role 1d100 uma única vez: de 1 a 30 aplica Sangramento Profundo; de 31 a 100 não aplica. A condição afeta criaturas vivas, Abissais e constructos por perda de sangue, fluido ou integridade estrutural, sem exigir hemomancia. Causa 1d8 do mesmo tipo no início de cada um dos próximos três turnos do alvo. Uma Principal e Intelecto + Medicina CD 19, ou Intelecto + Criação CD 19 para constructos, encerram a condição em sucesso; falha gasta a ação. Outra aplicação renova o prazo sem duplicar pulsos. Falha no ataque não rola a chance. A imunidade a Sangrando comum não impede automaticamente esta lesão estrutural nomeada.
 
@@ -122,7 +122,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; 1 natural selecionado falha. Acerto Total supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
 
 **Resolução mecânica:** Total causa 2d10 Elemental / Pressão, descritor contundente; parcial causa metade. Após qualquer acerto, o alvo faz Constituição + Atletismo CD 19, a resistência física do sistema. Falha aplica Fratura de Compressão: −2 em testes físicos regidos por Força, Agilidade ou Constituição durante dois turnos próprios, encerrando ao fim do segundo. Constructos sofrem a mesma penalidade por deformação estrutural. Sucesso evita apenas a fratura, não o dano já acertado. A penalidade não acumula consigo; renovar reinicia o prazo. Falha no ataque não causa dano nem resistência secundária. Não use uma Perícia inexistente chamada Resistência.
 
@@ -724,7 +724,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Domínios:** Resistência. Nível máximo: Essência e um Refinamento de Permanência; Manifestação custa 3 Karma e Ação Extra, dura cinco rodadas. Uma ativação por combate. Não concede Reações ou ações adicionais.
 
-**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA Total; Acerto Parcial vai do limiar Parcial até a CA Total inclusive. Um 1 natural selecionado falha. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total iguala ou supera a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
 **Traço 1:** Água e Pressão / Salmoura; defesas parentais de Água. Sem Vectis nem outorga divina copiada. A coroa é autoridade política; sua ficha usa o patamar comum de Etapa VI, sem fase adicional ou reserva oculta.
 
@@ -997,7 +997,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Domínios:** Força, Velocidade, Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Exceção: três ativações de cada Domínio por combate, em vez de uma.
 
-**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA Total; Acerto Parcial vai do limiar Parcial até a CA Total inclusive. Um 1 natural selecionado falha. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total iguala ou supera a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 

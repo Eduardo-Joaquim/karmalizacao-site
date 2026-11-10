@@ -36,7 +36,7 @@ for profile in profiles:
         profile['karma'] = ' / '.join(str(value) for value in override['karma'])
     for phase, base_ca in zip(profile['phases'], base['forms']):
         ca = scaled(base_ca, 'ca')
-        phase.update(ca=ca, partial=f'{ca // 2}–{ca}', total=f'{ca + 1}+')
+        phase.update(ca=ca, partial=f'{ca // 2}–{ca - 1}', total=f'{ca}+')
     if profile['slug'] == 'euphere':
         life = int(profile['life']); half = life // 2
         for phase, label in zip(profile['phases'], [f'{life} Vida', f'{life}–{half + 1} Vida', f'{half}–1 Vida']):

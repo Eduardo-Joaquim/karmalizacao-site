@@ -4,7 +4,7 @@
 
 ##### Pinóquio · O Menino de Madeira
 
-**Ficha da invocação:** Grau IV; Vida 45; CA 25; parcial 12–25; total 26+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
+**Ficha da invocação:** Grau IV; Vida 45; CA 25; parcial 12–24; total 25+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
 
 **Atributos:** FOR 2 · AGI 10 · CON 2 · INT 2 · PRE 12 · ESP 2.
 
@@ -24,7 +24,7 @@
 
 ##### Grilo Falante · A Consciência
 
-**Ficha da invocação:** Grau II; Vida 17; CA 19; parcial 9–19; total 20+; deslocamento 15 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 17; CA 19; parcial 9–18; total 19+; deslocamento 15 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 7 · PRE 4 · ESP 2.
 
@@ -44,7 +44,7 @@
 
 ##### Fada Azul · A Promessa
 
-**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–21; total 22+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
+**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; total 21+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 2 · PRE 10 · ESP 7.
 
@@ -62,7 +62,7 @@
 
 ##### Gato · O Ladrão de Voz
 
-**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–19; total 20+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; total 19+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 7 · CON 2 · INT 4 · PRE 2 · ESP 2.
 
@@ -82,7 +82,7 @@
 
 ##### Raposa · A Negociadora
 
-**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–19; total 20+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; total 19+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 4 · PRE 7 · ESP 2.
 
@@ -102,7 +102,7 @@
 
 ##### Baleia · O Ventre do Mundo
 
-**Ficha da invocação:** Grau IV; Vida 56; CA 23; parcial 11–23; total 24+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
+**Ficha da invocação:** Grau IV; Vida 56; CA 23; parcial 11–22; total 23+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
 
 **Atributos:** FOR 10 · AGI 2 · CON 12 · INT 2 · PRE 2 · ESP 2.
 
@@ -122,7 +122,7 @@
 
 ##### Pavio · O Convite ao Abandono
 
-**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–21; total 22+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
+**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; total 21+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
 
 **Atributos:** FOR 2 · AGI 7 · CON 2 · INT 2 · PRE 10 · ESP 2.
 

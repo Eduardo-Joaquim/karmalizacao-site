@@ -12,7 +12,7 @@ export function DivineRoll({draft,attribute,skill}:{draft:CharacterPayload;attri
  const regent=blessingAttribute(attribute);
  if(!regent)return <p className="divine-roll">{skill}: escolha o atributo regente.</p>;
  const t=getSkillTest(draft,calculateAutomaticBonuses(draft),skill,regent);
- const raw=(t.value===0||t.level===0?1:Math.ceil(t.value/2))+t.formDice+t.domainDice-t.inventoryPenalty.dicePenalty;const worst=raw<=0;const dice=worst?2:Math.min(30,raw);
+ const raw=t.baseDice-t.inventoryPenalty.dicePenalty;const worst=raw<=0;const dice=worst?2:Math.min(30,raw);
  return <p className="divine-roll"><strong>{skill}: {worst?"menor de ":"maior de "}{dice}d20 {t.bonus>=0?'+':''}{t.bonus}</strong><span>{regent} + {skill}</span></p>;
 }
 function Text({label,value,onChange,long=false,invalid=false}:{label:string;value:string;onChange:(s:string)=>void;long?:boolean;invalid?:boolean}){

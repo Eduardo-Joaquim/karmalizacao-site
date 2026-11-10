@@ -3,7 +3,7 @@ const corner='<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hi
 export function decorateRuleHtml(html:string,chapter:number){
  let heading=0;
  let n=0;
- const decorated=html.replace(/<h2\b/g,()=>heading++===0?'<h2':filigree+'<h2').replace(/<table\b[\s\S]*?<\/table>/g,t=>'<div class="canon-table-wrap tome-table-wrap">'+t+'</div>')
+ const decorated=html.replace(/<h2\b/g,()=>heading++===0?'<h2':filigree+'<h2').replace(/<table\b[\s\S]*?<\/table>/g,t=>'<div class="canon-table-wrap tome-table-wrap" tabindex="0" role="region" aria-label="Tabela de regras com rolagem">'+t+'</div>')
  .replace(/<blockquote>/g,'<blockquote class="canon-callout">'+corner.repeat(4))
  .replace(/<(h[23])([^>]*)>([^<]+)<\/\1>/g,(match,tag,attrs,label)=>{
   if(!((chapter===5&&tag==='h3'&&/^(Humano|Elfo|Anão|Demi-humano|Vampiro|Demônio|Ghoul|Tritão|Abissal)$/.test(label))||(chapter===6&&tag==='h2'&&/Mercenário|Pugilista|Duelista|Tanque|Ranger|Ladrão|Assassino|Samaritano|Curandeiro|Alquimista|Inventor|Bardo|Ocultista|Especialista|Invocador|Elementalista|Conjurador/.test(label))))return match;

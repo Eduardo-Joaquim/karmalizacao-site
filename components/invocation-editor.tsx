@@ -1,5 +1,7 @@
 "use client";
 
+import { invocationDamageOptions } from "@/lib/invocation-rules";
+import { MATRIX_BASE } from "@/lib/technique-matrices";
 import { Ghost, Plus, Trash2, TriangleAlert } from "lucide-react";
 import Link from "next/link";
 
@@ -15,6 +17,8 @@ import {
   ATTRIBUTES,
   INVOCATION_CALL_FORMS,
   INVOCATION_GRADES,
+  INVOCATION_ACTIONS,
+  INVOCATION_RANGES,
   INVOCATION_NATURES,
   INVOCATION_PROFILES,
   type CharacterPayload,
@@ -185,7 +189,12 @@ export function InvocationEditor({ draft, onChange }: { draft: CharacterPayload;
             <div className="character-form-grid two-columns compact-form">
               <div className="character-field"><Label htmlFor={`invocation-ability-name-${invocation.id}`} className="character-label">Nome da habilidade</Label><Input id={`invocation-ability-name-${invocation.id}`} maxLength={120} value={invocation.ability.name} onChange={(event) => updateInvocation(invocation.id, { ability: { ...invocation.ability, name: event.target.value } })} /></div>
               <div className="character-field"><Label htmlFor={`invocation-ability-grade-${invocation.id}`} className="character-label">Grau da habilidade</Label><NativeSelect id={`invocation-ability-grade-${invocation.id}`} value={invocation.ability.grade} onChange={(event) => updateInvocation(invocation.id, { ability: { ...invocation.ability, grade: event.target.value as InvocationGrade } })}>{INVOCATION_GRADES.filter((grade) => invocationGradeIndex(grade) <= invocationGradeIndex(invocation.grade)).map((grade) => <NativeSelectOption key={grade} value={grade}>Grau {grade}</NativeSelectOption>)}</NativeSelect></div>
-              {([['concept', 'Conceito e função'], ['calculation', 'Cálculo de Karma'], ['effect', 'Efeito e resultados'], ['limits', 'Limites e falha']] as const).map(([field, label]) => <InvocationField key={field} id={`invocation-ability-${field}-${invocation.id}`} label={label} value={invocation.ability[field]} wide onChange={(value) => updateInvocation(invocation.id, { ability: { ...invocation.ability, [field]: value } })} />)}
+              <label className="character-field">Ação<NativeSelect value={invocation.ability.action ?? ""} onChange={event => updateInvocation(invocation.id, { ability: { ...invocation.ability, action: (event.target.value || undefined) as typeof invocation.ability.action } })}><NativeSelectOption value="">Escolha a ação</NativeSelectOption>{INVOCATION_ACTIONS.map(action => <NativeSelectOption key={action}>{action}</NativeSelectOption>)}</NativeSelect></label>
+              <label className="character-field">Custo de Karma<NativeSelect value={invocation.ability.karma ?? ""} onChange={event => updateInvocation(invocation.id, { ability: { ...invocation.ability, karma: event.target.value === "" ? undefined : Number(event.target.value) } })}><NativeSelectOption value="">Escolha o custo</NativeSelectOption>{Array.from({length: 21}, (_, extra) => MATRIX_BASE[invocationGradeIndex(invocation.ability.grade) - 1] + extra).map(cost => <NativeSelectOption key={cost} value={cost}>{cost} Karma</NativeSelectOption>)}<NativeSelectOption value={0}>0 Karma (efeito gratuito registrado)</NativeSelectOption></NativeSelect></label>
+              <label className="character-field">Alcance<NativeSelect value={invocation.ability.range ?? ""} onChange={event => updateInvocation(invocation.id, { ability: { ...invocation.ability, range: (event.target.value || undefined) as typeof invocation.ability.range } })}><NativeSelectOption value="">Escolha o alcance</NativeSelectOption>{INVOCATION_RANGES.map(range => <NativeSelectOption key={range}>{range}</NativeSelectOption>)}</NativeSelect></label>
+              <label className="character-field">Dano da habilidade<NativeSelect value={invocation.ability.damage ?? ""} onChange={event => updateInvocation(invocation.id, { ability: { ...invocation.ability, damage: event.target.value || undefined } })}><NativeSelectOption value="">Sem dano estruturado</NativeSelectOption>{invocation.ability.damage && !invocationDamageOptions(invocation).includes(invocation.ability.damage) && <NativeSelectOption value={invocation.ability.damage}>Revisar {invocation.ability.damage}</NativeSelectOption>}{invocationDamageOptions(invocation).map(damage => <NativeSelectOption key={damage}>{damage}</NativeSelectOption>)}</NativeSelect></label>
+              {(invocation.ability.concept || invocation.ability.calculation) && <p className="field-full">Registro anterior · {[invocation.ability.concept, invocation.ability.calculation].filter(Boolean).join(" · ")}</p>}
+              {([['effect', 'Efeito e resultados'], ['limits', 'Limites e falha']] as const).map(([field, label]) => <InvocationField key={field} id={`invocation-ability-${field}-${invocation.id}`} label={label} value={invocation.ability[field]} wide onChange={(value) => updateInvocation(invocation.id, { ability: { ...invocation.ability, [field]: value } })} />)}
             </div>
           </div>
         </article>;

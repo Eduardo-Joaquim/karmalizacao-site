@@ -12,7 +12,7 @@ import type {ChangeEvent} from 'react';
 import { combatCatalog, npcSkillRoll, type NpcTemplate, type NpcArt } from '@/lib/combat-catalog';
 import { type CharacterPayload, ATTRIBUTES, normalizeCharacterPayload } from '@/lib/character-data';
 import { characterMax, damageDice, liveState, parseCombatLink, randomDice, receiveDamage, skillRoll } from '@/lib/combat-engine';
-import { resolveRoll } from '@/lib/table-play';
+import { damageForAttack, resolveRoll } from '@/lib/table-play';
 import { useCombatSync } from '@/hooks/use-combat-sync';
 import { CombatFeed, PlayerCombatMode, type CombatDispatcher } from '@/components/player-combat-mode';
 import { TechniqueCost } from '@/components/technique-cost';
@@ -105,15 +105,15 @@ export function GmCombatWindow({incoming}:{incoming?:NpcTemplate|null}){
   if(art.domain){updateParticipants(ps=>ps.map(x=>x.key===p.key?{...x,domainRounds:{...x.domainRounds,[art.domain!]:4}}:x));setMessage(`${art.name}: quatro rodadas. Aplique os dados e benefícios aos testes elegíveis.`);return;}
   const dice=m?randomDice(Math.min(30,Number(m[1]))):[],bonus=m?(m[2]==='+'?1:-1)*Number(m[3]):0;
   const selection=/menor/i.test(formula)?'menor':'maior';
-  const roll=m?resolveRoll(dice,bonus,victim?caOf(victim):undefined,'CA',selection):null;
+  const roll=m?resolveRoll(dice,bonus,art.attack&&victim?caOf(victim):undefined,'CA',selection):null;
   if(roll){const event:CombatLog={id:combatId(),timestamp:new Date().toISOString(),actorName:nameOf(p),kind:art.attack?'attack':'ability',title:art.name,rollFormula:formula,diceResults:dice,total:roll.total,visual:rollVisual(dice,bonus,selection,roll.outcome)};setLogs(es=>[...es,event].slice(-100));}
   if(!art.attack){log(art.name,`${nameOf(p)} · ${cost} Karma. ${roll?`[${dice.join(', ')}] ${bonus>=0?'+':''}${bonus} = ${roll.total}. `:''}Resolva o efeito e os requisitos escritos; dano não é aplicado automaticamente.`,'ability');setMessage(`${art.name}: ${cost} Karma pagos. Resolva o efeito.`);return;}
   const damageText=manual[`${p.key}-${art.id}-damage`]??art.damage,base=damageDice(damageText,roll!.naturalTwenty&&roll!.outcome!=='Falha'&&roll!.outcome!=='Falha natural');
-  const damage=roll!.outcome==='Acerto total'?base?.total??0:roll!.outcome==='Acerto parcial'?Math.floor((base?.total??0)/2):0;
+  const damage=damageForAttack(base?.total??0,roll!.outcome);
   const label=`${nameOf(p)} · ${art.name} → ${nameOf(victim!)}: [${dice.join(', ')}] ${bonus>=0?'+':''}${bonus} = ${roll!.total}, ${roll!.outcome}. ${base?`Dano ${base.formula} [${base.dice.join(', ')}] = ${base.total}; após parcial: ${damage}.`:'Sem dano estruturado: informe o valor final no campo Dano / cura.'}`;
   log(art.name,label,'attack');setMessage(label);setResolution({target:target,amount:damage,label,applied:false});
  }
- async function newRound(){for(const p of latest.current)await action(p,{type:'round'},'Nova rodada');setRound(n=>n+1);setMessage('Rodada avançada. Reações renovadas; durações reduzidas. Confira manutenções.');}
+ async function newRound(){for(const p of latest.current)await action(p,{type:'round'},'Nova rodada');setRound(n=>n+1);setMessage('Rodada avançada. Reações renovadas; durações reduzidas. Manutenção das invocações vinculadas processada.');}
  function npcDefense(p:Participant,skill:string,attribute:typeof ATTRIBUTES[number],title:string){
   if(!p.npc)return;const r=npcSkillRoll(p.npc,skill,attribute);const event:CombatLog={id:combatId(),timestamp:new Date().toISOString(),actorName:nameOf(p),kind:'skill',title,rollFormula:r.formula,diceResults:r.dice,total:r.total,visual:rollVisual(r.dice,r.bonus)};setLogs(es=>[...es,event].slice(-100));return r.total;
  }

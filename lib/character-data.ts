@@ -47,6 +47,7 @@ export function normalizeCharacterPayload(
           name,
         }))
       : blank.domains,
+    workshopDevices: payload.workshopDevices ?? [],
     techniques: (payload.techniques ?? []).map((technique) => PRESENCE_SKILLS.includes(technique.skill) ? { ...technique, attribute: "Presença" } : technique),
     invocations: (payload.invocations ?? []).slice(0, 10).map((invocation) => ({
       id: invocation.id ?? "",

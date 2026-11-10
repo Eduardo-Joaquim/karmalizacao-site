@@ -7,6 +7,7 @@ import { getStageIndex, getFinalSkill } from "@/lib/character-rules";
 import { TECHNIQUE_GRADES, techniqueGradeIndex } from "@/lib/technique-matrices";
 import {TechniqueMatrixEditor} from "@/components/technique-matrix-editor";
 
+import { WorkshopPanel } from "@/components/workshop-panel";
 import { BlessingEditor } from "@/components/blessing-editor";
 import {
   BookOpen,
@@ -845,6 +846,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
           <details><summary>Consultar as 25 Runas</summary>{runes.map(rune => <details key={rune.id}><summary>{rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido</summary><p>{rune.category}</p><p><strong>Enquanto armada.</strong> {rune.passive}</p><p><strong>Estouro.</strong> {rune.burst}</p></details>)}</details>
         </section>
 
+        {draft.className === "Inventor" && <section className="power-section"><WorkshopPanel draft={draft} onChange={onChange} /></section>}
         <InvocationEditor draft={draft} onChange={onChange} />
 
         <VowEditor draft={draft} automatic={automatic} onChange={onChange} />
@@ -949,6 +951,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     <legend>Efeitos e resolução</legend>
                     {([
                       ["concept", "Conceito"],
+                      ["effect", "Efeito"],
                       ["range", "Alcance"],
                       ["targetAreaDuration", "Alvo, área e duração"],
                       ["cost", "Custo"],
@@ -962,9 +965,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       <TextField
                         id={`technique-${field}-${technique.id}`}
                         label={label}
-                        value={technique[field]}
+                        value={technique[field] ?? ""}
                         multiline={field !== "range"}
-                        wide={["concept", "totalSuccess", "partialSuccess", "failure", "limits"].includes(field)}
+                        wide={["concept", "effect", "totalSuccess", "partialSuccess", "failure", "limits"].includes(field)}
                         onChange={(value) => updateTechnique(technique.id, { [field]: value })}
                         key={field}
                       />
