@@ -4995,7 +4995,39 @@ h4,
 
 .aeria-archive .gaeria-bestiary-return,.aeria-archive .threat-link{color:#d2e7f5;border-color:#91a9be}
 
-.skill-allocation-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:.75rem;align-items:start}
+.skill-allocation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.skill-allocation-grid .bonus-allocation-panel {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.875rem;
+  margin-bottom: 0;
+}
+
+.skill-allocation-grid .bonus-allocation-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+}
+
+.skill-allocation-grid .character-label {
+  align-items: start;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+
+.skill-allocation-grid .character-label > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.skill-allocation-grid .character-label small {
+  flex-shrink: 0;
+  color: var(--karma);
+  white-space: nowrap;
+}
 .sheet-dice{font-family:var(--font-mono);padding:.2rem .45rem;border:1px solid #c7a66b55;border-radius:.4rem;color:#ebca8e;font-size:.84rem}
 .attribute-card .attribute-controls{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:.45rem}
 .sheet-skill-groups article>div>div{grid-template-columns:minmax(0,1fr) auto minmax(5.5em,auto);gap:.5rem}

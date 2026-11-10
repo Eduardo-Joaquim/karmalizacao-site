@@ -206,7 +206,8 @@ function AllocationPanel({
           return (
             <div className="character-field" key={`${slot.label}-${index}`}>
               <Label htmlFor={`allocation-${title}-${index}`} className="character-label">
-                {slot.label} <small>+{slot.value}</small>
+                <span>{slot.label}</span>
+                <small>+{slot.value}</small>
               </Label>
               <NativeSelect
                 id={`allocation-${title}-${index}`}
@@ -1048,7 +1049,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
               />
               <AllocationPanel
                 title="Recompensas Comuns"
-                description={`Seu ${draft.path} concede ${automatic.progressionRewards.common} recompensa(s) Comum(ns) até ${draft.stage}. Elas só compram os nível 1.`}
+                description={`Caminho ${draft.path} · ${automatic.progressionRewards.common} até ${draft.stage}. Use cada recompensa para completar o nível 1 de uma Perícia Comum.`}
                 slots={progressionCommonSlots}
                 selections={draft.allocations.progressionCommonSkills}
                 onChange={(selections) =>
@@ -1066,7 +1067,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
               />
               <AllocationPanel
                 title="Recompensas Evolutivas"
-                description={`Seu caminho concede ${automatic.progressionRewards.evolutive} recompensa(s) Evolutiva(s). Elas só compram os nível 2 de uma Perícia Comum completa.`}
+                description={`Seu caminho concede ${automatic.progressionRewards.evolutive}. Use cada recompensa para elevar uma Perícia Comum do nível 1 ao nível 2.`}
                 slots={progressionEvolutiveSlots}
                 selections={draft.allocations.progressionEvolutiveSkills}
                 onChange={(selections) =>
