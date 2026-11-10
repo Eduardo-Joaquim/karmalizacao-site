@@ -1,0 +1,306 @@
+[
+  {
+    "id": "outorga-1",
+    "owner": "Aveline",
+    "name": "Geometria do Amparo",
+    "deityId": "minerva",
+    "nature": "Herança de linhagem",
+    "origin": "A defesa de uma cidade sitiada selou o compromisso de Minerva com os guardiões de suas muralhas.",
+    "motivation": "Minerva pode ter escolhido a linhagem por reconhecer que uma defesa digna protege pessoas, não apenas tronos.",
+    "description": "Os seis ângulos tornam a proteção visível: superfícies luminosas interceptam trajetórias e repartem impactos. Aveline dá à arquitetura da cidade a presença de um escudo vivo.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Aveline",
+    "aliases": [
+      "Geometria dos Seis Ângulos",
+      "Seis Ângulos"
+    ]
+  },
+  {
+    "id": "outorga-2",
+    "owner": "Isadora",
+    "name": "Geometria do Amparo",
+    "deityId": "minerva",
+    "nature": "Herança de linhagem",
+    "origin": "Isadora manifesta a mesma outorga sem retirar a Bênção de Aveline.",
+    "motivation": "Minerva pode enxergar na música de Isadora uma forma de reunir aqueles que a muralha protege.",
+    "description": "Seus acordes conferem ritmo aos seis ângulos. A proteção se organiza em torno da execução musical, convertendo harmonia em superfícies de amparo.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Isadora"
+  },
+  {
+    "id": "outorga-3",
+    "owner": "Naerith",
+    "name": "Nemeton",
+    "deityId": "guaraci",
+    "nature": "Sucessão ritual",
+    "origin": "A coroação transferiu integralmente a custódia do santuário vivo para Naerith.",
+    "motivation": "Guaraci pode ter buscado uma guardiã capaz de devolver à floresta aquilo que um reino dela retira.",
+    "description": "Nemeton desperta a potência contida em sementes, raízes e terra fértil. O santuário cresce por sua vontade, ligando a autoridade da coroa ao cuidado com a vida da floresta.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Naerith"
+  },
+  {
+    "id": "outorga-4",
+    "owner": "Thaerion",
+    "name": "Vitral do Meio-Dia",
+    "deityId": "surya",
+    "nature": "Herança de linhagem",
+    "origin": "A casa Solvaldren conserva a luz confiada por Surya aos seus portadores.",
+    "motivation": "Surya pode ter escolhido essa linhagem para que a luz alcance quem está à sombra do poder.",
+    "description": "A luz encontra corpo em lâminas e vitrais transparentes. Thaerion orienta essas superfícies como uma catedral móvel; sua Bênção possui origem própria, distinta da Heliose elemental.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Thaerion"
+  },
+  {
+    "id": "outorga-5",
+    "owner": "Alucard",
+    "name": "Haimaton",
+    "deityId": "sekhmet",
+    "nature": "Transmissão no nascimento",
+    "origin": "A outorga passou integralmente de Nosferato para Alucard quando a princesa nasceu.",
+    "motivation": "Sekhmet pode ter confiado à herdeira a tarefa de dar medida à violência do sangue real.",
+    "description": "Haimaton responde ao sangue exteriorizado e transforma a ferida em matéria de precisão. Sua força reside no domínio consciente do sangue derramado; a mãe conserva sua subdobra, mas não esta outorga.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Alucard",
+    "aliases": [
+      "Sangue real — Haimaton"
+    ]
+  },
+  {
+    "id": "outorga-6",
+    "owner": "Valac",
+    "name": "Desespero",
+    "deityId": "kali",
+    "nature": "Outorga individual",
+    "origin": "Kali concedeu a dádiva diretamente a Valac; ela não se transmite às filhas.",
+    "motivation": "Kali pode ter reconhecido uma vontade que atravessou a noite sem se desfazer, mesmo quando perdeu a esperança.",
+    "description": "O sofrimento real se acumula como densidade na presença de Valac. Ao atingir seu limiar, a Bênção faz dessa experiência uma manifestação de poder, obedecendo ao contador e às ativações descritas abaixo.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Valac"
+  },
+  {
+    "id": "outorga-7",
+    "owner": "Belial",
+    "name": "Sceleris",
+    "deityId": "marte",
+    "nature": "Outorga individual",
+    "origin": "Marte vinculou a dádiva à rivalidade assumida por Belial.",
+    "motivation": "Marte pode desejar que a princesa responda pelo nome de seu inimigo e pelo risco de sua própria palavra.",
+    "description": "Sceleris dá forma à rivalidade declarada. O vínculo concentra a confrontação em um adversário reconhecido, sem fabricar consentimento nem obrigar o oponente a aceitar o duelo.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Belial"
+  },
+  {
+    "id": "outorga-8",
+    "owner": "Asmodeus",
+    "name": "Concordato",
+    "deityId": "thoth",
+    "nature": "Outorga individual",
+    "origin": "Thoth entregou à princesa uma passagem entre promessas aceitas.",
+    "motivation": "Thoth pode ver em Asmodeus a capacidade de transformar encontros hostis em compromissos que ambas as partes compreendam.",
+    "description": "Uma promessa aceita abre uma passagem entre duas vontades. Concordato torna esse acordo manifestável, preservando a escolha que o originou e os efeitos específicos de cada técnica.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Asmodeus"
+  },
+  {
+    "id": "outorga-9",
+    "owner": "Eirik",
+    "name": "Magnetismo",
+    "deityId": "ogum",
+    "nature": "Outorga individual",
+    "origin": "Ogum confiou ao inventor o governo dos campos magnéticos.",
+    "motivation": "Ogum pode ter reconhecido em Eirik alguém capaz de fazer do ferro uma ferramenta pública, abrindo caminhos onde havia abandono.",
+    "description": "Ferramentas orbitam seus dedos, chapas encontram seus encaixes e estruturas se sustentam no ar. O Magnetismo permite que Eirik conduza uma oficina inteira com gestos precisos.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Eirik",
+    "aliases": [
+      "Magnetismo e Criação de Matéria Inorgânica"
+    ]
+  },
+  {
+    "id": "outorga-10",
+    "owner": "Eirik",
+    "name": "Criação de Matéria Inorgânica",
+    "deityId": "hefesto",
+    "nature": "Segunda outorga independente",
+    "origin": "Hefesto concedeu a Eirik uma dádiva distinta do Magnetismo.",
+    "motivation": "Hefesto pode ter escolhido um inventor que compreende a matéria como possibilidade de abrigo, trabalho e reconstrução.",
+    "description": "Qualquer material inorgânico pode tomar forma entre suas mãos: metais, vidro, pedra e cerâmica. O projeto ganha peso e textura; combinado ao Magnetismo, pode ser montado e conduzido como uma máquina.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Eirik",
+    "aliases": [
+      "Criação Inorgânica"
+    ]
+  },
+  {
+    "id": "outorga-11",
+    "owner": "Sael",
+    "name": "Tiamat",
+    "deityId": "tiamat",
+    "nature": "Herança primordial",
+    "origin": "A linhagem Aruven conserva a outorga ancestral; a coroação transmite a custódia dos ritos.",
+    "motivation": "Tiamat pode ter desejado que a força dracônica guardasse passagens e acolhesse aqueles que se rendem sob seu juramento.",
+    "description": "Escamas, cauda e chifres revelam uma ancestralidade que se manifesta no corpo. Sael dá à herança a expressão de uma soberana, mantendo técnicas próprias para asas, rugido e proteção.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Sael",
+    "aliases": [
+      "Bênção de Tiamat"
+    ]
+  },
+  {
+    "id": "outorga-12",
+    "owner": "Maelis",
+    "name": "Tiamat",
+    "deityId": "tiamat",
+    "nature": "Herança primordial",
+    "origin": "Maelis manifesta a herança simultaneamente à mãe, sem retirar a dádiva de Sael.",
+    "motivation": "Tiamat pode enxergar na jovem portadora a oportunidade de renovar um juramento que o orgulho da corte ameaça endurecer.",
+    "description": "A anatomia dracônica desperta de modo próprio em Maelis. Sua expressão ainda não reproduz os Domínios ou todas as técnicas da rainha: a mesma origem pode produzir caminhos distintos.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Maelis"
+  },
+  {
+    "id": "outorga-13",
+    "owner": "Darian",
+    "name": "Bóreas",
+    "deityId": "boreas",
+    "nature": "Herança de linhagem",
+    "origin": "Bóreas confiou à Casa Corvel a guarda das correntes e das rotas de resgate.",
+    "motivation": "Bóreas pode ter favorecido uma casa que enfrenta ventos adversos para alcançar quem ficou para trás.",
+    "description": "Correntes exteriores tornam-se caminhos de sustentação. Darian lê a pressão do ar como um mapa e conduz seus movimentos para abrir uma rota de retorno aos que precisam de socorro.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Darian"
+  },
+  {
+    "id": "outorga-14",
+    "owner": "Agares",
+    "name": "Consanguis",
+    "deityId": "isis",
+    "nature": "Herança de linhagem",
+    "origin": "Agares é o portador integral da outorga protetora de Ísis.",
+    "motivation": "Ísis pode ter escolhido essa linhagem para que os laços de sangue significassem responsabilidade e amparo.",
+    "description": "Consanguis manifesta o vínculo protetor entre pessoas reconhecidas como família. A Bênção sustenta o compromisso de Agares com os seus e conserva natureza distinta de sua subdobra de Sangue.",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Agares"
+  },
+  {
+    "id": "outorga-15",
+    "owner": "Euphere",
+    "name": "Dragão Negro",
+    "deityId": "tiamat",
+    "nature": "Outorga individual primordial",
+    "origin": "Tiamat concedeu a Euphere uma manifestação própria, independente da herança Aruven.",
+    "motivation": "Tiamat pode ter reconhecido em Euphere uma força que precisava de forma para não consumir tudo ao redor.",
+    "description": "O Dragão Negro é uma carapaça viva, distribuída entre placas, garras e asas. Euphere molda essa presença com a massa disponível; Nadir reúne sua matéria, plasma e Karma em uma única assinatura.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Euphere",
+    "aliases": [
+      "Bênção do Dragão Negro"
+    ]
+  },
+  {
+    "id": "outorga-16",
+    "owner": "Falsa Santa",
+    "name": "Fios da Providência Usurpada",
+    "deityId": "tecela-exterior",
+    "nature": "Outorga exterior",
+    "origin": "A Tecelã Exterior entregou os fios à curandeira. Sua natureza permanece fora das nove Asas.",
+    "motivation": "A entidade pode desejar que toda vida prolongada permaneça ligada à sua trama. A própria portadora interpreta essa escolha como um dever de amparo.",
+    "description": "Os fios aproximam carne, conduzem energia e tornam a continuidade da vida uma obra que pode ser costurada. A dádiva sustenta sua vocação de curandeira; os usos corruptos continuam sendo técnicas próprias, sem legitimá-la como Santa.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Falsa Santa",
+    "aliases": [
+      "Providência Usurpada"
+    ]
+  },
+  {
+    "id": "outorga-17",
+    "owner": "Atargatis",
+    "name": "Ius Procellae",
+    "deityId": "susanoo",
+    "nature": "Outorga pessoal",
+    "origin": "A evacuação de uma cidade durante a tempestade que a própria soberana provocara.",
+    "motivation": "Susanoo exige que Atargatis enfrente as consequências do próprio bloqueio e preserve os indefesos.",
+    "description": "Uma guarda de pressão protege aqueles que a decisão da soberana colocou em perigo. Não governa vetores; Vectis é uma herança Kalypso distinta.",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Atargatis"
+  },
+  {
+    "id": "vectis",
+    "name": "Vectis",
+    "owner": "Atargatis Kalypso · linhagem Kalypso",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Atargatis Kalypso · linhagem Kalypso",
+    "aliases": [
+      "Manipulação Vetorial"
+    ],
+    "description": "Regula direção, sentido e módulo de forças cinéticas e correntes."
+  },
+  {
+    "id": "desastres-naturais",
+    "name": "Desastres Naturais",
+    "owner": "Ummu-Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Ummu-Hubur",
+    "aliases": [],
+    "description": "Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta."
+  },
+  {
+    "id": "astronoma",
+    "name": "Astrônoma",
+    "owner": "Asteria V. Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Asteria V. Hubur",
+    "aliases": [
+      "Cosmogênese"
+    ],
+    "description": "A Bênção Astrônoma manifesta astros artificiais e gravidade."
+  },
+  {
+    "id": "fissao-e-meia-vida",
+    "name": "Fissão e Meia-Vida",
+    "owner": "Lachesis V. Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Lachesis V. Hubur",
+    "aliases": [
+      "Meia-Vida"
+    ],
+    "description": "Expressão kármica de fissão em cadeia, com contadores individuais."
+  },
+  {
+    "id": "cinematica-relativistica",
+    "name": "Cinemática Relativística e Óptica",
+    "owner": "Atropos V. Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Atropos V. Hubur",
+    "aliases": [
+      "Cinemática Relativística",
+      "Blueshift e Redshift",
+      "Blueshift",
+      "Redshift"
+    ],
+    "description": "Manipulação óptica e cinemática por Blueshift e Redshift."
+  }
+]

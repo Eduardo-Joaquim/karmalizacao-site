@@ -32,3 +32,15 @@
 .pantheon-god-heading { border-inline-start:3px solid var(--wing); padding-inline-start:.85rem; }
 .pantheon-god-heading h3,.pantheon-god-heading p { margin:0; }
 .pantheon-blessing li > small { display:block; margin:.15rem 0 .3rem; }
+
+
+.blessing-exclusive-seal {
+  display: inline-block;
+  padding: .45rem .7rem;
+  border: 1px solid #b45462;
+  border-radius: .35rem;
+  background: #381720;
+  color: #ffc5cd;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}

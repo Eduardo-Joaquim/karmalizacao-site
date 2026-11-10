@@ -71,7 +71,7 @@ export async function POST(request: Request) {
     const parsed = saveCharacterSchema.safeParse(await request.json());
     if (!parsed.success) {
       return Response.json(
-        { error: "A ficha contém dados inválidos.", issues: parsed.error.issues },
+        { error: parsed.error.issues.find(issue => issue.path[0] === "payload" && issue.path[1] === "divine" && issue.code === "custom")?.message ?? "A ficha contém dados inválidos.", issues: parsed.error.issues },
         { status: 400 },
       );
     }

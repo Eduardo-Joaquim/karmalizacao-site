@@ -1,3 +1,5 @@
+import type { CategoriaAcessoBencao } from "@/lib/blessings-filter";
+
 export type NaturezaBencao =
   | "Dobra Elemental Anômala"
   | "Runa Kármica Primordial"
@@ -13,6 +15,9 @@ export interface ExtensaoBencao {
 // The catalogue number is also the stable ID used by existing character links.
 export interface BencaoItem {
   id: number;
+  categoriaAcesso: CategoriaAcessoBencao;
+  disponivelParaPlayer: boolean;
+  portadorOuLinhagemExclusiva?: string;
   title: string;
   facet: string;
   nature: NaturezaBencao;

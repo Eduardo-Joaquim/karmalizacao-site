@@ -64,3 +64,46 @@ test('all 243 catalog grants preserve both extensions and validate as saved shee
   assert.deepEqual(catalog.map(p => [p.id,p.deities.length]), Array.from({length:9}, (_, index) => [index + 1, 9]));
   assert.deepEqual([...seen], Array.from({length:243}, (_, index) => `catalog-blessing-${index + 1}`));
 });
+
+test('the complete Bestiary index stays outside the selector and the saved player sheet', async () => {
+  const { playerBlessingCatalog, filtrarBencaosPermitidasParaPlayers, isExclusiveBlessingName, EXCLUSIVE_BLESSING_NOTICE } =
+    await vite.ssrLoadModule('/lib/blessings-filter.ts');
+  const { saveCharacterSchema } = await vite.ssrLoadModule('/lib/character-schema.ts');
+  const { newBlessing, playableBlessingGrants } = await vite.ssrLoadModule('/lib/divine-blessings.ts');
+  const bestiary = read('bestiary');
+  const reserved = bestiary.blessingExclusives;
+  assert.deepEqual(reserved, read('bestiary-blessing-index'));
+  const marked = new Set([...bestiary.html.matchAll(/data-world-blessing="([^"]+)"/g)].map(match => match[1]));
+  assert.deepEqual(marked, new Set(read('world-blessings').map(entry => entry.id)));
+  const selectable = playerBlessingCatalog.flatMap(p => p.deities.flatMap(deity => deity.blessings));
+  assert.equal(selectable.length, 243);
+  assert.equal(selectable.some(blessing => isExclusiveBlessingName(blessing.title)), false);
+
+  const draft = createBlankCharacter();
+  draft.name = 'Personagem';
+  const saved = () => saveCharacterSchema.safeParse({id:'personagem-teste',name:draft.name,payload:draft});
+  for (const entry of reserved) {
+    assert.equal(entry.disponivelParaPlayer, false, entry.name);
+    for (const name of [entry.name, ...(entry.aliases ?? [])]) {
+      assert.equal(filtrarBencaosPermitidasParaPlayers([{id:entry.id,title:name,categoriaAcesso:'catalogo_player',disponivelParaPlayer:true}]).length, 0, name);
+      assert.equal(filtrarBencaosPermitidasParaPlayers([{id:'forged',title:name,categoriaAcesso:'catalogo_player',disponivelParaPlayer:true}]).length, 0, name);
+      draft.divine = withBlessings({...draft.divine,enabled:true},[{...newBlessing(),name:'BÊNÇÃO — ' + name.toUpperCase()}]);
+      const result = saved();
+      assert.equal(result.success, false, name);
+      assert.equal(result.error.issues[0].message, EXCLUSIVE_BLESSING_NOTICE);
+      assert.equal(playableBlessingGrants(draft.divine).length, 0);
+    }
+  }
+  assert.equal(filtrarBencaosPermitidasParaPlayers([{id:'missing',title:'Sem classificação'}]).length, 0);
+  draft.divine = withBlessings(draft.divine,[{...newBlessing(),id:'catalog-blessing-244',name:'Fora do catálogo'}]);
+  assert.equal(saved().success, false);
+  draft.divine = {...draft.divine, blessings: [], blessingName:'Vectis'};
+  assert.equal(saved().success, false);
+  draft.divine = withBlessings(draft.divine,[{...newBlessing(),name:'Chama dos Passos Tardios'}]);
+  assert.equal(saved().success, true);
+  const migrated = {...newBlessing(),id:'catalog-blessing-10',name:'Registro antigo',activeManifestation:'Texto antigo'};
+  draft.divine = withBlessings(draft.divine,[migrated]);
+  const [canonical] = playableBlessingGrants(normalizeCharacterPayload(draft).divine);
+  assert.equal(canonical.name, selectable.find(blessing => blessing.id === 10).title);
+  assert.notEqual(canonical.activeManifestation, migrated.activeManifestation);
+});

@@ -1,4 +1,5 @@
 """Compile the authored bestiary into the book's searchable chapter format."""
+from blessing_access import build_blessing_index
 from pathlib import Path
 import json
 import re
@@ -27,6 +28,7 @@ assert len(ids) == len(set(ids)), 'Duplicate anchors'
 assert all(anchor in ids for anchor in re.findall(r'href="#([^"]+)"', html)), 'Broken internal link'
 assert len([s for s in sections if s['level'] == 2]) == 6
 chapter = dict(number=21, title='Capítulo 21 — Bestiário', shortTitle='Bestiário', slug='21-bestiario', description='Quatro continentes, os reinos de Valdária, Elaranth e Sárkora e as cortes da Santa e da Falsa Santa.', wordCount=len(plain(html).split()), sections=sections, overviewText=plain(html[:headings[0].start()]), searchableText=plain(html), html=html)
+chapter['blessingExclusives'] = build_blessing_index(chapter)
 (root / 'data/bestiary.json').write_text(json.dumps(chapter, ensure_ascii=False, indent=2) + '\n')
 print(f'Bestiário: {len(sections)} entradas indexadas; seis seções; links internos válidos.')
 subprocess.run(['python3', str(root / 'scripts/build-court-sheets.py')], check=True)

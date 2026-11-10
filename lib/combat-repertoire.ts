@@ -1,7 +1,7 @@
 import { type AttributeName, type CharacterPayload } from '@/lib/character-data';
 import { getFinalSkill, calculateAutomaticBonuses, getStageIndex, getClassDefinition, getRaceRule, racialFeatures } from '@/lib/character-rules';
 import { calculateInvocationStats } from '@/lib/invocation-rules';
-import { blessingGrants, blessingAttribute } from '@/lib/divine-blessings';
+import { playableBlessingGrants, blessingAttribute } from '@/lib/divine-blessings';
 import { fixedCost } from '@/lib/combat-engine';
 export type CombatArt={id:string;techniqueId?:string;name:string;category:string;cost:number|null;text:string;usage:string;attribute?:AttributeName;skill?:string;damage?:string;calculation?:string};
 export function usageCost(usage:string,passive=false){
@@ -27,7 +27,7 @@ export function playerArts(d:CharacterPayload):CombatArt[]{
  for(const f of racialFeatures(d))arts.push({id:`race-${f.name}`,name:f.name,category:'Herança racial',cost:usageCost(f.description,f.kind==='Passiva'||f.kind==='Traço'||f.kind==='Fraqueza'),usage:f.kind,text:f.description});
  for(const i of d.invocations){const stats=calculateInvocationStats(i);arts.push({id:`call-${i.id}`,name:`Invocar ${i.name}`,category:'Invocação',cost:stats.callCost,usage:`Chamada ${stats.callCost} Karma · manutenção ${stats.maintenance}`,text:`${i.callForm} · Vida ${stats.life} · CA ${stats.armor} · ${i.command}. ${i.limit}`});if(i.ability.name)arts.push({id:`inv-${i.id}`,name:i.ability.name,category:`Invocação · ${i.name}`,cost:usageCost(i.ability.calculation),usage:i.ability.calculation,text:i.ability.effect,calculation:i.ability.calculation});}
  if(d.divine.enabled){
-  if(d.divine.expression.includes('Bênção'))for(const b of blessingGrants(d.divine))if(b.name)arts.push({id:`blessing-${b.id}`,name:b.name,category:`Bênção · ${b.deity||'Outorgante não registrado'}`,cost:null,usage:'Custo e ação conforme a manifestação registrada; confirme antes de executar.',text:[b.core,b.initialGift,b.activeManifestation,b.essentialLimits].filter(Boolean).join('\n'),attribute:blessingAttribute(b.regentAttribute),skill:'Manifestação de Bênção'});
+  if(d.divine.expression.includes('Bênção'))for(const b of playableBlessingGrants(d.divine))if(b.name)arts.push({id:`blessing-${b.id}`,name:b.name,category:`Bênção · ${b.deity||'Outorgante não registrado'}`,cost:null,usage:'Custo e ação conforme a manifestação registrada; confirme antes de executar.',text:[b.core,b.initialGift,b.activeManifestation,b.essentialLimits].filter(Boolean).join('\n'),attribute:blessingAttribute(b.regentAttribute),skill:'Manifestação de Bênção'});
   if(d.divine.expression.includes('Comunhão')&&(d.divine.liturgies||d.divine.miracles))arts.push({id:'divine-communion',name:'Comunhão Divina',category:`Comunhão · ${d.divine.deity||'Divindade não registrada'}`,cost:null,usage:'Custo, Favor e condições conforme a liturgia ou o milagre escolhido.',text:[d.divine.liturgies,d.divine.miracles].filter(Boolean).join('\n'),attribute:'Presença',skill:'Comunhão Divina'});
  }
  return arts;

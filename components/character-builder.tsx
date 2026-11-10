@@ -1,6 +1,6 @@
 "use client";
-import blessingsCatalog from "@/data/pantheon-blessings.json";
-import { blessingGrants, catalogBlessingGrant, withBlessings } from "@/lib/divine-blessings";
+import { playerBlessingCatalog as blessingsCatalog } from "@/lib/blessings-filter";
+import { divineBlessingError, blessingGrants, catalogBlessingGrant, withBlessings } from "@/lib/divine-blessings";
 import { PANTHEONS } from "@/lib/character-rules";
 
 import { useEffect, useMemo, useState } from "react";
@@ -618,6 +618,13 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
     if (!characterToSave.name.trim()) {
       setActiveTab("essencia");
       toast.error("Dê um nome ao personagem antes de salvar.");
+      return null;
+    }
+
+    const blessingError = divineBlessingError(characterToSave.divine);
+    if (blessingError) {
+      toast.error(blessingError);
+      setActiveTab("poderes");
       return null;
     }
 

@@ -3951,6 +3951,37 @@ Os nomes sugeridos não limitam o panteão. Para incluir outra divindade, regist
 
 Título amplo não concede Perícia, dano ou imunidade. Manifestação própria é criada como Milagre do Grau correspondente. Nenhuma divindade fornece ações ilimitadas, Favor infinito, redução permanente de Karma ou autoridade sobre todas as Jurisdições.
 
+## Registros de Linhagens Soberanas e Portadores Únicos {#bencaos-exclusivas}
+
+<p><span class="blessing-exclusive-seal">[EXCLUSIVA DE LINHAGEM / BESTIÁRIO — INDISPONÍVEL PARA PLAYERS]</span></p>
+
+Bênçãos hereditárias passam exclusivamente pelo sangue dinástico da família ou casa registrada. Uma Bênção única corresponde a um fragmento indivisível e tem um só portador por vez. As outorgas destes registros pertencem às linhagens e aos personagens do Bestiário.
+
+Na criação de ficha, escolha uma das 243 outorgas abertas ou crie uma Bênção autoral com nome e funcionamento próprios. A regra de exclusividade vale também para o uso em combate.
+
+| Bênção reservada | Acesso | Portador ou linhagem |
+|---|---|---|
+| Geometria do Amparo | Hereditária | Aveline, Isadora |
+| Nemeton | Hereditária | Naerith |
+| Vitral do Meio-Dia | Hereditária | Thaerion |
+| Haimaton | Hereditária | Alucard |
+| Desespero | Única | Valac |
+| Sceleris | Única | Belial |
+| Concordato | Única | Asmodeus |
+| Magnetismo | Única | Eirik |
+| Criação de Matéria Inorgânica | Única | Eirik |
+| Tiamat | Hereditária | Sael, Maelis |
+| Bóreas | Hereditária | Darian |
+| Consanguis | Hereditária | Agares |
+| Dragão Negro | Única | Euphere |
+| Fios da Providência Usurpada | Única | Falsa Santa |
+| Ius Procellae | Única | Atargatis |
+| Vectis | Hereditária | Atargatis Kalypso · linhagem Kalypso |
+| Desastres Naturais | Única | Ummu-Hubur |
+| Astrônoma | Única | Asteria V. Hubur |
+| Fissão e Meia-Vida | Única | Lachesis V. Hubur |
+| Cinemática Relativística e Óptica | Única | Atropos V. Hubur |
+
 ## Portal das Nove Asas {#portal-das-nove-asas}
 
 Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização de Karma. Se a extensão pedir resistência sem CD, use oposição contra a Manifestação da Bênção, com empate a favor do defensor.
@@ -3988,14 +4019,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Apolo · O Deus do Sol, da Profecia e da Peste
 
-**4. Câmera Escura de Luz Sólida** · Óptica Solar · Técnica Divina / Fenômeno
+**4. Harmonia de Ressonância Acústica** · Lira de Sete Cordas Douradas · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Solidifica feixes de luz ambiente em até 3 lentes/espelhos translúcidos suspensos no ar a até 15m durante a cena.
+**Fenômeno base.** O ar ao seu redor estica-se em 7 cordas invisíveis de tensão sonora; cada movimento ou disparo seu dedilha uma nota que afina a precisão dos aliados ou descompassa o ritmo cardíaco inimigo.
 
-1. Ricochete de Ângulo Cego (2 Karma): Disparos ou feixes que atravessem uma lente dobram em até 90°, ganham +6m de alcance, ignoram cobertura total e aplicam -2 na CA Parcial.
-2. Foco Ustório (Principal · 4 Karma): Alinha as 3 lentes em um laser térmico que causa 2d8 e aplica Desorientado.
+1. Acorde Dórico (Extra · 3 Karma · Raio 6 m): Todos os aliados a até 6 m recebem +2 no acerto e encerram Desorientado ou Abalado.
+2. Nota Dissonante (Principal · 4 Karma · 12 m): Dispara uma vibração harmônica que causa 2d8 sônico/radiante e impede o alvo de sustentar concentração ou usar Reações por 1 rodada.
 
-**Safra na Morte.** Apolo reabsorve a geometria de refração, tornando sua própria luz capaz de fazer curvas.
+**Safra na Morte.** Apolo absorve a matemática de frequências musicais aplicadas ao controle neural em combate.
 
 **5. Fita de Futuro Previsto** · Oráculo de Delfos · Runa Kármica Primordial
 
@@ -4017,14 +4048,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Ares · O Deus da Carnificina, do Impacto e do Motim
 
-**7. Ponto de Impacto Retido** · Inércia de Violência · Método de Luta Exclusivo
+**7. Cicatriz de Ressentimento Marcial** · Falange de Lanças Quebradas · Método de Luta Exclusivo
 
-**Fenômeno base.** Ao acertar um golpe físico ou projétil curto, congela o impacto cinético no local atingido por até 2 rodadas (causa metade do dano na hora e grava um Vetor Armazenado).
+**Fenômeno base.** Seu corpo registra cada golpe sofrido não como fraqueza, mas como memória muscular furiosa contra o tipo exato de arma que o feriu.
 
-1. Detonação em Cadeia (Livre · 2 Karma): Estoura todos os Vetores Armazenados no próximo acerto, somando o dano retido e aplicando -2 na CA Total contra o estouro.
-2. Degrau Estático (Movimento · 1 Karma): Congela um destroço ou projétil no ar por 1 rodada para usar como escudo ou apoio de salto.
+1. Revide de Trincheira (Reação ao sofrer dano · 3 Karma): Desfere imediatamente um ataque básico contra o agressor com +2 no acerto e +1d8 de dano adicional.
+2. Quebrar a Ameaça (Principal · 4 Karma): Golpe brutal que causa 2d8 contundente/cortante e aplica -2 no dano de todos os ataques do alvo por 2 rodadas.
 
-**Safra na Morte.** Ares absorve o cálculo de impacto retardado e acúmulo de energia cinética.
+**Safra na Morte.** Ares colhe o condicionamento reflexo de contra-ataque imediato sob trauma físico.
 
 **8. Vapor de Adrenalina Vermelha** · Frenesi de Campo · Técnica Divina / Fenômeno
 
@@ -4035,25 +4066,25 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Safra na Morte.** Ares colhe a manipulação neuroquímica da fúria em grupos armados.
 
-**9. Forja de Hematita Crua** · Arsenal de Osso e Sangue · Dobra Elemental Anômala
+**9. Aura de Pânico de Batalha** · O Grito de Deimos e Fobos · Técnica Divina / Fenômeno
 
-**Fenômeno base.** O sangue derramado por você ou por inimigos a até 4,5m cristaliza instantaneamente em lâminas de hematita vermelha rígida como aço.
+**Fenômeno base.** Duas sombras de terror marcial projetam-se dos seus ombros quando você avança, fazendo com que o inimigo enxergue sua arma como se tivesse o dobro do tamanho real.
 
-1. Lança de Coágulo (Extra · 3 Karma): Converte o sangue de um ferimento recente em um dardo ou lâmina que causa 2d6 perfurante e não consome munição.
-2. Paliçada de Lancetas (Principal · 4 Karma): Ergue espinhos de sangue cristalizado sob os pés de um alvo ferido a até 9m, causando 2d8 e deixando-o Lento.
+1. Sombra de Fobos (Principal · 4 Karma): Ataque intimidador que causa 2d8 de dano e aplica Abalado; enquanto o alvo estiver Abalado, ele sofre -2 na CA Parcial contra você.
+2. Debandada de Deimos (Extra · 3 Karma): Força um inimigo Abalado a até 6 m a gastar sua reação recuando 3 m na direção oposta à sua.
 
-**Safra na Morte.** Ares absorve a cristalização mineral rápida de fluidos vitais em campo de batalha.
+**Safra na Morte.** Ares absorve a projeção psíquica de pavor coletivo em linhas de frente.
 
 #### Hefesto · O Deus da Forja, do Magma e dos Autômatos
 
-**10. Sangue de Escória Magnética** · Metalurgia Líquida · Dobra Elemental Anômala
+**10. Rede Invisível de Filigrana Térmica** · Fios de Ouro de Afrodite e Ares · Runa Kármica Primordial
 
-**Fenômeno base.** O ferro do seu sangue e sucatas a até 6m respondem ao seu pulso magnético como um ferrofluido denso sempre que você sofre dano ou gasta 2 de Vida.
+**Fenômeno base.** Você tece malhas quase invisíveis de bronze e ouro incandescente no chão ou entre colunas, iguais à rede indestrutível com que Hefesto prendeu os próprios deuses no Olimpo.
 
-1. Morfologia de Bigorna (Livre · 2 Karma): Molda o ferrofluido por 1 rodada em Aguilhões (4m de alcance), Carapaça (+2 CA Total) ou Cabo Magnético (puxa itens/ancora a 9m).
-2. Cravo Polarizado (Principal · 4 Karma): Dispara uma agulha de 2d6 que magnetiza o alvo, dando +2 no acerto de ataques metálicos contra ele.
+1. Lançar Malha Olímpica (Principal · 4 Karma · 9 m): Prende o alvo em fios dourados em brasa que causam 2d6 térmico e aplicam Lento (e -2 em Agilidade/Reflexos) até que ele gaste 1 Ação de Movimento para se soltar.
+2. Aquecer Filigrana (Extra · 3 Karma): Faz a rede já presa no alvo contrair em brasa viva, causando 2d6 de dano térmico automático.
 
-**Safra na Morte.** Hefesto colhe a metalurgia orgânica moldada sob perda de sangue mortal.
+**Safra na Morte.** Hefesto colhe técnicas de contenção por ligas metálicas ultrafinas e flexíveis.
 
 **11. Pulmão de Fole Incandescente** · Fornalha Vulcânica · Método de Luta Exclusivo
 
@@ -4075,14 +4106,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Atena · A Deusa da Estratégia, da Égide e da Geometria de Guerra
 
-**13. Vetor de Reflexão Hexagonal** · Geometria da Égide · Técnica Divina / Fenômeno
+**13. Encarada Petrificante da Égide** · O Olho de Górgona no Peito · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Você projeta escudos geométricos planos e translúcidos a até 6m que alteram o ângulo de forças cinéticas e kármicas.
+**Fenômeno base.** No centro da sua armadura ou foco repousa o relevo da Medusa dado a Atena; encarar seu peito no momento do ataque calcifica temporariamente as articulações do inimigo.
 
-1. Deflexão Calculada (Reação · 4 Karma): Redireciona um ataque à distância que atingiria você ou um aliado adjacente na faixa Parcial de volta contra um inimigo a até 9m, causando 2d6 de dano.
-2. Cunha de Falange (Extra · 3 Karma): Posiciona 2 hexágonos que concedem cobertura parcial (+2 CA) e empurram inimigos que tentem cruzar a linha.
+1. Olhar de Calcário (Reação ao ser atacado ou Extra · 4 Karma · 6 m): Os pés e joelhos do atacante endurecem como mármore por 1 rodada, reduzindo o deslocamento dele a 0 m e aplicando -2 no teste de ataque dele.
+2. Quebrar Estátua (Principal · 4 Karma): Contra um alvo com deslocamento reduzido ou Lento, seu golpe causa 2d10 contundente ignorando 4 de Redução de Dano.
 
-**Safra na Morte.** Atena absorve novos teoremas de deflexão balística em combate urbano e na Torre.
+**Safra na Morte.** Atena absorve o controle de rigidez muscular induzida por choque visual.
 
 **14. Xadrez de Três Movimentos** · Leitura de Algoritmo · Runa Kármica Primordial
 
@@ -4113,14 +4144,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Safra na Morte.** Poseidon colhe técnicas de combate hidrostático adaptadas para ambientes secos.
 
-**17. Zona de Atmosfera Submersa** · Fossa Abissal · Técnica Divina / Fenômeno
+**17. Galope de Crista Branca** · Criador dos Corcéis das Espumas · Método de Luta Exclusivo
 
-**Fenômeno base.** Em um raio de 4,5m ao seu redor, a densidade do ar torna-se pesada e viscosa como o fundo do oceano para seus inimigos, enquanto você nada livremente por ela.
+**Fenômeno base.** Poseidon criou o primeiro cavalo a partir da quebra das ondas; suas pernas acumulam a tração de uma carga de cavalaria marítima que atropela linhas defensivas.
 
-1. Esmagamento Barométrico (Principal · 4 Karma): Comprime a zona sobre um alvo a até 6m, causando 2d8 contundente e aplicando Lento e -2 em ataques físicos por 1 rodada.
-2. Impulso de Correnteza (Movimento · 2 Karma): Desliza na densidade do ar ganhando +4,5m de deslocamento e podendo subir verticalmente até 3m como se nadasse no ar.
+1. Carga de Espuma Branca (Movimento + Principal · 4 Karma): Corre pelo menos 4,5 m em linha reta ganhando +3 m de deslocamento extra e atinge o alvo com 2d8 + 3 de dano contundente, lançando-o 3 m para trás.
+2. Salto Sobre Quebra-Mar (Reação · 3 Karma): Salta sobre uma investida ou ataque rasteiro inimigo, evitando o golpe e caindo 3 m atrás do atacante.
 
-**Safra na Morte.** Poseidon absorve a manipulação de pressão atmosférica sem necessidade de massas de água.
+**Safra na Morte.** Poseidon colhe a biomecânica de impulsão terrestre contínua inspirada no movimento das ondas.
 
 **18. Diapasão de Falha Tectônica** · Abalo Sísmico · Runa Kármica Primordial
 
@@ -4222,14 +4253,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Júpiter · O Juiz Supremo do Império e do Céu
 
-**28. Domo de Lei Capitolina** · Jurisdição Territorial · Técnica Divina / Fenômeno
+**28. Insígnia da Águia Dourada** · Águia da Primeira Legião · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Você demarca uma área de 6m de raio onde uma "Lei de Combate" simples declarada por você passa a vigorar fisicamente sobre todos.
+**Fenômeno base.** Uma águia de luz dourada e relâmpagos pousa sobre sua cabeça ou estandarte, servindo como ponto focal de moral e artilharia celeste para o seu grupo.
 
-1. Promulgar Artigo (Extra · 4 Karma): Declara uma restrição por 1 rodada na zona (ex.: "Proibido atacar alvos Caídos", "Proibido recuar" ou "Proibido gastar mais de 4 de Karma"); quem violar a lei na zona sofre 2d8 de dano elétrico/divino imediato.
-2. Indulto Imperial (Reação · 3 Karma): Concede a um aliado dentro da zona imunidade ao efeito de uma condição recém-aplicada.
+1. Rasante da Aquila (Principal · 4 Karma · 15 m): A águia mergulha sobre o alvo causando 2d8 elétrico/perfurante e ilumina o inimigo (o próximo aliado que atacar esse alvo ganha +1d20 na Reserva).
+2. Orgulho da Coorte (Extra · 3 Karma): Todos os aliados a até 6 m recebem +2 na CA Parcial e 1d8 + Espírito de Escudo Temporário.
 
-**Safra na Morte.** Júpiter absorve códigos jurídicos táticos que vinculam leis abstratas a punições kármicas automáticas.
+**Safra na Morte.** Júpiter absorve a coordenação aérea de ataque e suporte moral de esquadrão.
 
 **29. Fulgor de Execução Sumária** · Raio de Julgamento · Dobra Elemental Anômala
 
@@ -4396,14 +4427,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Plutão · O Deus da Usura Subterrânea, das Dívidas e do Subsolo
 
-**46. Livro-Razão de Sangue e Karma** · Contrato de Usura · Runa Kármica Primordial
+**46. Mandíbula Tripla da Fronteira** · O Capacete de Orco e os Cães Cérberos · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Qualquer dano que você sofre de um inimigo é registrado como uma "Dívida Aberta" daquele inimigo com você, acumulando juros a cada rodada.
+**Fenômeno base.** Sua arma ou manopla projeta três bocas espectrais de mastim negro no momento do impacto, que mordem de três ângulos diferentes ao mesmo tempo para impedir fugas.
 
-1. Executar Hipoteca (Principal · 4 Karma · 9m): Contra um inimigo que tenha causado dano a você na cena, desfere um golpe de cobrança que causa 2d8 + metade do dano que ele lhe causou na última rodada (máximo +10).
-2. Empréstimo de Emergência (Livre · 0 Karma · 1x/cena): Recebe 8 de Karma imediatos do Deus; em troca, ao final de 3 rodadas, você perde 10 de Karma (ou 10 de Vida).
+1. Mordida de Três Cabeças (Principal · 4 Karma): Ataca um alvo causando 2d8 perfurante/necrótico e reduzindo a CA de esquiva dele em -2 (ou dividindo o golpe contra até 2 inimigos adjacentes entre si causando 1d10 em cada).
+2. Guarda do Portão Negro (Reação · 3 Karma): Quando um inimigo a até 3 m tenta beber uma poção ou conjurar, as mandíbulas mordem o braço dele causando 1d8 e impondo -2 no teste dele.
 
-**Safra na Morte.** Plutão absorve modelos matemáticos de alavancagem de risco em combates de vida ou morte.
+**Safra na Morte.** Plutão colhe técnicas de bloqueio simultâneo de múltiplas rotas de evasão.
 
 **47. Transmutação em Chumbo Dourado** · Ouro Maldito · Dobra Elemental Anômala
 
@@ -4425,14 +4456,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Netuno · O Deus das Marés, da Neblina Marinha e dos Monstros Oceânicos
 
-**49. Maré de Água-Régia Abissal** · Salmoura Corrosiva · Dobra Elemental Anômala
+**49. Pressão de Coluna Hidráulica** · Fontes e Aquedutos Imperiais · Dobra Elemental Anômala
 
-**Fenômeno base.** A água conjurada ou manipulada por você possui concentração salina e ácida extrema, capaz de oxidar aço e queimar feridas abertas.
+**Fenômeno base.** Em vez do mar selvagem, você domina a engenharia hidráulica romana: comprime pequenos volumes de água em jatos finos de altíssima pressão capazes de cortar pedra e aço.
 
-1. Chicote de Salmoura (Principal · 4 Karma · 6m): Causa 2d8 cortante/ácido; se o alvo já estiver ferido ou com Sangramento, a dor do sal impõe -1d20 no próximo teste dele.
-2. Crosta de Sal Seco (Extra · 3 Karma): Cristaliza o sal sobre seu corpo formando uma couraça branca que absorve 12 pontos de dano antes de quebrar.
+1. Corte de Jato Hidráulico (Principal · 4 Karma · Linha de 9 m): Um feixe fino de água pressurizada corta o alvo causando 2d8 cortante e ignorando 4 pontos de Redução de Dano de armadura.
+2. Gêiser de Aqueduto (Extra · 3 Karma · 6 m): Ergue uma coluna de água sob si mesmo ou um aliado (elevando-o 4,5 m para o alto sem ataques de oportunidade) ou sob um inimigo (derrubando-o Caído).
 
-**Safra na Morte.** Netuno absorve a química de soluções salinas hiperconcentradas para corrosão rápida.
+**Safra na Morte.** Netuno absorve o uso industrial de jatos de água de alta pressão para corte balístico.
 
 **50. Miragem de Espuma e Nevoeiro** · Bruma dos Naufrágios · Técnica Divina / Fenômeno
 
@@ -4543,14 +4574,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Loki · O Deus da Trapaça, da Inversão e da Metamorfose
 
-**61. Permuta de Momento** · Trapaça Espacial · Runa Kármica Primordial
+**61. Silêncio de Fios de Couro** · Os Lábios Costurados por Brokkr · Runa Kármica Primordial
 
-**Fenômeno base.** Marca até 2 alvos ou objetos tocados a até 15m por 2 rodadas, permitindo trocar instantaneamente o vetor de velocidade e movimento entre eles.
+**Fenômeno base.** No mito, os anões costuraram a boca de Loki para calar suas trapaças; você projeta essas linhas invisíveis à distância para fechar a boca, as bainhas ou as frestas dos inimigos.
 
-1. Transferência de Investida (Reação/Extra · 4 Karma): Transfere o impacto de uma queda, empurrão ou rocha arremessada para o inimigo marcado, lançando-o 4m com 2d6 de dano e aplicando Caído.
-2. Parada Súbita (Movimento · 2 Karma): Troca a própria inércia pela estática de um pilar para mudar de direção em 90° no ar.
+1. Costurar a Língua (Principal · 4 Karma · 12 m): Causa 2d6 kármico/perfurante e Silencia o alvo por 1 rodada (impedindo ordens verbais, gritos e técnicas que exijam voz/sopro), além de aplicar -2 em testes de Canalização de Karma dele.
+2. Costurar Bainha ou Bolso (Extra · 3 Karma · 9 m): Trava o equipamento secundário ou consumíveis do alvo, exigindo que ele gaste 1 Ação de Movimento para rasgar os fios antes de sacar itens.
 
-**Safra na Morte.** Loki colhe as equações de conservação de momento e trapaça cinética.
+**Safra na Morte.** Loki colhe técnicas de sabotagem silenciosa de recursos e conjurações inimigas.
 
 **62. Dublê de Casca Ilusória** · Mentira Tangível · Técnica Divina / Fenômeno
 
@@ -4748,14 +4779,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Rá · O Deus do Sol Zênite, da Barca Solar e da Luz Criadora
 
-**82. Ponto de Zênite Sem Sombra** · O Sol ao Meio-Dia · Técnica Divina / Fenômeno
+**82. Esfera de Aurora Rolante** · O Escaravelho Khepri da Manhã · Dobra Elemental Anômala
 
-**Fenômeno base.** Acima da sua cabeça flutua uma esfera de plasma dourado que projeta luz vertical absoluta em 6m de raio, extinguindo fisicamente as sombras de todos os objetos e criaturas na área.
+**Fenômeno base.** Você condensa uma esfera giratória de fogo solar nas mãos que cresce de tamanho e calor a cada metro que percorre pelo campo de batalha.
 
-1. Julgamento de Meio-Dia (Principal · 4 Karma · 9m): Alvos sem sombra dentro da sua zona perdem camuflagem e sofrem -2 na CA Parcial; você descarrega um pilar solar vertical que causa 2d8 radiante/térmico e aplica Desorientado.
-2. Miragem de Areia Quente (Reação · 3 Karma): Dobra a luz através do ar superaquecido ao redor do seu corpo, impondo -3 no teste de acerto de um ataque mirado em você.
+1. Rolar o Sol Nascente (Principal · 4 Karma · Linha 9 m): Lança a esfera solar que causa 2d6 térmico (ou 2d10 se percorrer pelo menos 6 m antes de atingir o alvo) e empurra o inimigo 2 m.
+2. Casca do Escaravelho Dourado (Reação · 3 Karma): Asas quitinosas douradas fecham-se sobre suas costas, concedendo +3 na CA Total contra um ataque e limpando condições de frio/lentidão.
 
-**Safra na Morte.** Rá absorve a manipulação de ângulos de incidência luminosa para anular técnicas baseadas em sombras e furtividade.
+**Safra na Morte.** Rá absorve a aceleração progressiva de esferas de plasma térmico sobre o solo.
 
 **83. Convés de Travessia Celeste** · A Barca de Milhões de Anos · Runa Kármica Primordial
 
@@ -4766,14 +4797,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Safra na Morte.** Rá colhe o método de locomoção vetorial suspensa para transporte tático de esquadrão.
 
-**84. Lente de Calcinação Vítrea** · O Olho Destruidor de Rá · Dobra Elemental Anômala
+**84. Arpão da Serpente Solar** · As Doze Horas da Noite Contra Apófis · Método de Luta Exclusivo
 
-**Fenômeno base.** Seu calor não apenas queima, mas vitrifica a poeira do ar e o solo sob o impacto, transformando terra, concreto ou areia em vidro incandescente e escorregadio.
+**Fenômeno base.** Toda noite a barca de Rá enfrenta a grande serpente do caos no submundo; suas armas projetam correntes e arpões de fogo dourado especializados em prender e abater criaturas grandes ou corruptas.
 
-1. Sopro de Vidro Líquido (Principal · 4 Karma · Cone 4,5m): Causa 2d8 térmico e transforma o piso da área em vidro derretido por 2 rodadas (quem se mover ali sofre 4 de dano térmico e precisa vencer Acrobacia ou fica Caído).
-2. Couraça de Quartzo Solar (Extra · 3 Karma): Vitrifica a poeira sobre a própria armadura, ganhando 2d6 + Espírito de Escudo Temporário que reflete 4 de dano radiante em atacantes corpo a corpo.
+1. Cravar Arpão de Fogo (Principal · 4 Karma · 9 m): Causa 2d8 perfurante/radiante e prende um cabo solar no alvo: enquanto você mantiver o cabo, o alvo não pode se afastar de você e sofre 4 de dano radiante no início do turno.
+2. Puxar pela Corrente Solar (Extra · 2 Karma): Puxa o alvo arpoado em 3 m (ou puxa você até ele) reduzindo a CA Parcial dele em -2.
 
-**Safra na Morte.** Rá recolhe o processo de vitrificação rápida de silicatos para controle de terreno.
+**Safra na Morte.** Rá colhe táticas de contenção com arpões energéticos contra monstros de grande porte.
 
 #### Anúbis · O Deus do Embalsamamento, da Pesagem de Maat e dos Túmulos
 
@@ -4922,14 +4953,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Sekhmet · A Deusa Leoa da Peste Vermelha, do Massacre e da Cura
 
-**100. Motor de Hematofagia Solar** · A Embriaguez de Sangue · Método de Luta Exclusivo
+**100. Sopro da Leoa do Deserto** · O Vento Quente de Khamsin · Dobra Elemental Anômala
 
-**Fenômeno base.** O sangue derramado em combate evapora em uma névoa escarlate quente que você inala, convertendo a violência ao redor em regeneração e potência muscular.
+**Fenômeno base.** Sua respiração e o giro das suas armas levantam o vento escaldante de 50 graus do deserto do Saara, desidratando e rachando a guarda dos inimigos instantaneamente.
 
-1. Banquete da Leoa (Passiva + 3 Karma ao acertar): Sempre que você causar dano a um alvo que já esteja ferido ou com Sangramento, você soma +1d8 ao dano e recupera Etapa + Constituição de Vida.
-2. Rugido de Sol Vermelho (Principal · 5 Karma · Cone 6m): Causa 2d8 sônico/térmico e aplica Abalado em todos os inimigos atingidos.
+1. Rajada de Desidratação (Principal · 4 Karma · Cone 6 m): Causa 2d8 térmico e resseca os músculos dos atingidos, aplicando Lento e -2 em testes de Força e Constituição por 1 rodada.
+2. Miragem da Juba de Fogo (Reação · 3 Karma): O ar trêmulo de calor ao redor dos seus ombros faz ataques corpo a corpo e à distância sofrerem -2 para acertar você.
 
-**Safra na Morte.** Sekhmet absorve o ciclo metabólico de conversão de hemoglobina evaporada em vigor físico.
+**Safra na Morte.** Sekhmet absorve o uso de correntes térmicas desérticas para exaustão física rápida.
 
 **101. Miasma de Febre Escarlate** · As Sete Flechas da Peste · Dobra Elemental Anômala
 
@@ -5945,14 +5976,14 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 #### Curupira · O Guardião de Pés Virados, do Rastro Invertido e da Fúria da Selva
 
-**205. Cinemática de Vetor Invertido** · Os Pés Virados para Trás · Método de Luta Exclusivo
+**205. Salto de Emboscada de Copa** · O Grito nos Galhos Altos · Método de Luta Exclusivo
 
-**Fenômeno base.** A direção para onde seu corpo aponta nunca é a direção real do seu movimento; seus tornozelos e quadris operam com vetores invertidos que enganam completamente a leitura corporal de qualquer adversário.
+**Fenômeno base.** Seus pés têm aderência perfeita em troncos, vigas, muros e colunas; você trata paredes verticais como chão plano para correr e saltar sobre o ponto cego dos inimigos.
 
-1. Passo para Trás que Avança (Movimento + Livre · 3 Karma): Quando você parece recuar, na verdade surge às costas do inimigo (ou vice-versa): você se move 6m ignorando ataques de oportunidade e seu próximo ataque atinge o alvo como se ele estivesse Desprevenido (-3 na CA Parcial e Total dele).
-2. Rastro Enganoso (Reação · 3 Karma): Quando um inimigo avança para atacar você, ele erra a leitura da sua direção, parando a 2m do seu espaço real e perdendo o ataque se obtiver apenas acerto Parcial.
+1. Queda do Galho Seco (Movimento + Principal · 4 Karma): Caminha até 6 m por uma superfície vertical ou obstáculo e salta sobre o alvo: o ataque recebe +1d20 na Reserva, causa 2d8 contundente/perfurante e deixa o alvo Desorientado.
+2. Sumir na Folhagem (Reação · 3 Karma): Após sofrer ou errar um ataque, salta 3 m para uma cobertura ou parede próxima entrando em cobertura parcial (+2 CA).
 
-**Safra na Morte.** Curupira absorve a biomecânica de fintas de inversão vetorial contra artistas marciais e atiradores.
+**Safra na Morte.** Curupira colhe a acrobacia de combate vertical e emboscadas de cota superior.
 
 **206. Eco Acústico de Labirinto** · O Assovio que Desorienta · Técnica Divina / Fenômeno
 

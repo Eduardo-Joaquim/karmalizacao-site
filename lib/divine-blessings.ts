@@ -1,3 +1,4 @@
+import { blessingAccessError, isExclusiveBlessingName, playerCatalogEntry, EXCLUSIVE_BLESSING_NOTICE } from "@/lib/blessings-filter";
 import deities from '@/data/pantheon-deities.json';
 import { ATTRIBUTES, type DivineState, type BlessingGrant, type AttributeName } from '@/lib/character-model';
 export { deities };
@@ -28,4 +29,29 @@ export function catalogBlessingGrant(
     essentialLimits: `Safra na Morte. ${blessing.harvest}`,
     precept: patron?.precept, profanation: patron?.profanation,
   };
+}
+
+export function divineBlessingError(divine: DivineState): string | undefined {
+  if (isExclusiveBlessingName(divine.blessingName)) return EXCLUSIVE_BLESSING_NOTICE;
+  return blessingGrants(divine).map(blessingAccessError).find(Boolean);
+}
+
+function canonicalGrant(grant: BlessingGrant): BlessingGrant {
+  const entry = playerCatalogEntry(grant.id);
+  if (!entry) return grant;
+  const pantheon = entry.pantheon.name === "Tupi-Guarani" ? "Lendas Tupi-Guarani" : entry.pantheon.name;
+  const canonical = catalogBlessingGrant(entry.blessing, entry.deity, `${pantheon} — ${entry.pantheon.wing}`);
+  return { ...canonical, regentAttribute: grant.regentAttribute, matrices: grant.matrices };
+}
+
+export function playableBlessingGrants(divine: DivineState): BlessingGrant[] {
+  return blessingGrants(divine).filter(grant => !blessingAccessError(grant)).map(canonicalGrant);
+}
+
+// Restore mechanics from the current catalog while keeping invalid grants visible for correction.
+export function canonicalizeBlessings(divine: DivineState): DivineState {
+  const grants = blessingGrants(divine);
+  if (!grants.some(grant => playerCatalogEntry(grant.id) && !blessingAccessError(grant))) return divine;
+  if (isExclusiveBlessingName(divine.blessingName)) return divine;
+  return withBlessings(divine, grants.map(grant => blessingAccessError(grant) ? grant : canonicalGrant(grant)));
 }

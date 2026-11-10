@@ -1,0 +1,63 @@
+[
+  {
+    "id": "vectis",
+    "name": "Vectis",
+    "owner": "Atargatis Kalypso · linhagem Kalypso",
+    "categoriaAcesso": "hereditaria_linhagem",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Atargatis Kalypso · linhagem Kalypso",
+    "aliases": [
+      "Manipulação Vetorial"
+    ],
+    "description": "Regula direção, sentido e módulo de forças cinéticas e correntes."
+  },
+  {
+    "id": "desastres-naturais",
+    "name": "Desastres Naturais",
+    "owner": "Ummu-Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Ummu-Hubur",
+    "aliases": [],
+    "description": "Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta."
+  },
+  {
+    "id": "astronoma",
+    "name": "Astrônoma",
+    "owner": "Asteria V. Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Asteria V. Hubur",
+    "aliases": [
+      "Cosmogênese"
+    ],
+    "description": "A Bênção Astrônoma manifesta astros artificiais e gravidade."
+  },
+  {
+    "id": "fissao-e-meia-vida",
+    "name": "Fissão e Meia-Vida",
+    "owner": "Lachesis V. Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Lachesis V. Hubur",
+    "aliases": [
+      "Meia-Vida"
+    ],
+    "description": "Expressão kármica de fissão em cadeia, com contadores individuais."
+  },
+  {
+    "id": "cinematica-relativistica",
+    "name": "Cinemática Relativística e Óptica",
+    "owner": "Atropos V. Hubur",
+    "categoriaAcesso": "unica_bestiario",
+    "disponivelParaPlayer": false,
+    "portadorOuLinhagemExclusiva": "Atropos V. Hubur",
+    "aliases": [
+      "Cinemática Relativística",
+      "Blueshift e Redshift",
+      "Blueshift",
+      "Redshift"
+    ],
+    "description": "Manipulação óptica e cinemática por Blueshift e Redshift."
+  }
+]

@@ -1,3 +1,4 @@
+import { canonicalizeBlessings } from "@/lib/divine-blessings";
 export * from "@/lib/character-model";
 import { ALL_SKILLS, ATTRIBUTES, CHARACTER_SIZES, DOMAIN_NAMES, INVOCATION_GRADES, PRESENCE_SKILLS, createBlankCharacter, normalizeEmbeddedImage, sizeFromHeight, type PointValue, type AttributeName, type CharacterPayload, type CharacterSize, type InvocationGrade } from "@/lib/character-model";
 import { calculateAutomaticBonuses, calculateDerivedStats } from "@/lib/character-rules";
@@ -92,6 +93,7 @@ export function normalizeCharacterPayload(
     inventory: payload.inventory ?? blank.inventory,
     alchemicalSaturation: Number.isFinite(payload.alchemicalSaturation) ? Math.max(0, Math.min(999, Math.floor(payload.alchemicalSaturation!))) : 0,
   };
+  normalized.divine = canonicalizeBlessings(normalized.divine);
   const max = calculateDerivedStats(normalized, calculateAutomaticBonuses(normalized));
   const old = payload.combat, live = payload.combatState;
   normalized.combatState = {

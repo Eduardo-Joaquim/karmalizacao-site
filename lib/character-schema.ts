@@ -1,3 +1,4 @@
+import { divineBlessingError } from "@/lib/divine-blessings";
 import {DAMAGE_TYPES} from "./technique-matrices";
 import { combatVisualSchema, phaseNoticeSchema } from "@/lib/combat-visual-schema";
 import { z } from "zod";
@@ -285,4 +286,8 @@ export const saveCharacterSchema = z.object({
     .regex(/^[a-zA-Z0-9-]+$/),
   name: z.string().trim().min(1).max(80),
   payload: characterPayloadSchema,
+}).superRefine(({ payload }, ctx) => {
+  if (!payload.divine) return;
+  const error = divineBlessingError(payload.divine);
+  if (error) ctx.addIssue({ code: "custom", message: error, path: ["payload", "divine"] });
 });

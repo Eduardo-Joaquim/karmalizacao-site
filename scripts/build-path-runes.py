@@ -53,23 +53,44 @@ for category in dict.fromkeys(r['category'] for r in runes):
     source += '\n'.join(f"| {r['name']} | {r['grade']} | {r['retained']} | {r['passive']} | {r['burst']} |" for r in runes if r['category'] == category)
 write_section(9, 'runas-karmicas', render(source))
 
-blessings = "## Portal das Nove Asas {#portal-das-nove-asas}\n\n"
+registry_title = "Registros de Linhagens Soberanas e Portadores Únicos"
+blessings = f"## {registry_title} {{#bencaos-exclusivas}}\n\n"
+blessings += '<p><span class="blessing-exclusive-seal">[EXCLUSIVA DE LINHAGEM / BESTIÁRIO — INDISPONÍVEL PARA PLAYERS]</span></p>\n\n'
+blessings += (
+    "Bênçãos hereditárias passam exclusivamente pelo sangue dinástico da família ou casa registrada. "
+    "Uma Bênção única corresponde a um fragmento indivisível e tem um só portador por vez. "
+    "As outorgas destes registros pertencem às linhagens e aos personagens do Bestiário.\n\n"
+    "Na criação de ficha, escolha uma das 243 outorgas abertas ou crie uma Bênção autoral com nome e funcionamento próprios. "
+    "A regra de exclusividade vale também para o uso em combate.\n\n"
+)
+owners_by_grant = {}
+for entry in load('bestiary-blessing-index.json'):
+    owners_by_grant.setdefault((entry['name'], entry['categoriaAcesso']), []).append(entry['portadorOuLinhagemExclusiva'])
+blessings += "| Bênção reservada | Acesso | Portador ou linhagem |\n|---|---|---|\n"
+for (name, category), owners in owners_by_grant.items():
+    access = "Hereditária" if category == "hereditaria_linhagem" else "Única"
+    blessings += f"| {name} | {access} | {', '.join(dict.fromkeys(owners))} |\n"
+blessings += "\n## Portal das Nove Asas {#portal-das-nove-asas}\n\n"
 blessings += "Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização de Karma. Se a extensão pedir resistência sem CD, use oposição contra a Manifestação da Bênção, com empate a favor do defensor.\n\n"
 for pantheon in load('pantheon-blessings.json'):
     blessings += f"### {pantheon['wing']} · Panteão {pantheon['name']}\n\n"
     for deity in pantheon['deities']:
         blessings += f"#### {deity['name']} · {deity['epithet']}\n\n"
         for grant in deity['blessings']:
+            if grant.get('categoriaAcesso') != 'catalogo_player' or grant.get('disponivelParaPlayer') is not True:
+                continue
             blessings += f"**{grant['id']}. {grant['title']}** · {grant['facet']} · {grant['nature']}\n\n"
             blessings += f"**Fenômeno base.** {grant['phenomenon']}\n\n"
             blessings += '\n'.join(f'{i}. {extension}' for i, extension in enumerate(grant['extensions'], 1)) + '\n\n'
             blessings += f"**Safra na Morte.** {grant['harvest']}\n\n"
-write_section(13, 'portal-das-nove-asas', render(blessings))
+chapter13 = next(chapter for chapter in book['chapters'] if chapter['number'] == 13)
+start_id = 'bencaos-exclusivas' if 'id="bencaos-exclusivas"' in chapter13['html'] else 'portal-das-nove-asas'
+write_section(13, start_id, render(blessings))
 
 # The plain-text manuscript and online reader use the same authored blocks.
 manual_path = root / 'docs/regras.md'
 manual = manual_path.read_text()
-for number, start, body, stop in [(9,'Runas Kármicas',source,None),(11,'O Caminho',path,'Registro da Lei pessoal'),(13,'Portal das Nove Asas',blessings,None)]:
+for number, start, body, stop in [(9,'Runas Kármicas',source,None),(11,'O Caminho',path,'Registro da Lei pessoal'),(13,rf'(?:{registry_title}|Portal das Nove Asas)',blessings,None)]:
     header = re.search(rf'^# Capítulo {number} .*$', manual, re.M)
     next_header = re.search(r'^# Capítulo \d+ ', manual[header.end():], re.M)
     end = header.end() + next_header.start() if next_header else len(manual)
