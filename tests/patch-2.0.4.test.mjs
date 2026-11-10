@@ -134,19 +134,36 @@ test('weapon runes require a catalogued support and enforce the limit per item',
   let draft = createBlankCharacter();
   draft.className = 'Escriba Kármico';
   const equipment = read('equipment-catalog');
-  draft.inventory = ['adaga', 'espada-ou-machado', 'arco-longo', 'orbe-de-convergencia', 'grimorio'].map(id => {
+  draft.inventory = ['adaga', 'espada-ou-machado', 'arco-longo', 'luvas-canalizadoras', 'grimorio'].map(id => {
     const { name, category, spaces } = equipment.find(item => item.id === id);
     return { id, catalogId:id, name, category, spaces, quantity:1, location:'ready', notes:'' };
   });
   draft.inventory.push({...draft.inventory[0],id:'custom',catalogId:undefined});
   const arm = (sheet, weaponId) => act(sheet,{type:'armRune',runeId:1,weaponId});
-  assert.throws(() => arm(draft), /arma compatível/);
-  for (const id of ['arco-longo','orbe-de-convergencia','custom']) {
+  assert.throws(() => arm(draft), /foco compatível/);
+  for (const id of ['arco-longo','luvas-canalizadoras','custom']) {
     assert.throws(() => arm(draft,id), /não aceita/);
   }
   for (const id of ['adaga','espada-ou-machado','grimorio']) {
     draft = arm(draft,id);
-    assert.throws(() => arm(draft,id), /Limite de Runas desta arma/);
+    assert.throws(() => arm(draft,id), /Limite de Runas deste item/);
   }
   assert.equal(retainedKarma(liveState(draft)),6);
+});
+
+test('orb, amulet and scepter each keep one rune outside the personal limit', () => {
+  let draft = createBlankCharacter();
+  draft.skills['Canalização de Karma'].base = 1;
+  const equipment = read('equipment-catalog');
+  draft.inventory = ['orbe-de-convergencia','amuleto-de-vinculo','cetro-de-combate'].map(id => {
+    const { name, category, spaces } = equipment.find(item => item.id === id);
+    return { id, catalogId:id, name, category, spaces, quantity:1, location:'ready', notes:'' };
+  });
+  draft = act(draft,{type:'armRune',runeId:14});
+  for (const item of draft.inventory) {
+    const action = {type:'armRune',runeId:1,weaponId:item.id};
+    draft = act(draft,action);
+    assert.throws(() => act(draft,action), /Limite de Runas deste item/);
+  }
+  assert.equal(retainedKarma(liveState(draft)),8);
 });

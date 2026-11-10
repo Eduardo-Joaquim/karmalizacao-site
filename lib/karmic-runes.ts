@@ -57,12 +57,12 @@ export function runeInscriptionError(draft: CharacterPayload, state: LiveCombatS
   if (techniqueGradeIndex(rune.grade) + 1 > maxGrade) return "Etapa ou nível de Canalização insuficiente para este Grau.";
   const item = draft.inventory.find(entry => entry.id === itemId);
   const support = item && runeSupport(item);
-  if (!itemId && rune.category === "Arma") return "Escolha uma arma compatível no inventário para inscrever esta runa.";
+  if (!itemId && rune.category === "Arma") return "Escolha uma arma ou um foco compatível no inventário para inscrever esta runa.";
   if (itemId && !support) return "Este item não aceita inscrições rúnicas.";
   if (support && !support.accessible) return "Equipe o item compatível ou coloque-o em Prontidão antes de inscrever.";
   if (support && support.category !== rune.category) return "A categoria da runa é incompatível com este item.";
   const onItem = (state.runes ?? []).filter(entry => !entry.spent && entry.weaponId === itemId).length;
-  if (support?.category === "Arma" && onItem >= (support.slots || 1)) return "Limite de Runas desta arma atingido.";
+  if (support?.category === "Arma" && onItem >= (support.slots || 1)) return "Limite de Runas deste item atingido.";
   if ((!support?.slots && personalRuneCount(draft, state) >= personalRuneLimit(draft)) || (state.runes?.length ?? 0) >= 100) return "Limite de Runas atingido.";
   if (availableKarma(state) < rune.retained) return "Karma disponível insuficiente para reter a Runa.";
 }

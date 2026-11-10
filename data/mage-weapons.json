@@ -18,7 +18,7 @@
     "strength": 0,
     "spaces": 1,
     "properties": "Focal, Condutora, Flutuante",
-    "slots": 0,
+    "slots": 1,
     "effect": "+2 no resultado final de testes de Canalização de Karma. Por flutuar ao redor do pulso, deixa a mão livre para gestos e amplia o raio ou cone de técnicas de área em +1,5m."
   },
   {
@@ -40,7 +40,7 @@
     "strength": 1,
     "spaces": 1,
     "properties": "Focal, Precisa, Uma Mão",
-    "slots": 0,
+    "slots": 1,
     "effect": "+1 em Espírito (aumentando o Karma Máximo em +2) e +2 em testes de ataque e CA das suas Invocações/Constructos. Permite redirecionar o ponto de origem de uma técnica para o espaço de uma invocação aliada a até 12m."
   },
   {
@@ -86,5 +86,16 @@
     "properties": "Focal, Condutora, Alcance",
     "slots": 1,
     "effect": "Permite atacar e transferir Runas de Campo/Selo a até 4,5m de distância. Em caso de Acerto Total, além do dano, aplica a condição Lento (ou impede o alvo de se afastar mais de 4,5m de você por 1 rodada)."
+  },
+  {
+    "id": "amuleto-de-vinculo",
+    "name": "Amuleto de vínculo",
+    "damage": "1d8 Karma",
+    "reach": "15 m",
+    "strength": 0,
+    "spaces": 0.5,
+    "properties": "Focal, Reservatório 8, Ritualística",
+    "slots": 1,
+    "effect": "Toque com a mão livre. Superior de origem."
   }
 ]

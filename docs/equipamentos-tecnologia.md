@@ -181,9 +181,9 @@ O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tab
 | Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
 |---|---|---|---|---|---|---|
 | <span data-item="grimorio">Grimório Catalisador</span> | 35 | 1d6 Kármico | 1 | 0 | 12 m · Focal, Ritualística, Uma Mão | 1 |
-| <span data-item="orbe-de-convergencia">Orbe de Ressonância</span> | 75 | 1d8 Elemental / Kármico | 1 | 0 | 15 m · Focal, Condutora, Flutuante | 0 |
+| <span data-item="orbe-de-convergencia">Orbe de Ressonância</span> | 75 | 1d8 Elemental / Kármico | 1 | 0 | 15 m · Focal, Condutora, Flutuante | 1 |
 | <span data-item="cajado">Cajado Rúnico</span> | 20 | 1d10 Contundente / Kármico | 2 | 1 | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos | 2 |
-| <span data-item="cetro-de-combate">Cetro de Comando</span> | 28 | 1d8 Contundente | 1 | 1 | 12 m · Focal, Precisa, Uma Mão | 0 |
+| <span data-item="cetro-de-combate">Cetro de Comando</span> | 28 | 1d8 Contundente | 1 | 1 | 12 m · Focal, Precisa, Uma Mão | 1 |
 | <span data-item="luvas-canalizadoras">Luvas Canalizadoras</span> | A definir | 1d6 Contundente / Kármico | 0,5 | 0 | toque (1,5 m) / 9 m · Focal, Condutora, Leve | 0 |
 | <span data-item="lamina-runica">Lâmina Rúnica</span> | 22 | 1d8 Cortante / Kármico | 1 | 1 | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão | 2 |
 | <span data-item="lanterna-astral">Lanterna Astral</span> | A definir | 1d8 Divino / Kármico | 1 | 0 | 12 m · Focal, Ritualística, Iluminação | 0 |
@@ -207,12 +207,12 @@ O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tab
 
 ### Outros focos e acessórios
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
-|---|---|---|---|---|---|
-| <span data-item="varinha">Varinha</span> | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa |
-| <span data-item="amuleto-de-vinculo">Amuleto de vínculo</span> | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
-| <span data-item="placa-de-inscricoes">Placa de inscrições</span> | 18 | Foco de preparação, sem ataque próprio | 1 | — | Toque; Ritualística; uma família de ritos |
-| <span data-item="fio-de-ancoragem">Fio de ancoragem</span> | 16 | Foco para técnica conhecida de vínculo | 0,5 | — | 5 m; Condutora de Conjuração; não invoca sozinho |
+| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
+|---|---|---|---|---|---|---|
+| <span data-item="varinha">Varinha</span> | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa | 0 |
+| <span data-item="amuleto-de-vinculo">Amuleto de vínculo</span> | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística | 1 |
+| <span data-item="placa-de-inscricoes">Placa de inscrições</span> | 18 | Foco de preparação, sem ataque próprio | 1 | — | Toque; Ritualística; uma família de ritos | 0 |
+| <span data-item="fio-de-ancoragem">Fio de ancoragem</span> | 16 | Foco para técnica conhecida de vínculo | 0,5 | — | 5 m; Condutora de Conjuração; não invoca sozinho | 0 |
 
 ## Armaduras, escudos e vestimentas
 

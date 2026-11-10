@@ -2649,15 +2649,15 @@ O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm
 
 ### Armas que aceitam runas {#armas-que-aceitam-runas}
 
-Uma Runa de Arma precisa ser inscrita em uma das armas abaixo. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
+Uma Runa de Arma precisa ser inscrita em uma das armas ou focos da tabela. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
 
-| Armas compatíveis | Máximo por arma | Vaga usada |
+| Suportes compatíveis | Máximo por peça | Vaga usada |
 |---|---|---|
 | Adaga, Espada ou machado, Lança, Montante, Machado pesado, Martelo de guerra | 1 runa | Pessoal |
-| Cajado Rúnico, Lâmina Rúnica | 2 runas | Da arma |
-| Grimório Catalisador, Correntes de Selamento | 1 runa | Da arma |
+| Cajado Rúnico, Lâmina Rúnica | 2 runas | Do item |
+| Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo, Cetro de Comando | 1 runa | Do item |
 
-As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Orbe de Ressonância, Cetro de Comando, Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas da arma.
+As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas do item.
 
 Na ficha, equipe o suporte ou deixe-o em Prontidão. Abra **Inventário e Carga → Runas do item**, selecione uma fórmula compatível e registre a inscrição depois de resolvê-la. Em ficha salva, salve primeiro qualquer mudança de treino ou equipamento. Se o suporte estiver fora do alcance ou indisponível, sua inscrição não concede os efeitos que exigem contato, porte ou uso desse suporte.
 
@@ -7091,12 +7091,12 @@ O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tab
 
 ### Outros focos e acessórios
 
-| Nome do Item                                                | Preço (m) | Dano / Efeito                          | Carga (Espaços) | Requisito de Força | Alcance e Propriedades                                                             |
-|-------------------------------------------------------------|-----------|----------------------------------------|-----------------|--------------------|------------------------------------------------------------------------------------|
-| <span item="varinha">Varinha</span>                         | 10        | 1d6 Karma                              | 1               | —                  | 15 m; Leve; uma mão; Focal, Precisa                                                |
-| <span item="amuleto-de-vinculo">Amuleto de vínculo</span>   | 60        | 1d8 Karma                              | 0,5             | —                  | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística |
-| <span item="placa-de-inscricoes">Placa de inscrições</span> | 18        | Foco de preparação, sem ataque próprio | 1               | —                  | Toque; Ritualística; uma família de ritos                                          |
-| <span item="fio-de-ancoragem">Fio de ancoragem</span>       | 16        | Foco para técnica conhecida de vínculo | 0,5             | —                  | 5 m; Condutora de Conjuração; não invoca sozinho                                   |
+| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
+|---|---|---|---|---|---|---|
+| <span item="varinha">Varinha</span> | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa | 0 |
+| <span item="amuleto-de-vinculo">Amuleto de vínculo</span> | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística | 1 |
+| <span item="placa-de-inscricoes">Placa de inscrições</span> | 18 | Foco de preparação, sem ataque próprio | 1 | — | Toque; Ritualística; uma família de ritos | 0 |
+| <span item="fio-de-ancoragem">Fio de ancoragem</span> | 16 | Foco para técnica conhecida de vínculo | 0,5 | — | 5 m; Condutora de Conjuração; não invoca sozinho | 0 |
 
 ## Armaduras, escudos e vestimentas
 

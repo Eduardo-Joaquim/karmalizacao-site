@@ -17,15 +17,15 @@ O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm
 
 ### Armas que aceitam runas {#armas-que-aceitam-runas}
 
-Uma Runa de Arma precisa ser inscrita em uma das armas abaixo. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
+Uma Runa de Arma precisa ser inscrita em uma das armas ou focos da tabela. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
 
-| Armas compatíveis | Máximo por arma | Vaga usada |
+| Suportes compatíveis | Máximo por peça | Vaga usada |
 |---|---|---|
 | Adaga, Espada ou machado, Lança, Montante, Machado pesado, Martelo de guerra | 1 runa | Pessoal |
-| Cajado Rúnico, Lâmina Rúnica | 2 runas | Da arma |
-| Grimório Catalisador, Correntes de Selamento | 1 runa | Da arma |
+| Cajado Rúnico, Lâmina Rúnica | 2 runas | Do item |
+| Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo, Cetro de Comando | 1 runa | Do item |
 
-As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Orbe de Ressonância, Cetro de Comando, Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas da arma.
+As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas do item.
 
 Na ficha, equipe o suporte ou deixe-o em Prontidão. Abra **Inventário e Carga → Runas do item**, selecione uma fórmula compatível e registre a inscrição depois de resolvê-la. Em ficha salva, salve primeiro qualquer mudança de treino ou equipamento. Se o suporte estiver fora do alcance ou indisponível, sua inscrição não concede os efeitos que exigem contato, porte ou uso desse suporte.
 
