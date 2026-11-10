@@ -244,11 +244,19 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
 
   return (
     <div className="power-editor-layout">
+      <nav className="power-topic-nav" aria-label="Tópicos da página de poderes">
+        <span>Nesta página</span>
+        {POWER_TOPICS.map(([id, label], index) => (
+          <a href={`#${id}`} key={id}>
+            <small>{String(index + 1).padStart(2, "0")}</small>
+            {label}
+          </a>
+        ))}
+      </nav>
       <div className="power-editor-content">
         <section className="power-section" id="poder-raca-classe">
           <SectionHeading icon={ShieldCheck} kicker="Fontes automáticas" title="Raça & classe">
-            As características escolhidas no primeiro capítulo aparecem aqui sem
-            precisar copiá-las. Escolha as habilidades liberadas pela etapa atual.
+            Os traços de raça e classe vêm das escolhas feitas em Essência. Aqui você escolhe as habilidades liberadas pela etapa atual.
           </SectionHeading>
 
           <div className="power-source-grid">
@@ -893,9 +901,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       </Button>
                     </div>
                   </header>
-                  <div className="character-form-grid two-columns compact-form">
+                  <fieldset className="technique-form-group character-form-grid">
+                    <legend>Identidade e execução</legend>
                     <TextField id={`technique-name-${technique.id}`} label="Nome" value={technique.name} onChange={(name) => updateTechnique(technique.id, { name })} />
-                    <TechniqueMatrixEditor technique={technique} race={draft.race} className={draft.className} onChange={patch=>updateTechnique(technique.id,patch)}/><TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
+                    <TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
                     <div className="character-field">
                       <Label htmlFor={`technique-attribute-${technique.id}`} className="character-label">Atributo</Label>
                       <NativeSelect id={`technique-attribute-${technique.id}`} value={PRESENCE_SKILLS.includes(technique.skill) ? "Presença" : technique.attribute} disabled={PRESENCE_SKILLS.includes(technique.skill)} onChange={(event) => updateTechnique(technique.id, { attribute: event.target.value })}>
@@ -924,6 +933,15 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                         {["Ação Principal", "Ação de Movimento", "Ação Extra", "Ação Livre", "Reação", "Passiva", "Ritual"].map((action) => <NativeSelectOption value={action} key={action}>{action}</NativeSelectOption>)}
                       </NativeSelect>
                     </div>
+                  </fieldset>
+                  <TechniqueMatrixEditor
+                    technique={technique}
+                    race={draft.race}
+                    className={draft.className}
+                    onChange={(patch) => updateTechnique(technique.id, patch)}
+                  />
+                  <fieldset className="technique-form-group character-form-grid">
+                    <legend>Efeitos e resolução</legend>
                     {([
                       ["concept", "Conceito"],
                       ["range", "Alcance"],
@@ -946,7 +964,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                         key={field}
                       />
                     ))}
-                  </div>
+                  </fieldset>
                 </article>
               ))
             ) : (
@@ -972,15 +990,6 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
         </section>
       </div>
 
-      <nav className="power-topic-nav" aria-label="Tópicos da página de poderes">
-        <span>Nesta página</span>
-        {POWER_TOPICS.map(([id, label], index) => (
-          <a href={`#${id}`} key={id}>
-            <small>{String(index + 1).padStart(2, "0")}</small>
-            {label}
-          </a>
-        ))}
-      </nav>
     </div>
   );
 }

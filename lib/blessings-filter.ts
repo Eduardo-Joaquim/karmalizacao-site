@@ -43,7 +43,7 @@ export const playerBlessingCatalog = catalog.map(pantheon => ({
 }));
 
 const allowedById = new Map(playerBlessingCatalog.flatMap(pantheon => pantheon.deities.flatMap(deity =>
-  deity.blessings.map(blessing => [`catalog-blessing-${blessing.id}`, { blessing, deity, pantheon }] as const)
+  deity.blessings.map(blessing => [`catalog-blessing-${blessing.id}` as string, { blessing, deity, pantheon }] as const)
 )));
 const exclusiveText = bestiaryIndex.map(entry => normalizarSlug(entry.description)).filter(text => text.length >= 45);
 

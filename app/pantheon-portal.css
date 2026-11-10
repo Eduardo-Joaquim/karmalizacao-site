@@ -1,5 +1,5 @@
 .pantheon-portal { display:grid; gap:1rem; margin:2rem 0; min-width:0; }
-.pantheon-portal-card { --wing:#d2ad6a; border:1px solid color-mix(in srgb,var(--wing),transparent 60%); background:#15131c; border-radius:.6rem; }
+.pantheon-portal-card { min-width:0; --wing:#d2ad6a; border:1px solid color-mix(in srgb,var(--wing),transparent 60%); background:#15131c; border-radius:.6rem; }
 .pantheon-portal-card[data-wing="2"] { --wing:#eb9d91; }
 .pantheon-portal-card[data-wing="3"] { --wing:#9bd4e5; }
 .pantheon-portal-card[data-wing="4"] { --wing:#e7c87c; }
@@ -20,19 +20,125 @@
 .pantheon-deities { display:flex; flex-wrap:wrap; gap:.45rem; margin:1rem 0; }
 .pantheon-portal button,.pantheon-blessing a { min-height:2.75rem; padding:.5rem .8rem; border:1px solid #ffffff45; border-radius:.3rem; }
 .pantheon-deities button[aria-pressed="true"] { border-color:var(--wing); color:var(--wing); }
-.pantheon-blessings-grid { display:grid; gap:1.5rem; grid-template-columns:minmax(0,1fr); }
-@media(min-width:1200px) { .pantheon-blessings-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
-.pantheon-blessing { min-width:0; display:flex; flex-direction:column; gap:.55rem; padding:1rem; border:1px solid #ffffff2a; background:#1d1926; overflow-wrap:anywhere; }
-.pantheon-blessing :is(h4,h5,p,ol) { margin:0; }
-.pantheon-blessing h4,.pantheon-blessing h5,.pantheon-blessing small { color:var(--wing); }
-.pantheon-blessing ol { padding-inline-start:1.3rem; }
-.pantheon-blessing li + li { margin-top:.7rem; }
-.pantheon-blessing :is(button,a) { margin-top:auto; }
+.pantheon-blessings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  align-items: start;
+  gap: 1rem;
+}
 
-.pantheon-god-heading { border-inline-start:3px solid var(--wing); padding-inline-start:.85rem; }
-.pantheon-god-heading h3,.pantheon-god-heading p { margin:0; }
-.pantheon-blessing li > small { display:block; margin:.15rem 0 .3rem; }
+.pantheon-blessing {
+  display: grid;
+  min-width: 0;
+  gap: 1rem;
+  padding: clamp(0.875rem, 2vw, 1.25rem);
+  border: 1px solid color-mix(in srgb, var(--wing), transparent 68%);
+  border-radius: 0.65rem;
+  background: #1d1926;
+  overflow-wrap: anywhere;
+}
 
+.pantheon-blessing-heading {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.pantheon-blessing-heading :is(h4, p) {
+  margin: 0;
+}
+
+.pantheon-blessing-heading h4 {
+  color: var(--wing);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.pantheon-blessing-heading small,
+.catalog-blessing-details small {
+  color: var(--wing, #e7c578);
+  font-size: 0.8125rem;
+}
+
+.pantheon-blessing-heading > span {
+  color: #beb4c6;
+  font-size: 0.875rem;
+}
+
+.pantheon-blessing-disclosure {
+  border-block: 1px solid #ffffff22;
+}
+
+.pantheon-blessing-disclosure summary {
+  padding-block: 0.65rem;
+  color: var(--wing);
+  cursor: pointer;
+}
+
+.pantheon-blessing-disclosure[open] {
+  padding-bottom: 0.75rem;
+}
+
+.catalog-blessing-details {
+  display: grid;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.catalog-blessing-details section {
+  padding: 0.75rem;
+  border: 1px solid #ffffff17;
+  border-radius: 0.4rem;
+  background: #0d0b1355;
+}
+
+.catalog-blessing-details h5 {
+  margin: 0 0 0.4rem;
+  color: var(--wing, #e7c578);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.catalog-blessing-details :is(p, ol) {
+  margin: 0;
+}
+
+.catalog-blessing-details ol {
+  padding-inline-start: 1.25rem;
+  list-style: decimal;
+}
+
+.catalog-blessing-details li + li {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #ffffff18;
+}
+
+.catalog-blessing-details li > small {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.pantheon-blessing > :is(button, a) {
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--wing), transparent 90%);
+  color: var(--wing);
+  text-align: center;
+}
+
+.pantheon-blessing > button:disabled {
+  opacity: 0.65;
+}
+
+.pantheon-god-heading {
+  border-inline-start: 3px solid var(--wing);
+  padding-inline-start: 0.85rem;
+}
+
+.pantheon-god-heading :is(h3, p) {
+  margin: 0;
+}
 
 .blessing-exclusive-seal {
   display: inline-block;
@@ -43,4 +149,15 @@
   color: #ffc5cd;
   font-weight: 700;
   overflow-wrap: anywhere;
+}
+
+@media print {
+  .divine-altar .catalog-blessing-details section {
+    border-color: #ddd;
+    background: transparent;
+  }
+
+  .divine-altar .catalog-blessing-details :is(h5, small) {
+    color: #111;
+  }
 }

@@ -5,7 +5,8 @@ import { playerBlessingCatalog } from "@/lib/blessings-filter";
 import { PANTHEONS } from "@/lib/character-rules";
 import { normalizeItemSearch } from "@/lib/item-catalog";
 
-import { lerExtensaoBencao, type BencaoItem, type DeusPanteao, type PanteaoCardData } from "@/lib/patch-v204-types";
+import { CatalogBlessingDetails } from "@/components/catalog-blessing-details";
+import type { BencaoItem, DeusPanteao, PanteaoCardData } from "@/lib/patch-v204-types";
 
 const catalog = playerBlessingCatalog as PanteaoCardData[];
 export type CatalogBlessing = BencaoItem;
@@ -56,16 +57,18 @@ function PantheonCard({ data, panelId, open, onToggle, onSelect, selected, words
         </>}
         <p role="status">{visible.length} {visible.length === 1 ? "Bênção encontrada" : "Bênçãos encontradas"}</p>
         <div className="pantheon-blessings-grid">{visible.map(({god, blessing}) => <article className="pantheon-blessing" key={blessing.id}>
-          <small>{god.name} · Bênção {blessing.id}</small>
-          <h4>{blessing.title}</h4>
-          <p>{blessing.facet} · {blessing.nature}</p>
-          <h5>Fenômeno base</h5><p>{blessing.phenomenon}</p>
-          <h5>Extensões de combate</h5>
-          <ol>{blessing.extensions.map(text => {
-            const extension = lerExtensaoBencao(text);
-            return <li key={text}><strong>{extension.nome}</strong>{extension.acaoECusto && <small>{extension.acaoECusto}</small>}<p>{extension.efeito}</p></li>;
-          })}</ol>
-          <h5>Safra na Morte</h5><p>{blessing.harvest}</p>
+          <header className="pantheon-blessing-heading">
+            <small>{god.name} · Bênção {blessing.id}</small>
+            <h4>{blessing.title}</h4>
+            <p>{blessing.facet}</p>
+            <span>{blessing.nature}</span>
+          </header>
+          {onSelect ? (
+            <details className="pantheon-blessing-disclosure">
+              <summary>Ver efeitos e extensões</summary>
+              <CatalogBlessingDetails blessing={blessing} />
+            </details>
+          ) : <CatalogBlessingDetails blessing={blessing} />}
           {onSelect ? <button type="button" disabled={selected?.includes(blessing.id)} onClick={() => onSelect(blessing, god, PANTHEONS[index])}>{selected?.includes(blessing.id) ? "Registrada na ficha" : "Selecionar esta Bênção na ficha"}</button> : <a href={`/personagem?bencao=${blessing.id}`}>Selecionar esta Bênção na ficha</a>}
         </article>)}</div>
       </>}

@@ -2724,46 +2724,38 @@ h4,
 
 .power-editor-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 164px;
-  align-items: start;
-  gap: 24px;
-}
-
-.power-editor-content {
-  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
 }
 
 .power-topic-nav {
-  position: sticky;
-  top: 20px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 0.35rem;
   border: 1px solid var(--line);
-  background: rgba(11, 9, 16, 0.76);
-  padding: 8px;
-  backdrop-filter: blur(16px);
+  background: rgba(11, 9, 16, 0.6);
+  padding: 0.75rem;
 }
 
 .power-topic-nav > span {
-  border-bottom: 1px solid var(--line);
-  padding: 8px 9px 11px;
-  color: var(--text-faint);
+  grid-column: 1 / -1;
+  padding: 0.35rem 0.65rem;
+  color: var(--karma-soft);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.6875rem;
-  letter-spacing: 0.13em;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .power-topic-nav a {
-  display: grid;
-  grid-template-columns: 22px 1fr;
+  display: flex;
   align-items: center;
-  gap: 4px;
-  border-left: 1px solid transparent;
-  padding: 9px;
-  color: var(--text-faint);
-  font-size: 0.6875rem;
-  transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+  gap: 0.55rem;
+  min-height: 2.5rem;
+  border-left: 2px solid transparent;
+  padding: 0.5rem 0.65rem;
+  color: var(--text-dim);
+  font-size: 0.875rem;
 }
 
 .power-topic-nav a:hover,
@@ -2851,8 +2843,14 @@ h4,
 
 .power-source-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.power-source-grid .power-source-card {
+  border-radius: 0.75rem;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .power-source-card,
@@ -2969,8 +2967,6 @@ h4,
   font-size: 0.6875rem;
 }
 
-.class-trait-card p,
-.domain-rules p,
 .sheet-long-copy {
   margin: 5px 0 0;
   color: var(--text-faint);
@@ -3055,6 +3051,57 @@ h4,
 
 .ability-choice-list.compact .ability-choice {
   padding: 8px;
+}
+
+.power-editor-layout :is(
+  .power-section-heading p, .power-rule-summary, .empty-power-copy, .selection-rule,
+  .feature-entry p, .class-trait-card p, .ability-choice p, .domain-rules p,
+  .subsection-title p, .dynamic-list-heading p
+) {
+  color: var(--text-dim);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.power-editor-layout :is(.class-trait-card p, .domain-rules p) {
+  margin: 0.5rem 0 0;
+  white-space: pre-wrap;
+}
+
+.power-section-heading h2 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.power-editor-layout :is(.power-card-title h3, .toggle-heading h3, .dynamic-list-heading h3) {
+  font-size: 1.125rem;
+}
+
+.power-editor-layout :is(.feature-entry strong, .class-trait-card strong, .ability-choice strong, .subsection-title h4) {
+  color: var(--text);
+  font-size: 0.9375rem;
+}
+
+.power-editor-layout :is(.feature-list, .ability-choice-list) {
+  gap: 0.75rem;
+}
+
+.power-editor-layout :is(.feature-entry, .class-trait-card, .ability-choice) {
+  padding: 0.875rem;
+}
+
+.power-editor-layout .feature-entry {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+}
+
+.power-editor-layout :is(.character-label, .signature-toggle) {
+  color: var(--text-dim);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.power-editor-layout .character-field :is([data-slot="input"], [data-slot="textarea"], [data-slot="native-select"]) {
+  font-size: 0.9375rem;
 }
 
 .domain-grid {
@@ -3352,6 +3399,108 @@ h4,
   color: var(--text-faint);
   font-size: 0.6875rem;
   cursor: pointer;
+}
+
+.techniques-list {
+  gap: 1.5rem;
+}
+
+.technique-editor-card {
+  border-radius: 0.75rem;
+  padding: clamp(0.875rem, 2.5vw, 1.5rem);
+}
+
+.technique-editor-card > header {
+  flex-wrap: wrap;
+}
+
+.technique-editor-card .technique-form-group {
+  min-width: 0;
+  margin-top: 1.25rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 0.5rem;
+  padding: clamp(0.75rem, 2vw, 1rem);
+}
+
+.technique-editor-card .character-form-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  align-items: start;
+  gap: 1rem;
+}
+
+.technique-form-group legend {
+  padding-inline: 0.35rem;
+  color: var(--karma-soft);
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.technique-editor-card .character-field :is([data-slot="input"], [data-slot="native-select"]) {
+  min-height: 2.625rem;
+}
+
+.technique-editor-card .character-field [data-slot="textarea"] {
+  min-height: 5.5rem;
+}
+
+.matrix-builder {
+  background: rgba(224, 179, 77, 0.04);
+}
+
+.matrix-builder .matrix-hint {
+  margin-block: 0 0.875rem;
+  color: var(--text-dim);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.matrix-builder .technique-matrix-fields {
+  margin-bottom: 1rem;
+}
+
+.technique-matrix-fields label {
+  display: grid;
+  gap: 0.4rem;
+  color: var(--text-dim);
+  font-size: 0.875rem;
+}
+
+.matrix-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding: 0.875rem;
+  border-left: 2px solid var(--karma);
+  background: rgba(224, 179, 77, 0.06);
+}
+
+.matrix-result span {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.matrix-result strong {
+  color: var(--karma-soft);
+  font-size: 1.125rem;
+}
+
+.matrix-result small {
+  color: var(--text-dim);
+  font-size: 0.8125rem;
+}
+
+.matrix-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin-top: 1rem;
+}
+
+.matrix-actions [data-slot="button"] {
+  min-height: 2.625rem;
+  max-width: 100%;
+  height: auto;
+  white-space: normal;
 }
 
 .empty-dynamic-state {
@@ -4444,7 +4593,6 @@ h4,
     grid-template-columns: 210px minmax(0, 1fr);
   }
 
-  .power-source-grid,
   .domain-grid {
     grid-template-columns: 1fr;
   }
@@ -4473,42 +4621,6 @@ h4,
 
   .character-workspace[data-wide="true"] .character-editor {
     grid-column: auto;
-  }
-
-  .power-editor-layout {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .power-editor-content {
-    order: 2;
-    width: 100%;
-  }
-
-  .power-topic-nav {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    order: 1;
-    width: 100%;
-    flex-direction: row;
-    overflow-x: auto;
-  }
-
-  .power-topic-nav > span {
-    display: none;
-  }
-
-  .power-topic-nav a {
-    min-width: max-content;
-    border-bottom: 1px solid transparent;
-    border-left: 0;
-  }
-
-  .power-topic-nav a:hover,
-  .power-topic-nav a:focus-visible {
-    border-bottom-color: var(--karma);
-    border-left-color: transparent;
   }
 
   .sheet-cover {

@@ -1194,7 +1194,7 @@ export function CharacterBuilder({ displayName, authenticated = true, initialBle
                 <span>04</span>
                 <div>
                   <h2>Poderes e escolhas personalizáveis</h2>
-                  <p>Configure todas as fontes da personagem e use os tópicos à direita para navegar.</p>
+                  <p>Configure as fontes de poder da personagem e use o índice para ir direto a cada seção.</p>
                 </div>
               </div>
               {requestedBlessing && !dismissedBlessing && <div className="guest-notice"><strong>{requestedBlessing.blessing.title}</strong><p>Outorga de {requestedBlessing.god.name}. Adicione ao rascunho aberto e escolha seu atributo regente.</p><button type="button" disabled={loading} onClick={acceptCatalogBlessing}>Adicionar Bênção à ficha</button></div>}
