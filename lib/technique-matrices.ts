@@ -10,6 +10,13 @@ export const MATRIX_DAMAGE:Record<TechniqueMatrix,readonly string[]>={
  Marcial:['1d8','1d10','2d6','2d8','3d8'],
  Corrupto:['1d10','2d8','3d6','3d8','3d12']
 };
+export const TECHNIQUE_GRADES = ["I", "II", "III", "IV", "V"] as const;
+
+export function techniqueGradeIndex(value: string): number {
+  const grade = value.trim().toUpperCase().replace(/^GRAU\s+/, "");
+  return TECHNIQUE_GRADES.findIndex((option) => option === grade);
+}
+
 export const MATRIX_BASE=[2,3,4,6,12] as const;
 export function techniqueProfile(matrix:TechniqueMatrix,grade:number,extras=0,discount=0){const i=Math.max(0,Math.min(4,Math.trunc(grade)));const base=MATRIX_BASE[i],cap=Math.min(3,Math.floor(base/2));return {damage:MATRIX_DAMAGE[matrix][i],base,discount:Math.min(cap,Math.max(0,discount)),cost:Math.max(1,base+Math.max(0,extras)-Math.min(cap,Math.max(0,discount))),damageType:matrix==='Elemental'?'Elemental / Fogo':matrix};}
 export const PRIMARY_ELEMENTS=['Vento','Água','Fogo','Terra','Luz','Sombra'] as const;

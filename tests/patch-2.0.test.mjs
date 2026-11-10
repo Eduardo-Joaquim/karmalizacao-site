@@ -10,6 +10,17 @@ test('five matrices use the exact five progressions and bounded discounts',()=>{
  for(const [m,dice] of Object.entries({'Kármico':['1d10','2d6','2d8','2d10','3d10'],Elemental:['1d10','2d6','2d8','2d10','3d10'],Divino:['1d8','1d10','2d6','2d8','3d8'],Marcial:['1d8','1d10','2d6','2d8','3d8'],Corrupto:['1d10','2d8','3d6','3d8','3d12']}))for(let i=0;i<5;i++){const p=matrix.techniqueProfile(m,i,2,99);assert.equal(p.damage,dice[i]);assert.equal(p.discount,Math.min(3,Math.floor(p.base/2)));assert.equal(p.cost,p.base+2-p.discount);}
  assert.deepEqual(matrix.corruptionMatrixRisk(4,true,15),{temporary:2,charge:1,life:6,immediateControl:true,endOfTurnControl:false,disadvantage:true});assert.equal(matrix.corruptionMatrixRisk(1,false,8).temporary,1);
 });
+test('technique grades map to the matrix tiers without reclassifying legacy records', () => {
+  assert.deepEqual(matrix.TECHNIQUE_GRADES, ['I', 'II', 'III', 'IV', 'V']);
+  assert.deepEqual(matrix.TECHNIQUE_GRADES.map(grade => {
+    const index = matrix.techniqueGradeIndex(`Grau ${grade}`);
+    assert.equal(matrix.techniqueGradeIndex(grade), index);
+    return matrix.techniqueProfile('Marcial', index).base;
+  }), [2, 3, 4, 6, 12]);
+  for (const legacy of ['Comum', 'Evolutiva', 'Transcendental', '']) {
+    assert.equal(matrix.techniqueGradeIndex(legacy), -1);
+  }
+});
 test('nine existing races evolve only at II IV VI and Fada is absent',()=>{
  const races=json('data/character-rules.json').races;assert.equal(Object.keys(races).length,9);assert(!('Fada' in races));assert(!model.RACES.includes('Fada'));
  for(const r of Object.values(races))assert.deepEqual(r.progression.map(x=>x.stage),['II','IV','VI']);

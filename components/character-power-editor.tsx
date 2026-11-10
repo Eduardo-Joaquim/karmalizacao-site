@@ -4,6 +4,7 @@ import { equippedRuneWeapons, personalRuneLimit } from "@/lib/karmic-runes";
 import runes from "@/data/karmic-runes.json";
 import { domainPathDiscount, hasAwakenedPath, pathAxiom } from "@/lib/personal-path";
 import { getStageIndex, getFinalSkill } from "@/lib/character-rules";
+import { TECHNIQUE_GRADES, techniqueGradeIndex } from "@/lib/technique-matrices";
 import {TechniqueMatrixEditor} from "@/components/technique-matrix-editor";
 
 import { BlessingEditor } from "@/components/blessing-editor";
@@ -155,7 +156,7 @@ function createTechnique(): TechniqueRecord {
     source: "",
     attribute: "",
     skill: "",
-    grade: "Comum",
+    grade: "Grau I",
     action: "Ação principal",
     range: "",
     targetAreaDuration: "",
@@ -871,7 +872,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
 
           <div className="dynamic-card-list techniques-list">
             {draft.techniques.length ? (
-              draft.techniques.map((technique, index) => (
+              draft.techniques.map((technique, index) => {
+                const grade = TECHNIQUE_GRADES[techniqueGradeIndex(technique.grade)];
+                return (
                 <article className="dynamic-editor-card technique-editor-card" key={technique.id}>
                   <header>
                     <span>Técnica {String(index + 1).padStart(2, "0")}</span>
@@ -923,9 +926,11 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     </div>
                     <div className="character-field">
                       <Label htmlFor={`technique-grade-${technique.id}`} className="character-label">Grau</Label>
-                      <NativeSelect id={`technique-grade-${technique.id}`} value={technique.grade} onChange={(event) => updateTechnique(technique.id, { grade: event.target.value })}>
-                        {["Comum", "Evolutiva", "Transcendental"].map((grade) => <NativeSelectOption value={grade} key={grade}>{grade}</NativeSelectOption>)}
+                      <NativeSelect id={`technique-grade-${technique.id}`} value={grade ? `Grau ${grade}` : ""} onChange={(event) => updateTechnique(technique.id, { grade: event.target.value })}>
+                        {!grade && <NativeSelectOption value="" disabled>{technique.grade ? `Registro anterior: ${technique.grade}` : "Escolha o grau"}</NativeSelectOption>}
+                        {TECHNIQUE_GRADES.map((option) => <NativeSelectOption key={option}>Grau {option}</NativeSelectOption>)}
                       </NativeSelect>
+                      {!grade && <small>Escolha um grau de I a V para usar a calculadora.</small>}
                     </div>
                     <div className="character-field">
                       <Label htmlFor={`technique-action-${technique.id}`} className="character-label">Ação</Label>
@@ -966,7 +971,8 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     ))}
                   </fieldset>
                 </article>
-              ))
+                );
+              })
             ) : (
               <div className="empty-dynamic-state">
                 <BookOpen aria-hidden="true" />
