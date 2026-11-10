@@ -2645,7 +2645,19 @@ Uma runa retém Karma em um suporte até que seu desenho libere a energia. **Qua
 
 Uma runa ligada a um ataque segue o teste desse ataque. Se o efeito pedir resistência, use o teste indicado na runa. Para uma runa comum que peça resistência sem fixar a CD, use oposição contra Espírito + Canalização de Karma de quem a inscreveu, com empate a favor de quem resiste. O **Escriba Kármico** usa Intelecto + Canalização, com Analítico quando aplicável, e sua CD rúnica é 12 + Intelecto + nível de Canalização. Sua Caligrafia de Combate também permite gravar com Movimento ou Extra uma runa de Grau igual ou inferior à sua Etapa, mesmo quando a tabela comum só permitiria um Grau menor.
 
-O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas de Arma podem ser inscritas em armas e nos equipamentos de mago com espaços rúnicos nativos. Runas de Armadura e Guarda vão em armaduras ou escudos. Uma arma, armadura ou escudo comum consome uma vaga pessoal por runa. Um espaço nativo usa a capacidade do próprio item e retém Karma da mesma forma. Runas de Campo e Selo e de Sangue e Corpo usam seus suportes descritos e são registradas no espaço pessoal.
+O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas de Armadura e Guarda vão em armaduras ou escudos e usam uma vaga pessoal por inscrição. Runas de Campo e Selo e de Sangue e Corpo usam os suportes descritos na fórmula e também contam no limite pessoal.
+
+### Armas que aceitam runas {#armas-que-aceitam-runas}
+
+Uma Runa de Arma precisa ser inscrita em uma das armas abaixo. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
+
+| Armas compatíveis | Máximo por arma | Vaga usada |
+|---|---|---|
+| Adaga, Espada ou machado, Lança, Montante, Machado pesado, Martelo de guerra | 1 runa | Pessoal |
+| Cajado Rúnico, Lâmina Rúnica | 2 runas | Da arma |
+| Grimório Catalisador, Correntes de Selamento | 1 runa | Da arma |
+
+As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Orbe de Ressonância, Cetro de Comando, Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas da arma.
 
 Na ficha, equipe o suporte ou deixe-o em Prontidão. Abra **Inventário e Carga → Runas do item**, selecione uma fórmula compatível e registre a inscrição depois de resolvê-la. Em ficha salva, salve primeiro qualquer mudança de treino ou equipamento. Se o suporte estiver fora do alcance ou indisponível, sua inscrição não concede os efeitos que exigem contato, porte ou uso desse suporte.
 
@@ -7048,18 +7060,18 @@ Flechas comuns não recebem o efeito de uma munição de fogo pelo mesmo nome. D
 
 ## Armas de magos
 
-O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. Cada arma possui espaços rúnicos próprios. As runas nesses espaços ficam fora do limite pessoal, mas ainda retêm Karma.
+O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tabela indica quais armas de magos aceitam Runas de Arma e quantas podem manter armadas. As vagas nativas ficam fora do limite pessoal e ainda retêm Karma. Consulte o capítulo de Karma para a lista de armas comuns compatíveis.
 
-| Nome do Item                                                      | Preço (m) | Dano / Efeito                | Carga (Espaços) | Requisito de Força | Alcance e Propriedades                                                       |
-|-------------------------------------------------------------------|-----------|------------------------------|-----------------|--------------------|------------------------------------------------------------------------------|
-| <span item="grimorio">Grimório Catalisador</span>                 | 35        | 1d6 Kármico                  | 1               | 0                  | 12 m · Focal, Ritualística, Uma Mão · 3 espaços rúnicos                      |
-| <span item="orbe-de-convergencia">Orbe de Ressonância</span>      | 75        | 1d8 Elemental / Kármico      | 1               | 0                  | 15 m · Focal, Condutora, Flutuante · 2 espaços rúnicos                       |
-| <span item="cajado">Cajado Rúnico</span>                          | 20        | 1d10 Contundente / Kármico   | 2               | 1                  | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos · 3 espaços rúnicos   |
-| <span item="cetro-de-combate">Cetro de Comando</span>             | 28        | 1d8 Contundente              | 1               | 1                  | 12 m · Focal, Precisa, Uma Mão · 2 espaços rúnicos                           |
-| <span item="luvas-canalizadoras">Luvas Canalizadoras</span>       | A definir | 1d6 Contundente / Kármico    | 0,5             | 0                  | toque (1,5 m) / 9 m · Focal, Condutora, Leve · 2 espaços rúnicos             |
-| <span item="lamina-runica">Lâmina Rúnica</span>                   | 22        | 1d8 Cortante / Kármico       | 1               | 1                  | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão · 2 espaços rúnicos |
-| <span item="lanterna-astral">Lanterna Astral</span>               | A definir | 1d8 Divino / Kármico         | 1               | 0                  | 12 m · Focal, Ritualística, Iluminação · 2 espaços rúnicos                   |
-| <span item="correntes-de-selamento">Correntes de Selamento</span> | A definir | 1d8 Contundente / Perfurante | 1,5             | 1                  | 4,5 m · Focal, Condutora, Alcance · 2 espaços rúnicos                        |
+| Nome do Item                                                      | Preço (m) | Dano / Efeito                | Carga (Espaços) | Requisito de Força | Alcance e Propriedades                                   | Vagas rúnicas |
+|-------------------------------------------------------------------|-----------|------------------------------|-----------------|--------------------|----------------------------------------------------------|---------------|
+| <span item="grimorio">Grimório Catalisador</span>                 | 35        | 1d6 Kármico                  | 1               | 0                  | 12 m · Focal, Ritualística, Uma Mão                      | 1             |
+| <span item="orbe-de-convergencia">Orbe de Ressonância</span>      | 75        | 1d8 Elemental / Kármico      | 1               | 0                  | 15 m · Focal, Condutora, Flutuante                       | 0             |
+| <span item="cajado">Cajado Rúnico</span>                          | 20        | 1d10 Contundente / Kármico   | 2               | 1                  | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos   | 2             |
+| <span item="cetro-de-combate">Cetro de Comando</span>             | 28        | 1d8 Contundente              | 1               | 1                  | 12 m · Focal, Precisa, Uma Mão                           | 0             |
+| <span item="luvas-canalizadoras">Luvas Canalizadoras</span>       | A definir | 1d6 Contundente / Kármico    | 0,5             | 0                  | toque (1,5 m) / 9 m · Focal, Condutora, Leve             | 0             |
+| <span item="lamina-runica">Lâmina Rúnica</span>                   | 22        | 1d8 Cortante / Kármico       | 1               | 1                  | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão | 2             |
+| <span item="lanterna-astral">Lanterna Astral</span>               | A definir | 1d8 Divino / Kármico         | 1               | 0                  | 12 m · Focal, Ritualística, Iluminação                   | 0             |
+| <span item="correntes-de-selamento">Correntes de Selamento</span> | A definir | 1d8 Contundente / Perfurante | 1,5             | 1                  | 4,5 m · Focal, Condutora, Alcance                        | 1             |
 
 **Grimório Catalisador.** +1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior.
 

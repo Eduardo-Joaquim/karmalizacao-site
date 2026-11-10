@@ -40,6 +40,6 @@ for match in re.finditer(r'((?:^\|.*\n)+)',source,re.M):
         if duplicate is not None:catalog.pop(duplicate)
         seen.add(key)
         assert abs(spaces-spec['spaces'])<0.000001, f'Carga divergente em {key}: tabela {spaces}, mecânica {spec["spaces"]}'
-        catalog.append({'id':key,'name':name,'spaces':spaces,'category':spec['category'],'price':next(v for k,v in fields.items() if 'Preço' in k or 'preço' in k),'notes': ' · '.join(f'{k}: {v}' for k,v in fields.items() if k!=headers[0] and 'Preço' not in k and 'preço' not in k and 'Carga' not in k)[:500],'minStrength':spec['minStrength'],'armorClass':spec['armorClass'],'agilityCap':spec['agilityCap'],'movementPenalty':spec['movementPenalty']})
+        catalog.append({'id':key,'name':name,'spaces':spaces,'category':spec['category'],'price':next(v for k,v in fields.items() if 'Preço' in k or 'preço' in k),'notes': ' · '.join(f'{k}: {v}' for k,v in fields.items() if k not in (headers[0], "Vagas rúnicas") and 'Preço' not in k and 'preço' not in k and 'Carga' not in k)[:500],'minStrength':spec['minStrength'],'armorClass':spec['armorClass'],'agilityCap':spec['agilityCap'],'movementPenalty':spec['movementPenalty']})
 (root/'data/equipment-catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
 print(f'Capítulos 17 e 20 publicados na fonte; {len(catalog)} entradas de catálogo.')

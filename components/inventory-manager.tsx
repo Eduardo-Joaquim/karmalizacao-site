@@ -46,6 +46,8 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse,o
  const editingThis=editable&&editing===item.id;
  const armed=(combat.runes??[]).filter(rune=>!rune.spent&&rune.weaponId===item.id).length;
  const runeSlots=runeSupport(item);
+ const mageWeapon=mageWeapons.find(weapon=>weapon.id===item.catalogId);
+ const notes=mageWeapon ? item.notes.replace(/ · [23] espaços rúnicos$/, "") : item.notes;
  return <details className="inventory-item" key={item.id} data-equipped={item.equipped}>
  <summary className="inventory-compact-summary">
    <span aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
@@ -55,14 +57,15 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse,o
        <span>{categories[item.category??"gear"]}</span>
        <span>{fmt(spaces)} {spaces===1?"espaço":"espaços"}</span>
        <span>{item.equipped?"Equipado":locations[item.location??"backpack"]}</span>
-       {(armed>0||Boolean(runeSlots?.slots))&&<span>{armed}{runeSlots?.slots ? `/${runeSlots.slots}` : ""} runa(s)</span>}
+       {runeSlots?.category==="Arma" ? <span>Runas {armed}/{runeSlots.slots || 1}{runeSlots.slots ? "" : " · vaga pessoal"}</span> : (item.category==="weapon" || mageWeapon) && <span>Sem encaixe rúnico</span>}
+       {armed>0&&runeSlots?.category!=="Arma"&&<span>{armed} {armed===1?"runa armada":"runas armadas"}</span>}
      </div>
-     {item.notes&&<p className="inventory-effect-preview">{item.notes}</p>}
+     {notes&&<p className="inventory-effect-preview">{notes}</p>}
    </div>
    <ChevronDown aria-hidden="true" size={16} />
  </summary>
  <div className="inventory-item-content">
- <p>{item.quantity} unidade(s){item.notes ? ` · ${item.notes}` : ""}</p>
+ <p>{item.quantity} unidade(s){notes ? ` · ${notes}` : ""}</p>
  {onCombatAction&&(runeSlots||armed>0)&&<RuneCombat draft={draft} state={combat} itemId={item.id} send={onCombatAction}/>}
  {editable&&<button type="button" aria-expanded={editingThis} onClick={()=>setEditing(editingThis?null:item.id)}>{editingThis?"Concluir":readOnly?"Editar Item · uso":"Editar Item"}</button>}
  {editingThis&&readOnly&&<div className="inventory-item-fields">
@@ -74,8 +77,8 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse,o
  <div className="inventory-item-heading"><label className="sr-only" htmlFor={`item-name-${item.id}`}>Nome do item {index+1}</label><input id={`item-name-${item.id}`} value={item.name} maxLength={120} onChange={e=>update(item.id,{name:e.target.value})}/><button type="button" aria-label={`Remover ${item.name}`} disabled={armed>0} title={armed>0?"Desarme as runas antes de remover o item.":undefined} onClick={()=>onChange?.({...draft,inventory:draft.inventory.filter(i=>i.id!==item.id)})}><Trash2 aria-hidden="true"/></button></div>
  <div className="inventory-item-fields"><label>Categoria<select disabled={readOnly} value={item.category??"gear"} onChange={e=>update(item.id,{category:e.target.value as InventoryItem["category"]})}>{Object.entries(categories).map(([key,label])=><option key={key} value={key}>{label}</option>)}</select></label><label>Quantidade<input type="number" min={0} max={999} disabled={readOnly} value={item.quantity} onChange={e=>update(item.id,{quantity:Math.max(0,Math.min(999,Math.floor(+e.target.value)||0))})}/></label><label>Espaços por unidade<input type="number" min={0} max={9999} step="any" disabled={readOnly} value={item.spaces} onChange={e=>update(item.id,{spaces:Math.max(0,Math.min(9999,+e.target.value||0))})}/></label><label>Local<select disabled={readOnly} value={item.location??"backpack"} onChange={e=>update(item.id,{location:e.target.value as InventoryItem["location"],...(e.target.value==="external"?{equipped:false}:{})})}><option value="backpack">Mochila / guardado</option><option value="ready">Prontidão</option><option value="external">Veículo / depósito externo</option></select></label><label className="inventory-equip"><input type="checkbox" disabled={readOnly||item.location==="external"||item.quantity===0} checked={item.equipped??false} onChange={e=>update(item.id,{equipped:e.target.checked})}/> Equipado / empunhado</label></div>
  {(item.category==="armor"||item.category==="shield")&&<div className="inventory-item-fields">{([["armorClass","Bônus de CA",20],["agilityCap","Agilidade máxima na CA",99],["movementPenalty","Redução de movimento",20],["minStrength","Força mínima",20]] as const).map(([key,label,max])=><label key={key}>{label}<input type="number" min={0} max={max} disabled={readOnly} value={item[key]??(key==="agilityCap"?99:0)} onChange={e=>update(item.id,{[key]:Math.max(0,Math.min(max,+e.target.value||0))})}/></label>)}</div>}
- {mageWeapons.filter(weapon => weapon.id === item.catalogId).map(weapon => <p key={weapon.id}><strong>{weapon.slots} espaços rúnicos.</strong> {weapon.effect}</p>)}
- <label className="inventory-item-notes">Efeito, dano, munição e propriedades<textarea disabled={readOnly} maxLength={500} value={item.notes} onChange={e=>update(item.id,{notes:e.target.value})}/></label>
+ {mageWeapon&&<p>{mageWeapon.effect}</p>}
+ <label className="inventory-item-notes">Efeito, dano, munição e propriedades<textarea disabled={readOnly} maxLength={500} value={notes} onChange={e=>update(item.id,{notes:e.target.value})}/></label>
  </>}
  </div></details>;
  })}</div>

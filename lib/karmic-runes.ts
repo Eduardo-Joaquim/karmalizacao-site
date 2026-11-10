@@ -1,5 +1,6 @@
 import catalog from "@/data/karmic-runes.json";
 import weapons from "@/data/mage-weapons.json";
+import runeWeaponSupports from "@/data/rune-weapon-supports.json";
 import { STAGES, type CharacterPayload, type InventoryItem } from "@/lib/character-model";
 import type { LiveCombatState } from "@/lib/combat-types";
 import { calculateAutomaticBonuses, getFinalSkill } from "@/lib/character-rules";
@@ -37,9 +38,12 @@ export function runeInscriptionAction(draft: CharacterPayload, rune: Rune) {
 
 export function runeSupport(item: InventoryItem) {
   const native = weapons.find(weapon => weapon.id === item.catalogId);
-  if (native) return { slots: native.slots, category: "Arma", accessible: Boolean(item.quantity > 0 && item.location !== "external" && (item.equipped || item.location === "ready")) };
-  const category = item.category === "weapon" ? "Arma" : item.category === "armor" || item.category === "shield" ? "Armadura e guarda" : undefined;
-  return category ? { slots: 0, category, accessible: Boolean(item.quantity > 0 && item.location !== "external" && (item.equipped || item.location === "ready")) } : undefined;
+  const accessible = item.quantity > 0 && item.location !== "external" && (Boolean(item.equipped) || item.location === "ready");
+  if (native) return native.slots > 0 ? { slots: native.slots, category: "Arma", accessible } : undefined;
+  if (item.category === "weapon" && item.catalogId && runeWeaponSupports.includes(item.catalogId)) {
+    return { slots: 0, category: "Arma", accessible };
+  }
+  if (item.category === "armor" || item.category === "shield") return { slots: 0, category: "Armadura e guarda", accessible };
 }
 
 export function personalRuneCount(draft: CharacterPayload, state: LiveCombatState) {
@@ -53,10 +57,13 @@ export function runeInscriptionError(draft: CharacterPayload, state: LiveCombatS
   if (techniqueGradeIndex(rune.grade) + 1 > maxGrade) return "Etapa ou nível de Canalização insuficiente para este Grau.";
   const item = draft.inventory.find(entry => entry.id === itemId);
   const support = item && runeSupport(item);
-  if (itemId && !support?.accessible) return "Equipe o item compatível ou coloque-o em Prontidão antes de inscrever.";
+  if (!itemId && rune.category === "Arma") return "Escolha uma arma compatível no inventário para inscrever esta runa.";
+  if (itemId && !support) return "Este item não aceita inscrições rúnicas.";
+  if (support && !support.accessible) return "Equipe o item compatível ou coloque-o em Prontidão antes de inscrever.";
   if (support && support.category !== rune.category) return "A categoria da runa é incompatível com este item.";
-  const occupied = support?.slots ? (state.runes ?? []).filter(entry => !entry.spent && entry.weaponId === itemId).length : personalRuneCount(draft, state);
-  if (occupied >= (support?.slots || personalRuneLimit(draft)) || (state.runes?.length ?? 0) >= 100) return "Limite de Runas atingido.";
+  const onItem = (state.runes ?? []).filter(entry => !entry.spent && entry.weaponId === itemId).length;
+  if (support?.category === "Arma" && onItem >= (support.slots || 1)) return "Limite de Runas desta arma atingido.";
+  if ((!support?.slots && personalRuneCount(draft, state) >= personalRuneLimit(draft)) || (state.runes?.length ?? 0) >= 100) return "Limite de Runas atingido.";
   if (availableKarma(state) < rune.retained) return "Karma disponível insuficiente para reter a Runa.";
 }
 

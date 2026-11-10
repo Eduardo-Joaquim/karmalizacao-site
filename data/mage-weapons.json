@@ -7,7 +7,7 @@
     "strength": 0,
     "spaces": 1,
     "properties": "Focal, Ritualística, Uma Mão",
-    "slots": 3,
+    "slots": 1,
     "effect": "+1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior."
   },
   {
@@ -18,7 +18,7 @@
     "strength": 0,
     "spaces": 1,
     "properties": "Focal, Condutora, Flutuante",
-    "slots": 2,
+    "slots": 0,
     "effect": "+2 no resultado final de testes de Canalização de Karma. Por flutuar ao redor do pulso, deixa a mão livre para gestos e amplia o raio ou cone de técnicas de área em +1,5m."
   },
   {
@@ -29,7 +29,7 @@
     "strength": 1,
     "spaces": 2,
     "properties": "Focal, Condutora, Ritualística, Duas Mãos",
-    "slots": 3,
+    "slots": 2,
     "effect": "+2 na CD de todas as suas Técnicas e Runas. Ao bater a base do cajado no chão (Movimento), o alcance de todas as suas técnicas sobe em +6m e o dano soma +Etapa até o próximo turno."
   },
   {
@@ -40,7 +40,7 @@
     "strength": 1,
     "spaces": 1,
     "properties": "Focal, Precisa, Uma Mão",
-    "slots": 2,
+    "slots": 0,
     "effect": "+1 em Espírito (aumentando o Karma Máximo em +2) e +2 em testes de ataque e CA das suas Invocações/Constructos. Permite redirecionar o ponto de origem de uma técnica para o espaço de uma invocação aliada a até 12m."
   },
   {
@@ -51,7 +51,7 @@
     "strength": 0,
     "spaces": 0.5,
     "properties": "Focal, Condutora, Leve",
-    "slots": 2,
+    "slots": 0,
     "effect": "+1 em Agilidade (para Iniciativa e Pontaria/Luta com técnicas) e mantém ambas as mãos livres. Permite cravar Runas de Selo ou técnicas de toque como parte de um ataque desarmado ou disparo curto com +2 no acerto."
   },
   {
@@ -73,7 +73,7 @@
     "strength": 0,
     "spaces": 1,
     "properties": "Focal, Ritualística, Iluminação",
-    "slots": 2,
+    "slots": 0,
     "effect": "Emite luz espiritual em 6m de raio que revela inimigos furtivos/invisíveis e concede +1 na CA Parcial para aliados dentro do facho. Técnicas de suporte, barreira ou controle lançadas através da lanterna somam +1d8 de potência."
   },
   {
@@ -84,7 +84,7 @@
     "strength": 1,
     "spaces": 1.5,
     "properties": "Focal, Condutora, Alcance",
-    "slots": 2,
+    "slots": 1,
     "effect": "Permite atacar e transferir Runas de Campo/Selo a até 4,5m de distância. Em caso de Acerto Total, além do dano, aplica a condição Lento (ou impede o alvo de se afastar mais de 4,5m de você por 1 rodada)."
   }
 ]

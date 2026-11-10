@@ -13,7 +13,19 @@ Uma runa retém Karma em um suporte até que seu desenho libere a energia. **Qua
 
 Uma runa ligada a um ataque segue o teste desse ataque. Se o efeito pedir resistência, use o teste indicado na runa. Para uma runa comum que peça resistência sem fixar a CD, use oposição contra Espírito + Canalização de Karma de quem a inscreveu, com empate a favor de quem resiste. O **Escriba Kármico** usa Intelecto + Canalização, com Analítico quando aplicável, e sua CD rúnica é 12 + Intelecto + nível de Canalização. Sua Caligrafia de Combate também permite gravar com Movimento ou Extra uma runa de Grau igual ou inferior à sua Etapa, mesmo quando a tabela comum só permitiria um Grau menor.
 
-O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas de Arma podem ser inscritas em armas e nos equipamentos de mago com espaços rúnicos nativos. Runas de Armadura e Guarda vão em armaduras ou escudos. Uma arma, armadura ou escudo comum consome uma vaga pessoal por runa. Um espaço nativo usa a capacidade do próprio item e retém Karma da mesma forma. Runas de Campo e Selo e de Sangue e Corpo usam seus suportes descritos e são registradas no espaço pessoal.
+O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas de Armadura e Guarda vão em armaduras ou escudos e usam uma vaga pessoal por inscrição. Runas de Campo e Selo e de Sangue e Corpo usam os suportes descritos na fórmula e também contam no limite pessoal.
+
+### Armas que aceitam runas {#armas-que-aceitam-runas}
+
+Uma Runa de Arma precisa ser inscrita em uma das armas abaixo. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
+
+| Armas compatíveis | Máximo por arma | Vaga usada |
+|---|---|---|
+| Adaga, Espada ou machado, Lança, Montante, Machado pesado, Martelo de guerra | 1 runa | Pessoal |
+| Cajado Rúnico, Lâmina Rúnica | 2 runas | Da arma |
+| Grimório Catalisador, Correntes de Selamento | 1 runa | Da arma |
+
+As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Orbe de Ressonância, Cetro de Comando, Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas da arma.
 
 Na ficha, equipe o suporte ou deixe-o em Prontidão. Abra **Inventário e Carga → Runas do item**, selecione uma fórmula compatível e registre a inscrição depois de resolvê-la. Em ficha salva, salve primeiro qualquer mudança de treino ou equipamento. Se o suporte estiver fora do alcance ou indisponível, sua inscrição não concede os efeitos que exigem contato, porte ou uso desse suporte.
 

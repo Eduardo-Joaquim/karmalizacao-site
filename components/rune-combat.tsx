@@ -26,7 +26,7 @@ export function RuneCombat({ draft, state, send, pending = false, itemId }: {
   const support = target && runeSupport(target);
   const active = (state.runes ?? []).filter(rune => !rune.spent);
   const attached = itemId ? active.filter(rune => rune.weaponId === itemId) : active;
-  const compatible = support ? karmicRunes.filter(rune => rune.category === support.category) : karmicRunes;
+  const compatible = karmicRunes.filter(rune => support ? rune.category === support.category : rune.category !== "Arma");
   const picked = compatible.find(rune => rune.id === runeId) ?? compatible[0];
   const issue = runeInscriptionError(draft, state, picked, targetId || undefined);
   const occupied = support?.slots ? active.filter(entry => entry.weaponId === targetId).length : personalRuneCount(draft, state);
@@ -48,6 +48,8 @@ export function RuneCombat({ draft, state, send, pending = false, itemId }: {
   return <details className="live-rune-controls inventory-rune-controls">
     <summary>{itemId ? `Runas do item · ${attached.length} armadas` : `Runas Kármicas · ${retainedKarma(state)} Karma retidos`}</summary>
     <p>{availableKarma(state)} Karma disponíveis · {occupied}/{capacity} espaços {support?.slots ? "do item" : "pessoais"} ocupados.</p>
+    {support?.category === "Arma" && !support.slots && <p>Esta arma aceita uma runa. A inscrição ocupa uma vaga pessoal.</p>}
+    {itemId && !support ? <p>Este item não aceita novas inscrições. Você ainda pode desarmar as runas registradas.</p> : <>
     <div className="live-controls">
       {!itemId && <label>Suporte<select value={targetId} onChange={event => setSelectedItem(event.target.value)}><option value="">Espaço pessoal · suporte em mesa</option>{items.map(({ item }) => <option key={item.id} value={item.id}>{item.name}</option>)}</select></label>}
       <label>Runa<select value={picked.id} onChange={event => setRuneId(Number(event.target.value))}>{compatible.map(rune => <option key={rune.id} value={rune.id}>{rune.name} · {rune.retained} Karma</option>)}</select></label>
@@ -56,6 +58,7 @@ export function RuneCombat({ draft, state, send, pending = false, itemId }: {
     {issue && <p>{issue}</p>}
     <p><strong>{picked.category} · Grau {picked.grade} · {runeInscriptionAction(draft, picked)}</strong> {picked.passive}</p>
     <p><strong>Estouro</strong> {picked.burst}</p>
+    </>}
     {attached.map(inscription => {
       const rune = karmicRunes.find(entry => entry.id === inscription.runeId);
       const item = draft.inventory.find(entry => entry.id === inscription.weaponId);

@@ -20,7 +20,7 @@ test('retained Karma cannot be spent and releases on the right boundary', () => 
     let draft = createBlankCharacter();
     if (scribe) draft.className = 'Escriba Kármico';
     else draft.skills['Canalização de Karma'].base = 1;
-    draft = act(draft,{type:'armRune',runeId:1});
+    draft = act(draft,{type:'armRune',runeId:14});
     draft = normalizeCharacterPayload(draft);
     const state = liveState(draft);
     assert.equal(retainedKarma(state),2);
@@ -40,11 +40,11 @@ test('Scribe training and weapon slots remain separate from personal limit', () 
   assert.equal(bonus.attributes.Espírito,1);
   assert.equal(getFinalSkill(draft,bonus,'Tática'),1);
   assert.equal(getFinalSkill(draft,bonus,'Canalização de Karma'),1);
-  draft.inventory = [{ id:'test-weapon', catalogId:'grimorio', name:'Grimório Catalisador', quantity:1, spaces:1, notes:'', location:'ready', equipped:true }];
-  for (let i=0;i<3;i++) draft = act(draft,{type:'armRune',runeId:1,weaponId:'test-weapon'});
+  draft.inventory = [{ id:'test-weapon', catalogId:'cajado', name:'Cajado Rúnico', quantity:1, spaces:2, notes:'', location:'ready', equipped:true }];
+  for (let i=0;i<2;i++) draft = act(draft,{type:'armRune',runeId:1,weaponId:'test-weapon'});
   assert.throws(() => act(draft,{type:'armRune',runeId:1,weaponId:'test-weapon'}),/Limite/);
-  draft = act(draft,{type:'armRune',runeId:1});
-  assert.equal(retainedKarma(liveState(draft)),8);
+  draft = act(draft,{type:'armRune',runeId:14});
+  assert.equal(retainedKarma(liveState(draft)),6);
 });
 test('all 243 catalog grants preserve both extensions and validate as saved sheets', () => {
   const catalog = read('pantheon-blessings');
@@ -112,7 +112,7 @@ test('the complete Bestiary index stays outside the selector and the saved playe
 test('ordinary trained characters inscribe compatible items using their personal slots', () => {
   let draft = createBlankCharacter();
   draft.inventory = [
-    {id:'test-sword', name:'Espada', category:'weapon', location:'ready', quantity:1, spaces:1, notes:''},
+    {id:'test-sword', catalogId:'espada-ou-machado', name:'Espada', category:'weapon', location:'ready', quantity:1, spaces:1, notes:''},
     {id:'test-shield', name:'Escudo', category:'shield', location:'ready', quantity:1, spaces:1, notes:''},
   ];
   assert.throws(() => act(draft,{type:'armRune',runeId:1,weaponId:'test-sword'}), /Canalização/);
@@ -128,4 +128,25 @@ test('ordinary trained characters inscribe compatible items using their personal
   assert.equal(retainedKarma(liveState(draft)),2);
   draft = act(draft,{type:'armRune',runeId:8,weaponId:'test-shield'});
   assert.equal(liveState(draft).runes[1].weaponId,'test-shield');
+});
+
+test('weapon runes require a catalogued support and enforce the limit per item', () => {
+  let draft = createBlankCharacter();
+  draft.className = 'Escriba Kármico';
+  const equipment = read('equipment-catalog');
+  draft.inventory = ['adaga', 'espada-ou-machado', 'arco-longo', 'orbe-de-convergencia', 'grimorio'].map(id => {
+    const { name, category, spaces } = equipment.find(item => item.id === id);
+    return { id, catalogId:id, name, category, spaces, quantity:1, location:'ready', notes:'' };
+  });
+  draft.inventory.push({...draft.inventory[0],id:'custom',catalogId:undefined});
+  const arm = (sheet, weaponId) => act(sheet,{type:'armRune',runeId:1,weaponId});
+  assert.throws(() => arm(draft), /arma compatível/);
+  for (const id of ['arco-longo','orbe-de-convergencia','custom']) {
+    assert.throws(() => arm(draft,id), /não aceita/);
+  }
+  for (const id of ['adaga','espada-ou-machado','grimorio']) {
+    draft = arm(draft,id);
+    assert.throws(() => arm(draft,id), /Limite de Runas desta arma/);
+  }
+  assert.equal(retainedKarma(liveState(draft)),6);
 });

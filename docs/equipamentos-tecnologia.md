@@ -176,18 +176,18 @@ Flechas comuns não recebem o efeito de uma munição de fogo pelo mesmo nome. D
 
 ## Armas de magos {#focos-e-armas-de-conjuradores}
 
-O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. Cada arma possui espaços rúnicos próprios. As runas nesses espaços ficam fora do limite pessoal, mas ainda retêm Karma.
+O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tabela indica quais armas de magos aceitam Runas de Arma e quantas podem manter armadas. As vagas nativas ficam fora do limite pessoal e ainda retêm Karma. Consulte o capítulo de Karma para a lista de armas comuns compatíveis.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
-|---|---|---|---|---|---|
-| <span data-item="grimorio">Grimório Catalisador</span> | 35 | 1d6 Kármico | 1 | 0 | 12 m · Focal, Ritualística, Uma Mão · 3 espaços rúnicos |
-| <span data-item="orbe-de-convergencia">Orbe de Ressonância</span> | 75 | 1d8 Elemental / Kármico | 1 | 0 | 15 m · Focal, Condutora, Flutuante · 2 espaços rúnicos |
-| <span data-item="cajado">Cajado Rúnico</span> | 20 | 1d10 Contundente / Kármico | 2 | 1 | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos · 3 espaços rúnicos |
-| <span data-item="cetro-de-combate">Cetro de Comando</span> | 28 | 1d8 Contundente | 1 | 1 | 12 m · Focal, Precisa, Uma Mão · 2 espaços rúnicos |
-| <span data-item="luvas-canalizadoras">Luvas Canalizadoras</span> | A definir | 1d6 Contundente / Kármico | 0,5 | 0 | toque (1,5 m) / 9 m · Focal, Condutora, Leve · 2 espaços rúnicos |
-| <span data-item="lamina-runica">Lâmina Rúnica</span> | 22 | 1d8 Cortante / Kármico | 1 | 1 | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão · 2 espaços rúnicos |
-| <span data-item="lanterna-astral">Lanterna Astral</span> | A definir | 1d8 Divino / Kármico | 1 | 0 | 12 m · Focal, Ritualística, Iluminação · 2 espaços rúnicos |
-| <span data-item="correntes-de-selamento">Correntes de Selamento</span> | A definir | 1d8 Contundente / Perfurante | 1,5 | 1 | 4,5 m · Focal, Condutora, Alcance · 2 espaços rúnicos |
+| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
+|---|---|---|---|---|---|---|
+| <span data-item="grimorio">Grimório Catalisador</span> | 35 | 1d6 Kármico | 1 | 0 | 12 m · Focal, Ritualística, Uma Mão | 1 |
+| <span data-item="orbe-de-convergencia">Orbe de Ressonância</span> | 75 | 1d8 Elemental / Kármico | 1 | 0 | 15 m · Focal, Condutora, Flutuante | 0 |
+| <span data-item="cajado">Cajado Rúnico</span> | 20 | 1d10 Contundente / Kármico | 2 | 1 | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos | 2 |
+| <span data-item="cetro-de-combate">Cetro de Comando</span> | 28 | 1d8 Contundente | 1 | 1 | 12 m · Focal, Precisa, Uma Mão | 0 |
+| <span data-item="luvas-canalizadoras">Luvas Canalizadoras</span> | A definir | 1d6 Contundente / Kármico | 0,5 | 0 | toque (1,5 m) / 9 m · Focal, Condutora, Leve | 0 |
+| <span data-item="lamina-runica">Lâmina Rúnica</span> | 22 | 1d8 Cortante / Kármico | 1 | 1 | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão | 2 |
+| <span data-item="lanterna-astral">Lanterna Astral</span> | A definir | 1d8 Divino / Kármico | 1 | 0 | 12 m · Focal, Ritualística, Iluminação | 0 |
+| <span data-item="correntes-de-selamento">Correntes de Selamento</span> | A definir | 1d8 Contundente / Perfurante | 1,5 | 1 | 4,5 m · Focal, Condutora, Alcance | 1 |
 
 **Grimório Catalisador.** +1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior.
 
