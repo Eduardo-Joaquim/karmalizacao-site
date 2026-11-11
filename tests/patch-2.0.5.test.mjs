@@ -112,6 +112,8 @@ test("pagination includes older and damaged records without returning embedded p
   db.sqlite.exec("DELETE FROM characters");
   const draft = model.createBlankCharacter();
   draft.name = "Ficha";
+  draft.race = "Abissal";
+  draft.className = "Ocultista";
   for (let i = 0; i < 52; i++)
     db.sqlite
       .prepare(
@@ -129,6 +131,8 @@ test("pagination includes older and damaged records without returning embedded p
   assert.equal(first.characters.length, 50);
   assert(first.nextCursor);
   assert.equal(first.characters[0].payload.inventory, undefined);
+  assert.equal(first.characters[0].payload.race, "Abissal");
+  assert.equal(first.characters[0].payload.className, "Ocultista");
   const second = await (
     await api.GET(
       new Request(

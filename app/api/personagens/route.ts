@@ -104,7 +104,13 @@ export async function GET(request: Request) {
         const payload = characterPayloadSchema.parse(JSON.parse(row.payload));
         return {
           ...row,
-          payload: { name: payload.name, portraitImage: payload.portraitImage },
+          payload: {
+            name: payload.name,
+            portraitImage: payload.portraitImage,
+            race: payload.race,
+            className: payload.className,
+            stage: payload.stage,
+          },
           invalid: false,
         };
       } catch {
