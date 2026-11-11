@@ -27,7 +27,7 @@ npm run start
 
 As páginas estão em `app/`, os componentes em `components/` e as regras executáveis em `lib/`. `docs/` contém manuscritos, `data/` contém os dados usados pelo site e `scripts/` contém os geradores. `tests/` reúne as verificações.
 
-`npm run content:build` regenera o conteúdo editorial. Apenas essa etapa requer Python 3, Pandoc e lxml. Executar o site com os JSON já versionados não exige essas ferramentas. `scripts/compile-region.py` é o compilador compartilhado das cortes; `data/compiler-regions.json` registra as regiões. Os comandos antigos continuam como entradas de compatibilidade.
+`npm run content:build` regenera o conteúdo editorial. A geração editorial e os testes de catálogo requerem Python 3, Pandoc e lxml (`python3 -m pip install -r requirements-dev.txt`). Executar o site com os JSON já versionados não exige essas ferramentas. `scripts/compile-region.py` é o compilador compartilhado das cortes; `data/compiler-regions.json` registra as regiões. Os comandos antigos continuam como entradas de compatibilidade.
 
 `data/equipment-mechanics.json` registra as propriedades dos equipamentos por identificador estável. O identificador acompanha o item no manuscrito. Mudar seu nome de exibição preserva a mecânica; mudar a carga exige atualizar a tabela e o registro correspondente. Divergências interrompem a geração, em vez de alterar a regra silenciosamente.
 
