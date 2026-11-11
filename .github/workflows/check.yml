@@ -20,7 +20,16 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-dev.txt
       - run: python -m pip install -r requirements-dev.txt
-      - run: sudo apt-get update && sudo apt-get install -y pandoc
+      - name: Disponibilizar Pandoc
+        run: |
+          python - <<'PYCODE'
+          import os
+          from pathlib import Path
+          import pypandoc
+          with open(os.environ["GITHUB_PATH"], "a") as output:
+              output.write(str(Path(pypandoc.get_pandoc_path()).parent) + "\n")
+          PYCODE
+      - run: pandoc --version
       - run: npm ci
       - run: npm run format:check
       - run: npm run check
