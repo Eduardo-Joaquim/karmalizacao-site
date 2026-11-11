@@ -1,5 +1,313 @@
-.divine-editor{display:grid;gap:20px;min-width:0;font-size:14px}.divine-altar{position:relative;overflow:hidden;border:1px solid #b99755;border-radius:14px;padding:24px;background:radial-gradient(ellipse at 100% 0%,#30405750,transparent 60%),linear-gradient(135deg,#29251d,#12151d);color:#eee8da;min-width:0}.divine-altar>header{border-bottom:1px solid #b9975555;padding-bottom:18px;margin-bottom:18px}.divine-altar header small{letter-spacing:.14em;color:#e7c578;font-size:12px}.divine-altar h3{font-family:Georgia,serif;color:#f4d991;font-size:26px;margin:8px 0}.divine-altar p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}.divine-altar header span{display:inline-block;color:#d7e4ed;font-size:13px}.divine-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}.divine-grid>section{background:#090b1180;border:1px solid #ffffff15;padding:16px;border-radius:8px}.divine-grid h4{color:#e7c578;margin:0 0 10px}.divine-field{display:grid;gap:8px;font-size:14px;min-width:0}.divine-field input,.divine-field textarea,.divine-field select{box-sizing:border-box;width:100%;min-width:0;background:#12151c;color:#f3eee4;border:1px solid #9f855255;border-radius:6px;padding:10px;font:inherit}.deity-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:18px 0}.deity-picker button{display:flex;flex-direction:column;text-align:left;gap:7px;height:auto;min-height:112px;white-space:normal;border:1px solid #8e794c;padding:14px;border-radius:8px;background:#12151d;color:#e5dfd5}.deity-picker button[aria-pressed=true]{border-color:#f2ce78;background:#473a23;box-shadow:inset 3px 0 #e7c578}.deity-picker small{font-size:12px;line-height:1.5;color:#bec8d4}.deity-picker span{font-size:13px}.divine-editor button:focus-visible{outline:2px solid #f2ce78;outline-offset:3px}.divine-roll{display:flex;flex-direction:column;gap:5px;padding:12px 16px;border-left:3px solid #d4b46a;background:#18222b;color:#e9e5da}.divine-roll span{font-size:12px;color:#c7d3df}.divine-suggestion{padding:12px;border:1px dashed #b9975570;border-radius:8px}.divine-communion{border-color:#86a7bd}.divine-outgrant{display:flex;flex-direction:column;gap:5px;padding:12px 14px;border-left:3px solid #d9bd7a;background:linear-gradient(110deg,#51401e50,#1a304455);margin:12px 0;color:#eaddbd;font-size:13px}.divine-outgrant strong{color:#f6d995}.divine-outgrant small{font-size:12px;color:#c7d6e1}@media(max-width:650px){.divine-grid{grid-template-columns:1fr}.divine-altar{padding:16px}.deity-picker{grid-template-columns:1fr}.divine-altar h3{font-size:23px}}@media print{.divine-altar,.divine-grid>section,.divine-roll{background:white;color:black;box-shadow:none}.divine-altar h3,.divine-altar h4,.divine-roll span{color:black}}
-.world-blessing{position:relative;isolation:isolate;overflow:hidden;grid-column:1/-1;padding:clamp(20px,4vw,36px);border:1px solid #b99a5c;border-radius:16px;background:radial-gradient(ellipse at top right,#7d602c38,transparent 55%),linear-gradient(130deg,#211d18,#12151e);box-shadow:inset 0 0 0 5px #e5c77c08;color:#e9e4d9;font-size:14px;line-height:1.75;min-width:0}.world-blessing-seal{position:absolute;z-index:-1;right:-45px;top:-45px;width:260px;fill:none;stroke:#d7b86d;stroke-width:.6;opacity:.17;pointer-events:none}.world-blessing-label{display:flex;gap:10px;align-items:center;letter-spacing:.12em;color:#e9cb82;font-size:12px}.world-blessing-label svg{width:20px}.world-blessing header h5{font-family:Georgia,serif;font-size:clamp(25px,4vw,34px);line-height:1.25;color:#f6df9e;margin:15px 0}.world-blessing header p{font-size:13px;color:#b8c9dc;margin:0 0 10px}.world-blessing header strong,.world-blessing header em{display:block}.world-blessing header em{color:#d0bb89;font-size:14px}.world-blessing-story{font-size:16px;max-width:85ch;margin:24px 0}.world-blessing-context{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:22px 0}.world-blessing-context section{padding:18px;background:#080b1266;border-top:1px solid #b99a5c66;border-radius:0 0 8px 8px}.world-blessing h6{font-size:13px;color:#e7ca87;margin:0 0 8px;letter-spacing:.04em}.world-blessing-context p{margin:0}.world-blessing-rules{padding-top:20px;border-top:1px solid #b99a5c55;overflow-wrap:anywhere}.noble-trait-domain{border-color:#7698b770;background:linear-gradient(145deg,#1c2935,#12161d)}.noble-trait-domain>header{color:#accfe9}.noble-trait-domain .noble-trait-mechanics{padding:12px 14px;border-left:2px solid #759cbb;margin-top:12px;background:#090e1660}@media(max-width:650px){.world-blessing-context{grid-template-columns:1fr}.world-blessing{padding:20px}.world-blessing-seal{width:180px}}@media print{.world-blessing{background:white;color:black;break-inside:avoid}.world-blessing h5,.world-blessing h6,.world-blessing header strong{color:black}}
+.divine-editor {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+  font-size: 14px;
+}
+.divine-altar {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #b99755;
+  border-radius: 14px;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #30405750, transparent 60%),
+    linear-gradient(135deg, #29251d, #12151d);
+  color: #eee8da;
+  min-width: 0;
+}
+.divine-altar > header {
+  border-bottom: 1px solid #b9975555;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+.divine-altar header small {
+  letter-spacing: 0.14em;
+  color: #e7c578;
+  font-size: 12px;
+}
+.divine-altar h3 {
+  font-family: Georgia, serif;
+  color: #f4d991;
+  font-size: 26px;
+  margin: 8px 0;
+}
+.divine-altar p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+}
+.divine-altar header span {
+  display: inline-block;
+  color: #d7e4ed;
+  font-size: 13px;
+}
+.divine-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+.divine-grid > section {
+  background: #090b1180;
+  border: 1px solid #ffffff15;
+  padding: 16px;
+  border-radius: 8px;
+}
+.divine-grid h4 {
+  color: #e7c578;
+  margin: 0 0 10px;
+}
+.divine-field {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  min-width: 0;
+}
+.divine-field input,
+.divine-field textarea,
+.divine-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  background: #12151c;
+  color: #f3eee4;
+  border: 1px solid #9f855255;
+  border-radius: 6px;
+  padding: 10px;
+  font: inherit;
+}
+.deity-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+.deity-picker button {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 7px;
+  height: auto;
+  min-height: 112px;
+  white-space: normal;
+  border: 1px solid #8e794c;
+  padding: 14px;
+  border-radius: 8px;
+  background: #12151d;
+  color: #e5dfd5;
+}
+.deity-picker button[aria-pressed="true"] {
+  border-color: #f2ce78;
+  background: #473a23;
+  box-shadow: inset 3px 0 #e7c578;
+}
+.deity-picker small {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #bec8d4;
+}
+.deity-picker span {
+  font-size: 13px;
+}
+.divine-editor button:focus-visible {
+  outline: 2px solid #f2ce78;
+  outline-offset: 3px;
+}
+.divine-roll {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 16px;
+  border-left: 3px solid #d4b46a;
+  background: #18222b;
+  color: #e9e5da;
+}
+.divine-roll span {
+  font-size: 12px;
+  color: #c7d3df;
+}
+.divine-suggestion {
+  padding: 12px;
+  border: 1px dashed #b9975570;
+  border-radius: 8px;
+}
+.divine-communion {
+  border-color: #86a7bd;
+}
+.divine-outgrant {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 14px;
+  border-left: 3px solid #d9bd7a;
+  background: linear-gradient(110deg, #51401e50, #1a304455);
+  margin: 12px 0;
+  color: #eaddbd;
+  font-size: 13px;
+}
+.divine-outgrant strong {
+  color: #f6d995;
+}
+.divine-outgrant small {
+  font-size: 12px;
+  color: #c7d6e1;
+}
+@media (max-width: 650px) {
+  .divine-grid {
+    grid-template-columns: 1fr;
+  }
+  .divine-altar {
+    padding: 16px;
+  }
+  .deity-picker {
+    grid-template-columns: 1fr;
+  }
+  .divine-altar h3 {
+    font-size: 23px;
+  }
+}
+@media print {
+  .divine-altar,
+  .divine-grid > section,
+  .divine-roll {
+    background: white;
+    color: black;
+    box-shadow: none;
+  }
+  .divine-altar h3,
+  .divine-altar h4,
+  .divine-roll span {
+    color: black;
+  }
+}
+.world-blessing {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  grid-column: 1/-1;
+  padding: clamp(20px, 4vw, 36px);
+  border: 1px solid #b99a5c;
+  border-radius: 16px;
+  background:
+    radial-gradient(ellipse at top right, #7d602c38, transparent 55%),
+    linear-gradient(130deg, #211d18, #12151e);
+  box-shadow: inset 0 0 0 5px #e5c77c08;
+  color: #e9e4d9;
+  font-size: 14px;
+  line-height: 1.75;
+  min-width: 0;
+}
+.world-blessing-seal {
+  position: absolute;
+  z-index: -1;
+  right: -45px;
+  top: -45px;
+  width: 260px;
+  fill: none;
+  stroke: #d7b86d;
+  stroke-width: 0.6;
+  opacity: 0.17;
+  pointer-events: none;
+}
+.world-blessing-label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  letter-spacing: 0.12em;
+  color: #e9cb82;
+  font-size: 12px;
+}
+.world-blessing-label svg {
+  width: 20px;
+}
+.world-blessing header h5 {
+  font-family: Georgia, serif;
+  font-size: clamp(25px, 4vw, 34px);
+  line-height: 1.25;
+  color: #f6df9e;
+  margin: 15px 0;
+}
+.world-blessing header p {
+  font-size: 13px;
+  color: #b8c9dc;
+  margin: 0 0 10px;
+}
+.world-blessing header strong,
+.world-blessing header em {
+  display: block;
+}
+.world-blessing header em {
+  color: #d0bb89;
+  font-size: 14px;
+}
+.world-blessing-story {
+  font-size: 16px;
+  max-width: 85ch;
+  margin: 24px 0;
+}
+.world-blessing-context {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 22px 0;
+}
+.world-blessing-context section {
+  padding: 18px;
+  background: #080b1266;
+  border-top: 1px solid #b99a5c66;
+  border-radius: 0 0 8px 8px;
+}
+.world-blessing h6 {
+  font-size: 13px;
+  color: #e7ca87;
+  margin: 0 0 8px;
+  letter-spacing: 0.04em;
+}
+.world-blessing-context p {
+  margin: 0;
+}
+.world-blessing-rules {
+  padding-top: 20px;
+  border-top: 1px solid #b99a5c55;
+  overflow-wrap: anywhere;
+}
+.noble-trait-domain {
+  border-color: #7698b770;
+  background: linear-gradient(145deg, #1c2935, #12161d);
+}
+.noble-trait-domain > header {
+  color: #accfe9;
+}
+.noble-trait-domain .noble-trait-mechanics {
+  padding: 12px 14px;
+  border-left: 2px solid #759cbb;
+  margin-top: 12px;
+  background: #090e1660;
+}
+@media (max-width: 650px) {
+  .world-blessing-context {
+    grid-template-columns: 1fr;
+  }
+  .world-blessing {
+    padding: 20px;
+  }
+  .world-blessing-seal {
+    width: 180px;
+  }
+}
+@media print {
+  .world-blessing {
+    background: white;
+    color: black;
+    break-inside: avoid;
+  }
+  .world-blessing h5,
+  .world-blessing h6,
+  .world-blessing header strong {
+    color: black;
+  }
+}
 
 .catalog-grant > .catalog-blessing-details {
   margin-block: 1rem;

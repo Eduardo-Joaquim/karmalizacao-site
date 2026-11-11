@@ -1,5 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import {registerHooks} from "node:module";
+const platformHooks=registerHooks({resolve(specifier,context,next){
+ if(specifier==='cloudflare:workers') return {url:'data:text/javascript,export const env={};export const waitUntil=()=>{};',shortCircuit:true};
+ return next(specifier,context);
+}});
 
 const developmentPreviewMeta =
   /<meta(?=[^>]*\bname=["']codex-preview["'])(?=[^>]*\bcontent=["']development["'])[^>]*>/i;
@@ -30,4 +35,5 @@ test("public page omits development preview metadata", async () => {
     /^text\/html\b/i,
   );
   assert.doesNotMatch(await response.text(), developmentPreviewMeta);
+  platformHooks.deregister();
 });

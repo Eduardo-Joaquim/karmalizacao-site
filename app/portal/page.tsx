@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { ArrowRight, BookOpen, PenLine, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 import { getChatGPTUser } from "@/app/chatgpt-auth";
 import { SiteHeader } from "@/components/site-header";
@@ -19,7 +19,8 @@ export default async function PortalPage() {
         <section className="portal-welcome">
           <div>
             <Badge variant="outline" className="eyebrow-badge">
-              <Sparkles aria-hidden="true" /> {user ? "arquivo pessoal" : "arquivo do mundo"}
+              <Sparkles aria-hidden="true" />{" "}
+              {user ? "arquivo pessoal" : "arquivo do mundo"}
             </Badge>
             <p className="hero-kicker">Bem-vindo ao outro lado, {firstName}.</p>
             <h1>Qual caminho deseja abrir?</h1>
@@ -34,7 +35,10 @@ export default async function PortalPage() {
         </section>
 
         <section className="portal-choice-grid" aria-label="Escolha uma área">
-          <Link href="/personagem" className="portal-choice portal-choice-character">
+          <Link
+            href="/personagem"
+            className="portal-choice portal-choice-character"
+          >
             <span className="choice-index">I</span>
             <PenLine className="choice-icon" aria-hidden="true" />
             <div>
@@ -57,8 +61,9 @@ export default async function PortalPage() {
               <p className="choice-kicker">Pesquisar e consultar</p>
               <h2>Livro de Regras</h2>
               <p>
-                Navegue pelos 21 capítulos, incluindo o Bestiário, em uma biblioteca pensada
-                para computador, celular e uso no meio da sessão.
+                Navegue pelos 21 capítulos, incluindo o Bestiário, em uma
+                biblioteca pensada para computador, celular e uso no meio da
+                sessão.
               </p>
             </div>
             <span className="choice-action">
@@ -67,7 +72,18 @@ export default async function PortalPage() {
           </Link>
         </section>
 
-        <Link href="/mestre" className="portal-choice"><div><p className="choice-kicker">Conduzir a sessão</p><h2>Escudo do Mestre</h2><p>Combate conectado, Forja de Ameaças, consulta rápida e dossiês.</p></div><span className="choice-action">Abrir central <ArrowRight aria-hidden="true"/></span></Link>
+        <Link href="/mestre" className="portal-choice">
+          <div>
+            <p className="choice-kicker">Conduzir a sessão</p>
+            <h2>Escudo do Mestre</h2>
+            <p>
+              Combate conectado, Forja de Ameaças, consulta rápida e dossiês.
+            </p>
+          </div>
+          <span className="choice-action">
+            Abrir central <ArrowRight aria-hidden="true" />
+          </span>
+        </Link>
         <aside className="portal-note">
           <span>Nota do arquivo</span>
           <p>

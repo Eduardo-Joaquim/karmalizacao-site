@@ -1,94 +1,1421 @@
 "use client";
+/* eslint-disable @next/next/no-img-element -- Portraits are validated embedded thumbnails. */
+
+import "@/app/corrupted-form.css";
+import "@/app/inventory.css";
+import "@/app/live-combat.css";
+import "@/app/table-play.css";
+
+import { CombatResourceFeedback } from "@/components/combat-resource-feedback";
 import { InventoryManager } from "@/components/inventory-manager";
 import { RuneCombat } from "@/components/rune-combat";
-import { availableKarma } from "@/lib/karmic-runes";
-import { hasAxiom } from "@/lib/personal-path";
-import { hasAwakenedPath } from "@/lib/personal-path";
-import {damageResistance} from "@/lib/damage-types";
-import {DAMAGE_TYPES,PRIMARY_ELEMENTS,calculateElementalDefense,type DamageType} from "@/lib/technique-matrices";
-import {calculateInvocationStats, invocationAttack} from '@/lib/invocation-rules';
-import {PRESENCE_SKILLS} from '@/lib/character-model';
-import { playableBlessingGrants, blessingAttribute } from '@/lib/divine-blessings';
-import { CombatResourceFeedback } from "@/components/combat-resource-feedback";
+import { TechniqueCost } from "@/components/technique-cost";
+import { alchemyState } from "@/lib/alchemy";
+import {
+  ALL_SKILLS,
+  ATTRIBUTES,
+  type AttributeName,
+  type CharacterPayload,
+} from "@/lib/character-data";
+import { PRESENCE_SKILLS } from "@/lib/character-model";
+import {
+  calculateAutomaticBonuses,
+  getFinalAttribute,
+  getFinalSkill,
+  getSkillTest,
+  skillBonusExplanation,
+  SOCIAL_SKILLS,
+} from "@/lib/character-rules";
+import {
+  characterMax,
+  damageDice,
+  defaultApproach,
+  impetusLimit,
+  liveState,
+  randomDice,
+  skillRoll,
+} from "@/lib/combat-engine";
 import { combatId } from "@/lib/combat-id";
-import { useMemo, useState } from 'react';
-import { ALL_SKILLS, ATTRIBUTES, type AttributeName, type CharacterPayload } from '@/lib/character-data';
-import { calculateAutomaticBonuses, getFinalAttribute, getFinalSkill, getSkillTest, skillBonusExplanation, SOCIAL_SKILLS } from '@/lib/character-rules';
-import { characterMax, impetusLimit, defaultApproach, damageDice, liveState, skillRoll, randomDice } from '@/lib/combat-engine';
-import { playerArts, type CombatArt } from '@/lib/combat-repertoire';
-import type { CombatAction } from '@/lib/combat-types';
-import { damageForAttack, domainActivation, domainRefinementLabels, resolveAttack } from '@/lib/table-play';
-import { alchemyState } from '@/lib/alchemy';
-import { corruptedFormState, corruptionControlDC } from '@/lib/corrupted-form';
-import { TechniqueCost } from '@/components/technique-cost';
-export type CombatDispatcher=(action:CombatAction)=>Promise<void>;
-export function CombatFeed({draft}:{draft:CharacterPayload}){return <ol className="live-feed" aria-label={`Ações de ${draft.name}`}>{[...(draft.combatState?.combatFeed??[])].reverse().map(e=><li key={e.id}><time>{new Date(e.timestamp).toLocaleTimeString('pt-BR',{timeZone:'America/Sao_Paulo'})}</time><strong>{e.actorName} · {e.title}</strong>{e.rollFormula&&<span>{e.rollFormula}: [{e.diceResults?.map((die,index)=><span key={index}>{index>0?', ':''}{e.visual?.type==='roll'&&index===e.diceResults?.indexOf(e.visual.selected)?<mark>{die}</mark>:die}</span>)}] → {e.total}</span>}{e.karmaSpent!==undefined&&<span>−{e.karmaSpent} Karma</span>}{e.lifeDelta!==undefined&&e.lifeDelta!==0&&<span>{e.lifeDelta>0?'+':''}{e.lifeDelta} Vida</span>}<p>{e.details}</p></li>)}</ol>}
-export function PlayerCombatMode({draft,send,status,error,pending=0}:{draft:CharacterPayload;send:CombatDispatcher;status:string;error?:string;pending?:number}){
- const a=useMemo(()=>calculateAutomaticBonuses(draft),[draft]),max=characterMax(draft),s=liveState(draft);
- const [amount,setAmount]=useState(5),[resist,setResist]=useState(true),[filter,setFilter]=useState('Todas'),[query,setQuery]=useState(''),[circumstance,setCircumstance]=useState<-1|0|1>(0),[attackSkill,setAttackSkill]=useState('Luta'),[condition,setCondition]=useState(''),[notice,setNotice]=useState(''),[manual,setManual]=useState<Record<string,string>>({});
- const [targetArmor,setTargetArmor]=useState(""),[conditionRounds,setConditionRounds]=useState("");
- const approachFor=(skill:string)=>(SOCIAL_SKILLS as readonly string[]).includes(skill) ? "Presença" : skillAttrs[skill]??defaultApproach(skill);
- const [damageType,setDamageType]=useState<DamageType>("Marcial");
- const [primaryDefenses,setPrimaryDefenses]=useState<Record<string,number>>({});
- const incomingElement=damageType.startsWith('Elemental / ')?damageType.slice('Elemental / '.length):undefined;
- const elementalProtection=incomingElement?calculateElementalDefense(primaryDefenses,incomingElement):0;
- const protection=Math.max(damageResistance(draft,damageType),elementalProtection);
- const [spendImpetus,setSpendImpetus]=useState(false);
- const impetus=spendImpetus&&Boolean(s.impetus);
+import { playerArts, type CombatArt } from "@/lib/combat-repertoire";
+import type { CombatAction } from "@/lib/combat-types";
+import { corruptedFormState, corruptionControlDC } from "@/lib/corrupted-form";
+import { damageResistance } from "@/lib/damage-types";
+import {
+  blessingAttribute,
+  playableBlessingGrants,
+} from "@/lib/divine-blessings";
+import {
+  calculateInvocationStats,
+  invocationAttack,
+} from "@/lib/invocation-rules";
+import { availableKarma } from "@/lib/karmic-runes";
+import { hasAwakenedPath, hasAxiom } from "@/lib/personal-path";
+import {
+  damageForAttack,
+  domainActivation,
+  domainRefinementLabels,
+  resolveAttack,
+} from "@/lib/table-play";
+import {
+  calculateElementalDefense,
+  DAMAGE_TYPES,
+  PRIMARY_ELEMENTS,
+  type DamageType,
+} from "@/lib/technique-matrices";
+import { useMemo, useState } from "react";
+export type CombatDispatcher = (action: CombatAction) => Promise<void>;
+export function CombatFeed({ draft }: { draft: CharacterPayload }) {
+  return (
+    <ol className="live-feed" aria-label={`Ações de ${draft.name}`}>
+      {[...(draft.combatState?.combatFeed ?? [])].reverse().map((e) => (
+        <li key={e.id}>
+          <time>
+            {new Date(e.timestamp).toLocaleTimeString("pt-BR", {
+              timeZone: "America/Sao_Paulo",
+            })}
+          </time>
+          <strong>
+            {e.actorName} · {e.title}
+          </strong>
+          {e.rollFormula && (
+            <span>
+              {e.rollFormula}: [
+              {e.diceResults?.map((die, index) => (
+                <span key={index}>
+                  {index > 0 ? ", " : ""}
+                  {e.visual?.type === "roll" &&
+                  index === e.diceResults?.indexOf(e.visual.selected) ? (
+                    <mark>{die}</mark>
+                  ) : (
+                    die
+                  )}
+                </span>
+              ))}
+              ] → {e.total}
+            </span>
+          )}
+          {e.karmaSpent !== undefined && <span>−{e.karmaSpent} Karma</span>}
+          {e.lifeDelta !== undefined && e.lifeDelta !== 0 && (
+            <span>
+              {e.lifeDelta > 0 ? "+" : ""}
+              {e.lifeDelta} Vida
+            </span>
+          )}
+          <p>{e.details}</p>
+        </li>
+      ))}
+    </ol>
+  );
+}
+export function PlayerCombatMode({
+  draft,
+  send,
+  status,
+  error,
+  pending = 0,
+}: {
+  draft: CharacterPayload;
+  send: CombatDispatcher;
+  status: string;
+  error?: string;
+  pending?: number;
+}) {
+  const a = useMemo(() => calculateAutomaticBonuses(draft), [draft]),
+    max = characterMax(draft),
+    s = liveState(draft);
+  const [amount, setAmount] = useState(5),
+    [resist, setResist] = useState(true),
+    [filter, setFilter] = useState("Todas"),
+    [query, setQuery] = useState(""),
+    [circumstance, setCircumstance] = useState<-1 | 0 | 1>(0),
+    [attackSkill, setAttackSkill] = useState("Luta"),
+    [condition, setCondition] = useState(""),
+    [notice, setNotice] = useState(""),
+    [manual, setManual] = useState<Record<string, string>>({});
+  const [targetArmor, setTargetArmor] = useState(""),
+    [conditionRounds, setConditionRounds] = useState("");
+  const approachFor = (skill: string) =>
+    (SOCIAL_SKILLS as readonly string[]).includes(skill)
+      ? "Presença"
+      : (skillAttrs[skill] ?? defaultApproach(skill));
+  const [damageType, setDamageType] = useState<DamageType>("Marcial");
+  const [primaryDefenses, setPrimaryDefenses] = useState<
+    Record<string, number>
+  >({});
+  const incomingElement = damageType.startsWith("Elemental / ")
+    ? damageType.slice("Elemental / ".length)
+    : undefined;
+  const elementalProtection = incomingElement
+    ? calculateElementalDefense(primaryDefenses, incomingElement)
+    : 0;
+  const protection = Math.max(
+    damageResistance(draft, damageType),
+    elementalProtection,
+  );
+  const [spendImpetus, setSpendImpetus] = useState(false);
+  const impetus = spendImpetus && Boolean(s.impetus);
 
- const [skillAttrs,setSkillAttrs]=useState<Record<string,AttributeName>>({}),[skillExtras,setSkillExtras]=useState<Record<string,string>>({});
- const op=(data:Omit<CombatAction,'id'|'actorName'|'title'> & Record<string,unknown>,title:string)=>{const action={...data,...(typeof data.details==='string'?{details:data.details.slice(0,1500)}:{}),id:combatId(),actorName:draft.name||'Personagem',title:title.slice(0,120)} as CombatAction;void send(action).catch(e=>setNotice(e.message));};
- function roll(skill:string){try{const r=skillRoll(draft,skill,PRESENCE_SKILLS.includes(skill)?'Presença':approachFor(skill),circumstance,undefined,undefined,Number(skillExtras[skill])||0,0,impetus);setNotice(`${skill}: [${r.dice.join(', ')}] · escolhido ${r.selected} ${r.total-r.selected>=0?'+':''}${r.total-r.selected} = ${r.total}`);op({type:'execute',cost:0,kind:'skill',impetus,selection:r.selection,rollFormula:r.formula,diceResults:r.dice,total:r.total,details:r.test.inventoryPenalty.sources.join('; ')},`Teste de ${skill}`);}catch(e){setNotice((e as Error).message);}}
- const [pendingOutcome,setPendingOutcome]=useState<{data:Record<string,unknown>; title:string; total?:number; dice?:number[]}|null>(null);
- function execute(art:CombatArt){
-  if(art.id==='karma-barrier'||art.id==='karma-barrier-reinforced'){op({type:'barrier',reinforced:art.id.endsWith('reinforced')},art.name);return;}
+  const [skillAttrs, setSkillAttrs] = useState<Record<string, AttributeName>>(
+      {},
+    ),
+    [skillExtras, setSkillExtras] = useState<Record<string, string>>({});
+  const op = (
+    data: Omit<CombatAction, "id" | "actorName" | "title"> &
+      Record<string, unknown>,
+    title: string,
+  ) => {
+    const action = {
+      ...data,
+      ...(typeof data.details === "string"
+        ? { details: data.details.slice(0, 1500) }
+        : {}),
+      id: combatId(),
+      actorName: draft.name || "Personagem",
+      title: title.slice(0, 120),
+    } as CombatAction;
+    void send(action).catch((e) => setNotice(e.message));
+  };
+  function roll(skill: string) {
+    try {
+      const r = skillRoll(
+        draft,
+        skill,
+        PRESENCE_SKILLS.includes(skill) ? "Presença" : approachFor(skill),
+        circumstance,
+        undefined,
+        undefined,
+        Number(skillExtras[skill]) || 0,
+        0,
+        impetus,
+      );
+      setNotice(
+        `${skill}: [${r.dice.join(", ")}] · escolhido ${r.selected} ${r.total - r.selected >= 0 ? "+" : ""}${r.total - r.selected} = ${r.total}`,
+      );
+      op(
+        {
+          type: "execute",
+          cost: 0,
+          kind: "skill",
+          impetus,
+          selection: r.selection,
+          rollFormula: r.formula,
+          diceResults: r.dice,
+          total: r.total,
+          details: r.test.inventoryPenalty.sources.join("; "),
+        },
+        `Teste de ${skill}`,
+      );
+    } catch (e) {
+      setNotice((e as Error).message);
+    }
+  }
+  const [pendingOutcome, setPendingOutcome] = useState<{
+    data: Record<string, unknown>;
+    title: string;
+    total?: number;
+    dice?: number[];
+  } | null>(null);
+  function execute(art: CombatArt) {
+    if (art.id === "karma-barrier" || art.id === "karma-barrier-reinforced") {
+      op(
+        { type: "barrier", reinforced: art.id.endsWith("reinforced") },
+        art.name,
+      );
+      return;
+    }
 
-  const cost=art.cost??Number(manual[art.id]);if(art.cost===null&&(!manual[art.id]||!Number.isInteger(cost)||cost<0)){setNotice('Informe o custo variável desta execução.');return;}
-  try{
-   if(art.skill==='Manifestação de Bênção'&&!art.attribute)throw Error('Registre o atributo regente desta Bênção na ficha.');
-   if(cost>availableKarma(s))throw Error('Karma insuficiente.');
-   const test=art.skill&&ALL_SKILLS.includes(art.skill as typeof ALL_SKILLS[number])?skillRoll(draft,art.skill,ATTRIBUTES.includes(art.attribute!)?art.attribute:undefined,circumstance,'technique',undefined,0,0,impetus):null;
-   const damage=art.damage?damageDice(art.damage,Boolean(test?.naturalTwenty)):null;
-   const outcome=test&&art.damage&&targetArmor!==""?resolveAttack(test.total,Number(targetArmor)):undefined;
-   const finalDamage=outcome?damageForAttack(damage?.total??0,outcome):undefined;
-   const data={type:'execute',techniqueId:art.techniqueId,impetus:Boolean(test&&impetus),selection:test?.selection,cost,kind:'technique',rollFormula:test?.formula,diceResults:test?.dice,total:test?.total,succeeded:outcome?outcome!=='Falha':undefined,details:[test?`${art.skill}: ${test.total}${outcome?` · ${outcome} · ${finalDamage} dano antes das proteções`:''}`:'Resolva os requisitos da ação.',damage?`Dano-base registrado: ${damage.formula} [${damage.dice.join(', ')}] = ${damage.total}. ${test?.naturalTwenty?'Dados-base já dobrados por 20 natural.':''} Confira acerto, modificadores e proteções antes de aplicar.`:'',art.category,art.usage].join(' ')};
-   const record=draft.techniques.find(t=>t.id===art.techniqueId);
-   if(!outcome&&record?.matrix==='Corrupto'&&['I','II'].includes(record.grade.replace('Grau ',''))){
-    setPendingOutcome({data,title:art.name,total:test?.total,dice:test?.dice});return;
-   }
-   op(data as Parameters<typeof op>[0],art.name);
-   setNotice(`${art.name} · ${cost} Karma${test?` · teste ${test.total}`:''}${outcome?` · ${outcome} · dano ${finalDamage}`:damage?` · dano ${damage.total}`:''}`);
-  }catch(e){setNotice((e as Error).message);}
- }
- const tolerance=alchemyState(getFinalAttribute(draft,a,'Constituição'),draft.alchemicalSaturation,hasAxiom(draft,8)?2:0),form=corruptedFormState(draft,getFinalSkill(draft,a,'Controle da Corrupção'));
- const arts=playerArts(draft),skills=ALL_SKILLS.filter(n=>(filter==='Todas'||filter==='Treinadas'&&getFinalSkill(draft,a,n)>0||filter==='Combate'&&['Luta','Pontaria','Reflexos','Atletismo','Acrobacia','Canalização de Karma','Controle da Corrupção',...ALL_SKILLS.filter(x=>x.startsWith('Controle de'))].includes(n))&&n.toLocaleLowerCase('pt-BR').includes(query.toLocaleLowerCase('pt-BR')));
- return <section className="player-combat live-ui" aria-label={`Combate de ${draft.name}`}>
-  <p className="combat-print-summary">Vida {s.currentLife}/{max.life} · Karma {s.currentKarma}/{max.karma} · Escudo {s.tempShield} · Saturação {draft.alchemicalSaturation} · Corrupção {draft.corruption.charge}/10 · Condições: {s.activeConditions.join(', ')||'nenhuma'}</p><CombatResourceFeedback life={s.currentLife} karma={s.currentKarma} shield={s.tempShield} maxLife={max.life}/><header className="combat-title"><div><small>FICHA TÁTICA · {draft.stage}</small><h1>{draft.name||'Personagem'}</h1><p>{draft.race} · {draft.className}</p></div>{draft.portraitImage&&<img src={draft.portraitImage} alt="Retrato do personagem" width={72} height={72}/>}<span role="status">{pending?'Registrando…':status}</span></header>
-  {error&&<p role="alert" className="combat-error">{error} A ação só é confirmada quando registrada.</p>}
-  {s.lastActionLog?.details && /Metade da Vida|20 natural ·/.test(s.lastActionLog.details) && <p className="combat-notice" role="status">{s.lastActionLog.details}</p>}
-  <div className="boss-phase-list">{Object.values(s.bossPhases??{}).map(p=><article key={p.bossKey}><small>{p.bossName}</small><h3>{p.title}</h3><p>{p.pending?"Aguarda resolução da transformação":`CA ${p.ca} · Fase ativa`}</p><p>{p.defense}</p>{p.unlocked.length>0&&<p>{p.unlocked.join(" · ")}</p>}</article>)}</div>
-  <div className="live-vitals">{(['life','karma'] as const).map(key=>{const life=key==='life',value=life?s.currentLife:s.currentKarma,limit=life?max.life:max.karma;return <section key={key}><h2>{life?'Vida':'Karma'} <strong>{value}/{limit}</strong></h2><progress max={Math.max(1,limit)} value={value} aria-label={life?'Vida atual':'Karma atual'}/><div className="combat-adjustments">{[-10,-5,-1,1,5,10].map(n=><button type="button" key={n} disabled={pending>0} onClick={()=>op({type:life&&n>0?'heal':'resource',...(life&&n>0?{amount:n}:{resource:key,delta:n})},`${n>0?'+':''}${n} ${life?'Vida':'Karma'}`)}>{n>0?'+':''}{n}</button>)}</div></section>;})}</div>
-  <RuneCombat draft={draft} state={s} pending={pending > 0} send={send}/>
-  <div className="live-defense">{[['CA Parcial / Total',`${Math.floor(max.armor/2)} / ${max.armor}`],['Iniciativa',max.initiative.formula],['Resistência',protection],['Movimento',`${max.movement} m`],['Reações',s.reactions]].map(([n,v])=><div key={n}><span>{n}</span><strong>{v}</strong></div>)}</div>
-  <div className="live-controls"><label>Natureza do dano<select value={damageType} onChange={e=>setDamageType(e.target.value as DamageType)}>{DAMAGE_TYPES.map(n=><option key={n}>{n}</option>)}</select></label>{incomingElement&&<details><summary>Defesas elementais</summary><div className="live-controls">{PRIMARY_ELEMENTS.map(e=><label key={e}>{e}<input type="number" min={0} max={999} value={primaryDefenses[e]??0} onChange={ev=>setPrimaryDefenses({...primaryDefenses,[e]:Math.min(999,Math.max(0,Number(ev.target.value)||0))})}/></label>)}</div></details>}<label>Dano / cura <input type="number" min={0} max={99999} value={amount} onChange={e=>setAmount(Math.max(0,Math.floor(Number(e.target.value))))}/></label><label><input type="checkbox" checked={resist} onChange={e=>setResist(e.target.checked)}/>Aplicar Resistência {protection}</label><button disabled={pending>0} onClick={()=>op({type:'damage',amount,resistance:resist?protection:0},'Sofrer dano')}>Sofrer dano</button><button disabled={pending>0} onClick={()=>op({type:'heal',amount},'Receber cura')}>Curar</button><label>Escudo <output>{s.tempShield}</output></label><button onClick={()=>op({type:'resource',resource:'shield',delta:amount},'Adicionar escudo')}>+ Escudo</button><button onClick={()=>op({type:'resource',resource:'shield',delta:-amount},'Remover escudo')}>− Escudo</button><button disabled={!s.reactions} onClick={()=>op({type:'resource',resource:'reactions',delta:-1},'Usar Reação')}>Usar Reação</button></div>
-  <div className="live-controls"><span className={tolerance.excess?'combat-warning':''}>Saturação {tolerance.current}/{tolerance.tolerance} · {tolerance.label}{tolerance.dc?` · CD ${tolerance.dc}`:''}</span>{[-1,1,2,3].map(n=><button key={n} onClick={()=>op({type:'resource',resource:'saturation',delta:n},'Saturação alquímica')}>{n>0?'+':''}{n} Saturação</button>)}<span>Corrupção {draft.corruption.charge}/10 · CD {corruptionControlDC(draft)} (CD {corruptionControlDC(draft,16)} na Matriz Corrupta)</span>{[-1,1].map(n=><button key={n} onClick={()=>op({type:'resource',resource:'charge',delta:n},'Carga de Corrupção')}>{n>0?'+':''}{n} Carga</button>)}<button disabled={!draft.corruption.formActive&&(form.issues.length>0||!form.selected.length)} onClick={()=>op({type:'form',active:!draft.corruption.formActive},draft.corruption.formActive?'Encerrar Forma':'Transformação Corrompida')}>{draft.corruption.formActive?'Encerrar Forma':'Transformar · Movimento · 6 Karma'}</button>{draft.corruption.formActive&&<><span>{draft.corruption.formTurns??0} turnos corporais acumulados · Controle na ativação e nos eventos exigidos</span><button disabled={s.currentKarma<1} onClick={()=>op({type:'execute',cost:1,kind:'ability',details:'Manutenção corporal do início do turno, sem novo Controle. Registre uma vez por turno após a ativação.'},'Manter mutações · 1 Karma')}>Manutenção · 1 Karma</button></>}</div>
-  <div className="live-controls"><label>Condição <input maxLength={80} value={condition} list="combat-conditions" onChange={e=>setCondition(e.target.value)}/></label><datalist id="combat-conditions">{['Caído','Abalado','Sangrando','Fratura','Exausto','Envenenado'].map(c=><option key={c}>{c}</option>)}</datalist><label>Duração em rodadas (opcional)<input type="number" min={1} max={99} value={conditionRounds} onChange={event=>setConditionRounds(event.target.value)} /></label><button disabled={!condition.trim()} onClick={()=>{op({type:'condition',condition:condition.trim(),remove:false,rounds:conditionRounds?Math.min(99,Math.max(1,Math.floor(Number(conditionRounds)))):undefined},`Condição: ${condition}`);setCondition('')}}>Aplicar condição</button>{s.activeConditions.map(c=><button key={c} onClick={()=>op({type:'condition',condition:c,remove:true},`Remover ${c}`)}>{c}{s.conditionRounds?.[c]? ` · ${s.conditionRounds[c]} r` : ''}{s.conditionPotency?.[c]!==undefined ? ` · potência ${s.conditionPotency[c]}` : ''} ×</button>)}</div>
-  {draft.divine.enabled&&<section className="divine-altar"><header><small>PODER DIVINO</small><h2>Favor Divino · {draft.divine.favor}/3</h2></header><div className="live-controls">{[-1,1].map(delta=><button key={delta} disabled={pending>0||(delta<0?draft.divine.favor===0:draft.divine.favor===3)} onClick={()=>op({type:'resource',resource:'favor',delta},'Ajustar Favor Divino')}>{delta>0?'+1':'−1'} Favor</button>)}</div>{draft.divine.expression.includes('Bênção')&&playableBlessingGrants(draft.divine).filter(b=>b.name).map(b=><article key={b.id}><h3>{b.name}</h3><p>{b.pantheon} · {b.deity} · {b.deityEpithet}</p><button disabled={pending>0||!blessingAttribute(b.regentAttribute)} onClick={()=>{const result=skillRoll(draft,'Manifestação de Bênção',blessingAttribute(b.regentAttribute),circumstance);setNotice(`${b.name} · ${b.deity}: ${result.formula} = ${result.total}`);op({type:'execute',cost:0,kind:'skill',rollFormula:result.formula,diceResults:result.dice,total:result.total,details:`${b.name} · Outorgada por ${b.deity}. Teste de ${b.regentAttribute} + Manifestação de Bênção; não ativa nem paga uma técnica.`},`Manifestação: ${b.name}`)}}>Rolar Manifestação de Bênção</button></article>)}</section>}
-  <div className="live-attributes">{ATTRIBUTES.map(n=><div key={n}><span>{n}</span><strong>{getFinalAttribute(draft,a,n)}</strong></div>)}</div>
-  {pendingOutcome&&<div role="status" className="combat-notice"><strong>{pendingOutcome.title}</strong><p>{pendingOutcome.dice?.join(', ')}{pendingOutcome.total!==undefined?` · Total ${pendingOutcome.total}`:''}. Compare o resultado com a defesa antes de registrar.</p>{[true,false].map(succeeded=><button key={String(succeeded)} disabled={pending>0} onClick={()=>{op({...pendingOutcome.data,type:'execute',succeeded} as Parameters<typeof op>[0],pendingOutcome.title);setPendingOutcome(null)}}>{succeeded?'Registrar acerto':'Registrar falha'}</button>)}</div>}
-  {impetusLimit(draft)>0&&<div className="live-controls"><strong>Ímpeto {s.impetus}/{impetusLimit(draft)}</strong><label><input type="checkbox" disabled={!s.impetus} checked={impetus} onChange={e=>setSpendImpetus(e.target.checked)}/>Gastar 1 Ímpeto para acrescentar 1d20 e +2 ao teste</label>{/^Etapa (IV|V|VI|VII)$/.test(draft.stage)&&<button type="button" disabled={!s.impetus||!s.reactions||pending>0} onClick={()=>op({type:"indomitableSurvival"},"Sobrevivência Indomável")}>Sobrevivência Indomável · 1 Ímpeto e Reação</button>}</div>}
-  <section><h2>Perícias · {ALL_SKILLS.length}</h2><div className="live-controls"><label>Filtro<select value={filter} onChange={e=>setFilter(e.target.value)}>{['Todas','Treinadas','Combate'].map(n=><option key={n}>{n}</option>)}</select></label><input aria-label="Buscar perícia" placeholder="Buscar perícia" value={query} onChange={e=>setQuery(e.target.value)}/><label>Circunstância<select value={circumstance} onChange={e=>setCircumstance(Number(e.target.value) as -1|0|1)}><option value={0}>Normal</option><option value={1}>Vantagem · +1d20</option><option value={-1}>Desvantagem · −1d20</option></select></label></div><div className="live-skills">{skills.map(skill=>{const attr=PRESENCE_SKILLS.includes(skill)?'Presença':approachFor(skill),t=getSkillTest(draft,a,skill,attr),extra=Number(skillExtras[skill])||0;return <article className="player-skill" key={skill}><strong title={skillBonusExplanation(t)}>{skill}</strong><div className="skill-roll-fields"><label>Atributo Regente<select disabled={PRESENCE_SKILLS.includes(skill)||((SOCIAL_SKILLS as readonly string[]).includes(skill))} value={attr} onChange={e=>setSkillAttrs({...skillAttrs,[skill]:e.target.value as AttributeName})}>{ATTRIBUTES.map(n=><option key={n}>{n}</option>)}</select></label><label>Bônus Extra<input type="number" min={-999} max={999} placeholder="+0" value={skillExtras[skill]??''} onChange={e=>setSkillExtras({...skillExtras,[skill]:e.target.value})}/></label></div><button disabled={pending>0} onClick={()=>roll(skill)}>{t.dice}d20 {t.bonus+extra>=0?'+':''}{t.bonus+extra} · Girar</button></article>})}</div></section>
-  <section><h2>Domínios Manifestados</h2><div className="live-art-grid">{draft.domains.filter(d=>d.enabled&&d.awakened).map(d=>{const t=domainActivation(d, hasAwakenedPath(draft));return <article key={d.name}><h3>{d.name}</h3><p>{s.domainRounds[d.name]??0} rodadas · {t.cost} Karma · duração {t.rounds}</p><button disabled={Object.hasOwn(s.domainRounds,d.name)||pending>0} onClick={()=>op({type:'domain',name:d.name},`Manifestar ${d.name}`)}>Manifestar (−{t.cost} Karma)</button><p>{domainRefinementLabels(d.refinements).join(' · ')}</p></article>})}</div></section>
-  <section><h2>Artes e habilidades</h2><label>CA do alvo (opcional)<input type="number" min={0} max={999} value={targetArmor} onChange={event=>setTargetArmor(event.target.value)} /></label><div className="live-art-grid">{arts.map(t=><article key={t.id}><small>{t.category}</small><h3>{t.name}</h3><p>{t.usage}</p><details><summary>Efeito e limites</summary><p className="combat-preserve">{t.text}</p></details>{t.calculation&&<TechniqueCost>{t.calculation}</TechniqueCost>}{t.cost===null&&<label>Custo desta execução <input type="number" min={0} max={99999} value={manual[t.id]??''} onChange={e=>setManual({...manual,[t.id]:e.target.value})}/></label>}<button disabled={Boolean(pendingOutcome)||pending>0||t.cost!==null&&s.currentKarma<t.cost} onClick={()=>execute(t)}>Executar (−{t.cost??manual[t.id]??'?'} Karma)</button></article>)}</div></section>
-  <section><h2>Invocações vinculadas</h2><div className="live-art-grid">{draft.invocations.map(i=>{const st=calculateInvocationStats(i),unit=s.summons?.[i.id]??{life:st.life,active:false,fractures:undefined,explorationPaid:false};const fractures=unit.fractures??i.fractures,attack=invocationAttack(i,fractures);const stat=(attr:string)=>attr===i.mainAttribute?st.mainAttribute:i.secondaryAttributes.includes(attr)?st.secondaryAttribute:st.otherAttribute;return <article key={i.id}><small>Grau {i.grade} · {i.profile} · {unit.active?'Ativa':'Recolhida'}</small><h3>{i.name||'Invocação'}</h3><p>Fraturas {fractures}/3{fractures===3?' · Colapso Estrutural':''}</p>{!unit.active&&!s.inCombat&&fractures>0&&<button type="button" title="Após 1 TE (2 horas), Criação CD 14 e 2 M$ em peças" onClick={()=>op({type:'summon',invocationId:i.id,operation:'repair'},'Registrar reparo em oficina')}>Registrar reparo</button>}<p>Vida {unit.life}/{st.life} · CA {attack.partial} / {attack.armor} · Movimento {st.movement} m</p><p>Chamada Principal · Comando básico Movimento ou Livre, 1 vez por turno · Ataque {attack.formula}</p><div className="invocation-vitals">{[-5,-1,1,5].map(delta=><button key={delta} onClick={()=>op({type:'summon',invocationId:i.id,operation:'life',delta},`Vida: ${i.name}`)}>{delta>0?'+':''}{delta}</button>)}</div><div className="live-attributes">{ATTRIBUTES.map(n=><div key={n}><span>{n}</span><strong>{stat(n)}</strong></div>)}</div><p>{i.mainSkills.join(' · ')} nível {st.mainSkill}. {i.trait}</p><button disabled={unit.active||pending>0||fractures>=3||unit.life<=0} onClick={()=>op({type:'summon',invocationId:i.id,operation:'call'},`Invocar: ${i.name}`)}>Chamar (−{st.callCost} Karma)</button><small>Manutenção: {st.maintenance} Karma base por rodada em combate ou por cena de exploração com esforço.</small>{unit.active&&!s.inCombat&&<button type="button" disabled={unit.explorationPaid} onClick={()=>op({type:'summon',invocationId:i.id,operation:'explore'},'Taxa de exploração')}>{unit.explorationPaid?'Taxa da cena registrada':'Registrar esforço na exploração'}</button>}<button disabled={!unit.active} onClick={()=>{const dice=randomDice(attack.dice),bonus=attack.bonus,total=Math.max(...dice)+bonus,dmg=damageDice(st.damage,Math.max(...dice)===20);op({type:'execute',invocationId:i.id,cost:0,kind:'attack',rollFormula:attack.formula,diceResults:dice,total,details:`${i.name} · dano ${dmg?.formula}: ${dmg?.total}. Um comando compartilhado do invocador; resolva CA e proteções.`},`Ataque: ${i.name}`)}}>Rolar ataque básico · {st.damage}</button>{i.ability.name&&<><h4>{i.ability.name}</h4><p>{i.ability.effect}</p><label>Karma do comando<input type="number" min={0} value={i.ability.karma??manual[i.id]??''} readOnly={i.ability.karma!==undefined} onChange={e=>setManual({...manual,[i.id]:e.target.value})}/></label><TechniqueCost>{i.ability.calculation}</TechniqueCost><button disabled={!unit.active||(i.ability.karma===undefined&&manual[i.id]===undefined)} onClick={()=>op({type:'execute',invocationId:i.id,cost:i.ability.karma??Number(manual[i.id]),kind:'ability',details:`${i.name}: ${i.ability.effect}`},i.ability.name)}>Executar comando</button></>}<button disabled={!unit.active} onClick={()=>op({type:'summon',invocationId:i.id,operation:'dismiss'},`Recolher: ${i.name}`)}>Recolher</button></article>})}</div>{!draft.invocations.length&&<p>Nenhum pacto registrado nesta ficha.</p>}</section>
-  <section><h2>Arsenal e Prontidão</h2><label>Teste de ataque<select value={attackSkill} onChange={e=>setAttackSkill(e.target.value)}><option>Luta</option><option>Pontaria</option></select></label><div className="live-art-grid">{draft.inventory.filter(i=>i.quantity>0&&i.location!=='external'&&(i.equipped||i.location==='ready')).map(i=><article key={i.id}><h3>{i.name} ×{i.quantity}</h3><p>{i.notes}</p>{i.category==='weapon'&&<button onClick={()=>{const r=skillRoll(draft,attackSkill,skillAttrs[attackSkill]??defaultApproach(attackSkill),circumstance,undefined,undefined,0,0,impetus);const damage=damageDice(i.notes,r.naturalTwenty);const outcome=targetArmor!==''?resolveAttack(r.total,Number(targetArmor)):undefined;const details=`${i.name}: teste ${r.total}. ${damage?`Dano-base ${damage.formula} [${damage.dice.join(', ')}] = ${damage.total}. ${r.naturalTwenty?'Dados-base já dobrados por 20 natural.':''}`:'Sem dado-base registrado: consulte o item.'} ${outcome?`${outcome} · ${damageForAttack(damage?.total??0,outcome)} de dano antes das proteções.`:'Informe a CA do alvo para classificar o acerto.'}`;setNotice(details);op({type:'execute',kind:'attack',cost:0,impetus,selection:r.selection,rollFormula:r.formula,diceResults:r.dice,total:r.total,details},`Atacar: ${i.name}`)}}>Atacar · {attackSkill}</button>}{i.location==='ready'&&/poção|elixir|tônico|soro|antídoto|purgador/i.test(i.name)&&<><label>Saturação da dose<select id={`dose-${i.id}`} value={manual[`dose-${i.id}`]??'1'} onChange={e=>setManual({...manual,[`dose-${i.id}`]:e.target.value})}>{[1,2,3].map(n=><option key={n}>{n}</option>)}</select></label><button onClick={()=>op({type:'resource',resource:'saturation',delta:Number(manual[`dose-${i.id}`]??1)},`Consumir: ${i.name}`)}>Consumir dose</button><small>Resolva aceitação e efeito antes de ajustar Vida/Karma. Baixe a quantidade no inventário.</small></>}</article>)}</div></section>
-  <details className="combat-inventory">
-    <summary>Usar itens do inventário</summary>
-    <InventoryManager draft={draft} readOnly onCombatAction={send} onInventoryUse={(change)=>send({
-      ...change,type:'inventoryUse',id:combatId(),actorName:draft.name||'Personagem',title:'Usar inventário',
-    })}/>
-  </details>
-  <div className="live-controls"><span>Rodada {s.round}</span><button disabled={pending>0} onClick={()=>op({type:'round'},'Nova rodada')}>Passar Turno</button><button onClick={()=>{if(confirm('Nova cena? Reinicia Domínios e rodada, preservando recursos e Saturação.'))op({type:'scene'},'Nova cena')}}>Nova cena</button></div>
-  <button className="combat-edit-control" disabled={pending>0} onClick={()=>{if(confirm('Realizar Descanso Longo Seguro? Restaura Vida e Karma, limpa Saturação e encerra a Forma; a Carga de Corrupção e condições permanecem.'))op({type:'rest'},'Descanso Longo Seguro')}}>Descanso Longo Seguro</button><details><summary>Feed de ações · {s.combatFeed.length}/25</summary><CombatFeed draft={draft}/></details><output className="combat-notice" aria-live="polite">{notice||s.lastActionLog&&`${s.lastActionLog.title}${s.lastActionLog.total!==undefined?` → ${s.lastActionLog.total}`:''}`}</output>
- </section>;
+    const cost = art.cost ?? Number(manual[art.id]);
+    if (
+      art.cost === null &&
+      (!manual[art.id] || !Number.isInteger(cost) || cost < 0)
+    ) {
+      setNotice("Informe o custo variável desta execução.");
+      return;
+    }
+    try {
+      if (art.skill === "Manifestação de Bênção" && !art.attribute)
+        throw Error("Registre o atributo regente desta Bênção na ficha.");
+      if (cost > availableKarma(s)) throw Error("Karma insuficiente.");
+      const test =
+        art.skill &&
+        ALL_SKILLS.includes(art.skill as (typeof ALL_SKILLS)[number])
+          ? skillRoll(
+              draft,
+              art.skill,
+              ATTRIBUTES.includes(art.attribute!) ? art.attribute : undefined,
+              circumstance,
+              "technique",
+              undefined,
+              0,
+              0,
+              impetus,
+            )
+          : null;
+      const damage = art.damage
+        ? damageDice(art.damage, Boolean(test?.naturalTwenty))
+        : null;
+      const outcome =
+        test && art.damage && targetArmor !== ""
+          ? resolveAttack(test.total, Number(targetArmor))
+          : undefined;
+      const finalDamage = outcome
+        ? damageForAttack(damage?.total ?? 0, outcome)
+        : undefined;
+      const data = {
+        type: "execute",
+        techniqueId: art.techniqueId,
+        impetus: Boolean(test && impetus),
+        selection: test?.selection,
+        cost,
+        kind: "technique",
+        rollFormula: test?.formula,
+        diceResults: test?.dice,
+        total: test?.total,
+        succeeded: outcome ? outcome !== "Falha" : undefined,
+        details: [
+          test
+            ? `${art.skill}: ${test.total}${outcome ? ` · ${outcome} · ${finalDamage} dano antes das proteções` : ""}`
+            : "Resolva os requisitos da ação.",
+          damage
+            ? `Dano-base registrado: ${damage.formula} [${damage.dice.join(", ")}] = ${damage.total}. ${test?.naturalTwenty ? "Dados-base já dobrados por 20 natural." : ""} Confira acerto, modificadores e proteções antes de aplicar.`
+            : "",
+          art.category,
+          art.usage,
+        ].join(" "),
+      };
+      const record = draft.techniques.find((t) => t.id === art.techniqueId);
+      if (
+        !outcome &&
+        record?.matrix === "Corrupto" &&
+        ["I", "II"].includes(record.grade.replace("Grau ", ""))
+      ) {
+        setPendingOutcome({
+          data,
+          title: art.name,
+          total: test?.total,
+          dice: test?.dice,
+        });
+        return;
+      }
+      op(data as Parameters<typeof op>[0], art.name);
+      setNotice(
+        `${art.name} · ${cost} Karma${test ? ` · teste ${test.total}` : ""}${outcome ? ` · ${outcome} · dano ${finalDamage}` : damage ? ` · dano ${damage.total}` : ""}`,
+      );
+    } catch (e) {
+      setNotice((e as Error).message);
+    }
+  }
+  const tolerance = alchemyState(
+      getFinalAttribute(draft, a, "Constituição"),
+      draft.alchemicalSaturation,
+      hasAxiom(draft, 8) ? 2 : 0,
+    ),
+    form = corruptedFormState(
+      draft,
+      getFinalSkill(draft, a, "Controle da Corrupção"),
+    );
+  const arts = playerArts(draft),
+    skills = ALL_SKILLS.filter(
+      (n) =>
+        (filter === "Todas" ||
+          (filter === "Treinadas" && getFinalSkill(draft, a, n) > 0) ||
+          (filter === "Combate" &&
+            [
+              "Luta",
+              "Pontaria",
+              "Reflexos",
+              "Atletismo",
+              "Acrobacia",
+              "Canalização de Karma",
+              "Controle da Corrupção",
+              ...ALL_SKILLS.filter((x) => x.startsWith("Controle de")),
+            ].includes(n))) &&
+        n.toLocaleLowerCase("pt-BR").includes(query.toLocaleLowerCase("pt-BR")),
+    );
+  return (
+    <section
+      className="player-combat live-ui"
+      aria-label={`Combate de ${draft.name}`}
+    >
+      <p className="combat-print-summary">
+        Vida {s.currentLife}/{max.life} · Karma {s.currentKarma}/{max.karma} ·
+        Escudo {s.tempShield} · Saturação {draft.alchemicalSaturation} ·
+        Corrupção {draft.corruption.charge}/10 · Condições:{" "}
+        {s.activeConditions.join(", ") || "nenhuma"}
+      </p>
+      <CombatResourceFeedback
+        life={s.currentLife}
+        karma={s.currentKarma}
+        shield={s.tempShield}
+        maxLife={max.life}
+      />
+      <header className="combat-title">
+        <div>
+          <small>FICHA TÁTICA · {draft.stage}</small>
+          <h1>{draft.name || "Personagem"}</h1>
+          <p>
+            {draft.race} · {draft.className}
+          </p>
+        </div>
+        {draft.portraitImage && (
+          <img
+            src={draft.portraitImage}
+            alt="Retrato do personagem"
+            width={72}
+            height={72}
+          />
+        )}
+        <span role="status">{pending ? "Registrando…" : status}</span>
+      </header>
+      {error && (
+        <p role="alert" className="combat-error">
+          {error} A ação só é confirmada quando registrada.
+        </p>
+      )}
+      {s.lastActionLog?.details &&
+        /Metade da Vida|20 natural ·/.test(s.lastActionLog.details) && (
+          <p className="combat-notice" role="status">
+            {s.lastActionLog.details}
+          </p>
+        )}
+      <div className="boss-phase-list">
+        {Object.values(s.bossPhases ?? {}).map((p) => (
+          <article key={p.bossKey}>
+            <small>{p.bossName}</small>
+            <h3>{p.title}</h3>
+            <p>
+              {p.pending
+                ? "Aguarda resolução da transformação"
+                : `CA ${p.ca} · Fase ativa`}
+            </p>
+            <p>{p.defense}</p>
+            {p.unlocked.length > 0 && <p>{p.unlocked.join(" · ")}</p>}
+          </article>
+        ))}
+      </div>
+      <div className="live-vitals">
+        {(["life", "karma"] as const).map((key) => {
+          const life = key === "life",
+            value = life ? s.currentLife : s.currentKarma,
+            limit = life ? max.life : max.karma;
+          return (
+            <section key={key}>
+              <h2>
+                {life ? "Vida" : "Karma"}{" "}
+                <strong>
+                  {value}/{limit}
+                </strong>
+              </h2>
+              <progress
+                max={Math.max(1, limit)}
+                value={value}
+                aria-label={life ? "Vida atual" : "Karma atual"}
+              />
+              <div className="combat-adjustments">
+                {[-10, -5, -1, 1, 5, 10].map((n) => (
+                  <button
+                    type="button"
+                    key={n}
+                    disabled={pending > 0}
+                    onClick={() =>
+                      op(
+                        {
+                          type: life && n > 0 ? "heal" : "resource",
+                          ...(life && n > 0
+                            ? { amount: n }
+                            : { resource: key, delta: n }),
+                        },
+                        `${n > 0 ? "+" : ""}${n} ${life ? "Vida" : "Karma"}`,
+                      )
+                    }
+                  >
+                    {n > 0 ? "+" : ""}
+                    {n}
+                  </button>
+                ))}
+              </div>
+            </section>
+          );
+        })}
+      </div>
+      <RuneCombat draft={draft} state={s} pending={pending > 0} send={send} />
+      <div className="live-defense">
+        {[
+          ["CA Parcial / Total", `${Math.floor(max.armor / 2)} / ${max.armor}`],
+          ["Iniciativa", max.initiative.formula],
+          ["Resistência", protection],
+          ["Movimento", `${max.movement} m`],
+          ["Reações", s.reactions],
+        ].map(([n, v]) => (
+          <div key={n}>
+            <span>{n}</span>
+            <strong>{v}</strong>
+          </div>
+        ))}
+      </div>
+      <div className="live-controls">
+        <label>
+          Natureza do dano
+          <select
+            value={damageType}
+            onChange={(e) => setDamageType(e.target.value as DamageType)}
+          >
+            {DAMAGE_TYPES.map((n) => (
+              <option key={n}>{n}</option>
+            ))}
+          </select>
+        </label>
+        {incomingElement && (
+          <details>
+            <summary>Defesas elementais</summary>
+            <div className="live-controls">
+              {PRIMARY_ELEMENTS.map((e) => (
+                <label key={e}>
+                  {e}
+                  <input
+                    type="number"
+                    min={0}
+                    max={999}
+                    value={primaryDefenses[e] ?? 0}
+                    onChange={(ev) =>
+                      setPrimaryDefenses({
+                        ...primaryDefenses,
+                        [e]: Math.min(
+                          999,
+                          Math.max(0, Number(ev.target.value) || 0),
+                        ),
+                      })
+                    }
+                  />
+                </label>
+              ))}
+            </div>
+          </details>
+        )}
+        <label>
+          Dano / cura{" "}
+          <input
+            type="number"
+            min={0}
+            max={99999}
+            value={amount}
+            onChange={(e) =>
+              setAmount(Math.max(0, Math.floor(Number(e.target.value))))
+            }
+          />
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={resist}
+            onChange={(e) => setResist(e.target.checked)}
+          />
+          Aplicar Resistência {protection}
+        </label>
+        <button
+          disabled={pending > 0}
+          onClick={() =>
+            op(
+              { type: "damage", amount, resistance: resist ? protection : 0 },
+              "Sofrer dano",
+            )
+          }
+        >
+          Sofrer dano
+        </button>
+        <button
+          disabled={pending > 0}
+          onClick={() => op({ type: "heal", amount }, "Receber cura")}
+        >
+          Curar
+        </button>
+        <label>
+          Escudo <output>{s.tempShield}</output>
+        </label>
+        <button
+          onClick={() =>
+            op(
+              { type: "resource", resource: "shield", delta: amount },
+              "Adicionar escudo",
+            )
+          }
+        >
+          + Escudo
+        </button>
+        <button
+          onClick={() =>
+            op(
+              { type: "resource", resource: "shield", delta: -amount },
+              "Remover escudo",
+            )
+          }
+        >
+          − Escudo
+        </button>
+        <button
+          disabled={!s.reactions}
+          onClick={() =>
+            op(
+              { type: "resource", resource: "reactions", delta: -1 },
+              "Usar Reação",
+            )
+          }
+        >
+          Usar Reação
+        </button>
+      </div>
+      <div className="live-controls">
+        <span className={tolerance.excess ? "combat-warning" : ""}>
+          Saturação {tolerance.current}/{tolerance.tolerance} ·{" "}
+          {tolerance.label}
+          {tolerance.dc ? ` · CD ${tolerance.dc}` : ""}
+        </span>
+        {[-1, 1, 2, 3].map((n) => (
+          <button
+            key={n}
+            onClick={() =>
+              op(
+                { type: "resource", resource: "saturation", delta: n },
+                "Saturação alquímica",
+              )
+            }
+          >
+            {n > 0 ? "+" : ""}
+            {n} Saturação
+          </button>
+        ))}
+        <span>
+          Corrupção {draft.corruption.charge}/10 · CD{" "}
+          {corruptionControlDC(draft)} (CD {corruptionControlDC(draft, 16)} na
+          Matriz Corrupta)
+        </span>
+        {[-1, 1].map((n) => (
+          <button
+            key={n}
+            onClick={() =>
+              op(
+                { type: "resource", resource: "charge", delta: n },
+                "Carga de Corrupção",
+              )
+            }
+          >
+            {n > 0 ? "+" : ""}
+            {n} Carga
+          </button>
+        ))}
+        <button
+          disabled={
+            !draft.corruption.formActive &&
+            (form.issues.length > 0 || !form.selected.length)
+          }
+          onClick={() =>
+            op(
+              { type: "form", active: !draft.corruption.formActive },
+              draft.corruption.formActive
+                ? "Encerrar Forma"
+                : "Transformação Corrompida",
+            )
+          }
+        >
+          {draft.corruption.formActive
+            ? "Encerrar Forma"
+            : "Transformar · Movimento · 6 Karma"}
+        </button>
+        {draft.corruption.formActive && (
+          <>
+            <span>
+              {draft.corruption.formTurns ?? 0} turnos corporais acumulados ·
+              Controle na ativação e nos eventos exigidos
+            </span>
+            <button
+              disabled={s.currentKarma < 1}
+              onClick={() =>
+                op(
+                  {
+                    type: "execute",
+                    cost: 1,
+                    kind: "ability",
+                    details:
+                      "Manutenção corporal do início do turno, sem novo Controle. Registre uma vez por turno após a ativação.",
+                  },
+                  "Manter mutações · 1 Karma",
+                )
+              }
+            >
+              Manutenção · 1 Karma
+            </button>
+          </>
+        )}
+      </div>
+      <div className="live-controls">
+        <label>
+          Condição{" "}
+          <input
+            maxLength={80}
+            value={condition}
+            list="combat-conditions"
+            onChange={(e) => setCondition(e.target.value)}
+          />
+        </label>
+        <datalist id="combat-conditions">
+          {[
+            "Caído",
+            "Abalado",
+            "Sangrando",
+            "Fratura",
+            "Exausto",
+            "Envenenado",
+          ].map((c) => (
+            <option key={c}>{c}</option>
+          ))}
+        </datalist>
+        <label>
+          Duração em rodadas (opcional)
+          <input
+            type="number"
+            min={1}
+            max={99}
+            value={conditionRounds}
+            onChange={(event) => setConditionRounds(event.target.value)}
+          />
+        </label>
+        <button
+          disabled={!condition.trim()}
+          onClick={() => {
+            op(
+              {
+                type: "condition",
+                condition: condition.trim(),
+                remove: false,
+                rounds: conditionRounds
+                  ? Math.min(
+                      99,
+                      Math.max(1, Math.floor(Number(conditionRounds))),
+                    )
+                  : undefined,
+              },
+              `Condição: ${condition}`,
+            );
+            setCondition("");
+          }}
+        >
+          Aplicar condição
+        </button>
+        {s.activeConditions.map((c) => (
+          <button
+            key={c}
+            onClick={() =>
+              op(
+                { type: "condition", condition: c, remove: true },
+                `Remover ${c}`,
+              )
+            }
+          >
+            {c}
+            {s.conditionRounds?.[c] ? ` · ${s.conditionRounds[c]} r` : ""}
+            {s.conditionPotency?.[c] !== undefined
+              ? ` · potência ${s.conditionPotency[c]}`
+              : ""}{" "}
+            ×
+          </button>
+        ))}
+      </div>
+      {draft.divine.enabled && (
+        <section className="divine-altar">
+          <header>
+            <small>PODER DIVINO</small>
+            <h2>Favor Divino · {draft.divine.favor}/3</h2>
+          </header>
+          <div className="live-controls">
+            {[-1, 1].map((delta) => (
+              <button
+                key={delta}
+                disabled={
+                  pending > 0 ||
+                  (delta < 0
+                    ? draft.divine.favor === 0
+                    : draft.divine.favor === 3)
+                }
+                onClick={() =>
+                  op(
+                    { type: "resource", resource: "favor", delta },
+                    "Ajustar Favor Divino",
+                  )
+                }
+              >
+                {delta > 0 ? "+1" : "−1"} Favor
+              </button>
+            ))}
+          </div>
+          {draft.divine.expression.includes("Bênção") &&
+            playableBlessingGrants(draft.divine)
+              .filter((b) => b.name)
+              .map((b) => (
+                <article key={b.id}>
+                  <h3>{b.name}</h3>
+                  <p>
+                    {b.pantheon} · {b.deity} · {b.deityEpithet}
+                  </p>
+                  <button
+                    disabled={
+                      pending > 0 || !blessingAttribute(b.regentAttribute)
+                    }
+                    onClick={() => {
+                      const result = skillRoll(
+                        draft,
+                        "Manifestação de Bênção",
+                        blessingAttribute(b.regentAttribute),
+                        circumstance,
+                      );
+                      setNotice(
+                        `${b.name} · ${b.deity}: ${result.formula} = ${result.total}`,
+                      );
+                      op(
+                        {
+                          type: "execute",
+                          cost: 0,
+                          kind: "skill",
+                          rollFormula: result.formula,
+                          diceResults: result.dice,
+                          total: result.total,
+                          details: `${b.name} · Outorgada por ${b.deity}. Teste de ${b.regentAttribute} + Manifestação de Bênção; não ativa nem paga uma técnica.`,
+                        },
+                        `Manifestação: ${b.name}`,
+                      );
+                    }}
+                  >
+                    Rolar Manifestação de Bênção
+                  </button>
+                </article>
+              ))}
+        </section>
+      )}
+      <div className="live-attributes">
+        {ATTRIBUTES.map((n) => (
+          <div key={n}>
+            <span>{n}</span>
+            <strong>{getFinalAttribute(draft, a, n)}</strong>
+          </div>
+        ))}
+      </div>
+      {pendingOutcome && (
+        <div role="status" className="combat-notice">
+          <strong>{pendingOutcome.title}</strong>
+          <p>
+            {pendingOutcome.dice?.join(", ")}
+            {pendingOutcome.total !== undefined
+              ? ` · Total ${pendingOutcome.total}`
+              : ""}
+            . Compare o resultado com a defesa antes de registrar.
+          </p>
+          {[true, false].map((succeeded) => (
+            <button
+              key={String(succeeded)}
+              disabled={pending > 0}
+              onClick={() => {
+                op(
+                  {
+                    ...pendingOutcome.data,
+                    type: "execute",
+                    succeeded,
+                  } as Parameters<typeof op>[0],
+                  pendingOutcome.title,
+                );
+                setPendingOutcome(null);
+              }}
+            >
+              {succeeded ? "Registrar acerto" : "Registrar falha"}
+            </button>
+          ))}
+        </div>
+      )}
+      {impetusLimit(draft) > 0 && (
+        <div className="live-controls">
+          <strong>
+            Ímpeto {s.impetus}/{impetusLimit(draft)}
+          </strong>
+          <label>
+            <input
+              type="checkbox"
+              disabled={!s.impetus}
+              checked={impetus}
+              onChange={(e) => setSpendImpetus(e.target.checked)}
+            />
+            Gastar 1 Ímpeto para acrescentar 1d20 e +2 ao teste
+          </label>
+          {/^Etapa (IV|V|VI|VII)$/.test(draft.stage) && (
+            <button
+              type="button"
+              disabled={!s.impetus || !s.reactions || pending > 0}
+              onClick={() =>
+                op({ type: "indomitableSurvival" }, "Sobrevivência Indomável")
+              }
+            >
+              Sobrevivência Indomável · 1 Ímpeto e Reação
+            </button>
+          )}
+        </div>
+      )}
+      <section>
+        <h2>Perícias · {ALL_SKILLS.length}</h2>
+        <div className="live-controls">
+          <label>
+            Filtro
+            <select value={filter} onChange={(e) => setFilter(e.target.value)}>
+              {["Todas", "Treinadas", "Combate"].map((n) => (
+                <option key={n}>{n}</option>
+              ))}
+            </select>
+          </label>
+          <input
+            aria-label="Buscar perícia"
+            placeholder="Buscar perícia"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <label>
+            Circunstância
+            <select
+              value={circumstance}
+              onChange={(e) =>
+                setCircumstance(Number(e.target.value) as -1 | 0 | 1)
+              }
+            >
+              <option value={0}>Normal</option>
+              <option value={1}>Vantagem · +1d20</option>
+              <option value={-1}>Desvantagem · −1d20</option>
+            </select>
+          </label>
+        </div>
+        <div className="live-skills">
+          {skills.map((skill) => {
+            const attr = PRESENCE_SKILLS.includes(skill)
+                ? "Presença"
+                : approachFor(skill),
+              t = getSkillTest(draft, a, skill, attr),
+              extra = Number(skillExtras[skill]) || 0;
+            return (
+              <article className="player-skill" key={skill}>
+                <strong title={skillBonusExplanation(t)}>{skill}</strong>
+                <div className="skill-roll-fields">
+                  <label>
+                    Atributo Regente
+                    <select
+                      disabled={
+                        PRESENCE_SKILLS.includes(skill) ||
+                        (SOCIAL_SKILLS as readonly string[]).includes(skill)
+                      }
+                      value={attr}
+                      onChange={(e) =>
+                        setSkillAttrs({
+                          ...skillAttrs,
+                          [skill]: e.target.value as AttributeName,
+                        })
+                      }
+                    >
+                      {ATTRIBUTES.map((n) => (
+                        <option key={n}>{n}</option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    Bônus Extra
+                    <input
+                      type="number"
+                      min={-999}
+                      max={999}
+                      placeholder="+0"
+                      value={skillExtras[skill] ?? ""}
+                      onChange={(e) =>
+                        setSkillExtras({
+                          ...skillExtras,
+                          [skill]: e.target.value,
+                        })
+                      }
+                    />
+                  </label>
+                </div>
+                <button disabled={pending > 0} onClick={() => roll(skill)}>
+                  {t.dice}d20 {t.bonus + extra >= 0 ? "+" : ""}
+                  {t.bonus + extra} · Girar
+                </button>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+      <section>
+        <h2>Domínios Manifestados</h2>
+        <div className="live-art-grid">
+          {draft.domains
+            .filter((d) => d.enabled && d.awakened)
+            .map((d) => {
+              const t = domainActivation(d, hasAwakenedPath(draft));
+              return (
+                <article key={d.name}>
+                  <h3>{d.name}</h3>
+                  <p>
+                    {s.domainRounds[d.name] ?? 0} rodadas · {t.cost} Karma ·
+                    duração {t.rounds}
+                  </p>
+                  <button
+                    disabled={
+                      Object.hasOwn(s.domainRounds, d.name) || pending > 0
+                    }
+                    onClick={() =>
+                      op(
+                        { type: "domain", name: d.name },
+                        `Manifestar ${d.name}`,
+                      )
+                    }
+                  >
+                    Manifestar (−{t.cost} Karma)
+                  </button>
+                  <p>{domainRefinementLabels(d.refinements).join(" · ")}</p>
+                </article>
+              );
+            })}
+        </div>
+      </section>
+      <section>
+        <h2>Artes e habilidades</h2>
+        <label>
+          CA do alvo (opcional)
+          <input
+            type="number"
+            min={0}
+            max={999}
+            value={targetArmor}
+            onChange={(event) => setTargetArmor(event.target.value)}
+          />
+        </label>
+        <div className="live-art-grid">
+          {arts.map((t) => (
+            <article key={t.id}>
+              <small>{t.category}</small>
+              <h3>{t.name}</h3>
+              <p>{t.usage}</p>
+              <details>
+                <summary>Efeito e limites</summary>
+                <p className="combat-preserve">{t.text}</p>
+              </details>
+              {t.calculation && <TechniqueCost>{t.calculation}</TechniqueCost>}
+              {t.cost === null && (
+                <label>
+                  Custo desta execução{" "}
+                  <input
+                    type="number"
+                    min={0}
+                    max={99999}
+                    value={manual[t.id] ?? ""}
+                    onChange={(e) =>
+                      setManual({ ...manual, [t.id]: e.target.value })
+                    }
+                  />
+                </label>
+              )}
+              <button
+                disabled={
+                  Boolean(pendingOutcome) ||
+                  pending > 0 ||
+                  (t.cost !== null && s.currentKarma < t.cost)
+                }
+                onClick={() => execute(t)}
+              >
+                Executar (−{t.cost ?? manual[t.id] ?? "?"} Karma)
+              </button>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section>
+        <h2>Invocações vinculadas</h2>
+        <div className="live-art-grid">
+          {draft.invocations.map((i) => {
+            const st = calculateInvocationStats(i),
+              unit = s.summons?.[i.id] ?? {
+                life: st.life,
+                active: false,
+                fractures: undefined,
+                explorationPaid: false,
+              };
+            const fractures = unit.fractures ?? i.fractures,
+              attack = invocationAttack(i, fractures);
+            const stat = (attr: string) =>
+              attr === i.mainAttribute
+                ? st.mainAttribute
+                : i.secondaryAttributes.includes(attr)
+                  ? st.secondaryAttribute
+                  : st.otherAttribute;
+            return (
+              <article key={i.id}>
+                <small>
+                  Grau {i.grade} · {i.profile} ·{" "}
+                  {unit.active ? "Ativa" : "Recolhida"}
+                </small>
+                <h3>{i.name || "Invocação"}</h3>
+                <p>
+                  Fraturas {fractures}/3
+                  {fractures === 3 ? " · Colapso Estrutural" : ""}
+                </p>
+                {!unit.active && !s.inCombat && fractures > 0 && (
+                  <button
+                    type="button"
+                    title="Após 1 TE (2 horas), Criação CD 14 e 2 M$ em peças"
+                    onClick={() =>
+                      op(
+                        {
+                          type: "summon",
+                          invocationId: i.id,
+                          operation: "repair",
+                        },
+                        "Registrar reparo em oficina",
+                      )
+                    }
+                  >
+                    Registrar reparo
+                  </button>
+                )}
+                <p>
+                  Vida {unit.life}/{st.life} · CA {attack.partial} /{" "}
+                  {attack.armor} · Movimento {st.movement} m
+                </p>
+                <p>
+                  Chamada Principal · Comando básico Movimento ou Livre, 1 vez
+                  por turno · Ataque {attack.formula}
+                </p>
+                <div className="invocation-vitals">
+                  {[-5, -1, 1, 5].map((delta) => (
+                    <button
+                      key={delta}
+                      onClick={() =>
+                        op(
+                          {
+                            type: "summon",
+                            invocationId: i.id,
+                            operation: "life",
+                            delta,
+                          },
+                          `Vida: ${i.name}`,
+                        )
+                      }
+                    >
+                      {delta > 0 ? "+" : ""}
+                      {delta}
+                    </button>
+                  ))}
+                </div>
+                <div className="live-attributes">
+                  {ATTRIBUTES.map((n) => (
+                    <div key={n}>
+                      <span>{n}</span>
+                      <strong>{stat(n)}</strong>
+                    </div>
+                  ))}
+                </div>
+                <p>
+                  {i.mainSkills.join(" · ")} nível {st.mainSkill}. {i.trait}
+                </p>
+                <button
+                  disabled={
+                    unit.active ||
+                    pending > 0 ||
+                    fractures >= 3 ||
+                    unit.life <= 0
+                  }
+                  onClick={() =>
+                    op(
+                      { type: "summon", invocationId: i.id, operation: "call" },
+                      `Invocar: ${i.name}`,
+                    )
+                  }
+                >
+                  Chamar (−{st.callCost} Karma)
+                </button>
+                <small>
+                  Manutenção: {st.maintenance} Karma base por rodada em combate
+                  ou por cena de exploração com esforço.
+                </small>
+                {unit.active && !s.inCombat && (
+                  <button
+                    type="button"
+                    disabled={unit.explorationPaid}
+                    onClick={() =>
+                      op(
+                        {
+                          type: "summon",
+                          invocationId: i.id,
+                          operation: "explore",
+                        },
+                        "Taxa de exploração",
+                      )
+                    }
+                  >
+                    {unit.explorationPaid
+                      ? "Taxa da cena registrada"
+                      : "Registrar esforço na exploração"}
+                  </button>
+                )}
+                <button
+                  disabled={!unit.active}
+                  onClick={() => {
+                    const dice = randomDice(attack.dice),
+                      bonus = attack.bonus,
+                      total = Math.max(...dice) + bonus,
+                      dmg = damageDice(st.damage, Math.max(...dice) === 20);
+                    op(
+                      {
+                        type: "execute",
+                        invocationId: i.id,
+                        cost: 0,
+                        kind: "attack",
+                        rollFormula: attack.formula,
+                        diceResults: dice,
+                        total,
+                        details: `${i.name} · dano ${dmg?.formula}: ${dmg?.total}. Um comando compartilhado do invocador; resolva CA e proteções.`,
+                      },
+                      `Ataque: ${i.name}`,
+                    );
+                  }}
+                >
+                  Rolar ataque básico · {st.damage}
+                </button>
+                {i.ability.name && (
+                  <>
+                    <h4>{i.ability.name}</h4>
+                    <p>{i.ability.effect}</p>
+                    <label>
+                      Karma do comando
+                      <input
+                        type="number"
+                        min={0}
+                        value={i.ability.karma ?? manual[i.id] ?? ""}
+                        readOnly={i.ability.karma !== undefined}
+                        onChange={(e) =>
+                          setManual({ ...manual, [i.id]: e.target.value })
+                        }
+                      />
+                    </label>
+                    <TechniqueCost>{i.ability.calculation}</TechniqueCost>
+                    <button
+                      disabled={
+                        !unit.active ||
+                        (i.ability.karma === undefined &&
+                          manual[i.id] === undefined)
+                      }
+                      onClick={() =>
+                        op(
+                          {
+                            type: "execute",
+                            invocationId: i.id,
+                            cost: i.ability.karma ?? Number(manual[i.id]),
+                            kind: "ability",
+                            details: `${i.name}: ${i.ability.effect}`,
+                          },
+                          i.ability.name,
+                        )
+                      }
+                    >
+                      Executar comando
+                    </button>
+                  </>
+                )}
+                <button
+                  disabled={!unit.active}
+                  onClick={() =>
+                    op(
+                      {
+                        type: "summon",
+                        invocationId: i.id,
+                        operation: "dismiss",
+                      },
+                      `Recolher: ${i.name}`,
+                    )
+                  }
+                >
+                  Recolher
+                </button>
+              </article>
+            );
+          })}
+        </div>
+        {!draft.invocations.length && (
+          <p>Nenhum pacto registrado nesta ficha.</p>
+        )}
+      </section>
+      <section>
+        <h2>Arsenal e Prontidão</h2>
+        <label>
+          Teste de ataque
+          <select
+            value={attackSkill}
+            onChange={(e) => setAttackSkill(e.target.value)}
+          >
+            <option>Luta</option>
+            <option>Pontaria</option>
+          </select>
+        </label>
+        <div className="live-art-grid">
+          {draft.inventory
+            .filter(
+              (i) =>
+                i.quantity > 0 &&
+                i.location !== "external" &&
+                (i.equipped || i.location === "ready"),
+            )
+            .map((i) => (
+              <article key={i.id}>
+                <h3>
+                  {i.name} ×{i.quantity}
+                </h3>
+                <p>{i.notes}</p>
+                {i.category === "weapon" && (
+                  <button
+                    onClick={() => {
+                      const r = skillRoll(
+                        draft,
+                        attackSkill,
+                        skillAttrs[attackSkill] ?? defaultApproach(attackSkill),
+                        circumstance,
+                        undefined,
+                        undefined,
+                        0,
+                        0,
+                        impetus,
+                      );
+                      const damage = damageDice(i.notes, r.naturalTwenty);
+                      const outcome =
+                        targetArmor !== ""
+                          ? resolveAttack(r.total, Number(targetArmor))
+                          : undefined;
+                      const details = `${i.name}: teste ${r.total}. ${damage ? `Dano-base ${damage.formula} [${damage.dice.join(", ")}] = ${damage.total}. ${r.naturalTwenty ? "Dados-base já dobrados por 20 natural." : ""}` : "Sem dado-base registrado: consulte o item."} ${outcome ? `${outcome} · ${damageForAttack(damage?.total ?? 0, outcome)} de dano antes das proteções.` : "Informe a CA do alvo para classificar o acerto."}`;
+                      setNotice(details);
+                      op(
+                        {
+                          type: "execute",
+                          kind: "attack",
+                          cost: 0,
+                          impetus,
+                          selection: r.selection,
+                          rollFormula: r.formula,
+                          diceResults: r.dice,
+                          total: r.total,
+                          details,
+                        },
+                        `Atacar: ${i.name}`,
+                      );
+                    }}
+                  >
+                    Atacar · {attackSkill}
+                  </button>
+                )}
+                {i.location === "ready" &&
+                  /poção|elixir|tônico|soro|antídoto|purgador/i.test(
+                    i.name,
+                  ) && (
+                    <>
+                      <label>
+                        Saturação da dose
+                        <select
+                          id={`dose-${i.id}`}
+                          value={manual[`dose-${i.id}`] ?? "1"}
+                          onChange={(e) =>
+                            setManual({
+                              ...manual,
+                              [`dose-${i.id}`]: e.target.value,
+                            })
+                          }
+                        >
+                          {[1, 2, 3].map((n) => (
+                            <option key={n}>{n}</option>
+                          ))}
+                        </select>
+                      </label>
+                      <button
+                        onClick={() =>
+                          op(
+                            {
+                              type: "resource",
+                              resource: "saturation",
+                              delta: Number(manual[`dose-${i.id}`] ?? 1),
+                            },
+                            `Consumir: ${i.name}`,
+                          )
+                        }
+                      >
+                        Consumir dose
+                      </button>
+                      <small>
+                        Resolva aceitação e efeito antes de ajustar Vida/Karma.
+                        Baixe a quantidade no inventário.
+                      </small>
+                    </>
+                  )}
+              </article>
+            ))}
+        </div>
+      </section>
+      <details className="combat-inventory">
+        <summary>Usar itens do inventário</summary>
+        <InventoryManager
+          draft={draft}
+          readOnly
+          onCombatAction={send}
+          onInventoryUse={(change) =>
+            send({
+              ...change,
+              type: "inventoryUse",
+              id: combatId(),
+              actorName: draft.name || "Personagem",
+              title: "Usar inventário",
+            })
+          }
+        />
+      </details>
+      <div className="live-controls">
+        <span>Rodada {s.round}</span>
+        <button
+          disabled={pending > 0}
+          onClick={() => op({ type: "round" }, "Nova rodada")}
+        >
+          Passar Turno
+        </button>
+        <button
+          onClick={() => {
+            if (
+              confirm(
+                "Nova cena? Reinicia Domínios e rodada, preservando recursos e Saturação.",
+              )
+            )
+              op({ type: "scene" }, "Nova cena");
+          }}
+        >
+          Nova cena
+        </button>
+      </div>
+      <button
+        className="combat-edit-control"
+        disabled={pending > 0}
+        onClick={() => {
+          if (
+            confirm(
+              "Realizar Descanso Longo Seguro? Restaura Vida e Karma, limpa Saturação e encerra a Forma; a Carga de Corrupção e condições permanecem.",
+            )
+          )
+            op({ type: "rest" }, "Descanso Longo Seguro");
+        }}
+      >
+        Descanso Longo Seguro
+      </button>
+      <details>
+        <summary>Feed de ações · {s.combatFeed.length}/25</summary>
+        <CombatFeed draft={draft} />
+      </details>
+      <output className="combat-notice" aria-live="polite">
+        {notice ||
+          (s.lastActionLog &&
+            `${s.lastActionLog.title}${s.lastActionLog.total !== undefined ? ` → ${s.lastActionLog.total}` : ""}`)}
+      </output>
+    </section>
+  );
 }

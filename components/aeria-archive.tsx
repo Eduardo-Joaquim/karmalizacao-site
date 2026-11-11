@@ -1,12 +1,127 @@
-import {ContinentalMonstersSection} from '@/components/continental-monsters-section';
+import { ContinentalMonstersSection } from "@/components/continental-monsters-section";
 import { ThreatLink } from "@/components/threat-link";
-import {ArrowUpRight,Crown,Landmark,Wind,Shield} from "lucide-react";
-const court='/mundo/aeria/corte-demi-humana';
-export function AeriaContinentCard(){return <a href="/mundo/aeria" className="gaeria-continent-card aeria-continent-card"><Wind aria-hidden="true"/><div><span>CONTINENTE DO AR</span><strong>Aéria</strong><p>Coroa dracônica · Rotas · Casas nobres</p></div><ArrowUpRight aria-hidden="true"/></a>}
-export function AeriaArchive(){return <section className="aeria-archive aeria-archive" aria-label="Arquivo de Aéria"><header className="aeria-archive-heading"><Wind/><div><p>CONTINENTE DO AR</p><h2>Aéria</h2><span>Celestária · Miravéu · Ferravento</span></div></header><div className="aeria-category-grid"><section className="aeria-category"><header><Crown/><h3>Corte Imperial</h3><span>01</span></header><a className="aeria-entry aeria-entry-royal" href={court}><small>PACTO DOS CÉUS ABERTOS</small><h4>Tiamat Regens</h4><p>Sael Aruven, a Rainha Dracônica, e a princesa Maelis. Uma linhagem, expressões distintas da mesma bênção.</p><span>Conhecer a corte <ArrowUpRight/></span></a></section><section className="aeria-category"><header><Landmark/><h3>Casas nobres</h3><span>02</span></header>{[
- ['Grão-Ducado Corvel','Darian Corvel · Miravéu, esquadrões de resgate e observatórios.','duque-darian'],
- ['Marquesado Talassar','Iren Talassar · Faróis, registros e passagens do norte.','marquesa-iren'],
- ['Marquesado Aster','Torren Aster · Túneis ferroviários, pontes e abastecimento industrial.','marques-torren'],
- ['Condado Valeri','Octavia Valeri · Bancos, clínicas e o Edifício Meridiano em Ferravento.','condessa-octavia'],
- ['Baronato Nacar','Otília Nacar · Cabos de emergência e a passagem para o Cais Fundo.','baronesa-otilia'],
- ].map(([name,text,id])=><a className="aeria-entry" href={`${court}#${id}`} key={id}><h4>{name}</h4><p>{text}</p><span>Consultar <ArrowUpRight/></span></a>)}</section><section className="aeria-category"><header><Shield/><h3>As cidades e as rotas</h3><span>03</span></header><ThreatLink region="aeria"/><a className="aeria-entry" href="/mundo/aeria/nidavellir"><h4>República de Nidavellir</h4><p>O Prefeito-Geral Eirik Malm e os quatro reis municipais de Dorsal, Keldra, Míria e Orma.</p><span>Conhecer os governantes <ArrowUpRight/></span></a><div className="aeria-entry"><h4>Uma passagem mantida por muitos</h4><p>Celestária guarda a legitimidade; Miravéu, os resgates; Ferravento, a produção. O juramento de uma casa não dispensa a responsabilidade das outras.</p></div></section></div><ContinentalMonstersSection region="aeria"/></section>}
+import { ArrowUpRight, Crown, Landmark, Shield, Wind } from "lucide-react";
+import Link from "next/link";
+const court = "/mundo/aeria/corte-demi-humana";
+export function AeriaContinentCard() {
+  return (
+    <Link
+      href="/mundo/aeria"
+      className="gaeria-continent-card aeria-continent-card"
+    >
+      <Wind aria-hidden="true" />
+      <div>
+        <span>CONTINENTE DO AR</span>
+        <strong>Aéria</strong>
+        <p>Coroa dracônica · Rotas · Casas nobres</p>
+      </div>
+      <ArrowUpRight aria-hidden="true" />
+    </Link>
+  );
+}
+export function AeriaArchive() {
+  return (
+    <section
+      className="aeria-archive aeria-archive"
+      aria-label="Arquivo de Aéria"
+    >
+      <header className="aeria-archive-heading">
+        <Wind />
+        <div>
+          <p>CONTINENTE DO AR</p>
+          <h2>Aéria</h2>
+          <span>Celestária · Miravéu · Ferravento</span>
+        </div>
+      </header>
+      <div className="aeria-category-grid">
+        <section className="aeria-category">
+          <header>
+            <Crown />
+            <h3>Corte Imperial</h3>
+            <span>01</span>
+          </header>
+          <a className="aeria-entry aeria-entry-royal" href={court}>
+            <small>PACTO DOS CÉUS ABERTOS</small>
+            <h4>Tiamat Regens</h4>
+            <p>
+              Sael Aruven, a Rainha Dracônica, e a princesa Maelis. Uma
+              linhagem, expressões distintas da mesma bênção.
+            </p>
+            <span>
+              Conhecer a corte <ArrowUpRight />
+            </span>
+          </a>
+        </section>
+        <section className="aeria-category">
+          <header>
+            <Landmark />
+            <h3>Casas nobres</h3>
+            <span>02</span>
+          </header>
+          {[
+            [
+              "Grão-Ducado Corvel",
+              "Darian Corvel · Miravéu, esquadrões de resgate e observatórios.",
+              "duque-darian",
+            ],
+            [
+              "Marquesado Talassar",
+              "Iren Talassar · Faróis, registros e passagens do norte.",
+              "marquesa-iren",
+            ],
+            [
+              "Marquesado Aster",
+              "Torren Aster · Túneis ferroviários, pontes e abastecimento industrial.",
+              "marques-torren",
+            ],
+            [
+              "Condado Valeri",
+              "Octavia Valeri · Bancos, clínicas e o Edifício Meridiano em Ferravento.",
+              "condessa-octavia",
+            ],
+            [
+              "Baronato Nacar",
+              "Otília Nacar · Cabos de emergência e a passagem para o Cais Fundo.",
+              "baronesa-otilia",
+            ],
+          ].map(([name, text, id]) => (
+            <a className="aeria-entry" href={`${court}#${id}`} key={id}>
+              <h4>{name}</h4>
+              <p>{text}</p>
+              <span>
+                Consultar <ArrowUpRight />
+              </span>
+            </a>
+          ))}
+        </section>
+        <section className="aeria-category">
+          <header>
+            <Shield />
+            <h3>As cidades e as rotas</h3>
+            <span>03</span>
+          </header>
+          <ThreatLink region="aeria" />
+          <Link className="aeria-entry" href="/mundo/aeria/nidavellir">
+            <h4>República de Nidavellir</h4>
+            <p>
+              O Prefeito-Geral Eirik Malm e os quatro reis municipais de Dorsal,
+              Keldra, Míria e Orma.
+            </p>
+            <span>
+              Conhecer os governantes <ArrowUpRight />
+            </span>
+          </Link>
+          <div className="aeria-entry">
+            <h4>Uma passagem mantida por muitos</h4>
+            <p>
+              Celestária guarda a legitimidade; Miravéu, os resgates;
+              Ferravento, a produção. O juramento de uma casa não dispensa a
+              responsabilidade das outras.
+            </p>
+          </div>
+        </section>
+      </div>
+      <ContinentalMonstersSection region="aeria" />
+    </section>
+  );
+}

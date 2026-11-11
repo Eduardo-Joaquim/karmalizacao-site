@@ -1,6 +1,14 @@
 import { lerExtensaoBencao } from "@/lib/patch-v204-types";
 
-export function CatalogBlessingDetails({ blessing }: { blessing: { phenomenon: string; extensions: readonly string[]; harvest: string } }) {
+export function CatalogBlessingDetails({
+  blessing,
+}: {
+  blessing: {
+    phenomenon: string;
+    extensions: readonly string[];
+    harvest: string;
+  };
+}) {
   return (
     <div className="catalog-blessing-details">
       <section>

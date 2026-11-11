@@ -9,7 +9,11 @@ export function costDisclosureHtml(html: string): string {
     const explanation = body.slice(match.index + match[0].length);
     return `${before.trim() ? `<p>${before}</p>` : ""}<details class="technique-construction"><summary>Composição do custo</summary><div>${explanation}</div></details>`;
   };
-  let result = html.replace(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/gi, (paragraph, body: string) => marker.test(body) ? disclose(body) : paragraph);
+  let result = html.replace(
+    /<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/gi,
+    (paragraph, body: string) =>
+      marker.test(body) ? disclose(body) : paragraph,
+  );
   if (marker.test(result)) result = disclose(result);
   return result;
 }

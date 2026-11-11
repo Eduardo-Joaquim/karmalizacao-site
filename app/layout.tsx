@@ -1,20 +1,14 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import "./divine.css";
-import "./pantheon-portal.css";
-import "./bestiary.css";
-import "./gaeria.css";
-import "./vampire.css";
-import "./ignaria.css";
-import "./skills.css";
-import "./inventory.css";
-import "./corrupted-form.css";
-import "./noble-dossiers.css";
-import "./table-play.css";
-import "./live-combat.css";
-import "./combat-cinema.css";
-import "@/styles/bestiary.css";
 import { DiceRollerOverlay } from "@/components/dice-roller-overlay";
+import "@/styles/bestiary.css";
+import type { Metadata } from "next";
+import "./bestiary.css";
+import "./combat-cinema.css";
+import "./gaeria.css";
+import "./globals.css";
+import "./ignaria.css";
+import "./noble-dossiers.css";
+import "./skills.css";
+import "./vampire.css";
 
 import { Toaster } from "@/components/ui/sonner";
 
@@ -40,7 +34,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="dark">
       <body className="antialiased">
         {children}
-        <DiceRollerOverlay/>
+        <DiceRollerOverlay />
         <Toaster theme="dark" richColors position="top-right" />
       </body>
     </html>

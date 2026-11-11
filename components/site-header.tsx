@@ -1,13 +1,13 @@
+import { BookOpen, LogIn, LogOut, PenLine, Skull } from "lucide-react";
 import Link from "next/link";
-import { BookOpen, LogOut, PenLine, Skull, LogIn } from "lucide-react";
 
 import {
   chatGPTSignInPath,
   chatGPTSignOutPath,
   type ChatGPTUser,
 } from "@/app/chatgpt-auth";
-import { Button } from "@/components/ui/button";
 import { PatchNotes } from "@/components/patch-notes";
+import { Button } from "@/components/ui/button";
 
 export function SiteHeader({ user }: { user?: ChatGPTUser | null }) {
   return (
@@ -26,13 +26,56 @@ export function SiteHeader({ user }: { user?: ChatGPTUser | null }) {
         <PatchNotes />
 
         <nav className="site-nav" aria-label="Navegação principal">
-          <Link href="/mestre" aria-label="Página do Mestre">Mestre</Link>
-          <Link href="/regras" aria-label="Livro de Regras"><BookOpen aria-hidden="true" />Regras</Link>
-          <Link href="/regras/21-bestiario" aria-label="Bestiário"><Skull aria-hidden="true" />Bestiário</Link>
-          {user ? <>
-            <Link href="/personagem" aria-label="Personagens"><PenLine aria-hidden="true" />Personagens</Link>
-            <Button asChild variant="ghost" size="sm" className="header-signout"><a href={chatGPTSignOutPath("/")} target="_top" aria-label="Sair"><LogOut aria-hidden="true" />Sair</a></Button>
-          </> : <Button asChild variant="ghost" size="sm" className="header-signout"><a href={chatGPTSignInPath("/personagem")} target="_top" aria-label="Entrar ou criar conta"><LogIn aria-hidden="true" />Entrar</a></Button>}
+          <Link href="/mestre" aria-label="Página do Mestre">
+            Mestre
+          </Link>
+          <Link href="/regras" aria-label="Livro de Regras">
+            <BookOpen aria-hidden="true" />
+            Regras
+          </Link>
+          <Link href="/regras/21-bestiario" aria-label="Bestiário">
+            <Skull aria-hidden="true" />
+            Bestiário
+          </Link>
+          {user ? (
+            <>
+              <Link href="/personagem" aria-label="Personagens">
+                <PenLine aria-hidden="true" />
+                Personagens
+              </Link>
+              <Button
+                asChild
+                variant="ghost"
+                size="sm"
+                className="header-signout"
+              >
+                <a
+                  href={chatGPTSignOutPath("/")}
+                  target="_top"
+                  aria-label="Sair"
+                >
+                  <LogOut aria-hidden="true" />
+                  Sair
+                </a>
+              </Button>
+            </>
+          ) : (
+            <Button
+              asChild
+              variant="ghost"
+              size="sm"
+              className="header-signout"
+            >
+              <a
+                href={chatGPTSignInPath("/personagem")}
+                target="_top"
+                aria-label="Entrar ou criar conta"
+              >
+                <LogIn aria-hidden="true" />
+                Entrar
+              </a>
+            </Button>
+          )}
         </nav>
       </div>
     </header>

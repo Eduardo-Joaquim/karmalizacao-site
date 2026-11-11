@@ -1,19 +1,22 @@
+import {
+  combatVisualSchema,
+  phaseNoticeSchema,
+} from "@/lib/combat-visual-schema";
+import { divineBlessingError } from "@/lib/divine-blessings";
 import { invocationAbilityDamageError } from "@/lib/invocation-rules";
 import { workshopProfile } from "@/lib/workshop-rules";
-import { divineBlessingError } from "@/lib/divine-blessings";
-import {DAMAGE_TYPES} from "./technique-matrices";
-import { combatVisualSchema, phaseNoticeSchema } from "@/lib/combat-visual-schema";
 import { z } from "zod";
+import { DAMAGE_TYPES } from "./technique-matrices";
 
 import {
   CHARACTER_SIZES,
   DOMAIN_NAMES,
-  INVOCATION_GRADES,
   INVOCATION_ACTIONS,
-  INVOCATION_RANGES,
   INVOCATION_CALL_FORMS,
+  INVOCATION_GRADES,
   INVOCATION_NATURES,
   INVOCATION_PROFILES,
+  INVOCATION_RANGES,
   MAX_EMBEDDED_IMAGE_LENGTH,
 } from "@/lib/character-data";
 
@@ -24,10 +27,15 @@ const pointValue = z.object({
   bonus: z.number().int().min(0).max(20),
 });
 
-const embeddedImage = z.string().max(MAX_EMBEDDED_IMAGE_LENGTH).refine(
-  (value) => !value || /^data:image\/(?:png|jpeg|webp);base64,[a-zA-Z0-9+/=]+$/.test(value),
-  "Imagem inválida.",
-);
+const embeddedImage = z
+  .string()
+  .max(MAX_EMBEDDED_IMAGE_LENGTH)
+  .refine(
+    (value) =>
+      !value ||
+      /^data:image\/(?:png|jpeg|webp);base64,[a-zA-Z0-9+/=]+$/.test(value),
+    "Imagem inválida.",
+  );
 
 const allocationsSchema = z.object({
   raceAttributes: z.array(shortText).max(12).default([]),
@@ -47,7 +55,11 @@ const domainSchema = z.object({
   enabled: z.boolean().default(false),
   marks: z.number().int().min(0).max(3).default(0),
   awakened: z.boolean().default(false),
-  refinements: z.array(shortText).max(2).default([]).transform(values => [...new Set(values.filter(Boolean))]),
+  refinements: z
+    .array(shortText)
+    .max(2)
+    .default([])
+    .transform((values) => [...new Set(values.filter(Boolean))]),
   signal: longText(500).default(""),
   notes: longText(1500).default(""),
 });
@@ -66,13 +78,27 @@ const personalPathSchema = z.object({
 });
 
 const corruptionSchema = z.object({
-  formName:shortText.optional(),
-  formTraits:z.array(z.enum(["carapaca","membros","aceleracao","canalizacao","expansao","tecido","instinto","pele"])).max(3).optional(),
-  formActive:z.boolean().optional(),
-  formBlocked:z.boolean().optional(),
-  formTurns:z.number().int().min(0).max(999).optional(),
-  formFocus:longText(120).optional(),
-  formDamageType:shortText.optional(),
+  formName: shortText.optional(),
+  formTraits: z
+    .array(
+      z.enum([
+        "carapaca",
+        "membros",
+        "aceleracao",
+        "canalizacao",
+        "expansao",
+        "tecido",
+        "instinto",
+        "pele",
+      ]),
+    )
+    .max(3)
+    .optional(),
+  formActive: z.boolean().optional(),
+  formBlocked: z.boolean().optional(),
+  formTurns: z.number().int().min(0).max(999).optional(),
+  formFocus: longText(120).optional(),
+  formDamageType: shortText.optional(),
   enabled: z.boolean().default(false),
   charge: z.number().int().min(0).max(10).default(0),
   markName: shortText.default(""),
@@ -86,11 +112,34 @@ const corruptionSchema = z.object({
 });
 
 const blessingGrantSchema = z.object({
- matrices:z.array(z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"])).max(5).optional(),
- id: shortText, name: shortText.default(""), pantheon: shortText.default(""), deity: shortText.default(""), deityId: shortText.optional(), deityEpithet: shortText.default(""), grantOrigin: shortText.default(""), grantReason: longText(1000).optional(), regentAttribute: shortText.default(""), tier: shortText.default(""), core: longText(800).default(""), initialGift: longText(1000).default(""), activeManifestation: longText(2500).default(""), essentialLimits: longText(1000).default(""), precept: longText(600).optional(), profanation: longText(600).optional(),
+  matrices: z
+    .array(z.enum(["Kármico", "Elemental", "Divino", "Marcial", "Corrupto"]))
+    .max(5)
+    .optional(),
+  id: shortText,
+  name: shortText.default(""),
+  pantheon: shortText.default(""),
+  deity: shortText.default(""),
+  deityId: shortText.optional(),
+  deityEpithet: shortText.default(""),
+  grantOrigin: shortText.default(""),
+  grantReason: longText(1000).optional(),
+  regentAttribute: shortText.default(""),
+  tier: shortText.default(""),
+  core: longText(800).default(""),
+  initialGift: longText(1000).default(""),
+  activeManifestation: longText(2500).default(""),
+  essentialLimits: longText(1000).default(""),
+  precept: longText(600).optional(),
+  profanation: longText(600).optional(),
 });
 const divineSchema = z.object({
- deityId: shortText.optional(), deityEpithet: shortText.optional(), grantOrigin: shortText.optional(), grantReason: longText(1000).optional(), activeManifestation: longText(2500).optional(), blessings: z.array(blessingGrantSchema).max(8).optional(),
+  deityId: shortText.optional(),
+  deityEpithet: shortText.optional(),
+  grantOrigin: shortText.optional(),
+  grantReason: longText(1000).optional(),
+  activeManifestation: longText(2500).optional(),
+  blessings: z.array(blessingGrantSchema).max(8).optional(),
   enabled: z.boolean().default(false),
   expression: shortText.default("Bênção"),
   blessingName: shortText.default(""),
@@ -129,7 +178,14 @@ const elementalSchema = z.object({
 
 const techniqueSchema = z.object({
   effect: longText(2500).optional(),
-  matrix:z.enum(["Kármico","Elemental","Divino","Marcial","Corrupto"]).optional(),damageType:z.enum([...DAMAGE_TYPES,"Físico"] as const).optional(),lineageCatalyst:shortText.optional(),doctrine:shortText.optional(),matrixExtras:z.number().min(0).max(999).optional(),matrixDiscount:z.number().min(0).max(3).optional(),
+  matrix: z
+    .enum(["Kármico", "Elemental", "Divino", "Marcial", "Corrupto"])
+    .optional(),
+  damageType: z.enum([...DAMAGE_TYPES, "Físico"] as const).optional(),
+  lineageCatalyst: shortText.optional(),
+  doctrine: shortText.optional(),
+  matrixExtras: z.number().min(0).max(999).optional(),
+  matrixDiscount: z.number().min(0).max(3).optional(),
   id: shortText,
   name: shortText.default(""),
   concept: longText(800).default(""),
@@ -152,13 +208,15 @@ const techniqueSchema = z.object({
 
 const inventoryItemSchema = z.object({
   catalogId: shortText.optional(),
-  category:z.enum(["weapon","armor","shield","ammo","focus","gear"]).optional(),
-  equipped:z.boolean().optional(),
-  location:z.enum(["ready","backpack","external"]).optional(),
-  armorClass:z.number().finite().min(0).max(20).optional(),
-  agilityCap:z.number().finite().min(0).max(99).optional(),
-  minStrength:z.number().int().min(0).max(20).optional(),
-  movementPenalty:z.number().finite().min(0).max(20).optional(),
+  category: z
+    .enum(["weapon", "armor", "shield", "ammo", "focus", "gear"])
+    .optional(),
+  equipped: z.boolean().optional(),
+  location: z.enum(["ready", "backpack", "external"]).optional(),
+  armorClass: z.number().finite().min(0).max(20).optional(),
+  agilityCap: z.number().finite().min(0).max(99).optional(),
+  minStrength: z.number().int().min(0).max(20).optional(),
+  movementPenalty: z.number().finite().min(0).max(20).optional(),
   id: shortText,
   name: shortText.default(""),
   quantity: z.number().int().min(0).max(999).default(1),
@@ -170,7 +228,10 @@ const invocationAbilitySchema = z.object({
   action: z.enum(INVOCATION_ACTIONS).optional(),
   karma: z.number().int().min(0).max(99).optional(),
   range: z.enum(INVOCATION_RANGES).optional(),
-  damage: z.string().regex(/^\d{1,2}d(?:4|6|8|10|12)$/).optional(),
+  damage: z
+    .string()
+    .regex(/^\d{1,2}d(?:4|6|8|10|12)$/)
+    .optional(),
   name: shortText.default(""),
   grade: z.enum(INVOCATION_GRADES).default("I"),
   concept: longText(1000).default(""),
@@ -195,7 +256,11 @@ const invocationSchema = z.object({
   profile: z.enum(INVOCATION_PROFILES).default("Sem ajuste"),
   mainAttribute: shortText.default(""),
   // Aceita até dois valores de fichas antigas e conserva apenas o primeiro.
-  secondaryAttributes: z.array(shortText).max(2).transform((attributes) => attributes.slice(0, 1)).default([]),
+  secondaryAttributes: z
+    .array(shortText)
+    .max(2)
+    .transform((attributes) => attributes.slice(0, 1))
+    .default([]),
   mainSkills: z.array(shortText).max(2).default([]),
   weakSkill: shortText.default(""),
   movementType: shortText.default("Terrestre"),
@@ -209,7 +274,11 @@ const invocationSchema = z.object({
 
 const sharingSchema = z.object({
   enabled: z.boolean().default(false),
-  token: z.string().max(80).regex(/^$|^[a-zA-Z0-9-]{12,80}$/).default(""),
+  token: z
+    .string()
+    .max(80)
+    .regex(/^$|^[a-zA-Z0-9-]{12,80}$/)
+    .default(""),
 });
 
 const vowSchema = z.object({
@@ -225,32 +294,111 @@ const vowSchema = z.object({
   approved: z.boolean(),
   status: z.enum(["draft", "sealed", "spent", "broken", "completed"]),
   targetSkill: shortText,
-  sacrifices: z.array(z.object({ skill: shortText, points: z.number().int().min(1).max(2) })).max(4),
+  sacrifices: z
+    .array(
+      z.object({ skill: shortText, points: z.number().int().min(1).max(2) }),
+    )
+    .max(4),
 });
 
 export const combatLogSchema = z.object({
-  id:z.string().min(12).max(80).regex(/^[a-zA-Z0-9-]+$/), timestamp:z.string().datetime(), actorName:shortText,
-  kind:z.enum(['skill','attack','technique','ability','damage','heal','resource']), title:shortText,
-  rollFormula:shortText.optional(), diceResults:z.array(z.number().int().min(1).max(100)).max(60).optional(), total:z.number().finite().min(-99999).max(99999).optional(),
-  visual:combatVisualSchema.optional(),karmaDelta:z.number().int().min(-99999).max(99999).optional(),shieldDelta:z.number().int().min(-9999).max(9999).optional(),
-  inventoryItemId:shortText.optional(),
-  karmaSpent:z.number().int().min(0).max(99999).optional(), lifeDelta:z.number().int().min(-99999).max(99999).optional(), details:longText(2000).optional(),
+  id: z
+    .string()
+    .min(12)
+    .max(80)
+    .regex(/^[a-zA-Z0-9-]+$/),
+  timestamp: z.string().datetime(),
+  actorName: shortText,
+  kind: z.enum([
+    "skill",
+    "attack",
+    "technique",
+    "ability",
+    "damage",
+    "heal",
+    "resource",
+  ]),
+  title: shortText,
+  rollFormula: shortText.optional(),
+  diceResults: z.array(z.number().int().min(1).max(100)).max(60).optional(),
+  total: z.number().finite().min(-99999).max(99999).optional(),
+  visual: combatVisualSchema.optional(),
+  karmaDelta: z.number().int().min(-99999).max(99999).optional(),
+  shieldDelta: z.number().int().min(-9999).max(9999).optional(),
+  inventoryItemId: shortText.optional(),
+  karmaSpent: z.number().int().min(0).max(99999).optional(),
+  lifeDelta: z.number().int().min(-99999).max(99999).optional(),
+  details: longText(2000).optional(),
 });
 export const liveCombatSchema = z.object({
-  runes: z.array(z.object({ id:shortText, runeId:z.number().int().min(1).max(25), weaponId:shortText.optional(), spent:z.boolean().optional(), releaseRound:z.number().int().min(1).max(99999).optional() })).max(100).optional(),
-  runeBurstUsed:z.boolean().optional(),
-  summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean(),fractures:z.number().int().min(0).max(3).optional(),maintainedThroughRound:z.number().int().min(1).max(99999).optional(),explorationPaid:z.boolean().optional()})).default({}),
-  impetus:z.number().int().min(0).max(4).optional(),impetusBloodied:z.boolean().optional(),impetusNaturalRound:z.number().int().min(1).max(99999).optional(),
-  inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),
-  activeConditions:z.array(z.string().min(1).max(80)).max(20),conditionPotency:z.record(z.string().min(1).max(80),z.number().int().min(0).max(99999)).optional(),conditionRounds:z.record(z.string().min(1).max(80),z.number().int().min(1).max(99)).optional(),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
-  bossPhases:z.record(z.string().max(80),phaseNoticeSchema).refine(v=>Object.keys(v).length<=20).optional(),
-  reactions:z.number().int().min(0).max(10).default(1),round:z.number().int().min(1).max(99999).default(1),domainRounds:z.record(z.enum(DOMAIN_NAMES),z.number().int().min(0).max(6)).default({}),
+  runes: z
+    .array(
+      z.object({
+        id: shortText,
+        runeId: z.number().int().min(1).max(25),
+        weaponId: shortText.optional(),
+        spent: z.boolean().optional(),
+        releaseRound: z.number().int().min(1).max(99999).optional(),
+      }),
+    )
+    .max(100)
+    .optional(),
+  runeBurstUsed: z.boolean().optional(),
+  summons: z
+    .record(
+      z.string().max(80),
+      z.object({
+        life: z.number().int().min(0).max(99999),
+        active: z.boolean(),
+        fractures: z.number().int().min(0).max(3).optional(),
+        maintainedThroughRound: z.number().int().min(1).max(99999).optional(),
+        explorationPaid: z.boolean().optional(),
+      }),
+    )
+    .default({}),
+  impetus: z.number().int().min(0).max(4).optional(),
+  impetusBloodied: z.boolean().optional(),
+  impetusNaturalRound: z.number().int().min(1).max(99999).optional(),
+  inCombat: z.boolean(),
+  currentLife: z.number().int().min(0).max(99999),
+  currentKarma: z.number().int().min(0).max(99999),
+  tempShield: z.number().int().min(0).max(9999),
+  activeConditions: z.array(z.string().min(1).max(80)).max(20),
+  conditionPotency: z
+    .record(z.string().min(1).max(80), z.number().int().min(0).max(99999))
+    .optional(),
+  conditionRounds: z
+    .record(z.string().min(1).max(80), z.number().int().min(1).max(99))
+    .optional(),
+  lastActionLog: combatLogSchema.nullable(),
+  combatFeed: z.array(combatLogSchema).max(25),
+  bossPhases: z
+    .record(z.string().max(80), phaseNoticeSchema)
+    .refine((v) => Object.keys(v).length <= 20)
+    .optional(),
+  reactions: z.number().int().min(0).max(10).default(1),
+  round: z.number().int().min(1).max(99999).default(1),
+  domainRounds: z
+    .partialRecord(z.enum(DOMAIN_NAMES), z.number().int().min(0).max(6))
+    .default({}),
 });
 
 export const characterPayloadSchema = z.object({
   version: z.literal(1),
   combatState: liveCombatSchema.optional(),
-  combat: z.object({ life: z.number().int().min(0).max(99999), karma: z.number().int().min(0).max(99999), shield: z.number().int().min(0).max(9999), temporaryCharges: z.number().int().min(0).max(10), round: z.number().int().min(1).max(99999), domainRounds: z.record(z.enum(DOMAIN_NAMES), z.number().int().min(0).max(6)) }).optional(),
+  combat: z
+    .object({
+      life: z.number().int().min(0).max(99999),
+      karma: z.number().int().min(0).max(99999),
+      shield: z.number().int().min(0).max(9999),
+      temporaryCharges: z.number().int().min(0).max(10),
+      round: z.number().int().min(1).max(99999),
+      domainRounds: z.partialRecord(
+        z.enum(DOMAIN_NAMES),
+        z.number().int().min(0).max(6),
+      ),
+    })
+    .optional(),
   name: z.string().trim().min(1).max(80),
   portraitImage: embeddedImage.optional(),
   pronouns: shortText,
@@ -281,40 +429,77 @@ export const characterPayloadSchema = z.object({
   elemental: elementalSchema.optional(),
   techniques: z.array(techniqueSchema).max(30).optional(),
   invocations: z.array(invocationSchema).max(10).optional(),
-  workshopDevices: z.array(z.object({
-    id: shortText,
-    name: z.string().trim().min(1).max(80),
-    kind: z.enum(["Ofensivo", "Ferramenta", "Manipulação", "Emissor de Escudo Cinético"]),
-    active: z.boolean(),
-  })).max(8).optional(),
-  alchemicalSaturation:z.number().int().min(0).max(999).optional(),
-  loadModifier:z.number().finite().min(-100).max(200).optional(),
+  workshopDevices: z
+    .array(
+      z.object({
+        id: shortText,
+        name: z.string().trim().min(1).max(80),
+        kind: z.enum([
+          "Ofensivo",
+          "Ferramenta",
+          "Manipulação",
+          "Emissor de Escudo Cinético",
+        ]),
+        active: z.boolean(),
+      }),
+    )
+    .max(8)
+    .optional(),
+  alchemicalSaturation: z.number().int().min(0).max(999).optional(),
+  loadModifier: z.number().finite().min(-100).max(200).optional(),
   inventory: z.array(inventoryItemSchema).max(100).optional(),
   vows: z.array(vowSchema).max(20).optional(),
   sharing: sharingSchema.optional(),
 });
 
-export const saveCharacterSchema = z.object({
-  id: z
-    .string()
-    .min(12)
-    .max(80)
-    .regex(/^[a-zA-Z0-9-]+$/),
-  name: z.string().trim().min(1).max(80),
-  payload: characterPayloadSchema,
-}).superRefine(({ payload }, ctx) => {
-  for (const [index, invocation] of (payload.invocations ?? []).entries()) {
-    if (!invocation.ability.damage) continue;
-    const error = invocationAbilityDamageError(invocation);
-    if (error) ctx.addIssue({ code: "custom", message: error, path: ["payload", "invocations", index, "ability", "damage"] });
-  }
-  const devices = payload.workshopDevices ?? [];
-  const profile = workshopProfile(payload.stage);
-  if (payload.className === "Inventor" && (devices.length > profile.prepared || devices.filter(device => device.active).length > profile.active
-    || devices.filter(device => device.active && device.kind === "Emissor de Escudo Cinético").length > 1)) {
-    ctx.addIssue({ code: "custom", message: "A Oficina ultrapassa o limite de dispositivos da Etapa.", path: ["payload", "workshopDevices"] });
-  }
-  if (!payload.divine) return;
-  const error = divineBlessingError(payload.divine);
-  if (error) ctx.addIssue({ code: "custom", message: error, path: ["payload", "divine"] });
-});
+export const saveCharacterSchema = z
+  .object({
+    baseRevision: z
+      .string()
+      .regex(/^[a-f0-9]{64}$/)
+      .optional(),
+    id: z
+      .string()
+      .min(12)
+      .max(80)
+      .regex(/^[a-zA-Z0-9-]+$/),
+    name: z.string().trim().min(1).max(80),
+    payload: characterPayloadSchema,
+  })
+  .superRefine(({ payload }, ctx) => {
+    for (const [index, invocation] of (payload.invocations ?? []).entries()) {
+      if (!invocation.ability.damage) continue;
+      const error = invocationAbilityDamageError(invocation);
+      if (error)
+        ctx.addIssue({
+          code: "custom",
+          message: error,
+          path: ["payload", "invocations", index, "ability", "damage"],
+        });
+    }
+    const devices = payload.workshopDevices ?? [];
+    const profile = workshopProfile(payload.stage);
+    if (
+      payload.className === "Inventor" &&
+      (devices.length > profile.prepared ||
+        devices.filter((device) => device.active).length > profile.active ||
+        devices.filter(
+          (device) =>
+            device.active && device.kind === "Emissor de Escudo Cinético",
+        ).length > 1)
+    ) {
+      ctx.addIssue({
+        code: "custom",
+        message: "A Oficina ultrapassa o limite de dispositivos da Etapa.",
+        path: ["payload", "workshopDevices"],
+      });
+    }
+    if (!payload.divine) return;
+    const error = divineBlessingError(payload.divine);
+    if (error)
+      ctx.addIssue({
+        code: "custom",
+        message: error,
+        path: ["payload", "divine"],
+      });
+  });

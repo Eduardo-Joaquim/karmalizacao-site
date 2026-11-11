@@ -9,11 +9,15 @@ export default function UpdatesPage() {
       <SiteHeader />
       <main className="site-shell rule-content updates-page">
         <h1>Atualizações de Karmalização</h1>
-        {PATCH_NOTES.map(patch => (
+        {PATCH_NOTES.map((patch) => (
           <article key={patch.id} id={patch.id}>
             <h2>{patch.label}</h2>
             <h3>{patch.title}</h3>
-            <ul>{patch.highlights.map(highlight => <li key={highlight}>{highlight}</li>)}</ul>
+            <ul>
+              {patch.highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
           </article>
         ))}
       </main>

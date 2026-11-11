@@ -7,18 +7,32 @@ function makeSnippet(text: string, query: string): string {
   const normalized = normalizeSearch(text);
   const matchIndex = normalized.indexOf(query);
   const start = Math.max(0, matchIndex - 82);
-  const end = Math.min(text.length, Math.max(matchIndex, 0) + query.length + 118);
+  const end = Math.min(
+    text.length,
+    Math.max(matchIndex, 0) + query.length + 118,
+  );
   return `${start > 0 ? "…" : ""}${text.slice(start, end).trim()}${
     end < text.length ? "…" : ""
   }`;
 }
 
+const searchIndex = getAllChapters().map((chapter) => ({
+  chapter,
+  title: normalizeSearch(`${chapter.title} ${chapter.description}`),
+  overview: normalizeSearch(chapter.overviewText),
+  sections: chapter.sections.map((section) => ({
+    section,
+    title: normalizeSearch(section.title),
+    text: normalizeSearch(section.searchableText),
+  })),
+}));
 export async function GET(request: Request) {
   const query = new URL(request.url).searchParams.get("q")?.slice(0, 80) ?? "";
   const normalizedQuery = normalizeSearch(query);
   if (normalizedQuery.length < 2) return Response.json({ results: [] });
 
-  const matches = getAllChapters().flatMap((chapter) => {
+  const matches = searchIndex.flatMap((indexed) => {
+    const { chapter } = indexed;
     const results: Array<{
       score: number;
       chapterNumber: number;
@@ -28,7 +42,7 @@ export async function GET(request: Request) {
       sectionTitle: string | null;
       snippet: string;
     }> = [];
-    const normalizedTitle = normalizeSearch(`${chapter.title} ${chapter.description}`);
+    const normalizedTitle = indexed.title;
 
     if (normalizedTitle.includes(normalizedQuery)) {
       results.push({
@@ -40,7 +54,7 @@ export async function GET(request: Request) {
         sectionTitle: null,
         snippet: chapter.description,
       });
-    } else if (normalizeSearch(chapter.overviewText).includes(normalizedQuery)) {
+    } else if (indexed.overview.includes(normalizedQuery)) {
       results.push({
         score: 60 - chapter.number,
         chapterNumber: chapter.number,
@@ -52,9 +66,10 @@ export async function GET(request: Request) {
       });
     }
 
-    for (const section of chapter.sections) {
-      const titleMatch = normalizeSearch(section.title).includes(normalizedQuery);
-      const textMatch = normalizeSearch(section.searchableText).includes(normalizedQuery);
+    for (const indexedSection of indexed.sections) {
+      const { section } = indexedSection;
+      const titleMatch = indexedSection.title.includes(normalizedQuery);
+      const textMatch = indexedSection.text.includes(normalizedQuery);
       if (!titleMatch && !textMatch) continue;
 
       results.push({
@@ -78,7 +93,13 @@ export async function GET(request: Request) {
       .sort((a, b) => b.score - a.score)
       .slice(0, 9)
       .map((result) => ({
-        url: result.chapterSlug === "21-bestiario" && result.sectionId && (gaeriaAnchors.includes(result.sectionId) || result.sectionId === "reino-humano-valdaria") ? `/mundo/gaeria/reino-humano#${result.sectionId === "reino-humano-valdaria" ? "valdaria" : result.sectionId}` : `/regras/${result.chapterSlug}${result.sectionId ? `#${result.sectionId}` : ""}`,
+        url:
+          result.chapterSlug === "21-bestiario" &&
+          result.sectionId &&
+          (gaeriaAnchors.includes(result.sectionId) ||
+            result.sectionId === "reino-humano-valdaria")
+            ? `/mundo/gaeria/reino-humano#${result.sectionId === "reino-humano-valdaria" ? "valdaria" : result.sectionId}`
+            : `/regras/${result.chapterSlug}${result.sectionId ? `#${result.sectionId}` : ""}`,
         chapterNumber: result.chapterNumber,
         chapterTitle: result.chapterTitle,
         chapterSlug: result.chapterSlug,

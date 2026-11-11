@@ -1,0 +1,2321 @@
+{
+  "routes": [
+    {
+      "anchor": "aqueronte",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "corte-lucifero",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "rainha-valac",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-nadir",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-hiato",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-limiar",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-legado",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-mutilatio",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-mortis",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-anatema",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-nexum",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-oblatio",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "valac-miserere",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "princesa-belial",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-provocatio",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-incisio",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-favilla",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-reditus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-pignus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "belial-rex",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "liturgia-sceleris-decreto-da-lâmina-deposta",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "princesa-astaroth",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-vitriol",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-antidotum",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-elixir",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-unda",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-lavacrum",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "astaroth-athanor",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "princesa-asmodeus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-pactum",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-aria",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-sibilus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-discors",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-fides",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "asmodeus-dies-irae",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "liturgia-concordato-cláusula-de-travessia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "princesa-bael",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-talus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-murus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-fulcrum",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-scala",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-custos",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "bael-tellus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "casas-demoniacas",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "duque-agares",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-hematis",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-fibra",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-frater",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-hereditas",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "agares-concordia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marques-andras",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "andras-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "andras-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "andras-vestigium",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "andras-sectio",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "andras-pallor",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marquesa-marchosias",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marchosias-historia",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marchosias-combate",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marchosias-rictus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marchosias-tenax",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "marchosias-fractus",
+      "url": "/mundo/ignaria/corte-demoniaca"
+    },
+    {
+      "anchor": "trono-ghoul",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "al-aqwa",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-historia",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-combate",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-ruina",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-cerco",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-cisma",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-rechaco",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-lastro",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-quebranto",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-interdito",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "aqwa-ananke",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "candidata-sahar",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "sahar-historia",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "sahar-combate",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "sahar-fenda",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "sahar-esquiva",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "sahar-guarda",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "sahar-juramento",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "candidata-naima",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "naima-historia",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "naima-combate",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "naima-alcali",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "naima-balsamo",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "naima-silica",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "naima-aqua-regia",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "candidata-zahra",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "zahra-historia",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "zahra-combate",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "zahra-rajada",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "zahra-contravento",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "zahra-ascensao",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "zahra-samum",
+      "url": "/mundo/ignaria/ghouls"
+    },
+    {
+      "anchor": "casa-marquesal-lunaviel",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-lunaviel",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-historia",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-combate",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-mikazuki",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-kasumi",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-shingetsu",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-getsuga",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-tsukikage",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-mangetsu",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-nisshoku",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "caroline-gekko",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "liturgia-espelho-da-lua-interrompida",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "valentino-heathcliff",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "valentino-historia",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "valentino-combate",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "valentino-anteparo",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "valentino-passagem",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "valentino-egide",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-voss",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-historia",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-combate",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-prensa",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-ferro-curto",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-casamata",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-retorno",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "alaric-requiem",
+      "url": "/mundo/ignaria/casa-lunaviel"
+    },
+    {
+      "anchor": "aeria-coroas",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "linhagem-tiamat",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "corte-celestaria",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "rainha-sael",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "rainha-sael-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "rainha-sael-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "talion",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "istmo",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "drómē",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "tegmen",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "alária",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "regnum",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "fulmen",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "cautério",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "escória",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-anábasis",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "princesa-maelis",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "princesa-maelis-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "princesa-maelis-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "sustento",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "íris",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "ascua",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "passo-de-quilha",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "limiar",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-aster",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "liturgia-sopro-do-primeiro-céu",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "nobres-aeria",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "duque-darian",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "duque-darian-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "duque-darian-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "contra-alísio",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "linha-de-resgate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "tesoura",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-rosa-dos-ventos",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "marquesa-iren",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "marquesa-iren-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "marquesa-iren-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "contraprova",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "interdição",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-palimpsesto",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "marques-torren",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "marques-torren-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "marques-torren-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "escora",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "descompressão",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-arco-catenário",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "condessa-octavia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "condessa-octavia-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "condessa-octavia-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "crédito-de-sangue",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "passo-noturno",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-vencimento",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "baronesa-otilia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "baronesa-otilia-historia",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "baronesa-otilia-combate",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "linha-de-segurança",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "trava-de-passagem",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "assinatura-último-cabo",
+      "url": "/mundo/aeria/corte-demi-humana"
+    },
+    {
+      "anchor": "nidavellir",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "governo-nidavellir",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-historia",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-ficha",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-1",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-2",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-3",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-4",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-5",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-6",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-7",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-8",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "eirik-malm-arte-9",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-historia",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-ficha",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-1",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-2",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-3",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-4",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-5",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-6",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "oren-damar-arte-7",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-historia",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-ficha",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-1",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-2",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-3",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-4",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-5",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-6",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "haldor-rusk-arte-7",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-historia",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-ficha",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-1",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-2",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-3",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-4",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-5",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-6",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "saira-namar-arte-7",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-historia",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-ficha",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-1",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-2",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-3",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-4",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-5",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-6",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "idris-khar-arte-7",
+      "url": "/mundo/aeria/nidavellir"
+    },
+    {
+      "anchor": "thalassia-halikarnos",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-7",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-8",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-9",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-10",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atargatis-kalypso-11",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "galateia-kalypso-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "cymopoleia-kalypso-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "glaukos-halikarnos-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "phorcys-pelagia-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "proteus-bathys-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "triton-apsu-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nereu-eclusa-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "thalassia-apsu",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-7",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "nammu-salacia-8",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "beroso-salmoura-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "adapa-eclusa-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "thalassia-hubur",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-7",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-8",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-9",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "ummu-hubur-10",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-7",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-8",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-9",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-10",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "asteria-hubur-11",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-7",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "lachesis-hubur-8",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-historia",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-ficha",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-1",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-2",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-3",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-4",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-5",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-6",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-7",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "atropos-hubur-8",
+      "url": "/mundo/thalassia"
+    },
+    {
+      "anchor": "sarkora",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "edito-dos-nomes",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "corte-haimaton",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "rainha-nosferato",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "nosferato-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "nosferato-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "hasta",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "cruor",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "aegis",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "retorsio",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "rubedo",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "sutura",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "coagulum",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "assinatura-imperium",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "princesa-alucard",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "alucard-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "alucard-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "mors",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "tacita",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "umbra",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "acus",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "exúvia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "sepulcrum",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "assinatura-erebos",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "liturgia-cálice-da-herdeira-rubra",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "princesa-savia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "savia-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "savia-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "salus",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "catharsis",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "pallium",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "concordia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "casas-sarkora",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "marquesado-dorne",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "eliska-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "eliska-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "scutum",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "malleus",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "porta",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "marquesado-kessel",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "odran-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "odran-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "fendente",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "passata",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "risposta",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "condado-senn",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "mirela-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "mirela-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "fons",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "ligatura",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "custodia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "viscondado-kost",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "irina-historia",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "irina-combate",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "signum",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "fixum",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "transitus",
+      "url": "/mundo/ignaria/corte-vampirica"
+    },
+    {
+      "anchor": "elaranth",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "memoria-da-noite-rubra",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "corte-nemeton",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "rainha-naerith",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "história-e-origem",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "ficha-de-combate",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "sagitta",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "rhíza",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "dáphne",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "khlôris",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "nix",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "ákantha",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "nepénthes",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "reação-aegis",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "reação-ékdysis",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "reação-anástasis",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "assinatura-heliánthos",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "princesa-ilyra",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "história-e-origem-1",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "ficha-de-combate-1",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "pyra",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "cinis",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "fornax",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "assinatura-eósphoros",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "liturgia-santuário-da-primeira-folha",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "duque-thaerion",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "história-e-origem-2",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "ficha-de-combate-2",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "zênite",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "speculum",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "parallax",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "leucosis",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "assinatura-sol-niger",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "caelen-solvarden",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "história-e-origem-3",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "ficha-de-combate-3",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "incisio",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "eidolon",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "praesidium",
+      "url": "/mundo/gaeria/reino-elfico"
+    },
+    {
+      "anchor": "valdaria",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "coroa-e-contratos",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "sucessao-valdaria",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "corte-dos-sete-angulos",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "rainha-aveline",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "face-do-juramento",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "pavilhão-de-seis-faces",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "cela-de-ângulos-vivos",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "agulha-do-tetraedro",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "lança-das-comportas",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "guilhotina-do-rio-suspenso",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "três-rodadas-sem-ferida",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "princesa-isadora",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-1",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate-1",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "acorde-de-abrigo",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "contratempo-de-vidro",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "nota-de-ruptura",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "compasso-dos-que-permanecem",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "cadência-da-passagem",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "herança-do-primeiro-acorde",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "liturgia-consagração-do-sexto-ângulo",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "princesa-brigida",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-2",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate-2",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "punho-de-pedra-franca",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "travessia-do-cais",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "corpo-que-não-recua",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "resposta-da-segunda-filha",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "liturgia-juramento-da-porta-acesa",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "conselheiro-tomas",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-3",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate-3",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "entre-a-coroa-e-a-lâmina",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "avanço-do-portão",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "braço-da-sentinela",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficar-de-pé",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "a-porta-ainda-está-comigo",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "marquesados-valdaria",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "casa-ferromonte",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "leonor-ferromonte",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-4",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "mateus-ferromonte",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-5",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-1",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "germano-ferromonte",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-6",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate-4",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ponte-de-escudos-grau-ii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "golpe-do-pilar-grau-iii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "passagem-segura-grau-ii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "casa-vesperal",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "artur-vesperal",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-7",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-2",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "naira-vesperal",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-8",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-3",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "lidia-vesperal",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-9",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-4",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "celina-vesperal",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-10",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate-5",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "chicote-da-vazão-grau-iii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "água-entre-as-lâminas-grau-ii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "nó-de-correnteza-grau-ii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "baronato-cedro-novo",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "damiao-cedral",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-11",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-5",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "teresa-cedral",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-12",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-6",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "raul-cedral",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-13",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-de-combate-6",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "flecha-de-advertência-grau-ii",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "recuo-do-vigia-grau-i",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "olhos-sobre-a-ponte-grau-i",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "aventura-comporta",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "rui-salcedo",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "história-e-origem-14",
+      "url": "/mundo/gaeria/reino-humano"
+    },
+    {
+      "anchor": "ficha-básica-7",
+      "url": "/mundo/gaeria/reino-humano"
+    }
+  ],
+  "thalassiaZones": [
+    [
+      "halikarnos",
+      "As Eclusas de Halikarnós",
+      "A superfície mantém guarnições, estações de inspeção e pátios onde as cargas ficam retidas por dias. O ducado de Glaukos precede o marquesado de Phorcys; seguem os condados e a baronia. Princesas pertencem à sucessão real e não transformam seus aliados em nobres. As licenças de saída registram quem responderá por cada pessoa impedida de voltar."
+    ],
+    [
+      "apsu",
+      "As Basílicas Submersas de Ápsu",
+      "As cidades médias vivem de cultivo, reparo e intercâmbio de materiais. Sinédrio e Magistratura fiscalizam a rainha sem exercer soberania sobre a população hadal. Atargatis precisa das oficinas de Ápsu; Nammu precisa que as eclusas continuem operáveis. A dependência torna o conflito duradouro e impede que qualquer uma trate a outra como simples rebelde."
+    ],
+    [
+      "hubur",
+      "A Fossa de Hubur",
+      "Quase três mil Abissais vivem em assentamentos dispersos, ligados por passagens cuja abertura exige reconhecimento pessoal. A antiga coroa tornou-se regência civil sob Asteria; a autoridade transcendental de Ummu-Hubur não é um cargo hereditário. Lachesis responde pelos laboratórios e Atropos pelas rotas. O povo preserva dissenso, ofícios e famílias; não existe apenas como exército da vingança."
+    ]
+  ]
+}

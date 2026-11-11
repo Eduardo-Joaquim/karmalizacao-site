@@ -1,25 +1,25 @@
-import { hasAwakenedPath, hasAxiom } from "@/lib/personal-path";
-import mageWeapons from "@/data/mage-weapons.json";
-import { sizeFromHeight, SIZE_RULES } from "@/lib/character-model";
-import { corruptedFormState } from "@/lib/corrupted-form";
-import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
-import racialProgression from "@/data/racial-progression.json";
-import raceBook from "@/data/race-book.json";
 import characterRulesData from "@/data/character-rules.json";
+import mageWeapons from "@/data/mage-weapons.json";
+import raceBook from "@/data/race-book.json";
+import racialProgression from "@/data/racial-progression.json";
 import {
   ALL_SKILLS,
   ATTRIBUTES,
-  DOMAIN_NAMES,
-  SKILL_GROUPS,
   BASE_SKILL_POINT_BUDGET,
+  DOMAIN_NAMES,
   PRESENCE_SKILLS,
+  SIZE_RULES,
+  SKILL_GROUPS,
   getTrainingSkill,
+  sizeFromHeight,
   type AttributeName,
   type BindingVow,
-  type CharacterSize,
   type CharacterPayload,
   type DomainName,
 } from "@/lib/character-model";
+import { corruptedFormState } from "@/lib/corrupted-form";
+import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
+import { hasAwakenedPath, hasAxiom } from "@/lib/personal-path";
 
 export type RuleFeature = {
   name: string;
@@ -87,7 +87,13 @@ export type ClassDefinition = {
   recommendedSkills: string;
   trait: { name: string; description: string };
   abilities: Array<{ name: string; usage: string; effect: string }>;
-  progression: Array<{ stage: string; status: string; systemStatus?: string; classStatus?: string; development: string }>;
+  progression: Array<{
+    stage: string;
+    status: string;
+    systemStatus?: string;
+    classStatus?: string;
+    development: string;
+  }>;
   amplifications: Array<{
     abilityName: string;
     name: string;
@@ -125,39 +131,81 @@ const MENTAL_SKILLS = SKILL_GROUPS[1].skills;
 const SOCIAL_SKILLS = SKILL_GROUPS[2].skills;
 const SUPERNATURAL_SKILLS = SKILL_GROUPS[3].skills;
 
-const anyAttributeSlot = (label: string): BonusChoiceSlot => ({
-  label,
-  options: ATTRIBUTES,
-  value: 1,
-});
-
 const anySkillSlot = (label: string, value = 1): BonusChoiceSlot => ({
   label,
   options: ALL_SKILLS,
   value,
 });
 
-export const RACE_RULES: Record<string,RaceRule> = Object.fromEntries(
- Object.entries(raceBook).map(([name,content])=>[name,{name,summary:content.summary,automatic:content.creation.automatic,attributeSlots:[],skillSlots:[],features:content.features as RuleFeature[]}])
+export const RACE_RULES: Record<string, RaceRule> = Object.fromEntries(
+  Object.entries(raceBook).map(([name, content]) => [
+    name,
+    {
+      name,
+      summary: content.summary,
+      automatic: content.creation.automatic,
+      attributeSlots: [],
+      skillSlots: [],
+      features: content.features as RuleFeature[],
+    },
+  ]),
 );
-const lineage = racialProgression as Record<string, {
- creation: {attributes: AttributeName[]; skills: string[] | "*"; skillCount: number; automatic: RaceRule["automatic"]};
- stageVIAttributes: AttributeName[];
-}>;
-for (const [name, {creation}] of Object.entries(lineage)) {
- const rule=RACE_RULES[name];
- rule.automatic=creation.automatic;
- rule.attributeSlots=[{label:"Atributo de linhagem",options:creation.attributes,value:1}];
- rule.skillSlots=Array.from({length:creation.skillCount},(_,i)=>({label:`Perícia de linhagem ${i+1}`,options:creation.skills==="*"?ALL_SKILLS:creation.skills,value:1}));
+const lineage = racialProgression as Record<
+  string,
+  {
+    creation: {
+      attributes: AttributeName[];
+      skills: string[] | "*";
+      skillCount: number;
+      automatic: RaceRule["automatic"];
+    };
+    stageVIAttributes: AttributeName[];
+  }
+>;
+for (const [name, { creation }] of Object.entries(lineage)) {
+  const rule = RACE_RULES[name];
+  rule.automatic = creation.automatic;
+  rule.attributeSlots = [
+    { label: "Atributo de linhagem", options: creation.attributes, value: 1 },
+  ];
+  rule.skillSlots = Array.from({ length: creation.skillCount }, (_, i) => ({
+    label: `Perícia de linhagem ${i + 1}`,
+    options: creation.skills === "*" ? ALL_SKILLS : creation.skills,
+    value: 1,
+  }));
 }
-export function racialFeatures(draft:CharacterPayload){const step=Math.max(1,getStageIndex(draft.stage));return getRaceRule(draft.race)?.features.filter(f=>!f.stage||['I','II','III','IV','V','VI','VII'].indexOf(f.stage)+1<=step)??[];}
+export function racialFeatures(draft: CharacterPayload) {
+  const step = Math.max(1, getStageIndex(draft.stage));
+  return (
+    getRaceRule(draft.race)?.features.filter(
+      (f) =>
+        !f.stage ||
+        ["I", "II", "III", "IV", "V", "VI", "VII"].indexOf(f.stage) + 1 <= step,
+    ) ?? []
+  );
+}
 
 const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
-  "Escriba Kármico": { automatic: { attributes: { Intelecto: 1, Espírito: 1 }, skills: { "Canalização de Karma": 1, Tática: 1 } } },
-  Conjurador: { automatic: { life: 4, karma: 10, attributes: { Espírito: 1 }, skills: { "Canalização de Karma": 1 } } },
+  "Escriba Kármico": {
+    automatic: {
+      attributes: { Intelecto: 1, Espírito: 1 },
+      skills: { "Canalização de Karma": 1, Tática: 1 },
+    },
+  },
+  Conjurador: {
+    automatic: {
+      life: 4,
+      karma: 10,
+      attributes: { Espírito: 1 },
+      skills: { "Canalização de Karma": 1 },
+    },
+  },
   Mercenário: {
     automatic: { life: 8, karma: 6, skills: { Percepção: 1 } },
-    skillSlots: [anySkillSlot("Treino mercenário — Perícia 1"), anySkillSlot("Treino mercenário — Perícia 2")],
+    skillSlots: [
+      anySkillSlot("Treino mercenário — Perícia 1"),
+      anySkillSlot("Treino mercenário — Perícia 2"),
+    ],
   },
   Pugilista: {
     automatic: {
@@ -170,16 +218,30 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   },
   Duelista: {
     automatic: { life: 6, karma: 6, armor: 2, skills: { Reflexos: 1 } },
-    attributeSlots: [{ label: "Estilo do Duelista", options: ["Agilidade", "Força"], value: 1 }],
+    attributeSlots: [
+      {
+        label: "Estilo do Duelista",
+        options: ["Agilidade", "Força"],
+        value: 1,
+      },
+    ],
   },
   Tanque: {
-    automatic: { life: 15, karma: 4, armor: 2, attributes: { Constituição: 1 } },
+    automatic: {
+      life: 15,
+      karma: 4,
+      armor: 2,
+      attributes: { Constituição: 1 },
+    },
   },
   Ranger: {
     automatic: { karma: 8, armor: 1, attributes: { Agilidade: 1 } },
-    skillSlots: [anySkillSlot("Treino Ranger — Perícia 1"), anySkillSlot("Treino Ranger — Perícia 2")],
+    skillSlots: [
+      anySkillSlot("Treino Ranger — Perícia 1"),
+      anySkillSlot("Treino Ranger — Perícia 2"),
+    ],
   },
-  "Ladrão": {
+  Ladrão: {
     automatic: {
       life: 4,
       karma: 5,
@@ -198,9 +260,21 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   Samaritano: {
     automatic: { life: 4, karma: 12 },
     skillSlots: [
-      { label: "Formação samaritana — Perícia 1", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 1 },
-      { label: "Formação samaritana — Perícia 2", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 1 },
-      { label: "Formação samaritana — Perícia 3", options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS], value: 1 },
+      {
+        label: "Formação samaritana — Perícia 1",
+        options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS],
+        value: 1,
+      },
+      {
+        label: "Formação samaritana — Perícia 2",
+        options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS],
+        value: 1,
+      },
+      {
+        label: "Formação samaritana — Perícia 3",
+        options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS],
+        value: 1,
+      },
     ],
   },
   Curandeiro: {
@@ -209,13 +283,29 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   Alquimista: {
     automatic: { karma: 8, attributes: { Intelecto: 2 } },
     skillSlots: [
-      { label: "Formação alquímica — Perícia 1", options: MENTAL_SKILLS, value: 1 },
-      { label: "Formação alquímica — Perícia 2", options: MENTAL_SKILLS, value: 1 },
-      { label: "Formação alquímica — Perícia 3", options: MENTAL_SKILLS, value: 1 },
+      {
+        label: "Formação alquímica — Perícia 1",
+        options: MENTAL_SKILLS,
+        value: 1,
+      },
+      {
+        label: "Formação alquímica — Perícia 2",
+        options: MENTAL_SKILLS,
+        value: 1,
+      },
+      {
+        label: "Formação alquímica — Perícia 3",
+        options: MENTAL_SKILLS,
+        value: 1,
+      },
     ],
   },
   Inventor: {
-    automatic: { karma: 8, attributes: { Intelecto: 2 }, skills: { Criação: 1 } },
+    automatic: {
+      karma: 8,
+      attributes: { Intelecto: 2 },
+      skills: { Criação: 1 },
+    },
   },
   Bardo: {
     automatic: {
@@ -226,7 +316,10 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   },
   Ocultista: {
     automatic: { karma: 8, attributes: { Espírito: 1, Presença: 1 } },
-    skillSlots: [anySkillSlot("Estudo oculto — Perícia 1"), anySkillSlot("Estudo oculto — Perícia 2")],
+    skillSlots: [
+      anySkillSlot("Estudo oculto — Perícia 1"),
+      anySkillSlot("Estudo oculto — Perícia 2"),
+    ],
   },
   Especialista: {
     automatic: { life: 6, karma: 8, attributes: { Intelecto: 1 } },
@@ -247,16 +340,38 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
     automatic: {
       karma: 10,
       attributes: { Espírito: 1 },
-
     },
   },
 };
 
-for (const name of ["Ladrão", "Assassino", "Inventor", "Invocador", "Elementalista"]) {
-  CLASS_INITIAL_RULES[name].skillSlots = [...(CLASS_INITIAL_RULES[name].skillSlots ?? []), anySkillSlot("Excedente de criação — escolha uma Perícia coerente")];
+for (const name of [
+  "Ladrão",
+  "Assassino",
+  "Inventor",
+  "Invocador",
+  "Elementalista",
+]) {
+  CLASS_INITIAL_RULES[name].skillSlots = [
+    ...(CLASS_INITIAL_RULES[name].skillSlots ?? []),
+    anySkillSlot("Excedente de criação — escolha uma Perícia coerente"),
+  ];
 }
-CLASS_INITIAL_RULES.Elementalista.skillSlots = [{label:"Controle do elemento escolhido",options:ALL_SKILLS.filter(s => s.startsWith("Controle de ")),value:1},anySkillSlot("Excedente de criação — Perícia coerente")];
-CLASS_INITIAL_RULES.Samaritano.skillSlots = Array.from({length:3},(_,i)=>({label:`Formação samaritana ${i+1}`, options:[...MENTAL_SKILLS,...SOCIAL_SKILLS],value:1}));
+CLASS_INITIAL_RULES.Elementalista.skillSlots = [
+  {
+    label: "Controle do elemento escolhido",
+    options: ALL_SKILLS.filter((s) => s.startsWith("Controle de ")),
+    value: 1,
+  },
+  anySkillSlot("Excedente de criação — Perícia coerente"),
+];
+CLASS_INITIAL_RULES.Samaritano.skillSlots = Array.from(
+  { length: 3 },
+  (_, i) => ({
+    label: `Formação samaritana ${i + 1}`,
+    options: [...MENTAL_SKILLS, ...SOCIAL_SKILLS],
+    value: 1,
+  }),
+);
 
 export const DOMAIN_RULES: Record<
   DomainName,
@@ -268,30 +383,36 @@ export const DOMAIN_RULES: Record<
       "uma vez por rodada, seu primeiro acerto total corpo a corpo regido por Força ignora 1 ponto de Resistência física. Sua manobra Empurrar começa em 3 metros, em vez de 2.",
     manifestation:
       "acrescente +1d20 aos testes de Força com Luta ou Atletismo. Uma vez por rodada, depois de um acerto total regido por Força, escolha acrescentar um dado do dano-base, rolado como dado adicional depois do crítico, ou empurrar o alvo 4 metros por uma trajetória possível. Esse empurrão não atravessa obstáculos sólidos.",
-    fissure: "Alcance e apoio físico continuam obrigatórios; alvos fixados ou muito maiores resistem ao deslocamento gratuito.",
+    fissure:
+      "Alcance e apoio físico continuam obrigatórios; alvos fixados ou muito maiores resistem ao deslocamento gratuito.",
   },
   Velocidade: {
     regent: "Agilidade 5+",
-    essence: "+3 metros de Deslocamento, +1 CA e prioridade em empates de iniciativa contra quem não possuir a mesma Essência. Entre portadores, use o desempate normal.",
+    essence:
+      "+3 metros de Deslocamento, +1 CA e prioridade em empates de iniciativa contra quem não possuir a mesma Essência. Entre portadores, use o desempate normal.",
     manifestation:
       "acrescente +1d20 aos ataques regidos por Agilidade e aos testes de Reflexos e Acrobacia regidos por Agilidade. Uma vez por rodada, após um acerto total ou uma Evasão bem-sucedida, mova-se 2 metros por um trajeto possível. O movimento não concede outro ataque e continua sujeito a gatilhos explícitos.",
-    fissure: "Imobilizado e Deslocamento 0 suspendem os metros adicionais; ataque imperceptível ainda impede Evasão.",
+    fissure:
+      "Imobilizado e Deslocamento 0 suspendem os metros adicionais; ataque imperceptível ainda impede Evasão.",
   },
-  "Resistência": {
+  Resistência: {
     regent: "Constituição 5+",
     essence: "Resistência 1 contra dano de qualquer tipo.",
     manifestation:
       "acrescente +1d20 aos testes de Constituição com Atletismo ou Sobrevivência ligados a esforço físico. Receba mais 2 de Resistência física, totalizando 3 contra dano físico e 1 contra os demais tipos pela combinação deste Domínio. Uma vez durante a Manifestação, quando dano o levaria a 0 Vida, permaneça com 1. Perda direta de Vida que declare ignorar proteção não ativa essa permanência.",
-    fissure: "Perda direta de Vida, dano mental ou espiritual, veneno, asfixia e condições não são reduzidos sem regra específica.",
+    fissure:
+      "Perda direta de Vida, dano mental ou espiritual, veneno, asfixia e condições não são reduzidos sem regra específica.",
   },
-  "Técnica": {
+  Técnica: {
     regent: "Intelecto 5+",
-    essence: "+1 no resultado de testes mentais treinados regidos por Intelecto. Esse bônus é separado do bônus Analítico.",
+    essence:
+      "+1 no resultado de testes mentais treinados regidos por Intelecto. Esse bônus é separado do bônus Analítico.",
     manifestation:
       "acrescente +1d20 ao teste principal de qualquer técnica utilizada, qualquer que seja seu Atributo regente, desde que o alvo ou a situação seja percebido. Intelecto é o regente de acesso ao Domínio; uma técnica de Presença, Espírito, Força ou Agilidade também recebe o dado. Uma vez por turno, após o acerto total de uma técnica, realize Derrubar, Empurrar ou Desarmar contra um alvo atingido sem gastar outra ação, com o teste oposto normal e um meio coerente para executá-la.",
-    fissure: "Alvos não percebidos, múltiplas fontes ocultas, cobertura total e mudança de padrão preservam seus efeitos.",
+    fissure:
+      "Alvos não percebidos, múltiplas fontes ocultas, cobertura total e mudança de padrão preservam seus efeitos.",
   },
-  "Superação": {
+  Superação: {
     regent: "Presença 5+ ou Espírito 5+",
     essence:
       "acrescente +2d20 aos testes contra medo, desespero, coerção, possessão e controle que ameacem diretamente um vínculo registrado ou a integridade de sua identidade. Uma ameaça inventada para justificar qualquer teste não atende ao requisito.",
@@ -359,8 +480,12 @@ export function getClassAmplificationLimit(stage: string): number {
   return 0;
 }
 
-export function getProgressionRewards(path: string, stage: string): ProgressionRewards {
-  if (!path || path === "Sem caminho") return { common: 0, evolutive: 0, transcendental: 0 };
+export function getProgressionRewards(
+  path: string,
+  stage: string,
+): ProgressionRewards {
+  if (!path || path === "Sem caminho")
+    return { common: 0, evolutive: 0, transcendental: 0 };
   const index = getStageIndex(stage);
   const common = [0, 1, 2, 3, 4, 5, 5, 5][index] ?? 0;
   const evolutive = [0, 0, 0, 0, 1, 2, 4, 5][index] ?? 0;
@@ -375,10 +500,9 @@ function createNumericBonus(): NumericBonus {
     armor: 0,
     movement: 0,
     resistance: 0,
-    attributes: Object.fromEntries(ATTRIBUTES.map((name) => [name, 0])) as Record<
-      AttributeName,
-      number
-    >,
+    attributes: Object.fromEntries(
+      ATTRIBUTES.map((name) => [name, 0]),
+    ) as Record<AttributeName, number>,
     skills: Object.fromEntries(ALL_SKILLS.map((name) => [name, 0])),
   };
 }
@@ -444,11 +568,25 @@ function parseStageStatus(status: string, stage: string) {
     return " ";
   });
 
-  bonus.life += [...remaining.matchAll(/\+(\d+)\s+Vida máxima/g)].reduce((sum, match) => sum + Number(match[1]), 0);
-  bonus.karma += [...remaining.matchAll(/\+(\d+)\s+Karma máximo/g)].reduce((sum, match) => sum + Number(match[1]), 0);
-  bonus.armor += [...remaining.matchAll(/\+(\d+)\s+(?:na\s+)?CA/g)].reduce((sum, match) => sum + Number(match[1]), 0);
-  bonus.movement += [...remaining.matchAll(/\+(\d+)\s+metro(?:s)? de Deslocamento/g)].reduce((sum, match) => sum + Number(match[1]), 0);
-  bonus.resistance += [...remaining.matchAll(/\+(\d+)\s+Resistência/g)].reduce((sum, match) => sum + Number(match[1]), 0);
+  bonus.life += [...remaining.matchAll(/\+(\d+)\s+Vida máxima/g)].reduce(
+    (sum, match) => sum + Number(match[1]),
+    0,
+  );
+  bonus.karma += [...remaining.matchAll(/\+(\d+)\s+Karma máximo/g)].reduce(
+    (sum, match) => sum + Number(match[1]),
+    0,
+  );
+  bonus.armor += [...remaining.matchAll(/\+(\d+)\s+(?:na\s+)?CA/g)].reduce(
+    (sum, match) => sum + Number(match[1]),
+    0,
+  );
+  bonus.movement += [
+    ...remaining.matchAll(/\+(\d+)\s+metro(?:s)? de Deslocamento/g),
+  ].reduce((sum, match) => sum + Number(match[1]), 0);
+  bonus.resistance += [...remaining.matchAll(/\+(\d+)\s+Resistência/g)].reduce(
+    (sum, match) => sum + Number(match[1]),
+    0,
+  );
 
   for (const attribute of ATTRIBUTES) {
     const match = remaining.match(
@@ -470,10 +608,16 @@ function applySlots(
   slots.forEach((slot, index) => {
     const selected = selections[index];
     if (!selected || !slot.options.includes(selected)) return;
-    if (kind === "attribute" && ATTRIBUTES.includes(selected as AttributeName)) {
+    if (
+      kind === "attribute" &&
+      ATTRIBUTES.includes(selected as AttributeName)
+    ) {
       target.attributes[selected as AttributeName] += slot.value;
     }
-    if (kind === "skill" && ALL_SKILLS.includes(selected as (typeof ALL_SKILLS)[number])) {
+    if (
+      kind === "skill" &&
+      ALL_SKILLS.includes(selected as (typeof ALL_SKILLS)[number])
+    ) {
       target.skills[selected] = (target.skills[selected] ?? 0) + slot.value;
       if (target.skillTiers?.[selected]) {
         target.skillTiers[selected][skillTier] += slot.value;
@@ -482,7 +626,9 @@ function applySlots(
   });
 }
 
-export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBonuses {
+export function calculateAutomaticBonuses(
+  draft: CharacterPayload,
+): AutomaticBonuses {
   const result = createNumericBonus() as AutomaticBonuses;
   result.skillTiers = createSkillTierBonuses();
   result.sources = [];
@@ -497,16 +643,44 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
 
   const race = getRaceRule(draft.race);
   if (race) {
-    addPartialBonus(result, {...race.automatic, movement: draft.race === "Demi-humano" ? race.automatic.movement ?? 0 : 0});
-    const racialStage=Math.max(1,getStageIndex(draft.stage));
-    if(draft.race==='Elfo'&&racialStage>=4)result.karma+=racialStage;
-    if(draft.race==='Anão'&&racialStage>=4)result.life+=2*racialStage;
+    addPartialBonus(result, {
+      ...race.automatic,
+      movement:
+        draft.race === "Demi-humano" ? (race.automatic.movement ?? 0) : 0,
+    });
+    const racialStage = Math.max(1, getStageIndex(draft.stage));
+    if (draft.race === "Elfo" && racialStage >= 4) result.karma += racialStage;
+    if (draft.race === "Anão" && racialStage >= 4)
+      result.life += 2 * racialStage;
     result.raceAttributeSlots = [...race.attributeSlots];
-    if(racialStage>=6)result.raceAttributeSlots.push({label:"Atributo da Etapa VI",options:lineage[draft.race].stageVIAttributes,value:1});
-    if(draft.race==="Elfo"&&racialStage>=2)result.raceSkillSlots=[...race.skillSlots,{label:"Refração do Véu Verde",options:["Canalização de Karma","Pontaria"],value:1}];
-    else result.raceSkillSlots=race.skillSlots;
-    applySlots(result, result.raceAttributeSlots, draft.allocations.raceAttributes, "attribute");
-    applySlots(result, result.raceSkillSlots, draft.allocations.raceSkills, "skill");
+    if (racialStage >= 6)
+      result.raceAttributeSlots.push({
+        label: "Atributo da Etapa VI",
+        options: lineage[draft.race].stageVIAttributes,
+        value: 1,
+      });
+    if (draft.race === "Elfo" && racialStage >= 2)
+      result.raceSkillSlots = [
+        ...race.skillSlots,
+        {
+          label: "Refração do Véu Verde",
+          options: ["Canalização de Karma", "Pontaria"],
+          value: 1,
+        },
+      ];
+    else result.raceSkillSlots = race.skillSlots;
+    applySlots(
+      result,
+      result.raceAttributeSlots,
+      draft.allocations.raceAttributes,
+      "attribute",
+    );
+    applySlots(
+      result,
+      result.raceSkillSlots,
+      draft.allocations.raceSkills,
+      "skill",
+    );
     result.sources.push({ label: `Raça — ${race.name}`, detail: race.summary });
   }
 
@@ -514,11 +688,22 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   const classDefinition = getClassDefinition(draft.className);
   if (classRule) {
     addPartialBonus(result, classRule.automatic);
-    if (draft.className === "Inventor") addPartialBonus(result, {skills:{"Criação":1}}, "evolutive");
+    if (draft.className === "Inventor")
+      addPartialBonus(result, { skills: { Criação: 1 } }, "evolutive");
     result.classAttributeSlots = classRule.attributeSlots ?? [];
     result.classSkillSlots = classRule.skillSlots ?? [];
-    applySlots(result, result.classAttributeSlots, draft.allocations.classAttributes, "attribute");
-    applySlots(result, result.classSkillSlots, draft.allocations.classSkills, "skill");
+    applySlots(
+      result,
+      result.classAttributeSlots,
+      draft.allocations.classAttributes,
+      "attribute",
+    );
+    applySlots(
+      result,
+      result.classSkillSlots,
+      draft.allocations.classSkills,
+      "skill",
+    );
     result.sources.push({
       label: `Classe — ${draft.className}`,
       detail: classDefinition?.initialBonus ?? "Bônus inicial aplicado.",
@@ -529,19 +714,29 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   classDefinition?.progression.slice(0, stageIndex).forEach((progression) => {
     const parsed = parseStageStatus(progression.status, progression.stage);
     addPartialBonus(result, parsed.bonus);
-    for (const stat of ["life", "karma", "armor"] as const) result.stageGrowth[stat] += parsed.bonus[stat] ?? 0;
+    for (const stat of ["life", "karma", "armor"] as const)
+      result.stageGrowth[stat] += parsed.bonus[stat] ?? 0;
     result.stageAttributeSlots.push(...parsed.slots);
     result.sources.push({
       label: `${draft.className} · ${progression.stage}`,
       detail: progression.status,
     });
   });
-  applySlots(result, result.stageAttributeSlots, draft.allocations.stageAttributes, "attribute");
+  applySlots(
+    result,
+    result.stageAttributeSlots,
+    draft.allocations.stageAttributes,
+    "attribute",
+  );
 
   const rewards = result.progressionRewards;
   const progressionSelections: Array<[string[], number, SkillTier]> = [
     [draft.allocations.progressionCommonSkills, rewards.common, "common"],
-    [draft.allocations.progressionEvolutiveSkills, rewards.evolutive, "evolutive"],
+    [
+      draft.allocations.progressionEvolutiveSkills,
+      rewards.evolutive,
+      "evolutive",
+    ],
     [
       draft.allocations.progressionTranscendentalSkills,
       rewards.transcendental,
@@ -565,26 +760,51 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
 
   if (hasAwakenedPath(draft)) {
     const branch = draft.personalPath.branch;
-    if (branch === "emancipacao" || (branch === "independente" && !draft.divine.enabled)) {
+    if (
+      branch === "emancipacao" ||
+      (branch === "independente" && !draft.divine.enabled)
+    ) {
       result.pathKarma = 4;
       result.karma += result.pathKarma;
     }
     if (hasAxiom(draft, 3)) result.movement += 3;
-    if (hasAxiom(draft, 4)) { result.life += 2 * stageIndex; result.armor += 1; }
+    if (hasAxiom(draft, 4)) {
+      result.life += 2 * stageIndex;
+      result.armor += 1;
+    }
   }
   const strength = getFinalAttribute(draft, result, "Força");
-  if (draft.inventory.some(item => item.catalogId === "cetro-de-combate" && item.equipped && item.quantity > 0 && item.location !== "external" && strength >= (mageWeapons.find(weapon => weapon.id === item.catalogId)?.strength ?? Infinity))) {
+  if (
+    draft.inventory.some(
+      (item) =>
+        item.catalogId === "cetro-de-combate" &&
+        item.equipped &&
+        item.quantity > 0 &&
+        item.location !== "external" &&
+        strength >=
+          (mageWeapons.find((weapon) => weapon.id === item.catalogId)
+            ?.strength ?? Infinity),
+    )
+  ) {
     result.attributes.Espírito += 1;
   }
-  const awakenedDomains = draft.domains.filter((domain) => domain.enabled && domain.awakened);
+  const awakenedDomains = draft.domains.filter(
+    (domain) => domain.enabled && domain.awakened,
+  );
   if (awakenedDomains.some((domain) => domain.name === "Velocidade")) {
     result.armor += 1;
     result.movement += 3;
-    result.sources.push({ label: "Domínio da Velocidade", detail: "Essência: +1 CA e +3 metros de Deslocamento." });
+    result.sources.push({
+      label: "Domínio da Velocidade",
+      detail: "Essência: +1 CA e +3 metros de Deslocamento.",
+    });
   }
   if (awakenedDomains.some((domain) => domain.name === "Resistência")) {
     result.resistance += 1;
-    result.sources.push({ label: "Domínio da Resistência", detail: "Essência: Resistência 1 contra qualquer dano." });
+    result.sources.push({
+      label: "Domínio da Resistência",
+      detail: "Essência: Resistência 1 contra qualquer dano.",
+    });
   }
 
   return result;
@@ -628,9 +848,10 @@ export function getSkillLevelBreakdown(
   const evolutiveRaw = Math.max(0, tierBonuses.evolutive);
   const evolutive = common === 1 ? Math.min(1, evolutiveRaw) : 0;
   const transcendentalRaw = Math.max(0, tierBonuses.transcendental);
-  const transcendental = getStageIndex(draft.stage) === 7 && common === 1 && evolutive === 1
-    ? Math.min(1, transcendentalRaw)
-    : 0;
+  const transcendental =
+    getStageIndex(draft.stage) === 7 && common === 1 && evolutive === 1
+      ? Math.min(1, transcendentalRaw)
+      : 0;
 
   return {
     baseCommon,
@@ -645,7 +866,8 @@ export function getSkillLevelBreakdown(
     transcendental,
     total: common + evolutive + transcendental,
     hasInvalidPoints:
-      points.base < sacrificedCommon || commonRaw > 1 ||
+      points.base < sacrificedCommon ||
+      commonRaw > 1 ||
       evolutiveRaw > 1 ||
       (evolutiveRaw > 0 && common < 1) ||
       transcendentalRaw > 1 ||
@@ -683,7 +905,9 @@ export function canAllocateSkillPoint(
   );
 }
 
-export function getDomainRegentAttribute(name: DomainName): AttributeName | null {
+export function getDomainRegentAttribute(
+  name: DomainName,
+): AttributeName | null {
   const mapping: Record<DomainName, AttributeName | null> = {
     Força: "Força",
     Velocidade: "Agilidade",
@@ -696,52 +920,120 @@ export function getDomainRegentAttribute(name: DomainName): AttributeName | null
 
 export const BASE_ARMOR = 12;
 export const BASE_KARMA = 10;
-export { sizeFromHeight, SIZE_RULES } from "@/lib/character-model";
+export { SIZE_RULES, sizeFromHeight } from "@/lib/character-model";
 
-export function calculateDerivedStats(draft: CharacterPayload, automatic: AutomaticBonuses) {
+export function calculateDerivedStats(
+  draft: CharacterPayload,
+  automatic: AutomaticBonuses,
+) {
   const strength = getFinalAttribute(draft, automatic, "Força");
   const agility = getFinalAttribute(draft, automatic, "Agilidade");
   const constitution = getFinalAttribute(draft, automatic, "Constituição");
   const spirit = getFinalAttribute(draft, automatic, "Espírito");
-  const size = SIZE_RULES[draft.heightCm === null ? draft.size : sizeFromHeight(draft.heightCm)];
-  const burden=inventoryState(draft.inventory,strength,agility,draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),(draft.loadModifier??0)+(draft.race==="Anão"?2:0));
-  const form=corruptedFormState(draft,getFinalSkill(draft,automatic,"Controle da Corrupção"));
-  const baseMovement=Math.max(1,5+agility+size.movement+automatic.movement+form.movementBonus-(draft.race==="Anão"?0:burden.equipmentMovement));
-  const finalMovement=burden.tier===4?0:burden.tier===3?Math.max(1,Math.floor(baseMovement/4)):Math.max(burden.tier===2?2:1,baseMovement+burden.movementBonus);
+  const size =
+    SIZE_RULES[
+      draft.heightCm === null ? draft.size : sizeFromHeight(draft.heightCm)
+    ];
+  const burden = inventoryState(
+    draft.inventory,
+    strength,
+    agility,
+    draft.heightCm === null ? draft.size : sizeFromHeight(draft.heightCm),
+    (draft.loadModifier ?? 0) + (draft.race === "Anão" ? 2 : 0),
+  );
+  const form = corruptedFormState(
+    draft,
+    getFinalSkill(draft, automatic, "Controle da Corrupção"),
+  );
+  const baseMovement = Math.max(
+    1,
+    5 +
+      agility +
+      size.movement +
+      automatic.movement +
+      form.movementBonus -
+      (draft.race === "Anão" ? 0 : burden.equipmentMovement),
+  );
+  const finalMovement =
+    burden.tier === 4
+      ? 0
+      : burden.tier === 3
+        ? Math.max(1, Math.floor(baseMovement / 4))
+        : Math.max(
+            burden.tier === 2 ? 2 : 1,
+            baseMovement + burden.movementBonus,
+          );
   return {
     initiative: initiativeTest(agility),
     lifeBreakdown: `${size.life} base do porte + ${2 * constitution} Constituição (2 × ${constitution}) + ${strength} Força + ${automatic.stageGrowth.life} Etapa + ${automatic.life - automatic.stageGrowth.life} outros bônus`,
     karmaBreakdown: `${BASE_KARMA} base + ${2 * spirit} Espírito (2 × ${spirit}) + ${automatic.stageGrowth.karma} Etapa + ${automatic.pathKarma} Caminho + ${automatic.karma - automatic.stageGrowth.karma - automatic.pathKarma} outros bônus`,
-    armorBreakdown: `${BASE_ARMOR} base + ${Math.min(agility,burden.agilityCap)} Agilidade + ${automatic.stageGrowth.armor} Etapa + ${burden.armorBonus} equipamento + ${size.armor + automatic.armor - automatic.stageGrowth.armor + form.armorBonus - burden.armorPenalty} outros ajustes`,
+    armorBreakdown: `${BASE_ARMOR} base + ${Math.min(agility, burden.agilityCap)} Agilidade + ${automatic.stageGrowth.armor} Etapa + ${burden.armorBonus} equipamento + ${size.armor + automatic.armor - automatic.stageGrowth.armor + form.armorBonus - burden.armorPenalty} outros ajustes`,
     life: size.life + 2 * constitution + strength + automatic.life,
     karma: BASE_KARMA + 2 * spirit + automatic.karma,
-    armor: Math.max(0,BASE_ARMOR + Math.min(agility,burden.agilityCap) + size.armor + automatic.armor + burden.armorBonus + form.armorBonus - burden.armorPenalty),
+    armor: Math.max(
+      0,
+      BASE_ARMOR +
+        Math.min(agility, burden.agilityCap) +
+        size.armor +
+        automatic.armor +
+        burden.armorBonus +
+        form.armorBonus -
+        burden.armorPenalty,
+    ),
     movement: finalMovement,
     load: burden.capacity,
     resistance: automatic.resistance,
   };
 }
 
-export function initiativeTest(agility: number, specificBonus = 0, specificDice = 0) {
-  const dice = agility === 0 ? 1 : Math.max(1, Math.ceil(agility / 2) + specificDice);
+export function initiativeTest(
+  agility: number,
+  specificBonus = 0,
+  specificDice = 0,
+) {
+  const dice =
+    agility === 0 ? 1 : Math.max(1, Math.ceil(agility / 2) + specificDice);
   const bonus = agility === 0 ? -4 : agility + specificBonus;
-  return { agility, dice, bonus, formula: `${dice}d20 ${bonus < 0 ? "−" : "+"} ${Math.abs(bonus)}` };
+  return {
+    agility,
+    dice,
+    bonus,
+    formula: `${dice}d20 ${bonus < 0 ? "−" : "+"} ${Math.abs(bonus)}`,
+  };
 }
 
 export { PRESENCE_SKILLS };
 
 export function defaultApproach(skill: string): AttributeName {
   if (["Luta", "Atletismo"].includes(skill)) return "Força";
-  if (["Acrobacia", "Furtividade", "Pontaria", "Reflexos", "Ladinagem", "Condução"].includes(skill)) return "Agilidade";
+  if (
+    [
+      "Acrobacia",
+      "Furtividade",
+      "Pontaria",
+      "Reflexos",
+      "Ladinagem",
+      "Condução",
+    ].includes(skill)
+  )
+    return "Agilidade";
   if (skill === "Sobrevivência") return "Constituição";
   if ((MENTAL_SKILLS as readonly string[]).includes(skill)) return "Intelecto";
-  if ((SOCIAL_SKILLS as readonly string[]).includes(skill) || PRESENCE_SKILLS.includes(skill)) return "Presença";
+  if (
+    (SOCIAL_SKILLS as readonly string[]).includes(skill) ||
+    PRESENCE_SKILLS.includes(skill)
+  )
+    return "Presença";
   return "Espírito";
 }
 
-export function skillBonusExplanation(test: ReturnType<typeof getSkillTest>): string {
-  if (test.value === 0 && !test.level) return `${test.attribute} 0: −4 no teste destreinado.`;
-  if (!test.level) return "Perícia destreinada: 1d20 de base, sem treinamento nem Analítico.";
+export function skillBonusExplanation(
+  test: ReturnType<typeof getSkillTest>,
+): string {
+  if (test.value === 0 && !test.level)
+    return `${test.attribute} 0: −4 no teste destreinado.`;
+  if (!test.level)
+    return "Perícia destreinada: 1d20 de base, sem treinamento nem Analítico.";
   const parts = [
     `${test.trainingBonus} Treinamento`,
     test.analyticBonus && `${test.analyticBonus} Analítico`,
@@ -761,100 +1053,353 @@ export function getSkillTest(
 ) {
   const intellect = getFinalAttribute(draft, automatic, "Intelecto");
   const mental = (MENTAL_SKILLS as readonly string[]).includes(skill);
-  const attribute: AttributeName = (PRESENCE_SKILLS.includes(skill) || (SOCIAL_SKILLS as readonly string[]).includes(skill))
-    ? "Presença"
-    : approach ?? defaultApproach(skill);
+  const attribute: AttributeName =
+    PRESENCE_SKILLS.includes(skill) ||
+    (SOCIAL_SKILLS as readonly string[]).includes(skill)
+      ? "Presença"
+      : (approach ?? defaultApproach(skill));
   const value = getFinalAttribute(draft, automatic, attribute);
   const permanentLevel = getFinalSkill(draft, automatic, skill);
   const vow = draft.vows.find((item) => item.id === oneUseVowId);
-  const oneUse = Boolean(vow && vow.kind === "sacrifice" && vow.status === "sealed" && vow.approved && vow.targetSkill === getTrainingSkill(skill) && permanentLevel === 2 && getVowErrors(draft, automatic).length === 0);
+  const oneUse = Boolean(
+    vow &&
+    vow.kind === "sacrifice" &&
+    vow.status === "sealed" &&
+    vow.approved &&
+    vow.targetSkill === getTrainingSkill(skill) &&
+    permanentLevel === 2 &&
+    getVowErrors(draft, automatic).length === 0,
+  );
   const level = permanentLevel;
-  const form=corruptedFormState(draft,getFinalSkill(draft,automatic,"Controle da Corrupção"));
-  const racialStage=getStageIndex(draft.stage);
-  const racialDice=Number(draft.race==='Demônio'&&racialStage>=4&&['Intimidação','Comunhão Divina','Controle da Corrupção'].includes(skill));
-  const formDice=racialDice+(form.active&&form.selected.includes("instinto")&&(draft.corruption.formFocus===testPurpose&&((testPurpose==="evasion"&&skill==="Reflexos")||(testPurpose==="movement"&&skill==="Atletismo")||(testPurpose==="perception"&&skill==="Percepção")))?1:0);
-  const inventoryPenalty=inventoryTestPenalty(draft.inventory,getFinalAttribute(draft,automatic,"Força"),getFinalAttribute(draft,automatic,"Agilidade"),draft.heightCm===null?draft.size:sizeFromHeight(draft.heightCm),draft.loadModifier??0,skill,["Força","Agilidade","Constituição"].includes(attribute)||["Atletismo","Acrobacia","Furtividade","Luta","Reflexos","Evasão"].includes(skill));
-  const equipped = (id: string) => draft.inventory.some(item => item.catalogId === id && item.equipped && item.quantity > 0 && item.location !== "external");
+  const form = corruptedFormState(
+    draft,
+    getFinalSkill(draft, automatic, "Controle da Corrupção"),
+  );
+  const racialStage = getStageIndex(draft.stage);
+  const racialDice = Number(
+    draft.race === "Demônio" &&
+      racialStage >= 4 &&
+      ["Intimidação", "Comunhão Divina", "Controle da Corrupção"].includes(
+        skill,
+      ),
+  );
+  const formDice =
+    racialDice +
+    (form.active &&
+    form.selected.includes("instinto") &&
+    draft.corruption.formFocus === testPurpose &&
+    ((testPurpose === "evasion" && skill === "Reflexos") ||
+      (testPurpose === "movement" && skill === "Atletismo") ||
+      (testPurpose === "perception" && skill === "Percepção"))
+      ? 1
+      : 0);
+  const inventoryPenalty = inventoryTestPenalty(
+    draft.inventory,
+    getFinalAttribute(draft, automatic, "Força"),
+    getFinalAttribute(draft, automatic, "Agilidade"),
+    draft.heightCm === null ? draft.size : sizeFromHeight(draft.heightCm),
+    draft.loadModifier ?? 0,
+    skill,
+    ["Força", "Agilidade", "Constituição"].includes(attribute) ||
+      [
+        "Atletismo",
+        "Acrobacia",
+        "Furtividade",
+        "Luta",
+        "Reflexos",
+        "Evasão",
+      ].includes(skill),
+  );
+  const equipped = (id: string) =>
+    draft.inventory.some(
+      (item) =>
+        item.catalogId === id &&
+        item.equipped &&
+        item.quantity > 0 &&
+        item.location !== "external",
+    );
   const analyticIntellect = intellect + (equipped("grimorio") ? 1 : 0);
-  const runeAnalytic = draft.className === "Escriba Kármico" && skill === "Canalização de Karma" && testPurpose === "technique";
-  const focusBonus = level > 0 && value > 0 && skill === "Canalização de Karma" && equipped("orbe-de-convergencia") ? 2 : 0;
-  const analyticBonus = attribute === "Intelecto" && (mental || runeAnalytic) && level > 0 && value > 0
-    ? Math.min(3, analyticIntellect) : 0;
-  const manifested = (name: string) => draft.domains.some(d => d.name === name && d.enabled && d.awakened) && (draft.combat?.domainRounds[name] ?? 0) > 0;
-  const domainDice = Number(attribute === "Força" && ["Luta", "Atletismo"].includes(skill) && manifested("Força"))
-    + Number(attribute === "Agilidade" && ["Luta", "Pontaria", "Reflexos", "Acrobacia"].includes(skill) && manifested("Velocidade"))
-    + Number(attribute === "Constituição" && ["Atletismo", "Sobrevivência"].includes(skill) && manifested("Resistência"))
-    + Number(testPurpose === "technique" && manifested("Técnica"))
-    + Number(["Presença", "Espírito"].includes(attribute) && testPurpose === "technique" && manifested("Superação"));
+  const runeAnalytic =
+    draft.className === "Escriba Kármico" &&
+    skill === "Canalização de Karma" &&
+    testPurpose === "technique";
+  const focusBonus =
+    level > 0 &&
+    value > 0 &&
+    skill === "Canalização de Karma" &&
+    equipped("orbe-de-convergencia")
+      ? 2
+      : 0;
+  const analyticBonus =
+    attribute === "Intelecto" &&
+    (mental || runeAnalytic) &&
+    level > 0 &&
+    value > 0
+      ? Math.min(3, analyticIntellect)
+      : 0;
+  const manifested = (name: string) =>
+    draft.domains.some((d) => d.name === name && d.enabled && d.awakened) &&
+    (draft.combat?.domainRounds[name] ?? 0) > 0;
+  const domainDice =
+    Number(
+      attribute === "Força" &&
+        ["Luta", "Atletismo"].includes(skill) &&
+        manifested("Força"),
+    ) +
+    Number(
+      attribute === "Agilidade" &&
+        ["Luta", "Pontaria", "Reflexos", "Acrobacia"].includes(skill) &&
+        manifested("Velocidade"),
+    ) +
+    Number(
+      attribute === "Constituição" &&
+        ["Atletismo", "Sobrevivência"].includes(skill) &&
+        manifested("Resistência"),
+    ) +
+    Number(testPurpose === "technique" && manifested("Técnica")) +
+    Number(
+      ["Presença", "Espírito"].includes(attribute) &&
+        testPurpose === "technique" &&
+        manifested("Superação"),
+    );
   const trainingBonus = oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0);
-  const domainBonus = Number(attribute === "Intelecto" && mental && intellect >= 5 && level > 0
-    && draft.domains.some(domain => domain.name === "Técnica" && domain.enabled && domain.awakened));
+  const domainBonus = Number(
+    attribute === "Intelecto" &&
+      mental &&
+      intellect >= 5 &&
+      level > 0 &&
+      draft.domains.some(
+        (domain) =>
+          domain.name === "Técnica" && domain.enabled && domain.awakened,
+      ),
+  );
   const trainedPool = value > 0 && level > 0;
-  const baseDice = trainedPool ? Math.ceil(value / 2) + formDice + domainDice : 1;
+  const baseDice = trainedPool
+    ? Math.ceil(value / 2) + formDice + domainDice
+    : 1;
   const pool = baseDice - inventoryPenalty.dicePenalty;
   return {
-    attribute, value, level, permanentLevel, analyticBonus, domainBonus, trainingBonus, focusBonus, oneUse, inventoryPenalty,
-    formDice: trainedPool ? formDice : 0, domainDice: trainedPool ? domainDice : 0, baseDice,
-    bonus: value === 0 && !level ? -4 : trainingBonus + analyticBonus + focusBonus + domainBonus,
+    attribute,
+    value,
+    level,
+    permanentLevel,
+    analyticBonus,
+    domainBonus,
+    trainingBonus,
+    focusBonus,
+    oneUse,
+    inventoryPenalty,
+    formDice: trainedPool ? formDice : 0,
+    domainDice: trainedPool ? domainDice : 0,
+    baseDice,
+    bonus:
+      value === 0 && !level
+        ? -4
+        : trainingBonus + analyticBonus + focusBonus + domainBonus,
     dice: pool <= 0 ? 2 : pool,
-    selection: pool <= 0 ? "menor" as const : "maior" as const,
+    selection: pool <= 0 ? ("menor" as const) : ("maior" as const),
   };
 }
 
 export const VOW_WEIGHTS = [
-  { weight: 1, name: "Limitado", potency: 1, dc: 15, karma: 1, slots: 1, restriction: "Uma opção útil fica indisponível por uma cena, ou uma condição tática pode ser explorada.", ceiling: "+1 dado em um teste definido, uma vez." },
-  { weight: 2, name: "Severo", potency: 3, dc: 18, karma: 3, slots: 1, restriction: "Uma ferramenta, posição ou opção central fica indisponível durante um conflito inteiro.", ceiling: "+2 CA sob um gatilho específico por uma cena OU −1 Karma em uma técnica nomeada, uma vez na cena." },
-  { weight: 3, name: "Grave", potency: 7, dc: 21, karma: 5, slots: 2, restriction: "Um recurso importante é comprometido por longo prazo, ou ocorre um sacrifício menor irrevogável.", ceiling: "+2 dados em um teste definido OU uma técnica conhecida um grau acima, até IV, uma vez OU o sacrifício especial." },
-  { weight: 4, name: "Sacrificial", potency: 15, dc: 24, karma: 8, slots: 3, restriction: "Uma capacidade central, acesso importante ou parte da identidade é perdida permanentemente.", ceiling: "Uma técnica preparada de grau V, uma vez, OU dobrar somente os dados-base de uma execução." },
-  { weight: 5, name: "Absoluto", potency: 31, dc: 27, karma: 13, slots: 3, restriction: "Uma fonte inteira, um futuro indispensável ou uma consequência irreversível de campanha é colocado em jogo.", ceiling: "Até duas permissões Sacrificiais na mesma execução definida OU uma exceção narrativa equivalente e finita." },
+  {
+    weight: 1,
+    name: "Limitado",
+    potency: 1,
+    dc: 15,
+    karma: 1,
+    slots: 1,
+    restriction:
+      "Uma opção útil fica indisponível por uma cena, ou uma condição tática pode ser explorada.",
+    ceiling: "+1 dado em um teste definido, uma vez.",
+  },
+  {
+    weight: 2,
+    name: "Severo",
+    potency: 3,
+    dc: 18,
+    karma: 3,
+    slots: 1,
+    restriction:
+      "Uma ferramenta, posição ou opção central fica indisponível durante um conflito inteiro.",
+    ceiling:
+      "+2 CA sob um gatilho específico por uma cena OU −1 Karma em uma técnica nomeada, uma vez na cena.",
+  },
+  {
+    weight: 3,
+    name: "Grave",
+    potency: 7,
+    dc: 21,
+    karma: 5,
+    slots: 2,
+    restriction:
+      "Um recurso importante é comprometido por longo prazo, ou ocorre um sacrifício menor irrevogável.",
+    ceiling:
+      "+2 dados em um teste definido OU uma técnica conhecida um grau acima, até IV, uma vez OU o sacrifício especial.",
+  },
+  {
+    weight: 4,
+    name: "Sacrificial",
+    potency: 15,
+    dc: 24,
+    karma: 8,
+    slots: 3,
+    restriction:
+      "Uma capacidade central, acesso importante ou parte da identidade é perdida permanentemente.",
+    ceiling:
+      "Uma técnica preparada de grau V, uma vez, OU dobrar somente os dados-base de uma execução.",
+  },
+  {
+    weight: 5,
+    name: "Absoluto",
+    potency: 31,
+    dc: 27,
+    karma: 13,
+    slots: 3,
+    restriction:
+      "Uma fonte inteira, um futuro indispensável ou uma consequência irreversível de campanha é colocado em jogo.",
+    ceiling:
+      "Até duas permissões Sacrificiais na mesma execução definida OU uma exceção narrativa equivalente e finita.",
+  },
 ] as const;
 
-export function getVowCapacity(draft: CharacterPayload, automatic: AutomaticBonuses) {
-  return Math.max(1, 1 + Math.floor(getFinalAttribute(draft, automatic, "Espírito") / 2));
+export function getVowCapacity(
+  draft: CharacterPayload,
+  automatic: AutomaticBonuses,
+) {
+  return Math.max(
+    1,
+    1 + Math.floor(getFinalAttribute(draft, automatic, "Espírito") / 2),
+  );
 }
 
-export function getSacrificedPoints(draft: CharacterPayload, skill?: string): number {
-  return draft.vows.filter((vow) => vow.kind === "sacrifice" && vow.approved && ["sealed", "spent", "broken"].includes(vow.status))
+export function getSacrificedPoints(
+  draft: CharacterPayload,
+  skill?: string,
+): number {
+  return draft.vows
+    .filter(
+      (vow) =>
+        vow.kind === "sacrifice" &&
+        vow.approved &&
+        ["sealed", "spent", "broken"].includes(vow.status),
+    )
     .flatMap((vow) => vow.sacrifices)
     .filter((entry) => !skill || entry.skill === skill)
     .reduce((sum, entry) => sum + entry.points, 0);
 }
 
-export function getVowErrors(draft: CharacterPayload, automatic: AutomaticBonuses): string[] {
+export function getVowErrors(
+  draft: CharacterPayload,
+  automatic: AutomaticBonuses,
+): string[] {
   const errors: string[] = [];
   const sealed = draft.vows.filter((vow) => vow.status !== "draft");
-  if (new Set(draft.vows.map((vow) => vow.id)).size !== draft.vows.length) errors.push("Cada Voto precisa de um identificador único.");
-  if (sealed.filter((vow) => vow.kind === "sacrifice" && vow.status !== "completed").length > 1) errors.push("Conclua o marco do Voto anterior antes de selar outra Memória.");
-  const occupied = sealed.filter((vow) => vow.status === "sealed" || (vow.kind === "sacrifice" && ["spent", "broken"].includes(vow.status))).reduce((sum, vow) => sum + (VOW_WEIGHTS[vow.weight - 1]?.slots ?? 99), 0);
-  if (occupied > getVowCapacity(draft, automatic)) errors.push("Votos selados excedem a capacidade de vínculos do Espírito.");
+  if (new Set(draft.vows.map((vow) => vow.id)).size !== draft.vows.length)
+    errors.push("Cada Voto precisa de um identificador único.");
+  if (
+    sealed.filter(
+      (vow) => vow.kind === "sacrifice" && vow.status !== "completed",
+    ).length > 1
+  )
+    errors.push(
+      "Conclua o marco do Voto anterior antes de selar outra Memória.",
+    );
+  const occupied = sealed
+    .filter(
+      (vow) =>
+        vow.status === "sealed" ||
+        (vow.kind === "sacrifice" && ["spent", "broken"].includes(vow.status)),
+    )
+    .reduce((sum, vow) => sum + (VOW_WEIGHTS[vow.weight - 1]?.slots ?? 99), 0);
+  if (occupied > getVowCapacity(draft, automatic))
+    errors.push("Votos selados excedem a capacidade de vínculos do Espírito.");
   for (const vow of sealed) {
-    if (!vow.approved || ![vow.name, vow.restriction, vow.benefit, vow.trigger, vow.duration, vow.breach].every((text) => text.trim())) {
-      errors.push(`${vow.name || "Voto"}: complete as cláusulas e registre a aprovação do Mestre antes de selar.`);
+    if (
+      !vow.approved ||
+      ![
+        vow.name,
+        vow.restriction,
+        vow.benefit,
+        vow.trigger,
+        vow.duration,
+        vow.breach,
+      ].every((text) => text.trim())
+    ) {
+      errors.push(
+        `${vow.name || "Voto"}: complete as cláusulas e registre a aprovação do Mestre antes de selar.`,
+      );
     }
     if (vow.kind !== "sacrifice") continue;
-    if (vow.weight !== 3) errors.push("O voto dos quatro pontos usa peso Grave (3).");
-    if (!ALL_SKILLS.includes(vow.targetSkill as (typeof ALL_SKILLS)[number])) errors.push("Escolha uma perícia existente para o uso evolutivo.");
-    if (vow.sacrifices.reduce((sum, entry) => sum + entry.points, 0) !== 4) errors.push("O sacrifício exige exatamente quatro pontos-base comuns.");
-    if (new Set(vow.sacrifices.map((entry) => entry.skill)).size !== vow.sacrifices.length) errors.push("Agrupe os pontos sacrificados por perícia, sem repetir a fonte.");
-    if (ALL_SKILLS.reduce((sum, skill) => sum + draft.skills[skill].base, 0) > BASE_SKILL_POINT_BUDGET) errors.push("O sacrifício não aumenta o orçamento de 8 pontos-base.");
+    if (vow.weight !== 3)
+      errors.push("O voto dos quatro pontos usa peso Grave (3).");
+    if (!ALL_SKILLS.includes(vow.targetSkill as (typeof ALL_SKILLS)[number]))
+      errors.push("Escolha uma perícia existente para o uso evolutivo.");
+    if (vow.sacrifices.reduce((sum, entry) => sum + entry.points, 0) !== 4)
+      errors.push("O sacrifício exige exatamente quatro pontos-base comuns.");
+    if (
+      new Set(vow.sacrifices.map((entry) => entry.skill)).size !==
+      vow.sacrifices.length
+    )
+      errors.push(
+        "Agrupe os pontos sacrificados por perícia, sem repetir a fonte.",
+      );
+    if (
+      ALL_SKILLS.reduce((sum, skill) => sum + draft.skills[skill].base, 0) >
+      BASE_SKILL_POINT_BUDGET
+    )
+      errors.push("O sacrifício não aumenta o orçamento de 8 pontos-base.");
     for (const entry of vow.sacrifices) {
-      if (!ALL_SKILLS.includes(entry.skill as (typeof ALL_SKILLS)[number]) || entry.skill === vow.targetSkill || entry.points < 1 || entry.points > 1 || (draft.skills[entry.skill]?.base ?? 0) < entry.points) errors.push("Sacrifique apenas pontos-base realmente possuídos, fora da perícia-alvo (1 por perícia).");
+      if (
+        !ALL_SKILLS.includes(entry.skill as (typeof ALL_SKILLS)[number]) ||
+        entry.skill === vow.targetSkill ||
+        entry.points < 1 ||
+        entry.points > 1 ||
+        (draft.skills[entry.skill]?.base ?? 0) < entry.points
+      )
+        errors.push(
+          "Sacrifique apenas pontos-base realmente possuídos, fora da perícia-alvo (1 por perícia).",
+        );
     }
-    if (vow.status === "sealed" && getFinalSkill(draft, automatic, vow.targetSkill) !== 2) errors.push("A perícia-alvo precisa permanecer no nível 2 até consumir ou encerrar o voto.");
+    if (
+      vow.status === "sealed" &&
+      getFinalSkill(draft, automatic, vow.targetSkill) !== 2
+    )
+      errors.push(
+        "A perícia-alvo precisa permanecer no nível 2 até consumir ou encerrar o voto.",
+      );
   }
   return [...new Set(errors)];
 }
 
-export function validateVowTransition(previous: BindingVow[], next: BindingVow[]): string | null {
+export function validateVowTransition(
+  previous: BindingVow[],
+  next: BindingVow[],
+): string | null {
   for (const old of previous.filter((vow) => vow.status !== "draft")) {
     const current = next.find((vow) => vow.id === old.id);
-    if (!current) return "Votos selados não podem ser apagados; encerre ou registre a quebra.";
+    if (!current)
+      return "Votos selados não podem ser apagados; encerre ou registre a quebra.";
     const { status: oldStatus, ...oldTerms } = old;
     const { status: newStatus, ...newTerms } = current;
-    if (JSON.stringify(oldTerms) !== JSON.stringify(newTerms)) return "As cláusulas de um Voto selado são imutáveis.";
-    if (newStatus === "draft" || (oldStatus !== "sealed" && newStatus !== oldStatus && newStatus !== "completed")) return "Um Voto consumido ou quebrado não pode ser reativado.";
+    if (JSON.stringify(oldTerms) !== JSON.stringify(newTerms))
+      return "As cláusulas de um Voto selado são imutáveis.";
+    if (
+      newStatus === "draft" ||
+      (oldStatus !== "sealed" &&
+        newStatus !== oldStatus &&
+        newStatus !== "completed")
+    )
+      return "Um Voto consumido ou quebrado não pode ser reativado.";
   }
   return null;
 }
 
-export { CLASS_INITIAL_RULES, PHYSICAL_SKILLS, MENTAL_SKILLS, SOCIAL_SKILLS, SUPERNATURAL_SKILLS, DOMAIN_NAMES };
+export {
+  CLASS_INITIAL_RULES,
+  DOMAIN_NAMES,
+  MENTAL_SKILLS,
+  PHYSICAL_SKILLS,
+  SOCIAL_SKILLS,
+  SUPERNATURAL_SKILLS,
+};

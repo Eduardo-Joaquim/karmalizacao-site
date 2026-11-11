@@ -1,17 +1,18 @@
 "use client";
-import { DivineAltar } from "@/components/divine-altar";
-import { CombatPanel } from "@/components/combat-panel";
-import { domainActivation, domainRefinementLabels } from "@/lib/table-play";
-import { hasAwakenedPath } from "@/lib/personal-path";
-import { registeredTechniqueCost } from "@/lib/combat-engine";
-import { TechniqueCost } from "@/components/technique-cost";
 import { CorruptedFormEditor } from "@/components/corrupted-form-editor";
-import type { CombatAction } from "@/lib/combat-types";
+import { DivineAltar } from "@/components/divine-altar";
+import {
+  InventoryManager,
+  type InventoryUse,
+} from "@/components/inventory-manager";
+import { TechniqueCost } from "@/components/technique-cost";
 import { WorkshopPanel } from "@/components/workshop-panel";
-import { InventoryManager, type InventoryUse } from "@/components/inventory-manager";
+import { registeredTechniqueCost } from "@/lib/combat-engine";
+import type { CombatAction } from "@/lib/combat-types";
+import { hasAwakenedPath } from "@/lib/personal-path";
+import { domainActivation, domainRefinementLabels } from "@/lib/table-play";
 
 import {
-  Backpack,
   BookOpen,
   CircleDot,
   Flame,
@@ -19,19 +20,13 @@ import {
   Heart,
   Landmark,
   Package,
-  Plus,
   Shield,
   Skull,
   Sparkles,
-  Trash2,
   UserRound,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import {
   ATTRIBUTES,
   SKILL_GROUPS,
@@ -42,21 +37,30 @@ import {
   getClassDefinition,
   getFinalAttribute,
   getFinalSkill,
-  getRaceRule, racialFeatures,
-  getSkillTest,
-  skillBonusExplanation,
+  getRaceRule,
   getSacrificedPoints,
+  getSkillTest,
+  racialFeatures,
+  skillBonusExplanation,
   VOW_WEIGHTS,
   type AutomaticBonuses,
 } from "@/lib/character-rules";
-import { calculateInvocationStats, invocationAttack } from "@/lib/invocation-rules";
-import { hasElementalContent, hasInvocationContent, hasSheetText, hasSubBendingContent, hasTechniqueContent } from "@/lib/sheet-visibility";
+import {
+  calculateInvocationStats,
+  invocationAttack,
+} from "@/lib/invocation-rules";
+import {
+  hasElementalContent,
+  hasInvocationContent,
+  hasSheetText,
+  hasSubBendingContent,
+  hasTechniqueContent,
+} from "@/lib/sheet-visibility";
 
-import { retainedKarma } from "@/lib/karmic-runes";
 import { calculateDerivedStats } from "@/lib/character-rules";
+import { retainedKarma } from "@/lib/karmic-runes";
 
 export type DerivedStats = ReturnType<typeof calculateDerivedStats>;
-
 
 type CharacterSheetViewProps = {
   draft: CharacterPayload;
@@ -68,8 +72,17 @@ type CharacterSheetViewProps = {
   onInventoryUse?: (change: InventoryUse) => Promise<void>;
 };
 
-function ReadonlyValue({ label, children }: { label: string; children?: React.ReactNode }) {
-  const hasValue = typeof children === "string" ? hasSheetText(children) : children !== undefined && children !== null;
+function ReadonlyValue({
+  label,
+  children,
+}: {
+  label: string;
+  children?: React.ReactNode;
+}) {
+  const hasValue =
+    typeof children === "string"
+      ? hasSheetText(children)
+      : children !== undefined && children !== null;
   if (!hasValue) return null;
   return (
     <div className="sheet-readonly-value">
@@ -124,23 +137,41 @@ export function CharacterSheetView({
       <header className="sheet-cover">
         {draft.portraitImage ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img className="sheet-portrait" src={draft.portraitImage} alt={`Retrato de ${draft.name || "personagem"}`} />
-        ) : <div className="sheet-monogram" aria-hidden="true">{(draft.name || "K").slice(0, 1).toUpperCase()}</div>}
+          <img
+            className="sheet-portrait"
+            src={draft.portraitImage}
+            alt={`Retrato de ${draft.name || "personagem"}`}
+          />
+        ) : (
+          <div className="sheet-monogram" aria-hidden="true">
+            {(draft.name || "K").slice(0, 1).toUpperCase()}
+          </div>
+        )}
         <div className="sheet-cover-copy">
           <small>Registro consolidado</small>
           <h1>{draft.name || "Personagem sem nome"}</h1>
-            {hasSheetText(draft.concept) ? <p>{draft.concept}</p> : null}
+          {hasSheetText(draft.concept) ? <p>{draft.concept}</p> : null}
           <div>
-            {[draft.race, draft.className, draft.stage].filter(Boolean).map((value) => (
-              <Badge variant="outline" key={value}>{value}</Badge>
-            ))}
+            {[draft.race, draft.className, draft.stage]
+              .filter(Boolean)
+              .map((value) => (
+                <Badge variant="outline" key={value}>
+                  {value}
+                </Badge>
+              ))}
           </div>
         </div>
         <div className="sheet-lock-note">
           <Shield aria-hidden="true" />
           <span>
-            <strong>{readOnly ? "Modo Jogo Ativo (Combate e Inventário Editáveis · Criação Protegida)" : "Ficha protegida"}</strong>
-            {readOnly ? "Recursos de combate e uso do inventário são editáveis. A criação fica protegida." : "Os recursos de combate e o inventário podem ser ajustados aqui. Salve a ficha para guardar as alterações."}
+            <strong>
+              {readOnly
+                ? "Modo Jogo Ativo (Combate e Inventário Editáveis · Criação Protegida)"
+                : "Ficha protegida"}
+            </strong>
+            {readOnly
+              ? "Recursos de combate e uso do inventário são editáveis. A criação fica protegida."
+              : "Os recursos de combate e o inventário podem ser ajustados aqui. Salve a ficha para guardar as alterações."}
           </span>
         </div>
       </header>
@@ -148,42 +179,83 @@ export function CharacterSheetView({
       <div className="sheet-stat-grid" aria-label="Valores derivados">
         {[
           [Heart, "Vida", derived.life, "life", derived.lifeBreakdown],
-          [Sparkles, "Karma", derived.karma, "karma", `${derived.karmaBreakdown} · ${draft.combatState ? retainedKarma(draft.combatState) : 0} Karma retido reduz o disponível`],
-          [Shield, "CA", `${Math.floor(derived.armor / 2)} / ${derived.armor}`, "armor", derived.armorBreakdown],
-          [CircleDot, "Iniciativa", derived.initiative.formula, "move", "Teste puro de Agilidade"],
+          [
+            Sparkles,
+            "Karma",
+            derived.karma,
+            "karma",
+            `${derived.karmaBreakdown} · ${draft.combatState ? retainedKarma(draft.combatState) : 0} Karma retido reduz o disponível`,
+          ],
+          [
+            Shield,
+            "CA",
+            `${Math.floor(derived.armor / 2)} / ${derived.armor}`,
+            "armor",
+            derived.armorBreakdown,
+          ],
+          [
+            CircleDot,
+            "Iniciativa",
+            derived.initiative.formula,
+            "move",
+            "Teste puro de Agilidade",
+          ],
           [CircleDot, "Movimento", `${derived.movement}m`, "move"],
           [Package, "Carga", derived.load, "load"],
           [Shield, "Resistência", derived.resistance, "resistance"],
-        ].filter(([, label, value]) => label !== "Resistência" || Number(value) > 0).map(([Icon, label, value, tone, detail]) => {
-          const StatIcon = Icon as typeof Heart;
-          return (
-            <div className="sheet-stat" data-tone={tone} key={String(label)} title={detail ? String(detail) : undefined}>
-              <StatIcon aria-hidden="true" />
-              <span>{String(label)}</span>
-              <strong>{String(value)}</strong>
-            </div>
-          );
-        })}
+        ]
+          .filter(
+            ([, label, value]) => label !== "Resistência" || Number(value) > 0,
+          )
+          .map(([Icon, label, value, tone, detail]) => {
+            const StatIcon = Icon as typeof Heart;
+            return (
+              <div
+                className="sheet-stat"
+                data-tone={tone}
+                key={String(label)}
+                title={detail ? String(detail) : undefined}
+              >
+                <StatIcon aria-hidden="true" />
+                <span>{String(label)}</span>
+                <strong>{String(value)}</strong>
+              </div>
+            );
+          })}
       </div>
 
-      <p className="combat-entry-hint">Use a barra inferior para abrir o Modo Combate.</p>
+      <p className="combat-entry-hint">
+        Use a barra inferior para abrir o Modo Combate.
+      </p>
       <SheetSection icon={UserRound} title="Essência e identidade">
         <div className="sheet-readonly-grid">
           <ReadonlyValue label="Nome">{draft.name}</ReadonlyValue>
           <ReadonlyValue label="Pronomes">{draft.pronouns}</ReadonlyValue>
           <ReadonlyValue label="Tamanho">{draft.size}</ReadonlyValue>
-          <ReadonlyValue label="Altura">{draft.heightCm === null ? null : `${draft.heightCm} cm`}</ReadonlyValue>
+          <ReadonlyValue label="Altura">
+            {draft.heightCm === null ? null : `${draft.heightCm} cm`}
+          </ReadonlyValue>
           <ReadonlyValue label="Origem">{draft.origin}</ReadonlyValue>
           <ReadonlyValue label="Raça">{draft.race}</ReadonlyValue>
-          <ReadonlyValue label="Classe primordial">{draft.className}</ReadonlyValue>
+          <ReadonlyValue label="Classe primordial">
+            {draft.className}
+          </ReadonlyValue>
           <ReadonlyValue label="Caminho">{draft.path}</ReadonlyValue>
           <ReadonlyValue label="Etapa">{draft.stage}</ReadonlyValue>
-          <ReadonlyValue label="Idioma comum">{draft.commonLanguage}</ReadonlyValue>
+          <ReadonlyValue label="Idioma comum">
+            {draft.commonLanguage}
+          </ReadonlyValue>
           <ReadonlyValue label="Afinidade">{draft.affinity}</ReadonlyValue>
-          <div className="sheet-wide-field"><ReadonlyValue label="Vínculo">{draft.bond}</ReadonlyValue></div>
-          <div className="sheet-wide-field"><ReadonlyValue label="Conceito">{draft.concept}</ReadonlyValue></div>
+          <div className="sheet-wide-field">
+            <ReadonlyValue label="Vínculo">{draft.bond}</ReadonlyValue>
+          </div>
+          <div className="sheet-wide-field">
+            <ReadonlyValue label="Conceito">{draft.concept}</ReadonlyValue>
+          </div>
           {race?.customizationLabel ? (
-            <ReadonlyValue label={race.customizationLabel}>{draft.racialCustomization}</ReadonlyValue>
+            <ReadonlyValue label={race.customizationLabel}>
+              {draft.racialCustomization}
+            </ReadonlyValue>
           ) : null}
         </div>
       </SheetSection>
@@ -197,7 +269,9 @@ export function CharacterSheetView({
             return (
               <article key={attribute}>
                 <small>{attribute.slice(0, 3).toUpperCase()}</small>
-                <small className="sheet-dice">{total<=0?"1d20 − 4":`${Math.ceil(total/2)}d20`}</small>
+                <small className="sheet-dice">
+                  {total <= 0 ? "1d20 − 4" : `${Math.ceil(total / 2)}d20`}
+                </small>
                 <h3>{attribute}</h3>
                 <strong>{total}</strong>
 
@@ -212,276 +286,641 @@ export function CharacterSheetView({
         </div>
       </SheetSection>
 
-      {SKILL_GROUPS.some((group) => group.skills.some((skill) => getFinalSkill(draft, automatic, skill) > 0)) ? <SheetSection icon={BookOpen} title="Perícias">
-        <div className="sheet-skill-groups">
-          {SKILL_GROUPS.filter((group) => group.skills.some((skill) => getFinalSkill(draft, automatic, skill) > 0)).map((group) => (
-            <article key={group.name}>
-              <h3>{group.name}</h3>
-              <div>
-                {group.skills.filter((skill) => getFinalSkill(draft, automatic, skill) > 0).map((skill) => {
-                  const total = getFinalSkill(draft, automatic, skill);
-                  const test = getSkillTest(draft, automatic, skill);
-                  return (
-                    <div key={skill} data-trained={total > 0}>
-                      <span>{skill}</span>
-                      <strong>{total}</strong>
-                      <small title={skillBonusExplanation(test)}>{test.selection === "menor" ? "menor de " : ""}{test.dice}d20 {test.bonus<0?"−":"+"} {Math.abs(test.bonus)}</small>
-                    </div>
-                  );
-                })}
-              </div>
-            </article>
-          ))}
-        </div>
-      </SheetSection> : null}
-
-      {race || classDefinition ? <SheetSection icon={Shield} title="Raça, classe e habilidades">
-        <div className="sheet-feature-columns">
-          {race ? <article>
-            <div className="sheet-subheading">
-              <span>Raça</span>
-              <h3>{race?.name ?? "Não escolhida"}</h3>
-            </div>
-            {race?.features.length ? (
-              <div className="sheet-ability-list">
-                {racialFeatures(draft).map((feature) => (
-                  <div key={feature.name}>
-                    <Badge variant="outline">{feature.kind}</Badge>
-                    <strong>{feature.name}</strong>
-                    <p>{feature.description}</p>
-                  </div>
-                ))}
-              </div>
-            ) : <p className="sheet-empty">Nenhuma característica racial registrada.</p>}
-          </article> : null}
-          {classDefinition ? <article>
-            <div className="sheet-subheading">
-              <span>Classe</span>
-              <h3>{classDefinition?.name ?? "Não escolhida"}</h3>
-            </div>
-            {classDefinition ? (
-              <div className="sheet-ability-list">
+      {SKILL_GROUPS.some((group) =>
+        group.skills.some(
+          (skill) => getFinalSkill(draft, automatic, skill) > 0,
+        ),
+      ) ? (
+        <SheetSection icon={BookOpen} title="Perícias">
+          <div className="sheet-skill-groups">
+            {SKILL_GROUPS.filter((group) =>
+              group.skills.some(
+                (skill) => getFinalSkill(draft, automatic, skill) > 0,
+              ),
+            ).map((group) => (
+              <article key={group.name}>
+                <h3>{group.name}</h3>
                 <div>
-                  <Badge>Traço</Badge>
-                  <strong>{classDefinition.trait.name}</strong>
-                  <p>{classDefinition.trait.description}</p>
+                  {group.skills
+                    .filter(
+                      (skill) => getFinalSkill(draft, automatic, skill) > 0,
+                    )
+                    .map((skill) => {
+                      const total = getFinalSkill(draft, automatic, skill);
+                      const test = getSkillTest(draft, automatic, skill);
+                      return (
+                        <div key={skill} data-trained={total > 0}>
+                          <span>{skill}</span>
+                          <strong>{total}</strong>
+                          <small title={skillBonusExplanation(test)}>
+                            {test.selection === "menor" ? "menor de " : ""}
+                            {test.dice}d20 {test.bonus < 0 ? "−" : "+"}{" "}
+                            {Math.abs(test.bonus)}
+                          </small>
+                        </div>
+                      );
+                    })}
                 </div>
-                {draft.classAbilities.map((abilityName) => {
-                  const ability = classDefinition.abilities.find((item) => item.name === abilityName);
-                  return (
-                    <div key={abilityName}>
-                      <Badge variant="outline">Habilidade</Badge>
-                      <strong>{abilityName}</strong>
-                      {ability ? <small>{ability.usage}</small> : null}
-                      <p>{ability?.effect ?? "Habilidade selecionada para a classe."}</p>
-                    </div>
-                  );
-                })}
-                {draft.classAmplifications.map((amplification) => (
-                  <div key={amplification}>
-                    <Badge variant="outline">Amplificação</Badge>
-                    <strong>{amplification}</strong>
-                  </div>
-                ))}
-              </div>
-            ) : <p className="sheet-empty">Nenhuma classe registrada.</p>}
-          </article> : null}
-        </div>
-      </SheetSection> : null}
-
-      {activeDomains.length || draft.personalPath.enabled ? <SheetSection icon={CircleDot} title={activeDomains.length && draft.personalPath.enabled ? "Domínios & Caminho Pessoal" : activeDomains.length ? "Domínios" : "Caminho Pessoal"}>
-        {activeDomains.length ? (
-          <div className="sheet-domain-grid">
-            {activeDomains.map((domain) => {
-              const activation = domainActivation(domain, hasAwakenedPath(draft));
-              const base = domainActivation(domain);
-              return (
-              <article key={domain.name}>
-                <div>
-                  <small>{DOMAIN_RULES[domain.name].regent}</small>
-                  <h3>Domínio da {domain.name}</h3>
-                  <Badge variant="outline" title="Ganhe até uma Marca da Parede por cena ao enfrentar um limite real do Domínio. As Marcas registram a evolução para despertar e refinar o Domínio. Caminho Despertado reduz a exigência em 20%.">{domain.marks} Marca(s)</Badge>
-                </div>
-                {domain.awakened && <>
-                  <p><strong>Essência:</strong> {DOMAIN_RULES[domain.name].essence}</p>
-                  <section className="domain-expansion"><h4>Manifestação do Domínio</h4>
-                    <ReadonlyValue label="Custo">{`${activation.cost} Karma · ${activation.rounds} rodadas${hasAwakenedPath(draft) ? ` · Caminho −20% sobre ${base.cost}, com arredondamento` : ""}`}</ReadonlyValue>
-                    <ReadonlyValue label="Efeito mecânico">{DOMAIN_RULES[domain.name].manifestation}</ReadonlyValue>
-                    <ReadonlyValue label="Condição / limite">{`${domain.marks}/3 marcas da Parede · ${DOMAIN_RULES[domain.name].fissure}`}</ReadonlyValue>
-                  </section>
-                </>}
-                {domain.refinements.some(hasSheetText) ? <p><strong>Refinamentos:</strong> {domainRefinementLabels(domain.refinements).join(", ")}</p> : null}
-                {domain.signal ? <p><strong>Sinal:</strong> {domain.signal}</p> : null}
-                {domain.notes ? <p><strong>Notas:</strong> {domain.notes}</p> : null}
-              </article>
-            );})}
-          </div>
-        ) : null}
-        {draft.personalPath.enabled ? (
-          <article className="sheet-personal-path">
-            <div className="sheet-subheading">
-              <span>Caminho Pessoal</span>
-              {hasSheetText(draft.personalPath.name) ? <h3>{draft.personalPath.name}</h3> : null}
-            </div>
-            <div className="sheet-readonly-grid compact">
-              <ReadonlyValue label="Técnica de assinatura">{draft.personalPath.signatureTechnique}</ReadonlyValue>
-              <ReadonlyValue label="Afirmação">{draft.personalPath.rupture}</ReadonlyValue>
-              <ReadonlyValue label="Culminação">{draft.personalPath.price}</ReadonlyValue>
-              <ReadonlyValue label="Lei pessoal">{draft.personalPath.principle}</ReadonlyValue>
-            </div>
-          </article>
-        ) : null}
-      </SheetSection> : null}
-
-      {hasElementalContent(draft) ? <SheetSection icon={Flame} title="Poder elemental & subdobras">
-        <div className="sheet-readonly-grid compact">
-          <ReadonlyValue label="Afinidade">{draft.affinity}</ReadonlyValue>
-          <ReadonlyValue label="Elementos controlados">{draft.elemental.controlledElements.join(", ")}</ReadonlyValue>
-          {draft.elemental.masteryLevel > 0 ? <ReadonlyValue label="Nível de domínio">{draft.elemental.masteryLevel}/5</ReadonlyValue> : null}
-          <ReadonlyValue label="Manifestação">{draft.elemental.manifestation}</ReadonlyValue>
-          <ReadonlyValue label="Passiva">{draft.elemental.passive}</ReadonlyValue>
-          <ReadonlyValue label="Limites e notas">{draft.elemental.notes}</ReadonlyValue>
-        </div>
-        {draft.elemental.subBendings.length ? (
-          <div className="sheet-record-grid">
-            {draft.elemental.subBendings.filter(hasSubBendingContent).map((subBending) => (
-              <article key={subBending.id}>
-                {hasSheetText(subBending.parentElement) ? <Badge variant="outline">{subBending.parentElement}</Badge> : null}
-                <h3>{subBending.name || "Subdobra sem nome"}</h3>
-                <ReadonlyValue label="Conceito">{subBending.concept}</ReadonlyValue>
-                <ReadonlyValue label="Passiva">{subBending.passive}</ReadonlyValue>
-                <ReadonlyValue label="Limites">{subBending.limits}</ReadonlyValue>
               </article>
             ))}
           </div>
-        ) : null}
-      </SheetSection> : null}
+        </SheetSection>
+      ) : null}
+
+      {race || classDefinition ? (
+        <SheetSection icon={Shield} title="Raça, classe e habilidades">
+          <div className="sheet-feature-columns">
+            {race ? (
+              <article>
+                <div className="sheet-subheading">
+                  <span>Raça</span>
+                  <h3>{race?.name ?? "Não escolhida"}</h3>
+                </div>
+                {race?.features.length ? (
+                  <div className="sheet-ability-list">
+                    {racialFeatures(draft).map((feature) => (
+                      <div key={feature.name}>
+                        <Badge variant="outline">{feature.kind}</Badge>
+                        <strong>{feature.name}</strong>
+                        <p>{feature.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="sheet-empty">
+                    Nenhuma característica racial registrada.
+                  </p>
+                )}
+              </article>
+            ) : null}
+            {classDefinition ? (
+              <article>
+                <div className="sheet-subheading">
+                  <span>Classe</span>
+                  <h3>{classDefinition?.name ?? "Não escolhida"}</h3>
+                </div>
+                {classDefinition ? (
+                  <div className="sheet-ability-list">
+                    <div>
+                      <Badge>Traço</Badge>
+                      <strong>{classDefinition.trait.name}</strong>
+                      <p>{classDefinition.trait.description}</p>
+                    </div>
+                    {draft.classAbilities.map((abilityName) => {
+                      const ability = classDefinition.abilities.find(
+                        (item) => item.name === abilityName,
+                      );
+                      return (
+                        <div key={abilityName}>
+                          <Badge variant="outline">Habilidade</Badge>
+                          <strong>{abilityName}</strong>
+                          {ability ? <small>{ability.usage}</small> : null}
+                          <p>
+                            {ability?.effect ??
+                              "Habilidade selecionada para a classe."}
+                          </p>
+                        </div>
+                      );
+                    })}
+                    {draft.classAmplifications.map((amplification) => (
+                      <div key={amplification}>
+                        <Badge variant="outline">Amplificação</Badge>
+                        <strong>{amplification}</strong>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="sheet-empty">Nenhuma classe registrada.</p>
+                )}
+              </article>
+            ) : null}
+          </div>
+        </SheetSection>
+      ) : null}
+
+      {activeDomains.length || draft.personalPath.enabled ? (
+        <SheetSection
+          icon={CircleDot}
+          title={
+            activeDomains.length && draft.personalPath.enabled
+              ? "Domínios & Caminho Pessoal"
+              : activeDomains.length
+                ? "Domínios"
+                : "Caminho Pessoal"
+          }
+        >
+          {activeDomains.length ? (
+            <div className="sheet-domain-grid">
+              {activeDomains.map((domain) => {
+                const activation = domainActivation(
+                  domain,
+                  hasAwakenedPath(draft),
+                );
+                const base = domainActivation(domain);
+                return (
+                  <article key={domain.name}>
+                    <div>
+                      <small>{DOMAIN_RULES[domain.name].regent}</small>
+                      <h3>Domínio da {domain.name}</h3>
+                      <Badge
+                        variant="outline"
+                        title="Ganhe até uma Marca da Parede por cena ao enfrentar um limite real do Domínio. As Marcas registram a evolução para despertar e refinar o Domínio. Caminho Despertado reduz a exigência em 20%."
+                      >
+                        {domain.marks} Marca(s)
+                      </Badge>
+                    </div>
+                    {domain.awakened && (
+                      <>
+                        <p>
+                          <strong>Essência:</strong>{" "}
+                          {DOMAIN_RULES[domain.name].essence}
+                        </p>
+                        <section className="domain-expansion">
+                          <h4>Manifestação do Domínio</h4>
+                          <ReadonlyValue label="Custo">{`${activation.cost} Karma · ${activation.rounds} rodadas${hasAwakenedPath(draft) ? ` · Caminho −20% sobre ${base.cost}, com arredondamento` : ""}`}</ReadonlyValue>
+                          <ReadonlyValue label="Efeito mecânico">
+                            {DOMAIN_RULES[domain.name].manifestation}
+                          </ReadonlyValue>
+                          <ReadonlyValue label="Condição / limite">{`${domain.marks}/3 marcas da Parede · ${DOMAIN_RULES[domain.name].fissure}`}</ReadonlyValue>
+                        </section>
+                      </>
+                    )}
+                    {domain.refinements.some(hasSheetText) ? (
+                      <p>
+                        <strong>Refinamentos:</strong>{" "}
+                        {domainRefinementLabels(domain.refinements).join(", ")}
+                      </p>
+                    ) : null}
+                    {domain.signal ? (
+                      <p>
+                        <strong>Sinal:</strong> {domain.signal}
+                      </p>
+                    ) : null}
+                    {domain.notes ? (
+                      <p>
+                        <strong>Notas:</strong> {domain.notes}
+                      </p>
+                    ) : null}
+                  </article>
+                );
+              })}
+            </div>
+          ) : null}
+          {draft.personalPath.enabled ? (
+            <article className="sheet-personal-path">
+              <div className="sheet-subheading">
+                <span>Caminho Pessoal</span>
+                {hasSheetText(draft.personalPath.name) ? (
+                  <h3>{draft.personalPath.name}</h3>
+                ) : null}
+              </div>
+              <div className="sheet-readonly-grid compact">
+                <ReadonlyValue label="Técnica de assinatura">
+                  {draft.personalPath.signatureTechnique}
+                </ReadonlyValue>
+                <ReadonlyValue label="Afirmação">
+                  {draft.personalPath.rupture}
+                </ReadonlyValue>
+                <ReadonlyValue label="Culminação">
+                  {draft.personalPath.price}
+                </ReadonlyValue>
+                <ReadonlyValue label="Lei pessoal">
+                  {draft.personalPath.principle}
+                </ReadonlyValue>
+              </div>
+            </article>
+          ) : null}
+        </SheetSection>
+      ) : null}
+
+      {hasElementalContent(draft) ? (
+        <SheetSection icon={Flame} title="Poder elemental & subdobras">
+          <div className="sheet-readonly-grid compact">
+            <ReadonlyValue label="Afinidade">{draft.affinity}</ReadonlyValue>
+            <ReadonlyValue label="Elementos controlados">
+              {draft.elemental.controlledElements.join(", ")}
+            </ReadonlyValue>
+            {draft.elemental.masteryLevel > 0 ? (
+              <ReadonlyValue label="Nível de domínio">
+                {draft.elemental.masteryLevel}/5
+              </ReadonlyValue>
+            ) : null}
+            <ReadonlyValue label="Manifestação">
+              {draft.elemental.manifestation}
+            </ReadonlyValue>
+            <ReadonlyValue label="Passiva">
+              {draft.elemental.passive}
+            </ReadonlyValue>
+            <ReadonlyValue label="Limites e notas">
+              {draft.elemental.notes}
+            </ReadonlyValue>
+          </div>
+          {draft.elemental.subBendings.length ? (
+            <div className="sheet-record-grid">
+              {draft.elemental.subBendings
+                .filter(hasSubBendingContent)
+                .map((subBending) => (
+                  <article key={subBending.id}>
+                    {hasSheetText(subBending.parentElement) ? (
+                      <Badge variant="outline">
+                        {subBending.parentElement}
+                      </Badge>
+                    ) : null}
+                    <h3>{subBending.name || "Subdobra sem nome"}</h3>
+                    <ReadonlyValue label="Conceito">
+                      {subBending.concept}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Passiva">
+                      {subBending.passive}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Limites">
+                      {subBending.limits}
+                    </ReadonlyValue>
+                  </article>
+                ))}
+            </div>
+          ) : null}
+        </SheetSection>
+      ) : null}
 
       {draft.corruption.enabled ? (
         <SheetSection icon={Skull} title="Corrupção">
           <div className="sheet-readonly-grid compact">
-            <ReadonlyValue label="Marca">{draft.corruption.markName}</ReadonlyValue>
-            <ReadonlyValue label="Carga">{draft.corruption.charge}/10</ReadonlyValue>
-            <ReadonlyValue label="Promessa da Voz">{draft.corruption.voicePromise}</ReadonlyValue>
-            <ReadonlyValue label="Sinal visível">{draft.corruption.visibleSign}</ReadonlyValue>
-            <ReadonlyValue label="Mutação">{draft.corruption.mutation}</ReadonlyValue>
-            <ReadonlyValue label="Fissura">{draft.corruption.fissure}</ReadonlyValue>
-            <ReadonlyValue label="Função da Forma">{draft.corruption.formFunction}</ReadonlyValue>
-            <ReadonlyValue label="Limitação da Forma">{draft.corruption.formLimitation}</ReadonlyValue>
-            <ReadonlyValue label="Intenção da Ruptura">{draft.corruption.ruptureIntent}</ReadonlyValue>
+            <ReadonlyValue label="Marca">
+              {draft.corruption.markName}
+            </ReadonlyValue>
+            <ReadonlyValue label="Carga">
+              {draft.corruption.charge}/10
+            </ReadonlyValue>
+            <ReadonlyValue label="Promessa da Voz">
+              {draft.corruption.voicePromise}
+            </ReadonlyValue>
+            <ReadonlyValue label="Sinal visível">
+              {draft.corruption.visibleSign}
+            </ReadonlyValue>
+            <ReadonlyValue label="Mutação">
+              {draft.corruption.mutation}
+            </ReadonlyValue>
+            <ReadonlyValue label="Fissura">
+              {draft.corruption.fissure}
+            </ReadonlyValue>
+            <ReadonlyValue label="Função da Forma">
+              {draft.corruption.formFunction}
+            </ReadonlyValue>
+            <ReadonlyValue label="Limitação da Forma">
+              {draft.corruption.formLimitation}
+            </ReadonlyValue>
+            <ReadonlyValue label="Intenção da Ruptura">
+              {draft.corruption.ruptureIntent}
+            </ReadonlyValue>
           </div>
-          <CorruptedFormEditor draft={draft} onChange={onChange} readOnly={readOnly}/>
+          <CorruptedFormEditor
+            draft={draft}
+            onChange={onChange}
+            readOnly={readOnly}
+          />
         </SheetSection>
       ) : null}
 
       {draft.divine.enabled ? (
         <SheetSection icon={Landmark} title="Poder divino">
-          <DivineAltar draft={draft}/>
+          <DivineAltar draft={draft} />
         </SheetSection>
       ) : null}
 
-      {draft.className === "Inventor" && <SheetSection icon={Package} title="Oficina de Campanha"><WorkshopPanel draft={draft} /></SheetSection>}
+      {draft.className === "Inventor" && (
+        <SheetSection icon={Package} title="Oficina de Campanha">
+          <WorkshopPanel draft={draft} />
+        </SheetSection>
+      )}
 
-      {visibleInvocations.length ? <SheetSection icon={Ghost} title="Invocações">
-        <div className="sheet-invocation-list">
-          {visibleInvocations.map((invocation) => {
-            const stats = calculateInvocationStats(invocation);
-            const otherAttributes = ATTRIBUTES.filter((attribute) => attribute !== invocation.mainAttribute && !invocation.secondaryAttributes.includes(attribute));
-            const attack = invocationAttack(invocation, draft.combatState?.summons?.[invocation.id]?.fractures);
-            return <article className="sheet-invocation-card" key={invocation.id}>
-              <header>
-                {invocation.image ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={invocation.image} alt={`Imagem de ${invocation.name || "Invocação"}`} />
-                ) : <span className="sheet-invocation-mark" aria-hidden="true"><Ghost /></span>}
-                <div><small>{invocation.nature || "Natureza não registrada"}</small><h3>{invocation.name || "Invocação sem nome"}</h3><div><Badge>Grau {invocation.grade}</Badge>{invocation.profile !== "Sem ajuste" ? <Badge variant="outline">{invocation.profile}</Badge> : null}<Badge variant="outline">{invocation.callForm}</Badge></div></div>
-              </header>
-              <div className="invocation-stat-preview sheet-invocation-stats">
-                {[['CA', `${attack.partial} / ${attack.armor}`], ['Teste de ataque', attack.formula], ['Comando básico', 'Movimento ou Livre · 1 vez por turno'], ['Vida', stats.life], ['Dano', stats.damage], ['Movimento', `${stats.movement} m`], ['Chamada', `Principal · ${stats.callCost} Karma`], ['Manutenção', `${stats.maintenance} Karma`]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
-              </div>
-              <div className="sheet-readonly-grid compact">
-                <ReadonlyValue label="Desejo">{invocation.desire}</ReadonlyValue>
-                <ReadonlyValue label="Serviço">{invocation.service}</ReadonlyValue>
-                <ReadonlyValue label="Limite ou recusa">{invocation.limit}</ReadonlyValue>
-                <ReadonlyValue label="Preço">{invocation.price}</ReadonlyValue>
-                <ReadonlyValue label="Sinal">{invocation.sign}</ReadonlyValue>
-                <ReadonlyValue label="Fraturas">{draft.combatState?.summons?.[invocation.id]?.fractures ?? invocation.fractures}/3</ReadonlyValue>
-                <ReadonlyValue label="Atributo principal">{invocation.mainAttribute ? `${invocation.mainAttribute} ${stats.mainAttribute}` : ""}</ReadonlyValue>
-                <ReadonlyValue label="Atributo secundário">{invocation.secondaryAttributes.length ? `${invocation.secondaryAttributes[0]} ${stats.secondaryAttribute}` : ""}</ReadonlyValue>
-                <ReadonlyValue label="Demais Atributos">{otherAttributes.length ? `${otherAttributes.join(", ")} ${stats.otherAttribute}` : ""}</ReadonlyValue>
-                <ReadonlyValue label="Perícias principais">{invocation.mainSkills.length ? `${invocation.mainSkills.join(", ")} ${stats.mainSkill}` : ""}</ReadonlyValue>
-                <ReadonlyValue label="Perícia fraca">{invocation.weakSkill ? `${invocation.weakSkill} ${stats.weakSkill}` : ""}</ReadonlyValue>
-                <ReadonlyValue label="Movimento">{invocation.movementType}</ReadonlyValue>
-                <ReadonlyValue label="Sentidos">{invocation.senses}</ReadonlyValue>
-                <ReadonlyValue label="Traço">{invocation.trait}</ReadonlyValue>
-                <ReadonlyValue label="Fraqueza">{invocation.weakness}</ReadonlyValue>
-                <ReadonlyValue label="Comando e instinto">{invocation.command}</ReadonlyValue>
-                <ReadonlyValue label="Dissipação e retorno">{invocation.dissipation}</ReadonlyValue>
-              </div>
-              {stats.notes.length ? <div className="sheet-invocation-notes">{stats.notes.map((note) => <p key={note}>{note}</p>)}</div> : null}
-              {[invocation.ability.name, invocation.ability.concept, invocation.ability.calculation, invocation.ability.effect, invocation.ability.limits].some(hasSheetText) ? <section className="sheet-invocation-ability"><small>Habilidade da Invocação · Grau {invocation.ability.grade}</small><h4>{invocation.ability.name || "Habilidade sem nome"}</h4><ReadonlyValue label="Conceito">{invocation.ability.concept}</ReadonlyValue><ReadonlyValue label="Cálculo">{invocation.ability.calculation}</ReadonlyValue><ReadonlyValue label="Efeito">{invocation.ability.effect}</ReadonlyValue><ReadonlyValue label="Limites">{invocation.ability.limits}</ReadonlyValue></section> : null}
-            </article>;
-          })}
-        </div>
-      </SheetSection> : null}
-
-      {draft.techniques.some(hasTechniqueContent) ? <SheetSection icon={BookOpen} title="Técnicas">
-        {draft.techniques.length ? (
-          <div className="sheet-technique-list">
-            {draft.techniques.filter(hasTechniqueContent).map((technique) => (
-              <article key={technique.id}>
-                <header>
-                  <div>
-                    {hasSheetText(technique.source) ? <span>Origem · {technique.source === "Classe" ? "Técnica de Classe" : technique.source}</span> : null}
-                    <h3>{technique.name || "Técnica sem nome"}</h3>
+      {visibleInvocations.length ? (
+        <SheetSection icon={Ghost} title="Invocações">
+          <div className="sheet-invocation-list">
+            {visibleInvocations.map((invocation) => {
+              const stats = calculateInvocationStats(invocation);
+              const otherAttributes = ATTRIBUTES.filter(
+                (attribute) =>
+                  attribute !== invocation.mainAttribute &&
+                  !invocation.secondaryAttributes.includes(attribute),
+              );
+              const attack = invocationAttack(
+                invocation,
+                draft.combatState?.summons?.[invocation.id]?.fractures,
+              );
+              return (
+                <article className="sheet-invocation-card" key={invocation.id}>
+                  <header>
+                    {invocation.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={invocation.image}
+                        alt={`Imagem de ${invocation.name || "Invocação"}`}
+                      />
+                    ) : (
+                      <span
+                        className="sheet-invocation-mark"
+                        aria-hidden="true"
+                      >
+                        <Ghost />
+                      </span>
+                    )}
+                    <div>
+                      <small>
+                        {invocation.nature || "Natureza não registrada"}
+                      </small>
+                      <h3>{invocation.name || "Invocação sem nome"}</h3>
+                      <div>
+                        <Badge>Grau {invocation.grade}</Badge>
+                        {invocation.profile !== "Sem ajuste" ? (
+                          <Badge variant="outline">{invocation.profile}</Badge>
+                        ) : null}
+                        <Badge variant="outline">{invocation.callForm}</Badge>
+                      </div>
+                    </div>
+                  </header>
+                  <div className="invocation-stat-preview sheet-invocation-stats">
+                    {[
+                      ["CA", `${attack.partial} / ${attack.armor}`],
+                      ["Teste de ataque", attack.formula],
+                      [
+                        "Comando básico",
+                        "Movimento ou Livre · 1 vez por turno",
+                      ],
+                      ["Vida", stats.life],
+                      ["Dano", stats.damage],
+                      ["Movimento", `${stats.movement} m`],
+                      ["Chamada", `Principal · ${stats.callCost} Karma`],
+                      ["Manutenção", `${stats.maintenance} Karma`],
+                    ].map(([label, value]) => (
+                      <div key={label}>
+                        <span>{label}</span>
+                        <strong>{value}</strong>
+                      </div>
+                    ))}
                   </div>
-                  <div>
-                    {technique.signature ? <Badge>Assinatura</Badge> : null}
-                    {hasSheetText(technique.grade) ? <Badge variant="outline">{[technique.grade, technique.matrix, technique.damageType].filter(Boolean).join(" · ")}</Badge> : null}
+                  <div className="sheet-readonly-grid compact">
+                    <ReadonlyValue label="Desejo">
+                      {invocation.desire}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Serviço">
+                      {invocation.service}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Limite ou recusa">
+                      {invocation.limit}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Preço">
+                      {invocation.price}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Sinal">
+                      {invocation.sign}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Fraturas">
+                      {draft.combatState?.summons?.[invocation.id]?.fractures ??
+                        invocation.fractures}
+                      /3
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Atributo principal">
+                      {invocation.mainAttribute
+                        ? `${invocation.mainAttribute} ${stats.mainAttribute}`
+                        : ""}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Atributo secundário">
+                      {invocation.secondaryAttributes.length
+                        ? `${invocation.secondaryAttributes[0]} ${stats.secondaryAttribute}`
+                        : ""}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Demais Atributos">
+                      {otherAttributes.length
+                        ? `${otherAttributes.join(", ")} ${stats.otherAttribute}`
+                        : ""}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Perícias principais">
+                      {invocation.mainSkills.length
+                        ? `${invocation.mainSkills.join(", ")} ${stats.mainSkill}`
+                        : ""}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Perícia fraca">
+                      {invocation.weakSkill
+                        ? `${invocation.weakSkill} ${stats.weakSkill}`
+                        : ""}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Movimento">
+                      {invocation.movementType}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Sentidos">
+                      {invocation.senses}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Traço">
+                      {invocation.trait}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Fraqueza">
+                      {invocation.weakness}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Comando e instinto">
+                      {invocation.command}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Dissipação e retorno">
+                      {invocation.dissipation}
+                    </ReadonlyValue>
                   </div>
-                </header>
-                {hasSheetText(technique.concept) ? <p className="technique-concept">{technique.concept}</p> : null}
-                <div className="technique-facts">
-                  <ReadonlyValue label="Teste">{[technique.attribute, technique.skill].filter(hasSheetText).join(" + ") || technique.test}</ReadonlyValue>
-                  <ReadonlyValue label="Ação">{technique.action}</ReadonlyValue>
-                  <ReadonlyValue label="Alcance">{technique.range}</ReadonlyValue>
-                  <ReadonlyValue label="Custo final">{(() => {
-                    const cost = registeredTechniqueCost(technique);
-                    return cost?.reduction ? <Badge variant="outline">{cost.total} Karma ({cost.base} base − {cost.reduction} limite)</Badge> : technique.cost;
-                  })()}</ReadonlyValue>
-                  <ReadonlyValue label="Alvo / área / duração">{technique.targetAreaDuration}</ReadonlyValue>
-
-                </div>
-                {technique.calculation?.trim() && <TechniqueCost>{technique.calculation}</TechniqueCost>}
-                <ReadonlyValue label="Efeito">{technique.effect?.trim() || technique.totalSuccess || technique.concept}</ReadonlyValue>
-                <div className="technique-results">
-                  <ReadonlyValue label="Sucesso total">{technique.totalSuccess}</ReadonlyValue>
-                  <ReadonlyValue label="Sucesso parcial">{technique.partialSuccess}</ReadonlyValue>
-                  <ReadonlyValue label="Falha">{technique.failure}</ReadonlyValue>
-                  <ReadonlyValue label="Limites">{technique.limits}</ReadonlyValue>
-                </div>
-              </article>
-            ))}
+                  {stats.notes.length ? (
+                    <div className="sheet-invocation-notes">
+                      {stats.notes.map((note) => (
+                        <p key={note}>{note}</p>
+                      ))}
+                    </div>
+                  ) : null}
+                  {[
+                    invocation.ability.name,
+                    invocation.ability.concept,
+                    invocation.ability.calculation,
+                    invocation.ability.effect,
+                    invocation.ability.limits,
+                  ].some(hasSheetText) ? (
+                    <section className="sheet-invocation-ability">
+                      <small>
+                        Habilidade da Invocação · Grau{" "}
+                        {invocation.ability.grade}
+                      </small>
+                      <h4>
+                        {invocation.ability.name || "Habilidade sem nome"}
+                      </h4>
+                      <ReadonlyValue label="Conceito">
+                        {invocation.ability.concept}
+                      </ReadonlyValue>
+                      <ReadonlyValue label="Cálculo">
+                        {invocation.ability.calculation}
+                      </ReadonlyValue>
+                      <ReadonlyValue label="Efeito">
+                        {invocation.ability.effect}
+                      </ReadonlyValue>
+                      <ReadonlyValue label="Limites">
+                        {invocation.ability.limits}
+                      </ReadonlyValue>
+                    </section>
+                  ) : null}
+                </article>
+              );
+            })}
           </div>
-        ) : null}
-      </SheetSection> : null}
+        </SheetSection>
+      ) : null}
 
-      {draft.vows.some((vow) => vow.status !== "draft") ? <SheetSection icon={BookOpen} title="Votos Vinculativos">
-        <div className="sheet-record-grid">
-          {draft.vows.filter((vow) => vow.status !== "draft").map((vow) => <article key={vow.id}>
-            <Badge variant="outline">{({ sealed: "Selado", spent: "Uso consumido; marco pendente", broken: "Quebrado", completed: "Marco concluído" } as const)[vow.status as "sealed" | "spent" | "broken" | "completed"]}</Badge>
-            <h3>{vow.name}</h3>
-            <ReadonlyValue label="Peso">{VOW_WEIGHTS[vow.weight - 1].name}</ReadonlyValue>
-            <ReadonlyValue label="Restrição">{vow.restriction}</ReadonlyValue>
-            <ReadonlyValue label="Benefício">{vow.benefit}</ReadonlyValue>
-            <ReadonlyValue label="Gatilho">{vow.trigger}</ReadonlyValue>
-            <ReadonlyValue label="Duração">{vow.duration}</ReadonlyValue>
-            <ReadonlyValue label="Quebra e reparação">{vow.breach}</ReadonlyValue>
-            {vow.kind === "sacrifice" ? <p>{vow.targetSkill}: treinamento +10 em um único teste, mantendo nível 2 {vow.status === "sealed" ? "disponível" : "indisponível"}. {vow.sacrifices.map((entry) => `${entry.skill} −${entry.points}`).join("; ")}. Os pontos ficam suspensos até a conclusão do marco.</p> : null}
-          </article>)}
-        </div>
-        {getSacrificedPoints(draft) > 0 ? <p>{getSacrificedPoints(draft)} pontos-base comuns sacrificados; não retornam ao orçamento.</p> : null}
-      </SheetSection> : null}
+      {draft.techniques.some(hasTechniqueContent) ? (
+        <SheetSection icon={BookOpen} title="Técnicas">
+          {draft.techniques.length ? (
+            <div className="sheet-technique-list">
+              {draft.techniques.filter(hasTechniqueContent).map((technique) => (
+                <article key={technique.id}>
+                  <header>
+                    <div>
+                      {hasSheetText(technique.source) ? (
+                        <span>
+                          Origem ·{" "}
+                          {technique.source === "Classe"
+                            ? "Técnica de Classe"
+                            : technique.source}
+                        </span>
+                      ) : null}
+                      <h3>{technique.name || "Técnica sem nome"}</h3>
+                    </div>
+                    <div>
+                      {technique.signature ? <Badge>Assinatura</Badge> : null}
+                      {hasSheetText(technique.grade) ? (
+                        <Badge variant="outline">
+                          {[
+                            technique.grade,
+                            technique.matrix,
+                            technique.damageType,
+                          ]
+                            .filter(Boolean)
+                            .join(" · ")}
+                        </Badge>
+                      ) : null}
+                    </div>
+                  </header>
+                  {hasSheetText(technique.concept) ? (
+                    <p className="technique-concept">{technique.concept}</p>
+                  ) : null}
+                  <div className="technique-facts">
+                    <ReadonlyValue label="Teste">
+                      {[technique.attribute, technique.skill]
+                        .filter(hasSheetText)
+                        .join(" + ") || technique.test}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Ação">
+                      {technique.action}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Alcance">
+                      {technique.range}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Custo final">
+                      {(() => {
+                        const cost = registeredTechniqueCost(technique);
+                        return cost?.reduction ? (
+                          <Badge variant="outline">
+                            {cost.total} Karma ({cost.base} base −{" "}
+                            {cost.reduction} limite)
+                          </Badge>
+                        ) : (
+                          technique.cost
+                        );
+                      })()}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Alvo / área / duração">
+                      {technique.targetAreaDuration}
+                    </ReadonlyValue>
+                  </div>
+                  {technique.calculation?.trim() && (
+                    <TechniqueCost>{technique.calculation}</TechniqueCost>
+                  )}
+                  <ReadonlyValue label="Efeito">
+                    {technique.effect?.trim() ||
+                      technique.totalSuccess ||
+                      technique.concept}
+                  </ReadonlyValue>
+                  <div className="technique-results">
+                    <ReadonlyValue label="Sucesso total">
+                      {technique.totalSuccess}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Sucesso parcial">
+                      {technique.partialSuccess}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Falha">
+                      {technique.failure}
+                    </ReadonlyValue>
+                    <ReadonlyValue label="Limites">
+                      {technique.limits}
+                    </ReadonlyValue>
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : null}
+        </SheetSection>
+      ) : null}
+
+      {draft.vows.some((vow) => vow.status !== "draft") ? (
+        <SheetSection icon={BookOpen} title="Votos Vinculativos">
+          <div className="sheet-record-grid">
+            {draft.vows
+              .filter((vow) => vow.status !== "draft")
+              .map((vow) => (
+                <article key={vow.id}>
+                  <Badge variant="outline">
+                    {
+                      (
+                        {
+                          sealed: "Selado",
+                          spent: "Uso consumido; marco pendente",
+                          broken: "Quebrado",
+                          completed: "Marco concluído",
+                        } as const
+                      )[
+                        vow.status as
+                          | "sealed"
+                          | "spent"
+                          | "broken"
+                          | "completed"
+                      ]
+                    }
+                  </Badge>
+                  <h3>{vow.name}</h3>
+                  <ReadonlyValue label="Peso">
+                    {VOW_WEIGHTS[vow.weight - 1].name}
+                  </ReadonlyValue>
+                  <ReadonlyValue label="Restrição">
+                    {vow.restriction}
+                  </ReadonlyValue>
+                  <ReadonlyValue label="Benefício">{vow.benefit}</ReadonlyValue>
+                  <ReadonlyValue label="Gatilho">{vow.trigger}</ReadonlyValue>
+                  <ReadonlyValue label="Duração">{vow.duration}</ReadonlyValue>
+                  <ReadonlyValue label="Quebra e reparação">
+                    {vow.breach}
+                  </ReadonlyValue>
+                  {vow.kind === "sacrifice" ? (
+                    <p>
+                      {vow.targetSkill}: treinamento +10 em um único teste,
+                      mantendo nível 2{" "}
+                      {vow.status === "sealed" ? "disponível" : "indisponível"}.{" "}
+                      {vow.sacrifices
+                        .map((entry) => `${entry.skill} −${entry.points}`)
+                        .join("; ")}
+                      . Os pontos ficam suspensos até a conclusão do marco.
+                    </p>
+                  ) : null}
+                </article>
+              ))}
+          </div>
+          {getSacrificedPoints(draft) > 0 ? (
+            <p>
+              {getSacrificedPoints(draft)} pontos-base comuns sacrificados; não
+              retornam ao orçamento.
+            </p>
+          ) : null}
+        </SheetSection>
+      ) : null}
 
       {draft.notes ? (
         <SheetSection icon={BookOpen} title="Notas de campanha">
@@ -489,7 +928,13 @@ export function CharacterSheetView({
         </SheetSection>
       ) : null}
 
-      <InventoryManager draft={draft} onChange={onChange} readOnly={readOnly} onInventoryUse={onInventoryUse} onCombatAction={onCombatAction}/>
+      <InventoryManager
+        draft={draft}
+        onChange={onChange}
+        readOnly={readOnly}
+        onInventoryUse={onInventoryUse}
+        onCombatAction={onCombatAction}
+      />
     </div>
   );
 }

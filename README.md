@@ -4,7 +4,7 @@ Livro de regras, Bestiário e criação de fichas de Karmalização. O projeto u
 
 ## Executar
 
-Use Node.js 22.13 ou superior. No Windows, execute os scripts pelo WSL2/Ubuntu; os scripts de build usam Bash e GNU timeout.
+Use Node.js 22.15 ou superior. No Windows, execute os scripts pelo WSL2/Ubuntu; os scripts de build usam Bash e GNU timeout.
 
 ```bash
 npm ci
@@ -14,8 +14,10 @@ npm run dev
 Abra o endereço exibido no terminal. O livro, o Bestiário e a criação em modo visitante podem ser consultados sem login. O rascunho de visitante fica no armazenamento local do navegador; salve ou exporte antes de trocar de computador.
 
 ```bash
-npm test
+npm run check
+# Ou, separadamente: tipos/lint, build e só então testes
 npm run build
+npm test
 npm run start
 ```
 
@@ -40,3 +42,9 @@ Salvar na nuvem e compartilhar fichas exige a integração de identidade da hosp
 Os retratos novos são reduzidos para até 512 px e cerca de 48 KB; imagens antigas continuam aceitas no limite anterior. O salvamento verifica o tamanho real em UTF-8. Este repositório não contém credenciais nem registros privados dos jogadores.
 
 Detalhes do ambiente original estão em `docs/HOSPEDAGEM.md`. As decisões da revisão de interface, regras e arquitetura estão em `docs/AUDITORIA-2026-10-28.md`.
+
+## Qualidade e lançamentos
+
+`npm run check` executa tipos, lint, build e testes nessa ordem. `npm run format:check` verifica as fontes manuais. Os testes que leem `dist` exigem o build atual. A integração contínua aplica essa sequência em checkout limpo.
+
+O registro técnico do patch 2.0.5 fica em `docs/PATCH-2.0.5-TECNICO.md`; o histórico exibido aos jogadores contém somente mudanças de uso.

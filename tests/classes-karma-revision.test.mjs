@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createServer} from 'vite';
 const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:{'@':process.cwd()}},server:{middlewareMode:true,hmr:false}});after(()=>vite.close());
-const model=await vite.ssrLoadModule('/lib/character-data.ts'),rules=await vite.ssrLoadModule('/lib/character-rules.ts'),engine=await vite.ssrLoadModule('/lib/combat-engine.ts'),schema=await vite.ssrLoadModule('/lib/character-schema.ts'),validation=await vite.ssrLoadModule('/lib/combat-validation.ts'),arts=await vite.ssrLoadModule('/lib/combat-repertoire.ts');
+const model=await vite.ssrLoadModule('/lib/character-data.ts'),rules=await vite.ssrLoadModule('/lib/character-rules.ts'),engine=await vite.ssrLoadModule('/lib/combat-engine.ts'),schema=await vite.ssrLoadModule('/lib/character-schema.ts'),_validation=await vite.ssrLoadModule('/lib/combat-validation.ts'),arts=await vite.ssrLoadModule('/lib/combat-repertoire.ts');
 const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const action=x=>({id:crypto.randomUUID(),actorName:'Mara',title:'Teste',...x});
 test('all eighteen classes have a coherent progression and linked amplifications',()=>{

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { BookOpen, ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 import { RuleSearch } from "@/components/rule-search";
 import type { RuleChapterMeta } from "@/lib/rules";
@@ -67,4 +67,3 @@ export function RulesNavigation({
     </>
   );
 }
-

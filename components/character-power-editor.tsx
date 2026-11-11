@@ -1,16 +1,27 @@
 "use client";
-import { useState } from "react";
-import { rollPathAwakening } from "@/lib/combat-engine";
-import axioms from "@/data/path-axioms.json";
-import { equippedRuneWeapons, personalRuneLimit, runeTraining } from "@/lib/karmic-runes";
+import { TechniqueMatrixEditor } from "@/components/technique-matrix-editor";
 import runes from "@/data/karmic-runes.json";
-import { domainPathDiscount, hasAwakenedPath, pathAxiom } from "@/lib/personal-path";
-import { getStageIndex, getFinalSkill } from "@/lib/character-rules";
-import { TECHNIQUE_GRADES, techniqueGradeIndex } from "@/lib/technique-matrices";
-import {TechniqueMatrixEditor} from "@/components/technique-matrix-editor";
+import axioms from "@/data/path-axioms.json";
+import { getFinalSkill, getStageIndex } from "@/lib/character-rules";
+import { rollPathAwakening } from "@/lib/combat-engine";
+import {
+  equippedRuneWeapons,
+  personalRuneLimit,
+  runeTraining,
+} from "@/lib/karmic-runes";
+import {
+  domainPathDiscount,
+  hasAwakenedPath,
+  pathAxiom,
+} from "@/lib/personal-path";
+import {
+  TECHNIQUE_GRADES,
+  techniqueGradeIndex,
+} from "@/lib/technique-matrices";
+import { useState } from "react";
 
-import { WorkshopPanel } from "@/components/workshop-panel";
 import { BlessingEditor } from "@/components/blessing-editor";
+import { WorkshopPanel } from "@/components/workshop-panel";
 import {
   BookOpen,
   CircleDot,
@@ -25,18 +36,21 @@ import {
   Zap,
 } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { CorruptedFormEditor } from "@/components/corrupted-form-editor";
 import { InvocationEditor } from "@/components/invocation-editor";
-import { VowEditor } from "@/components/vow-editor";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select";
+import {
+  NativeSelect,
+  NativeSelectOption,
+} from "@/components/ui/native-select";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Textarea } from "@/components/ui/textarea";
+import { VowEditor } from "@/components/vow-editor";
 import {
   AFFINITIES,
   ALL_SKILLS,
@@ -50,9 +64,6 @@ import {
 } from "@/lib/character-data";
 import {
   DOMAIN_RULES,
-  PANTHEONS,
-  PATH_PRICES,
-  PATH_RUPTURES,
   getClassAbilityLimit,
   getClassAmplificationLimit,
   getClassDefinition,
@@ -174,8 +185,13 @@ function createTechnique(): TechniqueRecord {
   };
 }
 
-export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditorProps) {
-  const [pathAttribute, setPathAttribute] = useState<(typeof ATTRIBUTES)[number]>("Espírito");
+export function CharacterPowerEditor({
+  draft,
+  automatic,
+  onChange,
+}: PowerEditorProps) {
+  const [pathAttribute, setPathAttribute] =
+    useState<(typeof ATTRIBUTES)[number]>("Espírito");
   const [awakeningResult, setAwakeningResult] = useState("");
 
   const race = getRaceRule(draft.race);
@@ -190,7 +206,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
     onChange({ ...draft, [key]: value });
   }
 
-  function updateDomain(name: DomainState["name"], patch: Partial<DomainState>) {
+  function updateDomain(
+    name: DomainState["name"],
+    patch: Partial<DomainState>,
+  ) {
     update(
       "domains",
       draft.domains.map((domain) =>
@@ -235,7 +254,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
     } else if (!checked && selected) {
       update(
         "classAmplifications",
-        draft.classAmplifications.filter((amplification) => amplification !== name),
+        draft.classAmplifications.filter(
+          (amplification) => amplification !== name,
+        ),
       );
     }
   }
@@ -251,7 +272,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
 
   return (
     <div className="power-editor-layout">
-      <nav className="power-topic-nav" aria-label="Tópicos da página de poderes">
+      <nav
+        className="power-topic-nav"
+        aria-label="Tópicos da página de poderes"
+      >
         <span>Nesta página</span>
         {POWER_TOPICS.map(([id, label], index) => (
           <a href={`#${id}`} key={id}>
@@ -259,12 +283,19 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
             {label}
           </a>
         ))}
-        {draft.className === "Inventor" && <a href="#poder-oficina">Dispositivos da Oficina</a>}
+        {draft.className === "Inventor" && (
+          <a href="#poder-oficina">Dispositivos da Oficina</a>
+        )}
       </nav>
       <div className="power-editor-content">
         <section className="power-section" id="poder-raca-classe">
-          <SectionHeading icon={ShieldCheck} kicker="Fontes automáticas" title="Raça & classe">
-            Os traços de raça e classe vêm das escolhas feitas em Essência. Aqui você escolhe as habilidades liberadas pela etapa atual.
+          <SectionHeading
+            icon={ShieldCheck}
+            kicker="Fontes automáticas"
+            title="Raça & classe"
+          >
+            Os traços de raça e classe vêm das escolhas feitas em Essência. Aqui
+            você escolhe as habilidades liberadas pela etapa atual.
           </SectionHeading>
 
           <div className="power-source-grid">
@@ -281,7 +312,11 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   <p className="power-rule-summary">{race.summary}</p>
                   <div className="feature-list">
                     {race.features.map((feature) => (
-                      <div className="feature-entry" data-kind={feature.kind} key={feature.name}>
+                      <div
+                        className="feature-entry"
+                        data-kind={feature.kind}
+                        key={feature.name}
+                      >
                         <span>{feature.kind}</span>
                         <strong>{feature.name}</strong>
                         <p>{feature.description}</p>
@@ -301,7 +336,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   ) : null}
                 </>
               ) : (
-                <p className="empty-power-copy">Volte à etapa 1 para definir a herança racial.</p>
+                <p className="empty-power-copy">
+                  Volte à etapa 1 para definir a herança racial.
+                </p>
               )}
             </article>
 
@@ -309,7 +346,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
               <div className="power-card-title">
                 <div>
                   <small>Classe primordial</small>
-                  <h3>{classDefinition?.name ?? "Escolha uma classe na Essência"}</h3>
+                  <h3>
+                    {classDefinition?.name ?? "Escolha uma classe na Essência"}
+                  </h3>
                 </div>
                 {classDefinition ? (
                   <Badge variant="outline">
@@ -326,10 +365,18 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   </div>
                   <div className="ability-choice-list">
                     {classDefinition.abilities.map((ability) => {
-                      const selected = draft.classAbilities.includes(ability.name);
-                      const atLimit = !selected && draft.classAbilities.length >= abilityLimit;
+                      const selected = draft.classAbilities.includes(
+                        ability.name,
+                      );
+                      const atLimit =
+                        !selected &&
+                        draft.classAbilities.length >= abilityLimit;
                       return (
-                        <label className="ability-choice" data-selected={selected} key={ability.name}>
+                        <label
+                          className="ability-choice"
+                          data-selected={selected}
+                          key={ability.name}
+                        >
                           <Checkbox
                             checked={selected}
                             disabled={atLimit}
@@ -348,8 +395,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     })}
                   </div>
                   <p className="selection-rule">
-                    Na {draft.stage}, a classe libera {abilityLimit} de suas 3 habilidades.
-                    As demais continuam visíveis para planejar a progressão.
+                    Na {draft.stage}, a classe libera {abilityLimit} de suas 3
+                    habilidades. As demais continuam visíveis para planejar a
+                    progressão.
                   </p>
 
                   {classDefinition.amplifications.length ? (
@@ -368,18 +416,27 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       <div className="ability-choice-list compact">
                         {classDefinition.amplifications.map((amplification) => {
                           const id = `${amplification.abilityName} — ${amplification.name}`;
-                          const selected = draft.classAmplifications.includes(id);
-                          const abilityAlreadyAmplified = draft.classAmplifications.some(
-                            (item) =>
-                              item !== id &&
-                              item.startsWith(`${amplification.abilityName} —`),
-                          );
+                          const selected =
+                            draft.classAmplifications.includes(id);
+                          const abilityAlreadyAmplified =
+                            draft.classAmplifications.some(
+                              (item) =>
+                                item !== id &&
+                                item.startsWith(
+                                  `${amplification.abilityName} —`,
+                                ),
+                            );
                           const atLimit =
                             !selected &&
-                            (draft.classAmplifications.length >= amplificationLimit ||
+                            (draft.classAmplifications.length >=
+                              amplificationLimit ||
                               abilityAlreadyAmplified);
                           return (
-                            <label className="ability-choice" data-selected={selected} key={id}>
+                            <label
+                              className="ability-choice"
+                              data-selected={selected}
+                              key={id}
+                            >
                               <Checkbox
                                 checked={selected}
                                 disabled={!amplificationLimit || atLimit}
@@ -401,16 +458,23 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   ) : null}
                 </>
               ) : (
-                <p className="empty-power-copy">Volte à etapa 1 para definir a classe.</p>
+                <p className="empty-power-copy">
+                  Volte à etapa 1 para definir a classe.
+                </p>
               )}
             </article>
           </div>
         </section>
 
         <section className="power-section" id="poder-dominios">
-          <SectionHeading icon={CircleDot} kicker="Atributo em ápice" title="Domínios & Caminho Pessoal">
-            Ative somente os Domínios conquistados. A ficha confere o Atributo regente e
-            incorpora automaticamente as Essências de Velocidade e Resistência aos números.
+          <SectionHeading
+            icon={CircleDot}
+            kicker="Atributo em ápice"
+            title="Domínios & Caminho Pessoal"
+          >
+            Ative somente os Domínios conquistados. A ficha confere o Atributo
+            regente e incorpora automaticamente as Essências de Velocidade e
+            Resistência aos números.
           </SectionHeading>
 
           <div className="domain-grid">
@@ -425,7 +489,11 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   );
               const eligible = regentValue >= 5;
               return (
-                <article className="domain-card" data-enabled={domain.enabled} key={domain.name}>
+                <article
+                  className="domain-card"
+                  data-enabled={domain.enabled}
+                  key={domain.name}
+                >
                   <div className="toggle-heading">
                     <div>
                       <small>{rule.regent}</small>
@@ -433,12 +501,16 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     </div>
                     <Switch
                       checked={domain.enabled}
-                      onCheckedChange={(enabled) => updateDomain(domain.name, { enabled })}
+                      onCheckedChange={(enabled) =>
+                        updateDomain(domain.name, { enabled })
+                      }
                       aria-label={`Ativar Domínio da ${domain.name}`}
                     />
                   </div>
                   <div className="eligibility-line" data-valid={eligible}>
-                    <span>{eligible ? "Requisito alcançado" : "Requisito pendente"}</span>
+                    <span>
+                      {eligible ? "Requisito alcançado" : "Requisito pendente"}
+                    </span>
                     <strong>{regentValue}/5</strong>
                   </div>
                   {domain.enabled ? (
@@ -446,7 +518,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       <div className="domain-mark-control">
                         <span>
                           <strong>{domain.marks}</strong>
-                          <small>Marcas · requer {domainPathDiscount(3, hasAwakenedPath(draft))}</small>
+                          <small>
+                            Marcas · requer{" "}
+                            {domainPathDiscount(3, hasAwakenedPath(draft))}
+                          </small>
                         </span>
                         <Slider
                           min={0}
@@ -472,14 +547,48 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                         </span>
                       </label>
                       <div className="domain-rules">
-                        <p><strong>Manifestação:</strong> {rule.manifestation}</p>
-                        <p><strong>Fissura:</strong> {rule.fissure}</p>
+                        <p>
+                          <strong>Manifestação:</strong> {rule.manifestation}
+                        </p>
+                        <p>
+                          <strong>Fissura:</strong> {rule.fissure}
+                        </p>
                       </div>
                       <div className="refinement-picker">
                         <span>Refinamentos — até 2</span>
                         <div>
-                          {[0,1].map(index => <NativeSelect key={index} aria-label={`Refinamento ${index+1} de ${domain.name}`} value={domain.refinements[index] ?? ""} onChange={event => { const refinements=[...domain.refinements]; refinements[index]=event.target.value; updateDomain(domain.name,{refinements:[...new Set(refinements.filter(Boolean))]}); }}><NativeSelectOption value="">Sem refinamento</NativeSelectOption>{REFINEMENTS.map(value=><NativeSelectOption key={value} value={value} disabled={domain.refinements.includes(value) && domain.refinements[index] !== value}>{value}</NativeSelectOption>)}</NativeSelect>)}
-
+                          {[0, 1].map((index) => (
+                            <NativeSelect
+                              key={index}
+                              aria-label={`Refinamento ${index + 1} de ${domain.name}`}
+                              value={domain.refinements[index] ?? ""}
+                              onChange={(event) => {
+                                const refinements = [...domain.refinements];
+                                refinements[index] = event.target.value;
+                                updateDomain(domain.name, {
+                                  refinements: [
+                                    ...new Set(refinements.filter(Boolean)),
+                                  ],
+                                });
+                              }}
+                            >
+                              <NativeSelectOption value="">
+                                Sem refinamento
+                              </NativeSelectOption>
+                              {REFINEMENTS.map((value) => (
+                                <NativeSelectOption
+                                  key={value}
+                                  value={value}
+                                  disabled={
+                                    domain.refinements.includes(value) &&
+                                    domain.refinements[index] !== value
+                                  }
+                                >
+                                  {value}
+                                </NativeSelectOption>
+                              ))}
+                            </NativeSelect>
+                          ))}
                         </div>
                       </div>
                       <TextField
@@ -487,14 +596,18 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                         label="Sinal da Manifestação"
                         value={domain.signal}
                         placeholder="Como o Domínio se torna visível em cena?"
-                        onChange={(signal) => updateDomain(domain.name, { signal })}
+                        onChange={(signal) =>
+                          updateDomain(domain.name, { signal })
+                        }
                       />
                       <TextField
                         id={`domain-notes-${domain.name}`}
                         label="Notas e escolhas fixadas"
                         value={domain.notes}
                         multiline
-                        onChange={(notes) => updateDomain(domain.name, { notes })}
+                        onChange={(notes) =>
+                          updateDomain(domain.name, { notes })
+                        }
                       />
                     </>
                   ) : null}
@@ -503,14 +616,19 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
             })}
           </div>
 
-          <article className="personal-path-card" data-enabled={draft.personalPath.enabled}>
+          <article
+            className="personal-path-card"
+            data-enabled={draft.personalPath.enabled}
+          >
             <div className="toggle-heading">
               <div>
                 <small>Progressão singular</small>
                 <h3>Caminho Pessoal</h3>
               </div>
               <Switch
-                disabled={getStageIndex(draft.stage) < 3 && !draft.personalPath.enabled}
+                disabled={
+                  getStageIndex(draft.stage) < 3 && !draft.personalPath.enabled
+                }
                 checked={draft.personalPath.enabled}
                 onCheckedChange={(enabled) =>
                   update("personalPath", { ...draft.personalPath, enabled })
@@ -524,26 +642,143 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                   id="personal-path-name"
                   label="Nome do Caminho"
                   value={draft.personalPath.name}
-                  onChange={(name) => update("personalPath", { ...draft.personalPath, name })}
+                  onChange={(name) =>
+                    update("personalPath", { ...draft.personalPath, name })
+                  }
                 />
                 <TextField
                   id="personal-path-technique"
                   label="Técnica de assinatura"
                   value={draft.personalPath.signatureTechnique}
                   onChange={(signatureTechnique) =>
-                    update("personalPath", { ...draft.personalPath, signatureTechnique })
+                    update("personalPath", {
+                      ...draft.personalPath,
+                      signatureTechnique,
+                    })
                   }
                 />
-                <p className="field-full">Despertar em crise na Etapa III. CD 20 e 6 Karma no despertar puro. Sob Outorga ou doutrina, CD 24, −1d20, 10 Karma e 2d6 de dano irreduzível. O teste usa somente a reserva do atributo-chave, o treinamento em Canalização e o bônus por falhas anteriores. Ímpeto e Analítico ficam fora da rolagem. Registre o despertar após resolver o preço e o resultado em mesa.</p>
-                <label>Atributo-chave<select value={pathAttribute} onChange={event => setPathAttribute(event.target.value as typeof pathAttribute)}>{ATTRIBUTES.map(attribute => <option key={attribute}>{attribute}</option>)}</select></label>
-                <button type="button" disabled={getStageIndex(draft.stage) < 3} onClick={() => { const result = rollPathAwakening(draft, pathAttribute); setAwakeningResult(`${result.dice.join(", ")} · Dado escolhido ${result.selected} · Total ${result.total} contra CD ${result.dc} · ${result.outcome}`); }}>Rolar Despertar</button>
-                {awakeningResult && <p className="field-full" role="status">{awakeningResult}</p>}
-                <label>Vertente<select value={draft.personalPath.branch ?? ""} onChange={event => update("personalPath", {...draft.personalPath, branch: (event.target.value || undefined) as CharacterPayload["personalPath"]["branch"]})}><option value="">Escolha uma vertente</option><option value="independente">Independente</option><option value="subversao">Subversão</option><option value="emancipacao">Emancipação</option></select></label>
-                <label>Axioma Autoral<select value={draft.personalPath.axiom ?? ""} onChange={event => update("personalPath", {...draft.personalPath, axiom: Number(event.target.value) || undefined})}><option value="">Escolha um Axioma</option>{axioms.map(axiom => <option key={axiom.id} value={axiom.id}>{axiom.name}</option>)}</select></label>
-                {pathAxiom(draft) && <p className="field-full">{pathAxiom(draft)?.effect}</p>}
-                <label>Bônus acumulado por falhas<input type="number" min={0} max={999} value={draft.personalPath.failedAttempts ?? 0} onChange={event => update("personalPath", {...draft.personalPath, failedAttempts: Math.min(999,Math.max(0,Math.floor(Number(event.target.value)||0)))})}/></label>
-                <TextField id="personal-path-rupture" label="Afirmação — resolução, alvos e limites" value={draft.personalPath.rupture} multiline wide onChange={(rupture)=>update("personalPath",{...draft.personalPath,rupture})}/>
-                <TextField id="personal-path-price" label="Culminação — efeito, preço e encerramento" value={draft.personalPath.price} multiline wide onChange={(price)=>update("personalPath",{...draft.personalPath,price})}/>
+                <p className="field-full">
+                  Despertar em crise na Etapa III. CD 20 e 6 Karma no despertar
+                  puro. Sob Outorga ou doutrina, CD 24, −1d20, 10 Karma e 2d6 de
+                  dano irreduzível. O teste usa somente a reserva do
+                  atributo-chave, o treinamento em Canalização e o bônus por
+                  falhas anteriores. Ímpeto e Analítico ficam fora da rolagem.
+                  Registre o despertar após resolver o preço e o resultado em
+                  mesa.
+                </p>
+                <label>
+                  Atributo-chave
+                  <select
+                    value={pathAttribute}
+                    onChange={(event) =>
+                      setPathAttribute(
+                        event.target.value as typeof pathAttribute,
+                      )
+                    }
+                  >
+                    {ATTRIBUTES.map((attribute) => (
+                      <option key={attribute}>{attribute}</option>
+                    ))}
+                  </select>
+                </label>
+                <button
+                  type="button"
+                  disabled={getStageIndex(draft.stage) < 3}
+                  onClick={() => {
+                    const result = rollPathAwakening(draft, pathAttribute);
+                    setAwakeningResult(
+                      `${result.dice.join(", ")} · Dado escolhido ${result.selected} · Total ${result.total} contra CD ${result.dc} · ${result.outcome}`,
+                    );
+                  }}
+                >
+                  Rolar Despertar
+                </button>
+                {awakeningResult && (
+                  <p className="field-full" role="status">
+                    {awakeningResult}
+                  </p>
+                )}
+                <label>
+                  Vertente
+                  <select
+                    value={draft.personalPath.branch ?? ""}
+                    onChange={(event) =>
+                      update("personalPath", {
+                        ...draft.personalPath,
+                        branch: (event.target.value ||
+                          undefined) as CharacterPayload["personalPath"]["branch"],
+                      })
+                    }
+                  >
+                    <option value="">Escolha uma vertente</option>
+                    <option value="independente">Independente</option>
+                    <option value="subversao">Subversão</option>
+                    <option value="emancipacao">Emancipação</option>
+                  </select>
+                </label>
+                <label>
+                  Axioma Autoral
+                  <select
+                    value={draft.personalPath.axiom ?? ""}
+                    onChange={(event) =>
+                      update("personalPath", {
+                        ...draft.personalPath,
+                        axiom: Number(event.target.value) || undefined,
+                      })
+                    }
+                  >
+                    <option value="">Escolha um Axioma</option>
+                    {axioms.map((axiom) => (
+                      <option key={axiom.id} value={axiom.id}>
+                        {axiom.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {pathAxiom(draft) && (
+                  <p className="field-full">{pathAxiom(draft)?.effect}</p>
+                )}
+                <label>
+                  Bônus acumulado por falhas
+                  <input
+                    type="number"
+                    min={0}
+                    max={999}
+                    value={draft.personalPath.failedAttempts ?? 0}
+                    onChange={(event) =>
+                      update("personalPath", {
+                        ...draft.personalPath,
+                        failedAttempts: Math.min(
+                          999,
+                          Math.max(
+                            0,
+                            Math.floor(Number(event.target.value) || 0),
+                          ),
+                        ),
+                      })
+                    }
+                  />
+                </label>
+                <TextField
+                  id="personal-path-rupture"
+                  label="Afirmação — resolução, alvos e limites"
+                  value={draft.personalPath.rupture}
+                  multiline
+                  wide
+                  onChange={(rupture) =>
+                    update("personalPath", { ...draft.personalPath, rupture })
+                  }
+                />
+                <TextField
+                  id="personal-path-price"
+                  label="Culminação — efeito, preço e encerramento"
+                  value={draft.personalPath.price}
+                  multiline
+                  wide
+                  onChange={(price) =>
+                    update("personalPath", { ...draft.personalPath, price })
+                  }
+                />
                 <TextField
                   id="personal-path-principle"
                   label="Lei pessoal — intenções, fronteira, oposição e regente"
@@ -560,30 +795,45 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
         </section>
 
         <section className="power-section" id="poder-elemental">
-          <SectionHeading icon={Flame} kicker="Dobra e manifestação" title="Poder elemental & subdobras">
-            Registre afinidade, elementos efetivamente controlados, domínio atual e cada
-            subdobra autorizada. Afinidade por si só não concede uma técnica.
+          <SectionHeading
+            icon={Flame}
+            kicker="Dobra e manifestação"
+            title="Poder elemental & subdobras"
+          >
+            Registre afinidade, elementos efetivamente controlados, domínio
+            atual e cada subdobra autorizada. Afinidade por si só não concede
+            uma técnica.
           </SectionHeading>
 
           <div className="character-form-grid two-columns compact-form">
             <div className="character-field">
-              <Label htmlFor="elemental-affinity" className="character-label">Afinidade latente</Label>
+              <Label htmlFor="elemental-affinity" className="character-label">
+                Afinidade latente
+              </Label>
               <NativeSelect
                 id="elemental-affinity"
                 value={draft.affinity}
                 onChange={(event) => update("affinity", event.target.value)}
               >
                 {AFFINITIES.map((affinity) => (
-                  <NativeSelectOption key={affinity} value={affinity}>{affinity}</NativeSelectOption>
+                  <NativeSelectOption key={affinity} value={affinity}>
+                    {affinity}
+                  </NativeSelectOption>
                 ))}
               </NativeSelect>
             </div>
-            <p>Registre o treinamento de cada elemento separadamente na página de Perícias. Controle 1: Graus I–II; Etapa III: Grau III; Etapa V e Controle 2: Grau IV; Etapa VII e Controle 3: Grau V. Afinidade não treina outro elemento.</p>
+            <p>
+              Registre o treinamento de cada elemento separadamente na página de
+              Perícias. Controle 1: Graus I–II; Etapa III: Grau III; Etapa V e
+              Controle 2: Grau IV; Etapa VII e Controle 3: Grau V. Afinidade não
+              treina outro elemento.
+            </p>
             <div className="element-picker field-full">
               <span>Elementos controlados</span>
               <div>
                 {ELEMENTS.map((element) => {
-                  const checked = draft.elemental.controlledElements.includes(element);
+                  const checked =
+                    draft.elemental.controlledElements.includes(element);
                   return (
                     <label data-selected={checked} key={element}>
                       <Checkbox
@@ -592,8 +842,13 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                           updateElemental({
                             controlledElements:
                               value === true
-                                ? [...draft.elemental.controlledElements, element]
-                                : draft.elemental.controlledElements.filter((item) => item !== element),
+                                ? [
+                                    ...draft.elemental.controlledElements,
+                                    element,
+                                  ]
+                                : draft.elemental.controlledElements.filter(
+                                    (item) => item !== element,
+                                  ),
                           })
                         }
                       />
@@ -632,7 +887,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
           <div className="dynamic-list-heading">
             <div>
               <h3>Subdobras</h3>
-              <p>Cada derivação mantém elemento de origem, conceito, passiva e limites próprios.</p>
+              <p>
+                Cada derivação mantém elemento de origem, conceito, passiva e
+                limites próprios.
+              </p>
             </div>
             <Button
               type="button"
@@ -691,7 +949,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     }
                   />
                   <div className="character-field">
-                    <Label htmlFor={`sub-bending-parent-${subBending.id}`} className="character-label">
+                    <Label
+                      htmlFor={`sub-bending-parent-${subBending.id}`}
+                      className="character-label"
+                    >
                       Elemento de origem
                     </Label>
                     <NativeSelect
@@ -699,32 +960,44 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       value={subBending.parentElement}
                       onChange={(event) =>
                         updateElemental({
-                          subBendings: draft.elemental.subBendings.map((item) =>
-                            item.id === subBending.id
-                              ? { ...item, parentElement: event.target.value }
-                              : item,
+                          subBendings: draft.elemental.subBendings.map(
+                            (item) =>
+                              item.id === subBending.id
+                                ? { ...item, parentElement: event.target.value }
+                                : item,
                           ),
                         })
                       }
                     >
                       <NativeSelectOption value="">Escolha</NativeSelectOption>
                       {ELEMENTS.map((element) => (
-                        <NativeSelectOption value={element} key={element}>{element}</NativeSelectOption>
+                        <NativeSelectOption value={element} key={element}>
+                          {element}
+                        </NativeSelectOption>
                       ))}
                     </NativeSelect>
                   </div>
                   {(["concept", "passive", "limits"] as const).map((field) => (
                     <TextField
                       id={`sub-bending-${field}-${subBending.id}`}
-                      label={{ concept: "Conceito", passive: "Passiva", limits: "Limites" }[field]}
+                      label={
+                        {
+                          concept: "Conceito",
+                          passive: "Passiva",
+                          limits: "Limites",
+                        }[field]
+                      }
                       value={subBending[field]}
                       multiline
                       wide={field === "limits"}
                       key={field}
                       onChange={(value) =>
                         updateElemental({
-                          subBendings: draft.elemental.subBendings.map((item) =>
-                            item.id === subBending.id ? { ...item, [field]: value } : item,
+                          subBendings: draft.elemental.subBendings.map(
+                            (item) =>
+                              item.id === subBending.id
+                                ? { ...item, [field]: value }
+                                : item,
                           ),
                         })
                       }
@@ -736,13 +1009,24 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
           </div>
         </section>
 
-        <section className="power-section corruption-section" id="poder-corrupcao">
-          <SectionHeading icon={Skull} kicker="A Marca e a Voz" title="Corrupção">
-            A Carga representa pressão narrativa, não um recurso de compra. Registre a
-            Marca, sua promessa, os sinais e as consequências que já entraram em jogo.
+        <section
+          className="power-section corruption-section"
+          id="poder-corrupcao"
+        >
+          <SectionHeading
+            icon={Skull}
+            kicker="A Marca e a Voz"
+            title="Corrupção"
+          >
+            A Carga representa pressão narrativa, não um recurso de compra.
+            Registre a Marca, sua promessa, os sinais e as consequências que já
+            entraram em jogo.
           </SectionHeading>
 
-          <div className="system-activation-card" data-enabled={draft.corruption.enabled}>
+          <div
+            className="system-activation-card"
+            data-enabled={draft.corruption.enabled}
+          >
             <div className="toggle-heading">
               <div>
                 <small>Fonte opcional</small>
@@ -772,7 +1056,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       update("corruption", {
                         ...draft.corruption,
                         charge: values[0] ?? 0,
-                        ...((values[0]??0)>=10?{formActive:false,formBlocked:true}:{}),
+                        ...((values[0] ?? 0) >= 10
+                          ? { formActive: false, formBlocked: true }
+                          : {}),
                       })
                     }
                     aria-label="Carga de Corrupção"
@@ -795,41 +1081,56 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       update("corruption", { ...draft.corruption, visibleSign })
                     }
                   />
-                  {([
-                    ["voicePromise", "Promessa da Voz"],
-                    ["mutation", "Mutação"],
-                    ["fissure", "Fissura"],
-                    ["formFunction", "Função da Forma corrompida"],
-                    ["formLimitation", "Limitação da Forma"],
-                    ["ruptureIntent", "Intenção da Ruptura"],
-                  ] as const).map(([field, label]) => (
+                  {(
+                    [
+                      ["voicePromise", "Promessa da Voz"],
+                      ["mutation", "Mutação"],
+                      ["fissure", "Fissura"],
+                      ["formFunction", "Função da Forma corrompida"],
+                      ["formLimitation", "Limitação da Forma"],
+                      ["ruptureIntent", "Intenção da Ruptura"],
+                    ] as const
+                  ).map(([field, label]) => (
                     <TextField
                       id={`corruption-${field}`}
                       label={label}
                       value={draft.corruption[field]}
                       multiline
                       onChange={(value) =>
-                        update("corruption", { ...draft.corruption, [field]: value })
+                        update("corruption", {
+                          ...draft.corruption,
+                          [field]: value,
+                        })
                       }
                       key={field}
                     />
                   ))}
                 </div>
-                <CorruptedFormEditor draft={draft} onChange={onChange}/>
+                <CorruptedFormEditor draft={draft} onChange={onChange} />
               </>
             ) : (
-              <p className="empty-power-copy">Ative apenas se a personagem tiver recebido a Marca.</p>
+              <p className="empty-power-copy">
+                Ative apenas se a personagem tiver recebido a Marca.
+              </p>
             )}
           </div>
         </section>
 
         <section className="power-section divine-section" id="poder-divino">
-          <SectionHeading icon={Landmark} kicker="Bênção e comunhão" title="Poder divino">
-            Estruture Bênção, Comunhão Divina ou ambas: autoridade, divindade, limites,
-            Favor, liturgias e milagres ficam reunidos no mesmo registro.
+          <SectionHeading
+            icon={Landmark}
+            kicker="Bênção e comunhão"
+            title="Poder divino"
+          >
+            Estruture Bênção, Comunhão Divina ou ambas: autoridade, divindade,
+            limites, Favor, liturgias e milagres ficam reunidos no mesmo
+            registro.
           </SectionHeading>
 
-          <div className="system-activation-card" data-enabled={draft.divine.enabled}>
+          <div
+            className="system-activation-card"
+            data-enabled={draft.divine.enabled}
+          >
             <div className="toggle-heading">
               <div>
                 <small>Fonte opcional</small>
@@ -842,29 +1143,84 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
               />
             </div>
             {draft.divine.enabled ? (
-              <BlessingEditor draft={draft} onChange={updateDivine}/>
+              <BlessingEditor draft={draft} onChange={updateDivine} />
             ) : (
-              <p className="empty-power-copy">Ative para registrar uma Bênção ou Comunhão Divina.</p>
+              <p className="empty-power-copy">
+                Ative para registrar uma Bênção ou Comunhão Divina.
+              </p>
             )}
           </div>
         </section>
 
-        <section className="power-section" id="poder-runas"><h2>Runas Kármicas</h2>
-          <p>Canalização de Karma 1 permite inscrever Runas. Limite pessoal de {personalRuneLimit(draft)}. Armas com espaços nativos têm vagas próprias.</p>
-          <p>{runeTraining(draft).level ? `Canalização ${runeTraining(draft).level}. Consulte os requisitos por Grau no Capítulo 9.` : "Treine Canalização de Karma para registrar uma inscrição."} Abra o item na ficha final e use <strong>Runas do item</strong>.</p>
-          {draft.className === "Escriba Kármico" && <p>CD rúnica {12 + getFinalAttribute(draft,automatic,"Intelecto") + getFinalSkill(draft,automatic,"Canalização de Karma") + (equippedRuneWeapons(draft).some(({weapon}) => weapon.id === "grimorio") ? 1 : 0) + (equippedRuneWeapons(draft).some(({weapon}) => weapon.id === "cajado") ? 2 : 0)}. Testes rúnicos usam Intelecto + Canalização de Karma.</p>}
-          <details><summary>Consultar as 25 Runas</summary>{runes.map(rune => <details key={rune.id}><summary>{rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido</summary><p>{rune.category}</p><p><strong>Enquanto armada.</strong> {rune.passive}</p><p><strong>Estouro.</strong> {rune.burst}</p></details>)}</details>
+        <section className="power-section" id="poder-runas">
+          <h2>Runas Kármicas</h2>
+          <p>
+            Canalização de Karma 1 permite inscrever Runas. Limite pessoal de{" "}
+            {personalRuneLimit(draft)}. Armas com espaços nativos têm vagas
+            próprias.
+          </p>
+          <p>
+            {runeTraining(draft).level
+              ? `Canalização ${runeTraining(draft).level}. Consulte os requisitos por Grau no Capítulo 9.`
+              : "Treine Canalização de Karma para registrar uma inscrição."}{" "}
+            Abra o item na ficha final e use <strong>Runas do item</strong>.
+          </p>
+          {draft.className === "Escriba Kármico" && (
+            <p>
+              CD rúnica{" "}
+              {12 +
+                getFinalAttribute(draft, automatic, "Intelecto") +
+                getFinalSkill(draft, automatic, "Canalização de Karma") +
+                (equippedRuneWeapons(draft).some(
+                  ({ weapon }) => weapon.id === "grimorio",
+                )
+                  ? 1
+                  : 0) +
+                (equippedRuneWeapons(draft).some(
+                  ({ weapon }) => weapon.id === "cajado",
+                )
+                  ? 2
+                  : 0)}
+              . Testes rúnicos usam Intelecto + Canalização de Karma.
+            </p>
+          )}
+          <details>
+            <summary>Consultar as 25 Runas</summary>
+            {runes.map((rune) => (
+              <details key={rune.id}>
+                <summary>
+                  {rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido
+                </summary>
+                <p>{rune.category}</p>
+                <p>
+                  <strong>Enquanto armada.</strong> {rune.passive}
+                </p>
+                <p>
+                  <strong>Estouro.</strong> {rune.burst}
+                </p>
+              </details>
+            ))}
+          </details>
         </section>
 
-        {draft.className === "Inventor" && <section className="power-section" id="poder-oficina"><WorkshopPanel draft={draft} onChange={onChange} /></section>}
+        {draft.className === "Inventor" && (
+          <section className="power-section" id="poder-oficina">
+            <WorkshopPanel draft={draft} onChange={onChange} />
+          </section>
+        )}
         <InvocationEditor draft={draft} onChange={onChange} />
 
         <VowEditor draft={draft} automatic={automatic} onChange={onChange} />
 
         <section className="power-section" id="poder-tecnicas">
-          <SectionHeading icon={Swords} kicker="Registro mecânico" title="Criação de técnicas">
-            Registre cada técnica por completo: fonte, teste, ação, custo, alcance,
-            resultados e limites. A página final exibirá exatamente o que for consolidado aqui.
+          <SectionHeading
+            icon={Swords}
+            kicker="Registro mecânico"
+            title="Criação de técnicas"
+          >
+            Registre cada técnica por completo: fonte, teste, ação, custo,
+            alcance, resultados e limites. A página final exibirá exatamente o
+            que for consolidado aqui.
           </SectionHeading>
 
           <div className="dynamic-list-heading">
@@ -875,115 +1231,263 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
             <Button
               type="button"
               className="karma-button"
-              onClick={() => update("techniques", [...draft.techniques, createTechnique()])}
+              onClick={() =>
+                update("techniques", [...draft.techniques, createTechnique()])
+              }
             >
               <Plus aria-hidden="true" /> Nova técnica
             </Button>
           </div>
 
-
           <div className="dynamic-card-list techniques-list">
             {draft.techniques.length ? (
               draft.techniques.map((technique, index) => {
-                const grade = TECHNIQUE_GRADES[techniqueGradeIndex(technique.grade)];
+                const grade =
+                  TECHNIQUE_GRADES[techniqueGradeIndex(technique.grade)];
                 return (
-                <article className="dynamic-editor-card technique-editor-card" key={technique.id}>
-                  <header>
-                    <span>Técnica {String(index + 1).padStart(2, "0")}</span>
-                    <div>
-                      <label className="signature-toggle">
-                        <Checkbox
-                          checked={technique.signature}
-                          onCheckedChange={(checked) =>
-                            updateTechnique(technique.id, { signature: checked === true })
+                  <article
+                    className="dynamic-editor-card technique-editor-card"
+                    key={technique.id}
+                  >
+                    <header>
+                      <span>Técnica {String(index + 1).padStart(2, "0")}</span>
+                      <div>
+                        <label className="signature-toggle">
+                          <Checkbox
+                            checked={technique.signature}
+                            onCheckedChange={(checked) =>
+                              updateTechnique(technique.id, {
+                                signature: checked === true,
+                              })
+                            }
+                          />
+                          Assinatura
+                        </label>
+                        <Button
+                          type="button"
+                          variant="ghost"
+                          size="icon-sm"
+                          aria-label={`Remover técnica ${index + 1}`}
+                          onClick={() =>
+                            update(
+                              "techniques",
+                              draft.techniques.filter(
+                                (item) => item.id !== technique.id,
+                              ),
+                            )
                           }
-                        />
-                        Assinatura
-                      </label>
-                      <Button
-                        type="button"
-                        variant="ghost"
-                        size="icon-sm"
-                        aria-label={`Remover técnica ${index + 1}`}
-                        onClick={() =>
-                          update(
-                            "techniques",
-                            draft.techniques.filter((item) => item.id !== technique.id),
-                          )
-                        }
-                      >
-                        <Trash2 aria-hidden="true" />
-                      </Button>
-                    </div>
-                  </header>
-                  <fieldset className="technique-form-group character-form-grid">
-                    <legend>Identidade e execução</legend>
-                    <TextField id={`technique-name-${technique.id}`} label="Nome" value={technique.name} onChange={(name) => updateTechnique(technique.id, { name })} />
-                    <TextField id={`technique-source-${technique.id}`} label="Fonte" value={technique.source} placeholder="Classe, elemento, bênção, Marca…" onChange={(source) => updateTechnique(technique.id, { source })} />
-                    <div className="character-field">
-                      <Label htmlFor={`technique-attribute-${technique.id}`} className="character-label">Atributo</Label>
-                      <NativeSelect id={`technique-attribute-${technique.id}`} value={PRESENCE_SKILLS.includes(technique.skill) ? "Presença" : technique.attribute} disabled={PRESENCE_SKILLS.includes(technique.skill)} onChange={(event) => updateTechnique(technique.id, { attribute: event.target.value })}>
-                        <NativeSelectOption value="">Escolha</NativeSelectOption>
-                        {ATTRIBUTES.map((attribute) => <NativeSelectOption value={attribute} key={attribute}>{attribute}</NativeSelectOption>)}
-                      </NativeSelect>
-                    </div>
-                    <div className="character-field">
-                      <Label htmlFor={`technique-skill-${technique.id}`} className="character-label">Perícia</Label>
-                      <NativeSelect id={`technique-skill-${technique.id}`} value={technique.skill} onChange={(event) => updateTechnique(technique.id, { skill: event.target.value, ...(PRESENCE_SKILLS.includes(event.target.value) ? { attribute: "Presença" } : {}) })}>
-                        <NativeSelectOption value="">Escolha</NativeSelectOption>
-                        {ALL_SKILLS.map((skill) => <NativeSelectOption value={skill} key={skill}>{skill}</NativeSelectOption>)}
-                        <NativeSelectOption value="Conjuração Vincular">Conjuração Vincular (uso de Conjuração)</NativeSelectOption>
-                      </NativeSelect>
-                      {technique.skill === "Conjuração Vincular" ? <small>Usa o nível de Conjuração, mas exige Presença como regente.</small> : technique.skill === "Conjuração" ? <small>Conjuração comum: escolha o regente conforme a abordagem ou técnica; Espírito para contenção.</small> : null}
-                    </div>
-                    <div className="character-field">
-                      <Label htmlFor={`technique-grade-${technique.id}`} className="character-label">Grau</Label>
-                      <NativeSelect id={`technique-grade-${technique.id}`} value={grade ? `Grau ${grade}` : ""} onChange={(event) => updateTechnique(technique.id, { grade: event.target.value })}>
-                        {!grade && <NativeSelectOption value="" disabled>{technique.grade ? `Registro anterior: ${technique.grade}` : "Escolha o grau"}</NativeSelectOption>}
-                        {TECHNIQUE_GRADES.map((option) => <NativeSelectOption key={option}>Grau {option}</NativeSelectOption>)}
-                      </NativeSelect>
-                      {!grade && <small>Escolha um grau de I a V para usar a calculadora.</small>}
-                    </div>
-                    <div className="character-field">
-                      <Label htmlFor={`technique-action-${technique.id}`} className="character-label">Ação</Label>
-                      <NativeSelect id={`technique-action-${technique.id}`} value={technique.action} onChange={(event) => updateTechnique(technique.id, { action: event.target.value })}>
-                        {["Ação Principal", "Ação de Movimento", "Ação Extra", "Ação Livre", "Reação", "Passiva", "Ritual"].map((action) => <NativeSelectOption value={action} key={action}>{action}</NativeSelectOption>)}
-                      </NativeSelect>
-                    </div>
-                  </fieldset>
-                  <TechniqueMatrixEditor
-                    technique={technique}
-                    race={draft.race}
-                    className={draft.className}
-                    onChange={(patch) => updateTechnique(technique.id, patch)}
-                  />
-                  <fieldset className="technique-form-group character-form-grid">
-                    <legend>Efeitos e resolução</legend>
-                    {([
-                      ["concept", "Conceito"],
-                      ["effect", "Efeito"],
-                      ["range", "Alcance"],
-                      ["targetAreaDuration", "Alvo, área e duração"],
-                      ["cost", "Custo"],
-                      ["calculation", "Cálculo / dano / cura"],
-                      ["test", "Teste e oposição"],
-                      ["totalSuccess", "Sucesso total"],
-                      ["partialSuccess", "Sucesso parcial"],
-                      ["failure", "Falha"],
-                      ["limits", "Limites e condições"],
-                    ] as const).map(([field, label]) => (
+                        >
+                          <Trash2 aria-hidden="true" />
+                        </Button>
+                      </div>
+                    </header>
+                    <fieldset className="technique-form-group character-form-grid">
+                      <legend>Identidade e execução</legend>
                       <TextField
-                        id={`technique-${field}-${technique.id}`}
-                        label={label}
-                        value={technique[field] ?? ""}
-                        multiline={field !== "range"}
-                        wide={["concept", "effect", "totalSuccess", "partialSuccess", "failure", "limits"].includes(field)}
-                        onChange={(value) => updateTechnique(technique.id, { [field]: value })}
-                        key={field}
+                        id={`technique-name-${technique.id}`}
+                        label="Nome"
+                        value={technique.name}
+                        onChange={(name) =>
+                          updateTechnique(technique.id, { name })
+                        }
                       />
-                    ))}
-                  </fieldset>
-                </article>
+                      <TextField
+                        id={`technique-source-${technique.id}`}
+                        label="Fonte"
+                        value={technique.source}
+                        placeholder="Classe, elemento, bênção, Marca…"
+                        onChange={(source) =>
+                          updateTechnique(technique.id, { source })
+                        }
+                      />
+                      <div className="character-field">
+                        <Label
+                          htmlFor={`technique-attribute-${technique.id}`}
+                          className="character-label"
+                        >
+                          Atributo
+                        </Label>
+                        <NativeSelect
+                          id={`technique-attribute-${technique.id}`}
+                          value={
+                            PRESENCE_SKILLS.includes(technique.skill)
+                              ? "Presença"
+                              : technique.attribute
+                          }
+                          disabled={PRESENCE_SKILLS.includes(technique.skill)}
+                          onChange={(event) =>
+                            updateTechnique(technique.id, {
+                              attribute: event.target.value,
+                            })
+                          }
+                        >
+                          <NativeSelectOption value="">
+                            Escolha
+                          </NativeSelectOption>
+                          {ATTRIBUTES.map((attribute) => (
+                            <NativeSelectOption
+                              value={attribute}
+                              key={attribute}
+                            >
+                              {attribute}
+                            </NativeSelectOption>
+                          ))}
+                        </NativeSelect>
+                      </div>
+                      <div className="character-field">
+                        <Label
+                          htmlFor={`technique-skill-${technique.id}`}
+                          className="character-label"
+                        >
+                          Perícia
+                        </Label>
+                        <NativeSelect
+                          id={`technique-skill-${technique.id}`}
+                          value={technique.skill}
+                          onChange={(event) =>
+                            updateTechnique(technique.id, {
+                              skill: event.target.value,
+                              ...(PRESENCE_SKILLS.includes(event.target.value)
+                                ? { attribute: "Presença" }
+                                : {}),
+                            })
+                          }
+                        >
+                          <NativeSelectOption value="">
+                            Escolha
+                          </NativeSelectOption>
+                          {ALL_SKILLS.map((skill) => (
+                            <NativeSelectOption value={skill} key={skill}>
+                              {skill}
+                            </NativeSelectOption>
+                          ))}
+                          <NativeSelectOption value="Conjuração Vincular">
+                            Conjuração Vincular (uso de Conjuração)
+                          </NativeSelectOption>
+                        </NativeSelect>
+                        {technique.skill === "Conjuração Vincular" ? (
+                          <small>
+                            Usa o nível de Conjuração, mas exige Presença como
+                            regente.
+                          </small>
+                        ) : technique.skill === "Conjuração" ? (
+                          <small>
+                            Conjuração comum: escolha o regente conforme a
+                            abordagem ou técnica; Espírito para contenção.
+                          </small>
+                        ) : null}
+                      </div>
+                      <div className="character-field">
+                        <Label
+                          htmlFor={`technique-grade-${technique.id}`}
+                          className="character-label"
+                        >
+                          Grau
+                        </Label>
+                        <NativeSelect
+                          id={`technique-grade-${technique.id}`}
+                          value={grade ? `Grau ${grade}` : ""}
+                          onChange={(event) =>
+                            updateTechnique(technique.id, {
+                              grade: event.target.value,
+                            })
+                          }
+                        >
+                          {!grade && (
+                            <NativeSelectOption value="" disabled>
+                              {technique.grade
+                                ? `Registro anterior: ${technique.grade}`
+                                : "Escolha o grau"}
+                            </NativeSelectOption>
+                          )}
+                          {TECHNIQUE_GRADES.map((option) => (
+                            <NativeSelectOption key={option}>
+                              Grau {option}
+                            </NativeSelectOption>
+                          ))}
+                        </NativeSelect>
+                        {!grade && (
+                          <small>
+                            Escolha um grau de I a V para usar a calculadora.
+                          </small>
+                        )}
+                      </div>
+                      <div className="character-field">
+                        <Label
+                          htmlFor={`technique-action-${technique.id}`}
+                          className="character-label"
+                        >
+                          Ação
+                        </Label>
+                        <NativeSelect
+                          id={`technique-action-${technique.id}`}
+                          value={technique.action}
+                          onChange={(event) =>
+                            updateTechnique(technique.id, {
+                              action: event.target.value,
+                            })
+                          }
+                        >
+                          {[
+                            "Ação Principal",
+                            "Ação de Movimento",
+                            "Ação Extra",
+                            "Ação Livre",
+                            "Reação",
+                            "Passiva",
+                            "Ritual",
+                          ].map((action) => (
+                            <NativeSelectOption value={action} key={action}>
+                              {action}
+                            </NativeSelectOption>
+                          ))}
+                        </NativeSelect>
+                      </div>
+                    </fieldset>
+                    <TechniqueMatrixEditor
+                      technique={technique}
+                      race={draft.race}
+                      className={draft.className}
+                      onChange={(patch) => updateTechnique(technique.id, patch)}
+                    />
+                    <fieldset className="technique-form-group character-form-grid">
+                      <legend>Efeitos e resolução</legend>
+                      {(
+                        [
+                          ["concept", "Conceito"],
+                          ["effect", "Efeito"],
+                          ["range", "Alcance"],
+                          ["targetAreaDuration", "Alvo, área e duração"],
+                          ["cost", "Custo"],
+                          ["calculation", "Cálculo / dano / cura"],
+                          ["test", "Teste e oposição"],
+                          ["totalSuccess", "Sucesso total"],
+                          ["partialSuccess", "Sucesso parcial"],
+                          ["failure", "Falha"],
+                          ["limits", "Limites e condições"],
+                        ] as const
+                      ).map(([field, label]) => (
+                        <TextField
+                          id={`technique-${field}-${technique.id}`}
+                          label={label}
+                          value={technique[field] ?? ""}
+                          multiline={field !== "range"}
+                          wide={[
+                            "concept",
+                            "effect",
+                            "totalSuccess",
+                            "partialSuccess",
+                            "failure",
+                            "limits",
+                          ].includes(field)}
+                          onChange={(value) =>
+                            updateTechnique(technique.id, { [field]: value })
+                          }
+                          key={field}
+                        />
+                      ))}
+                    </fieldset>
+                  </article>
                 );
               })
             ) : (
@@ -996,7 +1500,9 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
           </div>
 
           <div className="character-field campaign-notes-field">
-            <Label htmlFor="character-notes" className="character-label">Notas de campanha</Label>
+            <Label htmlFor="character-notes" className="character-label">
+              Notas de campanha
+            </Label>
             <Textarea
               id="character-notes"
               value={draft.notes}
@@ -1008,7 +1514,6 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
           </div>
         </section>
       </div>
-
     </div>
   );
 }

@@ -1,34 +1,46 @@
+import { MarkdownArticle } from "@/components/markdown-article";
 import { PantheonBlessingsPortal } from "@/components/pantheon-blessings-portal";
-import {MarkdownArticle} from "@/components/markdown-article";
 import { RuleOrnament } from "@/components/rule-ornament";
 import court from "@/data/court-sheets.json";
+import { ChevronLeft, ChevronRight, Clock3 } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, ChevronRight, Clock3 } from "lucide-react";
 
 import { getChatGPTUser } from "@/app/chatgpt-auth";
+import { BestiaryReader } from "@/components/bestiary-reader";
 import { RulesNavigation } from "@/components/rules-navigation";
 import { SiteHeader } from "@/components/site-header";
-import { BestiaryReader } from "@/components/bestiary-reader";
 import { getAllChapters, getChapter, getChapterMetadata } from "@/lib/rules";
 
 export const dynamic = "force-dynamic";
 
-type PageProps = { params: Promise<{ slug: string }>; searchParams: Promise<{ integrante?: string; leitura?: string; regiao?: string }> };
+type PageProps = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{
+    integrante?: string;
+    leitura?: string;
+    regiao?: string;
+  }>;
+};
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const chapter = getChapter(slug);
   return chapter
     ? {
-        title: `${chapter.title} | Karmalização`,
+        title: chapter.title,
         description: chapter.description,
       }
-    : { title: "Capítulo não encontrado | Karmalização" };
+    : { title: "Capítulo não encontrado" };
 }
 
-export default async function RuleChapterPage({ params, searchParams }: PageProps) {
+export default async function RuleChapterPage({
+  params,
+  searchParams,
+}: PageProps) {
   const { slug } = await params;
   const chapter = getChapter(slug);
   if (!chapter) notFound();
@@ -36,8 +48,34 @@ export default async function RuleChapterPage({ params, searchParams }: PageProp
   const user = await getChatGPTUser();
   if (slug === "21-bestiario") {
     const query = await searchParams;
-    if (query.integrante && !court.some(c => c.slug === query.integrante)) notFound();
-    return <div className="site-page bestiary-page"><SiteHeader user={user} /><BestiaryReader key={`${query.regiao}-${query.integrante}-${query.leitura}`} initialRegion={["ignaria","gaeria","thalassia","aeria"].includes(query.regiao ?? "") ? query.regiao : "cortes"} initialMember={query.integrante} initialMode={query.leitura === "historia" ? "lore" : "combat"} /></div>;
+    if (query.integrante && !court.some((c) => c.slug === query.integrante))
+      notFound();
+    return (
+      <div className="site-page bestiary-page">
+        <SiteHeader user={user} />
+        <BestiaryReader
+          key={`${query.regiao}-${query.integrante}-${query.leitura}`}
+          initialRegion={
+            ["ignaria", "gaeria", "thalassia", "aeria"].includes(
+              query.regiao ?? "",
+            )
+              ? query.regiao
+              : "cortes"
+          }
+          initialEntry={
+            court.find((member) => member.slug === query.integrante) ?? court[0]
+          }
+          members={court.map(({ slug, name, sin, accent }) => ({
+            slug,
+            name,
+            sin,
+            accent,
+          }))}
+          initialMember={query.integrante}
+          initialMode={query.leitura === "historia" ? "lore" : "combat"}
+        />
+      </div>
+    );
   }
   const chapters = getAllChapters();
   const chapterMetadata = getChapterMetadata();
@@ -61,7 +99,7 @@ export default async function RuleChapterPage({ params, searchParams }: PageProp
           </nav>
 
           <header className="rule-article-header" id="topo">
-            <RuleOrnament chapter={chapter.number}/>
+            <RuleOrnament chapter={chapter.number} />
             <span className="rule-chapter-number">
               {String(chapter.number).padStart(2, "0")}
             </span>
@@ -71,18 +109,42 @@ export default async function RuleChapterPage({ params, searchParams }: PageProp
               <p>{chapter.description}</p>
               <span className="reading-time">
                 <Clock3 aria-hidden="true" />
-                cerca de {Math.max(1, Math.ceil(chapter.wordCount / 220))} min de
-                leitura
+                cerca de {Math.max(1, Math.ceil(chapter.wordCount / 220))} min
+                de leitura
               </span>
             </div>
           </header>
 
-          <MarkdownArticle html={chapter.number === 13 ? chapter.html.split('<h2 id="portal-das-nove-asas">')[0] : chapter.html} chapter={chapter.number}/>
-          {chapter.number === 13 && <PantheonBlessingsPortal />}
+          <MarkdownArticle
+            html={
+              chapter.number === 13
+                ? chapter.html.split('<h2 id="portal-das-nove-asas">')[0]
+                : chapter.html
+            }
+            chapter={chapter.number}
+          />
+          {chapter.number === 13 && (
+            <PantheonBlessingsPortal
+              anchors={chapter.sections
+                .filter(
+                  (section) =>
+                    !chapter.html
+                      .split('<h2 id="portal-das-nove-asas">')[0]
+                      .includes(`id="${section.id}"`),
+                )
+                .map(({ id, title }) => ({ id, title }))}
+            />
+          )}
 
-          <nav className="chapter-pagination" aria-label="Capítulos anterior e próximo">
+          <nav
+            className="chapter-pagination"
+            aria-label="Capítulos anterior e próximo"
+          >
             {previous ? (
-              <Link href={`/regras/${previous.slug}`} className="previous-chapter">
+              <Link
+                href={`/regras/${previous.slug}`}
+                className="previous-chapter"
+              >
                 <ChevronLeft aria-hidden="true" />
                 <span>
                   <small>Anterior</small>
@@ -133,4 +195,3 @@ export default async function RuleChapterPage({ params, searchParams }: PageProp
     </div>
   );
 }
-

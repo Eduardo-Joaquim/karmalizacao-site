@@ -36,7 +36,7 @@ test('renaming armor preserves its stable mechanics and catalog identity',()=>{
  }finally{rmSync(root,{recursive:true,force:true});}
 });
 test('guest page retains authenticated writes and the draft handoff does not overwrite a saved character',()=>{
- const page=readFileSync('app/personagem/page.tsx','utf8'),builder=readFileSync('components/character-builder.tsx','utf8'),api=readFileSync('app/api/personagens/route.ts','utf8');assert(!page.includes('requireChatGPTUser'));assert(page.includes('authenticated={Boolean(user)}'));assert(builder.includes('karmalizacao-guest-draft-v1'));assert(builder.includes('setActiveId(null); commitDraft'));assert(api.includes('if (!user) return unauthorized()'));assert(api.includes('owner_email = ?'));assert(api.includes('byteLength > 1_900_000'));
+ const page=readFileSync('app/personagem/page.tsx','utf8'),builder=readFileSync('components/character-builder.tsx','utf8'),api=readFileSync('app/api/personagens/route.ts','utf8');assert(!page.includes('requireChatGPTUser'));assert(page.includes('authenticated={Boolean(user)}'));assert(builder.includes('karmalizacao-guest-draft-v1'));assert.match(builder,/setActiveId\(null\);\s*commitDraft/);assert(api.includes('if (!user) return unauthorized()'));assert(api.includes('owner_email = ?'));assert(api.includes('byteLength > 1_900_000'));
 });
 
 test('patch 1.14 gives each region the same stage curve and scales basic weapon damage',()=>{

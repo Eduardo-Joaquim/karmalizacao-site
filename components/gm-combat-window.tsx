@@ -1,185 +1,1964 @@
 "use client";
-import { BossPhaseEditor } from '@/components/boss-phase-editor';
-import { CombatEffectsControls } from '@/components/combat-effects-controls';
-import { CombatResourceFeedback } from '@/components/combat-resource-feedback';
-import { useCombatVisualFeed } from '@/hooks/use-combat-visual-feed';
-import { applyBossPhase, bossPhaseNotice, phasesFor, type BossPhaseState } from '@/lib/boss-phase-state';
-import { phaseTriggered, rollVisual, type BossPhase } from '@/lib/combat-visuals';
-import { exportEncounter, importEncounter, type EncounterParticipant, type EncounterPlayerRef } from '@/lib/gm-encounter';
+import { runPendingBatch } from "@/lib/batch-operation";
+import { useCallback } from "react";
+/* eslint-disable @next/next/no-img-element -- Portraits are validated embedded thumbnails, not remote image requests. */
+
+import { BossPhaseEditor } from "@/components/boss-phase-editor";
+import { CombatEffectsControls } from "@/components/combat-effects-controls";
+import { CombatResourceFeedback } from "@/components/combat-resource-feedback";
+import {
+  PlayerCombatMode,
+  type CombatDispatcher,
+} from "@/components/player-combat-mode";
+import { TechniqueCost } from "@/components/technique-cost";
+import { useCombatSync } from "@/hooks/use-combat-sync";
+import { useCombatVisualFeed } from "@/hooks/use-combat-visual-feed";
+import { useNpcCatalog } from "@/hooks/use-npc-catalog";
+import {
+  applyBossPhase,
+  bossPhaseNotice,
+  phasesFor,
+} from "@/lib/boss-phase-state";
+import {
+  ATTRIBUTES,
+  normalizeCharacterPayload,
+  type CharacterPayload,
+} from "@/lib/character-data";
+import type { NpcArt, NpcTemplate } from "@/lib/combat-catalog";
+import {
+  characterMax,
+  damageDice,
+  liveState,
+  parseCombatLink,
+  randomDice,
+  receiveDamage,
+  rollInitiative as rollAgility,
+} from "@/lib/combat-engine";
 import { combatId } from "@/lib/combat-id";
-import { useEffect, useRef, useState } from 'react';
-import type {ChangeEvent} from 'react';
-import { combatCatalog, npcSkillRoll, type NpcTemplate, type NpcArt } from '@/lib/combat-catalog';
-import { type CharacterPayload, ATTRIBUTES, normalizeCharacterPayload } from '@/lib/character-data';
-import { characterMax, damageDice, liveState, parseCombatLink, randomDice, receiveDamage, rollInitiative as rollAgility } from '@/lib/combat-engine';
-import { conditionForAttack, damageForAttack, resolveRoll } from '@/lib/table-play';
-import { useCombatSync } from '@/hooks/use-combat-sync';
-import { CombatFeed, PlayerCombatMode, type CombatDispatcher } from '@/components/player-combat-mode';
-import { TechniqueCost } from '@/components/technique-cost';
-import type { CombatAction, CombatLog } from '@/lib/combat-types';
-export type Participant=EncounterParticipant;
-function LinkedParticipant({p,update,register}:{p:Participant;update:(p:Participant)=>void;register:(key:string,send:CombatDispatcher|null)=>void}){
- const sync=useCombatSync(p.link!,p.payload!,d=>update({...p,payload:d})),s=liveState(p.payload!),max=characterMax(p.payload!),[expanded,setExpanded]=useState(false);
- useEffect(()=>{register(p.key,sync.send);return()=>register(p.key,null);},[p.key,sync.send,register]);
- return <>{!expanded&&<CombatResourceFeedback life={s.currentLife} karma={s.currentKarma} shield={s.tempShield} maxLife={max.life}/>}<div className="live-defense"><div><span>Vida</span><strong>{s.currentLife}/{max.life}</strong></div><div><span>Karma</span><strong>{s.currentKarma}/{max.karma}</strong></div><div><span>Escudo</span><strong>{s.tempShield}</strong></div><div><span>CA</span><strong>{max.armor}</strong></div><div><span>Parcial / Total</span><strong>{Math.floor(max.armor/2)}–{max.armor} / {max.armor+1}+</strong></div></div>{p.payload!.portraitImage&&<img className="gm-player-portrait" src={p.payload!.portraitImage} alt={`Retrato de ${p.payload!.name}`} width={64} height={64}/>}<p role="status">{sync.pending?'Registrando ação…':sync.status}</p>{sync.error&&<p role="alert">{sync.error}</p>}<p>{s.activeConditions.join(' · ')||'Sem condições registradas'}</p><button onClick={()=>setExpanded(!expanded)}>{expanded?'Recolher ficha':'Abrir ficha tática inteira'}</button>{expanded&&<PlayerCombatMode draft={p.payload!} send={sync.send} status={sync.status} error={sync.error} pending={sync.pending}/>}</>;
+import type { CombatAction, CombatLog } from "@/lib/combat-types";
+import {
+  phaseTriggered,
+  rollVisual,
+  type BossPhase,
+} from "@/lib/combat-visuals";
+import {
+  exportEncounter,
+  importEncounter,
+  parseStoredParticipants,
+  type EncounterParticipant,
+  type EncounterPlayerRef,
+} from "@/lib/gm-encounter";
+import { npcSkillRoll } from "@/lib/npc-rolls";
+import {
+  conditionForAttack,
+  damageForAttack,
+  resolveRoll,
+} from "@/lib/table-play";
+import type { ChangeEvent } from "react";
+import { useEffect, useRef, useState } from "react";
+export type Participant = EncounterParticipant;
+function LinkedParticipant({
+  p,
+  update,
+  register,
+}: {
+  p: Participant;
+  update: (p: Participant) => void;
+  register: (key: string, send: CombatDispatcher | null) => void;
+}) {
+  const sync = useCombatSync(p.link!, p.payload!, (d) =>
+      update({ ...p, payload: d }),
+    ),
+    s = liveState(p.payload!),
+    max = characterMax(p.payload!),
+    [expanded, setExpanded] = useState(false);
+  useEffect(() => {
+    register(p.key, sync.send);
+    return () => register(p.key, null);
+  }, [p.key, sync.send, register]);
+  return (
+    <>
+      {!expanded && (
+        <CombatResourceFeedback
+          life={s.currentLife}
+          karma={s.currentKarma}
+          shield={s.tempShield}
+          maxLife={max.life}
+        />
+      )}
+      <div className="live-defense">
+        <div>
+          <span>Vida</span>
+          <strong>
+            {s.currentLife}/{max.life}
+          </strong>
+        </div>
+        <div>
+          <span>Karma</span>
+          <strong>
+            {s.currentKarma}/{max.karma}
+          </strong>
+        </div>
+        <div>
+          <span>Escudo</span>
+          <strong>{s.tempShield}</strong>
+        </div>
+        <div>
+          <span>CA</span>
+          <strong>{max.armor}</strong>
+        </div>
+        <div>
+          <span>Parcial / Total</span>
+          <strong>
+            {Math.floor(max.armor / 2)}–{max.armor - 1} / {max.armor}+
+          </strong>
+        </div>
+      </div>
+      {p.payload!.portraitImage && (
+        <img
+          className="gm-player-portrait"
+          src={p.payload!.portraitImage}
+          alt={`Retrato de ${p.payload!.name}`}
+          width={64}
+          height={64}
+        />
+      )}
+      <p role="status">{sync.pending ? "Registrando ação…" : sync.status}</p>
+      {sync.error && <p role="alert">{sync.error}</p>}
+      <p>{s.activeConditions.join(" · ") || "Sem condições registradas"}</p>
+      <button onClick={() => setExpanded(!expanded)}>
+        {expanded ? "Recolher ficha" : "Abrir ficha tática inteira"}
+      </button>
+      {expanded && (
+        <PlayerCombatMode
+          draft={p.payload!}
+          send={sync.send}
+          status={sync.status}
+          error={sync.error}
+          pending={sync.pending}
+        />
+      )}
+    </>
+  );
 }
-const nameOf=(p:Participant)=>p.payload?.name??p.npc?.name??'Participante';
-const lifeOf=(p:Participant)=>p.payload?liveState(p.payload).currentLife:p.life;
-const caOf=(p:Participant)=>p.payload?characterMax(p.payload).armor:p.npc?.ca??12;
-export function GmCombatWindow({incoming}:{incoming?:NpcTemplate|null}){
- const [participants,setParticipants]=useState<Participant[]>([]),[ready,setReady]=useState(false),[active,setActive]=useState(false),[round,setRound]=useState(1),[turn,setTurn]=useState<string>(''),[query,setQuery]=useState(''),[link,setLink]=useState(''),[team,setTeam]=useState<'Aliados'|'Inimigos'>('Aliados'),[message,setMessage]=useState(''),[target,setTarget]=useState(''),[amount,setAmount]=useState(5),[resistance,setResistance]=useState(true),[condition,setCondition]=useState(''),[logs,setLogs]=useState<CombatLog[]>([]),[resolution,setResolution]=useState<{target:string;amount:number;label:string;applied:boolean;outcome: "Acerto total" | "Acerto parcial" | "Falha"; conditionApplied?: boolean}|null>(null),[manual,setManual]=useState<Record<string,string>>({}),[busy,setBusy]=useState(false),[damageSource,setDamageSource]=useState('normal'),[phaseEvents,setPhaseEvents]=useState<CombatLog[]>([]),[deliveries,setDeliveries]=useState<string[]>([]),[retryTick,setRetryTick]=useState(0);
- const [areaTargets,setAreaTargets]=useState<string[]>([]);
- const [pendingPlayers,setPendingPlayers]=useState<EncounterPlayerRef[]>([]);
- const importInput=useRef<HTMLInputElement>(null);
- const sent=useRef(new Set<string>()),inFlight=useRef(new Set<string>()),retryAt=useRef(new Map<string,number>());
- const dispatchers=useRef(new Map<string,CombatDispatcher>()),latest=useRef(participants);
- const register=useRef((key:string,send:CombatDispatcher|null)=>{if(send)dispatchers.current.set(key,send);else dispatchers.current.delete(key);}).current;
- useEffect(()=>{try{const raw=localStorage.getItem('karmalizacao:gm-encounter:v1');if(raw){const d=JSON.parse(raw);if(Array.isArray(d.participants)&&d.participants.length<=60){updateParticipants(d.participants.map((p:Participant)=>({...p,payload:p.payload?normalizeCharacterPayload(p.payload):undefined})));setPendingPlayers(Array.isArray(d.pendingPlayers)?d.pendingPlayers.slice(0,60):[]);setRound(Math.max(1,Number(d.round)||1));setTurn(d.turn??'');setLogs((d.logs??[]).slice(-100));setPhaseEvents((d.phaseEvents??[]).slice(-40));setDeliveries((d.deliveries??[]).slice(-1000));sent.current=new Set(d.deliveries??[]);}}}catch{setMessage('O encontro local não pôde ser recuperado.');}setReady(true);},[]);
- useEffect(()=>{if(ready)try{localStorage.setItem('karmalizacao:gm-encounter:v1',JSON.stringify({participants,round,turn,logs,phaseEvents,deliveries,pendingPlayers}));}catch{setMessage('Não foi possível guardar o encontro neste navegador.');}},[participants,round,turn,logs,ready,phaseEvents,deliveries,pendingPlayers]);
- function addNpc(npc:NpcTemplate){updateParticipants(ps=>ps.length>=60?ps:[...ps,{key:combatId(),team:'Inimigos',initiative:0,npc:structuredClone(npc),pc:npc.pc??0,seenPhases:[],appliedPhases:[],anchors:0,life:npc.life,karma:npc.karma,shield:0,conditions:[],reactions:npc.reactions,domainRounds:{}}]);setActive(true);setMessage(`${npc.name} entrou no encontro.`);}
- const handled=useRef(incoming);useEffect(()=>{if(incoming&&incoming!==handled.current){handled.current=incoming;addNpc(incoming);}},[incoming]);
- function update(p:Participant){updateParticipants(ps=>ps.map(x=>x.key===p.key?{...x,payload:p.payload}:x));}
- async function importPlayer(){setBusy(true);try{const parsed=parseCombatLink(link);if(participants.some(p=>p.link?.id===parsed.id))throw Error('Este jogador já está no encontro.');const r=await fetch(`/api/combate/sync?id=${encodeURIComponent(parsed.id)}`,{headers:{'X-Combat-Token':parsed.token},cache:'no-store'});const d=await r.json() as {payload:CharacterPayload;error?:string};if(!r.ok)throw Error(d.error??'Link indisponível.');updateParticipants(ps=>[...ps,{key:combatId(),team:pendingPlayers.find(p=>p.id===parsed.id)?.team??team,initiative:pendingPlayers.find(p=>p.id===parsed.id)?.initiative??0,link:parsed,payload:normalizeCharacterPayload(d.payload),life:0,karma:0,shield:0,conditions:[],reactions:1,domainRounds:{}}]);setPendingPlayers(ps=>ps.filter(p=>p.id!==parsed.id));setLink('');setActive(true);setMessage('Jogador conectado ao combate.');}catch(e){setMessage((e as Error).message);}finally{setBusy(false);}}
- function log(title:string,details:string,kind:CombatLog['kind']='resource'){setLogs(es=>[...es,{id:combatId(),timestamp:new Date().toISOString(),actorName:'Mestre',kind,title,details}].slice(-100));}
- async function action(p:Participant,data:Omit<CombatAction,'id'|'actorName'|'title'> & Record<string,unknown>,title:string){
-  if(p.link){const send=dispatchers.current.get(p.key);if(!send)throw Error('Aguarde a conexão desta ficha.');await send({...data,id:combatId(),actorName:'Mestre',title:title.slice(0,120)} as CombatAction);return;}
-  const current=latest.current.find(x=>x.key===p.key);if(!current?.npc)throw Error('Participante não encontrado.');
-  let next={...current};const npc=current.npc;
-  if(data.type==='damage'){const d=receiveDamage(current.life,current.shield,Number(data.amount),Number(data.resistance));next.life=d.life;next.shield=d.shield;}
-  if(data.type==='heal')next.life=Math.min(npc.life,current.life+Number(data.amount));
-  if(data.type==='resource'){const delta=Number(data.delta);if(data.resource==='karma')next.karma=Math.max(0,Math.min(npc.karma,current.karma+delta));if(data.resource==='shield')next.shield=Math.max(0,current.shield+delta);if(data.resource==='life')next.life=Math.max(0,Math.min(npc.life,current.life+delta));if(data.resource==='reactions')next.reactions=Math.max(0,Math.min(npc.reactions,current.reactions+delta));}
-  if(data.type==='condition'){
-   const name=String(data.condition);
-   next.conditions=data.remove?current.conditions.filter(c=>c!==name):[...new Set([...current.conditions,name])].slice(0,20);
-   next.conditionRounds=Object.fromEntries(Object.entries(current.conditionRounds??{}).filter(([key])=>key!==name));
-   next.conditionPotency=Object.fromEntries(Object.entries(current.conditionPotency??{}).filter(([key])=>key!==name));
-   if(!data.remove&&next.conditions.includes(name)){
-    if(typeof data.rounds==='number') next.conditionRounds[name]=data.rounds;
-    if(typeof data.potency==='number') next.conditionPotency[name]=data.potency;
-   }
+const nameOf = (p: Participant) =>
+  p.payload?.name ?? p.npc?.name ?? "Participante";
+
+const caOf = (p: Participant) =>
+  p.payload ? characterMax(p.payload).armor : (p.npc?.ca ?? 12);
+export function GmCombatWindow({
+  incoming,
+}: {
+  incoming?: NpcTemplate | null;
+}) {
+  const [participants, setParticipants] = useState<Participant[]>([]),
+    [ready, setReady] = useState(false),
+    [active, setActive] = useState(false),
+    [round, setRound] = useState(1),
+    [turn, setTurn] = useState<string>(""),
+    [query, setQuery] = useState(""),
+    [link, setLink] = useState(""),
+    [team, setTeam] = useState<"Aliados" | "Inimigos">("Aliados"),
+    [message, setMessage] = useState(""),
+    [target, setTarget] = useState(""),
+    [amount, setAmount] = useState(5),
+    [resistance, setResistance] = useState(true),
+    [condition, setCondition] = useState(""),
+    [logs, setLogs] = useState<CombatLog[]>([]),
+    [resolution, setResolution] = useState<{
+      target: string;
+      amount: number;
+      label: string;
+      applied: boolean;
+      outcome: "Acerto total" | "Acerto parcial" | "Falha";
+      conditionApplied?: boolean;
+    } | null>(null),
+    [manual, setManual] = useState<Record<string, string>>({}),
+    [busy, setBusy] = useState(false),
+    [damageSource, setDamageSource] = useState("normal"),
+    [phaseEvents, setPhaseEvents] = useState<CombatLog[]>([]),
+    [deliveries, setDeliveries] = useState<string[]>([]),
+    [retryTick, setRetryTick] = useState(0);
+  const {
+    entries: combatCatalog,
+    error: catalogError,
+    retry: retryCatalog,
+  } = useNpcCatalog(active);
+  const [areaTargets, setAreaTargets] = useState<string[]>([]);
+  const [pendingPlayers, setPendingPlayers] = useState<EncounterPlayerRef[]>(
+    [],
+  );
+  const importInput = useRef<HTMLInputElement>(null);
+  const sent = useRef(new Set<string>()),
+    inFlight = useRef(new Set<string>()),
+    retryAt = useRef(new Map<string, number>());
+  const dispatchers = useRef(new Map<string, CombatDispatcher>()),
+    latest = useRef(participants);
+  const updateParticipants = useCallback(
+    (updater: Participant[] | ((current: Participant[]) => Participant[])) => {
+      const next =
+        typeof updater === "function" ? updater(latest.current) : updater;
+      latest.current = next;
+      setParticipants(next);
+      return next;
+    },
+    [],
+  );
+  const register = useCallback((key: string, send: CombatDispatcher | null) => {
+    if (send) dispatchers.current.set(key, send);
+    else dispatchers.current.delete(key);
+  }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      try {
+        const raw = localStorage.getItem("karmalizacao:gm-encounter:v1");
+        if (raw) {
+          const d = JSON.parse(raw);
+          if (!Array.isArray(d.participants) || d.participants.length > 60)
+            throw Error("Encontro inválido");
+          {
+            updateParticipants(
+              parseStoredParticipants(d.participants).map((p: Participant) => ({
+                ...p,
+                payload: p.payload
+                  ? normalizeCharacterPayload(p.payload)
+                  : undefined,
+              })),
+            );
+            setPendingPlayers(
+              Array.isArray(d.pendingPlayers)
+                ? d.pendingPlayers.slice(0, 60)
+                : [],
+            );
+            setRound(Math.max(1, Number(d.round) || 1));
+            setTurn(d.turn ?? "");
+            setLogs((d.logs ?? []).slice(-100));
+            setPhaseEvents((d.phaseEvents ?? []).slice(-40));
+            setDeliveries((d.deliveries ?? []).slice(-1000));
+            sent.current = new Set(d.deliveries ?? []);
+          }
+        }
+      } catch {
+        setMessage(
+          "O encontro local não pôde ser recuperado. Exporte uma cópia antes de reiniciar.",
+        );
+        return;
+      }
+      setReady(true);
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [updateParticipants]);
+  useEffect(() => {
+    if (!ready) return;
+    const persist = () => {
+      try {
+        localStorage.setItem(
+          "karmalizacao:gm-encounter:v1",
+          JSON.stringify({
+            participants,
+            round,
+            turn,
+            logs,
+            phaseEvents,
+            deliveries,
+            pendingPlayers,
+          }),
+        );
+      } catch {
+        setMessage("Não foi possível guardar o encontro neste navegador.");
+      }
+    };
+    const timer = setTimeout(persist, 500);
+    window.addEventListener("pagehide", persist);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("pagehide", persist);
+    };
+  }, [
+    participants,
+    round,
+    turn,
+    logs,
+    ready,
+    phaseEvents,
+    deliveries,
+    pendingPlayers,
+  ]);
+  const addNpc = useCallback(
+    (npc: NpcTemplate) => {
+      updateParticipants((ps) =>
+        ps.length >= 60
+          ? ps
+          : [
+              ...ps,
+              {
+                key: combatId(),
+                team: "Inimigos",
+                initiative: 0,
+                npc: structuredClone(npc),
+                pc: npc.pc ?? 0,
+                seenPhases: [],
+                appliedPhases: [],
+                anchors: 0,
+                life: npc.life,
+                karma: npc.karma,
+                shield: 0,
+                conditions: [],
+                reactions: npc.reactions,
+                domainRounds: {},
+              },
+            ],
+      );
+      setActive(true);
+      setMessage(`${npc.name} entrou no encontro.`);
+    },
+    [updateParticipants],
+  );
+  const handled = useRef(incoming);
+  useEffect(() => {
+    if (incoming && incoming !== handled.current) {
+      handled.current = incoming;
+      const timer = setTimeout(() => addNpc(incoming), 0);
+      return () => clearTimeout(timer);
+    }
+  }, [incoming, addNpc]);
+  function update(p: Participant) {
+    updateParticipants((ps) =>
+      ps.map((x) => (x.key === p.key ? { ...x, payload: p.payload } : x)),
+    );
   }
-  if(data.type==='scene'){next.domainRounds={};next.reactions=npc.reactions;}
-  if(data.type==='round'){
-   next.conditions=current.conditions.filter(name=>current.conditionRounds?.[name]!==1);
-   next.conditionRounds=Object.fromEntries(Object.entries(current.conditionRounds??{}).filter(([,rounds])=>rounds>1).map(([name,rounds])=>[name,rounds-1]));
-   next.conditionPotency=Object.fromEntries(Object.entries(current.conditionPotency??{}).filter(([name])=>next.conditions.includes(name)));
-   next.reactions=npc.reactions;next.domainRounds=Object.fromEntries(Object.entries(current.domainRounds).map(([k,v])=>[k,Math.max(0,v-1)]));}
-  if(next.life<current.life)next=checkPhases(next);
-  commitNpc(next);log(title,nameOf(current));
- }
- function updateParticipants(updater:Participant[]|((current:Participant[])=>Participant[])){
-  const next=typeof updater==='function'?updater(latest.current):updater;
-  latest.current=next;setParticipants(next);return next;
- }
- function commitNpc(next:Participant){updateParticipants(ps=>ps.map(p=>p.key===next.key?next:p));}
- function phaseEvent(p:Participant,phase:BossPhase,pending:boolean){
-  const notice=bossPhaseNotice(p.key,p.npc!,phase,pending),event:CombatLog={id:combatId(),timestamp:new Date().toISOString(),actorName:nameOf(p),kind:'ability',title:phase.title,details:notice.defense,visual:notice};
-  setLogs(es=>[...es,event].slice(-100));setPhaseEvents(es=>[...es,event].slice(-40));
- }
- function checkPhases(p:Participant){
-  let next={...p};for(const phase of phasesFor(p.npc!).filter(phase=>!next.seenPhases?.includes(phase.id)&&phaseTriggered(phase,next.life,p.npc!.life,next.anchors??0)).sort((a,b)=>a.order-b.order)){
-   next.seenPhases=[...(next.seenPhases??[]),phase.id];const pending=Boolean(phase.karmaCost||phase.pcCost||phase.controlDC);
-   if(!pending){next=applyBossPhase(next,phase);next.phaseLabel=phase.title;next.phaseDefense=phase.defense;next.phaseUnlocks=[...(next.phaseUnlocks??[]),...phase.unlocks];}
-   phaseEvent(next,phase,pending);
-  }return next;
- }
- function assumePhase(p:Participant,phase:BossPhase){
-  if(!confirm(`Controle CD ${phase.controlDC??'—'} já foi resolvido com sucesso? Confirmar paga ${phase.karmaCost??0} Karma e ${phase.pcCost??0} PC, sem recuperar Vida.`))return;
-  const current=latest.current.find(x=>x.key===p.key)!;let next=applyBossPhase(current,phase);next={...next,phaseLabel:phase.title,phaseDefense:phase.defense,phaseUnlocks:[...(next.phaseUnlocks??[]),...phase.unlocks],conditionalResistance:next.npc?.id==='maelia-veyr'?3:next.conditionalResistance};commitNpc(next);phaseEvent(next,phase,false);
- }
- function protection(p:Participant){return p.payload?characterMax(p.payload).resistance:Math.max(p.npc?.resistance??0,damageSource==='divine'?0:p.conditionalResistance??0);}
- useEffect(()=>{const timer=setInterval(()=>setRetryTick(n=>n+1),10000);return()=>clearInterval(timer);},[]);
- useEffect(()=>{
-  if(!active||!ready)return;
-  const events=[...phaseEvents,...logs.filter(e=>e.visual?.type==='roll'&&Date.now()-Date.parse(e.timestamp)<15000)];
-  for(const p of participants.filter(p=>p.link&&p.payload))for(const event of events){
-   const key=`${p.link!.id}:${event.id}`;if(sent.current.has(key)||inFlight.current.has(key)||(retryAt.current.get(key)??0)>Date.now())continue;
-   const send=dispatchers.current.get(p.key);if(!send)continue;
-   const visual=event.visual;if(!visual)continue;
-   const known=p.payload?.combatState?.bossPhases?.[visual.type==='phase'?visual.bossKey:''];
-   if(visual.type==='phase'&&known&&(known.order>visual.order||known.order===visual.order&&known.phaseId===visual.phaseId&&(!known.pending||visual.pending))){sent.current.add(key);continue;}
-   inFlight.current.add(key);
-   const data=visual.type==='phase'?{type:'phase' as const,phase:visual}:{type:'spectacle' as const,rollFormula:event.rollFormula??`${visual.dice.length}d20`,diceResults:visual.dice,total:visual.total,selection:visual.selection,details:event.details?.slice(0,1500)};
-   void send({...data,id:event.id,actorName:event.actorName,title:event.title.slice(0,120)}).then(()=>{sent.current.add(key);setDeliveries([...sent.current].slice(-1000));}).catch(()=>{retryAt.current.set(key,Date.now()+10000);setMessage(`Aviso de fase/rolagem pendente para ${nameOf(p)}. A sincronização tentará novamente.`);}).finally(()=>inFlight.current.delete(key));
+  async function importPlayer() {
+    setBusy(true);
+    try {
+      const parsed = parseCombatLink(link);
+      if (participants.some((p) => p.link?.id === parsed.id))
+        throw Error("Este jogador já está no encontro.");
+      const r = await fetch(
+        `/api/combate/sync?id=${encodeURIComponent(parsed.id)}`,
+        { headers: { "X-Combat-Token": parsed.token }, cache: "no-store" },
+      );
+      const d = (await r.json()) as {
+        payload: CharacterPayload;
+        error?: string;
+      };
+      if (!r.ok) throw Error(d.error ?? "Link indisponível.");
+      updateParticipants((ps) => [
+        ...ps,
+        {
+          key: combatId(),
+          team: pendingPlayers.find((p) => p.id === parsed.id)?.team ?? team,
+          initiative:
+            pendingPlayers.find((p) => p.id === parsed.id)?.initiative ?? 0,
+          link: parsed,
+          payload: normalizeCharacterPayload(d.payload),
+          life: 0,
+          karma: 0,
+          shield: 0,
+          conditions: [],
+          reactions: 1,
+          domainRounds: {},
+        },
+      ]);
+      setPendingPlayers((ps) => ps.filter((p) => p.id !== parsed.id));
+      setLink("");
+      setActive(true);
+      setMessage("Jogador conectado ao combate.");
+    } catch (e) {
+      setMessage((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
   }
- },[active,ready,participants,phaseEvents,logs,retryTick]);
- const safe=(fn:()=>Promise<void>)=>{setBusy(true);void fn().catch(e=>setMessage((e as Error).message)).finally(()=>setBusy(false));};
- async function affect(type:'damage'|'heal'|'karma'|'shield'|'condition',negative=false){const p=latest.current.find(x=>x.key===target);if(!p)throw Error('Escolha o alvo.');if(type==='damage')await action(p,{type:'damage',amount,resistance:resistance?protection(p):0},'Dano aplicado pelo Mestre');else if(type==='heal')await action(p,{type:'heal',amount},'Cura aplicada pelo Mestre');else if(type==='condition'){if(!condition.trim())throw Error('Escreva uma condição.');await action(p,{type:'condition',condition:condition.trim(),remove:negative},`${negative?'Remover':'Aplicar'} ${condition}`);}else await action(p,{type:'resource',resource:type,delta:negative?-amount:amount},`Ajuste de ${type}`);}
- async function useArt(p:Participant,art:NpcArt){
-  const cost=art.cost??Number(manual[`${p.key}-${art.id}-cost`]);if(art.cost===null&&!manual[`${p.key}-${art.id}-cost`])throw Error('Informe o custo desta execução.');if(!Number.isInteger(cost)||cost<0)throw Error('Custo inválido.');
-  let payer=p;if(p.npc?.source==='Teatro de Geppeto'&&cost>0){payer=latest.current.find(x=>x.npc?.id==='geppeto')!;if(!payer)throw Error('Adicione Geppeto para pagar o Karma da marionete.');}
-  if(payer.karma<cost)throw Error('Karma insuficiente.');
-  const formula=manual[`${p.key}-${art.id}-roll`]??art.roll,m=formula.match(/(\d{1,2})d20\s*([+−-])\s*(\d+)/i);
-  const victim=latest.current.find(x=>x.key===target);
-  if(art.attack&&!victim)throw Error('Selecione um alvo antes de rolar.');
-  if(art.attack&&!m)throw Error('Informe a reserva e o bônus de ataque registrados na ficha (ex.: 3d20 +5).');
-  if(art.domain&&Object.hasOwn(p.domainRounds,art.domain))throw Error('Domínio já manifestado nesta cena.');
-  await action(payer,{type:'resource',resource:'karma',delta:-cost},`${nameOf(p)}: ${art.name} (−${cost} Karma)`);
-  if(art.domain){updateParticipants(ps=>ps.map(x=>x.key===p.key?{...x,domainRounds:{...x.domainRounds,[art.domain!]:4}}:x));setMessage(`${art.name}: quatro rodadas. Aplique os dados e benefícios aos testes elegíveis.`);return;}
-  const dice=m?randomDice(Math.min(30,Number(m[1]))):[],bonus=m?(m[2]==='+'?1:-1)*Number(m[3]):0;
-  const selection=/menor/i.test(formula)?'menor':'maior';
-  const roll=m?resolveRoll(dice,bonus,art.attack&&victim?caOf(victim):undefined,'CA',selection):null;
-  if(roll){const event:CombatLog={id:combatId(),timestamp:new Date().toISOString(),actorName:nameOf(p),kind:art.attack?'attack':'ability',title:art.name,rollFormula:formula,diceResults:dice,total:roll.total,visual:rollVisual(dice,bonus,selection,roll.outcome)};setLogs(es=>[...es,event].slice(-100));}
-  if(!art.attack){log(art.name,`${nameOf(p)} · ${cost} Karma. ${roll?`[${dice.join(', ')}] ${bonus>=0?'+':''}${bonus} = ${roll.total}. `:''}Resolva o efeito e os requisitos escritos; dano não é aplicado automaticamente.`,'ability');setMessage(`${art.name}: ${cost} Karma pagos. Resolva o efeito.`);return;}
-  const damageText=manual[`${p.key}-${art.id}-damage`]??art.damage,base=damageDice(damageText,roll!.naturalTwenty&&roll!.outcome!=='Falha'&&roll!.outcome!=='Falha natural');
-  const damage=damageForAttack(base?.total??0,roll!.outcome);
-  const label=`${nameOf(p)} · ${art.name} → ${nameOf(victim!)}: [${dice.join(', ')}] ${bonus>=0?'+':''}${bonus} = ${roll!.total}, ${roll!.outcome}. ${base?`Dano ${base.formula} [${base.dice.join(', ')}] = ${base.total}; após parcial: ${damage}.`:'Sem dano estruturado: informe o valor final no campo Dano / cura.'}`;
-  log(art.name,label,'attack');setMessage(label);setResolution({target:target,amount:damage,label,applied:false,outcome:roll!.outcome as "Acerto total" | "Acerto parcial" | "Falha"});
- }
- async function newRound(){for(const p of latest.current){
-  if(p.payload&&!liveState(p.payload).inCombat)await action(p,{type:'toggle',active:true},'Entrar em combate');
-  await action(p,{type:'round'},'Nova rodada');
- }setRound(n=>n+1);setMessage('Rodada avançada. Reações renovadas; durações reduzidas. Manutenção das invocações vinculadas processada.');}
- function initiativeModifiers(p:Participant) {
-  const fixed = Math.max(-999, Math.min(999, Math.trunc(Number(manual[`${p.key}-initiative-bonus`])) || 0));
-  const dice = Math.max(-3, Math.min(3, Math.trunc(Number(manual[`${p.key}-initiative-dice`])) || 0));
-  return { fixed, dice };
- }
- function npcDefense(p:Participant,skill:string,attribute:typeof ATTRIBUTES[number],title:string){
-  if(!p.npc)return;const mod=initiativeModifiers(p);const r=title==='Iniciativa' ? rollAgility(p.npc.attributes[ATTRIBUTES.indexOf('Agilidade')]??0,mod.fixed,undefined,mod.dice) : npcSkillRoll(p.npc,skill,attribute);const event:CombatLog={id:combatId(),timestamp:new Date().toISOString(),actorName:nameOf(p),kind:'skill',title,rollFormula:r.formula,diceResults:r.dice,total:r.total,visual:rollVisual(r.dice,r.bonus)};setLogs(es=>[...es,event].slice(-100));return r.total;
- }
- async function rollInitiative(all:boolean){
-  if(all&&latest.current.some(p=>p.link&&!dispatchers.current.has(p.key)))throw Error('Aguarde a conexão de todas as fichas.');
-  const values=new Map<string,number>();
-  for(const p of latest.current){
-   if(p.npc){const total=npcDefense(p,'Reflexos','Agilidade','Iniciativa');if(total!==undefined)values.set(p.key,total);}
-   else if(all&&p.payload&&p.link){const mod=initiativeModifiers(p);const r=rollAgility(characterMax(p.payload).initiative.agility,mod.fixed,undefined,mod.dice);await dispatchers.current.get(p.key)?.({id:combatId(),actorName:nameOf(p),title:'Iniciativa',type:'spectacle',selection:'maior',rollFormula:r.formula,diceResults:r.dice,total:r.total});values.set(p.key,r.total);}
+  function log(
+    title: string,
+    details: string,
+    kind: CombatLog["kind"] = "resource",
+  ) {
+    setLogs((es) =>
+      [
+        ...es,
+        {
+          id: combatId(),
+          timestamp: new Date().toISOString(),
+          actorName: "Mestre",
+          kind,
+          title,
+          details,
+        },
+      ].slice(-100),
+    );
   }
-  const next=latest.current.map(p=>({...p,initiative:values.get(p.key)??p.initiative})).sort((a,b)=>b.initiative-a.initiative);latest.current=next;updateParticipants(next);setTurn(next[0]?.key??'');setMessage('Iniciativa rolada; primeiro turno selecionado.');
- }
- function downloadEncounter(){try{const data=exportEncounter(latest.current,round,turn,pendingPlayers),url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='karmalizacao-encontro.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);setMessage('Encontro exportado. Jogadores são referências sem tokens e precisam reconectar pelo link ao importar.');}catch(e){setMessage((e as Error).message);}}
- function clearEncounter(){updateParticipants([]);latest.current=[];setRound(1);setTurn('');setTarget('');setAreaTargets([]);setPendingPlayers([]);setLogs([]);setPhaseEvents([]);setDeliveries([]);setResolution(null);sent.current.clear();inFlight.current.clear();retryAt.current.clear();}
- async function loadEncounter(e:ChangeEvent<HTMLInputElement>){const file=e.target.files?.[0];e.target.value='';if(!file)return;try{if(file.size>5_000_000)throw Error('Encontro excede 5 MB.');const data=importEncounter(await file.text());if(!confirm('Substituir o encontro deste navegador pelo arquivo? Fichas vinculadas no servidor não serão alteradas.'))return;clearEncounter();const next=data.participants.map(p=>({...p,key:combatId()}));latest.current=next;updateParticipants(next);setRound(data.round);setPendingPlayers(data.players);setTurn(next[data.participants.findIndex(p=>p.key===data.turn)]?.key??next[0]?.key??'');setActive(true);setMessage(`Encontro importado: ${next.length} NPCs. ${data.players.length} jogadores precisam reconectar pelo link. ${data.players.map(p=>p.name).join(', ')}`);}catch(error){setMessage(`Arquivo recusado: ${(error as Error).message}`);}}
- async function areaAction(type:'damage'|'heal'|'condition'){
-  const selected=latest.current.filter(p=>areaTargets.includes(p.key));if(!selected.length)throw Error('Marque os alvos de área.');if(type==='condition'&&!condition.trim())throw Error('Escreva uma condição.');
-  const failed:string[]=[];for(const p of selected)try{await action(p,type==='damage'?{type,amount,resistance:resistance?protection(p):0}:type==='heal'?{type,amount}:{type,condition:condition.trim(),remove:false},`Área: ${type==='damage'?'dano':type==='heal'?'cura':condition}`);}catch{failed.push(nameOf(p));}
-  setMessage(failed.length?`Não aplicado em: ${failed.join(', ')}. Os demais alvos foram atualizados; confira antes de tentar novamente.`:`Efeito aplicado em ${selected.length} alvos. Defesas condicionais e parcial devem ser resolvidos antes de confirmar o valor.`);
- }
- const ordered=[...participants].sort((a,b)=>b.initiative-a.initiative),selected=participants.find(p=>p.key===target);
- const allFeed=[...logs,...participants.flatMap(p=>p.payload?.combatState?.combatFeed??[])].filter((e,i,a)=>a.findIndex(x=>x.id===e.id)===i).sort((a,b)=>b.timestamp.localeCompare(a.timestamp)).slice(0,100);
- useCombatVisualFeed(allFeed,ready?"gm-encounter":"gm-loading");
- const searchText=(value:string)=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('pt-BR').trim();
- const searchTerms=searchText(query).split(/\s+/).filter(Boolean);
- const catalogMatches=combatCatalog.filter(c=>searchTerms.every(term=>searchText(`${c.name} ${c.source} ${c.stage}`).includes(term)));
- return <section className="gm-combat live-ui" aria-labelledby="gm-combat-title"><header className="combat-title"><div><small>CENTRAL DE COMANDO</small><h2 id="gm-combat-title">Modo Combate em Tempo Real</h2><p>Encontro guardado neste navegador. Links vinculados sincronizam recursos com seus jogadores. Compartilhe o link somente com quem pode conduzir o combate.</p></div><CombatEffectsControls/><button aria-pressed={active} onClick={()=>setActive(!active)}>{active?'Recolher janela':'🔥 Ativar Modo Combate'}</button></header>
- <div role="status" className="combat-status">{message}</div>{active&&<>
- {pendingPlayers.length>0&&<p className="combat-warning">Reconectar pelo link: {pendingPlayers.map(p=>`${p.name} (iniciativa ${p.initiative})`).join(' · ')}. Equipe e iniciativa serão recuperadas ao conectar.</p>}<div className="gm-imports"><section><h3>Conectar jogador</h3><label>Colar Link da Ficha do Player<input value={link} onChange={e=>setLink(e.target.value)} placeholder="/ficha/id/token ou id/token" autoComplete="off"/></label><label>Equipe<select value={team} onChange={e=>setTeam(e.target.value as typeof team)}><option>Aliados</option><option>Inimigos</option></select></label><button disabled={busy||!link.trim()||participants.length>=60} onClick={()=>void importPlayer()}>Conectar ficha real</button></section><section className="gm-bestiary-picker" aria-labelledby="gm-bestiary-heading"><header className="gm-bestiary-toolbar"><h3 id="gm-bestiary-heading">Bestiário e Cortes</h3><p>Pesquise uma ficha e adicione ao encontro.</p><label htmlFor="gm-bestiary-search">Pesquisar fichas para adicionar</label><div className="gm-bestiary-search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="gm-bestiary-search" type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Nome, corte, criatura ou Etapa…" autoComplete="off" aria-controls="gm-bestiary-results"/>{query&&<button type="button" className="gm-bestiary-clear" onClick={()=>setQuery('')} aria-label="Limpar pesquisa do Bestiário">Limpar</button>}</div><p className="gm-bestiary-count" role="status">{catalogMatches.length} {catalogMatches.length===1?'ficha encontrada':'fichas encontradas'}</p></header><div className="gm-catalog" id="gm-bestiary-results" aria-label="Fichas disponíveis para adicionar">{catalogMatches.map(c=><button type="button" key={c.id} disabled={participants.length>=60} onClick={()=>addNpc(c)} aria-label={`Adicionar ${c.name} ao combate`}><span className="gm-catalog-info"><strong>{c.name}</strong><small>{c.source} · {c.stage}</small></span><span className="gm-catalog-stats"><span>PV {c.life}</span><span>K {c.karma}</span><span>CA {c.ca}</span></span><span className="gm-catalog-add" aria-hidden="true">＋ Adicionar ao combate</span></button>)}{!catalogMatches.length&&<p className="gm-bestiary-empty">Nenhuma ficha encontrada. Tente outro nome, corte ou Etapa.</p>}</div></section></div>
- <div className="live-controls combat-edit-control"><button onClick={downloadEncounter}>Exportar Encontro (.json)</button><button disabled={busy} onClick={()=>importInput.current?.click()}>Importar Encontro (.json)</button><input ref={importInput} type="file" accept=".json,application/json" hidden onChange={e=>void loadEncounter(e)}/><button disabled={busy} onClick={()=>{if(confirm('Limpar o encontro local? Exporte uma cópia antes se quiser recuperá-lo. Fichas dos jogadores não serão apagadas.'))clearEncounter();}}>Limpar Encontro</button><small>Exportação não inclui tokens de jogadores; reconecte-os pelo link ao importar.</small></div><div className="live-controls"><strong>Rodada {round}</strong><button disabled={busy||!participants.length} onClick={()=>safe(()=>rollInitiative(true))}>🎲 Rolar Iniciativa (Todos)</button><button disabled={busy||!participants.some(p=>p.npc)} onClick={()=>safe(()=>rollInitiative(false))}>🎲 Rolar Iniciativa (NPCs)</button><label>Turno<select value={turn} onChange={e=>setTurn(e.target.value)}><option value="">Selecione</option>{ordered.map(p=><option key={p.key} value={p.key}>{p.initiative} · {nameOf(p)}</option>)}</select></label><button disabled={busy||!ordered.length} onClick={()=>{const i=ordered.findIndex(p=>p.key===turn);if(i>=ordered.length-1){safe(async()=>{await newRound();setTurn(ordered[0]?.key??'');});}else setTurn(ordered[i+1]?.key??ordered[0]?.key??'');}}>Próximo Turno</button><button disabled={busy} onClick={()=>safe(newRound)}>Nova Rodada</button><button disabled={busy} onClick={()=>{if(confirm("Nova cena? Reinicia Domínios e rodada, sem restaurar Vida ou Karma."))safe(async()=>{for(const p of latest.current)await action(p,{type:"scene"},"Nova cena");setRound(1);setTurn("");});}}>Nova cena</button><span>Uma Reação por resolução; renove o total na nova rodada. Manutenções e fases exigem confirmação.</span></div>
- <div className="gm-target live-controls"><label>Alvo<select value={target} onChange={e=>setTarget(e.target.value)}><option value="">Escolha um participante</option>{participants.map(p=><option key={p.key} value={p.key}>{nameOf(p)}</option>)}</select></label><label>Dano / cura / recurso<input type="number" min={0} max={99999} value={amount} onChange={e=>setAmount(Math.max(0,Math.floor(Number(e.target.value))))}/></label><label><input type="checkbox" checked={resistance} onChange={e=>setResistance(e.target.checked)}/>Aplicar Resistência do alvo</label>{(['damage','heal','karma','shield'] as const).map(type=><button disabled={busy||!selected} key={type} onClick={()=>safe(()=>affect(type,type==='karma'))}>{({damage:'Aplicar dano',heal:'Curar',karma:'Gastar Karma',shield:'Adicionar escudo'})[type]}</button>)}<button disabled={busy||!selected} onClick={()=>safe(()=>affect('karma',false))}>Recuperar Karma</button><label>Fonte do dano<select value={damageSource} onChange={e=>setDamageSource(e.target.value)}><option value="normal">Não divino</option><option value="divine">Divino</option></select></label><label>Condição<input value={condition} maxLength={80} onChange={e=>setCondition(e.target.value)}/></label><button disabled={busy||!selected||!condition.trim()} onClick={()=>safe(()=>affect('condition'))}>Aplicar condição</button><button disabled={busy||!selected||!condition.trim()} onClick={()=>safe(()=>affect('condition',true))}>Remover condição</button></div>
- <div className="live-controls combat-edit-control"><strong>{areaTargets.length} alvos de área</strong><button disabled={busy||!areaTargets.length} onClick={()=>safe(()=>areaAction('damage'))}>Aplicar dano em área</button><button disabled={busy||!areaTargets.length} onClick={()=>safe(()=>areaAction('heal'))}>Curar alvos de área</button><button disabled={busy||!areaTargets.length||!condition.trim()} onClick={()=>safe(()=>areaAction('condition'))}>Condição nos alvos de área</button><button onClick={()=>setAreaTargets([])}>Desmarcar área</button></div>
- {resolution&&<aside className="gm-resolution"><p>{resolution.label}</p><button disabled={busy||resolution.applied||resolution.amount<=0} onClick={()=>safe(async()=>{const p=latest.current.find(p=>p.key===resolution.target);if(!p)throw Error('Alvo removido.');await action(p,{type:'damage',amount:resolution.amount,resistance:resistance?protection(p):0},'Dano de ataque resolvido');setResolution({...resolution,applied:true});})}>{resolution.applied?'Dano aplicado':'Aplicar Dano'} · {resolution.amount}</button><label>Rodadas da condição <input type="number" min={1} max={99} value={manual.conditionRounds ?? "1"} onChange={event => setManual({...manual, conditionRounds:event.target.value})}/></label>
- <label>Potência periódica <input type="number" min={0} max={99999} value={manual.conditionPotency ?? ""} onChange={event => setManual({...manual, conditionPotency:event.target.value})}/></label>
- <button disabled={busy || resolution.conditionApplied || !condition.trim() || !conditionForAttack(condition, resolution.outcome)} onClick={()=>safe(async()=>{
-  const p=latest.current.find(entry=>entry.key===resolution.target);if(!p)throw Error('Alvo removido.');
-  const rounds=Math.min(99,Math.max(1,Math.floor(Number(manual.conditionRounds)||1)));
-  const potency=manual.conditionPotency ? Math.min(99999,Math.max(0,Math.floor(Number(manual.conditionPotency)||0))) : undefined;
-  const applied=conditionForAttack(condition,resolution.outcome,rounds,potency);
-  if(!applied)return;
-  await action(p,{type:'condition',condition:condition.trim(),remove:false,...(p.payload?{attackOutcome:resolution.outcome,rounds,potency}:applied)},'Condição do ataque');
-  setResolution({...resolution,conditionApplied:true});
- })}>Aplicar condição do ataque</button>
- <p>Use o campo Condição para registrar o efeito da técnica. Condições menores exigem Acerto Total.</p></aside>}
- <div className="gm-participants">{ordered.map(p=><article key={p.key} data-phase-active={Boolean(p.phaseLabel)} className={`gm-participant ${turn===p.key?'current-turn':''}`}><header><small>{p.team} · {p.npc?.stage??p.payload?.stage}</small><h3>{nameOf(p)}</h3><div className="live-controls"><label>Iniciativa<input type="number" value={p.initiative} onChange={e=>updateParticipants(ps=>ps.map(x=>x.key===p.key?{...x,initiative:Number(e.target.value)}:x))}/></label><label>Bônus de Iniciativa<input type="number" min={-999} max={999} placeholder="0" value={manual[`${p.key}-initiative-bonus`]??""} onChange={e=>setManual({...manual,[`${p.key}-initiative-bonus`]:e.target.value})}/></label><label>Dados extras de Iniciativa<input type="number" min={-3} max={3} placeholder="0" value={manual[`${p.key}-initiative-dice`]??""} onChange={e=>setManual({...manual,[`${p.key}-initiative-dice`]:e.target.value})}/></label><select aria-label={`Equipe de ${nameOf(p)}`} value={p.team} onChange={e=>updateParticipants(ps=>ps.map(x=>x.key===p.key?{...x,team:e.target.value as typeof p.team}:x))}><option>Aliados</option><option>Inimigos</option></select><button onClick={()=>setTarget(p.key)}>Selecionar alvo</button><label><input type="checkbox" checked={areaTargets.includes(p.key)} onChange={e=>setAreaTargets(keys=>e.target.checked?[...keys,p.key]:keys.filter(k=>k!==p.key))}/>Alvo de área</label><button onClick={()=>{updateParticipants(ps=>ps.filter(x=>x.key!==p.key));setAreaTargets(keys=>keys.filter(k=>k!==p.key));if(turn===p.key)setTurn('');}}>Remover do encontro</button></div></header>{p.link&&p.payload?<LinkedParticipant p={p} update={update} register={register}/>:p.npc&&<><CombatResourceFeedback life={p.life} karma={p.karma} shield={p.shield} maxLife={p.npc.life}/>{p.phaseLabel&&<aside className="combat-phase-badge"><strong>{p.phaseLabel}</strong><p>{p.phaseDefense}</p>{p.phaseUnlocks?.join(" · ")}</aside>}<div className="live-defense"><div><span>Vida</span><strong>{p.life}/{p.npc.life}</strong></div><div><span>Karma</span><strong>{p.karma}/{p.npc.karma}</strong></div><div><span>Escudo</span><strong>{p.shield}</strong></div><div><span>CA · Parcial · Total</span><strong>{Math.floor(p.npc.ca/2)} / {p.npc.ca}</strong></div><div><span>Movimento</span><strong>{p.npc.movement}</strong></div><div><span>Reações</span><strong>{p.reactions}</strong></div></div><div className="live-controls"><label>Âncoras desligadas<input type="number" min={0} max={9} value={p.anchors??0} onChange={e=>{const next={...p,anchors:Math.max(0,Math.min(9,Math.floor(Number(e.target.value))))};commitNpc(checkPhases(next));}}/></label>{p.npc.pc!==undefined&&<span>PC: {p.pc??p.npc.pc}</span>}</div>{phasesFor(p.npc).filter(phase=>p.seenPhases?.includes(phase.id)&&!p.appliedPhases?.includes(phase.id)).map(phase=><aside className="combat-warning" key={phase.id}><p>{phase.title} disponível · {phase.karmaCost??0} Karma · {phase.pcCost??0} PC · Controle CD {phase.controlDC??'—'}</p><button disabled={busy} onClick={()=>safe(async()=>assumePhase(p,phase))}>Assumir forma após Controle</button></aside>)}<BossPhaseEditor npc={p.npc} phases={phasesFor(p.npc)} onChange={phases=>commitNpc(checkPhases({...p,npc:{...p.npc!,phases}}))}/><div className="live-controls combat-edit-control">{([['Evasão','Reflexos','Agilidade'],['Vigor','Atletismo','Constituição'],['Espírito','Canalização de Karma','Espírito']] as const).map(([label,skill,attr])=><button key={label} onClick={()=>npcDefense(p,skill,attr,label)}>{label}</button>)}</div><p>{p.conditions.join(' · ')||'Sem condições'}</p><button disabled={!p.reactions||busy} onClick={()=>safe(()=>action(p,{type:'resource',resource:'reactions',delta:-1},'Usar Reação'))}>Usar Reação</button><details><summary>Atributos, perícias e traços</summary><div className="live-attributes">{p.npc.attributes.map((v,i)=><div key={i}><span>{ATTRIBUTES[i]}</span><strong>{v}</strong></div>)}</div><p className="combat-preserve">{p.npc.skills}</p><p className="combat-preserve">{p.npc.traits}</p><label>Resistência aplicável<input type="number" min={0} max={999} value={p.npc.resistance} onChange={e=>updateParticipants(ps=>ps.map(x=>x.key===p.key?{...x,npc:{...x.npc!,resistance:Math.max(0,Number(e.target.value))}}:x))}/></label><small>Escolha a proteção aplicável ao tipo e à origem do dano, conforme os traços acima.</small></details><div className="live-art-grid">{p.npc.arts.filter(art=>!phasesFor(p.npc!).some(phase=>phase.unlocks.includes(art.name))||p.phaseUnlocks?.includes(art.name)).map(art=><article key={art.id}><h4>{art.name}</h4><small>{art.action} · {art.cost??'variável'} Karma{art.domain?` · ${p.domainRounds[art.domain]??0} rodadas`:null}</small><details><summary>Efeito completo</summary><p className="combat-preserve">{art.text}</p></details><TechniqueCost>{art.calculation||'Composição não estruturada; consulte a ficha original.'}</TechniqueCost>{art.cost===null&&<label>Custo confirmado<input type="number" min={0} value={manual[`${p.key}-${art.id}-cost`]??''} onChange={e=>setManual({...manual,[`${p.key}-${art.id}-cost`]:e.target.value})}/></label>}<label>Teste<input value={manual[`${p.key}-${art.id}-roll`]??art.roll} placeholder="3d20 +5" onChange={e=>setManual({...manual,[`${p.key}-${art.id}-roll`]:e.target.value})}/></label>{art.attack&&<label>Dados-base de dano<input value={manual[`${p.key}-${art.id}-damage`]??art.damage} placeholder="2d8" onChange={e=>setManual({...manual,[`${p.key}-${art.id}-damage`]:e.target.value})}/></label>}<button disabled={busy} onClick={()=>safe(()=>useArt(p,art))}>{art.attack?'Rolar contra Alvo':'Executar efeito'} (−{art.cost??manual[`${p.key}-${art.id}-cost`]??'?'} Karma)</button></article>)}</div></>}</article>)}</div>
- <section><h3>Feed ao vivo · últimas 100 ações do encontro</h3><ol className="live-feed">{allFeed.map(e=><li key={e.id}><time>{new Date(e.timestamp).toLocaleTimeString('pt-BR',{timeZone:'America/Sao_Paulo'})}</time><strong>{e.actorName} · {e.title}</strong>{e.rollFormula&&<span>{e.rollFormula}: [{e.diceResults?.join(', ')}] → {e.total}</span>}{e.karmaSpent!==undefined&&<span>−{e.karmaSpent} Karma</span>}<p>{e.details}</p></li>)}</ol></section>
- </>}</section>;
+  async function action(
+    p: Participant,
+    data: Omit<CombatAction, "id" | "actorName" | "title"> &
+      Record<string, unknown>,
+    title: string,
+    operationId?: string,
+  ) {
+    if (p.link) {
+      const send = dispatchers.current.get(p.key);
+      if (!send) throw Error("Aguarde a conexão desta ficha.");
+      await send({
+        ...data,
+        id: operationId ?? combatId(),
+        actorName: "Mestre",
+        title: title.slice(0, 120),
+      } as CombatAction);
+      return;
+    }
+    const current = latest.current.find((x) => x.key === p.key);
+    if (!current?.npc) throw Error("Participante não encontrado.");
+    let next = { ...current };
+    const npc = current.npc;
+    if (data.type === "damage") {
+      const d = receiveDamage(
+        current.life,
+        current.shield,
+        Number(data.amount),
+        Number(data.resistance),
+      );
+      next.life = d.life;
+      next.shield = d.shield;
+    }
+    if (data.type === "heal")
+      next.life = Math.min(npc.life, current.life + Number(data.amount));
+    if (data.type === "resource") {
+      const delta = Number(data.delta);
+      if (data.resource === "karma")
+        next.karma = Math.max(0, Math.min(npc.karma, current.karma + delta));
+      if (data.resource === "shield")
+        next.shield = Math.max(0, current.shield + delta);
+      if (data.resource === "life")
+        next.life = Math.max(0, Math.min(npc.life, current.life + delta));
+      if (data.resource === "reactions")
+        next.reactions = Math.max(
+          0,
+          Math.min(npc.reactions, current.reactions + delta),
+        );
+    }
+    if (data.type === "condition") {
+      const name = String(data.condition);
+      next.conditions = data.remove
+        ? current.conditions.filter((c) => c !== name)
+        : [...new Set([...current.conditions, name])].slice(0, 20);
+      next.conditionRounds = Object.fromEntries(
+        Object.entries(current.conditionRounds ?? {}).filter(
+          ([key]) => key !== name,
+        ),
+      );
+      next.conditionPotency = Object.fromEntries(
+        Object.entries(current.conditionPotency ?? {}).filter(
+          ([key]) => key !== name,
+        ),
+      );
+      if (!data.remove && next.conditions.includes(name)) {
+        if (typeof data.rounds === "number")
+          next.conditionRounds[name] = data.rounds;
+        if (typeof data.potency === "number")
+          next.conditionPotency[name] = data.potency;
+      }
+    }
+    if (data.type === "scene") {
+      next.domainRounds = {};
+      next.reactions = npc.reactions;
+    }
+    if (data.type === "round") {
+      next.conditions = current.conditions.filter(
+        (name) => current.conditionRounds?.[name] !== 1,
+      );
+      next.conditionRounds = Object.fromEntries(
+        Object.entries(current.conditionRounds ?? {})
+          .filter(([, rounds]) => rounds > 1)
+          .map(([name, rounds]) => [name, rounds - 1]),
+      );
+      next.conditionPotency = Object.fromEntries(
+        Object.entries(current.conditionPotency ?? {}).filter(([name]) =>
+          next.conditions.includes(name),
+        ),
+      );
+      next.reactions = npc.reactions;
+      next.domainRounds = Object.fromEntries(
+        Object.entries(current.domainRounds).map(([k, v]) => [
+          k,
+          Math.max(0, v - 1),
+        ]),
+      );
+    }
+    if (next.life < current.life) next = checkPhases(next);
+    commitNpc(next);
+    log(title, nameOf(current));
+  }
+
+  function commitNpc(next: Participant) {
+    updateParticipants((ps) => ps.map((p) => (p.key === next.key ? next : p)));
+  }
+  function phaseEvent(p: Participant, phase: BossPhase, pending: boolean) {
+    const notice = bossPhaseNotice(p.key, p.npc!, phase, pending),
+      event: CombatLog = {
+        id: combatId(),
+        timestamp: new Date().toISOString(),
+        actorName: nameOf(p),
+        kind: "ability",
+        title: phase.title,
+        details: notice.defense,
+        visual: notice,
+      };
+    setLogs((es) => [...es, event].slice(-100));
+    setPhaseEvents((es) => [...es, event].slice(-40));
+  }
+  function checkPhases(p: Participant) {
+    let next = { ...p };
+    for (const phase of phasesFor(p.npc!)
+      .filter(
+        (phase) =>
+          !next.seenPhases?.includes(phase.id) &&
+          phaseTriggered(phase, next.life, p.npc!.life, next.anchors ?? 0),
+      )
+      .sort((a, b) => a.order - b.order)) {
+      next.seenPhases = [...(next.seenPhases ?? []), phase.id];
+      const pending = Boolean(
+        phase.karmaCost || phase.pcCost || phase.controlDC,
+      );
+      if (!pending) {
+        next = applyBossPhase(next, phase);
+        next.phaseLabel = phase.title;
+        next.phaseDefense = phase.defense;
+        next.phaseUnlocks = [...(next.phaseUnlocks ?? []), ...phase.unlocks];
+      }
+      phaseEvent(next, phase, pending);
+    }
+    return next;
+  }
+  function assumePhase(p: Participant, phase: BossPhase) {
+    if (
+      !confirm(
+        `Controle CD ${phase.controlDC ?? "—"} já foi resolvido com sucesso? Confirmar paga ${phase.karmaCost ?? 0} Karma e ${phase.pcCost ?? 0} PC, sem recuperar Vida.`,
+      )
+    )
+      return;
+    const current = latest.current.find((x) => x.key === p.key)!;
+    let next = applyBossPhase(current, phase);
+    next = {
+      ...next,
+      phaseLabel: phase.title,
+      phaseDefense: phase.defense,
+      phaseUnlocks: [...(next.phaseUnlocks ?? []), ...phase.unlocks],
+      conditionalResistance:
+        next.npc?.id === "maelia-veyr" ? 3 : next.conditionalResistance,
+    };
+    commitNpc(next);
+    phaseEvent(next, phase, false);
+  }
+  function protection(p: Participant) {
+    return p.payload
+      ? characterMax(p.payload).resistance
+      : Math.max(
+          p.npc?.resistance ?? 0,
+          damageSource === "divine" ? 0 : (p.conditionalResistance ?? 0),
+        );
+  }
+  useEffect(() => {
+    const timer = setInterval(() => setRetryTick((n) => n + 1), 10000);
+    return () => clearInterval(timer);
+  }, []);
+  useEffect(() => {
+    if (!active || !ready) return;
+    const events = [
+      ...phaseEvents,
+      ...logs.filter(
+        (e) =>
+          e.visual?.type === "roll" &&
+          Date.now() - Date.parse(e.timestamp) < 15000,
+      ),
+    ];
+    for (const p of participants.filter((p) => p.link && p.payload))
+      for (const event of events) {
+        const key = `${p.link!.id}:${event.id}`;
+        if (
+          sent.current.has(key) ||
+          inFlight.current.has(key) ||
+          (retryAt.current.get(key) ?? 0) > Date.now()
+        )
+          continue;
+        const send = dispatchers.current.get(p.key);
+        if (!send) continue;
+        const visual = event.visual;
+        if (!visual) continue;
+        const known =
+          p.payload?.combatState?.bossPhases?.[
+            visual.type === "phase" ? visual.bossKey : ""
+          ];
+        if (
+          visual.type === "phase" &&
+          known &&
+          (known.order > visual.order ||
+            (known.order === visual.order &&
+              known.phaseId === visual.phaseId &&
+              (!known.pending || visual.pending)))
+        ) {
+          sent.current.add(key);
+          continue;
+        }
+        inFlight.current.add(key);
+        const data =
+          visual.type === "phase"
+            ? { type: "phase" as const, phase: visual }
+            : {
+                type: "spectacle" as const,
+                rollFormula: event.rollFormula ?? `${visual.dice.length}d20`,
+                diceResults: visual.dice,
+                total: visual.total,
+                selection: visual.selection,
+                details: event.details?.slice(0, 1500),
+              };
+        void send({
+          ...data,
+          id: event.id,
+          actorName: event.actorName,
+          title: event.title.slice(0, 120),
+        })
+          .then(() => {
+            sent.current.add(key);
+            setDeliveries([...sent.current].slice(-1000));
+          })
+          .catch(() => {
+            retryAt.current.set(key, Date.now() + 10000);
+            setMessage(
+              `Aviso de fase/rolagem pendente para ${nameOf(p)}. A sincronização tentará novamente.`,
+            );
+          })
+          .finally(() => inFlight.current.delete(key));
+      }
+  }, [active, ready, participants, phaseEvents, logs, retryTick]);
+  const safe = (fn: () => Promise<void>) => {
+    setBusy(true);
+    void fn()
+      .catch((e) => setMessage((e as Error).message))
+      .finally(() => setBusy(false));
+  };
+  async function affect(
+    type: "damage" | "heal" | "karma" | "shield" | "condition",
+    negative = false,
+  ) {
+    const p = latest.current.find((x) => x.key === target);
+    if (!p) throw Error("Escolha o alvo.");
+    if (type === "damage")
+      await action(
+        p,
+        { type: "damage", amount, resistance: resistance ? protection(p) : 0 },
+        "Dano aplicado pelo Mestre",
+      );
+    else if (type === "heal")
+      await action(p, { type: "heal", amount }, "Cura aplicada pelo Mestre");
+    else if (type === "condition") {
+      if (!condition.trim()) throw Error("Escreva uma condição.");
+      await action(
+        p,
+        { type: "condition", condition: condition.trim(), remove: negative },
+        `${negative ? "Remover" : "Aplicar"} ${condition}`,
+      );
+    } else
+      await action(
+        p,
+        {
+          type: "resource",
+          resource: type,
+          delta: negative ? -amount : amount,
+        },
+        `Ajuste de ${type}`,
+      );
+  }
+  async function executeNpcArt(p: Participant, art: NpcArt) {
+    const cost = art.cost ?? Number(manual[`${p.key}-${art.id}-cost`]);
+    if (art.cost === null && !manual[`${p.key}-${art.id}-cost`])
+      throw Error("Informe o custo desta execução.");
+    if (!Number.isInteger(cost) || cost < 0) throw Error("Custo inválido.");
+    let payer = p;
+    if (p.npc?.source === "Teatro de Geppeto" && cost > 0) {
+      payer = latest.current.find((x) => x.npc?.id === "geppeto")!;
+      if (!payer)
+        throw Error("Adicione Geppeto para pagar o Karma da marionete.");
+    }
+    if (payer.karma < cost) throw Error("Karma insuficiente.");
+    const formula = manual[`${p.key}-${art.id}-roll`] ?? art.roll,
+      m = formula.match(/(\d{1,2})d20\s*([+−-])\s*(\d+)/i);
+    const victim = latest.current.find((x) => x.key === target);
+    if (art.attack && !victim) throw Error("Selecione um alvo antes de rolar.");
+    if (art.attack && !m)
+      throw Error(
+        "Informe a reserva e o bônus de ataque registrados na ficha (ex.: 3d20 +5).",
+      );
+    if (art.domain && Object.hasOwn(p.domainRounds, art.domain))
+      throw Error("Domínio já manifestado nesta cena.");
+    const damageText = manual[`${p.key}-${art.id}-damage`] ?? art.damage;
+    const preparedDamage =
+      art.attack && damageText.trim() ? damageDice(damageText) : null;
+    await action(
+      payer,
+      { type: "resource", resource: "karma", delta: -cost },
+      `${nameOf(p)}: ${art.name} (−${cost} Karma)`,
+    );
+    if (art.domain) {
+      updateParticipants((ps) =>
+        ps.map((x) =>
+          x.key === p.key
+            ? { ...x, domainRounds: { ...x.domainRounds, [art.domain!]: 4 } }
+            : x,
+        ),
+      );
+      setMessage(
+        `${art.name}: quatro rodadas. Aplique os dados e benefícios aos testes elegíveis.`,
+      );
+      return;
+    }
+    const dice = m ? randomDice(Math.min(30, Number(m[1]))) : [],
+      bonus = m ? (m[2] === "+" ? 1 : -1) * Number(m[3]) : 0;
+    const selection = /menor/i.test(formula) ? "menor" : "maior";
+    const roll = m
+      ? resolveRoll(
+          dice,
+          bonus,
+          art.attack && victim ? caOf(victim) : undefined,
+          "CA",
+          selection,
+        )
+      : null;
+    if (roll) {
+      const event: CombatLog = {
+        id: combatId(),
+        timestamp: new Date().toISOString(),
+        actorName: nameOf(p),
+        kind: art.attack ? "attack" : "ability",
+        title: art.name,
+        rollFormula: formula,
+        diceResults: dice,
+        total: roll.total,
+        visual: rollVisual(dice, bonus, selection, roll.outcome),
+      };
+      setLogs((es) => [...es, event].slice(-100));
+    }
+    if (!art.attack) {
+      log(
+        art.name,
+        `${nameOf(p)} · ${cost} Karma. ${roll ? `[${dice.join(", ")}] ${bonus >= 0 ? "+" : ""}${bonus} = ${roll.total}. ` : ""}Resolva o efeito e os requisitos escritos; dano não é aplicado automaticamente.`,
+        "ability",
+      );
+      setMessage(`${art.name}: ${cost} Karma pagos. Resolva o efeito.`);
+      return;
+    }
+    const base =
+      roll!.naturalTwenty &&
+      roll!.outcome !== "Falha" &&
+      roll!.outcome !== "Falha natural"
+        ? damageDice(damageText, true)
+        : preparedDamage;
+    const damage = damageForAttack(base?.total ?? 0, roll!.outcome);
+    const label = `${nameOf(p)} · ${art.name} → ${nameOf(victim!)}: [${dice.join(", ")}] ${bonus >= 0 ? "+" : ""}${bonus} = ${roll!.total}, ${roll!.outcome}. ${base ? `Dano ${base.formula} [${base.dice.join(", ")}] = ${base.total}; após parcial: ${damage}.` : "Sem dano estruturado: informe o valor final no campo Dano / cura."}`;
+    log(art.name, label, "attack");
+    setMessage(label);
+    setResolution({
+      target: target,
+      amount: damage,
+      label,
+      applied: false,
+      outcome: roll!.outcome as "Acerto total" | "Acerto parcial" | "Falha",
+    });
+  }
+  const roundOperation = useRef<{ id: string; done: Set<string> } | null>(null);
+  async function newRound() {
+    const operation = roundOperation.current ?? {
+      id: combatId(),
+      done: new Set<string>(),
+    };
+    roundOperation.current = operation;
+    const failed = await runPendingBatch(
+      latest.current,
+      operation,
+      async (p, operationId) => {
+        if (p.payload && !liveState(p.payload).inCombat)
+          await action(
+            p,
+            { type: "toggle", active: true },
+            "Entrar em combate",
+            `${operationId}-enter-${p.key}`,
+          );
+        await action(
+          p,
+          { type: "round" },
+          "Nova rodada",
+          `${operationId}-round-${p.key}`,
+        );
+      },
+    );
+    const failures = failed.map(nameOf);
+    if (failures.length)
+      throw Error(
+        `Rodada interrompida em: ${failures.join(", ")}. Use Nova Rodada para retomar apenas os pendentes.`,
+      );
+    roundOperation.current = null;
+    setRound((n) => n + 1);
+    setMessage(
+      "Rodada avançada. Reações renovadas; durações reduzidas. Manutenção das invocações vinculadas processada.",
+    );
+  }
+  function initiativeModifiers(p: Participant) {
+    const fixed = Math.max(
+      -999,
+      Math.min(
+        999,
+        Math.trunc(Number(manual[`${p.key}-initiative-bonus`])) || 0,
+      ),
+    );
+    const dice = Math.max(
+      -3,
+      Math.min(3, Math.trunc(Number(manual[`${p.key}-initiative-dice`])) || 0),
+    );
+    return { fixed, dice };
+  }
+  function npcDefense(
+    p: Participant,
+    skill: string,
+    attribute: (typeof ATTRIBUTES)[number],
+    title: string,
+  ) {
+    if (!p.npc) return;
+    const mod = initiativeModifiers(p);
+    const r =
+      title === "Iniciativa"
+        ? rollAgility(
+            p.npc.attributes[ATTRIBUTES.indexOf("Agilidade")] ?? 0,
+            mod.fixed,
+            undefined,
+            mod.dice,
+          )
+        : npcSkillRoll(p.npc, skill, attribute);
+    const event: CombatLog = {
+      id: combatId(),
+      timestamp: new Date().toISOString(),
+      actorName: nameOf(p),
+      kind: "skill",
+      title,
+      rollFormula: r.formula,
+      diceResults: r.dice,
+      total: r.total,
+      visual: rollVisual(r.dice, r.bonus),
+    };
+    setLogs((es) => [...es, event].slice(-100));
+    return r.total;
+  }
+  async function rollInitiative(all: boolean) {
+    if (
+      all &&
+      latest.current.some((p) => p.link && !dispatchers.current.has(p.key))
+    )
+      throw Error("Aguarde a conexão de todas as fichas.");
+    const values = new Map<string, number>();
+    for (const p of latest.current) {
+      if (p.npc) {
+        const total = npcDefense(p, "Reflexos", "Agilidade", "Iniciativa");
+        if (total !== undefined) values.set(p.key, total);
+      } else if (all && p.payload && p.link) {
+        const mod = initiativeModifiers(p);
+        const r = rollAgility(
+          characterMax(p.payload).initiative.agility,
+          mod.fixed,
+          undefined,
+          mod.dice,
+        );
+        await dispatchers.current.get(p.key)?.({
+          id: combatId(),
+          actorName: nameOf(p),
+          title: "Iniciativa",
+          type: "spectacle",
+          selection: "maior",
+          rollFormula: r.formula,
+          diceResults: r.dice,
+          total: r.total,
+        });
+        values.set(p.key, r.total);
+      }
+    }
+    const next = latest.current
+      .map((p) => ({ ...p, initiative: values.get(p.key) ?? p.initiative }))
+      .sort((a, b) => b.initiative - a.initiative);
+    latest.current = next;
+    updateParticipants(next);
+    setTurn(next[0]?.key ?? "");
+    setMessage("Iniciativa rolada; primeiro turno selecionado.");
+  }
+  function downloadEncounter() {
+    try {
+      const data = exportEncounter(latest.current, round, turn, pendingPlayers),
+        url = URL.createObjectURL(
+          new Blob([JSON.stringify(data, null, 2)], {
+            type: "application/json",
+          }),
+        );
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "karmalizacao-encontro.json";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      setMessage(
+        "Encontro exportado. Jogadores são referências sem tokens e precisam reconectar pelo link ao importar.",
+      );
+    } catch (e) {
+      setMessage((e as Error).message);
+    }
+  }
+  function clearEncounter() {
+    roundOperation.current = null;
+    updateParticipants([]);
+    latest.current = [];
+    setRound(1);
+    setTurn("");
+    setTarget("");
+    setAreaTargets([]);
+    setPendingPlayers([]);
+    setLogs([]);
+    setPhaseEvents([]);
+    setDeliveries([]);
+    setResolution(null);
+    sent.current.clear();
+    inFlight.current.clear();
+    retryAt.current.clear();
+  }
+  async function loadEncounter(e: ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (!file) return;
+    try {
+      if (file.size > 5_000_000) throw Error("Encontro excede 5 MB.");
+      const data = importEncounter(await file.text());
+      if (
+        !confirm(
+          "Substituir o encontro deste navegador pelo arquivo? Fichas vinculadas no servidor não serão alteradas.",
+        )
+      )
+        return;
+      clearEncounter();
+      const next = data.participants.map((p) => ({ ...p, key: combatId() }));
+      latest.current = next;
+      updateParticipants(next);
+      setRound(data.round);
+      setPendingPlayers(data.players);
+      setTurn(
+        next[data.participants.findIndex((p) => p.key === data.turn)]?.key ??
+          next[0]?.key ??
+          "",
+      );
+      setActive(true);
+      setMessage(
+        `Encontro importado: ${next.length} NPCs. ${data.players.length} jogadores precisam reconectar pelo link. ${data.players.map((p) => p.name).join(", ")}`,
+      );
+    } catch (error) {
+      setMessage(`Arquivo recusado: ${(error as Error).message}`);
+    }
+  }
+  async function areaAction(type: "damage" | "heal" | "condition") {
+    const selected = latest.current.filter((p) => areaTargets.includes(p.key));
+    if (!selected.length) throw Error("Marque os alvos de área.");
+    if (type === "condition" && !condition.trim())
+      throw Error("Escreva uma condição.");
+    const failed: string[] = [];
+    for (const p of selected)
+      try {
+        await action(
+          p,
+          type === "damage"
+            ? { type, amount, resistance: resistance ? protection(p) : 0 }
+            : type === "heal"
+              ? { type, amount }
+              : { type, condition: condition.trim(), remove: false },
+          `Área: ${type === "damage" ? "dano" : type === "heal" ? "cura" : condition}`,
+        );
+      } catch {
+        failed.push(nameOf(p));
+      }
+    setMessage(
+      failed.length
+        ? `Não aplicado em: ${failed.join(", ")}. Os demais alvos foram atualizados; confira antes de tentar novamente.`
+        : `Efeito aplicado em ${selected.length} alvos. Defesas condicionais e parcial devem ser resolvidos antes de confirmar o valor.`,
+    );
+  }
+  const ordered = [...participants].sort((a, b) => b.initiative - a.initiative),
+    selected = participants.find((p) => p.key === target);
+  const allFeed = [
+    ...logs,
+    ...participants.flatMap((p) => p.payload?.combatState?.combatFeed ?? []),
+  ]
+    .filter((e, i, a) => a.findIndex((x) => x.id === e.id) === i)
+    .sort((a, b) => b.timestamp.localeCompare(a.timestamp))
+    .slice(0, 100);
+  useCombatVisualFeed(allFeed, ready ? "gm-encounter" : "gm-loading");
+  const searchText = (value: string) =>
+    value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("pt-BR")
+      .trim();
+  const searchTerms = searchText(query).split(/\s+/).filter(Boolean);
+  const catalogMatches = combatCatalog.filter((c) =>
+    searchTerms.every((term) =>
+      searchText(`${c.name} ${c.source} ${c.stage}`).includes(term),
+    ),
+  );
+  return (
+    <section className="gm-combat live-ui" aria-labelledby="gm-combat-title">
+      <header className="combat-title">
+        <div>
+          <small>CENTRAL DE COMANDO</small>
+          <h2 id="gm-combat-title">Modo Combate em Tempo Real</h2>
+          <p>
+            Encontro guardado neste navegador. Links vinculados sincronizam
+            recursos com seus jogadores. Compartilhe o link somente com quem
+            pode conduzir o combate.
+          </p>
+        </div>
+        <CombatEffectsControls />
+        <button aria-pressed={active} onClick={() => setActive(!active)}>
+          {active ? "Recolher janela" : "🔥 Ativar Modo Combate"}
+        </button>
+      </header>
+      <div role="status" className="combat-status">
+        {message}
+      </div>
+      {!ready && (
+        <div>
+          <button
+            onClick={() => {
+              try {
+                const raw =
+                  localStorage.getItem("karmalizacao:gm-encounter:v1") ?? "{}";
+                const url = URL.createObjectURL(
+                  new Blob([raw], { type: "application/json" }),
+                );
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "encontro-recuperacao.json";
+                a.click();
+                setTimeout(() => URL.revokeObjectURL(url), 1000);
+              } catch {
+                setMessage("Não foi possível exportar.");
+              }
+            }}
+          >
+            Exportar encontro para recuperação
+          </button>
+          <button
+            onClick={() => {
+              if (
+                confirm(
+                  "Reiniciar o encontro deste navegador? Exporte uma cópia antes.",
+                )
+              ) {
+                clearEncounter();
+                setReady(true);
+              }
+            }}
+          >
+            Reiniciar encontro local
+          </button>
+        </div>
+      )}
+      {catalogError && (
+        <p role="alert">
+          {catalogError}{" "}
+          <button onClick={retryCatalog}>Tentar catálogo novamente</button>
+        </p>
+      )}
+      {active && (
+        <>
+          {pendingPlayers.length > 0 && (
+            <p className="combat-warning">
+              Reconectar pelo link:{" "}
+              {pendingPlayers
+                .map((p) => `${p.name} (iniciativa ${p.initiative})`)
+                .join(" · ")}
+              . Equipe e iniciativa serão recuperadas ao conectar.
+            </p>
+          )}
+          <div className="gm-imports">
+            <section>
+              <h3>Conectar jogador</h3>
+              <label>
+                Colar Link da Ficha do Player
+                <input
+                  value={link}
+                  onChange={(e) => setLink(e.target.value)}
+                  placeholder="/ficha/id/token ou id/token"
+                  autoComplete="off"
+                />
+              </label>
+              <label>
+                Equipe
+                <select
+                  value={team}
+                  onChange={(e) => setTeam(e.target.value as typeof team)}
+                >
+                  <option>Aliados</option>
+                  <option>Inimigos</option>
+                </select>
+              </label>
+              <button
+                disabled={busy || !link.trim() || participants.length >= 60}
+                onClick={() => void importPlayer()}
+              >
+                Conectar ficha real
+              </button>
+            </section>
+            <section
+              className="gm-bestiary-picker"
+              aria-labelledby="gm-bestiary-heading"
+            >
+              <header className="gm-bestiary-toolbar">
+                <h3 id="gm-bestiary-heading">Bestiário e Cortes</h3>
+                <p>Pesquise uma ficha e adicione ao encontro.</p>
+                <label htmlFor="gm-bestiary-search">
+                  Pesquisar fichas para adicionar
+                </label>
+                <div className="gm-bestiary-search">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    aria-hidden="true"
+                  >
+                    <circle cx="10.5" cy="10.5" r="6.5" />
+                    <path d="m16 16 5 5" />
+                  </svg>
+                  <input
+                    id="gm-bestiary-search"
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Nome, corte, criatura ou Etapa…"
+                    autoComplete="off"
+                    aria-controls="gm-bestiary-results"
+                  />
+                  {query && (
+                    <button
+                      type="button"
+                      className="gm-bestiary-clear"
+                      onClick={() => setQuery("")}
+                      aria-label="Limpar pesquisa do Bestiário"
+                    >
+                      Limpar
+                    </button>
+                  )}
+                </div>
+                <p className="gm-bestiary-count" role="status">
+                  {catalogMatches.length}{" "}
+                  {catalogMatches.length === 1
+                    ? "ficha encontrada"
+                    : "fichas encontradas"}
+                </p>
+              </header>
+              <div
+                className="gm-catalog"
+                id="gm-bestiary-results"
+                aria-label="Fichas disponíveis para adicionar"
+              >
+                {catalogMatches.map((c) => (
+                  <button
+                    type="button"
+                    key={c.id}
+                    disabled={participants.length >= 60}
+                    onClick={() => addNpc(c)}
+                    aria-label={`Adicionar ${c.name} ao combate`}
+                  >
+                    <span className="gm-catalog-info">
+                      <strong>{c.name}</strong>
+                      <small>
+                        {c.source} · {c.stage}
+                      </small>
+                    </span>
+                    <span className="gm-catalog-stats">
+                      <span>PV {c.life}</span>
+                      <span>K {c.karma}</span>
+                      <span>CA {c.ca}</span>
+                    </span>
+                    <span className="gm-catalog-add" aria-hidden="true">
+                      ＋ Adicionar ao combate
+                    </span>
+                  </button>
+                ))}
+                {!catalogMatches.length && (
+                  <p className="gm-bestiary-empty">
+                    Nenhuma ficha encontrada. Tente outro nome, corte ou Etapa.
+                  </p>
+                )}
+              </div>
+            </section>
+          </div>
+          <div className="live-controls combat-edit-control">
+            <button onClick={downloadEncounter}>
+              Exportar Encontro (.json)
+            </button>
+            <button
+              disabled={busy}
+              onClick={() => importInput.current?.click()}
+            >
+              Importar Encontro (.json)
+            </button>
+            <input
+              ref={importInput}
+              type="file"
+              accept=".json,application/json"
+              hidden
+              onChange={(e) => void loadEncounter(e)}
+            />
+            <button
+              disabled={busy}
+              onClick={() => {
+                if (
+                  confirm(
+                    "Limpar o encontro local? Exporte uma cópia antes se quiser recuperá-lo. Fichas dos jogadores não serão apagadas.",
+                  )
+                )
+                  clearEncounter();
+              }}
+            >
+              Limpar Encontro
+            </button>
+            <small>
+              Exportação não inclui tokens de jogadores; reconecte-os pelo link
+              ao importar.
+            </small>
+          </div>
+          <div className="live-controls">
+            <strong>Rodada {round}</strong>
+            <button
+              disabled={busy || !participants.length}
+              onClick={() => safe(() => rollInitiative(true))}
+            >
+              🎲 Rolar Iniciativa (Todos)
+            </button>
+            <button
+              disabled={busy || !participants.some((p) => p.npc)}
+              onClick={() => safe(() => rollInitiative(false))}
+            >
+              🎲 Rolar Iniciativa (NPCs)
+            </button>
+            <label>
+              Turno
+              <select value={turn} onChange={(e) => setTurn(e.target.value)}>
+                <option value="">Selecione</option>
+                {ordered.map((p) => (
+                  <option key={p.key} value={p.key}>
+                    {p.initiative} · {nameOf(p)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <button
+              disabled={busy || !ordered.length}
+              onClick={() => {
+                const i = ordered.findIndex((p) => p.key === turn);
+                if (i >= ordered.length - 1) {
+                  safe(async () => {
+                    await newRound();
+                    setTurn(ordered[0]?.key ?? "");
+                  });
+                } else setTurn(ordered[i + 1]?.key ?? ordered[0]?.key ?? "");
+              }}
+            >
+              Próximo Turno
+            </button>
+            <button disabled={busy} onClick={() => safe(newRound)}>
+              Nova Rodada
+            </button>
+            <button
+              disabled={busy}
+              onClick={() => {
+                if (
+                  confirm(
+                    "Nova cena? Reinicia Domínios e rodada, sem restaurar Vida ou Karma.",
+                  )
+                )
+                  safe(async () => {
+                    for (const p of latest.current)
+                      await action(p, { type: "scene" }, "Nova cena");
+                    setRound(1);
+                    setTurn("");
+                  });
+              }}
+            >
+              Nova cena
+            </button>
+            <span>
+              Uma Reação por resolução; renove o total na nova rodada.
+              Manutenções e fases exigem confirmação.
+            </span>
+          </div>
+          <div className="gm-target live-controls">
+            <label>
+              Alvo
+              <select
+                value={target}
+                onChange={(e) => setTarget(e.target.value)}
+              >
+                <option value="">Escolha um participante</option>
+                {participants.map((p) => (
+                  <option key={p.key} value={p.key}>
+                    {nameOf(p)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Dano / cura / recurso
+              <input
+                type="number"
+                min={0}
+                max={99999}
+                value={amount}
+                onChange={(e) =>
+                  setAmount(Math.max(0, Math.floor(Number(e.target.value))))
+                }
+              />
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={resistance}
+                onChange={(e) => setResistance(e.target.checked)}
+              />
+              Aplicar Resistência do alvo
+            </label>
+            {(["damage", "heal", "karma", "shield"] as const).map((type) => (
+              <button
+                disabled={busy || !selected}
+                key={type}
+                onClick={() => safe(() => affect(type, type === "karma"))}
+              >
+                {
+                  {
+                    damage: "Aplicar dano",
+                    heal: "Curar",
+                    karma: "Gastar Karma",
+                    shield: "Adicionar escudo",
+                  }[type]
+                }
+              </button>
+            ))}
+            <button
+              disabled={busy || !selected}
+              onClick={() => safe(() => affect("karma", false))}
+            >
+              Recuperar Karma
+            </button>
+            <label>
+              Fonte do dano
+              <select
+                value={damageSource}
+                onChange={(e) => setDamageSource(e.target.value)}
+              >
+                <option value="normal">Não divino</option>
+                <option value="divine">Divino</option>
+              </select>
+            </label>
+            <label>
+              Condição
+              <input
+                value={condition}
+                maxLength={80}
+                onChange={(e) => setCondition(e.target.value)}
+              />
+            </label>
+            <button
+              disabled={busy || !selected || !condition.trim()}
+              onClick={() => safe(() => affect("condition"))}
+            >
+              Aplicar condição
+            </button>
+            <button
+              disabled={busy || !selected || !condition.trim()}
+              onClick={() => safe(() => affect("condition", true))}
+            >
+              Remover condição
+            </button>
+          </div>
+          <div className="live-controls combat-edit-control">
+            <strong>{areaTargets.length} alvos de área</strong>
+            <button
+              disabled={busy || !areaTargets.length}
+              onClick={() => safe(() => areaAction("damage"))}
+            >
+              Aplicar dano em área
+            </button>
+            <button
+              disabled={busy || !areaTargets.length}
+              onClick={() => safe(() => areaAction("heal"))}
+            >
+              Curar alvos de área
+            </button>
+            <button
+              disabled={busy || !areaTargets.length || !condition.trim()}
+              onClick={() => safe(() => areaAction("condition"))}
+            >
+              Condição nos alvos de área
+            </button>
+            <button onClick={() => setAreaTargets([])}>Desmarcar área</button>
+          </div>
+          {resolution && (
+            <aside className="gm-resolution">
+              <p>{resolution.label}</p>
+              <button
+                disabled={busy || resolution.applied || resolution.amount <= 0}
+                onClick={() =>
+                  safe(async () => {
+                    const p = latest.current.find(
+                      (p) => p.key === resolution.target,
+                    );
+                    if (!p) throw Error("Alvo removido.");
+                    await action(
+                      p,
+                      {
+                        type: "damage",
+                        amount: resolution.amount,
+                        resistance: resistance ? protection(p) : 0,
+                      },
+                      "Dano de ataque resolvido",
+                    );
+                    setResolution({ ...resolution, applied: true });
+                  })
+                }
+              >
+                {resolution.applied ? "Dano aplicado" : "Aplicar Dano"} ·{" "}
+                {resolution.amount}
+              </button>
+              <label>
+                Rodadas da condição{" "}
+                <input
+                  type="number"
+                  min={1}
+                  max={99}
+                  value={manual.conditionRounds ?? "1"}
+                  onChange={(event) =>
+                    setManual({
+                      ...manual,
+                      conditionRounds: event.target.value,
+                    })
+                  }
+                />
+              </label>
+              <label>
+                Potência periódica{" "}
+                <input
+                  type="number"
+                  min={0}
+                  max={99999}
+                  value={manual.conditionPotency ?? ""}
+                  onChange={(event) =>
+                    setManual({
+                      ...manual,
+                      conditionPotency: event.target.value,
+                    })
+                  }
+                />
+              </label>
+              <button
+                disabled={
+                  busy ||
+                  resolution.conditionApplied ||
+                  !condition.trim() ||
+                  !conditionForAttack(condition, resolution.outcome)
+                }
+                onClick={() =>
+                  safe(async () => {
+                    const p = latest.current.find(
+                      (entry) => entry.key === resolution.target,
+                    );
+                    if (!p) throw Error("Alvo removido.");
+                    const rounds = Math.min(
+                      99,
+                      Math.max(
+                        1,
+                        Math.floor(Number(manual.conditionRounds) || 1),
+                      ),
+                    );
+                    const potency = manual.conditionPotency
+                      ? Math.min(
+                          99999,
+                          Math.max(
+                            0,
+                            Math.floor(Number(manual.conditionPotency) || 0),
+                          ),
+                        )
+                      : undefined;
+                    const applied = conditionForAttack(
+                      condition,
+                      resolution.outcome,
+                      rounds,
+                      potency,
+                    );
+                    if (!applied) return;
+                    await action(
+                      p,
+                      {
+                        type: "condition",
+                        condition: condition.trim(),
+                        remove: false,
+                        ...(p.payload
+                          ? {
+                              attackOutcome: resolution.outcome,
+                              rounds,
+                              potency,
+                            }
+                          : applied),
+                      },
+                      "Condição do ataque",
+                    );
+                    setResolution({ ...resolution, conditionApplied: true });
+                  })
+                }
+              >
+                Aplicar condição do ataque
+              </button>
+              <p>
+                Use o campo Condição para registrar o efeito da técnica.
+                Condições menores exigem Acerto Total.
+              </p>
+            </aside>
+          )}
+          <div className="gm-participants">
+            {ordered.map((p) => (
+              <article
+                key={p.key}
+                data-phase-active={Boolean(p.phaseLabel)}
+                className={`gm-participant ${turn === p.key ? "current-turn" : ""}`}
+              >
+                <header>
+                  <small>
+                    {p.team} · {p.npc?.stage ?? p.payload?.stage}
+                  </small>
+                  <h3>{nameOf(p)}</h3>
+                  <div className="live-controls">
+                    <label>
+                      Iniciativa
+                      <input
+                        type="number"
+                        value={p.initiative}
+                        onChange={(e) =>
+                          updateParticipants((ps) =>
+                            ps.map((x) =>
+                              x.key === p.key
+                                ? { ...x, initiative: Number(e.target.value) }
+                                : x,
+                            ),
+                          )
+                        }
+                      />
+                    </label>
+                    <label>
+                      Bônus de Iniciativa
+                      <input
+                        type="number"
+                        min={-999}
+                        max={999}
+                        placeholder="0"
+                        value={manual[`${p.key}-initiative-bonus`] ?? ""}
+                        onChange={(e) =>
+                          setManual({
+                            ...manual,
+                            [`${p.key}-initiative-bonus`]: e.target.value,
+                          })
+                        }
+                      />
+                    </label>
+                    <label>
+                      Dados extras de Iniciativa
+                      <input
+                        type="number"
+                        min={-3}
+                        max={3}
+                        placeholder="0"
+                        value={manual[`${p.key}-initiative-dice`] ?? ""}
+                        onChange={(e) =>
+                          setManual({
+                            ...manual,
+                            [`${p.key}-initiative-dice`]: e.target.value,
+                          })
+                        }
+                      />
+                    </label>
+                    <select
+                      aria-label={`Equipe de ${nameOf(p)}`}
+                      value={p.team}
+                      onChange={(e) =>
+                        updateParticipants((ps) =>
+                          ps.map((x) =>
+                            x.key === p.key
+                              ? { ...x, team: e.target.value as typeof p.team }
+                              : x,
+                          ),
+                        )
+                      }
+                    >
+                      <option>Aliados</option>
+                      <option>Inimigos</option>
+                    </select>
+                    <button onClick={() => setTarget(p.key)}>
+                      Selecionar alvo
+                    </button>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={areaTargets.includes(p.key)}
+                        onChange={(e) =>
+                          setAreaTargets((keys) =>
+                            e.target.checked
+                              ? [...keys, p.key]
+                              : keys.filter((k) => k !== p.key),
+                          )
+                        }
+                      />
+                      Alvo de área
+                    </label>
+                    <button
+                      onClick={() => {
+                        updateParticipants((ps) =>
+                          ps.filter((x) => x.key !== p.key),
+                        );
+                        setAreaTargets((keys) =>
+                          keys.filter((k) => k !== p.key),
+                        );
+                        if (turn === p.key) setTurn("");
+                      }}
+                    >
+                      Remover do encontro
+                    </button>
+                  </div>
+                </header>
+                {p.link && p.payload ? (
+                  <LinkedParticipant
+                    p={p}
+                    update={update}
+                    register={register}
+                  />
+                ) : (
+                  p.npc && (
+                    <>
+                      <CombatResourceFeedback
+                        life={p.life}
+                        karma={p.karma}
+                        shield={p.shield}
+                        maxLife={p.npc.life}
+                      />
+                      {p.phaseLabel && (
+                        <aside className="combat-phase-badge">
+                          <strong>{p.phaseLabel}</strong>
+                          <p>{p.phaseDefense}</p>
+                          {p.phaseUnlocks?.join(" · ")}
+                        </aside>
+                      )}
+                      <div className="live-defense">
+                        <div>
+                          <span>Vida</span>
+                          <strong>
+                            {p.life}/{p.npc.life}
+                          </strong>
+                        </div>
+                        <div>
+                          <span>Karma</span>
+                          <strong>
+                            {p.karma}/{p.npc.karma}
+                          </strong>
+                        </div>
+                        <div>
+                          <span>Escudo</span>
+                          <strong>{p.shield}</strong>
+                        </div>
+                        <div>
+                          <span>CA · Parcial · Total</span>
+                          <strong>
+                            {Math.floor(p.npc.ca / 2)}–{p.npc.ca - 1} /{" "}
+                            {p.npc.ca}+
+                          </strong>
+                        </div>
+                        <div>
+                          <span>Movimento</span>
+                          <strong>{p.npc.movement}</strong>
+                        </div>
+                        <div>
+                          <span>Reações</span>
+                          <strong>{p.reactions}</strong>
+                        </div>
+                      </div>
+                      <div className="live-controls">
+                        <label>
+                          Âncoras desligadas
+                          <input
+                            type="number"
+                            min={0}
+                            max={9}
+                            value={p.anchors ?? 0}
+                            onChange={(e) => {
+                              const next = {
+                                ...p,
+                                anchors: Math.max(
+                                  0,
+                                  Math.min(
+                                    9,
+                                    Math.floor(Number(e.target.value)),
+                                  ),
+                                ),
+                              };
+                              commitNpc(checkPhases(next));
+                            }}
+                          />
+                        </label>
+                        {p.npc.pc !== undefined && (
+                          <span>PC: {p.pc ?? p.npc.pc}</span>
+                        )}
+                      </div>
+                      {phasesFor(p.npc)
+                        .filter(
+                          (phase) =>
+                            p.seenPhases?.includes(phase.id) &&
+                            !p.appliedPhases?.includes(phase.id),
+                        )
+                        .map((phase) => (
+                          <aside className="combat-warning" key={phase.id}>
+                            <p>
+                              {phase.title} disponível · {phase.karmaCost ?? 0}{" "}
+                              Karma · {phase.pcCost ?? 0} PC · Controle CD{" "}
+                              {phase.controlDC ?? "—"}
+                            </p>
+                            <button
+                              disabled={busy}
+                              onClick={() =>
+                                safe(async () => assumePhase(p, phase))
+                              }
+                            >
+                              Assumir forma após Controle
+                            </button>
+                          </aside>
+                        ))}
+                      <BossPhaseEditor
+                        npc={p.npc}
+                        phases={phasesFor(p.npc)}
+                        onChange={(phases) =>
+                          commitNpc(
+                            checkPhases({ ...p, npc: { ...p.npc!, phases } }),
+                          )
+                        }
+                      />
+                      <div className="live-controls combat-edit-control">
+                        {(
+                          [
+                            ["Evasão", "Reflexos", "Agilidade"],
+                            ["Vigor", "Atletismo", "Constituição"],
+                            ["Espírito", "Canalização de Karma", "Espírito"],
+                          ] as const
+                        ).map(([label, skill, attr]) => (
+                          <button
+                            key={label}
+                            onClick={() => npcDefense(p, skill, attr, label)}
+                          >
+                            {label}
+                          </button>
+                        ))}
+                      </div>
+                      <p>{p.conditions.join(" · ") || "Sem condições"}</p>
+                      <button
+                        disabled={!p.reactions || busy}
+                        onClick={() =>
+                          safe(() =>
+                            action(
+                              p,
+                              {
+                                type: "resource",
+                                resource: "reactions",
+                                delta: -1,
+                              },
+                              "Usar Reação",
+                            ),
+                          )
+                        }
+                      >
+                        Usar Reação
+                      </button>
+                      <details>
+                        <summary>Atributos, perícias e traços</summary>
+                        <div className="live-attributes">
+                          {p.npc.attributes.map((v, i) => (
+                            <div key={i}>
+                              <span>{ATTRIBUTES[i]}</span>
+                              <strong>{v}</strong>
+                            </div>
+                          ))}
+                        </div>
+                        <p className="combat-preserve">{p.npc.skills}</p>
+                        <p className="combat-preserve">{p.npc.traits}</p>
+                        <label>
+                          Resistência aplicável
+                          <input
+                            type="number"
+                            min={0}
+                            max={999}
+                            value={p.npc.resistance}
+                            onChange={(e) =>
+                              updateParticipants((ps) =>
+                                ps.map((x) =>
+                                  x.key === p.key
+                                    ? {
+                                        ...x,
+                                        npc: {
+                                          ...x.npc!,
+                                          resistance: Math.max(
+                                            0,
+                                            Number(e.target.value),
+                                          ),
+                                        },
+                                      }
+                                    : x,
+                                ),
+                              )
+                            }
+                          />
+                        </label>
+                        <small>
+                          Escolha a proteção aplicável ao tipo e à origem do
+                          dano, conforme os traços acima.
+                        </small>
+                      </details>
+                      <div className="live-art-grid">
+                        {p.npc.arts
+                          .filter(
+                            (art) =>
+                              !phasesFor(p.npc!).some((phase) =>
+                                phase.unlocks.includes(art.name),
+                              ) || p.phaseUnlocks?.includes(art.name),
+                          )
+                          .map((art) => (
+                            <article key={art.id}>
+                              <h4>{art.name}</h4>
+                              <small>
+                                {art.action} · {art.cost ?? "variável"} Karma
+                                {art.domain
+                                  ? ` · ${p.domainRounds[art.domain] ?? 0} rodadas`
+                                  : null}
+                              </small>
+                              <details>
+                                <summary>Efeito completo</summary>
+                                <p className="combat-preserve">{art.text}</p>
+                              </details>
+                              <TechniqueCost>
+                                {art.calculation ||
+                                  "Composição não estruturada; consulte a ficha original."}
+                              </TechniqueCost>
+                              {art.cost === null && (
+                                <label>
+                                  Custo confirmado
+                                  <input
+                                    type="number"
+                                    min={0}
+                                    value={
+                                      manual[`${p.key}-${art.id}-cost`] ?? ""
+                                    }
+                                    onChange={(e) =>
+                                      setManual({
+                                        ...manual,
+                                        [`${p.key}-${art.id}-cost`]:
+                                          e.target.value,
+                                      })
+                                    }
+                                  />
+                                </label>
+                              )}
+                              <label>
+                                Teste
+                                <input
+                                  value={
+                                    manual[`${p.key}-${art.id}-roll`] ??
+                                    art.roll
+                                  }
+                                  placeholder="3d20 +5"
+                                  onChange={(e) =>
+                                    setManual({
+                                      ...manual,
+                                      [`${p.key}-${art.id}-roll`]:
+                                        e.target.value,
+                                    })
+                                  }
+                                />
+                              </label>
+                              {art.attack && (
+                                <label>
+                                  Dados-base de dano
+                                  <input
+                                    value={
+                                      manual[`${p.key}-${art.id}-damage`] ??
+                                      art.damage
+                                    }
+                                    placeholder="2d8"
+                                    onChange={(e) =>
+                                      setManual({
+                                        ...manual,
+                                        [`${p.key}-${art.id}-damage`]:
+                                          e.target.value,
+                                      })
+                                    }
+                                  />
+                                </label>
+                              )}
+                              <button
+                                disabled={busy}
+                                onClick={() =>
+                                  safe(() => executeNpcArt(p, art))
+                                }
+                              >
+                                {art.attack
+                                  ? "Rolar contra Alvo"
+                                  : "Executar efeito"}{" "}
+                                (−
+                                {art.cost ??
+                                  manual[`${p.key}-${art.id}-cost`] ??
+                                  "?"}{" "}
+                                Karma)
+                              </button>
+                            </article>
+                          ))}
+                      </div>
+                    </>
+                  )
+                )}
+              </article>
+            ))}
+          </div>
+          <section>
+            <h3>Feed ao vivo · últimas 100 ações do encontro</h3>
+            <ol className="live-feed">
+              {allFeed.map((e) => (
+                <li key={e.id}>
+                  <time>
+                    {new Date(e.timestamp).toLocaleTimeString("pt-BR", {
+                      timeZone: "America/Sao_Paulo",
+                    })}
+                  </time>
+                  <strong>
+                    {e.actorName} · {e.title}
+                  </strong>
+                  {e.rollFormula && (
+                    <span>
+                      {e.rollFormula}: [{e.diceResults?.join(", ")}] → {e.total}
+                    </span>
+                  )}
+                  {e.karmaSpent !== undefined && (
+                    <span>−{e.karmaSpent} Karma</span>
+                  )}
+                  <p>{e.details}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+        </>
+      )}
+    </section>
+  );
 }

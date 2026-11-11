@@ -1,8 +1,8 @@
-import {AeriaContinentCard} from "@/components/aeria-archive";
+import { AeriaContinentCard } from "@/components/aeria-archive";
 import { GaeriaContinentCard } from "@/components/gaeria-archive";
 import { IgnariaContinentCard } from "@/components/ignaria-archive";
-import Link from "next/link";
 import { ArrowRight, BookMarked, BookOpen, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 import { getChatGPTUser } from "@/app/chatgpt-auth";
 import { RuleSearch } from "@/components/rule-search";
@@ -24,7 +24,10 @@ const groups = [
 export default async function RulesIndexPage() {
   const user = await getChatGPTUser();
   const chapters = getChapterMetadata();
-  const totalWords = chapters.reduce((total, chapter) => total + chapter.wordCount, 0);
+  const totalWords = chapters.reduce(
+    (total, chapter) => total + chapter.wordCount,
+    0,
+  );
 
   return (
     <div className="site-page rules-index-page">
@@ -49,7 +52,9 @@ export default async function RulesIndexPage() {
               <BookOpen aria-hidden="true" />
               <strong>{chapters.length}</strong>
               <span>capítulos</span>
-              <small>{totalWords.toLocaleString("pt-BR")} palavras indexadas</small>
+              <small>
+                {totalWords.toLocaleString("pt-BR")} palavras indexadas
+              </small>
             </div>
           </div>
         </section>
@@ -69,12 +74,17 @@ export default async function RulesIndexPage() {
             </Link>
           </section>
 
-          <div className="continent-card-grid"><GaeriaContinentCard /><IgnariaContinentCard /><AeriaContinentCard /></div>
+          <div className="continent-card-grid">
+            <GaeriaContinentCard />
+            <IgnariaContinentCard />
+            <AeriaContinentCard />
+          </div>
 
           {groups.map((group) => {
             const items = chapters.filter(
               (chapter) =>
-                chapter.number >= group.range[0] && chapter.number <= group.range[1],
+                chapter.number >= group.range[0] &&
+                chapter.number <= group.range[1],
             );
             return (
               <section className="chapter-group" key={group.title}>
@@ -108,9 +118,9 @@ export default async function RulesIndexPage() {
           <aside className="rules-source-note">
             <Sparkles aria-hidden="true" />
             <p>
-              Consulte regras, tabelas e exemplos nos capítulos 1–20.
-              O capítulo 21 reúne o Bestiário: histórias, criaturas e poderes
-              que habitam os quatro continentes.
+              Consulte regras, tabelas e exemplos nos capítulos 1–20. O capítulo
+              21 reúne o Bestiário: histórias, criaturas e poderes que habitam
+              os quatro continentes.
             </p>
           </aside>
         </div>
@@ -118,4 +128,3 @@ export default async function RulesIndexPage() {
     </div>
   );
 }
-

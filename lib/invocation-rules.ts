@@ -1,25 +1,86 @@
-import { extractDiceExpression } from "@/lib/dice-expression";
 import type { InvocationGrade, InvocationRecord } from "@/lib/character-data";
+import { extractDiceExpression } from "@/lib/dice-expression";
 
-export const INVOCATION_GRADE_RULES: Record<InvocationGrade, {
-  attribute: number;
-  skill: number;
-  armor: number;
-  life: number;
-  damage: string;
-  callCost: number;
-  maintenance: number;
-}> = {
-  I: { attribute: 3, skill: 1, armor: 12, life: 8, damage: "1d6", callCost: 2, maintenance: 0 },
-  II: { attribute: 5, skill: 1, armor: 14, life: 18, damage: "1d8", callCost: 3, maintenance: 1 },
-  III: { attribute: 7, skill: 1, armor: 16, life: 22, damage: "2d6", callCost: 5, maintenance: 2 },
-  IV: { attribute: 9, skill: 2, armor: 19, life: 34, damage: "3d8", callCost: 8, maintenance: 3 },
-  V: { attribute: 12, skill: 3, armor: 22, life: 50, damage: "5d8", callCost: 13, maintenance: 5 },
+export const INVOCATION_GRADE_RULES: Record<
+  InvocationGrade,
+  {
+    attribute: number;
+    skill: number;
+    armor: number;
+    life: number;
+    damage: string;
+    callCost: number;
+    maintenance: number;
+  }
+> = {
+  I: {
+    attribute: 3,
+    skill: 1,
+    armor: 12,
+    life: 8,
+    damage: "1d6",
+    callCost: 2,
+    maintenance: 0,
+  },
+  II: {
+    attribute: 5,
+    skill: 1,
+    armor: 14,
+    life: 18,
+    damage: "1d8",
+    callCost: 3,
+    maintenance: 1,
+  },
+  III: {
+    attribute: 7,
+    skill: 1,
+    armor: 16,
+    life: 22,
+    damage: "2d6",
+    callCost: 5,
+    maintenance: 2,
+  },
+  IV: {
+    attribute: 9,
+    skill: 2,
+    armor: 19,
+    life: 34,
+    damage: "3d8",
+    callCost: 8,
+    maintenance: 3,
+  },
+  V: {
+    attribute: 12,
+    skill: 3,
+    armor: 22,
+    life: 50,
+    damage: "5d8",
+    callCost: 13,
+    maintenance: 5,
+  },
 };
 
-const GRADE_INDEX: Record<InvocationGrade, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5 };
-const LOWER_DAMAGE: Record<string, string> = { "1d6": "1d4", "1d8": "1d6", "2d6": "1d10", "3d8": "2d10", "5d8": "4d8" };
-const HIGHER_DAMAGE: Record<string, string> = { "1d6": "1d8", "1d8": "1d10", "2d6": "2d8", "3d8": "3d10", "5d8": "5d10" };
+const GRADE_INDEX: Record<InvocationGrade, number> = {
+  I: 1,
+  II: 2,
+  III: 3,
+  IV: 4,
+  V: 5,
+};
+const LOWER_DAMAGE: Record<string, string> = {
+  "1d6": "1d4",
+  "1d8": "1d6",
+  "2d6": "1d10",
+  "3d8": "2d10",
+  "5d8": "4d8",
+};
+const HIGHER_DAMAGE: Record<string, string> = {
+  "1d6": "1d8",
+  "1d8": "1d10",
+  "2d6": "2d8",
+  "3d8": "3d10",
+  "5d8": "5d10",
+};
 
 export type InvocationStats = {
   mainAttribute: number;
@@ -36,28 +97,46 @@ export type InvocationStats = {
   notes: string[];
 };
 
-export function invocationAttack(invocation: InvocationRecord, fractures = invocation.fractures) {
+export function invocationAttack(
+  invocation: InvocationRecord,
+  fractures = invocation.fractures,
+) {
   const stats = calculateInvocationStats(invocation);
   const skill = invocation.mainSkills.includes("Luta") ? "Luta" : "Pontaria";
   const attribute = skill === "Luta" ? "Força" : "Agilidade";
-  const value = invocation.mainAttribute === attribute ? stats.mainAttribute
-    : invocation.secondaryAttributes.includes(attribute) ? stats.secondaryAttribute : stats.otherAttribute;
+  const value =
+    invocation.mainAttribute === attribute
+      ? stats.mainAttribute
+      : invocation.secondaryAttributes.includes(attribute)
+        ? stats.secondaryAttribute
+        : stats.otherAttribute;
   const level = invocation.mainSkills.includes(skill) ? stats.mainSkill : 0;
   const dice = level ? Math.max(1, Math.ceil(value / 2)) : 1;
   const bonus = [0, 2, 5, 10][level] - fractures;
   const armor = Math.max(0, stats.armor - fractures);
-  return { dice, bonus, armor, partial: Math.floor(armor / 2), formula: `${dice}d20 ${bonus < 0 ? "−" : "+"} ${Math.abs(bonus)}` };
+  return {
+    dice,
+    bonus,
+    armor,
+    partial: Math.floor(armor / 2),
+    formula: `${dice}d20 ${bonus < 0 ? "−" : "+"} ${Math.abs(bonus)}`,
+  };
 }
 
 export function invocationGradeIndex(grade: InvocationGrade): number {
   return GRADE_INDEX[grade];
 }
 
-export function isInvocationFormAllowed(form: string, grade: InvocationGrade): boolean {
+export function isInvocationFormAllowed(
+  form: string,
+  grade: InvocationGrade,
+): boolean {
   return form !== "Fusão" || invocationGradeIndex(grade) >= 3;
 }
 
-export function calculateInvocationStats(invocation: InvocationRecord): InvocationStats {
+export function calculateInvocationStats(
+  invocation: InvocationRecord,
+): InvocationStats {
   const base = INVOCATION_GRADE_RULES[invocation.grade];
   let armor = base.armor;
   let life = base.life;
@@ -77,7 +156,9 @@ export function calculateInvocationStats(invocation: InvocationRecord): Invocati
   } else if (invocation.profile === "Batedor") {
     movement += 3;
     life = Math.floor(life * 0.75);
-    notes.push("Batedor: +3 m, −25% Vida e +1 dado em Percepção ou Sobrevivência.");
+    notes.push(
+      "Batedor: +3 m, −25% Vida e +1 dado em Percepção ou Sobrevivência.",
+    );
   } else if (invocation.profile === "Resistente") {
     life = Math.ceil(life * 1.25);
     armor -= 2;
@@ -87,14 +168,20 @@ export function calculateInvocationStats(invocation: InvocationRecord): Invocati
   if (invocation.callForm === "Projeção") {
     life = Math.floor(life / 2);
     callCost = Math.max(1, callCost - 3);
-    notes.push("Projeção: metade da Vida, chamada −3, não carrega objetos e atravessa matéria comum.");
+    notes.push(
+      "Projeção: metade da Vida, chamada −3, não carrega objetos e atravessa matéria comum.",
+    );
   } else if (invocation.callForm === "Fusão") {
     callCost += 3;
-    notes.push("Fusão: Grau III mínimo, chamada +3; não age separadamente e ambos ficam Abalados ao terminar.");
+    notes.push(
+      "Fusão: Grau III mínimo, chamada +3; não age separadamente e ambos ficam Abalados ao terminar.",
+    );
   } else if (invocation.callForm === "Âncora") {
     callCost = Math.ceil(callCost / 2);
     movement = 0;
-    notes.push("Âncora: chamada pela metade; apenas uma ativa e sua destruição causa dano espiritual e Fratura.");
+    notes.push(
+      "Âncora: chamada pela metade; apenas uma ativa e sua destruição causa dano espiritual e Fratura.",
+    );
   }
 
   return {
@@ -114,23 +201,40 @@ export function calculateInvocationStats(invocation: InvocationRecord): Invocati
 }
 
 function averageDamage(formula: string): number {
-  return (extractDiceExpression(formula) ?? "").split("+").reduce((sum, term) => {
-    const [dice, sides] = term.toLowerCase().split("d").map(Number);
-    return sum + (sides ? dice * (sides + 1) / 2 : dice);
-  }, 0);
+  return (extractDiceExpression(formula) ?? "")
+    .split("+")
+    .reduce((sum, term) => {
+      const [dice, sides] = term.toLowerCase().split("d").map(Number);
+      return sum + (sides ? (dice * (sides + 1)) / 2 : dice);
+    }, 0);
 }
 
-export function invocationDamageOptions(invocation: InvocationRecord): string[] {
+export function invocationDamageOptions(
+  invocation: InvocationRecord,
+): string[] {
   const basic = calculateInvocationStats(invocation).damage;
   const next = HIGHER_DAMAGE[basic];
   return next ? [basic, next] : [basic];
 }
 
-export function invocationAbilityDamageError(invocation: InvocationRecord): string | undefined {
+export function invocationAbilityDamageError(
+  invocation: InvocationRecord,
+): string | undefined {
   const { ability } = invocation;
   const legacyPaid = /[1-9]\d*\s*(?:de\s+)?Karma/i.test(ability.calculation);
-  const damage = ability.damage ?? (legacyPaid ? extractDiceExpression(ability.effect.match(/[^.!?]*dano[^.!?]*/i)?.[0] ?? "") : null);
-  if ((ability.karma ?? Number(legacyPaid)) > 0 && damage && averageDamage(damage) < averageDamage(calculateInvocationStats(invocation).damage)) {
+  const damage =
+    ability.damage ??
+    (legacyPaid
+      ? extractDiceExpression(
+          ability.effect.match(/[^.!?]*dano[^.!?]*/i)?.[0] ?? "",
+        )
+      : null);
+  if (
+    (ability.karma ?? Number(legacyPaid)) > 0 &&
+    damage &&
+    averageDamage(damage) <
+      averageDamage(calculateInvocationStats(invocation).damage)
+  ) {
     return "O dano de uma habilidade paga deve alcançar pelo menos o dano médio do ataque básico.";
   }
 }
@@ -138,10 +242,26 @@ export function getInvocationWarnings(invocation: InvocationRecord): string[] {
   const warnings: string[] = [];
   const damageError = invocationAbilityDamageError(invocation);
   if (damageError) warnings.push(damageError);
-  if (!isInvocationFormAllowed(invocation.callForm, invocation.grade)) warnings.push("Fusão exige uma Invocação de Grau III ou maior.");
-  if (invocation.ability.grade && invocationGradeIndex(invocation.ability.grade) > invocationGradeIndex(invocation.grade)) warnings.push("A habilidade não pode ter Grau maior que a própria Invocação.");
-  if (invocation.secondaryAttributes.length > 1) warnings.push("Escolha somente um Atributo secundário.");
-  if (invocation.secondaryAttributes.includes(invocation.mainAttribute)) warnings.push("O Atributo secundário deve ser diferente do principal.");
-  if (new Set(invocation.mainSkills).size !== invocation.mainSkills.length || invocation.mainSkills.includes(invocation.weakSkill)) warnings.push("As Perícias principais devem ser distintas e não podem ser a Perícia fraca.");
+  if (!isInvocationFormAllowed(invocation.callForm, invocation.grade))
+    warnings.push("Fusão exige uma Invocação de Grau III ou maior.");
+  if (
+    invocation.ability.grade &&
+    invocationGradeIndex(invocation.ability.grade) >
+      invocationGradeIndex(invocation.grade)
+  )
+    warnings.push(
+      "A habilidade não pode ter Grau maior que a própria Invocação.",
+    );
+  if (invocation.secondaryAttributes.length > 1)
+    warnings.push("Escolha somente um Atributo secundário.");
+  if (invocation.secondaryAttributes.includes(invocation.mainAttribute))
+    warnings.push("O Atributo secundário deve ser diferente do principal.");
+  if (
+    new Set(invocation.mainSkills).size !== invocation.mainSkills.length ||
+    invocation.mainSkills.includes(invocation.weakSkill)
+  )
+    warnings.push(
+      "As Perícias principais devem ser distintas e não podem ser a Perícia fraca.",
+    );
   return warnings;
 }

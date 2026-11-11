@@ -15,6 +15,6 @@ p=root/'docs/bestiario.md';s=p.read_text();a=s.index('## 03 · Thalassia {#thala
 body=(root/'docs/thalassia.md').read_text().split('\n',1)[1];body=re.sub(r'^(#{2,5}) ',lambda m:'#'+m[1]+' ',body,flags=re.M)
 s=s[:a]+'## 03 · Thalassia {#thalassia}\n\n[Consultar Thalassia, seus três tronos e quinze fichas](/mundo/thalassia).\n\n'+body+'\n\n'+s[b:]
 # The political concordance belongs to the chapter overview, not a seventh continent.
-s=re.sub(r'<!-- geopolitics:start -->.*?<!-- geopolitics:end -->','',s,flags=re.S)
+s=re.sub(r'\s*<!-- geopolitics:start -->.*?<!-- geopolitics:end -->\s*','\n\n',s,flags=re.S)
 world=(root/'docs/mundo.md').read_text().split('\n',1)[1];world=re.sub(r'^#{2,5} ',lambda m:'#'+m[0],world,flags=re.M)
 where=s.index('## ');s=s[:where]+'<!-- geopolitics:start -->\n'+world+'\n<!-- geopolitics:end -->\n\n'+s[where:];p.write_text(s)

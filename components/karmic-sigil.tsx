@@ -17,4 +17,3 @@ export function KarmicSigil({ className }: { className?: string }) {
     </div>
   );
 }
-

@@ -1,57 +1,175 @@
-import { blessingAccessError, isExclusiveBlessingName, playerCatalogEntry, EXCLUSIVE_BLESSING_NOTICE } from "@/lib/blessings-filter";
-import deities from '@/data/pantheon-deities.json';
-import { ATTRIBUTES, type DivineState, type BlessingGrant, type AttributeName } from '@/lib/character-model';
+import deities from "@/data/pantheon-deities.json";
+import {
+  blessingAccessError,
+  EXCLUSIVE_BLESSING_NOTICE,
+  isExclusiveBlessingName,
+  playerCatalogEntry,
+} from "@/lib/blessings-filter";
+import {
+  ATTRIBUTES,
+  type AttributeName,
+  type BlessingGrant,
+  type DivineState,
+} from "@/lib/character-model";
 export { deities };
 export function blessingGrants(d: DivineState): BlessingGrant[] {
- if(d.blessings?.length)return d.blessings;
- if(!d.blessingName&&!d.core&&!d.initialGift&&!d.activeManifestation)return [];
- return [{id:'primary-blessing',name:d.blessingName,pantheon:d.pantheon,deity:d.deity,deityId:d.deityId,deityEpithet:d.deityEpithet??'',grantOrigin:d.grantOrigin??'',grantReason:d.grantReason??'',regentAttribute:d.regentAttribute,tier:'',core:d.core,initialGift:d.initialGift,activeManifestation:d.activeManifestation??'',essentialLimits:d.essentialLimits,precept:d.precept,profanation:d.profanation}];
+  if (d.blessings?.length) return d.blessings;
+  if (!d.blessingName && !d.core && !d.initialGift && !d.activeManifestation)
+    return [];
+  return [
+    {
+      id: "primary-blessing",
+      name: d.blessingName,
+      pantheon: d.pantheon,
+      deity: d.deity,
+      deityId: d.deityId,
+      deityEpithet: d.deityEpithet ?? "",
+      grantOrigin: d.grantOrigin ?? "",
+      grantReason: d.grantReason ?? "",
+      regentAttribute: d.regentAttribute,
+      tier: "",
+      core: d.core,
+      initialGift: d.initialGift,
+      activeManifestation: d.activeManifestation ?? "",
+      essentialLimits: d.essentialLimits,
+      precept: d.precept,
+      profanation: d.profanation,
+    },
+  ];
 }
-export function newBlessing(): BlessingGrant {return {id:crypto.randomUUID(),name:'',pantheon:'',deity:'',deityEpithet:'',grantOrigin:'',regentAttribute:'',tier:'',core:'',initialGift:'',activeManifestation:'',essentialLimits:''};}
-export function withBlessings(d: DivineState, blessings: BlessingGrant[]): DivineState {
- const b=blessings[0];
- return {...d,blessings,...(b?{blessingName:b.name,pantheon:b.pantheon,deity:b.deity,deityId:b.deityId,deityEpithet:b.deityEpithet,grantOrigin:b.grantOrigin,grantReason:b.grantReason,regentAttribute:b.regentAttribute,core:b.core,initialGift:b.initialGift,activeManifestation:b.activeManifestation,essentialLimits:b.essentialLimits,precept:b.precept??d.precept,profanation:b.profanation??d.profanation}:{blessingName:'',core:'',initialGift:'',activeManifestation:''})};
+export function newBlessing(): BlessingGrant {
+  return {
+    id: crypto.randomUUID(),
+    name: "",
+    pantheon: "",
+    deity: "",
+    deityEpithet: "",
+    grantOrigin: "",
+    regentAttribute: "",
+    tier: "",
+    core: "",
+    initialGift: "",
+    activeManifestation: "",
+    essentialLimits: "",
+  };
 }
-export function blessingAttribute(value:string): AttributeName|undefined {return ATTRIBUTES.find(a=>a===value);}
+export function withBlessings(
+  d: DivineState,
+  blessings: BlessingGrant[],
+): DivineState {
+  const b = blessings[0];
+  return {
+    ...d,
+    blessings,
+    ...(b
+      ? {
+          blessingName: b.name,
+          pantheon: b.pantheon,
+          deity: b.deity,
+          deityId: b.deityId,
+          deityEpithet: b.deityEpithet,
+          grantOrigin: b.grantOrigin,
+          grantReason: b.grantReason,
+          regentAttribute: b.regentAttribute,
+          core: b.core,
+          initialGift: b.initialGift,
+          activeManifestation: b.activeManifestation,
+          essentialLimits: b.essentialLimits,
+          precept: b.precept ?? d.precept,
+          profanation: b.profanation ?? d.profanation,
+        }
+      : {
+          blessingName: "",
+          core: "",
+          initialGift: "",
+          activeManifestation: "",
+        }),
+  };
+}
+export function blessingAttribute(value: string): AttributeName | undefined {
+  return ATTRIBUTES.find((a) => a === value);
+}
 
 export function catalogBlessingGrant(
-  blessing: {id:number;title:string;facet:string;nature:string;phenomenon:string;extensions:string[];harvest:string},
-  deity: {name:string;epithet:string},
-  pantheon:string,
+  blessing: {
+    id: number;
+    title: string;
+    facet: string;
+    nature: string;
+    phenomenon: string;
+    extensions: string[];
+    harvest: string;
+  },
+  deity: { name: string; epithet: string },
+  pantheon: string,
 ): BlessingGrant {
-  const patron = deities.find(entry => entry.name === deity.name && entry.pantheon === pantheon);
+  const patron = deities.find(
+    (entry) => entry.name === deity.name && entry.pantheon === pantheon,
+  );
   return {
-    id: `catalog-blessing-${blessing.id}`, name: blessing.title, pantheon,
-    deity: deity.name, deityId: patron?.id, deityEpithet: deity.epithet,
-    grantOrigin: "Fragmento do Caminho divino", regentAttribute: "", tier: blessing.nature,
-    core: blessing.facet, initialGift: blessing.phenomenon,
+    id: `catalog-blessing-${blessing.id}`,
+    name: blessing.title,
+    pantheon,
+    deity: deity.name,
+    deityId: patron?.id,
+    deityEpithet: deity.epithet,
+    grantOrigin: "Fragmento do Caminho divino",
+    regentAttribute: "",
+    tier: blessing.nature,
+    core: blessing.facet,
+    initialGift: blessing.phenomenon,
     activeManifestation: blessing.extensions.join("\n\n"),
     essentialLimits: `Safra na Morte. ${blessing.harvest}`,
-    precept: patron?.precept, profanation: patron?.profanation,
+    precept: patron?.precept,
+    profanation: patron?.profanation,
   };
 }
 
 export function divineBlessingError(divine: DivineState): string | undefined {
-  if (isExclusiveBlessingName(divine.blessingName)) return EXCLUSIVE_BLESSING_NOTICE;
+  if (isExclusiveBlessingName(divine.blessingName))
+    return EXCLUSIVE_BLESSING_NOTICE;
   return blessingGrants(divine).map(blessingAccessError).find(Boolean);
 }
 
 function canonicalGrant(grant: BlessingGrant): BlessingGrant {
   const entry = playerCatalogEntry(grant.id);
   if (!entry) return grant;
-  const pantheon = entry.pantheon.name === "Tupi-Guarani" ? "Lendas Tupi-Guarani" : entry.pantheon.name;
-  const canonical = catalogBlessingGrant(entry.blessing, entry.deity, `${pantheon} — ${entry.pantheon.wing}`);
-  return { ...canonical, regentAttribute: grant.regentAttribute, matrices: grant.matrices };
+  const pantheon =
+    entry.pantheon.name === "Tupi-Guarani"
+      ? "Lendas Tupi-Guarani"
+      : entry.pantheon.name;
+  const canonical = catalogBlessingGrant(
+    entry.blessing,
+    entry.deity,
+    `${pantheon} — ${entry.pantheon.wing}`,
+  );
+  return {
+    ...canonical,
+    regentAttribute: grant.regentAttribute,
+    matrices: grant.matrices,
+  };
 }
 
 export function playableBlessingGrants(divine: DivineState): BlessingGrant[] {
-  return blessingGrants(divine).filter(grant => !blessingAccessError(grant)).map(canonicalGrant);
+  return blessingGrants(divine)
+    .filter((grant) => !blessingAccessError(grant))
+    .map(canonicalGrant);
 }
 
 // Restore mechanics from the current catalog while keeping invalid grants visible for correction.
 export function canonicalizeBlessings(divine: DivineState): DivineState {
   const grants = blessingGrants(divine);
-  if (!grants.some(grant => playerCatalogEntry(grant.id) && !blessingAccessError(grant))) return divine;
+  if (
+    !grants.some(
+      (grant) => playerCatalogEntry(grant.id) && !blessingAccessError(grant),
+    )
+  )
+    return divine;
   if (isExclusiveBlessingName(divine.blessingName)) return divine;
-  return withBlessings(divine, grants.map(grant => blessingAccessError(grant) ? grant : canonicalGrant(grant)));
+  return withBlessings(
+    divine,
+    grants.map((grant) =>
+      blessingAccessError(grant) ? grant : canonicalGrant(grant),
+    ),
+  );
 }

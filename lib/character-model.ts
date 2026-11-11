@@ -1,5 +1,5 @@
-import type { LiveCombatState } from "@/lib/combat-types";
 import sizeRules from "@/data/size-rules.json";
+import type { LiveCombatState } from "@/lib/combat-types";
 export const ATTRIBUTES = [
   "Força",
   "Agilidade",
@@ -81,7 +81,14 @@ export const AFFINITIES = [
   "Trevas",
 ] as const;
 
-export const ELEMENTS = ["Fogo", "Terra", "Água", "Ar", "Luz", "Trevas"] as const;
+export const ELEMENTS = [
+  "Fogo",
+  "Terra",
+  "Água",
+  "Ar",
+  "Luz",
+  "Trevas",
+] as const;
 
 export const DOMAIN_NAMES = [
   "Força",
@@ -154,13 +161,22 @@ export const SKILL_GROUPS = [
 export const ALL_SKILLS = SKILL_GROUPS.flatMap((group) => group.skills);
 
 export const BASE_SKILL_POINT_BUDGET = 8;
-export const PRESENCE_SKILLS: readonly string[] = ["Conjuração Vincular", "Comunhão Divina", "Controle da Corrupção"];
+export const PRESENCE_SKILLS: readonly string[] = [
+  "Conjuração Vincular",
+  "Comunhão Divina",
+  "Controle da Corrupção",
+];
 
 export function getTrainingSkill(skill: string): string {
   return skill === "Conjuração Vincular" ? "Conjuração" : skill;
 }
 
-export const CHARACTER_SIZES = ["Minúsculo", "Pequeno", "Médio", "Grande"] as const;
+export const CHARACTER_SIZES = [
+  "Minúsculo",
+  "Pequeno",
+  "Médio",
+  "Grande",
+] as const;
 export type CharacterSize = (typeof CHARACTER_SIZES)[number];
 
 export const INVOCATION_GRADES = ["I", "II", "III", "IV", "V"] as const;
@@ -176,8 +192,19 @@ export const INVOCATION_NATURES = [
   "Ser da Torre",
 ] as const;
 
-export const INVOCATION_CALL_FORMS = ["Manifestação", "Projeção", "Fusão", "Âncora"] as const;
-export const INVOCATION_PROFILES = ["Sem ajuste", "Guardião", "Predador", "Batedor", "Resistente"] as const;
+export const INVOCATION_CALL_FORMS = [
+  "Manifestação",
+  "Projeção",
+  "Fusão",
+  "Âncora",
+] as const;
+export const INVOCATION_PROFILES = [
+  "Sem ajuste",
+  "Guardião",
+  "Predador",
+  "Batedor",
+  "Resistente",
+] as const;
 
 export const MAX_EMBEDDED_IMAGE_LENGTH = 180_000;
 
@@ -186,7 +213,8 @@ export function normalizeEmbeddedImage(value: unknown): string {
     typeof value !== "string" ||
     value.length > MAX_EMBEDDED_IMAGE_LENGTH ||
     !/^data:image\/(?:png|jpeg|webp);base64,[a-zA-Z0-9+/=]+$/.test(value)
-  ) return "";
+  )
+    return "";
   return value;
 }
 
@@ -208,8 +236,14 @@ export type BindingVow = {
 
 export const SIZE_RULES = sizeRules;
 export function sizeFromHeight(heightCm: number): CharacterSize {
-  const sizes = Object.entries(SIZE_RULES) as [CharacterSize, { minHeight: number }][];
-  return sizes.reverse().find(([, rule]) => heightCm >= rule.minHeight)?.[0] ?? "Minúsculo";
+  const sizes = Object.entries(SIZE_RULES) as [
+    CharacterSize,
+    { minHeight: number },
+  ][];
+  return (
+    sizes.reverse().find(([, rule]) => heightCm >= rule.minHeight)?.[0] ??
+    "Minúsculo"
+  );
 }
 
 export type PointValue = { base: number; bonus: number };
@@ -271,11 +305,31 @@ export type CorruptionState = {
 };
 
 export type BlessingGrant = {
- matrices?:string[];
- id: string; name: string; pantheon: string; deity: string; deityId?: string; deityEpithet: string; grantOrigin: string; grantReason?: string; regentAttribute: string; tier: string; core: string; initialGift: string; activeManifestation: string; essentialLimits: string; precept?: string; profanation?: string;
+  matrices?: string[];
+  id: string;
+  name: string;
+  pantheon: string;
+  deity: string;
+  deityId?: string;
+  deityEpithet: string;
+  grantOrigin: string;
+  grantReason?: string;
+  regentAttribute: string;
+  tier: string;
+  core: string;
+  initialGift: string;
+  activeManifestation: string;
+  essentialLimits: string;
+  precept?: string;
+  profanation?: string;
 };
 export type DivineState = {
-  deityId?: string; deityEpithet?: string; grantOrigin?: string; grantReason?: string; activeManifestation?: string; blessings?: BlessingGrant[];
+  deityId?: string;
+  deityEpithet?: string;
+  grantOrigin?: string;
+  grantReason?: string;
+  activeManifestation?: string;
+  blessings?: BlessingGrant[];
   enabled: boolean;
   expression: string;
   blessingName: string;
@@ -314,11 +368,12 @@ export type ElementalState = {
 
 export type TechniqueRecord = {
   effect?: string;
-  matrix?:"Kármico"|"Elemental"|"Divino"|"Marcial"|"Corrupto";
-  damageType?:import("./technique-matrices").DamageType|"Físico";
-  lineageCatalyst?:string;
-  doctrine?:string;
-  matrixExtras?:number;matrixDiscount?:number;
+  matrix?: "Kármico" | "Elemental" | "Divino" | "Marcial" | "Corrupto";
+  damageType?: import("./technique-matrices").DamageType | "Físico";
+  lineageCatalyst?: string;
+  doctrine?: string;
+  matrixExtras?: number;
+  matrixDiscount?: number;
   id: string;
   name: string;
   concept: string;
@@ -341,9 +396,9 @@ export type TechniqueRecord = {
 
 export type InventoryItem = {
   catalogId?: string;
-  category?: "weapon"|"armor"|"shield"|"ammo"|"focus"|"gear";
+  category?: "weapon" | "armor" | "shield" | "ammo" | "focus" | "gear";
   equipped?: boolean;
-  location?: "ready"|"backpack"|"external";
+  location?: "ready" | "backpack" | "external";
   armorClass?: number;
   agilityCap?: number;
   minStrength?: number;
@@ -355,13 +410,29 @@ export type InventoryItem = {
   notes: string;
 };
 
-export const INVOCATION_ACTIONS = ["Ação Principal", "Ação Extra", "Ação de Movimento", "Ação Livre", "Reação", "Passiva"] as const;
-export const INVOCATION_RANGES = ["Pessoal", "Toque", "2 m", "5 m", "10 m", "15 m", "25 m", "30 m"] as const;
+export const INVOCATION_ACTIONS = [
+  "Ação Principal",
+  "Ação Extra",
+  "Ação de Movimento",
+  "Ação Livre",
+  "Reação",
+  "Passiva",
+] as const;
+export const INVOCATION_RANGES = [
+  "Pessoal",
+  "Toque",
+  "2 m",
+  "5 m",
+  "10 m",
+  "15 m",
+  "25 m",
+  "30 m",
+] as const;
 
 export type InvocationAbility = {
-  action?: typeof INVOCATION_ACTIONS[number];
+  action?: (typeof INVOCATION_ACTIONS)[number];
   karma?: number;
-  range?: typeof INVOCATION_RANGES[number];
+  range?: (typeof INVOCATION_RANGES)[number];
   damage?: string;
   name: string;
   grade: InvocationGrade;
@@ -406,7 +477,14 @@ export type CharacterSharing = {
 export type CharacterPayload = {
   version: 1;
   combatState?: LiveCombatState;
-  combat?: { life: number; karma: number; shield: number; temporaryCharges: number; round: number; domainRounds: Record<string, number> };
+  combat?: {
+    life: number;
+    karma: number;
+    shield: number;
+    temporaryCharges: number;
+    round: number;
+    domainRounds: Record<string, number>;
+  };
   name: string;
   portraitImage: string;
   pronouns: string;
@@ -437,7 +515,16 @@ export type CharacterPayload = {
   elemental: ElementalState;
   techniques: TechniqueRecord[];
   invocations: InvocationRecord[];
-  workshopDevices?: { id: string; name: string; kind: "Ofensivo" | "Ferramenta" | "Manipulação" | "Emissor de Escudo Cinético"; active: boolean }[];
+  workshopDevices?: {
+    id: string;
+    name: string;
+    kind:
+      | "Ofensivo"
+      | "Ferramenta"
+      | "Manipulação"
+      | "Emissor de Escudo Cinético";
+    active: boolean;
+  }[];
   inventory: InventoryItem[];
   loadModifier?: number;
   alchemicalSaturation?: number;
@@ -446,6 +533,8 @@ export type CharacterPayload = {
 };
 
 export type SavedCharacter = {
+  revision?: string;
+  invalid?: boolean;
   id: string;
   name: string;
   payload: CharacterPayload;
@@ -561,12 +650,44 @@ export function createBlankCharacter(): CharacterPayload {
     vows: [],
     sharing: { enabled: false, token: "" },
     inventory: [
-      { id: "initial-weapon", name: "Arma comum ou foco", quantity: 1, spaces: 1, notes: "Concedido pela classe" },
-      { id: "initial-clothing", name: "Roupa reforçada", quantity: 1, spaces: 1, notes: "CA +1 enquanto vestida", category: "armor", equipped: true, armorClass: 1 },
-      { id: "initial-backpack", name: "Mochila", quantity: 1, spaces: 1, notes: "" },
-      { id: "initial-canteen", name: "Cantil", quantity: 1, spaces: 0.25, notes: "" },
-      { id: "initial-rations", name: "Ração diária", quantity: 3, spaces: 0.25, notes: "" },
+      {
+        id: "initial-weapon",
+        name: "Arma comum ou foco",
+        quantity: 1,
+        spaces: 1,
+        notes: "Concedido pela classe",
+      },
+      {
+        id: "initial-clothing",
+        name: "Roupa reforçada",
+        quantity: 1,
+        spaces: 1,
+        notes: "CA +1 enquanto vestida",
+        category: "armor",
+        equipped: true,
+        armorClass: 1,
+      },
+      {
+        id: "initial-backpack",
+        name: "Mochila",
+        quantity: 1,
+        spaces: 1,
+        notes: "",
+      },
+      {
+        id: "initial-canteen",
+        name: "Cantil",
+        quantity: 1,
+        spaces: 0.25,
+        notes: "",
+      },
+      {
+        id: "initial-rations",
+        name: "Ração diária",
+        quantity: 3,
+        spaces: 0.25,
+        notes: "",
+      },
     ],
   };
 }
-

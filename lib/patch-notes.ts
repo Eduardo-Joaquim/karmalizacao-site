@@ -8,61 +8,250 @@ export type PatchNote = {
 
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
-  {id:"patch-2-0-4-2026-11-11-consolidacao",version:"2.0.4",label:"Patch 2.0.4 · 11/11/2026",title:"Consolidação das regras de combate",highlights:[
-    "Perícias treinadas preservam o bônus de treinamento com atributo zero. Perícias sociais usam Presença. Iniciativa usa a reserva e o valor final de Agilidade.",
-    "Acerto Parcial usa metade do dano. Condições menores exigem Acerto Total e condições severas têm duração ou potência reduzida no parcial.",
-    "Invocações registram taxa de exploração por cena e Fraturas ao cair a zero de Vida. O Escudo Cinético do Inventor escala com a Etapa.",
-    "A ficha destaca CA Parcial e Total, Iniciativa, limite de Carga Ágil e o teste de Fortitude para rejeição alquímica."
-  ]},
-  {id:"patch-2-0-4-2026-11-10-armas-runicas-r2",version:"2.0.4",label:"Patch 2.0.4 · 10/11/2026",title:"Encaixes rúnicos por arma",highlights:[
-    "Seis armas comuns aceitam uma Runa de Arma por peça, usando uma vaga pessoal. O Capítulo de Karma lista os modelos compatíveis.",
-    "Cajado Rúnico e Lâmina Rúnica têm duas vagas próprias. Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo e Cetro de Comando têm uma cada. As vagas próprias retêm Karma sem ocupar o limite pessoal.",
-    "O inventário mostra as vagas de cada arma e indica quais estão sem encaixe. O registro de combate exige uma arma compatível para novas Runas de Arma."
-  ]},
-  {id:"patch-2-0-4-2026-11-09-inscricoes-e-balanco",version:"2.0.4",label:"Patch 2.0.4 · 09/11/2026",title:"Caminhos, runas e as Nove Asas · Catálogo completo",highlights:["O Caminho pode despertar na Etapa III. Dez Axiomas e três vertentes definem os efeitos da descoberta.","Escriba Kármico entra na criação de ficha com três habilidades e Caligrafia de Combate.","O capítulo de Karma reúne 25 Runas com efeitos armados, Estouro e Karma Retido. A ficha tática registra inscrições e liberações.","Oito armas de magos ganharam atributos, propriedades e espaços nativos de Runas.","O Portal das Nove Asas reúne as 243 outorgas abertas aos jogadores, com a chegada dos panteões Taoísta, Tupi-Guarani e Iorubá. Busque em todo o catálogo ou escolha uma divindade para ver seus três fragmentos.","As Bênçãos hereditárias e únicas do Bestiário ficam reservadas a seus portadores. O Criador de Fichas bloqueia essas outorgas, inclusive em registros autorais. Quatorze Bênçãos do catálogo aberto foram substituídas por poderes próprios, mantendo o total de 243 opções.","A seleção de Perícias organiza o nível, a fórmula e os controles de pontos em linhas próprias. Os cartões de bônus automáticos exibem os rótulos acima dos seletores, com colunas que se ajustam ao espaço disponível.","A etapa Poderes ganhou texto maior e um índice no topo. Bênçãos separam fenômeno, extensões e Safra na Morte. A criação de técnicas agrupa execução, cálculo e resolução.","O registro de técnicas usa os Graus I a V. A calculadora aplica a base do grau selecionado.","A reserva de Perícias usa o atributo final e mostra os bônus de treinamento, Analítico e Domínio separadamente.","Igualar a CA concede acerto total. A barra registra Ímpeto, metade da Vida, manutenção de Invocações e duração de efeitos.","A ficha consolida efeitos de técnicas, Domínios, inventário retrátil e dispositivos de Inventor. Links compartilhados editam recursos e uso de itens com criação protegida.","O Bestiário envia criaturas e peças de Geppeto ao tracker. Tabelas e controles se adaptam a telas estreitas.","O Capítulo 9 explica como inscrever runas com Canalização de Karma, mesmo fora da classe Escriba. Itens compatíveis aceitam inscrições pela ficha, e os cartões do inventário se ajustam à largura da página.","Quatorze runas tiveram dano, proteção ou penetração reduzidos. A Jaula Geométrica limita o dano de movimento por rodada."]},
-  {id:"patch-2-0-3-2026-11-05-royal-arsenals",version:"2.0.3",label:"Patch 2.0.3 · 05/11/2026",title:"As duas calamidades de Thalassia",highlights:["A Falsa Santa passa à Etapa Kármica e ao ranque Kármico, com 500 Vida e 700 Karma. Ummu-Hubur possui 540 Karma e compartilha o ranque Kármico.","Atargatis passa a 220 Karma. Ummu-Hubur passa a 540 Karma e CA 35; suas artes com Domínios custam 20% menos, e as parcelas cósmicas acima de 50 de dano máximo perdem um passo de dado. Os danos-base das 98 técnicas de Thalassia foram auditados contra as matrizes, preservando assinaturas e exceções expressas.","Atargatis Kalypso recebeu onze técnicas reescritas, com descrições, custos, limiares e consequências próprias; sua Vida passa a 280.","Ummu-Hubur passa a 1200 Vida, com 540 Karma e CA 35. Seus desastres e cinco artes de calamidade ganharam resolução completa, com dados de d15 a d50.","Thalassia adota azul profundo e ciano sombrio. A Deusa Exterior possui moldura fraturada, estilhaços estelares e tipografia prateada.","Sangramento Profundo, reflexão vetorial e corrosão de Karma máximo têm controles e regras de resolução explícitos.","Nammu Salácia foi ajustada ao patamar de Etapa VI: 150 Vida, 96 Karma, CA 26 e duas Reações. Seus controles, cura, Escudos e Domínio foram reduzidos; a coroa não concede uma escala de combate superior."]},
-  {id:"patch-2-0-2-2026-11-05-thalassia",version:"2.0.2",label:"Patch 2.0.2 · 05/11/2026",title:"Thalassia e as soberanias do mundo",highlights:["Thalassia recebeu os três estratos de poder, quinze histórias e fichas completas, com 98 técnicas e assinaturas.","Atargatis, Nammu, Ummu-Hubur e as três princesas abissais possuem jurisdições e poderes distintos. A sucessão tritã foi ligada aos confrontos de Al-Aqwa e Valac.","A política dos nove povos e dos quatro continentes foi unificada, com Nidavellir como república de Aéria e a Torre com jurisdição própria.","Rolagens de dano aceitam d30, d50 e outras quantidades de faces; as assinaturas cósmicas têm botões próprios."]},
-  {id:"patch-2-0-1-2026-11-05-editorial-r3",version:"2.0.1",label:"Patch 2.0.1 · 05/11/2026",title:"Regras afinadas, leitura renovada",highlights:[
-    "Etapas raciais e habilidades de classe ganharam cartões, tópicos e destaques para custos, ações e resultados. Tabelas e exemplos têm nova apresentação editorial.",
-    "Catalisadores, referências entre classes e exemplos de dano foram alinhados às cinco matrizes. Escudo pesado reduz 1 m e impõe Desvantagem em Evasão e Acrobacia.",
-    "Leitura de Brecha do Humano não concede mais treinamento adicional em Perícia; seus efeitos ofensivos permanecem.",
-    "Balanceamento racial: somente o Demi-humano mantém metros extras de deslocamento. Tritão perde o contra-ataque de dano e a resistência Marcial da aura; sua defesa reduz dano apenas pela Constituição e suas interações usam Água / Subdobras.",
-    "Abissal posiciona ou move a Âncora com Ação de Movimento, paga +1 Karma por técnica através dela e 3 Karma por Passo de Fresta. Dobra de Singularidade reduz dano apenas por Espírito e armazena 1d4 de Sombra.",
-    "Regeneração Celular Voraz do Ghoul recupera apenas Constituição de Vida, sem somar a Etapa.",
-    "O Humano recebe +6 Vida e +2 Karma na criação. Ímpeto acrescenta um d20 e +2 ao teste; Leitura de Brecha também amplia o dano.",
-    "A mordida direta é a fonte de cura racial do Vampiro. Vitae alimenta seus golpes, e o Demônio recupera sua ligação com a Corrupção e os custos de seu revide.",
-    "As nove linhagens recuperam seus ganhos de criação e têm novas heranças nas Etapas II, IV e VI.",
-    "Cada técnica registra a natureza do golpe. Contra subdobras, a defesa elemental de origem protege pela metade. Técnicas corruptas passam a cobrar um pedágio próprio.",
-    "A ficha mostra as rolagens prontas, e o construtor de técnicas separa linhagem, doutrina e custo.",
-    "Monstros têm registros de caça próprios. O livro ganhou ornamentos ao longo dos capítulos e as cortes tiveram seus dossiês revisados.",
-    "Divisores, atributos e perícias ganharam espaçamento mais limpo. As técnicas dos monstros têm rolador próprio, e os dossiês distinguem dano, defesa e suporte.",
-    "Os dados de dano e os resultados parciais foram revisados. Selos primordiais e descrições de dádivas agora identificam melhor sua origem."
-  ]},
-  {id:"patch-2-0-1-2026-11-04-r2",version:"2.0.1",label:"Patch 2.0.1 · 04/11/2026",title:"Escolhas da linhagem humana",highlights:[
-    "A partir da Etapa II, personagens humanos podem registrar a perícia de Improviso sob Pressão na ficha. O bônus respeita o teto de treinamento da Etapa.",
-    "Na Etapa IV, a técnica escolhida para Cadência Tática custa 1 Karma a menos no Modo Player, com mínimo de 1 para técnicas pagas.",
-    "A introdução das classes agora indica os oito pontos-base de Perícia Comum da criação.",
-    "A barra de combate começa recolhida para novos visitantes e fica atrás das janelas do site."
-  ]},
-  {id:"patch-2-0-2026-11-01",version:"2.0",label:"Patch 2.0 · 01/11/2026",title:"Heranças, matrizes e combate",highlights:[
-   "As linhagens recebem Traço Base na criação e evoluções nas Etapas II, IV e VI. Ghoul, Humano, Elfo, Anão, Demi-humano, Demônio e Vampiro têm novas capacidades; Tritão e Abissal mantêm sua identidade com os três marcos.",
-   "Técnicas agora usam cinco matrizes: Kármica, Elemental, Divina, Marcial e Corrupta. Cada uma possui sua progressão de dano; Físico, Mental e Kármico são as três categorias universais.",
-   "Bênçãos mostram outorgantes, motivações e matrizes; princesas e Caroline recebem liturgias próprias de Comunhão Divina.",
-   "O Modo Player possui barra retrátil, Atributo e Bônus Extra por perícia e controles de Vida, chamada e manutenção das invocações. Som e vibração foram retirados.",
-   "Aéria ganha identidade azul-celeste, prata e bronze. Os monstros passam a aparecer nos arquivos dos seus continentes, com fichas de leitura ampliadas.",
-   "A Forja informa os campos que faltam e confirma a entrada da criatura no combate."
-  ]},
- {id:"patch-1.16-2026-10-31",version:"1.16",title:"Classes e caminhos de magia",label:"Patch 1.16 · 31/10/2026",highlights:["As classes foram revisadas com novos efeitos, custos, limites e ampliações. A progressão separa aumentos gerais dos extras de cada classe.","Conjurador é a nova classe de mago: feitiços de ofício, preparação de tramas, divisão de descargas e conjurações em sequência.","O Inventor cria dispositivos autorais, com progressão de projetos por Etapa. A torre mecânica é um exemplo de invenção.","O Alquimista passa a sintetizar as receitas do catálogo com preparo mais rápido. Materiais, Saturação e limites de consumo permanecem.","Duelista ganhou intenções de combate; Pugilista pode interromper ataques; Ranger prepara disparos por gatilho e Reação.","Samaritano, Curandeiro e Bardo receberam ajustes de apoio, tratamento e coordenação. Invocador permanece com seu repertório anterior.","Formas Soberanas ganharam expressões próprias de cada elemento, incluindo remodelação de terreno para Terra.","Karma ganhou explicações de execução e exemplos de Barreira Kármica: uma Reação aumenta a CA contra uma única incidência.","Dissipação e Contrafluxo foram retirados das manobras universais de Karma. Canalização não permite anular técnicas ou dispensar invocações de outros usuários.","A Transformação Corrompida distingue rede e mutações, com custos, manutenção, Controle e Ruptura explicados. O modo de combate registra os 6 Karma da ativação corporal."]},
- {id:"patch-1.15-2026-10-29",version:"1.15",title:"Outorgas divinas e Domínios",label:"Patch 1.15 · 29/10/2026",highlights:["As Bênçãos do Bestiário ganharam altares próprios com divindade, panteão, origem, descrição e possível propósito da outorga.","Heranças, dádivas individuais e outorgas primordiais aparecem separadas dos Domínios; Eirik conserva duas Bênçãos independentes.","A Falsa Santa manifesta Força, Resistência, Técnica e Superação. Cada Domínio custa 3 Karma, dura quatro rodadas e pode ser ativado uma vez por cena.","Os cards de Domínio destacam ativação, Essência, manifestação e limites para consulta durante a sessão."]},
- {id:"patch-1.14-2026-10-28-r3",version:"1.14",title:"Ameaças e ferramentas de combate",label:"Patch 1.14 · 28/10/2026",highlights:["Bênçãos ganharam altares, deuses outorgantes dos nove Panteões e registro de origem. Manifestação de Bênção e Comunhão Divina têm testes separados; Favor Divino pode ser ajustado no combate.","A consulta de fichas na Página do Mestre passa a se chamar Consulta de Fichas.","As quatro regiões agora têm a mesma curva de ameaças: duas da Etapa I e uma de cada Etapa II, III e IV. Atributos, ataques e traços foram diferenciados por criatura.","O dano básico acompanha a Etapa: 1d6, 1d8, 1d10 e 2d6. Técnicas de deslocamento concedem reposicionamento adicional; Vala mantém seu papel de terreno.","Montante, Azagaia, Funda e Baioneta aparecem no Arsenal como armas. Ataques e técnicas mostram os dados-base rolados e dobrados em um 20 natural.","O Mestre pode rolar iniciativa para todos ou apenas NPCs, fazer testes rápidos de defesa e aplicar dano, cura ou condição a vários alvos marcados.","Encontros podem ser exportados, importados e limpos. Os arquivos não incluem os tokens dos jogadores, que precisam ser reconectados por seus links.","A Forja permite guardar até 30 criaturas neste navegador e reutilizá-las em novos encontros.","Descanso Longo Seguro restaura Vida e Karma, limpa Saturação, encerra e desbloqueia a Forma. A Carga de Corrupção e condições continuam seguindo suas regras próprias.","A impressão da ficha tática e das ameaças ganhou fundo claro e oculta os controles de edição."]},
- {id:"patch-1.13-2026-10-28-busca-r5",version:"1.13",title:"Ferramentas de mesa e combate conectado",label:"Patch 1.13 · 28/10/2026",highlights:["A busca de fichas do Bestiário fica em destaque acima dos resultados: pesquise por nome, corte ou Etapa e use Adicionar ao combate. O campo permanece acessível enquanto a lista é rolada.","A lista do Bestiário na Página do Mestre ganhou mais espaço entre os resultados, descrições sem sobreposição e etiquetas separadas para Vida, Karma e CA, também em telas pequenas.","Rolagens ganharam dados animados, destaque do resultado selecionado e selos de 20 e 1 naturais. As animações respeitam a preferência de movimento reduzido.","Vida, cura, escudo e Karma exibem números flutuantes. Som sintetizado e vibração são opcionais e começam desligados.","Fases de chefes geram alertas cinemáticos para o Mestre e jogadores vinculados. Geppeto também acompanha as Âncoras desligadas; fases genéricas podem ser configuradas no encontro.","Maélia anuncia a Mãe do Vazio aos 60 PV, preservando 13 Karma, 6 PC e Controle CD 17 para assumir a forma. Mudanças de fase não restauram recursos.","A Página do Mestre reúne encontros com jogadores vinculados, fichas oficiais e criaturas criadas na Forja de Ameaças.","Modo Combate na barra inferior da ficha: recursos interativos, perícias, habilidades, Domínios, arsenal e registro de ações.","O link compartilhado agora permite ajustar recursos e condições de combate. Envie-o somente a quem pode conduzir a sessão; renovar ou desativar o link encerra esse acesso. A criação da ficha continua restrita ao dono.","Dano, cura, Karma e ações são sincronizados entre Mestre e jogador. Custos variáveis e efeitos condicionais pedem confirmação; os testes de risco continuam na mesa.","O Mestre pode resolver ataques contra CA, aplicar o dano ao alvo e acompanhar os limiares de fase dos chefes.","Textos pequenos, rótulos e notas das fichas foram ampliados para facilitar a leitura.","A criação de personagem pode ser experimentada sem login. O rascunho fica no navegador, pode ser exportado e recuperado depois de entrar na conta; nuvem e compartilhamento exigem login.","A ficha ganhou um painel de combate com Vida, Karma, escudo, Cargas, rolagens, pagamento de custos simples e contagem de rodadas dos Domínios. Ações e testes de risco continuam sendo resolvidos na mesa.","Os dossiês abrem com resumo e permitem alternar entre técnicas, Domínios e história. A Mesa do Mestre mantém duas fichas abertas lado a lado.","O Teatro de Geppeto ganhou uma tabela de consulta das sete marionetes, preservando os limites de peças ativas e comandos.","Vinte monstros e ameaças de Etapas I a IV foram adicionados: Gaéria, Ignária, Aéria e os andares iniciais da Torre.","O porte Médio agora vai de 130 a menos de 210 cm. Grande começa em 210 cm e reduz somente 1 m de Movimento; os portes menores não recebem velocidade gratuita. Confira o porte de fichas com altura registrada antes da próxima sessão.","Renomear itens mantém suas propriedades mecânicas. Novos retratos são reduzidos a miniaturas mais leves; imagens antigas continuam disponíveis."]},
- {id:"patch-1.12-2026-10-27-dominios-r4",version:"1.12",title:"Regentes e Domínios Manifestados",label:"Patch 1.12 · 27/10/2026",highlights:["Os Domínios Manifestados agora têm cards individuais nas fichas de seus portadores, com ativação, custo, duração, efeitos e Essências separados para consulta.","A ficha de Eirik apresenta separadamente suas duas Bênçãos: Magnetismo e Criação de Matéria Inorgânica.","O repertório de Eirik foi reconstruído: circuitos magnéticos, fabricação de peças, condensação defensiva, ignição programada e o robô Járn, agora montado com matéria criada por ele.","Eirik tem Vida 100 e CA 23: é o mais frágil dos cinco regentes, com ameaça A e Etapa VI. Sua força depende de engenharia e posicionamento.","Os cinco regentes de Nidavellir receberam descrições de execução separadas dos efeitos de jogo e assinaturas revisadas.","Saira agora pode registrar técnicas marciais e de Karma puro dos oponentes. Palimpsesto consome uma das duas memórias exigidas, preservando a outra para uso posterior.","Meio-Dia passa a ser um golpe imediato de compromisso total, com projeção, distinguindo-se da interdição de passagem de Haldor."]},
- {id:"patch-1.11-2026-10-26-nidavellir-r2",version:"1.11",title:"Nidavellir e os quatro reis",label:"Patch 1.11 · 26/10/2026",highlights:["Nidavellir chega ao Bestiário de Aéria: uma república industrial com presidente eleito e quatro governantes municipais conhecidos como reis.","Oren, Haldor, Saira e Idris possuem fichas completas, seis técnicas e uma assinatura cada, com estilos marciais próprios.","Os quatro reis manifestam Força, Velocidade, Resistência e Técnica. As fichas explicam custos, duração, Refinamentos e efeitos nas rolagens.","Saira registra até três técnicas marciais observadas; cada execução paga seu custo e preserva os limites da própria combatente.","Eirik Malm combina Vapor, Combustão, invenções e duas Bênçãos. Járn monta um robô pilotado de sete metros, com ações e recursos compartilhados.","Todos os novos cards permitem consultar a composição dos custos de Karma.","A ficha do Prefeito-Geral Eirik Malm aparece antes dos quatro reis, também no índice de navegação."]},
   {
-    "id": "patch-1.10-2026-10-25-qol-r9",
-    "title": "Leitura e fichas renovadas",
-    "label": "Patch 1.10 · 25/10/2026",
-    "highlights": [
+    id: "patch-2-0-5-2026-11-11",
+    version: "2.0.5",
+    label: "Patch 2.0.5 · 11/11/2026",
+    title: "Fichas protegidas, mesa completa e leitura mais leve",
+    highlights: [
+      "A ficha avisa quando outra edição pode substituir suas alterações. Cópias locais e exportação ajudam a recuperar o trabalho ainda não salvo.",
+      "Os quinze personagens de Thalassia agora podem entrar no combate do Mestre e na consulta de duas fichas.",
+      "A navegação das Nove Asas, o Atlas do Mundo e os acessos ao livro foram corrigidos. A leitura contínua reúne o Bestiário completo.",
+      "As rolagens de NPCs preservam a escolha do menor dado. A mesa valida o dano antes de cobrar Karma e permite retomar uma rodada interrompida.",
+      "A busca distingue ausência de resultados de falhas de conexão e ganhou navegação por teclado. As ferramentas do Mestre carregam conforme o uso.",
+    ],
+  },
+  {
+    id: "patch-2-0-4-2026-11-11-consolidacao",
+    version: "2.0.4",
+    label: "Patch 2.0.4 · 11/11/2026",
+    title: "Consolidação das regras de combate",
+    highlights: [
+      "Perícias treinadas preservam o bônus de treinamento com atributo zero. Perícias sociais usam Presença. Iniciativa usa a reserva e o valor final de Agilidade.",
+      "Acerto Parcial usa metade do dano. Condições menores exigem Acerto Total e condições severas têm duração ou potência reduzida no parcial.",
+      "Invocações registram taxa de exploração por cena e Fraturas ao cair a zero de Vida. O Escudo Cinético do Inventor escala com a Etapa.",
+      "A ficha destaca CA Parcial e Total, Iniciativa, limite de Carga Ágil e o teste de Fortitude para rejeição alquímica.",
+    ],
+  },
+  {
+    id: "patch-2-0-4-2026-11-10-armas-runicas-r2",
+    version: "2.0.4",
+    label: "Patch 2.0.4 · 10/11/2026",
+    title: "Encaixes rúnicos por arma",
+    highlights: [
+      "Seis armas comuns aceitam uma Runa de Arma por peça, usando uma vaga pessoal. O Capítulo de Karma lista os modelos compatíveis.",
+      "Cajado Rúnico e Lâmina Rúnica têm duas vagas próprias. Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo e Cetro de Comando têm uma cada. As vagas próprias retêm Karma sem ocupar o limite pessoal.",
+      "O inventário mostra as vagas de cada arma e indica quais estão sem encaixe. O registro de combate exige uma arma compatível para novas Runas de Arma.",
+    ],
+  },
+  {
+    id: "patch-2-0-4-2026-11-09-inscricoes-e-balanco",
+    version: "2.0.4",
+    label: "Patch 2.0.4 · 09/11/2026",
+    title: "Caminhos, runas e as Nove Asas · Catálogo completo",
+    highlights: [
+      "O Caminho pode despertar na Etapa III. Dez Axiomas e três vertentes definem os efeitos da descoberta.",
+      "Escriba Kármico entra na criação de ficha com três habilidades e Caligrafia de Combate.",
+      "O capítulo de Karma reúne 25 Runas com efeitos armados, Estouro e Karma Retido. A ficha tática registra inscrições e liberações.",
+      "Oito armas de magos ganharam atributos, propriedades e espaços nativos de Runas.",
+      "O Portal das Nove Asas reúne as 243 outorgas abertas aos jogadores, com a chegada dos panteões Taoísta, Tupi-Guarani e Iorubá. Busque em todo o catálogo ou escolha uma divindade para ver seus três fragmentos.",
+      "As Bênçãos hereditárias e únicas do Bestiário ficam reservadas a seus portadores. O Criador de Fichas bloqueia essas outorgas, inclusive em registros autorais. Quatorze Bênçãos do catálogo aberto foram substituídas por poderes próprios, mantendo o total de 243 opções.",
+      "A seleção de Perícias organiza o nível, a fórmula e os controles de pontos em linhas próprias. Os cartões de bônus automáticos exibem os rótulos acima dos seletores, com colunas que se ajustam ao espaço disponível.",
+      "A etapa Poderes ganhou texto maior e um índice no topo. Bênçãos separam fenômeno, extensões e Safra na Morte. A criação de técnicas agrupa execução, cálculo e resolução.",
+      "O registro de técnicas usa os Graus I a V. A calculadora aplica a base do grau selecionado.",
+      "A reserva de Perícias usa o atributo final e mostra os bônus de treinamento, Analítico e Domínio separadamente.",
+      "Igualar a CA concede acerto total. A barra registra Ímpeto, metade da Vida, manutenção de Invocações e duração de efeitos.",
+      "A ficha consolida efeitos de técnicas, Domínios, inventário retrátil e dispositivos de Inventor. Links compartilhados editam recursos e uso de itens com criação protegida.",
+      "O Bestiário envia criaturas e peças de Geppeto ao tracker. Tabelas e controles se adaptam a telas estreitas.",
+      "O Capítulo 9 explica como inscrever runas com Canalização de Karma, mesmo fora da classe Escriba. Itens compatíveis aceitam inscrições pela ficha, e os cartões do inventário se ajustam à largura da página.",
+      "Quatorze runas tiveram dano, proteção ou penetração reduzidos. A Jaula Geométrica limita o dano de movimento por rodada.",
+    ],
+  },
+  {
+    id: "patch-2-0-3-2026-11-05-royal-arsenals",
+    version: "2.0.3",
+    label: "Patch 2.0.3 · 05/11/2026",
+    title: "As duas calamidades de Thalassia",
+    highlights: [
+      "A Falsa Santa passa à Etapa Kármica e ao ranque Kármico, com 500 Vida e 700 Karma. Ummu-Hubur possui 540 Karma e compartilha o ranque Kármico.",
+      "Atargatis passa a 220 Karma. Ummu-Hubur passa a 540 Karma e CA 35; suas artes com Domínios custam 20% menos, e as parcelas cósmicas acima de 50 de dano máximo perdem um passo de dado. Os danos-base das 98 técnicas de Thalassia foram auditados contra as matrizes, preservando assinaturas e exceções expressas.",
+      "Atargatis Kalypso recebeu onze técnicas reescritas, com descrições, custos, limiares e consequências próprias; sua Vida passa a 280.",
+      "Ummu-Hubur passa a 1200 Vida, com 540 Karma e CA 35. Seus desastres e cinco artes de calamidade ganharam resolução completa, com dados de d15 a d50.",
+      "Thalassia adota azul profundo e ciano sombrio. A Deusa Exterior possui moldura fraturada, estilhaços estelares e tipografia prateada.",
+      "Sangramento Profundo, reflexão vetorial e corrosão de Karma máximo têm controles e regras de resolução explícitos.",
+      "Nammu Salácia foi ajustada ao patamar de Etapa VI: 150 Vida, 96 Karma, CA 26 e duas Reações. Seus controles, cura, Escudos e Domínio foram reduzidos; a coroa não concede uma escala de combate superior.",
+    ],
+  },
+  {
+    id: "patch-2-0-2-2026-11-05-thalassia",
+    version: "2.0.2",
+    label: "Patch 2.0.2 · 05/11/2026",
+    title: "Thalassia e as soberanias do mundo",
+    highlights: [
+      "Thalassia recebeu os três estratos de poder, quinze histórias e fichas completas, com 98 técnicas e assinaturas.",
+      "Atargatis, Nammu, Ummu-Hubur e as três princesas abissais possuem jurisdições e poderes distintos. A sucessão tritã foi ligada aos confrontos de Al-Aqwa e Valac.",
+      "A política dos nove povos e dos quatro continentes foi unificada, com Nidavellir como república de Aéria e a Torre com jurisdição própria.",
+      "Rolagens de dano aceitam d30, d50 e outras quantidades de faces; as assinaturas cósmicas têm botões próprios.",
+    ],
+  },
+  {
+    id: "patch-2-0-1-2026-11-05-editorial-r3",
+    version: "2.0.1",
+    label: "Patch 2.0.1 · 05/11/2026",
+    title: "Regras afinadas, leitura renovada",
+    highlights: [
+      "Etapas raciais e habilidades de classe ganharam cartões, tópicos e destaques para custos, ações e resultados. Tabelas e exemplos têm nova apresentação editorial.",
+      "Catalisadores, referências entre classes e exemplos de dano foram alinhados às cinco matrizes. Escudo pesado reduz 1 m e impõe Desvantagem em Evasão e Acrobacia.",
+      "Leitura de Brecha do Humano não concede mais treinamento adicional em Perícia; seus efeitos ofensivos permanecem.",
+      "Balanceamento racial: somente o Demi-humano mantém metros extras de deslocamento. Tritão perde o contra-ataque de dano e a resistência Marcial da aura; sua defesa reduz dano apenas pela Constituição e suas interações usam Água / Subdobras.",
+      "Abissal posiciona ou move a Âncora com Ação de Movimento, paga +1 Karma por técnica através dela e 3 Karma por Passo de Fresta. Dobra de Singularidade reduz dano apenas por Espírito e armazena 1d4 de Sombra.",
+      "Regeneração Celular Voraz do Ghoul recupera apenas Constituição de Vida, sem somar a Etapa.",
+      "O Humano recebe +6 Vida e +2 Karma na criação. Ímpeto acrescenta um d20 e +2 ao teste; Leitura de Brecha também amplia o dano.",
+      "A mordida direta é a fonte de cura racial do Vampiro. Vitae alimenta seus golpes, e o Demônio recupera sua ligação com a Corrupção e os custos de seu revide.",
+      "As nove linhagens recuperam seus ganhos de criação e têm novas heranças nas Etapas II, IV e VI.",
+      "Cada técnica registra a natureza do golpe. Contra subdobras, a defesa elemental de origem protege pela metade. Técnicas corruptas passam a cobrar um pedágio próprio.",
+      "A ficha mostra as rolagens prontas, e o construtor de técnicas separa linhagem, doutrina e custo.",
+      "Monstros têm registros de caça próprios. O livro ganhou ornamentos ao longo dos capítulos e as cortes tiveram seus dossiês revisados.",
+      "Divisores, atributos e perícias ganharam espaçamento mais limpo. As técnicas dos monstros têm rolador próprio, e os dossiês distinguem dano, defesa e suporte.",
+      "Os dados de dano e os resultados parciais foram revisados. Selos primordiais e descrições de dádivas agora identificam melhor sua origem.",
+    ],
+  },
+  {
+    id: "patch-2-0-1-2026-11-04-r2",
+    version: "2.0.1",
+    label: "Patch 2.0.1 · 04/11/2026",
+    title: "Escolhas da linhagem humana",
+    highlights: [
+      "A partir da Etapa II, personagens humanos podem registrar a perícia de Improviso sob Pressão na ficha. O bônus respeita o teto de treinamento da Etapa.",
+      "Na Etapa IV, a técnica escolhida para Cadência Tática custa 1 Karma a menos no Modo Player, com mínimo de 1 para técnicas pagas.",
+      "A introdução das classes agora indica os oito pontos-base de Perícia Comum da criação.",
+      "A barra de combate começa recolhida para novos visitantes e fica atrás das janelas do site.",
+    ],
+  },
+  {
+    id: "patch-2-0-2026-11-01",
+    version: "2.0",
+    label: "Patch 2.0 · 01/11/2026",
+    title: "Heranças, matrizes e combate",
+    highlights: [
+      "As linhagens recebem Traço Base na criação e evoluções nas Etapas II, IV e VI. Ghoul, Humano, Elfo, Anão, Demi-humano, Demônio e Vampiro têm novas capacidades; Tritão e Abissal mantêm sua identidade com os três marcos.",
+      "Técnicas agora usam cinco matrizes: Kármica, Elemental, Divina, Marcial e Corrupta. Cada uma possui sua progressão de dano; Físico, Mental e Kármico são as três categorias universais.",
+      "Bênçãos mostram outorgantes, motivações e matrizes; princesas e Caroline recebem liturgias próprias de Comunhão Divina.",
+      "O Modo Player possui barra retrátil, Atributo e Bônus Extra por perícia e controles de Vida, chamada e manutenção das invocações. Som e vibração foram retirados.",
+      "Aéria ganha identidade azul-celeste, prata e bronze. Os monstros passam a aparecer nos arquivos dos seus continentes, com fichas de leitura ampliadas.",
+      "A Forja informa os campos que faltam e confirma a entrada da criatura no combate.",
+    ],
+  },
+  {
+    id: "patch-1.16-2026-10-31",
+    version: "1.16",
+    title: "Classes e caminhos de magia",
+    label: "Patch 1.16 · 31/10/2026",
+    highlights: [
+      "As classes foram revisadas com novos efeitos, custos, limites e ampliações. A progressão separa aumentos gerais dos extras de cada classe.",
+      "Conjurador é a nova classe de mago: feitiços de ofício, preparação de tramas, divisão de descargas e conjurações em sequência.",
+      "O Inventor cria dispositivos autorais, com progressão de projetos por Etapa. A torre mecânica é um exemplo de invenção.",
+      "O Alquimista passa a sintetizar as receitas do catálogo com preparo mais rápido. Materiais, Saturação e limites de consumo permanecem.",
+      "Duelista ganhou intenções de combate; Pugilista pode interromper ataques; Ranger prepara disparos por gatilho e Reação.",
+      "Samaritano, Curandeiro e Bardo receberam ajustes de apoio, tratamento e coordenação. Invocador permanece com seu repertório anterior.",
+      "Formas Soberanas ganharam expressões próprias de cada elemento, incluindo remodelação de terreno para Terra.",
+      "Karma ganhou explicações de execução e exemplos de Barreira Kármica: uma Reação aumenta a CA contra uma única incidência.",
+      "Dissipação e Contrafluxo foram retirados das manobras universais de Karma. Canalização não permite anular técnicas ou dispensar invocações de outros usuários.",
+      "A Transformação Corrompida distingue rede e mutações, com custos, manutenção, Controle e Ruptura explicados. O modo de combate registra os 6 Karma da ativação corporal.",
+    ],
+  },
+  {
+    id: "patch-1.15-2026-10-29",
+    version: "1.15",
+    title: "Outorgas divinas e Domínios",
+    label: "Patch 1.15 · 29/10/2026",
+    highlights: [
+      "As Bênçãos do Bestiário ganharam altares próprios com divindade, panteão, origem, descrição e possível propósito da outorga.",
+      "Heranças, dádivas individuais e outorgas primordiais aparecem separadas dos Domínios; Eirik conserva duas Bênçãos independentes.",
+      "A Falsa Santa manifesta Força, Resistência, Técnica e Superação. Cada Domínio custa 3 Karma, dura quatro rodadas e pode ser ativado uma vez por cena.",
+      "Os cards de Domínio destacam ativação, Essência, manifestação e limites para consulta durante a sessão.",
+    ],
+  },
+  {
+    id: "patch-1.14-2026-10-28-r3",
+    version: "1.14",
+    title: "Ameaças e ferramentas de combate",
+    label: "Patch 1.14 · 28/10/2026",
+    highlights: [
+      "Bênçãos ganharam altares, deuses outorgantes dos nove Panteões e registro de origem. Manifestação de Bênção e Comunhão Divina têm testes separados; Favor Divino pode ser ajustado no combate.",
+      "A consulta de fichas na Página do Mestre passa a se chamar Consulta de Fichas.",
+      "As quatro regiões agora têm a mesma curva de ameaças: duas da Etapa I e uma de cada Etapa II, III e IV. Atributos, ataques e traços foram diferenciados por criatura.",
+      "O dano básico acompanha a Etapa: 1d6, 1d8, 1d10 e 2d6. Técnicas de deslocamento concedem reposicionamento adicional; Vala mantém seu papel de terreno.",
+      "Montante, Azagaia, Funda e Baioneta aparecem no Arsenal como armas. Ataques e técnicas mostram os dados-base rolados e dobrados em um 20 natural.",
+      "O Mestre pode rolar iniciativa para todos ou apenas NPCs, fazer testes rápidos de defesa e aplicar dano, cura ou condição a vários alvos marcados.",
+      "Encontros podem ser exportados, importados e limpos. Os arquivos não incluem os tokens dos jogadores, que precisam ser reconectados por seus links.",
+      "A Forja permite guardar até 30 criaturas neste navegador e reutilizá-las em novos encontros.",
+      "Descanso Longo Seguro restaura Vida e Karma, limpa Saturação, encerra e desbloqueia a Forma. A Carga de Corrupção e condições continuam seguindo suas regras próprias.",
+      "A impressão da ficha tática e das ameaças ganhou fundo claro e oculta os controles de edição.",
+    ],
+  },
+  {
+    id: "patch-1.13-2026-10-28-busca-r5",
+    version: "1.13",
+    title: "Ferramentas de mesa e combate conectado",
+    label: "Patch 1.13 · 28/10/2026",
+    highlights: [
+      "A busca de fichas do Bestiário fica em destaque acima dos resultados: pesquise por nome, corte ou Etapa e use Adicionar ao combate. O campo permanece acessível enquanto a lista é rolada.",
+      "A lista do Bestiário na Página do Mestre ganhou mais espaço entre os resultados, descrições sem sobreposição e etiquetas separadas para Vida, Karma e CA, também em telas pequenas.",
+      "Rolagens ganharam dados animados, destaque do resultado selecionado e selos de 20 e 1 naturais. As animações respeitam a preferência de movimento reduzido.",
+      "Vida, cura, escudo e Karma exibem números flutuantes. Som sintetizado e vibração são opcionais e começam desligados.",
+      "Fases de chefes geram alertas cinemáticos para o Mestre e jogadores vinculados. Geppeto também acompanha as Âncoras desligadas; fases genéricas podem ser configuradas no encontro.",
+      "Maélia anuncia a Mãe do Vazio aos 60 PV, preservando 13 Karma, 6 PC e Controle CD 17 para assumir a forma. Mudanças de fase não restauram recursos.",
+      "A Página do Mestre reúne encontros com jogadores vinculados, fichas oficiais e criaturas criadas na Forja de Ameaças.",
+      "Modo Combate na barra inferior da ficha: recursos interativos, perícias, habilidades, Domínios, arsenal e registro de ações.",
+      "O link compartilhado agora permite ajustar recursos e condições de combate. Envie-o somente a quem pode conduzir a sessão; renovar ou desativar o link encerra esse acesso. A criação da ficha continua restrita ao dono.",
+      "Dano, cura, Karma e ações são sincronizados entre Mestre e jogador. Custos variáveis e efeitos condicionais pedem confirmação; os testes de risco continuam na mesa.",
+      "O Mestre pode resolver ataques contra CA, aplicar o dano ao alvo e acompanhar os limiares de fase dos chefes.",
+      "Textos pequenos, rótulos e notas das fichas foram ampliados para facilitar a leitura.",
+      "A criação de personagem pode ser experimentada sem login. O rascunho fica no navegador, pode ser exportado e recuperado depois de entrar na conta; nuvem e compartilhamento exigem login.",
+      "A ficha ganhou um painel de combate com Vida, Karma, escudo, Cargas, rolagens, pagamento de custos simples e contagem de rodadas dos Domínios. Ações e testes de risco continuam sendo resolvidos na mesa.",
+      "Os dossiês abrem com resumo e permitem alternar entre técnicas, Domínios e história. A Mesa do Mestre mantém duas fichas abertas lado a lado.",
+      "O Teatro de Geppeto ganhou uma tabela de consulta das sete marionetes, preservando os limites de peças ativas e comandos.",
+      "Vinte monstros e ameaças de Etapas I a IV foram adicionados: Gaéria, Ignária, Aéria e os andares iniciais da Torre.",
+      "O porte Médio agora vai de 130 a menos de 210 cm. Grande começa em 210 cm e reduz somente 1 m de Movimento; os portes menores não recebem velocidade gratuita. Confira o porte de fichas com altura registrada antes da próxima sessão.",
+      "Renomear itens mantém suas propriedades mecânicas. Novos retratos são reduzidos a miniaturas mais leves; imagens antigas continuam disponíveis.",
+    ],
+  },
+  {
+    id: "patch-1.12-2026-10-27-dominios-r4",
+    version: "1.12",
+    title: "Regentes e Domínios Manifestados",
+    label: "Patch 1.12 · 27/10/2026",
+    highlights: [
+      "Os Domínios Manifestados agora têm cards individuais nas fichas de seus portadores, com ativação, custo, duração, efeitos e Essências separados para consulta.",
+      "A ficha de Eirik apresenta separadamente suas duas Bênçãos: Magnetismo e Criação de Matéria Inorgânica.",
+      "O repertório de Eirik foi reconstruído: circuitos magnéticos, fabricação de peças, condensação defensiva, ignição programada e o robô Járn, agora montado com matéria criada por ele.",
+      "Eirik tem Vida 100 e CA 23: é o mais frágil dos cinco regentes, com ameaça A e Etapa VI. Sua força depende de engenharia e posicionamento.",
+      "Os cinco regentes de Nidavellir receberam descrições de execução separadas dos efeitos de jogo e assinaturas revisadas.",
+      "Saira agora pode registrar técnicas marciais e de Karma puro dos oponentes. Palimpsesto consome uma das duas memórias exigidas, preservando a outra para uso posterior.",
+      "Meio-Dia passa a ser um golpe imediato de compromisso total, com projeção, distinguindo-se da interdição de passagem de Haldor.",
+    ],
+  },
+  {
+    id: "patch-1.11-2026-10-26-nidavellir-r2",
+    version: "1.11",
+    title: "Nidavellir e os quatro reis",
+    label: "Patch 1.11 · 26/10/2026",
+    highlights: [
+      "Nidavellir chega ao Bestiário de Aéria: uma república industrial com presidente eleito e quatro governantes municipais conhecidos como reis.",
+      "Oren, Haldor, Saira e Idris possuem fichas completas, seis técnicas e uma assinatura cada, com estilos marciais próprios.",
+      "Os quatro reis manifestam Força, Velocidade, Resistência e Técnica. As fichas explicam custos, duração, Refinamentos e efeitos nas rolagens.",
+      "Saira registra até três técnicas marciais observadas; cada execução paga seu custo e preserva os limites da própria combatente.",
+      "Eirik Malm combina Vapor, Combustão, invenções e duas Bênçãos. Járn monta um robô pilotado de sete metros, com ações e recursos compartilhados.",
+      "Todos os novos cards permitem consultar a composição dos custos de Karma.",
+      "A ficha do Prefeito-Geral Eirik Malm aparece antes dos quatro reis, também no índice de navegação.",
+    ],
+  },
+  {
+    id: "patch-1.10-2026-10-25-qol-r9",
+    title: "Leitura e fichas renovadas",
+    label: "Patch 1.10 · 25/10/2026",
+    highlights: [
       "O livro ganhou desenhos ornamentais, tabelas mais legíveis e melhor espaçamento entre as seções.",
       "As fichas dos Pecados agora seguem a organização das cortes, com atributos, perícias e habilidades mais fáceis de consultar.",
       "Euphere é a única Pecado da Etapa VI. Agora possui 180 de Vida e 126 de Karma; sua segunda fase começa com 90 de Vida ou menos. Os demais Pecados são da Etapa V.",
@@ -73,15 +262,15 @@ export const PATCH_NOTES: readonly PatchNote[] = [
       "Geppeto passa a ter 80 de Vida, 124 de Karma e CA 23. Sua máscara se rompe com 40 de Vida ou três Âncoras desligadas.",
       "Euphere substitui Coração de Plasma por Nadir: assinatura de Grau IV que combina Armadura Viva, plasma e Karma, custa 15 Karma, requer a armadura ativa e ocupa 2 UM temporariamente, sem consumi-las. Pode conter inimigos na descarga uma vez por cena.",
       "As fichas distinguem Etapa de progressão e ranque de ameaça. Valentino Lunaviel passa a ter sua Etapa V explicitada.",
-      "Corrigidos os botões de composição do custo que faltavam em habilidades dos Pecados, da Falsa Santa e em consumíveis. A explicação pode ser aberta nas fichas de todas as cortes e invocações. Nas fichas dos jogadores, o botão mostra o cálculo registrado da técnica."
+      "Corrigidos os botões de composição do custo que faltavam em habilidades dos Pecados, da Falsa Santa e em consumíveis. A explicação pode ser aberta nas fichas de todas as cortes e invocações. Nas fichas dos jogadores, o botão mostra o cálculo registrado da técnica.",
     ],
-    "version": "1.10"
+    version: "1.10",
   },
   {
-    "id": "patch-1.9-2026-10-24-r9",
-    "title": "Arsenal, inventário e casas nobres",
-    "label": "Patch 1.9 · 24/10/2026",
-    "highlights": [
+    id: "patch-1.9-2026-10-24-r9",
+    title: "Arsenal, inventário e casas nobres",
+    label: "Patch 1.9 · 24/10/2026",
+    highlights: [
       "A criação de personagem passa a conceder 8 pontos comuns de perícia. Bônus de raça, classe e origem são recebidos separadamente.",
       "Equipamentos e tecnologia receberam catálogos ampliados de armas, armaduras, focos, munições, explosivos, veículos e ferramentas, com preços e carga.",
       "O inventário permite adicionar, editar, equipar e remover itens. A carga é somada automaticamente, com avisos de sobrecarga e seus efeitos na defesa e no movimento.",
@@ -90,123 +279,123 @@ export const PATCH_NOTES: readonly PatchNote[] = [
       "Transformação Corrompida adicionada ao Capítulo 14, com mutações à escolha, custos, manutenção e consequências ligadas à Ruptura.",
       "Aéria e novas cortes de Ignária entram no Bestiário, com governantes, herdeiras e casas nobres. As casas aparecem em ordem de título.",
       "A família Lunaviel recebeu fichas revisadas: Caroline luta com duas espadas e o Estilo da Espada da Lua; Alaric Voss é seu mordomo pugilista.",
-      "Histórias e sucessões das rainhas foram revisadas para corrigir contradições."
+      "Histórias e sucessões das rainhas foram revisadas para corrigir contradições.",
     ],
-    "version": "1.9"
+    version: "1.9",
   },
   {
-    "id": "patch-1.8-2026-10-22-r12",
-    "title": "As cortes de Gaéria e Ignária",
-    "label": "Patch 1.8 · 22/10/2026",
-    "highlights": [
+    id: "patch-1.8-2026-10-22-r12",
+    title: "As cortes de Gaéria e Ignária",
+    label: "Patch 1.8 · 22/10/2026",
+    highlights: [
       "Sárkora e a Corte Vampírica Haimaton entram no Bestiário, com Nosferato, Alucard, Sávia Vita e quatro casas nobres.",
       "Nosferato recebeu técnicas de Água, Sangue, Karma e combate com lança. Alucard passou a ter habilidades voltadas a preparação, ocultação e alvos isolados.",
       "Elaranth foi adicionada a Gaéria, com Naerith, Ilyra, Thaerion e Caelen. Os títulos das casas e seus vínculos foram revisados.",
       "As páginas das cortes ganharam índice de personagens e botão para voltar ao Bestiário.",
       "Perícias e habilidades receberam cartões mais claros, com custos e efeitos separados.",
       "A Falsa Santa não pode usar técnicas corruptas para beneficiar a si mesma. Adão — Primeiro Sopro é sua única autocura, uma vez por cena.",
-      "Nosferato e Aveline dispõem de duas Reações por rodada; Naerith e a Falsa Santa, três. Cada resolução aceita apenas uma defesa."
+      "Nosferato e Aveline dispõem de duas Reações por rodada; Naerith e a Falsa Santa, três. Cada resolução aceita apenas uma defesa.",
     ],
-    "version": "1.8"
+    version: "1.8",
   },
   {
-    "id": "patch-1.7-2026-10-21-r1",
-    "title": "A Prorrogadora da Extinção",
-    "label": "Patch 1.7 · 21/10/2026",
-    "highlights": [
+    id: "patch-1.7-2026-10-21-r1",
+    title: "A Prorrogadora da Extinção",
+    label: "Patch 1.7 · 21/10/2026",
+    highlights: [
       "A Falsa Santa entra no Bestiário com história, atributos e ficha de combate completa.",
       "Fios da Providência Usurpada reúne habilidades de reconstrução, proteção e ataque. As sete trombetas do Julgamento têm efeitos próprios.",
-      "Frankenstein e Dia do Julgamento Final compartilham um único ápice por cena: usar uma assinatura impede utilizar a outra naquela cena."
+      "Frankenstein e Dia do Julgamento Final compartilham um único ápice por cena: usar uma assinatura impede utilizar a outra naquela cena.",
     ],
-    "version": "1.7"
+    version: "1.7",
   },
   {
-    "id": "patch-1.6-2026-10-20-r6",
-    "title": "Gaéria, pesquisa e criação de fichas",
-    "label": "Patch 1.6 · 20/10/2026",
-    "highlights": [
+    id: "patch-1.6-2026-10-20-r6",
+    title: "Gaéria, pesquisa e criação de fichas",
+    label: "Patch 1.6 · 20/10/2026",
+    highlights: [
       "Valdária foi adicionada ao Bestiário, com Aveline, Isadora, Brígida, Tomás e as casas Ferromonte, Vesperal e Cedro Novo.",
       "Gaéria ganhou uma página com acesso às cortes, organizações e casas nobres.",
       "As fichas da Corte Humana receberam painéis de atributos, recursos e habilidades.",
       "O livro completo pode ser lido em uma única página ou em texto simples. Também é possível abrir cada capítulo separadamente.",
-      "Livro, Bestiário e pesquisa de regras podem ser consultados sem entrar na conta. Salvar personagens exige login."
+      "Livro, Bestiário e pesquisa de regras podem ser consultados sem entrar na conta. Salvar personagens exige login.",
     ],
-    "version": "1.6"
+    version: "1.6",
   },
   {
-    "id": "patch-1.5-2026-10-18-r2",
-    "title": "Bestiário e Corte da Falsa Santa",
-    "label": "Patch 1.5 · 18/10/2026",
-    "highlights": [
+    id: "patch-1.5-2026-10-18-r2",
+    title: "Bestiário e Corte da Falsa Santa",
+    label: "Patch 1.5 · 18/10/2026",
+    highlights: [
       "O Bestiário entra no livro, organizado por continentes e cortes.",
       "A Corte da Falsa Santa reúne Euphere, João e Maria, Geppeto, o Colecionador de Vidas, Nemetor, Branca de Neve e Maélia Veyr.",
       "As fichas permitem alternar entre história e combate, com atributos, recursos, habilidades e fases organizados para consulta.",
       "As sete invocações de Geppeto receberam fichas próprias. Seus usos são pagos com o Karma do invocador.",
-      "A criação de personagem ganhou acesso rápido às cinco etapas, sem precisar voltar ao topo da página."
+      "A criação de personagem ganhou acesso rápido às cinco etapas, sem precisar voltar ao topo da página.",
     ],
-    "version": "1.5"
+    version: "1.5",
   },
   {
-    "id": "prototipo-2026-10-17",
-    "title": "O novo protótipo",
-    "label": "Livro · 17/10/2026",
-    "highlights": [
+    id: "prototipo-2026-10-17",
+    title: "O novo protótipo",
+    label: "Livro · 17/10/2026",
+    highlights: [
       "O livro passa a reunir 20 capítulos de regras.",
       "Raças, classes, habilidades e progressão foram revisadas.",
       "Perícias usam três níveis de treinamento: +2, +5 e +10. Atributo 0 usa 1d20 −4.",
-      "Memória de uma Única Obra suspende pontos até o cumprimento do compromisso registrado, sem mudar permanentemente o nível da perícia."
-    ]
+      "Memória de uma Única Obra suspende pontos até o cumprimento do compromisso registrado, sem mudar permanentemente o nível da perícia.",
+    ],
   },
   {
-    "id": "1.4",
-    "title": "Poder com proporção",
-    "label": "Patch 1.4",
-    "highlights": [
+    id: "1.4",
+    title: "Poder com proporção",
+    label: "Patch 1.4",
+    highlights: [
       "Invocações passam a ter um Atributo principal e um secundário; os outros quatro ficam no nível 1.",
       "O Atributo principal varia conforme o Grau: 3, 5, 7, 9 ou 12.",
-      "As fichas de invocação acompanham essa progressão."
-    ]
+      "As fichas de invocação acompanham essa progressão.",
+    ],
   },
   {
-    "id": "1.3",
-    "title": "Pactos que ganham forma",
-    "label": "Patch 1.3",
-    "highlights": [
+    id: "1.3",
+    title: "Pactos que ganham forma",
+    label: "Patch 1.3",
+    highlights: [
       "Votos receberam um roteiro de criação, com benefícios e sacrifícios definidos.",
       "A criação de Invocações ganhou uma seção própria na ficha.",
       "Personagens e Invocações podem ter imagens próprias.",
-      "É possível compartilhar uma ficha por um link de leitura. O proprietário pode desativar ou trocar esse link."
-    ]
+      "É possível compartilhar uma ficha por um link de leitura. O proprietário pode desativar ou trocar esse link.",
+    ],
   },
   {
-    "id": "1.2",
-    "title": "Escolhas que deixam marcas",
-    "label": "Patch 1.2",
-    "highlights": [
+    id: "1.2",
+    title: "Escolhas que deixam marcas",
+    label: "Patch 1.2",
+    highlights: [
       "A ficha final mostra apenas os poderes e campos preenchidos.",
       "Intelecto pode reger perícias mentais e abordagens sociais racionais.",
       "Conjuração Vincular, Comunhão Divina e Controle da Corrupção usam Presença.",
-      "Votos receberam restrições e consequências mais claras."
-    ]
+      "Votos receberam restrições e consequências mais claras.",
+    ],
   },
   {
-    "id": "anterior-pericias",
-    "title": "Treinamento com limites claros",
-    "label": "Anterior · Perícias",
-    "highlights": [
-      "A distribuição inicial e os limites de treinamento das perícias foram revisados."
-    ]
+    id: "anterior-pericias",
+    title: "Treinamento com limites claros",
+    label: "Anterior · Perícias",
+    highlights: [
+      "A distribuição inicial e os limites de treinamento das perícias foram revisados.",
+    ],
   },
   {
-    "id": "anterior-ficha",
-    "title": "Uma jornada em cinco etapas",
-    "label": "Anterior · Fichas",
-    "highlights": [
+    id: "anterior-ficha",
+    title: "Uma jornada em cinco etapas",
+    label: "Anterior · Fichas",
+    highlights: [
       "A criação de personagem foi organizada em cinco etapas.",
       "A ficha passou a reunir bônus de raça, classe e progressão, além de poderes e inventário.",
-      "Personagens podem ser salvos e consultados na própria conta."
-    ]
-  }
+      "Personagens podem ser salvos e consultados na própria conta.",
+    ],
+  },
 ];
 
 export const LATEST_PATCH = PATCH_NOTES[0];

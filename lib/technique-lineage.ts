@@ -1,25 +1,53 @@
-export const LINEAGE_CATALYSTS:Record<string,string>={
- Humano:'Gaste 1 Ímpeto para acrescentar um dado-base ou economizar 1 Karma.',
- Elfo:'Em Harmonia, acrescente 3 m de alcance ou ignore cobertura parcial.',
- Anão:'Descarregue Cargas de Bigorna para firmar a técnica ou quebrar a guarda.',
- 'Demi-humano':'Adapte o efeito secundário ao Aspecto Bestial ativo.',
- Vampiro:'Gaste 1 Vitae ao lançar a técnica para somar +1d6 de dano ou impor Sangrando no Acerto Total (a cura racial exige mordida direta).',
- Demônio:'Aplique o Selo de Coação ao atingir o alvo. O +1d8 Corrupto do revide exige 2 Karma ou 1 Carga Temporária de Corrupção; aplicar o selo pelo olhar custa 1 Karma.',
- Ghoul:'Em Caça, use a Regeneração Voraz se o alvo e o resultado cumprirem seu gatilho.',
- 'Tritão':'Use o Pulso de Maré para empurrar o alvo atingido em 2 m ou impor o controle hidrostático da sua Etapa.',
- Abissal:'Meça alcance e trajetória a partir da Âncora do Vazio.'
+export const LINEAGE_CATALYSTS: Record<string, string> = {
+  Humano: "Gaste 1 Ímpeto para acrescentar um dado-base ou economizar 1 Karma.",
+  Elfo: "Em Harmonia, acrescente 3 m de alcance ou ignore cobertura parcial.",
+  Anão: "Descarregue Cargas de Bigorna para firmar a técnica ou quebrar a guarda.",
+  "Demi-humano": "Adapte o efeito secundário ao Aspecto Bestial ativo.",
+  Vampiro:
+    "Gaste 1 Vitae ao lançar a técnica para somar +1d6 de dano ou impor Sangrando no Acerto Total (a cura racial exige mordida direta).",
+  Demônio:
+    "Aplique o Selo de Coação ao atingir o alvo. O +1d8 Corrupto do revide exige 2 Karma ou 1 Carga Temporária de Corrupção; aplicar o selo pelo olhar custa 1 Karma.",
+  Ghoul:
+    "Em Caça, use a Regeneração Voraz se o alvo e o resultado cumprirem seu gatilho.",
+  Tritão:
+    "Use o Pulso de Maré para empurrar o alvo atingido em 2 m ou impor o controle hidrostático da sua Etapa.",
+  Abissal: "Meça alcance e trajetória a partir da Âncora do Vazio.",
 };
-const families={
- marcial:['Impacto','Manobra','Quebra de guarda'],
- conjuracao:['Alcance','Área','Sustentação'],
- furtiva:['Precisão','Ocultação','Alvo isolado'],
- guarda:['Bloqueio','Proteção aliada','Provocação'],
- amparo:['Cura','Purificação','Amparo'],
- oficio:['Dispositivo','Preparação','Área'],
- comando:['Coordenação','Alcance','Sustentação']
+const families = {
+  marcial: ["Impacto", "Manobra", "Quebra de guarda"],
+  conjuracao: ["Alcance", "Área", "Sustentação"],
+  furtiva: ["Precisão", "Ocultação", "Alvo isolado"],
+  guarda: ["Bloqueio", "Proteção aliada", "Provocação"],
+  amparo: ["Cura", "Purificação", "Amparo"],
+  oficio: ["Dispositivo", "Preparação", "Área"],
+  comando: ["Coordenação", "Alcance", "Sustentação"],
 };
-const classes:Record<string,keyof typeof families>={
- Mercenário:'marcial',Pugilista:'marcial',Duelista:'marcial',Tanque:'guarda',Ranger:'furtiva',Ladrão:'furtiva',Assassino:'furtiva',Samaritano:'amparo',Curandeiro:'amparo',Alquimista:'oficio',Inventor:'oficio',Bardo:'comando',Ocultista:'conjuracao',Especialista:'oficio',Invocador:'comando',Elementalista:'conjuracao',Conjurador:'conjuracao'
+const classes: Record<string, keyof typeof families> = {
+  Mercenário: "marcial",
+  Pugilista: "marcial",
+  Duelista: "marcial",
+  Tanque: "guarda",
+  Ranger: "furtiva",
+  Ladrão: "furtiva",
+  Assassino: "furtiva",
+  Samaritano: "amparo",
+  Curandeiro: "amparo",
+  Alquimista: "oficio",
+  Inventor: "oficio",
+  Bardo: "comando",
+  Ocultista: "conjuracao",
+  Especialista: "oficio",
+  Invocador: "comando",
+  Elementalista: "conjuracao",
+  Conjurador: "conjuracao",
 };
-export function doctrineOptions(className:string){return families[classes[className]]??[];}
-export function doctrineDiscount(className:string,component:string,extras:number){return extras>=1&&doctrineOptions(className).includes(component)?1:0;}
+export function doctrineOptions(className: string) {
+  return families[classes[className]] ?? [];
+}
+export function doctrineDiscount(
+  className: string,
+  component: string,
+  extras: number,
+) {
+  return extras >= 1 && doctrineOptions(className).includes(component) ? 1 : 0;
+}

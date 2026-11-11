@@ -1,5 +1,5 @@
-import rulesData from "@/data/rules.json";
 import bestiary from "@/data/bestiary.json";
+import rulesData from "@/data/rules.json";
 
 export type RuleSection = {
   level: number;

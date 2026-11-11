@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { DirectAccess } from "@/components/direct-access";
 import {
   ArrowRight,
@@ -7,6 +6,7 @@ import {
   PenLine,
   Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 import { getChatGPTUser } from "@/app/chatgpt-auth";
 import { KarmicSigil } from "@/components/karmic-sigil";
@@ -45,10 +45,16 @@ export default async function Home() {
             <div className="hero-actions">
               <Button asChild size="lg" className="karma-button">
                 <Link href={entryPath}>
-                  {user ? "Acessar meu portal" : "Explorar o arquivo"} <ArrowRight aria-hidden="true" />
+                  {user ? "Acessar meu portal" : "Explorar o arquivo"}{" "}
+                  <ArrowRight aria-hidden="true" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="ghost" className="quiet-button">
+              <Button
+                asChild
+                size="lg"
+                variant="ghost"
+                className="quiet-button"
+              >
                 <a href="#conheca">Conhecer o sistema</a>
               </Button>
             </div>
@@ -85,9 +91,9 @@ export default async function Home() {
                 <h2>Duas portas. Um mesmo mundo.</h2>
               </div>
               <p>
-                Escolha entre construir sua ficha passo a passo ou
-                consultar o códice em uma experiência de wiki, organizada para
-                leitura rápida durante a sessão.
+                Escolha entre construir sua ficha passo a passo ou consultar o
+                códice em uma experiência de wiki, organizada para leitura
+                rápida durante a sessão.
               </p>
             </div>
 
@@ -112,8 +118,8 @@ export default async function Home() {
                   <p className="gate-kicker">Consulte o arquivo</p>
                   <h3>Livro de regras</h3>
                   <p>
-                    Vinte e um capítulos e navegação por
-                    tópicos — do núcleo do sistema às máquinas da Torre.
+                    Vinte e um capítulos e navegação por tópicos — do núcleo do
+                    sistema às máquinas da Torre.
                   </p>
                 </div>
               </article>

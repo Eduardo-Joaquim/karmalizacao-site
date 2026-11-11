@@ -7,7 +7,7 @@ import { resolve, dirname } from 'node:path';
 import { z } from 'zod';
 let user=null, dbCalls=0;
 const rows=new Map();
-const db={prepare(sql){dbCalls++;return {bind(...values){return {
+const db={prepare(_sql){dbCalls++;return {bind(...values){return {
  async first(){const row=rows.get(values[0]);return row?.owner===values[1] ? row : null;},
  async all(){return {results:[...rows.values()].filter(r=>r.owner===values[0])};},
  async run(){const [id,owner,name,payload]=values;if(rows.has(id)) return {success:true,meta:{changes:0}};rows.set(id,{id,owner,name,payload,createdAt:'now',updatedAt:'now'});return {success:true,meta:{changes:1}};}

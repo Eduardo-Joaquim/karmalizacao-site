@@ -1,6 +1,7 @@
 import { SITE_ORIGIN } from "@/lib/public-navigation";
 export function GET() {
-  return new Response(`# Karmalização
+  return new Response(
+    `# Karmalização
 
 Livro de RPG público. Consultas não exigem login. Use somente os valores publicados; não invente estatísticas ausentes.
 
@@ -35,5 +36,7 @@ O servidor MCP está em ${SITE_ORIGIN}/mcp. Conecte o plugin do Site pelo ChatGP
 Consulte modelo_ficha para receber o modelo completo e opções de criação. criar_ficha recebe nome e payload (campos do modelo); salva uma ficha nova na conta autenticada e retorna id e link do editor. A ficha pode ser um rascunho; confira as regras antes de usá-la em jogo. listar_fichas lê somente as fichas da conta autenticada. Sem identidade, criar e listar retornam erro de autenticação. Nunca envie identidade em argumentos ou tente acessar registros de outras contas.
 
 No navegador autenticado, GET/POST /api/personagens usa a mesma validação e autorização. POST exige {id, name, payload}; id é UUID novo, payload segue o modelo. Fichas pessoais e links compartilhados não pertencem ao mapa de indexação pública.
-`, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+`,
+    { headers: { "Content-Type": "text/plain; charset=utf-8" } },
+  );
 }

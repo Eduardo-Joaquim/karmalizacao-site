@@ -1,25 +1,116 @@
-.pantheon-portal { display:grid; gap:1rem; margin:2rem 0; min-width:0; }
-.pantheon-portal-card { min-width:0; --wing:#d2ad6a; border:1px solid color-mix(in srgb,var(--wing),transparent 60%); background:#15131c; border-radius:.6rem; }
-.pantheon-portal-card[data-wing="2"] { --wing:#eb9d91; }
-.pantheon-portal-card[data-wing="3"] { --wing:#9bd4e5; }
-.pantheon-portal-card[data-wing="4"] { --wing:#e7c87c; }
-.pantheon-portal-card[data-wing="5"] { --wing:#edaa72; }
-.pantheon-portal-card[data-wing="6"] { --wing:#efb8c9; }
-.pantheon-portal-card[data-wing="7"] { --wing:#a7d5be; }
-.pantheon-portal-card[data-wing="8"] { --wing:#a8ce84; }
-.pantheon-portal-card[data-wing="9"] { --wing:#c3b3ef; }
-.pantheon-portal .pantheon-card-toggle { width:100%; text-align:left; border:0; display:flex; align-items:center; flex-wrap:wrap; gap:1rem; padding:1.2rem; cursor:pointer; list-style:none; background:linear-gradient(120deg,color-mix(in srgb,var(--wing),transparent 88%),transparent); }
-.pantheon-summary { display:grid; gap:.3rem; flex:1 1 220px; }
-.pantheon-summary strong { font-size:1.35rem; color:var(--wing); }
-.pantheon-summary b,.pantheon-summary small { font-size:.8rem; }
-.pantheon-crest { display:grid; place-items:center; inline-size:2.75rem; block-size:2.75rem; border:1px solid var(--wing); color:var(--wing); font-size:1.5rem; border-radius:50%; }
-.pantheon-open { color:var(--wing); font-weight:600; }
-.pantheon-content { padding:clamp(.8rem,3vw,1.5rem); border-top:1px solid #ffffff22; }
-.pantheon-search { display:grid; gap:.5rem; }
-.pantheon-search input { width:100%; padding:.65rem; background:#0d0c14; border:1px solid #ffffff45; border-radius:.3rem; }
-.pantheon-deities { display:flex; flex-wrap:wrap; gap:.45rem; margin:1rem 0; }
-.pantheon-portal button,.pantheon-blessing a { min-height:2.75rem; padding:.5rem .8rem; border:1px solid #ffffff45; border-radius:.3rem; }
-.pantheon-deities button[aria-pressed="true"] { border-color:var(--wing); color:var(--wing); }
+.pantheon-portal {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+  min-width: 0;
+}
+.pantheon-portal-card {
+  min-width: 0;
+  --wing: #d2ad6a;
+  border: 1px solid color-mix(in srgb, var(--wing), transparent 60%);
+  background: #15131c;
+  border-radius: 0.6rem;
+}
+.pantheon-portal-card[data-wing="2"] {
+  --wing: #eb9d91;
+}
+.pantheon-portal-card[data-wing="3"] {
+  --wing: #9bd4e5;
+}
+.pantheon-portal-card[data-wing="4"] {
+  --wing: #e7c87c;
+}
+.pantheon-portal-card[data-wing="5"] {
+  --wing: #edaa72;
+}
+.pantheon-portal-card[data-wing="6"] {
+  --wing: #efb8c9;
+}
+.pantheon-portal-card[data-wing="7"] {
+  --wing: #a7d5be;
+}
+.pantheon-portal-card[data-wing="8"] {
+  --wing: #a8ce84;
+}
+.pantheon-portal-card[data-wing="9"] {
+  --wing: #c3b3ef;
+}
+.pantheon-portal .pantheon-card-toggle {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  background: linear-gradient(
+    120deg,
+    color-mix(in srgb, var(--wing), transparent 88%),
+    transparent
+  );
+}
+.pantheon-summary {
+  display: grid;
+  gap: 0.3rem;
+  flex: 1 1 220px;
+}
+.pantheon-summary strong {
+  font-size: 1.35rem;
+  color: var(--wing);
+}
+.pantheon-summary b,
+.pantheon-summary small {
+  font-size: 0.8rem;
+}
+.pantheon-crest {
+  display: grid;
+  place-items: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  border: 1px solid var(--wing);
+  color: var(--wing);
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+.pantheon-open {
+  color: var(--wing);
+  font-weight: 600;
+}
+.pantheon-content {
+  padding: clamp(0.8rem, 3vw, 1.5rem);
+  border-top: 1px solid #ffffff22;
+}
+.pantheon-search {
+  display: grid;
+  gap: 0.5rem;
+}
+.pantheon-search input {
+  width: 100%;
+  padding: 0.65rem;
+  background: #0d0c14;
+  border: 1px solid #ffffff45;
+  border-radius: 0.3rem;
+}
+.pantheon-deities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+.pantheon-portal button,
+.pantheon-blessing a {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ffffff45;
+  border-radius: 0.3rem;
+}
+.pantheon-deities button[aria-pressed="true"] {
+  border-color: var(--wing);
+  color: var(--wing);
+}
 .pantheon-blessings-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
@@ -142,9 +233,9 @@
 
 .blessing-exclusive-seal {
   display: inline-block;
-  padding: .45rem .7rem;
+  padding: 0.45rem 0.7rem;
   border: 1px solid #b45462;
-  border-radius: .35rem;
+  border-radius: 0.35rem;
   background: #381720;
   color: #ffc5cd;
   font-weight: 700;
