@@ -16,8 +16,8 @@ test('book contains all chapters, classes, and races',()=>{
 });
 test('medicine example and zero/untrained rules',()=>{
  const d=data.createBlankCharacter();d.stage='Etapa IV';d.path='Caminho da Guilda';d.attributes.Intelecto.base=5;d.skills.Medicina.base=1;d.allocations.progressionEvolutiveSkills=['Medicina'];
- let a=rules.calculateAutomaticBonuses(d);let t=rules.getSkillTest(d,a,'Medicina','Intelecto');assert.equal(t.dice,3);assert.equal(t.bonus,7);
- d.attributes.Intelecto.base=0;a=rules.calculateAutomaticBonuses(d);t=rules.getSkillTest(d,a,'Medicina','Intelecto');assert.equal(t.dice,1);assert.equal(t.bonus,-4);
+ let a=rules.calculateAutomaticBonuses(d);let t=rules.getSkillTest(d,a,'Medicina','Intelecto');assert.equal(t.dice,3);assert.equal(t.bonus,8);
+ d.attributes.Intelecto.base=0;a=rules.calculateAutomaticBonuses(d);t=rules.getSkillTest(d,a,'Medicina','Intelecto');assert.equal(t.dice,1);assert.equal(t.bonus,5);
  d.attributes.Intelecto.base=5;t=rules.getSkillTest(d,a,'História','Intelecto');assert.equal(t.dice,1);assert.equal(t.bonus,0);
 });
 test('level three requires stage seven and grants +10',()=>{
@@ -37,7 +37,7 @@ test('memory consumes a bonus, retains level and suspends points until milestone
  const d=data.createBlankCharacter();d.stage='Etapa IV';d.path='Caminho da Guilda';d.attributes.Intelecto.base=5;d.attributes.Espírito.base=2;d.skills.Criação.base=1;d.allocations.progressionEvolutiveSkills=['Criação'];
  const donor=['História','Condução','Atuação','Sobrevivência'];donor.forEach(s=>d.skills[s].base=1);
  d.vows=[{id:'memory',kind:'sacrifice',weight:3,name:'Memória',restriction:'Suspensão',benefit:'+10',trigger:'Reparo',duration:'Recuperar arquivo',breach:'Consequência',approved:true,status:'sealed',targetSkill:'Criação',sacrifices:donor.map(skill=>({skill,points:1}))}];
- let a=rules.calculateAutomaticBonuses(d);const t=rules.getSkillTest(d,a,'Criação','Intelecto','memory');assert.equal(t.level,2);assert.equal(t.bonus,12);assert.equal(rules.getFinalSkill(d,a,'História'),0);
+ let a=rules.calculateAutomaticBonuses(d);const t=rules.getSkillTest(d,a,'Criação','Intelecto','memory');assert.equal(t.level,2);assert.equal(t.bonus,13);assert.equal(rules.getFinalSkill(d,a,'História'),0);
  d.vows[0].status='spent';assert.equal(rules.getSacrificedPoints(d),4);
  d.vows[0].status='completed';assert.equal(rules.getSacrificedPoints(d),0);
 });

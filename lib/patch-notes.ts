@@ -8,6 +8,12 @@ export type PatchNote = {
 
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
+  {id:"patch-2-0-4-2026-11-11-consolidacao",version:"2.0.4",label:"Patch 2.0.4 · 11/11/2026",title:"Consolidação das regras de combate",highlights:[
+    "Perícias treinadas preservam o bônus de treinamento com atributo zero. Perícias sociais usam Presença. Iniciativa usa a reserva e o valor final de Agilidade.",
+    "Acerto Parcial usa metade do dano. Condições menores exigem Acerto Total e condições severas têm duração ou potência reduzida no parcial.",
+    "Invocações registram taxa de exploração por cena e Fraturas ao cair a zero de Vida. O Escudo Cinético do Inventor escala com a Etapa.",
+    "A ficha destaca CA Parcial e Total, Iniciativa, limite de Carga Ágil e o teste de Fortitude para rejeição alquímica."
+  ]},
   {id:"patch-2-0-4-2026-11-10-armas-runicas-r2",version:"2.0.4",label:"Patch 2.0.4 · 10/11/2026",title:"Encaixes rúnicos por arma",highlights:[
     "Seis armas comuns aceitam uma Runa de Arma por peça, usando uma vaga pessoal. O Capítulo de Karma lista os modelos compatíveis.",
     "Cajado Rúnico e Lâmina Rúnica têm duas vagas próprias. Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo e Cetro de Comando têm uma cada. As vagas próprias retêm Karma sem ocupar o limite pessoal.",

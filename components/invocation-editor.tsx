@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select";
-import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
 import {
   ALL_SKILLS,
@@ -26,7 +25,7 @@ import {
   type InvocationRecord,
 } from "@/lib/character-data";
 import {
-  calculateInvocationStats,
+  calculateInvocationStats, invocationAttack,
   getInvocationWarnings,
   invocationGradeIndex,
 } from "@/lib/invocation-rules";
@@ -101,6 +100,7 @@ export function InvocationEditor({ draft, onChange }: { draft: CharacterPayload;
     <div className="dynamic-card-list invocation-list">
       {draft.invocations.map((invocation, index) => {
         const stats = calculateInvocationStats(invocation);
+        const attack = invocationAttack(invocation, draft.combatState?.summons?.[invocation.id]?.fractures);
         const warnings = getInvocationWarnings(invocation);
         return <article className="dynamic-editor-card invocation-editor-card" key={invocation.id}>
           <header>
@@ -141,14 +141,11 @@ export function InvocationEditor({ draft, onChange }: { draft: CharacterPayload;
               <Label htmlFor={`invocation-form-${invocation.id}`} className="character-label">Forma de chamada</Label>
               <NativeSelect id={`invocation-form-${invocation.id}`} value={invocation.callForm} onChange={(event) => updateInvocation(invocation.id, { callForm: event.target.value })}>{INVOCATION_CALL_FORMS.map((form) => <NativeSelectOption key={form} value={form} disabled={form === "Fusão" && invocationGradeIndex(invocation.grade) < 3}>{form}{form === "Fusão" ? " · Grau III+" : ""}</NativeSelectOption>)}</NativeSelect>
             </div>
-            <div className="range-field">
-              <span><Label>Fraturas do pacto</Label><strong>{invocation.fractures}/3</strong></span>
-              <Slider min={0} max={3} step={1} value={[invocation.fractures]} onValueChange={(values) => updateInvocation(invocation.id, { fractures: values[0] ?? 0 })} aria-label={`Fraturas de ${invocation.name || `Invocação ${index + 1}`}`} />
-            </div>
+            <p>Fraturas {draft.combatState?.summons?.[invocation.id]?.fractures ?? invocation.fractures}/3 · Registradas no Modo Combate.</p>
           </div>
 
           <section className="invocation-stat-preview" aria-label={`Valores calculados de ${invocation.name || `Invocação ${index + 1}`}`}>
-            {[['CA', stats.armor], ['Vida', stats.life], ['Dano', stats.damage], ['Movimento', `${stats.movement} m`], ['Chamada', `${stats.callCost} Karma`], ['Manutenção', `${stats.maintenance} Karma`]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
+            {[['CA', `${attack.partial} / ${attack.armor}`], ['Teste de ataque', attack.formula], ['Comando básico', 'Movimento ou Livre · 1 vez por turno'], ['Vida', stats.life], ['Dano', stats.damage], ['Movimento', `${stats.movement} m`], ['Chamada', `Principal · ${stats.callCost} Karma`], ['Manutenção', `${stats.maintenance} Karma`]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
             <p>Principal {stats.mainAttribute} · 1 secundário {stats.secondaryAttribute} · demais {stats.otherAttribute} · Perícias principais {stats.mainSkill}</p>
             {stats.notes.map((note) => <small key={note}>{note}</small>)}
           </section>

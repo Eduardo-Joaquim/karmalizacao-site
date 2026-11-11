@@ -13,6 +13,7 @@ import threats from '@/data/early-threats.json';
 import costs from '@/data/technique-construction.json';
 import { usageCost } from '@/lib/combat-repertoire';
 import { ALL_SKILLS, ATTRIBUTES } from '@/lib/character-data';
+import { MENTAL_SKILLS, SOCIAL_SKILLS } from '@/lib/character-rules';
 import { defaultApproach, randomDice } from '@/lib/combat-engine';
 import { resolveRoll } from '@/lib/table-play';
 export type NpcArt={id:string;name:string;cost:number|null;text:string;calculation:string;roll:string;damage:string;attack:boolean;action:string;domain?:string};
@@ -28,8 +29,9 @@ export function skillsIn(text:string){
  return [...found].map(([name,level])=>({name,level}));
 }
 export function npcSkillRoll(npc:Pick<NpcTemplate,'attributes'|'skills'>,skill:string,attribute:typeof ATTRIBUTES[number],diceSource=(n:number)=>randomDice(n)){
+ if ((SOCIAL_SKILLS as readonly string[]).includes(skill)) attribute = 'Presença';
  const value=npc.attributes[ATTRIBUTES.indexOf(attribute)]??0,level=skillsIn(npc.skills).find(s=>s.name===skill)?.level??0;
- const count=value>0&&level>0?Math.ceil(value/2):1,bonus=value===0?-4:[0,2,5,10][level]+(attribute==='Intelecto'&&level>0?Math.min(3,Math.floor(value/2)):0);
+ const count=value>0&&level>0?Math.ceil(value/2):1,bonus=value===0&&level===0?-4:[0,2,5,10][level]+(attribute==='Intelecto'&&level>0&&(MENTAL_SKILLS as readonly string[]).includes(skill)?Math.min(3,value):0);
  const dice=diceSource(count);return {...resolveRoll(dice,bonus),dice,bonus,formula:`${count}d20 ${bonus>=0?'+':''}${bonus}`};
 }
 function formula(text:string,attributes:number[],skills:string){
@@ -37,8 +39,8 @@ function formula(text:string,attributes:number[],skills:string){
  const skill=ALL_SKILLS.filter(n=>text.includes(n)).sort((a,b)=>b.length-a.length)[0];if(!skill)return '';
  const attr=ATTRIBUTES.find(n=>text.includes(`${n} +`))??(['Controle da Corrupção','Comunhão Divina'].includes(skill)?'Presença':defaultApproach(skill));
  const value=attributes[ATTRIBUTES.indexOf(attr)]??0,level=skillsIn(skills).find(s=>s.name===skill)?.level??0;
- const analytic=attr==='Intelecto'&&level>0?Math.min(3,Math.floor(value/2)):0;
- return `${value>0&&level>0?Math.ceil(value/2):1}d20 ${value===0?'-4':`+${[0,2,5,10][level]+analytic}`}`;
+ const analytic=attr==='Intelecto'&&level>0&&(MENTAL_SKILLS as readonly string[]).includes(skill)?Math.min(3,value):0;
+ return `${value>0&&level>0?Math.ceil(value/2):1}d20 ${value===0&&level===0?'-4':`+${[0,2,5,10][level]+analytic}`}`;
 }
 function art(raw:Record<string,unknown>,owner:string,attributes:number[],skills:string,index:number):NpcArt{
  const text=raw.fields?fields(raw):Object.entries(raw).filter(([k])=>!['id','name','cost'].includes(k)).map(([k,v])=>`${k}: ${plain(v)}`).join('\n');

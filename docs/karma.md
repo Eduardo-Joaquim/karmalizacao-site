@@ -187,6 +187,6 @@ Depois de uma cena substancial na qual gastou ao menos 2 Karma, faça um Interva
 
 Na Torre, o intervalo consome tempo, suprimentos e segurança pelo Capítulo 19. Ele não transforma área perigosa em acampamento seguro.
 
-Descanso longo seguro de 12 TE restaura Vida e Karma até os máximos disponíveis e remove Exausto comum. Repouso exposto restaura Vida e metade do Karma faltante, arredondada para baixo, sem remover Exausto; ele não renova recursos que exijam descanso seguro. Veja suprimentos e Pressão no Capítulo 19.
+Descanso longo seguro de 8 horas restaura Vida e Karma até os máximos disponíveis e remove Exausto comum. Repouso exposto restaura Vida e metade do Karma faltante, arredondada para baixo, sem remover Exausto; ele não renova recursos que exijam descanso seguro. Veja suprimentos e Pressão no Capítulo 19.
 
 Poções, habilidades, fontes e rituais nunca restauram acima do máximo disponível. Karma investido continua indisponível até o vínculo, item ou efeito terminar.

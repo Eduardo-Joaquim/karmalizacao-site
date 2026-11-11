@@ -49,17 +49,14 @@ import {
   VOW_WEIGHTS,
   type AutomaticBonuses,
 } from "@/lib/character-rules";
-import { calculateInvocationStats } from "@/lib/invocation-rules";
+import { calculateInvocationStats, invocationAttack } from "@/lib/invocation-rules";
 import { hasElementalContent, hasInvocationContent, hasSheetText, hasSubBendingContent, hasTechniqueContent } from "@/lib/sheet-visibility";
 
-export type DerivedStats = {
-  life: number;
-  karma: number;
-  armor: number;
-  movement: number;
-  load: number;
-  resistance: number;
-};
+import { retainedKarma } from "@/lib/karmic-runes";
+import { calculateDerivedStats } from "@/lib/character-rules";
+
+export type DerivedStats = ReturnType<typeof calculateDerivedStats>;
+
 
 type CharacterSheetViewProps = {
   draft: CharacterPayload;
@@ -142,7 +139,7 @@ export function CharacterSheetView({
         <div className="sheet-lock-note">
           <Shield aria-hidden="true" />
           <span>
-            <strong>{readOnly ? "Modo Jogo · Criação Protegida" : "Ficha protegida"}</strong>
+            <strong>{readOnly ? "Modo Jogo Ativo (Combate e Inventário Editáveis · Criação Protegida)" : "Ficha protegida"}</strong>
             {readOnly ? "Recursos de combate e uso do inventário são editáveis. A criação fica protegida." : "Os recursos de combate e o inventário podem ser ajustados aqui. Salve a ficha para guardar as alterações."}
           </span>
         </div>
@@ -150,16 +147,17 @@ export function CharacterSheetView({
 
       <div className="sheet-stat-grid" aria-label="Valores derivados">
         {[
-          [Heart, "Vida", derived.life, "life"],
-          [Sparkles, "Karma", derived.karma, "karma"],
-          [Shield, "CA", derived.armor, "armor"],
+          [Heart, "Vida", derived.life, "life", derived.lifeBreakdown],
+          [Sparkles, "Karma", derived.karma, "karma", `${derived.karmaBreakdown} · ${draft.combatState ? retainedKarma(draft.combatState) : 0} Karma retido reduz o disponível`],
+          [Shield, "CA", `${Math.floor(derived.armor / 2)} / ${derived.armor}`, "armor", derived.armorBreakdown],
+          [CircleDot, "Iniciativa", derived.initiative.formula, "move", "Teste puro de Agilidade"],
           [CircleDot, "Movimento", `${derived.movement}m`, "move"],
           [Package, "Carga", derived.load, "load"],
           [Shield, "Resistência", derived.resistance, "resistance"],
-        ].filter(([, label, value]) => label !== "Resistência" || Number(value) > 0).map(([Icon, label, value, tone]) => {
+        ].filter(([, label, value]) => label !== "Resistência" || Number(value) > 0).map(([Icon, label, value, tone, detail]) => {
           const StatIcon = Icon as typeof Heart;
           return (
-            <div className="sheet-stat" data-tone={tone} key={String(label)}>
+            <div className="sheet-stat" data-tone={tone} key={String(label)} title={detail ? String(detail) : undefined}>
               <StatIcon aria-hidden="true" />
               <span>{String(label)}</span>
               <strong>{String(value)}</strong>
@@ -302,7 +300,7 @@ export function CharacterSheetView({
                 <div>
                   <small>{DOMAIN_RULES[domain.name].regent}</small>
                   <h3>Domínio da {domain.name}</h3>
-                  <Badge variant="outline">{domain.marks} Marca(s)</Badge>
+                  <Badge variant="outline" title="Ganhe até uma Marca da Parede por cena ao enfrentar um limite real do Domínio. As Marcas registram a evolução para despertar e refinar o Domínio. Caminho Despertado reduz a exigência em 20%.">{domain.marks} Marca(s)</Badge>
                 </div>
                 {domain.awakened && <>
                   <p><strong>Essência:</strong> {DOMAIN_RULES[domain.name].essence}</p>
@@ -389,6 +387,7 @@ export function CharacterSheetView({
           {visibleInvocations.map((invocation) => {
             const stats = calculateInvocationStats(invocation);
             const otherAttributes = ATTRIBUTES.filter((attribute) => attribute !== invocation.mainAttribute && !invocation.secondaryAttributes.includes(attribute));
+            const attack = invocationAttack(invocation, draft.combatState?.summons?.[invocation.id]?.fractures);
             return <article className="sheet-invocation-card" key={invocation.id}>
               <header>
                 {invocation.image ? (
@@ -398,7 +397,7 @@ export function CharacterSheetView({
                 <div><small>{invocation.nature || "Natureza não registrada"}</small><h3>{invocation.name || "Invocação sem nome"}</h3><div><Badge>Grau {invocation.grade}</Badge>{invocation.profile !== "Sem ajuste" ? <Badge variant="outline">{invocation.profile}</Badge> : null}<Badge variant="outline">{invocation.callForm}</Badge></div></div>
               </header>
               <div className="invocation-stat-preview sheet-invocation-stats">
-                {[['CA', stats.armor], ['Vida', stats.life], ['Dano', stats.damage], ['Movimento', `${stats.movement} m`], ['Chamada', `${stats.callCost} Karma`], ['Manutenção', `${stats.maintenance} Karma`]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
+                {[['CA', `${attack.partial} / ${attack.armor}`], ['Teste de ataque', attack.formula], ['Comando básico', 'Movimento ou Livre · 1 vez por turno'], ['Vida', stats.life], ['Dano', stats.damage], ['Movimento', `${stats.movement} m`], ['Chamada', `Principal · ${stats.callCost} Karma`], ['Manutenção', `${stats.maintenance} Karma`]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
               </div>
               <div className="sheet-readonly-grid compact">
                 <ReadonlyValue label="Desejo">{invocation.desire}</ReadonlyValue>
@@ -433,12 +432,12 @@ export function CharacterSheetView({
               <article key={technique.id}>
                 <header>
                   <div>
-                    {hasSheetText(technique.source) ? <span>Origem · {technique.source}</span> : null}
+                    {hasSheetText(technique.source) ? <span>Origem · {technique.source === "Classe" ? "Técnica de Classe" : technique.source}</span> : null}
                     <h3>{technique.name || "Técnica sem nome"}</h3>
                   </div>
                   <div>
                     {technique.signature ? <Badge>Assinatura</Badge> : null}
-                    {hasSheetText(technique.grade) ? <Badge variant="outline">{technique.grade}</Badge> : null}
+                    {hasSheetText(technique.grade) ? <Badge variant="outline">{[technique.grade, technique.matrix, technique.damageType].filter(Boolean).join(" · ")}</Badge> : null}
                   </div>
                 </header>
                 {hasSheetText(technique.concept) ? <p className="technique-concept">{technique.concept}</p> : null}

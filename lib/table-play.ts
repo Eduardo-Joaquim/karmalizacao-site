@@ -29,6 +29,17 @@ export function resolveAttack(total: number, armor: number) {
   return "Falha";
 }
 
+const severeConditions = new Set(["sangramento", "sangrando", "envenenado", "silenciado", "imóvel", "cego", "atordoado", "danificado"]);
+
+export function conditionForAttack(condition: string, outcome: string, rounds?: number, potency?: number) {
+  if (outcome === "Acerto total") return { rounds, potency };
+  if (outcome !== "Acerto parcial" || !severeConditions.has(condition.trim().toLocaleLowerCase("pt-BR"))) return null;
+  return {
+    rounds: rounds === undefined ? 1 : Math.max(1, Math.floor(rounds / 2)),
+    potency: potency === undefined ? undefined : Math.floor(potency / 2),
+  };
+}
+
 export function damageForAttack(damage: number, outcome: string): number {
   return outcome === "Acerto total" ? damage : outcome === "Acerto parcial" ? Math.floor(damage / 2) : 0;
 }

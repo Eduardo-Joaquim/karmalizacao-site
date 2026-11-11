@@ -12,8 +12,8 @@ A vontade não é herança de um trono. É a chama que ainda arde quando o desti
 
 #### Etapa I — Inconformismo
 
-- **Aprimoramento / Passiva:** Você começa cada cena com 2 Pontos de Ímpeto (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto sempre que obtiver 20 natural no dado selecionado de um teste ou quando sua Vida cair para metade ou menos pela primeira vez na cena.
-- **Ativação / Reação:** Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.
+- **Aprimoramento / Passiva:** Você começa cada cena com 2 Pontos de Ímpeto (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto ao obter 20 natural no dado selecionado de um ataque, resistência ou perícia ativa em cena, até uma vez por rodada.
+- **Ativação / Reação:** Também recupera 1 Ímpeto quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.
 
 #### Etapa II — Leitura de Brecha
 
@@ -23,7 +23,7 @@ A vontade não é herança de um trono. É a chama que ainda arde quando o desti
 #### Etapa IV — Sobrevivência Indomável
 
 - **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 3.
-- **Ativação / Reação:** Como Reação ao sofrer dano ou ser alvo de um efeito debilitante, você pode gastar 1 Ímpeto para receber Escudo Temporário igual a Constituição + Presença + Etapa antes que o dano seja aplicado, além de ignorar as penalidades de uma condição física ou mental ativa até o final do seu próximo turno.
+- **Ativação / Reação:** Como Reação ao sofrer dano ou ser alvo de um efeito debilitante, você pode gastar 1 Ímpeto para receber Escudo Temporário igual a Constituição + maior entre Presença e Espírito + Etapa antes que o dano seja aplicado, além de ignorar as penalidades de uma condição física ou mental ativa até o final do seu próximo turno.
 
 #### Etapa VI — Recusa ao Fim
 

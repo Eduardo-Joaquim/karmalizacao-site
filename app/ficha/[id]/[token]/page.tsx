@@ -39,7 +39,7 @@ export default async function SharedCharacterPage({ params }: PageProps) {
     <SiteHeader user={null} />
     <main className="site-shell shared-character-main">
       <header className="shared-character-banner">
-        <div><Badge variant="outline"><Eye aria-hidden="true" /> Modo Jogo · Recursos e Inventário Editáveis · Criação Protegida</Badge><h1>Registro público de personagem</h1><p>Quem possui este link pode acompanhar e ajustar Vida, Karma, condições e o uso do inventário. Atributos, técnicas e escolhas da ficha só podem ser editados pelo proprietário.</p></div>
+        <div><Badge variant="outline"><Eye aria-hidden="true" /> Modo Jogo Ativo (Combate e Inventário Editáveis · Criação Protegida)</Badge><h1>Registro público de personagem</h1><p>Quem possui este link pode acompanhar e ajustar Vida, Karma, condições e o uso do inventário. Atributos, técnicas e escolhas da ficha só podem ser editados pelo proprietário.</p></div>
         <div className="shared-character-trust"><ShieldCheck aria-hidden="true" /><span><strong>Combate compartilhado</strong>O e-mail e os dados da conta não são exibidos.</span></div>
       </header>
       <SharedCombatCharacter initial={draft} id={id} token={token}/>

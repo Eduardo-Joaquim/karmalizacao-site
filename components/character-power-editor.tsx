@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+import { rollPathAwakening } from "@/lib/combat-engine";
 import axioms from "@/data/path-axioms.json";
 import { equippedRuneWeapons, personalRuneLimit, runeTraining } from "@/lib/karmic-runes";
 import runes from "@/data/karmic-runes.json";
@@ -173,6 +175,9 @@ function createTechnique(): TechniqueRecord {
 }
 
 export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditorProps) {
+  const [pathAttribute, setPathAttribute] = useState<(typeof ATTRIBUTES)[number]>("Espírito");
+  const [awakeningResult, setAwakeningResult] = useState("");
+
   const race = getRaceRule(draft.race);
   const classDefinition = getClassDefinition(draft.className);
   const abilityLimit = getClassAbilityLimit(draft.stage);
@@ -254,6 +259,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
             {label}
           </a>
         ))}
+        {draft.className === "Inventor" && <a href="#poder-oficina">Dispositivos da Oficina</a>}
       </nav>
       <div className="power-editor-content">
         <section className="power-section" id="poder-raca-classe">
@@ -472,7 +478,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                       <div className="refinement-picker">
                         <span>Refinamentos — até 2</span>
                         <div>
-                          {[0,1].map(index => <NativeSelect key={index} aria-label={`Refinamento ${index+1} de ${domain.name}`} value={domain.refinements[index] ?? ""} onChange={event => { const refinements=[...domain.refinements]; refinements[index]=event.target.value; updateDomain(domain.name,{refinements:refinements.filter(Boolean)}); }}><NativeSelectOption value="">Sem refinamento</NativeSelectOption>{REFINEMENTS.map(value=><NativeSelectOption key={value} value={value}>{value}</NativeSelectOption>)}</NativeSelect>)}
+                          {[0,1].map(index => <NativeSelect key={index} aria-label={`Refinamento ${index+1} de ${domain.name}`} value={domain.refinements[index] ?? ""} onChange={event => { const refinements=[...domain.refinements]; refinements[index]=event.target.value; updateDomain(domain.name,{refinements:[...new Set(refinements.filter(Boolean))]}); }}><NativeSelectOption value="">Sem refinamento</NativeSelectOption>{REFINEMENTS.map(value=><NativeSelectOption key={value} value={value} disabled={domain.refinements.includes(value) && domain.refinements[index] !== value}>{value}</NativeSelectOption>)}</NativeSelect>)}
 
                         </div>
                       </div>
@@ -528,7 +534,10 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
                     update("personalPath", { ...draft.personalPath, signatureTechnique })
                   }
                 />
-                <p className="field-full">Despertar em crise na Etapa III. CD 20 e 6 Karma no despertar puro. Sob Outorga ou doutrina, CD 24, −1d20, 10 Karma e 2d6 de dano irreduzível. Registre o despertar após resolver a tentativa em mesa.</p>
+                <p className="field-full">Despertar em crise na Etapa III. CD 20 e 6 Karma no despertar puro. Sob Outorga ou doutrina, CD 24, −1d20, 10 Karma e 2d6 de dano irreduzível. O teste usa somente a reserva do atributo-chave, o treinamento em Canalização e o bônus por falhas anteriores. Ímpeto e Analítico ficam fora da rolagem. Registre o despertar após resolver o preço e o resultado em mesa.</p>
+                <label>Atributo-chave<select value={pathAttribute} onChange={event => setPathAttribute(event.target.value as typeof pathAttribute)}>{ATTRIBUTES.map(attribute => <option key={attribute}>{attribute}</option>)}</select></label>
+                <button type="button" disabled={getStageIndex(draft.stage) < 3} onClick={() => { const result = rollPathAwakening(draft, pathAttribute); setAwakeningResult(`${result.dice.join(", ")} · Dado escolhido ${result.selected} · Total ${result.total} contra CD ${result.dc} · ${result.outcome}`); }}>Rolar Despertar</button>
+                {awakeningResult && <p className="field-full" role="status">{awakeningResult}</p>}
                 <label>Vertente<select value={draft.personalPath.branch ?? ""} onChange={event => update("personalPath", {...draft.personalPath, branch: (event.target.value || undefined) as CharacterPayload["personalPath"]["branch"]})}><option value="">Escolha uma vertente</option><option value="independente">Independente</option><option value="subversao">Subversão</option><option value="emancipacao">Emancipação</option></select></label>
                 <label>Axioma Autoral<select value={draft.personalPath.axiom ?? ""} onChange={event => update("personalPath", {...draft.personalPath, axiom: Number(event.target.value) || undefined})}><option value="">Escolha um Axioma</option>{axioms.map(axiom => <option key={axiom.id} value={axiom.id}>{axiom.name}</option>)}</select></label>
                 {pathAxiom(draft) && <p className="field-full">{pathAxiom(draft)?.effect}</p>}
@@ -847,7 +856,7 @@ export function CharacterPowerEditor({ draft, automatic, onChange }: PowerEditor
           <details><summary>Consultar as 25 Runas</summary>{runes.map(rune => <details key={rune.id}><summary>{rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido</summary><p>{rune.category}</p><p><strong>Enquanto armada.</strong> {rune.passive}</p><p><strong>Estouro.</strong> {rune.burst}</p></details>)}</details>
         </section>
 
-        {draft.className === "Inventor" && <section className="power-section"><WorkshopPanel draft={draft} onChange={onChange} /></section>}
+        {draft.className === "Inventor" && <section className="power-section" id="poder-oficina"><WorkshopPanel draft={draft} onChange={onChange} /></section>}
         <InvocationEditor draft={draft} onChange={onChange} />
 
         <VowEditor draft={draft} automatic={automatic} onChange={onChange} />

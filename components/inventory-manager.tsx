@@ -33,9 +33,10 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse,o
  const update=(id:string,patch:Partial<InventoryItem>)=>onChange?.({...draft,inventory:draft.inventory.map(i=>i.id===id?{...i,...patch}:i)});
  const add=()=>{if(draft.inventory.length>=100)return;const entry=catalog.find(i=>i.id===selected);onChange?.({...draft,inventory:[...draft.inventory,{...(entry??{name:"Novo item",spaces:1,notes:"",category:"gear" as const}),category:(entry?.category??"gear") as InventoryItem["category"],id:globalThis.crypto?.randomUUID?.()??`item-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`,catalogId:entry?.id,quantity:1,location:"backpack",equipped:false}]});};
  return <section className="inventory-manager" id="ficha-inventario"><header><Backpack/><div><p>PREPARAÇÃO DA EXPEDIÇÃO</p><h2>Inventário e Carga</h2></div></header>
- <div className="inventory-dashboard" data-tier={state.tier} aria-live="polite"><div><span>Carga atual / confortável</span><strong>{fmt(state.current)} <small>/ {fmt(state.capacity)}</small></strong></div><div><span>Faixa atual</span><strong>{state.label}</strong></div><div><span><Shield size={14}/> CA com equipamento</span><strong>{derived.armor}</strong></div><div><span><Footprints size={14}/> Movimento</span><strong>{derived.movement} m</strong></div></div>
+ <div className="inventory-dashboard" data-tier={state.tier} aria-live="polite"><div><span>Carga atual / confortável</span><strong>{fmt(state.current)} <small>/ {fmt(state.capacity)}</small></strong></div><div><span>Faixa atual</span><strong>{state.label}</strong></div><div><span><Shield size={14}/> CA com equipamento</span><strong>{Math.floor(derived.armor / 2)} / {derived.armor}</strong></div><div><span><Footprints size={14}/> Movimento</span><strong>{derived.movement} m</strong></div></div>
+ <p className="inventory-rule">Carga Ágil até {fmt(state.capacity / 2)} espaços (50% da Carga Confortável). +2 m de Movimento e +1d20 em uma marcha por jornada.</p>
  <progress aria-label="Carga em relação ao dobro do limite" value={state.current} max={Math.max(1,state.capacity*2)}/>
- <p className="inventory-rule">Prontidão: <b>{fmt(state.ready)} / {state.readiness}</b> espaços. Carga vestida e empunhada conta; itens em transporte externo saem do total pessoal. {state.tier===0?"Carga Ágil: +2 m e +1d20 em uma marcha por jornada.":"Marcha de 8 TE: Constituição + Atletismo; falha causa Exausto. A sobrecarga aumenta a CD em 3."}</p>
+ <p className="inventory-rule">Prontidão: <b>{fmt(state.ready)} / {state.readiness}</b> espaços. Carga vestida e empunhada conta; itens em transporte externo saem do total pessoal. {state.tier!==0&&<>Marcha de 8 <abbr title="Tempo de Expedição. 1 TE equivale a 2 horas de trabalho focado.">TE</abbr> com Constituição + Atletismo. Falha causa Exausto. A sobrecarga aumenta a CD em 3.</>}</p>
  {(state.penalties.length>0||state.issues.length>0)&&<div className="inventory-alert" role="status"><AlertTriangle/><div><strong>{state.tier>=3?"Deslocamento e viagem comprometidos":"Penalidades e requisitos ativos"}</strong><ul>{[...state.penalties,...state.issues].map(p=><li key={p}>{p}</li>)}</ul><p>{state.disadvantages} fontes de desvantagem registradas. Fontes independentes podem coexistir; repetições da mesma peça não contam novamente. Dados nunca caem abaixo de 1d20.</p></div></div>}
  {!readOnly&&<div className="inventory-catalog"><ItemCatalogPicker value={selected} onChange={setSelected}/><button type="button" onClick={add} disabled={draft.inventory.length>=100}><Plus/> Adicionar item</button></div>}
  <AlchemyMeter draft={draft} onChange={onChange} readOnly={readOnly}/>
@@ -54,13 +55,12 @@ export function InventoryManager({draft,onChange,readOnly=false,onInventoryUse,o
    <div className="inventory-summary-copy">
      <strong>{item.name}</strong>
      <div className="inventory-summary-meta">
-       <span>{categories[item.category??"gear"]}</span>
-       <span>{fmt(spaces)} {spaces===1?"espaço":"espaços"}</span>
+       <span> · {categories[item.category??"gear"]}</span>
+       <span> · {fmt(spaces)} {spaces===1?"espaço":"espaços"}</span>
        <span>{item.equipped?"Equipado":locations[item.location??"backpack"]}</span>
        {runeSlots?.category==="Arma" ? <span>Runas {armed}/{runeSlots.slots || 1}{runeSlots.slots ? "" : " · vaga pessoal"}</span> : (item.category==="weapon" || mageWeapon) && <span>Sem encaixe rúnico</span>}
        {armed>0&&runeSlots?.category!=="Arma"&&<span>{armed} {armed===1?"runa armada":"runas armadas"}</span>}
      </div>
-     {notes&&<p className="inventory-effect-preview">{notes}</p>}
    </div>
    <ChevronDown aria-hidden="true" size={16} />
  </summary>

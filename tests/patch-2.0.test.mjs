@@ -73,7 +73,7 @@ test('skill previews and rolls use final attributes, explicit social approaches 
  const reflex=rules.getSkillTest(d,automatic,'Reflexos');
  assert.deepEqual([reflex.attribute,reflex.value,reflex.dice,reflex.bonus],['Agilidade',5,3,2]);
  const social=rules.getSkillTest(d,automatic,'Persuasão');
- assert.deepEqual([social.attribute,social.dice,social.bonus],['Presença',1,-4]);
+ assert.deepEqual([social.attribute,social.dice,social.bonus],['Presença',1,2]);
  assert.equal(rules.getSkillTest(d,automatic,'Persuasão','Intelecto').analyticBonus,0);
  const mental=rules.getSkillTest(d,automatic,'História');
  assert.deepEqual([mental.trainingBonus,mental.analyticBonus,mental.domainBonus,mental.bonus],[2,3,1,6]);
@@ -86,7 +86,7 @@ test('combat deducts maintenance once, expires counters and reports bloodied and
  const max=engine.characterMax(draft);
  draft.invocations=[{id:'test-invocation',name:'Sentinela',grade:'II',callForm:'Manifestação',profile:'Sem ajuste'}];
  const start=engine.liveState(draft);
- draft=engine.withLiveState(draft,{...start,impetus:0,currentKarma:6,domainRounds:{Força:2},summons:{'test-invocation':{life:10,active:true}}});
+ draft=engine.withLiveState(draft,{...start,inCombat:true,impetus:0,currentKarma:6,domainRounds:{Força:2},summons:{'test-invocation':{life:10,active:true}}});
  const act=(data)=>{draft=engine.applyCombatAction(draft,{id:crypto.randomUUID(),actorName:'Teste',title:'Teste',...data});return engine.liveState(draft);};
  const hit=act({type:'damage',amount:Math.ceil(max.life/2),resistance:0});
  assert.equal(hit.impetus,1);
@@ -125,4 +125,63 @@ test('paid invocation damage and fixed technique discounts stay consistent with 
  assert.equal(inv.invocationAbilityDamageError({...creature,ability:{karma:6,damage:'3d8'}}),undefined);
  assert.deepEqual(engine.registeredTechniqueCost({cost:'4 Karma',limits:'−1 Karma'}),{base:4,reduction:1,total:3});
  assert.equal(engine.registeredTechniqueCost({cost:'4 Karma',limits:'−1 Karma sob condição'}).total,4);
+});
+
+test('initiative and awakening use pure reserves, and partial conditions survive normalization', async () => {
+ const table=await vite.ssrLoadModule('/lib/table-play.ts');
+ assert.deepEqual(table.armorThresholds(23),{partial:11,total:23});
+ assert.equal(table.damageForAttack(11,'Acerto parcial'),5);
+ assert.equal(engine.rollInitiative(5,0,count=>Array.from({length:count},(_,i)=>i+5)).total,12);
+ assert.equal(engine.rollInitiative(0,0,()=>[10]).total,6);
+ let draft=model.createBlankCharacter();
+ draft.stage='Etapa III';
+ draft.attributes.Intelecto.base=5;
+ draft.skills['Canalização de Karma'].base=1;
+ draft.personalPath.failedAttempts=2;
+ const pure=engine.rollPathAwakening(draft,'Intelecto',n=>Array(n).fill(10));
+ assert.deepEqual([pure.dc,pure.bonus,pure.dice.length],[20,4,3]);
+ draft.divine.enabled=true;
+ draft.divine.blessingName="Outorga de teste";
+ const blessed=engine.rollPathAwakening(draft,'Intelecto',n=>Array(n).fill(10));
+ assert.deepEqual([blessed.dc,blessed.bonus,blessed.dice.length],[24,4,2]);
+ const condition=(name)=>({id:crypto.randomUUID(),actorName:'Mesa',title:name,type:'condition',condition:name,remove:false,attackOutcome:'Acerto parcial',rounds:3,potency:5});
+ assert.equal(engine.applyCombatAction(draft,condition('Lento')),draft);
+ draft=model.normalizeCharacterPayload(engine.applyCombatAction(draft,condition('Sangramento')));
+ assert.equal(draft.combatState.conditionRounds.Sangramento,1);
+ assert.equal(draft.combatState.conditionPotency.Sangramento,2);
+});
+
+test('exploration charges once and only reaching zero adds a Fratura', () => {
+ let draft=model.createBlankCharacter();
+ draft.invocations=[{id:'test-invocation',name:'Autômato',grade:'IV',callForm:'Manifestação',profile:'Sem ajuste'}];
+ draft=engine.withLiveState(draft,{...engine.liveState(draft),currentKarma:9,summons:{'test-invocation':{life:5,active:true,fractures:2}}});
+ const act=(data)=>{draft=engine.applyCombatAction(draft,{id:crypto.randomUUID(),actorName:'Teste',title:'Teste',...data});return engine.liveState(draft);};
+ const summon=(operation,delta)=>act({type:'summon',invocationId:'test-invocation',operation,delta});
+ assert.equal(act({type:'round'}).currentKarma,9);
+ assert.equal(summon('explore').currentKarma,6);
+ assert.equal(summon('explore').currentKarma,6);
+ assert.equal(summon('life',-5).summons['test-invocation'].fractures,3);
+ assert.equal(summon('life',-5).summons['test-invocation'].fractures,3);
+ assert.equal(act({type:'rest'}).summons['test-invocation'].fractures,3);
+ assert.throws(()=>summon('call'),/Colapso Estrutural/);
+ assert.equal(summon('repair').summons['test-invocation'].fractures,0);
+});
+
+test('natural 20 earns one Ímpeto per round across reloads and the shield uses the greater mental attribute', () => {
+ let draft=model.createBlankCharacter();
+ draft.race='Humano';
+ draft.stage='Etapa IV';
+ draft.attributes.Espírito.base=4;
+ draft.attributes.Constituição.base=2;
+ draft=engine.withLiveState(draft,{...engine.liveState(draft),inCombat:true,impetus:0});
+ const act=(data)=>{draft=model.normalizeCharacterPayload(engine.applyCombatAction(draft,{id:crypto.randomUUID(),actorName:'Teste',title:'Teste',...data}));return engine.liveState(draft);};
+ const natural={type:'execute',kind:'skill',cost:0,diceResults:[20]};
+ assert.equal(act(natural).impetus,1);
+ assert.equal(act(natural).impetus,1);
+ act({type:'round'});
+ assert.equal(act(natural).impetus,2);
+ const shield=act({type:'indomitableSurvival'});
+ assert.equal(shield.tempShield,10);
+ assert.equal(shield.impetus,1);
+ assert.equal(shield.reactions,0);
 });

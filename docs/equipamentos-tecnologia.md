@@ -2,7 +2,7 @@
 
 Uma expedição começa antes da primeira porta. Cada arma ocupa mãos, cada provisão ocupa espaço e cada moeda comprometida com equipamento deixa de pagar abrigo, tratamento ou passagem. Preparar-se significa escolher o que estará disponível quando não houver tempo para procurar no fundo da mochila.
 
-Os preços deste capítulo usam a moeda de Meridian, abreviada como m. O catálogo apresenta equipamento íntegro, de tamanho Médio, adquirido em uma cidade com acesso regular ao produto. As propriedades indicadas já estão incluídas no preço. O pagamento não substitui licença, vínculo, treinamento ou acesso a uma fonte sobrenatural.
+Os preços deste capítulo usam a moeda de Meridian, abreviada como M$. O catálogo apresenta equipamento íntegro, de tamanho Médio, adquirido em uma cidade com acesso regular ao produto. As propriedades indicadas já estão incluídas no preço. O pagamento não substitui licença, vínculo, treinamento ou acesso a uma fonte sobrenatural.
 
 ## Testes e medidas de equipamento
 
@@ -12,7 +12,7 @@ Ataques de contato usam Força + Luta; arremessos e disparos usam Agilidade + Po
 
 **Ações de inventário.** Principal é a ação central do turno; Movimento é a ação que normalmente permite deslocar; interação simples é o gesto breve gratuito do próprio turno. Há uma interação simples de inventário por turno. Uma Livre concedida para outra função não permite sacar uma segunda arma. Se uma técnica concede ações adicionais, ela precisa autorizar expressamente a interação correspondente.
 
-**Tempo e alcance.** Um Turno de Exploração, ou TE, equivale a aproximadamente 30 minutos. Uma jornada normal ocupa 8 TE de viagem, e um descanso longo seguro ocupa 12 TE. Corpo a corpo alcança 2 m; curto, 5 m; médio, 15 m; longo, 30 m. Uma distância numérica no catálogo prevalece sobre a faixa. Ações realizadas durante o mesmo TE não cobram esse tempo duas vezes.
+**Tempo e alcance.** Um Tempo de Expedição (TE) equivale a 2 horas de trabalho focado ou manutenção. Um descanso curto comporta 1 TE. Um descanso longo de 8 horas comporta até 3 TE de criação ou reparo. Corpo a corpo alcança 2 m; curto, 5 m; médio, 15 m; longo, 30 m. Uma distância numérica no catálogo prevalece sobre a faixa. Ações realizadas durante o mesmo TE não cobram esse tempo duas vezes.
 
 **Defesas.** Equipamento altera apenas as parcelas de CA, Resistência e Evasão expressamente indicadas. Ataques conservam os graus total, parcial e falha do combate. Evasão gasta Reação e usa Agilidade + Reflexos, precisando superar o ataque. Em oposição, empate conserva a situação do defensor. A divisão do dano parcial ocorre antes da Resistência, dos escudos temporários e da perda de Vida.
 
@@ -37,8 +37,8 @@ Arma ou armadura feita para outro tamanho recebe Desvantagem em seu uso e não p
 |---|---|---|---|
 | Leve ou Ágil | L até metade de C | +2 m ao deslocamento pessoal; não concede CA ou Reação | +1d20 em um teste de marcha por jornada, declarado antes de rolar |
 | Confortável | Acima da metade até C | Sem ajuste de carga | Sem ajuste de carga |
-| Sobrecarregado | Acima de C até 1,5 × C | −2 m, mínimo 2 m; −1 CA; Desvantagem em Evasão | Desvantagem em Furtividade; +3 à CD da marcha |
-| Crítica | Acima de 1,5 × C até 2 × C | Deslocamento dividido por quatro, mínimo 1 m; −3 CA; sem Evasão ou corrida | Desvantagem em esforço físico e Furtividade; não realiza jornada de viagem |
+| Sobrecarregado | Acima de C até 1,5 × C | −2 m, mínimo 2 M$; −1 CA; Desvantagem em Evasão | Desvantagem em Furtividade; +3 à CD da marcha |
+| Crítica | Acima de 1,5 × C até 2 × C | Deslocamento dividido por quatro, mínimo 1 M$; −3 CA; sem Evasão ou corrida | Desvantagem em esforço físico e Furtividade; não realiza jornada de viagem |
 | Imobilizante | Acima de 2 × C | Não transporta o conjunto nem se desloca com ele | Precisa largar, repartir ou colocar a carga em transporte |
 
 Use somente a faixa mais severa. As penalidades de carga não se somam entre faixas; condições e limitações independentes ainda se aplicam. Carga Crítica não impede falar ou realizar uma Principal compatível, mas impede saltar, escalar ou nadar levando o conjunto. A faixa Imobilizante não paralisa o corpo: o personagem pode soltar o que o prende e agir normalmente com a carga restante.
@@ -64,7 +64,7 @@ Além da carga total, cada personagem possui **6 espaços de prontidão** para o
 
 Sacar não equivale a atacar, beber, recarregar ou ativar. A granada do Capítulo 20 incorpora sacar, armar e lançar em sua Principal se estiver na prontidão. Recarga com munição na mochila exige retirá-la primeiro. Mudar o lugar de objetos durante um intervalo de 1 minuto é automático se houver acesso aos recipientes.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="mochila-de-campanha">Mochila de campanha</span> | 6 | Organiza até 12 espaços de conteúdo | 1 vazia | — | Capacidade interna; não aumenta C; correias de soltura rápida |
 | <span data-item="cinto-tatico">Cinto tático</span> | 5 | Prontidão total passa a 8 | 0,5 | — | Máximo 4 espaços do total presos ao próprio cinto |
@@ -83,7 +83,7 @@ Soltar uma mochila com correias rápidas custa interação simples e deixa todo 
 
 Registre frações em metades, terços ou quartos. Some-as uma vez no total do inventário; não arredonde cada tipo separado. Para quem prefere números inteiros, some todas as frações e arredonde somente o total para cima antes de consultar a faixa. O grupo escolhe um dos métodos para todos.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="racao-seca-diaria">Ração seca diária</span> | 0,5 | Alimentação de uma pessoa | 0,25 por dia | — | Quatro dias formam 1 espaço; água separada |
 | <span data-item="cantil-cheio">Cantil cheio</span> | 0,5 | Água para um dia em clima ameno | 0,25 por dia | — | Quatro reservas diárias formam 1; calor extremo dobra consumo |
@@ -121,7 +121,7 @@ Leve, Média e Pesada são categorias de construção. Quantidade de mãos, requ
 
 **Condutora.** Registre uma fonte. Uma técnica dessa fonte pode partir do item e, se for um ataque direto contra um alvo, herdar uma propriedade compatível entre Precisa, Alcance e Brutal. A técnica conserva ação, teste e custo. Não soma o dano completo da arma, não herda Automática ou Perfurante, não concede vantagem genérica de conjuração e não reduz Karma.
 
-**Ritualística.** Registre uma família de ritos. Uma vez por descanso longo seguro, ao iniciar um rito dessa família com preparação de duas rodadas ou mais, ou de pelo menos 1 TE, escolha reduzir à metade apenas a preparação ou substituir até 10 m de materiais comuns consumidos. Arredonde rodadas para cima; meio TE equivale a 15 minutos. A conclusão, os testes, a ação final, os componentes únicos, os votos e os custos sobrenaturais permanecem. Não converte uma técnica instantânea em ritual gratuito.
+**Ritualística.** Registre uma família de ritos. Uma vez por descanso longo seguro, ao iniciar um rito dessa família com preparação de duas rodadas ou mais, ou de pelo menos 1 TE, escolha reduzir à metade apenas a preparação ou substituir até 10 M$ de materiais comuns consumidos. Arredonde rodadas para cima; meio TE equivale a 15 minutos. A conclusão, os testes, a ação final, os componentes únicos, os votos e os custos sobrenaturais permanecem. Não converte uma técnica instantânea em ritual gratuito.
 
 **Origem Remota.** Permite que a técnica canalizada pelo foco tenha origem na posição dele. Exige linha de efeito do usuário ao foco e do foco ao alvo, além de percepção do alvo pelo usuário. O alcance da técnica é medido a partir do foco; o usuário precisa mantê-lo a até 15 m. Não concede olhos, ações, alvos ou disparos adicionais. As defesas consideram a origem real do efeito. O orbe tem CA 12 e Vida 6; fora do alcance ou sem linha de efeito, sua levitação termina e ele retorna à mão apenas se houver caminho livre, caso contrário cai. Quebrado permanece onde caiu.
 
@@ -139,7 +139,7 @@ Nenhuma dessas propriedades altera o crítico por padrão. Um efeito que reduza 
 
 Os valores de dano abaixo são bases. Destruidor acrescenta seu +1 quando usado corretamente; não está embutido no dado da tabela. Manoplas são um par e exigem ambas as mãos desimpedidas para seu ataque básico. Uma lança pode ser arremessada apenas quando a linha permitir.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="punhos">Punhos</span> | 0 | 1d4 físico | 0 | — | 2 m; uma mão livre; desarmado |
 | <span data-item="manoplas">Manoplas</span> | 12 | 2d4 físico | 1 o par | 1 | 2 m; duas mãos; Precisa, Condutora |
@@ -162,7 +162,7 @@ Florete troca força bruta por acesso à Agilidade e dano menor. Haste mantém i
 
 ## Armas de distância
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="arco-curto">Arco curto</span> | 14 | 1d8 perfurante | 2 | 1 | 15 m; Média; duas mãos; colocar flecha integra Atacar |
 | <span data-item="arco-longo">Arco longo</span> | 24 | 1d10 perfurante | 2 | 2 | 30 m; Média; duas mãos; Desvantagem a até 5 m |
@@ -178,7 +178,7 @@ Flechas comuns não recebem o efeito de uma munição de fogo pelo mesmo nome. D
 
 O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tabela indica quais armas de magos aceitam Runas de Arma e quantas podem manter armadas. As vagas nativas ficam fora do limite pessoal e ainda retêm Karma. Consulte o capítulo de Karma para a lista de armas comuns compatíveis.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
 |---|---|---|---|---|---|---|
 | <span data-item="grimorio">Grimório Catalisador</span> | 35 | 1d6 Kármico | 1 | 0 | 12 m · Focal, Ritualística, Uma Mão | 1 |
 | <span data-item="orbe-de-convergencia">Orbe de Ressonância</span> | 75 | 1d8 Elemental / Kármico | 1 | 0 | 15 m · Focal, Condutora, Flutuante | 1 |
@@ -207,7 +207,7 @@ O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tab
 
 ### Outros focos e acessórios
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades | Vagas rúnicas |
 |---|---|---|---|---|---|---|
 | <span data-item="varinha">Varinha</span> | 10 | 1d6 Karma | 1 | — | 15 m; Leve; uma mão; Focal, Precisa | 0 |
 | <span data-item="amuleto-de-vinculo">Amuleto de vínculo</span> | 60 | 1d8 Karma | 0,5 | — | 15 m; tocar com mão livre; superior de origem; Focal, Reservatório 8, Ritualística | 1 |
@@ -218,7 +218,7 @@ O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tab
 
 Use uma única armadura na CA. Uma camada reforçada sob uma proteção pesada não soma os dois bônus. A carga sempre conta, inclusive com a peça vestida. O limite de Agilidade afeta apenas a parcela de Agilidade somada à CA, sem reduzir o Atributo usado na reserva de testes.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="roupa-comum">Roupa comum</span> | 2 | +0 CA; Resistência 0 | 0 vestida; 0,5 extra | — | Sem limite de Agilidade; sem penalidade |
 | <span data-item="roupa-reforcada">Roupa reforçada</span> | 6 | +1 CA; Resistência 0 | 1 | — | Sem limite de Agilidade; discreta |
@@ -244,7 +244,7 @@ Vestir ou retirar armadura leve exige 1 minuto; média, 5 minutos; pesada, 10 mi
 
 Ter uma ferramenta permite a tarefa. Um bônus só existe quando estiver escrito. Dois kits que atendam à mesma função não dobram bônus, cargas ou tentativas permitidas pelo tratamento. Consumíveis são pagos ao declarar o uso e se perdem mesmo se o teste falhar.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="kit-de-viagem">Kit de viagem</span> | 6 | Lona, pederneira, panela e cobertor | 2 | — | Uma pessoa; não inclui comida ou água |
 | <span data-item="kit-de-medicina">Kit de Medicina</span> | 12 | Ferramentas e 3 cargas de tratamento | 2 | — | Toque; Medicina; carga consumida em cada tratamento que a exija |
@@ -304,7 +304,7 @@ Todo frasco de poção, elixir, antídoto, óleo, base líquida ou catalisador o
 
 Um TE corresponde a aproximadamente 30 minutos. Trabalho em descanso ocupa esse tempo e não conta simultaneamente como repouso; só o período restante pode cumprir o descanso. Não há síntese modular durante um turno de combate. A habilidade Síntese Alquímica conserva seu procedimento excepcional de fabricação rápida. Fórmulas corrompidas exigem acesso legítimo à Corrupção; testes da Marca e Cargas seguem o Capítulo 14 e não são substituídos pela Saturação.
 
-**Materiais e preço.** Para cada produto final listado, o custo de síntese é 75% do preço de compra, arredondado para cima, mínimo 2 m. Esse total inclui base, reagentes, catalisador e frasco; não some esses componentes de novo. Ao usar componentes já comprados ou colhidos, desconte seu valor de referência do total, até zero, e consuma-os. Bases, reagentes puros, catalisadores e kits não são produzidos por essa fórmula de desconto; óleos de infusão são produtos finais e usam o custo de síntese. O custo só vale para a receita específica: quatro frascos de água não substituem reagentes raros. Venda de fabricação doméstica segue demanda e licenças, sem lucro automático garantido.
+**Materiais e preço.** Para cada produto final listado, o custo de síntese é 75% do preço de compra, arredondado para cima, mínimo 2 M$. Esse total inclui base, reagentes, catalisador e frasco; não some esses componentes de novo. Ao usar componentes já comprados ou colhidos, desconte seu valor de referência do total, até zero, e consuma-os. Bases, reagentes puros, catalisadores e kits não são produzidos por essa fórmula de desconto; óleos de infusão são produtos finais e usam o custo de síntese. O custo só vale para a receita específica: quatro frascos de água não substituem reagentes raros. Venda de fabricação doméstica segue demanda e licenças, sem lucro automático garantido.
 
 **Colheita.** Em 1 TE, faça Intelecto + Sobrevivência para flora, Medicina para tecido orgânico ou Ocultismo para resíduo sobrenatural, CD 15, 18 ou 24 conforme o perigo. Sucesso extrai uma porção do vetor declarado; falha inutiliza essa oportunidade. Cada fonte oferece no máximo uma porção útil por vetor autorizado pelo Mestre, sem nova tentativa sobre o mesmo resto. A coleta não faz surgir ingredientes em qualquer cadáver. Anote vetor, procedência e valor; material instável dura 24 horas sem conservação, ou sete dias no kit de conservação de reagentes. A carga de cada porção lacrada é 0,25 espaços.
 
@@ -320,26 +320,26 @@ Doses arremessadas e óleos não geram Saturação no usuário; seus perigos sã
 
 **Restauração de Karma.** Uma criatura recebe benefício de restaurador alquímico de Karma somente uma vez por cena substancial, somando poções comerciais e Síntese Alquímica. Trocar de fórmula ou fabricante não renova esse limite. A cena só se renova após acontecimento ou desafio relevante, nunca pela declaração de uma pausa ou novo combate artificial. A dose repetida é consumida e gera Saturação normalmente, mesmo sem restaurar Karma. Cristais investidos e fontes kármicas seguem suas próprias regras, sem se tornarem poções.
 
-**Teste de rejeição.** Se a nova Saturação ultrapassar o limiar, faça imediatamente Constituição + Atletismo contra **CD 14 + Saturação total após a dose**. Não use Medicina para resistir com o próprio corpo. Medicina pode diagnosticar ou tratar a reação pelas regras abaixo, sem substituir esse teste. Sucesso permite o efeito integral da dose, respeitados os limites, mas não reduz Saturação. Falha aplica somente a linha correspondente ao excesso total; as linhas não se acumulam entre si na mesma dose. Novas doses exigem novo teste; reações anteriores ainda em duração continuam válidas, sem somar penalidades idênticas. Não é possível escolher falhar para obter um benefício.
+**Teste de rejeição.** Se a nova Saturação ultrapassar o limiar, faça imediatamente Constituição + Atletismo contra **CD 14 + Saturação total após a dose**. Não use Medicina para resistir com o próprio corpo. Medicina pode diagnosticar ou tratar a reação pelas regras abaixo, sem substituir esse teste. Sucesso permite o efeito integral da dose, respeitados os limites, mas não reduz Saturação. Na falha, sofra 1d6 de dano químico por ponto acima do limiar e fique Envenenado, ou Exausto se houver colapso. Aplique a linha correspondente ao excesso total; as linhas não se acumulam entre si na mesma dose. Novas doses exigem novo teste; reações anteriores ainda em duração continuam válidas, sem somar penalidades idênticas. Não é possível escolher falhar para obter um benefício.
 
 | Excesso acima do limiar | Rejeição na falha | Efeito completo |
 |---|---|---|
 | 1 | Enjoo químico | Cura ou recuperação numérica da dose cai à metade, arredondada para baixo; duração de benefício não numérico cai à metade, mínimo um turno. Remoção instantânea de condição falha. Desvantagem de 1d20 em testes de Agilidade e nos testes exigidos para manter concentração até o fim do próximo turno do alvo. Não cria uma nova Perícia de Concentração. |
 | 2 | Expurgo violento | A dose não produz benefício. Perde a próxima Ação de Movimento, até o fim do próximo turno, e não pode Evadir até o início desse próximo turno. Se a Ação de Movimento atual já foi gasta para beber, perde a do turno seguinte. CA não sofre uma redução adicional. |
-| 3 | Inversão tóxica | A dose não produz benefício; sofre 2d8 químico interno diretamente na Vida, ignorando CA, armadura e escudos temporários, e perde 2 Karma, mínimo zero. Proteção expressa contra veneno ou dano químico ainda pode reduzir o dano; não é ataque nem crítico. |
-| 4 ou mais | Colapso tóxico | A dose não produz benefício; sofre 3d8 químico interno nas mesmas condições, perde 2 Karma e fica Exausto. Não pode receber outra poção ou elixir, inclusive por administração ou injeção, até um descanso longo seguro ou tratamento de purificação bem-sucedido. Água e alimentação comuns continuam possíveis após estabilização; não curam o colapso. |
+| 3 | Inversão tóxica | A dose não produz benefício; perde 2 Karma, mínimo zero. Proteção expressa contra veneno ou dano químico ainda pode reduzir o dano; não é ataque nem crítico. |
+| 4 ou mais | Colapso tóxico | A dose não produz benefício; perde 2 Karma e fica Exausto. Não pode receber outra poção ou elixir, inclusive por administração ou injeção, até um descanso longo seguro ou tratamento de purificação bem-sucedido. Água e alimentação comuns continuam possíveis após estabilização; não curam o colapso. |
 
 Exausto usa a condição do Capítulo 7 e não acumula consigo. A Saturação da dose permanece mesmo quando ela é expelida ou causa inversão. Reduzir Constituição e, portanto, o limiar não causa rejeição retroativa: confira o excesso na próxima dose. Aumentar Constituição não apaga Saturação acumulada.
 
 **Recuperação.** Um descanso longo seguro com água e alimentação remove toda a Saturação e o bloqueio por colapso. Descanso curto ou uma nova cena não reduzem o contador. O Antídoto comum trata veneno, não a Saturação. Purgador alquímico pode reduzir o total em 2, após sua própria Saturação e seu teste de rejeição, apenas uma vez entre descansos longos seguros; se for rejeitado, não reduz nada. Remover e ganhar pontos dessa maneira não renova o uso do purgador.
 
-**Purificação do colapso.** Um cuidador treinado em Medicina 2 com kit médico gasta 3 TE e 10 m de materiais, usando Intelecto + Medicina CD 18. Sucesso remove o bloqueio de novas poções e reduz Saturação em 2, uma vez por alvo entre descansos longos seguros; não remove Exausto. Falha consome materiais e tempo, sem repetição antes desse descanso. Uma liturgia que remova expressamente veneno ou contaminação pode substituir esse procedimento para remover o bloqueio, pagando seus próprios custos, mas não reduz Saturação adicional nem renova o tratamento. Alvos inconscientes são estabilizados antes. Nenhuma purificação permite beber durante a própria resolução de uma rejeição.
+**Purificação do colapso.** Um cuidador treinado em Medicina 2 com kit médico gasta 3 TE e 10 M$ de materiais, usando Intelecto + Medicina CD 18. Sucesso remove o bloqueio de novas poções e reduz Saturação em 2, uma vez por alvo entre descansos longos seguros; não remove Exausto. Falha consome materiais e tempo, sem repetição antes desse descanso. Uma liturgia que remova expressamente veneno ou contaminação pode substituir esse procedimento para remover o bloqueio, pagando seus próprios custos, mas não reduz Saturação adicional nem renova o tratamento. Alvos inconscientes são estabilizados antes. Nenhuma purificação permite beber durante a própria resolução de uma rejeição.
 
 ### Catálogo alquímico
 
 Os preços são por dose; os efeitos não somam bônus idênticos. Efeitos de combate duram até o prazo indicado ou o fim da cena, o que ocorrer primeiro. Toda restauração respeita os máximos e não trata Ferimentos Graves. Ampolas de dano não recebem bônus de arma ou dados de ampliação de técnica. Produtos de CD 24 exigem licença institucional e laboratório; fórmulas corrompidas seguem também as restrições da Corrupção. Os demais são Livres, salvo legislação local. Reagentes e kits têm CD — por não serem doses sintetizadas pelo procedimento acima.
 
-| Nome do Item | Tipo (Ingestão/Arremesso/Reagente) | Preço (m) | Carga (Espaços) | Saturação Gerada | CD de Síntese | Efeito Mecânico Completo |
+| Nome do Item | Tipo (Ingestão/Arremesso/Reagente) | Preço (M$) | Carga (Espaços) | Saturação Gerada | CD de Síntese | Efeito Mecânico Completo |
 |---|---|---|---|---|---|---|
 | <span data-item="pocao-de-cura">Poção de cura</span> | Ingestão, Grau I | 8 | 0,25 | 1 | 15 | Recupera 2d6 Vida, até o máximo. |
 | <span data-item="pocao-de-cura-concentrada">Poção de cura concentrada</span> | Ingestão, Grau II | 24 | 0,25 | 2 | 18 | Recupera 3d6 Vida; não remove Ferimento Grave. |
@@ -382,7 +382,7 @@ Os preços são por dose; os efeitos não somam bônus idênticos. Efeitos de co
 
 ### Exemplos de síntese e rejeição
 
-**Uma dose preparada.** Irene tem Intelecto 5 e Medicina 1. Cura comum exige CD 15 e 1 TE; os materiais custam teto de 8 × 0,75 = 6 m. Ela rola 3d20, escolhe 12 e soma +2 de treino e +2 Analítico: 16, sucesso. Consome os materiais e registra Poção de cura, 0,25 espaços, 2d6 Vida, Saturação 1. Sem treino, não poderia usar essa síntese modular.
+**Uma dose preparada.** Irene tem Intelecto 5 e Medicina 1. Cura comum exige CD 15 e 1 TE; os materiais custam teto de 8 × 0,75 = 6 M$. Ela rola 3d20, escolhe 12 e soma +2 de treino e +3 Analítico: 17, sucesso. Consome os materiais e registra Poção de cura, 0,25 espaços, 2d6 Vida, Saturação 1. Sem treino, não poderia usar essa síntese modular.
 
 **Uma dose a mais.** Damião tem Constituição 5 e Atletismo 2: limiar 5. Já acumula Saturação 5 e bebe cura concentrada em Prontidão, gastando Movimento. Vai a 7; excesso 2, CD 21. Rola 3d20, seleciona 13 e soma +5: 18, falha. Não recupera Vida, fica sem Evasão até o início do próximo turno e perde a Ação de Movimento desse próximo turno, pois já gastou a atual. Permanece com Saturação 7. Uma segunda dose arriscaria rejeição mais grave; mudar de poção não limpa o sangue.
 
@@ -390,7 +390,7 @@ Os preços são por dose; os efeitos não somam bônus idênticos. Efeitos de co
 
 Escolha o efeito antes de fabricar. Uma arma refinada custa ao menos três vezes o preço-base e escolhe terceira propriedade ou +1d20 uma vez por cena num uso estreito registrado; não recebe ambos. Uma obra-prima custa pelo menos dez vezes o preço-base e possui uma melhoria específica de projeto, sem bônus universal a todos os ataques. A disponibilidade do material pode exigir aventura mesmo quando existe preço.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | Propriedade física adicional | +50% do preço-base | Instala uma propriedade de construção compatível | Igual ao item | Igual ao item | Não ultrapassa limite de propriedades; mão de obra separada |
 | Matriz Focal | +15 | Autoriza a combinação de uma fonte registrada | Igual ao item | Igual ao item | Requer fórmula e treinamento do usuário |
@@ -407,7 +407,7 @@ Os valores adicionais são custos de componentes; serviço usa os procedimentos 
 
 ## Economia, serviços e disponibilidade
 
-Uma refeição simples custa 1 m; uma diária em hospedaria modesta custa 2 m. A semana de vida comum de 10 m pressupõe preparo doméstico, alimentação comprada em quantidade e alojamento compartilhado; não equivale a sete diárias com refeições avulsas. Dinheiro compra tempo e acesso, mas a segurança de uma rota ou a lealdade de uma facção continuam dependendo do mundo.
+Uma refeição simples custa 1 M$; uma diária em hospedaria modesta custa 2 M$. A semana de vida comum de 10 M$ pressupõe preparo doméstico, alimentação comprada em quantidade e alojamento compartilhado; não equivale a sete diárias com refeições avulsas. Dinheiro compra tempo e acesso, mas a segurança de uma rota ou a lealdade de uma facção continuam dependendo do mundo.
 
 | Compra ou serviço | Preço de referência | Condição |
 |---|---|---|
@@ -421,7 +421,7 @@ Uma refeição simples custa 1 m; uma diária em hospedaria modesta custa 2 m. A
 | Reparo Quebrado por profissional | 60% do preço do item | Componentes disponíveis; relíquias podem exigir mais |
 | Licença civil de porte e registro | 10 m por ano | Autoridade reconhecida, identidade e exame básico |
 | Autorização institucional restrita | 25 m de trâmite | Exige patrocinador e finalidade; taxa não compra aprovação |
-| Aluguel de ferramenta comum | 10% do preço por dia | Caução pelo valor do item; mínimo 1 m |
+| Aluguel de ferramenta comum | 10% do preço por dia | Caução pelo valor do item; mínimo 1 M$ |
 
 **Livre** Dispensa autorização especial. **Licenciado** exige registro e usuário habilitado. **Restrito** depende de instituição, serviço, missão ou autorização específica para aquele material. **Proibido** não possui venda legal; o valor apresentado, se houver, é referência de campanha, não permissão. Licenças são categorias do cenário, não leis de um país real. Uma arma registrada continua dependendo da jurisdição visitada.
 
@@ -429,7 +429,7 @@ Em rota abastecida, use o preço de catálogo. Escassez declarada aplica ×1,5; 
 
 Negociar usa Presença + Persuasão contra a resistência do vendedor, quando houver interesse real. Vitória altera o preço em 10% a favor de quem negocia, uma vez por lote; fracasso não autoriza repetir a conversa indefinidamente. Serviços de alto risco e relíquias únicas podem exigir outra forma de pagamento. Uma licença não pode ser obtida apenas vencendo esse teste.
 
-Trabalho curto rende cerca de 5–15 m por personagem; missão perigosa, 20–50 m por personagem; contrato decisivo, 60–150 m pelo contrato. Registre se despesas, munição, transporte e tratamento serão reembolsados. Um contrato de quatro pessoas pagando 60 m no total rende 15 m a cada uma antes das despesas.
+Trabalho curto rende cerca de 5–15 M$ por personagem; missão perigosa, 20–50 M$ por personagem; contrato decisivo, 60–150 M$ pelo contrato. Registre se despesas, munição, transporte e tratamento serão reembolsados. Um contrato de quatro pessoas pagando 60 m no total rende 15 m a cada uma antes das despesas.
 
 ## Criação, reparo e desgaste
 
@@ -459,7 +459,7 @@ Divida o prazo entre recipiente, imbuimento e fixação final. Recipiente usa In
 
 Os preços abaixo incluem recipiente e poder, mas não consumíveis futuros. Todas exigem vínculo e estado Íntegro. Ativações não fazem teste próprio salvo indicação; a tarefa favorecida continua usando seu teste. Usos pertencem ao item e não reiniciam ao trocar de portador.
 
-| Nome do Item | Preço (m) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
+| Nome do Item | Preço (M$) | Dano / Efeito | Carga (Espaços) | Requisito de Força | Alcance e Propriedades |
 |---|---|---|---|---|---|
 | <span data-item="lanterna-do-eco">Lanterna do Eco</span> | 65 | Revela resíduos expostos por 3 rodadas; +1d20 na primeira análise | 1 | — | Grau I; Licenciado; Movimento; uma vez por cena; 30 m |
 | <span data-item="broche-da-vigilia">Broche da Vigília</span> | 80 | +1d20 numa Evasão por rodada | 0,25 | — | Grau I; Licenciado; precisa estar exposto; gasta a Reação normal |
@@ -508,7 +508,7 @@ A carga da tabela inclui arma, seus componentes integrais e um carregador vazio 
 
 ### Catálogo de armas portáteis
 
-| Arma | Licença | Preço (m) | Dano | Carga (Espaços) | Munição/Pente | Recarga | Alcance e Propriedades |
+| Arma | Licença | Preço (M$) | Dano | Carga (Espaços) | Munição/Pente | Recarga | Alcance e Propriedades |
 |---|---|---|---|---|---|---|---|
 | <span data-item="pistola-compacta">Pistola compacta</span> | Licenciado | 25 | 1d8 | 1 | 6; carregador | Movimento | 5 m; uma mão; Ocultável; Força 1 |
 | <span data-item="revolver-de-servico">Revólver de serviço</span> | Licenciado | 42 | 2d6 | 1 | 6; tambor | Principal cheia ou Movimento 3 | 15 m; uma mão; Confiável, Perfurante 1; Força 1 |
@@ -565,15 +565,15 @@ A supressão precisa ser sustentada por novas ações e munição a cada rodada.
 
 Registre calibre ou família compatível na compra. Munição de pistola, fuzil, espingarda e arma pesada não é intercambiável apenas por compartilhar dado de dano. Cargas abaixo incluem embalagem e dispositivo de alimentação quando expressos. Um carregador abastecido substitui, sem somar, a carga dele vazio e a munição solta que contém.
 
-| Munição ou recipiente | Licença | Preço (m) | Efeito | Carga (Espaços) | Força | Capacidade e uso |
+| Munição ou recipiente | Licença | Preço (M$) | Efeito | Carga (Espaços) | Força | Capacidade e uso |
 |---|---|---|---|---|---|---|
 | <span data-item="caixa-de-pistola-ou-submetralhadora">Caixa de pistola ou submetralhadora</span> | Licenciado | 6 | Munição comum | 1/3 | — | 20 disparos; três caixas formam 1 |
 | <span data-item="caixa-de-fuzil-ou-carabina">Caixa de fuzil ou carabina</span> | Licenciado | 8 | Munição comum | 0,5 | — | 20 disparos; duas caixas formam 1 |
 | <span data-item="caixa-de-espingarda">Caixa de espingarda</span> | Licenciado | 8 | Munição comum | 0,5 | — | 12 cartuchos; duas caixas formam 1 |
 | <span data-item="carregador-de-pistola-vazio">Carregador de pistola vazio</span> | Livre | 2 | Recipiente reutilizável | 0,25 | — | Até 10 disparos compatíveis |
 | <span data-item="carregador-de-pistola-abastecido">Carregador de pistola abastecido</span> | Licenciado | 5 | Inclui recipiente e munição | 1/3 | — | 8 disparos; remanescente do lote fica separado |
-| <span data-item="carregador-de-fuzil-abastecido">Carregador de fuzil abastecido</span> | Licenciado | 6 | Inclui recipiente e munição | 0,5 | — | 10 disparos; vazio custa 2 m e ocupa 0,25 |
-| <span data-item="carregador-de-submetralhadora-abastecido">Carregador de submetralhadora abastecido</span> | Restrito | 9 | Inclui recipiente e munição | 0,5 | — | 20 disparos; vazio custa 3 m e ocupa 0,25 |
+| <span data-item="carregador-de-fuzil-abastecido">Carregador de fuzil abastecido</span> | Licenciado | 6 | Inclui recipiente e munição | 0,5 | — | 10 disparos; vazio custa 2 M$ e ocupa 0,25 |
+| <span data-item="carregador-de-submetralhadora-abastecido">Carregador de submetralhadora abastecido</span> | Restrito | 9 | Inclui recipiente e munição | 0,5 | — | 20 disparos; vazio custa 3 M$ e ocupa 0,25 |
 | <span data-item="fita-de-metralhadora">Fita de metralhadora</span> | Restrito | 12 | Munição e alimentação compatíveis | 1 | — | 50 disparos; caixa rígida reutilizável ocupa 0,25 vazia |
 | <span data-item="projetil-antiblindagem">Projétil antiblindagem</span> | Restrito | 18 | Aplica a ficha do lançador | 1 | — | Uma utilização; embalagem de transporte incluída |
 | <span data-item="granada-de-morteiro">Granada de morteiro</span> | Restrito | 15 | Aplica a ficha do morteiro | 0,5 | — | Uma utilização |
@@ -584,7 +584,7 @@ Carregadores abastecidos são referência para compra pronta; transferir muniç�
 
 ### Munições especiais
 
-| Munição | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | Uso e limite |
+| Munição | Licença | Preço (M$) | Dano / Efeito | Carga (Espaços) | Força | Uso e limite |
 |---|---|---|---|---|---|---|
 | Perfurante | Licenciado ou Restrito | ×2 o lote comum | Perfurante +1, máximo 3 em portátil | Igual ao lote | Igual à arma | Não soma Antiblindagem nem atravessa cobertura total |
 | Incendiária | Restrito | ×2 o lote comum | Em total, Queimando 1d4 por dois turnos | Igual ao lote | Igual à arma | Um dano periódico por turno; Principal ou Água adequada apaga |
@@ -595,7 +595,7 @@ Só um tratamento especial se aplica ao mesmo projétil, salvo relíquia de proj
 
 ## Acessórios e manutenção de armas
 
-| Nome do Item | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | Alcance e propriedades |
+| Nome do Item | Licença | Preço (M$) | Dano / Efeito | Carga (Espaços) | Força | Alcance e propriedades |
 |---|---|---|---|---|---|---|
 | <span data-item="mira-telescopica">Mira telescópica</span> | Licenciado | 18 | +2 ao resultado após Mirar a mais de 30 m | +0,25 | Igual à arma | Fuzil compatível; não funciona no turno em que se deslocou |
 | <span data-item="supressor-compativel">Supressor compatível</span> | Licenciado | 20 | Som audível em faixa médio em vez de longo | +0,25 | Igual à arma | Pistola ou submetralhadora compatível; não silencia Rajada |
@@ -620,7 +620,7 @@ As fichas abaixo são dispositivos do jogo. Instalação e desarme são resolvid
 
 Uma explosão rola dano uma vez para todos. Cobertura é medida a partir do centro. Evasão ou Bloqueio reduz o grau conforme combate; se o resultado já era parcial, essa redução pode anulá-lo. Área não ignora parede fechada que realmente contenha o efeito. Ninguém recebe uma rolagem de Evasão sem Reação ou sem destino possível.
 
-| Dispositivo | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | CD E/D e área |
+| Dispositivo | Licença | Preço (M$) | Dano / Efeito | Carga (Espaços) | Força | CD E/D e área |
 |---|---|---|---|---|---|---|
 | <span data-item="granada-de-fragmentacao">Granada de fragmentação</span> | Restrito | 12 | 3d6 físico | 0,25 | 1 | E 16 / D 18; raio 2 m; arremesso 5 m |
 | <span data-item="granada-de-fumaca">Granada de fumaça</span> | Licenciado | 10 | Ocultação por 3 rodadas, sem dano | 0,25 | 1 | E — / D 15 antes de ativada; raio 5 m; 5 m |
@@ -648,7 +648,7 @@ Uma explosão rola dano uma vez para todos. Cobertura é medida a partir do cent
 
 CD de operação só é usada sob risco. CD de desarme indica interromper ou neutralizar o mecanismo sem destruí-lo; não concede controle de estação inimiga, senha ou autoridade de rede. Evasão não se aplica a uma câmera, rádio ou máscara, pois não são ataques. A fonte de energia precisa estar na ficha e no inventário.
 
-| Equipamento | Licença | Preço (m) | Dano / Efeito | Carga (Espaços) | Força | CD e alcance de uso |
+| Equipamento | Licença | Preço (M$) | Dano / Efeito | Carga (Espaços) | Força | CD e alcance de uso |
 |---|---|---|---|---|---|---|
 | <span data-item="mascara-de-gas">Máscara de gás</span> | Livre | 18 | +1d20 contra agente inalado, com filtro válido | 1 | — | Uso automático; E/D —; não fornece oxigênio |
 | <span data-item="filtro-de-reposicao">Filtro de reposição</span> | Licenciado | 3 | Até 6 TE de exposição comum | 0,25 | — | Atmosfera concentrada pode consumir em 1 TE, anunciado antes |
@@ -681,7 +681,7 @@ Estrutura é a Vida da máquina. Blindagem é Resistência contra impactos físi
 
 A carga própria abaixo serve quando o veículo é levado por guindaste, trem, navio ou transporte maior. Não é inventário de mochila: exige dimensões, suporte e contenção compatíveis. Capacidade útil conta toda bagagem dos ocupantes, munição adicional, equipamento instalado e combustível de reserva. Corpos nos assentos previstos e combustível no tanque integral já estão previstos; um passageiro extra fora de assento usa 6 espaços pelo corpo mais sua carga e exige lugar seguro.
 
-| Veículo | Licença e preço (m) | Carga própria (Espaços) | Estrutura / Blindagem | CA e Evasão | Velocidade | Tripulação e passageiros | Capacidade útil (Espaços) |
+| Veículo | Licença e preço (M$) | Carga própria (Espaços) | Estrutura / Blindagem | CA e Evasão | Velocidade | Tripulação e passageiros | Capacidade útil (Espaços) |
 |---|---|---|---|---|---|---|---|
 | <span data-item="motocicleta-com-sidecar">Motocicleta com sidecar</span> | Licenciado; 450 | 30 | 22 / 0 | CA 14; Condução normal | 30 m táticos; 40 km/h de viagem | 1 condutor + 2 passageiros | 24 |
 | <span data-item="automovel-utilitario">Automóvel utilitário</span> | Livre com habilitação; 600 | 100 | 30 / 2 | CA 15; Condução normal | 30 m; 50 km/h | 1 + 3 | 60 |
@@ -731,7 +731,7 @@ A 0 Estrutura, a máquina para e suas armas deixam de funcionar. Não explode au
 
 As cargas são o conjunto da arma e suporte, sem reservas de munição. Instalar consome capacidade útil do veículo. Canhão exige chassi previsto para ele; não cabe numa motocicleta apenas porque foi pago. O atirador usa os modos da ficha, sem transformar cada bala de uma fita num ataque independente.
 
-| Arma | Licença | Preço (m) | Dano | Carga (Espaços) | Munição/Pente | Recarga | Alcance e Propriedades |
+| Arma | Licença | Preço (M$) | Dano | Carga (Espaços) | Munição/Pente | Recarga | Alcance e Propriedades |
 |---|---|---|---|---|---|---|---|
 | <span data-item="metralhadora-leve-montada">Metralhadora leve montada</span> | Restrito | 160 | 2d8 | 5 | 50 | Principal ou assistida | 100 m; Automática, Perfurante 2; apoio satisfeito |
 | <span data-item="metralhadora-pesada-montada">Metralhadora pesada montada</span> | Restrito | 250 | 3d8 | 10 | 100 | Principal ou assistida | 100 m táticos; Automática, Perfurante 3 |
@@ -747,7 +747,7 @@ O veículo comprado sem armamento precisa de oficina para instalação, 8 TE e C
 
 ## Combustível, manutenção e reparos
 
-Uma carga de combustível custa 2 m e ocupa 1/3 de espaço. Cada veículo terrestre ou aquático tem tanque para duas jornadas de seu consumo normal; aeronave tem combustível para uma saída de até 4 TE; esse combustível instalado já integra sua carga própria. Comprar o veículo vazio não inclui esse abastecimento. Registre unidades no tanque e reservas externas separadamente. Abastecer exige acesso e 1 TE fora de ameaça imediata.
+Uma carga de combustível custa 2 M$ e ocupa 1/3 de espaço. Cada veículo terrestre ou aquático tem tanque para duas jornadas de seu consumo normal; aeronave tem combustível para uma saída de até 4 TE; esse combustível instalado já integra sua carga própria. Comprar o veículo vazio não inclui esse abastecimento. Registre unidades no tanque e reservas externas separadamente. Abastecer exige acesso e 1 TE fora de ameaça imediata.
 
 | Máquina | Consumo normal | Custo e carga da reposição | Autonomia de referência |
 |---|---|---|---|
@@ -762,7 +762,7 @@ Uma carga de combustível custa 2 m e ocupa 1/3 de espaço. Cada veículo terres
 
 Trecho menor consome a fração proporcional, arredondada para cima apenas ao encerrar o registro de abastecimento da jornada. Cada nova cena não cobra uma unidade mínima separada. Motor ligado durante espera continua consumindo tempo; desligá-lo impede deslocamento imediato até ser acionado. Sobrecarga dobra consumo e não amplia tanque.
 
-Inspeção após uma jornada de uso severo ocupa 1 TE, kit e peças de 1% do preço, mínimo 1 m. A falta de inspeção não destrói a máquina ao acaso; anuncia um risco de Avaria na próxima manobra exigente. Reparo de campo usa 1 TE, kit, peças de 5 m e Criação CD 15; sucesso recupera 1d8 + nível real de Criação, de 0 a 3, de Estrutura. Falha consome peças e tempo. Uma tentativa por máquina em 48 TE contados da primeira; oficina de campo permite duas. Nenhum desses reparos reconstrói componente Quebrado.
+Inspeção após uma jornada de uso severo ocupa 1 TE, kit e peças de 1% do preço, mínimo 1 M$. A falta de inspeção não destrói a máquina ao acaso; anuncia um risco de Avaria na próxima manobra exigente. Reparo de campo usa 1 TE, kit, peças de 5 m e Criação CD 15; sucesso recupera 1d8 + nível real de Criação, de 0 a 3, de Estrutura. Falha consome peças e tempo. Uma tentativa por máquina em 48 TE contados da primeira; oficina de campo permite duas. Nenhum desses reparos reconstrói componente Quebrado.
 
 Oficina equipada usa 16 TE de trabalho e peças de 20% do preço do chassi para restaurar Estrutura e avarias comuns. Máquinas militares e componentes Quebrados exigem Criação CD 20 e peça específica. Falha consome 25% das peças previstas para essa etapa; refazer não renova um limite de reparo de campo. Núcleo sobrenatural danificado exige também o procedimento de sua fonte.
 
@@ -774,7 +774,7 @@ Acoplador Condutor, estabilizador e refrigeração usam integração de Grau I; 
 
 Uma instalação tecno-kármica ocupa capacidade útil pelo módulo e por suas baterias de reserva. O combustível que ela substitui só deixa de contar quando for retirado fisicamente. Desconto de carga precisa indicar quais peças foram dispensadas; reduzir consumo não reduz automaticamente a massa da blindagem, motor, arma ou carga transportada.
 
-| Módulo | Licença e preço (m) | Dano / Efeito | Carga (Espaços) | Força | Consumo e risco |
+| Módulo | Licença e preço (M$) | Dano / Efeito | Carga (Espaços) | Força | Consumo e risco |
 |---|---|---|---|---|---|
 | <span data-item="acoplador-condutor-de-maquina">Acoplador Condutor de máquina</span> | Licenciado; 90 | Canaliza uma fonte por um equipamento registrado | 2 | — | Custo da técnica; não herda arma automática ou canhão |
 | <span data-item="reservatorio-industrial">Reservatório industrial</span> | Restrito; 180 | Guarda 20 Karma investidos | 4 | — | Regra de Reservatório; saldo e investidor identificados |

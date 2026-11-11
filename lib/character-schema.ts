@@ -47,7 +47,7 @@ const domainSchema = z.object({
   enabled: z.boolean().default(false),
   marks: z.number().int().min(0).max(3).default(0),
   awakened: z.boolean().default(false),
-  refinements: z.array(shortText).max(2).default([]),
+  refinements: z.array(shortText).max(2).default([]).transform(values => [...new Set(values.filter(Boolean))]),
   signal: longText(500).default(""),
   notes: longText(1500).default(""),
 });
@@ -239,10 +239,10 @@ export const combatLogSchema = z.object({
 export const liveCombatSchema = z.object({
   runes: z.array(z.object({ id:shortText, runeId:z.number().int().min(1).max(25), weaponId:shortText.optional(), spent:z.boolean().optional(), releaseRound:z.number().int().min(1).max(99999).optional() })).max(100).optional(),
   runeBurstUsed:z.boolean().optional(),
-  summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean(),fractures:z.number().int().min(0).max(3).optional(),maintainedThroughRound:z.number().int().min(1).max(99999).optional()})).default({}),
-  impetus:z.number().int().min(0).max(4).optional(),impetusBloodied:z.boolean().optional(),
+  summons:z.record(z.string().max(80),z.object({life:z.number().int().min(0).max(99999),active:z.boolean(),fractures:z.number().int().min(0).max(3).optional(),maintainedThroughRound:z.number().int().min(1).max(99999).optional(),explorationPaid:z.boolean().optional()})).default({}),
+  impetus:z.number().int().min(0).max(4).optional(),impetusBloodied:z.boolean().optional(),impetusNaturalRound:z.number().int().min(1).max(99999).optional(),
   inCombat:z.boolean(),currentLife:z.number().int().min(0).max(99999),currentKarma:z.number().int().min(0).max(99999),tempShield:z.number().int().min(0).max(9999),
-  activeConditions:z.array(z.string().min(1).max(80)).max(20),conditionRounds:z.record(z.string().min(1).max(80),z.number().int().min(1).max(99)).optional(),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
+  activeConditions:z.array(z.string().min(1).max(80)).max(20),conditionPotency:z.record(z.string().min(1).max(80),z.number().int().min(0).max(99999)).optional(),conditionRounds:z.record(z.string().min(1).max(80),z.number().int().min(1).max(99)).optional(),lastActionLog:combatLogSchema.nullable(),combatFeed:z.array(combatLogSchema).max(25),
   bossPhases:z.record(z.string().max(80),phaseNoticeSchema).refine(v=>Object.keys(v).length<=20).optional(),
   reactions:z.number().int().min(0).max(10).default(1),round:z.number().int().min(1).max(99999).default(1),domainRounds:z.record(z.enum(DOMAIN_NAMES),z.number().int().min(0).max(6)).default({}),
 });

@@ -110,6 +110,8 @@ export type AutomaticBonuses = NumericBonus & {
   classAttributeSlots: BonusChoiceSlot[];
   classSkillSlots: BonusChoiceSlot[];
   progressionRewards: ProgressionRewards;
+  stageGrowth: Pick<NumericBonus, "life" | "karma" | "armor">;
+  pathKarma: number;
 };
 
 export type ProgressionRewards = {
@@ -484,6 +486,8 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   const result = createNumericBonus() as AutomaticBonuses;
   result.skillTiers = createSkillTierBonuses();
   result.sources = [];
+  result.stageGrowth = { life: 0, karma: 0, armor: 0 };
+  result.pathKarma = 0;
   result.stageAttributeSlots = [];
   result.raceAttributeSlots = [];
   result.raceSkillSlots = [];
@@ -525,6 +529,7 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
   classDefinition?.progression.slice(0, stageIndex).forEach((progression) => {
     const parsed = parseStageStatus(progression.status, progression.stage);
     addPartialBonus(result, parsed.bonus);
+    for (const stat of ["life", "karma", "armor"] as const) result.stageGrowth[stat] += parsed.bonus[stat] ?? 0;
     result.stageAttributeSlots.push(...parsed.slots);
     result.sources.push({
       label: `${draft.className} · ${progression.stage}`,
@@ -560,7 +565,10 @@ export function calculateAutomaticBonuses(draft: CharacterPayload): AutomaticBon
 
   if (hasAwakenedPath(draft)) {
     const branch = draft.personalPath.branch;
-    if (branch === "emancipacao" || (branch === "independente" && !draft.divine.enabled)) result.karma += 4;
+    if (branch === "emancipacao" || (branch === "independente" && !draft.divine.enabled)) {
+      result.pathKarma = 4;
+      result.karma += result.pathKarma;
+    }
     if (hasAxiom(draft, 3)) result.movement += 3;
     if (hasAxiom(draft, 4)) { result.life += 2 * stageIndex; result.armor += 1; }
   }
@@ -701,6 +709,10 @@ export function calculateDerivedStats(draft: CharacterPayload, automatic: Automa
   const baseMovement=Math.max(1,5+agility+size.movement+automatic.movement+form.movementBonus-(draft.race==="Anão"?0:burden.equipmentMovement));
   const finalMovement=burden.tier===4?0:burden.tier===3?Math.max(1,Math.floor(baseMovement/4)):Math.max(burden.tier===2?2:1,baseMovement+burden.movementBonus);
   return {
+    initiative: initiativeTest(agility),
+    lifeBreakdown: `${size.life} base do porte + ${2 * constitution} Constituição (2 × ${constitution}) + ${strength} Força + ${automatic.stageGrowth.life} Etapa + ${automatic.life - automatic.stageGrowth.life} outros bônus`,
+    karmaBreakdown: `${BASE_KARMA} base + ${2 * spirit} Espírito (2 × ${spirit}) + ${automatic.stageGrowth.karma} Etapa + ${automatic.pathKarma} Caminho + ${automatic.karma - automatic.stageGrowth.karma - automatic.pathKarma} outros bônus`,
+    armorBreakdown: `${BASE_ARMOR} base + ${Math.min(agility,burden.agilityCap)} Agilidade + ${automatic.stageGrowth.armor} Etapa + ${burden.armorBonus} equipamento + ${size.armor + automatic.armor - automatic.stageGrowth.armor + form.armorBonus - burden.armorPenalty} outros ajustes`,
     life: size.life + 2 * constitution + strength + automatic.life,
     karma: BASE_KARMA + 2 * spirit + automatic.karma,
     armor: Math.max(0,BASE_ARMOR + Math.min(agility,burden.agilityCap) + size.armor + automatic.armor + burden.armorBonus + form.armorBonus - burden.armorPenalty),
@@ -708,6 +720,12 @@ export function calculateDerivedStats(draft: CharacterPayload, automatic: Automa
     load: burden.capacity,
     resistance: automatic.resistance,
   };
+}
+
+export function initiativeTest(agility: number, specificBonus = 0, specificDice = 0) {
+  const dice = agility === 0 ? 1 : Math.max(1, Math.ceil(agility / 2) + specificDice);
+  const bonus = agility === 0 ? -4 : agility + specificBonus;
+  return { agility, dice, bonus, formula: `${dice}d20 ${bonus < 0 ? "−" : "+"} ${Math.abs(bonus)}` };
 }
 
 export { PRESENCE_SKILLS };
@@ -722,7 +740,7 @@ export function defaultApproach(skill: string): AttributeName {
 }
 
 export function skillBonusExplanation(test: ReturnType<typeof getSkillTest>): string {
-  if (test.value === 0) return `${test.attribute} 0: −4. Treinamento e bônus de atributo não se aplicam.`;
+  if (test.value === 0 && !test.level) return `${test.attribute} 0: −4 no teste destreinado.`;
   if (!test.level) return "Perícia destreinada: 1d20 de base, sem treinamento nem Analítico.";
   const parts = [
     `${test.trainingBonus} Treinamento`,
@@ -743,7 +761,7 @@ export function getSkillTest(
 ) {
   const intellect = getFinalAttribute(draft, automatic, "Intelecto");
   const mental = (MENTAL_SKILLS as readonly string[]).includes(skill);
-  const attribute: AttributeName = PRESENCE_SKILLS.includes(skill)
+  const attribute: AttributeName = (PRESENCE_SKILLS.includes(skill) || (SOCIAL_SKILLS as readonly string[]).includes(skill))
     ? "Presença"
     : approach ?? defaultApproach(skill);
   const value = getFinalAttribute(draft, automatic, attribute);
@@ -761,14 +779,14 @@ export function getSkillTest(
   const runeAnalytic = draft.className === "Escriba Kármico" && skill === "Canalização de Karma" && testPurpose === "technique";
   const focusBonus = level > 0 && value > 0 && skill === "Canalização de Karma" && equipped("orbe-de-convergencia") ? 2 : 0;
   const analyticBonus = attribute === "Intelecto" && (mental || runeAnalytic) && level > 0 && value > 0
-    ? Math.min(3, Math.floor(analyticIntellect / 2)) : 0;
+    ? Math.min(3, analyticIntellect) : 0;
   const manifested = (name: string) => draft.domains.some(d => d.name === name && d.enabled && d.awakened) && (draft.combat?.domainRounds[name] ?? 0) > 0;
   const domainDice = Number(attribute === "Força" && ["Luta", "Atletismo"].includes(skill) && manifested("Força"))
     + Number(attribute === "Agilidade" && ["Luta", "Pontaria", "Reflexos", "Acrobacia"].includes(skill) && manifested("Velocidade"))
     + Number(attribute === "Constituição" && ["Atletismo", "Sobrevivência"].includes(skill) && manifested("Resistência"))
     + Number(testPurpose === "technique" && manifested("Técnica"))
     + Number(["Presença", "Espírito"].includes(attribute) && testPurpose === "technique" && manifested("Superação"));
-  const trainingBonus = value === 0 ? 0 : oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0);
+  const trainingBonus = oneUse ? 10 : ([0, 2, 5, 10][level] ?? 0);
   const domainBonus = Number(attribute === "Intelecto" && mental && intellect >= 5 && level > 0
     && draft.domains.some(domain => domain.name === "Técnica" && domain.enabled && domain.awakened));
   const trainedPool = value > 0 && level > 0;
@@ -777,7 +795,7 @@ export function getSkillTest(
   return {
     attribute, value, level, permanentLevel, analyticBonus, domainBonus, trainingBonus, focusBonus, oneUse, inventoryPenalty,
     formDice: trainedPool ? formDice : 0, domainDice: trainedPool ? domainDice : 0, baseDice,
-    bonus: value === 0 ? -4 : trainingBonus + analyticBonus + focusBonus + domainBonus,
+    bonus: value === 0 && !level ? -4 : trainingBonus + analyticBonus + focusBonus + domainBonus,
     dice: pool <= 0 ? 2 : pool,
     selection: pool <= 0 ? "menor" as const : "maior" as const,
   };

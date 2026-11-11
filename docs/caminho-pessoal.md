@@ -4,7 +4,7 @@ O Caminho é a forma que mente, corpo, técnica e Karma assumem quando uma criat
 
 ### Despertar na Etapa III
 
-A partir da Etapa III, você pode despertar o Caminho antes de possuir um Domínio. Exige uma crise em cena: estar com metade da Vida ou menos, enfrentar ameaça de Etapa igual ou superior, ou pôr uma convicção vital em risco direto. Faça Espírito ou o Atributo-chave do Caminho + Canalização de Karma. Vontade designa a resistência interior da cena, resolvida por esse teste no sistema atual.
+A partir da Etapa III, você pode despertar o Caminho antes de possuir um Domínio. Exige uma crise em cena: estar com metade da Vida ou menos, enfrentar ameaça de Etapa igual ou superior, ou pôr uma convicção vital em risco direto. Faça Espírito ou o Atributo-chave do Caminho + Canalização de Karma. Vontade designa a resistência interior da cena, resolvida por esse teste no sistema atual. Use a reserva do Atributo-chave, o bônus de treinamento em Vontade ou Canalização de Karma e +1 por falha em sessão anterior. Ímpeto, Analítico e outros bônus de perícia ficam fora desse teste.
 
 | Tentativa | Despertar puro | Despertar sob Outorga ou doutrina |
 |---|---|---|

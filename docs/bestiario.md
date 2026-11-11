@@ -60,6 +60,26 @@ A Corte da Falsa Santa abriga os Pecados. Seus nomes atravessam os quatro contin
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- geopolitics:start -->
 
 O mundo possui quatro grandes continentes: Gaéria, associado à Terra; Ignária, ao Fogo; Aéria, ao Vento; e Thalassia, à Água. Essas associações descrevem paisagens, tradições e centros de poder. Não obrigam ninguém a nascer com certo elemento nem tornam uma linhagem estrangeira em sua própria cidade. A divisão que atravessa os reinos é a posição social: acesso à terra, crédito, educação, cargos e proteção jurídica.

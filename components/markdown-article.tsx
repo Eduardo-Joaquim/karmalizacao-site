@@ -21,6 +21,7 @@ export function decorateRuleHtml(html:string,chapter:number){
    else if(open&&!/\/\s*>$/.test(part)&&!['br','hr','img','input','meta','link'].includes(open[1].toLowerCase()))stack.push(open[1].toLowerCase());
    return part;
   }
+  if (!stack.some(tag => ["script", "style", "code", "pre", "abbr"].includes(tag))) part = part.replace(/\bTE\b/g, '<abbr title="Tempo de Expedição. 1 TE equivale a 2 horas de trabalho focado.">TE</abbr>');
   if(stack.some(t=>/^h[1-6]$/.test(t)||['script','style','code','pre','svg','a','button','span'].includes(t)))return part;
   return part.replace(/\b(?:\d+\s+Karma|Ação Principal|Ação de Movimento|Ação Livre|Ação Extra|Reação|Acerto Total|Acerto Parcial|Falha Crítica)\b/g,term=>{
    const kind=/Karma$/.test(term)?'karma':/^(?:Ação|Reação)/.test(term)?'action':'outcome';

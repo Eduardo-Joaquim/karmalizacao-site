@@ -36,6 +36,19 @@ export type InvocationStats = {
   notes: string[];
 };
 
+export function invocationAttack(invocation: InvocationRecord, fractures = invocation.fractures) {
+  const stats = calculateInvocationStats(invocation);
+  const skill = invocation.mainSkills.includes("Luta") ? "Luta" : "Pontaria";
+  const attribute = skill === "Luta" ? "Força" : "Agilidade";
+  const value = invocation.mainAttribute === attribute ? stats.mainAttribute
+    : invocation.secondaryAttributes.includes(attribute) ? stats.secondaryAttribute : stats.otherAttribute;
+  const level = invocation.mainSkills.includes(skill) ? stats.mainSkill : 0;
+  const dice = level ? Math.max(1, Math.ceil(value / 2)) : 1;
+  const bonus = [0, 2, 5, 10][level] - fractures;
+  const armor = Math.max(0, stats.armor - fractures);
+  return { dice, bonus, armor, partial: Math.floor(armor / 2), formula: `${dice}d20 ${bonus < 0 ? "−" : "+"} ${Math.abs(bonus)}` };
+}
+
 export function invocationGradeIndex(grade: InvocationGrade): number {
   return GRADE_INDEX[grade];
 }
