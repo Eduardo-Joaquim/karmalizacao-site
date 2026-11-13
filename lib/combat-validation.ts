@@ -9,6 +9,12 @@ const base = z
       .min(12)
       .max(80)
       .regex(/^[a-zA-Z0-9-]+$/),
+    combatSessionId: z
+      .string()
+      .min(12)
+      .max(80)
+      .regex(/^[a-zA-Z0-9-]+$/)
+      .optional(),
     actorName: z.string().min(1).max(120),
     title: z.string().min(1).max(120),
   })
@@ -105,7 +111,26 @@ export const combatActionSchema = z.discriminatedUnion("type", [
   base.extend({ type: z.literal("form"), active: z.boolean() }),
   base.extend({ type: z.literal("barrier"), reinforced: z.boolean() }),
   base.extend({ type: z.literal("indomitableSurvival") }),
-  base.extend({ type: z.literal("round") }),
+  base.extend({
+    type: z.literal("round"),
+    targetRound: z.number().int().min(2).max(99999).optional(),
+    transitionId: z.string().min(1).max(160).optional(),
+  }),
+  base.extend({
+    type: z.literal("session"),
+    operation: z.enum(["start", "close"]),
+    previousSessionId: z
+      .string()
+      .min(12)
+      .max(80)
+      .regex(/^[a-zA-Z0-9-]+$/)
+      .optional(),
+    sessionId: z
+      .string()
+      .min(12)
+      .max(80)
+      .regex(/^[a-zA-Z0-9-]+$/),
+  }),
   base.extend({ type: z.literal("scene") }),
   base.extend({ type: z.literal("rest") }),
   base.extend({ type: z.literal("toggle"), active: z.boolean() }),

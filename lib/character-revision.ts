@@ -25,6 +25,8 @@ export async function characterRevision(
       quantity: undefined,
       location: undefined,
       equipped: undefined,
+      tacticalRev: undefined,
+      _clientBase: undefined,
     })),
   };
   function stable(input: unknown): unknown {

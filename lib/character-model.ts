@@ -395,6 +395,14 @@ export type TechniqueRecord = {
 };
 
 export type InventoryItem = {
+  tacticalRev?: number;
+  /** Editor request metadata. Never persisted as part of the saved item. */
+  _clientBase?: {
+    quantity: number;
+    location?: "ready" | "backpack" | "external";
+    equipped?: boolean;
+    tacticalRev: number;
+  };
   catalogId?: string;
   category?: "weapon" | "armor" | "shield" | "ammo" | "focus" | "gear";
   equipped?: boolean;

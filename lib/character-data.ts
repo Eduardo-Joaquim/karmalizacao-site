@@ -180,6 +180,7 @@ export function normalizeCharacterPayload(
   const old = payload.combat,
     live = payload.combatState;
   normalized.combatState = {
+    session: live?.session,
     summons: live?.summons ?? {},
     runes: live?.runes ?? [],
     runeBurstUsed: live?.runeBurstUsed ?? false,

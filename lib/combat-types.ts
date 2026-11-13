@@ -35,6 +35,7 @@ export type LiveRune = {
   releaseRound?: number;
 };
 export type LiveCombatState = {
+  session?: CombatSessionState;
   runes?: LiveRune[];
   runeBurstUsed?: boolean;
   impetus?: number;
@@ -64,10 +65,21 @@ export type LiveCombatState = {
   round: number;
   domainRounds: Record<string, number>;
 };
+export type CombatSessionState = {
+  id: string;
+  status: "active" | "closed";
+  round: number;
+  lastRoundTransitionId?: string;
+  appliedActionIds: string[];
+  retiredSessionIds: string[];
+  /** Compatibility for clients opened before explicit encounter sessions. */
+  legacy?: boolean;
+};
 export type CombatAction = {
   id: string;
   actorName: string;
   title: string;
+  combatSessionId?: string;
 } & (
   | {
       type: "damage";
@@ -146,7 +158,13 @@ export type CombatAction = {
   | { type: "form"; active: boolean }
   | { type: "indomitableSurvival" }
   | { type: "barrier"; reinforced: boolean }
-  | { type: "round" }
+  | { type: "round"; targetRound?: number; transitionId?: string }
+  | {
+      type: "session";
+      operation: "start" | "close";
+      sessionId: string;
+      previousSessionId?: string;
+    }
   | { type: "scene" }
   | { type: "rest" }
   | { type: "toggle"; active: boolean }

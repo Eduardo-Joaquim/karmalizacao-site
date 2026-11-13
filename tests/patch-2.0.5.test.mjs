@@ -173,9 +173,10 @@ test("invalid regions fail instead of silently returning a different court", asy
 });
 test("patch 2.0.5 notes contain player changes without internal release metadata", async () => {
   const notes = await vite.ssrLoadModule("/lib/patch-notes.ts");
-  assert.equal(notes.LATEST_PATCH.version, "2.0.5");
+  const patch = notes.PATCH_NOTES.find((entry) => entry.version === "2.0.5");
+  assert.ok(patch);
   assert.doesNotMatch(
-    notes.LATEST_PATCH.highlights.join(" "),
+    patch.highlights.join(" "),
     /commit|API|MCP|dependênci|build|auditoria|GitHub|hospedagem|teste/i,
   );
 });

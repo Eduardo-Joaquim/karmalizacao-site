@@ -18,6 +18,12 @@ export type EncounterParticipant = BossPhaseState & {
   conditionPotency?: Record<string, number>;
   reactions: number;
   domainRounds: Record<string, number>;
+  localCombatSession?: {
+    id: string;
+    round: number;
+    lastRoundTransitionId?: string;
+    appliedActionIds: string[];
+  };
 };
 const bounded = z.number().int().min(0).max(99999),
   short = z.string().max(160),
@@ -105,6 +111,45 @@ const participant = z.object({
   phaseUnlocks: z.array(short).max(100).optional(),
   conditionalResistance: bounded.optional(),
 });
+const localCombatSession = z.object({
+  id: z
+    .string()
+    .min(12)
+    .max(80)
+    .regex(/^[a-zA-Z0-9-]+$/),
+  round: z.number().int().min(1).max(99999),
+  lastRoundTransitionId: z.string().min(12).max(80).optional(),
+  appliedActionIds: z.array(z.string().min(12).max(80)).max(100000),
+});
+const pendingRoundTransition = z.object({
+  id: z.string().min(12).max(80),
+  combatSessionId: z.string().min(12).max(80),
+  targetRound: z.number().int().min(2).max(99999),
+  participantIds: z.array(short.min(1)).max(60),
+  participantTargets: z.record(short, z.number().int().min(2).max(99999)),
+  done: z.array(short.min(1)).max(60),
+});
+
+export function parsePendingRoundTransition(
+  value: unknown,
+  combatSessionId: string,
+  participants: EncounterParticipant[],
+) {
+  if (value === undefined || value === null) return null;
+  const parsed = pendingRoundTransition.parse(value);
+  if (
+    parsed.combatSessionId !== combatSessionId ||
+    new Set(parsed.participantIds).size !== parsed.participantIds.length ||
+    parsed.done.some((key) => !parsed.participantIds.includes(key)) ||
+    parsed.participantIds.some(
+      (key) =>
+        !participants.some((participant) => participant.key === key) ||
+        !Object.hasOwn(parsed.participantTargets, key),
+    )
+  )
+    throw Error("A rodada pendente não corresponde ao encontro recuperado.");
+  return parsed;
+}
 const playerRef = z.object({
   id: short,
   name: short,
@@ -147,7 +192,7 @@ export function exportEncounter(
     turn,
     participants: participants
       .filter((p) => p.npc && !p.link)
-      .map(({ payload, link, ...p }) => p),
+      .map((p) => participant.parse(p)),
     players: [
       ...pendingPlayers.filter(
         (r) => !participants.some((p) => p.link?.id === r.id),
@@ -194,7 +239,14 @@ export function parseStoredParticipants(
     npc: z.undefined().optional(),
   });
   return z
-    .array(z.union([participant, linked]))
+    .array(
+      z.union([
+        participant.extend({
+          localCombatSession: localCombatSession.optional(),
+        }),
+        linked,
+      ]),
+    )
     .max(60)
     .parse(value) as EncounterParticipant[];
 }

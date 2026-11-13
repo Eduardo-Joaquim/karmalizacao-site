@@ -13,6 +13,7 @@ import {
 } from "@/lib/character-rules";
 import { liveState } from "@/lib/combat-engine";
 import { combatId } from "@/lib/combat-id";
+import { hydrateInventoryBaseline } from "@/lib/inventory-editor";
 import type { CombatAction } from "@/lib/combat-types";
 import { useEffect, useState, type ReactNode } from "react";
 export function CharacterCombatShell({
@@ -21,6 +22,7 @@ export function CharacterCombatShell({
   id,
   token,
   onShare,
+  storageScope,
   children,
 }: {
   draft: CharacterPayload;
@@ -28,6 +30,7 @@ export function CharacterCombatShell({
   id?: string | null;
   token?: string;
   onShare?: () => void;
+  storageScope?: string;
   children:
     | ReactNode
     | ((send: (action: CombatAction) => Promise<void>) => ReactNode);
@@ -50,20 +53,46 @@ export function CharacterCombatShell({
       localStorage.setItem("karmalizacao:dock-collapsed:v1", String(next));
     } catch {}
   }
-  const sync = useCombatSync(id ? { id, token } : null, draft, onChange),
+  const sync = useCombatSync(
+      id ? { id, token } : null,
+      draft,
+      onChange,
+      storageScope,
+    ),
     s = liveState(draft),
     [localError, setLocalError] = useState("");
   useCombatVisualFeed(s.combatFeed, id ?? "local-player");
-  function toggle() {
-    void sync
-      .send({
+  async function toggle() {
+    try {
+      const session = draft.combatState?.session;
+      if (
+        !s.inCombat &&
+        (!session || session.status !== "active" || session.legacy)
+      ) {
+        await sync.send({
+          id: combatId(),
+          actorName: draft.name || "Personagem",
+          title: "Iniciar encontro",
+          type: "session",
+          operation: "start",
+          sessionId: combatId(),
+        });
+      }
+      await sync.send({
         id: combatId(),
         actorName: draft.name || "Personagem",
         title: s.inCombat ? "Sair do Modo Combate" : "Entrar no Modo Combate",
         type: "toggle",
         active: !s.inCombat,
-      })
-      .catch((e) => setLocalError(e.message));
+      });
+      setLocalError("");
+    } catch (e) {
+      setLocalError(
+        e instanceof Error
+          ? e.message
+          : "Não foi possível alterar o modo de combate.",
+      );
+    }
   }
   async function share() {
     if (onShare) {
@@ -121,7 +150,7 @@ export function CharacterCombatShell({
             disabled={sync.pending > 0}
             className={s.inCombat ? "combat-pulse" : ""}
             aria-pressed={s.inCombat}
-            onClick={toggle}
+            onClick={() => void toggle()}
           >
             {s.inCombat ? "Voltar à ficha" : "⚔️ Modo Player"}
           </button>
@@ -142,6 +171,20 @@ export function CharacterCombatShell({
           </button>
           <button onClick={() => void share()}>Copiar link de combate</button>
           <span role="status">{localError || sync.error || sync.status}</span>
+          {sync.failedActions.length > 0 && (
+            <div role="alert">
+              <p>
+                {sync.failedActions.length} ação(ões) não foram concluídas.{" "}
+                {sync.failedActions[0].errorMessage}
+              </p>
+              <button type="button" onClick={() => sync.discardFailed()}>
+                Descartar ações recusadas
+              </button>
+              <button type="button" onClick={() => void sync.synchronize()}>
+                Sincronizar ficha
+              </button>
+            </div>
+          )}
           {s.lastActionLog && (
             <output className="dock-result" aria-live="polite">
               {s.lastActionLog.actorName} · {s.lastActionLog.title}
@@ -172,7 +215,10 @@ export function SharedCombatCharacter({
   token: string;
   children?: ReactNode;
 }) {
-  const [draft, setDraft] = useState(initial);
+  const [draft, setDraft] = useState(() => ({
+    ...initial,
+    inventory: hydrateInventoryBaseline(initial.inventory),
+  }));
   const automatic = calculateAutomaticBonuses(draft),
     derived = calculateDerivedStats(draft, automatic);
   return (

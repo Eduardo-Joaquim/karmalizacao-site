@@ -7,10 +7,6 @@
   background: #131019;
   border-color: #7a5d7359;
 }
-.ignaria-content .elven-crest {
-  color: var(--elven-accent);
-  filter: drop-shadow(0 0 24px #a475bd25);
-}
 .ignaria-content .elven-ability {
   background: linear-gradient(145deg, #27202f, #19141f);
   border-color: #b391b440;

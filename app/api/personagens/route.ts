@@ -12,6 +12,10 @@ import {
   saveCharacterSchema,
 } from "@/lib/character-schema";
 import { mergeCombat } from "@/lib/combat-engine";
+import {
+  InventoryConflictError,
+  reconcileInventoryOnSave,
+} from "@/lib/inventory-reconciliation";
 import { readJsonBody, RequestBodyError } from "@/lib/request-body";
 
 export const dynamic = "force-dynamic";
@@ -213,31 +217,36 @@ export async function POST(request: Request) {
           },
           { status: 409 },
         );
-      if (
-        old.combatState?.inCombat ||
-        old.combatState?.lastActionLog?.id !==
-          normalized.combatState?.lastActionLog?.id
-      ) {
-        const log = old.combatState?.combatFeed ?? [];
-        const knownId = normalized.combatState?.lastActionLog?.id;
-        const knownIndex = log.findIndex((event) => event.id === knownId);
-        const usedItemIds = new Set(
-          log
-            .slice(knownIndex + 1)
-            .map((event) => event.inventoryItemId)
-            .filter(Boolean),
-        );
-        normalized = mergeCombat(
-          old,
-          normalized,
-          normalized.inventory.filter((item) => usedItemIds.has(item.id)),
-        );
-        payload = JSON.stringify(normalized);
-      }
+      const inventory = reconcileInventoryOnSave(
+        parsed.data.payload.inventory ?? normalized.inventory,
+        old.inventory,
+      );
+      // Construction writes never replace authoritative combat/session state.
+      normalized = { ...mergeCombat(old, normalized), inventory };
       const transitionError = validateVowTransition(old.vows, normalized.vows);
       if (transitionError)
         return json({ error: transitionError }, { status: 409 });
-    }
+    } else
+      normalized = {
+        ...normalized,
+        combatState: normalized.combatState
+          ? { ...normalized.combatState, session: undefined }
+          : undefined,
+        inventory: reconcileInventoryOnSave(
+          parsed.data.payload.inventory ?? normalized.inventory,
+        ),
+      };
+    const persisted = characterPayloadSchema.safeParse(normalized);
+    if (!persisted.success)
+      return json(
+        {
+          error: "O inventário conciliado contém dados inválidos.",
+          code: "INVALID_RECONCILED_STATE",
+        },
+        { status: 422 },
+      );
+    normalized = normalizeCharacterPayload(persisted.data);
+    payload = JSON.stringify(normalized);
     if (new TextEncoder().encode(payload).byteLength > 1_900_000)
       return json(
         { error: "A ficha excede o tamanho permitido." },
@@ -298,6 +307,11 @@ export async function POST(request: Request) {
       },
     });
   } catch (error) {
+    if (error instanceof InventoryConflictError)
+      return json(
+        { error: error.message, code: error.code, itemId: error.itemId },
+        { status: 409 },
+      );
     if (error instanceof RequestBodyError)
       return json({ error: error.message }, { status: error.status });
     console.error(

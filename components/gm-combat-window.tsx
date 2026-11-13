@@ -1,5 +1,4 @@
 "use client";
-import { runPendingBatch } from "@/lib/batch-operation";
 import { useCallback } from "react";
 /* eslint-disable @next/next/no-img-element -- Portraits are validated embedded thumbnails, not remote image requests. */
 
@@ -35,6 +34,7 @@ import {
   rollInitiative as rollAgility,
 } from "@/lib/combat-engine";
 import { combatId } from "@/lib/combat-id";
+import { isTransientCombatFailure } from "@/lib/combat-outbox";
 import type { CombatAction, CombatLog } from "@/lib/combat-types";
 import {
   phaseTriggered,
@@ -45,9 +45,20 @@ import {
   exportEncounter,
   importEncounter,
   parseStoredParticipants,
+  parsePendingRoundTransition,
   type EncounterParticipant,
   type EncounterPlayerRef,
 } from "@/lib/gm-encounter";
+import {
+  applyGmLocalAction,
+  beginGmRound,
+  finishGmRound,
+  GM_ENCOUNTER_STORAGE_KEY,
+  markGmRoundParticipantDone,
+  persistGmRuntime,
+  type GmEncounterRuntime,
+  type PendingRoundTransition,
+} from "@/lib/gm-transition";
 import { npcSkillRoll } from "@/lib/npc-rolls";
 import {
   conditionForAttack,
@@ -125,6 +136,17 @@ function LinkedParticipant({
       )}
       <p role="status">{sync.pending ? "Registrando ação…" : sync.status}</p>
       {sync.error && <p role="alert">{sync.error}</p>}
+      {sync.failedActions.length > 0 && (
+        <div role="alert">
+          <p>Há ações recusadas que precisam ser conferidas.</p>
+          <button onClick={() => sync.discardFailed()}>
+            Descartar ações recusadas
+          </button>
+          <button onClick={() => void sync.synchronize()}>
+            Sincronizar ficha
+          </button>
+        </div>
+      )}
       <p>{s.activeConditions.join(" · ") || "Sem condições registradas"}</p>
       <button onClick={() => setExpanded(!expanded)}>
         {expanded ? "Recolher ficha" : "Abrir ficha tática inteira"}
@@ -194,11 +216,43 @@ export function GmCombatWindow({
     retryAt = useRef(new Map<string, number>());
   const dispatchers = useRef(new Map<string, CombatDispatcher>()),
     latest = useRef(participants);
+  const runtime = useRef<GmEncounterRuntime>({
+    combatSessionId: "",
+    round: 1,
+    participants: [],
+    pendingRoundTransition: null,
+  });
+  const [pendingRound, setPendingRound] =
+    useState<PendingRoundTransition | null>(null);
+  const snapshotDetails = useRef<Record<string, unknown>>({});
+  useEffect(() => {
+    snapshotDetails.current = {
+      turn,
+      logs,
+      phaseEvents,
+      deliveries,
+      pendingPlayers,
+    };
+  }, [turn, logs, phaseEvents, deliveries, pendingPlayers]);
+  const commitRuntime = useCallback(
+    (next: GmEncounterRuntime, details = snapshotDetails.current) => {
+      // Persist first: a storage failure must leave the visible resources unchanged.
+      persistGmRuntime(localStorage, next, details);
+      snapshotDetails.current = details;
+      runtime.current = next;
+      latest.current = next.participants;
+      setParticipants(next.participants);
+      setRound(next.round);
+      setPendingRound(next.pendingRoundTransition);
+    },
+    [],
+  );
   const updateParticipants = useCallback(
     (updater: Participant[] | ((current: Participant[]) => Participant[])) => {
       const next =
         typeof updater === "function" ? updater(latest.current) : updater;
       latest.current = next;
+      runtime.current = { ...runtime.current, participants: next };
       setParticipants(next);
       return next;
     },
@@ -211,26 +265,48 @@ export function GmCombatWindow({
   useEffect(() => {
     const timer = setTimeout(() => {
       try {
-        const raw = localStorage.getItem("karmalizacao:gm-encounter:v1");
+        const raw = localStorage.getItem(GM_ENCOUNTER_STORAGE_KEY);
         if (raw) {
           const d = JSON.parse(raw);
           if (!Array.isArray(d.participants) || d.participants.length > 60)
             throw Error("Encontro inválido");
           {
-            updateParticipants(
-              parseStoredParticipants(d.participants).map((p: Participant) => ({
+            const restored = parseStoredParticipants(d.participants).map(
+              (p: Participant) => ({
                 ...p,
                 payload: p.payload
                   ? normalizeCharacterPayload(p.payload)
                   : undefined,
-              })),
+              }),
             );
+            const sessionId =
+              typeof d.combatSessionId === "string" &&
+              /^[a-zA-Z0-9-]{12,80}$/.test(d.combatSessionId)
+                ? d.combatSessionId
+                : combatId();
+            const restoredRound = Math.min(
+              99999,
+              Math.max(1, Number(d.round) || 1),
+            );
+            const pending = parsePendingRoundTransition(
+              d.pendingRoundTransition,
+              sessionId,
+              restored,
+            );
+            runtime.current = {
+              combatSessionId: sessionId,
+              round: restoredRound,
+              participants: restored,
+              pendingRoundTransition: pending,
+            };
+            updateParticipants(restored);
+            setPendingRound(pending);
             setPendingPlayers(
               Array.isArray(d.pendingPlayers)
                 ? d.pendingPlayers.slice(0, 60)
                 : [],
             );
-            setRound(Math.max(1, Number(d.round) || 1));
+            setRound(restoredRound);
             setTurn(d.turn ?? "");
             setLogs((d.logs ?? []).slice(-100));
             setPhaseEvents((d.phaseEvents ?? []).slice(-40));
@@ -238,6 +314,8 @@ export function GmCombatWindow({
             sent.current = new Set(d.deliveries ?? []);
           }
         }
+        if (!runtime.current.combatSessionId)
+          runtime.current.combatSessionId = combatId();
       } catch {
         setMessage(
           "O encontro local não pôde ser recuperado. Exporte uma cópia antes de reiniciar.",
@@ -252,17 +330,10 @@ export function GmCombatWindow({
     if (!ready) return;
     const persist = () => {
       try {
-        localStorage.setItem(
-          "karmalizacao:gm-encounter:v1",
-          JSON.stringify({
-            participants,
-            round,
-            turn,
-            logs,
-            phaseEvents,
-            deliveries,
-            pendingPlayers,
-          }),
+        persistGmRuntime(
+          localStorage,
+          runtime.current,
+          snapshotDetails.current,
         );
       } catch {
         setMessage("Não foi possível guardar o encontro neste navegador.");
@@ -374,20 +445,70 @@ export function GmCombatWindow({
     details: string,
     kind: CombatLog["kind"] = "resource",
   ) {
-    setLogs((es) =>
-      [
-        ...es,
-        {
-          id: combatId(),
-          timestamp: new Date().toISOString(),
-          actorName: "Mestre",
-          kind,
-          title,
-          details,
-        },
-      ].slice(-100),
-    );
+    const nextLogs = [
+      ...((snapshotDetails.current.logs as CombatLog[] | undefined) ?? []),
+      {
+        id: combatId(),
+        timestamp: new Date().toISOString(),
+        actorName: "Mestre",
+        kind,
+        title,
+        details,
+      },
+    ].slice(-100);
+    snapshotDetails.current = { ...snapshotDetails.current, logs: nextLogs };
+    setLogs(nextLogs);
   }
+  const ensureLinkedSession = useCallback(
+    async (p: Participant) => {
+      const send = dispatchers.current.get(p.key);
+      if (!send) throw Error("Aguarde a conexão desta ficha.");
+      const session = latest.current.find((entry) => entry.key === p.key)
+        ?.payload?.combatState?.session;
+      if (
+        session?.id === runtime.current.combatSessionId &&
+        session.status === "active"
+      )
+        return send;
+      // Anchor the encounter identity before any remote effect can be committed.
+      commitRuntime(runtime.current);
+      await send({
+        id: `${runtime.current.combatSessionId}-start-${p.key}`,
+        actorName: "Mestre",
+        title: "Conectar ao encontro",
+        type: "session",
+        operation: "start",
+        sessionId: runtime.current.combatSessionId,
+        previousSessionId: session?.id,
+        combatSessionId: runtime.current.combatSessionId,
+      });
+      return send;
+    },
+    [commitRuntime],
+  );
+
+  const closeLinkedSession = useCallback(async (p: Participant) => {
+    const session = latest.current.find((entry) => entry.key === p.key)?.payload
+      ?.combatState?.session;
+    if (
+      !p.link ||
+      session?.id !== runtime.current.combatSessionId ||
+      session.status !== "active"
+    )
+      return;
+    const send = dispatchers.current.get(p.key);
+    if (!send)
+      throw Error("Aguarde a conexão da ficha para encerrar o encontro.");
+    await send({
+      id: `${runtime.current.combatSessionId}-close-${p.key}`,
+      actorName: "Mestre",
+      title: "Encerrar participação no encontro",
+      type: "session",
+      operation: "close",
+      sessionId: runtime.current.combatSessionId,
+      combatSessionId: runtime.current.combatSessionId,
+    });
+  }, []);
   async function action(
     p: Participant,
     data: Omit<CombatAction, "id" | "actorName" | "title"> &
@@ -395,12 +516,13 @@ export function GmCombatWindow({
     title: string,
     operationId?: string,
   ) {
+    const actionId = operationId ?? combatId();
     if (p.link) {
-      const send = dispatchers.current.get(p.key);
-      if (!send) throw Error("Aguarde a conexão desta ficha.");
+      const send = await ensureLinkedSession(p);
       await send({
         ...data,
-        id: operationId ?? combatId(),
+        combatSessionId: runtime.current.combatSessionId,
+        id: actionId,
         actorName: "Mestre",
         title: title.slice(0, 120),
       } as CombatAction);
@@ -408,6 +530,14 @@ export function GmCombatWindow({
     }
     const current = latest.current.find((x) => x.key === p.key);
     if (!current?.npc) throw Error("Participante não encontrado.");
+    if (
+      current.localCombatSession?.id === runtime.current.combatSessionId &&
+      current.localCombatSession.appliedActionIds.includes(actionId)
+    ) {
+      if (data.type === "round")
+        commitRuntime(markGmRoundParticipantDone(runtime.current, p.key));
+      return;
+    }
     let next = { ...current };
     const npc = current.npc;
     if (data.type === "damage") {
@@ -485,14 +615,64 @@ export function GmCombatWindow({
       );
     }
     if (next.life < current.life) next = checkPhases(next);
-    commitNpc(next);
+    const nextRuntime = applyGmLocalAction(
+      runtime.current,
+      p.key,
+      actionId,
+      () => next,
+      data.type === "round"
+        ? {
+            id: String(data.transitionId),
+            targetRound: Number(data.targetRound),
+          }
+        : undefined,
+    );
+    commitNpcRuntime(nextRuntime, phaseEventsForChange(current, next));
     log(title, nameOf(current));
   }
 
-  function commitNpc(next: Participant) {
-    updateParticipants((ps) => ps.map((p) => (p.key === next.key ? next : p)));
+  function commitNpcRuntime(next: GmEncounterRuntime, events: CombatLog[]) {
+    if (!events.length) {
+      commitRuntime(next);
+      return;
+    }
+    const details = {
+      ...snapshotDetails.current,
+      logs: [
+        ...((snapshotDetails.current.logs as CombatLog[] | undefined) ?? []),
+        ...events,
+      ].slice(-100),
+      phaseEvents: [
+        ...((snapshotDetails.current.phaseEvents as CombatLog[] | undefined) ??
+          []),
+        ...events,
+      ].slice(-40),
+    };
+    // Notices must not reach linked players if the NPC change could not be saved.
+    commitRuntime(next, details);
+    setLogs(details.logs);
+    setPhaseEvents(details.phaseEvents);
   }
-  function phaseEvent(p: Participant, phase: BossPhase, pending: boolean) {
+  function commitNpc(next: Participant, explicitEvents: CombatLog[] = []) {
+    const before = latest.current.find((p) => p.key === next.key);
+    commitNpcRuntime(
+      {
+        ...runtime.current,
+        participants: latest.current.map((p) =>
+          p.key === next.key ? next : p,
+        ),
+      },
+      [
+        ...(before ? phaseEventsForChange(before, next) : []),
+        ...explicitEvents,
+      ],
+    );
+  }
+  function phaseEvent(
+    p: Participant,
+    phase: BossPhase,
+    pending: boolean,
+  ): CombatLog {
     const notice = bossPhaseNotice(p.key, p.npc!, phase, pending),
       event: CombatLog = {
         id: combatId(),
@@ -503,8 +683,23 @@ export function GmCombatWindow({
         details: notice.defense,
         visual: notice,
       };
-    setLogs((es) => [...es, event].slice(-100));
-    setPhaseEvents((es) => [...es, event].slice(-40));
+    return event;
+  }
+  function phaseEventsForChange(before: Participant, next: Participant) {
+    return phasesFor(next.npc!)
+      .filter(
+        (phase) =>
+          next.seenPhases?.includes(phase.id) &&
+          !before.seenPhases?.includes(phase.id),
+      )
+      .sort((a, b) => a.order - b.order)
+      .map((phase) =>
+        phaseEvent(
+          next,
+          phase,
+          Boolean(phase.karmaCost || phase.pcCost || phase.controlDC),
+        ),
+      );
   }
   function checkPhases(p: Participant) {
     let next = { ...p };
@@ -525,7 +720,6 @@ export function GmCombatWindow({
         next.phaseDefense = phase.defense;
         next.phaseUnlocks = [...(next.phaseUnlocks ?? []), ...phase.unlocks];
       }
-      phaseEvent(next, phase, pending);
     }
     return next;
   }
@@ -546,8 +740,7 @@ export function GmCombatWindow({
       conditionalResistance:
         next.npc?.id === "maelia-veyr" ? 3 : next.conditionalResistance,
     };
-    commitNpc(next);
-    phaseEvent(next, phase, false);
+    commitNpc(next, [phaseEvent(next, phase, false)]);
   }
   function protection(p: Participant) {
     return p.payload
@@ -611,25 +804,47 @@ export function GmCombatWindow({
                 selection: visual.selection,
                 details: event.details?.slice(0, 1500),
               };
-        void send({
-          ...data,
-          id: event.id,
-          actorName: event.actorName,
-          title: event.title.slice(0, 120),
-        })
+        void ensureLinkedSession(p)
+          .then((scopedSend) =>
+            scopedSend({
+              ...data,
+              combatSessionId: runtime.current.combatSessionId,
+              id: event.id,
+              actorName: event.actorName,
+              title: event.title.slice(0, 120),
+            }),
+          )
           .then(() => {
             sent.current.add(key);
             setDeliveries([...sent.current].slice(-1000));
           })
-          .catch(() => {
-            retryAt.current.set(key, Date.now() + 10000);
+          .catch((error) => {
+            const failure = error as {
+              httpStatus?: number;
+              errorCode?: string;
+            };
+            const transient = isTransientCombatFailure(
+              failure.httpStatus,
+              failure.errorCode,
+            );
+            retryAt.current.set(key, transient ? Date.now() + 10000 : Infinity);
             setMessage(
-              `Aviso de fase/rolagem pendente para ${nameOf(p)}. A sincronização tentará novamente.`,
+              transient
+                ? `Aviso de fase/rolagem pendente para ${nameOf(p)}. A sincronização tentará novamente.`
+                : `Aviso de fase/rolagem recusado para ${nameOf(p)}. Confira as ações recusadas e sincronize a ficha.`,
             );
           })
           .finally(() => inFlight.current.delete(key));
       }
-  }, [active, ready, participants, phaseEvents, logs, retryTick]);
+  }, [
+    active,
+    ready,
+    participants,
+    phaseEvents,
+    logs,
+    retryTick,
+    ensureLinkedSession,
+  ]);
   const safe = (fn: () => Promise<void>) => {
     setBusy(true);
     void fn()
@@ -764,42 +979,57 @@ export function GmCombatWindow({
       outcome: roll!.outcome as "Acerto total" | "Acerto parcial" | "Falha",
     });
   }
-  const roundOperation = useRef<{ id: string; done: Set<string> } | null>(null);
+  const roundInFlight = useRef(false);
   async function newRound() {
-    const operation = roundOperation.current ?? {
-      id: combatId(),
-      done: new Set<string>(),
-    };
-    roundOperation.current = operation;
-    const failed = await runPendingBatch(
-      latest.current,
-      operation,
-      async (p, operationId) => {
-        if (p.payload && !liveState(p.payload).inCombat)
+    if (roundInFlight.current) throw Error("Aguarde o registro desta rodada.");
+    roundInFlight.current = true;
+    try {
+      commitRuntime(beginGmRound(runtime.current, combatId()));
+      const operation = runtime.current.pendingRoundTransition!;
+      const failures: string[] = [];
+      for (const key of operation.participantIds) {
+        if (runtime.current.pendingRoundTransition?.done.includes(key))
+          continue;
+        const p = latest.current.find((entry) => entry.key === key);
+        if (!p) {
+          failures.push("Participante não encontrado");
+          continue;
+        }
+        try {
+          if (p.payload && !liveState(p.payload).inCombat)
+            await action(
+              p,
+              { type: "toggle", active: true },
+              "Entrar em combate",
+              `${operation.id}-enter-${p.key}`,
+            );
           await action(
             p,
-            { type: "toggle", active: true },
-            "Entrar em combate",
-            `${operationId}-enter-${p.key}`,
+            {
+              type: "round",
+              targetRound: operation.participantTargets[key],
+              transitionId: operation.id,
+            },
+            "Nova rodada",
+            `${operation.id}-round-${p.key}`,
           );
-        await action(
-          p,
-          { type: "round" },
-          "Nova rodada",
-          `${operationId}-round-${p.key}`,
+          if (p.link)
+            commitRuntime(markGmRoundParticipantDone(runtime.current, key));
+        } catch {
+          failures.push(nameOf(p));
+        }
+      }
+      if (failures.length)
+        throw Error(
+          `Rodada pendente para: ${failures.join(", ")}. Use Retomar rodada para concluir os participantes restantes.`,
         );
-      },
-    );
-    const failures = failed.map(nameOf);
-    if (failures.length)
-      throw Error(
-        `Rodada interrompida em: ${failures.join(", ")}. Use Nova Rodada para retomar apenas os pendentes.`,
+      commitRuntime(finishGmRound(runtime.current));
+      setMessage(
+        "Rodada avançada. Reações renovadas; durações reduzidas. Manutenção das invocações vinculadas processada.",
       );
-    roundOperation.current = null;
-    setRound((n) => n + 1);
-    setMessage(
-      "Rodada avançada. Reações renovadas; durações reduzidas. Manutenção das invocações vinculadas processada.",
-    );
+    } finally {
+      roundInFlight.current = false;
+    }
   }
   function initiativeModifiers(p: Participant) {
     const fixed = Math.max(
@@ -865,8 +1095,10 @@ export function GmCombatWindow({
           undefined,
           mod.dice,
         );
-        await dispatchers.current.get(p.key)?.({
+        const send = await ensureLinkedSession(p);
+        await send({
           id: combatId(),
+          combatSessionId: runtime.current.combatSessionId,
           actorName: nameOf(p),
           title: "Iniciativa",
           type: "spectacle",
@@ -906,11 +1138,23 @@ export function GmCombatWindow({
       setMessage((e as Error).message);
     }
   }
-  function clearEncounter() {
-    roundOperation.current = null;
-    updateParticipants([]);
-    latest.current = [];
-    setRound(1);
+  async function clearEncounter() {
+    for (const p of latest.current) await closeLinkedSession(p);
+    commitRuntime(
+      {
+        combatSessionId: combatId(),
+        participants: [],
+        round: 1,
+        pendingRoundTransition: null,
+      },
+      {
+        turn: "",
+        logs: [],
+        phaseEvents: [],
+        deliveries: [],
+        pendingPlayers: [],
+      },
+    );
     setTurn("");
     setTarget("");
     setAreaTargets([]);
@@ -923,6 +1167,25 @@ export function GmCombatWindow({
     inFlight.current.clear();
     retryAt.current.clear();
   }
+  async function newScene() {
+    if (runtime.current.pendingRoundTransition)
+      throw Error("Conclua a rodada pendente antes de iniciar outra cena.");
+    for (const p of latest.current) await closeLinkedSession(p);
+    commitRuntime({
+      ...runtime.current,
+      combatSessionId: combatId(),
+      round: 1,
+      pendingRoundTransition: null,
+    });
+    for (const p of latest.current)
+      await action(
+        p,
+        { type: "scene" },
+        "Nova cena",
+        `${runtime.current.combatSessionId}-scene-${p.key}`,
+      );
+    setTurn("");
+  }
   async function loadEncounter(e: ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     e.target.value = "";
@@ -932,15 +1195,17 @@ export function GmCombatWindow({
       const data = importEncounter(await file.text());
       if (
         !confirm(
-          "Substituir o encontro deste navegador pelo arquivo? Fichas vinculadas no servidor não serão alteradas.",
+          "Substituir o encontro deste navegador pelo arquivo? O encontro atual será encerrado sem apagar fichas ou restaurar recursos.",
         )
       )
         return;
-      clearEncounter();
+      await clearEncounter();
       const next = data.participants.map((p) => ({ ...p, key: combatId() }));
-      latest.current = next;
-      updateParticipants(next);
-      setRound(data.round);
+      commitRuntime({
+        ...runtime.current,
+        participants: next,
+        round: data.round,
+      });
       setPendingPlayers(data.players);
       setTurn(
         next[data.participants.findIndex((p) => p.key === data.turn)]?.key ??
@@ -1051,10 +1316,11 @@ export function GmCombatWindow({
                 confirm(
                   "Reiniciar o encontro deste navegador? Exporte uma cópia antes.",
                 )
-              ) {
-                clearEncounter();
-                setReady(true);
-              }
+              )
+                safe(async () => {
+                  await clearEncounter();
+                  setReady(true);
+                });
             }}
           >
             Reiniciar encontro local
@@ -1219,7 +1485,7 @@ export function GmCombatWindow({
                     "Limpar o encontro local? Exporte uma cópia antes se quiser recuperá-lo. Fichas dos jogadores não serão apagadas.",
                   )
                 )
-                  clearEncounter();
+                  safe(clearEncounter);
               }}
             >
               Limpar Encontro
@@ -1269,8 +1535,14 @@ export function GmCombatWindow({
               Próximo Turno
             </button>
             <button disabled={busy} onClick={() => safe(newRound)}>
-              Nova Rodada
+              {pendingRound ? "Retomar rodada" : "Nova Rodada"}
             </button>
+            {pendingRound && (
+              <span role="status">
+                Rodada em andamento: {pendingRound.done.length}/
+                {pendingRound.participantIds.length} participantes confirmados.
+              </span>
+            )}
             <button
               disabled={busy}
               onClick={() => {
@@ -1279,12 +1551,7 @@ export function GmCombatWindow({
                     "Nova cena? Reinicia Domínios e rodada, sem restaurar Vida ou Karma.",
                   )
                 )
-                  safe(async () => {
-                    for (const p of latest.current)
-                      await action(p, { type: "scene" }, "Nova cena");
-                    setRound(1);
-                    setTurn("");
-                  });
+                  safe(newScene);
               }}
             >
               Nova cena
@@ -1620,14 +1887,24 @@ export function GmCombatWindow({
                       Alvo de área
                     </label>
                     <button
+                      disabled={
+                        busy ||
+                        Boolean(pendingRound?.participantIds.includes(p.key))
+                      }
                       onClick={() => {
-                        updateParticipants((ps) =>
-                          ps.filter((x) => x.key !== p.key),
-                        );
-                        setAreaTargets((keys) =>
-                          keys.filter((k) => k !== p.key),
-                        );
-                        if (turn === p.key) setTurn("");
+                        safe(async () => {
+                          await closeLinkedSession(p);
+                          commitRuntime({
+                            ...runtime.current,
+                            participants: latest.current.filter(
+                              (entry) => entry.key !== p.key,
+                            ),
+                          });
+                          setAreaTargets((keys) =>
+                            keys.filter((key) => key !== p.key),
+                          );
+                          if (turn === p.key) setTurn("");
+                        });
                       }}
                     >
                       Remover do encontro

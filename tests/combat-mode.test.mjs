@@ -57,7 +57,7 @@ test('encounter and forge imports validate bounds and never export share tokens'
 });
 
 test('shared inventory use survives retries and a stale owner save without granting creation access', async () => {
- const stale=seed();const baseRevision=await revision.characterRevision(stale);
+ const stale=seed();stale.inventory=stale.inventory.map(item=>({...item,_clientBase:{quantity:item.quantity,location:item.location,equipped:item.equipped,tacticalRev:item.tacticalRev??0}}));const baseRevision=await revision.characterRevision(stale);
  const item=stale.inventory[0];
  assert(item?.quantity>0);
  const use=action({type:'inventoryUse',itemId:item.id,consume:1,location:'ready'});

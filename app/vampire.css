@@ -233,9 +233,6 @@
   .vampire-content .elven-sheet-queen .elven-identity {
     min-height: 0;
   }
-  .haimaton-crest {
-    max-width: 210px;
-  }
   .vampire-realm-hero::after {
     display: none;
   }

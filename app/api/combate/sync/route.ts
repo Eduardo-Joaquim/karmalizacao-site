@@ -2,7 +2,8 @@ import { getChatGPTUser } from "@/app/chatgpt-auth";
 import { getD1 } from "@/db";
 import { normalizeCharacterPayload } from "@/lib/character-data";
 import { characterPayloadSchema } from "@/lib/character-schema";
-import { applyCombatAction, liveState } from "@/lib/combat-engine";
+import { applyCombatAction } from "@/lib/combat-engine";
+import { CombatProtocolError } from "@/lib/combat-session";
 import { combatRequestSchema } from "@/lib/combat-validation";
 import { readJsonBody, RequestBodyError } from "@/lib/request-body";
 export const dynamic = "force-dynamic";
@@ -108,21 +109,40 @@ export async function POST(request: Request) {
       const old = normalizeCharacterPayload(
         characterPayloadSchema.parse(JSON.parse(row.payload)),
       );
-      if (liveState(old).combatFeed.some((e) => e.id === action.id))
-        return response(
-          { id, payload: old, updatedAt: row.updatedAt },
-          200,
-          etag(row.updatedAt),
-        );
       let next;
       try {
-        next = characterPayloadSchema.parse(applyCombatAction(old, action));
+        const applied = applyCombatAction(old, action);
+        if (applied === old)
+          return response(
+            {
+              id,
+              payload: old,
+              updatedAt: row.updatedAt,
+              alreadyApplied: true,
+            },
+            200,
+            etag(row.updatedAt),
+          );
+        next = characterPayloadSchema.parse(applied);
       } catch (e) {
         return response(
-          { error: e instanceof Error ? e.message : "Ação recusada." },
-          422,
+          {
+            error: e instanceof Error ? e.message : "Ação recusada.",
+            code: e instanceof CombatProtocolError ? e.code : "ACTION_REJECTED",
+          },
+          e instanceof CombatProtocolError ? e.status : 422,
         );
       }
+      const nextPayload = JSON.stringify(next);
+      if (new TextEncoder().encode(nextPayload).byteLength > 1_900_000)
+        return response(
+          {
+            error:
+              "O encontro atingiu o limite de armazenamento. Encerre o encontro e inicie outro para continuar.",
+            code: "SESSION_STORAGE_LIMIT",
+          },
+          413,
+        );
       const previousTime = Date.parse(
         row.updatedAt.replace(" ", "T") +
           (row.updatedAt.includes("Z") ? "" : "Z"),
@@ -137,21 +157,16 @@ export async function POST(request: Request) {
         .prepare(
           `UPDATE characters SET payload = ?, updated_at = ? WHERE ${authWhere} AND payload = ?`,
         )
-        .bind(
-          JSON.stringify(next),
-          updatedAt,
-          id,
-          email,
-          token,
-          token,
-          row.payload,
-        )
+        .bind(nextPayload, updatedAt, id, email, token, token, row.payload)
         .run();
       if (result.success && result.meta.changes === 1)
         return response({ id, payload: next, updatedAt }, 200, etag(updatedAt));
     }
     return response(
-      { error: "A ficha recebeu outras ações. Tente novamente." },
+      {
+        error: "A ficha recebeu outras ações. Tente novamente.",
+        code: "WRITE_CONFLICT",
+      },
       409,
     );
   } catch {

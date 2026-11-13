@@ -1680,14 +1680,6 @@
     serif;
   margin: 28px 0 0;
 }
-.elven-crest {
-  position: relative;
-  z-index: 1;
-  flex: 0 0 285px;
-  width: 285px;
-  height: 305px;
-  filter: drop-shadow(0 0 30px #bbca6d1c);
-}
 .elven-seal {
   position: relative;
   z-index: 1;
@@ -2100,14 +2092,6 @@
   .elven-sheet-queen .elven-identity {
     min-height: 0;
   }
-  .elven-crest {
-    position: absolute;
-    right: -85px;
-    bottom: -70px;
-    width: 250px;
-    height: 270px;
-    opacity: 0.25;
-  }
   .elven-seal {
     width: 68px;
     height: 68px;
@@ -2198,9 +2182,6 @@
   }
   .elven-sheet * {
     color: black !important;
-  }
-  .elven-crest {
-    opacity: 0.45;
   }
   .elven-ability,
   .elven-resource-grid,

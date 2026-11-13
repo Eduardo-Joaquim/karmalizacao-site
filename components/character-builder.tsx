@@ -14,6 +14,10 @@ import {
   selectionsComplete,
 } from "@/components/character-fields";
 import { useCharacterRecovery } from "@/hooks/use-character-recovery";
+import {
+  hydrateInventoryBaseline,
+  reconcileCharacterAfterSaveSuccess,
+} from "@/lib/inventory-editor";
 import { playerBlessingCatalog as blessingsCatalog } from "@/lib/blessings-filter";
 import { PANTHEONS } from "@/lib/character-rules";
 import {
@@ -125,9 +129,13 @@ async function fetchOwnedCharacter(
   };
   if (!response.ok || !data.character)
     throw new Error(data.error ?? "Não foi possível abrir a ficha.");
+  const payload = normalizeCharacterPayload(data.character.payload);
   return {
     ...data.character,
-    payload: normalizeCharacterPayload(data.character.payload),
+    payload: {
+      ...payload,
+      inventory: hydrateInventoryBaseline(payload.inventory),
+    },
   };
 }
 
@@ -734,13 +742,25 @@ export function CharacterBuilder({
         throw new Error(data.error ?? "Não foi possível salvar a ficha.");
       }
 
+      const normalizedSaved = normalizeCharacterPayload(data.character.payload);
       const saved = {
         ...data.character,
-        payload: normalizeCharacterPayload(data.character.payload),
+        payload: {
+          ...normalizedSaved,
+          inventory: hydrateInventoryBaseline(normalizedSaved.inventory),
+        },
       };
       setActiveId(saved.id);
-      if (editRevision.current === sentRevision) {
-        setDraft(saved.payload);
+      const preserveAuthored = editRevision.current !== sentRevision;
+      setDraft((current) =>
+        reconcileCharacterAfterSaveSuccess(
+          current,
+          characterToSave,
+          saved.payload,
+          preserveAuthored,
+        ),
+      );
+      if (!preserveAuthored) {
         setDirty(false);
         recovery.clear();
       }
@@ -893,6 +913,7 @@ export function CharacterBuilder({
         draft={draft}
         onChange={setDraft}
         id={activeId}
+        storageScope={storageScope}
         onShare={() => void enableOrCopySharing()}
       >
         {(send) => (

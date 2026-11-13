@@ -112,7 +112,7 @@ test('shared inventory operations touch only existing item usage and refuse auth
  assert(combatRequestSchema.safeParse({id:crypto.randomUUID(),action}).success);
  assert(!combatRequestSchema.safeParse({id:crypto.randomUUID(),action:{...action,race:'Elfo'}}).success);
  const next=engine.applyCombatAction(draft,action);
- assert.deepEqual(next.inventory,[{...draft.inventory[0],location:'ready',quantity:1}]);
+ assert.deepEqual(next.inventory,[{...draft.inventory[0],location:'ready',quantity:1,tacticalRev:1}]);
  assert.equal(next.race,draft.race);
  assert.throws(()=>engine.applyCombatAction(draft,{...action,consume:3}),/Quantidade insuficiente/);
  assert.equal(engine.mergeCombat(next,draft,draft.inventory).inventory[0].quantity,1);

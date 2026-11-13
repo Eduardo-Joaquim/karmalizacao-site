@@ -95,75 +95,6 @@ const collections = {
   },
 };
 
-function IgnariaSeal({ kind }: { kind: IgnariaCollection }) {
-  return (
-    <svg
-      className="elven-crest ignaria-crest"
-      viewBox="0 0 300 320"
-      fill="none"
-      aria-hidden="true"
-    >
-      <circle cx="150" cy="156" r="115" stroke="currentColor" opacity=".35" />
-      <circle
-        cx="150"
-        cy="156"
-        r="103"
-        stroke="currentColor"
-        strokeDasharray="2 10"
-        opacity=".6"
-      />
-      {kind === "demons" ? (
-        <>
-          <path
-            d="m150 34 23 77 79-5-61 50 28 78-69-47-69 47 28-78-61-50 79 5 23-77Z"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M110 135h80v98h-80zM99 233h102M121 233v23m58-23v23M110 163l-19-25M190 163l19-25M130 135l-8-22m48 22 8-22"
-            stroke="currentColor"
-            strokeWidth="3"
-          />
-          <path d="m143 133 15 29-14 15 17 29-12 27" stroke="currentColor" />
-          <circle cx="150" cy="156" r="76" stroke="currentColor" opacity=".3" />
-        </>
-      ) : kind === "ghouls" ? (
-        <>
-          <path
-            d="M150 49 224 83v86c0 54-36 82-74 103-38-21-74-49-74-103V83l74-34Z"
-            stroke="currentColor"
-            strokeWidth="2"
-          />
-          <path
-            d="m126 115 13-14 16 4 12-3 17 12v48l-17 34h-39l-13-38v-28l11-15ZM129 121v35m15-44v45m15-45v45m15-38v37M128 196v24h39v-24"
-            stroke="currentColor"
-            strokeWidth="2"
-          />
-          <path d="m65 265 31-23m139 23-31-23" stroke="currentColor" />
-        </>
-      ) : (
-        <>
-          <path
-            d="m150 48 76 45v104l-76 66-76-66V93l76-45Z"
-            stroke="currentColor"
-            strokeWidth="2"
-          />
-          <path
-            d="M172 97a57 57 0 1 0 0 115 62 62 0 0 1 0-115Z"
-            stroke="currentColor"
-            strokeWidth="2"
-          />
-          <path
-            d="m172 135 7 15 16 2-12 12 3 17-14-8-15 8 3-17-12-12 17-2 7-15ZM98 239l-15 32m119-32 15 32"
-            stroke="currentColor"
-          />
-        </>
-      )}
-      <path d="M117 293h66" stroke="currentColor" />
-    </svg>
-  );
-}
-
 export function IgnariaCourtContent({ kind }: { kind: IgnariaCollection }) {
   const { data, identities, Mark, motto, arsenal } = collections[kind];
   return (
@@ -198,7 +129,6 @@ export function IgnariaCourtContent({ kind }: { kind: IgnariaCollection }) {
                       profile={profile}
                       index={index}
                       identity={identities[index]}
-                      crest={<IgnariaSeal kind={kind} />}
                       motto={motto}
                       arsenal={arsenal}
                       Mark={Mark}

@@ -212,11 +212,6 @@
     padding: 1rem !important;
   }
 }
-.elven-sheet .ability-description {
-  color: #bdc9b5;
-  font-style: italic;
-  margin-bottom: 1rem;
-}
 .elven-sheet .ability-mechanics {
   border-top: 1px solid #ffffff20;
   padding-top: 1rem;

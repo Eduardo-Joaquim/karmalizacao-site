@@ -114,6 +114,13 @@ export function InventoryManager({
           quantity: 1,
           location: "backpack",
           equipped: false,
+          tacticalRev: 0,
+          _clientBase: {
+            quantity: 1,
+            location: "backpack",
+            equipped: false,
+            tacticalRev: 0,
+          },
         },
       ],
     });

@@ -46,6 +46,9 @@ export type CourtProfile = Omit<
     royalMechanics?: {
       reflectionMultiplier?: number;
       karmaMaxDecayPercent?: number;
+      chancePercent?: number;
+      chanceSuccessLabel?: string;
+      chanceFailureLabel?: string;
     };
     damageFormulas?: string[];
   }>;
@@ -104,12 +107,6 @@ function Fields({ fields }: { fields: Ability["fields"] }) {
         .map((field, index) => {
           if (field.label === "Composição de Karma")
             return <TechniqueCost key={index} html={field.html} />;
-          const split =
-            field.label === "Uso"
-              ? field.html.search(
-                  /(?:Luta|Pontaria|Força|Agilidade|Espírito|Intelecto|Presença) (?:contra|\+)|(?:Em acerto|Em sucesso|Causa |Concede |Reduz |Recebe |reduz o dano)/,
-                )
-              : -1;
           return (
             <div
               className={
@@ -118,30 +115,18 @@ function Fields({ fields }: { fields: Ability["fields"] }) {
               key={index}
             >
               {field.label && <span>{field.label}</span>}
-              {split > 0 ? (
-                <>
-                  <div
-                    className="ability-description"
-                    dangerouslySetInnerHTML={{
-                      __html: costDisclosureHtml(field.html.slice(0, split)),
-                    }}
-                  />
-                  <div className="ability-mechanics">
-                    <small>EFEITO EM JOGO</small>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: costDisclosureHtml(field.html.slice(split)),
-                      }}
-                    />
-                  </div>
-                </>
-              ) : (
+              <div
+                className={
+                  field.label === "Uso" ? "ability-mechanics" : undefined
+                }
+              >
+                {field.label === "Uso" && <small>EFEITO EM JOGO</small>}
                 <div
                   dangerouslySetInnerHTML={{
                     __html: costDisclosureHtml(field.html),
                   }}
                 />
-              )}
+              </div>
             </div>
           );
         })}
@@ -205,11 +190,17 @@ function AbilityCard({
       />
       {ability.damageFormulas?.length ? (
         <div className="thalassia-ability-rolls">
-          {ability.damageFormulas.map((formula) => (
+          {[...new Set(ability.damageFormulas)].map((formula) => (
             <DiceRoller
               key={formula}
               formula={formula}
-              successAtMost={formula === "1d100" ? 30 : undefined}
+              successAtMost={
+                formula === "1d100"
+                  ? ability.royalMechanics?.chancePercent
+                  : undefined
+              }
+              successLabel={ability.royalMechanics?.chanceSuccessLabel}
+              failureLabel={ability.royalMechanics?.chanceFailureLabel}
               label={ability.name}
             />
           ))}
@@ -223,7 +214,7 @@ export function CourtDossier({
   initialReading = "summary",
   profile,
   index,
-  identity = identities[index],
+  identity,
   motto = "“Toda raiz é uma promessa feita ao que ainda não nasceu.”",
   arsenal = "Arsenal de Nemeton",
   Mark = TreePine,
@@ -239,14 +230,16 @@ export function CourtDossier({
   afterCombat?: ReactNode;
   profile: Profile;
   index: number;
-  identity?: CourtIdentity;
-  crest?: ReactNode;
+  identity: CourtIdentity;
   motto?: string;
   arsenal?: string;
   Mark?: LucideIcon;
   solar?: boolean;
   showSources?: boolean;
 }) {
+  if (!identity) {
+    throw new Error(`Identidade do dossiê ausente: ${profile.id}.`);
+  }
   const Icon = identity.Icon;
   const classification = bestiaryClassification(profile.identity, identity);
   const queen = index === 0;
@@ -488,7 +481,12 @@ export function ElvenCourtSheets() {
   return (
     <div className="elven-court-sheets">
       {elven.courtProfiles.map((profile, index) => (
-        <CourtDossier key={profile.id} profile={profile} index={index} />
+        <CourtDossier
+          key={profile.id}
+          profile={profile}
+          index={index}
+          identity={identities[index]}
+        />
       ))}
     </div>
   );

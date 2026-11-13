@@ -22,6 +22,10 @@ import { visualFromRoll } from "@/lib/combat-visuals";
 import { corruptedFormState, corruptionControlDC } from "@/lib/corrupted-form";
 import { rollDiceExpression } from "@/lib/dice-expression";
 import { blessingGrants } from "@/lib/divine-blessings";
+import {
+  prepareCombatSession,
+  completeCombatSession,
+} from "@/lib/combat-session";
 import { calculateInvocationStats } from "@/lib/invocation-rules";
 import {
   availableKarma,
@@ -55,6 +59,7 @@ export function liveState(draft: CharacterPayload): LiveCombatState {
     old = draft.combat,
     s = draft.combatState;
   return {
+    session: s?.session,
     runes: s?.runes ?? [],
     runeBurstUsed: s?.runeBurstUsed ?? false,
     impetus: clamp(
@@ -315,9 +320,10 @@ export function applyCombatAction(
   timestamp = new Date().toISOString(),
 ): CharacterPayload {
   let s = liveState(draft);
+  const prepared = prepareCombatSession(s, op);
+  if (prepared.duplicate) return draft;
   const next = { ...draft };
   const max = characterMax(draft);
-  if (s.combatFeed.some((e) => e.id === op.id)) return draft;
   const before = s.currentLife,
     karmaBefore = s.currentKarma,
     shieldBefore = s.tempShield;
@@ -328,6 +334,12 @@ export function applyCombatAction(
     title: op.title,
     kind: "resource",
   };
+  if (op.type === "session") {
+    event.details =
+      op.operation === "start"
+        ? "Encontro conectado iniciado."
+        : "Encontro conectado encerrado.";
+  }
   if (op.type === "damage") {
     const resistance =
       op.incomingElement && op.primaryDefenses
@@ -450,7 +462,21 @@ export function applyCombatAction(
     const equipped =
       quantity > 0 && location !== "external" && (op.equipped ?? item.equipped);
     next.inventory = draft.inventory.map((entry) =>
-      entry.id === item.id ? { ...entry, quantity, location, equipped } : entry,
+      entry.id === item.id
+        ? {
+            ...entry,
+            quantity,
+            location,
+            equipped,
+            tacticalRev:
+              (entry.tacticalRev ?? 0) +
+              Number(
+                quantity !== entry.quantity ||
+                  location !== entry.location ||
+                  Boolean(equipped) !== Boolean(entry.equipped),
+              ),
+          }
+        : entry,
     );
     event.inventoryItemId = item.id;
     event.details = `${item.name}: ${quantity} unidade(s)${equipped ? " · equipado" : ""}.`;
@@ -942,5 +968,6 @@ export function applyCombatAction(
   event.shieldDelta = s.tempShield - shieldBefore;
   s.lastActionLog = event;
   s.combatFeed = [...s.combatFeed, event].slice(-25);
+  s.session = completeCombatSession(prepared.session, op);
   return withLiveState(next, s);
 }

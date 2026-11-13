@@ -780,7 +780,7 @@
 }
 
 .player-combat-dock {
-  display: block !important;
+  display: block;
   padding-top: 0 !important;
 }
 .dock-collapse-arrow {

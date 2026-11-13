@@ -9,6 +9,19 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
+    id: "patch-2-0-6-2026-11-13",
+    version: "2.0.6",
+    label: "Patch 2.0.6 · 13/11/2026",
+    title: "Inventário preservado e rodadas recuperáveis",
+    highlights: [
+      "Itens consumidos no combate continuam gastos ao salvar uma ficha aberta anteriormente. Reposições são preservadas e alterações simultâneas no mesmo item recebem um aviso de conflito.",
+      "Ações de combate pendentes podem ser recuperadas ao reabrir a página. Reenvios confirmados não cobram recursos novamente dentro do mesmo encontro, e ações recusadas mostram como continuar.",
+      "O Mestre pode retomar uma rodada interrompida sem repetir a manutenção dos participantes já processados. Cada encontro mantém sua própria sequência de rodadas.",
+      "A barra de combate deixa de aparecer na impressão da ficha.",
+      "Os efeitos dos dossiês mantêm seus textos completos. Quatro técnicas de Atargatis esclarecem que o Acerto Parcial termina antes da CA Total, e as rolagens de chance seguem o valor de cada habilidade.",
+    ],
+  },
+  {
     id: "patch-2-0-5-2026-11-11",
     version: "2.0.5",
     label: "Patch 2.0.5 · 11/11/2026",

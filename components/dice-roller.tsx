@@ -12,12 +12,16 @@ export function DiceRoller({
   label,
   formula,
   successAtMost,
+  successLabel = "Sucesso",
+  failureLabel = "Sem efeito adicional",
 }: {
   dice?: number;
   bonus?: number;
   label: string;
   formula?: string;
   successAtMost?: number;
+  successLabel?: string;
+  failureLabel?: string;
 }) {
   const [damage, setDamage] =
     useState<ReturnType<typeof rollDiceExpression>>(null);
@@ -82,7 +86,8 @@ export function DiceRoller({
           aria-label={`Rolar ${label}: ${formula}`}
           onClick={() => setDamage(rollDiceExpression(formula))}
         >
-          {formula} · Rolar {successAtMost === undefined ? "dano" : "chance"}
+          {formula} · Rolar{" "}
+          {successAtMost === undefined ? "dano" : `chance (${successAtMost}%)`}
         </button>
         {damage && (
           <output aria-live="polite">
@@ -90,8 +95,8 @@ export function DiceRoller({
               {damage.total}
               {successAtMost !== undefined
                 ? damage.total <= successAtMost
-                  ? " · Sangramento Profundo aplicado"
-                  : " · Sem Sangramento Profundo"
+                  ? ` · ${successLabel}`
+                  : ` · ${failureLabel}`
                 : ""}
             </b>
             <span>

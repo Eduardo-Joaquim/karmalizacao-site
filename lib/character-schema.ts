@@ -206,7 +206,15 @@ const techniqueSchema = z.object({
   signature: z.boolean().default(false),
 });
 
+const itemTacticalBaselineSchema = z.object({
+  quantity: z.number().int().min(0).max(999),
+  location: z.enum(["ready", "backpack", "external"]).optional(),
+  equipped: z.boolean().optional(),
+  tacticalRev: z.number().int().min(0).max(Number.MAX_SAFE_INTEGER),
+});
+
 const inventoryItemSchema = z.object({
+  tacticalRev: z.number().int().min(0).max(Number.MAX_SAFE_INTEGER).default(0),
   catalogId: shortText.optional(),
   category: z
     .enum(["weapon", "armor", "shield", "ammo", "focus", "gear"])
@@ -331,6 +339,17 @@ export const combatLogSchema = z.object({
   details: longText(2000).optional(),
 });
 export const liveCombatSchema = z.object({
+  session: z
+    .object({
+      id: z.string().min(1).max(80),
+      status: z.enum(["active", "closed"]),
+      round: z.number().int().min(1).max(99999),
+      lastRoundTransitionId: z.string().min(1).max(160).optional(),
+      appliedActionIds: z.array(z.string().min(1).max(80)),
+      retiredSessionIds: z.array(z.string().min(1).max(80)),
+      legacy: z.boolean().optional(),
+    })
+    .optional(),
   runes: z
     .array(
       z.object({
@@ -464,7 +483,16 @@ export const saveCharacterSchema = z
       .max(80)
       .regex(/^[a-zA-Z0-9-]+$/),
     name: z.string().trim().min(1).max(80),
-    payload: characterPayloadSchema,
+    payload: characterPayloadSchema.extend({
+      inventory: z
+        .array(
+          inventoryItemSchema.extend({
+            _clientBase: itemTacticalBaselineSchema.optional(),
+          }),
+        )
+        .max(100)
+        .optional(),
+    }),
   })
   .superRefine(({ payload }, ctx) => {
     for (const [index, invocation] of (payload.invocations ?? []).entries()) {

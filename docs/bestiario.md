@@ -2520,7 +2520,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
 
 **Resolução mecânica:** Calcule a CA Parcial como máximo entre 0 e metade da CA arredondada para baixo menos 2; a CA Total permanece intacta. No Acerto Total, cause 2d6 Elemental / Gelo, com descritor perfurante. No Acerto Parcial, cause metade do dano, arredondada para baixo. Em qualquer acerto, o próximo deslocamento do alvo fica reduzido em 3 m, mínimo 0, até o início do próximo turno de Atargatis. Falha não causa dano nem redução. A redução não acumula consigo mesma; uma nova aplicação renova o prazo. Cobertura total bloqueia a trajetória.
 
@@ -2548,7 +2548,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
 
 **Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
 
@@ -2576,7 +2576,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
 
 **Resolução mecânica:** Total causa 1d10 de dano cortante puro, registrado como Marcial/cortante nesta execução; parcial causa metade. Puro significa que não há segunda parcela elemental, e não que ignora toda defesa. Após qualquer acerto, role 1d100 uma única vez: de 1 a 30 aplica Sangramento Profundo; de 31 a 100 não aplica. A condição afeta criaturas vivas, Abissais e constructos por perda de sangue, fluido ou integridade estrutural, sem exigir hemomancia. Causa 1d8 do mesmo tipo no início de cada um dos próximos três turnos do alvo. Uma Principal e Intelecto + Medicina CD 19, ou Intelecto + Criação CD 19 para constructos, encerram a condição em sucesso; falha gasta a ação. Outra aplicação renova o prazo sem duplicar pulsos. Falha no ataque não rola a chance. A imunidade a Sangrando comum não impede automaticamente esta lesão estrutural nomeada.
 
@@ -2590,7 +2590,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até a própria CA.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
 
 **Resolução mecânica:** Total causa 2d10 Elemental / Pressão, descritor contundente; parcial causa metade. Após qualquer acerto, o alvo faz Constituição + Atletismo CD 19, a resistência física do sistema. Falha aplica Fratura de Compressão: −2 em testes físicos regidos por Força, Agilidade ou Constituição durante dois turnos próprios, encerrando ao fim do segundo. Constructos sofrem a mesma penalidade por deformação estrutural. Sucesso evita apenas a fratura, não o dano já acertado. A penalidade não acumula consigo; renovar reinicia o prazo. Falha no ataque não causa dano nem resistência secundária. Não use uma Perícia inexistente chamada Resistência.
 
