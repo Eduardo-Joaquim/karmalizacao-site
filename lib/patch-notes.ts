@@ -9,7 +9,7 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
-    id: "patch-2-0-8-2026-11-15-armas-e-assinaturas",
+    id: "patch-2-0-8-2026-11-15-armas-assinaturas-e-acessos",
     version: "2.0.8",
     label: "Patch 2.0.8 - 15/11/2026",
     title: "Arsenais das rainhas e entradas dos continentes",
@@ -23,6 +23,7 @@ export const PATCH_NOTES: readonly PatchNote[] = [
       "As armas das rainhas ganham fichas mais claras, com dano, alcance e ação em destaque e regras completas em seções expansíveis.",
       "Runas convencionais e maldições aparecem em apresentações distintas. Armas amaldiçoadas mantêm suas inscrições convencionais bloqueadas.",
       "As assinaturas apresentam preparo, ativação, resolução e duração em blocos de consulta, preservando seus custos e efeitos.",
+      "Atualizados os endereços de acesso ao livro, aos quatro continentes e às cortes. Os atalhos ficam organizados por leitura, mundo e mesa de jogo.",
     ],
   },
   {

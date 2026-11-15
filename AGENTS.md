@@ -1,5 +1,7 @@
 # Atualizações do site
 
+O autor concedeu em 15/11/2026 autorização contínua para publicar implementações solicitadas no site. Pedidos de análise são a exceção: analisar não autoriza implementar ou publicar. Não pedir nova confirmação de publicação para implementações dentro do escopo autorizado. Preservar o público atual e seguir as aprovações nativas quando aplicáveis. Ao publicar, conferir que `SITE_ORIGIN` e os acessos de `lib/book-access.ts` apontam para o endereço atual retornado por Sites, mantendo os quatro continentes e suas páginas acessíveis.
+
 ## Novos verbetes de Ignária
 
 Grafia obrigatória: família **Lunaviel**, nunca Lunavir. Casa Marquesal Lunaviel: Caroline “A Patriarca” (Duelista V, SS, Vida 168, Karma 84, CA 26, atributos 6/7/6/5/7/5, duas espadas e Estilo da Espada da Lua, sete técnicas e Gekkō), Valentino Heathcliff (S, consorte e protetor, Vida 132, Karma 68, CA 24, Força 6 e Constituição 7) e Alaric Voss (mordomo Pugilista V, S, Vida 164, quatro técnicas e Réquiem). Caroline é a combatente mais forte da casa. Helena foi excluída; não a restaure. Maximillian e Dominick aparecem somente em menções narrativas, sem fichas. Todos usam duas Reações por rodada, uma por resolução.

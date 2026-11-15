@@ -3,7 +3,7 @@ import { getChapterMetadata } from "@/lib/rules";
 const configuredOrigin =
   process.env.SITE_ORIGIN ||
   process.env.NEXT_PUBLIC_SITE_ORIGIN ||
-  "https://karmalizacao-prototipo-edu.joaquimeeduardo680.chatgpt.site";
+  "https://karmalizacao.joaquimeeduardo680.chatgpt.site";
 export const SITE_ORIGIN = new URL(configuredOrigin).origin;
 export function publicRoutes() {
   return [

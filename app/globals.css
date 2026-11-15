@@ -6065,6 +6065,23 @@ h4,
 .direct-access-grid strong {
   color: #e6d4ac;
 }
+.direct-access-group {
+  margin-top: 28px;
+  border-top: 1px solid #ffffff1c;
+  padding-top: 18px;
+}
+.direct-access-group h3,
+.direct-access-group > summary {
+  color: #e6d4ac;
+  font:
+    500 1rem / 1.5 "Cinzel",
+    Georgia,
+    serif;
+}
+.direct-access-grid small {
+  color: #c5beb1;
+  line-height: 1.6;
+}
 .direct-access-grid span {
   font-size: 0.75rem;
   color: #aaa397;
