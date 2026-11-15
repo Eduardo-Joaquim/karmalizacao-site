@@ -128,13 +128,30 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 ##### Assinatura · Heliánthos
 
-**Fonte e Grau:** Assinatura da Bênção V. **Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice. Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada. A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
+**Fonte e Grau:** Assinatura da Bênção V.
 
-Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Falha não causa dano ou perda de Reações. A linha e sua direção são fixadas na preparação, permitindo que criaturas se movam ou busquem cobertura entre os dois turnos. A fórmula própria de 2d10 +1d8 já é o dano completo da assinatura: não some os dados de Dendron ou das pistolas. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
+**Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice.
+
+**Descrição:** Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada.
+
+**Preparação:** A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
+
+**Área anunciada:** A linha e sua direção são fixadas na preparação, permitindo que criaturas se movam ou busquem cobertura entre os dois turnos.
+
+**Teste:** Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha.
+
+**Acerto Total:** **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith.
+
+**Acerto Parcial:** metade do dano, sem efeitos adicionais.
+
+**Falha:** Falha não causa dano ou perda de Reações.
+
+**Dados e defesas:** A fórmula própria de 2d10 +1d8 já é o dano completo da assinatura: não some os dados de Dendron ou das pistolas. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
 
 **Segunda coroa:** Ao chegar a 100 Vida, raízes brancas cobrem a cicatriz de Naerith. Plantas criadas por suas técnicas recebem +2 CA e pode pagar mais 3 Karma ao ativar uma nova manifestação para acrescentar um dado do mesmo tipo àquela execução, depois do crítico e dentro do teto de dois dados adicionais. A transformação ocorre uma vez, não recupera Vida ou Karma e não concede ação imediata.
 
 **Composição de Karma:** 12 Base V + 6 área grande + 6 controle secundário iv − 2 preparo e uso limitado = 22 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 ### Princesa Ilyra Vaelora · Pyrphóros {#princesa-ilyra}

@@ -1,11 +1,39 @@
 import { WorldBlessingCard } from "@/components/world-blessing-card";
+import { RoyalArmamentCard } from "@/components/royal-armament-card";
 import { deities } from "@/lib/divine-blessings";
+import {
+  getRoyalArmament,
+  isRoyalArmamentField,
+  isRoyalArmamentOwner,
+} from "@/lib/royal-armaments";
 import { Gem, Orbit, Sparkles, Swords } from "lucide-react";
 type Field = { label: string; html: string };
-export function NobleTraitCards({ facts }: { facts: { fields: Field[] }[] }) {
+export function NobleTraitCards({
+  facts,
+  ownerId,
+}: {
+  facts: { fields: Field[] }[];
+  ownerId?: string;
+}) {
+  const armament = ownerId ? getRoyalArmament(ownerId, facts) : undefined;
+  const hasRoyalWeapon =
+    !!ownerId &&
+    isRoyalArmamentOwner(ownerId) &&
+    facts.some((fact) =>
+      fact.fields.some((field) => /^Arma principal(?:\s|$)/i.test(field.label)),
+    );
+  const remainingFacts = hasRoyalWeapon
+    ? facts
+        .map((fact) => ({
+          fields: fact.fields.filter(
+            (field) => !isRoyalArmamentField(field.label),
+          ),
+        }))
+        .filter((fact) => fact.fields.length > 0)
+    : facts;
   return (
     <div className="noble-trait-grid">
-      {facts
+      {remainingFacts
         .flatMap((fact) => {
           const groups: { fields: Field[] }[] = [];
           let current: Field[] = [];
@@ -132,6 +160,13 @@ export function NobleTraitCards({ facts }: { facts: { fields: Field[] }[] }) {
             </section>
           );
         })}
+      {armament && <RoyalArmamentCard armament={armament} />}
+      {hasRoyalWeapon && !armament && (
+        <section className="noble-trait" role="status">
+          <h5>Arma principal</h5>
+          <p>A inscrição desta arma precisa ser conferida antes do uso.</p>
+        </section>
+      )}
     </div>
   );
 }

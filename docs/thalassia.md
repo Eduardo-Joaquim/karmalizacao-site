@@ -200,7 +200,21 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** O teste de manifestação contra as CAs é feito na liberação, depois de validar os três Domínios.
 
-**Resolução mecânica:** Requer os três Domínios de Técnica, Resistência e Superação manifestados na liberação. Uma Principal prepara a massa, paga 60 Karma e marca o centro; a Principal seguinte a lança. Uma única rolagem de Espírito + Manifestação de Bênção, maior de 6d20 +10, é comparada com a CA de cada criatura no raio, sem excluir aliados ou a própria rainha. Total causa 6d12 Elemental misto de Água / Subdobras, aplica Estado Grave e Caído. Parcial causa metade do dano, sem condições; falha nada. O dano é uma única parcela: para defesa parental use metade da maior defesa entre Água e Fogo, arredondada para baixo, uma vez. Estado Grave impõe −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 22 no início do turno encerra esse Estado em sucesso. Caído exige o Movimento habitual para levantar e não é removido pelo teste do Estado Grave. Cobertura total válida ainda interfere no acerto; gelo, calor e pressão não são três ataques separados.
+**Requisitos:** Requer os três Domínios de Técnica, Resistência e Superação manifestados na liberação.
+
+**Preparação e liberação:** Uma Principal prepara a massa, paga 60 Karma e marca o centro; a Principal seguinte a lança.
+
+**Teste:** Uma única rolagem de Espírito + Manifestação de Bênção, maior de 6d20 +10, é comparada com a CA de cada criatura no raio, sem excluir aliados ou a própria rainha.
+
+**Acerto Total:** Total causa 6d12 Elemental misto de Água / Subdobras, aplica Estado Grave e Caído.
+
+**Parcial e Falha:** Parcial causa metade do dano, sem condições; falha nada.
+
+**Natureza do dano:** O dano é uma única parcela: para defesa parental use metade da maior defesa entre Água e Fogo, arredondada para baixo, uma vez.
+
+**Estado Grave e Caído:** Estado Grave impõe −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 22 no início do turno encerra esse Estado em sucesso. Caído exige o Movimento habitual para levantar e não é removido pelo teste do Estado Grave.
+
+**Cobertura e resolução:** Cobertura total válida ainda interfere no acerto; gelo, calor e pressão não são três ataques separados.
 
 **Limites:** Uma vez por combate. Perder a Principal, ficar inconsciente ou não manter os três Domínios no lançamento interrompe sem reembolso.
 
@@ -850,7 +864,23 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais. Nammu pode ser um dos dois protegidos e dissipar voluntariamente a clausura como Ação Livre no próprio turno; isso não restitui Karma nem reabre o uso por combate. Aliados podem atravessar o limite, perdendo a proteção enquanto estiverem fora, sem consumir a reserva restante por esse movimento.
+**Ativação:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu.
+
+**Reserva compartilhada:** Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos.
+
+**Interceptar os golpes:** Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano.
+
+**Duração:** Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção.
+
+**Nammu no centro:** Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra.
+
+**Manutenção:** Pague 2 Karma no início do próximo turno para manter, ou encerre.
+
+**Limites da proteção:** Não bloqueia passagem física, não concede Resistência nem Reações adicionais.
+
+**Protegidos e dispensa:** Nammu pode ser um dos dois protegidos e dissipar voluntariamente a clausura como Ação Livre no próprio turno; isso não restitui Karma nem reabre o uso por combate.
+
+**Travessia do limite:** Aliados podem atravessar o limite, perdendo a proteção enquanto estiverem fora, sem consumir a reserva restante por esse movimento.
 
 **Limites:** Uma vez por combate; uma reserva compartilhada, sem reposição. Manutenção de 2 Karma no turno seguinte.
 
@@ -1165,7 +1195,21 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Canalização de Karma, maior de 6d20 +10; cinco Domínios distintos na liberação.
 
-**Resolução mecânica:** Exige os cinco Domínios manifestados em ambos os modos. Pague 120 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação. Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d12 de dano espacial irreduzível, parcial metade, falha nada. Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado. Modo Curto: alvo principal a até 2 m recebe 2d30 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais. A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas. No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total. Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso. A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
+**Requisitos e escolha do modo:** Exige os cinco Domínios manifestados em ambos os modos. Pague 120 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação.
+
+**Modo Longo:** Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d12 de dano espacial irreduzível, parcial metade, falha nada.
+
+**Proteções no Modo Longo:** Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado.
+
+**Modo Curto:** Modo Curto: alvo principal a até 2 m recebe 2d30 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais.
+
+**Resolução por alvo:** A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas.
+
+**Proteções no Modo Curto:** No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total.
+
+**Estado Grave:** Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso.
+
+**Defesas e limites:** A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
 
 **Limites:** Um único uso por combate, compartilhado entre os modos. Se interrompida, os 120 Karma não retornam. Não existe mais ativação parcial sem os cinco Domínios.
 

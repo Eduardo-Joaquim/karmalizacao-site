@@ -7,6 +7,8 @@ import "./gaeria.css";
 import "./globals.css";
 import "./ignaria.css";
 import "./noble-dossiers.css";
+import "./royal-armaments.css";
+import "./royal-signatures.css";
 import "./skills.css";
 import "./vampire.css";
 

@@ -125,11 +125,34 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 ##### Assinatura · Anábasis
 
-**Fonte e Grau:** Bênção de Tiamat e Combustão V. **Preparo:** Principal, 19 Karma e 2 Impulsos, um alvo percebido a 2 m, uma vez por cena; consome seu único ápice de Grau V. Sael prende uma espiral de calor entre as mãos. A preparação não causa dano e se perde se ficar Inconsciente, Incapacitada ou se o alvo terminar fora de 5 m antes do início do próximo turno dela; custos permanecem gastos. **Conclusão:** Na Principal do turno seguinte, avança até 3 m por rota possível até 2 m do alvo e faz Luta contra CA. Total causa 2d10 +1d6, metade físico e metade Fogo antes das reduções. A vítima ainda pode Evadir. Após total, pode opor Força + Luta a Constituição + Atletismo da vítima: vitória projeta ambos 3 m para cima e devolve o alvo a um apoio livre adjacente, Caído e sem uma Reação disponível; empate ou derrota conserva só o dano. O arco aéreo integra o golpe, não exige Alária, não atravessa teto e não soma dano de queda; sem espaço vertical, a oposição apenas pode derrubar. Parcial causa metade do dano, sem projeção ou condições. Falha não causa dano. Sequência Brutal não pode encadear-se à conclusão. Sael termina no apoio de onde atacou ou adjacente, escolhido antes da oposição. A assinatura não retira a Principal do alvo, não ignora armadura nem mata por descrição.
+**Fonte e Grau:** Bênção de Tiamat e Combustão V.
+
+**Uso:** Principal, 19 Karma e 2 Impulsos, um alvo percebido a 2 m, uma vez por cena; consome seu único ápice de Grau V.
+
+**Descrição:** Sael prende uma espiral de calor entre as mãos.
+
+**Preparação:** A preparação não causa dano e se perde se ficar Inconsciente, Incapacitada ou se o alvo terminar fora de 5 m antes do início do próximo turno dela; custos permanecem gastos.
+
+**Conclusão:** Na Principal do turno seguinte, avança até 3 m por rota possível até 2 m do alvo e faz Luta contra CA.
+
+**Acerto Total:** Total causa 2d10 +1d6, metade físico e metade Fogo antes das reduções.
+
+**Defesa do alvo:** A vítima ainda pode Evadir.
+
+**Projeção:** Após total, pode opor Força + Luta a Constituição + Atletismo da vítima: vitória projeta ambos 3 m para cima e devolve o alvo a um apoio livre adjacente, Caído e sem uma Reação disponível; empate ou derrota conserva só o dano.
+
+**Espaço aéreo:** O arco aéreo integra o golpe, não exige Alária, não atravessa teto e não soma dano de queda; sem espaço vertical, a oposição apenas pode derrubar.
+
+**Acerto Parcial:** Parcial causa metade do dano, sem projeção ou condições.
+
+**Falha:** Falha não causa dano.
+
+**Posição e limites:** Sequência Brutal não pode encadear-se à conclusão. Sael termina no apoio de onde atacou ou adjacente, escolhido antes da oposição. A assinatura não retira a Principal do alvo, não ignora armadura nem mata por descrição.
+
+**Dados da assinatura:** Base V de 3d10; o perfil próprio de Anábasis substitui um d10 por 1d6. Role 2d10 +1d6 como dano-base único, sem somar os 1d10 do ataque desarmado comum ou os 2d4 das manoplas. Declare no preparo se a conclusão será desarmada ou pela manopla direita; apenas a segunda pode aplicar uma marca da Forja de Medula. O dado de 1d6 pertence à construção desta assinatura, conservado nos dois modos, e não muda o dado do ataque básico de Sael. Se a maldição despertar, resolva seu dano Corrupto separadamente, sem alterar a divisão físico/Fogo da assinatura. O dano e o eventual pulso da maldição não alimentam Impulso nem criam uma segunda conclusão de Anábasis.
 
 **Composição de Karma:** 12 Base V + 6 Função secundária IV + 3 arremesso e retorno − 2 preparo e uso limitado = 19 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Dados da assinatura:** Base V de 3d10; o perfil próprio de Anábasis substitui um d10 por 1d6. Role 2d10 +1d6 como dano-base único, sem somar os 1d10 do ataque desarmado comum ou os 2d4 das manoplas. Declare no preparo se a conclusão será desarmada ou pela manopla direita; apenas a segunda pode aplicar uma marca da Forja de Medula. O dado de 1d6 pertence à construção desta assinatura, conservado nos dois modos, e não muda o dado do ataque básico de Sael. Se a maldição despertar, resolva seu dano Corrupto separadamente, sem alterar a divisão físico/Fogo da assinatura. O dano e o eventual pulso da maldição não alimentam Impulso nem criam uma segunda conclusão de Anábasis.
 
 
 ### Princesa Maelis Aruven · Alária {#princesa-maelis}

@@ -22,7 +22,12 @@ for p in data['people']:
   text+=f'**{label}:** {t}\n\n'
  for i,a in enumerate(p['arts']):
   prefix='Assinatura' if a['signature'] else str(i+1)
-  text+=f"##### {prefix} · {a['name']} {{#{p['id']}-{i+1}}}\n\n**Descrição:** {a['description']}\n\n**Fonte e Grau:** {a['source']} {a['grade']}. **Uso:** {a['action']}, {a['cost']} Karma. **Alcance e alvos:** {a['range']}.\n\n**Preparação:** {a['prep']}\n\n**Teste e limiares:** {a['test']}.\n\n**Resolução mecânica:** {a['effect']}\n\n**Limites:** {a['limit']}\n\n"
+  text+=f"##### {prefix} · {a['name']} {{#{p['id']}-{i+1}}}\n\n**Descrição:** {a['description']}\n\n**Fonte e Grau:** {a['source']} {a['grade']}. **Uso:** {a['action']}, {a['cost']} Karma. **Alcance e alvos:** {a['range']}.\n\n**Preparação:** {a['prep']}\n\n**Teste e limiares:** {a['test']}.\n\n"
+  if a['signature'] and a['effect'].startswith('**'):
+   text+=a['effect']+'\n\n'
+  else:
+   text+=f"**Resolução mecânica:** {a['effect']}\n\n"
+  text+=f"**Limites:** {a['limit']}\n\n"
  start=doc.index('### '+p['name']+' ·');end=doc.find('\n### ',start+4);end=len(doc) if end<0 else end
  # A section heading between two royal profiles belongs to the following stratum.
  section=doc.find('\n## ',start+4)

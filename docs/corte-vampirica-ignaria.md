@@ -111,7 +111,13 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 ##### Assinatura · Imperium
 
-**Fonte e Grau:** Subdobra de Sangue V; território régio. **Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena; consome o único Ápice de Grau V da rainha. Duração até o fim do terceiro turno seguinte de Nosferato. O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano. Elhaz não aumenta a distância das estacas, da passagem ou do recolhimento.
+**Fonte e Grau:** Subdobra de Sangue V; território régio.
+
+**Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena; consome o único Ápice de Grau V da rainha.
+
+**Duração:** Duração até o fim do terceiro turno seguinte de Nosferato.
+
+**Pagamento e ativação:** O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano. Elhaz não aumenta a distância das estacas, da passagem ou do recolhimento.
 
 **As três estacas:** Cada uma tem CA 20, Vida 18 e ocupa um ponto fixo. Não age, não ataca e não impede passagem. Uma estaca destruída se desfaz, sem transferir dano à rainha. Se todas forem destruídas, Imperium termina. Nosferato precisa manter ao menos uma estaca a até 20 m; perder essa proximidade também encerra o território.
 
@@ -119,9 +125,20 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Estigmas:** Uma vez por rodada, um acerto total direto da lança contra uma criatura viva a até 8 m de qualquer estaca deixa nela um Estigma visível de sangue. Cada criatura pode acumular até três. Dano de Rubedo, espículas, reflexos e respostas de outras criaturas não produz Estigmas. A vítima ou um aliado adjacente pode gastar Principal e vencer Medicina CD 17 para remover um Estigma. Todos se apagam quando Imperium termina.
 
-**Recolher o sangue:** Nosferato pode gastar Principal, sem novo custo-base além das Ampliações escolhidas, para encerrar Imperium sobre uma criatura com Estigmas, percebida a até 15 m de uma estaca restante. Controle de Água oposto a Força + Atletismo ou Espírito + Canalização de Karma da vítima. **Vitória da rainha:** As estacas desabam em fios que causam **2d10 +1d12 de Sangue** (Base V: o d12 da lança substitui um d10); pode gastar 3 Karma por Estigma para acrescentar 1d10, no máximo dois dados adicionais, e arrastam o alvo até 2 m em direção à estaca escolhida, por caminho livre. O alvo fica Imobilizado até gastar Principal para vencer novamente a oposição, ou até a estaca escolhida ser destruída; essa estaca permanece por uma rodada para sustentar os fios. **Empate:** metade do dano, sem arrasto ou prisão. **Derrota:** nenhum efeito. A assinatura termina após essa tentativa, apagando todos os outros Estigmas. O alvo conserva suas defesas contra a oposição; o território não declara morte automática.
+**Recolher o sangue:** Nosferato pode gastar Principal, sem novo custo-base além das Ampliações escolhidas, para encerrar Imperium sobre uma criatura com Estigmas, percebida a até 15 m de uma estaca restante.
+
+**Teste de recolhimento:** Controle de Água oposto a Força + Atletismo ou Espírito + Canalização de Karma da vítima.
+
+**Vitória da rainha:** As estacas desabam em fios que causam **2d10 +1d12 de Sangue** (Base V: o d12 da lança substitui um d10); pode gastar 3 Karma por Estigma para acrescentar 1d10, no máximo dois dados adicionais, e arrastam o alvo até 2 m em direção à estaca escolhida, por caminho livre. O alvo fica Imobilizado até gastar Principal para vencer novamente a oposição, ou até a estaca escolhida ser destruída; essa estaca permanece por uma rodada para sustentar os fios.
+
+**Empate:** metade do dano, sem arrasto ou prisão.
+
+**Derrota:** nenhum efeito.
+
+**Fim do território:** A assinatura termina após essa tentativa, apagando todos os outros Estigmas. O alvo conserva suas defesas contra a oposição; o território não declara morte automática.
 
 **Composição de Karma:** 12 Base V + 2 alcance médio + 4 até seis pontos de ancoragem + 2 duração três rodadas + 6 movimento secundário iv = 26 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 ### Princesa Alucard V. Drácula · Rubra Nox {#princesa-alucard}

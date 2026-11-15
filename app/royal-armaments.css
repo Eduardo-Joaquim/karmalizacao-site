@@ -1,0 +1,246 @@
+.royal-armament {
+  --armament-accent: var(--elven-accent, #d9c795);
+  --armament-line: color-mix(in srgb, var(--armament-accent) 24%, transparent);
+  --armament-surface: color-mix(
+    in srgb,
+    var(--elven-jewel, #657865) 9%,
+    #101317
+  );
+  grid-column: 1 / -1;
+  min-width: 0;
+  max-width: 100%;
+  margin: 1.5rem 0 2rem;
+  padding: clamp(1.15rem, 3vw, 2rem);
+  border: 1px solid var(--armament-line);
+  border-top: 2px solid var(--armament-accent);
+  border-radius: 6px;
+  background: var(--armament-surface);
+  color: #e6e8e2;
+  overflow-wrap: anywhere;
+}
+
+.noble-trait-grid > .royal-armament {
+  margin: 0;
+}
+
+.royal-armament-heading {
+  max-width: 76ch;
+}
+
+.royal-armament-eyebrow,
+.royal-armament-rune-kind {
+  margin: 0;
+  color: var(--armament-accent);
+  font: 600 0.66rem / 1.5 monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.royal-armament-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.royal-armament-eyebrow svg {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+}
+
+.royal-armament .royal-armament-heading h5 {
+  margin: 0.55rem 0 0.65rem;
+  color: #f0ece1;
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.royal-armament-description {
+  margin: 0;
+  color: #c6cdc9;
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+.royal-armament-basics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin: 1.4rem 0 0;
+  padding: 1rem 0;
+  border-block: 1px solid var(--armament-line);
+}
+
+.royal-armament-basics > div {
+  min-width: 0;
+}
+
+.royal-armament-basics dt {
+  margin: 0 0 0.35rem;
+  color: #b8c2be;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.royal-armament-basics dd {
+  margin: 0;
+  color: #f0ece1;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.royal-armament-inscription {
+  padding: 1.35rem 0 0;
+}
+
+.royal-armament .royal-armament-inscription h6 {
+  margin: 0.35rem 0 1rem;
+  color: var(--armament-accent);
+  font-family: Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.royal-armament-effects {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  max-width: 86ch;
+}
+
+.royal-armament-effects > div {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 0.3rem 1rem;
+  min-width: 0;
+}
+
+.royal-armament-effects dt {
+  color: #c5cec8;
+  font-size: 0.79rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.royal-armament-effects dd {
+  min-width: 0;
+  margin: 0;
+  color: #e2e6df;
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.royal-armament-note,
+.royal-armament-exclusivity {
+  margin: 1rem 0 0;
+  max-width: 86ch;
+  color: #b7c1bd;
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+.royal-armament-exclusivity {
+  color: var(--armament-accent);
+}
+
+.royal-armament-disclosures {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--armament-line);
+}
+
+.royal-armament-rules + .royal-armament-rules {
+  border-top: 1px solid var(--armament-line);
+}
+
+.royal-armament-rules > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.75rem;
+  padding: 0.7rem 0;
+  color: #d5dcd5;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+
+.royal-armament-rules > summary::-webkit-details-marker {
+  display: none;
+}
+
+.royal-armament-rules > summary::marker {
+  content: "";
+}
+
+.royal-armament-rules > summary svg {
+  flex: 0 0 auto;
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--armament-accent);
+}
+
+.royal-armament-rules[open] > summary svg {
+  transform: rotate(180deg);
+}
+
+.royal-armament-rules > summary:hover {
+  color: #ffffff;
+}
+
+.royal-armament-rules > summary:focus-visible {
+  outline: 2px solid var(--armament-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.royal-armament-rules-content {
+  max-width: 90ch;
+  padding: 0.25rem 0 1.1rem;
+  color: #c8d0ca;
+  font-size: 0.86rem;
+  line-height: 1.9;
+  text-wrap: pretty;
+}
+
+.royal-armament-rules-content > :first-child {
+  margin-top: 0;
+}
+
+.royal-armament-rules-content > :last-child {
+  margin-bottom: 0;
+}
+
+.royal-armament-rules-content :is(ul, ol) {
+  padding-left: 1.35rem;
+}
+
+.royal-armament-rules-content :is(table, pre) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .royal-armament-effects > div {
+    grid-template-columns: 1fr;
+    gap: 0.12rem;
+  }
+
+  .royal-armament-effects {
+    gap: 0.9rem;
+  }
+
+  .royal-armament-basics {
+    gap: 0.5rem 0.75rem;
+  }
+
+  .royal-armament-basics dd {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,236 @@
+/* Signature rituals retain the heraldry of the dossier that contains them. */
+.elven-sheet .royal-signature.elven-signature {
+  padding: 0 !important;
+  overflow: visible;
+  border-radius: 5px;
+  min-width: 0;
+  grid-column: 1 / -1;
+}
+
+.elven-sheet .royal-signature > .royal-signature-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(1.1rem, 3vw, 1.8rem);
+  border-bottom: 0;
+  background: transparent;
+}
+
+.royal-signature-seal {
+  flex: 0 0 2.8rem;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid color-mix(in srgb, var(--elven-accent) 45%, transparent);
+  color: var(--elven-accent);
+  transform: rotate(45deg);
+}
+
+.royal-signature-seal svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  transform: rotate(-45deg);
+}
+
+.royal-signature-heading {
+  min-width: 0;
+}
+
+.elven-sheet .royal-signature-header .royal-signature-heading > p {
+  font: 600 0.65rem/1.4 monospace;
+  letter-spacing: 0.16em;
+  margin: 0 0 0.4rem;
+  color: var(--elven-accent);
+}
+
+.elven-sheet .royal-signature-header h5 {
+  font:
+    500 clamp(1.35rem, 3.3vw, 2rem) / 1.35 Georgia,
+    serif;
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+
+.royal-signature-heading > span {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--elven-accent) 62%, #dbe1e3);
+}
+
+.royal-signature-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0 clamp(1.1rem, 3vw, 1.8rem);
+  border-block: 1px solid
+    color-mix(in srgb, var(--elven-accent) 18%, transparent);
+  background: #00000018;
+}
+
+.royal-signature-meta > div {
+  min-width: 0;
+  padding: 0.9rem 0;
+}
+
+.royal-signature-meta > div + div {
+  padding-left: 1rem;
+  border-left: 1px solid
+    color-mix(in srgb, var(--elven-accent) 16%, transparent);
+}
+
+.royal-signature-meta dt {
+  color: color-mix(in srgb, var(--elven-accent) 65%, #dbe1e3);
+  font: 500 0.65rem/1.4 monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.royal-signature-meta dd {
+  color: #f1ede5;
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.royal-signature-description {
+  padding: 1.3rem clamp(1.1rem, 3vw, 1.8rem) 0;
+  max-width: 80ch;
+  color: #d6d8cf;
+  font:
+    1rem/1.8 Georgia,
+    serif;
+}
+
+.royal-signature-description p {
+  margin: 0;
+}
+
+.royal-signature-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1.8rem;
+  padding: 0.3rem clamp(1.1rem, 3vw, 1.8rem) 1rem;
+}
+
+.royal-signature-field {
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--elven-accent) 14%, transparent);
+}
+
+.royal-signature-field-compact {
+  grid-column: auto;
+}
+
+.royal-signature-field > h6 {
+  margin: 0 0 0.65rem;
+  color: var(--elven-accent);
+  font: 600 0.72rem/1.5 sans-serif;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.royal-signature-copy {
+  max-width: 85ch;
+  color: #e0e3da;
+  font-size: 0.9rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.royal-signature-copy p {
+  margin: 0;
+}
+
+.royal-signature-copy p + p,
+.royal-signature-copy p + ul,
+.royal-signature-copy p + ol {
+  margin-top: 0.7rem;
+}
+
+.royal-signature-copy :is(ul, ol) {
+  padding-left: 1.3rem;
+}
+
+.royal-signature-copy li + li {
+  margin-top: 0.55rem;
+}
+
+.royal-signature-field-limit {
+  border-bottom: 0;
+}
+
+.royal-signature-tools,
+.royal-signature-cost {
+  padding: 0 clamp(1.1rem, 3vw, 1.8rem) 1.3rem;
+}
+
+.royal-signature-tools:empty {
+  display: none;
+}
+
+.royal-signature-tools .thalassia-ability-rolls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.royal-signature-cost .technique-construction {
+  margin: 0;
+  border-color: color-mix(in srgb, var(--elven-accent) 20%, transparent);
+  background: #00000014;
+}
+
+.royal-signature-cost summary {
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.royal-signature :is(summary, button, input):focus-visible {
+  outline: 2px solid var(--elven-accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .royal-signature-fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .royal-signature-meta > div + div {
+    padding-left: 0.65rem;
+  }
+
+  .royal-signature-meta dd {
+    font-size: 0.85rem;
+  }
+
+  .royal-signature-seal {
+    flex-basis: 2.1rem;
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+}
+
+@media print {
+  .elven-sheet .royal-signature.elven-signature {
+    break-inside: auto;
+    box-shadow: none;
+  }
+
+  .royal-signature-field,
+  .royal-signature-meta {
+    break-inside: avoid;
+  }
+
+  .royal-signature-tools {
+    display: none;
+  }
+}

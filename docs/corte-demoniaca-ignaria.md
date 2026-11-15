@@ -127,13 +127,30 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 ##### Assinatura · Miserere {#valac-miserere}
 
-**Fonte e Grau:** Corrupção V. **Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão. **Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena; consome o único Ápice de Grau V da rainha. Até três inimigos percebidos a até 15 m do foco. O foco torna-se um trono vazio, CA 20, regente Constituição 0 e Vida 28, até o fim do terceiro turno seguinte de Valac; Controle de risco contra CD 16 + Carga após pagar as 2 Cargas. Uma rolagem de Presença + Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Cada defensor escolhe sua defesa antes de rolar. Somente quem perder fica Vinculado ao trono; empate protege a vítima. Não há dano imediato, e a maldição de Sceptrum não se transfere ao trono.
+**Fonte e Grau:** Corrupção V.
 
-**O tributo:** A primeira vez em cada rodada que um Vinculado declarar uma técnica, antes de resolvê-la, escolhe perder uma Reação ainda disponível ou testar a mesma defesa contra CD 20. Se falhar no teste, sofre **3d10 espiritual**, com Resistência normal. Se não possuir Reação, precisa testar. Depois dessa primeira cobrança de dano, o vínculo daquela vítima se encerra. A técnica declarada ainda é resolvida se o personagem continuar capaz de agir; o tributo não a cancela automaticamente. Os pulsos não recebem crítico ou dados de Exaltação.
+**Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão.
+
+**Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena; consome o único Ápice de Grau V da rainha.
+
+**Alcance e alvos:** Até três inimigos percebidos a até 15 m do foco.
+
+**O trono:** O foco torna-se um trono vazio, CA 20, regente Constituição 0 e Vida 28, até o fim do terceiro turno seguinte de Valac;
+
+**Controle de risco:** contra CD 16 + Carga após pagar as 2 Cargas.
+
+**Teste e vínculo:** Uma rolagem de Presença + Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Cada defensor escolhe sua defesa antes de rolar. Somente quem perder fica Vinculado ao trono; empate protege a vítima. Não há dano imediato, e a maldição de Sceptrum não se transfere ao trono.
+
+**O tributo:** A primeira vez em cada rodada que um Vinculado declarar uma técnica, antes de resolvê-la, escolhe perder uma Reação ainda disponível ou testar a mesma defesa contra CD 20.
+
+**Falha no tributo:** Se falhar no teste, sofre **3d10 espiritual**, com Resistência normal. Se não possuir Reação, precisa testar. Depois dessa primeira cobrança de dano, o vínculo daquela vítima se encerra.
+
+**Após a cobrança:** A técnica declarada ainda é resolvida se o personagem continuar capaz de agir; o tributo não a cancela automaticamente. Os pulsos não recebem crítico ou dados de Exaltação.
 
 **A abdicação:** Um Vinculado pode gastar Principal para repetir a defesa contra o resultado original registrado, encerrando o vínculo em igualdade ou sucesso. Destruir o trono, afastar a vítima mais de 15 m dele, ou deixar Valac Inconsciente também a liberta. A assinatura não transfere ações à rainha nem permite ordens sobre as escolhas dos jogadores.
 
 **Composição de Karma:** 12 Base V + 2 alcance médio + 4 até seis alvos + 2 duração três rodadas + 6 controle secundário iv − 2 foco e dois domínios ativos = 24 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 ### Princesa Belial Lucifero · Ferrum Regni {#princesa-belial}

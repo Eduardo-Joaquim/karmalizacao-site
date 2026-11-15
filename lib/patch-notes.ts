@@ -9,7 +9,7 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
-    id: "patch-2-0-8-2026-11-15-coroas-e-continentes",
+    id: "patch-2-0-8-2026-11-15-armas-e-assinaturas",
     version: "2.0.8",
     label: "Patch 2.0.8 - 15/11/2026",
     title: "Arsenais das rainhas e entradas dos continentes",
@@ -20,6 +20,9 @@ export const PATCH_NOTES: readonly PatchNote[] = [
       "As oito rainhas recebem armamento principal declarado e inscrições rúnicas de acordo com seus estilos de combate.",
       "Aveline ganha sua sétima técnica comum. Todas as rainhas possuem pelo menos sete técnicas comuns, além das assinaturas.",
       "Aprimoradas as técnicas das rainhas, com efeitos, combinações e limites mais claros para o uso em mesa.",
+      "As armas das rainhas ganham fichas mais claras, com dano, alcance e ação em destaque e regras completas em seções expansíveis.",
+      "Runas convencionais e maldições aparecem em apresentações distintas. Armas amaldiçoadas mantêm suas inscrições convencionais bloqueadas.",
+      "As assinaturas apresentam preparo, ativação, resolução e duração em blocos de consulta, preservando seus custos e efeitos.",
     ],
   },
   {

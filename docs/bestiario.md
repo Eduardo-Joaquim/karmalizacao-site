@@ -185,7 +185,13 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 ###### Assinatura · Imperium
 
-**Fonte e Grau:** Subdobra de Sangue V; território régio. **Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena; consome o único Ápice de Grau V da rainha. Duração até o fim do terceiro turno seguinte de Nosferato. O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano. Elhaz não aumenta a distância das estacas, da passagem ou do recolhimento.
+**Fonte e Grau:** Subdobra de Sangue V; território régio.
+
+**Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena; consome o único Ápice de Grau V da rainha.
+
+**Duração:** Duração até o fim do terceiro turno seguinte de Nosferato.
+
+**Pagamento e ativação:** O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano. Elhaz não aumenta a distância das estacas, da passagem ou do recolhimento.
 
 **As três estacas:** Cada uma tem CA 20, Vida 18 e ocupa um ponto fixo. Não age, não ataca e não impede passagem. Uma estaca destruída se desfaz, sem transferir dano à rainha. Se todas forem destruídas, Imperium termina. Nosferato precisa manter ao menos uma estaca a até 20 m; perder essa proximidade também encerra o território.
 
@@ -193,9 +199,20 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Estigmas:** Uma vez por rodada, um acerto total direto da lança contra uma criatura viva a até 8 m de qualquer estaca deixa nela um Estigma visível de sangue. Cada criatura pode acumular até três. Dano de Rubedo, espículas, reflexos e respostas de outras criaturas não produz Estigmas. A vítima ou um aliado adjacente pode gastar Principal e vencer Medicina CD 17 para remover um Estigma. Todos se apagam quando Imperium termina.
 
-**Recolher o sangue:** Nosferato pode gastar Principal, sem novo custo-base além das Ampliações escolhidas, para encerrar Imperium sobre uma criatura com Estigmas, percebida a até 15 m de uma estaca restante. Controle de Água oposto a Força + Atletismo ou Espírito + Canalização de Karma da vítima. **Vitória da rainha:** As estacas desabam em fios que causam **2d10 +1d12 de Sangue** (Base V: o d12 da lança substitui um d10); pode gastar 3 Karma por Estigma para acrescentar 1d10, no máximo dois dados adicionais, e arrastam o alvo até 2 m em direção à estaca escolhida, por caminho livre. O alvo fica Imobilizado até gastar Principal para vencer novamente a oposição, ou até a estaca escolhida ser destruída; essa estaca permanece por uma rodada para sustentar os fios. **Empate:** metade do dano, sem arrasto ou prisão. **Derrota:** nenhum efeito. A assinatura termina após essa tentativa, apagando todos os outros Estigmas. O alvo conserva suas defesas contra a oposição; o território não declara morte automática.
+**Recolher o sangue:** Nosferato pode gastar Principal, sem novo custo-base além das Ampliações escolhidas, para encerrar Imperium sobre uma criatura com Estigmas, percebida a até 15 m de uma estaca restante.
+
+**Teste de recolhimento:** Controle de Água oposto a Força + Atletismo ou Espírito + Canalização de Karma da vítima.
+
+**Vitória da rainha:** As estacas desabam em fios que causam **2d10 +1d12 de Sangue** (Base V: o d12 da lança substitui um d10); pode gastar 3 Karma por Estigma para acrescentar 1d10, no máximo dois dados adicionais, e arrastam o alvo até 2 m em direção à estaca escolhida, por caminho livre. O alvo fica Imobilizado até gastar Principal para vencer novamente a oposição, ou até a estaca escolhida ser destruída; essa estaca permanece por uma rodada para sustentar os fios.
+
+**Empate:** metade do dano, sem arrasto ou prisão.
+
+**Derrota:** nenhum efeito.
+
+**Fim do território:** A assinatura termina após essa tentativa, apagando todos os outros Estigmas. O alvo conserva suas defesas contra a oposição; o território não declara morte automática.
 
 **Composição de Karma:** 12 Base V + 2 alcance médio + 4 até seis pontos de ancoragem + 2 duração três rodadas + 6 movimento secundário iv = 26 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 #### Princesa Alucard V. Drácula · Rubra Nox {#princesa-alucard}
@@ -631,13 +648,30 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 ###### Assinatura · Miserere {#valac-miserere}
 
-**Fonte e Grau:** Corrupção V. **Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão. **Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena; consome o único Ápice de Grau V da rainha. Até três inimigos percebidos a até 15 m do foco. O foco torna-se um trono vazio, CA 20, regente Constituição 0 e Vida 28, até o fim do terceiro turno seguinte de Valac; Controle de risco contra CD 16 + Carga após pagar as 2 Cargas. Uma rolagem de Presença + Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Cada defensor escolhe sua defesa antes de rolar. Somente quem perder fica Vinculado ao trono; empate protege a vítima. Não há dano imediato, e a maldição de Sceptrum não se transfere ao trono.
+**Fonte e Grau:** Corrupção V.
 
-**O tributo:** A primeira vez em cada rodada que um Vinculado declarar uma técnica, antes de resolvê-la, escolhe perder uma Reação ainda disponível ou testar a mesma defesa contra CD 20. Se falhar no teste, sofre **3d10 espiritual**, com Resistência normal. Se não possuir Reação, precisa testar. Depois dessa primeira cobrança de dano, o vínculo daquela vítima se encerra. A técnica declarada ainda é resolvida se o personagem continuar capaz de agir; o tributo não a cancela automaticamente. Os pulsos não recebem crítico ou dados de Exaltação.
+**Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão.
+
+**Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena; consome o único Ápice de Grau V da rainha.
+
+**Alcance e alvos:** Até três inimigos percebidos a até 15 m do foco.
+
+**O trono:** O foco torna-se um trono vazio, CA 20, regente Constituição 0 e Vida 28, até o fim do terceiro turno seguinte de Valac;
+
+**Controle de risco:** contra CD 16 + Carga após pagar as 2 Cargas.
+
+**Teste e vínculo:** Uma rolagem de Presença + Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Cada defensor escolhe sua defesa antes de rolar. Somente quem perder fica Vinculado ao trono; empate protege a vítima. Não há dano imediato, e a maldição de Sceptrum não se transfere ao trono.
+
+**O tributo:** A primeira vez em cada rodada que um Vinculado declarar uma técnica, antes de resolvê-la, escolhe perder uma Reação ainda disponível ou testar a mesma defesa contra CD 20.
+
+**Falha no tributo:** Se falhar no teste, sofre **3d10 espiritual**, com Resistência normal. Se não possuir Reação, precisa testar. Depois dessa primeira cobrança de dano, o vínculo daquela vítima se encerra.
+
+**Após a cobrança:** A técnica declarada ainda é resolvida se o personagem continuar capaz de agir; o tributo não a cancela automaticamente. Os pulsos não recebem crítico ou dados de Exaltação.
 
 **A abdicação:** Um Vinculado pode gastar Principal para repetir a defesa contra o resultado original registrado, encerrando o vínculo em igualdade ou sucesso. Destruir o trono, afastar a vítima mais de 15 m dele, ou deixar Valac Inconsciente também a liberta. A assinatura não transfere ações à rainha nem permite ordens sobre as escolhas dos jogadores.
 
 **Composição de Karma:** 12 Base V + 2 alcance médio + 4 até seis alvos + 2 duração três rodadas + 6 controle secundário iv − 2 foco e dois domínios ativos = 24 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 #### Princesa Belial Lucifero · Ferrum Regni {#princesa-belial}
@@ -1639,15 +1673,26 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 ###### Assinatura · Três Rodadas sem Ferida {#três-rodadas-sem-ferida}
 
-**Fonte e Grau:** Assinatura da Bênção V; reflexão. **Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline. Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos. Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
+**Fonte e Grau:** Assinatura da Bênção V; reflexão.
 
-**Reflexão:** Uma vez por rodada, usa sua Reação comum antes da resolução de um golpe ou efeito hostil direto, percebido, que tenha Aveline como alvo e origem a até 30 m. A reação defensiva adicional de chefe não ativa esta reflexão. Pode interceptar dano físico, Karma, Elemental, Divino, Corrupção ou um efeito direto sem dano. Aveline rola maior de 5d20 +10 contra o teste original da fonte; se a origem só fornecer CD, compara com essa CD. Precisa superar, não basta empatar. Em sucesso, a parcela que a atingiria retorna à origem e não a afeta. Em empate, não retorna e Aveline recebe somente metade do dano e a forma reduzida do efeito. Em falha, recebe a resolução normal.
+**Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline.
+
+**Preparação:** Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos.
+
+**Duração e manutenção:** Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
+
+**Gatilho da reflexão:** Uma vez por rodada, usa sua Reação comum antes da resolução de um golpe ou efeito hostil direto, percebido, que tenha Aveline como alvo e origem a até 30 m. A reação defensiva adicional de chefe não ativa esta reflexão.
+
+**Teste:** Pode interceptar dano físico, Karma, Elemental, Divino, Corrupção ou um efeito direto sem dano. Aveline rola maior de 5d20 +10 contra o teste original da fonte; se a origem só fornecer CD, compara com essa CD. Precisa superar, não basta empatar.
+
+**Resolução da reflexão:** Em sucesso, a parcela que a atingiria retorna à origem e não a afeta. Em empate, não retorna e Aveline recebe somente metade do dano e a forma reduzida do efeito. Em falha, recebe a resolução normal.
 
 **Retorno:** Um ataque devolvido conserva o resultado e o dano originais, comparados à CA do agressor, que ainda pode usar uma defesa legal se tiver Reação. Um efeito com resistência conserva a CD e permite ao agressor seu teste normal. Não duplica dano nem inverte cura. Contra área, apenas a parcela destinada à rainha retorna; os demais alvos resolvem seus próprios efeitos. Um efeito refletido não pode ser refletido novamente. A assinatura não cria dados próprios: devolve somente a parcela original, sem acrescentar os 3d10 de uma técnica ofensiva de Grau V.
 
 **Fronteiras e preço:** Não devolve clima, desabamento sem fonte ativa identificável, veneno já ingerido, doença instalada, juramento aceito ou o custo dos próprios poderes. Não atinge um agressor além de 30 m e não cancela automaticamente autoridade divina fora da escala mortal. Encerrada a barreira, perde as duas Reações até o início de seu turno seguinte; não pode reativá-la naquela cena. A rainha ainda precisa perceber a ameaça, conservar sua Reação comum e vencer o confronto: três rodadas de possibilidade de reflexão não são imunidade a todo o combate.
 
 **Composição de Karma:** 12 Base V + 1 reação de reflexão + 4 alcance longo + 2 duração três rodadas − 2 preparo e uso limitado = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 #### Princesa Isadora de Valdária · Cantus Primus {#princesa-isadora}
@@ -2220,13 +2265,30 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 ###### Assinatura · Heliánthos
 
-**Fonte e Grau:** Assinatura da Bênção V. **Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice. Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada. A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
+**Fonte e Grau:** Assinatura da Bênção V.
 
-Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Falha não causa dano ou perda de Reações. A linha e sua direção são fixadas na preparação, permitindo que criaturas se movam ou busquem cobertura entre os dois turnos. A fórmula própria de 2d10 +1d8 já é o dano completo da assinatura: não some os dados de Dendron ou das pistolas. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
+**Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice.
+
+**Descrição:** Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada.
+
+**Preparação:** A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
+
+**Área anunciada:** A linha e sua direção são fixadas na preparação, permitindo que criaturas se movam ou busquem cobertura entre os dois turnos.
+
+**Teste:** Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha.
+
+**Acerto Total:** **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith.
+
+**Acerto Parcial:** metade do dano, sem efeitos adicionais.
+
+**Falha:** Falha não causa dano ou perda de Reações.
+
+**Dados e defesas:** A fórmula própria de 2d10 +1d8 já é o dano completo da assinatura: não some os dados de Dendron ou das pistolas. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
 
 **Segunda coroa:** Ao chegar a 100 Vida, raízes brancas cobrem a cicatriz de Naerith. Plantas criadas por suas técnicas recebem +2 CA e pode pagar mais 3 Karma ao ativar uma nova manifestação para acrescentar um dado do mesmo tipo àquela execução, depois do crítico e dentro do teto de dois dados adicionais. A transformação ocorre uma vez, não recupera Vida ou Karma e não concede ação imediata.
 
 **Composição de Karma:** 12 Base V + 6 área grande + 6 controle secundário iv − 2 preparo e uso limitado = 22 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 #### Princesa Ilyra Vaelora · Pyrphóros {#princesa-ilyra}
@@ -2701,7 +2763,21 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** O teste de manifestação contra as CAs é feito na liberação, depois de validar os três Domínios.
 
-**Resolução mecânica:** Requer os três Domínios de Técnica, Resistência e Superação manifestados na liberação. Uma Principal prepara a massa, paga 60 Karma e marca o centro; a Principal seguinte a lança. Uma única rolagem de Espírito + Manifestação de Bênção, maior de 6d20 +10, é comparada com a CA de cada criatura no raio, sem excluir aliados ou a própria rainha. Total causa 6d12 Elemental misto de Água / Subdobras, aplica Estado Grave e Caído. Parcial causa metade do dano, sem condições; falha nada. O dano é uma única parcela: para defesa parental use metade da maior defesa entre Água e Fogo, arredondada para baixo, uma vez. Estado Grave impõe −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 22 no início do turno encerra esse Estado em sucesso. Caído exige o Movimento habitual para levantar e não é removido pelo teste do Estado Grave. Cobertura total válida ainda interfere no acerto; gelo, calor e pressão não são três ataques separados.
+**Requisitos:** Requer os três Domínios de Técnica, Resistência e Superação manifestados na liberação.
+
+**Preparação e liberação:** Uma Principal prepara a massa, paga 60 Karma e marca o centro; a Principal seguinte a lança.
+
+**Teste:** Uma única rolagem de Espírito + Manifestação de Bênção, maior de 6d20 +10, é comparada com a CA de cada criatura no raio, sem excluir aliados ou a própria rainha.
+
+**Acerto Total:** Total causa 6d12 Elemental misto de Água / Subdobras, aplica Estado Grave e Caído.
+
+**Parcial e Falha:** Parcial causa metade do dano, sem condições; falha nada.
+
+**Natureza do dano:** O dano é uma única parcela: para defesa parental use metade da maior defesa entre Água e Fogo, arredondada para baixo, uma vez.
+
+**Estado Grave e Caído:** Estado Grave impõe −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 22 no início do turno encerra esse Estado em sucesso. Caído exige o Movimento habitual para levantar e não é removido pelo teste do Estado Grave.
+
+**Cobertura e resolução:** Cobertura total válida ainda interfere no acerto; gelo, calor e pressão não são três ataques separados.
 
 **Limites:** Uma vez por combate. Perder a Principal, ficar inconsciente ou não manter os três Domínios no lançamento interrompe sem reembolso.
 
@@ -3351,7 +3427,23 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais. Nammu pode ser um dos dois protegidos e dissipar voluntariamente a clausura como Ação Livre no próprio turno; isso não restitui Karma nem reabre o uso por combate. Aliados podem atravessar o limite, perdendo a proteção enquanto estiverem fora, sem consumir a reserva restante por esse movimento.
+**Ativação:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu.
+
+**Reserva compartilhada:** Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos.
+
+**Interceptar os golpes:** Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano.
+
+**Duração:** Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção.
+
+**Nammu no centro:** Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra.
+
+**Manutenção:** Pague 2 Karma no início do próximo turno para manter, ou encerre.
+
+**Limites da proteção:** Não bloqueia passagem física, não concede Resistência nem Reações adicionais.
+
+**Protegidos e dispensa:** Nammu pode ser um dos dois protegidos e dissipar voluntariamente a clausura como Ação Livre no próprio turno; isso não restitui Karma nem reabre o uso por combate.
+
+**Travessia do limite:** Aliados podem atravessar o limite, perdendo a proteção enquanto estiverem fora, sem consumir a reserva restante por esse movimento.
 
 **Limites:** Uma vez por combate; uma reserva compartilhada, sem reposição. Manutenção de 2 Karma no turno seguinte.
 
@@ -3666,7 +3758,21 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Canalização de Karma, maior de 6d20 +10; cinco Domínios distintos na liberação.
 
-**Resolução mecânica:** Exige os cinco Domínios manifestados em ambos os modos. Pague 120 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação. Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d12 de dano espacial irreduzível, parcial metade, falha nada. Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado. Modo Curto: alvo principal a até 2 m recebe 2d30 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais. A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas. No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total. Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso. A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
+**Requisitos e escolha do modo:** Exige os cinco Domínios manifestados em ambos os modos. Pague 120 Karma e escolha o modo na preparação, sem poder trocá-lo na liberação.
+
+**Modo Longo:** Modo Longo: linha de 50 m de comprimento e 10 m de largura, origem na soberana, um teste de Espírito + Canalização, maior de 6d20 +10, contra cada CA; total 5d12 de dano espacial irreduzível, parcial metade, falha nada.
+
+**Proteções no Modo Longo:** Essa parcela ignora Resistência, reduções numéricas e Escudo, chegando diretamente à Vida sem consumir o Escudo ultrapassado.
+
+**Modo Curto:** Modo Curto: alvo principal a até 2 m recebe 2d30 Kármico/catastrófico e Estado Grave imediatamente no Acerto Total; criaturas restantes num raio de 10 m do alvo recebem 2d20 Kármico por estilhaços dimensionais.
+
+**Resolução por alvo:** A CA de cada alvo é comparada à mesma rolagem; parcial metade da sua parcela sem Estado Grave; falha nada. O principal não recebe também os 2d20. A Área 2 pode atingir a própria Ummu e seus aliados; não há seleção gratuita de vítimas.
+
+**Proteções no Modo Curto:** No modo curto, Resistência Kármica e Escudo funcionam normalmente, mas absorver o dano não cancela o Estado Grave já imposto pelo Acerto Total.
+
+**Estado Grave:** Estado Grave: −2 em testes físicos e metade do deslocamento por duas rodadas; Constituição + Atletismo CD 24 no início de cada turno encerra em sucesso.
+
+**Defesas e limites:** A defesa por CA e a Evasão cabível continuam existindo nos dois modos; irreduzível descreve a mitigação depois de acertar, não um acerto automático. Nenhum modo converte a prosa dimensional em morte imediata, teleporte, dano repetido ou quebra de toda a campanha.
 
 **Limites:** Um único uso por combate, compartilhado entre os modos. Se interrompida, os 120 Karma não retornam. Não existe mais ativação parcial sem os cinco Domínios.
 
@@ -4157,11 +4263,34 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 ###### Assinatura · Anábasis
 
-**Fonte e Grau:** Bênção de Tiamat e Combustão V. **Preparo:** Principal, 19 Karma e 2 Impulsos, um alvo percebido a 2 m, uma vez por cena; consome seu único ápice de Grau V. Sael prende uma espiral de calor entre as mãos. A preparação não causa dano e se perde se ficar Inconsciente, Incapacitada ou se o alvo terminar fora de 5 m antes do início do próximo turno dela; custos permanecem gastos. **Conclusão:** Na Principal do turno seguinte, avança até 3 m por rota possível até 2 m do alvo e faz Luta contra CA. Total causa 2d10 +1d6, metade físico e metade Fogo antes das reduções. A vítima ainda pode Evadir. Após total, pode opor Força + Luta a Constituição + Atletismo da vítima: vitória projeta ambos 3 m para cima e devolve o alvo a um apoio livre adjacente, Caído e sem uma Reação disponível; empate ou derrota conserva só o dano. O arco aéreo integra o golpe, não exige Alária, não atravessa teto e não soma dano de queda; sem espaço vertical, a oposição apenas pode derrubar. Parcial causa metade do dano, sem projeção ou condições. Falha não causa dano. Sequência Brutal não pode encadear-se à conclusão. Sael termina no apoio de onde atacou ou adjacente, escolhido antes da oposição. A assinatura não retira a Principal do alvo, não ignora armadura nem mata por descrição.
+**Fonte e Grau:** Bênção de Tiamat e Combustão V.
+
+**Uso:** Principal, 19 Karma e 2 Impulsos, um alvo percebido a 2 m, uma vez por cena; consome seu único ápice de Grau V.
+
+**Descrição:** Sael prende uma espiral de calor entre as mãos.
+
+**Preparação:** A preparação não causa dano e se perde se ficar Inconsciente, Incapacitada ou se o alvo terminar fora de 5 m antes do início do próximo turno dela; custos permanecem gastos.
+
+**Conclusão:** Na Principal do turno seguinte, avança até 3 m por rota possível até 2 m do alvo e faz Luta contra CA.
+
+**Acerto Total:** Total causa 2d10 +1d6, metade físico e metade Fogo antes das reduções.
+
+**Defesa do alvo:** A vítima ainda pode Evadir.
+
+**Projeção:** Após total, pode opor Força + Luta a Constituição + Atletismo da vítima: vitória projeta ambos 3 m para cima e devolve o alvo a um apoio livre adjacente, Caído e sem uma Reação disponível; empate ou derrota conserva só o dano.
+
+**Espaço aéreo:** O arco aéreo integra o golpe, não exige Alária, não atravessa teto e não soma dano de queda; sem espaço vertical, a oposição apenas pode derrubar.
+
+**Acerto Parcial:** Parcial causa metade do dano, sem projeção ou condições.
+
+**Falha:** Falha não causa dano.
+
+**Posição e limites:** Sequência Brutal não pode encadear-se à conclusão. Sael termina no apoio de onde atacou ou adjacente, escolhido antes da oposição. A assinatura não retira a Principal do alvo, não ignora armadura nem mata por descrição.
+
+**Dados da assinatura:** Base V de 3d10; o perfil próprio de Anábasis substitui um d10 por 1d6. Role 2d10 +1d6 como dano-base único, sem somar os 1d10 do ataque desarmado comum ou os 2d4 das manoplas. Declare no preparo se a conclusão será desarmada ou pela manopla direita; apenas a segunda pode aplicar uma marca da Forja de Medula. O dado de 1d6 pertence à construção desta assinatura, conservado nos dois modos, e não muda o dado do ataque básico de Sael. Se a maldição despertar, resolva seu dano Corrupto separadamente, sem alterar a divisão físico/Fogo da assinatura. O dano e o eventual pulso da maldição não alimentam Impulso nem criam uma segunda conclusão de Anábasis.
 
 **Composição de Karma:** 12 Base V + 6 Função secundária IV + 3 arremesso e retorno − 2 preparo e uso limitado = 19 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Dados da assinatura:** Base V de 3d10; o perfil próprio de Anábasis substitui um d10 por 1d6. Role 2d10 +1d6 como dano-base único, sem somar os 1d10 do ataque desarmado comum ou os 2d4 das manoplas. Declare no preparo se a conclusão será desarmada ou pela manopla direita; apenas a segunda pode aplicar uma marca da Forja de Medula. O dado de 1d6 pertence à construção desta assinatura, conservado nos dois modos, e não muda o dado do ataque básico de Sael. Se a maldição despertar, resolva seu dano Corrupto separadamente, sem alterar a divisão físico/Fogo da assinatura. O dano e o eventual pulso da maldição não alimentam Impulso nem criam uma segunda conclusão de Anábasis.
 
 
 #### Princesa Maelis Aruven · Alária {#princesa-maelis}

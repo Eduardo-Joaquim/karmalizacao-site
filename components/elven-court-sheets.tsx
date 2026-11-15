@@ -1,5 +1,6 @@
 import { DiceRoller } from "@/components/dice-roller";
 import { DossierReading } from "@/components/dossier-reading";
+import { RoyalSignatureCard } from "@/components/royal-signature-card";
 import { RoyalTechniqueTools } from "@/components/royal-technique-tools";
 import { TechniqueCost } from "@/components/technique-cost";
 import { abilityCostFields } from "@/lib/ability-cost-fields";
@@ -134,56 +135,9 @@ function Fields({ fields }: { fields: Ability["fields"] }) {
   );
 }
 
-function AbilityCard({
-  ability,
-  index,
-  Mark = TreePine,
-  showSource = false,
-  owner,
-}: {
-  owner: string;
-  ability: Ability;
-  index: number;
-  Mark?: LucideIcon;
-  showSource?: boolean;
-}) {
-  const signature = ability.kind === "signature";
-  const reaction = ability.kind === "reaction";
+function AbilityTools({ ability }: { ability: Ability }) {
   return (
-    <section
-      className={
-        "elven-ability" +
-        (signature ? " elven-signature" : "") +
-        (reaction ? " elven-reaction" : "")
-      }
-      id={ability.id}
-    >
-      <header>
-        <span>{String(index + 1).padStart(2, "0")}</span>
-        <div>
-          {(signature || reaction) && (
-            <p>{signature ? "ASSINATURA" : "REAÇÃO DA COROA"}</p>
-          )}
-          <h5>{ability.name}</h5>
-        </div>
-        {signature ? (
-          <Crown aria-hidden="true" />
-        ) : reaction ? (
-          <Orbit aria-hidden="true" />
-        ) : (
-          <Mark aria-hidden="true" />
-        )}
-      </header>
-      <div className="elven-ability-meta">
-        {ability.damageType && <span>{ability.damageType}</span>}
-        {showSource && ability.source && (
-          <span className="ability-source">{ability.source}</span>
-        )}
-        {ability.grade && <span>Grau {ability.grade}</span>}
-        <span>{ability.cost}</span>
-        <span>{ability.action}</span>
-      </div>
-      <Fields fields={abilityCostFields(owner, ability.name, ability.fields)} />
+    <>
       <RoyalTechniqueTools
         reflection={ability.royalMechanics?.reflectionMultiplier}
         entropy={ability.royalMechanics?.karmaMaxDecayPercent}
@@ -206,6 +160,65 @@ function AbilityCard({
           ))}
         </div>
       ) : null}
+    </>
+  );
+}
+
+function AbilityCard({
+  ability,
+  index,
+  Mark = TreePine,
+  showSource = false,
+  owner,
+}: {
+  owner: string;
+  ability: Ability;
+  index: number;
+  Mark?: LucideIcon;
+  showSource?: boolean;
+}) {
+  const signature = ability.kind === "signature";
+  const reaction = ability.kind === "reaction";
+  if (signature)
+    return (
+      <RoyalSignatureCard
+        id={ability.id}
+        name={ability.name}
+        source={ability.source}
+        grade={ability.grade}
+        cost={ability.cost}
+        action={ability.action}
+        damageType={ability.damageType}
+        showSource={showSource}
+        fields={abilityCostFields(owner, ability.name, ability.fields)}
+      >
+        <AbilityTools ability={ability} />
+      </RoyalSignatureCard>
+    );
+  return (
+    <section
+      className={"elven-ability" + (reaction ? " elven-reaction" : "")}
+      id={ability.id}
+    >
+      <header>
+        <span>{String(index + 1).padStart(2, "0")}</span>
+        <div>
+          {reaction && <p>REAÇÃO DA COROA</p>}
+          <h5>{ability.name}</h5>
+        </div>
+        {reaction ? <Orbit aria-hidden="true" /> : <Mark aria-hidden="true" />}
+      </header>
+      <div className="elven-ability-meta">
+        {ability.damageType && <span>{ability.damageType}</span>}
+        {showSource && ability.source && (
+          <span className="ability-source">{ability.source}</span>
+        )}
+        {ability.grade && <span>Grau {ability.grade}</span>}
+        <span>{ability.cost}</span>
+        <span>{ability.action}</span>
+      </div>
+      <Fields fields={abilityCostFields(owner, ability.name, ability.fields)} />
+      <AbilityTools ability={ability} />
     </section>
   );
 }
@@ -407,7 +420,7 @@ export function CourtDossier({
               html={fact.fields.map((f) => f.html).join(" ")}
             />
           ))}
-          <NobleTraitCards facts={otherFacts} />
+          <NobleTraitCards facts={otherFacts} ownerId={profile.id} />
           {profile.abilities.length > 0 && (
             <div className="elven-repertoire-heading">
               <Gem aria-hidden="true" />

@@ -111,15 +111,26 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 ##### Assinatura · Três Rodadas sem Ferida {#três-rodadas-sem-ferida}
 
-**Fonte e Grau:** Assinatura da Bênção V; reflexão. **Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline. Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos. Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
+**Fonte e Grau:** Assinatura da Bênção V; reflexão.
 
-**Reflexão:** Uma vez por rodada, usa sua Reação comum antes da resolução de um golpe ou efeito hostil direto, percebido, que tenha Aveline como alvo e origem a até 30 m. A reação defensiva adicional de chefe não ativa esta reflexão. Pode interceptar dano físico, Karma, Elemental, Divino, Corrupção ou um efeito direto sem dano. Aveline rola maior de 5d20 +10 contra o teste original da fonte; se a origem só fornecer CD, compara com essa CD. Precisa superar, não basta empatar. Em sucesso, a parcela que a atingiria retorna à origem e não a afeta. Em empate, não retorna e Aveline recebe somente metade do dano e a forma reduzida do efeito. Em falha, recebe a resolução normal.
+**Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline.
+
+**Preparação:** Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos.
+
+**Duração e manutenção:** Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
+
+**Gatilho da reflexão:** Uma vez por rodada, usa sua Reação comum antes da resolução de um golpe ou efeito hostil direto, percebido, que tenha Aveline como alvo e origem a até 30 m. A reação defensiva adicional de chefe não ativa esta reflexão.
+
+**Teste:** Pode interceptar dano físico, Karma, Elemental, Divino, Corrupção ou um efeito direto sem dano. Aveline rola maior de 5d20 +10 contra o teste original da fonte; se a origem só fornecer CD, compara com essa CD. Precisa superar, não basta empatar.
+
+**Resolução da reflexão:** Em sucesso, a parcela que a atingiria retorna à origem e não a afeta. Em empate, não retorna e Aveline recebe somente metade do dano e a forma reduzida do efeito. Em falha, recebe a resolução normal.
 
 **Retorno:** Um ataque devolvido conserva o resultado e o dano originais, comparados à CA do agressor, que ainda pode usar uma defesa legal se tiver Reação. Um efeito com resistência conserva a CD e permite ao agressor seu teste normal. Não duplica dano nem inverte cura. Contra área, apenas a parcela destinada à rainha retorna; os demais alvos resolvem seus próprios efeitos. Um efeito refletido não pode ser refletido novamente. A assinatura não cria dados próprios: devolve somente a parcela original, sem acrescentar os 3d10 de uma técnica ofensiva de Grau V.
 
 **Fronteiras e preço:** Não devolve clima, desabamento sem fonte ativa identificável, veneno já ingerido, doença instalada, juramento aceito ou o custo dos próprios poderes. Não atinge um agressor além de 30 m e não cancela automaticamente autoridade divina fora da escala mortal. Encerrada a barreira, perde as duas Reações até o início de seu turno seguinte; não pode reativá-la naquela cena. A rainha ainda precisa perceber a ameaça, conservar sua Reação comum e vencer o confronto: três rodadas de possibilidade de reflexão não são imunidade a todo o combate.
 
 **Composição de Karma:** 12 Base V + 1 reação de reflexão + 4 alcance longo + 2 duração três rodadas − 2 preparo e uso limitado = 17 Karma. Manutenção e outros recursos são pagos separadamente.
+
 
 
 ### Princesa Isadora de Valdária · Cantus Primus {#princesa-isadora}
