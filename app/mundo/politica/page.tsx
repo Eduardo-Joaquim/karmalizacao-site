@@ -2,7 +2,7 @@ import { MarkdownArticle } from "@/components/markdown-article";
 import world from "@/data/world-politics.json";
 import Link from "next/link";
 export const metadata = {
-  title: "Povos e soberanias · Karmalização",
+  title: "Povos e soberanias - Karmalização",
   description:
     "Os quatro continentes, nove raças, sucessões reais, Nidavellir e a jurisdição da Torre.",
 };

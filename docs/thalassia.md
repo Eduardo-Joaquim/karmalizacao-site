@@ -36,6 +36,12 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
+**Arma principal - Clavis Pelagi:** Um cetro físico de bronze azul, curto o bastante para a mão direita, cuja cabeça reproduz a chave de uma comporta. Exige uma mão, Força 1 e ocupa 1 espaço. O braço hidrostático não conta como segunda mão. Focal: Espírito + Canalização de Karma; Precisa: +2 no ataque básico apenas quando uma abertura concreta já existir, sem acumular outra propriedade Precisa. Ataque básico: Principal, 0 Karma, alcance 12 m, maior de 6d20 +10 contra CA, dano 1d8 Kármico/contundente. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Na igualdade com a CA, compare Espírito 12 ao regente da defesa. Os ataques próprios do cetro não acrescentam seu dado às técnicas, nem recebem automaticamente os alcances ou alvos do arsenal soberano.
+
+**Arsenal rúnico - Elhaz - Runa do Alcance Estendido:** Clavis Pelagi recebe somente Elhaz, de Grau I: enquanto armada, o alcance do ataque básico à distância sobe de 12 m para 18 m. Seu Estouro acompanha um ataque com o próprio cetro, ignora cobertura parcial e soma +2 no teste; não se soma a outro +2 de Precisa no mesmo teste. Não ignora cobertura total. A inscrição custa uma Principal ao toque e retém 2 Karma na única vaga do cetro; com a reserva cheia, são 218 livres e 2 retidos, sem alterar o máximo 220. O Estouro não cria outro ataque, não aumenta áreas nem amplia o alcance das técnicas soberanas. Ao estourar ou desarmar, a vaga fica livre, mas os 2 Karma só voltam a ficar disponíveis no fim da cena; rearmar exige outra inscrição. A arma não contém maldição viva.
+
+**Regente da CA:** Constituição 10. Na igualdade exata com a CA 28, somente um Atributo de ataque maior que 10 produz Acerto Total; menor ou igual produz Parcial.
+
 **Traço 1:** Glaciação Criogênica, Caldeira Termobárica e Pressão / Salmoura são três expressões mestras de Água. Gelo e Pressão usam metade da defesa parental de Água, arredondada para baixo; Vapor usa metade da maior defesa entre Água e Fogo. Descritores perfurante, cortante e contundente não geram uma segunda parcela de dano.
 
 **Bênção Divina — Ius Procellae:** <span data-divine-grant="susanoo">Outorgada por Susanoo.</span><span data-world-blessing="outorga-17"></span> Bênção Divina Ius Procellae — Susanoo: Reação, 5 Karma, uma vez por combate; um civil ou aliado voluntário a até 10 m, ameaçado por uma área criada por Atargatis, recebe Escudo 12 para essa ocorrência. O Escudo expira após o ataque. O preceito exige responder pela tempestade provocada; a profanação consiste em abandonar os indefesos às consequências da própria ordem.
@@ -68,7 +74,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Criação automática; apenas as criaturas na borda realizam a resistência indicada.
 
-**Resolução mecânica:** Crie uma barreira contínua com 150 PV e CA 18; um único reservatório de PV atende todo o domo. Ela fornece cobertura total, bloqueia passagem física e linha de efeito, mas não teleporte que dispense trajetória. Sua superfície pode ser atacada por qualquer lado; dano que a destrói não transborda automaticamente para ocupantes. Criaturas cuja base toca a borda fazem Agilidade + Reflexos CD 20 ao surgir a parede: sucesso escolhe o lado livre mais próximo e não recebe condição; falha recebe Congelamento Parcial por duas rodadas. Essa condição impede gastar Reação em Evasão, esquiva rápida ou deslocamento reativo; ainda permite Defender e reações sem movimento. A vítima pode gastar Principal em Força + Atletismo CD 20 para quebrar o gelo antes do prazo. Não há dado de dano na criação. A barreira permanece três rodadas, até 0 PV ou dissipação voluntária como Ação Livre no turno dela; não existem portas implícitas. Alvos totalmente dentro ou fora, sem tocar a borda, não recebem Congelamento Parcial.
+**Resolução mecânica:** Crie uma barreira contínua com 150 PV e CA 18; um único reservatório de PV atende todo o domo. Ela fornece cobertura total, bloqueia passagem física e linha de efeito, mas não teleporte que dispense trajetória. Sua superfície pode ser atacada por qualquer lado; dano que a destrói não transborda automaticamente para ocupantes. Criaturas cuja base toca a borda fazem Agilidade + Reflexos CD 20 ao surgir a parede: sucesso escolhe o lado livre mais próximo e não recebe condição; falha recebe Congelamento Parcial por duas rodadas. Essa condição impede gastar Reação em Evasão, esquiva rápida ou deslocamento reativo; ainda permite Defender e reações sem movimento. A vítima pode gastar Principal em Força + Atletismo CD 20 para quebrar o gelo antes do prazo. Não há dado de dano na criação. A barreira permanece três rodadas, até 0 PV ou dissipação voluntária como Ação Livre no turno dela; não existem portas implícitas. Alvos totalmente dentro ou fora, sem tocar a borda, não recebem Congelamento Parcial. No próprio turno, Atargatis pode gastar uma Ação Extra para abrir ou fechar uma passagem de 1 m na parede, desde que a veja e esteja a até 20 m dela. A abertura dura até o início do próximo turno dela e pode ser atravessada por qualquer criatura. Fechar não esmaga nem desloca ocupantes: uma criatura no vão mantém esse trecho aberto até sair. A passagem não repara PV nem cria outro domo.
 
 **Limites:** Um mausoléu ativo; erguer outro desfaz o anterior. Requer água ou superfície úmida no perímetro; terreno seco recebe condensação visível durante a declaração.
 
@@ -82,7 +88,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total exige superar a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1; na igualdade exata com a CA, compare Espírito do ataque ao Atributo regente da CA do defensor: Espírito maior produz Total, menor ou igual produz Parcial.
 
-**Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
+**Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte. A superfície do próprio Mausoléu e a área de Vapor Caligo contam como umidade para escolher o centro. Essa combinação não atravessa cobertura total do domo nem repete dano já aplicado pela névoa.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -96,7 +102,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Criação automática; dano contínuo ambiental no início dos turnos, sem crítico e sem parcial por CA.
 
-**Resolução mecânica:** A névoa dura três rodadas, até o início do quarto turno de Atargatis após a criação. Todos os demais combatentes, aliados incluídos, têm a linha de visão bloqueada além de 3 m quando o segmento visual atravessa a névoa; estar fora não permite enxergar através dela. Até 3 m a visão permanece possível. Isso impede escolher alvos que exijam vê-los, sem conceder imunidade contra áreas de centro conhecido. No início de cada turno próprio dentro da névoa, a criatura sofre uma rolagem de 2d8 Elemental / Vapor; não há ataque contra CA para esse dano contínuo. Entrar e sair não cria aplicações extras e a criação não dá um pulso imediato. Atargatis mantém um canal frio junto ao corpo e não sofre a própria névoa. Aplique a defesa parental de Vapor e o Escudo normalmente. Uma área de vento que dissipe neblina pode abrir passagem por sua regra expressa; movimentar-se não dissipa o campo. Não há condição Queimando residual fora da névoa.
+**Resolução mecânica:** A névoa dura três rodadas, até o início do quarto turno de Atargatis após a criação. Todos os demais combatentes, aliados incluídos, têm a linha de visão bloqueada além de 3 m quando o segmento visual atravessa a névoa; estar fora não permite enxergar através dela. Até 3 m a visão permanece possível. Isso impede escolher alvos que exijam vê-los, sem conceder imunidade contra áreas de centro conhecido. No início de cada turno próprio dentro da névoa, a criatura sofre uma rolagem de 2d8 Elemental / Vapor; não há ataque contra CA para esse dano contínuo. Entrar e sair não cria aplicações extras e a criação não dá um pulso imediato. Atargatis mantém um canal frio junto ao corpo e não sofre a própria névoa. Aplique a defesa parental de Vapor e o Escudo normalmente. Uma área de vento que dissipe neblina pode abrir passagem por sua regra expressa; movimentar-se não dissipa o campo. Não há condição Queimando residual fora da névoa. No próprio turno, uma Ação Extra permite abrir um único corredor de 2 m de largura dentro da névoa, em linha reta a partir dela até a borda. Até o início do próximo turno, esse corredor permite visão e não aplica o pulso de Vapor Caligo; qualquer criatura pode usá-lo. Uma nova abertura substitui a anterior, sem mover a névoa nem devolver dano já sofrido.
 
 **Limites:** Uma névoa própria ativa; uma nova substitui a anterior. Não custa manutenção adicional. Pode dissipar como Ação Livre no próprio turno.
 
@@ -138,7 +144,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Agilidade + Luta: maior de 3d20 +10 contra CA; 1 natural selecionado falha.
 
-**Resolução mecânica:** Ataque corpo a corpo com o braço direito; não exige que tenha sofrido dano antes e não é uma reação gratuita. Total causa 1d10 Marcial/contundente e empurra 4 m diretamente para longe dela. Parcial causa metade, sem empurrão; falha nada. O deslocamento forçado termina no primeiro obstáculo ou espaço ocupado e não produz outro dado de dano por colisão. Não atravessa paredes, não cria um ataque de oportunidade próprio e não derruba automaticamente. Um efeito que impeça empurrões preserva o dano do acerto.
+**Resolução mecânica:** Ataque corpo a corpo com o braço direito; não exige que tenha sofrido dano antes e não é uma reação gratuita. Total causa 1d10 Marcial/contundente e empurra 4 m diretamente para longe dela. Parcial causa metade, sem empurrão; falha nada. O deslocamento forçado termina no primeiro obstáculo ou espaço ocupado e não produz outro dado de dano por colisão. Não atravessa paredes, não cria um ataque de oportunidade próprio e não derruba automaticamente. Um efeito que impeça empurrões preserva o dano do acerto. Como alternativa ao empurrão no Acerto Total, pode interromper o alvo no espaço ocupado, deixando-o Lento até o início do próximo turno dela. A escolha é declarada antes da rolagem; não combina Lento e empurrão, nem acrescenta dano.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -148,7 +154,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Fonte e Grau:** Marcial III. **Uso:** Reação, 20 Karma. **Alcance e alvos:** contato; um ataque corpo a corpo físico percebido.
 
-**Preparação:** Sem turno de preparação; declare antes da rolagem.
+**Preparação:** Declare depois de confirmar o acerto físico corpo a corpo e antes de aplicar seu dano; dispensa preparação anterior.
 
 **Teste e limiares:** Automático no gatilho indicado; o atacante escolhe entre gastar uma Reação e ficar Caído.
 
@@ -162,7 +168,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Fonte e Grau:** Vectis IV. **Uso:** Reação, 30 Karma. **Alcance e alvos:** um projétil ou feixe dirigido a ela, originado a até 40 m.
 
-**Preparação:** Sem turno de preparação; declare antes da rolagem.
+**Preparação:** Declare depois de confirmar o acerto do projétil ou feixe e antes de aplicar o dano; o teste do retorno ocorre após a intercepção.
 
 **Teste e limiares:** Intercepção automática; o retorno usa o novo teste especificado.
 
@@ -726,6 +732,12 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
+**Arma principal - Haste da Válvula:** Uma lança física de haste vedada e ponta em forma de válvula tripartida, usada como apoio nas galerias de Ápsu. Exige duas mãos, Força 2 e ocupa 2 espaços. Focal: Espírito + Controle Elemental. Alcance: contato a até 5 m; alvos a até 2 m impõem Desvantagem ao ataque da lança. Empunhá-la não aumenta a CA 26 nem concede defesa adicional. Ataque básico: Principal, 0 Karma, maior de 4d20 +10 contra CA, dano 1d8 Kármico/perfurante; a Desvantagem de contato reduz essa reserva em 1d20. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Na igualdade com a CA, compare Espírito 7 ao regente da defesa. A lança não acrescenta seu dano às técnicas de Água ou ao escudo de Claustrum Bathys.
+
+**Arsenal rúnico - Thurisaz - Runa da Fenda de Guarda:** A única inscrição da Haste da Válvula é Thurisaz, de Grau II. Ataques com a lança reduzem em 1 apenas o limiar de CA Parcial do alvo. O Estouro acompanha um desses ataques: soma 1d8 antes da divisão do Parcial e destrói até 7 pontos de Escudo Temporário antes de aplicar o dano; Falha não causa dano nem destrói Escudo. Esse dado adicional não é dobrado pelo crítico. A inscrição custa uma Principal ao toque, ocupa uma das três vagas pessoais de Nammu e retém 3 Karma; na reserva cheia, são 93 livres e 3 retidos, com máximo 96. Estourar ou desarmar encerra a passiva e libera a vaga, mas o Karma só fica disponível no fim da cena. Não modifica ataques que não usem a lança e não está combinada com maldição viva.
+
+**Regente da CA:** Constituição 8. Na igualdade exata com a CA 26, somente um Atributo de ataque maior que 8 produz Acerto Total; menor ou igual produz Parcial.
+
 **Traço 1:** Água e Pressão / Salmoura; defesas parentais de Água. Sem Vectis nem outorga divina copiada. A coroa é autoridade política; sua ficha usa o patamar comum de Etapa VI, sem fase adicional ou reserva oculta.
 
 **Traço 2:** Guarda das Basílicas: Reação, 4 Karma, uma vez por rodada, um aliado voluntário a até 5 m recebe Resistência 2 contra Água até o início do próximo turno de Nammu. Não cobre dano Marcial, não acumula Resistência de Água já existente: use apenas a maior. Consome uma das duas Reações da ficha.
@@ -734,13 +746,13 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Descrição:** Nammu fecha a mão e ergue uma arcada de água sobre o ombro de quem protege. A lâmina líquida recebe o impacto, perde a forma e cai como chuva pesada; não se recompõe enquanto o ataque continua.
 
-**Fonte e Grau:** Água III. **Uso:** Reação, 9 Karma. **Alcance e alvos:** um aliado a até 10 m.
+**Fonte e Grau:** Água III. **Uso:** Reação, 9 Karma. **Alcance e alvos:** si ou um aliado voluntário a até 10 m.
 
 **Preparação:** Sem preparação adicional.
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Concede Escudo 1d8 a um aliado a até 10 m, antes de resolver um único ataque anunciado. O Escudo dura até o início do próximo turno de Nammu ou até se esgotar, o que ocorrer primeiro; não se acumula com outro Escudo: conserve o maior. Pague 9 Karma e uma Reação; não pode somar Balança de Pressão ou outra defesa de Nammu à mesma ocorrência.
+**Resolução mecânica:** Concede Escudo 1d8 a si ou a um aliado voluntário a até 10 m, antes de resolver um único ataque anunciado. O Escudo dura até o início do próximo turno de Nammu ou até se esgotar, o que ocorrer primeiro; não se acumula com outro Escudo: conserve o maior. Pague 9 Karma e uma Reação; não pode somar Balança de Pressão ou outra defesa de Nammu à mesma ocorrência.
 
 **Limites:** Uma vez por rodada, compartilhando as duas Reações da ficha; uma defesa por ocorrência.
 
@@ -754,7 +766,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Espírito + Controle Elemental contra CA.
 
-**Resolução mecânica:** Faça Espírito + Controle Elemental contra CA. Total: 2d8 de Água / Subdobras e Enraizado até o início do próximo turno de Nammu. Parcial: metade do dano, sem Enraizado; falha: nada. O alvo pode gastar Movimento e superar Constituição + Atletismo CD 18 para encerrar Enraizado antes disso. Enraizado impede deslocamento voluntário, sem retirar ataques ou Reações. Não renova a duração sobre um alvo já Enraizado por esta técnica.
+**Resolução mecânica:** Faça Espírito + Controle Elemental contra CA. Total: 2d8 de Água / Subdobras e Enraizado até o início do próximo turno de Nammu. Parcial: metade do dano, sem Enraizado; falha: nada. O alvo pode gastar Movimento e superar Constituição + Atletismo CD 18 para encerrar Enraizado antes disso. Enraizado impede deslocamento voluntário, sem retirar ataques ou Reações. Não renova a duração sobre um alvo já Enraizado por esta técnica. A compressão precisa de um ponto de apoio: se o alvo estiver nadando ou suspenso sem tocar o chão, Enraizado o prende à posição ocupada, sem fazê-lo afundar nem cancelar a respiração. Teleporte válido pode deixá-la; imunidade a deslocamento forçado não concede imunidade a esta condição.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -768,7 +780,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Escolha uma faixa de 10 m de comprimento e 2 m de largura, visível a até 10 m. Até o início do segundo próximo turno de Nammu, até dois aliados escolhidos ignoram apenas o custo adicional de terreno difícil nessa faixa. Não concede metros, ações, teleporte, imunidade a perigos ou passagem por obstáculos sólidos. Uma faixa por vez.
+**Resolução mecânica:** Escolha uma faixa de 10 m de comprimento e 2 m de largura, visível a até 10 m. Até o início do segundo próximo turno de Nammu, até dois aliados escolhidos ignoram apenas o custo adicional de terreno difícil nessa faixa. Não concede metros, ações, teleporte, imunidade a perigos ou passagem por obstáculos sólidos. Uma faixa por vez. Nammu pode ocupar uma das duas escolhas de beneficiário. Pode traçar a faixa numa passagem submersa; a corrente não retira natação, respiração ou iluminação necessárias, e não arrasta quem se opuser a entrar.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -782,7 +794,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Espírito + Controle Elemental contra CA.
 
-**Resolução mecânica:** Espírito + Controle Elemental contra CA de um alvo. Total: 2d8 de Gelo e Caído; parcial: metade sem queda; falha: nada. Uma faixa de 3 m junto ao alvo torna-se terreno difícil para todos até o início do próximo turno de Nammu, sem dano repetido. Levantar consome o Movimento habitual.
+**Resolução mecânica:** Espírito + Controle Elemental contra CA de um alvo. Total: 2d8 de Gelo e Caído; parcial: metade sem queda; falha: nada. Em Total ou Parcial, uma faixa de 3 m junto ao alvo torna-se terreno difícil para todos até o início do próximo turno de Nammu, sem dano repetido. Falha não forma a escarpa. Levantar consome metade do deslocamento de uma Ação de Movimento; a metade restante pode ser percorrida nessa mesma ação.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -790,13 +802,13 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Descrição:** A rainha recolhe a água ao redor da ferida e mantém suas margens juntas. O socorro estanca uma perda imediata; não refaz um membro nem apaga as consequências de um golpe grave.
 
-**Fonte e Grau:** Karma III. **Uso:** Principal, 11 Karma. **Alcance e alvos:** dois aliados a 10 m.
+**Fonte e Grau:** Karma III. **Uso:** Principal, 11 Karma. **Alcance e alvos:** si e/ou até dois aliados vivos a até 10 m; no máximo dois beneficiários.
 
 **Preparação:** Sem preparação adicional.
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Role uma única cura de 1d8 e distribua seus pontos inteiros entre até dois aliados vivos a até 10 m; o total compartilhado nunca excede o resultado. Não ultrapassa Vida máxima, não ressuscita, não remove Ferimento Grave nem Estado Grave. Cada criatura só pode receber Quota de Socorro uma vez por combate, mesmo de outra cópia da técnica.
+**Resolução mecânica:** Role uma única cura de 1d8 e distribua seus pontos inteiros entre no máximo dois beneficiários vivos, escolhidos entre si e os aliados voluntários a até 10 m; o total compartilhado nunca excede o resultado. Não ultrapassa Vida máxima, não ressuscita, não remove Ferimento Grave nem Estado Grave. Cada criatura só pode receber Quota de Socorro uma vez por combate, mesmo de outra cópia da técnica.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -824,7 +836,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Espírito + Canalização de Karma contra CA.
 
-**Resolução mecânica:** Espírito + Canalização de Karma contra CA. Total: 2d8 Kármico; se o alvo estiver preparando uma técnica comum, faça Espírito + Canalização CD 18: falha interrompe a preparação sem devolver o custo. Parcial: metade do dano sem teste de interrupção; falha: nada. Não interrompe assinaturas, Domínios, técnicas já liberadas nem efeitos mantidos. Um mesmo alvo só sofre a tentativa de interrupção uma vez por combate.
+**Resolução mecânica:** Espírito + Canalização de Karma contra CA. Total: 2d8 Kármico; se o alvo estiver preparando uma técnica comum, o alvo testa Espírito + Canalização de Karma CD 18: a falha dele interrompe a preparação sem devolver o custo. Parcial: metade do dano sem teste de interrupção; falha: nada. Não interrompe assinaturas, Domínios, técnicas já liberadas nem efeitos mantidos. Um mesmo alvo só sofre a tentativa de interrupção uma vez por combate. A preparação precisa estar visível como manifestação em curso; o ataque não revela técnicas ocultas nem prevê a escolha seguinte do alvo.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -838,7 +850,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais.
+**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais. Nammu pode ser um dos dois protegidos e dissipar voluntariamente a clausura como Ação Livre no próprio turno; isso não restitui Karma nem reabre o uso por combate. Aliados podem atravessar o limite, perdendo a proteção enquanto estiverem fora, sem consumir a reserva restante por esse movimento.
 
 **Limites:** Uma vez por combate; uma reserva compartilhada, sem reposição. Manutenção de 2 Karma no turno seguinte.
 
@@ -999,17 +1011,23 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
+**Arma principal - Limiar de Kenoma:** Uma lâmina física de metal negro, com gume refletido para dentro do próprio aço. Exige uma mão, Força 1 e ocupa 1 espaço. Focal e Condutora: Espírito + Canalização de Karma; Precisa: +2 somente diante de abertura concreta declarada. Condutora pode transmitir Precisa a uma técnica kármica direta contra um alvo, conservando seu teste, custo e ação; não concede esse bônus a áreas ou campos. Ataque básico de contato: Principal, 0 Karma, alcance 1,5 m, Força + Luta, maior de 6d20 +10, dano 1d8 Marcial/cortante. Alternativamente, o feixe a até 6 m usa Espírito + Canalização de Karma, maior de 6d20 +10, e causa 1d8 Kármico; ele não satisfaz C1. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Empate com a CA compara Força 12 no contato ou Espírito 12 no feixe ao regente da defesa. A lâmina não soma 1d8 aos dados soberanos; Ordo Tenebrarum conserva sua projeção espacial sem contato e não marca a maldição.
+
+**Arsenal rúnico - Labirinto de Espelhos Partidos - Vertigem de Retorno:** Maldição Abissal de quatro Condições: C1, apenas contato com Força ou Agilidade + Luta; C4, três Marcas no mesmo alvo; C5, ao menos um Acerto Total na sequência para liberar o estado; C8, tributo fixo de 3 Vida irreduzíveis da portadora no despertar. Acertos Parciais e Totais elegíveis aplicam uma Marca; na terceira, zere as Marcas desse alvo, cobre o tributo e resolva 1d16 Corrupto da runa, separadamente do dano-base, sem crítico próprio. O tributo ignora Resistência e Escudo; não pode ser substituído pelo estado de estar abaixo da metade da Vida. Se houve Total na sequência, aplique Prisão Espacial de Espelho: até o fim do próximo turno do alvo, sua primeira tentativa de gastar Movimento para se afastar exige Espírito + Canalização de Karma CD fixa 22; sucesso permite o movimento normal, falha faz o movimento terminar novamente adjacente à portadora, num espaço livre. Essa tentativa encerra a prisão. Sem Total, ocorre apenas o dano da runa. Não acumula prisões no mesmo alvo, não trava teleporte e não escolhe vítima substituta. Diante de 1 natural selecionado em ataque com a arma, Ummu testa Presença + Controle da Corrupção, maior de 6d20 +10, contra CD 18; falha causa 1d6 Corrupto nela, em vez de Carga Temporária. CD de forja 20. Sem Karma Retido, Grau ou vaga pessoal; a maldição ocupa todos os encaixes da lâmina, impedindo inscrições convencionais. Feixes, campos, reflexões e ataques sem contato não geram Marcas.
+
+**Regente da CA:** Constituição 10. Na igualdade exata com a CA 35, somente um Atributo de ataque maior que 10 produz Acerto Total; menor ou igual produz Parcial.
+
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 
 **Traço 2:** Patamar Kármico: Vida 1200, Karma 540 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
 
 **Traço 3:** Três manifestações por Domínio, por combate: Força, Velocidade, Resistência, Superação e Técnica conservam contadores independentes. Cada ativação custa 3 Karma e Ação Extra, dura seis rodadas e não acumula com outra do mesmo Domínio. Os dois Refinamentos são de Permanência. Exigências de dois, quatro ou cinco Domínios verificam manifestações diferentes ativas no instante da liberação; a Essência passiva isolada não basta.
 
-**Traço 4:** Custos de Calamidade: o Karma escrito é integral e pago na declaração; não há uso gratuito por divindade nem redução racial implícita. Os perfis VI e VII não extrapolam por inferência a tabela mortal de pedágios corruptos. Entropia de Hubur cobra os 70 Karma declarados e a corrosão que inflige ao alvo; não acrescente ao emissor uma Carga ou uma perda de Vida sem outra regra expressa.
+**Traço 4:** Custos de Calamidade - O Karma escrito é o custo final e pago na declaração; não há uso gratuito por divindade nem redução racial implícita. Os custos com desconto de Domínio já incluem a redução própria registrada no perfil; não a aplique uma segunda vez. Entropia de Hubur custa 56 Karma e corrói a reserva do alvo nos termos da técnica. Os perfis VI e VII não extrapolam por inferência a tabela mortal de pedágios corruptos: não acrescente ao emissor Carga ou perda de Vida sem regra expressa.
 
 **Traço 5:** Registro de Entropia: guarde o Karma máximo íntegro, anterior à maldição, separadamente do máximo acessível. Descanso comum, fim de cena, cura e dissipação do campo não removem a corrosão. Somente um descanso longo completo em santuário purificado encerra a marca de Entropia; depois restaure o máximo íntegro e resolva a recuperação de recursos desse descanso.
 
-**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 540 Karma; a Falsa Santa possui 700 Karma. Ambas pertencem ao ranque Kármico.
+**Traço 6:** Defesa transcendental - CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. Essa defesa pertence à natureza de Kenoma; não é uma CA universal para personagens.
 
 ##### 1 · Terremoto {#ummu-hubur-1}
 
@@ -1021,7 +1039,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** O chão rompe em placas; no total derruba e torna o chão difícil por duas rodadas. Não derruba estruturas habitadas automaticamente. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** O chão rompe em placas; no total derruba e torna o chão difícil por duas rodadas. Não derruba estruturas habitadas automaticamente. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. Escolha o centro antes de rolar; o tremor não atravessa um vazio entre duas superfícies desconectadas nem permite escolher quais ocupantes da área serão atingidos. A faixa de terreno difícil fica aparente na mesma liberação.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -1035,7 +1053,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** Exige massa de água contínua; no total arrasta 6 m até espaço livre. Não replica em terra sem água. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** Exige massa de água contínua; no total arrasta 6 m até espaço livre. Não replica em terra sem água. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. A linha começa num ponto visível a até 30 m de Ummu e avança em uma direção declarada, mantendo comprimento de 30 m e largura de 6 m. Não contorna esquinas. O empurrão segue a direção da frente de água e termina no último espaço livre antes de um obstáculo, sem dano adicional por colisão.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -1049,7 +1067,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** No total empurra 4 m tangencialmente. A área impede projéteis leves por duas rodadas; cobertura total continua válida. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** No total empurra 4 m tangencialmente. A área impede projéteis leves por duas rodadas; cobertura total continua válida. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. O bloqueio de projéteis leves vale para ambos os lados: inclui flechas, virotes e objetos semelhantes disparados de dentro para fora ou através da área. Não intercepta feixes, manifestações sem projétil ou ataques de arma pesada por analogia; a saída do vento encerra esse impedimento no trajeto livre.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -1059,11 +1077,11 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 20 Karma. **Alcance e alvos:** raio de 6 m a 30 m.
 
-**Preparação:** Uma Principal; fonte mineral e calor manifestados tornam a zona evidente.
+**Preparação:** Uma Principal prepara, paga 20 Karma e sinaliza a área fixa por uma rodada; a Principal do turno seguinte libera, se a área continuar ao alcance e visível.
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** Sinaliza o terreno por uma rodada; no total Queimando por duas rodadas, 1d4 por início de turno. Não acumula aplicações. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** Sinaliza o terreno por uma rodada; no total Queimando por duas rodadas, 1d4 por início de turno. Não acumula aplicações. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. A crosta vermelha fixa o centro durante a preparação. Criaturas podem abandonar a área antes da liberação. Se Ummu ficar inconsciente ou não puder gastar a Principal seguinte, a preparação se desfaz sem explosão e sem reembolso; os escombros não prolongam Queimando.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -1073,11 +1091,11 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 22 Karma. **Alcance e alvos:** raio de 5 m a 40 m.
 
-**Preparação:** Uma Principal; marca fixa; cobertura total subterrânea bloqueia.
+**Preparação:** Uma Principal prepara, paga 22 Karma e anuncia a área fixa por uma rodada; a Principal do turno seguinte libera, se houver linha de efeito. Cobertura total subterrânea bloqueia.
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** Um corpo mineral condensado fica anunciado no alto por uma rodada; no total aplica Caído. O projétil é manifestação efêmera, sem massa permanente comerciável. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** Um corpo mineral condensado fica anunciado no alto por uma rodada; no total aplica Caído. O projétil é manifestação efêmera, sem massa permanente comerciável. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. A área anunciada não persegue uma criatura que a abandone. Se Ummu ficar inconsciente ou não puder gastar a Principal seguinte, o corpo mineral se desfaz antes de cair, sem reembolso. O impacto não causa um segundo dano a quem já sofreu a parcela da técnica.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -1091,7 +1109,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Agilidade + Luta, maior de 5d20 +10; valide os dois Domínios antes de rolar.
 
-**Resolução mecânica:** Exige os Domínios de Força e Velocidade manifestados. Ataque de Agilidade + Luta, maior de 5d20 +10, contra a CA recalculada sem qualquer bônus de armadura vestida, armadura natural ou escudo mágico. Preserve CA-base, Agilidade, tamanho, classe, escudo físico e cobertura válida. Recalcule o limiar Parcial pela metade dessa CA efetiva. Total causa 4d12 Marcial/cortante espacial; parcial metade; falha nada. Ignore também Resistência ou redução especificamente concedida por armadura e não desconte Escudo Temporário de origem mágica: a parcela ultrapassa esse Escudo sem consumi-lo. Resistência intrínseca Marcial, votos e outras proteções sem origem em armadura ou escudo mágico continuam válidos. A técnica não destrói o equipamento que ultrapassou.
+**Resolução mecânica:** Exige os Domínios de Força e Velocidade manifestados. Ataque de Agilidade + Luta, maior de 5d20 +10, contra a CA recalculada sem qualquer bônus de armadura vestida, armadura natural ou escudo mágico. Preserve CA-base, Agilidade, tamanho, classe, escudo físico e cobertura válida. Recalcule o limiar Parcial pela metade dessa CA efetiva. Total causa 4d12 Marcial/cortante espacial; parcial metade; falha nada. Ignore também Resistência ou redução especificamente concedida por armadura e não desconte Escudo Temporário de origem mágica: a parcela ultrapassa esse Escudo sem consumi-lo. Resistência intrínseca Marcial, votos e outras proteções sem origem em armadura ou escudo mágico continuam válidos. A técnica não destrói o equipamento que ultrapassou. O corte projetado não é um golpe de contato da Limiar de Kenoma: sua distância de 12 m e a penetração espacial não transmitem a maldição da arma nem o dado de 1d8 dela.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 

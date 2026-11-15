@@ -54,76 +54,80 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Domínio — Superação 2 manifestada:** **Ativação:** Livre, 2 Karma, quatro rodadas, uma vez por cena. **Manifestação:** +1d20 em testes sobrenaturais regidos por Presença ou Espírito. Com Vida até 75%, 50% ou 25%, recebe respectivamente +1, +2 ou +3 de dano e Resistência; use apenas a maior faixa. **Essência:** +2d20 contra medo, coerção ou controle que ameacem diretamente sua identidade de soberana.
 
-**Corrupção e Voz:** Carga inicial 0; máximo 10. Cada uso corrupto paga a Carga indicada e faz Controle CD 14 + Carga efetiva atual. Familiaridade com a Voz concede Vantagem e +2 apenas nesse Controle, não ao ataque. Falhar abre Intrusão; chegar a 10 aciona Ruptura, com Controle CD 24. A Carga não é restituída por errar. As técnicas abaixo não concedem imunidade à Voz.
+**Corrupção e Voz:** Carga inicial 0; máximo 10. Cada técnica da Matriz Corrupta paga a Carga indicada e faz Controle CD 16 + Carga efetiva atual; os demais gatilhos da Marca usam CD 14 + Carga. Se o mesmo uso acionar ambos, faça um único Controle contra a maior CD aplicável. Familiaridade com a Voz concede Vantagem e +2 apenas nesse Controle, não ao ataque nem à Fome da arma. Falhar abre Intrusão; chegar a 10 aciona Ruptura, com Controle CD 24. A Carga não é restituída por errar. As técnicas abaixo não concedem imunidade à Voz.
 
-**Foco e arma:** Cetro de obsidiana, Principal, 2 m, Luta contra CA, 1d8 físico; parcial metade. O foco de Oblatio fica exposto quando usado. Oposição empata em favor do defensor; dano parcial é dividido antes de Resistência e escudos. Dados de Exaltação são adicionais e nunca dobram pelo crítico.
+**Arma principal:** Sceptrum - cetro de obsidiana com empunhadura de ferro, usado como arma de contato e foco exposto dos ritos. Ataque básico: Principal, 2 m, Força + Luta contra CA, 1d8 físico no Total, metade no Parcial e nenhum dano na Falha. O cetro não concede os benefícios de um Cetro de Comando nem aumenta Presença, Espírito, CA ou Karma. O foco de Oblatio e o trono de Miserere mantêm suas próprias estatísticas e podem ser atacados conforme as técnicas; empunhar Sceptrum não os torna indestrutíveis.
+
+**Runa da arma:** Trono de Ossos Vazios - Genuflexão pelo Peso, Maldição Abissal de quatro condições, sem Grau, Karma Retido ou vaga pessoal. Composição fixa: C1 - Restrição de Vetor Corpo a Corpo; C4 - Ciclo de 3 Marcas no Mesmo Alvo; C5 - Exigência de Acerto Total para o Estado; C8 - Sangue por Sangue, com pagamento de 3 Vida irreduzíveis no despertar, sem alternativa de ficar abaixo de metade da Vida. Só um golpe de contato com Sceptrum, resolvido por Força + Luta, marca; Parcial e Total contam uma marca, máximo uma por ataque. Ao fechar três marcas no mesmo alvo, pague o tributo e cause 2d8 Corrupto, com Resistência normal; se a sequência contiver ao menos um Total, o alvo também fica Caído e Imobilizado no solo. Libertar-se exige Principal e Força ou Constituição + Atletismo CD fixa 22; sucesso encerra a imobilização, mas levantar de Caído ainda usa o movimento normal. As três marcas se apagam após o disparo. O estado não se acumula consigo, e a runa não acrescenta outro estado da tabela de potência. A CD de forja é 20. Um 1 natural selecionado num ataque do cetro exige Presença + Controle da Corrupção CD 18; Valac usa maior de 6d20 +10, sem o bônus de Familiaridade com a Voz. Na falha sofre 1d6 Corrupto, sem Carga Temporária alternativa. Tributo e mordida da própria arma não alimentam Desespero; o dano efetivo causado a inimigos segue o contador normal. A maldição ocupa toda a arma e não admite inscrições convencionais. Nadir, Nexum, Oblatio, Miserere e os demais ritos não são golpes do cetro, não aplicam marcas e não disparam a maldição; seus dados não multiplicam os 2d8 da runa.
+
+**Regente da CA:** Constituição 8. Na igualdade exata com CA 29, somente um Atributo de ataque maior que 8 produz Acerto Total; menor ou igual produz Parcial. Nos ataques contra outra CA, aplique o regente daquele defensor. Oposição empata em favor do defensor; dano parcial é dividido antes de Resistência e escudos. Dados de Exaltação e da maldição são adicionais e nunca dobram pelo crítico.
 
 ##### 1 · Nadir {#valac-nadir}
 
-**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Principal, 15 Karma, centro percebido a até 20 m, raio de 3 m. Controle de Trevas contra a CA de cada criatura na área. Total: **2d10 de Trevas** E arrasto de 3 m em direção ao centro por caminho livre. Parcial: metade do dano sem arrasto. Falha: nada. Não atravessa cobertura total e pode atingir aliados.
+**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Principal, 15 Karma, centro percebido a até 20 m, raio de 3 m. Espírito + Controle de Trevas contra a CA de cada criatura na área; uma rolagem comparada separadamente a cada defesa. Total: **2d10 de Trevas** e arrasto de até 3 m em direção ao centro por caminho livre, sem fazer duas criaturas ocuparem o mesmo espaço. Parcial: metade do dano sem arrasto. Falha: nada. O centro precisa de trajetória aberta; cobertura total protege quem estiver atrás dela, sem ocultar os demais alvos da área. A rainha escolhe a distância de cada arrasto válido, podendo aproximar dois adversários para o alcance de Nexum num turno posterior. Essa aproximação não concede outra ação nem transforma o rito seguinte em acerto automático. Pode atingir aliados.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 2 · Hiato {#valac-hiato}
 
-**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Reação, 9 Karma, contra ataque percebido em si ou aliado a até 8 m. Uma dobra escura recebe o impacto, reduzindo **2d12** Do dano daquela resolução, depois das reduções permanentes. O excesso se perde. Não desvia condições sem dano nem absorve um segundo ataque.
+**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Reação, 9 Karma, contra ataque percebido em si ou em um aliado percebido a até 8 m, depois do acerto e antes da perda de Vida. Uma dobra escura recebe o impacto, reduzindo **2d12** do dano daquela resolução, depois das reduções permanentes. O excesso se perde. Escolha um único protegido, mesmo numa área. Não desvia condições sem dano nem absorve um segundo ataque, e não pode somar-se a outra Reação de Valac contra a mesma ocorrência. A redução não conta como Vida perdida para Desespero; apenas o dano que atravessar as proteções e atingir sua Vida alimenta o contador.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 3 · Limiar {#valac-limiar}
 
-**Fonte e Grau:** Bênção IV. **Uso:** Extra, 10 Karma e 50 Desespero, no próprio turno. Valac recebe Exaltação do Desespero. A ativação é automática, esvazia o contador e avança a contagem do Terceiro Lamento. A duração e os valores dobrados só se aplicam à terceira ativação da cena.
+**Fonte e Grau:** Bênção IV. **Uso:** Extra, 10 Karma e 50 Desespero, no próprio turno. Valac recebe Exaltação do Desespero. A ativação é automática, esvazia o contador e avança a contagem do Terceiro Lamento. A duração e os valores dobrados só se aplicam à terceira ativação da cena. Declare antes da técnica que receberá os dados adicionais; não recalcula um ataque já encerrado nem devolve dano absorvido anteriormente. Uma Exaltação ainda vigente é substituída, sem somar dados ou Resistência. O novo dano efetivo pode alimentar o contador conforme a regra da bênção, mas a ativação não cria dano por si só.
 
 **Composição de Karma:** 6 Base IV + 3 proteção secundária III + 1 duração = 10 Karma. Ação Extra é a ativação própria da Bênção Verdadeira; exige também 50 Desespero.
 
 
 ##### 4 · Legado {#valac-legado}
 
-**Fonte e Grau:** Bênção IV. **Requisito:** Ao menos um dos quatro Domínios de Valac manifestado. **Uso:** Principal, 11 Karma e 50 Desespero, um aliado voluntário a até 15 m. O escolhido recebe Exaltação no lugar da rainha. A bênção continua sendo dela: o aliado não ganha seu contador, Caminho ou Domínios. Conta para o Terceiro Lamento e termina imediatamente se Valac cair Inconsciente.
+**Fonte e Grau:** Bênção IV. **Requisito:** Ao menos um dos quatro Domínios de Valac manifestado. **Uso:** Principal, 11 Karma e 50 Desespero, um aliado voluntário percebido a até 15 m. O escolhido recebe Exaltação no lugar da rainha, com os dados-base das próprias técnicas, sem teste ou acerto crítico. A bênção continua sendo dela: o aliado não ganha seu contador, Caminho ou Domínios, e o dano que ele infligir não preenche o contador pessoal de Valac. Conta para o Terceiro Lamento e termina imediatamente se Valac cair Inconsciente. Se o destinatário já estiver Exaltado, substitua a aplicação anterior, conservando somente a nova duração, sem acumular dados ou Resistência.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 5 · Mutilatio {#valac-mutilatio}
 
-**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle após pagar a Carga. Controle da Corrupção contra CA. Total: **2d10 corrupto** e −2 nos ataques feitos com um membro escolhido até o final do próximo turno da vítima. Parcial: metade do dano sem penalidade. Não amputa automaticamente, não altera atributos e não atinge seres imunes à Corrupção.
+**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle contra CD 16 + Carga após pagar a Carga. Presença + Controle da Corrupção contra CA. Total: **2d10 corrupto** e −2 nos ataques feitos com um membro escolhido até o final do próximo turno da vítima. Escolha o membro na declaração: a penalidade acompanha o uso desse membro para atacar ou sustentar a arma, mas não afeta ataques feitos inteiramente por outra fonte ou outro membro. Parcial: metade do dano sem penalidade. Falha: nada, sem devolver a Carga ou o Karma. A penalidade não se acumula consigo. Não amputa automaticamente, não altera atributos e não atinge seres imunes à Corrupção.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 6 · Mortis {#valac-mortis}
 
-**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo a até 15 m; Controle normal. Presença + Controle da Corrupção oposto a Espírito + Ocultismo ou Presença + Liderança. Vitória: **2d10 corrupto** e o próximo efeito de cura recebido antes do fim do próximo turno de Valac restaura metade da Vida, arredondada para baixo. Empate ou derrota: nada. O selo não acumula consigo e se encerra após afetar uma cura.
+**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle contra CD 16 + Carga após o pagamento. Presença + Controle da Corrupção oposto a Espírito + Ocultismo ou Presença + Liderança, escolhido pelo defensor antes de rolar. Vitória: **2d10 corrupto** e o próximo efeito de cura recebido antes do fim do próximo turno de Valac restaura metade da Vida, arredondada para baixo. Empate ou derrota: nada. O selo não acumula consigo e se encerra após afetar uma cura; não reduz escudos, drenagem de Karma ou remoção de condições. O alvo ainda pode escolher quando receber a cura, esperar o prazo ou usar uma proteção que não restaure Vida.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 7 · Anatema {#valac-anatema}
 
-**Fonte e Grau:** Ocultismo IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 12 Karma, alvo a até 15 m. Espírito + Ocultismo contra Presença + Liderança ou Espírito + Ocultismo. Vitória: **−3 em ataques e testes por duas rodadas**, sem alterar CA ou dano. A vítima pode gastar Principal para romper contra CD 20, com a defesa escolhida. Empate ou derrota não aplica efeito; maldições de Valac não acumulam suas penalidades.
+**Fonte e Grau:** Ocultismo IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 12 Karma, alvo percebido a até 15 m. Espírito + Ocultismo contra Presença + Liderança ou Espírito + Ocultismo, escolhido pelo defensor antes de rolar. Vitória: **−3 em ataques e testes por duas rodadas**, até o fim do segundo turno seguinte do alvo, sem alterar CA ou dano. A vítima pode gastar Principal para romper contra CD 20, com a defesa escolhida; igualdade é sucesso, e a própria penalidade não se aplica a essa tentativa de libertação. Empate ou derrota não aplica efeito; maldições de Valac não acumulam suas penalidades. Uma nova aplicação renova o prazo sem transformar −3 em −6.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 1 duração + 3 Função secundária III = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 8 · Nexum {#valac-nexum}
 
-**Fonte e Grau:** Ocultismo III. **Uso:** Principal, 10 Karma, até dois alvos a até 15 m, separados por no máximo 5 m. Uma rolagem de Espírito + Ocultismo contra suas CAs, com defesas individuais. Total: Lento e perda das Reações disponíveis, sem recuperá-las até o início do próximo turno de Valac. Parcial: somente Lento. Lento reduz Deslocamento à metade. Falha: nada. Não causa dano, arrasto ou agarrão físico.
+**Fonte e Grau:** Ocultismo III. **Uso:** Principal, 10 Karma, até dois alvos percebidos a até 15 m, separados por no máximo 5 m. Uma rolagem de Espírito + Ocultismo contra suas CAs, com defesas individuais. Total: Lento e perda das Reações disponíveis, sem recuperá-las até o início do próximo turno de Valac. Parcial: somente Lento, expressamente permitido por este rito. Lento reduz Deslocamento à metade até esse mesmo início de turno. Falha: nada. A distância entre os alvos é exigida somente na declaração; afastar-se depois não transfere a perda de Reações a outra criatura. Cobertura total impede o vínculo com quem estiver protegido. Não causa dano, arrasto ou agarrão físico, e o alvo conserva sua Principal e seus demais recursos.
 
 **Composição de Karma:** 4 Base III + 2 alcance médio + 2 área / destinatários + 2 Função secundária II = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 9 · Oblatio {#valac-oblatio}
 
-**Fonte e Grau:** Ocultismo IV. **Uso:** Principal, 17 Karma e 1 Carga, uma vez por cena, alvo a até 15 m do foco. O foco exige 1 TE de preparo ou uma Principal num turno anterior; CA 14, Vida 6. Controle normal. Controle da Corrupção oposto a Presença + Liderança ou Espírito + Ocultismo. Vitória: **2d10 espiritual** No início dos próximos três turnos da vítima, sem novos ataques ou críticos. Ela pode gastar Principal e alcançar o resultado inicial registrado com sua defesa para encerrar. Destruir ou cobrir completamente o foco, ou afastar-se mais de 15 m dele, encerra o ritual. Exaltação não amplia os pulsos contínuos.
+**Fonte e Grau:** Ocultismo IV. **Uso:** Principal, 17 Karma e 1 Carga, uma vez por cena, alvo percebido a até 15 m do foco. O foco exige 1 TE de preparo ou uma Principal num turno anterior; CA 14, Vida 6, regente Constituição 0. Declare seu ponto físico de origem no preparo; ele precisa permanecer exposto e não acompanha a vítima. A Carga aciona o Controle comum da Marca, CD 14 + Carga após o pagamento; este rito não usa a Matriz Corrupta. Presença + Controle da Corrupção oposto a Presença + Liderança ou Espírito + Ocultismo, escolhido pela vítima antes de rolar. Vitória: **2d10 espiritual** no início dos próximos três turnos da vítima, sem dano imediato, novos ataques ou críticos. Empate ou derrota não cria o vínculo; custos permanecem gastos. Ela pode gastar Principal e alcançar o resultado inicial registrado com sua defesa para encerrar. Destruir ou cobrir completamente o foco, ou afastar-se mais de 15 m dele, encerra o ritual antes do próximo pulso. Exaltação não amplia os pulsos contínuos, e acertar o foco não dispara a maldição do cetro contra o atacante.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III + 6 pulsos posteriores, pagos na criação = 17 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### Assinatura · Miserere {#valac-miserere}
 
-**Fonte e Grau:** Corrupção V. **Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão. **Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena, até três inimigos percebidos a até 15 m. O foco torna-se um trono vazio, CA 20 e Vida 28, por três rodadas; Controle normal. Uma rolagem de Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Somente quem perder fica Vinculado ao trono; empate protege a vítima.
+**Fonte e Grau:** Corrupção V. **Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão. **Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena; consome o único Ápice de Grau V da rainha. Até três inimigos percebidos a até 15 m do foco. O foco torna-se um trono vazio, CA 20, regente Constituição 0 e Vida 28, até o fim do terceiro turno seguinte de Valac; Controle de risco contra CD 16 + Carga após pagar as 2 Cargas. Uma rolagem de Presença + Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Cada defensor escolhe sua defesa antes de rolar. Somente quem perder fica Vinculado ao trono; empate protege a vítima. Não há dano imediato, e a maldição de Sceptrum não se transfere ao trono.
 
 **O tributo:** A primeira vez em cada rodada que um Vinculado declarar uma técnica, antes de resolvê-la, escolhe perder uma Reação ainda disponível ou testar a mesma defesa contra CD 20. Se falhar no teste, sofre **3d10 espiritual**, com Resistência normal. Se não possuir Reação, precisa testar. Depois dessa primeira cobrança de dano, o vínculo daquela vítima se encerra. A técnica declarada ainda é resolvida se o personagem continuar capaz de agir; o tributo não a cancela automaticamente. Os pulsos não recebem crítico ou dados de Exaltação.
 

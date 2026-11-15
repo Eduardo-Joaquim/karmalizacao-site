@@ -1252,14 +1252,14 @@ export function CharacterPowerEditor({
             {runes.map((rune) => (
               <details key={rune.id}>
                 <summary>
-                  {rune.name} · Grau {rune.grade} · {rune.retained} Karma Retido
+                  {rune.name} - Grau {rune.grade} - {rune.retained} Karma Retido
                 </summary>
                 <p>{rune.category}</p>
                 <p>
-                  <strong>Enquanto armada.</strong> {rune.passive}
+                  <strong>Enquanto armada</strong> - {rune.passive}
                 </p>
                 <p>
-                  <strong>Estouro.</strong> {rune.burst}
+                  <strong>Estouro</strong> - {rune.burst}
                 </p>
               </details>
             ))}

@@ -220,13 +220,9 @@ export function BestiaryReader({
 
       {activeRegion ? (
         <section
-          className="atlas-region-content"
-          aria-labelledby="region-title"
+          className="atlas-region-content atlas-region-directory"
+          aria-label={`Arquivo de ${activeRegion.name}`}
         >
-          <activeRegion.Icon aria-hidden="true" />
-          <p className="atlas-overline">CONTINENTE · {activeRegion.element}</p>
-          <h2 id="region-title">{activeRegion.name}</h2>
-          <p>{activeRegion.text}</p>
           {region === "gaeria" ? (
             <GaeriaArchive />
           ) : region === "ignaria" ? (

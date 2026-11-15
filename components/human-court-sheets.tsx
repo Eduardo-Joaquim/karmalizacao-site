@@ -64,16 +64,6 @@ export function HumanCourtSheets() {
           ],
           abilities: p.abilities.map((a) => ({
             ...a,
-            kind:
-              /assinatura/i.test(
-                a.name +
-                  " " +
-                  a.fields.map((f) => f.label + " " + f.html).join(" "),
-              ) ||
-              (index === 0 && a === p.abilities[6])
-                ? "signature"
-                : "technique",
-            source: "",
             cost: `${a.cost} Karma`,
           })),
         };

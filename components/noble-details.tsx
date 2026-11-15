@@ -96,10 +96,14 @@ export function NobleTraitCards({ facts }: { facts: { fields: Field[] }[] }) {
                 </div>
               )}
               <h5>
-                {first.replace(
-                  /^(Domínios?|Bênçãos?|Bençãos?|Armas?|Estilo)\s*[—:–-]?\s*/i,
-                  "",
-                ) || first}
+                {/^(Arma principal|Inscrições rúnicas|Runa da arma)$/i.test(
+                  first,
+                )
+                  ? first
+                  : first.replace(
+                      /^(Domínios?|Bênçãos?|Bençãos?|Armas?|Estilo)\s*[—:–-]?\s*/i,
+                      "",
+                    ) || first}
               </h5>
               {tags.length > 0 && (
                 <div className="noble-trait-tags">

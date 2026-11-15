@@ -10,10 +10,7 @@ export default function World() {
       <GaeriaArchive />
       <IgnariaArchive />
       <AeriaArchive />
-      <section>
-        <h2>Thalassia · Os três tronos do oceano</h2>
-        <ThalassiaArchive />
-      </section>
+      <ThalassiaArchive />
       <ContinentalMonstersSection region="torre" />
     </main>
   );

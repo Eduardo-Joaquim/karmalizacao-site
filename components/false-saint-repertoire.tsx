@@ -40,7 +40,7 @@ export function FalseSaintRepertoire({
   const signatures = abilities.filter((b) =>
     /^(Frankenstein|Dia do Julgamento)/.test(b.title),
   );
-  const trumpets = abilities.filter((b) => /^[IVX]+ ·/.test(b.title));
+  const trumpets = abilities.filter((b) => /^[IVX]+ (?:·|-)/.test(b.title));
   const ordinary = abilities.filter(
     (b) => !signatures.includes(b) && !trumpets.includes(b),
   );
@@ -131,13 +131,13 @@ export function FalseSaintRepertoire({
                 plainSkillText(
                   b.fields.find((f) => f.label === "Uso")?.html ?? "",
                 )
-                  .split(" · ")
+                  .split(/ (?:·|-) /)
                   .includes(group.match),
               )
               .map((block, i) => {
                 const meta = plainSkillText(
                   block.fields.find((f) => f.label === "Uso")?.html ?? "",
-                ).split(" · ");
+                ).split(/ (?:·|-) /);
                 return (
                   <section className="saint-tech-card" key={block.title}>
                     <header>
@@ -191,7 +191,7 @@ export function FalseSaintRepertoire({
               {plainSkillText(
                 block.fields.find((f) => f.label === "Uso")?.html ?? "",
               )
-                .split(" · ")
+                .split(/ (?:·|-) /)
                 .slice(1)
                 .map((m, i) => (
                   <span key={i}>{m}</span>
@@ -224,7 +224,7 @@ export function FalseSaintRepertoire({
                 {["I", "II", "III", "IV", "V", "VI", "VII"][i]}
               </span>
               <div>
-                <h4>{b.title.replace(/^[IVX]+ · /, "")}</h4>
+                <h4>{b.title.replace(/^[IVX]+ (?:·|-) /, "")}</h4>
                 <p className="saint-trumpet-flavor">
                   {plainSkillText(b.fields[0]?.html ?? "")}
                 </p>

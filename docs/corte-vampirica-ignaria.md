@@ -36,7 +36,11 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Perícias:** Luta 3, Reflexos 3, Atletismo 3, Controle de Água 3 e Canalização de Karma 3: maior de 4d20 +10. Tática 3 e Percepção 3: maior de 4d20 +14 com Analítico e a Essência de Técnica. História 2 e Investigação 2: maior de 4d20 +9 com Analítico e a Essência de Técnica. Liderança 3 e Intimidação 3: maior de 4d20 +10. Perícias não indicadas são 0.
 
-**Lança — Asta:** Principal, alcance 3 m, Luta contra CA, 2d10 perfurante no total; parcial metade, falha nenhum dano. A arma permite aparar, mas não concede ataques adicionais. Uma vez por rodada, o primeiro total regido por Força ignora 1 de Resistência física pela Essência de Força.
+**Arma principal:** Asta - lança de haste negra e ponta estriada, empunhada com duas mãos. Ataque básico: Principal, alcance 3 m, Força + Luta contra CA, 2d10 perfurante no Total; Parcial causa metade e Falha não causa dano. A arma permite aparar, mas não concede ataques adicionais. Uma vez por rodada, o primeiro Total regido por Força ignora 1 de Resistência física pela Essência de Força. Hasta e Retorsio usam seus próprios dados em lugar dos 2d10 do ataque básico; Imperium conserva sua base única de 2d10 +1d12.
+
+**Runa da arma:** Elhaz - Runa do Alcance Estendido, Grau I, uma inscrição convencional na lança; ocupa uma das quatro vagas pessoais e retém 2 Karma. Com a reserva cheia, Nosferato tem 124 Karma livres e 2 retidos, sem alterar seu máximo 126. Enquanto armada, aumenta o alcance dos ataques da lança em 1,5 m: o ataque básico, Hasta e a resposta de Retorsio alcançam 4,5 m. Declare o Estouro antes da rolagem de um desses ataques: aquele ataque ignora cobertura parcial e recebe +2 no acerto, sem uma segunda ação ou um segundo golpe. O Estouro encerra a passiva e libera a vaga; os 2 Karma ficam indisponíveis até o fim da cena. Asta não possui maldição nem outra runa simultânea. Cruor, Rubedo, Coagulum e Recolher o sangue não são ataques da lança e não recebem Elhaz.
+
+**Regente da CA:** Constituição 7. Na igualdade exata com CA 29, somente um Atributo de ataque maior que 7 produz Acerto Total; menor ou igual produz Parcial.
 
 **Subdobra de Sangue:** Nosferato domina Sangue como subdobra do elemento Água. Cruor, Rubedo e Coagulum pertencem a essa subdobra e usam Controle de Água, maior de 4d20 +10. Imperium é sua manifestação suprema. A rainha conduz sangue exteriorizado, altera sua densidade e o transforma em armas, armaduras e vínculos no campo de batalha. Não retira sangue de corpos intactos nem controla a vontade de suas vítimas. As doses que carrega servem de matéria para as técnicas; não restauram Vida por si mesmas.
 
@@ -58,56 +62,56 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 ##### 1 · Hasta
 
-**Fonte e Grau:** Marcial IV; estocada de ruptura. **Uso:** Principal, 7 Karma, um alvo a até 3 m, lança empunhada com as duas mãos. Nosferato prende a haste sob o braço e concentra o peso numa única abertura; Luta contra CA. **Total:** 2d8 perfurante, ignorando até 2 de Resistência física. **Parcial:** Metade do dano, sem ignorar Resistência. **Falha:** nenhum efeito. A técnica depende da lança e do apoio físico da rainha; não produz água ou projéteis.
+**Fonte e Grau:** Marcial IV; estocada de ruptura. **Uso:** Principal, 7 Karma, um alvo a até 3 m, lança empunhada com as duas mãos; Elhaz armada permite 4,5 m. Nosferato prende a haste sob o braço e concentra o peso numa única abertura; Força + Luta contra CA. **Total:** 2d8 perfurante, ignorando até 2 de Resistência física. **Parcial:** Metade do dano, sem ignorar Resistência. **Falha:** nenhum efeito. A técnica depende da lança e do apoio físico da rainha; não produz água ou projéteis. Um alvo contido por Rubedo continua defendendo-se normalmente; a contenção permite manter a distância da haste, sem transformar o ataque em Total automático. O dado do ataque básico não se soma a esta estocada.
 
 **Composição de Karma:** 6 Base IV + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 2 · Cruor
 
-**Fonte e Grau:** Subdobra de Sangue IV; ataque e absorção. **Uso:** Principal, 13 Karma, um alvo vivo a até 20 m. Exige sangue já exteriorizado a até 3 m da vítima. Controle de Água contra CA. **Total:** 2d10 de Sangue e Nosferato recupera metade do dano que efetivamente retirou da Vida, máximo 15. **Parcial:** Metade do dano e nenhuma cura. **Falha:** nada. A cura ocorre uma vez por rodada; sangue armazenado serve de foco, não de alimento inesgotável.
+**Fonte e Grau:** Subdobra de Sangue IV; ataque e absorção. **Uso:** Principal, 13 Karma, um alvo vivo percebido a até 20 m. Exige sangue já exteriorizado a até 3 m da vítima, com trajetória desobstruída entre a matéria e o alvo. Pode usar o sangue de uma estaca de Imperium nessa distância sem mover nem danificar a estaca; sua destruição ou afastamento retira esse ponto de origem. Espírito + Controle de Água contra CA. **Total:** 2d10 de Sangue e Nosferato recupera metade do dano que efetivamente retirou da Vida, arredondada para baixo, máximo 15. **Parcial:** Metade do dano e nenhuma cura. **Falha:** nada. A cura ocorre uma vez por rodada; sangue armazenado serve de foco, não de alimento inesgotável. Dano absorvido por escudo ou Resistência não alimenta a cura, e acertar um corpo já sem Vida não a concede.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 3 Função secundária III = 13 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 3 · Aegis
 
-**Fonte e Grau:** Elemental de Água IV; defesa. **Uso:** Reação, 9 Karma, quando um ataque percebido alcança Nosferato ou um aliado a até 10 m. Um escudo de água densa reduz em **2d10** O dano daquela resolução, após as reduções permanentes e antes de retirar Vida. O excedente da barreira se perde. Não devolve dano, não cancela condições que independam do dano e não protege de um segundo ataque.
+**Fonte e Grau:** Elemental de Água IV; defesa. **Uso:** Reação, 9 Karma, quando um ataque percebido alcança Nosferato ou um aliado percebido a até 10 m; declare depois do acerto e antes de retirar Vida. Um escudo de água densa reduz em **2d10** o dano daquela resolução, após as reduções permanentes e antes de retirar Vida. Escolha um único beneficiário, mesmo que uma área alcance vários aliados. O excedente da barreira se perde. Não devolve dano, não cancela condições que independam do dano e não protege de um segundo ataque. A mesma ocorrência não permite somar Aegis a Evasão, Bloqueio ou Retorsio da rainha.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 4 · Retorsio
 
-**Fonte e Grau:** Karma IV; contraestocada. **Uso:** Reação, 8 Karma, depois de um ataque corpo a corpo percebido contra a rainha ser resolvido, com o agressor a até 3 m. Karma percorre a haste e prolonga o impulso do giro; Luta contra CA. **Total:** 2d10 kármico e o agressor perde 2 m de Deslocamento até o fim do próximo turno dele. **Parcial:** Metade do dano, sem redução de Deslocamento. **Falha:** nenhum efeito. Não impede o ataque que a desencadeou e não responde a outro contra-ataque.
+**Fonte e Grau:** Karma IV; contraestocada. **Uso:** Reação, 8 Karma, depois de um ataque corpo a corpo percebido contra a rainha ser resolvido, com o agressor a até 3 m; Elhaz armada permite a resposta a até 4,5 m. Asta precisa estar empunhada, e Nosferato precisa continuar capaz de agir após o golpe. Karma percorre a haste e prolonga o impulso do giro; Força + Luta contra CA. **Total:** 2d10 kármico e o agressor perde 2 m de Deslocamento até o fim do próximo turno dele. **Parcial:** Metade do dano, sem redução de Deslocamento. **Falha:** nenhum efeito. A redução não acumula consigo; renovar conserva apenas a aplicação mais recente. Não impede o ataque que a desencadeou, não responde a outro contra-ataque e não pode acompanhar outra Reação da rainha à mesma ocorrência.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 1 efeito menor = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 5 · Rubedo
 
-**Fonte e Grau:** Subdobra de Sangue IV; controle de campo. **Uso:** Principal, 23 Karma, centro a até 20 m, raio de 5 m, três rodadas; manutenção de 3 Karma no início dos turnos seguintes. Exige sangue exteriorizado na área ou uma dose carregada, consumida na ativação. O sangue se espalha em lâminas rasas e solidifica ao redor dos tornozelos. Entrar na área pela primeira vez na rodada ou começar o turno nela exige Agilidade + Reflexos contra Controle de Água da rainha. Quem perder sofre **2d10 de Sangue** E fica Imobilizado até usar Movimento para vencer Força + Atletismo contra a mesma rolagem. Máximo uma aplicação de dano por alvo por rodada. A área afeta aliados; encerrar a técnica desfaz todas as prisões.
+**Fonte e Grau:** Subdobra de Sangue IV; controle de campo. **Uso:** Principal, 23 Karma, centro percebido a até 20 m, raio de 5 m, três rodadas; manutenção de 3 Karma no início dos turnos seguintes. Exige sangue exteriorizado na área ou uma dose carregada, consumida na ativação. O sangue se espalha em lâminas rasas e solidifica ao redor dos tornozelos. Registre Espírito + Controle de Água na ativação. Entrar na área pela primeira vez na rodada ou começar o turno nela exige Agilidade + Reflexos contra esse resultado, uma vez por alvo por rodada, sem pulso imediato por estar na área quando ela surge. Quem perder sofre **2d10 de Sangue** e fica Imobilizado até usar Movimento para vencer Força + Atletismo contra a mesma rolagem; empate favorece quem resiste. Sucesso evita dano e prisão. As estacas e a passagem de Imperium continuam funcionando dentro do campo, mas a passagem não desfaz uma contenção sofrida pela própria rainha. A área afeta aliados; sair dela após libertar-se, encerrar a técnica ou deixar de pagar a manutenção desfaz a prisão correspondente. Pode ser encerrada por Nosferato como Livre no próprio turno, sem recuperar o Karma gasto.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 3 Função secundária III + 6 pulsos posteriores = 23 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 6 · Sutura
 
-**Fonte e Grau:** Karma IV; sustentação. **Uso:** Principal, 7 Karma, toque em si ou em um vivo, duas ativações por cena. Fecha lacerações e restaura **2d10 Vida**. Também encerra um Sangramento em curso. Não regenera membros, não remove veneno ou Corrupção e não ressuscita. A reserva máxima de Vida nunca é ultrapassada.
+**Fonte e Grau:** Karma IV; sustentação. **Uso:** Principal, 7 Karma, toque em si ou em um vivo voluntário ou incapaz de se opor, duas ativações por cena. Fecha lacerações e restaura **2d10 Vida**. Também encerra um Sangramento em curso, escolhido na ativação, mesmo que o alvo já esteja com Vida cheia. A resolução é automática e não produz crítico. Não regenera membros, não remove veneno ou Corrupção e não ressuscita. A reserva máxima de Vida nunca é ultrapassada; uma penalidade de cura em vigor afeta a Vida restaurada, sem impedir por si só o encerramento do Sangramento.
 
 **Composição de Karma:** 6 Base IV + 1 encerrar sangramento = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 7 · Coagulum
 
-**Fonte e Grau:** Subdobra de Sangue IV; armadura hemática. **Uso:** Principal, 14 Karma, si mesma ou um aliado tocado, por três rodadas. Consome uma dose de sangue exteriorizado. Placas de coágulo encaixam-se sobre roupas e pele, concedendo **24 de escudo**. A primeira vez em cada rodada que um agressor a até 3 m retira pontos desse escudo com um ataque corpo a corpo, espículas lhe causam **2d10 perfurante**, sem teste adicional. A resposta não ativa outra espícula ou contra-ataque. Só uma armadura pode existir; substituí-la desfaz a anterior. Escudo não se soma a outro Coagulum e desaparece ao expirar. Não aumenta CA e não restaura Vida.
+**Fonte e Grau:** Subdobra de Sangue IV; armadura hemática. **Uso:** Principal, 14 Karma, si mesma ou um aliado voluntário tocado, por três rodadas. Consome uma dose de sangue exteriorizado. Placas de coágulo encaixam-se sobre roupas e pele, concedendo **24 de escudo**. A primeira vez em cada rodada que um agressor a até 3 m retira pontos desse escudo com um ataque corpo a corpo, espículas lhe causam **2d10 perfurante**, sem teste adicional. Esse gatilho é automático, não gasta a Reação do protegido e não atinge quem causou somente dano à distância ou contínuo. A resposta não ativa outra espícula ou contra-ataque, não recebe Elhaz e não produz Estigmas. Só uma armadura pode existir; substituí-la desfaz a anterior. Escudos temporários não se somam; mantenha apenas o maior saldo, com o prazo e o gatilho da fonte escolhida. Coagulum desaparece ao expirar, ao perder seus 24 pontos ou por dispensa como Livre no turno da rainha. Não aumenta CA e não restaura Vida.
 
 **Composição de Karma:** 6 Base IV + 2 duração + 3 Função secundária III + 3 resposta das espículas = 14 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### Assinatura · Imperium
 
-**Fonte e Grau:** Subdobra de Sangue V; território régio. **Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena, duração até o fim do terceiro turno seguinte de Nosferato. O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano.
+**Fonte e Grau:** Subdobra de Sangue V; território régio. **Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena; consome o único Ápice de Grau V da rainha. Duração até o fim do terceiro turno seguinte de Nosferato. O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano. Elhaz não aumenta a distância das estacas, da passagem ou do recolhimento.
 
 **As três estacas:** Cada uma tem CA 20, Vida 18 e ocupa um ponto fixo. Não age, não ataca e não impede passagem. Uma estaca destruída se desfaz, sem transferir dano à rainha. Se todas forem destruídas, Imperium termina. Nosferato precisa manter ao menos uma estaca a até 20 m; perder essa proximidade também encerra o território.
 

@@ -2,7 +2,7 @@ import { AeriaArchive } from "@/components/aeria-archive";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 export const metadata = {
-  title: "Aéria · Coroa dracônica e casas nobres",
+  title: "Aéria - Coroa dracônica e casas nobres",
   description: "Sael Aruven, Celestária, Miravéu e os nobres de Ferravento.",
 };
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
         <ArrowLeft />
         Voltar ao Bestiário
       </Link>
-      <p className="atlas-overline">KARMALIZAÇÃO · ARQUIVO DO MUNDO</p>
+      <p className="atlas-overline">KARMALIZAÇÃO - ARQUIVO DO MUNDO</p>
       <h1>O continente dos Céus Abertos.</h1>
       <AeriaArchive />
     </main>

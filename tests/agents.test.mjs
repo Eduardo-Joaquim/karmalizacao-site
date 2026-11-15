@@ -63,7 +63,7 @@ test('public discovery and complete book/bestiary work without identity',async()
  assert.equal(ghouls.courtProfiles[0].abilities.length,8);
  assert(ghouls.courtProfiles[0].abilities.find(a=>a.kind==='signature').fields.some(f=>f.html.includes('3d8')));
  const family=decode(await callTool('ler_bestiario',{regiao:'lunaviel'},request));
- assert.equal(family.title,'Casa Marquesal Lunaviel · Ignária');
+ assert.equal(family.title,'Casa Marquesal Lunaviel - Ignária');
  assert.equal(family.courtProfiles[0].sheetLabel,'Ficha de Combate');
  assert.equal(family.courtProfiles[0].life,168);
  assert.equal(family.courtProfiles[0].abilities.length,9);

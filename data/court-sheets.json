@@ -76,7 +76,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p><span data-divine-grant=\"tiamat\">Outorgada por Tiamat · Entidade\nPrimordial.</span><span data-world-blessing=\"outorga-15\"></span> O\nDragão Negro é uma carapaça viva, distribuída entre placas, garras e\nasas. Euphere molda essa presença com a massa disponível; Nadir reúne\nsua matéria, plasma e Karma em uma única assinatura.</p>"
+            "html": "<p><span data-divine-grant=\"tiamat\">Outorgada por Tiamat - Entidade\nPrimordial.</span><span data-world-blessing=\"outorga-15\"></span> O\nDragão Negro é uma carapaça viva, distribuída entre placas, garras e\nasas. Euphere molda essa presença com a massa disponível; Nadir reúne\nsua matéria, plasma e Karma em uma única assinatura.</p>"
           }
         ],
         "grade": "",
@@ -129,8 +129,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Grau III · Principal · 8 Karma · 15 m · 2 UM</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Grau III - Principal - 8 Karma - 15 m - 2 UM</p>"
           },
           {
             "label": "Efeito",
@@ -148,8 +148,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Grau III · Principal · 9 Karma · raio de 3 m · 3 UM</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Grau III - Principal - 9 Karma - raio de 3 m - 3 UM</p>"
           },
           {
             "label": "Efeito",
@@ -167,8 +167,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Grau III · Principal · 6 Karma · corpo a corpo · 3 UM</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Grau III - Principal - 6 Karma - corpo a corpo - 3 UM</p>"
           },
           {
             "label": "Efeito",
@@ -186,8 +186,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Grau III · Principal · 5 Karma · corpo a corpo</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Grau III - Principal - 5 Karma - corpo a corpo</p>"
           },
           {
             "label": "Efeito",
@@ -205,8 +205,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Grau III · Principal · 7 Karma · raio de 2 m centrado nela;\naproximação usa Movimento normal</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Grau III - Principal - 7 Karma - raio de 2 m centrado nela;\naproximação usa Movimento normal</p>"
           },
           {
             "label": "Efeito",
@@ -224,8 +224,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Grau IV · Principal · 11 Karma · 15 m</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Grau IV - Principal - 11 Karma - 15 m</p>"
           },
           {
             "label": "Efeito",
@@ -243,8 +243,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo · alcance",
-            "html": "<p>Assinatura · Grau IV · Principal · 15 Karma · centro a até 15 m, raio\nde 2 m · requer Armadura Viva · ocupa 2 UM</p>"
+            "label": "Ação - custo - alcance",
+            "html": "<p>Assinatura - Grau IV - Principal - 15 Karma - centro a até 15 m, raio\nde 2 m - requer Armadura Viva - ocupa 2 UM</p>"
           },
           {
             "label": "Efeito",
@@ -296,7 +296,7 @@
     ],
     "facts": [
       {
-        "label": "Raça · classe · posição",
+        "label": "Raça - classe - posição",
         "value": "Abissal · Especialista · chefe SS, Etapa VI"
       },
       {
@@ -371,8 +371,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau II · Principal · 5 Karma · 15 m</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau II - Principal - 5 Karma - 15 m</p>"
           },
           {
             "label": "Resolução",
@@ -390,8 +390,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau III · Principal · 8 Karma · 15 m</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau III - Principal - 8 Karma - 15 m</p>"
           },
           {
             "label": "Resolução",
@@ -409,8 +409,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · Principal · 10 Karma · uma vez por cena</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - Principal - 10 Karma - uma vez por cena</p>"
           },
           {
             "label": "Resolução",
@@ -428,8 +428,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · Principal · 15 Karma · uma vez por cena</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - Principal - 15 Karma - uma vez por cena</p>"
           },
           {
             "label": "Resolução",
@@ -447,8 +447,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau II · Livre antes de atirar · 8 Karma · uma vez por rodada</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau II - Livre antes de atirar - 8 Karma - uma vez por rodada</p>"
           },
           {
             "label": "Resolução",
@@ -466,8 +466,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau II · Livre após Pontaria · 7 Karma · uma vez por rodada</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau II - Livre após Pontaria - 7 Karma - uma vez por rodada</p>"
           },
           {
             "label": "Resolução",
@@ -485,8 +485,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau III · Movimento · 9 Karma · uma vez por cena</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau III - Movimento - 9 Karma - uma vez por cena</p>"
           },
           {
             "label": "Resolução",
@@ -504,8 +504,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · Principal · 17 Karma · uma vez por cena</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - Principal - 17 Karma - uma vez por cena</p>"
           },
           {
             "label": "Resolução",
@@ -533,7 +533,7 @@
     ],
     "facts": [
       {
-        "label": "Classe · Etapa",
+        "label": "Classe - Etapa",
         "value": "Ocultista · V · Ranger · V"
       },
       {
@@ -1112,7 +1112,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>45 · 25</p>"
           },
           {
@@ -1121,7 +1121,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>O Menino de Madeira · Grau IV.</p>"
+            "html": "<p>O Menino de Madeira - Grau IV.</p>"
           }
         ],
         "grade": "",
@@ -1132,7 +1132,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>17 · 19</p>"
           },
           {
@@ -1141,7 +1141,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>A Consciência · Grau II.</p>"
+            "html": "<p>A Consciência - Grau II.</p>"
           }
         ],
         "grade": "",
@@ -1152,7 +1152,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>29 · 21</p>"
           },
           {
@@ -1161,7 +1161,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>A Promessa · Grau III.</p>"
+            "html": "<p>A Promessa - Grau III.</p>"
           }
         ],
         "grade": "",
@@ -1172,7 +1172,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>24 · 19</p>"
           },
           {
@@ -1181,7 +1181,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>O Ladrão de Voz · Grau II.</p>"
+            "html": "<p>O Ladrão de Voz - Grau II.</p>"
           }
         ],
         "grade": "",
@@ -1192,7 +1192,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>24 · 19</p>"
           },
           {
@@ -1201,7 +1201,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>A Negociadora · Grau II.</p>"
+            "html": "<p>A Negociadora - Grau II.</p>"
           }
         ],
         "grade": "",
@@ -1212,7 +1212,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>56 · 23</p>"
           },
           {
@@ -1221,7 +1221,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>O Ventre do Mundo · Grau IV.</p>"
+            "html": "<p>O Ventre do Mundo - Grau IV.</p>"
           }
         ],
         "grade": "",
@@ -1232,7 +1232,7 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Vida · CA",
+            "label": "Vida - CA",
             "html": "<p>29 · 21</p>"
           },
           {
@@ -1241,7 +1241,7 @@
           },
           {
             "label": "Função",
-            "html": "<p>O Convite ao Abandono · Grau III.</p>"
+            "html": "<p>O Convite ao Abandono - Grau III.</p>"
           }
         ],
         "grade": "",
@@ -1286,7 +1286,7 @@
     ],
     "facts": [
       {
-        "label": "Classe · posição",
+        "label": "Classe - posição",
         "value": "Invocador · chefe S, Etapa V"
       }
     ]
@@ -1454,7 +1454,7 @@
     ],
     "facts": [
       {
-        "label": "Raça · classe · posição",
+        "label": "Raça - classe - posição",
         "value": "Vampiro · Ladrão com prática Elementalista · chefe S, Etapa V"
       },
       {
@@ -1533,8 +1533,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau III · Principal · 5 Karma · corpo a corpo</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau III - Principal - 5 Karma - corpo a corpo</p>"
           },
           {
             "label": "Efeito",
@@ -1552,8 +1552,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · Movimento · 10 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - Movimento - 10 Karma</p>"
           },
           {
             "label": "Efeito",
@@ -1571,8 +1571,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · Principal · 15 Karma · 15 m, raio de 3 m</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - Principal - 15 Karma - 15 m, raio de 3 m</p>"
           },
           {
             "label": "Efeito",
@@ -1590,8 +1590,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau III · Principal · 7 Karma · uma vez por fase</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau III - Principal - 7 Karma - uma vez por fase</p>"
           },
           {
             "label": "Efeito",
@@ -1609,8 +1609,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · Principal · 19 Karma · segunda fase · uma vez por cena</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - Principal - 19 Karma - segunda fase - uma vez por cena</p>"
           },
           {
             "label": "Efeito",
@@ -1628,8 +1628,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau I · Reação · 3 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau I - Reação - 3 Karma</p>"
           },
           {
             "label": "Efeito",
@@ -1647,8 +1647,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau I · Reação · 3 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau I - Reação - 3 Karma</p>"
           },
           {
             "label": "Efeito",
@@ -1688,7 +1688,7 @@
     ],
     "facts": [
       {
-        "label": "Posição · porte",
+        "label": "Posição - porte",
         "value": "Chefe S · Etapa V · 3 m"
       },
       {
@@ -1751,8 +1751,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau III · 5 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau III - 5 Karma</p>"
           },
           {
             "label": "Resolução",
@@ -1770,8 +1770,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau II · 8 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau II - 8 Karma</p>"
           },
           {
             "label": "Resolução",
@@ -1789,8 +1789,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · 13 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - 13 Karma</p>"
           },
           {
             "label": "Resolução",
@@ -1808,8 +1808,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · 13 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - 13 Karma</p>"
           },
           {
             "label": "Resolução",
@@ -1827,8 +1827,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau III · 7 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau III - 7 Karma</p>"
           },
           {
             "label": "Resolução",
@@ -1846,8 +1846,8 @@
         "kind": "ability",
         "fields": [
           {
-            "label": "Ação · custo",
-            "html": "<p>Grau IV · 15 Karma</p>"
+            "label": "Ação - custo",
+            "html": "<p>Grau IV - 15 Karma</p>"
           },
           {
             "label": "Resolução",
@@ -1887,7 +1887,7 @@
     ],
     "facts": [
       {
-        "label": "Classe · Etapa · ranque",
+        "label": "Classe - Etapa - ranque",
         "value": "Assassina · V · S"
       },
       {
@@ -2098,7 +2098,7 @@
     ],
     "facts": [
       {
-        "label": "Classe · posição",
+        "label": "Classe - posição",
         "value": "Samaritano · chefe S, Etapa V"
       },
       {
@@ -2214,7 +2214,7 @@
         "fields": [
           {
             "label": "",
-            "html": "<p><span data-divine-grant=\"tecela-exterior\">Outorgada pela Tecelã\nExterior · Entidade Exterior.</span><span\ndata-world-blessing=\"outorga-16\"></span> Bênção de uma entidade\nexterior, regida por Espírito + Manifestação de Bênção. Os fios costuram\ncarne e conduzem energia. Seus efeitos corruptos usam técnicas e custos\npróprios. A bênção não concede a autoridade da Santa legítima,\nressurreição automática ou controle permanente sobre quem foi\ncurado.</p>"
+            "html": "<p><span data-divine-grant=\"tecela-exterior\">Outorgada pela Tecelã\nExterior - Entidade Exterior.</span><span\ndata-world-blessing=\"outorga-16\"></span> Bênção de uma entidade\nexterior, regida por Espírito + Manifestação de Bênção. Os fios costuram\ncarne e conduzem energia. Seus efeitos corruptos usam técnicas e custos\npróprios. A bênção não concede a autoridade da Santa legítima,\nressurreição automática ou controle permanente sobre quem foi\ncurado.</p>"
           }
         ],
         "grade": "",
@@ -2322,7 +2322,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Bênção · Principal · 6 Karma · toque, até 2 m ·\ninstantânea</p>"
+            "html": "<p>Grau IV - Bênção - Principal - 6 Karma - toque, até 2 m - instantânea</p>"
           },
           {
             "label": "Resolução",
@@ -2345,7 +2345,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau II · Bênção · Principal · 5 Karma · um alvo a até 15 m</p>"
+            "html": "<p>Grau II - Bênção - Principal - 5 Karma - um alvo a até 15 m</p>"
           },
           {
             "label": "Resolução",
@@ -2368,7 +2368,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Corrupção · Principal · 11 Karma e 6 PC · um ser vivo a até\n15 m · Controle CD 16</p>"
+            "html": "<p>Grau IV - Corrupção - Principal - 11 Karma e 6 PC - um ser vivo a até\n15 m - Controle CD 16</p>"
           },
           {
             "label": "Resolução",
@@ -2391,7 +2391,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Corrupção · Reação · 13 Karma e 4 PC · uma criatura a até\n15 m · Controle CD 13 · duas rodadas</p>"
+            "html": "<p>Grau IV - Corrupção - Reação - 13 Karma e 4 PC - uma criatura a até\n15 m - Controle CD 13 - duas rodadas</p>"
           },
           {
             "label": "Resolução",
@@ -2414,7 +2414,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau III · Corrupção · Principal · 10 Karma e 4 PC · um alvo a até 20\nm · Controle CD 13</p>"
+            "html": "<p>Grau III - Corrupção - Principal - 10 Karma e 4 PC - um alvo a até 20\nm - Controle CD 13</p>"
           },
           {
             "label": "Resolução",
@@ -2437,7 +2437,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau III · Corrupção · Principal · 9 Karma e 3 PC · um alvo a até 20\nm · Controle CD 12</p>"
+            "html": "<p>Grau III - Corrupção - Principal - 9 Karma e 3 PC - um alvo a até 20\nm - Controle CD 12</p>"
           },
           {
             "label": "Resolução",
@@ -2460,7 +2460,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Divino · Principal · 11 Karma · alvo a até 30 m ou passagem\nde até 15 m</p>"
+            "html": "<p>Grau IV - Divino - Principal - 11 Karma - alvo a até 30 m ou passagem\nde até 15 m</p>"
           },
           {
             "label": "Resolução",
@@ -2483,7 +2483,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Divino · Principal · 15 Karma · linha de até 20 m por 3 m a\npartir da Falsa Santa</p>"
+            "html": "<p>Grau IV - Divino - Principal - 15 Karma - linha de até 20 m por 3 m a\npartir da Falsa Santa</p>"
           },
           {
             "label": "Resolução",
@@ -2506,7 +2506,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau III · Divino · Principal · 11 Karma · um alvo a até 30 m</p>"
+            "html": "<p>Grau III - Divino - Principal - 11 Karma - um alvo a até 30 m</p>"
           },
           {
             "label": "Resolução",
@@ -2529,7 +2529,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Divino · Principal · 17 Karma · raio de 5 m, centro a até\n20 m</p>"
+            "html": "<p>Grau IV - Divino - Principal - 17 Karma - raio de 5 m, centro a até\n20 m</p>"
           },
           {
             "label": "Resolução",
@@ -2552,7 +2552,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Grau IV · Divino · Principal · 17 Karma · até três criaturas\nvoluntárias a até 20 m · uma vez por cena</p>"
+            "html": "<p>Grau IV - Divino - Principal - 17 Karma - até três criaturas\nvoluntárias a até 20 m - uma vez por cena</p>"
           },
           {
             "label": "Resolução",
@@ -2575,7 +2575,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Assinatura corrupta · Grau V · Principal · 21 Karma e 8 PC · um ser\nvivo a até 10 m · Controle CD 19 · ápice da cena</p>"
+            "html": "<p>Assinatura corrupta - Grau V - Principal - 21 Karma e 8 PC - um ser\nvivo a até 10 m - Controle CD 19 - ápice da cena</p>"
           },
           {
             "label": "Resolução",
@@ -2598,7 +2598,7 @@
         "fields": [
           {
             "label": "Uso",
-            "html": "<p>Assinatura divina · Grau V · Principal · 23 Karma · centro visível a\naté 30 m · raio de 10 m · ápice da cena</p>"
+            "html": "<p>Assinatura divina - Grau V - Principal - 23 Karma - centro visível a\naté 30 m - raio de 10 m - ápice da cena</p>"
           },
           {
             "label": "Resolução",
@@ -2628,7 +2628,7 @@
         "cost": ""
       },
       {
-        "title": "I · Soberba",
+        "title": "I - Soberba",
         "kind": "ability",
         "fields": [
           {
@@ -2644,7 +2644,7 @@
         "cost": ""
       },
       {
-        "title": "II · Avareza",
+        "title": "II - Avareza",
         "kind": "ability",
         "fields": [
           {
@@ -2660,7 +2660,7 @@
         "cost": ""
       },
       {
-        "title": "III · Luxúria",
+        "title": "III - Luxúria",
         "kind": "ability",
         "fields": [
           {
@@ -2676,7 +2676,7 @@
         "cost": ""
       },
       {
-        "title": "IV · Inveja",
+        "title": "IV - Inveja",
         "kind": "ability",
         "fields": [
           {
@@ -2692,7 +2692,7 @@
         "cost": ""
       },
       {
-        "title": "V · Gula",
+        "title": "V - Gula",
         "kind": "ability",
         "fields": [
           {
@@ -2708,7 +2708,7 @@
         "cost": ""
       },
       {
-        "title": "VI · Ira",
+        "title": "VI - Ira",
         "kind": "ability",
         "fields": [
           {
@@ -2724,7 +2724,7 @@
         "cost": ""
       },
       {
-        "title": "VII · Preguiça",
+        "title": "VII - Preguiça",
         "kind": "ability",
         "fields": [
           {
@@ -2742,7 +2742,7 @@
     ],
     "facts": [
       {
-        "label": "Raça · classe · posição",
+        "label": "Raça - classe - posição",
         "value": "Raça desconhecida; aparência humana · Suporte, Curandeiro · Etapa Kármica · ranque Kármico · senhora da Corte"
       },
       {

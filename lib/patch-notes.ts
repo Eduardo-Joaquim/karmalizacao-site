@@ -9,6 +9,20 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
+    id: "patch-2-0-8-2026-11-15-coroas-e-continentes",
+    version: "2.0.8",
+    label: "Patch 2.0.8 - 15/11/2026",
+    title: "Arsenais das rainhas e entradas dos continentes",
+    highlights: [
+      "Padronizada a separação entre nomes e descrições com hífen no livro, nos capítulos 1 a 20, e nas fichas do Bestiário.",
+      "Adicionado o card de Thalassia ao acesso dos continentes no códice.",
+      "As entradas de Thalassia e Aéria seguem a mesma organização visual de Gaéria e Ignária, preservando suas cortes, cores e símbolos.",
+      "As oito rainhas recebem armamento principal declarado e inscrições rúnicas de acordo com seus estilos de combate.",
+      "Aveline ganha sua sétima técnica comum. Todas as rainhas possuem pelo menos sete técnicas comuns, além das assinaturas.",
+      "Aprimoradas as técnicas das rainhas, com efeitos, combinações e limites mais claros para o uso em mesa.",
+    ],
+  },
+  {
     id: "patch-2-0-7-2026-11-15-revisao-geral",
     version: "2.0.7",
     label: "Patch 2.0.7 · 15/11/2026",

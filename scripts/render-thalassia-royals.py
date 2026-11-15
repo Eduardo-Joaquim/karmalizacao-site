@@ -8,6 +8,14 @@ for p in data['people']:
  attrs=' · '.join(f'{k} {v}' for k,v in zip(['Força','Agilidade','Constituição','Intelecto','Presença','Espírito'],p['attrs']))
  text+=f"**Identidade:** {'Tritã' if p['zone'] in ['halikarnos','apsu'] else 'Abissal'} · {p['cls']} · Etapa {p['stage']} · {p['role']}. **Vida:** {p['life']}. **Karma:** {p['karma']}. **CA:** {p['ca']}. **Deslocamento:** {'9 m; natação 9 m' if p['zone'] in ['halikarnos','apsu'] else '9 m'}. **Atributos:** {attrs}.\n\n**Perícias:** {p['skills']}\n\n**Reações:** {p['reactions']} Reações por rodada, recuperadas no início do próprio turno. Uma defesa por ocorrência; retaliação é ataque, não outra defesa gratuita.\n\n**Domínios:** {p['domains']}\n\n"
  text+='**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.\n\n'
+ weapon=p.get('weapon')
+ if weapon:
+  text+=f"**Arma principal - {weapon['name']}:** {weapon['description']} {weapon['attack']}\n\n"
+  text+=f"**Arsenal rúnico - {weapon['rune']['name']}:** {weapon['rune']['mechanics']}\n\n"
+ if p.get('caRegent'):
+  regent=p['caRegent'];assert regent in ['Agilidade','Constituição']
+  value=p['attrs'][1 if regent=='Agilidade' else 2]
+  text+=f'**Regente da CA:** {regent} {value}. Na igualdade exata com a CA {p["ca"]}, somente um Atributo de ataque maior que {value} produz Acerto Total; menor ou igual produz Parcial.\n\n'
  for i,t in enumerate(p['traits']):
   label=f'Traço {i+1}'
   if p['id']=='atargatis-kalypso' and i==1:label='Bênção Divina — Ius Procellae';t='<span data-divine-grant="susanoo">Outorgada por Susanoo.</span><span data-world-blessing="outorga-17"></span> '+t

@@ -13,11 +13,11 @@ export default function Page() {
         title={data.title}
         region="aeria"
         home="/mundo/aeria"
-        homeLabel="Aéria · Corte e casas nobres"
+        homeLabel="Aéria - Corte e casas nobres"
       />
       <main className="site-shell realm-shell">
         <header className="realm-hero">
-          <p className="atlas-overline">AÉRIA · O TRONO DRACÔNICO</p>
+          <p className="atlas-overline">AÉRIA - O TRONO DRACÔNICO</p>
           <h1>
             Celestária<span>A Corte dos Céus Abertos</span>
           </h1>

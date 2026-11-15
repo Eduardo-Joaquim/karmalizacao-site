@@ -13,7 +13,7 @@ export function AeriaContinentCard() {
       <div>
         <span>CONTINENTE DO AR</span>
         <strong>Aéria</strong>
-        <p>Coroa dracônica · Rotas · Casas nobres</p>
+        <p>Coroa dracônica - Rotas - Casas nobres</p>
       </div>
       <ArrowUpRight aria-hidden="true" />
     </Link>
@@ -22,25 +22,37 @@ export function AeriaContinentCard() {
 export function AeriaArchive() {
   return (
     <section
-      className="aeria-archive aeria-archive"
+      className="gaeria-archive aeria-archive"
       aria-label="Arquivo de Aéria"
     >
-      <header className="aeria-archive-heading">
-        <Wind />
+      <header className="gaeria-archive-heading">
+        <Wind aria-hidden="true" />
         <div>
           <p>CONTINENTE DO AR</p>
           <h2>Aéria</h2>
-          <span>Celestária · Miravéu · Ferravento</span>
+          <span>Celestária - Miravéu - Ferravento</span>
         </div>
       </header>
-      <div className="aeria-category-grid">
-        <section className="aeria-category">
+      <details className="imperial-entry">
+        <summary>
+          <Crown aria-hidden="true" />
+          Corte dos Céus Abertos - Aéria
+        </summary>
+        <p>
+          Sael Aruven governa a coroa dracônica; Maelis permanece sua herdeira.
+          As casas de Celestária, Miravéu e Ferravento respondem por suas terras
+          e rotas. A República de Nidavellir conserva seu governo próprio, com o
+          Prefeito-Geral e os quatro reis municipais.
+        </p>
+      </details>
+      <div className="gaeria-category-grid">
+        <section className="gaeria-category">
           <header>
-            <Crown />
-            <h3>Corte Imperial</h3>
+            <Crown aria-hidden="true" />
+            <h3>Corte e coroa</h3>
             <span>01</span>
           </header>
-          <a className="aeria-entry aeria-entry-royal" href={court}>
+          <a className="gaeria-entry gaeria-entry-royal" href={court}>
             <small>PACTO DOS CÉUS ABERTOS</small>
             <h4>Tiamat Regens</h4>
             <p>
@@ -48,70 +60,70 @@ export function AeriaArchive() {
               linhagem, expressões distintas da mesma bênção.
             </p>
             <span>
-              Conhecer a corte <ArrowUpRight />
+              Conhecer a corte <ArrowUpRight aria-hidden="true" />
             </span>
           </a>
         </section>
-        <section className="aeria-category">
+        <section className="gaeria-category">
           <header>
-            <Landmark />
+            <Landmark aria-hidden="true" />
             <h3>Casas nobres</h3>
             <span>02</span>
           </header>
           {[
             [
               "Grão-Ducado Corvel",
-              "Darian Corvel · Miravéu, esquadrões de resgate e observatórios.",
+              "Darian Corvel - Miravéu, esquadrões de resgate e observatórios.",
               "duque-darian",
             ],
             [
               "Marquesado Talassar",
-              "Iren Talassar · Faróis, registros e passagens do norte.",
+              "Iren Talassar - Faróis, registros e passagens do norte.",
               "marquesa-iren",
             ],
             [
               "Marquesado Aster",
-              "Torren Aster · Túneis ferroviários, pontes e abastecimento industrial.",
+              "Torren Aster - Túneis ferroviários, pontes e abastecimento industrial.",
               "marques-torren",
             ],
             [
               "Condado Valeri",
-              "Octavia Valeri · Bancos, clínicas e o Edifício Meridiano em Ferravento.",
+              "Octavia Valeri - Bancos, clínicas e o Edifício Meridiano em Ferravento.",
               "condessa-octavia",
             ],
             [
               "Baronato Nacar",
-              "Otília Nacar · Cabos de emergência e a passagem para o Cais Fundo.",
+              "Otília Nacar - Cabos de emergência e a passagem para o Cais Fundo.",
               "baronesa-otilia",
             ],
           ].map(([name, text, id]) => (
-            <a className="aeria-entry" href={`${court}#${id}`} key={id}>
+            <a className="gaeria-entry" href={`${court}#${id}`} key={id}>
               <h4>{name}</h4>
               <p>{text}</p>
               <span>
-                Consultar <ArrowUpRight />
+                Consultar <ArrowUpRight aria-hidden="true" />
               </span>
             </a>
           ))}
         </section>
-        <section className="aeria-category">
+        <section className="gaeria-category">
           <header>
-            <Shield />
+            <Shield aria-hidden="true" />
             <h3>As cidades e as rotas</h3>
             <span>03</span>
           </header>
           <ThreatLink region="aeria" />
-          <Link className="aeria-entry" href="/mundo/aeria/nidavellir">
+          <Link className="gaeria-entry" href="/mundo/aeria/nidavellir">
             <h4>República de Nidavellir</h4>
             <p>
               O Prefeito-Geral Eirik Malm e os quatro reis municipais de Dorsal,
               Keldra, Míria e Orma.
             </p>
             <span>
-              Conhecer os governantes <ArrowUpRight />
+              Conhecer os governantes <ArrowUpRight aria-hidden="true" />
             </span>
           </Link>
-          <div className="aeria-entry">
+          <div className="gaeria-entry">
             <h4>Uma passagem mantida por muitos</h4>
             <p>
               Celestária guarda a legitimidade; Miravéu, os resgates;

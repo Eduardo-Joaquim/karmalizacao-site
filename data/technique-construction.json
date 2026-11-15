@@ -3053,7 +3053,7 @@
     ],
     "cost": 11,
     "matrix": "Kármico",
-    "damageType": "Suporte",
+    "damageType": "Defesa",
     "baseDamage": ""
   },
   {
@@ -3078,7 +3078,7 @@
       }
     ],
     "matrix": "Kármico",
-    "damageType": "Suporte",
+    "damageType": "Defesa",
     "baseDamage": ""
   },
   {
@@ -4504,8 +4504,8 @@
     ],
     "cost": 7,
     "matrix": "Elemental",
-    "damageType": "Mobilidade",
-    "baseDamage": ""
+    "damageType": "Elemental / Combustão",
+    "baseDamage": "2d10"
   },
   {
     "owner": "rainha-sael",
@@ -7483,6 +7483,31 @@
     ],
     "cost": 8,
     "matrix": "Divino",
+    "damageType": "Defesa",
+    "baseDamage": ""
+  },
+  {
+    "owner": "rainha-aveline",
+    "name": "Passarela dos Sete Ângulos",
+    "grade": "III",
+    "type": "técnica",
+    "action": "Principal",
+    "components": [
+      {
+        "label": "Base III",
+        "value": 4
+      },
+      {
+        "label": "Área / destinatários",
+        "value": 2
+      },
+      {
+        "label": "Duração",
+        "value": 1
+      }
+    ],
+    "cost": 7,
+    "matrix": "Kármico",
     "damageType": "Defesa",
     "baseDamage": ""
   }

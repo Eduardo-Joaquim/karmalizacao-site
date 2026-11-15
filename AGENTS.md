@@ -188,3 +188,12 @@ O pedido de 15/11/2026 reúne a revisão editorial ainda em preparação e as Ru
 O Escriba passa a +2 Intelecto inicial, preservando seu +1 Espírito. Atributos finais consolidam base, raça, classe, etapas e ajustes expressos; pontos de etapas distintas podem se repetir. A reserva inicial de oito pontos de Perícia Comum permanece separada das concessões extras e de seus redirecionamentos. Não publique o prompt do autor ou instruções de implementação nas notas públicas.
 
 A escolha racial inicial e a escolha do marco VI são independentes e podem aumentar o mesmo atributo; não restaure a exclusão de ambas por duplicidade. Ladrão, Assassino, Inventor e Invocador não recebem uma perícia flexível extra incondicional: redirecionamentos surgem somente de uma sobreposição real do treinamento publicado. Criação 2 do Inventor permanece. `tests/accounting-all-207.test.mjs` confronta as 18 classes, nove raças e progressões com expectativas independentes do cálculo. Nas notas públicas, descreva o bug de contabilização de forma geral, liste os capítulos alterados e não mencione o exemplo Deus Selvagem.
+
+
+## Patch 2.0.8 — separadores e arsenais das rainhas
+
+A apresentação usa ` - ` entre nomes/títulos e descrições. `scripts/editorial_separators.py` aplica a padronização no HTML gerado e nos índices; `content:build` executa essa passagem após os compiladores. Preserve a pontuação estrutural dos manuscritos, os nomes canônicos, IDs, URLs, versões e números. Não substituir pontos de frases por hífens.
+
+As oito rainhas têm pelo menos sete técnicas comuns, além das assinaturas. Aveline possui a Passarela dos Sete Ângulos; Três Rodadas sem Ferida é assinatura com a âncora antiga preservada. O leitor humano usa os tipos do compilador, sem deduzir assinatura pela posição na lista. Armas e runas estão nos manuscritos regionais; as três soberanas de Thalassia usam `data/thalassia-source.json.weapon`. Preserve as reservas máximas, CA, atributos e Reações auditados. Dendron, arco de Naerith, não recebe inscrição convencional: Laguz fica na guarda da armadura. Não somar novamente os dados da arma às técnicas/assinaturas nem transferir uma maldição de contato para áreas ou projéteis.
+
+Aéria e Thalassia seguem a estrutura comum dos arquivos continentais de Gaéria/Ignária, com paletas próprias. Thalassia preserva três soberanias e quinze fichas; não inventar uma imperatriz continental única.

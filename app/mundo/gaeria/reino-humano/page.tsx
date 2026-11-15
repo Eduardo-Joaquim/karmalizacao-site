@@ -4,7 +4,7 @@ import gaeria from "@/data/gaeria.json";
 import { SITE_ORIGIN } from "@/lib/public-navigation";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Valdária · Reino Humano de Gaéria",
+  title: "Valdária - Reino Humano de Gaéria",
   description:
     "A rainha Aveline, suas herdeiras, a Heptarchia de Aurival e os nobres do Reino Humano de Gaéria.",
   alternates: { canonical: `${SITE_ORIGIN}/mundo/gaeria/reino-humano` },
@@ -14,11 +14,11 @@ export default function HumanKingdomPage() {
     <div className="site-page realm-page realm-with-index">
       <CrownNavigation
         entries={gaeria.navigation}
-        title="Valdária · Corte e nobreza"
+        title="Valdária - Corte e nobreza"
       />
       <main className="site-shell realm-shell">
         <header className="realm-hero">
-          <p className="atlas-overline">GAÉRIA · REINOS E COROAS</p>
+          <p className="atlas-overline">GAÉRIA - REINOS E COROAS</p>
           <h1>
             Valdária<span>O Reino Humano</span>
           </h1>

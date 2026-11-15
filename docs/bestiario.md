@@ -110,7 +110,11 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 **Perícias:** Luta 3, Reflexos 3, Atletismo 3, Controle de Água 3 e Canalização de Karma 3: maior de 4d20 +10. Tática 3 e Percepção 3: maior de 4d20 +14 com Analítico e a Essência de Técnica. História 2 e Investigação 2: maior de 4d20 +9 com Analítico e a Essência de Técnica. Liderança 3 e Intimidação 3: maior de 4d20 +10. Perícias não indicadas são 0.
 
-**Lança — Asta:** Principal, alcance 3 m, Luta contra CA, 2d10 perfurante no total; parcial metade, falha nenhum dano. A arma permite aparar, mas não concede ataques adicionais. Uma vez por rodada, o primeiro total regido por Força ignora 1 de Resistência física pela Essência de Força.
+**Arma principal:** Asta - lança de haste negra e ponta estriada, empunhada com duas mãos. Ataque básico: Principal, alcance 3 m, Força + Luta contra CA, 2d10 perfurante no Total; Parcial causa metade e Falha não causa dano. A arma permite aparar, mas não concede ataques adicionais. Uma vez por rodada, o primeiro Total regido por Força ignora 1 de Resistência física pela Essência de Força. Hasta e Retorsio usam seus próprios dados em lugar dos 2d10 do ataque básico; Imperium conserva sua base única de 2d10 +1d12.
+
+**Runa da arma:** Elhaz - Runa do Alcance Estendido, Grau I, uma inscrição convencional na lança; ocupa uma das quatro vagas pessoais e retém 2 Karma. Com a reserva cheia, Nosferato tem 124 Karma livres e 2 retidos, sem alterar seu máximo 126. Enquanto armada, aumenta o alcance dos ataques da lança em 1,5 m: o ataque básico, Hasta e a resposta de Retorsio alcançam 4,5 m. Declare o Estouro antes da rolagem de um desses ataques: aquele ataque ignora cobertura parcial e recebe +2 no acerto, sem uma segunda ação ou um segundo golpe. O Estouro encerra a passiva e libera a vaga; os 2 Karma ficam indisponíveis até o fim da cena. Asta não possui maldição nem outra runa simultânea. Cruor, Rubedo, Coagulum e Recolher o sangue não são ataques da lança e não recebem Elhaz.
+
+**Regente da CA:** Constituição 7. Na igualdade exata com CA 29, somente um Atributo de ataque maior que 7 produz Acerto Total; menor ou igual produz Parcial.
 
 **Subdobra de Sangue:** Nosferato domina Sangue como subdobra do elemento Água. Cruor, Rubedo e Coagulum pertencem a essa subdobra e usam Controle de Água, maior de 4d20 +10. Imperium é sua manifestação suprema. A rainha conduz sangue exteriorizado, altera sua densidade e o transforma em armas, armaduras e vínculos no campo de batalha. Não retira sangue de corpos intactos nem controla a vontade de suas vítimas. As doses que carrega servem de matéria para as técnicas; não restauram Vida por si mesmas.
 
@@ -132,56 +136,56 @@ Os dragões que matou lhe renderam temor; o deus exterior, uma reputação que a
 
 ###### 1 · Hasta
 
-**Fonte e Grau:** Marcial IV; estocada de ruptura. **Uso:** Principal, 7 Karma, um alvo a até 3 m, lança empunhada com as duas mãos. Nosferato prende a haste sob o braço e concentra o peso numa única abertura; Luta contra CA. **Total:** 2d8 perfurante, ignorando até 2 de Resistência física. **Parcial:** Metade do dano, sem ignorar Resistência. **Falha:** nenhum efeito. A técnica depende da lança e do apoio físico da rainha; não produz água ou projéteis.
+**Fonte e Grau:** Marcial IV; estocada de ruptura. **Uso:** Principal, 7 Karma, um alvo a até 3 m, lança empunhada com as duas mãos; Elhaz armada permite 4,5 m. Nosferato prende a haste sob o braço e concentra o peso numa única abertura; Força + Luta contra CA. **Total:** 2d8 perfurante, ignorando até 2 de Resistência física. **Parcial:** Metade do dano, sem ignorar Resistência. **Falha:** nenhum efeito. A técnica depende da lança e do apoio físico da rainha; não produz água ou projéteis. Um alvo contido por Rubedo continua defendendo-se normalmente; a contenção permite manter a distância da haste, sem transformar o ataque em Total automático. O dado do ataque básico não se soma a esta estocada.
 
 **Composição de Karma:** 6 Base IV + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 2 · Cruor
 
-**Fonte e Grau:** Subdobra de Sangue IV; ataque e absorção. **Uso:** Principal, 13 Karma, um alvo vivo a até 20 m. Exige sangue já exteriorizado a até 3 m da vítima. Controle de Água contra CA. **Total:** 2d10 de Sangue e Nosferato recupera metade do dano que efetivamente retirou da Vida, máximo 15. **Parcial:** Metade do dano e nenhuma cura. **Falha:** nada. A cura ocorre uma vez por rodada; sangue armazenado serve de foco, não de alimento inesgotável.
+**Fonte e Grau:** Subdobra de Sangue IV; ataque e absorção. **Uso:** Principal, 13 Karma, um alvo vivo percebido a até 20 m. Exige sangue já exteriorizado a até 3 m da vítima, com trajetória desobstruída entre a matéria e o alvo. Pode usar o sangue de uma estaca de Imperium nessa distância sem mover nem danificar a estaca; sua destruição ou afastamento retira esse ponto de origem. Espírito + Controle de Água contra CA. **Total:** 2d10 de Sangue e Nosferato recupera metade do dano que efetivamente retirou da Vida, arredondada para baixo, máximo 15. **Parcial:** Metade do dano e nenhuma cura. **Falha:** nada. A cura ocorre uma vez por rodada; sangue armazenado serve de foco, não de alimento inesgotável. Dano absorvido por escudo ou Resistência não alimenta a cura, e acertar um corpo já sem Vida não a concede.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 3 Função secundária III = 13 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 3 · Aegis
 
-**Fonte e Grau:** Elemental de Água IV; defesa. **Uso:** Reação, 9 Karma, quando um ataque percebido alcança Nosferato ou um aliado a até 10 m. Um escudo de água densa reduz em **2d10** O dano daquela resolução, após as reduções permanentes e antes de retirar Vida. O excedente da barreira se perde. Não devolve dano, não cancela condições que independam do dano e não protege de um segundo ataque.
+**Fonte e Grau:** Elemental de Água IV; defesa. **Uso:** Reação, 9 Karma, quando um ataque percebido alcança Nosferato ou um aliado percebido a até 10 m; declare depois do acerto e antes de retirar Vida. Um escudo de água densa reduz em **2d10** o dano daquela resolução, após as reduções permanentes e antes de retirar Vida. Escolha um único beneficiário, mesmo que uma área alcance vários aliados. O excedente da barreira se perde. Não devolve dano, não cancela condições que independam do dano e não protege de um segundo ataque. A mesma ocorrência não permite somar Aegis a Evasão, Bloqueio ou Retorsio da rainha.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 4 · Retorsio
 
-**Fonte e Grau:** Karma IV; contraestocada. **Uso:** Reação, 8 Karma, depois de um ataque corpo a corpo percebido contra a rainha ser resolvido, com o agressor a até 3 m. Karma percorre a haste e prolonga o impulso do giro; Luta contra CA. **Total:** 2d10 kármico e o agressor perde 2 m de Deslocamento até o fim do próximo turno dele. **Parcial:** Metade do dano, sem redução de Deslocamento. **Falha:** nenhum efeito. Não impede o ataque que a desencadeou e não responde a outro contra-ataque.
+**Fonte e Grau:** Karma IV; contraestocada. **Uso:** Reação, 8 Karma, depois de um ataque corpo a corpo percebido contra a rainha ser resolvido, com o agressor a até 3 m; Elhaz armada permite a resposta a até 4,5 m. Asta precisa estar empunhada, e Nosferato precisa continuar capaz de agir após o golpe. Karma percorre a haste e prolonga o impulso do giro; Força + Luta contra CA. **Total:** 2d10 kármico e o agressor perde 2 m de Deslocamento até o fim do próximo turno dele. **Parcial:** Metade do dano, sem redução de Deslocamento. **Falha:** nenhum efeito. A redução não acumula consigo; renovar conserva apenas a aplicação mais recente. Não impede o ataque que a desencadeou, não responde a outro contra-ataque e não pode acompanhar outra Reação da rainha à mesma ocorrência.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 1 efeito menor = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 5 · Rubedo
 
-**Fonte e Grau:** Subdobra de Sangue IV; controle de campo. **Uso:** Principal, 23 Karma, centro a até 20 m, raio de 5 m, três rodadas; manutenção de 3 Karma no início dos turnos seguintes. Exige sangue exteriorizado na área ou uma dose carregada, consumida na ativação. O sangue se espalha em lâminas rasas e solidifica ao redor dos tornozelos. Entrar na área pela primeira vez na rodada ou começar o turno nela exige Agilidade + Reflexos contra Controle de Água da rainha. Quem perder sofre **2d10 de Sangue** E fica Imobilizado até usar Movimento para vencer Força + Atletismo contra a mesma rolagem. Máximo uma aplicação de dano por alvo por rodada. A área afeta aliados; encerrar a técnica desfaz todas as prisões.
+**Fonte e Grau:** Subdobra de Sangue IV; controle de campo. **Uso:** Principal, 23 Karma, centro percebido a até 20 m, raio de 5 m, três rodadas; manutenção de 3 Karma no início dos turnos seguintes. Exige sangue exteriorizado na área ou uma dose carregada, consumida na ativação. O sangue se espalha em lâminas rasas e solidifica ao redor dos tornozelos. Registre Espírito + Controle de Água na ativação. Entrar na área pela primeira vez na rodada ou começar o turno nela exige Agilidade + Reflexos contra esse resultado, uma vez por alvo por rodada, sem pulso imediato por estar na área quando ela surge. Quem perder sofre **2d10 de Sangue** e fica Imobilizado até usar Movimento para vencer Força + Atletismo contra a mesma rolagem; empate favorece quem resiste. Sucesso evita dano e prisão. As estacas e a passagem de Imperium continuam funcionando dentro do campo, mas a passagem não desfaz uma contenção sofrida pela própria rainha. A área afeta aliados; sair dela após libertar-se, encerrar a técnica ou deixar de pagar a manutenção desfaz a prisão correspondente. Pode ser encerrada por Nosferato como Livre no próprio turno, sem recuperar o Karma gasto.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 3 Função secundária III + 6 pulsos posteriores = 23 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 6 · Sutura
 
-**Fonte e Grau:** Karma IV; sustentação. **Uso:** Principal, 7 Karma, toque em si ou em um vivo, duas ativações por cena. Fecha lacerações e restaura **2d10 Vida**. Também encerra um Sangramento em curso. Não regenera membros, não remove veneno ou Corrupção e não ressuscita. A reserva máxima de Vida nunca é ultrapassada.
+**Fonte e Grau:** Karma IV; sustentação. **Uso:** Principal, 7 Karma, toque em si ou em um vivo voluntário ou incapaz de se opor, duas ativações por cena. Fecha lacerações e restaura **2d10 Vida**. Também encerra um Sangramento em curso, escolhido na ativação, mesmo que o alvo já esteja com Vida cheia. A resolução é automática e não produz crítico. Não regenera membros, não remove veneno ou Corrupção e não ressuscita. A reserva máxima de Vida nunca é ultrapassada; uma penalidade de cura em vigor afeta a Vida restaurada, sem impedir por si só o encerramento do Sangramento.
 
 **Composição de Karma:** 6 Base IV + 1 encerrar sangramento = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 7 · Coagulum
 
-**Fonte e Grau:** Subdobra de Sangue IV; armadura hemática. **Uso:** Principal, 14 Karma, si mesma ou um aliado tocado, por três rodadas. Consome uma dose de sangue exteriorizado. Placas de coágulo encaixam-se sobre roupas e pele, concedendo **24 de escudo**. A primeira vez em cada rodada que um agressor a até 3 m retira pontos desse escudo com um ataque corpo a corpo, espículas lhe causam **2d10 perfurante**, sem teste adicional. A resposta não ativa outra espícula ou contra-ataque. Só uma armadura pode existir; substituí-la desfaz a anterior. Escudo não se soma a outro Coagulum e desaparece ao expirar. Não aumenta CA e não restaura Vida.
+**Fonte e Grau:** Subdobra de Sangue IV; armadura hemática. **Uso:** Principal, 14 Karma, si mesma ou um aliado voluntário tocado, por três rodadas. Consome uma dose de sangue exteriorizado. Placas de coágulo encaixam-se sobre roupas e pele, concedendo **24 de escudo**. A primeira vez em cada rodada que um agressor a até 3 m retira pontos desse escudo com um ataque corpo a corpo, espículas lhe causam **2d10 perfurante**, sem teste adicional. Esse gatilho é automático, não gasta a Reação do protegido e não atinge quem causou somente dano à distância ou contínuo. A resposta não ativa outra espícula ou contra-ataque, não recebe Elhaz e não produz Estigmas. Só uma armadura pode existir; substituí-la desfaz a anterior. Escudos temporários não se somam; mantenha apenas o maior saldo, com o prazo e o gatilho da fonte escolhida. Coagulum desaparece ao expirar, ao perder seus 24 pontos ou por dispensa como Livre no turno da rainha. Não aumenta CA e não restaura Vida.
 
 **Composição de Karma:** 6 Base IV + 2 duração + 3 Função secundária III + 3 resposta das espículas = 14 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### Assinatura · Imperium
 
-**Fonte e Grau:** Subdobra de Sangue V; território régio. **Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena, duração até o fim do terceiro turno seguinte de Nosferato. O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano.
+**Fonte e Grau:** Subdobra de Sangue V; território régio. **Uso:** Principal, 26 Karma e 12 Vida, uma vez por cena; consome o único Ápice de Grau V da rainha. Duração até o fim do terceiro turno seguinte de Nosferato. O preço em Vida é pago diretamente e não pode ser reduzido por escudos ou Resistência; ela precisa permanecer com pelo menos 1 Vida. A rainha deixa seu sangue escorrer pela lança e ergue **três estacas hemáticas**, em pontos de chão percebidos a até 15 m. A ativação não causa dano. Elhaz não aumenta a distância das estacas, da passagem ou do recolhimento.
 
 **As três estacas:** Cada uma tem CA 20, Vida 18 e ocupa um ponto fixo. Não age, não ataca e não impede passagem. Uma estaca destruída se desfaz, sem transferir dano à rainha. Se todas forem destruídas, Imperium termina. Nosferato precisa manter ao menos uma estaca a até 20 m; perder essa proximidade também encerra o território.
 
@@ -554,76 +558,80 @@ O deus que lhe concedeu Desespero não recebeu um templo no palácio. Recebeu um
 
 **Domínio — Superação 2 manifestada:** **Ativação:** Livre, 2 Karma, quatro rodadas, uma vez por cena. **Manifestação:** +1d20 em testes sobrenaturais regidos por Presença ou Espírito. Com Vida até 75%, 50% ou 25%, recebe respectivamente +1, +2 ou +3 de dano e Resistência; use apenas a maior faixa. **Essência:** +2d20 contra medo, coerção ou controle que ameacem diretamente sua identidade de soberana.
 
-**Corrupção e Voz:** Carga inicial 0; máximo 10. Cada uso corrupto paga a Carga indicada e faz Controle CD 14 + Carga efetiva atual. Familiaridade com a Voz concede Vantagem e +2 apenas nesse Controle, não ao ataque. Falhar abre Intrusão; chegar a 10 aciona Ruptura, com Controle CD 24. A Carga não é restituída por errar. As técnicas abaixo não concedem imunidade à Voz.
+**Corrupção e Voz:** Carga inicial 0; máximo 10. Cada técnica da Matriz Corrupta paga a Carga indicada e faz Controle CD 16 + Carga efetiva atual; os demais gatilhos da Marca usam CD 14 + Carga. Se o mesmo uso acionar ambos, faça um único Controle contra a maior CD aplicável. Familiaridade com a Voz concede Vantagem e +2 apenas nesse Controle, não ao ataque nem à Fome da arma. Falhar abre Intrusão; chegar a 10 aciona Ruptura, com Controle CD 24. A Carga não é restituída por errar. As técnicas abaixo não concedem imunidade à Voz.
 
-**Foco e arma:** Cetro de obsidiana, Principal, 2 m, Luta contra CA, 1d8 físico; parcial metade. O foco de Oblatio fica exposto quando usado. Oposição empata em favor do defensor; dano parcial é dividido antes de Resistência e escudos. Dados de Exaltação são adicionais e nunca dobram pelo crítico.
+**Arma principal:** Sceptrum - cetro de obsidiana com empunhadura de ferro, usado como arma de contato e foco exposto dos ritos. Ataque básico: Principal, 2 m, Força + Luta contra CA, 1d8 físico no Total, metade no Parcial e nenhum dano na Falha. O cetro não concede os benefícios de um Cetro de Comando nem aumenta Presença, Espírito, CA ou Karma. O foco de Oblatio e o trono de Miserere mantêm suas próprias estatísticas e podem ser atacados conforme as técnicas; empunhar Sceptrum não os torna indestrutíveis.
+
+**Runa da arma:** Trono de Ossos Vazios - Genuflexão pelo Peso, Maldição Abissal de quatro condições, sem Grau, Karma Retido ou vaga pessoal. Composição fixa: C1 - Restrição de Vetor Corpo a Corpo; C4 - Ciclo de 3 Marcas no Mesmo Alvo; C5 - Exigência de Acerto Total para o Estado; C8 - Sangue por Sangue, com pagamento de 3 Vida irreduzíveis no despertar, sem alternativa de ficar abaixo de metade da Vida. Só um golpe de contato com Sceptrum, resolvido por Força + Luta, marca; Parcial e Total contam uma marca, máximo uma por ataque. Ao fechar três marcas no mesmo alvo, pague o tributo e cause 2d8 Corrupto, com Resistência normal; se a sequência contiver ao menos um Total, o alvo também fica Caído e Imobilizado no solo. Libertar-se exige Principal e Força ou Constituição + Atletismo CD fixa 22; sucesso encerra a imobilização, mas levantar de Caído ainda usa o movimento normal. As três marcas se apagam após o disparo. O estado não se acumula consigo, e a runa não acrescenta outro estado da tabela de potência. A CD de forja é 20. Um 1 natural selecionado num ataque do cetro exige Presença + Controle da Corrupção CD 18; Valac usa maior de 6d20 +10, sem o bônus de Familiaridade com a Voz. Na falha sofre 1d6 Corrupto, sem Carga Temporária alternativa. Tributo e mordida da própria arma não alimentam Desespero; o dano efetivo causado a inimigos segue o contador normal. A maldição ocupa toda a arma e não admite inscrições convencionais. Nadir, Nexum, Oblatio, Miserere e os demais ritos não são golpes do cetro, não aplicam marcas e não disparam a maldição; seus dados não multiplicam os 2d8 da runa.
+
+**Regente da CA:** Constituição 8. Na igualdade exata com CA 29, somente um Atributo de ataque maior que 8 produz Acerto Total; menor ou igual produz Parcial. Nos ataques contra outra CA, aplique o regente daquele defensor. Oposição empata em favor do defensor; dano parcial é dividido antes de Resistência e escudos. Dados de Exaltação e da maldição são adicionais e nunca dobram pelo crítico.
 
 ###### 1 · Nadir {#valac-nadir}
 
-**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Principal, 15 Karma, centro percebido a até 20 m, raio de 3 m. Controle de Trevas contra a CA de cada criatura na área. Total: **2d10 de Trevas** E arrasto de 3 m em direção ao centro por caminho livre. Parcial: metade do dano sem arrasto. Falha: nada. Não atravessa cobertura total e pode atingir aliados.
+**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Principal, 15 Karma, centro percebido a até 20 m, raio de 3 m. Espírito + Controle de Trevas contra a CA de cada criatura na área; uma rolagem comparada separadamente a cada defesa. Total: **2d10 de Trevas** e arrasto de até 3 m em direção ao centro por caminho livre, sem fazer duas criaturas ocuparem o mesmo espaço. Parcial: metade do dano sem arrasto. Falha: nada. O centro precisa de trajetória aberta; cobertura total protege quem estiver atrás dela, sem ocultar os demais alvos da área. A rainha escolhe a distância de cada arrasto válido, podendo aproximar dois adversários para o alcance de Nexum num turno posterior. Essa aproximação não concede outra ação nem transforma o rito seguinte em acerto automático. Pode atingir aliados.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 2 · Hiato {#valac-hiato}
 
-**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Reação, 9 Karma, contra ataque percebido em si ou aliado a até 8 m. Uma dobra escura recebe o impacto, reduzindo **2d12** Do dano daquela resolução, depois das reduções permanentes. O excesso se perde. Não desvia condições sem dano nem absorve um segundo ataque.
+**Fonte e Grau:** Subdobra do Abismo IV. **Uso:** Reação, 9 Karma, contra ataque percebido em si ou em um aliado percebido a até 8 m, depois do acerto e antes da perda de Vida. Uma dobra escura recebe o impacto, reduzindo **2d12** do dano daquela resolução, depois das reduções permanentes. O excesso se perde. Escolha um único protegido, mesmo numa área. Não desvia condições sem dano nem absorve um segundo ataque, e não pode somar-se a outra Reação de Valac contra a mesma ocorrência. A redução não conta como Vida perdida para Desespero; apenas o dano que atravessar as proteções e atingir sua Vida alimenta o contador.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 3 · Limiar {#valac-limiar}
 
-**Fonte e Grau:** Bênção IV. **Uso:** Extra, 10 Karma e 50 Desespero, no próprio turno. Valac recebe Exaltação do Desespero. A ativação é automática, esvazia o contador e avança a contagem do Terceiro Lamento. A duração e os valores dobrados só se aplicam à terceira ativação da cena.
+**Fonte e Grau:** Bênção IV. **Uso:** Extra, 10 Karma e 50 Desespero, no próprio turno. Valac recebe Exaltação do Desespero. A ativação é automática, esvazia o contador e avança a contagem do Terceiro Lamento. A duração e os valores dobrados só se aplicam à terceira ativação da cena. Declare antes da técnica que receberá os dados adicionais; não recalcula um ataque já encerrado nem devolve dano absorvido anteriormente. Uma Exaltação ainda vigente é substituída, sem somar dados ou Resistência. O novo dano efetivo pode alimentar o contador conforme a regra da bênção, mas a ativação não cria dano por si só.
 
 **Composição de Karma:** 6 Base IV + 3 proteção secundária III + 1 duração = 10 Karma. Ação Extra é a ativação própria da Bênção Verdadeira; exige também 50 Desespero.
 
 
 ###### 4 · Legado {#valac-legado}
 
-**Fonte e Grau:** Bênção IV. **Requisito:** Ao menos um dos quatro Domínios de Valac manifestado. **Uso:** Principal, 11 Karma e 50 Desespero, um aliado voluntário a até 15 m. O escolhido recebe Exaltação no lugar da rainha. A bênção continua sendo dela: o aliado não ganha seu contador, Caminho ou Domínios. Conta para o Terceiro Lamento e termina imediatamente se Valac cair Inconsciente.
+**Fonte e Grau:** Bênção IV. **Requisito:** Ao menos um dos quatro Domínios de Valac manifestado. **Uso:** Principal, 11 Karma e 50 Desespero, um aliado voluntário percebido a até 15 m. O escolhido recebe Exaltação no lugar da rainha, com os dados-base das próprias técnicas, sem teste ou acerto crítico. A bênção continua sendo dela: o aliado não ganha seu contador, Caminho ou Domínios, e o dano que ele infligir não preenche o contador pessoal de Valac. Conta para o Terceiro Lamento e termina imediatamente se Valac cair Inconsciente. Se o destinatário já estiver Exaltado, substitua a aplicação anterior, conservando somente a nova duração, sem acumular dados ou Resistência.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 5 · Mutilatio {#valac-mutilatio}
 
-**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle após pagar a Carga. Controle da Corrupção contra CA. Total: **2d10 corrupto** e −2 nos ataques feitos com um membro escolhido até o final do próximo turno da vítima. Parcial: metade do dano sem penalidade. Não amputa automaticamente, não altera atributos e não atinge seres imunes à Corrupção.
+**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle contra CD 16 + Carga após pagar a Carga. Presença + Controle da Corrupção contra CA. Total: **2d10 corrupto** e −2 nos ataques feitos com um membro escolhido até o final do próximo turno da vítima. Escolha o membro na declaração: a penalidade acompanha o uso desse membro para atacar ou sustentar a arma, mas não afeta ataques feitos inteiramente por outra fonte ou outro membro. Parcial: metade do dano sem penalidade. Falha: nada, sem devolver a Carga ou o Karma. A penalidade não se acumula consigo. Não amputa automaticamente, não altera atributos e não atinge seres imunes à Corrupção.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 6 · Mortis {#valac-mortis}
 
-**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo a até 15 m; Controle normal. Presença + Controle da Corrupção oposto a Espírito + Ocultismo ou Presença + Liderança. Vitória: **2d10 corrupto** e o próximo efeito de cura recebido antes do fim do próximo turno de Valac restaura metade da Vida, arredondada para baixo. Empate ou derrota: nada. O selo não acumula consigo e se encerra após afetar uma cura.
+**Fonte e Grau:** Corrupção IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 11 Karma e 1 Carga, alvo percebido a até 15 m; Controle contra CD 16 + Carga após o pagamento. Presença + Controle da Corrupção oposto a Espírito + Ocultismo ou Presença + Liderança, escolhido pelo defensor antes de rolar. Vitória: **2d10 corrupto** e o próximo efeito de cura recebido antes do fim do próximo turno de Valac restaura metade da Vida, arredondada para baixo. Empate ou derrota: nada. O selo não acumula consigo e se encerra após afetar uma cura; não reduz escudos, drenagem de Karma ou remoção de condições. O alvo ainda pode escolher quando receber a cura, esperar o prazo ou usar uma proteção que não restaure Vida.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III = 11 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 7 · Anatema {#valac-anatema}
 
-**Fonte e Grau:** Ocultismo IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 12 Karma, alvo a até 15 m. Espírito + Ocultismo contra Presença + Liderança ou Espírito + Ocultismo. Vitória: **−3 em ataques e testes por duas rodadas**, sem alterar CA ou dano. A vítima pode gastar Principal para romper contra CD 20, com a defesa escolhida. Empate ou derrota não aplica efeito; maldições de Valac não acumulam suas penalidades.
+**Fonte e Grau:** Ocultismo IV. **Requisito:** Ao menos um Domínio de Valac manifestado. **Uso:** Principal, 12 Karma, alvo percebido a até 15 m. Espírito + Ocultismo contra Presença + Liderança ou Espírito + Ocultismo, escolhido pelo defensor antes de rolar. Vitória: **−3 em ataques e testes por duas rodadas**, até o fim do segundo turno seguinte do alvo, sem alterar CA ou dano. A vítima pode gastar Principal para romper contra CD 20, com a defesa escolhida; igualdade é sucesso, e a própria penalidade não se aplica a essa tentativa de libertação. Empate ou derrota não aplica efeito; maldições de Valac não acumulam suas penalidades. Uma nova aplicação renova o prazo sem transformar −3 em −6.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 1 duração + 3 Função secundária III = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 8 · Nexum {#valac-nexum}
 
-**Fonte e Grau:** Ocultismo III. **Uso:** Principal, 10 Karma, até dois alvos a até 15 m, separados por no máximo 5 m. Uma rolagem de Espírito + Ocultismo contra suas CAs, com defesas individuais. Total: Lento e perda das Reações disponíveis, sem recuperá-las até o início do próximo turno de Valac. Parcial: somente Lento. Lento reduz Deslocamento à metade. Falha: nada. Não causa dano, arrasto ou agarrão físico.
+**Fonte e Grau:** Ocultismo III. **Uso:** Principal, 10 Karma, até dois alvos percebidos a até 15 m, separados por no máximo 5 m. Uma rolagem de Espírito + Ocultismo contra suas CAs, com defesas individuais. Total: Lento e perda das Reações disponíveis, sem recuperá-las até o início do próximo turno de Valac. Parcial: somente Lento, expressamente permitido por este rito. Lento reduz Deslocamento à metade até esse mesmo início de turno. Falha: nada. A distância entre os alvos é exigida somente na declaração; afastar-se depois não transfere a perda de Reações a outra criatura. Cobertura total impede o vínculo com quem estiver protegido. Não causa dano, arrasto ou agarrão físico, e o alvo conserva sua Principal e seus demais recursos.
 
 **Composição de Karma:** 4 Base III + 2 alcance médio + 2 área / destinatários + 2 Função secundária II = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 9 · Oblatio {#valac-oblatio}
 
-**Fonte e Grau:** Ocultismo IV. **Uso:** Principal, 17 Karma e 1 Carga, uma vez por cena, alvo a até 15 m do foco. O foco exige 1 TE de preparo ou uma Principal num turno anterior; CA 14, Vida 6. Controle normal. Controle da Corrupção oposto a Presença + Liderança ou Espírito + Ocultismo. Vitória: **2d10 espiritual** No início dos próximos três turnos da vítima, sem novos ataques ou críticos. Ela pode gastar Principal e alcançar o resultado inicial registrado com sua defesa para encerrar. Destruir ou cobrir completamente o foco, ou afastar-se mais de 15 m dele, encerra o ritual. Exaltação não amplia os pulsos contínuos.
+**Fonte e Grau:** Ocultismo IV. **Uso:** Principal, 17 Karma e 1 Carga, uma vez por cena, alvo percebido a até 15 m do foco. O foco exige 1 TE de preparo ou uma Principal num turno anterior; CA 14, Vida 6, regente Constituição 0. Declare seu ponto físico de origem no preparo; ele precisa permanecer exposto e não acompanha a vítima. A Carga aciona o Controle comum da Marca, CD 14 + Carga após o pagamento; este rito não usa a Matriz Corrupta. Presença + Controle da Corrupção oposto a Presença + Liderança ou Espírito + Ocultismo, escolhido pela vítima antes de rolar. Vitória: **2d10 espiritual** no início dos próximos três turnos da vítima, sem dano imediato, novos ataques ou críticos. Empate ou derrota não cria o vínculo; custos permanecem gastos. Ela pode gastar Principal e alcançar o resultado inicial registrado com sua defesa para encerrar. Destruir ou cobrir completamente o foco, ou afastar-se mais de 15 m dele, encerra o ritual antes do próximo pulso. Exaltação não amplia os pulsos contínuos, e acertar o foco não dispara a maldição do cetro contra o atacante.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III + 6 pulsos posteriores, pagos na criação = 17 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### Assinatura · Miserere {#valac-miserere}
 
-**Fonte e Grau:** Corrupção V. **Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão. **Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena, até três inimigos percebidos a até 15 m. O foco torna-se um trono vazio, CA 20 e Vida 28, por três rodadas; Controle normal. Uma rolagem de Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Somente quem perder fica Vinculado ao trono; empate protege a vítima.
+**Fonte e Grau:** Corrupção V. **Requisito:** Dois Domínios de Valac manifestados e foco percebido, apoiado no chão. **Uso:** Principal, 24 Karma e 2 Cargas, uma vez por cena; consome o único Ápice de Grau V da rainha. Até três inimigos percebidos a até 15 m do foco. O foco torna-se um trono vazio, CA 20, regente Constituição 0 e Vida 28, até o fim do terceiro turno seguinte de Valac; Controle de risco contra CD 16 + Carga após pagar as 2 Cargas. Uma rolagem de Presença + Controle da Corrupção é oposta à defesa de cada alvo, Presença + Liderança ou Espírito + Ocultismo. Cada defensor escolhe sua defesa antes de rolar. Somente quem perder fica Vinculado ao trono; empate protege a vítima. Não há dano imediato, e a maldição de Sceptrum não se transfere ao trono.
 
 **O tributo:** A primeira vez em cada rodada que um Vinculado declarar uma técnica, antes de resolvê-la, escolhe perder uma Reação ainda disponível ou testar a mesma defesa contra CD 20. Se falhar no teste, sofre **3d10 espiritual**, com Resistência normal. Se não possuir Reação, precisa testar. Depois dessa primeira cobrança de dano, o vínculo daquela vítima se encerra. A técnica declarada ainda é resolvida se o personagem continuar capaz de agir; o tributo não a cancela automaticamente. Os pulsos não recebem crítico ou dados de Exaltação.
 
@@ -1564,55 +1572,72 @@ Aveline quer deixar às filhas um reino que sobreviva à ausência de sua protet
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre e 2 Reações por rodada. Apenas uma Reação pode responder à mesma resolução hostil, mesmo quando mais de uma habilidade seria válida.
 
-**Perícias:** Manifestação de Bênção 3; Controle de Água 3; Atletismo 3; Reflexos 2; Luta 1; Persuasão 2; Percepção 2. Bênção e Água: maior de 5d20 +10. Evasão: maior de 4d20 +5. Constituição + Atletismo: maior de 5d20 +10. Ataque básico: Principal, até 2 m, maior de 3d20 +2, 1d8 físico, sem Karma; parcial metade, falha nenhum dano. Perícias não indicadas são 0. Não possui imunidade, Resistência a dano ou Comunhão Divina implícitas.
+**Perícias:** Manifestação de Bênção 3; Controle de Água 3; Atletismo 3; Reflexos 2; Luta 1; Persuasão 2; Percepção 2; Canalização de Karma 1 (Espírito, maior de 5d20 +2). Bênção e Água: maior de 5d20 +10. Evasão: maior de 4d20 +5. Constituição + Atletismo: maior de 5d20 +10. Ataque básico: Principal, até 2 m, maior de 3d20 +2, 1d8 físico, sem Karma; parcial metade, falha nenhum dano. Perícias não indicadas são 0. Não possui imunidade, Resistência a dano ou Comunhão Divina implícitas.
 
-**Defesa e sinais:** A CA já inclui a proteção pessoal da bênção. Dois selos quadrados giram junto aos ombros, cada um com CA 18 e Vida 12. Atacá-los exige uma ação e um ataque próprio; não se retira Vida da rainha pelo mesmo golpe. Cada selo destruído reduz sua CA em 2, até 25; os selos não são recriados durante a cena. Destruí-los não remove a bênção ou as Expressões conhecidas.
+**Arma principal:** Prumo de Aurival - lança de guarda com haste de freixo e ponta prismática, usada para firmar a linha entre a rainha e quem ela protege. Seu ataque básico é o já indicado: Principal, Força + Luta, maior de 3d20 +2, contato de 2 m, 1d8 físico; Parcial causa metade e Falha nada. A geometria da ponta não acrescenta dano divino. Desarmar a lança retira seus ataques e sua inscrição, mas não apaga a Geometria do Amparo.
 
-**Bênção hereditária — Geometria do Amparo:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-1"></span> Minerva entregou os seis ângulos do amparo à linhagem que sustentou uma cidade sitiada. Aveline guarda essa outorga hereditária em defesa de quem vive dentro das muralhas. Concedida à linhagem por Minerva após a defesa de uma cidade sitiada. Atributo regente: Espírito. Núcleo: dar existência a superfícies geométricas que separam espaços, interceptam trajetórias e redistribuem impactos. Dom Inicial: sustentar uma placa do tamanho da mão para aparar chuva, apoiar um objeto leve ou apresentar o brasão, sem benefício de combate. A Marca Divina são ângulos verdes luminosos nas íris. A bênção não cria matéria dentro de corpos, não corta almas, não produz ar respirável e não concede invulnerabilidade. Sua interdição proíbe manter deliberadamente uma pessoa indefesa presa numa barreira enquanto lhe nega água; a rainha precisa desfazer a prisão antes de violá-la.
+**Inscrições rúnicas:** Elhaz - Runa do Alcance Estendido, Grau I, inscrita em Prumo de Aurival; uma inscrição convencional, compatível com Lança. Retém 2 Karma e ocupa uma das quatro vagas pessoais de Aveline: com a reserva cheia de 90, são 88 livres e 2 retidos. Enquanto armada, o alcance de contato da lança passa de 2 m para 3,5 m. Pode declarar seu Estouro junto a um ataque dessa arma: aquele ataque recebe +2 no teste e ignora cobertura parcial. O Estouro não exige outra ação, não acrescenta dano e encerra a passiva; uma Falha ainda consome a inscrição declarada. Não estende o alcance das técnicas de Água ou da Bênção. O Karma continua indisponível até o fim da cena. Para reinscrever, Aveline precisa empunhar ou tocar a lança, gastar Principal e voltar a reter 2 Karma disponíveis; não cria uma quinta vaga nem recupera a retenção anterior antes do prazo. A arma não possui Runa Amaldiçoada.
+
+**Resolução dos ataques:** Nos testes contra CA, superar o valor resulta em Acerto Total; abaixo dele e a partir da metade da CA, arredondada para baixo, resulta em Parcial. Na igualdade exata, compare o Atributo do ataque ao regente declarado da defesa: somente o atacante maior obtém Total; menor ou igual obtém Parcial. O dano Parcial é metade, arredondada para baixo, antes das proteções. Falha não causa dano nem aplica efeitos de acerto. Os dados da arma entram apenas em seu ataque básico ou quando uma técnica os mencionar expressamente; não se somam novamente a projéteis, reflexões ou manifestações.
+
+**Defesa e sinais:** O regente da CA é Constituição 10. A CA já inclui a proteção pessoal da bênção. Dois selos quadrados giram junto aos ombros, cada um com CA 18 e Vida 12. Atacá-los exige uma ação e um ataque próprio; não se retira Vida da rainha pelo mesmo golpe. Cada selo destruído reduz sua CA em 2, até 25; os selos não são recriados durante a cena. Destruí-los não remove a bênção ou as Expressões conhecidas.
+
+**Bênção hereditária — Geometria do Amparo:** <span data-divine-grant="minerva">Outorgada por Minerva · Romano — Asa da Autoridade</span><span data-world-blessing="outorga-1"></span> Minerva entregou os seis ângulos do amparo à linhagem que sustentou uma cidade sitiada. Aveline guarda essa outorga hereditária em defesa de quem vive dentro das muralhas. Atributo regente: Espírito. Núcleo: dar existência a superfícies geométricas que separam espaços, interceptam trajetórias e redistribuem impactos. Dom Inicial: sustentar uma placa do tamanho da mão para aparar chuva, apoiar um objeto leve ou apresentar o brasão, sem benefício de combate. A Marca Divina são ângulos verdes luminosos nas íris. A bênção não cria matéria dentro de corpos, não corta almas, não produz ar respirável e não concede invulnerabilidade. Sua interdição proíbe manter deliberadamente uma pessoa indefesa presa numa barreira enquanto lhe nega água; a rainha precisa desfazer a prisão antes de violá-la.
 
 ###### 1 · Face do Juramento
 
-**Fonte e Grau:** Bênção IV; defesa. **Uso:** Reação defensiva, 7 Karma, rainha ou um aliado percebido a até 5 m; uma resolução imediata. Antes do dano de um ataque com trajetória identificável, Aveline ergue uma face hexagonal e rola maior de 5d20 +10 contra o resultado do ataque. Se superar, a face intercepta aquela parcela do ataque e impede seu dano e os efeitos que dependiam desse acerto. Em empate, aplica-se metade do dano que seria recebido e apenas a forma reduzida dos efeitos. Se ficar abaixo, nada é reduzido pela face. Não protege outros alvos da mesma área, não reflete e não é combinada com Evasão contra a mesma resolução.
+**Fonte e Grau:** Bênção IV; defesa. **Uso:** Reação defensiva, 7 Karma, rainha ou um aliado percebido a até 5 m; uma resolução imediata. Antes do dano de um ataque com trajetória identificável, Aveline escolhe o beneficiário antes de rolar, ergue uma face hexagonal entre ele e a origem percebida e rola maior de 5d20 +10 contra o resultado do ataque. Se superar, a face intercepta aquela parcela do ataque e impede seu dano e os efeitos que dependiam desse acerto. Em empate, aplica-se metade do dano que seria recebido e apenas a forma reduzida dos efeitos. Se ficar abaixo, nada é reduzido pela face. Não protege outros alvos da mesma área, não reflete e não é combinada com Evasão contra a mesma resolução. Pode proteger um aliado que esteja atrás de uma de suas passarelas, desde que ele permaneça percebido e dentro dos 5 m; a face não exige que a lança esteja empunhada.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 2 · Pavilhão de Seis Faces
 
-**Fonte e Grau:** Bênção III; defesa. **Uso:** Principal, 9 Karma, até quatro criaturas voluntárias a até 5 m, por duas rodadas. Cada uma recebe 2d6 de escudo temporário, rolados separadamente, até o início do segundo turno seguinte de Aveline. Os escudos não se somam a outros escudos temporários: conserve o maior valor restante. Não aumentam a CA, não removem condições e não são renovados automaticamente. Sem teste contra aliados voluntários; não possui parcial.
+**Fonte e Grau:** Bênção III; defesa. **Uso:** Principal, 9 Karma, até quatro criaturas voluntárias a até 5 m, por duas rodadas. Cada uma recebe 2d6 de escudo temporário, rolados separadamente, até o início do segundo turno seguinte de Aveline. Os escudos não se somam a outros escudos temporários: conserve o maior valor restante. Não aumentam a CA, não removem condições e não são renovados automaticamente. Aveline escolhe todos os beneficiários antes de rolar; cada um conserva seu próprio saldo, de modo que o dano sofrido por um não consome o escudo dos demais. Sem teste contra aliados voluntários; não possui parcial. Os escudos acompanham os beneficiários depois da criação; sair dos 5 m não os renova nem os transfere.
 
 **Composição de Karma:** 4 Base III + 4 área / destinatários + 1 duração = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 3 · Cela de Ângulos Vivos
 
-**Fonte e Grau:** Bênção IV; aprisionamento. **Uso:** Principal, 8 Karma, uma criatura a até 15 m, por no máximo duas rodadas. Aveline rola maior de 5d20 +10; o alvo opõe Força + Atletismo ou Espírito + Canalização de Karma, à sua escolha. Se Aveline superar, um prisma prende o alvo e aplica Imobilizado, sem suprimir sua Principal ou impedir ataques possíveis através da grade. Em empate, reduz o Deslocamento à metade apenas até o fim do próximo turno do alvo. Se perder, a cela não se fecha. A prisão tem CA 20 e Vida 25, não causa dano nem sufoca. Uma Principal permite repetir o confronto para rompê-la; dano externo também pode destruí-la. Termina se Aveline ficar Inconsciente, morrer ou se afastar mais de 15 m. Somente uma cela pode existir por vez.
+**Fonte e Grau:** Bênção IV; aprisionamento. **Uso:** Principal, 8 Karma, uma criatura a até 15 m, por no máximo duas rodadas. Aveline rola maior de 5d20 +10; o alvo opõe Força + Atletismo ou Espírito + Canalização de Karma, à sua escolha. Se Aveline superar, um prisma prende o alvo e aplica Imobilizado, sem suprimir sua Principal ou impedir ataques possíveis através da grade. Em empate, reduz o Deslocamento à metade apenas até o fim do próximo turno do alvo. Se perder, a cela não se fecha. A prisão tem CA 20 e Vida 25, não causa dano nem sufoca. Uma Principal permite repetir o confronto para rompê-la; dano externo também pode destruí-la. Termina se Aveline ficar Inconsciente, morrer ou se afastar mais de 15 m. Somente uma cela pode existir por vez; criar outra encerra a anterior. O alvo liberado não volta a ser preso pela mesma cela, e a rolagem de fuga usa o resultado original de Aveline. Aliados externos podem atacar as faces da cela sem ferir automaticamente quem está dentro.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 4 · Agulha do Tetraedro
 
-**Fonte e Grau:** Bênção IV; ataque. **Uso:** Principal, 8 Karma, um alvo percebido a até 15 m; instantâneo. Maior de 5d20 +10 contra CA. Um vértice projetado causa 2d10 de dano divino no total; parcial metade, falha nenhum dano. Não ignora armadura ou cobertura e não causa ferimento adicional gratuito. A luz se concentra entre os dedos antes do disparo, permitindo reconhecer sua direção.
+**Fonte e Grau:** Bênção IV; ataque. **Uso:** Principal, 8 Karma, um alvo percebido a até 15 m; instantâneo. Maior de 5d20 +10 contra CA. Um vértice projetado causa 2d10 de dano divino no total; parcial metade, falha nenhum dano. Não ignora armadura ou cobertura e não causa ferimento adicional gratuito. A luz se concentra entre os dedos antes do disparo, permitindo reconhecer sua direção. Aveline pode mirar uma criatura, um objeto ou uma estrutura percebida, sempre contra a CA desse alvo; acertar o objeto não transfere o dano ao seu portador. A Agulha não transporta Elhaz nem o dano físico da lança.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 5 · Lança das Comportas
 
-**Fonte e Grau:** Água conduzida pela bênção, III; ataque elemental. **Uso:** Principal, 7 Karma, um alvo a até 15 m; instantâneo. Exige pelo menos um litro de água disponível e uma trajetória desobstruída. Maior de 5d20 +10 contra CA; total 2d8 de dano elemental de Água e deslocamento de 2 m para trás por passagem possível; parcial metade do dano e 1 m; falha nenhum efeito. A água percorre um canal triangular visível. A geometria não acrescenta dano divino, ataque extra ou vantagem adicional de fonte.
+**Fonte e Grau:** Água conduzida pela bênção, III; ataque elemental. **Uso:** Principal, 7 Karma, um alvo a até 15 m; instantâneo. Exige pelo menos um litro de água disponível e uma trajetória desobstruída. Maior de 5d20 +10 contra CA; total 2d8 de dano elemental de Água e deslocamento de 2 m para trás por passagem possível; parcial metade do dano e 1 m; falha nenhum efeito. A água percorre um canal triangular visível. Aveline define a direção do empurrão ao declarar o ataque; o percurso afasta o alvo dela e não atravessa paredes ou ocupantes. Se não houver espaço, o movimento termina no último ponto livre, sem dano de colisão adicional. A geometria não acrescenta dano divino, ataque extra ou vantagem adicional de fonte.
 
 **Composição de Karma:** 4 Base III + 2 alcance médio + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 6 · Guilhotina do Rio Suspenso
 
-**Fonte e Grau:** Água e moldura de barreiras, IV; ataque elemental. **Uso:** Principal, 8 Karma, linha de 5 m de comprimento e 1 m de largura que começa a até 5 m, até dois alvos; instantâneo. Exige água disponível. Maior de 5d20 +10, comparado separadamente à CA de cada alvo; total 2d10 elemental de Água, parcial metade, falha nenhum dano. Não imobiliza, não atravessa cobertura total e não acumula bônus por ser uma combinação de fontes. Um retângulo cheio de água anuncia o plano do corte antes de a lâmina descer.
+**Fonte e Grau:** Água e moldura de barreiras, IV; ataque elemental. **Uso:** Principal, 8 Karma, linha de 5 m de comprimento e 1 m de largura que começa a até 5 m, até dois alvos; instantâneo. Exige água disponível. Maior de 5d20 +10, comparado separadamente à CA de cada alvo; total 2d10 elemental de Água, parcial metade, falha nenhum dano. Não imobiliza, não atravessa cobertura total e não acumula bônus por ser uma combinação de fontes. Aveline define os dois extremos da linha antes de rolar, incluindo os aliados eventualmente alcançados; os dois alvos são resolvidos separadamente e não repartem uma reserva comum de dano. Um retângulo cheio de água anuncia o plano do corte antes de a lâmina descer.
 
 **Composição de Karma:** 6 Base IV + 2 área / destinatários = 8 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
-###### 7 · Três Rodadas sem Ferida
+###### 7 · Passarela dos Sete Ângulos
+
+**Fonte e Grau:** Bênção III; mobilidade e construção. **Uso:** Principal, 7 Karma, um trecho percebido a até 5 m, por duas rodadas. Placas hexagonais formam uma passarela imóvel de até 5 m de comprimento e 1 m de largura, com ambas as extremidades apoiadas em superfícies firmes. Pode transpor uma vala, um canal ou um desnível cuja rota de ligação caiba nesse comprimento; não atravessa cobertura total nem nasce dentro de criaturas ou construções.
+
+**Resolução:** A passarela dura até o início do segundo turno seguinte de Aveline, sustenta até duas criaturas de porte Grande ou menor ao mesmo tempo e pode ser usada por aliados ou inimigos. Caminhar sobre ela consome o Movimento normal; ela não transporta ocupantes, não concede ação, não protege como escudo e não afeta testes de ataque. Sem oposição e com as duas bases válidas, a criação é direta e não tem Parcial. Uma base inválida impede a execução, sem permitir deslocar o trecho depois de criado.
+
+**Integridade:** CA 18, regente Constituição 10 de Aveline, e Vida 20 para a estrutura inteira. Ao chegar a 0 Vida, perder uma base de apoio, atingir o fim da duração ou se Aveline ficar Inconsciente, as placas se desfazem; ocupantes resolvem a queda ou a entrada na água pelas regras do terreno. Atacar a passarela não causa dano direto aos ocupantes. Uma passarela ativa por vez; criar outra encerra a anterior. A ponte não substitui a Face do Juramento nem devolve projéteis.
+
+**Composição de Karma:** 4 Base III + 2 área / destinatários + 1 duração = 7 Karma. Não possui manutenção.
+
+
+###### Assinatura · Três Rodadas sem Ferida {#três-rodadas-sem-ferida}
 
 **Fonte e Grau:** Assinatura da Bênção V; reflexão. **Uso:** uma Principal de preparo, 17 Karma, pessoal; uma vez por cena e consome o único ápice de Grau V de Aveline. Durante o preparo, três anéis se acendem; a barreira só entra em vigor no início de seu turno seguinte. Se ficar Incapacitada ou Inconsciente antes disso, o preparo falha, o Karma e o uso permanecem gastos. Uma vez ativa, dura até o início do terceiro turno seguinte da rainha: três rodadas completas. Manutenção de 4 Karma no início do segundo e do terceiro turnos; se não pagar, termina antes das ações desse turno.
 
@@ -2105,11 +2130,19 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre e 3 Reações por rodada. Cada Reação precisa responder a uma resolução diferente; Naerith não combina duas Reações contra o mesmo ataque ou efeito.
 
-**Perícias:** Pontaria 3: maior de 5d20 +10. Reflexos 3: maior de 5d20 +10. Manifestação de Bênção 3 e Controle de Terra 3: maior de 4d20 +10. Percepção 3 e Tática 3: maior de 5d20 +14 com Analítico. Furtividade 2: maior de 5d20 +5. Atletismo 2: maior de 3d20 +5. Perícias não indicadas são 0.
+**Perícias:** Pontaria 3: maior de 5d20 +10. Reflexos 3: maior de 5d20 +10. Manifestação de Bênção 3 e Controle de Terra 3: maior de 4d20 +10. Percepção 3 e Tática 3, quando regidas por Intelecto: maior de 5d20 +14 (10 de treino +3 Analítico +1 da Essência de Técnica). Furtividade 2: maior de 5d20 +5. Atletismo 2: Força em arrancadas e esforços de potência, maior de 3d20 +5; Constituição para resistência física, maior de 2d20 +5. Canalização de Karma 1: Espírito, maior de 4d20 +2. Perícias não indicadas são 0.
 
-**Armas:** Arco real, Principal, 40 m, maior de 5d20 +10 contra CA, 1d10 perfurante; parcial metade. Duas pistolas vegetais, Principal, 20 m, maior de 5d20 +10 contra CA, 1d8 perfurante; cada pistola comporta um disparo e recarregar uma delas exige Movimento. Empunhar as duas não concede ataque adicional.
+**Arma principal:** Dendron - arco real de madeira viva, com veios claros que acompanham a cicatriz da soberana. Principal, Agilidade + Pontaria, 40 m, maior de 5d20 +10 contra CA, 1d10 perfurante; Parcial causa metade e Falha nada. Exige duas mãos livres para o disparo e munição; o arco não concede uma segunda ação nem soma seus dados às flores de Nemeton. O disparo de Heliánthos conserva exclusivamente a fórmula própria da assinatura.
 
-**Bênção hereditária — Nemeton:** <span data-divine-grant="guaraci">Outorgada por Guaraci, Calor que Desperta a Mata · Lendas Tupi-Guarani — Asa do Assombro.</span><span data-world-blessing="outorga-3"></span> Guaraci confiou à coroa o santuário vivo da floresta. Naerith recebeu Nemeton na coroação; a outorga passa integralmente à sucessora, sem duas portadoras completas simultâneas. a soberana desperta formas vegetais completas a partir de sementes, raízes e solo fértil. Plantas simples florescem sem custo; manifestações de combate usam as técnicas abaixo. A bênção passa integralmente à herdeira durante a coroação e não permanece completa em duas rainhas ao mesmo tempo.
+**Armas secundárias:** Duas pistolas vegetais, Principal, 20 m, maior de 5d20 +10 contra CA, 1d8 perfurante; cada pistola comporta um disparo e recarregar uma delas exige Movimento. Empunhar as duas não concede ataque adicional. Trocar o armamento não renova as Reações nem recarrega uma pistola já disparada.
+
+**Inscrições rúnicas:** Laguz - Runa do Passo Deslizante, Grau II, na guarda da armadura de Naerith. A inscrição é de Armadura e Guarda: Dendron, as pistolas e suas munições permanecem sem encaixe rúnico convencional. Retém 3 Karma e ocupa uma das quatro vagas pessoais: com a reserva cheia de 100, são 97 livres e 3 retidos. Enquanto armada, concede +1 aos testes de Reflexos e Acrobacia; o +1 é situacional e não está somado às reservas-base acima. Ao ser alvo de um ataque, antes da resolução, pode consumir uma de suas três Reações e estourar Laguz para somar +3 diretamente ao limiar de CA Parcial e +3 à CA Total somente contra esse golpe; depois dele pode recuar até 3 m por caminho livre, seguindo as regras de Movimento. Não pode usar Aegis, Ékdysis ou outra defesa na mesma ocorrência. Após o Estouro, a passiva termina e os 3 Karma continuam indisponíveis até o fim da cena. Reinscrever exige Principal, contato com a guarda e 3 Karma disponíveis; não libera a retenção anterior. A guarda não aumenta a CA-base 29 e não contém maldição.
+
+**Resolução dos ataques:** Nos testes contra CA, superar o valor resulta em Acerto Total; abaixo dele e a partir da metade da CA, arredondada para baixo, resulta em Parcial. Na igualdade exata, compare o Atributo do ataque ao regente declarado da defesa: somente o atacante maior obtém Total; menor ou igual obtém Parcial. O dano Parcial é metade, arredondada para baixo, antes das proteções. Falha não causa dano nem aplica efeitos de acerto. Os dados da arma entram apenas em seu ataque básico ou quando uma técnica os mencionar expressamente; não se somam novamente a projéteis, reflexões ou manifestações.
+
+**Defesa:** O regente da CA 29 é Agilidade 10. Os benefícios permanentes dos Domínios já estão incluídos; a guarda que recebe Laguz não acrescenta outro bônus de armadura.
+
+**Bênção hereditária — Nemeton:** <span data-divine-grant="guaraci">Outorgada por Guaraci, Calor que Desperta a Mata · Lendas Tupi-Guarani — Asa do Assombro.</span><span data-world-blessing="outorga-3"></span> Guaraci confiou à coroa o santuário vivo da floresta. Naerith recebeu Nemeton na coroação; a outorga passa integralmente à sucessora, sem duas portadoras completas simultâneas. A soberana desperta formas vegetais completas a partir de sementes, raízes e solo fértil. Plantas simples florescem sem custo; manifestações de combate usam as técnicas abaixo. A bênção passa integralmente à herdeira durante a coroação e não permanece completa em duas rainhas ao mesmo tempo.
 
 **Domínio — Técnica 3 manifestada:** **Ativação:** Extra, 2 Karma, cinco rodadas, uma vez por cena. **Manifestação:** +1d20 ao teste principal de suas técnicas. **Essência:** +1 em testes mentais ou sociais treinados regidos por Intelecto.
 
@@ -2117,70 +2150,70 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 ###### 1 · Sagitta
 
-**Fonte e Grau:** Bênção III; ataque. **Uso:** Principal, 9 Karma, um alvo a até 30 m. Naerith faz brotar uma flor balística e rola Manifestação de Bênção contra a CA. Total: **2d8 perfurante** E o alvo fica marcado por pólen até o início do próximo turno da rainha; o primeiro ataque de um aliado contra ele recebe +2. Parcial: metade do dano, sem marca. Falha: nenhum efeito. Apenas uma marca de Sagitta pode existir.
+**Fonte e Grau:** Bênção III; ataque. **Uso:** Principal, 9 Karma, um alvo a até 30 m. Naerith faz brotar uma flor balística e rola Manifestação de Bênção contra a CA. Total: **2d8 perfurante** E o alvo fica marcado por pólen até o início do próximo turno da rainha; o primeiro ataque de um aliado contra ele recebe +2. Parcial: metade do dano, sem marca. Falha: nenhum efeito. Apenas uma marca de Sagitta pode existir; acertar outro alvo substitui a anterior. O +2 é consumido na declaração do primeiro ataque aliado, mesmo que ele erre. A flor precisa de linha de efeito, e o pólen não revela alvos invisíveis nem transmite o dano de Dendron.
 
 **Composição de Karma:** 4 Base III + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 2 · Rhíza
 
-**Fonte e Grau:** Bênção IV; contenção em área. **Uso:** Principal, 20 Karma, centro a até 25 m, raio de 4 m, por duas rodadas. Naerith rola Manifestação de Bênção uma vez; cada inimigo na área opõe Força + Atletismo ou Espírito + Canalização. Quem perder sofre **2d10 de Terra** E fica Imobilizado até usar uma Principal para repetir a oposição. Em empate, sofre metade do dano e perde 3 m de Deslocamento até o fim do próximo turno. As raízes têm CA 20 e Vida 24 por alvo; destruí-las liberta apenas a criatura correspondente.
+**Fonte e Grau:** Bênção IV; contenção em área. **Uso:** Principal, 20 Karma, centro a até 25 m, raio de 4 m, por duas rodadas. Naerith rola Manifestação de Bênção uma vez; cada inimigo na área opõe Força + Atletismo ou Espírito + Canalização. Quem perder sofre **2d10 de Terra** E fica Imobilizado até usar uma Principal para repetir a oposição. Em empate, sofre metade do dano e perde 3 m de Deslocamento até o fim do próximo turno. Se Naerith perder a oposição, o alvo não sofre dano ou contenção. As raízes têm CA 20 e Vida 24 por alvo; destruí-las liberta apenas a criatura correspondente. A repetição usa o resultado inicial da rainha, e a contenção termina, no máximo, no início do segundo turno seguinte de Naerith. A área não volta a agarrar quem escapou; aliados são excluídos na declaração, conforme o custo de seleção já pago.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 1 duração + 3 Função secundária III = 20 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 3 · Dáphne
 
-**Fonte e Grau:** Bênção III; proteção. **Uso:** Principal, 12 Karma, Naerith ou um aliado a até 20 m, por três rodadas. Uma couraça de folhas endurecidas concede **+2 CA** E reduz em 3 o dano físico recebido depois de outras reduções. A redução física aplica-se somente ao primeiro dano físico recebido em cada rodada; não causa retaliação. Uma criatura por vez; reaplicar encerra a proteção anterior.
+**Fonte e Grau:** Bênção III; proteção. **Uso:** Principal, 12 Karma, Naerith ou um aliado a até 20 m, por três rodadas. Uma couraça de folhas endurecidas concede **+2 CA** E reduz em 3 o dano físico recebido depois de outras reduções. A redução física aplica-se somente ao primeiro dano físico recebido em cada rodada; não causa retaliação. Uma criatura voluntária por vez, sem teste e sem Parcial; reaplicar encerra a proteção anterior. A couraça permanece até o início do terceiro turno seguinte de Naerith, acompanha o protegido e não é renovada por sair ou voltar ao alcance. A redução não cura dano já recebido nem pode tornar uma parcela negativa.
 
 **Composição de Karma:** 4 Base III + 4 alcance longo + 2 duração + 2 Função secundária II = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 4 · Khlôris
 
-**Fonte e Grau:** Bênção IV; ataque em linha. **Uso:** Principal, 15 Karma, linha de 15 m por 3 m iniciada em um ponto percebido a até 20 m. Caules lançadores disparam em sequência. Uma rolagem de Manifestação de Bênção é comparada à CA de cada criatura na área. Total: **2d10 perfurante** E empurrão de 2 m para uma lateral possível. Parcial: metade do dano, sem empurrão. A linha atinge aliados e não atravessa cobertura total.
+**Fonte e Grau:** Bênção IV; ataque em linha. **Uso:** Principal, 15 Karma, linha de 15 m por 3 m iniciada em um ponto percebido a até 20 m. Caules lançadores disparam em sequência. Uma rolagem de Manifestação de Bênção é comparada à CA de cada criatura na área. Total: **2d10 perfurante** E empurrão de 2 m para uma lateral possível. Parcial: metade do dano, sem empurrão. Falha não causa dano nem empurrão. A direção lateral é escolhida antes da rolagem e precisa terminar em espaço livre; sem destino válido, há dano normal e nenhum empurrão ou dano de colisão. A linha atinge aliados e não atravessa cobertura total.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 5 · Nix
 
-**Fonte e Grau:** Bênção III; ataque e supressão. **Uso:** Principal, 10 Karma, um alvo a até 25 m. Uma flor pálida abre-se sobre o alvo; Manifestação de Bênção contra CA. Total: **2d8 kármico**, Deslocamento reduzido à metade e perda da próxima Reação disponível até o início do próximo turno de Naerith. Parcial: metade do dano e −2 m de Deslocamento, sem perda de Reação. A técnica não transforma o dano em Água nem congela o interior de corpos.
+**Fonte e Grau:** Bênção III; ataque e supressão. **Uso:** Principal, 10 Karma, um alvo a até 25 m. Uma flor pálida abre-se sobre o alvo; Manifestação de Bênção contra CA. Total: **2d8 kármico**, Deslocamento reduzido à metade e perda da próxima Reação disponível até o início do próximo turno de Naerith. Parcial: metade do dano e −2 m de Deslocamento, sem perda de Reação. Falha não causa dano nem supressão. Perder a próxima Reação disponível elimina somente uma Reação, sem criar débito para a rodada seguinte; a redução de Deslocamento termina no início do próximo turno de Naerith e não acumula consigo mesma. A técnica não transforma o dano em Água nem congela o interior de corpos.
 
 **Composição de Karma:** 4 Base III + 4 alcance longo + 2 Função secundária II = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 6 · Ákantha
 
-**Fonte e Grau:** Bênção IV; domínio de terreno. **Uso:** Principal, 27 Karma, centro a até 25 m, raio de 5 m, por três rodadas. O terreno torna-se difícil. Na criação, Naerith compara uma rolagem de Manifestação de Bênção à CA de cada criatura na área: total causa **2d10 perfurante**, parcial metade. Depois disso, cada inimigo que percorrer mais de 2 m dentro da área sofre **1d8 perfurante**, uma vez por rodada, sem nova condição. Fogo suficiente para causar 20 de dano à área encerra a manifestação.
+**Fonte e Grau:** Bênção IV; domínio de terreno. **Uso:** Principal, 27 Karma, centro a até 25 m, raio de 5 m, por três rodadas. O terreno torna-se difícil. Na criação, Naerith compara uma rolagem de Manifestação de Bênção à CA de cada criatura na área: total causa **2d10 perfurante**, parcial metade. Depois disso, cada inimigo que percorrer mais de 2 m dentro da área sofre **1d8 perfurante**, uma vez por rodada, sem nova condição. Uma Falha no impacto inicial não causa dano; a área ainda existe e seus espinhos posteriores usam somente a parcela já descrita. O limite de um pulso por rodada é por criatura; sair e entrar não o reinicia, e aliados só enfrentam o terreno difícil, sem sofrer esses pulsos. A área se desfaz no início do terceiro turno seguinte de Naerith. Fogo suficiente para causar 20 de dano à área encerra a manifestação; não aplica automaticamente esse dano aos ocupantes.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 2 duração + 3 Função secundária III + 6 pulsos posteriores = 27 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 7 · Nepénthes
 
-**Fonte e Grau:** Bênção IV; captura. **Uso:** Principal, 14 Karma, um alvo de porte Grande ou menor a até 15 m, por até duas rodadas. Manifestação de Bênção contra CA. Total: a planta causa **2d10 de impacto**, arrasta o alvo 3 m por rota livre e o aprisiona; parcial causa metade do dano, sem captura. Preso, o alvo fica Imobilizado e sofre 1d10 kármico no início do próprio turno. Uma Principal e Força + Atletismo ou Agilidade + Acrobacia contra o resultado inicial permitem escapar. Nepénthes tem CA 21 e Vida 35; sua destruição liberta o alvo.
+**Fonte e Grau:** Bênção IV; captura. **Uso:** Principal, 14 Karma, um alvo de porte Grande ou menor a até 15 m, por até duas rodadas. Manifestação de Bênção contra CA. Total: a planta causa **2d10 de impacto**, arrasta o alvo 3 m por rota livre e o aprisiona; parcial causa metade do dano, sem captura. Preso, o alvo fica Imobilizado e sofre 1d10 kármico no início do próprio turno. Uma Principal e Força + Atletismo ou Agilidade + Acrobacia contra o resultado inicial permitem escapar. Falha não causa dano, arrasto ou captura. A fuga usa o resultado inicial de Manifestação de Bênção, com empate a favor de quem resiste; vencer o teste ou destruir a planta encerra os pulsos antes do próximo início de turno. Nepénthes tem CA 21 e Vida 35; sua destruição liberta o alvo. Apenas uma captura ativa; criar outra desfaz a anterior. A planta também se desfaz no início do segundo turno seguinte de Naerith, sem nova parcela de dano ao terminar.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III + 3 pulso de captura = 14 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### Reação · Aegis
 
-**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 9 Karma, Naerith ou aliado percebido a até 15 m, antes do dano de um ataque com trajetória. Uma folha colossal intercepta o golpe; Naerith opõe Manifestação de Bênção ao resultado do ataque. Vitória impede o dano e os efeitos dependentes do acerto; empate reduz o dano à metade e impede apenas os efeitos que exigem total. Falha não reduz o golpe. Não protege outros alvos da mesma área.
+**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 9 Karma, Naerith ou aliado percebido a até 15 m, antes do dano de um ataque com trajetória. Uma folha colossal intercepta o golpe; Naerith opõe Manifestação de Bênção ao resultado do ataque. Vitória impede o dano e os efeitos dependentes do acerto; empate reduz o dano à metade e impede apenas os efeitos que exigem total. Falha não reduz o golpe. Não protege outros alvos da mesma área e não pode compartilhar a ocorrência com Laguz ou Ékdysis; a folha se desfaz após aquela resolução, sem se tornar uma barreira persistente.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### Reação · Ékdysis
 
-**Fonte e Grau:** Bênção III; reação. **Uso:** Reação, 9 Karma, depois de Naerith sofrer um acerto total, uma vez por rodada. Escolha uma planta criada por sua bênção a até 10 m. Naerith troca de posição com ela e reduz o dano recebido em **2d6**; a planta é destruída. A troca exige posições livres e linha de efeito, não desfaz condições já aplicadas e não pode usar uma planta que contenha uma criatura.
+**Fonte e Grau:** Bênção III; reação. **Uso:** Reação, 9 Karma, depois de Naerith sofrer um acerto total, uma vez por rodada. Escolha uma planta criada por sua bênção a até 10 m. Naerith troca de posição com ela e reduz o dano recebido em **2d6**; a planta é destruída. Declare a Reação depois de definido o Acerto Total e antes de aplicar o dano. A troca exige posições livres e linha de efeito entre os dois espaços, não desfaz condições já aplicadas e não pode usar uma planta que contenha uma criatura. A redução tem mínimo 0 e afeta apenas a parcela destinada a Naerith; não redireciona dano a outro ocupante. Sem planta válida, a técnica não pode ser declarada.
 
 **Composição de Karma:** 4 Base III + 1 reação + 2 alcance médio + 2 Função secundária II = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### Reação · Anástasis
 
-**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 7 Karma, uma vez por cena, quando uma manifestação vegetal sua for destruída ou alcançar o fim da duração. Escolha: restaurar uma planta destruída com metade da Vida máxima no mesmo espaço ou prolongar Rhíza, Dáphne ou Ákantha por uma rodada. Não restaura Heliánthos, não repete dano de criação e não devolve uma criatura já libertada ao aprisionamento.
+**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 7 Karma, uma vez por cena, quando uma manifestação vegetal sua for destruída ou alcançar o fim da duração. Escolha: restaurar uma planta destruída com metade da Vida máxima no mesmo espaço ou prolongar Rhíza, Dáphne ou Ákantha por uma rodada. A escolha é feita ao declarar a Reação e consome a única ativação da cena; não reinicia um prazo inteiro nem repõe o Karma da criação. A restauração exige espaço livre e só alcança plantas que possuíam Vida própria registrada. Não restaura Heliánthos, não repete dano de criação e não devolve uma criatura já libertada ao aprisionamento.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
@@ -2189,7 +2222,7 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 **Fonte e Grau:** Assinatura da Bênção V. **Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice. Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada. A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
 
-Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
+Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Falha não causa dano ou perda de Reações. A linha e sua direção são fixadas na preparação, permitindo que criaturas se movam ou busquem cobertura entre os dois turnos. A fórmula própria de 2d10 +1d8 já é o dano completo da assinatura: não some os dados de Dendron ou das pistolas. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
 
 **Segunda coroa:** Ao chegar a 100 Vida, raízes brancas cobrem a cicatriz de Naerith. Plantas criadas por suas técnicas recebem +2 CA e pode pagar mais 3 Karma ao ativar uma nova manifestação para acrescentar um dado do mesmo tipo àquela execução, depois do crítico e dentro do teto de dois dados adicionais. A transformação ocorre uma vez, não recupera Vida ou Karma e não concede ação imediata.
 
@@ -2504,6 +2537,12 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
+**Arma principal - Clavis Pelagi:** Um cetro físico de bronze azul, curto o bastante para a mão direita, cuja cabeça reproduz a chave de uma comporta. Exige uma mão, Força 1 e ocupa 1 espaço. O braço hidrostático não conta como segunda mão. Focal: Espírito + Canalização de Karma; Precisa: +2 no ataque básico apenas quando uma abertura concreta já existir, sem acumular outra propriedade Precisa. Ataque básico: Principal, 0 Karma, alcance 12 m, maior de 6d20 +10 contra CA, dano 1d8 Kármico/contundente. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Na igualdade com a CA, compare Espírito 12 ao regente da defesa. Os ataques próprios do cetro não acrescentam seu dado às técnicas, nem recebem automaticamente os alcances ou alvos do arsenal soberano.
+
+**Arsenal rúnico - Elhaz - Runa do Alcance Estendido:** Clavis Pelagi recebe somente Elhaz, de Grau I: enquanto armada, o alcance do ataque básico à distância sobe de 12 m para 18 m. Seu Estouro acompanha um ataque com o próprio cetro, ignora cobertura parcial e soma +2 no teste; não se soma a outro +2 de Precisa no mesmo teste. Não ignora cobertura total. A inscrição custa uma Principal ao toque e retém 2 Karma na única vaga do cetro; com a reserva cheia, são 218 livres e 2 retidos, sem alterar o máximo 220. O Estouro não cria outro ataque, não aumenta áreas nem amplia o alcance das técnicas soberanas. Ao estourar ou desarmar, a vaga fica livre, mas os 2 Karma só voltam a ficar disponíveis no fim da cena; rearmar exige outra inscrição. A arma não contém maldição viva.
+
+**Regente da CA:** Constituição 10. Na igualdade exata com a CA 28, somente um Atributo de ataque maior que 10 produz Acerto Total; menor ou igual produz Parcial.
+
 **Traço 1:** Glaciação Criogênica, Caldeira Termobárica e Pressão / Salmoura são três expressões mestras de Água. Gelo e Pressão usam metade da defesa parental de Água, arredondada para baixo; Vapor usa metade da maior defesa entre Água e Fogo. Descritores perfurante, cortante e contundente não geram uma segunda parcela de dano.
 
 **Bênção Divina — Ius Procellae:** <span data-divine-grant="susanoo">Outorgada por Susanoo.</span><span data-world-blessing="outorga-17"></span> Bênção Divina Ius Procellae — Susanoo: Reação, 5 Karma, uma vez por combate; um civil ou aliado voluntário a até 10 m, ameaçado por uma área criada por Atargatis, recebe Escudo 12 para essa ocorrência. O Escudo expira após o ataque. O preceito exige responder pela tempestade provocada; a profanação consiste em abandonar os indefesos às consequências da própria ordem.
@@ -2536,7 +2575,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Criação automática; apenas as criaturas na borda realizam a resistência indicada.
 
-**Resolução mecânica:** Crie uma barreira contínua com 150 PV e CA 18; um único reservatório de PV atende todo o domo. Ela fornece cobertura total, bloqueia passagem física e linha de efeito, mas não teleporte que dispense trajetória. Sua superfície pode ser atacada por qualquer lado; dano que a destrói não transborda automaticamente para ocupantes. Criaturas cuja base toca a borda fazem Agilidade + Reflexos CD 20 ao surgir a parede: sucesso escolhe o lado livre mais próximo e não recebe condição; falha recebe Congelamento Parcial por duas rodadas. Essa condição impede gastar Reação em Evasão, esquiva rápida ou deslocamento reativo; ainda permite Defender e reações sem movimento. A vítima pode gastar Principal em Força + Atletismo CD 20 para quebrar o gelo antes do prazo. Não há dado de dano na criação. A barreira permanece três rodadas, até 0 PV ou dissipação voluntária como Ação Livre no turno dela; não existem portas implícitas. Alvos totalmente dentro ou fora, sem tocar a borda, não recebem Congelamento Parcial.
+**Resolução mecânica:** Crie uma barreira contínua com 150 PV e CA 18; um único reservatório de PV atende todo o domo. Ela fornece cobertura total, bloqueia passagem física e linha de efeito, mas não teleporte que dispense trajetória. Sua superfície pode ser atacada por qualquer lado; dano que a destrói não transborda automaticamente para ocupantes. Criaturas cuja base toca a borda fazem Agilidade + Reflexos CD 20 ao surgir a parede: sucesso escolhe o lado livre mais próximo e não recebe condição; falha recebe Congelamento Parcial por duas rodadas. Essa condição impede gastar Reação em Evasão, esquiva rápida ou deslocamento reativo; ainda permite Defender e reações sem movimento. A vítima pode gastar Principal em Força + Atletismo CD 20 para quebrar o gelo antes do prazo. Não há dado de dano na criação. A barreira permanece três rodadas, até 0 PV ou dissipação voluntária como Ação Livre no turno dela; não existem portas implícitas. Alvos totalmente dentro ou fora, sem tocar a borda, não recebem Congelamento Parcial. No próprio turno, Atargatis pode gastar uma Ação Extra para abrir ou fechar uma passagem de 1 m na parede, desde que a veja e esteja a até 20 m dela. A abertura dura até o início do próximo turno dela e pode ser atravessada por qualquer criatura. Fechar não esmaga nem desloca ocupantes: uma criatura no vão mantém esse trecho aberto até sair. A passagem não repara PV nem cria outro domo.
 
 **Limites:** Um mausoléu ativo; erguer outro desfaz o anterior. Requer água ou superfície úmida no perímetro; terreno seco recebe condensação visível durante a declaração.
 
@@ -2550,7 +2589,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total exige superar a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1; na igualdade exata com a CA, compare Espírito do ataque ao Atributo regente da CA do defensor: Espírito maior produz Total, menor ou igual produz Parcial.
 
-**Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
+**Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte. A superfície do próprio Mausoléu e a área de Vapor Caligo contam como umidade para escolher o centro. Essa combinação não atravessa cobertura total do domo nem repete dano já aplicado pela névoa.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -2564,7 +2603,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Criação automática; dano contínuo ambiental no início dos turnos, sem crítico e sem parcial por CA.
 
-**Resolução mecânica:** A névoa dura três rodadas, até o início do quarto turno de Atargatis após a criação. Todos os demais combatentes, aliados incluídos, têm a linha de visão bloqueada além de 3 m quando o segmento visual atravessa a névoa; estar fora não permite enxergar através dela. Até 3 m a visão permanece possível. Isso impede escolher alvos que exijam vê-los, sem conceder imunidade contra áreas de centro conhecido. No início de cada turno próprio dentro da névoa, a criatura sofre uma rolagem de 2d8 Elemental / Vapor; não há ataque contra CA para esse dano contínuo. Entrar e sair não cria aplicações extras e a criação não dá um pulso imediato. Atargatis mantém um canal frio junto ao corpo e não sofre a própria névoa. Aplique a defesa parental de Vapor e o Escudo normalmente. Uma área de vento que dissipe neblina pode abrir passagem por sua regra expressa; movimentar-se não dissipa o campo. Não há condição Queimando residual fora da névoa.
+**Resolução mecânica:** A névoa dura três rodadas, até o início do quarto turno de Atargatis após a criação. Todos os demais combatentes, aliados incluídos, têm a linha de visão bloqueada além de 3 m quando o segmento visual atravessa a névoa; estar fora não permite enxergar através dela. Até 3 m a visão permanece possível. Isso impede escolher alvos que exijam vê-los, sem conceder imunidade contra áreas de centro conhecido. No início de cada turno próprio dentro da névoa, a criatura sofre uma rolagem de 2d8 Elemental / Vapor; não há ataque contra CA para esse dano contínuo. Entrar e sair não cria aplicações extras e a criação não dá um pulso imediato. Atargatis mantém um canal frio junto ao corpo e não sofre a própria névoa. Aplique a defesa parental de Vapor e o Escudo normalmente. Uma área de vento que dissipe neblina pode abrir passagem por sua regra expressa; movimentar-se não dissipa o campo. Não há condição Queimando residual fora da névoa. No próprio turno, uma Ação Extra permite abrir um único corredor de 2 m de largura dentro da névoa, em linha reta a partir dela até a borda. Até o início do próximo turno, esse corredor permite visão e não aplica o pulso de Vapor Caligo; qualquer criatura pode usá-lo. Uma nova abertura substitui a anterior, sem mover a névoa nem devolver dano já sofrido.
 
 **Limites:** Uma névoa própria ativa; uma nova substitui a anterior. Não custa manutenção adicional. Pode dissipar como Ação Livre no próprio turno.
 
@@ -2606,7 +2645,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Teste e limiares:** Agilidade + Luta: maior de 3d20 +10 contra CA; 1 natural selecionado falha.
 
-**Resolução mecânica:** Ataque corpo a corpo com o braço direito; não exige que tenha sofrido dano antes e não é uma reação gratuita. Total causa 1d10 Marcial/contundente e empurra 4 m diretamente para longe dela. Parcial causa metade, sem empurrão; falha nada. O deslocamento forçado termina no primeiro obstáculo ou espaço ocupado e não produz outro dado de dano por colisão. Não atravessa paredes, não cria um ataque de oportunidade próprio e não derruba automaticamente. Um efeito que impeça empurrões preserva o dano do acerto.
+**Resolução mecânica:** Ataque corpo a corpo com o braço direito; não exige que tenha sofrido dano antes e não é uma reação gratuita. Total causa 1d10 Marcial/contundente e empurra 4 m diretamente para longe dela. Parcial causa metade, sem empurrão; falha nada. O deslocamento forçado termina no primeiro obstáculo ou espaço ocupado e não produz outro dado de dano por colisão. Não atravessa paredes, não cria um ataque de oportunidade próprio e não derruba automaticamente. Um efeito que impeça empurrões preserva o dano do acerto. Como alternativa ao empurrão no Acerto Total, pode interromper o alvo no espaço ocupado, deixando-o Lento até o início do próximo turno dela. A escolha é declarada antes da rolagem; não combina Lento e empurrão, nem acrescenta dano.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -2616,7 +2655,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Fonte e Grau:** Marcial III. **Uso:** Reação, 20 Karma. **Alcance e alvos:** contato; um ataque corpo a corpo físico percebido.
 
-**Preparação:** Sem turno de preparação; declare antes da rolagem.
+**Preparação:** Declare depois de confirmar o acerto físico corpo a corpo e antes de aplicar seu dano; dispensa preparação anterior.
 
 **Teste e limiares:** Automático no gatilho indicado; o atacante escolhe entre gastar uma Reação e ficar Caído.
 
@@ -2630,7 +2669,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Fonte e Grau:** Vectis IV. **Uso:** Reação, 30 Karma. **Alcance e alvos:** um projétil ou feixe dirigido a ela, originado a até 40 m.
 
-**Preparação:** Sem turno de preparação; declare antes da rolagem.
+**Preparação:** Declare depois de confirmar o acerto do projétil ou feixe e antes de aplicar o dano; o teste do retorno ocorre após a intercepção.
 
 **Teste e limiares:** Intercepção automática; o retorno usa o novo teste especificado.
 
@@ -3194,6 +3233,12 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
+**Arma principal - Haste da Válvula:** Uma lança física de haste vedada e ponta em forma de válvula tripartida, usada como apoio nas galerias de Ápsu. Exige duas mãos, Força 2 e ocupa 2 espaços. Focal: Espírito + Controle Elemental. Alcance: contato a até 5 m; alvos a até 2 m impõem Desvantagem ao ataque da lança. Empunhá-la não aumenta a CA 26 nem concede defesa adicional. Ataque básico: Principal, 0 Karma, maior de 4d20 +10 contra CA, dano 1d8 Kármico/perfurante; a Desvantagem de contato reduz essa reserva em 1d20. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Na igualdade com a CA, compare Espírito 7 ao regente da defesa. A lança não acrescenta seu dano às técnicas de Água ou ao escudo de Claustrum Bathys.
+
+**Arsenal rúnico - Thurisaz - Runa da Fenda de Guarda:** A única inscrição da Haste da Válvula é Thurisaz, de Grau II. Ataques com a lança reduzem em 1 apenas o limiar de CA Parcial do alvo. O Estouro acompanha um desses ataques: soma 1d8 antes da divisão do Parcial e destrói até 7 pontos de Escudo Temporário antes de aplicar o dano; Falha não causa dano nem destrói Escudo. Esse dado adicional não é dobrado pelo crítico. A inscrição custa uma Principal ao toque, ocupa uma das três vagas pessoais de Nammu e retém 3 Karma; na reserva cheia, são 93 livres e 3 retidos, com máximo 96. Estourar ou desarmar encerra a passiva e libera a vaga, mas o Karma só fica disponível no fim da cena. Não modifica ataques que não usem a lança e não está combinada com maldição viva.
+
+**Regente da CA:** Constituição 8. Na igualdade exata com a CA 26, somente um Atributo de ataque maior que 8 produz Acerto Total; menor ou igual produz Parcial.
+
 **Traço 1:** Água e Pressão / Salmoura; defesas parentais de Água. Sem Vectis nem outorga divina copiada. A coroa é autoridade política; sua ficha usa o patamar comum de Etapa VI, sem fase adicional ou reserva oculta.
 
 **Traço 2:** Guarda das Basílicas: Reação, 4 Karma, uma vez por rodada, um aliado voluntário a até 5 m recebe Resistência 2 contra Água até o início do próximo turno de Nammu. Não cobre dano Marcial, não acumula Resistência de Água já existente: use apenas a maior. Consome uma das duas Reações da ficha.
@@ -3202,13 +3247,13 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Descrição:** Nammu fecha a mão e ergue uma arcada de água sobre o ombro de quem protege. A lâmina líquida recebe o impacto, perde a forma e cai como chuva pesada; não se recompõe enquanto o ataque continua.
 
-**Fonte e Grau:** Água III. **Uso:** Reação, 9 Karma. **Alcance e alvos:** um aliado a até 10 m.
+**Fonte e Grau:** Água III. **Uso:** Reação, 9 Karma. **Alcance e alvos:** si ou um aliado voluntário a até 10 m.
 
 **Preparação:** Sem preparação adicional.
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Concede Escudo 1d8 a um aliado a até 10 m, antes de resolver um único ataque anunciado. O Escudo dura até o início do próximo turno de Nammu ou até se esgotar, o que ocorrer primeiro; não se acumula com outro Escudo: conserve o maior. Pague 9 Karma e uma Reação; não pode somar Balança de Pressão ou outra defesa de Nammu à mesma ocorrência.
+**Resolução mecânica:** Concede Escudo 1d8 a si ou a um aliado voluntário a até 10 m, antes de resolver um único ataque anunciado. O Escudo dura até o início do próximo turno de Nammu ou até se esgotar, o que ocorrer primeiro; não se acumula com outro Escudo: conserve o maior. Pague 9 Karma e uma Reação; não pode somar Balança de Pressão ou outra defesa de Nammu à mesma ocorrência.
 
 **Limites:** Uma vez por rodada, compartilhando as duas Reações da ficha; uma defesa por ocorrência.
 
@@ -3222,7 +3267,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Espírito + Controle Elemental contra CA.
 
-**Resolução mecânica:** Faça Espírito + Controle Elemental contra CA. Total: 2d8 de Água / Subdobras e Enraizado até o início do próximo turno de Nammu. Parcial: metade do dano, sem Enraizado; falha: nada. O alvo pode gastar Movimento e superar Constituição + Atletismo CD 18 para encerrar Enraizado antes disso. Enraizado impede deslocamento voluntário, sem retirar ataques ou Reações. Não renova a duração sobre um alvo já Enraizado por esta técnica.
+**Resolução mecânica:** Faça Espírito + Controle Elemental contra CA. Total: 2d8 de Água / Subdobras e Enraizado até o início do próximo turno de Nammu. Parcial: metade do dano, sem Enraizado; falha: nada. O alvo pode gastar Movimento e superar Constituição + Atletismo CD 18 para encerrar Enraizado antes disso. Enraizado impede deslocamento voluntário, sem retirar ataques ou Reações. Não renova a duração sobre um alvo já Enraizado por esta técnica. A compressão precisa de um ponto de apoio: se o alvo estiver nadando ou suspenso sem tocar o chão, Enraizado o prende à posição ocupada, sem fazê-lo afundar nem cancelar a respiração. Teleporte válido pode deixá-la; imunidade a deslocamento forçado não concede imunidade a esta condição.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -3236,7 +3281,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Escolha uma faixa de 10 m de comprimento e 2 m de largura, visível a até 10 m. Até o início do segundo próximo turno de Nammu, até dois aliados escolhidos ignoram apenas o custo adicional de terreno difícil nessa faixa. Não concede metros, ações, teleporte, imunidade a perigos ou passagem por obstáculos sólidos. Uma faixa por vez.
+**Resolução mecânica:** Escolha uma faixa de 10 m de comprimento e 2 m de largura, visível a até 10 m. Até o início do segundo próximo turno de Nammu, até dois aliados escolhidos ignoram apenas o custo adicional de terreno difícil nessa faixa. Não concede metros, ações, teleporte, imunidade a perigos ou passagem por obstáculos sólidos. Uma faixa por vez. Nammu pode ocupar uma das duas escolhas de beneficiário. Pode traçar a faixa numa passagem submersa; a corrente não retira natação, respiração ou iluminação necessárias, e não arrasta quem se opuser a entrar.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -3250,7 +3295,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Espírito + Controle Elemental contra CA.
 
-**Resolução mecânica:** Espírito + Controle Elemental contra CA de um alvo. Total: 2d8 de Gelo e Caído; parcial: metade sem queda; falha: nada. Uma faixa de 3 m junto ao alvo torna-se terreno difícil para todos até o início do próximo turno de Nammu, sem dano repetido. Levantar consome o Movimento habitual.
+**Resolução mecânica:** Espírito + Controle Elemental contra CA de um alvo. Total: 2d8 de Gelo e Caído; parcial: metade sem queda; falha: nada. Em Total ou Parcial, uma faixa de 3 m junto ao alvo torna-se terreno difícil para todos até o início do próximo turno de Nammu, sem dano repetido. Falha não forma a escarpa. Levantar consome metade do deslocamento de uma Ação de Movimento; a metade restante pode ser percorrida nessa mesma ação.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -3258,13 +3303,13 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Descrição:** A rainha recolhe a água ao redor da ferida e mantém suas margens juntas. O socorro estanca uma perda imediata; não refaz um membro nem apaga as consequências de um golpe grave.
 
-**Fonte e Grau:** Karma III. **Uso:** Principal, 11 Karma. **Alcance e alvos:** dois aliados a 10 m.
+**Fonte e Grau:** Karma III. **Uso:** Principal, 11 Karma. **Alcance e alvos:** si e/ou até dois aliados vivos a até 10 m; no máximo dois beneficiários.
 
 **Preparação:** Sem preparação adicional.
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Role uma única cura de 1d8 e distribua seus pontos inteiros entre até dois aliados vivos a até 10 m; o total compartilhado nunca excede o resultado. Não ultrapassa Vida máxima, não ressuscita, não remove Ferimento Grave nem Estado Grave. Cada criatura só pode receber Quota de Socorro uma vez por combate, mesmo de outra cópia da técnica.
+**Resolução mecânica:** Role uma única cura de 1d8 e distribua seus pontos inteiros entre no máximo dois beneficiários vivos, escolhidos entre si e os aliados voluntários a até 10 m; o total compartilhado nunca excede o resultado. Não ultrapassa Vida máxima, não ressuscita, não remove Ferimento Grave nem Estado Grave. Cada criatura só pode receber Quota de Socorro uma vez por combate, mesmo de outra cópia da técnica.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -3292,7 +3337,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Espírito + Canalização de Karma contra CA.
 
-**Resolução mecânica:** Espírito + Canalização de Karma contra CA. Total: 2d8 Kármico; se o alvo estiver preparando uma técnica comum, faça Espírito + Canalização CD 18: falha interrompe a preparação sem devolver o custo. Parcial: metade do dano sem teste de interrupção; falha: nada. Não interrompe assinaturas, Domínios, técnicas já liberadas nem efeitos mantidos. Um mesmo alvo só sofre a tentativa de interrupção uma vez por combate.
+**Resolução mecânica:** Espírito + Canalização de Karma contra CA. Total: 2d8 Kármico; se o alvo estiver preparando uma técnica comum, o alvo testa Espírito + Canalização de Karma CD 18: a falha dele interrompe a preparação sem devolver o custo. Parcial: metade do dano sem teste de interrupção; falha: nada. Não interrompe assinaturas, Domínios, técnicas já liberadas nem efeitos mantidos. Um mesmo alvo só sofre a tentativa de interrupção uma vez por combate. A preparação precisa estar visível como manifestação em curso; o ataque não revela técnicas ocultas nem prevê a escolha seguinte do alvo.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam.
 
@@ -3306,7 +3351,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Teste e limiares:** Automático.
 
-**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais.
+**Resolução mecânica:** Uma Principal e 18 Karma criam uma única reserva compartilhada de Escudo 2d8, rolada uma vez, para até dois aliados escolhidos num raio de 4 m centrado em Nammu. Não é um Escudo por aliado, não regenera e não acumula com outros Escudos: use o maior em cada ocorrência, sem descontar ambos. Nammu escolhe quanto da reserva restante intercepta cada golpe após o acerto e antes do dano. Dura até o início do segundo próximo turno de Nammu, até esgotar ou até ela ficar inconsciente. Sair do raio retira a proteção. Enquanto mantiver, Nammu permanece no centro e não usa Principal ofensiva; mover-se voluntariamente encerra. Pague 2 Karma no início do próximo turno para manter, ou encerre. Não bloqueia passagem física, não concede Resistência nem Reações adicionais. Nammu pode ser um dos dois protegidos e dissipar voluntariamente a clausura como Ação Livre no próprio turno; isso não restitui Karma nem reabre o uso por combate. Aliados podem atravessar o limite, perdendo a proteção enquanto estiverem fora, sem consumir a reserva restante por esse movimento.
 
 **Limites:** Uma vez por combate; uma reserva compartilhada, sem reposição. Manutenção de 2 Karma no turno seguinte.
 
@@ -3467,17 +3512,23 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
+**Arma principal - Limiar de Kenoma:** Uma lâmina física de metal negro, com gume refletido para dentro do próprio aço. Exige uma mão, Força 1 e ocupa 1 espaço. Focal e Condutora: Espírito + Canalização de Karma; Precisa: +2 somente diante de abertura concreta declarada. Condutora pode transmitir Precisa a uma técnica kármica direta contra um alvo, conservando seu teste, custo e ação; não concede esse bônus a áreas ou campos. Ataque básico de contato: Principal, 0 Karma, alcance 1,5 m, Força + Luta, maior de 6d20 +10, dano 1d8 Marcial/cortante. Alternativamente, o feixe a até 6 m usa Espírito + Canalização de Karma, maior de 6d20 +10, e causa 1d8 Kármico; ele não satisfaz C1. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Empate com a CA compara Força 12 no contato ou Espírito 12 no feixe ao regente da defesa. A lâmina não soma 1d8 aos dados soberanos; Ordo Tenebrarum conserva sua projeção espacial sem contato e não marca a maldição.
+
+**Arsenal rúnico - Labirinto de Espelhos Partidos - Vertigem de Retorno:** Maldição Abissal de quatro Condições: C1, apenas contato com Força ou Agilidade + Luta; C4, três Marcas no mesmo alvo; C5, ao menos um Acerto Total na sequência para liberar o estado; C8, tributo fixo de 3 Vida irreduzíveis da portadora no despertar. Acertos Parciais e Totais elegíveis aplicam uma Marca; na terceira, zere as Marcas desse alvo, cobre o tributo e resolva 1d16 Corrupto da runa, separadamente do dano-base, sem crítico próprio. O tributo ignora Resistência e Escudo; não pode ser substituído pelo estado de estar abaixo da metade da Vida. Se houve Total na sequência, aplique Prisão Espacial de Espelho: até o fim do próximo turno do alvo, sua primeira tentativa de gastar Movimento para se afastar exige Espírito + Canalização de Karma CD fixa 22; sucesso permite o movimento normal, falha faz o movimento terminar novamente adjacente à portadora, num espaço livre. Essa tentativa encerra a prisão. Sem Total, ocorre apenas o dano da runa. Não acumula prisões no mesmo alvo, não trava teleporte e não escolhe vítima substituta. Diante de 1 natural selecionado em ataque com a arma, Ummu testa Presença + Controle da Corrupção, maior de 6d20 +10, contra CD 18; falha causa 1d6 Corrupto nela, em vez de Carga Temporária. CD de forja 20. Sem Karma Retido, Grau ou vaga pessoal; a maldição ocupa todos os encaixes da lâmina, impedindo inscrições convencionais. Feixes, campos, reflexões e ataques sem contato não geram Marcas.
+
+**Regente da CA:** Constituição 10. Na igualdade exata com a CA 35, somente um Atributo de ataque maior que 10 produz Acerto Total; menor ou igual produz Parcial.
+
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 
 **Traço 2:** Patamar Kármico: Vida 1200, Karma 540 e CA 35. Sua natureza transcendental não é uma Etapa de criação de personagens. Os Graus VI e VII e as assinaturas deste repertório são perfis exclusivos de Calamidade; não acrescentam níveis à tabela de técnicas de jogadores.
 
 **Traço 3:** Três manifestações por Domínio, por combate: Força, Velocidade, Resistência, Superação e Técnica conservam contadores independentes. Cada ativação custa 3 Karma e Ação Extra, dura seis rodadas e não acumula com outra do mesmo Domínio. Os dois Refinamentos são de Permanência. Exigências de dois, quatro ou cinco Domínios verificam manifestações diferentes ativas no instante da liberação; a Essência passiva isolada não basta.
 
-**Traço 4:** Custos de Calamidade: o Karma escrito é integral e pago na declaração; não há uso gratuito por divindade nem redução racial implícita. Os perfis VI e VII não extrapolam por inferência a tabela mortal de pedágios corruptos. Entropia de Hubur cobra os 70 Karma declarados e a corrosão que inflige ao alvo; não acrescente ao emissor uma Carga ou uma perda de Vida sem outra regra expressa.
+**Traço 4:** Custos de Calamidade - O Karma escrito é o custo final e pago na declaração; não há uso gratuito por divindade nem redução racial implícita. Os custos com desconto de Domínio já incluem a redução própria registrada no perfil; não a aplique uma segunda vez. Entropia de Hubur custa 56 Karma e corrói a reserva do alvo nos termos da técnica. Os perfis VI e VII não extrapolam por inferência a tabela mortal de pedágios corruptos: não acrescente ao emissor Carga ou perda de Vida sem regra expressa.
 
 **Traço 5:** Registro de Entropia: guarde o Karma máximo íntegro, anterior à maldição, separadamente do máximo acessível. Descanso comum, fim de cena, cura e dissipação do campo não removem a corrosão. Somente um descanso longo completo em santuário purificado encerra a marca de Entropia; depois restaure o máximo íntegro e resolva a recuperação de recursos desse descanso.
 
-**Traço 6:** Defesa transcendental: CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. É uma exceção de ficha acima da tabela de chefes I–VII, não uma nova CA universal para personagens. A elevação de 32 para 35 não é bônus cumulativo. Reserva: 540 Karma; a Falsa Santa possui 700 Karma. Ambas pertencem ao ranque Kármico.
+**Traço 6:** Defesa transcendental - CA 35, composta pelo referencial de chefe SSS (29) e 6 pontos de distorção espacial próprios desta entidade de Etapa Kármica. Essa defesa pertence à natureza de Kenoma; não é uma CA universal para personagens.
 
 ###### 1 · Terremoto {#ummu-hubur-1}
 
@@ -3489,7 +3540,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** O chão rompe em placas; no total derruba e torna o chão difícil por duas rodadas. Não derruba estruturas habitadas automaticamente. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** O chão rompe em placas; no total derruba e torna o chão difícil por duas rodadas. Não derruba estruturas habitadas automaticamente. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. Escolha o centro antes de rolar; o tremor não atravessa um vazio entre duas superfícies desconectadas nem permite escolher quais ocupantes da área serão atingidos. A faixa de terreno difícil fica aparente na mesma liberação.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -3503,7 +3554,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** Exige massa de água contínua; no total arrasta 6 m até espaço livre. Não replica em terra sem água. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** Exige massa de água contínua; no total arrasta 6 m até espaço livre. Não replica em terra sem água. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. A linha começa num ponto visível a até 30 m de Ummu e avança em uma direção declarada, mantendo comprimento de 30 m e largura de 6 m. Não contorna esquinas. O empurrão segue a direção da frente de água e termina no último espaço livre antes de um obstáculo, sem dano adicional por colisão.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -3517,7 +3568,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** No total empurra 4 m tangencialmente. A área impede projéteis leves por duas rodadas; cobertura total continua válida. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** No total empurra 4 m tangencialmente. A área impede projéteis leves por duas rodadas; cobertura total continua válida. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. O bloqueio de projéteis leves vale para ambos os lados: inclui flechas, virotes e objetos semelhantes disparados de dentro para fora ou através da área. Não intercepta feixes, manifestações sem projétil ou ataques de arma pesada por analogia; a saída do vento encerra esse impedimento no trajeto livre.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -3527,11 +3578,11 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 20 Karma. **Alcance e alvos:** raio de 6 m a 30 m.
 
-**Preparação:** Uma Principal; fonte mineral e calor manifestados tornam a zona evidente.
+**Preparação:** Uma Principal prepara, paga 20 Karma e sinaliza a área fixa por uma rodada; a Principal do turno seguinte libera, se a área continuar ao alcance e visível.
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** Sinaliza o terreno por uma rodada; no total Queimando por duas rodadas, 1d4 por início de turno. Não acumula aplicações. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** Sinaliza o terreno por uma rodada; no total Queimando por duas rodadas, 1d4 por início de turno. Não acumula aplicações. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. A crosta vermelha fixa o centro durante a preparação. Criaturas podem abandonar a área antes da liberação. Se Ummu ficar inconsciente ou não puder gastar a Principal seguinte, a preparação se desfaz sem explosão e sem reembolso; os escombros não prolongam Queimando.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -3541,11 +3592,11 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Fonte e Grau:** Desastres Naturais V. **Uso:** Principal, 22 Karma. **Alcance e alvos:** raio de 5 m a 40 m.
 
-**Preparação:** Uma Principal; marca fixa; cobertura total subterrânea bloqueia.
+**Preparação:** Uma Principal prepara, paga 22 Karma e anuncia a área fixa por uma rodada; a Principal do turno seguinte libera, se houver linha de efeito. Cobertura total subterrânea bloqueia.
 
 **Teste e limiares:** Espírito + Manifestação de Bênção: maior de 6d20 +10 contra a CA de cada alvo; um teste por execução, 1 natural selecionado falha.
 
-**Resolução mecânica:** Um corpo mineral condensado fica anunciado no alto por uma rodada; no total aplica Caído. O projétil é manifestação efêmera, sem massa permanente comerciável. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano.
+**Resolução mecânica:** Um corpo mineral condensado fica anunciado no alto por uma rodada; no total aplica Caído. O projétil é manifestação efêmera, sem massa permanente comerciável. Acerto Parcial causa metade do dano, arredondada para baixo, sem o deslocamento ou condição do Acerto Total; Falha nada. A área inclui aliados e a própria emissora quando estiverem no volume. Aplique apenas a defesa da expressão elemental indicada e o Escudo; Magma usa metade da maior defesa entre Terra e Fogo. O fenômeno tem um único impacto de dano, sem reaplicação nos turnos seguintes. As duas rodadas de terreno ou vento persistente contam até o início do terceiro turno dela; não prolongam o dano. A área anunciada não persegue uma criatura que a abandone. Se Ummu ficar inconsciente ou não puder gastar a Principal seguinte, o corpo mineral se desfaz antes de cair, sem reembolso. O impacto não causa um segundo dano a quem já sofreu a parcela da técnica.
 
 **Limites:** Uma vez por rodada; efeitos de mesmo nome não acumulam. Não somar dano pela prosa de escombros, calor ou colisão. Condição de mesma origem não acumula.
 
@@ -3559,7 +3610,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Teste e limiares:** Agilidade + Luta, maior de 5d20 +10; valide os dois Domínios antes de rolar.
 
-**Resolução mecânica:** Exige os Domínios de Força e Velocidade manifestados. Ataque de Agilidade + Luta, maior de 5d20 +10, contra a CA recalculada sem qualquer bônus de armadura vestida, armadura natural ou escudo mágico. Preserve CA-base, Agilidade, tamanho, classe, escudo físico e cobertura válida. Recalcule o limiar Parcial pela metade dessa CA efetiva. Total causa 4d12 Marcial/cortante espacial; parcial metade; falha nada. Ignore também Resistência ou redução especificamente concedida por armadura e não desconte Escudo Temporário de origem mágica: a parcela ultrapassa esse Escudo sem consumi-lo. Resistência intrínseca Marcial, votos e outras proteções sem origem em armadura ou escudo mágico continuam válidos. A técnica não destrói o equipamento que ultrapassou.
+**Resolução mecânica:** Exige os Domínios de Força e Velocidade manifestados. Ataque de Agilidade + Luta, maior de 5d20 +10, contra a CA recalculada sem qualquer bônus de armadura vestida, armadura natural ou escudo mágico. Preserve CA-base, Agilidade, tamanho, classe, escudo físico e cobertura válida. Recalcule o limiar Parcial pela metade dessa CA efetiva. Total causa 4d12 Marcial/cortante espacial; parcial metade; falha nada. Ignore também Resistência ou redução especificamente concedida por armadura e não desconte Escudo Temporário de origem mágica: a parcela ultrapassa esse Escudo sem consumi-lo. Resistência intrínseca Marcial, votos e outras proteções sem origem em armadura ou escudo mágico continuam válidos. A técnica não destrói o equipamento que ultrapassou. O corte projetado não é um golpe de contato da Limiar de Kenoma: sua distância de 12 m e a penetração espacial não transmitem a maldição da arma nem o dado de 1d8 dela.
 
 **Limites:** Uma execução por Ação Principal; pagar novamente exige outra ação disponível.
 
@@ -4016,9 +4067,15 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 **Identidade:** Demi-humana dracônica · Pugilista · Etapa VII · soberana SSS · 46 anos. **Vida:** 200. **Karma:** 128. **CA:** 29. **Deslocamento:** 12 m. **Atributos:** Força 8 · Agilidade 8 · Constituição 8 · Intelecto 5 · Presença 5 · Espírito 8.
 
-**Perícias:** Luta 3 e Reflexos 3: maior de 4d20 +10. Atletismo 3: maior de 4d20 +10 com Constituição. Controle de Fogo 3 e Manifestação de Bênção 3: maior de 4d20 +10 com Espírito. Acrobacia 2: maior de 4d20 +5. Tática 2, Percepção 2 e Investigação 2: maior de 3d20 +7 com Analítico. Liderança 2: maior de 3d20 +5. Perícias não indicadas são 0.
+**Perícias:** Luta 3 e Reflexos 3: maior de 4d20 +10. Atletismo 3: maior de 4d20 +10 com Constituição. Controle de Fogo 3 e Manifestação de Bênção 3: maior de 4d20 +10 com Espírito. Acrobacia 2: maior de 4d20 +5. Tática 2, Percepção 2 e Investigação 2: maior de 3d20 +8 com Analítico. Liderança 2: maior de 3d20 +5. Perícias não indicadas são 0.
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre, 1 Extra para Sequência Brutal e 2 Reações por rodada, uma por resolução. Não recebe turnos adicionais. **Punhos:** Principal, 2 m, Luta contra CA, 1d10 físico; parcial metade, falha nenhum dano. O bônus de Impulso não está incluído nos testes listados.
+
+**Arma principal:** Cestus Aruven - par de manoplas de bronze escuro, com canais térmicos que deixam os dedos articulados. Ataque equipado: Principal, 2 m, Força + Luta contra CA, 2d4 físico no Total, metade no Parcial, nada na Falha; exige ambas as mãos desimpedidas. O ataque da manopla e o ataque desarmado de 1d10 são modos alternativos: escolha um na declaração, sem somar seus dados. Sael conserva os golpes desarmados de seu estilo, inclusive cotoveladas, joelhadas e chutes quando houver apoio e alcance, com a base já escrita de 1d10. Um golpe equipado não gera Impulso, não recebe o bônus reservado ao próximo ataque desarmado e não serve como ataque de Sequência Brutal. Talion e Anábasis podem ser entregues pela manopla direita ou como golpe desarmado; mantêm seus próprios dados, custos e requisitos nos dois modos.
+
+**Runa da arma:** Forja de Medula - Febre de Cinzas, selada somente na manopla direita, Maldição Voraz de três condições, sem Grau, Karma Retido ou vaga pessoal. Composição fixa: C1 - Restrição de Vetor Corpo a Corpo; C4 - Ciclo de 3 Marcas no Mesmo Alvo; C5 - Exigência de Acerto Total para o Estado. Apenas um ataque de contato que use de fato a manopla direita e teste Força + Luta marca; Parcial e Total contam uma marca, máximo uma por ataque. Ao fechar três marcas no mesmo alvo, cause 2d6 Corrupto, com Resistência normal, e zere as três marcas. Se ao menos um golpe dessa sequência foi Total, o alvo escolhe largar o que empunha ou testar Constituição + Atletismo CD fixa 20 para conservar os itens: sucesso evita o espasmo; na falha mantém os itens, mas sofre metade do dano da runa, arredondada para baixo, no início do próximo turno, sem novo ataque ou crítico. Sem um Total na sequência, ocorre apenas o dano inicial. A CD de forja é 18. Um 1 natural selecionado num ataque da manopla exige Presença + Controle da Corrupção CD 17; Sael não tem esse treinamento e usa 1d20 +0, sem substituir por Controle de Fogo ou Manifestação de Bênção. Na falha sofre 1d6 Corrupto, sem Carga Temporária alternativa. Não há tributo em Vida nem condição de alimentação nesta composição. A manopla direita não aceita runas convencionais; a esquerda permanece sem inscrição. Punhos livres, chutes, Istmo, Fulmen, Escória, rugido, escudos e ataques de Sequência Brutal não transferem marcas à arma. Os dados da maldição são adicionais, sem duplicação por crítico, e não alteram o dado-base da técnica usada.
+
+**Regente da CA:** Agilidade 8. Na igualdade exata com CA 29, somente um Atributo de ataque maior que 8 produz Acerto Total; menor ou igual produz Parcial.
 
 **Impulso:** Começa com 1; cada dois acertos desarmados válidos gera 1, máximo 3. Cada ponto guardado dá +1 a Luta. Perde-os se passar seu ciclo sem atacar, aproximar-se de ameaça ou defender-se ativamente. Sequência Brutal custa Extra, 6 Karma e 1–3 Impulsos após acertar no próprio turno, uma vez por rodada: um ataque básico por ponto, sem movimento ou geração de Impulso; não encadeia ataques adicionais. Os bônus de Luta usam apenas o saldo após pagamento. Impiedoso ampliado acrescenta 1d6 ao próximo acerto depois de gastar Impulso, uma vez, e ignora 2 de Resistência física nesse acerto. Não multiplique o adicional no crítico.
 
@@ -4037,63 +4094,63 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 ###### 1 · Talion
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 7 Karma, 2 m, um alvo. Sael recolhe a guarda adversária com o antebraço e golpeia o apoio do corpo; Luta contra CA. **Total:** 2d8 físico; o alvo testa Constituição + Atletismo CD 22, perdendo uma Reação ainda disponível na falha. **Parcial:** Metade, sem perda. Não remove a Principal nem renova a perda durante a mesma rodada.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 7 Karma, 2 m, um alvo percebido. Sael recolhe a guarda adversária com o antebraço e golpeia o apoio do corpo; Força + Luta contra CA. Declare o golpe desarmado ou entregue pela manopla direita; só o segundo modo pode marcar pela Forja de Medula, e nenhum deles soma outro ataque básico. **Total:** 2d8 físico; o alvo testa Constituição + Atletismo CD 22, perdendo uma Reação ainda disponível na falha. Igualar a CD preserva a Reação. **Parcial:** Metade, sem perda. **Falha:** nenhum efeito. Não remove a Principal, não cria uma dívida de Reação para a rodada seguinte nem renova a perda durante a mesma rodada. Um Talion desarmado válido pode alimentar Impulso normalmente; o equipado não pode.
 
 **Composição de Karma:** 6 Base IV + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 2 · Istmo
 
-**Fonte e Grau:** Marcial III. **Uso:** Reação, 7 Karma, após resolver um ataque corpo a corpo percebido contra Sael, agressor a 2 m. Luta oposta a Força + Luta ou Agilidade + Acrobacia dele. **Vitória:** Sofre 2d6 físico e fica Agarrado por uma mão da rainha. **Empate:** metade, sem agarrão. **Derrota:** nada. Escapar exige Principal e nova oposição; distância superior a 2 m ou mão liberada encerra. Não evita o ataque original nem responde a outro contra-ataque.
+**Fonte e Grau:** Marcial III. **Uso:** Reação, 7 Karma, após resolver um ataque corpo a corpo percebido contra Sael, agressor a até 2 m e uma mão da rainha disponível para conter. Sael precisa continuar capaz de agir. Força + Luta oposta a Força + Luta ou Agilidade + Acrobacia dele, escolhido pelo agressor antes de rolar. **Vitória:** O agressor sofre 2d6 físico e fica Agarrado por uma mão da rainha. **Empate:** metade, sem agarrão, conforme a exceção própria deste golpe. **Derrota:** nada. Escapar exige Principal e nova oposição contra a Luta de Sael; empate favorece quem tenta escapar. Distância superior a 2 m, incapacidade da rainha ou mão liberada encerra. Enquanto mantém a contenção, essa mão não pode sustentar o ataque equipado das manoplas, mas Sael conserva chutes e outros golpes desarmados possíveis. Não evita o ataque original, não responde a outro contra-ataque e não pode acompanhar Tegmen, Escória ou outra Reação da rainha à mesma ocorrência. O agarrão não é um golpe da manopla e não marca a vítima.
 
 **Composição de Karma:** 4 Base III + 1 reação + 2 Função secundária II = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 3 · Drómē
 
-**Fonte e Grau:** Marcial III. **Uso:** Movimento, 6 Karma, pessoal. Avança até 5 m por caminho livre, inclusive parede ou estrutura que consiga apoiar durante o trajeto; precisa terminar em apoio estável ou em voo já ativo. O próximo ataque desarmado até o fim do turno recebe +2. Não concede ataque, travessia de barreira ou voo por si só.
+**Fonte e Grau:** Marcial III. **Uso:** Movimento, 6 Karma, pessoal. Avança até 5 m por caminho livre, inclusive parede ou estrutura que consiga apoiar durante o trajeto; precisa terminar em apoio estável ou em voo já ativo. Escolha a rota antes de deslocar; contenção impede a partida até ser removida. O próximo ataque desarmado até o fim do turno recebe +2; o bônus é consumido nesse ataque mesmo que ele erre. Pode preparar a entrada de um Talion desarmado ou de um ataque básico que abra a Sequência Brutal, mas não melhora os ataques posteriores da sequência nem a versão equipada de Talion. Não concede ataque, travessia de barreira ou voo por si só; os 5 m pertencem a esta Movimento, sem somar outro deslocamento terrestre ou aéreo à mesma ação.
 
 **Composição de Karma:** 4 Base III + 1 movimento + 1 teste específico +2 = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 4 · Tegmen
 
-**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Reação, 7 Karma, pessoal ou aliado adjacente antes de dano percebido. Uma asa escamosa intercepta a trajetória e concede 2d10 de escudo apenas àquela resolução. Excedente desaparece. Não permite outra defesa ativa contra a mesma incidência; não exige o voo de Alária nem cria uma asa independente.
+**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Reação, 7 Karma, pessoal ou um aliado adjacente percebido, depois do acerto e antes de retirar Vida. Uma asa escamosa intercepta a trajetória e concede 2d10 de escudo apenas àquela resolução. Escolha um único protegido, inclusive numa área; aplique primeiro as reduções permanentes dele. Excedente desaparece, e um escudo temporário já existente não se soma a este. Não permite outra defesa ativa de Sael contra a mesma incidência nem uma resposta de Istmo ou Escória a esse golpe. Não exige o voo de Alária nem cria uma asa independente.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 5 · Alária
 
-**Fonte e Grau:** Bênção de Tiamat III. **Uso:** Movimento, 7 Karma, pessoal; três rodadas, manutenção 1 Karma no início dos turnos seguintes. Abre as asas e pode usar o deslocamento normal como voo de 12 m, sem somar trajeto aéreo e terrestre. Ativação não desloca. Não transporta outra criatura sem carga e mãos compatíveis. Encerrar ou perder consciência elimina sustentação; quedas seguem as regras da cena, sem dano automático acrescentado a um golpe.
+**Fonte e Grau:** Bênção de Tiamat III. **Uso:** Movimento, 7 Karma, pessoal; três rodadas, manutenção 1 Karma no início dos turnos seguintes. Abre as asas e pode usar o deslocamento normal como voo de 12 m, sem somar trajeto aéreo e terrestre. Ativação não desloca; voar ainda exige uma Movimento disponível, normalmente a partir do turno seguinte. Espaço insuficiente para abrir as asas impede a sustentação, e cobertura fechada bloqueia a rota. Drómē pode terminar em voo enquanto Alária estiver ativa, usando somente os 5 m daquele avanço. Não transporta outra criatura sem carga e mãos compatíveis. Pode encerrar como Livre no próprio turno; deixar de pagar a manutenção, encerrar ou perder consciência elimina sustentação. Quedas seguem as regras da cena, sem dano automático acrescentado a um golpe.
 
 **Composição de Karma:** 4 Base III + 1 movimento + 2 duração três rodadas = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 6 · Regnum
 
-**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Principal, 15 Karma, cone de 8 m, até três inimigos percebidos. O rugido se concentra no peito dos alvos: Manifestação de Bênção oposta a Constituição + Atletismo de cada um. **Vitória:** Empurra 3 m por rota livre e impõe −1d20 ao próximo ataque até o fim do próximo turno do alvo. **Empate:** empurra 1 m, sem penalidade. **Derrota:** nada. Não ordena obediência nem afeta quem estiver isolado por cobertura completa.
+**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Principal, 15 Karma, cone de 8 m, até três inimigos percebidos escolhidos na declaração. O rugido se concentra no peito dos alvos: uma rolagem de Espírito + Manifestação de Bênção oposta a Constituição + Atletismo de cada um, com resultados individuais. **Vitória:** Empurra até 3 m para longe de Sael, por rota livre, e impõe −1d20 ao próximo ataque até o fim do próximo turno do alvo. A rainha escolhe a distância antes de mover o alvo, sem arremessá-lo para dentro de uma barreira ou outro corpo. **Empate:** empurra 1 m, sem penalidade, conforme a exceção expressa deste rugido. **Derrota:** nada. A penalidade não acumula consigo e termina depois de um ataque ou no prazo indicado. Não ordena obediência, não causa dano de impacto por descrição e não afeta quem estiver isolado por cobertura completa.
 
 **Composição de Karma:** 6 Base IV + 4 área / destinatários + 2 seleção de aliados + 3 Função secundária III = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 7 · Fulmen
 
-**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Principal, 7 Karma, 2 m, um alvo; punho e ignição chegam juntos. Controle de Fogo contra CA, 2d12 Fogo no total; pode deslocar o alvo 2 m se houver espaço, sem derrubar. Parcial metade sem deslocamento. Substitui o ataque físico, não soma seu dano nem gera Impulso: a resolução é elemental.
+**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Principal, 7 Karma, 2 m, um alvo percebido; punho e ignição chegam juntos. Espírito + Controle de Fogo contra CA, 2d12 Fogo no Total; pode deslocar o alvo até 2 m para longe de Sael por espaço livre, sem derrubar. Parcial causa metade sem deslocamento; Falha não causa dano ou movimento. O calor acompanha o gesto, sem atravessar cobertura total. Substitui o ataque físico, não soma seu dano nem gera Impulso: a resolução é elemental. Usar a manopla como aparência do gesto não transfere a maldição, pois o teste não é um ataque de contato com Força + Luta.
 
 **Composição de Karma:** 6 Base IV + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ###### 8 · Cautério
 
-**Fonte e Grau:** Subdobra de Combustão III. **Uso:** Livre, 8 Karma, antes de um ataque desarmado do próprio turno, uma vez por rodada. Se o próximo golpe alcançar total, o calor sela a lesão e impede que o alvo recupere Vida até o início do próximo turno dele. Parcial ou falha não aplicam o bloqueio. Não acrescenta dano ao golpe, não afeta escudos e não se transfere à Sequência Brutal ou à assinatura.
+**Fonte e Grau:** Subdobra de Combustão III. **Uso:** Livre, 8 Karma, antes de um ataque desarmado do próprio turno, uma vez por rodada. Declare o ataque beneficiado; um Talion desarmado é elegível, enquanto a versão equipada não é. Se esse golpe alcançar Total, o calor sela a lesão e impede que o alvo recupere Vida até o início do próximo turno dele. Parcial ou Falha não aplicam o bloqueio, e o custo continua gasto; se o ataque não ocorrer, o preparo termina no fim do turno. Pode fechar uma abertura antes de um aliado agir, mas não interrompe uma cura já resolvida. Não acrescenta dano ao golpe, não afeta escudos e não se transfere à Sequência Brutal ou à assinatura.
 
 **Composição de Karma:** 4 Base III + 4 Livre = 8 Karma.
 
 
 ###### 9 · Escória
 
-**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Reação, 7 Karma, após sofrer dano físico de um ataque percebido a até 2 m. Compara Controle de Fogo à CA do agressor: total 2d12 Fogo e −2 m ao próximo Movimento dele; parcial metade sem redução; falha nada. Não reduz o golpe original, não responde a dano contínuo, refletido ou a outro contra-ataque. Não combina com Istmo na mesma resolução.
+**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Reação, 7 Karma, após sofrer dano físico à própria Vida por um ataque percebido a até 2 m, desde que Sael continue capaz de agir. Um golpe inteiramente absorvido por escudo ou Resistência não abre o gatilho. Compara Espírito + Controle de Fogo à CA do agressor: Total causa 2d12 Fogo e −2 m ao próximo Movimento dele, até o fim do próximo turno; Parcial causa metade sem redução; Falha não produz efeito. A redução não acumula consigo e não cancela um movimento já encerrado. Não reduz o golpe original, não responde a dano contínuo, refletido ou a outro contra-ataque. Não combina com Istmo, Tegmen ou outra Reação da rainha à mesma resolução, e não aplica marcas da manopla.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
@@ -4104,7 +4161,7 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 **Composição de Karma:** 12 Base V + 6 Função secundária IV + 3 arremesso e retorno − 2 preparo e uso limitado = 19 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Dados da assinatura:** Base V de 3d10; o d6 do golpe desarmado substitui um d10. Role 2d10 +1d6 como dano-base único, sem somar outro golpe.
+**Dados da assinatura:** Base V de 3d10; o perfil próprio de Anábasis substitui um d10 por 1d6. Role 2d10 +1d6 como dano-base único, sem somar os 1d10 do ataque desarmado comum ou os 2d4 das manoplas. Declare no preparo se a conclusão será desarmada ou pela manopla direita; apenas a segunda pode aplicar uma marca da Forja de Medula. O dado de 1d6 pertence à construção desta assinatura, conservado nos dois modos, e não muda o dado do ataque básico de Sael. Se a maldição despertar, resolva seu dano Corrupto separadamente, sem alterar a divisão físico/Fogo da assinatura. O dano e o eventual pulso da maldição não alimentam Impulso nem criam uma segunda conclusão de Anábasis.
 
 
 #### Princesa Maelis Aruven · Alária {#princesa-maelis}

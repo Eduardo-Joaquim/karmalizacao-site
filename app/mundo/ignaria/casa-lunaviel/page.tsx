@@ -17,11 +17,11 @@ export default function Page() {
         title={data.title}
         region="ignaria"
         home="/regras/21-bestiario?regiao=ignaria"
-        homeLabel="Ignária · Cortes, organizações e monstros"
+        homeLabel="Ignária - Cortes, organizações e monstros"
       />
       <main className="site-shell realm-shell">
         <header className="realm-hero ignaria-realm-hero">
-          <p className="atlas-overline">IGNÁRIA · CASA MARQUESAL</p>
+          <p className="atlas-overline">IGNÁRIA - CASA MARQUESAL</p>
           <h1>
             Lunaviel<span>A casa e seus vínculos</span>
           </h1>

@@ -5,7 +5,7 @@ import { SITE_ORIGIN } from "@/lib/public-navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Elaranth · Reino Élfico de Gaéria",
+  title: "Elaranth - Reino Élfico de Gaéria",
   description:
     "A Corte Nemeton, a Rainha Naerith, sua herdeira e a Casa Solvarden no Reino Élfico de Gaéria.",
   alternates: { canonical: SITE_ORIGIN + "/mundo/gaeria/reino-elfico" },
@@ -16,11 +16,11 @@ export default function ElvenKingdomPage() {
     <div className="site-page realm-page realm-with-index elven-realm-page">
       <CrownNavigation
         entries={elven.navigation}
-        title="Elaranth · Corte Nemeton"
+        title="Elaranth - Corte Nemeton"
       />
       <main className="site-shell realm-shell">
         <header className="realm-hero elven-realm-hero">
-          <p className="atlas-overline">GAÉRIA · COROAS DA FLORESTA</p>
+          <p className="atlas-overline">GAÉRIA - COROAS DA FLORESTA</p>
           <h1>
             Elaranth<span>O Reino Élfico</span>
           </h1>

@@ -35,9 +35,15 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 **Identidade:** Demi-humana dracônica · Pugilista · Etapa VII · soberana SSS · 46 anos. **Vida:** 200. **Karma:** 128. **CA:** 29. **Deslocamento:** 12 m. **Atributos:** Força 8 · Agilidade 8 · Constituição 8 · Intelecto 5 · Presença 5 · Espírito 8.
 
-**Perícias:** Luta 3 e Reflexos 3: maior de 4d20 +10. Atletismo 3: maior de 4d20 +10 com Constituição. Controle de Fogo 3 e Manifestação de Bênção 3: maior de 4d20 +10 com Espírito. Acrobacia 2: maior de 4d20 +5. Tática 2, Percepção 2 e Investigação 2: maior de 3d20 +7 com Analítico. Liderança 2: maior de 3d20 +5. Perícias não indicadas são 0.
+**Perícias:** Luta 3 e Reflexos 3: maior de 4d20 +10. Atletismo 3: maior de 4d20 +10 com Constituição. Controle de Fogo 3 e Manifestação de Bênção 3: maior de 4d20 +10 com Espírito. Acrobacia 2: maior de 4d20 +5. Tática 2, Percepção 2 e Investigação 2: maior de 3d20 +8 com Analítico. Liderança 2: maior de 3d20 +5. Perícias não indicadas são 0.
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre, 1 Extra para Sequência Brutal e 2 Reações por rodada, uma por resolução. Não recebe turnos adicionais. **Punhos:** Principal, 2 m, Luta contra CA, 1d10 físico; parcial metade, falha nenhum dano. O bônus de Impulso não está incluído nos testes listados.
+
+**Arma principal:** Cestus Aruven - par de manoplas de bronze escuro, com canais térmicos que deixam os dedos articulados. Ataque equipado: Principal, 2 m, Força + Luta contra CA, 2d4 físico no Total, metade no Parcial, nada na Falha; exige ambas as mãos desimpedidas. O ataque da manopla e o ataque desarmado de 1d10 são modos alternativos: escolha um na declaração, sem somar seus dados. Sael conserva os golpes desarmados de seu estilo, inclusive cotoveladas, joelhadas e chutes quando houver apoio e alcance, com a base já escrita de 1d10. Um golpe equipado não gera Impulso, não recebe o bônus reservado ao próximo ataque desarmado e não serve como ataque de Sequência Brutal. Talion e Anábasis podem ser entregues pela manopla direita ou como golpe desarmado; mantêm seus próprios dados, custos e requisitos nos dois modos.
+
+**Runa da arma:** Forja de Medula - Febre de Cinzas, selada somente na manopla direita, Maldição Voraz de três condições, sem Grau, Karma Retido ou vaga pessoal. Composição fixa: C1 - Restrição de Vetor Corpo a Corpo; C4 - Ciclo de 3 Marcas no Mesmo Alvo; C5 - Exigência de Acerto Total para o Estado. Apenas um ataque de contato que use de fato a manopla direita e teste Força + Luta marca; Parcial e Total contam uma marca, máximo uma por ataque. Ao fechar três marcas no mesmo alvo, cause 2d6 Corrupto, com Resistência normal, e zere as três marcas. Se ao menos um golpe dessa sequência foi Total, o alvo escolhe largar o que empunha ou testar Constituição + Atletismo CD fixa 20 para conservar os itens: sucesso evita o espasmo; na falha mantém os itens, mas sofre metade do dano da runa, arredondada para baixo, no início do próximo turno, sem novo ataque ou crítico. Sem um Total na sequência, ocorre apenas o dano inicial. A CD de forja é 18. Um 1 natural selecionado num ataque da manopla exige Presença + Controle da Corrupção CD 17; Sael não tem esse treinamento e usa 1d20 +0, sem substituir por Controle de Fogo ou Manifestação de Bênção. Na falha sofre 1d6 Corrupto, sem Carga Temporária alternativa. Não há tributo em Vida nem condição de alimentação nesta composição. A manopla direita não aceita runas convencionais; a esquerda permanece sem inscrição. Punhos livres, chutes, Istmo, Fulmen, Escória, rugido, escudos e ataques de Sequência Brutal não transferem marcas à arma. Os dados da maldição são adicionais, sem duplicação por crítico, e não alteram o dado-base da técnica usada.
+
+**Regente da CA:** Agilidade 8. Na igualdade exata com CA 29, somente um Atributo de ataque maior que 8 produz Acerto Total; menor ou igual produz Parcial.
 
 **Impulso:** Começa com 1; cada dois acertos desarmados válidos gera 1, máximo 3. Cada ponto guardado dá +1 a Luta. Perde-os se passar seu ciclo sem atacar, aproximar-se de ameaça ou defender-se ativamente. Sequência Brutal custa Extra, 6 Karma e 1–3 Impulsos após acertar no próprio turno, uma vez por rodada: um ataque básico por ponto, sem movimento ou geração de Impulso; não encadeia ataques adicionais. Os bônus de Luta usam apenas o saldo após pagamento. Impiedoso ampliado acrescenta 1d6 ao próximo acerto depois de gastar Impulso, uma vez, e ignora 2 de Resistência física nesse acerto. Não multiplique o adicional no crítico.
 
@@ -56,63 +62,63 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 ##### 1 · Talion
 
-**Fonte e Grau:** Marcial IV. **Uso:** Principal, 7 Karma, 2 m, um alvo. Sael recolhe a guarda adversária com o antebraço e golpeia o apoio do corpo; Luta contra CA. **Total:** 2d8 físico; o alvo testa Constituição + Atletismo CD 22, perdendo uma Reação ainda disponível na falha. **Parcial:** Metade, sem perda. Não remove a Principal nem renova a perda durante a mesma rodada.
+**Fonte e Grau:** Marcial IV. **Uso:** Principal, 7 Karma, 2 m, um alvo percebido. Sael recolhe a guarda adversária com o antebraço e golpeia o apoio do corpo; Força + Luta contra CA. Declare o golpe desarmado ou entregue pela manopla direita; só o segundo modo pode marcar pela Forja de Medula, e nenhum deles soma outro ataque básico. **Total:** 2d8 físico; o alvo testa Constituição + Atletismo CD 22, perdendo uma Reação ainda disponível na falha. Igualar a CD preserva a Reação. **Parcial:** Metade, sem perda. **Falha:** nenhum efeito. Não remove a Principal, não cria uma dívida de Reação para a rodada seguinte nem renova a perda durante a mesma rodada. Um Talion desarmado válido pode alimentar Impulso normalmente; o equipado não pode.
 
 **Composição de Karma:** 6 Base IV + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 2 · Istmo
 
-**Fonte e Grau:** Marcial III. **Uso:** Reação, 7 Karma, após resolver um ataque corpo a corpo percebido contra Sael, agressor a 2 m. Luta oposta a Força + Luta ou Agilidade + Acrobacia dele. **Vitória:** Sofre 2d6 físico e fica Agarrado por uma mão da rainha. **Empate:** metade, sem agarrão. **Derrota:** nada. Escapar exige Principal e nova oposição; distância superior a 2 m ou mão liberada encerra. Não evita o ataque original nem responde a outro contra-ataque.
+**Fonte e Grau:** Marcial III. **Uso:** Reação, 7 Karma, após resolver um ataque corpo a corpo percebido contra Sael, agressor a até 2 m e uma mão da rainha disponível para conter. Sael precisa continuar capaz de agir. Força + Luta oposta a Força + Luta ou Agilidade + Acrobacia dele, escolhido pelo agressor antes de rolar. **Vitória:** O agressor sofre 2d6 físico e fica Agarrado por uma mão da rainha. **Empate:** metade, sem agarrão, conforme a exceção própria deste golpe. **Derrota:** nada. Escapar exige Principal e nova oposição contra a Luta de Sael; empate favorece quem tenta escapar. Distância superior a 2 m, incapacidade da rainha ou mão liberada encerra. Enquanto mantém a contenção, essa mão não pode sustentar o ataque equipado das manoplas, mas Sael conserva chutes e outros golpes desarmados possíveis. Não evita o ataque original, não responde a outro contra-ataque e não pode acompanhar Tegmen, Escória ou outra Reação da rainha à mesma ocorrência. O agarrão não é um golpe da manopla e não marca a vítima.
 
 **Composição de Karma:** 4 Base III + 1 reação + 2 Função secundária II = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 3 · Drómē
 
-**Fonte e Grau:** Marcial III. **Uso:** Movimento, 6 Karma, pessoal. Avança até 5 m por caminho livre, inclusive parede ou estrutura que consiga apoiar durante o trajeto; precisa terminar em apoio estável ou em voo já ativo. O próximo ataque desarmado até o fim do turno recebe +2. Não concede ataque, travessia de barreira ou voo por si só.
+**Fonte e Grau:** Marcial III. **Uso:** Movimento, 6 Karma, pessoal. Avança até 5 m por caminho livre, inclusive parede ou estrutura que consiga apoiar durante o trajeto; precisa terminar em apoio estável ou em voo já ativo. Escolha a rota antes de deslocar; contenção impede a partida até ser removida. O próximo ataque desarmado até o fim do turno recebe +2; o bônus é consumido nesse ataque mesmo que ele erre. Pode preparar a entrada de um Talion desarmado ou de um ataque básico que abra a Sequência Brutal, mas não melhora os ataques posteriores da sequência nem a versão equipada de Talion. Não concede ataque, travessia de barreira ou voo por si só; os 5 m pertencem a esta Movimento, sem somar outro deslocamento terrestre ou aéreo à mesma ação.
 
 **Composição de Karma:** 4 Base III + 1 movimento + 1 teste específico +2 = 6 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 4 · Tegmen
 
-**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Reação, 7 Karma, pessoal ou aliado adjacente antes de dano percebido. Uma asa escamosa intercepta a trajetória e concede 2d10 de escudo apenas àquela resolução. Excedente desaparece. Não permite outra defesa ativa contra a mesma incidência; não exige o voo de Alária nem cria uma asa independente.
+**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Reação, 7 Karma, pessoal ou um aliado adjacente percebido, depois do acerto e antes de retirar Vida. Uma asa escamosa intercepta a trajetória e concede 2d10 de escudo apenas àquela resolução. Escolha um único protegido, inclusive numa área; aplique primeiro as reduções permanentes dele. Excedente desaparece, e um escudo temporário já existente não se soma a este. Não permite outra defesa ativa de Sael contra a mesma incidência nem uma resposta de Istmo ou Escória a esse golpe. Não exige o voo de Alária nem cria uma asa independente.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 5 · Alária
 
-**Fonte e Grau:** Bênção de Tiamat III. **Uso:** Movimento, 7 Karma, pessoal; três rodadas, manutenção 1 Karma no início dos turnos seguintes. Abre as asas e pode usar o deslocamento normal como voo de 12 m, sem somar trajeto aéreo e terrestre. Ativação não desloca. Não transporta outra criatura sem carga e mãos compatíveis. Encerrar ou perder consciência elimina sustentação; quedas seguem as regras da cena, sem dano automático acrescentado a um golpe.
+**Fonte e Grau:** Bênção de Tiamat III. **Uso:** Movimento, 7 Karma, pessoal; três rodadas, manutenção 1 Karma no início dos turnos seguintes. Abre as asas e pode usar o deslocamento normal como voo de 12 m, sem somar trajeto aéreo e terrestre. Ativação não desloca; voar ainda exige uma Movimento disponível, normalmente a partir do turno seguinte. Espaço insuficiente para abrir as asas impede a sustentação, e cobertura fechada bloqueia a rota. Drómē pode terminar em voo enquanto Alária estiver ativa, usando somente os 5 m daquele avanço. Não transporta outra criatura sem carga e mãos compatíveis. Pode encerrar como Livre no próprio turno; deixar de pagar a manutenção, encerrar ou perder consciência elimina sustentação. Quedas seguem as regras da cena, sem dano automático acrescentado a um golpe.
 
 **Composição de Karma:** 4 Base III + 1 movimento + 2 duração três rodadas = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 6 · Regnum
 
-**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Principal, 15 Karma, cone de 8 m, até três inimigos percebidos. O rugido se concentra no peito dos alvos: Manifestação de Bênção oposta a Constituição + Atletismo de cada um. **Vitória:** Empurra 3 m por rota livre e impõe −1d20 ao próximo ataque até o fim do próximo turno do alvo. **Empate:** empurra 1 m, sem penalidade. **Derrota:** nada. Não ordena obediência nem afeta quem estiver isolado por cobertura completa.
+**Fonte e Grau:** Bênção de Tiamat IV. **Uso:** Principal, 15 Karma, cone de 8 m, até três inimigos percebidos escolhidos na declaração. O rugido se concentra no peito dos alvos: uma rolagem de Espírito + Manifestação de Bênção oposta a Constituição + Atletismo de cada um, com resultados individuais. **Vitória:** Empurra até 3 m para longe de Sael, por rota livre, e impõe −1d20 ao próximo ataque até o fim do próximo turno do alvo. A rainha escolhe a distância antes de mover o alvo, sem arremessá-lo para dentro de uma barreira ou outro corpo. **Empate:** empurra 1 m, sem penalidade, conforme a exceção expressa deste rugido. **Derrota:** nada. A penalidade não acumula consigo e termina depois de um ataque ou no prazo indicado. Não ordena obediência, não causa dano de impacto por descrição e não afeta quem estiver isolado por cobertura completa.
 
 **Composição de Karma:** 6 Base IV + 4 área / destinatários + 2 seleção de aliados + 3 Função secundária III = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 7 · Fulmen
 
-**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Principal, 7 Karma, 2 m, um alvo; punho e ignição chegam juntos. Controle de Fogo contra CA, 2d12 Fogo no total; pode deslocar o alvo 2 m se houver espaço, sem derrubar. Parcial metade sem deslocamento. Substitui o ataque físico, não soma seu dano nem gera Impulso: a resolução é elemental.
+**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Principal, 7 Karma, 2 m, um alvo percebido; punho e ignição chegam juntos. Espírito + Controle de Fogo contra CA, 2d12 Fogo no Total; pode deslocar o alvo até 2 m para longe de Sael por espaço livre, sem derrubar. Parcial causa metade sem deslocamento; Falha não causa dano ou movimento. O calor acompanha o gesto, sem atravessar cobertura total. Substitui o ataque físico, não soma seu dano nem gera Impulso: a resolução é elemental. Usar a manopla como aparência do gesto não transfere a maldição, pois o teste não é um ataque de contato com Força + Luta.
 
 **Composição de Karma:** 6 Base IV + 1 efeito menor = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 8 · Cautério
 
-**Fonte e Grau:** Subdobra de Combustão III. **Uso:** Livre, 8 Karma, antes de um ataque desarmado do próprio turno, uma vez por rodada. Se o próximo golpe alcançar total, o calor sela a lesão e impede que o alvo recupere Vida até o início do próximo turno dele. Parcial ou falha não aplicam o bloqueio. Não acrescenta dano ao golpe, não afeta escudos e não se transfere à Sequência Brutal ou à assinatura.
+**Fonte e Grau:** Subdobra de Combustão III. **Uso:** Livre, 8 Karma, antes de um ataque desarmado do próprio turno, uma vez por rodada. Declare o ataque beneficiado; um Talion desarmado é elegível, enquanto a versão equipada não é. Se esse golpe alcançar Total, o calor sela a lesão e impede que o alvo recupere Vida até o início do próximo turno dele. Parcial ou Falha não aplicam o bloqueio, e o custo continua gasto; se o ataque não ocorrer, o preparo termina no fim do turno. Pode fechar uma abertura antes de um aliado agir, mas não interrompe uma cura já resolvida. Não acrescenta dano ao golpe, não afeta escudos e não se transfere à Sequência Brutal ou à assinatura.
 
 **Composição de Karma:** 4 Base III + 4 Livre = 8 Karma.
 
 
 ##### 9 · Escória
 
-**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Reação, 7 Karma, após sofrer dano físico de um ataque percebido a até 2 m. Compara Controle de Fogo à CA do agressor: total 2d12 Fogo e −2 m ao próximo Movimento dele; parcial metade sem redução; falha nada. Não reduz o golpe original, não responde a dano contínuo, refletido ou a outro contra-ataque. Não combina com Istmo na mesma resolução.
+**Fonte e Grau:** Subdobra de Combustão IV. **Uso:** Reação, 7 Karma, após sofrer dano físico à própria Vida por um ataque percebido a até 2 m, desde que Sael continue capaz de agir. Um golpe inteiramente absorvido por escudo ou Resistência não abre o gatilho. Compara Espírito + Controle de Fogo à CA do agressor: Total causa 2d12 Fogo e −2 m ao próximo Movimento dele, até o fim do próximo turno; Parcial causa metade sem redução; Falha não produz efeito. A redução não acumula consigo e não cancela um movimento já encerrado. Não reduz o golpe original, não responde a dano contínuo, refletido ou a outro contra-ataque. Não combina com Istmo, Tegmen ou outra Reação da rainha à mesma resolução, e não aplica marcas da manopla.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
@@ -123,7 +129,7 @@ O título Rainha Dracônica também nasceu dos ringues. Sael é o ápice dos Pug
 
 **Composição de Karma:** 12 Base V + 6 Função secundária IV + 3 arremesso e retorno − 2 preparo e uso limitado = 19 Karma. Manutenção e outros recursos são pagos separadamente.
 
-**Dados da assinatura:** Base V de 3d10; o d6 do golpe desarmado substitui um d10. Role 2d10 +1d6 como dano-base único, sem somar outro golpe.
+**Dados da assinatura:** Base V de 3d10; o perfil próprio de Anábasis substitui um d10 por 1d6. Role 2d10 +1d6 como dano-base único, sem somar os 1d10 do ataque desarmado comum ou os 2d4 das manoplas. Declare no preparo se a conclusão será desarmada ou pela manopla direita; apenas a segunda pode aplicar uma marca da Forja de Medula. O dado de 1d6 pertence à construção desta assinatura, conservado nos dois modos, e não muda o dado do ataque básico de Sael. Se a maldição despertar, resolva seu dano Corrupto separadamente, sem alterar a divisão físico/Fogo da assinatura. O dano e o eventual pulso da maldição não alimentam Impulso nem criam uma segunda conclusão de Anábasis.
 
 
 ### Princesa Maelis Aruven · Alária {#princesa-maelis}

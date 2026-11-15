@@ -9,6 +9,7 @@ import json
 import re
 import subprocess
 from lxml import html
+from editorial_separators import normalize_chapter
 
 ROOT = Path(__file__).resolve().parents[2]
 MODULES = ('fundamentos', 'classes_runas', 'espiritual', 'economia', 'elementos', 'combate')
@@ -44,6 +45,7 @@ def main():
         importlib.import_module('book206.' + name).apply(book)
     importlib.import_module('book207.cursed').apply(book)
     for item in book['chapters']:
+        normalize_chapter(item)
         index_chapter(item)
     path.write_text(json.dumps(book, ensure_ascii=False, indent=2) + '\n')
     manuscript = []

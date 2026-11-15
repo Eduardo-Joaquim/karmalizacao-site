@@ -177,17 +177,20 @@ const legacyProfiles = [
       ...body.matchAll(/<h6[^>]*>([\s\S]*?)<\/h6>([\s\S]*?)(?=<h6|$)/g),
     ].map((x, i) => ({
       id: `${m[1]}-${i}`,
-      name: plain(x[1]).split(" · ")[0],
+      name: plain(x[1]).split(/ (?:·|-) /)[0],
       fields: [{ label: "Uso", html: x[2] }],
       cost:
         costs.find(
-          (c) => c.owner === m[1] && c.name === plain(x[1]).split(" · ")[0],
+          (c) =>
+            c.owner === m[1] && c.name === plain(x[1]).split(/ (?:·|-) /)[0],
         )?.cost ?? null,
       action: "Consulte o efeito",
     }));
     return {
       id: m[1],
-      name: plain(body.match(/<h4[^>]*>([\s\S]*?)<\/h4>/)?.[1]).split(" · ")[0],
+      name: plain(body.match(/<h4[^>]*>([\s\S]*?)<\/h4>/)?.[1]).split(
+        / (?:·|-) /,
+      )[0],
       identity: pairs.Identidade,
       life: numbers(pairs.Vida),
       karma: numbers(pairs.Karma),
@@ -206,12 +209,24 @@ const legacyProfiles = [
     };
   });
 profiles.push(...legacyProfiles);
-function basicArt(text: string, attrs: number[], skills: string): NpcArt[] {
-  const match = text.match(/Ataque básico[:\s]([\s\S]{0,330})/i);
-  if (!match) return [];
-  const body = match[1],
+function basicArt(
+  text: string,
+  attrs: number[],
+  skills: string,
+  weaponText?: string,
+): NpcArt[] {
+  const match = weaponText
+    ? weaponText.match(
+        /(?:Ataque básico(?: de contato)?|Ataque equipado)\s*:\s*([\s\S]+)/i,
+      )
+    : text.match(/Ataque básico[:\s]([\s\S]{0,330})/i);
+  if (!match && !weaponText) return [];
+  const body = weaponText ?? match![1],
     damage =
-      body.match(/contra CA[\s,;:]*?(\d+d(?:12|10|8|6|4))(?!\d)/i)?.[1] ?? "";
+      (weaponText
+        ? body.match(/\b(\d+d(?:12|10|8|6|4))(?!\d)/i)?.[1]
+        : body.match(/contra CA[\s,;:]*?(\d+d(?:12|10|8|6|4))(?!\d)/i)?.[1]) ??
+      "";
   return [
     {
       id: "basic",
@@ -236,7 +251,12 @@ export const combatCatalog: NpcTemplate[] = [
           (f) =>
             `${f.name ?? f.title ?? ""}: ${fields(f) || plain(f.html ?? f.text)}`,
         )
-        .join("\n");
+        .join("\n"),
+      weapon = (
+        (p.facts as { fields?: { label: string; html: string }[] }[]) ?? []
+      )
+        .flatMap((fact) => fact.fields ?? [])
+        .find((field) => /^Arma principal(?:\s|$)/i.test(field.label));
     return {
       id: String(p.id),
       name: String(p.name),
@@ -245,12 +265,20 @@ export const combatCatalog: NpcTemplate[] = [
       life: numbers(p.life),
       karma: numbers(p.karma),
       ca: numbers(p.ca ?? p.defense),
+      caRegent: facts.match(
+        /regente da CA(?: \d+)?(?:\s*:\s*|\s+é\s+)(Agilidade|Constituição)\b/i,
+      )?.[1] as NpcTemplate["caRegent"],
       movement: String(p.movement),
       attributes: attrs,
       skills: facts,
       traits: facts,
       arts: [
-        ...basicArt(facts, attrs, facts),
+        ...basicArt(
+          facts,
+          attrs,
+          facts,
+          weapon ? plain(weapon.html) : undefined,
+        ),
         ...((p.abilities as Record<string, unknown>[]) ?? []).map((a, i) =>
           art(a, String(p.id), attrs, facts, i),
         ),

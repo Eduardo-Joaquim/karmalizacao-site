@@ -1,6 +1,7 @@
 import { AeriaContinentCard } from "@/components/aeria-archive";
 import { GaeriaContinentCard } from "@/components/gaeria-archive";
 import { IgnariaContinentCard } from "@/components/ignaria-archive";
+import { ThalassiaContinentCard } from "@/components/thalassia-archive";
 import { ArrowRight, BookMarked, BookOpen, Sparkles } from "lucide-react";
 import Link from "next/link";
 
@@ -78,6 +79,7 @@ export default async function RulesIndexPage() {
             <GaeriaContinentCard />
             <IgnariaContinentCard />
             <AeriaContinentCard />
+            <ThalassiaContinentCard />
           </div>
 
           {groups.map((group) => {

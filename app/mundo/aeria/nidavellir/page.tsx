@@ -18,7 +18,7 @@ export default function Page() {
       />
       <main className="site-shell realm-shell">
         <header className="realm-hero">
-          <p className="atlas-overline">AÉRIA · REPÚBLICA INDUSTRIAL</p>
+          <p className="atlas-overline">AÉRIA - REPÚBLICA INDUSTRIAL</p>
           <h1>
             Nidavellir<span>As Quatro Cidades</span>
           </h1>

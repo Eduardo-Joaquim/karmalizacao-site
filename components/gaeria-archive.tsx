@@ -20,7 +20,7 @@ export function GaeriaContinentCard() {
       <div>
         <span>CONTINENTE DA TERRA</span>
         <strong>Gaéria</strong>
-        <p>Cortes das rainhas · Organizações · Monstros</p>
+        <p>Cortes das rainhas - Organizações - Monstros</p>
       </div>
       <ArrowUpRight aria-hidden="true" />
     </Link>
@@ -58,7 +58,7 @@ export function GaeriaArchive() {
       <details className="imperial-entry">
         <summary>
           <Crown aria-hidden="true" />
-          Corte Imperial · Gaéria
+          Corte Imperial - Gaéria
         </summary>
         <p>
           A autoridade imperial precede os títulos territoriais nos tratados e
@@ -75,7 +75,7 @@ export function GaeriaArchive() {
             <span>01</span>
           </header>
           <a className="gaeria-entry gaeria-entry-royal" href={humanRealm}>
-            <small>REINO HUMANO · VALDÁRIA</small>
+            <small>REINO HUMANO - VALDÁRIA</small>
             <h4>Heptarchia de Aurival</h4>
             <p>
               Rainha Aveline, as princesas Isadora e Brígida e o conselheiro
@@ -89,7 +89,7 @@ export function GaeriaArchive() {
             className="gaeria-entry gaeria-entry-royal gaeria-entry-elven"
             href={elvenRealm}
           >
-            <small>REINO ÉLFICO · ELARANTH</small>
+            <small>REINO ÉLFICO - ELARANTH</small>
             <h4>Corte Nemeton</h4>
             <p>Rainha Naerith, Princesa Ilyra e a Casa Ducal Solvaldren.</p>
             <span>

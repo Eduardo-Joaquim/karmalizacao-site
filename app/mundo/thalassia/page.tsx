@@ -1,7 +1,9 @@
 import { CrownNavigation } from "@/components/crown-navigation";
 import { ThalassiaContent } from "@/components/thalassia-content";
+import { ThalassiaArchive } from "@/components/thalassia-archive";
 import data from "@/data/thalassia.json";
 import { SITE_ORIGIN } from "@/lib/public-navigation";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 export const metadata = {
   title: data.title,
@@ -17,35 +19,19 @@ export default function Page() {
         title={data.title}
         region="thalassia"
         home="/regras/21-bestiario?regiao=thalassia"
-        homeLabel="Thalassia · Voltar ao Bestiário"
+        homeLabel="Thalassia - Voltar ao Bestiário"
       />
-      <main className="site-shell realm-shell">
-        <header className="realm-hero">
-          <p className="atlas-overline">THALASSIA · CONTINENTE DA ÁGUA</p>
-          <h1>
-            Três tronos.
-            <br />
-            Um oceano fechado.
-          </h1>
-          <p>
-            As Eclusas de Halikarnós, as Basílicas de Ápsu e a Fossa de Hubur.
-          </p>
-          <p>
-            <Link href="/mundo/politica">
-              Consultar a política dos nove povos →
-            </Link>
-          </p>
-          <div className="realm-summary">
-            <div>
-              <strong>15</strong>
-              <span>Figuras</span>
-            </div>
-            <div>
-              <strong>98</strong>
-              <span>Técnicas e assinaturas</span>
-            </div>
-          </div>
-        </header>
+      <main className="site-shell realm-shell gaeria-directory">
+        <Link
+          className="gaeria-bestiary-return"
+          href="/regras/21-bestiario?regiao=thalassia"
+        >
+          <ArrowLeft aria-hidden="true" />
+          Voltar ao Bestiário
+        </Link>
+        <p className="atlas-overline">KARMALIZAÇÃO - ARQUIVO DO MUNDO</p>
+        <h1>O continente das correntes e dos três tronos.</h1>
+        <ThalassiaArchive />
         <ThalassiaContent />
       </main>
     </div>

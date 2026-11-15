@@ -1,36 +1,369 @@
 /* Thalassia: a cold oceanic palette, isolated from the green court templates. */
-.thalassia-page { --thalassia-deep:#070d1b; --thalassia-mid:#10223b; --thalassia-edge:#1e3a5f; --thalassia-ink:#dce8f6; color:var(--thalassia-ink); background:radial-gradient(ellipse at 75% 0%,#1e3a5f88,transparent 55%),#070d1b; }
-.thalassia-page .realm-hero,.thalassia-directory .gaeria-entry { background:linear-gradient(135deg,#1e3a5f,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
-.thalassia-page .realm-section>h2,.thalassia-page .realm-intro,.thalassia-page .realm-section>div>p { color:#cfdded; }
-.thalassia-page .elven-sheet { --elven-accent:#92bad7; --elven-jewel:#1e3a5f; background:linear-gradient(145deg,#10223b,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
-.thalassia-page .elven-sheet .elven-identity,.thalassia-page .elven-sheet .elven-combat,.thalassia-page .elven-sheet .elven-lore { background:linear-gradient(130deg,#10223b,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
-.thalassia-page .elven-sheet :is(.elven-resource,.elven-attribute-grid>div,.noble-trait,.elven-ability,.dossier-reading-nav,.elven-tags>span,.skill-panel,.skill-entry) { background:linear-gradient(135deg,#10223b,#070d1b)!important; border-color:#1e3a5f!important; color:#dce8f6!important; }
-.thalassia-page .elven-sheet :is(.elven-resource dd,.elven-resource dt,.elven-attribute-grid dd,.elven-field,.noble-trait-content,.elven-lore p,.elven-fields,.skill-roll,.skill-entry-name,.skill-training) { color:#dce8f6!important; }
-.thalassia-page .elven-sheet :is(h3,h4,h5,.elven-title,.elven-eyebrow,.elven-field>span,.noble-trait header,.elven-ability-meta>span) { color:#adcde7!important; }
-.thalassia-page .elven-sheet .dossier-reading-nav button[aria-pressed=true],.thalassia-page .dice-trigger { background:#1e3a5f!important; border-color:#749bb9!important; color:#e1edf9!important; }
-.thalassia-page .elven-sheet .ability-description { color:#b8cde2!important; font-style:normal; line-height:1.9; }
-.thalassia-page .elven-sheet .elven-field { line-height:1.85!important; }
-.thalassia-page .elven-sheet .dice-roller>output { background:#070d1b; border-color:#1e3a5f; color:#dce8f6; }
-.thalassia-page .dice-roller>output b { color:#dce8f6; }
-.thalassia-directory { margin-block:1.5rem; }
-.atlas-region-content:has(.thalassia-directory) { background:linear-gradient(150deg,#10223b,#070d1b); border-color:#1e3a5f; color:#dce8f6; }
-.royal-technique-tools { display:flex; flex-wrap:wrap; gap:.7rem; padding:1rem; margin-top:1rem; background:#070d1b; border:1px solid #1e3a5f; border-radius:4px; }
-.royal-technique-tools label { display:grid; gap:.4rem; flex:1 1 140px; color:#adcde7; font-size:.8rem; }
-.royal-technique-tools input { width:100%; min-height:42px; border:1px solid #1e3a5f; padding:.5rem; color:#dce8f6; background:#10223b; }
-.royal-technique-tools output { display:grid; gap:.5rem; width:100%; padding:.6rem 0; color:#dce8f6; }
-.royal-technique-tools p { width:100%; font-size:.8rem; line-height:1.65; }
+.thalassia-page {
+  --thalassia-deep: #070d1b;
+  --thalassia-mid: #10223b;
+  --thalassia-edge: #1e3a5f;
+  --thalassia-ink: #dce8f6;
+  color: var(--thalassia-ink);
+  background:
+    radial-gradient(ellipse at 75% 0%, #1e3a5f88, transparent 55%), #070d1b;
+}
+.thalassia-page .realm-section > h2,
+.thalassia-page .realm-intro,
+.thalassia-page .realm-section > div > p {
+  color: #cfdded;
+}
+.thalassia-page .elven-sheet {
+  --elven-accent: #92bad7;
+  --elven-jewel: #1e3a5f;
+  background: linear-gradient(145deg, #10223b, #070d1b) !important;
+  border-color: #1e3a5f !important;
+  color: #dce8f6 !important;
+}
+.thalassia-page .elven-sheet .elven-identity,
+.thalassia-page .elven-sheet .elven-combat,
+.thalassia-page .elven-sheet .elven-lore {
+  background: linear-gradient(130deg, #10223b, #070d1b) !important;
+  border-color: #1e3a5f !important;
+  color: #dce8f6 !important;
+}
+.thalassia-page
+  .elven-sheet
+  :is(
+    .elven-resource,
+    .elven-attribute-grid > div,
+    .noble-trait,
+    .elven-ability,
+    .dossier-reading-nav,
+    .elven-tags > span,
+    .skill-panel,
+    .skill-entry
+  ) {
+  background: linear-gradient(135deg, #10223b, #070d1b) !important;
+  border-color: #1e3a5f !important;
+  color: #dce8f6 !important;
+}
+.thalassia-page
+  .elven-sheet
+  :is(
+    .elven-resource dd,
+    .elven-resource dt,
+    .elven-attribute-grid dd,
+    .elven-field,
+    .noble-trait-content,
+    .elven-lore p,
+    .elven-fields,
+    .skill-roll,
+    .skill-entry-name,
+    .skill-training
+  ) {
+  color: #dce8f6 !important;
+}
+.thalassia-page
+  .elven-sheet
+  :is(
+    h3,
+    h4,
+    h5,
+    .elven-title,
+    .elven-eyebrow,
+    .elven-field > span,
+    .noble-trait header,
+    .elven-ability-meta > span
+  ) {
+  color: #adcde7 !important;
+}
+.thalassia-page .elven-sheet .dossier-reading-nav button[aria-pressed="true"],
+.thalassia-page .dice-trigger {
+  background: #1e3a5f !important;
+  border-color: #749bb9 !important;
+  color: #e1edf9 !important;
+}
+.thalassia-page .elven-sheet .ability-description {
+  color: #b8cde2 !important;
+  font-style: normal;
+  line-height: 1.9;
+}
+.thalassia-page .elven-sheet .elven-field {
+  line-height: 1.85 !important;
+}
+.thalassia-page .elven-sheet .dice-roller > output {
+  background: #070d1b;
+  border-color: #1e3a5f;
+  color: #dce8f6;
+}
+.thalassia-page .dice-roller > output b {
+  color: #dce8f6;
+}
+.royal-technique-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #070d1b;
+  border: 1px solid #1e3a5f;
+  border-radius: 4px;
+}
+.royal-technique-tools label {
+  display: grid;
+  gap: 0.4rem;
+  flex: 1 1 140px;
+  color: #adcde7;
+  font-size: 0.8rem;
+}
+.royal-technique-tools input {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid #1e3a5f;
+  padding: 0.5rem;
+  color: #dce8f6;
+  background: #10223b;
+}
+.royal-technique-tools output {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 0;
+  color: #dce8f6;
+}
+.royal-technique-tools p {
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
 /* Fractured borders are decoration only; they never clip text or controls. */
-.thalassia-page .boss-card-transcendental { --elven-accent:#dce8f6!important; --elven-jewel:#1e3a5f!important; position:relative; isolation:isolate; border:1px solid #99b4d0!important; border-radius:0!important; box-shadow:0 0 44px #1e3a5f88,inset 0 0 70px #070d1b!important; background:conic-gradient(from 24deg at 40% 20%,#070d1b,#1e3a5f 7deg,#070d1b 8deg,#10223b 80deg,#070d1b 81deg)!important; }
-.thalassia-page .boss-card-transcendental::before { content:""; position:absolute; inset:-3px; z-index:2; pointer-events:none; border:2px solid #cfdeef; clip-path:polygon(0 0,21% 0,20% 1%,43% 0,63% 0,61% 1%,100% 0,100% 18%,99% 20%,100% 49%,100% 70%,99% 72%,100% 100%,76% 100%,77% 99%,48% 100%,20% 100%,22% 99%,0 100%,0 71%,1% 73%,0 41%,0 15%,1% 17%); }
-.thalassia-page .boss-card-transcendental .elven-identity { min-height:330px; background:radial-gradient(circle at 79% 17%,#dce8f688 0 1px,transparent 2px),radial-gradient(circle at 63% 42%,#b7cde666 0 1px,transparent 2px),radial-gradient(circle at 87% 72%,#dce8f688 0 1px,transparent 2px),conic-gradient(from 30deg at 82% 35%,#070d1b,#1e3a5f 9deg,#070d1b 10deg,#10223b 90deg,#070d1b 91deg)!important; }
-.thalassia-page .boss-card-transcendental .elven-identity h3 { font-family:var(--font-display,Georgia,serif); font-size:clamp(2.4rem,6vw,5.6rem)!important; letter-spacing:-.035em; line-height:.98; color:#e2eaf5!important; text-shadow:1px 0 #7899ba,-1px 1px #1e3a5f,0 12px 32px #070d1b; }
-.thalassia-page .boss-card-transcendental .elven-title { color:#c2d1e5!important; letter-spacing:.12em; }
-.thalassia-page .boss-card-transcendental .elven-ability { border-left:2px solid #91acc8!important; background:linear-gradient(125deg,#10223b,#070d1b 70%)!important; }
-.thalassia-page .boss-card-transcendental .elven-signature { border:1px solid #c1d3e7!important; background:conic-gradient(from 100deg at 100% 0%,#070d1b,#1e3a5f 17deg,#070d1b 18deg)!important; }
-.thalassia-page .boss-card-transcendental .noble-ornament { opacity:.32; color:#c2d4e9; transform:rotate(0); }
-@media(max-width:700px) { .thalassia-page .boss-card-transcendental .elven-identity { min-height:275px; } .royal-technique-tools { padding:.75rem; } }
+.thalassia-page .boss-card-transcendental {
+  --elven-accent: #dce8f6 !important;
+  --elven-jewel: #1e3a5f !important;
+  position: relative;
+  isolation: isolate;
+  border: 1px solid #99b4d0 !important;
+  border-radius: 0 !important;
+  box-shadow:
+    0 0 44px #1e3a5f88,
+    inset 0 0 70px #070d1b !important;
+  background: conic-gradient(
+    from 24deg at 40% 20%,
+    #070d1b,
+    #1e3a5f 7deg,
+    #070d1b 8deg,
+    #10223b 80deg,
+    #070d1b 81deg
+  ) !important;
+}
+.thalassia-page .boss-card-transcendental::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: 2;
+  pointer-events: none;
+  border: 2px solid #cfdeef;
+  clip-path: polygon(
+    0 0,
+    21% 0,
+    20% 1%,
+    43% 0,
+    63% 0,
+    61% 1%,
+    100% 0,
+    100% 18%,
+    99% 20%,
+    100% 49%,
+    100% 70%,
+    99% 72%,
+    100% 100%,
+    76% 100%,
+    77% 99%,
+    48% 100%,
+    20% 100%,
+    22% 99%,
+    0 100%,
+    0 71%,
+    1% 73%,
+    0 41%,
+    0 15%,
+    1% 17%
+  );
+}
+.thalassia-page .boss-card-transcendental .elven-identity {
+  min-height: 330px;
+  background:
+    radial-gradient(circle at 79% 17%, #dce8f688 0 1px, transparent 2px),
+    radial-gradient(circle at 63% 42%, #b7cde666 0 1px, transparent 2px),
+    radial-gradient(circle at 87% 72%, #dce8f688 0 1px, transparent 2px),
+    conic-gradient(
+      from 30deg at 82% 35%,
+      #070d1b,
+      #1e3a5f 9deg,
+      #070d1b 10deg,
+      #10223b 90deg,
+      #070d1b 91deg
+    ) !important;
+}
+.thalassia-page .boss-card-transcendental .elven-identity h3 {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2.4rem, 6vw, 5.6rem) !important;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  color: #e2eaf5 !important;
+  text-shadow:
+    1px 0 #7899ba,
+    -1px 1px #1e3a5f,
+    0 12px 32px #070d1b;
+}
+.thalassia-page .boss-card-transcendental .elven-title {
+  color: #c2d1e5 !important;
+  letter-spacing: 0.12em;
+}
+.thalassia-page .boss-card-transcendental .elven-ability {
+  border-left: 2px solid #91acc8 !important;
+  background: linear-gradient(125deg, #10223b, #070d1b 70%) !important;
+}
+.thalassia-page .boss-card-transcendental .elven-signature {
+  border: 1px solid #c1d3e7 !important;
+  background: conic-gradient(
+    from 100deg at 100% 0%,
+    #070d1b,
+    #1e3a5f 17deg,
+    #070d1b 18deg
+  ) !important;
+}
+.thalassia-page .boss-card-transcendental .noble-ornament {
+  opacity: 0.32;
+  color: #c2d4e9;
+  transform: rotate(0);
+}
+@media (max-width: 700px) {
+  .thalassia-page .boss-card-transcendental .elven-identity {
+    min-height: 275px;
+  }
+  .royal-technique-tools {
+    padding: 0.75rem;
+  }
+}
 
-.thalassia-page :is(.gaeria-bestiary-return,.crown-navigation-toggle,.crown-navigation-panel) { background:#070d1bf5; border-color:#1e3a5f; color:#dce8f6; }
-.thalassia-page :is(.gaeria-bestiary-return:hover,.crown-navigation-toggle:hover,.crown-navigation-panel a[aria-current]) { background:#1e3a5f; border-color:#92bad7; }
-.thalassia-page .crown-navigation :is(strong,small,span,p,.crown-index-home) { color:#adcde7; }
-.thalassia-page .gaeria-bestiary-return:focus-visible { outline-color:#92bad7; }
+.thalassia-page
+  :is(
+    .gaeria-bestiary-return,
+    .crown-navigation-toggle,
+    .crown-navigation-panel
+  ) {
+  background: #070d1bf5;
+  border-color: #1e3a5f;
+  color: #dce8f6;
+}
+.thalassia-page
+  :is(
+    .gaeria-bestiary-return:hover,
+    .crown-navigation-toggle:hover,
+    .crown-navigation-panel a[aria-current]
+  ) {
+  background: #1e3a5f;
+  border-color: #92bad7;
+}
+.thalassia-page
+  .crown-navigation
+  :is(strong, small, span, p, .crown-index-home) {
+  color: #adcde7;
+}
+.thalassia-page .gaeria-bestiary-return:focus-visible {
+  outline-color: #92bad7;
+}
+
+/* Continental directories share the same hierarchy, with regional palettes. */
+.gaeria-archive.aeria-archive {
+  margin-block: 24px;
+  padding: clamp(18px, 3vw, 35px);
+  border-radius: 0;
+  box-shadow: none;
+}
+.aeria-archive .gaeria-archive-heading {
+  border-bottom-color: var(--aeria-border);
+}
+.aeria-archive .gaeria-archive-heading :is(p, span),
+.aeria-archive .gaeria-entry :is(p, small) {
+  color: #b6d0e3;
+}
+.aeria-archive .gaeria-entry h4 {
+  color: var(--aeria-silver);
+}
+.aeria-archive .imperial-entry {
+  border-color: var(--aeria-brass);
+  background: linear-gradient(110deg, #203344, #0d1c30);
+}
+.aeria-archive .imperial-entry p {
+  color: #bdd0e1;
+}
+.gaeria-archive.thalassia-archive,
+.thalassia-continent-card {
+  border-color: #6087a665;
+  background: linear-gradient(135deg, #132b43, #0a1424);
+  color: #c7dbee;
+}
+.thalassia-archive .gaeria-archive-heading {
+  border-bottom-color: #6087a640;
+}
+.thalassia-archive .gaeria-archive-heading :is(h2, svg),
+.thalassia-continent-card strong,
+.thalassia-continent-card svg {
+  color: #b4d8ee;
+}
+.thalassia-archive .gaeria-archive-heading :is(p, span),
+.thalassia-continent-card p {
+  color: #9dbbd2;
+}
+.gaeria-continent-card.thalassia-continent-card strong {
+  font-size: clamp(1.45rem, 5vw, 2.125rem);
+  overflow-wrap: anywhere;
+}
+.thalassia-archive .gaeria-category {
+  border-color: #6087a640;
+  background: #0a182966;
+}
+.thalassia-archive .gaeria-category h3 {
+  color: #c7dbee;
+}
+.thalassia-archive .gaeria-entry {
+  border-color: #6087a640;
+  background: #10243a;
+}
+.thalassia-archive .gaeria-entry-royal {
+  border-color: #8baab860;
+  background: linear-gradient(125deg, #1b3b50, #102035);
+}
+.thalassia-archive .gaeria-entry h4 {
+  color: #c7dbee;
+}
+.thalassia-archive .gaeria-entry :is(p, small) {
+  color: #a7c1d5;
+}
+.thalassia-archive .gaeria-entry:hover,
+.thalassia-continent-card:hover {
+  border-color: #b4d8ee;
+}
+.thalassia-archive .imperial-entry {
+  border-color: #a6b5a0;
+  background: linear-gradient(110deg, #2a3c43, #102035);
+}
+.thalassia-archive .imperial-entry p {
+  color: #bdd0e1;
+}
+.atlas-region-directory > .gaeria-archive {
+  margin-top: 0;
+}
+.gaeria-archive-heading > svg,
+.gaeria-continent-card > svg {
+  flex-shrink: 0;
+}
+.gaeria-archive-heading > div,
+.gaeria-continent-card > div {
+  min-width: 0;
+}
+.gaeria-archive .gaeria-archive-heading h2 {
+  font-size: clamp(1.65rem, 4vw, 2.625rem);
+  overflow-wrap: anywhere;
+}
+.thalassia-content .realm-section {
+  scroll-margin-top: 2rem;
+}

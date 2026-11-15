@@ -38,7 +38,7 @@ test('all regional art prices and grades agree with their authored constructions
   assert.equal(Number(String(a.cost).match(/\d+/)?.[0]),e.cost,p.id+'/'+a.name);
   assert.equal(a.grade,e.grade,p.id+'/'+a.name);checked++;
  }
- assert.equal(checked,197); // nine additional house arts are rendered in the regional HTML.
+ assert.equal(checked,198); // Includes Aveline's seventh ordinary technique; nine house arts are rendered in HTML.
 });
 test('noble combatants use exact boss Life and CA, excluding dukes and Caroline',()=>{
  const expected={
@@ -61,7 +61,7 @@ test('protected Karma reserves remain unchanged and royal signatures have distin
 });
 test('Falsa Santa pays Karma as well as corruption and never gains extra self healing',()=>{
  const p=court.at(-1);assert.equal(p.karma,'700');
- const arts=p.blocks.filter(b=>b.kind==='ability'&&!/^[IVX]+ ·/.test(b.title));assert.equal(arts.length,13);
+ const arts=p.blocks.filter(b=>b.kind==='ability'&&!/^[IVX]+ (?:·|-)/.test(b.title));assert.equal(arts.length,13);
  for(const a of arts){const e=ledger.find(e=>e.owner===p.slug&&e.name===a.title);assert(e,a.title);const usage=plain(a.fields.find(f=>f.label==='Uso').html);assert(usage.includes(e.cost+' Karma'),a.title);}
  const text=readFileSync('docs/corte-da-falsa-santa.md','utf8');assert.match(text,/até 161 Karma|custa 161 Karma/);assert.match(text,/única técnica de cura que pode utilizar em si mesma/);
 });

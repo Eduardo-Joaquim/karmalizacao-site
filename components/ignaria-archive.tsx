@@ -13,7 +13,7 @@ export function IgnariaContinentCard() {
       <div>
         <span>CONTINENTE DO FOGO</span>
         <strong>Ignária</strong>
-        <p>Cortes das rainhas · Casas nobres · Pretendentes</p>
+        <p>Cortes das rainhas - Casas nobres - Pretendentes</p>
       </div>
       <ArrowUpRight aria-hidden="true" />
     </Link>
@@ -36,7 +36,7 @@ export function IgnariaArchive() {
       <details className="imperial-entry">
         <summary>
           <Crown aria-hidden="true" />
-          Corte Imperial · Ignária
+          Corte Imperial - Ignária
         </summary>
         <p>
           Nos encontros entre reinos, a precedência imperial se sobrepõe à
@@ -54,7 +54,7 @@ export function IgnariaArchive() {
             <span>01</span>
           </header>
           <a className="gaeria-entry gaeria-entry-royal" href={court}>
-            <small>REINO VAMPÍRICO · SÁRKORA</small>
+            <small>REINO VAMPÍRICO - SÁRKORA</small>
             <h4>Corte Haimaton</h4>
             <p>
               Rainha Nosferato V. Drácula, Princesa Alucard e Princesa Sávia
@@ -68,7 +68,7 @@ export function IgnariaArchive() {
             className="gaeria-entry gaeria-entry-royal"
             href="/mundo/ignaria/corte-demoniaca"
           >
-            <small>REINO DEMONÍACO · AQUERONTE</small>
+            <small>REINO DEMONÍACO - AQUERONTE</small>
             <h4>Corte Lucifero</h4>
             <p>Valac Lucifero, as quatro herdeiras e a bênção Desespero.</p>
             <span>
@@ -76,7 +76,7 @@ export function IgnariaArchive() {
             </span>
           </Link>
           <Link className="gaeria-entry" href="/mundo/ignaria/ghouls">
-            <small>REALEZA GHOUL · TRONO VAGO</small>
+            <small>REALEZA GHOUL - TRONO VAGO</small>
             <h4>Qahir</h4>
             <p>Al-Aqwa, Matador de Rainhas, e três candidatas à coroa.</p>
             <span>

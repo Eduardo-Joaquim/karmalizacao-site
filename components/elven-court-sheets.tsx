@@ -288,7 +288,12 @@ export function CourtDossier({
           </h3>
           <p className="elven-title">{profile.title}</p>
           <div className="elven-tags">
-            <span>{profile.identity.split(" · ").slice(0, 2).join(" · ")}</span>
+            <span>
+              {profile.identity
+                .split(/ (?:·|-) /)
+                .slice(0, 2)
+                .join(" - ")}
+            </span>
             <span>
               {classification.stage === "—"
                 ? "Ofício civil"

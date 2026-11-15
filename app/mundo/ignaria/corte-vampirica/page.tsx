@@ -5,7 +5,7 @@ import { SITE_ORIGIN } from "@/lib/public-navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sárkora · Corte Vampírica de Ignária",
+  title: "Sárkora - Corte Vampírica de Ignária",
   description:
     "Nosferato V. Drácula, as princesas Alucard e Sávia Vita e as casas nobres da Corte Haimaton.",
   alternates: { canonical: SITE_ORIGIN + "/mundo/ignaria/corte-vampirica" },
@@ -15,14 +15,14 @@ export default function VampireCourtPage() {
     <div className="site-page realm-page realm-with-index vampire-realm-page">
       <CrownNavigation
         entries={vampires.navigation}
-        title="Haimaton · Corte e nobreza"
+        title="Haimaton - Corte e nobreza"
         region="ignaria"
         home="/regras/21-bestiario?regiao=ignaria"
-        homeLabel="Ignária · Cortes, organizações e monstros"
+        homeLabel="Ignária - Cortes, organizações e monstros"
       />
       <main className="site-shell realm-shell">
         <header className="realm-hero vampire-realm-hero">
-          <p className="atlas-overline">IGNÁRIA · A DINASTIA DO SANGUE</p>
+          <p className="atlas-overline">IGNÁRIA - A DINASTIA DO SANGUE</p>
           <h1>
             Sárkora<span>A Corte Haimaton</span>
           </h1>

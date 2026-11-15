@@ -38,11 +38,19 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 **Ações:** 1 Principal, 1 Movimento, 1 Livre e 3 Reações por rodada. Cada Reação precisa responder a uma resolução diferente; Naerith não combina duas Reações contra o mesmo ataque ou efeito.
 
-**Perícias:** Pontaria 3: maior de 5d20 +10. Reflexos 3: maior de 5d20 +10. Manifestação de Bênção 3 e Controle de Terra 3: maior de 4d20 +10. Percepção 3 e Tática 3: maior de 5d20 +14 com Analítico. Furtividade 2: maior de 5d20 +5. Atletismo 2: maior de 3d20 +5. Perícias não indicadas são 0.
+**Perícias:** Pontaria 3: maior de 5d20 +10. Reflexos 3: maior de 5d20 +10. Manifestação de Bênção 3 e Controle de Terra 3: maior de 4d20 +10. Percepção 3 e Tática 3, quando regidas por Intelecto: maior de 5d20 +14 (10 de treino +3 Analítico +1 da Essência de Técnica). Furtividade 2: maior de 5d20 +5. Atletismo 2: Força em arrancadas e esforços de potência, maior de 3d20 +5; Constituição para resistência física, maior de 2d20 +5. Canalização de Karma 1: Espírito, maior de 4d20 +2. Perícias não indicadas são 0.
 
-**Armas:** Arco real, Principal, 40 m, maior de 5d20 +10 contra CA, 1d10 perfurante; parcial metade. Duas pistolas vegetais, Principal, 20 m, maior de 5d20 +10 contra CA, 1d8 perfurante; cada pistola comporta um disparo e recarregar uma delas exige Movimento. Empunhar as duas não concede ataque adicional.
+**Arma principal:** Dendron - arco real de madeira viva, com veios claros que acompanham a cicatriz da soberana. Principal, Agilidade + Pontaria, 40 m, maior de 5d20 +10 contra CA, 1d10 perfurante; Parcial causa metade e Falha nada. Exige duas mãos livres para o disparo e munição; o arco não concede uma segunda ação nem soma seus dados às flores de Nemeton. O disparo de Heliánthos conserva exclusivamente a fórmula própria da assinatura.
 
-**Bênção hereditária — Nemeton:** <span data-divine-grant="guaraci">Outorgada por Guaraci, Calor que Desperta a Mata · Lendas Tupi-Guarani — Asa do Assombro.</span><span data-world-blessing="outorga-3"></span> Guaraci confiou à coroa o santuário vivo da floresta. Naerith recebeu Nemeton na coroação; a outorga passa integralmente à sucessora, sem duas portadoras completas simultâneas. a soberana desperta formas vegetais completas a partir de sementes, raízes e solo fértil. Plantas simples florescem sem custo; manifestações de combate usam as técnicas abaixo. A bênção passa integralmente à herdeira durante a coroação e não permanece completa em duas rainhas ao mesmo tempo.
+**Armas secundárias:** Duas pistolas vegetais, Principal, 20 m, maior de 5d20 +10 contra CA, 1d8 perfurante; cada pistola comporta um disparo e recarregar uma delas exige Movimento. Empunhar as duas não concede ataque adicional. Trocar o armamento não renova as Reações nem recarrega uma pistola já disparada.
+
+**Inscrições rúnicas:** Laguz - Runa do Passo Deslizante, Grau II, na guarda da armadura de Naerith. A inscrição é de Armadura e Guarda: Dendron, as pistolas e suas munições permanecem sem encaixe rúnico convencional. Retém 3 Karma e ocupa uma das quatro vagas pessoais: com a reserva cheia de 100, são 97 livres e 3 retidos. Enquanto armada, concede +1 aos testes de Reflexos e Acrobacia; o +1 é situacional e não está somado às reservas-base acima. Ao ser alvo de um ataque, antes da resolução, pode consumir uma de suas três Reações e estourar Laguz para somar +3 diretamente ao limiar de CA Parcial e +3 à CA Total somente contra esse golpe; depois dele pode recuar até 3 m por caminho livre, seguindo as regras de Movimento. Não pode usar Aegis, Ékdysis ou outra defesa na mesma ocorrência. Após o Estouro, a passiva termina e os 3 Karma continuam indisponíveis até o fim da cena. Reinscrever exige Principal, contato com a guarda e 3 Karma disponíveis; não libera a retenção anterior. A guarda não aumenta a CA-base 29 e não contém maldição.
+
+**Resolução dos ataques:** Nos testes contra CA, superar o valor resulta em Acerto Total; abaixo dele e a partir da metade da CA, arredondada para baixo, resulta em Parcial. Na igualdade exata, compare o Atributo do ataque ao regente declarado da defesa: somente o atacante maior obtém Total; menor ou igual obtém Parcial. O dano Parcial é metade, arredondada para baixo, antes das proteções. Falha não causa dano nem aplica efeitos de acerto. Os dados da arma entram apenas em seu ataque básico ou quando uma técnica os mencionar expressamente; não se somam novamente a projéteis, reflexões ou manifestações.
+
+**Defesa:** O regente da CA 29 é Agilidade 10. Os benefícios permanentes dos Domínios já estão incluídos; a guarda que recebe Laguz não acrescenta outro bônus de armadura.
+
+**Bênção hereditária — Nemeton:** <span data-divine-grant="guaraci">Outorgada por Guaraci, Calor que Desperta a Mata · Lendas Tupi-Guarani — Asa do Assombro.</span><span data-world-blessing="outorga-3"></span> Guaraci confiou à coroa o santuário vivo da floresta. Naerith recebeu Nemeton na coroação; a outorga passa integralmente à sucessora, sem duas portadoras completas simultâneas. A soberana desperta formas vegetais completas a partir de sementes, raízes e solo fértil. Plantas simples florescem sem custo; manifestações de combate usam as técnicas abaixo. A bênção passa integralmente à herdeira durante a coroação e não permanece completa em duas rainhas ao mesmo tempo.
 
 **Domínio — Técnica 3 manifestada:** **Ativação:** Extra, 2 Karma, cinco rodadas, uma vez por cena. **Manifestação:** +1d20 ao teste principal de suas técnicas. **Essência:** +1 em testes mentais ou sociais treinados regidos por Intelecto.
 
@@ -50,70 +58,70 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 ##### 1 · Sagitta
 
-**Fonte e Grau:** Bênção III; ataque. **Uso:** Principal, 9 Karma, um alvo a até 30 m. Naerith faz brotar uma flor balística e rola Manifestação de Bênção contra a CA. Total: **2d8 perfurante** E o alvo fica marcado por pólen até o início do próximo turno da rainha; o primeiro ataque de um aliado contra ele recebe +2. Parcial: metade do dano, sem marca. Falha: nenhum efeito. Apenas uma marca de Sagitta pode existir.
+**Fonte e Grau:** Bênção III; ataque. **Uso:** Principal, 9 Karma, um alvo a até 30 m. Naerith faz brotar uma flor balística e rola Manifestação de Bênção contra a CA. Total: **2d8 perfurante** E o alvo fica marcado por pólen até o início do próximo turno da rainha; o primeiro ataque de um aliado contra ele recebe +2. Parcial: metade do dano, sem marca. Falha: nenhum efeito. Apenas uma marca de Sagitta pode existir; acertar outro alvo substitui a anterior. O +2 é consumido na declaração do primeiro ataque aliado, mesmo que ele erre. A flor precisa de linha de efeito, e o pólen não revela alvos invisíveis nem transmite o dano de Dendron.
 
 **Composição de Karma:** 4 Base III + 4 alcance longo + 1 efeito menor = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 2 · Rhíza
 
-**Fonte e Grau:** Bênção IV; contenção em área. **Uso:** Principal, 20 Karma, centro a até 25 m, raio de 4 m, por duas rodadas. Naerith rola Manifestação de Bênção uma vez; cada inimigo na área opõe Força + Atletismo ou Espírito + Canalização. Quem perder sofre **2d10 de Terra** E fica Imobilizado até usar uma Principal para repetir a oposição. Em empate, sofre metade do dano e perde 3 m de Deslocamento até o fim do próximo turno. As raízes têm CA 20 e Vida 24 por alvo; destruí-las liberta apenas a criatura correspondente.
+**Fonte e Grau:** Bênção IV; contenção em área. **Uso:** Principal, 20 Karma, centro a até 25 m, raio de 4 m, por duas rodadas. Naerith rola Manifestação de Bênção uma vez; cada inimigo na área opõe Força + Atletismo ou Espírito + Canalização. Quem perder sofre **2d10 de Terra** E fica Imobilizado até usar uma Principal para repetir a oposição. Em empate, sofre metade do dano e perde 3 m de Deslocamento até o fim do próximo turno. Se Naerith perder a oposição, o alvo não sofre dano ou contenção. As raízes têm CA 20 e Vida 24 por alvo; destruí-las liberta apenas a criatura correspondente. A repetição usa o resultado inicial da rainha, e a contenção termina, no máximo, no início do segundo turno seguinte de Naerith. A área não volta a agarrar quem escapou; aliados são excluídos na declaração, conforme o custo de seleção já pago.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 1 duração + 3 Função secundária III = 20 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 3 · Dáphne
 
-**Fonte e Grau:** Bênção III; proteção. **Uso:** Principal, 12 Karma, Naerith ou um aliado a até 20 m, por três rodadas. Uma couraça de folhas endurecidas concede **+2 CA** E reduz em 3 o dano físico recebido depois de outras reduções. A redução física aplica-se somente ao primeiro dano físico recebido em cada rodada; não causa retaliação. Uma criatura por vez; reaplicar encerra a proteção anterior.
+**Fonte e Grau:** Bênção III; proteção. **Uso:** Principal, 12 Karma, Naerith ou um aliado a até 20 m, por três rodadas. Uma couraça de folhas endurecidas concede **+2 CA** E reduz em 3 o dano físico recebido depois de outras reduções. A redução física aplica-se somente ao primeiro dano físico recebido em cada rodada; não causa retaliação. Uma criatura voluntária por vez, sem teste e sem Parcial; reaplicar encerra a proteção anterior. A couraça permanece até o início do terceiro turno seguinte de Naerith, acompanha o protegido e não é renovada por sair ou voltar ao alcance. A redução não cura dano já recebido nem pode tornar uma parcela negativa.
 
 **Composição de Karma:** 4 Base III + 4 alcance longo + 2 duração + 2 Função secundária II = 12 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 4 · Khlôris
 
-**Fonte e Grau:** Bênção IV; ataque em linha. **Uso:** Principal, 15 Karma, linha de 15 m por 3 m iniciada em um ponto percebido a até 20 m. Caules lançadores disparam em sequência. Uma rolagem de Manifestação de Bênção é comparada à CA de cada criatura na área. Total: **2d10 perfurante** E empurrão de 2 m para uma lateral possível. Parcial: metade do dano, sem empurrão. A linha atinge aliados e não atravessa cobertura total.
+**Fonte e Grau:** Bênção IV; ataque em linha. **Uso:** Principal, 15 Karma, linha de 15 m por 3 m iniciada em um ponto percebido a até 20 m. Caules lançadores disparam em sequência. Uma rolagem de Manifestação de Bênção é comparada à CA de cada criatura na área. Total: **2d10 perfurante** E empurrão de 2 m para uma lateral possível. Parcial: metade do dano, sem empurrão. Falha não causa dano nem empurrão. A direção lateral é escolhida antes da rolagem e precisa terminar em espaço livre; sem destino válido, há dano normal e nenhum empurrão ou dano de colisão. A linha atinge aliados e não atravessa cobertura total.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 1 efeito menor = 15 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 5 · Nix
 
-**Fonte e Grau:** Bênção III; ataque e supressão. **Uso:** Principal, 10 Karma, um alvo a até 25 m. Uma flor pálida abre-se sobre o alvo; Manifestação de Bênção contra CA. Total: **2d8 kármico**, Deslocamento reduzido à metade e perda da próxima Reação disponível até o início do próximo turno de Naerith. Parcial: metade do dano e −2 m de Deslocamento, sem perda de Reação. A técnica não transforma o dano em Água nem congela o interior de corpos.
+**Fonte e Grau:** Bênção III; ataque e supressão. **Uso:** Principal, 10 Karma, um alvo a até 25 m. Uma flor pálida abre-se sobre o alvo; Manifestação de Bênção contra CA. Total: **2d8 kármico**, Deslocamento reduzido à metade e perda da próxima Reação disponível até o início do próximo turno de Naerith. Parcial: metade do dano e −2 m de Deslocamento, sem perda de Reação. Falha não causa dano nem supressão. Perder a próxima Reação disponível elimina somente uma Reação, sem criar débito para a rodada seguinte; a redução de Deslocamento termina no início do próximo turno de Naerith e não acumula consigo mesma. A técnica não transforma o dano em Água nem congela o interior de corpos.
 
 **Composição de Karma:** 4 Base III + 4 alcance longo + 2 Função secundária II = 10 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 6 · Ákantha
 
-**Fonte e Grau:** Bênção IV; domínio de terreno. **Uso:** Principal, 27 Karma, centro a até 25 m, raio de 5 m, por três rodadas. O terreno torna-se difícil. Na criação, Naerith compara uma rolagem de Manifestação de Bênção à CA de cada criatura na área: total causa **2d10 perfurante**, parcial metade. Depois disso, cada inimigo que percorrer mais de 2 m dentro da área sofre **1d8 perfurante**, uma vez por rodada, sem nova condição. Fogo suficiente para causar 20 de dano à área encerra a manifestação.
+**Fonte e Grau:** Bênção IV; domínio de terreno. **Uso:** Principal, 27 Karma, centro a até 25 m, raio de 5 m, por três rodadas. O terreno torna-se difícil. Na criação, Naerith compara uma rolagem de Manifestação de Bênção à CA de cada criatura na área: total causa **2d10 perfurante**, parcial metade. Depois disso, cada inimigo que percorrer mais de 2 m dentro da área sofre **1d8 perfurante**, uma vez por rodada, sem nova condição. Uma Falha no impacto inicial não causa dano; a área ainda existe e seus espinhos posteriores usam somente a parcela já descrita. O limite de um pulso por rodada é por criatura; sair e entrar não o reinicia, e aliados só enfrentam o terreno difícil, sem sofrer esses pulsos. A área se desfaz no início do terceiro turno seguinte de Naerith. Fogo suficiente para causar 20 de dano à área encerra a manifestação; não aplica automaticamente esse dano aos ocupantes.
 
 **Composição de Karma:** 6 Base IV + 4 alcance longo + 4 área / destinatários + 2 seleção de aliados + 2 duração + 3 Função secundária III + 6 pulsos posteriores = 27 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### 7 · Nepénthes
 
-**Fonte e Grau:** Bênção IV; captura. **Uso:** Principal, 14 Karma, um alvo de porte Grande ou menor a até 15 m, por até duas rodadas. Manifestação de Bênção contra CA. Total: a planta causa **2d10 de impacto**, arrasta o alvo 3 m por rota livre e o aprisiona; parcial causa metade do dano, sem captura. Preso, o alvo fica Imobilizado e sofre 1d10 kármico no início do próprio turno. Uma Principal e Força + Atletismo ou Agilidade + Acrobacia contra o resultado inicial permitem escapar. Nepénthes tem CA 21 e Vida 35; sua destruição liberta o alvo.
+**Fonte e Grau:** Bênção IV; captura. **Uso:** Principal, 14 Karma, um alvo de porte Grande ou menor a até 15 m, por até duas rodadas. Manifestação de Bênção contra CA. Total: a planta causa **2d10 de impacto**, arrasta o alvo 3 m por rota livre e o aprisiona; parcial causa metade do dano, sem captura. Preso, o alvo fica Imobilizado e sofre 1d10 kármico no início do próprio turno. Uma Principal e Força + Atletismo ou Agilidade + Acrobacia contra o resultado inicial permitem escapar. Falha não causa dano, arrasto ou captura. A fuga usa o resultado inicial de Manifestação de Bênção, com empate a favor de quem resiste; vencer o teste ou destruir a planta encerra os pulsos antes do próximo início de turno. Nepénthes tem CA 21 e Vida 35; sua destruição liberta o alvo. Apenas uma captura ativa; criar outra desfaz a anterior. A planta também se desfaz no início do segundo turno seguinte de Naerith, sem nova parcela de dano ao terminar.
 
 **Composição de Karma:** 6 Base IV + 2 alcance médio + 3 Função secundária III + 3 pulso de captura = 14 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### Reação · Aegis
 
-**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 9 Karma, Naerith ou aliado percebido a até 15 m, antes do dano de um ataque com trajetória. Uma folha colossal intercepta o golpe; Naerith opõe Manifestação de Bênção ao resultado do ataque. Vitória impede o dano e os efeitos dependentes do acerto; empate reduz o dano à metade e impede apenas os efeitos que exigem total. Falha não reduz o golpe. Não protege outros alvos da mesma área.
+**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 9 Karma, Naerith ou aliado percebido a até 15 m, antes do dano de um ataque com trajetória. Uma folha colossal intercepta o golpe; Naerith opõe Manifestação de Bênção ao resultado do ataque. Vitória impede o dano e os efeitos dependentes do acerto; empate reduz o dano à metade e impede apenas os efeitos que exigem total. Falha não reduz o golpe. Não protege outros alvos da mesma área e não pode compartilhar a ocorrência com Laguz ou Ékdysis; a folha se desfaz após aquela resolução, sem se tornar uma barreira persistente.
 
 **Composição de Karma:** 6 Base IV + 1 reação + 2 alcance médio = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### Reação · Ékdysis
 
-**Fonte e Grau:** Bênção III; reação. **Uso:** Reação, 9 Karma, depois de Naerith sofrer um acerto total, uma vez por rodada. Escolha uma planta criada por sua bênção a até 10 m. Naerith troca de posição com ela e reduz o dano recebido em **2d6**; a planta é destruída. A troca exige posições livres e linha de efeito, não desfaz condições já aplicadas e não pode usar uma planta que contenha uma criatura.
+**Fonte e Grau:** Bênção III; reação. **Uso:** Reação, 9 Karma, depois de Naerith sofrer um acerto total, uma vez por rodada. Escolha uma planta criada por sua bênção a até 10 m. Naerith troca de posição com ela e reduz o dano recebido em **2d6**; a planta é destruída. Declare a Reação depois de definido o Acerto Total e antes de aplicar o dano. A troca exige posições livres e linha de efeito entre os dois espaços, não desfaz condições já aplicadas e não pode usar uma planta que contenha uma criatura. A redução tem mínimo 0 e afeta apenas a parcela destinada a Naerith; não redireciona dano a outro ocupante. Sem planta válida, a técnica não pode ser declarada.
 
 **Composição de Karma:** 4 Base III + 1 reação + 2 alcance médio + 2 Função secundária II = 9 Karma. Manutenção e outros recursos são pagos separadamente.
 
 
 ##### Reação · Anástasis
 
-**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 7 Karma, uma vez por cena, quando uma manifestação vegetal sua for destruída ou alcançar o fim da duração. Escolha: restaurar uma planta destruída com metade da Vida máxima no mesmo espaço ou prolongar Rhíza, Dáphne ou Ákantha por uma rodada. Não restaura Heliánthos, não repete dano de criação e não devolve uma criatura já libertada ao aprisionamento.
+**Fonte e Grau:** Bênção IV; reação. **Uso:** Reação, 7 Karma, uma vez por cena, quando uma manifestação vegetal sua for destruída ou alcançar o fim da duração. Escolha: restaurar uma planta destruída com metade da Vida máxima no mesmo espaço ou prolongar Rhíza, Dáphne ou Ákantha por uma rodada. A escolha é feita ao declarar a Reação e consome a única ativação da cena; não reinicia um prazo inteiro nem repõe o Karma da criação. A restauração exige espaço livre e só alcança plantas que possuíam Vida própria registrada. Não restaura Heliánthos, não repete dano de criação e não devolve uma criatura já libertada ao aprisionamento.
 
 **Composição de Karma:** 6 Base IV + 1 reação = 7 Karma. Manutenção e outros recursos são pagos separadamente.
 
@@ -122,7 +130,7 @@ Naerith quer que Ilyra possa aceitar ou recusar a sucessão antes do juramento d
 
 **Fonte e Grau:** Assinatura da Bênção V. **Uso:** Principal, 22 Karma, linha de 40 m por 3 m, uma vez por cena; consome o ápice. Um girassol monumental abre-se atrás de Naerith e aponta a linha ameaçada. A descarga ocorre no início do turno seguinte e consome a Principal desse turno; ficar Incapacitada, Inconsciente ou abandonar o preparo encerra a técnica, mantendo o custo e o uso gastos.
 
-Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
+Na resolução, role Manifestação de Bênção uma vez e compare à CA de cada criatura na linha. Total: **2d10 +1d8 kármico**, perda das Reações restantes e −2 CA até o início do próximo turno de Naerith. Parcial: metade do dano, sem efeitos adicionais. Falha não causa dano ou perda de Reações. A linha e sua direção são fixadas na preparação, permitindo que criaturas se movam ou busquem cobertura entre os dois turnos. A fórmula própria de 2d10 +1d8 já é o dano completo da assinatura: não some os dados de Dendron ou das pistolas. Cobertura total interrompe a linha. O clarão conta como luz solar para características afetadas por ela até o fim da resolução, mas não se torna Poder Divino.
 
 **Segunda coroa:** Ao chegar a 100 Vida, raízes brancas cobrem a cicatriz de Naerith. Plantas criadas por suas técnicas recebem +2 CA e pode pagar mais 3 Karma ao ativar uma nova manifestação para acrescentar um dado do mesmo tipo àquela execução, depois do crítico e dentro do teto de dois dados adicionais. A transformação ocorre uma vez, não recupera Vida ou Karma e não concede ação imediata.
 
