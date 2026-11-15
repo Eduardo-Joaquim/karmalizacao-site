@@ -33,11 +33,26 @@ export type LiveRune = {
   weaponId?: string;
   spent?: boolean;
   releaseRound?: number;
+  temporary?: boolean;
+  personalSlotExempt?: boolean;
+};
+export type CursedWeaponState = {
+  runeKey?: string;
+  targets: Record<string, { marks: number; hasTotal: boolean }>;
+  bloodFed?: boolean;
+  dormant?: boolean;
+  combatScene?: boolean;
 };
 export type LiveCombatState = {
+  cursedWeapons?: Record<string, CursedWeaponState>;
   session?: CombatSessionState;
   runes?: LiveRune[];
   runeBurstUsed?: boolean;
+  gradeVApex?: {
+    kind: "rune" | "technique" | "other";
+    sourceId: string;
+    label?: string;
+  };
   impetus?: number;
   impetusBloodied?: boolean;
   impetusNaturalRound?: number;
@@ -154,6 +169,42 @@ export type CombatAction = {
     }
   | { type: "domain"; name: string }
   | { type: "armRune"; runeId: number; weaponId?: string }
+  | {
+      type: "cursedStrike";
+      weaponId: string;
+      targetId: string;
+      outcome: "Acerto total" | "Acerto parcial" | "Falha";
+      selectedNatural?: number;
+      vector: "melee" | "ranged";
+      distance: number;
+      isolated?: boolean;
+      flanked?: boolean;
+      targetDebilitated?: boolean;
+      controlTotal?: number;
+      hungerDie?: number;
+    }
+  | {
+      type: "cursedWeapon";
+      weaponId: string;
+      operation: "feed" | "torpor" | "wake";
+      controlTotal?: number;
+      ritualDC?: number;
+      ritualCompleted?: boolean;
+    }
+  | { type: "runeBenefit"; inscriptionId: string }
+  | { type: "gradeVApex"; label: string }
+  | {
+      type: "interceptRune";
+      runeId?: number;
+      weaponId?: string;
+      referenceKind: "attack" | "cd";
+      reference: number;
+      testTotal: number;
+      mitigationDie?: number;
+      damageBeforeMitigation: number;
+      hostilePartial: boolean;
+      skill: "Tática" | "Canalização de Karma";
+    }
   | { type: "burstRune"; inscriptionId: string; disarm?: boolean }
   | { type: "form"; active: boolean }
   | { type: "indomitableSurvival" }

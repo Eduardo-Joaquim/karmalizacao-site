@@ -27,8 +27,8 @@ A vontade não é herança de um trono. É a chama que ainda arde quando o desti
 
 #### Etapa VI — Recusa ao Fim
 
-- **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 4 e você recebe +1 ponto em um Atributo à escolha.
-- **Ativação / Reação:** Uma vez por cena, você pode gastar 2 Ímpetos após ver o resultado de uma rolagem sua para elevar uma Falha para Acerto Parcial, ou um Acerto Parcial para Acerto Total. Alternativamente, no seu turno, você pode gastar 2 Ímpetos para executar uma Ação Principal adicional, usando-a para realizar um ataque básico ou lançar uma técnica de até Grau III sem pagar o custo-base de Karma dela (ampliações continuam pagas normalmente).
+- **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 4 e você recebe +1 ponto em um Atributo à escolha. Uma vez por cena, você pode gastar 2 Ímpetos após ver o resultado de uma rolagem sua para elevar uma Falha para Acerto Parcial, ou um Acerto Parcial para Acerto Total, quando o teste possuir esses graus.
+- **Ativação / Reação:** Em testes binários contra CD ou em disputa oposta, converte uma Falha em Sucesso. Recusa ao Fim não altera uma Falha Crítica: 1 natural no dado selecionado. Alternativamente, no seu turno, você pode gastar 2 Ímpetos para executar uma Ação Principal adicional, usando-a para realizar um ataque básico ou lançar uma técnica de até Grau III sem pagar o custo-base de Karma dela (ampliações continuam pagas normalmente).
 
 ### Elfo
 
@@ -55,7 +55,7 @@ O arqueiro élfico lê a paisagem pelo que ela devolve: a sombra entre folhas, o
 
 #### Etapa VI — Zênite Astral
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Agilidade, Intelecto ou Espírito, respeitando o teto do sistema. Enquanto estiver em Harmonia, recebe +1d20 em testes de Canalização de Karma, Controles elementais e Pontaria.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Agilidade, Intelecto ou Espírito. Enquanto estiver em Harmonia, recebe +1d20 em testes de Canalização de Karma, Controles elementais e Pontaria.
 - **Ativação / Reação:** Uma vez por cena, como Ação Livre, você pode entrar em Zênite Astral por 3 rodadas: suas técnicas custam 2 Karma a menos, até o mínimo de 1, e deixam um rastro luminoso. Um aliado que atravesse esse rastro recebe Vantagem (+1d20) no próximo teste de ataque, Reflexos ou Acrobacia que realizar até o fim do próximo turno dele.
 
 ### Anão
@@ -68,7 +68,7 @@ A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver 
 
 #### Etapa I — Fornalha de Inércia
 
-- **Aprimoramento / Passiva:** Você recebe +2 espaços de carga, e armaduras ou escudos pesados não reduzem seu deslocamento.
+- **Aprimoramento / Passiva:** Você recebe +2 espaços de carga, e armaduras ou escudos pesados não reduzem seu deslocamento. As Cargas de Bigorna começam em 0 no início de cada cena e voltam a 0 ao fim dela.
 - **Ativação / Reação:** Sempre que sofre um golpe que causaria dano, mesmo que absorvido por Resistência ou Escudo, ou termina seu turno tendo se deslocado no máximo 3 m, acumula 1 Carga de Bigorna, até o limite de 3. Cada carga concede +1 de Resistência contra dano Marcial, Elemental / Terra e Elemental / Fogo.
 
 #### Etapa II — Têmpera de Nidavellir
@@ -83,7 +83,7 @@ A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver 
 
 #### Etapa VI — Monólito de Ferro
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição ou Força, respeitando o teto do sistema, e seu limite máximo de Cargas de Bigorna sobe para 4. Uma vez por cena, como Ação Livre ou Reação ao sofrer um Acerto Total, você assume o Monólito de Ferro por 3 rodadas.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição ou Força, e seu limite máximo de Cargas de Bigorna sobe para 4. Uma vez por cena, como Ação Livre ou Reação ao sofrer um Acerto Total, você assume o Monólito de Ferro por 3 rodadas.
 - **Ativação / Reação:** Nesse período, reduz à metade todo dano sofrido e fica imune a movimento forçado, Caído e Atordoado. O solo a até 4 m de você torna-se terreno difícil apenas para inimigos.
 
 ### Demi-humano
@@ -111,7 +111,7 @@ A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que
 
 #### Etapa VI — Forma Ancestral Quimérica
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Força, Agilidade ou Espírito, respeitando o teto do sistema.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Força, Agilidade ou Espírito.
 - **Ativação / Reação:** Uma vez por cena, como Ação Livre, manifesta a Forma Ancestral Quimérica por 3 rodadas. Durante esse período, mantém simultaneamente os três Aspectos Bestiais, soma um dado-base de dano aos ataques e técnicas ofensivas e recupera Espírito + Etapa de Vida no início de cada um desses três turnos.
 
 ### Vampiro
@@ -124,9 +124,9 @@ Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas cois
 
 #### Etapa I — Predador de Sárkora e Reserva de Vitae
 
-- **Aprimoramento / Passiva:** Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m. Você precisa se alimentar de sangue periodicamente e é vulnerável à luz solar direta quando está sem proteção.
-- **Ativação / Reação:** Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante). Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae).
-- **Efeito e limites:** Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Sombra. Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.
+- **Aprimoramento / Passiva:** Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m. A Reserva de Vitae começa a sessão com 1 ponto; conserve seu saldo entre cenas até o descanso longo, respeitando o limite vigente.
+- **Ativação / Reação:** Ficar mais de 3 dias sem alimentar-se de sangue impõe −1d20 em todos os testes e impede recuperar Vitae; a partir de 7 dias, você fica Exausto até alimentar-se. Sob luz solar direta, sem cobertura ou traje fechado, você sofre Desvantagem em testes físicos e de Percepção, não pode regenerar nem usar Vitae e perde 2 pontos de Vida por rodada de exposição em combate ou por TE em viagem descoberta. Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante).
+- **Efeito e limites:** Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae). Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Sombra. Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.
 
 #### Etapa II — Dízimo Carmesim e Olhar Hipnótico
 
@@ -196,7 +196,7 @@ O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o ras
 
 #### Etapa VI — Apogeu da Fome
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, respeitando o teto do sistema, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo.
 - **Ativação / Reação:** Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.
 
 ### Tritão
@@ -209,7 +209,7 @@ As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra s
 
 #### Etapa I — Pressão Oceânica
 
-- **Aprimoramento / Passiva:** Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água / Subdobras.
+- **Aprimoramento / Passiva:** Você respira na água e no ar, possui deslocamento de natação pleno e Resistência Alta (3) contra dano Elemental / Água. Contra uma subdobra, aplique metade da maior Resistência parental, arredondada para baixo: essa proteção concede Resistência 1 contra Gelo ou Vapor, se nenhuma outra proteção parental for maior.
 - **Ativação / Reação:** Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite empurrar o alvo atingido em 2 m ou criar um efeito hidrostático local, sem conceder deslocamento adicional.
 
 #### Etapa II — Manto de Correnteza
@@ -224,7 +224,7 @@ As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra s
 
 #### Etapa VI — Soberano do Leviatã
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Espírito. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas.
 - **Ativação / Reação:** Aliados na área recebem Resistência 3 exclusivamente contra dano Elemental / Fogo; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água / Subdobras ou Marcial causam um dado-base adicional de dano.
 
 ### Abissal
@@ -252,6 +252,7 @@ Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar 
 
 #### Etapa VI — Horizonte de Eventos
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Espírito, Intelecto ou Presença, respeitando o teto do sistema, e pode manter duas Âncoras do Vazio simultaneamente. Uma vez por cena, como Ação Livre, conecta as âncoras em uma Zona de Singularidade por 3 rodadas.
-- **Ativação / Reação:** Uma vez por turno, pode se teleportar entre elas por até 3 m e recebe +1d20 nos testes de técnicas. Um inimigo que tente sair do espaço entre as âncoras sofre 2d10 de dano Mental e tem seu deslocamento reduzido à metade.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Espírito, Intelecto ou Presença, e pode manter duas Âncoras do Vazio simultaneamente. Uma vez por cena, como Ação Livre, conecta as âncoras em uma Zona de Singularidade por 3 rodadas.
+- **Ativação / Reação:** A zona é uma faixa de 2 m de largura entre as âncoras; com três ou mais âncoras autorizadas por outro efeito, delimite um perímetro fechado. Uma vez por turno, pode se teleportar entre elas por até 3 m e recebe +1d20 nos testes de técnicas.
+- **Efeito e limites:** Um inimigo que tente sair da zona cruzando sua borda sofre automaticamente 2d10 de dano Mental, no máximo uma vez por turno; apenas Resistência contra dano Mental reduz esse dano, sem teste para evitá-lo. O inimigo também tem seu deslocamento reduzido à metade.
 

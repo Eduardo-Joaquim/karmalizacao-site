@@ -11,7 +11,11 @@ import nidavellir from "@/data/nidavellir.json";
 import costs from "@/data/technique-construction.json";
 import thalassia from "@/data/thalassia.json";
 import vampires from "@/data/vampire-ignaria.json";
-import { ALL_SKILLS, ATTRIBUTES } from "@/lib/character-data";
+import {
+  ALL_SKILLS,
+  ATTRIBUTES,
+  type AttributeName,
+} from "@/lib/character-data";
 import { MENTAL_SKILLS } from "@/lib/character-rules";
 import { defaultApproach } from "@/lib/combat-engine";
 import { usageCost } from "@/lib/combat-repertoire";
@@ -26,6 +30,7 @@ export type NpcArt = {
   roll: string;
   damage: string;
   attack: boolean;
+  attribute?: AttributeName;
   action: string;
   domain?: string;
 };
@@ -37,6 +42,7 @@ export type NpcTemplate = {
   life: number;
   karma: number;
   ca: number;
+  caRegent?: "Agilidade" | "Constituição";
   movement: string;
   attributes: number[];
   skills: string;

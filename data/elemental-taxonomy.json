@@ -1,0 +1,127 @@
+{
+  "primaryElements": [
+    "Vento",
+    "Água",
+    "Fogo",
+    "Terra",
+    "Luz",
+    "Sombra"
+  ],
+  "subElements": [
+    {
+      "name": "Gelo",
+      "parents": [
+        "Água"
+      ]
+    },
+    {
+      "name": "Geada",
+      "parents": [
+        "Água"
+      ]
+    },
+    {
+      "name": "Névoa",
+      "parents": [
+        "Água"
+      ]
+    },
+    {
+      "name": "Sangue",
+      "parents": [
+        "Água"
+      ]
+    },
+    {
+      "name": "Combustão",
+      "parents": [
+        "Fogo"
+      ]
+    },
+    {
+      "name": "Cinza",
+      "parents": [
+        "Fogo"
+      ]
+    },
+    {
+      "name": "Incandescência",
+      "parents": [
+        "Fogo"
+      ]
+    },
+    {
+      "name": "Deflagração",
+      "parents": [
+        "Fogo"
+      ]
+    },
+    {
+      "name": "Areia",
+      "parents": [
+        "Terra"
+      ]
+    },
+    {
+      "name": "Metal",
+      "parents": [
+        "Terra"
+      ]
+    },
+    {
+      "name": "Cristal",
+      "parents": [
+        "Terra"
+      ]
+    },
+    {
+      "name": "Peso",
+      "parents": [
+        "Terra"
+      ],
+      "scope": "Aumenta ou diminui o peso, a massa aparente e a carga física de objetos, armas e corpos. Não manipula a gravidade nem cria campos gravitacionais."
+    },
+    {
+      "name": "Raio",
+      "parents": [
+        "Vento"
+      ]
+    },
+    {
+      "name": "Som",
+      "parents": [
+        "Vento"
+      ]
+    },
+    {
+      "name": "Vácuo",
+      "parents": [
+        "Vento"
+      ]
+    },
+    {
+      "name": "Pressão Atmosférica",
+      "parents": [
+        "Vento"
+      ]
+    },
+    {
+      "name": "Vapor",
+      "parents": [
+        "Água",
+        "Fogo"
+      ]
+    },
+    {
+      "name": "Magma / Lava",
+      "parents": [
+        "Terra",
+        "Fogo"
+      ],
+      "aliases": [
+        "Magma",
+        "Lava"
+      ]
+    }
+  ]
+}

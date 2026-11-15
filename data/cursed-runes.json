@@ -1,0 +1,261 @@
+{
+  "conditions": [
+    {
+      "id": "C1",
+      "name": "Restrição de Vetor Corpo a Corpo",
+      "description": "O efeito e o acúmulo de marcas só progridem em ataques de contato (Força ou Agilidade + Luta).",
+      "incompatibleWith": [
+        "C2"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "Restrição de Vetor à Distância Longa",
+      "description": "O efeito só progride em ataques à distância realizados a 9 metros ou mais do alvo.",
+      "incompatibleWith": [
+        "C1"
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "Ciclo de 2 Marcas no Mesmo Alvo",
+      "description": "Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 2 Marcas no mesmo inimigo (zerando as marcas após o disparo).",
+      "incompatibleWith": [
+        "C4"
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "Ciclo de 3 Marcas no Mesmo Alvo (Substitui C3)",
+      "description": "Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 3 Marcas no mesmo inimigo (zerando as marcas após o disparo).",
+      "incompatibleWith": [
+        "C3"
+      ]
+    },
+    {
+      "id": "C5",
+      "name": "Exigência de Acerto Total para o Estado",
+      "description": "Para que a condição/estado da runa seja aplicado quando ela despertar, pelo menos 1 dos ataques da sequência (ou o golpe final) deve ter sido Acerto Total contra a CA do alvo."
+    },
+    {
+      "id": "C6",
+      "name": "Sequência Sem Errar (Fome Intacta)",
+      "description": "Se o portador errar um ataque (Falha) antes de fechar as marcas, todas as marcas acumuladas na cena se apagam."
+    },
+    {
+      "id": "C7",
+      "name": "Alvo Isolado ou Flanqueado",
+      "description": "A marca só é aplicada se o alvo não tiver nenhum aliado dele a até 3m (Isolado) OU estiver engajado com um aliado seu (Flanqueado), escolhido na criação."
+    },
+    {
+      "id": "C8",
+      "name": "Sangue por Sangue (Tributo do Portador)",
+      "description": "No instante em que a runa desperta, ela drena 3 de Vida irreduzíveis do próprio portador (ou exige que o portador já esteja abaixo de 50% da Vida)."
+    },
+    {
+      "id": "C9",
+      "name": "Alvo Já Debilitado",
+      "description": "A runa só desperta contra um alvo que já esteja sofrendo uma condição negativa ou esteja com menos de 50% da Vida."
+    },
+    {
+      "id": "C10",
+      "name": "Ritual de Forja Estrito (Manutenção de Sangue)",
+      "description": "A arma exige receber o sangue de pelo menos 1 inimigo derrotado por cena de combate; caso contrário, entra em torpor até ser alimentada com 1 TE e Presença + Controle da Corrupção."
+    }
+  ],
+  "powerLevels": [
+    {
+      "conditions": 1,
+      "classification": "Maldição Latente",
+      "damage": "1d8",
+      "alternatives": [],
+      "stateDescription": "Estado Leve / Simples: Caído, Lento, Abalado ou Empurrado 2m (1 rodada).",
+      "escapeDC": 16,
+      "forgeDC": 14,
+      "scalingBase": 12
+    },
+    {
+      "conditions": 2,
+      "classification": "Maldição Desperta",
+      "damage": "1d10",
+      "alternatives": [],
+      "stateDescription": "Estado Moderado: Desorientado, Sangramento (1d4) ou Guarda Quebrada (-2 CA) por 1 rodada.",
+      "escapeDC": 18,
+      "forgeDC": 16,
+      "scalingBase": 14
+    },
+    {
+      "conditions": 3,
+      "classification": "Maldição Voraz",
+      "damage": "1d12",
+      "alternatives": [
+        "2d6"
+      ],
+      "stateDescription": "Estado Grave / Severo: Agarrado, Imobilizado, Silenciado, Envenenado ou Desarmado (escapa com teste de atributo + perícia adequada contra a CD).",
+      "escapeDC": 20,
+      "forgeDC": 18,
+      "scalingBase": 16
+    },
+    {
+      "conditions": 4,
+      "classification": "Maldição Abissal",
+      "damage": "1d16",
+      "alternatives": [
+        "2d8"
+      ],
+      "stateDescription": "Estado Grave Composto: Cego, Paralisado (Forma Reduzida: Abalado + sem Reação) + Sangramento, ou Subjugado + Ignora Resistência Leve (1).",
+      "escapeDC": 22,
+      "forgeDC": 20,
+      "scalingBase": 18
+    },
+    {
+      "conditions": 5,
+      "classification": "Maldição Soberana",
+      "damage": "1d20",
+      "alternatives": [
+        "3d6",
+        "2d10"
+      ],
+      "stateDescription": "Estado Extremo / Execução: Atordoado Pleno (1 rodada), Ferimento Grave / Ruptura de Couraça (-4 CA + Imobilizado) + Ignora Resistência Média (2).",
+      "escapeDC": 24,
+      "forgeDC": 22,
+      "scalingBase": 20
+    }
+  ],
+  "effects": [
+    {
+      "id": "runa-do-deus-selvagem",
+      "name": "Runa do Deus Selvagem",
+      "epithet": "Marca da Fera",
+      "effect": "Ao acertar o inimigo com um ataque corpo a corpo (não importando se foi Acerto Parcial ou Total), marca-o com 1 Marca da Fera. Ao atingir **3 Marcas**, dois lobos negros emergem do chão e estraçalham o alvo, causando **`2d6` de dano Corrupto/Perfuração**. Caso pelo menos um dos três ataques da sequência tenha sido **Acerto Total** contra a CA, o alvo fica **Agarrado** pelas mandíbulas dos dois lobos. Para se libertar do estado, o alvo deve gastar uma ação e vencer um teste de **Força ou Constituição + Atletismo contra CD 20**.",
+      "example": true,
+      "defaultConditions": [
+        "C1",
+        "C4",
+        "C5"
+      ],
+      "damageOverride": "2d6"
+    },
+    {
+      "id": "costura-de-sombras",
+      "name": "Costura de Sombras",
+      "epithet": "Agulha do Alfaiate Cego",
+      "effect": "Cada acerto prende um fio de sombra no calcanhar do alvo. Ao cumprir as condições da runa, a sombra do alvo é costurada à sombra do inimigo mais próximo a até `4m`: ambos sofrem o dado de dano da runa (`1d8` a `1d20`) e, com o requisito de Acerto Total, ficam **Imobilizados** um ao outro (nenhum dos dois pode se mover para longe do outro até rasgar a costura com `Força + Atletismo` contra a CD da runa)."
+    },
+    {
+      "id": "banquete-de-ferrugem",
+      "name": "Banquete de Ferrugem",
+      "epithet": "Mandíbula Oxidada",
+      "effect": "A arma secreta saliva ácida que oxida defesas. Ao fechar as condições da runa, placas de ferrugem explodem na armadura ou carapaça do inimigo: causa o dado de dano da runa e aplica **Danificado (`-2 CA`)** no equipamento/couro do alvo + **Sangramento** em Acerto Total."
+    },
+    {
+      "id": "coro-dos-enforcados",
+      "name": "Coro dos Enforcados",
+      "epithet": "Laço do Patíbulo",
+      "effect": "A cada marca aplicada, uma corda espectral aperta a garganta do alvo. Ao cumprir as condições, o alçapão espiritual se abre: o alvo sofre o dado de dano da runa (natureza Corrupta) e, em Acerto Total, fica **Silenciado e Sufocado** (impedido de falar, conjurar técnicas verbais ou comandar invocações até passar em `Constituição + Atletismo` contra a CD da runa)."
+    },
+    {
+      "id": "espelho-de-sangue-faminto",
+      "name": "Espelho de Sangue Faminto",
+      "epithet": "Duplo Carniceiro",
+      "effect": "A arma absorve o sangue respingado nos golpes. Ao completar as condições, o sangue coagula atrás do alvo formando um **Duplo Efêmero** que desfere um corte simultâneo causando o dado de dano da runa, concede flanqueamento imediato e deixa o alvo **Desorientado** (ou **Abalado + sem Reação** em runas de 3+ condições)."
+    },
+    {
+      "id": "palpebra-sem-sono",
+      "name": "Pálpebra Sem Sono",
+      "epithet": "Olho da Vigília Abissal",
+      "effect": "Onde a arma corta, pequenos olhos abissais se abrem na pele ou armadura do inimigo, impedindo-o de se esconder. Ao fechar as condições, os olhos choram icor cáustico: causa o dado de dano da runa, anula invisibilidade/furtividade e, em Acerto Total, deixa o alvo **Cego** até o fim do próximo turno (ou até limpar com teste contra a CD)."
+    },
+    {
+      "id": "relogio-de-ossos-quebrados",
+      "name": "Relógio de Ossos Quebrados",
+      "epithet": "Pêndulo de Atraso",
+      "effect": "A arma rouba o compasso temporal dos reflexos do inimigo. Ao cumprir as condições, um badalo seco ecoa nos ossos do alvo: causa o dado de dano da runa e, em Acerto Total, aplica **Lento** + **arranca a Reação** do alvo + atrasa a posição dele na Iniciativa em `-5` pelo resto da cena."
+    },
+    {
+      "id": "raiz-parasita-de-sarkora",
+      "name": "Raiz Parasita de Sárkora",
+      "epithet": "Semente Carnívora",
+      "effect": "O primeiro golpe planta uma semente negra na ferida; os golpes seguintes a regam. Ao cumprir as condições, raízes espinhosas rebentam de dentro do alvo para o solo: causa o dado de dano da runa, transforma um raio de `2m` ao redor dele em terreno difícil e, em Acerto Total, deixa-o **Imobilizado/Enraizado** (`Força ou Constituição + Atletismo` contra a CD para arrancar as raízes)."
+    },
+    {
+      "id": "sino-do-funeral-submerso",
+      "name": "Sino do Funeral Submerso",
+      "epithet": "Pulmão de Salmoura",
+      "effect": "A arma ressoa como um sino afundado no oceano. Ao fechar as condições, os pulmões do alvo enchem-se instantaneamente de água negra gelada: causa o dado de dano da runa e, em Acerto Total, impõe **Abalado + Exaustão Respiratória** (`-1d20` em todos os testes físicos e perda da Ação de Movimento se falhar em `Constituição + Atletismo` contra a CD)."
+    },
+    {
+      "id": "moeda-do-barqueiro",
+      "name": "Moeda do Barqueiro",
+      "epithet": "Pedágio de Caronte",
+      "effect": "Crava o selo de uma dívida fúnebre no peito do alvo. Ao cumprir as condições, a arma cobra o tributo: causa o dado de dano da runa e queima **metade desse valor diretamente do Karma atual** do inimigo. Em Acerto Total, aplica **Maldição de Estagnação** (qualquer cura recebida pelo alvo até o fim do próximo turno é reduzida à metade)."
+    },
+    {
+      "id": "teatro-de-tendoes",
+      "name": "Teatro de Tendões",
+      "epithet": "Fios do Titereiro",
+      "effect": "A lâmina amarra tendões espirituais nos pulsos do inimigo. Ao fechar as condições (exigindo 3+ condições e Acerto Total), além de sofrer o dado de dano da runa, os fios puxam os braços do alvo involuntariamente: o inimigo é forçado a realizar **1 ataque básico imediato contra o aliado dele mais próximo** ao alcance antes de ficar **Desorientado**.",
+      "minimumConditions": 3
+    },
+    {
+      "id": "forja-de-medula",
+      "name": "Forja de Medula",
+      "epithet": "Febre de Cinzas",
+      "effect": "Cada marca aquece o cálcio dos ossos do alvo como carvão em brasa. Ao cumprir as condições, o calor explode de dentro da medula: causa o dado de dano da runa e, em Acerto Total, força o alvo a **Desarmar-se** (largando o que segura nas mãos por espasmo térmico) ou sofrer metade do dano novamente no início do turno dele (`Constituição + Atletismo` contra a CD para segurar o item)."
+    },
+    {
+      "id": "cao-de-duas-cabecas",
+      "name": "Cão de Duas Cabeças",
+      "epithet": "Frenesi da Matilha Bipolar",
+      "effect": "Desenhada para caçadores que alternam alvos: ao marcar um inimigo A e um inimigo B a até `4m` um do outro e fechar a condição da runa, duas cabeças de mastim espectral surgem e **colidem os dois inimigos um contra o outro**: ambos sofrem o dado de dano da runa e, em Acerto Total, ambos caem **Caídos** e **Desorientados**."
+    },
+    {
+      "id": "cicatriz-magnetizada",
+      "name": "Cicatriz Magnetizada",
+      "epithet": "Pólo de Carne Atratora",
+      "effect": "Carrega o sangue do inimigo com magnetismo reverso. Ao fechar as condições, o corpo do alvo puxa violentamente todas as armas e estilhaços ao redor: sofre o dado de dano da runa, puxa o alvo `3m` na direção do portador e, em Acerto Total, deixa o alvo **Vulnerável a Metal** (`-2` nos limiares de CA Parcial e Total contra ataques de armas até o fim do próximo turno)."
+    },
+    {
+      "id": "veredito-do-carrasco",
+      "name": "Veredito do Carrasco",
+      "epithet": "Cepo da Guilhotina",
+      "effect": "A arma sente o cheiro de fim de linha. Ao cumprir as condições contra um alvo (ideal com condição de alvo abaixo de 50% de PV), um cepo fantasma trava os ombros do inimigo e uma lâmina de sombra desce verticalmente: causa o dado de dano máximo da faixa (ex.: `1d16` ou `1d20` em 4–5 condições) e, em Acerto Total, aplica **Sangramento Severo + Caído** sem permitir levantar com metade do movimento se falhar na CD."
+    },
+    {
+      "id": "vesicula-de-bile-negra",
+      "name": "Vesícula de Bile Negra",
+      "epithet": "Erupção Cáustica",
+      "effect": "Contamina o sangue do alvo com bile volátil. Ao atingir as marcas da condição, a ferida entra em erupção jorrando ácido negro num **cone de `3m` atrás do alvo**: o alvo principal sofre o dado cheio de dano da runa + **Envenenado** (em Acerto Total), e inimigos no cone atrás dele sofrem metade do dano."
+    },
+    {
+      "id": "labirinto-de-espelhos-partidos",
+      "name": "Labirinto de Espelhos Partidos",
+      "epithet": "Vertigem de Retorno",
+      "effect": "A arma fratura o senso de direção do inimigo. Ao fechar as condições, causa o dado de dano da runa e, em Acerto Total, aplica **Prisão Espacial de Espelho**: na próxima vez que o inimigo tentar usar sua Ação de Movimento para se afastar do portador, o espaço se dobra e o movimento dele termina **adjacente ao portador novamente** (salvo `Espírito + Canalização` contra a CD da runa)."
+    },
+    {
+      "id": "hospedeiro-de-larvas-astrais",
+      "name": "Hospedeiro de Larvas Astrais",
+      "epithet": "Enxame Devorador de Escudo",
+      "effect": "Deposita larvas famintas por energia kármica na aura do alvo. Ao cumprir as condições, o enxame eclode: **destrói imediatamente até `10 pontos` de Escudo Temporário / Barreira** do alvo antes de aplicar o dado de dano da runa e, em Acerto Total, deixa o alvo **Enfraquecido (`-1d20` em ataques)** por 1 rodada."
+    },
+    {
+      "id": "balanca-de-orgaos",
+      "name": "Balança de Órgãos",
+      "epithet": "Simetria do Martírio",
+      "effect": "Quanto mais ferido estiver o portador, mais alto a arma canta. Ao fechar as condições, a arma causa o dado de dano da runa e, em Acerto Total, **transfere 1 condição negativa física ou mental simples** que esteja afetando o portador diretamente para o inimigo atingido (caso o inimigo falhe contra a CD da runa)."
+    },
+    {
+      "id": "trono-de-ossos-vazios",
+      "name": "Trono de Ossos Vazios",
+      "epithet": "Genuflexão pelo Peso",
+      "effect": "Cada golpe multiplica o peso da própria carne do inimigo. Ao fechar as condições, a pressão esmaga os joelhos do alvo contra o solo: causa o dado de dano da runa e, em Acerto Total, aplica **Ajoelhado / Imobilizado no Solo** (o alvo fica *Caído* e seu Deslocamento cai a `0m` até vencer `Força ou Constituição + Atletismo` contra a CD da runa)."
+    },
+    {
+      "id": "coracao-de-cinza-fria",
+      "name": "Coração de Cinza Fria",
+      "epithet": "Estopim de Cadáver",
+      "effect": "A arma transforma o corpo do inimigo marcado em uma bomba de corrupção latente. Ao cumprir as condições, crava um núcleo instável no tórax do alvo causando o dado de dano da runa + **Abalado** em Acerto Total; se o alvo chegar a `0 de Vida` enquanto estiver com o núcleo ativo, ele explode em `3m` causando o mesmo dado de dano da runa em todos os inimigos adjacentes."
+    }
+  ]
+}

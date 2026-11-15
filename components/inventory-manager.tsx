@@ -1,5 +1,7 @@
 "use client";
 import { AlchemyMeter } from "@/components/alchemy-meter";
+import { CursedRuneEditor } from "@/components/cursed-rune-editor";
+import { CursedRuneCombat } from "@/components/cursed-rune-combat";
 import { ItemCatalogPicker } from "@/components/item-catalog-picker";
 import { RuneCombat } from "@/components/rune-combat";
 import catalog from "@/data/equipment-catalog.json";
@@ -12,6 +14,7 @@ import {
   sizeFromHeight,
 } from "@/lib/character-rules";
 import { liveState } from "@/lib/combat-engine";
+import { reconcileCursedRuneInscriptions } from "@/lib/cursed-rune-model";
 import type { CombatAction } from "@/lib/combat-types";
 import { inventoryState } from "@/lib/inventory";
 import { runeSupport } from "@/lib/karmic-runes";
@@ -92,6 +95,20 @@ export function InventoryManager({
         i.id === id ? { ...i, ...patch } : i,
       ),
     });
+  const sealCurse = (
+    itemId: string,
+    cursedRune: NonNullable<InventoryItem["cursedRune"]>,
+  ) => {
+    const next = {
+      ...draft,
+      inventory: draft.inventory.map((item) =>
+        item.id === itemId ? { ...item, cursedRune } : item,
+      ),
+    };
+    // Use the same retention rule as server normalization when a curse destroys
+    // conventional inscriptions. Equipment edits never restore resources.
+    onChange?.(reconcileCursedRuneInscriptions(next));
+  };
   const add = () => {
     if (draft.inventory.length >= 100) return;
     const entry = catalog.find((i) => i.id === selected);
@@ -222,6 +239,9 @@ export function InventoryManager({
         </div>
       )}
       <AlchemyMeter draft={draft} onChange={onChange} readOnly={readOnly} />
+      {onCombatAction && (
+        <CursedRuneCombat draft={draft} onCombatAction={onCombatAction} />
+      )}
       {feedback && <p role="status">{feedback}</p>}
       <div className="inventory-items">
         {draft.inventory.map((item, index) => {
@@ -261,7 +281,11 @@ export function InventoryManager({
                         ? "Equipado"
                         : locations[item.location ?? "backpack"]}
                     </span>
-                    {runeSlots?.category === "Arma" ? (
+                    {item.cursedRune ? (
+                      <span>
+                        Runa Amaldiçoada · encaixes convencionais bloqueados
+                      </span>
+                    ) : runeSlots?.category === "Arma" ? (
                       <span>
                         Runas {armed}/{runeSlots.slots || 1}
                         {runeSlots.slots ? "" : " · vaga pessoal"}
@@ -284,14 +308,27 @@ export function InventoryManager({
                 <p>
                   {item.quantity} unidade(s){notes ? ` · ${notes}` : ""}
                 </p>
-                {onCombatAction && (runeSlots || armed > 0) && (
-                  <RuneCombat
-                    draft={draft}
-                    state={combat}
-                    itemId={item.id}
-                    send={onCombatAction}
-                  />
-                )}
+                <CursedRuneEditor
+                  draft={draft}
+                  item={item}
+                  conventionalRunes={armed}
+                  readOnly={readOnly}
+                  onSeal={
+                    readOnly || !onChange
+                      ? undefined
+                      : (curse) => sealCurse(item.id, curse)
+                  }
+                />
+                {onCombatAction &&
+                  !item.cursedRune &&
+                  (runeSlots || armed > 0) && (
+                    <RuneCombat
+                      draft={draft}
+                      state={combat}
+                      itemId={item.id}
+                      send={onCombatAction}
+                    />
+                  )}
                 {editable && (
                   <button
                     type="button"
@@ -398,7 +435,9 @@ export function InventoryManager({
                       <label>
                         Categoria
                         <select
-                          disabled={readOnly}
+                          disabled={
+                            readOnly || Boolean(item.cursedRune && !mageWeapon)
+                          }
                           value={item.category ?? "gear"}
                           onChange={(e) =>
                             update(item.id, {
@@ -419,14 +458,17 @@ export function InventoryManager({
                         <input
                           type="number"
                           min={0}
-                          max={999}
+                          max={item.cursedRune ? 1 : 999}
                           disabled={readOnly}
                           value={item.quantity}
                           onChange={(e) =>
                             update(item.id, {
                               quantity: Math.max(
                                 0,
-                                Math.min(999, Math.floor(+e.target.value) || 0),
+                                Math.min(
+                                  item.cursedRune ? 1 : 999,
+                                  Math.floor(+e.target.value) || 0,
+                                ),
                               ),
                             })
                           }

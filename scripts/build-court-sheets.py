@@ -36,7 +36,7 @@ for profile in profiles:
         profile['karma'] = ' / '.join(str(value) for value in override['karma'])
     for phase, base_ca in zip(profile['phases'], base['forms']):
         ca = scaled(base_ca, 'ca')
-        phase.update(ca=ca, partial=f'{ca // 2}–{ca - 1}', total=f'{ca}+')
+        phase.update(ca=ca, partial=f'{ca // 2}–{ca - 1}; em {ca}, Atributo do ataque menor ou igual ao regente da CA', total=f'{ca + 1}+; em {ca}, Atributo do ataque maior que o regente da CA')
     if profile['slug'] == 'euphere':
         life = int(profile['life']); half = life // 2
         for phase, label in zip(profile['phases'], [f'{life} Vida', f'{life}–{half + 1} Vida', f'{half}–1 Vida']):
@@ -66,7 +66,7 @@ for profile, record in zip(profiles, records):
             headers = [text(x) for x in lines[0].strip('|').split('|')]
             rows = [[text(x) for x in line.strip('|').split('|')] for line in lines[2:]]
             if i == 0:
-                profile['facts'] = [dict(label=row[0], value=' · '.join(row[1:])) for row in rows if not any(term in row[0] for term in ['Atributos', 'Vida · Karma', 'CA', 'Parcial', 'Deslocamento', 'Pontos Corruptos'])]
+                profile['facts'] = [dict(label=row[0], value=' · '.join(row[1:])) for row in rows if not any(term in row[0] for term in ['Atributos', 'Vida · Karma', 'CA', 'Parcial', 'Limiar Parcial', 'Deslocamento', 'Pontos Corruptos'])]
             else:
                 for row in rows:
                     profile['blocks'].append(dict(title=row[0],kind='ability',fields=[dict(label=header,html=render(value)) for header,value in zip(headers[1:],row[1:])]))

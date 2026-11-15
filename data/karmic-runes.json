@@ -78,7 +78,7 @@
     "retained": 3,
     "category": "Armadura e guarda",
     "passive": "Soma +1 em testes de Reflexos e Acrobacia.",
-    "burst": "Ao ser alvo de ataque: Permite recuar 3 metros como Reação livre e soma +3 na CA Parcial e Total contra o golpe."
+    "burst": "Ao ser alvo de um ataque: consuma sua Reação da rodada, sem custo adicional de Karma, e some +3 diretamente ao limiar de CA Parcial e +3 à CA Total contra esse golpe (CA 9 / 18 passa a 12 / 21). Depois da resolução do golpe, pode recuar até 3m, seguindo as regras normais de movimento."
   },
   {
     "id": 10,
@@ -123,7 +123,7 @@
     "retained": 2,
     "category": "Campo e selo",
     "passive": "Vigia um raio de 2m no solo ou parede de forma invisível a olho nu.",
-    "burst": "Inimigo pisa na área: Dispara lâminas de ar comprimido causando 1d10 de dano e reduzindo o movimento em 2m."
+    "burst": "Quando um inimigo pisa na área, dispara lâminas de ar comprimido. O alvo resiste com Constituição + Atletismo contra o resultado de Espírito + Canalização de Karma do inscritor comum (empate favorece o defensor) ou a CD rúnica do Escriba, 12 + Intelecto + nível de Canalização (igualar é sucesso). Em falha, sofre 1d10 de dano e −2m de Movimento; em sucesso, sofre metade do dano, arredondada para baixo, e evita a redução de Movimento."
   },
   {
     "id": 15,
@@ -150,7 +150,7 @@
     "retained": 4,
     "category": "Campo e selo",
     "passive": "Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito.",
-    "burst": "Detonação: Puxa todos os inimigos em um raio de 4m para o centro da runa, causando 2d6 de dano contundente."
+    "burst": "Comando do portador a até 12m: Ação Extra no próprio turno ou Reação quando um inimigo terminar seu Movimento a até 4m da inscrição. Detonação: cada inimigo em um raio de 4m resiste com Constituição + Atletismo contra o resultado de Espírito + Canalização de Karma do inscritor comum (empate favorece o defensor) ou a CD rúnica do Escriba, 12 + Intelecto + nível de Canalização (igualar é sucesso). Em falha, sofre 2d6 de dano contundente e é puxado para o centro da Runa; em sucesso, sofre metade do dano, arredondada para baixo, e evita o puxão."
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@
     "retained": 3,
     "category": "Sangue e corpo",
     "passive": "Pulsa no pulso do usuário estabilizando o fluxo espiritual (+1 em Vontade).",
-    "burst": "Ação Livre: Converte a runa em energia imediata, reduzindo em -5 de Karma o custo da próxima técnica ou habilidade no turno."
+    "burst": "Ação Livre: reduz em 5 Karma o custo de ativação da próxima técnica ou habilidade usada no mesmo turno, com mínimo de 1 Karma se o custo original for positivo. Não reduz manutenção, Karma Retido ou Investido; uma ativação originalmente gratuita continua gratuita."
   },
   {
     "id": 21,

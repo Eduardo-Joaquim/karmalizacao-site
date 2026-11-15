@@ -6,7 +6,7 @@ root=Path(__file__).resolve().parents[1]
 source=(root/'docs/equipamentos-tecnologia.md').read_text()
 book=json.loads((root/'data/rules.json').read_text())
 for number,body in [(17,source.split('# Capítulo 20')[0]),(20,'# Capítulo 20'+source.split('# Capítulo 20',1)[1])]:
-    rendered=subprocess.check_output(['pandoc','-f','markdown','-t','html5','--wrap=none'],input=body,text=True)
+    rendered=subprocess.check_output(['pandoc','-f','markdown-tex_math_dollars','-t','html5','--wrap=none'],input=body,text=True)
     tree=html.fragment_fromstring(rendered,create_parent='div');title=tree.find('h1');tree.remove(title)
     chapter=next(c for c in book['chapters'] if c['number']==number)
     chapter['title']=re.sub(r'\s+',' ',title.text_content()).strip();chapter['shortTitle']=re.sub(r'^Capítulo\s+\d+\s*[—:.-]?\s*','',chapter['title'])

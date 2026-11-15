@@ -11,7 +11,7 @@ def roll(attributes, attribute, training, extra=0, analytic=False):
     if training == 0:
         return '1d20'
     dice = (attributes[attribute] + 1) // 2 + extra
-    bonus = training_bonus[training] + (min(3, attributes[3] // 2) if analytic else 0)
+    bonus = training_bonus[training] + (min(3, attributes[3]) if analytic and attribute == 3 else 0)
     return f'maior de {dice}d20 +{bonus}'
 
 members = []
@@ -20,8 +20,8 @@ markdown = ['<!-- summons:start -->', '**Invocações detalhadas:** cada peça u
 for original in source['members']:
     item = {key: value for key, value in original.items() if key not in ['tests']}
     item.update(life=scale(original['life']), ca=scale(original['ca']), movement=scale(original['movement']), attributes=[scale(value) for value in original['attributes']])
-    item['partial'] = f"{item['ca'] // 2}–{item['ca'] - 1}"
-    item['total'] = f"{item['ca']}+"
+    item['partial'] = f"{item['ca'] // 2}–{item['ca'] - 1}; em {item['ca']}, Atributo do ataque menor ou igual ao regente da CA"
+    item['total'] = f"{item['ca'] + 1}+; em {item['ca']}, Atributo do ataque maior que o regente da CA"
     item['attack'] = dict(original['attack'])
     item['attack']['roll'] = roll(item['attributes'], original['attack']['attribute'], original['attack']['training'])
     item['tests'] = [dict(name=test['name'], roll=roll(item['attributes'], test['attribute'], test['training'], test.get('extra',0), test.get('analytic',False))) for test in original['tests']]

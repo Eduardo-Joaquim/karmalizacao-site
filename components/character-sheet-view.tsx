@@ -34,12 +34,14 @@ import {
 } from "@/lib/character-data";
 import {
   DOMAIN_RULES,
+  attributeBreakdownText,
   getClassDefinition,
   getFinalAttribute,
   getFinalSkill,
   getRaceRule,
   getSacrificedPoints,
   getSkillTest,
+  hasConfirmedFirstMilestone,
   racialFeatures,
   skillBonusExplanation,
   VOW_WEIGHTS,
@@ -242,6 +244,11 @@ export function CharacterSheetView({
           </ReadonlyValue>
           <ReadonlyValue label="Caminho">{draft.path}</ReadonlyValue>
           <ReadonlyValue label="Etapa">{draft.stage}</ReadonlyValue>
+          <ReadonlyValue label="Recompensas da Linha I">
+            {hasConfirmedFirstMilestone(draft)
+              ? "Primeiro marco confirmado"
+              : "Aguardam confirmação do primeiro marco"}
+          </ReadonlyValue>
           <ReadonlyValue label="Idioma comum">
             {draft.commonLanguage}
           </ReadonlyValue>
@@ -263,8 +270,6 @@ export function CharacterSheetView({
       <SheetSection icon={Shield} title="Atributos">
         <div className="sheet-attribute-grid">
           {ATTRIBUTES.map((attribute) => {
-            const points = draft.attributes[attribute];
-            const automaticBonus = automatic.attributes[attribute];
             const total = getFinalAttribute(draft, automatic, attribute);
             return (
               <article key={attribute}>
@@ -276,9 +281,7 @@ export function CharacterSheetView({
                 <strong>{total}</strong>
 
                 <span>
-                  {points.base} base
-                  {automaticBonus ? ` · +${automaticBonus} automático` : ""}
-                  {points.bonus ? ` · +${points.bonus} ajuste` : ""}
+                  {attributeBreakdownText(draft, automatic, attribute)}
                 </span>
               </article>
             );
@@ -497,6 +500,9 @@ export function CharacterSheetView({
         <SheetSection icon={Flame} title="Poder elemental & subdobras">
           <div className="sheet-readonly-grid compact">
             <ReadonlyValue label="Afinidade">{draft.affinity}</ReadonlyValue>
+            <ReadonlyValue label="Fonte elemental principal">
+              {draft.elemental.primaryElement}
+            </ReadonlyValue>
             <ReadonlyValue label="Elementos controlados">
               {draft.elemental.controlledElements.join(", ")}
             </ReadonlyValue>

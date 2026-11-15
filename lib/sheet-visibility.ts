@@ -47,6 +47,7 @@ export function hasElementalContent(draft: CharacterPayload): boolean {
     draft.elemental.controlledElements.some(hasSheetText) ||
     draft.elemental.masteryLevel > 0 ||
     [
+      draft.elemental.primaryElement,
       draft.elemental.manifestation,
       draft.elemental.passive,
       draft.elemental.notes,

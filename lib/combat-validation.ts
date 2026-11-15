@@ -21,6 +21,34 @@ const base = z
   .strict();
 export const combatActionSchema = z.discriminatedUnion("type", [
   base.extend({
+    type: z.literal("cursedStrike"),
+    weaponId: z.string().min(1).max(120),
+    targetId: z
+      .string()
+      .min(1)
+      .max(120)
+      .refine(
+        (key) => !["__proto__", "prototype", "constructor"].includes(key),
+      ),
+    outcome: z.enum(["Acerto total", "Acerto parcial", "Falha"]),
+    selectedNatural: z.number().int().min(1).max(20),
+    vector: z.enum(["melee", "ranged"]),
+    distance: z.number().finite().min(0).max(99999),
+    isolated: z.boolean().optional(),
+    flanked: z.boolean().optional(),
+    targetDebilitated: z.boolean().optional(),
+    controlTotal: z.number().int().min(-99999).max(99999).optional(),
+    hungerDie: z.number().int().min(1).max(6).optional(),
+  }),
+  base.extend({
+    type: z.literal("cursedWeapon"),
+    weaponId: z.string().min(1).max(120),
+    operation: z.enum(["feed", "torpor", "wake"]),
+    controlTotal: z.number().int().min(-99999).max(99999).optional(),
+    ritualDC: z.number().int().min(0).max(99999).optional(),
+    ritualCompleted: z.boolean().optional(),
+  }),
+  base.extend({
     type: z.literal("damage"),
     amount: num,
     resistance: num,
@@ -106,6 +134,26 @@ export const combatActionSchema = z.discriminatedUnion("type", [
     type: z.literal("burstRune"),
     inscriptionId: z.string().min(1).max(80),
     disarm: z.boolean().optional(),
+  }),
+  base.extend({
+    type: z.literal("runeBenefit"),
+    inscriptionId: z.string().min(1).max(80),
+  }),
+  base.extend({
+    type: z.literal("gradeVApex"),
+    label: z.string().min(1).max(120),
+  }),
+  base.extend({
+    type: z.literal("interceptRune"),
+    runeId: z.number().int().min(1).max(25).optional(),
+    weaponId: z.string().min(1).max(120).optional(),
+    referenceKind: z.enum(["attack", "cd"]),
+    reference: z.number().int().min(0).max(99999),
+    testTotal: z.number().int().min(-99999).max(99999),
+    mitigationDie: z.number().int().min(1).max(8).optional(),
+    damageBeforeMitigation: num,
+    hostilePartial: z.boolean(),
+    skill: z.enum(["Tática", "Canalização de Karma"]),
   }),
   base.extend({ type: z.literal("domain"), name: z.string().max(80) }),
   base.extend({ type: z.literal("form"), active: z.boolean() }),

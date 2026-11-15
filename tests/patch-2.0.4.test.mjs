@@ -36,7 +36,7 @@ test('Scribe training and weapon slots remain separate from personal limit', () 
   let draft = createBlankCharacter();
   draft.className = 'Escriba Kármico';
   const bonus = calculateAutomaticBonuses(draft);
-  assert.equal(bonus.attributes.Intelecto,1);
+  assert.equal(bonus.attributes.Intelecto,2);
   assert.equal(bonus.attributes.Espírito,1);
   assert.equal(getFinalSkill(draft,bonus,'Tática'),1);
   assert.equal(getFinalSkill(draft,bonus,'Canalização de Karma'),1);

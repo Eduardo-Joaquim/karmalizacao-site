@@ -63,6 +63,8 @@ import { npcSkillRoll } from "@/lib/npc-rolls";
 import {
   conditionForAttack,
   damageForAttack,
+  armorRangeLabel,
+  PENDING_ARMOR_TIE,
   resolveRoll,
 } from "@/lib/table-play";
 import type { ChangeEvent } from "react";
@@ -119,10 +121,11 @@ function LinkedParticipant({
           <strong>{max.armor}</strong>
         </div>
         <div>
-          <span>Parcial / Total</span>
-          <strong>
-            {Math.floor(max.armor / 2)}–{max.armor - 1} / {max.armor}+
-          </strong>
+          <span>Faixas de acerto</span>
+          <strong>{armorRangeLabel(max.armor)}</strong>
+          <small>
+            {max.armorRegent} {max.armorRegentValue} no confronto
+          </small>
         </div>
       </div>
       {p.payload!.portraitImage && (
@@ -567,7 +570,23 @@ export function GmCombatWindow({
         );
     }
     if (data.type === "condition") {
-      const name = String(data.condition);
+      const applied =
+        !data.remove && data.attackOutcome
+          ? conditionForAttack(
+              String(data.condition),
+              String(data.attackOutcome),
+              typeof data.rounds === "number" ? data.rounds : undefined,
+              typeof data.potency === "number" ? data.potency : undefined,
+            )
+          : {
+              name: String(data.condition),
+              rounds: data.rounds,
+              potency: data.potency,
+            };
+      if (!applied?.name) return;
+      const name = applied.name;
+      if ("loseReaction" in applied && applied.loseReaction && !data.remove)
+        next.reactions = 0;
       next.conditions = data.remove
         ? current.conditions.filter((c) => c !== name)
         : [...new Set([...current.conditions, name])].slice(0, 20);
@@ -582,10 +601,10 @@ export function GmCombatWindow({
         ),
       );
       if (!data.remove && next.conditions.includes(name)) {
-        if (typeof data.rounds === "number")
-          next.conditionRounds[name] = data.rounds;
-        if (typeof data.potency === "number")
-          next.conditionPotency[name] = data.potency;
+        if (typeof applied.rounds === "number")
+          next.conditionRounds[name] = applied.rounds;
+        if (typeof applied.potency === "number")
+          next.conditionPotency[name] = applied.potency;
       }
     }
     if (data.type === "scene") {
@@ -903,6 +922,37 @@ export function GmCombatWindow({
       throw Error(
         "Informe a reserva e o bônus de ataque registrados na ficha (ex.: 3d20 +5).",
       );
+    const attackAttribute =
+      manual[`${p.key}-${art.id}-attribute`] ?? art.attribute;
+    const defense = victim?.payload ? characterMax(victim.payload) : undefined;
+    const defenseRegent = defense?.armorRegent ?? victim?.npc?.caRegent;
+    const attackValue = attackAttribute
+      ? p.npc?.attributes[
+          ATTRIBUTES.indexOf(attackAttribute as (typeof ATTRIBUTES)[number])
+        ]
+      : undefined;
+    const defenseValue =
+      defense?.armorRegentValue ??
+      (defenseRegent
+        ? victim?.npc?.attributes[ATTRIBUTES.indexOf(defenseRegent)]
+        : undefined);
+    if (
+      art.attack &&
+      (!attackAttribute || !Number.isFinite(attackValue) || attackValue! < 0)
+    )
+      throw Error(
+        "Informe o atributo usado neste ataque antes de rolar contra a CA.",
+      );
+    if (
+      art.attack &&
+      (!defenseRegent || !Number.isFinite(defenseValue) || defenseValue! < 0)
+    )
+      throw Error(
+        "Defina o regente da CA na ficha do alvo antes de rolar. A CA pronta não identifica esse atributo.",
+      );
+    const comparisonText = art.attack
+      ? `CA ${caOf(victim!)}; ataque ${attackAttribute} ${attackValue}; defesa ${defenseRegent} ${defenseValue}.`
+      : "";
     if (art.domain && Object.hasOwn(p.domainRounds, art.domain))
       throw Error("Domínio já manifestado nesta cena.");
     const damageText = manual[`${p.key}-${art.id}-damage`] ?? art.damage;
@@ -936,6 +986,7 @@ export function GmCombatWindow({
           art.attack && victim ? caOf(victim) : undefined,
           "CA",
           selection,
+          { attackAttribute: attackValue, defenseAttribute: defenseValue },
         )
       : null;
     if (roll) {
@@ -948,6 +999,7 @@ export function GmCombatWindow({
         rollFormula: formula,
         diceResults: dice,
         total: roll.total,
+        details: comparisonText,
         visual: rollVisual(dice, bonus, selection, roll.outcome),
       };
       setLogs((es) => [...es, event].slice(-100));
@@ -961,6 +1013,8 @@ export function GmCombatWindow({
       setMessage(`${art.name}: ${cost} Karma pagos. Resolva o efeito.`);
       return;
     }
+    if (roll!.outcome === PENDING_ARMOR_TIE)
+      throw Error("O confronto exige valores de atributos válidos.");
     const base =
       roll!.naturalTwenty &&
       roll!.outcome !== "Falha" &&
@@ -968,7 +1022,9 @@ export function GmCombatWindow({
         ? damageDice(damageText, true)
         : preparedDamage;
     const damage = damageForAttack(base?.total ?? 0, roll!.outcome);
-    const label = `${nameOf(p)} · ${art.name} → ${nameOf(victim!)}: [${dice.join(", ")}] ${bonus >= 0 ? "+" : ""}${bonus} = ${roll!.total}, ${roll!.outcome}. ${base ? `Dano ${base.formula} [${base.dice.join(", ")}] = ${base.total}; após parcial: ${damage}.` : "Sem dano estruturado: informe o valor final no campo Dano / cura."}`;
+    if (damage === null)
+      throw Error("Conclua o confronto antes de resolver o dano.");
+    const label = `${nameOf(p)} · ${art.name} → ${nameOf(victim!)}: [${dice.join(", ")}] ${bonus >= 0 ? "+" : ""}${bonus} = ${roll!.total}, ${roll!.outcome}. ${comparisonText} ${base ? `Dano ${base.formula} [${base.dice.join(", ")}] = ${base.total}; após parcial: ${damage}.` : "Sem dano estruturado: informe o valor final no campo Dano / cura."}`;
     log(art.name, label, "attack");
     setMessage(label);
     setResolution({
@@ -1733,7 +1789,7 @@ export function GmCombatWindow({
                   busy ||
                   resolution.conditionApplied ||
                   !condition.trim() ||
-                  !conditionForAttack(condition, resolution.outcome)
+                  !conditionForAttack(condition, resolution.outcome)?.name
                 }
                 onClick={() =>
                   safe(async () => {
@@ -1763,22 +1819,18 @@ export function GmCombatWindow({
                       rounds,
                       potency,
                     );
-                    if (!applied) return;
+                    if (!applied?.name) return;
                     await action(
                       p,
                       {
                         type: "condition",
                         condition: condition.trim(),
                         remove: false,
-                        ...(p.payload
-                          ? {
-                              attackOutcome: resolution.outcome,
-                              rounds,
-                              potency,
-                            }
-                          : applied),
+                        attackOutcome: resolution.outcome,
+                        rounds,
+                        potency,
                       },
-                      "Condição do ataque",
+                      `Condição do ataque: ${applied.name}`,
                     );
                     setResolution({ ...resolution, conditionApplied: true });
                   })
@@ -1788,8 +1840,20 @@ export function GmCombatWindow({
               </button>
               <p>
                 Use o campo Condição para registrar o efeito da técnica.
-                Condições menores exigem Acerto Total.
+                Condições menores exigem Acerto Total. Sangramento parcial causa
+                um único pulso de 1d4 reduzido à metade, mínimo 1 antes de
+                proteções, no fim do próximo turno do alvo e encerra.
               </p>
+              {condition.trim() &&
+                conditionForAttack(condition, resolution.outcome)
+                  ?.manualNote && (
+                  <p role="status">
+                    {
+                      conditionForAttack(condition, resolution.outcome)
+                        ?.manualNote
+                    }
+                  </p>
+                )}
             </aside>
           )}
           <div className="gm-participants">
@@ -1951,11 +2015,31 @@ export function GmCombatWindow({
                           <strong>{p.shield}</strong>
                         </div>
                         <div>
-                          <span>CA · Parcial · Total</span>
-                          <strong>
-                            {Math.floor(p.npc.ca / 2)}–{p.npc.ca - 1} /{" "}
-                            {p.npc.ca}+
-                          </strong>
+                          <span>CA {p.npc.ca}</span>
+                          <strong>{armorRangeLabel(p.npc.ca)}</strong>
+                          <label>
+                            Regente da CA
+                            <select
+                              value={p.npc.caRegent ?? ""}
+                              onChange={(event) => {
+                                const caRegent = event.target.value as
+                                  | ""
+                                  | "Agilidade"
+                                  | "Constituição";
+                                commitNpc({
+                                  ...p,
+                                  npc: {
+                                    ...p.npc!,
+                                    caRegent: caRegent || undefined,
+                                  },
+                                });
+                              }}
+                            >
+                              <option value="">Informe pela ficha</option>
+                              <option>Agilidade</option>
+                              <option>Constituição</option>
+                            </select>
+                          </label>
                         </div>
                         <div>
                           <span>Movimento</span>
@@ -2165,6 +2249,32 @@ export function GmCombatWindow({
                                   }
                                 />
                               </label>
+                              {art.attack && (
+                                <label>
+                                  Atributo usado no ataque
+                                  <select
+                                    value={
+                                      manual[`${p.key}-${art.id}-attribute`] ??
+                                      art.attribute ??
+                                      ""
+                                    }
+                                    onChange={(event) =>
+                                      setManual({
+                                        ...manual,
+                                        [`${p.key}-${art.id}-attribute`]:
+                                          event.target.value,
+                                      })
+                                    }
+                                  >
+                                    <option value="">Informe pela ficha</option>
+                                    {ATTRIBUTES.map((attribute) => (
+                                      <option key={attribute}>
+                                        {attribute}
+                                      </option>
+                                    ))}
+                                  </select>
+                                </label>
+                              )}
                               {art.attack && (
                                 <label>
                                   Dados-base de dano

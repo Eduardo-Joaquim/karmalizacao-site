@@ -2,6 +2,7 @@ import test,{after} from 'node:test';
 import assert from 'node:assert/strict';
 import {createServer} from 'vite';
 import {readFileSync} from 'node:fs';
+import {assertCorruptionSourcePreserved} from './helpers/book-206-source.mjs';
 const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:{'@':process.cwd()}},server:{middlewareMode:true,hmr:false}});after(()=>vite.close());
 const {alchemyState}=await vite.ssrLoadModule('/lib/alchemy.ts');
 const data=await vite.ssrLoadModule('/lib/character-data.ts');
@@ -26,5 +27,5 @@ test('all chapter headings follow editorial numbering and chapter 14 remains int
  const b=JSON.parse(readFileSync('data/rules.json'));assert.equal(b.chapters.length,20);
  for(const c of b.chapters)for(const section of c.sections)assert(!/^(?:17|20)\s+\d+\b/.test(section.title),section.title);
  const c=b.chapters.find(c=>c.number===17);assert(c.sections.some(s=>s.title==='Alquimia, síntese de poções e saturação'));assert(c.searchableText.includes('Constituição + Atletismo'));assert(!c.searchableText.includes('Fortitude'));
- const c14=b.chapters.find(c=>c.number===14);const base=readFileSync('docs/corrupcao-marca-base.html','utf8');const addition=c14.html.match(/<h2 id="transformação-corrompida">[\s\S]*?(?=<h2[^>]*>Ruptura<\/h2>)/);assert.equal(c14.html.replace(addition[0],''),base);
+ const c14=b.chapters.find(c=>c.number===14);const base=readFileSync('docs/corrupcao-marca-base.html','utf8');assertCorruptionSourcePreserved(c14,base);
 });

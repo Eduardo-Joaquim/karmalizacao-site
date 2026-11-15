@@ -104,7 +104,10 @@ export function personalRuneCount(
       .map((item) => item.id),
   );
   return (state.runes ?? []).filter(
-    (rune) => !rune.spent && (!rune.weaponId || !nativeIds.has(rune.weaponId)),
+    (rune) =>
+      !rune.spent &&
+      !rune.personalSlotExempt &&
+      (!rune.weaponId || !nativeIds.has(rune.weaponId)),
   ).length;
 }
 
@@ -113,12 +116,15 @@ export function runeInscriptionError(
   state: LiveCombatState,
   rune: Rune,
   itemId?: string,
+  options: { captured?: boolean; waivePersonalSlot?: boolean } = {},
 ) {
   const { maxGrade } = runeTraining(draft);
   if (!maxGrade) return "Inscrição exige Canalização de Karma 1.";
   if (techniqueGradeIndex(rune.grade) + 1 > maxGrade)
     return "Etapa ou nível de Canalização insuficiente para este Grau.";
   const item = draft.inventory.find((entry) => entry.id === itemId);
+  if (item?.cursedRune)
+    return "Ciúme da Maldição: esta arma não aceita Runas Kármicas convencionais.";
   const support = item && runeSupport(item);
   if (!itemId && rune.category === "Arma")
     return "Escolha uma arma ou um foco compatível no inventário para inscrever esta runa.";
@@ -134,11 +140,12 @@ export function runeInscriptionError(
     return "Limite de Runas deste item atingido.";
   if (
     (!support?.slots &&
+      !options.waivePersonalSlot &&
       personalRuneCount(draft, state) >= personalRuneLimit(draft)) ||
     (state.runes?.length ?? 0) >= 100
   )
     return "Limite de Runas atingido.";
-  if (availableKarma(state) < rune.retained)
+  if (!options.captured && availableKarma(state) < rune.retained)
     return "Karma disponível insuficiente para reter a Runa.";
 }
 
@@ -146,10 +153,28 @@ export function retainedKarma(state: LiveCombatState) {
   return (state.runes ?? []).reduce(
     (sum, rune) =>
       sum +
-      (rune.releaseRound !== undefined && rune.releaseRound <= state.round
+      (rune.temporary ||
+      (rune.releaseRound !== undefined && rune.releaseRound <= state.round)
         ? 0
         : (catalog.find((entry) => entry.id === rune.runeId)?.retained ?? 0)),
     0,
+  );
+}
+
+export function hasVectorInterception(draft: CharacterPayload) {
+  return (
+    draft.className === "Escriba Kármico" &&
+    draft.classAbilities.some((name) => name.startsWith("Sobrescrita de Vetor"))
+  );
+}
+
+export function interceptedRuneSlotExemption(draft: CharacterPayload) {
+  return (
+    hasVectorInterception(draft) &&
+    runeTraining(draft).stage >= 6 &&
+    draft.classAmplifications.some(
+      (name) => name.toLocaleLowerCase("pt-BR") === "energia interceptada",
+    )
   );
 }
 

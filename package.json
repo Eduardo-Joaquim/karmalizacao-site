@@ -1,6 +1,6 @@
 {
   "name": "karmalizacao",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "private": true,
   "engines": {
     "node": ">=22.15.0"
@@ -14,7 +14,7 @@
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
     "test:legacy": "node --test tests/character-rules.test.mjs tests/patch-1.2.test.mjs",
-    "content:build": "python3 scripts/build-bestiary.py && python3 scripts/build-equipment.py && python3 scripts/build-alchemy.py && python3 scripts/build-corruption.py && python3 scripts/build-size-rules.py && python3 scripts/build-class-revision.py && python3 scripts/build-patch-2.py && python3 scripts/build-path-runes.py && python3 scripts/build-canonical-combat.py && python3 scripts/build-navigation.py",
+    "content:build": "python3 scripts/build-bestiary.py && python3 scripts/build-equipment.py && python3 scripts/build-alchemy.py && python3 scripts/build-corruption.py && python3 scripts/build-size-rules.py && python3 scripts/build-class-revision.py && python3 scripts/build-patch-2.py && python3 scripts/build-path-runes.py && python3 scripts/build-canonical-combat.py && python3 scripts/build-book-207.py && python3 scripts/build-navigation.py",
     "typecheck": "tsc --noEmit --incremental false",
     "format:check": "prettier --check \"app/**/*.{ts,tsx,css}\" \"components/*.tsx\" \"hooks/*.ts\" \"lib/*.ts\"",
     "check": "npm run typecheck && npm run lint && npm run build && npm test"

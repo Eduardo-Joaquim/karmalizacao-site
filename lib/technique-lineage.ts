@@ -21,6 +21,7 @@ const families = {
   amparo: ["Cura", "Purificação", "Amparo"],
   oficio: ["Dispositivo", "Preparação", "Área"],
   comando: ["Coordenação", "Alcance", "Sustentação"],
+  runica: ["Condição", "Controle", "Selo"],
 };
 const classes: Record<string, keyof typeof families> = {
   Mercenário: "marcial",
@@ -40,6 +41,7 @@ const classes: Record<string, keyof typeof families> = {
   Invocador: "comando",
   Elementalista: "conjuracao",
   Conjurador: "conjuracao",
+  "Escriba Kármico": "runica",
 };
 export function doctrineOptions(className: string) {
   return families[classes[className]] ?? [];

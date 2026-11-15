@@ -16,18 +16,20 @@ Esses dados pertencem às técnicas ofensivas. Ataques básicos, cura e Escudo s
 
 ## A guarda diante das subdobras
 
-| Elemento primário | Subdobras |
-|---|---|
-| Vento (Ar) | Raio, Som e Vácuo |
-| Água | Gelo, Sangue e Vapor (com Fogo) |
-| Fogo | Combustão, Plasma e Cinza Ardente; também Vapor e Magma |
-| Terra | Metal, Cristal, Quartzo, Areia, Magma e Lava (com Fogo) |
-| Luz | Laser e Miragem Solar |
-| Sombra (Trevas) | Erosão e Breu Abissal |
+| Origem elemental | Subdobras | Defesa parental |
+|---|---|---|
+| Água | Gelo, Geada, Névoa e Sangue | Metade da defesa de Água, arredondada para baixo |
+| Fogo | Combustão, Cinza, Incandescência e Deflagração | Metade da defesa de Fogo, arredondada para baixo |
+| Terra | Areia, Metal, Cristal e Peso | Metade da defesa de Terra, arredondada para baixo |
+| Ar / Vento | Raio, Som, Vácuo e Pressão Atmosférica | Metade da defesa de Ar, arredondada para baixo |
+| Água + Fogo | Vapor | Metade da maior defesa entre Água e Fogo, arredondada para baixo |
+| Terra + Fogo | Magma / Lava | Metade da maior defesa entre Terra e Fogo, arredondada para baixo |
 
-Use a defesa inteira contra seu elemento primário. Subdobras não têm defesa própria: aplique metade da defesa do elemento de origem, arredondando para baixo. Quando houver dois elementos-pai, escolha a maior defesa entre eles antes de dividir. Não some as duas.
+Os seis elementos primários são Fogo, Terra, Água, Ar (Vento), Luz e Trevas (Sombra). Use a defesa inteira contra o elemento primário. As 18 subdobras da tabela usam metade da defesa de seu elemento de origem, arredondada para baixo. Para Vapor e Magma / Lava, escolha a maior defesa entre os dois elementos-pai antes de dividir; não some as duas. Magma e Lava são nomes da mesma subdobra.
 
-> O Raio é uma subdobra do Vento. Se a criatura tem 4 de Resistência contra Vento, ainda se protege de um ataque de Elemental / Raio. A descarga atravessa parte da guarda: reduza o dano em apenas 2 pontos.
+Peso aumenta ou diminui o peso, a massa aparente e a carga física de objetos, armas e corpos. Não manipula a gravidade nem cria campos gravitacionais. A técnica declara alvo, intensidade, duração, teste e custo.
+
+> O Raio é uma subdobra do Vento. Se a criatura tem Resistência Alta (3) contra Vento, reduz o dano de um ataque de Elemental / Raio em 1 ponto.
 
 ## A dívida da Marca
 

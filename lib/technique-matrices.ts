@@ -1,30 +1,17 @@
-const ELEMENTAL_DAMAGE = [
-  "Vento",
-  "Água",
-  "Fogo",
-  "Terra",
-  "Luz",
-  "Sombra",
-  "Raio",
-  "Som",
-  "Vácuo",
-  "Gelo",
-  "Sangue",
-  "Vapor",
-  "Combustão",
-  "Plasma",
-  "Cinza Ardente",
-  "Metal",
-  "Cristal",
-  "Quartzo",
-  "Areia",
-  "Magma",
-  "Lava",
-  "Laser",
-  "Miragem Solar",
-  "Erosão",
-  "Breu Abissal",
-].map((e) => `Elemental / ${e}` as const);
+import elementalTaxonomy from "@/data/elemental-taxonomy.json";
+
+export const PRIMARY_ELEMENTS = elementalTaxonomy.primaryElements;
+export const SUB_ELEMENTS: Record<string, readonly string[]> =
+  Object.fromEntries(
+    elementalTaxonomy.subElements.map(({ name, parents }) => [name, parents]),
+  );
+export const ELEMENTAL_EXPRESSIONS = [
+  ...PRIMARY_ELEMENTS,
+  ...Object.keys(SUB_ELEMENTS),
+];
+const ELEMENTAL_DAMAGE = ELEMENTAL_EXPRESSIONS.map(
+  (element) => `Elemental / ${element}` as const,
+);
 export const DAMAGE_TYPES = [
   "Marcial",
   "Kármico",
@@ -33,7 +20,25 @@ export const DAMAGE_TYPES = [
   "Mental",
   ...ELEMENTAL_DAMAGE,
 ] as const;
-export type DamageType = (typeof DAMAGE_TYPES)[number];
+// Preserve registered techniques without offering retired taxonomy as new choices.
+const LEGACY_SUB_ELEMENTS: Record<string, readonly string[]> = {
+  Plasma: ["Fogo"],
+  "Cinza Ardente": ["Fogo"],
+  Quartzo: ["Terra"],
+  Laser: ["Luz"],
+  "Miragem Solar": ["Luz"],
+  Erosão: ["Sombra"],
+  "Breu Abissal": ["Sombra"],
+};
+export const ACCEPTED_DAMAGE_TYPES = [
+  ...DAMAGE_TYPES,
+  ...Object.keys(LEGACY_SUB_ELEMENTS).map(
+    (element) => `Elemental / ${element}` as const,
+  ),
+  "Elemental / Magma",
+  "Elemental / Lava",
+] as const;
+export type DamageType = (typeof ACCEPTED_DAMAGE_TYPES)[number];
 export const MATRICES = [
   "Kármico",
   "Elemental",
@@ -80,46 +85,24 @@ export function techniqueProfile(
     damageType: matrix === "Elemental" ? "Elemental / Fogo" : matrix,
   };
 }
-export const PRIMARY_ELEMENTS = [
-  "Vento",
-  "Água",
-  "Fogo",
-  "Terra",
-  "Luz",
-  "Sombra",
-] as const;
-export const SUB_ELEMENTS: Record<string, readonly string[]> = {
-  Raio: ["Vento"],
-  Som: ["Vento"],
-  Vácuo: ["Vento"],
-  Gelo: ["Água"],
-  Sangue: ["Água"],
-  Vapor: ["Água", "Fogo"],
-  Combustão: ["Fogo"],
-  Plasma: ["Fogo"],
-  "Cinza Ardente": ["Fogo"],
-  Metal: ["Terra"],
-  Cristal: ["Terra"],
-  Quartzo: ["Terra"],
-  Areia: ["Terra"],
-  Magma: ["Terra", "Fogo"],
-  Lava: ["Terra", "Fogo"],
-  Laser: ["Luz"],
-  "Miragem Solar": ["Luz"],
-  Erosão: ["Sombra"],
-  "Breu Abissal": ["Sombra"],
-};
-export const ELEMENTAL_EXPRESSIONS = [
-  ...PRIMARY_ELEMENTS,
-  ...Object.keys(SUB_ELEMENTS),
-];
 function normalizeElement(s: string) {
   const n = s
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .trim()
     .toLowerCase();
-  return n === "ar" ? "vento" : n === "trevas" ? "sombra" : n;
+  if (n === "ar") return "vento";
+  if (n === "trevas") return "sombra";
+  const canonical = elementalTaxonomy.subElements.find((entry) =>
+    entry.aliases?.some(
+      (alias) =>
+        alias
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase() === n,
+    ),
+  );
+  return canonical ? canonical.name.toLowerCase() : n;
 }
 export function calculateElementalDefense(
   primaryDefenses: Record<string, number>,
@@ -139,9 +122,10 @@ export function calculateElementalDefense(
         )
         .map(([, v]) => Math.floor(v)),
     );
-  const parents = Object.entries(SUB_ELEMENTS).find(
-    ([k]) => normalizeElement(k) === element,
-  )?.[1];
+  const parents = Object.entries({
+    ...LEGACY_SUB_ELEMENTS,
+    ...SUB_ELEMENTS,
+  }).find(([k]) => normalizeElement(k) === element)?.[1];
   return parents
     ? Math.floor(Math.max(...parents.map(defense)) / 2)
     : PRIMARY_ELEMENTS.some((k) => normalizeElement(k) === element)

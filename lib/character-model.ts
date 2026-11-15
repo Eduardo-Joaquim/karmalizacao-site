@@ -1,5 +1,7 @@
 import sizeRules from "@/data/size-rules.json";
 import type { LiveCombatState } from "@/lib/combat-types";
+import type { CursedRuneInscription } from "@/lib/cursed-rune-model";
+export type { CursedRuneInscription } from "@/lib/cursed-rune-model";
 export const ATTRIBUTES = [
   "Força",
   "Agilidade",
@@ -272,6 +274,7 @@ export type DomainState = {
 };
 
 export type PersonalPathState = {
+  strictlySelfTaught?: boolean;
   axiom?: number;
   branch?: "independente" | "subversao" | "emancipacao";
   failedAttempts?: number;
@@ -358,6 +361,7 @@ export type SubBending = {
 };
 
 export type ElementalState = {
+  primaryElement?: string;
   controlledElements: string[];
   masteryLevel: number;
   manifestation: string;
@@ -395,6 +399,7 @@ export type TechniqueRecord = {
 };
 
 export type InventoryItem = {
+  cursedRune?: CursedRuneInscription;
   tacticalRev?: number;
   /** Editor request metadata. Never persisted as part of the saved item. */
   _clientBase?: {
@@ -504,6 +509,8 @@ export type CharacterPayload = {
   className: string;
   path: string;
   stage: string;
+  /** Missing on older sheets: preserve rewards already granted by their stage. */
+  firstMilestoneConfirmed?: boolean;
   commonLanguage: string;
   bond: string;
   affinity: string;
@@ -589,6 +596,7 @@ export function createBlankCharacter(): CharacterPayload {
     className: "",
     path: "Sem caminho",
     stage: "Criação",
+    firstMilestoneConfirmed: false,
     commonLanguage: "",
     bond: "",
     affinity: "Não manifesta",

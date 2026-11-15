@@ -923,7 +923,7 @@
             }
           ],
           "matrix": "Elemental",
-          "damageType": "Elemental / Raio",
+          "damageType": "Elemental / Luz",
           "baseDamage": "2d10"
         }
       ]

@@ -18,7 +18,7 @@ Uso: passivo, sem Karma e sem preparação. Três vezes por cena, no próprio tu
 
 **Uso:** Ação Livre, 3 Karma, uma vez por rodada. Preparação e alvo: nenhuma; afeta você. Declare uma Perícia e a adaptação que pretende realizar antes do teste.
 
-Resolução: escolha uma opção. Se a Perícia estiver em 0, trate-a como nível 1 até o início do seu próximo turno, usando a reserva normal e +2 de treinamento. Se já for treinada, receba +1d20 no próximo teste com ela até esse mesmo prazo. A ativação é automática; o teste posterior usa sua própria CA, CD ou oposição. Atributo 0 mantém 1d20 −4. O treino temporário não ensina técnicas, concede fontes, satisfaz evolução ou altera a capacidade de invocações. Apenas uma adaptação desta habilidade fica ativa.
+Resolução: escolha uma opção. Se a Perícia estiver em 0, trate-a como nível 1 até o início do seu próximo turno, usando a reserva normal e +2 de treinamento. Se já for treinada, receba +1d20 no próximo teste com ela até esse mesmo prazo. A ativação é automática; o teste posterior usa sua própria CA, CD ou oposição. Com Atributo 0, aplique a regra geral: teste puro ou destreinado usa 1d20 −4; com treinamento, use 1d20 e seu bônus de treinamento. O treino temporário não ensina técnicas, concede fontes, satisfaz evolução ou altera a capacidade de invocações. Apenas uma adaptação desta habilidade fica ativa.
 
 #### Ampliação — Competência de Batalha
 
@@ -36,13 +36,13 @@ Uma vez por cena, depois de resolver a redução de dano, se Repelir evitar todo
 
 #### Habilidade 3 — Avanço Brutal
 
-**Uso:** Ação Livre, 6 Karma e sua Reação ainda disponível, uma vez por rodada. Preparação e alvo: nenhuma; você deve estar consciente e poder realizar uma Principal.
+**Uso:** Ação Livre (consome também sua Reação da rodada), 6 Karma, uma vez por rodada. Preparação e alvo: nenhuma; você deve estar consciente, poder realizar uma Principal e ter sua Reação disponível.
 
 Resolução: receba uma Principal adicional para usar imediatamente ou até o fim do turno. Ela pode atacar, executar uma técnica conhecida, realizar uma manobra ou outra ação normalmente permitida. Todos os custos dessa ação continuam sendo pagos. A ativação não exige teste; a ação concedida utiliza seu próprio teste. O benefício expira se não for utilizado e não concede Movimento, Extra ou outra Reação. Se já recebeu uma Principal adicional naquele turno, não pode ativar Avanço Brutal.
 
 #### Ampliação — Ruptura da Linha
 
-Uma vez por cena, ao ativar Avanço Brutal, pague 4 Karma em vez de 6 e preserve a Reação exigida. Antes da Principal adicional, avance até 2 m por uma rota livre. O primeiro teste dessa Principal recebe +1d20. A ampliação não concede outra ação, não ignora perigos nem aumenta o alcance de uma arma; todos os custos da Principal adicional continuam sendo pagos.
+Uma vez por cena, ao ativar Avanço Brutal, pague 4 Karma em vez de 6 e preserve a Reação. Ela ainda precisa estar disponível na ativação, mas não é consumida e pode ser usada normalmente depois. Antes da Principal adicional, avance até 2 m por uma rota livre. O primeiro teste dessa Principal recebe +1d20. A ampliação não concede outra ação, não ignora perigos nem aumenta o alcance de uma arma; todos os custos da Principal adicional continuam sendo pagos.
 
 ### Progressão de status e desenvolvimento
 
@@ -1085,7 +1085,7 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 **Identidade:** Calígrafos espirituais tratam Karma como linguagem. Gravam glifos em armas, armaduras, sangue e superfícies para escolher onde e quando a energia se libera.
 
-**Bônus inicial:** +1 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
+**Bônus inicial:** +2 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
 
 **Atributos recomendados:** Intelecto e Espírito.
 
@@ -1099,35 +1099,39 @@ Você mantém duas Runas adicionais no limite pessoal. Use Intelecto + Canaliza�
 
 **Uso:** Movimento ou Principal · Custo: 2 de Karma (+ o Karma Retido da Runa escolhida) · Alcance: 12 metros.
 
-Permite desenhar uma Runa de Campo/Selo ou Runa de Armadura/Arma diretamente a distância (em um piso, parede, aliado ou equipamento a até 12m) sem precisar tocar fisicamente a superfície. Se usada como Ação Principal contra um inimigo, realiza um teste de Intelecto + Canalização de Karma contra a CA do alvo para cravar uma Runa de Selo diretamente no corpo dele, aplicando o efeito passivo da runa imediatamente.
+Permite desenhar uma Runa de Campo/Selo ou Runa de Armadura/Arma diretamente a distância (em um piso, parede, aliado ou equipamento a até 12m) sem precisar tocar fisicamente a superfície, respeitando suporte, vagas e requisitos normais da inscrição. Como Ação Principal contra um inimigo, faça Intelecto + Canalização de Karma contra a CA do alvo para cravar uma Runa de Selo no corpo dele. Em Acerto Total, a Runa se fixa e aplica sua passiva pela duração normal. Em Acerto Parcial, ela se fixa e aplica a passiva por 1 rodada, até o fim do próximo turno do Escriba, quando expira. Em Falha, os 2 Karma da projeção são gastos, a Runa não é inscrita e nenhum Karma fica retido por essa tentativa. Uma Runa inscrita no Parcial retém seu Karma enquanto armada; sua expiração segue o prazo normal de retorno do Escriba. Não cria uma Runa caída no chão.
 
 #### Ampliação — Inscrição no alvo
 
-A variante de Ação Principal permite inscrever um selo no inimigo, mediante teste contra CA.
+Ao usar Inscrição Projetada como Ação Principal hostil, reduza seu custo de ativação em 1 Karma, de 2 para 1. O Karma Retido, o teste contra CA e os resultados Total, Parcial e Falha permanecem os da habilidade base.
 
 #### Habilidade 2 — Palavra Rúnica (Sintaxe Composta)
 
-**Uso:** Principal · Custo: 3 de Karma (além de estourar as Runas combinadas) · Frequência: 1 vez por rodada.
+**Uso:** Principal · Custo: 3 de Karma (além de estourar as Runas combinadas) · Alcance: até 16 metros · Frequência: 1 vez por rodada.
 
-Você conecta e detona 2 Runas ativas (ou 3 Runas a partir da Etapa V) no mesmo turno, fundindo seus efeitos em uma Sentença Rúnica:
+Você conecta e detona 2 Runas ativas, ou 3 a partir da Etapa V. Só são elegíveis Runas das categorias Arma e Campo/Selo cujo Estouro produza dano ofensivo ou controle. Cura, guarda, posicionamento benéfico e suporte não podem ser antecipados por esta habilidade.
 
-Lexema Duplo (2 Runas): Soma os efeitos de estouro de ambas as runas em um único alvo ou área, aumenta o alcance em +4m e reduz os limiares de CA Parcial e Total do alvo em -2 contra a detonação combinada.
+Lexema Duplo (2 Runas): declare as inscrições participantes, o alvo ou área e, havendo Campo, uma das inscrições de Campo participantes como centro único da detonação, a até 16m. Todos os Campos participantes resolvem seus Estouros a partir desse centro. Faça um único teste de Intelecto + Canalização de Karma para a descarga; compare esse resultado separadamente com os limiares de CA de cada alvo afetado, reduzidos diretamente em 2. Cada Estouro conserva sua natureza, função e extensão: o dano de Runa de Arma atinge somente o alvo principal declarado; apenas o efeito que já era de área se propaga em seu raio. Não some o dano físico da arma portadora. Resistências especificamente exigidas por uma Runa continuam sendo resolvidas contra sua referência normal. Some as parcelas de dano que atingirem o mesmo alvo antes de aplicar o Parcial e as proteções; condições seguem suas regras. As Runas participantes são consumidas e o Karma Retido volta após uma rodada.
 
-Sentença Tripla (3 Runas — Etapa V+): Além dos benefícios do Lexema Duplo, adiciona +2d10 de dano kármico puro antes do parcial e recupera 4 de Karma da reserva após o disparo.
+Sentença Tripla (3 Runas — Etapa V+): além dos benefícios do Lexema Duplo, adicione +2d10 de dano kármico puro à parcela ofensiva antes do Parcial e recupere 4 de Karma da reserva após o disparo. Essa recuperação não libera antecipadamente o Karma Retido das Runas.
 
 #### Ampliação — Sentença Tripla
 
-Da Etapa V em diante, pode combinar três Runas nos termos da habilidade.
+Ao combinar três Runas com Palavra Rúnica, reduza os dois limiares de CA em 1 adicional, totalizando −3 na CA Parcial e na CA Total contra a descarga. A combinação de três Runas já está disponível na base a partir da Etapa V; a ampliação é escolhida nas Etapas VI/VII e conserva +2d10 e a recuperação de 4 Karma.
 
 #### Habilidade 3 — Sobrescrita de Vetor (Transcrição Reativa)
 
-**Uso:** Reação (ao ser alvo de uma técnica ou ataque kármico/elemental/divino a até 15m) · Custo: 4 de Karma.
+**Uso:** Reação · Custo: 4 de Karma · Fonte kármica, elemental ou divina percebida a até 15m, com resultado de ataque ou CD expressa, antes de aplicar seu dano ao Escriba.
 
-Você traça um glifo de interceptação no ar, realizando um teste de Intelecto + Tática (ou Canalização de Karma) para amortecer a fórmula inimiga: você reduz o dano recebido em 1d10 + Intelecto + Etapa. Se o dano for reduzido a zero (ou se o ataque inimigo atingir apenas a faixa Parcial), você converte a energia dissipada em 1 Runa de Grau I ou II armada gratuitamente (sem consumir seu próprio Karma Retido) até o final do seu próximo turno.
+Depois de definido o resultado do ataque ou efeito, confira a elegibilidade antes de gastar a Reação e o Karma. Faça Intelecto + Tática ou Intelecto + Canalização de Karma contra o resultado do ataque hostil ou a CD de resistência expressa do efeito; igualar é sucesso. Em sucesso, reduza o dano em 1d8 + Intelecto, depois de crítico, Parcial e Resistência que se apliquem, antes de Escudo Temporário e Vida. Em falha, não reduza o dano. Dano automático sem ataque nem CD expressa não é elegível.
+
+Se a redução de Sobrescrita zerar o dano, ou se o ataque hostil tiver obtido Acerto Parcial, gere uma Runa conhecida de Grau I ou II. Verifique esse zero antes de Escudo Temporário. O Acerto Parcial conserva a geração da Runa mesmo se o teste de interceptação falhar; um efeito resolvido por CD não ganha faixa Parcial por esta habilidade.
+
+Ao resolver a interceptação, escolha um suporte compatível ao alcance do toque e conclua a inscrição imediatamente. Ela consome a vaga pessoal ou a vaga do próprio item exigida pela tabela de inscrição, respeitando o limite físico de encaixes apenas onde publicado. Se não houver suporte e vaga válidos, a redução de dano permanece, mas nenhuma Runa nasce e os 4 Karma da Reação não são devolvidos. A Runa conserva sua passiva, beneficiário e ação ou gatilho de Estouro e expira no fim do próximo turno do Escriba. Não retém Karma dele: seu Estouro ou expiração não gera Karma adicional a recuperar.
 
 #### Ampliação — Energia interceptada
 
-Uma Runa de Grau I ou II obtida pela interceptação dura até o fim do seu próximo turno e ocupa espaço de Runa ativa.
+A Runa temporária gerada por Sobrescrita de Vetor dispensa somente a vaga pessoal, quando ela seria exigida. Continua exigindo suporte compatível, vaga do próprio item quando aplicável e os limites físicos de encaixes publicados. Não cria encaixes extras. Mantém passiva, beneficiário e gatilho de Estouro e expira no fim do próximo turno do Escriba, sem gerar Karma a recuperar.
 
 ### Progressão de status e desenvolvimento
 

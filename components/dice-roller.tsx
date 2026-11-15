@@ -3,7 +3,12 @@ import { emitCombatEffect } from "@/lib/combat-effects";
 import { combatId } from "@/lib/combat-id";
 import { rollVisual } from "@/lib/combat-visuals";
 import { rollDiceExpression } from "@/lib/dice-expression";
-import { damageForAttack, resolveRoll } from "@/lib/table-play";
+import {
+  damageForAttack,
+  PENDING_ARMOR_TIE,
+  resolveAttack,
+  resolveRoll,
+} from "@/lib/table-play";
 import { useState } from "react";
 
 export function DiceRoller({
@@ -31,8 +36,21 @@ export function DiceRoller({
     [mode, setMode] = useState<"CD" | "CA">("CD");
   const [advantage, setAdvantage] = useState(0);
   const [attackDamage, setAttackDamage] = useState("");
+  const [attackAttribute, setAttackAttribute] = useState("");
+  const [defenseAttribute, setDefenseAttribute] = useState("");
+  const comparison = {
+    attackAttribute:
+      attackAttribute === "" ? undefined : Number(attackAttribute),
+    defenseAttribute:
+      defenseAttribute === "" ? undefined : Number(defenseAttribute),
+  };
   const [result, setResult] = useState<
-    ReturnType<typeof resolveRoll> & { dice: number[]; damage?: number }
+    ReturnType<typeof resolveRoll> & {
+      dice: number[];
+      damage?: number | null;
+      armor?: number;
+      rawDamage?: number;
+    }
   >();
   const base = Math.max(1, dice + extra);
   const worst = advantage === -1 && base === 1;
@@ -51,10 +69,16 @@ export function DiceRoller({
       target === "" ? undefined : Number(target),
       mode,
       worst ? "menor" : "maior",
+      comparison,
     );
     setResult({
       ...rolled,
       dice: values,
+      armor: mode === "CA" && target !== "" ? Number(target) : undefined,
+      rawDamage:
+        attackDamage === ""
+          ? undefined
+          : Math.max(0, Math.floor(Number(attackDamage))),
       damage:
         mode === "CA" && target !== "" && attackDamage !== ""
           ? damageForAttack(
@@ -75,6 +99,23 @@ export function DiceRoller({
         worst ? "menor" : "maior",
         rolled.outcome,
       ),
+    });
+  }
+  function settleTie() {
+    if (
+      !result ||
+      result.outcome !== PENDING_ARMOR_TIE ||
+      result.armor === undefined
+    )
+      return;
+    const outcome = resolveAttack(result.total, result.armor, comparison);
+    setResult({
+      ...result,
+      outcome,
+      damage:
+        result.rawDamage === undefined
+          ? undefined
+          : damageForAttack(result.rawDamage, outcome),
     });
   }
   if (formula)
@@ -151,16 +192,43 @@ export function DiceRoller({
             />
           </label>
           {mode === "CA" && (
-            <label>
-              Dano rolado (opcional)
-              <input
-                type="number"
-                min={0}
-                max={99999}
-                value={attackDamage}
-                onChange={(event) => setAttackDamage(event.target.value)}
-              />
-            </label>
+            <>
+              <label>
+                Valor do atributo usado no ataque
+                <input
+                  type="number"
+                  min={0}
+                  max={99}
+                  value={attackAttribute}
+                  onChange={(event) => setAttackAttribute(event.target.value)}
+                />
+              </label>
+              <label>
+                Valor do regente da CA (Agilidade ou Constituição)
+                <input
+                  type="number"
+                  min={0}
+                  max={99}
+                  value={defenseAttribute}
+                  onChange={(event) => setDefenseAttribute(event.target.value)}
+                />
+              </label>
+              <small>
+                Na igualdade com a CA, o atacante precisa ter o maior atributo.
+                Informe os valores da ficha; uma CA fixa não determina seu
+                regente.
+              </small>
+              <label>
+                Dano rolado (opcional)
+                <input
+                  type="number"
+                  min={0}
+                  max={99999}
+                  value={attackDamage}
+                  onChange={(event) => setAttackDamage(event.target.value)}
+                />
+              </label>
+            </>
           )}
           <label>
             Circunstância{" "}
@@ -185,7 +253,7 @@ export function DiceRoller({
             <output aria-live="polite">
               <b>
                 {result.total} · {result.outcome}
-                {result.damage !== undefined
+                {result.damage !== undefined && result.damage !== null
                   ? ` · ${result.damage} de dano antes das proteções`
                   : ""}
               </b>
@@ -207,6 +275,21 @@ export function DiceRoller({
                   : ""}
               </span>
             </output>
+          )}
+          {result?.outcome === PENDING_ARMOR_TIE && (
+            <div role="status">
+              <p>
+                Resultado igual à CA {result.armor}. Informe os dois atributos
+                para concluir o mesmo teste.
+              </p>
+              <button
+                type="button"
+                onClick={settleTie}
+                disabled={attackAttribute === "" || defenseAttribute === ""}
+              >
+                Resolver confronto sem nova rolagem
+              </button>
+            </div>
           )}
         </div>
       )}

@@ -2,11 +2,12 @@ import test,{after} from 'node:test';
 import assert from 'node:assert/strict';
 import {createServer} from 'vite';
 import {readFileSync} from 'node:fs';
+import {assertCorruptionSourcePreserved} from './helpers/book-206-source.mjs';
 const vite=await createServer({configFile:false,appType:'custom',resolve:{alias:{'@':process.cwd()}},server:{middlewareMode:true,hmr:false}});after(()=>vite.close());
 const data=await vite.ssrLoadModule('/lib/character-data.ts');const rules=await vite.ssrLoadModule('/lib/character-rules.ts');const {corruptedFormState}=await vite.ssrLoadModule('/lib/corrupted-form.ts');const schema=await vite.ssrLoadModule('/lib/character-schema.ts');
 function marked(){const d=data.createBlankCharacter();d.name='Mara';d.stage='Etapa IV';d.corruption={...d.corruption,enabled:true,charge:7,formActive:true,formTraits:['carapaca','aceleracao']};d.skills['Controle da Corrupção'].base=1;return d;}
-test('old chapter remains verbatim around exactly one addition before rupture',()=>{
- const base=readFileSync('docs/corrupcao-marca-base.html','utf8');const chapter=JSON.parse(readFileSync('data/rules.json')).chapters.find(c=>c.number===14);const match=chapter.html.match(/<h2 id="transformação-corrompida">[\s\S]*?(?=<h2[^>]*>Ruptura<\/h2>)/);assert(match);assert.equal(chapter.html.replace(match[0],''),base);
+test('retained corruption paragraphs survive the authorial summaries and one transformation section',()=>{
+ const base=readFileSync('docs/corrupcao-marca-base.html','utf8');const chapter=JSON.parse(readFileSync('data/rules.json')).chapters.find(c=>c.number===14);assertCorruptionSourcePreserved(chapter,base);
  assert(chapter.sections.some(s=>s.title==='Transformação Corrompida'));assert(chapter.searchableText.includes('CD 14 + Carga efetiva atual + Cargas temporárias'));assert(chapter.searchableText.includes('CD 24'));
 });
 test('slots depend on stage and training; load and graft counts remain separate',()=>{

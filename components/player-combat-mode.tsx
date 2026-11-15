@@ -54,6 +54,7 @@ import {
   damageForAttack,
   domainActivation,
   domainRefinementLabels,
+  PENDING_ARMOR_TIE,
   resolveAttack,
 } from "@/lib/table-play";
 import {
@@ -134,8 +135,32 @@ export function PlayerCombatMode({
     [manual, setManual] = useState<Record<string, string>>({});
   const [targetArmor, setTargetArmor] = useState(""),
     [conditionRounds, setConditionRounds] = useState("");
+  const [targetRegent, setTargetRegent] = useState<
+    "" | "Agilidade" | "Constituição"
+  >("");
+  const [targetRegentValue, setTargetRegentValue] = useState("");
+  function requireTargetDefense() {
+    if (targetArmor === "") return;
+    if (!Number.isInteger(Number(targetArmor)) || Number(targetArmor) < 0)
+      throw Error("Informe uma CA válida para o alvo.");
+    if (
+      !targetRegent ||
+      targetRegentValue === "" ||
+      !Number.isFinite(Number(targetRegentValue)) ||
+      Number(targetRegentValue) < 0
+    )
+      throw Error(
+        "Informe o regente da CA do alvo e seu valor antes de rolar contra a CA.",
+      );
+  }
+  const comparisonFor = (attackAttribute: number) => ({
+    attackAttribute,
+    defenseAttribute:
+      targetRegentValue === "" ? undefined : Number(targetRegentValue),
+  });
   const approachFor = (skill: string) =>
-    (SOCIAL_SKILLS as readonly string[]).includes(skill)
+    (SOCIAL_SKILLS as readonly string[]).includes(skill) &&
+    skill !== "Persuasão"
       ? "Presença"
       : (skillAttrs[skill] ?? defaultApproach(skill));
   const [damageType, setDamageType] = useState<DamageType>("Marcial");
@@ -216,6 +241,12 @@ export function PlayerCombatMode({
     dice?: number[];
   } | null>(null);
   function execute(art: CombatArt) {
+    if (art.id === "class-Sobrescrita de Vetor (Transcrição Reativa)") {
+      setNotice(
+        "Resolva Sobrescrita no painel Runas Kármicas; ele registra o teste, os 4 Karma e a Reação juntos.",
+      );
+      return;
+    }
     if (art.id === "karma-barrier" || art.id === "karma-barrier-reinforced") {
       op(
         { type: "barrier", reinforced: art.id.endsWith("reinforced") },
@@ -236,6 +267,12 @@ export function PlayerCombatMode({
       if (art.skill === "Manifestação de Bênção" && !art.attribute)
         throw Error("Registre o atributo regente desta Bênção na ficha.");
       if (cost > availableKarma(s)) throw Error("Karma insuficiente.");
+      if (
+        art.damage &&
+        art.skill &&
+        ALL_SKILLS.includes(art.skill as (typeof ALL_SKILLS)[number])
+      )
+        requireTargetDefense();
       const test =
         art.skill &&
         ALL_SKILLS.includes(art.skill as (typeof ALL_SKILLS)[number])
@@ -256,8 +293,16 @@ export function PlayerCombatMode({
         : null;
       const outcome =
         test && art.damage && targetArmor !== ""
-          ? resolveAttack(test.total, Number(targetArmor))
+          ? resolveAttack(
+              test.total,
+              Number(targetArmor),
+              comparisonFor(test.test.value),
+            )
           : undefined;
+      if (outcome === PENDING_ARMOR_TIE)
+        throw Error(
+          "Conclua o confronto de Atributos antes de executar a técnica.",
+        );
       const finalDamage = outcome
         ? damageForAttack(damage?.total ?? 0, outcome)
         : undefined;
@@ -271,7 +316,9 @@ export function PlayerCombatMode({
         rollFormula: test?.formula,
         diceResults: test?.dice,
         total: test?.total,
-        succeeded: outcome ? outcome !== "Falha" : undefined,
+        succeeded: outcome
+          ? outcome === "Acerto total" || outcome === "Acerto parcial"
+          : undefined,
         details: [
           test
             ? `${art.skill}: ${test.total}${outcome ? ` · ${outcome} · ${finalDamage} dano antes das proteções` : ""}`
@@ -281,6 +328,9 @@ export function PlayerCombatMode({
             : "",
           art.category,
           art.usage,
+          outcome && test
+            ? `CA ${targetArmor}; ataque ${test.test.attribute} ${test.test.value}; defesa ${targetRegent} ${targetRegentValue}.`
+            : "",
         ].join(" "),
       };
       const record = draft.techniques.find((t) => t.id === art.techniqueId);
@@ -441,7 +491,8 @@ export function PlayerCombatMode({
       <RuneCombat draft={draft} state={s} pending={pending > 0} send={send} />
       <div className="live-defense">
         {[
-          ["CA Parcial / Total", `${Math.floor(max.armor / 2)} / ${max.armor}`],
+          ["CA Parcial / CA", `${Math.floor(max.armor / 2)} / ${max.armor}`],
+          ["Regente da CA", `${max.armorRegent} ${max.armorRegentValue}`],
           ["Iniciativa", max.initiative.formula],
           ["Resistência", protection],
           ["Movimento", `${max.movement} m`],
@@ -903,7 +954,8 @@ export function PlayerCombatMode({
                     <select
                       disabled={
                         PRESENCE_SKILLS.includes(skill) ||
-                        (SOCIAL_SKILLS as readonly string[]).includes(skill)
+                        ((SOCIAL_SKILLS as readonly string[]).includes(skill) &&
+                          skill !== "Persuasão")
                       }
                       value={attr}
                       onChange={(e) =>
@@ -913,10 +965,20 @@ export function PlayerCombatMode({
                         })
                       }
                     >
-                      {ATTRIBUTES.map((n) => (
+                      {ATTRIBUTES.filter(
+                        (attribute) =>
+                          skill !== "Persuasão" ||
+                          ["Presença", "Intelecto"].includes(attribute),
+                      ).map((n) => (
                         <option key={n}>{n}</option>
                       ))}
                     </select>
+                    {skill === "Persuasão" && (
+                      <small>
+                        Intelecto exige argumentação racional coerente aceita
+                        pelo Mestre; sem bônus Analítico.
+                      </small>
+                    )}
                   </label>
                   <label>
                     Bônus Extra
@@ -989,6 +1051,37 @@ export function PlayerCombatMode({
             onChange={(event) => setTargetArmor(event.target.value)}
           />
         </label>
+        {targetArmor !== "" && (
+          <div className="live-controls">
+            <label>
+              Regente da CA do alvo
+              <select
+                value={targetRegent}
+                onChange={(event) =>
+                  setTargetRegent(event.target.value as typeof targetRegent)
+                }
+              >
+                <option value="">Informe pela ficha</option>
+                <option>Agilidade</option>
+                <option>Constituição</option>
+              </select>
+            </label>
+            <label>
+              Valor do regente da CA do alvo
+              <input
+                type="number"
+                min={0}
+                max={99}
+                value={targetRegentValue}
+                onChange={(event) => setTargetRegentValue(event.target.value)}
+              />
+            </label>
+            <small>
+              Na igualdade com a CA, o atributo do ataque deve ser maior que o
+              regente da defesa para obter Acerto Total.
+            </small>
+          </div>
+        )}
         <div className="live-art-grid">
           {arts.map((t) => (
             <article key={t.id}>
@@ -1272,6 +1365,12 @@ export function PlayerCombatMode({
                 {i.category === "weapon" && (
                   <button
                     onClick={() => {
+                      try {
+                        requireTargetDefense();
+                      } catch (error) {
+                        setNotice((error as Error).message);
+                        return;
+                      }
                       const r = skillRoll(
                         draft,
                         attackSkill,
@@ -1286,9 +1385,13 @@ export function PlayerCombatMode({
                       const damage = damageDice(i.notes, r.naturalTwenty);
                       const outcome =
                         targetArmor !== ""
-                          ? resolveAttack(r.total, Number(targetArmor))
+                          ? resolveAttack(
+                              r.total,
+                              Number(targetArmor),
+                              comparisonFor(r.test.value),
+                            )
                           : undefined;
-                      const details = `${i.name}: teste ${r.total}. ${damage ? `Dano-base ${damage.formula} [${damage.dice.join(", ")}] = ${damage.total}. ${r.naturalTwenty ? "Dados-base já dobrados por 20 natural." : ""}` : "Sem dado-base registrado: consulte o item."} ${outcome ? `${outcome} · ${damageForAttack(damage?.total ?? 0, outcome)} de dano antes das proteções.` : "Informe a CA do alvo para classificar o acerto."}`;
+                      const details = `${i.name}: teste ${r.total}. ${damage ? `Dano-base ${damage.formula} [${damage.dice.join(", ")}] = ${damage.total}. ${r.naturalTwenty ? "Dados-base já dobrados por 20 natural." : ""}` : "Sem dado-base registrado: consulte o item."} ${outcome ? `${outcome} · ${damageForAttack(damage?.total ?? 0, outcome)} de dano antes das proteções. CA ${targetArmor}; ataque ${r.test.attribute} ${r.test.value}; defesa ${targetRegent} ${targetRegentValue}.` : "Informe a CA do alvo para classificar o acerto."}`;
                       setNotice(details);
                       op(
                         {

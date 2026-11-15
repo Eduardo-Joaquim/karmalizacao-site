@@ -9,6 +9,25 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
+    id: "patch-2-0-7-2026-11-15-revisao-geral",
+    version: "2.0.7",
+    label: "Patch 2.0.7 · 15/11/2026",
+    title: "Runas Amaldiçoadas e evolução da ficha",
+    highlights: [
+      "Revisão do livro nos capítulos 1 a 20, com correções e esclarecimentos das regras.",
+      "Runas Amaldiçoadas adicionadas às armas, com condições de despertar, faixas de potência e catálogo de efeitos. Capítulos 9, 14 e 17.",
+      "Corrigido o bug na contabilização dos bônus de classes e raças na ficha.",
+      "Ajustada a distribuição de atributos por etapa e de Perícias Comuns, preservando os pontos iniciais e os treinamentos extras. Capítulos 2, 3, 4, 5 e 6.",
+      "Revisadas as regras e os exemplos de Acerto Total, Acerto Parcial e empate na CA. Capítulos 7, 8, 10 e 18.",
+      "Atualizado o catálogo de Subdobras e esclarecidas suas proteções. Capítulos 10 e 12.",
+      "Esclarecidos custos, defesas, duração e efeitos das habilidades de classe, Runas e Bênçãos. Capítulos 6, 9 e 13.",
+      "Alinhados os exemplos de Analítico, Persuasão e treinamento. Capítulos 1, 3 e 16.",
+      "Revisadas as condições e a Evasão em área. Capítulos 7, 8 e 20.",
+      "Esclarecidas progressão racial, Caminho, Corrupção, Invocações e expedições. Capítulos 4, 5, 11, 14, 15 e 19.",
+      "Corrigidas tabelas de carga e munição, tempos de preparo e preços de equipamento. Capítulos 17 e 20.",
+    ],
+  },
+  {
     id: "patch-2-0-6-2026-11-13",
     version: "2.0.6",
     label: "Patch 2.0.6 · 13/11/2026",

@@ -33,6 +33,7 @@ export type BonusChoiceSlot = {
   options: readonly string[];
   value: number;
   allowRepeat?: boolean;
+  distinctGroup?: string;
 };
 
 type NumericBonus = {
@@ -83,6 +84,7 @@ export type ClassDefinition = {
   function: string;
   identity: string;
   initialBonus: string;
+  classAttributeBonuses?: Partial<Record<AttributeName, number>>;
   recommendedAttributes: string;
   recommendedSkills: string;
   trait: { name: string; description: string };
@@ -108,6 +110,10 @@ type ClassInitialRule = {
 };
 
 export type AutomaticBonuses = NumericBonus & {
+  attributeSources: Record<
+    "race" | "class" | "stages",
+    Record<AttributeName, number>
+  >;
   skillTiers: Record<string, SkillTierBonus>;
   sources: Array<{ label: string; detail: string }>;
   stageAttributeSlots: BonusChoiceSlot[];
@@ -166,7 +172,12 @@ for (const [name, { creation }] of Object.entries(lineage)) {
   const rule = RACE_RULES[name];
   rule.automatic = creation.automatic;
   rule.attributeSlots = [
-    { label: "Atributo de linhagem", options: creation.attributes, value: 1 },
+    {
+      label: "Atributo de linhagem",
+      options: creation.attributes,
+      value: 1,
+      allowRepeat: true,
+    },
   ];
   rule.skillSlots = Array.from({ length: creation.skillCount }, (_, i) => ({
     label: `Perícia de linhagem ${i + 1}`,
@@ -188,7 +199,7 @@ export function racialFeatures(draft: CharacterPayload) {
 const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   "Escriba Kármico": {
     automatic: {
-      attributes: { Intelecto: 1, Espírito: 1 },
+      attributes: { Intelecto: 2, Espírito: 1 },
       skills: { "Canalização de Karma": 1, Tática: 1 },
     },
   },
@@ -344,18 +355,8 @@ const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   },
 };
 
-for (const name of [
-  "Ladrão",
-  "Assassino",
-  "Inventor",
-  "Invocador",
-  "Elementalista",
-]) {
-  CLASS_INITIAL_RULES[name].skillSlots = [
-    ...(CLASS_INITIAL_RULES[name].skillSlots ?? []),
-    anySkillSlot("Excedente de criação — escolha uma Perícia coerente"),
-  ];
-}
+// Surplus from an overlapping fixed grant is offered by addInitialBonus.
+// It must not become an unconditional extra grant for the class.
 CLASS_INITIAL_RULES.Elementalista.skillSlots = [
   {
     label: "Controle do elemento escolhido",
@@ -466,6 +467,12 @@ export function getStageIndex(stage: string): number {
   return ["", "I", "II", "III", "IV", "V", "VI", "VII"].indexOf(match[1]);
 }
 
+export function hasConfirmedFirstMilestone(
+  draft: Pick<CharacterPayload, "stage" | "firstMilestoneConfirmed">,
+): boolean {
+  return draft.firstMilestoneConfirmed ?? getStageIndex(draft.stage) > 0;
+}
+
 export function getClassAbilityLimit(stage: string): number {
   const index = getStageIndex(stage);
   if (index >= 4) return 3;
@@ -483,11 +490,19 @@ export function getClassAmplificationLimit(stage: string): number {
 export function getProgressionRewards(
   path: string,
   stage: string,
+  firstMilestoneConfirmed?: boolean,
 ): ProgressionRewards {
   if (!path || path === "Sem caminho")
     return { common: 0, evolutive: 0, transcendental: 0 };
-  const index = getStageIndex(stage);
-  const common = [0, 1, 2, 3, 4, 5, 5, 5][index] ?? 0;
+  const index = Math.max(1, getStageIndex(stage));
+  const confirmed = hasConfirmedFirstMilestone({
+    stage,
+    firstMilestoneConfirmed,
+  });
+  const common = Math.max(
+    0,
+    ([0, 1, 2, 3, 4, 5, 5, 5][index] ?? 0) - Number(!confirmed),
+  );
   const evolutive = [0, 0, 0, 0, 1, 2, 4, 5][index] ?? 0;
   const transcendental = index >= 7 ? 1 : 0;
   return { common, evolutive, transcendental };
@@ -557,14 +572,17 @@ function parseStageStatus(status: string, stage: string) {
     return " ";
   });
 
-  const anyAttributePattern = /\+(\d+)\s+ponto de Atributo à escolha/g;
-  remaining = remaining.replace(anyAttributePattern, (_, value) => {
-    slots.push({
-      label: `${stage} — Atributo à escolha`,
-      options: ATTRIBUTES,
-      value: Number(value),
-      allowRepeat: true,
-    });
+  const anyAttributePattern =
+    /\+(\d+)\s+pontos? de Atributos?(?: diferentes)? à escolha/g;
+  remaining = remaining.replace(anyAttributePattern, (text, value) => {
+    for (let index = 0; index < Number(value); index += 1)
+      slots.push({
+        label: `${stage} — Atributo à escolha${Number(value) > 1 ? ` ${index + 1}` : ""}`,
+        options: ATTRIBUTES,
+        value: 1,
+        allowRepeat: !text.includes("diferentes"),
+        distinctGroup: stage,
+      });
     return " ";
   });
 
@@ -610,6 +628,11 @@ function applySlots(
     if (!selected || !slot.options.includes(selected)) return;
     if (
       kind === "attribute" &&
+      bonusChoiceIsDisabled(slots, selections, selected, index)
+    )
+      return;
+    if (
+      kind === "attribute" &&
       ATTRIBUTES.includes(selected as AttributeName)
     ) {
       target.attributes[selected as AttributeName] += slot.value;
@@ -626,11 +649,73 @@ function applySlots(
   });
 }
 
+export function bonusChoiceIsDisabled(
+  slots: BonusChoiceSlot[],
+  selections: string[],
+  option: string,
+  slotIndex: number,
+): boolean {
+  const slot = slots[slotIndex];
+  if (!slot || slot.allowRepeat) return false;
+  return selections.some(
+    (selection, index) =>
+      index !== slotIndex &&
+      selection === option &&
+      (!slot.distinctGroup ||
+        slots[index]?.distinctGroup === slot.distinctGroup),
+  );
+}
+
+function emptyAttributeMap(): Record<AttributeName, number> {
+  return Object.fromEntries(ATTRIBUTES.map((name) => [name, 0])) as Record<
+    AttributeName,
+    number
+  >;
+}
+
+function attributeDifference(
+  current: Record<AttributeName, number>,
+  before: Record<AttributeName, number>,
+): Record<AttributeName, number> {
+  return Object.fromEntries(
+    ATTRIBUTES.map((name) => [name, current[name] - before[name]]),
+  ) as Record<AttributeName, number>;
+}
+
+// An initial level-1 grant never buys an Evolutive level or consumes one of
+// the eight base points. A fixed grant that overlaps becomes an explicit choice.
+function addInitialBonus(
+  draft: CharacterPayload,
+  target: AutomaticBonuses,
+  source: ClassInitialRule["automatic"],
+  slots: BonusChoiceSlot[],
+  label: string,
+) {
+  addPartialBonus(target, { ...source, skills: undefined });
+  for (const [skill, value] of Object.entries(source.skills ?? {})) {
+    const points = draft.skills[skill] ?? { base: 0, bonus: 0 };
+    const trained =
+      points.base > getSacrificedPoints(draft, skill) ||
+      points.bonus > 0 ||
+      (target.skillTiers[skill]?.common ?? 0) > 0;
+    if (trained && value === 1) {
+      slots.push(anySkillSlot(`${label} — redirecionar ${skill} já treinada`));
+    } else {
+      addPartialBonus(target, { skills: { [skill]: value } });
+    }
+  }
+}
+
 export function calculateAutomaticBonuses(
   draft: CharacterPayload,
 ): AutomaticBonuses {
   const result = createNumericBonus() as AutomaticBonuses;
   result.skillTiers = createSkillTierBonuses();
+  result.attributeSources = {
+    race: emptyAttributeMap(),
+    class: emptyAttributeMap(),
+    stages: emptyAttributeMap(),
+  };
   result.sources = [];
   result.stageGrowth = { life: 0, karma: 0, armor: 0 };
   result.pathKarma = 0;
@@ -639,15 +724,26 @@ export function calculateAutomaticBonuses(
   result.raceSkillSlots = [];
   result.classAttributeSlots = [];
   result.classSkillSlots = [];
-  result.progressionRewards = getProgressionRewards(draft.path, draft.stage);
+  result.progressionRewards = getProgressionRewards(
+    draft.path,
+    draft.stage,
+    draft.firstMilestoneConfirmed,
+  );
 
   const race = getRaceRule(draft.race);
   if (race) {
-    addPartialBonus(result, {
-      ...race.automatic,
-      movement:
-        draft.race === "Demi-humano" ? (race.automatic.movement ?? 0) : 0,
-    });
+    result.raceSkillSlots = [...race.skillSlots];
+    addInitialBonus(
+      draft,
+      result,
+      {
+        ...race.automatic,
+        movement:
+          draft.race === "Demi-humano" ? (race.automatic.movement ?? 0) : 0,
+      },
+      result.raceSkillSlots,
+      "Linhagem",
+    );
     const racialStage = Math.max(1, getStageIndex(draft.stage));
     if (draft.race === "Elfo" && racialStage >= 4) result.karma += racialStage;
     if (draft.race === "Anão" && racialStage >= 4)
@@ -658,17 +754,17 @@ export function calculateAutomaticBonuses(
         label: "Atributo da Etapa VI",
         options: lineage[draft.race].stageVIAttributes,
         value: 1,
+        allowRepeat: true,
       });
     if (draft.race === "Elfo" && racialStage >= 2)
       result.raceSkillSlots = [
-        ...race.skillSlots,
+        ...result.raceSkillSlots,
         {
           label: "Refração do Véu Verde",
           options: ["Canalização de Karma", "Pontaria"],
           value: 1,
         },
       ];
-    else result.raceSkillSlots = race.skillSlots;
     applySlots(
       result,
       result.raceAttributeSlots,
@@ -682,16 +778,29 @@ export function calculateAutomaticBonuses(
       "skill",
     );
     result.sources.push({ label: `Raça — ${race.name}`, detail: race.summary });
+    result.attributeSources.race = { ...result.attributes };
   }
 
   const classRule = CLASS_INITIAL_RULES[draft.className];
   const classDefinition = getClassDefinition(draft.className);
+  const beforeClass = { ...result.attributes };
   if (classRule) {
-    addPartialBonus(result, classRule.automatic);
+    result.classSkillSlots = [...(classRule.skillSlots ?? [])];
+    addInitialBonus(
+      draft,
+      result,
+      {
+        ...classRule.automatic,
+        attributes:
+          classDefinition?.classAttributeBonuses ??
+          classRule.automatic.attributes,
+      },
+      result.classSkillSlots,
+      "Classe",
+    );
     if (draft.className === "Inventor")
       addPartialBonus(result, { skills: { Criação: 1 } }, "evolutive");
     result.classAttributeSlots = classRule.attributeSlots ?? [];
-    result.classSkillSlots = classRule.skillSlots ?? [];
     applySlots(
       result,
       result.classAttributeSlots,
@@ -709,24 +818,37 @@ export function calculateAutomaticBonuses(
       detail: classDefinition?.initialBonus ?? "Bônus inicial aplicado.",
     });
   }
+  result.attributeSources.class = attributeDifference(
+    result.attributes,
+    beforeClass,
+  );
 
-  const stageIndex = getStageIndex(draft.stage);
-  classDefinition?.progression.slice(0, stageIndex).forEach((progression) => {
-    const parsed = parseStageStatus(progression.status, progression.stage);
-    addPartialBonus(result, parsed.bonus);
-    for (const stat of ["life", "karma", "armor"] as const)
-      result.stageGrowth[stat] += parsed.bonus[stat] ?? 0;
-    result.stageAttributeSlots.push(...parsed.slots);
-    result.sources.push({
-      label: `${draft.className} · ${progression.stage}`,
-      detail: progression.status,
+  const stageIndex = Math.max(1, getStageIndex(draft.stage));
+  const beforeStages = { ...result.attributes };
+  const firstMilestoneConfirmed = hasConfirmedFirstMilestone(draft);
+  classDefinition?.progression
+    .slice(0, stageIndex)
+    .forEach((progression, index) => {
+      if (index === 0 && !firstMilestoneConfirmed) return;
+      const parsed = parseStageStatus(progression.status, progression.stage);
+      addPartialBonus(result, parsed.bonus);
+      for (const stat of ["life", "karma", "armor"] as const)
+        result.stageGrowth[stat] += parsed.bonus[stat] ?? 0;
+      result.stageAttributeSlots.push(...parsed.slots);
+      result.sources.push({
+        label: `${draft.className} · ${progression.stage}`,
+        detail: progression.status,
+      });
     });
-  });
   applySlots(
     result,
     result.stageAttributeSlots,
     draft.allocations.stageAttributes,
     "attribute",
+  );
+  result.attributeSources.stages = attributeDifference(
+    result.attributes,
+    beforeStages,
   );
 
   const rewards = result.progressionRewards;
@@ -810,13 +932,55 @@ export function calculateAutomaticBonuses(
   return result;
 }
 
+export function getEffectiveAttributes(
+  draft: CharacterPayload,
+  bonuses: AutomaticBonuses = calculateAutomaticBonuses(draft),
+): Record<AttributeName, number> {
+  return Object.fromEntries(
+    ATTRIBUTES.map((attribute) => {
+      const points = draft.attributes[attribute];
+      return [
+        attribute,
+        points.base + points.bonus + bonuses.attributes[attribute],
+      ];
+    }),
+  ) as Record<AttributeName, number>;
+}
+
+export function getAttributeBreakdown(
+  draft: CharacterPayload,
+  bonuses: AutomaticBonuses,
+  attribute: AttributeName,
+) {
+  const race = bonuses.attributeSources?.race[attribute] ?? 0;
+  const classBonus = bonuses.attributeSources?.class[attribute] ?? 0;
+  const stages = bonuses.attributeSources?.stages[attribute] ?? 0;
+  return {
+    base: draft.attributes[attribute].base,
+    race,
+    class: classBonus,
+    stages,
+    other: bonuses.attributes[attribute] - race - classBonus - stages,
+    manual: draft.attributes[attribute].bonus,
+    total: getEffectiveAttributes(draft, bonuses)[attribute],
+  };
+}
+
+export function attributeBreakdownText(
+  draft: CharacterPayload,
+  bonuses: AutomaticBonuses,
+  attribute: AttributeName,
+) {
+  const value = getAttributeBreakdown(draft, bonuses, attribute);
+  return `${value.base} Base + ${value.race} Raça + ${value.class} Classe + ${value.stages} Etapas${value.other ? ` + ${value.other} outros` : ""}${value.manual ? ` + ${value.manual} ajuste` : ""} = ${value.total} Total`;
+}
+
 export function getFinalAttribute(
   draft: CharacterPayload,
   bonuses: AutomaticBonuses,
   attribute: AttributeName,
 ): number {
-  const points = draft.attributes[attribute];
-  return points.base + points.bonus + bonuses.attributes[attribute];
+  return getEffectiveAttributes(draft, bonuses)[attribute];
 }
 
 export function getFinalSkill(
@@ -905,6 +1069,38 @@ export function canAllocateSkillPoint(
   );
 }
 
+export function redirectManualSkillGrant(
+  draft: CharacterPayload,
+  source: string,
+  target: string,
+): CharacterPayload {
+  if (
+    source === target ||
+    !ALL_SKILLS.includes(target as (typeof ALL_SKILLS)[number])
+  )
+    throw new Error("Escolha outra Perícia Comum elegível.");
+  const sourcePoints = draft.skills[source];
+  const automatic = calculateAutomaticBonuses(draft);
+  if (
+    !sourcePoints?.bonus ||
+    getSkillLevelBreakdown(draft, automatic, source).commonRaw <= 1
+  )
+    throw new Error("Não há treinamento adicional sobreposto nesta Perícia.");
+  if (getSkillLevelBreakdown(draft, automatic, target).commonRaw !== 0)
+    throw new Error("A Perícia de destino já possui treinamento Comum.");
+  return {
+    ...draft,
+    skills: {
+      ...draft.skills,
+      [source]: { ...sourcePoints, bonus: sourcePoints.bonus - 1 },
+      [target]: {
+        ...(draft.skills[target] ?? { base: 0, bonus: 0 }),
+        bonus: 1,
+      },
+    },
+  };
+}
+
 export function getDomainRegentAttribute(
   name: DomainName,
 ): AttributeName | null {
@@ -926,10 +1122,11 @@ export function calculateDerivedStats(
   draft: CharacterPayload,
   automatic: AutomaticBonuses,
 ) {
-  const strength = getFinalAttribute(draft, automatic, "Força");
-  const agility = getFinalAttribute(draft, automatic, "Agilidade");
-  const constitution = getFinalAttribute(draft, automatic, "Constituição");
-  const spirit = getFinalAttribute(draft, automatic, "Espírito");
+  const attributes = getEffectiveAttributes(draft, automatic);
+  const strength = attributes.Força;
+  const agility = attributes.Agilidade;
+  const constitution = attributes.Constituição;
+  const spirit = attributes.Espírito;
   const size =
     SIZE_RULES[
       draft.heightCm === null ? draft.size : sizeFromHeight(draft.heightCm)
@@ -968,6 +1165,8 @@ export function calculateDerivedStats(
     lifeBreakdown: `${size.life} base do porte + ${2 * constitution} Constituição (2 × ${constitution}) + ${strength} Força + ${automatic.stageGrowth.life} Etapa + ${automatic.life - automatic.stageGrowth.life} outros bônus`,
     karmaBreakdown: `${BASE_KARMA} base + ${2 * spirit} Espírito (2 × ${spirit}) + ${automatic.stageGrowth.karma} Etapa + ${automatic.pathKarma} Caminho + ${automatic.karma - automatic.stageGrowth.karma - automatic.pathKarma} outros bônus`,
     armorBreakdown: `${BASE_ARMOR} base + ${Math.min(agility, burden.agilityCap)} Agilidade + ${automatic.stageGrowth.armor} Etapa + ${burden.armorBonus} equipamento + ${size.armor + automatic.armor - automatic.stageGrowth.armor + form.armorBonus - burden.armorPenalty} outros ajustes`,
+    armorRegent: "Agilidade" as const,
+    armorRegentValue: agility,
     life: size.life + 2 * constitution + strength + automatic.life,
     karma: BASE_KARMA + 2 * spirit + automatic.karma,
     armor: Math.max(
@@ -1054,10 +1253,12 @@ export function getSkillTest(
   const intellect = getFinalAttribute(draft, automatic, "Intelecto");
   const mental = (MENTAL_SKILLS as readonly string[]).includes(skill);
   const attribute: AttributeName =
-    PRESENCE_SKILLS.includes(skill) ||
-    (SOCIAL_SKILLS as readonly string[]).includes(skill)
-      ? "Presença"
-      : (approach ?? defaultApproach(skill));
+    skill === "Persuasão" && approach === "Intelecto"
+      ? "Intelecto"
+      : PRESENCE_SKILLS.includes(skill) ||
+          (SOCIAL_SKILLS as readonly string[]).includes(skill)
+        ? "Presença"
+        : (approach ?? defaultApproach(skill));
   const value = getFinalAttribute(draft, automatic, attribute);
   const permanentLevel = getFinalSkill(draft, automatic, skill);
   const vow = draft.vows.find((item) => item.id === oneUseVowId);
@@ -1133,6 +1334,7 @@ export function getSkillTest(
   const analyticBonus =
     attribute === "Intelecto" &&
     (mental || runeAnalytic) &&
+    !(SOCIAL_SKILLS as readonly string[]).includes(skill) &&
     level > 0 &&
     value > 0
       ? Math.min(3, analyticIntellect)
@@ -1223,7 +1425,7 @@ export const VOW_WEIGHTS = [
     restriction:
       "Uma ferramenta, posição ou opção central fica indisponível durante um conflito inteiro.",
     ceiling:
-      "+2 CA sob um gatilho específico por uma cena OU −1 Karma em uma técnica nomeada, uma vez na cena.",
+      "+2 CA sob um gatilho específico por uma cena OU −2 Karma em uma técnica nomeada, uma vez por turno durante essa cena.",
   },
   {
     weight: 3,

@@ -112,6 +112,11 @@ export function TechniqueMatrixEditor({
                 })
               }
             >
+              {!elemental.includes(damage as (typeof elemental)[number]) && (
+                <NativeSelectOption value={damage}>
+                  {damage} · expressão registrada
+                </NativeSelectOption>
+              )}
               {elemental.map((option) => (
                 <NativeSelectOption key={option}>{option}</NativeSelectOption>
               ))}

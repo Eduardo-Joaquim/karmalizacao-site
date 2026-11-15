@@ -208,7 +208,7 @@ test("all 65 published dossiers render with complete HTML", async () => {
   assertHtmlIntegrity(documents);
 });
 
-test("Atargatis partial thresholds agree with total equality in source and generated fields", () => {
+test("Atargatis resolves exact CA equality through the final attribute confrontation in source and generated fields", () => {
   const atargatis = read("data/thalassia-source.json").people.find(
     (person) => person.id === "atargatis-kalypso",
   );
@@ -218,6 +218,9 @@ test("Atargatis partial thresholds agree with total equality in source and gener
   assert.equal(fixed.length, 4);
   for (const art of fixed) {
     assert(art.test.includes("até CA − 1"));
+    assert(art.test.includes("Acerto Total exige superar a CA"));
+    assert(art.test.includes("na igualdade exata com a CA"));
+    assert(art.test.includes("Espírito maior produz Total, menor ou igual produz Parcial"));
     assert(!art.test.includes("até a própria CA"));
   }
   const generated = read("data/thalassia.json").courtProfiles.find(
@@ -231,7 +234,8 @@ test("Atargatis partial thresholds agree with total equality in source and gener
       ability.fields.some(
         (field) =>
           field.label === "Teste e limiares" &&
-          field.html.includes("até CA − 1"),
+          /até CA −\s+1/.test(field.html) &&
+          /na igualdade exata com a CA/.test(field.html),
       ),
     );
   }

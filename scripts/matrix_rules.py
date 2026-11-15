@@ -1,7 +1,14 @@
 import re
+import json
+from pathlib import Path
 DAMAGE={'Kármico':['1d10','2d6','2d8','2d10','3d10'],'Elemental':['1d10','2d6','2d8','2d10','3d10'],'Divino':['1d8','1d10','2d6','2d8','3d8'],'Marcial':['1d8','1d10','2d6','2d8','3d8'],'Corrupto':['1d10','2d8','3d6','3d8','3d12']}
 OLD=['1d6','1d12','2d10','2d12','3d10']
-ELEMENTS=['Cinza Ardente','Miragem Solar','Breu Abissal','Combustão','Plasma','Cristal','Quartzo','Erosão','Vácuo','Sangue','Vapor','Metal','Magma','Lava','Areia','Laser','Raio','Gelo','Fogo','Água','Terra','Vento','Sombra','Trevas','Heliose','Luz','Som','Ar']
+_taxonomy=json.loads((Path(__file__).resolve().parents[1]/'data/elemental-taxonomy.json').read_text())
+# Registered expressions keep their historical type; the published catalog uses only taxonomy entries.
+_legacy=['Cinza Ardente','Miragem Solar','Breu Abissal','Plasma','Quartzo','Erosão','Laser','Heliose']
+_derived=[entry['name'] for entry in _taxonomy['subElements']]
+_aliases=[alias for entry in _taxonomy['subElements'] for alias in entry.get('aliases',[])]
+ELEMENTS=sorted(set(_derived+_legacy+_aliases),key=lambda value:(-len(value),value))+_taxonomy['primaryElements']+['Trevas','Ar']
 TITLE_ELEMENTS={'Arco de Plasma Cru':'Plasma','Nadir':'Plasma','Estocada de Luz':'Luz','Banquete do Breu':'Sombra','Liturgia da Boca Sem Fundo':'Sombra','Caldeirão da Gula':'Magma','Erupção do Bosque Sepultado':'Terra'}
 DIVINE_ATTACKS={'Jacó','Moisés','Davi','Sansão','Dia do Julgamento Final'}
 DAMAGE_SUFFIX=r'(?:divinos?|corruptos?|kármicos?|físicos?|cortantes?|perfurantes?|contundentes?|ácidos?|tóxicos?|espirituais|espiritual|mentais|mental|mágicos?|balísticos?|elementais|elemental|de\\s+(?:dano|impacto|corte|perfuração|Fogo|Água|Terra|Ar|Luz|Trevas|Sombra|Sangue|Magma|Lava|Quartzo|Cristal|Metal|Areia|Vento|Vapor|Combustão|Raio|Som|Vácuo|Erosão|Breu|Plasma|Gelo))'
@@ -12,7 +19,7 @@ def matrix(source):
  s=source.lower()
  if re.search(r'corrupt|enxerto|marca|mutaç',s):return 'Corrupto'
  if re.search(r'divin|comunhão|liturg|milagre',s):return 'Divino'
- if re.search(r'element|raio|vapor|quartzo|vento|água|fogo|terra|\bar\b|luz|treva|sangue|heliose|plasma|combustão|gelo',s):return 'Elemental'
+ if 'element' in s or re.search(r'(?<!\w)(?:'+'|'.join(re.escape(element) for element in ELEMENTS)+r')(?!\w)',source,re.I):return 'Elemental'
  if re.search(r'marcia|punho|espada|luta|pugil|pontaria',s):return 'Marcial'
  return 'Kármico'
 

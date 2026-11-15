@@ -759,7 +759,7 @@
     ],
     "cost": 15,
     "matrix": "Elemental",
-    "damageType": "Elemental / Raio",
+    "damageType": "Elemental / Luz",
     "baseDamage": "2d10"
   },
   {
@@ -7277,8 +7277,8 @@
         "value": 3
       }
     ],
-    "matrix": "Elemental",
-    "damageType": "Elemental",
+    "matrix": "Kármico",
+    "damageType": "Kármico",
     "baseDamage": "2d10"
   },
   {

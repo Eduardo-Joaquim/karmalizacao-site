@@ -68,6 +68,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import {
   NativeSelect,
@@ -97,6 +98,7 @@ import {
 import {
   calculateAutomaticBonuses,
   calculateDerivedStats,
+  attributeBreakdownText,
   canAllocateSkillPoint,
   getClassAbilityLimit,
   getClassAmplificationLimit,
@@ -104,8 +106,11 @@ import {
   getFinalAttribute,
   getFinalSkill,
   getProgressionRewards,
+  getStageIndex,
+  hasConfirmedFirstMilestone,
   getSacrificedPoints,
   getSkillLevelBreakdown,
+  redirectManualSkillGrant,
   getSkillTest,
   getVowErrors,
   SIZE_RULES,
@@ -318,6 +323,7 @@ export function CharacterBuilder({
   }, [draft, authenticated, guestReady]);
 
   const automatic = useMemo(() => calculateAutomaticBonuses(draft), [draft]);
+  const firstMilestoneConfirmed = hasConfirmedFirstMilestone(draft);
   const classDefinition = useMemo(
     () => getClassDefinition(draft.className),
     [draft.className],
@@ -520,7 +526,11 @@ export function CharacterBuilder({
         const abilityLimit = getClassAbilityLimit(value);
         const amplificationLimit = getClassAmplificationLimit(value);
         const stageBonuses = calculateAutomaticBonuses(next);
-        const rewards = getProgressionRewards(next.path, value);
+        const rewards = getProgressionRewards(
+          next.path,
+          value,
+          next.firstMilestoneConfirmed,
+        );
         next = {
           ...next,
           classAbilities: next.classAbilities.slice(0, abilityLimit),
@@ -551,7 +561,11 @@ export function CharacterBuilder({
       }
 
       if (field === "path") {
-        const rewards = getProgressionRewards(value, next.stage);
+        const rewards = getProgressionRewards(
+          value,
+          next.stage,
+          next.firstMilestoneConfirmed,
+        );
         next = {
           ...next,
           allocations: {
@@ -1355,6 +1369,37 @@ export function CharacterBuilder({
                         options={STAGES}
                         onChange={(value) => updateIdentity("stage", value)}
                       />
+                      <div className="character-field field-full">
+                        <label htmlFor="character-first-milestone">
+                          <Checkbox
+                            id="character-first-milestone"
+                            checked={firstMilestoneConfirmed}
+                            onCheckedChange={(checked) =>
+                              updateDraft(
+                                "firstMilestoneConfirmed",
+                                checked === true,
+                              )
+                            }
+                          />{" "}
+                          Primeiro marco confirmado: recompensas da Linha I
+                          recebidas.
+                        </label>
+                        <small>
+                          A criação já usa Etapa I nas fórmulas e concede os
+                          benefícios iniciais de raça e classe. Marque após a
+                          confirmação de E → D, Marca I ou Renome I para incluir
+                          uma única vez as recompensas da Linha I. Este registro
+                          não recupera Vida ou Karma gastos.
+                        </small>
+                        {!firstMilestoneConfirmed &&
+                        getStageIndex(draft.stage) > 1 ? (
+                          <strong>
+                            A ficha está acima da Etapa I, mas o primeiro marco
+                            continua sem confirmação. As recompensas da Linha I
+                            ainda não entram no cálculo.
+                          </strong>
+                        ) : null}
+                      </div>
                       <div className="character-field">
                         <FieldLabel htmlFor="character-language">
                           Idioma comum
@@ -1455,7 +1500,7 @@ export function CharacterBuilder({
                     />
                     <AllocationPanel
                       title="Etapas da classe"
-                      description={`Bônus acumulados até ${draft.stage}.`}
+                      description={`Bônus acumulados até ${draft.stage}.${firstMilestoneConfirmed ? "" : " A Linha I aguarda a confirmação do primeiro marco."}`}
                       slots={automatic.stageAttributeSlots}
                       selections={draft.allocations.stageAttributes}
                       onChange={(selections) =>
@@ -1466,7 +1511,6 @@ export function CharacterBuilder({
                     <div className="attribute-grid">
                       {ATTRIBUTES.map((attribute) => {
                         const points = draft.attributes[attribute];
-                        const automaticBonus = automatic.attributes[attribute];
                         const total = getFinalAttribute(
                           draft,
                           automatic,
@@ -1486,9 +1530,11 @@ export function CharacterBuilder({
                                 </span>
                               </div>
                               <small>
-                                {automaticBonus
-                                  ? `+${automaticBonus} de bônus`
-                                  : ""}
+                                {attributeBreakdownText(
+                                  draft,
+                                  automatic,
+                                  attribute,
+                                )}
                               </small>
                             </div>
                             <div className="attribute-controls">
@@ -1587,6 +1633,51 @@ export function CharacterBuilder({
                     </div>
 
                     <div className="skill-allocation-grid">
+                      {ALL_SKILLS.filter(
+                        (skill) =>
+                          (draft.skills[skill]?.bonus ?? 0) > 0 &&
+                          getSkillLevelBreakdown(draft, automatic, skill)
+                            .commonRaw > 1,
+                      ).map((skill) => (
+                        <div
+                          className="character-field"
+                          key={`redirect-${skill}`}
+                        >
+                          <FieldLabel htmlFor={`redirect-grant-${skill}`}>
+                            Redirecionar treinamento adicional de {skill}
+                          </FieldLabel>
+                          <NativeSelect
+                            id={`redirect-grant-${skill}`}
+                            value=""
+                            onChange={(event) =>
+                              commitDraft(
+                                redirectManualSkillGrant(
+                                  draft,
+                                  skill,
+                                  event.target.value,
+                                ),
+                              )
+                            }
+                          >
+                            <NativeSelectOption value="">
+                              Escolha outra Perícia Comum
+                            </NativeSelectOption>
+                            {ALL_SKILLS.filter(
+                              (target) =>
+                                getSkillLevelBreakdown(draft, automatic, target)
+                                  .commonRaw === 0,
+                            ).map((target) => (
+                              <NativeSelectOption value={target} key={target}>
+                                {target}
+                              </NativeSelectOption>
+                            ))}
+                          </NativeSelect>
+                          <small>
+                            A concessão adicional é preservada; seus oito
+                            pontos-base permanecem onde foram distribuídos.
+                          </small>
+                        </div>
+                      ))}
                       <AllocationPanel
                         title="Raça"
                         description="Bônus Comum: complete nível 1, sem ultrapassar esse teto."
@@ -1696,13 +1787,18 @@ export function CharacterBuilder({
                         <p>
                           Pontos-base, bônus de raça, bônus de classe, ajustes e
                           recompensas Comuns compartilham o teto do nível 1.
-                          Somente pontos Evolutivos compram os nível 2; o ponto
-                          Transcendental compra o nível 3. Opções que violariam
-                          essa sequência ficam bloqueadas. O bônus Analítico não
-                          eleva níveis: vale apenas com Intelecto em perícia
-                          mental/social treinada. Prévias sociais com Intelecto
-                          pressupõem abordagem racional aprovada, não carisma
-                          automático.
+                          Seus oito pontos-base permanecem separados das
+                          concessões. Se uma formação fixa coincidir com uma
+                          perícia já treinada, distribua o redirecionamento
+                          indicado no painel da formação. Somente pontos
+                          Evolutivos compram os nível 2; o ponto Transcendental
+                          compra o nível 3. Opções que violariam essa sequência
+                          ficam bloqueadas. O bônus Analítico não eleva níveis:
+                          vale apenas com Intelecto em perícia mental ou técnica
+                          treinada. Persuasão com Intelecto conserva o
+                          treinamento e não recebe Analítico. Prévias sociais
+                          com Intelecto pressupõem abordagem racional aprovada,
+                          não carisma automático.
                         </p>
                       </aside>
                     </div>
@@ -1731,10 +1827,7 @@ export function CharacterBuilder({
                                 automatic,
                                 skill,
                               );
-                              const baseLimit = Math.max(
-                                0,
-                                1 - points.bonus - breakdown.automaticCommon,
-                              );
+                              const baseLimit = Math.max(0, 1 - points.bonus);
                               const manualLimit = Math.max(
                                 0,
                                 1 -
@@ -1777,7 +1870,7 @@ export function CharacterBuilder({
                                       {Math.abs(test.bonus)}
                                     </span>
                                   </small>
-                                  {test.value === 0 && (
+                                  {test.value === 0 && !test.level && (
                                     <small className="skill-row-notice">
                                       Atributo 0: −4, mesmo com treinamento.
                                     </small>
@@ -1819,9 +1912,7 @@ export function CharacterBuilder({
                                       <NativeSelect
                                         id={`skill-bonus-${skill}`}
                                         aria-label={`Ajuste de ${skill}`}
-                                        value={String(
-                                          Math.min(points.bonus, manualLimit),
-                                        )}
+                                        value={String(points.bonus)}
                                         onChange={(event) =>
                                           updateSkill(
                                             skill,
@@ -1831,7 +1922,13 @@ export function CharacterBuilder({
                                         }
                                       >
                                         {Array.from(
-                                          { length: manualLimit + 1 },
+                                          {
+                                            length:
+                                              Math.max(
+                                                manualLimit,
+                                                points.bonus,
+                                              ) + 1,
+                                          },
                                           (_, value) => (
                                             <NativeSelectOption
                                               value={String(value)}

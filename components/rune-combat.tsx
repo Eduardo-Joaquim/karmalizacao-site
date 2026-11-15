@@ -4,6 +4,7 @@ import { combatId } from "@/lib/combat-id";
 import type { CombatAction, LiveCombatState } from "@/lib/combat-types";
 import {
   availableKarma,
+  hasVectorInterception,
   karmicRunes,
   personalRuneCount,
   personalRuneLimit,
@@ -13,6 +14,11 @@ import {
   runeSupport,
 } from "@/lib/karmic-runes";
 import { useState } from "react";
+import {
+  RuneApexControls,
+  RuneInterceptionControls,
+  type RuneData,
+} from "@/components/rune-special-controls";
 
 export function RuneCombat({
   draft,
@@ -32,6 +38,7 @@ export function RuneCombat({
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
   const items = draft.inventory.flatMap((item) => {
+    if (item.cursedRune) return [];
     const support = runeSupport(item);
     return support?.accessible ? [{ item, support }] : [];
   });
@@ -59,18 +66,7 @@ export function RuneCombat({
     : personalRuneCount(draft, state);
   const capacity = support?.slots || personalRuneLimit(draft);
 
-  async function record(
-    data:
-      | Pick<
-          Extract<CombatAction, { type: "armRune" }>,
-          "type" | "runeId" | "weaponId"
-        >
-      | Pick<
-          Extract<CombatAction, { type: "burstRune" }>,
-          "type" | "inscriptionId" | "disarm"
-        >,
-    title: string,
-  ) {
+  async function record(data: RuneData, title: string) {
     setBusy(true);
     setMessage("");
     try {
@@ -103,6 +99,14 @@ export function RuneCombat({
         {availableKarma(state)} Karma disponíveis · {occupied}/{capacity}{" "}
         espaços {support?.slots ? "do item" : "pessoais"} ocupados.
       </p>
+      {!itemId && (
+        <RuneApexControls
+          state={state}
+          pending={pending}
+          busy={busy}
+          record={record}
+        />
+      )}
       {support?.category === "Arma" && !support.slots && (
         <p>Esta arma aceita uma runa. A inscrição ocupa uma vaga pessoal.</p>
       )}
@@ -171,6 +175,18 @@ export function RuneCombat({
           <p>
             <strong>Estouro</strong> {picked.burst}
           </p>
+          {!itemId && hasVectorInterception(draft) && (
+            <RuneInterceptionControls
+              draft={draft}
+              state={state}
+              picked={picked}
+              targetName={target?.name}
+              targetId={targetId}
+              pending={pending}
+              busy={busy}
+              record={record}
+            />
+          )}
         </>
       )}
       {attached.map((inscription) => {
@@ -194,10 +210,59 @@ export function RuneCombat({
               )}
               <p>{rune.passive}</p>
               <p>{rune.burst}</p>
+              {inscription.temporary && (
+                <p>
+                  Runa interceptada: sem Karma Retido. Encerre-a manualmente no
+                  fim do próximo turno do Escriba.
+                </p>
+              )}
+              {rune.grade === "V" && (
+                <p>
+                  {state.gradeVApex?.kind === "rune" &&
+                  state.gradeVApex.sourceId === inscription.id
+                    ? "Passiva e Estouro vinculados ao Ápice desta cena."
+                    : "Antes de aplicar a passiva, registre o primeiro benefício e vincule esta inscrição ao Ápice."}
+                </p>
+              )}
               <div className="live-controls">
+                {rune.grade === "V" && (
+                  <button
+                    type="button"
+                    disabled={
+                      pending ||
+                      busy ||
+                      Boolean(
+                        state.gradeVApex &&
+                        !(
+                          state.gradeVApex.kind === "rune" &&
+                          state.gradeVApex.sourceId === inscription.id
+                        ),
+                      )
+                    }
+                    onClick={() =>
+                      void record(
+                        { type: "runeBenefit", inscriptionId: inscription.id },
+                        `Ativar passiva de ${rune.name}`,
+                      )
+                    }
+                  >
+                    Registrar primeiro benefício de Grau V
+                  </button>
+                )}
                 <button
                   type="button"
-                  disabled={pending || busy}
+                  disabled={
+                    pending ||
+                    busy ||
+                    Boolean(
+                      rune.grade === "V" &&
+                      state.gradeVApex &&
+                      !(
+                        state.gradeVApex.kind === "rune" &&
+                        state.gradeVApex.sourceId === inscription.id
+                      ),
+                    )
+                  }
                   onClick={() =>
                     void record(
                       { type: "burstRune", inscriptionId: inscription.id },

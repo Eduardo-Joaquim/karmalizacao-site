@@ -5,7 +5,10 @@ import {
   NativeSelect,
   NativeSelectOption,
 } from "@/components/ui/native-select";
-import type { BonusChoiceSlot } from "@/lib/character-rules";
+import {
+  bonusChoiceIsDisabled,
+  type BonusChoiceSlot,
+} from "@/lib/character-rules";
 import { Minus, Plus } from "lucide-react";
 export function FieldLabel({
   htmlFor,
@@ -155,11 +158,7 @@ export function AllocationPanel({
                     value={option}
                     key={option}
                     disabled={
-                      (!slot.allowRepeat &&
-                        selections.some(
-                          (selection, selectionIndex) =>
-                            selectionIndex !== index && selection === option,
-                        )) ||
+                      bonusChoiceIsDisabled(slots, selections, option, index) ||
                       Boolean(isOptionDisabled?.(option, index))
                     }
                   >
@@ -179,5 +178,11 @@ export function selectionsComplete(
   slots: BonusChoiceSlot[],
   selections: string[],
 ) {
-  return slots.every((_, index) => Boolean(selections[index]));
+  return slots.every((slot, index) =>
+    Boolean(
+      selections[index] &&
+      slot.options.includes(selections[index]) &&
+      !bonusChoiceIsDisabled(slots, selections, selections[index], index),
+    ),
+  );
 }

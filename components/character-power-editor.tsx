@@ -2,8 +2,12 @@
 import { TechniqueMatrixEditor } from "@/components/technique-matrix-editor";
 import runes from "@/data/karmic-runes.json";
 import axioms from "@/data/path-axioms.json";
+import elementalTaxonomy from "@/data/elemental-taxonomy.json";
 import { getFinalSkill, getStageIndex } from "@/lib/character-rules";
-import { rollPathAwakening } from "@/lib/combat-engine";
+import {
+  pathAwakeningRequirements,
+  rollPathAwakening,
+} from "@/lib/combat-engine";
 import {
   equippedRuneWeapons,
   personalRuneLimit,
@@ -85,6 +89,7 @@ type TextFieldProps = {
   label: string;
   value: string;
   placeholder?: string;
+  list?: string;
   wide?: boolean;
   multiline?: boolean;
   onChange: (value: string) => void;
@@ -107,6 +112,7 @@ function TextField({
   label,
   value,
   placeholder,
+  list,
   wide,
   multiline,
   onChange,
@@ -127,6 +133,7 @@ function TextField({
       ) : (
         <Input
           id={id}
+          list={list}
           value={value}
           maxLength={500}
           placeholder={placeholder}
@@ -193,6 +200,7 @@ export function CharacterPowerEditor({
   const [pathAttribute, setPathAttribute] =
     useState<(typeof ATTRIBUTES)[number]>("Espírito");
   const [awakeningResult, setAwakeningResult] = useState("");
+  const awakeningRequirements = pathAwakeningRequirements(draft);
 
   const race = getRaceRule(draft.race);
   const classDefinition = getClassDefinition(draft.className);
@@ -658,16 +666,39 @@ export function CharacterPowerEditor({
                   }
                 />
                 <p className="field-full">
-                  Despertar em crise na Etapa III. CD 20 e 6 Karma no despertar
-                  puro. Sob Outorga ou doutrina, CD 24, −1d20, 10 Karma e 2d6 de
-                  dano irreduzível. O teste usa somente a reserva do
-                  atributo-chave, o treinamento em Canalização e o bônus por
-                  falhas anteriores. Ímpeto e Analítico ficam fora da rolagem.
-                  Registre o despertar após resolver o preço e o resultado em
-                  mesa.
+                  Despertar em crise na Etapa III. Apenas personagens sem Bênção
+                  e estritamente autodidatas usam CD 20 e 6 Karma. Possuir uma
+                  Outorga, mestre, mentor ou ensinamento formal, atual ou
+                  passado, incluindo doutrina de classe, exige CD 24,
+                  Desvantagem, 10 Karma e 2d6 de dano irreduzível. O teste usa a
+                  reserva de Espírito ou do Atributo-chave escolhido, o
+                  treinamento em Canalização e o bônus por falhas anteriores.
+                  Ímpeto e Analítico ficam fora da rolagem. Registre o despertar
+                  após resolver o preço e o resultado em mesa.
+                </p>
+                <label className="field-full">
+                  <Checkbox
+                    checked={draft.personalPath.strictlySelfTaught === true}
+                    onCheckedChange={(checked) =>
+                      update("personalPath", {
+                        ...draft.personalPath,
+                        strictlySelfTaught: checked === true,
+                      })
+                    }
+                  />
+                  Sou estritamente autodidata: nunca tive mestre, mentor ou
+                  ensinamento formal, incluindo doutrina de classe.
+                </label>
+                <p className="field-full">
+                  Esta tentativa: CD {awakeningRequirements.dc} ·{" "}
+                  {awakeningRequirements.karma} Karma
+                  {awakeningRequirements.difficult
+                    ? " · Desvantagem e 2d6 de dano irreduzível"
+                    : " · sem Desvantagem de formação"}
+                  .
                 </p>
                 <label>
-                  Atributo-chave
+                  Espírito ou Atributo-chave
                   <select
                     value={pathAttribute}
                     onChange={(event) =>
@@ -828,6 +859,28 @@ export function CharacterPowerEditor({
               Controle 2: Grau IV; Etapa VII e Controle 3: Grau V. Afinidade não
               treina outro elemento.
             </p>
+            <div className="character-field">
+              <Label htmlFor="elemental-primary" className="character-label">
+                Fonte elemental principal
+              </Label>
+              <NativeSelect
+                id="elemental-primary"
+                value={draft.elemental.primaryElement ?? ""}
+                onChange={(event) =>
+                  updateElemental({ primaryElement: event.target.value })
+                }
+              >
+                <NativeSelectOption value="">
+                  Registre a origem
+                </NativeSelectOption>
+                {ELEMENTS.map((element) => (
+                  <NativeSelectOption value={element} key={element}>
+                    {element}
+                  </NativeSelectOption>
+                ))}
+              </NativeSelect>
+              <p>O primeiro elemento com que nasceu ou que despertou.</p>
+            </div>
             <div className="element-picker field-full">
               <span>Elementos controlados</span>
               <div>
@@ -914,6 +967,13 @@ export function CharacterPowerEditor({
               <Plus aria-hidden="true" /> Adicionar subdobra
             </Button>
           </div>
+          <datalist id="canonical-sub-elements">
+            {elementalTaxonomy.subElements.map((entry) => (
+              <option key={entry.name} value={entry.name}>
+                {entry.parents.join(" + ")}
+              </option>
+            ))}
+          </datalist>
           <div className="dynamic-card-list">
             {draft.elemental.subBendings.map((subBending, index) => (
               <article className="dynamic-editor-card" key={subBending.id}>
@@ -938,6 +998,7 @@ export function CharacterPowerEditor({
                 <div className="character-form-grid two-columns compact-form">
                   <TextField
                     id={`sub-bending-name-${subBending.id}`}
+                    list="canonical-sub-elements"
                     label="Nome"
                     value={subBending.name}
                     onChange={(name) =>
@@ -970,11 +1031,13 @@ export function CharacterPowerEditor({
                       }
                     >
                       <NativeSelectOption value="">Escolha</NativeSelectOption>
-                      {ELEMENTS.map((element) => (
-                        <NativeSelectOption value={element} key={element}>
-                          {element}
-                        </NativeSelectOption>
-                      ))}
+                      {[...ELEMENTS, "Água + Fogo", "Terra + Fogo"].map(
+                        (element) => (
+                          <NativeSelectOption value={element} key={element}>
+                            {element}
+                          </NativeSelectOption>
+                        ),
+                      )}
                     </NativeSelect>
                   </div>
                   {(["concept", "passive", "limits"] as const).map((field) => (

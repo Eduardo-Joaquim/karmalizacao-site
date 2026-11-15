@@ -296,7 +296,7 @@ Leonor herdou uma fronteira cujas fortalezas envelhecem mais depressa que os jur
 
 **Identidade:** Humana · Casa Ferromonte · civil. **Vida:** 18. **Karma:** 16. **CA:** 14. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 2 · Constituição 3 · Intelecto 5 · Presença 6 · Espírito 3.
 
-**Perícias:** Persuasão 2; Intimidação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Persuasão 2; Intimidação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Cadeia de comando:** Uma vez por cena, apresenta uma ordem verificável de sua jurisdição e recebe +2 em um teste de Persuasão para solicitar cooperação de uma patrulha. Não força obediência nem legitima ordens fora de sua autoridade.
 
@@ -313,7 +313,7 @@ Mateus cresceu entre relatórios de obra e funerais de soldados. Financia engenh
 
 **Identidade:** Humano · Casa Ferromonte · civil. **Vida:** 16. **Karma:** 16. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 3 · Constituição 3 · Intelecto 5 · Presença 4 · Espírito 3.
 
-**Perícias:** Investigação 1; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 1; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Memória das obras:** Uma vez por cena, após examinar uma obra por pelo menos um minuto, recebe +2 em Investigação para reconhecer alteração em relação à planta que possui. Sem planta ou acesso à estrutura, não recebe o bônus.
 
@@ -370,7 +370,7 @@ Artur manteve trabalhadores empregados durante a seca assumindo compromissos que
 
 **Identidade:** Humano · Casa Vesperal · civil. **Vida:** 16. **Karma:** 16. **CA:** 14. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 2 · Constituição 3 · Intelecto 5 · Presença 5 · Espírito 3.
 
-**Perícias:** Persuasão 2; Enganação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Persuasão 2; Enganação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Mesa de negociação:** Uma vez por cena, depois de expor uma concessão concreta que pode cumprir, recebe +2 em Persuasão numa negociação de abastecimento. O bônus não revela se a outra parte mente e não substitui o consentimento.
 
@@ -387,7 +387,7 @@ Naira é tritã, engenheira e esposa de Artur. Sua autoridade nas obras foi conq
 
 **Identidade:** Tritã · Casa Vesperal · civil. **Vida:** 20. **Karma:** 18. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 3 · Constituição 4 · Intelecto 6 · Presença 4 · Espírito 4.
 
-**Perícias:** Investigação 2; Percepção 2; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 2; Percepção 2; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Leitura de vazão:** Uma vez por cena, após observar o fluxo por um minuto, recebe +2 em Percepção para localizar uma obstrução ou desvio visível no canal examinado. Não detecta automaticamente magia ou passagens fora de seu alcance sensorial.
 
@@ -404,7 +404,7 @@ Lídia acompanha a mãe nas inspeções e mantém um mapa próprio, corrigido a 
 
 **Identidade:** Humana · Casa Vesperal · civil. **Vida:** 14. **Karma:** 16. **CA:** 16. **Deslocamento:** 9 m. **Atributos:** Força 1 · Agilidade 4 · Constituição 3 · Intelecto 5 · Presença 3 · Espírito 3.
 
-**Perícias:** Investigação 1; Furtividade 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 1; Furtividade 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Mapa de campo:** Uma vez por cena, com seu caderno e dez minutos para comparar marcos, recebe +2 em Investigação para identificar divergência entre o mapa e o trajeto percorrido. Não cria uma rota segura onde ela não existe.
 
@@ -461,7 +461,7 @@ Damião recebeu a concessão depois de atravessar uma ponte com refugiados quand
 
 **Identidade:** Humano · Cedro Novo · civil. **Vida:** 22. **Karma:** 16. **CA:** 14. **Deslocamento:** 9 m. **Atributos:** Força 3 · Agilidade 2 · Constituição 4 · Intelecto 3 · Presença 5 · Espírito 3.
 
-**Perícias:** Persuasão 1; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Persuasão 1; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Nome entre os moradores:** Uma vez por cena, após oferecer abrigo ou alimento que realmente possui, recebe +2 em Persuasão para organizar uma evacuação em Cedro Novo. Não dispõe de estoque infinito nem recebe lealdade automática.
 
@@ -478,7 +478,7 @@ Teresa administra o celeiro principal e conhece a diferença entre uma conta mal
 
 **Identidade:** Humana · Cedro Novo · civil. **Vida:** 18. **Karma:** 16. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 3 · Constituição 4 · Intelecto 5 · Presença 4 · Espírito 3.
 
-**Perícias:** Investigação 2; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 2; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Peso de aferição:** Uma vez por cena, usando seu peso e examinando uma balança por um minuto, recebe +2 em Investigação para comprovar adulteração daquele instrumento. O resultado não identifica sozinho quem o alterou.
 
@@ -539,7 +539,7 @@ Rui transforma autorizações antigas em ordens novas e confia que ninguém comp
 
 **Identidade:** Humano · Chancelaria · civil. **Vida:** 12. **Karma:** 16. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 1 · Agilidade 3 · Constituição 2 · Intelecto 6 · Presença 5 · Espírito 3.
 
-**Perícias:** Enganação 2; Investigação 1; Furtividade 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Enganação 2; Investigação 1; Furtividade 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Índice dos contratos:** Uma vez por cena, com acesso ao arquivo em que trabalha, recebe +2 em Investigação para localizar um documento que conhece. O traço não falsifica selos automaticamente, não altera a memória de testemunhas e não destrói provas à distância.
 

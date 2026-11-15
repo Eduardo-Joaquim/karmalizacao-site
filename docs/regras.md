@@ -26,7 +26,7 @@ O Atributo não é somado ao resultado. Para valores 1 ou maiores, role uma quan
 
 ### **Exemplo:** Medicina treinada
 
-Liora possui Intelecto 5 e Medicina 2. Ela escolhe o maior de 3d20 e soma +5 de treinamento e +3 Analítico. Com dados 8, 14 e 17, o resultado é 25. Analítico é igual ao Intelecto, limitado a +3, somente em perícias mentais ou técnicas regidas por Intelecto. Perícias Sociais usam Presença.
+Liora possui Intelecto 5 e Medicina 2. Ela escolhe o maior de 3d20 e soma +5 de treinamento e +3 Analítico. Com dados 8, 14 e 17, o resultado é 25. Analítico é igual ao Intelecto, limitado a +3, somente em perícias mentais ou técnicas regidas por Intelecto. Perícias Sociais usam Presença como padrão. Uma abordagem racional de Persuasão aceita pelo Mestre pode usar a reserva de Intelecto, mantendo o treinamento e sem Analítico.
 
 ### Atributo 0
 
@@ -179,6 +179,18 @@ Com Constituição 2, Força 1 e Agilidade 2, antes de raça, classe e benefíci
 
 Herança racial: Traço Base na criação; três marcos de evolução nas Etapas II, IV e VI. Consulte as nove linhagens no Capítulo 5.
 
+<div class="section" book206-section="roteiro-da-criacao">
+
+## Roteiro da criação
+
+1.  Defina conceito e distribua os 10 pontos de Atributo, respeitando o limite de 5 nesta distribuição.
+2.  Escolha origem, raça e classe. Aplique os benefícios iniciais e o Traço Base racial uma única vez, mantendo separados os registros de cada fonte.
+3.  Distribua oito pontos-base de Perícia Comum; acrescente depois os pontos extras de origem, raça e classe. Respeite os tetos e redirecione uma sobreposição somente nos termos do benefício que a concedeu.
+4.  Registre afinidades, fontes de poder, equipamento e valores derivados. Use Etapa I, valor 1, nas fórmulas desde a criação.
+5.  Registre os ganhos de progressão da Linha I como ainda não recebidos. Eles entram uma única vez após a confirmação do primeiro marco do caminho: E → D, Marca I ou Renome I. Essa entrega não reaplica raça, classe ou pontos iniciais.
+
+</div>
+
 
 # Capítulo 3 - Perícias
 
@@ -186,21 +198,21 @@ Perícias descrevem treinamento. O Atributo muda conforme a abordagem: Intimida�
 
 ## Intelecto compreensão que se torna vantagem
 
-**Bônus Analítico:** em teste mental treinado regido por Intelecto, some o menor valor entre 3 e metade do Intelecto final, arredondada para baixo. Resultado = dado selecionado + treinamento (+2, +5 ou +10) + mínimo entre 3 e piso de Intelecto ÷ 2. Aplique uma vez, sem acrescentar níveis, dano, cura, duração, CA ou pré-requisitos.
+**Bônus Analítico:** em teste mental treinado regido por Intelecto, some o Intelecto final, limitado a +3. Resultado = dado selecionado + treinamento (+2, +5 ou +10) + mínimo entre 3 e Intelecto final. Aplique uma vez, sem acrescentar níveis, dano, cura, duração, CA ou pré-requisitos.
 
 **São mentais:** Criação, História, Investigação, Medicina, Ocultismo, Percepção, Religião, Tática e Condução. São sociais: Atuação, Enganação, Intimidação, Liderança, Persuasão, Trato com Animais e Submundo. Nenhuma Perícia foi criada. A abrangência vem da abordagem, não de renomear ou duplicar treinamento.
 
-**Abordagem racional social:** Presença é o Atributo padrão. Use outro Atributo apenas quando uma técnica ou Domínio autorizar a substituição. Declare-a antes de rolar. A substituição não concede automaticamente Analítico nem a Essência da Técnica a uma Perícia Social. Presença continua adequada para carisma imediato, autoridade e expressão; influência não controla a mente nem remove consentimento.
+**Abordagem racional social:** Presença é o Atributo padrão. Uma abordagem racional coerente de Persuasão, aceita pelo Mestre, pode usar a reserva de dados de Intelecto, mantendo o treinamento de Persuasão e sem somar Analítico. Declare a abordagem antes de rolar. A substituição não concede automaticamente Analítico nem a Essência da Técnica a uma Perícia Social. Presença continua adequada para carisma imediato, autoridade e expressão; influência não controla a mente nem remove consentimento.
 
 Percepção só usa o bônus Analítico quando a tarefa é interpretar pistas; notar um ruído por instinto pode usar outro Atributo. Condução recebe o bônus ao planejar uma manobra ou compreender a máquina, não automaticamente ao reagir com Agilidade. Medicina pode aprimorar o teste de diagnóstico; o bônus não se soma à cura. Uma Perícia mental realizada com Espírito não recebe também o bônus de Intelecto.
 
-**Exemplo:** Com Intelecto 6, Presença 2 e Persuasão 2, o teste padrão é 1d20 +5. Se uma técnica permitir usar Intelecto, a reserva passa a 3d20 +5. A Persuasão continua no nível 2.
+**Exemplo:** Com Intelecto 6, Presença 2 e Persuasão 2, o teste padrão é 1d20 +5. Se o Mestre aceitar uma abordagem racional coerente, a reserva de Intelecto passa a 3d20 +5, sem Analítico. A Persuasão continua no nível 2.
 
 ## Presença regência exclusiva dos vínculos
 
 Conjuração Vincular é um uso da Perícia Conjuração, não um treinamento separado. Somente ela, Comunhão Divina e Controle da Corrupção exigem Presença como regente. Conjuração comum mantém o Atributo da abordagem ou técnica, como Espírito para contenção. Nos três usos exclusivos, não some nem substitua Presença por Intelecto ou Espírito.
 
-Atributo regente define a reserva de d20 e qualquer parcela escrita como Atributo da fonte. Conjuração Vincular, Comunhão Divina e Controle da Corrupção usam exclusivamente Presença. Com Presença 0, role 1d20 −4 sem treinamento. Bônus permanentes que aumentem Presença entram no valor final normalmente.
+Atributo regente define a reserva de d20 e qualquer parcela escrita como Atributo da fonte. Conjuração Vincular, Comunhão Divina e Controle da Corrupção usam exclusivamente Presença. Com Presença 0, um teste destreinado usa 1d20 −4; uma perícia treinada usa 1d20 +2, +5 ou +10, conforme o nível, sem acumular a penalidade −4. Bônus permanentes que aumentem Presença entram no valor final normalmente.
 
 **Separação de funções:** Karma máximo permanece 10 + 2 × Espírito + bônus; Favor permanece 0–3; Carga, 0–10; graus e quantidade de invocações continuam limitados por Conjuração. Esses recursos e tabelas não viram multiplicadores de Presença. Atributos das criaturas são próprios. Manifestação de Bênção conserva o regente definido por seu Núcleo; ela não é Comunhão Divina. Canalização de Karma, Controle Elemental e Domínios não mudam por esta regra.
 
@@ -263,7 +275,7 @@ Reflexos: Evasão e resposta a perigo repentino. Normalmente usa Agilidade.
 
 **Liderança:** Coordenar grupo, manter moral, dar ordens sob pressão e assumir responsabilidade. Usa Presença.
 
-**Persuasão:** Negociação, diplomacia, pedido e argumentação. Usa Presença ou Intelecto.
+**Persuasão:** Negociação, diplomacia, pedido e argumentação. Usa Presença como padrão; uma abordagem racional coerente aceita pelo Mestre pode usar a reserva de Intelecto, mantendo o treinamento e sem Analítico.
 
 **Trato com Animais:** Acalmar, treinar, montar e compreender criaturas não sapientes. Usa Presença ou Espírito.
 
@@ -512,7 +524,7 @@ O personagem precisa alcançar o total de Marcas e cumprir uma prova adequada à
 
 ### Adaptações da Torre
 
-A cada nova Marca de progressão, o personagem escolhe uma Adaptação. Uma Adaptação não pode ser escolhida duas vezes e só funciona dentro da Torre.
+Ao alcançar cada novo patamar de Marca I a VII, o personagem escolhe uma Adaptação. Unidades de Marca acumuladas em uma expedição não concedem Adaptações separadas. Uma Adaptação não pode ser escolhida duas vezes e só funciona dentro da Torre.
 
 As Adaptações são passivas, 0 Karma, sem preparo ou CD próprios. Instinto de Retorno e Âncora de Identidade rerrolam um teste próprio antes das consequências, conservando o melhor resultado e os mesmos modificadores, sem repetir a oposição ou uma rerrolagem anterior. Leitura de Leis integra a atividade que identificou o segundo sinal, sem nova ação. Cartografia Mental registra como Marco a referência real de entrada, dentro do limite comum de três Marcos da zona; não cria teleporte. Corpo de Travessia ignora somente uma incidência de penalidade ambiental, não uma fonte inteira. Marcha Econômica, Portador de Eco e Recusa da Crise aplicam-se nos gatilhos escritos, sem ação adicional; os efeitos terminam com aquele consumo, aumento de Pressão ou prazo, respectivamente.
 
@@ -622,6 +634,18 @@ Atributos, Bênçãos Verdadeiras, formas corrompidas, Comunhão Divina, relíqu
 
 Assim, Guilda, Torre e Renome determinam como o personagem progride publicamente, mas não são as únicas formas pelas quais ele pode mudar.
 
+<div class="section" book206-section="abertura-e-confirmacao-da-linha-i">
+
+## Abertura e confirmação da Linha I
+
+Desde a criação, use Etapa I (1) nas fórmulas e receba os benefícios iniciais de raça e classe. Registre separadamente os ganhos da Linha I nas tabelas de progressão: eles são entregues uma única vez na confirmação do primeiro marco do caminho, E → D na Guilda, Marca I na Torre ou Renome I no Independente. Atingir a quantidade exigida não dispensa a aprovação própria de cada caminho.
+
+A confirmação concede a recompensa da Linha I e os ganhos gerais e de classe nela indicados; não reaplica bônus iniciais. As Linhas II a VII mantêm suas próprias condições e recompensas. Registre cada entrega para impedir duplicação.
+
+O caminho de progressão deste capítulo organiza recompensas de Guilda, Torre ou Renome. O Caminho Pessoal do Capítulo 11 organiza Axioma e manifestações próprias. Sua vertente Independente significa ausência de Bênção, sem exigir abandonar Guilda ou Torre.
+
+</div>
+
 
 # Capítulo 5 - Origens e raças
 
@@ -659,23 +683,28 @@ A vontade não é herança de um trono. É a chama que ainda arde quando o desti
 
 #### Etapa I — Inconformismo
 
-- **Aprimoramento / Passiva:** Você começa cada cena com 2 Pontos de Ímpeto (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI). Você recupera 1 Ímpeto ao obter 20 natural no dado selecionado de um ataque, resistência ou perícia ativa em cena, até uma vez por rodada.
-- **Ativação / Reação:** Também recupera 1 Ímpeto quando sua Vida cair para metade ou menos pela primeira vez na cena. Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste. Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.
+- **Passivo:** Você começa cada cena com 2 Pontos de Ímpeto (seu limite máximo inicial é 2, subindo para 3 na Etapa IV e 4 na Etapa VI).
+- **Passivo:** Você recupera 1 Ímpeto ao obter 20 natural no dado selecionado de um ataque, resistência ou perícia ativa em cena, até uma vez por rodada.
+- **Passivo:** Também recupera 1 Ímpeto quando sua Vida cair para metade ou menos pela primeira vez na cena.
+- **Passivo:** Ao realizar qualquer teste de perícia, ataque ou técnica, você pode gastar 1 Ímpeto para acrescentar +1d20 à sua reserva de dados e +2 ao resultado final do teste.
+- **Ação Livre ou Reação:** Alternativamente, como Ação Livre no seu turno ou Reação ao receber uma condição menor (Caído, Lento, Abalado ou Desorientado), você pode gastar 1 Ímpeto para encerrar imediatamente essa condição.
 
 #### Etapa II — Leitura de Brecha
 
-- **Dano ao gastar Ímpeto:** Sempre que você gastar Ímpeto em um ataque ou técnica ofensiva, você expõe uma brecha na guarda do alvo: o golpe soma +Etapa ao dano causado.
-- **Brecha na guarda:** Até o início do seu próximo turno, o próximo ataque seu ou de qualquer aliado contra aquele alvo reduz em 2 pontos os limiares de Acerto Parcial e de Acerto Total da defesa dele.
+- **Passivo:** Sempre que você gastar Ímpeto em um ataque ou técnica ofensiva, você expõe uma brecha na guarda do alvo: o golpe soma +Etapa ao dano causado e, até o início do seu próximo turno, o próximo ataque seu ou de qualquer aliado contra aquele alvo reduz em 2 pontos os limiares de Acerto Parcial e de Acerto Total da defesa dele.
 
 #### Etapa IV — Sobrevivência Indomável
 
-- **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 3.
-- **Ativação / Reação:** Como Reação ao sofrer dano ou ser alvo de um efeito debilitante, você pode gastar 1 Ímpeto para receber Escudo Temporário igual a Constituição + maior entre Presença e Espírito + Etapa antes que o dano seja aplicado, além de ignorar as penalidades de uma condição física ou mental ativa até o final do seu próximo turno.
+- **Passivo:** Seu limite máximo de Pontos de Ímpeto sobe para 3.
+- **Passivo:** Como Reação ao sofrer dano ou ser alvo de um efeito debilitante, você pode gastar 1 Ímpeto para receber Escudo Temporário igual a Constituição + maior entre Presença e Espírito + Etapa antes que o dano seja aplicado, além de ignorar as penalidades de uma condição física ou mental ativa até o final do seu próximo turno.
 
 #### Etapa VI — Recusa ao Fim
 
-- **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 4 e você recebe +1 ponto em um Atributo à escolha.
-- **Ativação / Reação:** Uma vez por cena, você pode gastar 2 Ímpetos após ver o resultado de uma rolagem sua para elevar uma Falha para Acerto Parcial, ou um Acerto Parcial para Acerto Total. Alternativamente, no seu turno, você pode gastar 2 Ímpetos para executar uma Ação Principal adicional, usando-a para realizar um ataque básico ou lançar uma técnica de até Grau III sem pagar o custo-base de Karma dela (ampliações continuam pagas normalmente).
+- **Passivo:** Seu limite máximo de Pontos de Ímpeto sobe para 4 e você recebe +1 ponto em um Atributo à escolha.
+- **Passivo:** Uma vez por cena, você pode gastar 2 Ímpetos após ver o resultado de uma rolagem sua para elevar uma Falha para Acerto Parcial, ou um Acerto Parcial para Acerto Total, quando o teste possuir esses graus.
+- **Passivo:** Em testes binários contra CD ou em disputa oposta, converte uma Falha em Sucesso.
+- **Passivo:** Recusa ao Fim não altera uma Falha Crítica: 1 natural no dado selecionado.
+- **Passivo:** Alternativamente, no seu turno, você pode gastar 2 Ímpetos para executar uma Ação Principal adicional, usando-a para realizar um ataque básico ou lançar uma técnica de até Grau III sem pagar o custo-base de Karma dela (ampliações continuam pagas normalmente).
 
 ### Elfo
 
@@ -687,23 +716,28 @@ O arqueiro élfico lê a paisagem pelo que ela devolve: a sombra entre folhas, o
 
 #### Etapa I — Ressonância Élfica
 
-- **Aprimoramento / Passiva:** Você ignora terreno difícil natural e enxerga na penumbra sem penalidade.
-- **Ativação / Reação:** Ao se deslocar pelo menos 3 m e executar uma técnica ou ataque à distância no mesmo turno, você entra em Estado de Harmonia até o início do seu próximo turno. Enquanto estiver em Harmonia, o alcance de seus ataques à distância e técnicas aumenta em +3 m, e você recebe +1 na CA contra ataques à distância.
+- **Passivo:** Você ignora terreno difícil natural e enxerga na penumbra sem penalidade.
+- **Passivo:** Ao se deslocar pelo menos 3 m e executar uma técnica ou ataque à distância no mesmo turno, você entra em Estado de Harmonia até o início do seu próximo turno.
+- **Passivo:** Enquanto estiver em Harmonia, o alcance de seus ataques à distância e técnicas aumenta em +3 m, e você recebe +1 na CA contra ataques à distância.
 
 #### Etapa II — Refração do Véu Verde
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa.
-- **Ativação / Reação:** Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial. Ao executar uma técnica, você pode aproveitar o fluxo residual para remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m.
+- **Passivo:** Você recebe +1 ponto de treinamento em Canalização de Karma ou Pontaria, respeitando o teto da Etapa.
+- **Passivo:** Enquanto estiver em Harmonia, seus ataques e técnicas ignoram cobertura parcial.
+- **Passivo:** Ao executar uma técnica, você pode aproveitar o fluxo residual para remover uma condição ambiental ou elemental de si ou de um aliado a até 5 m.
 
 #### Etapa IV — Cálice de Luz Perene
 
-- **Aprimoramento / Passiva:** Seu Karma máximo aumenta em um valor igual à sua Etapa.
-- **Ativação / Reação:** Uma vez por rodada, enquanto estiver em Harmonia, ao obter um Acerto Total (ou resultado natural 17 ou superior no dado selecionado), você recupera 2 Karma. O ataque ou técnica também causa dano adicional igual a Intelecto + Etapa, do mesmo tipo do golpe, ao alvo original ou a um segundo inimigo a até 4 m dele.
+- **Passivo:** Seu Karma máximo aumenta em um valor igual à sua Etapa.
+- **Passivo:** Uma vez por rodada, enquanto estiver em Harmonia, ao obter um Acerto Total (ou resultado natural 17 ou superior no dado selecionado), você recupera 2 Karma.
+- **Passivo:** O ataque ou técnica também causa dano adicional igual a Intelecto + Etapa, do mesmo tipo do golpe, ao alvo original ou a um segundo inimigo a até 4 m dele.
 
 #### Etapa VI — Zênite Astral
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Agilidade, Intelecto ou Espírito, respeitando o teto do sistema. Enquanto estiver em Harmonia, recebe +1d20 em testes de Canalização de Karma, Controles elementais e Pontaria.
-- **Ativação / Reação:** Uma vez por cena, como Ação Livre, você pode entrar em Zênite Astral por 3 rodadas: suas técnicas custam 2 Karma a menos, até o mínimo de 1, e deixam um rastro luminoso. Um aliado que atravesse esse rastro recebe Vantagem (+1d20) no próximo teste de ataque, Reflexos ou Acrobacia que realizar até o fim do próximo turno dele.
+- **Passivo:** Você recebe +1 ponto em Agilidade, Intelecto ou Espírito.
+- **Passivo:** Enquanto estiver em Harmonia, recebe +1d20 em testes de Canalização de Karma, Controles elementais e Pontaria.
+- **Ação Livre:** Uma vez por cena, como Ação Livre, você pode entrar em Zênite Astral por 3 rodadas: suas técnicas custam 2 Karma a menos, até o mínimo de 1, e deixam um rastro luminoso.
+- **Passivo:** Um aliado que atravesse esse rastro recebe Vantagem (+1d20) no próximo teste de ataque, Reflexos ou Acrobacia que realizar até o fim do próximo turno dele.
 
 ### Anão
 
@@ -715,23 +749,30 @@ A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver 
 
 #### Etapa I — Fornalha de Inércia
 
-- **Aprimoramento / Passiva:** Você recebe +2 espaços de carga, e armaduras ou escudos pesados não reduzem seu deslocamento.
-- **Ativação / Reação:** Sempre que sofre um golpe que causaria dano, mesmo que absorvido por Resistência ou Escudo, ou termina seu turno tendo se deslocado no máximo 3 m, acumula 1 Carga de Bigorna, até o limite de 3. Cada carga concede +1 de Resistência contra dano Marcial, Elemental / Terra e Elemental / Fogo.
+- **Passivo:** Você recebe +2 espaços de carga, e armaduras ou escudos pesados não reduzem seu deslocamento.
+- **Passivo:** As Cargas de Bigorna começam em 0 no início de cada cena e voltam a 0 ao fim dela.
+- **Passivo:** Sempre que sofre um golpe que causaria dano, mesmo que absorvido por Resistência ou Escudo, ou termina seu turno tendo se deslocado no máximo 3 m, acumula 1 Carga de Bigorna, até o limite de 3.
+- **Passivo:** Cada carga concede +1 de Resistência contra dano Marcial, Elemental / Terra e Elemental / Fogo.
 
 #### Etapa II — Têmpera de Nidavellir
 
-- **Aprimoramento / Passiva:** Você recebe +1d20 em testes para resistir a empurrão, queda ou desarme. Escolha uma têmpera: +1 no dano-base de suas armas empunhadas ou +1 de Resistência Marcial enquanto utilizar armadura ou escudo.
-- **Ativação / Reação:** Ao acertar um ataque corpo a corpo ou técnica de curta distância, você pode descarregar todas as Cargas de Bigorna. Cada carga gasta acrescenta +1d6 ao dano; o alvo deve recuar 2 m ou perder 2 m de deslocamento por 1 rodada.
+- **Passivo:** Você recebe +1d20 em testes para resistir a empurrão, queda ou desarme.
+- **Passivo:** Escolha uma têmpera: +1 no dano-base de suas armas empunhadas ou +1 de Resistência Marcial enquanto utilizar armadura ou escudo.
+- **Passivo:** Ao acertar um ataque corpo a corpo ou técnica de curta distância, você pode descarregar todas as Cargas de Bigorna.
+- **Passivo:** Cada carga gasta acrescenta +1d6 ao dano; o alvo deve recuar 2 m ou perder 2 m de deslocamento por 1 rodada.
 
 #### Etapa IV — Reação Sísmica
 
-- **Aprimoramento / Passiva:** Sua Vida máxima aumenta em +2 pontos por Etapa.
-- **Ativação / Reação:** Uma vez por rodada, como Reação quando você ou um aliado a até 5 m for atingido por um ataque, você pode gastar 2 Cargas de Bigorna ou 2 Karma para liberar uma onda sísmica. O dano do ataque diminui em Constituição + Etapa, e o atacante fica Desequilibrado, sofrendo −2 na CA até o fim do próximo turno dele.
+- **Passivo:** Sua Vida máxima aumenta em +2 pontos por Etapa.
+- **Reação:** Uma vez por rodada, como Reação quando você ou um aliado a até 5 m for atingido por um ataque, você pode gastar 2 Cargas de Bigorna ou 2 Karma para liberar uma onda sísmica.
+- **Passivo:** O dano do ataque diminui em Constituição + Etapa, e o atacante fica Desequilibrado, sofrendo −2 na CA até o fim do próximo turno dele.
 
 #### Etapa VI — Monólito de Ferro
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição ou Força, respeitando o teto do sistema, e seu limite máximo de Cargas de Bigorna sobe para 4. Uma vez por cena, como Ação Livre ou Reação ao sofrer um Acerto Total, você assume o Monólito de Ferro por 3 rodadas.
-- **Ativação / Reação:** Nesse período, reduz à metade todo dano sofrido e fica imune a movimento forçado, Caído e Atordoado. O solo a até 4 m de você torna-se terreno difícil apenas para inimigos.
+- **Passivo:** Você recebe +1 ponto em Constituição ou Força, e seu limite máximo de Cargas de Bigorna sobe para 4.
+- **Ação Livre ou Reação:** Uma vez por cena, como Ação Livre ou Reação ao sofrer um Acerto Total, você assume o Monólito de Ferro por 3 rodadas.
+- **Passivo:** Nesse período, reduz à metade todo dano sofrido e fica imune a movimento forçado, Caído e Atordoado.
+- **Passivo:** O solo a até 4 m de você torna-se terreno difícil apenas para inimigos.
 
 ### Demi-humano
 
@@ -743,23 +784,28 @@ A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que
 
 #### Etapa I — Despertar de Aspecto
 
-- **Aprimoramento / Passiva:** Você recebe +1d20 em testes de Percepção auditiva ou olfativa. No início do seu turno, como Ação Livre, pode alternar entre três Aspectos Bestiais.
-- **Ativação / Reação:** No Aspecto da Garra, seus ataques desarmados causam 1d8 de dano Marcial (ou suas armas corpo a corpo somam +2 ao dano) e, em um Acerto Total, você impõe a condição Sangrando ao alvo. No Aspecto da Asa ou Salto, recebe +2 m de deslocamento, ignora quedas de até 10 m e cruza obstáculos e inimigos sem provocar Reações. No Aspecto da Carapaça ou Escama, recebe +1 na CA e Resistência 2 contra dano Elemental / Fogo, Água, Vento ou Terra, escolhido ao assumir o aspecto.
+- **Passivo:** Você recebe +1d20 em testes de Percepção auditiva ou olfativa.
+- **Ação Livre:** No início do seu turno, como Ação Livre, pode alternar entre três Aspectos Bestiais.
+- **Passivo:** No Aspecto da Garra, seus ataques desarmados causam 1d8 de dano Marcial (ou suas armas corpo a corpo somam +2 ao dano) e, em um Acerto Total, você impõe a condição Sangrando ao alvo.
+- **Passivo:** No Aspecto da Asa ou Salto, recebe +2 m de deslocamento, ignora quedas de até 10 m e cruza obstáculos e inimigos sem provocar Reações.
+- **Passivo:** No Aspecto da Carapaça ou Escama, recebe +1 na CA e Resistência 2 contra dano Elemental / Fogo, Água, Vento ou Terra, escolhido ao assumir o aspecto.
 
 #### Etapa II — Marca de Caça
 
-- **Aprimoramento / Passiva:** Uma vez por turno, como Ação Livre, você pode marcar uma criatura visível como Presa da Linhagem.
-- **Ativação / Reação:** Você sabe a direção dela mesmo através de cobertura ou furtividade. Se tiver percorrido pelo menos 3 m no turno, recebe +1d20 no primeiro ataque desse turno contra sua presa.
+- **Ação Livre:** Uma vez por turno, como Ação Livre, você pode marcar uma criatura visível como Presa da Linhagem.
+- **Passivo:** Você sabe a direção dela mesmo através de cobertura ou furtividade.
+- **Passivo:** Se tiver percorrido pelo menos 3 m no turno, recebe +1d20 no primeiro ataque desse turno contra sua presa.
 
 #### Etapa IV — Reflexo Selvagem
 
-- **Aprimoramento / Passiva:** Uma vez por rodada, quando um inimigo erra um ataque contra você ou tenta sair do seu alcance de contato, você pode usar sua Reação para avançar até 3 m.
-- **Ativação / Reação:** Ao avançar, realize um ataque básico ou uma manobra de Derrubar ou Agarrar contra ele, sem custo de Karma.
+- **Reação:** Uma vez por rodada, quando um inimigo erra um ataque contra você ou tenta sair do seu alcance de contato, você pode usar sua Reação para avançar até 3 m.
+- **Passivo:** Ao avançar, realize um ataque básico ou uma manobra de Derrubar ou Agarrar contra ele, sem custo de Karma.
 
 #### Etapa VI — Forma Ancestral Quimérica
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Força, Agilidade ou Espírito, respeitando o teto do sistema.
-- **Ativação / Reação:** Uma vez por cena, como Ação Livre, manifesta a Forma Ancestral Quimérica por 3 rodadas. Durante esse período, mantém simultaneamente os três Aspectos Bestiais, soma um dado-base de dano aos ataques e técnicas ofensivas e recupera Espírito + Etapa de Vida no início de cada um desses três turnos.
+- **Passivo:** Você recebe +1 ponto em Força, Agilidade ou Espírito.
+- **Ação Livre:** Uma vez por cena, como Ação Livre, manifesta a Forma Ancestral Quimérica por 3 rodadas.
+- **Passivo:** Durante esse período, mantém simultaneamente os três Aspectos Bestiais, soma um dado-base de dano aos ataques e técnicas ofensivas e recupera Espírito + Etapa de Vida no início de cada um desses três turnos.
 
 ### Vampiro
 
@@ -771,24 +817,31 @@ Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas cois
 
 #### Etapa I — Predador de Sárkora e Reserva de Vitae
 
-- **Aprimoramento / Passiva:** Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m. Você precisa se alimentar de sangue periodicamente e é vulnerável à luz solar direta quando está sem proteção.
-- **Ativação / Reação:** Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante). Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae).
-- **Efeito e limites:** Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Sombra. Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.
+- **Passivo:** Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m.
+- **Passivo:** A Reserva de Vitae começa a sessão com 1 ponto; conserve seu saldo entre cenas até o descanso longo, respeitando o limite vigente.
+- **Passivo:** Ficar mais de 3 dias sem alimentar-se de sangue impõe −1d20 em todos os testes e impede recuperar Vitae; a partir de 7 dias, você fica Exausto até alimentar-se.
+- **Passivo:** Sob luz solar direta, sem cobertura ou traje fechado, você sofre Desvantagem em testes físicos e de Percepção, não pode regenerar nem usar Vitae e perde 2 pontos de Vida por rodada de exposição em combate ou por TE em viagem descoberta.
+- **Passivo:** Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante).
+- **Passivo:** Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae).
+- **Passivo:** Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Sombra.
+- **Passivo:** Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.
 
 #### Etapa II — Dízimo Carmesim e Olhar Hipnótico
 
-- **Aprimoramento / Passiva:** Ao declarar um ataque ou técnica ofensiva, você pode gastar 2 Vitae (ou sacrificar 4 pontos da própria Vida, apenas para amplificar o ataque, nunca para se curar) para receber +1d20 no teste de acerto e acrescentar +1d8 de dano ao golpe.
-- **Ativação / Reação:** Quando atinge uma criatura viva com esse ataque, você impõe a condição Sangrando; alternativamente, contra um alvo a até 6 m capaz de ver seus olhos, você pode impor Abalado até o fim do próximo turno dele (sustentado por sua Presença). Além disso, sua Mordida Vampírica contra alvos Sangrando ou Agarrados recupera +2 de Vida adicionais.
+- **Passivo:** Ao declarar um ataque ou técnica ofensiva, você pode gastar 2 Vitae (ou sacrificar 4 pontos da própria Vida, apenas para amplificar o ataque, nunca para se curar) para receber +1d20 no teste de acerto e acrescentar +1d8 de dano ao golpe.
+- **Passivo:** Quando atinge uma criatura viva com esse ataque, você impõe a condição Sangrando; alternativamente, contra um alvo a até 6 m capaz de ver seus olhos, você pode impor Abalado até o fim do próximo turno dele (sustentado por sua Presença).
+- **Passivo:** Além disso, sua Mordida Vampírica contra alvos Sangrando ou Agarrados recupera +2 de Vida adicionais.
 
 #### Etapa IV — Transfusão de Névoa Rubra
 
-- **Aprimoramento / Passiva:** Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Sombra, Elemental / Sangue ou efeitos necróticos.
-- **Ativação / Reação:** Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.
+- **Passivo:** Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Sombra, Elemental / Sangue ou efeitos necróticos.
+- **Reação:** Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações.
+- **Passivo:** Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.
 
 #### Etapa VI — Trono Imortal de Sárkora
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Presença, Agilidade ou Espírito.
-- **Ativação / Reação:** Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com Etapa × 4 pontos de Vida, encerrando todas as condições físicas de imobilização e sangramento sobre você.
+- **Passivo:** Você recebe +1 ponto em Presença, Agilidade ou Espírito.
+- **Passivo:** Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com Etapa × 4 pontos de Vida, encerrando todas as condições físicas de imobilização e sangramento sobre você.
 
 ### Demônio
 
@@ -800,23 +853,26 @@ Diante de Aqueronte, até o silêncio tem cláusulas. O inimigo marcado pode esc
 
 #### Etapa I — Sangue da Marca e Selo de Coação
 
-- **Aprimoramento / Passiva:** Você enxerga na escuridão plena, possui Resistência 3 contra dano Elemental / Fogo e calor ambiental, e sua fisiologia de Aqueronte possui Tolerância à Marca: a CD de todos os seus testes de Controle da Corrupção é reduzida em 1 ponto (mínimo CD 10). Selo de Coação: Uma vez por turno, ao atingir um inimigo com um ataque ou técnica (ou como Ação Livre pagando 1 Karma para encarar um alvo visível a até 10 m), você grava nele um Selo de Coação até o início do seu próximo turno.
-- **Ativação / Reação:** Se o inimigo selado realizar um ataque ou técnica que não inclua você entre os alvos, o selo queima de dentro para fora e causa a ele dano Corrupto (ou Mental) igual a Presença + Etapa; se o inimigo selado atacar você, seu próximo teste de ataque ou técnica contra ele até o fim do seu próximo turno recebe +1d20. Ao realizar esse revide contra o alvo selado, você pode pagar 2 Karma ou assumir 1 Carga Temporária de Corrupção para alimentar o golpe e acrescentar +1d8 de dano Corrupto ao resultado.
+- **Passivo:** Você enxerga na escuridão plena, possui Resistência 3 contra dano Elemental / Fogo e calor ambiental, e sua fisiologia de Aqueronte possui Tolerância à Marca: a CD de todos os seus testes de Controle da Corrupção é reduzida em 1 ponto (mínimo CD 10).
+- **Ação Livre:** Selo de Coação: Uma vez por turno, ao atingir um inimigo com um ataque ou técnica (ou como Ação Livre pagando 1 Karma para encarar um alvo visível a até 10 m), você grava nele um Selo de Coação até o início do seu próximo turno.
+- **Passivo:** Se o inimigo selado realizar um ataque ou técnica que não inclua você entre os alvos, o selo queima de dentro para fora e causa a ele dano Corrupto (ou Mental) igual a Presença + Etapa; se o inimigo selado atacar você, seu próximo teste de ataque ou técnica contra ele até o fim do seu próximo turno recebe +1d20.
+- **Passivo:** Ao realizar esse revide contra o alvo selado, você pode pagar 2 Karma ou assumir 1 Carga Temporária de Corrupção para alimentar o golpe e acrescentar +1d8 de dano Corrupto ao resultado.
 
 #### Etapa II — Fornalha de Rancor e Pacto da Marca
 
-- **Aprimoramento / Passiva:** Contra alvos sob o seu Selo de Coação, Abalados ou com Cargas/Efeitos de Corrupção, seus ataques e técnicas tratam a CA do alvo como 1 ponto menor, e a primeira técnica ofensiva que você lançar contra o alvo selado em cada turno custa 1 Karma a menos (mínimo 1).
-- **Ativação / Reação:** Além disso, uma vez por rodada, ao executar uma técnica da Matriz Corrupta (ou ao usar Ampliação Corrompida), você reduz em 2 pontos a perda direta de Vida cobrada pelo risco da matriz; enquanto você possuir ao menos 1 Carga de Corrupção (efetiva ou temporária), seus ataques contra alvos selados ignoram 2 pontos de Resistência.
+- **Passivo:** Contra alvos sob o seu Selo de Coação, Abalados ou com Cargas/Efeitos de Corrupção, seus ataques e técnicas tratam a CA do alvo como 1 ponto menor, e a primeira técnica ofensiva que você lançar contra o alvo selado em cada turno custa 1 Karma a menos (mínimo 1).
+- **Passivo:** Além disso, uma vez por rodada, ao executar uma técnica da Matriz Corrupta (ou ao usar Ampliação Corrompida), você reduz em 2 pontos a perda direta de Vida cobrada pelo risco da matriz; enquanto você possuir ao menos 1 Carga de Corrupção (efetiva ou temporária), seus ataques contra alvos selados ignoram 2 pontos de Resistência.
 
 #### Etapa IV — Jurisdição dos Sete Círculos
 
-- **Aprimoramento / Passiva:** Você recebe +1d20 em testes de Controle da Corrupção, Intimidação e Comunhão Divina.
-- **Ativação / Reação:** Uma vez por rodada, quando um inimigo sob o seu Selo de Coação falha em um teste de resistência ou sofre um Acerto Total seu, você colhe o tributo do pacto: recupera 2 Karma, recebe Escudo Temporário igual a Presença + Etapa e pode dissipar 1 Carga Temporária de Corrupção de si mesmo.
+- **Passivo:** Você recebe +1d20 em testes de Controle da Corrupção, Intimidação e Comunhão Divina.
+- **Passivo:** Uma vez por rodada, quando um inimigo sob o seu Selo de Coação falha em um teste de resistência ou sofre um Acerto Total seu, você colhe o tributo do pacto: recupera 2 Karma, recebe Escudo Temporário igual a Presença + Etapa e pode dissipar 1 Carga Temporária de Corrupção de si mesmo.
 
 #### Etapa VI — Soberania de Aqueronte
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Presença, Espírito ou Força.
-- **Ativação / Reação:** Uma vez por cena, como Ação Livre pagando 4 Karma (ou assumindo 1 Carga Efetiva de Corrupção), você manifesta sua aura soberana em um raio de 6 m por 3 rodadas: inimigos na área recebem automaticamente o Selo de Coação, sofrem -1d20 em testes de resistência mental ou espiritual e têm o limiar de Acerto Total reduzido em 1 a seu favor. Enquanto a aura estiver ativa, uma vez por turno, você pode pagar 2 Karma ou 1 Carga Temporária de Corrupção para acrescentar um dado-base adicional de dano Corrupto a uma técnica de Grau III ou superior contra um alvo selado.
+- **Passivo:** Você recebe +1 ponto em Presença, Espírito ou Força.
+- **Ação Livre:** Uma vez por cena, como Ação Livre pagando 4 Karma (ou assumindo 1 Carga Efetiva de Corrupção), você manifesta sua aura soberana em um raio de 6 m por 3 rodadas: inimigos na área recebem automaticamente o Selo de Coação, sofrem -1d20 em testes de resistência mental ou espiritual e têm o limiar de Acerto Total reduzido em 1 a seu favor.
+- **Passivo:** Enquanto a aura estiver ativa, uma vez por turno, você pode pagar 2 Karma ou 1 Carga Temporária de Corrupção para acrescentar um dado-base adicional de dano Corrupto a uma técnica de Grau III ou superior contra um alvo selado.
 
 ### Ghoul
 
@@ -828,23 +884,28 @@ O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o ras
 
 #### Etapa I — Voracidade Carmesim
 
-- **Aprimoramento / Passiva:** Suas garras e presas são armas naturais de contato que causam 1d8 de dano Marcial e utilizam Luta.
-- **Ativação / Reação:** Você fareja sangue e criaturas feridas a até 12 m, mesmo que estejam invisíveis ou ocultas por fumaça. Ao causar dano de contato ou consumir sangue ou biomassa com uma Ação de Movimento, entra em Estado de Caça pela cena e encerra Sangrando em si mesmo.
+- **Passivo:** Suas garras e presas são armas naturais de contato que causam 1d8 de dano Marcial e utilizam Luta.
+- **Passivo:** Você fareja sangue e criaturas feridas a até 12 m, mesmo que estejam invisíveis ou ocultas por fumaça.
+- **Movimento:** Ao causar dano de contato ou consumir sangue ou biomassa com uma Ação de Movimento, entra em Estado de Caça pela cena e encerra Sangrando em si mesmo.
 
 #### Etapa II — Órgão Predatório
 
-- **Aprimoramento / Passiva:** Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma. No início de seu turno, escolha uma forma.
-- **Ativação / Reação:** Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo e Resistência 2 contra dano Marcial. Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10.
+- **Passivo:** Enquanto estiver em Estado de Caça, você pode manifestar o Órgão Predatório sem custo na primeira vez da cena; cada reativação custa 2 Karma.
+- **Passivo:** No início de seu turno, escolha uma forma.
+- **Passivo:** Na Forma de Couraça, você recebe +1d20 em testes de Luta e Atletismo e Resistência 2 contra dano Marcial.
+- **Passivo:** Na Forma de Lâmina, suas armas naturais alcançam até 3 m e seu dano-base passa a ser 1d10.
 
 #### Etapa IV — Regeneração Celular Voraz
 
-- **Aprimoramento / Passiva:** Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição (sem somar a Etapa).
-- **Ativação / Reação:** Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno. Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno.
+- **Passivo:** Enquanto seu Órgão Predatório estiver ativo, uma vez por rodada, ao obter um Acerto Total com um ataque ou técnica de contato contra uma criatura viva, você recupera pontos de Vida iguais a Constituição (sem somar a Etapa).
+- **Passivo:** Qualquer excedente além da Vida máxima torna-se Escudo Temporário até o fim do seu próximo turno.
+- **Passivo:** Se o alvo estiver Sangrando, Caído ou abaixo de metade da Vida, o golpe causa +1d8 de dano e impede que ele recupere Vida até o início do seu próximo turno.
 
 #### Etapa VI — Apogeu da Fome
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, respeitando o teto do sistema, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo.
-- **Ativação / Reação:** Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.
+- **Passivo:** Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo.
+- **Reação:** Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas.
+- **Passivo:** Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.
 
 ### Tritão
 
@@ -856,23 +917,28 @@ As fossas ensinam a respirar sob um peso que partiria um casco. Mesmo em terra s
 
 #### Etapa I — Pressão Oceânica
 
-- **Aprimoramento / Passiva:** Você respira na água e no ar, possui deslocamento de natação pleno e Resistência 3 contra dano Elemental / Água / Subdobras.
-- **Ativação / Reação:** Mesmo em terra seca, condensa a umidade ao redor do corpo. Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite empurrar o alvo atingido em 2 m ou criar um efeito hidrostático local, sem conceder deslocamento adicional.
+- **Passivo:** Você respira na água e no ar, possui deslocamento de natação pleno e Resistência Alta (3) contra dano Elemental / Água.
+- **Passivo:** Contra uma subdobra, aplique metade da maior Resistência parental, arredondada para baixo: essa proteção concede Resistência 1 contra Gelo ou Vapor, se nenhuma outra proteção parental for maior.
+- **Passivo:** Mesmo em terra seca, condensa a umidade ao redor do corpo.
+- **Passivo:** Sempre que realiza um ataque ou técnica, gera um Pulso de Maré que permite empurrar o alvo atingido em 2 m ou criar um efeito hidrostático local, sem conceder deslocamento adicional.
 
 #### Etapa II — Manto de Correnteza
 
-- **Aprimoramento / Passiva:** Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações.
-- **Ativação / Reação:** Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno. Se utilizar uma técnica de Água / Subdobras, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica.
+- **Passivo:** Você recebe +1 na CA contra ataques à distância e +1d20 em testes para escapar de agarrões ou imobilizações.
+- **Passivo:** Uma vez por rodada, seu Pulso de Maré pode reduzir em 2 m o deslocamento do alvo atingido até o início do seu próximo turno.
+- **Passivo:** Se utilizar uma técnica de Água / Subdobras, pode impor Lento ou Enraizado, conforme os efeitos previstos na técnica.
 
 #### Etapa IV — Implosão de Fossa
 
-- **Aprimoramento / Passiva:** Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo.
-- **Ativação / Reação:** O dano sofrido diminui em Constituição, e um jato pressurizado empurra o atacante em 2 m, sem causar dano.
+- **Reação:** Uma vez por rodada, como Reação ao sofrer um ataque corpo a corpo ou técnica, você pode gastar 2 Karma para comprimir a pressão ao redor do corpo.
+- **Passivo:** O dano sofrido diminui em Constituição, e um jato pressurizado empurra o atacante em 2 m, sem causar dano.
 
 #### Etapa VI — Soberano do Leviatã
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Espírito, respeitando o teto do sistema. Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas.
-- **Ativação / Reação:** Aliados na área recebem Resistência 3 exclusivamente contra dano Elemental / Fogo; inimigos sofrem −2 na CA contra seus ataques. Durante a manifestação, suas técnicas de Água / Subdobras ou Marcial causam um dado-base adicional de dano.
+- **Passivo:** Você recebe +1 ponto em Constituição, Força ou Espírito.
+- **Ação Livre:** Uma vez por cena, como Ação Livre, cria uma zona de Pressão de Fossa Marinha de 6 m de raio por 3 rodadas.
+- **Passivo:** Aliados na área recebem Resistência 3 exclusivamente contra dano Elemental / Fogo; inimigos sofrem −2 na CA contra seus ataques.
+- **Passivo:** Durante a manifestação, suas técnicas de Água / Subdobras ou Marcial causam um dado-base adicional de dano.
 
 ### Abissal
 
@@ -884,23 +950,30 @@ Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar 
 
 #### Etapa I — Fenda de Horizonte
 
-- **Aprimoramento / Passiva:** Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m.
-- **Ativação / Reação:** O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora. Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.
+- **Passivo:** Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental.
+- **Movimento:** Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m.
+- **Passivo:** O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora.
+- **Passivo:** Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.
 
 #### Etapa II — Passo de Fresta
 
-- **Aprimoramento / Passiva:** Uma vez por rodada, pagando 3 de Karma por uso e consumindo uma Ação de Movimento ou uma Reação, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações.
-- **Ativação / Reação:** Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno.
+- **Movimento:** Uma vez por rodada, pagando 3 de Karma por uso e consumindo uma Ação de Movimento ou uma Reação, você pode trocar de lugar com sua Âncora do Vazio sem provocar Reações.
+- **Passivo:** Inimigos adjacentes ao ponto de chegada sofrem −1 na CA até o fim do seu turno.
 
 #### Etapa IV — Dobra de Singularidade
 
-- **Aprimoramento / Passiva:** Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda.
-- **Ativação / Reação:** Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado.
+- **Reação:** Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda.
+- **Passivo:** Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio.
+- **Passivo:** Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado.
 
 #### Etapa VI — Horizonte de Eventos
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Espírito, Intelecto ou Presença, respeitando o teto do sistema, e pode manter duas Âncoras do Vazio simultaneamente. Uma vez por cena, como Ação Livre, conecta as âncoras em uma Zona de Singularidade por 3 rodadas.
-- **Ativação / Reação:** Uma vez por turno, pode se teleportar entre elas por até 3 m e recebe +1d20 nos testes de técnicas. Um inimigo que tente sair do espaço entre as âncoras sofre 2d10 de dano Mental e tem seu deslocamento reduzido à metade.
+- **Passivo:** Você recebe +1 ponto em Espírito, Intelecto ou Presença, e pode manter duas Âncoras do Vazio simultaneamente.
+- **Ação Livre:** Uma vez por cena, como Ação Livre, conecta as âncoras em uma Zona de Singularidade por 3 rodadas.
+- **Passivo:** A zona é uma faixa de 2 m de largura entre as âncoras; com três ou mais âncoras autorizadas por outro efeito, delimite um perímetro fechado.
+- **Passivo:** Uma vez por turno, pode se teleportar entre elas por até 3 m e recebe +1d20 nos testes de técnicas.
+- **Passivo:** Um inimigo que tente sair da zona cruzando sua borda sofre automaticamente 2d10 de dano Mental, no máximo uma vez por turno; apenas Resistência contra dano Mental reduz esse dano, sem teste para evitá-lo.
+- **Passivo:** O inimigo também tem seu deslocamento reduzido à metade.
 
 ### Personagens de outras linhagens
 
@@ -946,7 +1019,7 @@ Uma habilidade fixa não recebe um Grau por comparação com sua aparência. Des
 
 Um efeito automático não exige rolagem e não pode obter crítico. Quando houver teste, use o Atributo, a Perícia e a defesa indicados no bloco. Perícia 0 e Atributo 0 conservam suas regras. O bônus Analítico só entra numa abordagem mental efetivamente regida por Intelecto; não é somado a dano, cura ou escudo.
 
-As CDs fixas próprias deste capítulo são 10, 14, 18 e 22. Testes contra CD têm sucesso ao atingir ou superar o valor indicado; abaixo dele, falham. Testes opostos são vencidos pelo maior resultado, e empate preserva o defensor. Ataques usam CA: total ao igualar ou superar a CA, parcial da metade da CA arredondada para baixo até CA − 1, e falha abaixo dessa faixa. Não crie um parcial em um teste oposto apenas porque a habilidade possui uma versão de ataque.
+As CDs fixas próprias deste capítulo são 10, 14, 18 e 22. Testes contra CD têm sucesso ao atingir ou superar o valor indicado; abaixo dele, falham. Testes opostos são vencidos pelo maior resultado, e empate preserva o defensor. Ataques usam CA: resultado acima da CA Total é Acerto Total; entre o limiar Parcial (metade da CA arredondada para baixo) e CA − 1 é Parcial; abaixo do limiar é Falha. Ao igualar a CA Total, compare o valor do Atributo regente do ataque com o regente da CA do defensor (Agilidade ou Constituição registrado na ficha): atacante maior produz Total; defensor maior ou igual produz Parcial. Não crie um parcial em um teste oposto apenas porque a habilidade possui uma versão de ataque.
 
 Um acerto só ativa habilidades depois de resolvidas as defesas que possam evitá-lo. A menos que o texto exija dano efetivo, parcial e total contam como acerto mesmo quando a Resistência absorve o dano. Evasão bem-sucedida não conta. Efeitos acrescentados a um ataque entram antes da divisão do parcial; dados adicionais não são multiplicados por crítico. No parcial de um ataque, arredonde o dano dividido para baixo. Resistência e reduções aplicadas depois ainda podem levá-lo a 0.
 
@@ -999,11 +1072,11 @@ Uso: passivo, sem Karma e sem preparação. Três vezes por cena, no próprio tu
 
 **Uso:** Ação Livre, 3 Karma, uma vez por rodada. Preparação e alvo: nenhuma; afeta você. Declare uma Perícia e a adaptação que pretende realizar antes do teste.
 
-Resolução: escolha uma opção. Se a Perícia estiver em 0, trate-a como nível 1 até o início do seu próximo turno, usando a reserva normal e +2 de treinamento. Se já for treinada, receba +1d20 no próximo teste com ela até esse mesmo prazo. A ativação é automática; o teste posterior usa sua própria CA, CD ou oposição. Atributo 0 mantém 1d20 −4. O treino temporário não ensina técnicas, concede fontes, satisfaz evolução ou altera a capacidade de invocações. Apenas uma adaptação desta habilidade fica ativa.
+Resolução: escolha uma opção. Se a Perícia estiver em 0, trate-a como nível 1 até o início do seu próximo turno, usando a reserva normal e +2 de treinamento. Se já for treinada, receba +1d20 no próximo teste com ela até esse mesmo prazo. A ativação é automática; o teste posterior usa sua própria CA, CD ou oposição. Com Atributo 0, aplique a regra geral: teste puro ou destreinado usa 1d20 −4; com treinamento, use 1d20 e seu bônus de treinamento. O treino temporário não ensina técnicas, concede fontes, satisfaz evolução ou altera a capacidade de invocações. Apenas uma adaptação desta habilidade fica ativa.
 
 #### Ampliação — Competência de Batalha
 
-uma vez por cena, pelo mesmo custo, escolha duas Perícias. Até o início do próximo turno, uma Perícia 0 é tratada como 1 e uma Perícia já treinada em 1 é tratada como 2, apenas nos testes. Perícias 2 ou 3 recebem +1d20 no primeiro teste de cada uma. Preserve as restrições de acesso.
+Uma vez por cena, pelo mesmo custo, escolha duas Perícias. Até o início do próximo turno, uma Perícia 0 é tratada como 1 e uma Perícia já treinada em 1 é tratada como 2, apenas nos testes. Perícias 2 ou 3 recebem +1d20 no primeiro teste de cada uma. Preserve as restrições de acesso.
 
 #### Habilidade 2 — Repelir
 
@@ -1017,13 +1090,13 @@ Uma vez por cena, depois de resolver a redução de dano, se Repelir evitar todo
 
 #### Habilidade 3 — Avanço Brutal
 
-**Uso:** Ação Livre, 6 Karma e sua Reação ainda disponível, uma vez por rodada. Preparação e alvo: nenhuma; você deve estar consciente e poder realizar uma Principal.
+**Uso:** Ação Livre (consome também sua Reação da rodada), 6 Karma, uma vez por rodada. Preparação e alvo: nenhuma; você deve estar consciente, poder realizar uma Principal e ter sua Reação disponível.
 
 Resolução: receba uma Principal adicional para usar imediatamente ou até o fim do turno. Ela pode atacar, executar uma técnica conhecida, realizar uma manobra ou outra ação normalmente permitida. Todos os custos dessa ação continuam sendo pagos. A ativação não exige teste; a ação concedida utiliza seu próprio teste. O benefício expira se não for utilizado e não concede Movimento, Extra ou outra Reação. Se já recebeu uma Principal adicional naquele turno, não pode ativar Avanço Brutal.
 
 #### Ampliação — Ruptura da Linha
 
-Uma vez por cena, ao ativar Avanço Brutal, pague 4 Karma em vez de 6 e preserve a Reação exigida. Antes da Principal adicional, avance até 2 m por uma rota livre. O primeiro teste dessa Principal recebe +1d20. A ampliação não concede outra ação, não ignora perigos nem aumenta o alcance de uma arma; todos os custos da Principal adicional continuam sendo pagos.
+Uma vez por cena, ao ativar Avanço Brutal, pague 4 Karma em vez de 6 e preserve a Reação. Ela ainda precisa estar disponível na ativação, mas não é consumida e pode ser usada normalmente depois. Antes da Principal adicional, avance até 2 m por uma rota livre. O primeiro teste dessa Principal recebe +1d20. A ampliação não concede outra ação, não ignora perigos nem aumenta o alcance de uma arma; todos os custos da Principal adicional continuam sendo pagos.
 
 ### Progressão de status e desenvolvimento
 
@@ -1065,7 +1138,7 @@ Punho em Suspenso: uma vez por rodada, quando um inimigo percebido em seu alcanc
 
 #### Ampliação — Punhos Demolidores
 
-o dano-base passa a 1d10 e o adicional a 1d6. O ataque que consumir o benefício adicional também ignora 2 pontos de Resistência física. Não reduz CA, não ignora imunidade e não repete o benefício nos demais ataques.
+O dano-base passa a 1d10 e o adicional a 1d6. O ataque que consumir o benefício adicional também ignora 2 pontos de Resistência física. Não reduz CA, não ignora imunidade e não repete o benefício nos demais ataques.
 
 #### Habilidade 2 — Sequência Brutal
 
@@ -1075,7 +1148,7 @@ Resolução: gaste todos os pontos escolhidos antes de rolar e realize um ataque
 
 #### Ampliação — Combinação Crescente
 
-cada ataque adicional acertado recebe +1d4 de dano antes do parcial. Se ao menos um deles obtiver total, recupere 1 Impulso depois de toda a sequência. Essa recuperação acontece no máximo uma vez por uso e não permite acrescentar golpes à sequência já encerrada.
+Cada ataque adicional acertado recebe +1d4 de dano antes do parcial. Se ao menos um deles obtiver total, recupere 1 Impulso depois de toda a sequência. Essa recuperação acontece no máximo uma vez por uso e não permite acrescentar golpes à sequência já encerrada.
 
 #### Habilidade 3 — Golpe de Pressão
 
@@ -1085,7 +1158,7 @@ Resolução: acrescente 1d6 de impacto ao dano desse ataque. No parcial, divida 
 
 #### Ampliação — Ruptura Nervosa
 
-o adicional passa a 1d8 e a resistência usa CD 22. Na falha, além da Reação, o alvo perde 2 metros de Deslocamento até o fim do próximo turno dele, mínimo 1 antes de outras condições. O golpe continua sem modificar CA.
+O adicional passa a 1d8 e a resistência usa CD 22. Na falha, além da Reação, o alvo perde 2 metros de Deslocamento até o fim do próximo turno dele, mínimo 1 antes de outras condições. O golpe continua sem modificar CA.
 
 ### Progressão de status e desenvolvimento
 
@@ -1135,7 +1208,7 @@ Resolução: faça imediatamente um ataque básico com Força ou Agilidade + Lut
 
 #### Ampliação — Resposta Perfeita
 
-uma vez por cena, ao declarar uma Evasão contra ataque corpo a corpo, pague 4 Karma para preparar a resposta. Se a Evasão vencer e o inimigo continuar ao alcance, execute Contra Golpe com a mesma Reação. Se falhar, não há ataque de resposta e o Karma permanece gasto. É uma exceção expressa que não concede uma Reação adicional.
+Uma vez por cena, ao declarar uma Evasão contra ataque corpo a corpo, pague 4 Karma para preparar a resposta. Se a Evasão vencer e o inimigo continuar ao alcance, execute Contra Golpe com a mesma Reação. Se falhar, não há ataque de resposta e o Karma permanece gasto. É uma exceção expressa que não concede uma Reação adicional.
 
 #### Habilidade 3 — Estilo Impecável
 
@@ -1185,7 +1258,7 @@ Resolução: faça Presença ou Força + Intimidação contra Presença + Lidera
 
 #### Ampliação — Desafio da Muralha
 
-pelo mesmo custo, desafie até três criaturas a até 15 metros. Faça uma rolagem de Intimidação e uma resistência por alvo. Contra ataques dos que perderem, você recebe +1 CA durante a provocação. Afetar vários alvos não concede Reações adicionais.
+Pelo mesmo custo, desafie até três criaturas a até 15 metros. Faça uma rolagem de Intimidação e uma resistência por alvo. Contra ataques dos que perderem, você recebe +1 CA durante a provocação. Afetar vários alvos não concede Reações adicionais.
 
 #### Habilidade 2 — Interceptação
 
@@ -1195,7 +1268,7 @@ Resolução: mova-se até 3 m pela rota, contando terreno difícil nesse limite,
 
 #### Ampliação — Interposição Absoluta
 
-receba +2 CA contra o ataque interceptado e reduza em 2 seu dano final antes do escudo. Após a resolução, o protegido pode recuar 2 metros por rota livre sem provocar reações de movimento do agressor; esse recuo é opcional e não concede ataque.
+Receba +2 CA contra o ataque interceptado e reduza em 2 seu dano final antes do escudo. Após a resolução, o protegido pode recuar 2 metros por rota livre sem provocar reações de movimento do agressor; esse recuo é opcional e não concede ataque.
 
 #### Habilidade 3 — Inabalável
 
@@ -1205,7 +1278,7 @@ Duração: três rodadas, contando a ativação. Receba uma reserva de proteçã
 
 #### Ampliação — Corpo Fortaleza
 
-a reserva inicial aumenta em 10 pontos, o limite de absorção passa a 7 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena.
+A reserva inicial aumenta em 10 pontos, o limite de absorção passa a 7 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena.
 
 ### Progressão de status e desenvolvimento
 
@@ -1245,7 +1318,7 @@ Escolha um gatilho concreto: uma criatura cruzar uma passagem delimitada, sair d
 
 #### Ampliação — Mira Persistente
 
-pode pagar 6 Karma em vez de 2 para manter a preparação por três rodadas, contando a ativação. Continua reservando um único disparo e não exige novas ações para manter a preparação; executar o disparo exige uma Reação disponível. No disparo, se acertar, acrescente 1d6 de dano antes do parcial; esse dado não dobra no crítico. O gatilho continua sendo executado somente fora do seu turno e todas as condições de encerramento permanecem. Não recebe um novo disparo por rodada.
+Pode pagar 6 Karma em vez de 2 para manter a preparação por três rodadas, contando a ativação. Continua reservando um único disparo e não exige novas ações para manter a preparação; executar o disparo exige uma Reação disponível. No disparo, se acertar, acrescente 1d6 de dano antes do parcial; esse dado não dobra no crítico. O gatilho continua sendo executado somente fora do seu turno e todas as condições de encerramento permanecem. Não recebe um novo disparo por rodada.
 
 #### Habilidade 2 — Passo Fantasma
 
@@ -1255,7 +1328,7 @@ Resolução: mova até metade do seu Deslocamento, arredondada para baixo, sem p
 
 #### Ampliação — Reposicionamento Invisível
 
-mova até seu Deslocamento completo. Se terminar em cobertura ou ocultação apropriada, faça imediatamente Agilidade + Furtividade contra Intelecto ou Espírito + Percepção de quem tenta acompanhá-lo. Quem perder deixa de conhecer sua posição; empate favorece o observador. Essa tentativa não custa outra ação.
+Mova até seu Deslocamento completo. Se terminar em cobertura ou ocultação apropriada, faça imediatamente Agilidade + Furtividade contra Intelecto ou Espírito + Percepção de quem tenta acompanhá-lo. Quem perder deixa de conhecer sua posição; empate favorece o observador. Essa tentativa não custa outra ação.
 
 #### Habilidade 3 — Caçador Experiente
 
@@ -1265,7 +1338,7 @@ Resolução: durante três rodadas, localize a posição de criaturas na área m
 
 #### Ampliação — Predador do Horizonte
 
-alcance de 30 metros. Uma vez por rodada, o primeiro ataque de Pontaria que acertar uma criatura localizada recebe +1d6 adicional e ignora 2 de Resistência física. Os benefícios não removem cobertura total nem concedem visão além dos 30 metros.
+Alcance de 30 metros. Uma vez por rodada, o primeiro ataque de Pontaria que acertar uma criatura localizada recebe +1d6 adicional e ignora 2 de Resistência física. Os benefícios não removem cobertura total nem concedem visão além dos 30 metros.
 
 ### Progressão de status e desenvolvimento
 
@@ -1305,7 +1378,7 @@ Resolução: mova até seu Deslocamento e faça Agilidade + Furtividade com +1d2
 
 #### Ampliação — Ausência Perfeita
 
-durante a mesma passagem, pode cruzar um trecho aberto de até 2 metros entre dois pontos de ocultação. Observadores recebem Desvantagem para opor Percepção a esse uso. Você ainda precisa vencer a oposição e terminar numa posição em que possa se esconder.
+Durante a mesma passagem, pode cruzar um trecho aberto de até 2 metros entre dois pontos de ocultação. Observadores recebem Desvantagem para opor Percepção a esse uso. Você ainda precisa vencer a oposição e terminar numa posição em que possa se esconder.
 
 #### Habilidade 2 — Roubo Rápido
 
@@ -1315,7 +1388,7 @@ Resolução: faça Agilidade + Ladinagem contra Agilidade + Reflexos do alvo. Ao
 
 #### Ampliação — Mãos Impossíveis
 
-pode tentar retirar também um item leve empunhado ou vestido de modo acessível, como anel, foco pequeno ou adaga. Nesse caso, o defensor escolhe Força + Luta ou Agilidade + Reflexos. A habilidade não arranca membro, armadura ou item cuja remoção exija desmontagem; uma arma retirada ainda pode ser substituída normalmente pelo adversário.
+Pode tentar retirar também um item leve empunhado ou vestido de modo acessível, como anel, foco pequeno ou adaga. Nesse caso, o defensor escolhe Força + Luta ou Agilidade + Reflexos. A habilidade não arranca membro, armadura ou item cuja remoção exija desmontagem; uma arma retirada ainda pode ser substituída normalmente pelo adversário.
 
 #### Habilidade 3 — Arrombador
 
@@ -1325,7 +1398,7 @@ Resolução: receba +2d20 em Agilidade + Ladinagem. Use CD 10 para mecanismo sim
 
 #### Ampliação — Chave Universal
 
-depois de abrir, desarmar ou sabotar um mecanismo com sucesso usando Arrombador, escolha uma aplicação compatível com sua construção, sem outra ação: conservar a aparência externa intacta, preparar o mecanismo para voltar a fechar ou travar mediante um gatilho físico simples declarado, ou retirar uma peça pequena para impedir seu funcionamento até ser reposta ou reparada. Não cria controle remoto ou inteligência. Conservar a aparência não torna a alteração indetectável: uma inspeção pertinente compara Investigação ao resultado original de Ladinagem. O gatilho precisa de componentes presentes e alcance físico; uma modificação que exija fabricação, explosivos ou trabalho prolongado conserva seus procedimentos normais. Mantém +2d20 e o custo de 1 Karma de Arrombador.
+Depois de abrir, desarmar ou sabotar um mecanismo com sucesso usando Arrombador, escolha uma aplicação compatível com sua construção, sem outra ação: conservar a aparência externa intacta, preparar o mecanismo para voltar a fechar ou travar mediante um gatilho físico simples declarado, ou retirar uma peça pequena para impedir seu funcionamento até ser reposta ou reparada. Não cria controle remoto ou inteligência. Conservar a aparência não torna a alteração indetectável: uma inspeção pertinente compara Investigação ao resultado original de Ladinagem. O gatilho precisa de componentes presentes e alcance físico; uma modificação que exija fabricação, explosivos ou trabalho prolongado conserva seus procedimentos normais. Mantém +2d20 e o custo de 1 Karma de Arrombador.
 
 ### Progressão de status e desenvolvimento
 
@@ -1365,7 +1438,7 @@ Resolução: a marca é automática e dura até o fim da cena. Seus ataques dire
 
 #### Ampliação — Sentença Preparada
 
-o primeiro ataque que acertar o marcado em cada rodada recebe +3 de dano no lugar do +1; os demais conservam +1. Depois de observá-lo por uma Principal sem atacá-lo, seu próximo teste contra ele até o fim do turno seguinte recebe +1d20. Essa observação não acumula consigo.
+O primeiro ataque que acertar o marcado em cada rodada recebe +3 de dano no lugar do +1; os demais conservam +1. Depois de observá-lo por uma Principal sem atacá-lo, seu próximo teste contra ele até o fim do turno seguinte recebe +1d20. Essa observação não acumula consigo.
 
 #### Habilidade 2 — Execução Silenciosa
 
@@ -1375,7 +1448,7 @@ Resolução: use Força ou Agilidade + Luta, ou Agilidade + Pontaria, contra CA.
 
 #### Ampliação — Golpe Irrecuperável
 
-o ataque ignora 5 de Resistência física. Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece.
+O ataque ignora 5 de Resistência física. Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece.
 
 #### Habilidade 3 — Passo Sombrio
 
@@ -1385,7 +1458,7 @@ Resolução: teleporte-se para esse ponto sem percorrer os espaços intermediár
 
 #### Ampliação — Travessia Noturna
 
-alcance de 15 m. Depois de chegar, receba +1d20 no próximo teste de Furtividade até o fim do turno. O benefício não se aplica a ataques, não concede Oculto automaticamente e não permite escolher um destino desconhecido. As demais condições e custos de Passo Sombrio permanecem.
+Alcance de 15 m. Depois de chegar, receba +1d20 no próximo teste de Furtividade até o fim do turno. O benefício não se aplica a ataques, não concede Oculto automaticamente e não permite escolher um destino desconhecido. As demais condições e custos de Passo Sombrio permanecem.
 
 ### Progressão de status e desenvolvimento
 
@@ -1427,7 +1500,7 @@ Intervenção Clínica: no mesmo atendimento, escolha uma complicação física 
 
 #### Ampliação — Tratamento Milagroso
 
-em sucesso, cure 2d8 + Constituição e encerre Sangramento comum. A falha, CD, ação, meia carga e limite de tratamento permanecem. Sangramento causado por Ferimento Grave pode retornar conforme sua fonte, porque o Ferimento não foi removido.
+Em sucesso, cure 2d8 + Constituição e encerre Sangramento comum. A falha, CD, ação, meia carga e limite de tratamento permanecem. Sangramento causado por Ferimento Grave pode retornar conforme sua fonte, porque o Ferimento não foi removido.
 
 #### Habilidade 2 — Atendimento de Emergência
 
@@ -1437,7 +1510,7 @@ Resolução: a intervenção é automática. Se estiver em 0 e ainda vivo, o ali
 
 #### Ampliação — Equipe de Emergência
 
-quando a mesma resolução atingir dois aliados elegíveis, pode atender ambos com uma Reação e um pagamento. Disponha 3d6 de escudo entre eles antes de rolar, ao menos um dado para cada. Cada um em 0 recebe 1 Vida. Se atender só um, ele recebe os três dados. Marque o uso por cena de cada beneficiário.
+Quando a mesma resolução atingir dois aliados elegíveis, pode atender ambos com uma Reação e um pagamento. Disponha 3d6 de escudo entre eles antes de rolar, ao menos um dado para cada. Cada um em 0 recebe 1 Vida. Se atender só um, ele recebe os três dados. Marque o uso por cena de cada beneficiário.
 
 #### Habilidade 3 — Interferência Protetora
 
@@ -1447,7 +1520,7 @@ Resolução: sem teste, reduza esse dano pela metade, arredondando para baixo. A
 
 #### Ampliação — Proteção Convertida
 
-depois de reduzir, role 2d6. O aliado recebe escudo temporário igual ao menor valor entre essa rolagem e o dano realmente evitado, até o início do próximo turno do Samaritano. Dano evitado 0 concede escudo 0. O recuo continua opcional e exige a Reação do protegido.
+Depois de reduzir, role 2d6. O aliado recebe escudo temporário igual ao menor valor entre essa rolagem e o dano realmente evitado, até o início do próximo turno do Samaritano. Dano evitado 0 concede escudo 0. O recuo continua opcional e exige a Reação do protegido.
 
 ### Progressão de status e desenvolvimento
 
@@ -1487,7 +1560,7 @@ Resolução: recupere automaticamente 2d6 + Espírito de Vida. Se o paciente est
 
 #### Ampliação — Toque de Renovação
 
-a cura-base passa a 3d8 + Espírito; o adicional por baixa Vida continua 1d6. Se restaurar pelo menos 10 Vida reais, pode remover um Ferimento Grave, no máximo uma vez por dia por paciente, compartilhando o limite de cura sobrenatural do Capítulo 7. Para essa remoção, a ampliação satisfaz a exigência de restauração de Grau III; isso não atribui Grau III aos demais usos da habilidade.
+A cura-base passa a 3d8 + Espírito; o adicional por baixa Vida continua 1d6. Se restaurar pelo menos 10 Vida reais, pode remover um Ferimento Grave, no máximo uma vez por dia por paciente, compartilhando o limite de cura sobrenatural do Capítulo 7. Para essa remoção, a ampliação satisfaz a exigência de restauração de Grau III; isso não atribui Grau III aos demais usos da habilidade.
 
 #### Habilidade 2 — Purificação
 
@@ -1497,7 +1570,7 @@ Resolução: escolha e remova até duas condições simples negativas do mesmo p
 
 #### Ampliação — Purificação Maior
 
-uma vez por cena, pelo mesmo custo, remova completamente uma condição grave de um alvo ou até três condições simples distribuídas entre até três criaturas a até 5 metros. A remoção completa ainda não destrói a fonte contínua. Exausto imposto como preço irremovível até descanso por uma regra específica respeita essa restrição.
+Uma vez por cena, pelo mesmo custo, remova completamente uma condição grave de um alvo ou até três condições simples distribuídas entre até três criaturas a até 5 metros. A remoção completa ainda não destrói a fonte contínua. Exausto imposto como preço irremovível até descanso por uma regra específica respeita essa restrição.
 
 #### Habilidade 3 — Restauração Revigorante
 
@@ -1507,7 +1580,7 @@ Resolução: role uma vez 2d8 + Espírito; cada alvo recupera esse valor de Vida
 
 #### Ampliação — Renascimento Coletivo
 
-a primeira cura passa a 3d8 + Espírito e a recuperação posterior a 2d6. Os mesmos três alvos, ação, custo, prazo e limite por beneficiário permanecem. Proteção Vital verifica cada recuperação efetiva respeitando seu próprio limite por rodada.
+A primeira cura passa a 3d8 + Espírito e a recuperação posterior a 2d6. Os mesmos três alvos, ação, custo, prazo e limite por beneficiário permanecem. Proteção Vital verifica cada recuperação efetiva respeitando seu próprio limite por rodada.
 
 ### Progressão de status e desenvolvimento
 
@@ -1547,7 +1620,7 @@ Resolução: faça Intelecto + Criação CD 14 para uma forma simples ou CD 18 p
 
 #### Ampliação — Transmutação Superior
 
-admite até 50 kg e dura até o fim da cena quando ativada em combate, ou até duas horas quando preparada fora dele. Com Criação 2 e acesso elemental pertinente, pode substituir o material por outro da mesma família e valor aproximado, CD 22, preservando massa. Permanência continua exigindo Etapa VII, Perícia apropriada 3 e uma técnica de Grau V com consequência; esta ampliação isolada não cria material permanente.
+Admite até 50 kg e dura até o fim da cena quando ativada em combate, ou até duas horas quando preparada fora dele. Com Criação 2 e acesso elemental pertinente, pode substituir o material por outro da mesma família e valor aproximado, CD 22, preservando massa. Permanência continua exigindo Etapa VII, Perícia apropriada 3 e uma técnica de Grau V com consequência; esta ampliação isolada não cria material permanente.
 
 #### Habilidade 2 — Síntese Alquímica
 
@@ -1569,7 +1642,7 @@ Encerramento: todos os modos dependem das runas, CA 14 e 10 Vida. Destruir as ru
 
 #### Ampliação — Transmutação em Cadeia
 
-mantenha até dois círculos. Ao criar um, pode pagar mais 2 Karma para repetir o mesmo modo numa área contígua no início do próximo turno, desde que haja matéria, superfície válida e uma vaga. A cópia ocupa essa vaga, exige seu próprio teste quando houver e conserva o término do original; não pode gerar outra cópia. Registre runas e Vida separadamente. Sobreposição não repete dano no mesmo alvo na rodada.
+Mantenha até dois círculos. Ao criar um, pode pagar mais 2 Karma para repetir o mesmo modo numa área contígua no início do próximo turno, desde que haja matéria, superfície válida e uma vaga. A cópia ocupa essa vaga, exige seu próprio teste quando houver e conserva o término do original; não pode gerar outra cópia. Registre runas e Vida separadamente. Sobreposição não repete dano no mesmo alvo na rodada.
 
 ### Progressão de status e desenvolvimento
 
@@ -1619,7 +1692,7 @@ Resolução: o campo possui uma reserva compartilhada de 10 + (3 × Etapa) ponto
 
 #### Ampliação — Bastião Cinético
 
-a reserva recebe +6 e, mediante preparação da oficina, o emissor recebe +4 CA e +4 Vida máxima, preservando dano existente. Aliados dentro recebem +1 CA contra ataques vindos de fora enquanto a reserva ainda tiver ao menos 1 ponto.
+A reserva recebe +6 e, mediante preparação da oficina, o emissor recebe +4 CA e +4 Vida máxima, preservando dano existente. Aliados dentro recebem +1 CA contra ataques vindos de fora enquanto a reserva ainda tiver ao menos 1 ponto.
 
 #### Habilidade 3 — Sobrecarga
 
@@ -1629,7 +1702,7 @@ Funciona mesmo sem conhecer Dispositivo Autoral ou Escudo Cinético: sua Oficina
 
 #### Ampliação — Sobrecarga Crítica
 
-no modo seguro, use os benefícios do modo forçado sem desgaste. No modo forçado, o ataque recebe +3 e +3d6, o Escudo Cinético até 16 pontos temporários, a ferramenta +5 no teste ou o manipulador capacidade de 10 espaços. O desgaste passa a 6 Vida física após resolver. Uma vez por cena, ao ativar uma Sobrecarga forçada, dispense esse desgaste. Mantém Extra, 4 Karma e todos os limites de operação, sem ataques adicionais.
+No modo seguro, use os benefícios do modo forçado sem desgaste. No modo forçado, o ataque recebe +3 e +3d6, o Escudo Cinético até 16 pontos temporários, a ferramenta +5 no teste ou o manipulador capacidade de 10 espaços. O desgaste passa a 6 Vida física após resolver. Uma vez por cena, ao ativar uma Sobrecarga forçada, dispense esse desgaste. Mantém Extra, 4 Karma e todos os limites de operação, sem ataques adicionais.
 
 ### Progressão dos projetos
 
@@ -1693,7 +1766,7 @@ Resolução: cada escolhido recebe +2 em um teste de ataque antes do início do 
 
 #### Ampliação — Marcha dos Heróis
 
-os três benefícios duram duas rodadas e cada um acrescenta também +1d20 ao ataque escolhido, respeitando o teto de dados. Ao receber a inspiração, cada aliado pode mover 2 metros por rota livre uma única vez, se estiver apto; esse deslocamento não concede imunidade a gatilhos de movimento.
+Os três benefícios duram duas rodadas e cada um acrescenta também +1d20 ao ataque escolhido, respeitando o teto de dados. Ao receber a inspiração, cada aliado pode mover 2 metros por rota livre uma única vez, se estiver apto; esse deslocamento não concede imunidade a gatilhos de movimento.
 
 #### Habilidade 2 — Sonata Calmante
 
@@ -1713,7 +1786,7 @@ Exige a atuação registrada e Extra nos turnos seguintes para manter; encerrar 
 
 #### Ampliação — Concerto Lendário
 
-duração de quatro rodadas e alcance de 30 m. Uma vez por ativação, ao escolher o movimento na ativação ou no início do turno, mantenha dois movimentos distintos até o início do próximo turno. Cada movimento conserva seus limites.
+Duração de quatro rodadas e alcance de 30 m. Uma vez por ativação, ao escolher o movimento na ativação ou no início do turno, mantenha dois movimentos distintos até o início do próximo turno. Cada movimento conserva seus limites.
 
 ### Progressão de status e desenvolvimento
 
@@ -1753,7 +1826,7 @@ Resolução: faça Espírito + Ocultismo contra Presença + Liderança ou Espír
 
 #### Ampliação — Maldição Persistente
 
-pague 5 Karma, a penalidade se torna −3 e duração de duas rodadas. O alvo pode gastar uma Principal para tentar romper, com a mesma combinação defensiva contra o resultado original registrado; igualdade ou resultado maior encerra. Use o resultado original registrado como CD, sem nova rolagem do Ocultista;
+Pague 5 Karma, a penalidade se torna −3 e duração de duas rodadas. O alvo pode gastar uma Principal para tentar romper, com a mesma combinação defensiva contra o resultado original registrado; igualdade ou resultado maior encerra. Use o resultado original registrado como CD, sem nova rolagem do Ocultista;
 
 #### Habilidade 2 — Correntes Espirituais
 
@@ -1763,7 +1836,7 @@ Resolução: faça Espírito + Ocultismo contra a CA do alvo. Total aplica Lento
 
 #### Ampliação — Cárcere Invisível
 
-pague 7 Karma e afete até dois alvos a até 5 metros um do outro, ambos no alcance. Faça uma rolagem de ataque comparada às duas CAs, com defesas individuais. Se pagar o preço corrompido, escolha um deles antes de rolar: num total contra ele, substitua Lento por Imobilizado até o início do próximo turno do Ocultista, voltando a Lento pelo tempo restante. O outro alvo não recebe Imobilizado.
+Pague 7 Karma e afete até dois alvos a até 5 metros um do outro, ambos no alcance. Faça uma rolagem de ataque comparada às duas CAs, com defesas individuais. Se pagar o preço corrompido, escolha um deles antes de rolar: num total contra ele, substitua Lento por Imobilizado até o início do próximo turno do Ocultista, voltando a Lento pelo tempo restante. O outro alvo não recebe Imobilizado.
 
 #### Habilidade 3 — Ritual Profano
 
@@ -1773,7 +1846,7 @@ Preparação: Controle da Corrupção 1, acesso à fonte e um foco pequeno, prep
 
 #### Ampliação — Condenação Profana
 
-o dano passa a 2d8 + Presença. No primeiro pulso que retirar Vida, o alvo faz Presença + Controle da Corrupção CD 18; falha acrescenta 1 Carga, sucesso não acrescenta. Quem não puder possuir Carga ignora apenas essa consequência. A tentativa acontece uma única vez por ritual, sem novo teste em cada pulso.
+O dano passa a 2d8 + Presença. No primeiro pulso que retirar Vida, o alvo faz Presença + Controle da Corrupção CD 18; falha acrescenta 1 Carga, sucesso não acrescenta. Quem não puder possuir Carga ignora apenas essa consequência. A tentativa acontece uma única vez por ritual, sem novo teste em cada pulso.
 
 ### Progressão de status e desenvolvimento
 
@@ -1813,7 +1886,7 @@ Resolução: por três rodadas, no primeiro ataque ou manobra do seu turno contr
 
 #### Ampliação — Caça Metódica
 
-duração até o fim da cena. O primeiro acerto total de cada rodada contra o Foco recebe +1d6 adicional e ignora 2 de Resistência pertinente ao ataque. Se o Foco tentar se ocultar, oponha Intelecto + Percepção à sua Furtividade, quando você ainda puder acompanhá-lo; a ampliação não enxerga através de cobertura total.
+Duração até o fim da cena. O primeiro acerto total de cada rodada contra o Foco recebe +1d6 adicional e ignora 2 de Resistência pertinente ao ataque. Se o Foco tentar se ocultar, oponha Intelecto + Percepção à sua Furtividade, quando você ainda puder acompanhá-lo; a ampliação não enxerga através de cobertura total.
 
 #### Habilidade 2 — Zona de Interdição
 
@@ -1823,7 +1896,7 @@ Resolução: instale a zona automaticamente por duas rodadas. A primeira vez em 
 
 #### Ampliação — Cerco Modular
 
-duração de três rodadas e CD 18. Numa falha, pode substituir os dois efeitos por Imobilizado até o fim do turno afetado. Uma vez por turno, com Extra, reposicione o centro até 3 metros em superfície válida e dentro do alcance; o movimento da área não gera teste imediato, que acontece no próximo gatilho normal. A linha de tiro pode ser reorientada. Uma armadilha exige alguém ao alcance capaz de movê-la ou um mecanismo de deslocamento registrado; a Extra não a teleporta nem concede alcance físico. Um selo conserva seus requisitos de fonte e superfície. Nenhum método atravessa cobertura total.
+Duração de três rodadas e CD 18. Numa falha, pode substituir os dois efeitos por Imobilizado até o fim do turno afetado. Uma vez por turno, com Extra, reposicione o centro até 3 metros em superfície válida e dentro do alcance; o movimento da área não gera teste imediato, que acontece no próximo gatilho normal. A linha de tiro pode ser reorientada. Uma armadilha exige alguém ao alcance capaz de movê-la ou um mecanismo de deslocamento registrado; a Extra não a teleporta nem concede alcance físico. Um selo conserva seus requisitos de fonte e superfície. Nenhum método atravessa cobertura total.
 
 #### Habilidade 3 — Interceptação Cirúrgica
 
@@ -1833,7 +1906,7 @@ Resolução: faça um ataque básico com a combinação normal da arma contra CA
 
 #### Ampliação — Supressão Perfeita
 
-limite de percepção de 30 metros, ainda respeitando a arma, e +1d20 no ataque. Num total contra ação hostil, além de Abalado, retire uma Reação disponível do alvo, sem dívida se nenhuma estiver disponível, até o fim do turno atual e aplique −2 ao resultado dessa ação antes da comparação. Esses efeitos não apagam uma ação já concluída.
+Limite de percepção de 30 metros, ainda respeitando a arma, e +1d20 no ataque. Num total contra ação hostil, além de Abalado, retire uma Reação disponível do alvo, sem dívida se nenhuma estiver disponível, até o fim do turno atual e aplique −2 ao resultado dessa ação antes da comparação. Esses efeitos não apagam uma ação já concluída.
 
 ### Progressão de status e desenvolvimento
 
@@ -1873,7 +1946,7 @@ Resolução: chame a criatura imediatamente, sem teste adicional para um pacto e
 
 #### Ampliação — Resposta ao Chamado
 
-a primeira criatura chamada por esta habilidade na cena pode receber imediatamente um comando sem gastar outra ação, contado no teto normal. Uma vez por cena, pode pagar mais 2 Karma para fazer Chamado Rápido como Livre no próprio turno; esse uso consome uma das duas ativações, não uma terceira.
+A primeira criatura chamada por esta habilidade na cena pode receber imediatamente um comando sem gastar outra ação, contado no teto normal. Uma vez por cena, pode pagar mais 2 Karma para fazer Chamado Rápido como Livre no próprio turno; esse uso consome uma das duas ativações, não uma terceira.
 
 #### Habilidade 2 — Elo Protetor
 
@@ -1883,7 +1956,7 @@ Resolução: reduza o dano do protegido em 1d6 + Presença, mínimo 0 de dano re
 
 #### Ampliação — Vínculo Inquebrável
 
-redução de 2d6 + Presença. Se reduzir o dano a 0, o protegido pode deslocar-se 2 metros por rota livre depois da resolução, sem provocar reações de movimento do agressor. Esse ajuste não é comando, não concede ataque e não aumenta o teto de ordens.
+Redução de 2d6 + Presença. Se reduzir o dano a 0, o protegido pode deslocar-se 2 metros por rota livre depois da resolução, sem provocar reações de movimento do agressor. Esse ajuste não é comando, não concede ataque e não aumenta o teto de ordens.
 
 #### Habilidade 3 — Ordem Dupla
 
@@ -1893,7 +1966,7 @@ Resolução: dê um comando diferente a cada criatura, escolhendo Atacar, Guarda
 
 #### Ampliação — Comando de Legião
 
-a mesma Extra pode comandar até três criaturas elegíveis, uma vez cada, atingindo o teto total do turno. Com apenas uma elegível, além do +2, conceda um Movimento adicional depois do comando, sem ataque ou técnica extra. Nenhuma versão concede outra Reação, cura ou segundo comando à mesma criatura.
+A mesma Extra pode comandar até três criaturas elegíveis, uma vez cada, atingindo o teto total do turno. Com apenas uma elegível, além do +2, conceda um Movimento adicional depois do comando, sem ataque ou técnica extra. Nenhuma versão concede outra Reação, cura ou segundo comando à mesma criatura.
 
 ### Progressão de status e desenvolvimento
 
@@ -1933,7 +2006,7 @@ Resolução: escolha uma função coerente com o elemento. Cobertura concede +2 
 
 #### Ampliação — Campo Soberano
 
-raio de 5 metros e duração de cinco rodadas. Nomeie os aliados que serão poupados: eles ignoram terreno e ocultação produzidos pelo campo, e seus ataques atravessam a cobertura criada sem conceder seu bônus ao inimigo. A seleção não altera cobertura natural ou efeitos de outra fonte.
+Raio de 5 metros e duração de cinco rodadas. Nomeie os aliados que serão poupados: eles ignoram terreno e ocultação produzidos pelo campo, e seus ataques atravessam a cobertura criada sem conceder seu bônus ao inimigo. A seleção não altera cobertura natural ou efeitos de outra fonte.
 
 #### Habilidade 2 — Intervenção Elemental
 
@@ -1943,7 +2016,7 @@ Resolução: automaticamente reduza em um grau o resultado contra um único prot
 
 #### Ampliação — Contrafluxo Absoluto
 
-uma vez por cena, pague 8 Karma no lugar de 5 para reduzir dois graus, podendo anular um total. Se anular, pode criar no ponto de interceptação um campo de Domínio Elemental básico até o início do próximo turno, sem custo ou ação adicional. Ele ocupa sua única vaga e encerra outro campo seu; é um efeito defensivo, sem ativar Assinatura ou outro ataque.
+Uma vez por cena, pague 8 Karma no lugar de 5 para reduzir dois graus, podendo anular um total. Se anular, pode criar no ponto de interceptação um campo de Domínio Elemental básico até o início do próximo turno, sem custo ou ação adicional. Ele ocupa sua única vaga e encerra outro campo seu; é um efeito defensivo, sem ativar Assinatura ou outro ataque.
 
 #### Habilidade 3 — Forma Soberana
 
@@ -1967,7 +2040,7 @@ Expressões elementais: aplique somente a expressão correspondente ao elemento 
 
 #### Ampliação — Forma Primordial
 
-duração de cinco rodadas e desconto de 3, mínimo 1. A Assinatura pode ativar duas vezes no próprio turno, em duas técnicas distintas; uma técnica com vários alvos ou pulsos não conta duas vezes. Bônus idênticos de CA, Vantagem ou Desvantagem continuam sem acumular.
+Duração de cinco rodadas e desconto de 3, mínimo 1. A Assinatura pode ativar duas vezes no próprio turno, em duas técnicas distintas; uma técnica com vários alvos ou pulsos não conta duas vezes. Bônus idênticos de CA, Vantagem ou Desvantagem continuam sem acumular.
 
 ### Progressão de status e desenvolvimento
 
@@ -2049,7 +2122,7 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 **Identidade:** Calígrafos espirituais tratam Karma como linguagem. Gravam glifos em armas, armaduras, sangue e superfícies para escolher onde e quando a energia se libera.
 
-**Bônus inicial:** +1 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
+**Bônus inicial:** +2 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
 
 **Atributos recomendados:** Intelecto e Espírito.
 
@@ -2063,35 +2136,39 @@ Você mantém duas Runas adicionais no limite pessoal. Use Intelecto + Canaliza�
 
 **Uso:** Movimento ou Principal · Custo: 2 de Karma (+ o Karma Retido da Runa escolhida) · Alcance: 12 metros.
 
-Permite desenhar uma Runa de Campo/Selo ou Runa de Armadura/Arma diretamente a distância (em um piso, parede, aliado ou equipamento a até 12m) sem precisar tocar fisicamente a superfície. Se usada como Ação Principal contra um inimigo, realiza um teste de Intelecto + Canalização de Karma contra a CA do alvo para cravar uma Runa de Selo diretamente no corpo dele, aplicando o efeito passivo da runa imediatamente.
+Permite desenhar uma Runa de Campo/Selo ou Runa de Armadura/Arma diretamente a distância (em um piso, parede, aliado ou equipamento a até 12m) sem precisar tocar fisicamente a superfície, respeitando suporte, vagas e requisitos normais da inscrição. Como Ação Principal contra um inimigo, faça Intelecto + Canalização de Karma contra a CA do alvo para cravar uma Runa de Selo no corpo dele. Em Acerto Total, a Runa se fixa e aplica sua passiva pela duração normal. Em Acerto Parcial, ela se fixa e aplica a passiva por 1 rodada, até o fim do próximo turno do Escriba, quando expira. Em Falha, os 2 Karma da projeção são gastos, a Runa não é inscrita e nenhum Karma fica retido por essa tentativa. Uma Runa inscrita no Parcial retém seu Karma enquanto armada; sua expiração segue o prazo normal de retorno do Escriba. Não cria uma Runa caída no chão.
 
 #### Ampliação — Inscrição no alvo
 
-A variante de Ação Principal permite inscrever um selo no inimigo, mediante teste contra CA.
+Ao usar Inscrição Projetada como Ação Principal hostil, reduza seu custo de ativação em 1 Karma, de 2 para 1. O Karma Retido, o teste contra CA e os resultados Total, Parcial e Falha permanecem os da habilidade base.
 
 #### Habilidade 2 — Palavra Rúnica (Sintaxe Composta)
 
-**Uso:** Principal · Custo: 3 de Karma (além de estourar as Runas combinadas) · Frequência: 1 vez por rodada.
+**Uso:** Principal · Custo: 3 de Karma (além de estourar as Runas combinadas) · Alcance: até 16 metros · Frequência: 1 vez por rodada.
 
-Você conecta e detona 2 Runas ativas (ou 3 Runas a partir da Etapa V) no mesmo turno, fundindo seus efeitos em uma Sentença Rúnica:
+Você conecta e detona 2 Runas ativas, ou 3 a partir da Etapa V. Só são elegíveis Runas das categorias Arma e Campo/Selo cujo Estouro produza dano ofensivo ou controle. Cura, guarda, posicionamento benéfico e suporte não podem ser antecipados por esta habilidade.
 
-Lexema Duplo (2 Runas): Soma os efeitos de estouro de ambas as runas em um único alvo ou área, aumenta o alcance em +4m e reduz os limiares de CA Parcial e Total do alvo em -2 contra a detonação combinada.
+Lexema Duplo (2 Runas): declare as inscrições participantes, o alvo ou área e, havendo Campo, uma das inscrições de Campo participantes como centro único da detonação, a até 16m. Todos os Campos participantes resolvem seus Estouros a partir desse centro. Faça um único teste de Intelecto + Canalização de Karma para a descarga; compare esse resultado separadamente com os limiares de CA de cada alvo afetado, reduzidos diretamente em 2. Cada Estouro conserva sua natureza, função e extensão: o dano de Runa de Arma atinge somente o alvo principal declarado; apenas o efeito que já era de área se propaga em seu raio. Não some o dano físico da arma portadora. Resistências especificamente exigidas por uma Runa continuam sendo resolvidas contra sua referência normal. Some as parcelas de dano que atingirem o mesmo alvo antes de aplicar o Parcial e as proteções; condições seguem suas regras. As Runas participantes são consumidas e o Karma Retido volta após uma rodada.
 
-Sentença Tripla (3 Runas — Etapa V+): Além dos benefícios do Lexema Duplo, adiciona +2d10 de dano kármico puro antes do parcial e recupera 4 de Karma da reserva após o disparo.
+Sentença Tripla (3 Runas — Etapa V+): além dos benefícios do Lexema Duplo, adicione +2d10 de dano kármico puro à parcela ofensiva antes do Parcial e recupere 4 de Karma da reserva após o disparo. Essa recuperação não libera antecipadamente o Karma Retido das Runas.
 
 #### Ampliação — Sentença Tripla
 
-Da Etapa V em diante, pode combinar três Runas nos termos da habilidade.
+Ao combinar três Runas com Palavra Rúnica, reduza os dois limiares de CA em 1 adicional, totalizando −3 na CA Parcial e na CA Total contra a descarga. A combinação de três Runas já está disponível na base a partir da Etapa V; a ampliação é escolhida nas Etapas VI/VII e conserva +2d10 e a recuperação de 4 Karma.
 
 #### Habilidade 3 — Sobrescrita de Vetor (Transcrição Reativa)
 
-**Uso:** Reação (ao ser alvo de uma técnica ou ataque kármico/elemental/divino a até 15m) · Custo: 4 de Karma.
+**Uso:** Reação · Custo: 4 de Karma · Fonte kármica, elemental ou divina percebida a até 15m, com resultado de ataque ou CD expressa, antes de aplicar seu dano ao Escriba.
 
-Você traça um glifo de interceptação no ar, realizando um teste de Intelecto + Tática (ou Canalização de Karma) para amortecer a fórmula inimiga: você reduz o dano recebido em 1d10 + Intelecto + Etapa. Se o dano for reduzido a zero (ou se o ataque inimigo atingir apenas a faixa Parcial), você converte a energia dissipada em 1 Runa de Grau I ou II armada gratuitamente (sem consumir seu próprio Karma Retido) até o final do seu próximo turno.
+Depois de definido o resultado do ataque ou efeito, confira a elegibilidade antes de gastar a Reação e o Karma. Faça Intelecto + Tática ou Intelecto + Canalização de Karma contra o resultado do ataque hostil ou a CD de resistência expressa do efeito; igualar é sucesso. Em sucesso, reduza o dano em 1d8 + Intelecto, depois de crítico, Parcial e Resistência que se apliquem, antes de Escudo Temporário e Vida. Em falha, não reduza o dano. Dano automático sem ataque nem CD expressa não é elegível.
+
+Se a redução de Sobrescrita zerar o dano, ou se o ataque hostil tiver obtido Acerto Parcial, gere uma Runa conhecida de Grau I ou II. Verifique esse zero antes de Escudo Temporário. O Acerto Parcial conserva a geração da Runa mesmo se o teste de interceptação falhar; um efeito resolvido por CD não ganha faixa Parcial por esta habilidade.
+
+Ao resolver a interceptação, escolha um suporte compatível ao alcance do toque e conclua a inscrição imediatamente. Ela consome a vaga pessoal ou a vaga do próprio item exigida pela tabela de inscrição, respeitando o limite físico de encaixes apenas onde publicado. Se não houver suporte e vaga válidos, a redução de dano permanece, mas nenhuma Runa nasce e os 4 Karma da Reação não são devolvidos. A Runa conserva sua passiva, beneficiário e ação ou gatilho de Estouro e expira no fim do próximo turno do Escriba. Não retém Karma dele: seu Estouro ou expiração não gera Karma adicional a recuperar.
 
 #### Ampliação — Energia interceptada
 
-Uma Runa de Grau I ou II obtida pela interceptação dura até o fim do seu próximo turno e ocupa espaço de Runa ativa.
+A Runa temporária gerada por Sobrescrita de Vetor dispensa somente a vaga pessoal, quando ela seria exigida. Continua exigindo suporte compatível, vaga do próprio item quando aplicável e os limites físicos de encaixes publicados. Não cria encaixes extras. Mantém passiva, beneficiário e gatilho de Estouro e expira no fim do próximo turno do Escriba, sem gerar Karma a recuperar.
 
 ### Progressão de status e desenvolvimento
 
@@ -2134,13 +2211,13 @@ CA = 12 + Agilidade permitida pela armadura + armadura + escudo ativo + ajuste d
 
 A CA funciona em três faixas. Calcule o limiar parcial dividindo a CA por dois e arredondando para baixo.
 
-**Acerto total:** resultado do ataque igual ou superior à CA. Aplique dano e efeitos totais.
+**Acerto Total:** resultado do ataque maior que a CA Total. Na igualdade exata, compare o valor final do Atributo usado no ataque com o Atributo regente da CA do defensor: somente o atacante com Atributo maior obtém Acerto Total; Atributo menor ou igual produz Acerto Parcial. Aplique dano e efeitos conforme o grau final.
 
-Acerto Parcial: do limiar parcial até CA Total − 1. Aplique metade do dano, arredondada para baixo. Condições menores (Caído, Lento, Abalado, Desorientado e Empurrado) exigem Acerto Total. Condições severas (Sangramento, Envenenado, Silenciado, Imóvel, Cego, Atordoado e Danificado) entram integrais no Acerto Total. No parcial, reduza potência e duração aplicáveis pela metade, arredondando para baixo e com mínimo de 1 rodada.
+Acerto Parcial: do limiar parcial até CA Total − 1; também ocorre na igualdade com a CA Total quando o Atributo do atacante é menor ou igual ao regente da defesa. Aplique metade do dano, arredondada para baixo. Condições seguem o catálogo de gravidade e resolução abaixo. Caído, Lento, Abalado, Desorientado e Empurrado exigem Acerto Total, salvo exceção expressa na habilidade. Danificado é estado estrutural de equipamento ou constructo, com regras próprias.
 
 **Falha:** resultado do ataque menor que o limiar parcial. Nenhum dano ou efeito direto é aplicado.
 
-**Exemplo:** uma criatura possui CA 15. Seu limiar parcial é 7. Um ataque 15 ou maior é acerto total; de 7 a 14 é sucesso parcial; 6 ou menos é falha.
+**Exemplo:** uma criatura possui CA 15. Seu limiar parcial é 7. Um ataque 16 ou maior é Acerto Total; de 7 a 14 é Acerto Parcial; 6 ou menos é Falha. No resultado 15, compare os Atributos. Um atacante com Força 6 que iguala a CA de um defensor com Agilidade 7 obtém Acerto Parcial; Força 8 contra essa Agilidade 7 obtém Acerto Total. A igualdade entre os Atributos favorece o defensor.
 
 No parcial, some dano-base, crítico cabível, dados adicionais e bônus fixos. Divida por dois e arredonde para baixo antes de aplicar Resistência, escudo temporário e Vida. A CA Parcial também arredonda para baixo. Reservas de Atributo e o limiar de Saturação Alquímica arredondam para cima.
 
@@ -2257,7 +2334,7 @@ Condição é uma alteração temporária e identificável sobre ação, defesa,
 
 **Estado:** É uma posição benéfica ou neutra, como Oculto. Não é removido por purificação e termina por seus próprios gatilhos.
 
-**Duração padrão:** Sem duração própria, a condição termina no fim do próximo turno de quem a aplicou. Em sucesso parcial, condição simples dura até o início do próximo turno do alvo; condição grave aplica sua Forma reduzida até o fim do próximo turno do alvo.
+**Duração padrão:** sem duração própria, a condição termina no fim do próximo turno de quem a aplicou. Em Acerto Parcial, uma condição simples dura até o início do próximo turno do alvo; uma grave aplica sua Forma reduzida até o fim do próximo turno do alvo. As cinco condições menores — Caído, Lento, Abalado, Desorientado e Empurrado — exigem Acerto Total, salvo permissão expressa. Sangramento tem a exceção periódica descrita no catálogo; a duração específica de uma habilidade prevalece.
 
 A mesma condição não acumula consigo; use a maior duração. Suprimir a Ação Principal dura no máximo até o fim do próximo turno do alvo. Depois, ele fica protegido de nova supressão de Ação Principal até o fim do turno seguinte. Reaplicar ou alternar Atordoado, Incapacitado, Inconsciente e Paralisado não evita essa proteção. A inconsciência causada por Morrendo segue seu procedimento próprio.
 
@@ -2273,7 +2350,7 @@ A mesma condição não acumula consigo; use a maior duração. Suprimir a Açã
 
 **Atordoado — grave:** perca a Reação e não realize Ação Principal; Movimento e interação simples permanecem. Forma reduzida: Abalado e perda da Reação. Uma técnica que aplique Atordoado exige no mínimo Grau III e respeita a proteção contra supressão repetida.
 
-**Caído — simples:** Ataques corpo a corpo contra você recebem +1 dado, e seus ataques corpo a corpo recebem Desvantagem. Levantar consome metade do Deslocamento.
+**Caído — simples:** ataques corpo a corpo contra você recebem +1 dado, e seus ataques corpo a corpo recebem Desvantagem. Levantar consome metade do Deslocamento dentro da sua Ação de Movimento; a outra metade continua disponível nessa mesma ação.
 
 **Cego — grave:** Testes dependentes de visão recebem Desvantagem; alvos não percebidos por outro sentido não podem ser escolhidos; ataques imperceptíveis não podem ser Evadidos. Forma reduzida: Desvantagem no próximo teste visual.
 
@@ -2307,7 +2384,7 @@ A mesma condição não acumula consigo; use a maior duração. Suprimir a Açã
 
 **Queimando — simples:** sofra 1d6 de Fogo no fim de cada um dos próximos dois turnos. Uma Ação Principal para extinguir, imersão adequada ou efeito de Água encerra a condição. Reaplicação não soma dano. No parcial, sofra 1d4 uma vez, sem receber a condição, salvo regra expressa.
 
-**Sangramento — simples:** Sofra 1d4 de dano no fim do turno. Medicina CD 14, cura apropriada ou Ação Principal para estancar encerra a condição. Reaplicações não somam dano.
+**Sangramento — simples:** sofra 1d4 de dano no fim do turno. Em Acerto Parcial, sofra somente um pulso no fim do seu próximo turno: role 1d4, divida por dois, arredonde para baixo e aplique mínimo 1 antes de Resistência e demais proteções; depois encerre a condição. Medicina CD 14, cura apropriada ou Ação Principal para estancar pode encerrá-la antes desse pulso. Reaplicações não somam dano.
 
 **Silenciado — grave:** Não fale nem use voz, canto ou comando audível. Técnicas sem componente verbal continuam possíveis. Forma reduzida: Desvantagem no próximo teste dependente de voz.
 
@@ -2318,6 +2395,38 @@ A mesma condição não acumula consigo; use a maior duração. Suprimir a Açã
 ### Purificação e estados externos
 
 **Purificação precisa indicar um de três alcances:** remover condição simples; aplicar a Forma reduzida de uma condição grave; ou enfrentar a fonte que mantém a condição. Morrendo, Ferimento Grave, Corrupção, Bênção, Voto, Danificado e Quebrado não são condições e exigem regras próprias.
+
+<div class="section" book206-section="regente-e-igualdade-da-ca">
+
+## Atributos no empate da CA
+
+Registre na ficha o regente da CA: Agilidade ou Constituição, conforme a construção da defesa. Essa identificação serve ao confronto na igualdade e não substitui a fórmula da CA nem soma novamente o Atributo à defesa. Use os valores finais dos Atributos; o limite de Agilidade permitido por uma armadura continua restrito ao cálculo numérico da CA. Não some treinamento a esse confronto e não faça outra rolagem.
+
+Uma CA fixa de criatura, objeto ou dispositivo conserva seu valor. Declare o regente e seu valor antes da comparação; quando a fonte não os informar, o Mestre precisa defini-los para resolver uma igualdade, sem deduzi-los do ranque. Um 20 natural aplica suas regras de crítico, mas não ignora a CA nem o confronto de Atributos.
+
+</div>
+
+<div class="section" book206-section="evasao-abstrata-em-area">
+
+## Posição e Evasão em área
+
+Uma Evasão que supera o resultado do ataque evita integralmente aquela incidência. Em área, exige margem, abrigo ou zona menos intensa válida na cena, mas sua resolução é abstrata: não move gratuitamente a miniatura nem desconta metros do próximo Movimento. Para mudar de posição no mapa, use uma ação de movimento ou permissão expressa. Permanecer em uma área contínua não evita suas incidências futuras.
+
+</div>
+
+<div class="section" book206-section="graus-de-resistencia">
+
+## Graus de Resistência
+
+| Grau  | Redução de dano |
+|-------|-----------------|
+| Leve  | 1 ponto         |
+| Média | 2 pontos        |
+| Alta  | 3 pontos        |
+
+Essas denominações são universais para Resistência física, Elemental, Kármica, Mental, Divina e Corrupta. A natureza protegida continua sendo a indicada pela habilidade: possuir Resistência Alta contra Água não concede proteção contra todas as naturezas. Uma Resistência numérica expressamente indicada conserva seu valor. Contra subdobras, aplique a divisão parental antes de usar a proteção.
+
+</div>
 
 
 # Capítulo 8 - Combate
@@ -2350,7 +2459,7 @@ Uma Ação Principal pode ser convertida em Movimento. Sem regra expressa, não 
 
 Declare o alvo, o meio utilizado e o efeito pretendido. Em seguida, escolha uma combinação coerente.
 
-**Corpo a corpo:** Força ou Agilidade + Luta.
+**Corpo a corpo:** Força + Luta; Agilidade + Luta somente quando a arma ou a técnica permitir.
 
 **Distância:** Agilidade + Pontaria.
 
@@ -2366,7 +2475,7 @@ Declare o alvo, o meio utilizado e o efeito pretendido. Em seguida, escolha uma 
 
 **Invocação:** estatística da criatura ou comando definido no Capítulo 15.
 
-Role uma vez e compare o resultado com a CA, aplicando as três faixas do Capítulo 7. Evasão é declarada depois de conhecido o resultado do ataque, mas antes do dano. Cobertura, escudo e condições precisam integrar a defesa no instante da comparação.
+Role uma vez e compare o resultado com a CA, aplicando as faixas e o confronto de Atributos na igualdade do Capítulo 7. Evasão é declarada depois de conhecido o resultado do ataque, mas antes do dano. Cobertura, escudo e condições precisam integrar a defesa no instante da comparação.
 
 ### Ataques múltiplos
 
@@ -2376,7 +2485,7 @@ Cada ataque exige rolagem, comparação com CA, possibilidade de Evasão e dano 
 
 O atacante faz uma rolagem para toda a área. Cada alvo compara o resultado com a própria CA e decide separadamente se usa Evasão ou Bloqueio. O dano é rolado uma vez e aplicado conforme o grau obtido contra cada alvo.
 
-Cobertura funciona se estiver entre o alvo e o ponto de origem. Evasão exige uma margem, abrigo ou zona menos intensa que possa ser alcançada; sem destino possível, ela não pode ser escolhida. Bloqueio ativo reduz o grau quando o escudo for adequado.
+Cobertura funciona se estiver entre o alvo e o ponto de origem. Evasão exige margem, abrigo ou zona menos intensa válida na cena; sem essa possibilidade, não pode ser escolhida. Superar o ataque evita toda a incidência, sem deslocar gratuitamente a miniatura. Bloqueio ativo reduz o grau quando o escudo for adequado. Áreas contínuas podem voltar a afetar quem permanecer nelas.
 
 **Área pequena:** raio de 2 metros ou linha de 5 metros.
 
@@ -2503,9 +2612,9 @@ Um ritual exige foco e tempo de preparação. Registre a técnica ou improvisaç
 
 Reduzir o custo final em 1 por rodada de preparação, até o máximo de 5;
 
-receber +1 dado no teste principal; ou
+Receber +1 dado no teste principal; ou
 
-aplicar sem custo um modificador de valor 2 ou menor do Capítulo 10.
+Aplicar sem custo um modificador de valor 2 ou menor do Capítulo 10.
 
 Até duas pessoas treinadas podem Ajudar. Todos os participantes compartilham a consequência direta de uma falha.
 
@@ -2536,7 +2645,7 @@ Sem risco, o efeito é automático. Sob pressão, faça Espírito + Canalizaçã
 
 ### Projeção Kármica
 
-**Uso:** Principal; até 15 metros; um alvo; instantânea; sem preparação. Escolha um Grau permitido: I custa 2 Karma e causa 1d10; II, 3 e 2d6; III, 4 e 2d8; IV, 6 e 2d10; V, 12 e 3d10. Grau V consome o ápice da cena. Esses são os custos próprios da manobra, com alcance incluído.
+**Uso:** Principal; até 15 metros; um alvo; instantânea; sem preparação. Escolha um Grau permitido: I custa 2 Karma e causa 1d10; II, 3 e 2d6; III, 4 e 2d8; IV, 6 e 2d10; V, 12 e 3d10. Grau V consome o ápice da cena. Esses são os custos próprios da manobra, com alcance de até 15 metros incluído: não acrescente novamente o modificador de alcance Médio do Capítulo 10. A manobra ainda exige Canalização de Karma e os requisitos de Etapa e Grau indicados; a inclusão do alcance não dispensa esses requisitos.
 
 Teste Espírito + Canalização de Karma contra CA. Total causa o dano-base kármico neutro; parcial, metade; falha, nenhum. O alvo pode Evadir e usar proteções compatíveis. Área, alvos adicionais ou alcance maior exigem técnica ou modificador válido, pago separadamente. Não há manutenção.
 
@@ -2548,7 +2657,7 @@ Projeção afeta seres imateriais, mas não explora vulnerabilidade elemental ne
 
 Quando um ataque percebido estiver prestes a ser comparado com a CA do protegido, condense uma superfície kármica na trajetória e conceda **+2 CA somente contra aquela resolução**. Pode declarar depois de conhecer a rolagem, mas antes de definir o acerto e aplicar dano ou condições. Pague **5 Karma no total** para receber **+4 CA**, em vez de +2.
 
-A ativação é automática: não exige outra rolagem, CD ou concentração. Recalcule a faixa de acerto parcial e total com a CA temporária. Um resultado igual à CA é total. Contra CA, inclusive com 1 natural, use as faixas do ataque. O 20 natural conserva a regra de crítico sem dispensar a resolução do acerto.
+A ativação é automática: não exige outra rolagem, CD ou concentração. Recalcule a faixa de acerto parcial e total com a CA temporária. Um resultado acima da CA Total é Total. Ao igualar a CA, compare o Atributo regente do ataque com o regente da CA do defensor (Agilidade ou Constituição registrado na ficha): atacante maior produz Total; defensor maior ou igual produz Parcial. Contra CA, inclusive com 1 natural, use as faixas do ataque. O 20 natural conserva a regra de crítico sem dispensar a resolução do acerto.
 
 Essa Reação não inclui Esquiva ou Bloqueio. Não some duas Barreiras Kármicas sobre o mesmo protegido contra a mesma incidência; use o maior bônus. A proteção termina depois da resolução, mesmo se o ataque falhar. Ela não acumula pontos de absorção, não cura e não muda a CA permanente da ficha.
 
@@ -2630,16 +2739,16 @@ Descanso longo seguro de 8 horas restaura Vida e Karma até os máximos disponí
 
 Poções, habilidades, fontes e rituais nunca restauram acima do máximo disponível. Karma investido continua indisponível até o vínculo, item ou efeito terminar.
 
-## Runas Kármicas {#runas-karmicas}
+## Runas Kármicas
 
 Uma runa retém Karma em um suporte até que seu desenho libere a energia. **Qualquer personagem com Canalização de Karma 1 ou superior pode aprender e inscrever Runas Kármicas.** Aprenda a fórmula com um instrutor, um grimório ou uma inscrição que possa estudar, conforme a campanha. O Mestre confirma as fórmulas conhecidas.
 
-| Grau da runa | Requisito de inscrição comum |
-|---|---|
-| I e II | Canalização de Karma 1 |
-| III | Etapa III e Canalização de Karma 1 |
-| IV | Etapa V e Canalização de Karma 2 |
-| V | Etapa VII e Canalização de Karma 3 |
+| Grau da runa | Requisito de inscrição comum       |
+|--------------|------------------------------------|
+| I e II       | Canalização de Karma 1             |
+| III          | Etapa III e Canalização de Karma 1 |
+| IV           | Etapa V e Canalização de Karma 2   |
+| V            | Etapa VII e Canalização de Karma 3 |
 
 **Para inscrever**, escolha uma fórmula conhecida e um suporte compatível ao alcance do toque. Grave com uma Ação Principal ou prepare antes da cena. Reserve o Karma indicado na tabela e conte uma vaga. Com tempo e condições adequadas, a inscrição é direta. Se houver risco de erro ou oposição, teste Espírito + Canalização de Karma contra a dificuldade da situação indicada pelo Mestre. A inscrição só arma a runa quando concluída.
 
@@ -2647,15 +2756,15 @@ Uma runa ligada a um ataque segue o teste desse ataque. Se o efeito pedir resist
 
 O limite pessoal é metade da Etapa arredondada para cima. Etapas I–II mantêm 1, III–IV mantêm 2, V–VI mantêm 3 e VII mantém 4. Caligrafia de Combate e Circuito Rúnico Autônomo somam +2 cada. Runas de Armadura e Guarda vão em armaduras ou escudos e usam uma vaga pessoal por inscrição. Runas de Campo e Selo e de Sangue e Corpo usam os suportes descritos na fórmula e também contam no limite pessoal.
 
-### Armas que aceitam runas {#armas-que-aceitam-runas}
+### Armas que aceitam runas
 
 Uma Runa de Arma precisa ser inscrita em uma das armas ou focos da tabela. O limite vale por peça física e conta apenas inscrições armadas ao mesmo tempo. Registre armas separadamente no inventário se quiser inscrevê-las individualmente.
 
-| Suportes compatíveis | Máximo por peça | Vaga usada |
-|---|---|---|
-| Adaga, Espada ou machado, Lança, Montante, Machado pesado, Martelo de guerra | 1 runa | Pessoal |
-| Cajado Rúnico, Lâmina Rúnica | 2 runas | Do item |
-| Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo, Cetro de Comando | 1 runa | Do item |
+| Suportes compatíveis                                                                                    | Máximo por peça | Vaga usada |
+|---------------------------------------------------------------------------------------------------------|-----------------|------------|
+| Adaga, Espada ou machado, Lança, Montante, Machado pesado, Martelo de guerra                            | 1 runa          | Pessoal    |
+| Cajado Rúnico, Lâmina Rúnica                                                                            | 2 runas         | Do item    |
+| Grimório Catalisador, Correntes de Selamento, Orbe de Ressonância, Amuleto de vínculo, Cetro de Comando | 1 runa          | Do item    |
 
 As demais armas ficam sem encaixe rúnico, incluindo armas de fogo, arcos, bestas e munições. Luvas Canalizadoras e Lanterna Astral também ficam sem encaixe. As Luvas ainda podem aplicar Runas de Selo conforme sua propriedade, e as Correntes ainda podem transferir Runas de Campo e Selo. O Karma fica retido tanto nas vagas pessoais quanto nas vagas do item.
 
@@ -2665,51 +2774,218 @@ O Karma Retido continua na reserva total e fica indisponível para gastos enquan
 
 Na tabela, Vontade se refere à resistência interior, resolvida com Espírito + Canalização de Karma. Resistência física usa Constituição + Atletismo quando o efeito não designa outra combinação.
 
+### Karma Retido e Ápice de Grau V
+
+Karma Retido e Karma Investido são contas distintas. A retenção rúnica mantém a energia na reserva total, mas separa uma parcela indisponível até o prazo de retorno; ela não diminui o Karma máximo. O investimento em reservatório segue a regra própria de redução do máximo recuperável.
+
+**Exemplo de retenção:** um Escriba com 30 Karma livres inscreve duas Runas de Grau II, retendo 3 Karma em cada uma: fica com 24 livres e 6 retidos. Ao pagar 3 Karma por Palavra Rúnica, fica com 21 livres. O Estouro libera as vagas imediatamente, mas os 6 Karma continuam indisponíveis por uma rodada. Ao terminar esse prazo, ele tem 27 Karma livres, se nenhum outro gasto ou recuperação ocorreu. O retorno não cria energia nem reembolsa os 3 Karma da habilidade.
+
+Antes do primeiro benefício passivo ou Estouro de uma Runa de Grau V na cena, vincule essa inscrição ao único Ápice de Grau V do personagem, inclusive fora do turno ou antes da Iniciativa. A passiva e o Estouro da mesma inscrição compartilham o vínculo e não cobram um segundo Ápice. Se o Ápice já estiver comprometido com outra fonte ou inscrição, a Runa não concede benefícios de Grau V nessa cena. A decisão de não a usar precisa ocorrer antes de receber qualquer benefício; conserve o prazo normal de retorno do Karma Retido quando ela for desarmada. Entrar na cena com uma Runa previamente inscrita não libera um segundo efeito de Grau V.
+
+### Runa temporária de Sobrescrita de Vetor
+
+A Runa obtida pela Sobrescrita de Vetor deve ser uma fórmula conhecida de Grau I ou II, concluída ao resolver a interceptação em suporte compatível ao alcance do toque do Escriba. Ela consome a vaga pessoal ou a vaga do próprio item exigida pela inscrição na tabela, respeitando o limite físico de encaixes apenas onde publicado. Energia Interceptada dispensa somente a vaga pessoal nos casos em que ela seria cobrada, sem criar encaixes adicionais em itens.
+
+Sem suporte e vaga válidos, a redução de dano já resolvida permanece, mas nenhuma Runa nasce e os 4 Karma gastos na Reação não são devolvidos. A Runa conserva passiva, beneficiário e ação ou gatilho de Estouro; expira no fim do próximo turno do Escriba. Não retém Karma dele e não gera Karma a recuperar ao estourar ou expirar. O teste e a redução de dano de Sobrescrita de Vetor seguem o Capítulo 6.
 
 ### Arma
 
-| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
-|---|---|---|---|---|
-| Runa da Brasa Cortante (Kenaz) | I | 2 | Converte o dano da arma em térmico/kármico e soma +1 no dano final. | Adiciona +1d6 de dano antes do parcial e ilumina o alvo (impede furtividade por 1 rodada). |
-| Runa do Alcance Estendido (Elhaz) | I | 2 | Aumenta o alcance de ataques corpo a corpo em +1,5m ou à distância em +6m. | O ataque ignora cobertura parcial e soma +2 no teste de acerto. |
-| Runa da Fenda de Guarda (Thurisaz) | II | 3 | Ataques com a arma reduzem em -1 a CA Parcial do alvo. | Causa +1d8 de dano e destrói até 7 pontos de Escudo Temporário do alvo antes de aplicar o dano. |
-| Runa da Hélice Dupla (Jera) | III | 4 | Ao errar um ataque (Falha), você recupera 1m de deslocamento livre. | Cria um eco kármico do golpe: causa +2d6 de dano e atinge também um segundo inimigo a até 2m do primeiro. |
-| Runa do Dreno Espiritual (Othala) | III | 4 | Acertos Totais com a arma recuperam 1 de Karma para o portador. | Causa +2d6 de dano kármico e drena 3 de Karma do alvo atingido (transferindo-os para você). |
-| Runa da Ruptura de Essência (Hagalaz) | IV | 6 | A arma ignora Redução de Dano física e elemental de até 2 pontos. | Causa +2d8 de dano e aplica Sangramento e Abalado sem permitir redução por armadura. |
-| Runa do Julgamento Final (Tiwaz-Omega) | V | 10 | Soma +2 no teste de ataque e +2 no dano fixo de todos os golpes da arma. | Golpe cataclísmico: adiciona +3d8 de dano antes do parcial e reduz a CA Total do alvo em -3 até o fim da rodada. |
+| Runa                                   | Grau | Karma Retido | Enquanto armada                                                            | Estouro                                                                                                          |
+|----------------------------------------|------|--------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Runa da Brasa Cortante (Kenaz)         | I    | 2            | Converte o dano da arma em térmico/kármico e soma +1 no dano final.        | Adiciona +1d6 de dano antes do parcial e ilumina o alvo (impede furtividade por 1 rodada).                       |
+| Runa do Alcance Estendido (Elhaz)      | I    | 2            | Aumenta o alcance de ataques corpo a corpo em +1,5m ou à distância em +6m. | O ataque ignora cobertura parcial e soma +2 no teste de acerto.                                                  |
+| Runa da Fenda de Guarda (Thurisaz)     | II   | 3            | Ataques com a arma reduzem em -1 a CA Parcial do alvo.                     | Causa +1d8 de dano e destrói até 7 pontos de Escudo Temporário do alvo antes de aplicar o dano.                  |
+| Runa da Hélice Dupla (Jera)            | III  | 4            | Ao errar um ataque (Falha), você recupera 1m de deslocamento livre.        | Cria um eco kármico do golpe: causa +2d6 de dano e atinge também um segundo inimigo a até 2m do primeiro.        |
+| Runa do Dreno Espiritual (Othala)      | III  | 4            | Acertos Totais com a arma recuperam 1 de Karma para o portador.            | Causa +2d6 de dano kármico e drena 3 de Karma do alvo atingido (transferindo-os para você).                      |
+| Runa da Ruptura de Essência (Hagalaz)  | IV   | 6            | A arma ignora Redução de Dano física e elemental de até 2 pontos.          | Causa +2d8 de dano e aplica Sangramento e Abalado sem permitir redução por armadura.                             |
+| Runa do Julgamento Final (Tiwaz-Omega) | V    | 10           | Soma +2 no teste de ataque e +2 no dano fixo de todos os golpes da arma.   | Golpe cataclísmico: adiciona +3d8 de dano antes do parcial e reduz a CA Total do alvo em -3 até o fim da rodada. |
 
 ### Armadura e guarda
 
-| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
-|---|---|---|---|---|
-| Runa do Casco de Pedra (Uruz) | I | 2 | Concede +1 de Redução de Dano contra ataques físicos. | Ao sofrer dano: Absorve 1d8 + Constituição do dano recebido naquele golpe. |
-| Runa do Passo Deslizante (Laguz) | II | 3 | Soma +1 em testes de Reflexos e Acrobacia. | Ao ser alvo de ataque: Permite recuar 3 metros como Reação livre e soma +3 na CA Parcial e Total contra o golpe. |
-| Runa do Espelho de Espinhos (Eihwaz) | II | 3 | Inimigos que agarrem você sofrem 2 de dano kármico automático. | Ao sofrer Acerto Total corpo a corpo: Reduz o dano em 1d6 e reflete 2d4 de dano kármico no atacante. |
-| Runa da Restauração Estrutural (Berkano) | III | 4 | Aumenta a cura recebida de poções, técnicas ou reparos em +3. | Ao cair para metade da Vida ou menos: Dispara sozinha restaurando 2d8 + Etapa de Vida e limpando 1 condição física menor. |
-| Runa da Dissipação Prismática (Sowilo) | IV | 6 | Concede +1 na CA contra técnicas elementais, kármicas e divinas. | Ao ser atingido por técnica de área ou feixe: Reduz em um quarto o dano recebido, arredondando a redução para baixo, e concede imunidade à condição secundária do golpe. |
-| Runa da Fortaleza Imortal (Algiz-Mater) | V | 10 | Concede +1 no limiar de Acerto Total contra você e imunidade a deslocamento forçado (empurrões/puxões). | Ao sofrer dano que levaria a 0 de Vida: Mantém o usuário de pé com 1 de Vida e concede 3d8 de Escudo Temporário por 1 rodada. |
+| Runa                                     | Grau | Karma Retido | Enquanto armada                                                                                         | Estouro                                                                                                                                                                                                                                                                                       |
+|------------------------------------------|------|--------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Runa do Casco de Pedra (Uruz)            | I    | 2            | Concede +1 de Redução de Dano contra ataques físicos.                                                   | Ao sofrer dano: Absorve 1d8 + Constituição do dano recebido naquele golpe.                                                                                                                                                                                                                    |
+| Runa do Passo Deslizante (Laguz)         | II   | 3            | Soma +1 em testes de Reflexos e Acrobacia.                                                              | Ao ser alvo de um ataque: consuma sua Reação da rodada, sem custo adicional de Karma, e some +3 diretamente ao limiar de CA Parcial e +3 à CA Total contra esse golpe (CA 9 / 18 passa a 12 / 21). Depois da resolução do golpe, pode recuar até 3m, seguindo as regras normais de movimento. |
+| Runa do Espelho de Espinhos (Eihwaz)     | II   | 3            | Inimigos que agarrem você sofrem 2 de dano kármico automático.                                          | Ao sofrer Acerto Total corpo a corpo: Reduz o dano em 1d6 e reflete 2d4 de dano kármico no atacante.                                                                                                                                                                                          |
+| Runa da Restauração Estrutural (Berkano) | III  | 4            | Aumenta a cura recebida de poções, técnicas ou reparos em +3.                                           | Ao cair para metade da Vida ou menos: Dispara sozinha restaurando 2d8 + Etapa de Vida e limpando 1 condição física menor.                                                                                                                                                                     |
+| Runa da Dissipação Prismática (Sowilo)   | IV   | 6            | Concede +1 na CA contra técnicas elementais, kármicas e divinas.                                        | Ao ser atingido por técnica de área ou feixe: Reduz em um quarto o dano recebido, arredondando a redução para baixo, e concede imunidade à condição secundária do golpe.                                                                                                                      |
+| Runa da Fortaleza Imortal (Algiz-Mater)  | V    | 10           | Concede +1 no limiar de Acerto Total contra você e imunidade a deslocamento forçado (empurrões/puxões). | Ao sofrer dano que levaria a 0 de Vida: Mantém o usuário de pé com 1 de Vida e concede 3d8 de Escudo Temporário por 1 rodada.                                                                                                                                                                 |
 
 ### Campo e selo
 
-| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
-|---|---|---|---|---|
-| Runa do Limiar Cortante (Ansuz) | I | 2 | Vigia um raio de 2m no solo ou parede de forma invisível a olho nu. | Inimigo pisa na área: Dispara lâminas de ar comprimido causando 1d10 de dano e reduzindo o movimento em 2m. |
-| Runa da Âncora de Chumbo (Isa) | II | 3 | Cravada no alvo ou em 3m no solo: o terreno conta como difícil para inimigos. | Detonação: Prende as sombras em 3m; alvos sofrem 2d6 de dano, ficam Lentos e perdem voo/levitação por 2 rodadas. |
-| Runa do Silêncio Hermético (Mannaz) | III | 4 | Em 3m ao redor do selo, sons não entram nem saem. | Quando inimigo tenta conjurar na área: Estoura causando 2d6 de dano mental/kármico e exige +3 de Karma para a técnica dele não falhar. |
-| Runa do Vórtice de Tração (Raidho) | III | 4 | Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito. | Detonação: Puxa todos os inimigos em um raio de 4m para o centro da runa, causando 2d6 de dano contundente. |
-| Runa da Jaula Geométrica (Nauthiz) | IV | 6 | Cravada em um alvo: toda vez que ele se move, sofre 1 de dano por metro percorrido, até 4 de dano por rodada. | Detonação: Ergue paredes translúcidas de 3m de raio por 1 rodada e causa 2d8 de dano na primeira tentativa de cada alvo de atravessar a borda. |
-| Runa do Colapso Espacial (Ginnungagap) | V | 10 | Em 6m ao redor do selo, inimigos sofrem -2 em testes de Reflexos e Iniciativa. | Detonação em Área (6m): Implosão gravitacional que causa 3d8 de dano kármico, deixa os alvos Caídos e destrói coberturas. |
+| Runa                                   | Grau | Karma Retido | Enquanto armada                                                                                               | Estouro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------|------|--------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Runa do Limiar Cortante (Ansuz)        | I    | 2            | Vigia um raio de 2m no solo ou parede de forma invisível a olho nu.                                           | Quando um inimigo pisa na área, dispara lâminas de ar comprimido. O alvo resiste com Constituição + Atletismo contra o resultado de Espírito + Canalização de Karma do inscritor comum (empate favorece o defensor) ou a CD rúnica do Escriba, 12 + Intelecto + nível de Canalização (igualar é sucesso). Em falha, sofre 1d10 de dano e −2m de Movimento; em sucesso, sofre metade do dano, arredondada para baixo, e evita a redução de Movimento.                                                                                                                |
+| Runa da Âncora de Chumbo (Isa)         | II   | 3            | Cravada no alvo ou em 3m no solo: o terreno conta como difícil para inimigos.                                 | Detonação: Prende as sombras em 3m; alvos sofrem 2d6 de dano, ficam Lentos e perdem voo/levitação por 2 rodadas.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Runa do Silêncio Hermético (Mannaz)    | III  | 4            | Em 3m ao redor do selo, sons não entram nem saem.                                                             | Quando inimigo tenta conjurar na área: Estoura causando 2d6 de dano mental/kármico e exige +3 de Karma para a técnica dele não falhar.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Runa do Vórtice de Tração (Raidho)     | III  | 4            | Aliados que passem a até 3m da runa ganham +2m de Movimento gratuito.                                         | Comando do portador a até 12m: Ação Extra no próprio turno ou Reação quando um inimigo terminar seu Movimento a até 4m da inscrição. Detonação: cada inimigo em um raio de 4m resiste com Constituição + Atletismo contra o resultado de Espírito + Canalização de Karma do inscritor comum (empate favorece o defensor) ou a CD rúnica do Escriba, 12 + Intelecto + nível de Canalização (igualar é sucesso). Em falha, sofre 2d6 de dano contundente e é puxado para o centro da Runa; em sucesso, sofre metade do dano, arredondada para baixo, e evita o puxão. |
+| Runa da Jaula Geométrica (Nauthiz)     | IV   | 6            | Cravada em um alvo: toda vez que ele se move, sofre 1 de dano por metro percorrido, até 4 de dano por rodada. | Detonação: Ergue paredes translúcidas de 3m de raio por 1 rodada e causa 2d8 de dano na primeira tentativa de cada alvo de atravessar a borda.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Runa do Colapso Espacial (Ginnungagap) | V    | 10           | Em 6m ao redor do selo, inimigos sofrem -2 em testes de Reflexos e Iniciativa.                                | Detonação em Área (6m): Implosão gravitacional que causa 3d8 de dano kármico, deixa os alvos Caídos e destrói coberturas.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ### Sangue e corpo
 
-| Runa | Grau | Karma Retido | Enquanto armada | Estouro |
-|---|---|---|---|---|
-| Runa da Câmara Reserva (Fehu) | I | 3 | Pulsa no pulso do usuário estabilizando o fluxo espiritual (+1 em Vontade). | Ação Livre: Converte a runa em energia imediata, reduzindo em -5 de Karma o custo da próxima técnica ou habilidade no turno. |
-| Runa daPupila de Cristal (Dagaz) | II | 3 | Enxerga fluxos de Karma através de fumaça/escuridão a até 12m (+2 em Percepção). | Ação Livre: Seu próximo ataque ou técnica no turno recebe +1d20 na Reserva e ignora camuflagem total. |
-| Runa dos Tendões de Relâmpago (Ehwaz) | III | 4 | Aumenta o deslocamento em +2m e a distância de saltos em +3m. | Ação Livre: Concede uma Ação de Movimento extra imediata no turno e soma +2 na CA até a próxima rodada. |
-| Runa da Fornalha Cardíaca (Wunjo) | III | 4 | Impede que o usuário fique Abalado ou Lento por frio/exaustão. | Ao gastar 3 de Vida: Todos os ataques e técnicas do usuário neste turno somam +1d8 de dano adicional antes do parcial. |
-| Runa da Mente Bipartida (Ingwaz) | IV | 6 | Concede +2 em testes de Tática, Criação e Canalização de Karma. | Ação Livre: Permite sustentar duas técnicas de concentração ao mesmo tempo ou realizar 1 Ação Extra gratuita para usar item/runa. |
-| Runa da Apoteose Efêmera (Odinn-Selo) | V | 10 | Aumenta em +1d20 a Reserva de todos os testes baseados em Intelecto ou Espírito. | Ação Livre: Por 2 rodadas, todas as suas técnicas custam metade do Karma e causam +1 dado de dano extra, um passo abaixo do dado-base da Matriz (mínimo d4). |
+| Runa                                  | Grau | Karma Retido | Enquanto armada                                                                  | Estouro                                                                                                                                                                                                                                                                 |
+|---------------------------------------|------|--------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Runa da Câmara Reserva (Fehu)         | I    | 3            | Pulsa no pulso do usuário estabilizando o fluxo espiritual (+1 em Vontade).      | Ação Livre: reduz em 5 Karma o custo de ativação da próxima técnica ou habilidade usada no mesmo turno, com mínimo de 1 Karma se o custo original for positivo. Não reduz manutenção, Karma Retido ou Investido; uma ativação originalmente gratuita continua gratuita. |
+| Runa daPupila de Cristal (Dagaz)      | II   | 3            | Enxerga fluxos de Karma através de fumaça/escuridão a até 12m (+2 em Percepção). | Ação Livre: Seu próximo ataque ou técnica no turno recebe +1d20 na Reserva e ignora camuflagem total.                                                                                                                                                                   |
+| Runa dos Tendões de Relâmpago (Ehwaz) | III  | 4            | Aumenta o deslocamento em +2m e a distância de saltos em +3m.                    | Ação Livre: Concede uma Ação de Movimento extra imediata no turno e soma +2 na CA até a próxima rodada.                                                                                                                                                                 |
+| Runa da Fornalha Cardíaca (Wunjo)     | III  | 4            | Impede que o usuário fique Abalado ou Lento por frio/exaustão.                   | Ao gastar 3 de Vida: Todos os ataques e técnicas do usuário neste turno somam +1d8 de dano adicional antes do parcial.                                                                                                                                                  |
+| Runa da Mente Bipartida (Ingwaz)      | IV   | 6            | Concede +2 em testes de Tática, Criação e Canalização de Karma.                  | Ação Livre: Permite sustentar duas técnicas de concentração ao mesmo tempo ou realizar 1 Ação Extra gratuita para usar item/runa.                                                                                                                                       |
+| Runa da Apoteose Efêmera (Odinn-Selo) | V    | 10           | Aumenta em +1d20 a Reserva de todos os testes baseados em Intelecto ou Espírito. | Ação Livre: Por 2 rodadas, todas as suas técnicas custam metade do Karma e causam +1 dado de dano extra, um passo abaixo do dado-base da Matriz (mínimo d4).                                                                                                            |
+
+<div class="section" book206-section="runas-amaldicoadas">
+
+## Runas Amaldiçoadas
+
+### Maldições vivas
+
+Runas Amaldiçoadas são parasitas espirituais ou fragmentos famintos da Marca selados diretamente na estrutura de uma arma. A arma adquire pulso, fome e vontade própria. O vínculo funciona como uma habilidade passiva reativa permanente do equipamento.
+
+As Runas Kármicas convencionais continuam seguindo suas próprias regras de inscrição, suporte, vagas e Karma Retido. As maldições vivas usam o procedimento deste subsistema.
+
+### A arma e o ciúme da maldição
+
+Somente armas de contato, arremesso, disparo ou armas de magos recebem Runas Amaldiçoadas. Uma arma comporta no máximo uma maldição. Ela toma todos os encaixes do suporte: a arma não pode receber nenhuma Runa Kármica convencional, e inscrições comuns existentes são destruídas no ato da selagem.
+
+A Runa Amaldiçoada não ocupa vaga pessoal do personagem e não retém Karma da reserva do portador. Não existem Etapas I–VII ou Graus I–V para estas runas; sua potência depende da quantidade de Condições escolhidas.
+
+### Regência e Fome
+
+Criar, gravar, manipular, suprimir ou interagir com uma Runa Amaldiçoada exige sempre **Presença + Controle da Corrupção**. Com Presença 0, um teste destreinado usa 1d20 −4; se treinado, usa 1d20 +2, +5 ou +10 conforme o nível de treinamento, sem acumular a penalidade −4. Intelecto e Canalização de Karma não substituem essa regência.
+
+**Risco de Fome.** Se um ataque com a arma amaldiçoada obtiver **1 natural no dado selecionado**, faça Presença + Controle da Corrupção contra **CD 14 + número de Condições da Runa**. Sucesso evita a mordida da arma; na falha, o portador sofre **1d6 Corrupto** ou recebe **+1 Carga Temporária de Corrupção**, conforme a consequência registrada para a maldição. Não transforme esse ponto temporário em Carga efetiva por simples mudança de nome.
+
+### Criar uma maldição
+
+Escolha de **uma a cinco Condições distintas** na Tabela A e um efeito do catálogo. Registre todas as alternativas usadas na composição: o vetor, o ciclo de marcas, a opção de isolamento ou flanqueamento de C7, a forma de tributo de C8 e o modo de CD da vítima. C3 e C4 são ciclos alternativos; C4 substitui C3. C1 e C2 impõem vetores incompatíveis entre si e não formam uma combinação válida.
+
+A quantidade de condições define a linha da Tabela B: mais condições permitem maior dado de dano, estados mais severos e uma CD maior para escapar. Quando a linha oferecer dados alternativos, registre o escolhido antes do uso. **Teatro de Tendões exige pelo menos três condições e Acerto Total**, conforme sua descrição.
+
+Faça o ritual usando Presença + Controle da Corrupção contra a CD de forja da linha escolhida. Materiais e duração que uma fórmula não declarar precisam ser registrados com o Mestre antes do ritual; a quantidade de condições não concede um custo, prazo ou limite de usos adicional por inferência.
+
+### Tabela A — Condições de Despertar
+
+As condições escolhidas precisam ser cumpridas na sequência definida. Marcas de C3/C4 são registradas por alvo e zeram após o disparo; C6 apaga as marcas acumuladas na cena quando ocorrer uma Falha antes de completar o ciclo. C5 verifica se houve Acerto Total na sequência para liberar o estado.
+
+| Código | Condição de Despertar                          | Procedimento                                                                                                                                                                         |
+|--------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| C1     | Restrição de Vetor Corpo a Corpo               | O efeito e o acúmulo de marcas só progridem em ataques de contato (Força ou Agilidade + Luta).                                                                                       |
+| C2     | Restrição de Vetor à Distância Longa           | O efeito só progride em ataques à distância realizados a 9 metros ou mais do alvo.                                                                                                   |
+| C3     | Ciclo de 2 Marcas no Mesmo Alvo                | Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 2 Marcas no mesmo inimigo (zerando as marcas após o disparo).                                           |
+| C4     | Ciclo de 3 Marcas no Mesmo Alvo (Substitui C3) | Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 3 Marcas no mesmo inimigo (zerando as marcas após o disparo).                                           |
+| C5     | Exigência de Acerto Total para o Estado        | Para que a condição/estado da runa seja aplicado quando ela despertar, pelo menos 1 dos ataques da sequência (ou o golpe final) deve ter sido Acerto Total contra a CA do alvo.      |
+| C6     | Sequência Sem Errar (Fome Intacta)             | Se o portador errar um ataque (Falha) antes de fechar as marcas, todas as marcas acumuladas na cena se apagam.                                                                       |
+| C7     | Alvo Isolado ou Flanqueado                     | A marca só é aplicada se o alvo não tiver nenhum aliado dele a até 3m (Isolado) OU estiver engajado com um aliado seu (Flanqueado), escolhido na criação.                            |
+| C8     | Sangue por Sangue (Tributo do Portador)        | No instante em que a runa desperta, ela drena 3 de Vida irreduzíveis do próprio portador (ou exige que o portador já esteja abaixo de 50% da Vida).                                  |
+| C9     | Alvo Já Debilitado                             | A runa só desperta contra um alvo que já esteja sofrendo uma condição negativa ou esteja com menos de 50% da Vida.                                                                   |
+| C10    | Ritual de Forja Estrito (Manutenção de Sangue) | A arma exige receber o sangue de pelo menos 1 inimigo derrotado por cena de combate; caso contrário, entra em torpor até ser alimentada com 1 TE e Presença + Controle da Corrupção. |
+
+### Tabela B — Potência por condições
+
+**CD da vítima.** Registre uma das duas modalidades antes do uso: a CD fixa da linha ou sua fórmula escalonada. Na fórmula, PRE é a Presença Total e Controle é o nível de treinamento em Controle da Corrupção; o nível não é o bônus de +2/+5/+10 do teste. A escolha não altera a CD de forja nem a CD de Fome.
+
+| Condições | Classificação     | Dano no Despertar   | Estado em Acerto Total                                                                                                                            | CD da vítima              | CD de forja |
+|-----------|-------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------|
+| 1         | Maldição Latente  | 1d8                 | Estado Leve / Simples: Caído, Lento, Abalado ou Empurrado 2m (1 rodada).                                                                          | 16 ou 12 + PRE + Controle | 14          |
+| 2         | Maldição Desperta | 1d10                | Estado Moderado: Desorientado, Sangramento (1d4) ou Guarda Quebrada (-2 CA) por 1 rodada.                                                         | 18 ou 14 + PRE + Controle | 16          |
+| 3         | Maldição Voraz    | 1d12 ou 2d6         | Estado Grave / Severo: Agarrado, Imobilizado, Silenciado, Envenenado ou Desarmado (escapa com teste de atributo + perícia adequada contra a CD).  | 20 ou 16 + PRE + Controle | 18          |
+| 4         | Maldição Abissal  | 1d16 ou 2d8         | Estado Grave Composto: Cego, Paralisado (Forma Reduzida: Abalado + sem Reação) + Sangramento, ou Subjugado + Ignora Resistência Leve (1).         | 22 ou 18 + PRE + Controle | 20          |
+| 5         | Maldição Soberana | 1d20 ou 3d6 ou 2d10 | Estado Extremo / Execução: Atordoado Pleno (1 rodada), Ferimento Grave / Ruptura de Couraça (-4 CA + Imobilizado) + Ignora Resistência Média (2). | 24 ou 20 + PRE + Controle | 22          |
+
+O estado e as condições de disparo seguem a descrição da composição. O efeito da maldição é resolvido conforme seu texto; não se soma outro estado da tabela ao estado escolhido apenas porque ambos aparecem na mesma linha. Efeitos de equipamento, como Danificado e Ruptura de Couraça, conservam sua incidência sobre o suporte indicado.
+
+### Catálogo de maldições vivas
+
+O exemplo do Deus Selvagem e os vinte efeitos abaixo fornecem identidades distintas para o vínculo. Os alcances, alvos, dados fixos, testes e exceções expressamente escritos permanecem próprios de cada efeito. Uma duração, forma de remoção ou interação não quantificada deve ser registrada antes do uso, sem conceder dados ou benefícios adicionais por inferência.
+
+#### Exemplo canônico — Runa do Deus Selvagem
+
+**Marca da Fera.** Ao acertar o inimigo com um ataque corpo a corpo (não importando se foi Acerto Parcial ou Total), marca-o com 1 Marca da Fera. Ao atingir **3 Marcas**, dois lobos negros emergem do chão e estraçalham o alvo, causando **`2d6` de dano Corrupto/Perfuração**. Caso pelo menos um dos três ataques da sequência tenha sido **Acerto Total** contra a CA, o alvo fica **Agarrado** pelas mandíbulas dos dois lobos. Para se libertar do estado, o alvo deve gastar uma ação e vencer um teste de **Força ou Constituição + Atletismo contra CD 20**.
+
+**Composição:** C1 + C4 + C5; três condições; Maldição Voraz; dano escolhido 2d6; CD fixa 20 para escapar e CD 18 para a forja. As três marcas se apagam após o disparo. Um terceiro acerto Parcial também fecha as marcas: o dano ocorre, mas Agarrado exige pelo menos um Acerto Total na sequência.
+
+#### Efeito 1 — Costura de Sombras
+
+**Agulha do Alfaiate Cego.** Cada acerto prende um fio de sombra no calcanhar do alvo. Ao cumprir as condições da runa, a sombra do alvo é costurada à sombra do inimigo mais próximo a até `4m`: ambos sofrem o dado de dano da runa (`1d8` a `1d20`) e, com o requisito de Acerto Total, ficam **Imobilizados** um ao outro (nenhum dos dois pode se mover para longe do outro até rasgar a costura com `Força + Atletismo` contra a CD da runa).
+
+#### Efeito 2 — Banquete de Ferrugem
+
+**Mandíbula Oxidada.** A arma secreta saliva ácida que oxida defesas. Ao fechar as condições da runa, placas de ferrugem explodem na armadura ou carapaça do inimigo: causa o dado de dano da runa e aplica **Danificado (`-2 CA`)** no equipamento/couro do alvo + **Sangramento** em Acerto Total.
+
+#### Efeito 3 — Coro dos Enforcados
+
+**Laço do Patíbulo.** A cada marca aplicada, uma corda espectral aperta a garganta do alvo. Ao cumprir as condições, o alçapão espiritual se abre: o alvo sofre o dado de dano da runa (natureza Corrupta) e, em Acerto Total, fica **Silenciado e Sufocado** (impedido de falar, conjurar técnicas verbais ou comandar invocações até passar em `Constituição + Atletismo` contra a CD da runa).
+
+#### Efeito 4 — Espelho de Sangue Faminto
+
+**Duplo Carniceiro.** A arma absorve o sangue respingado nos golpes. Ao completar as condições, o sangue coagula atrás do alvo formando um **Duplo Efêmero** que desfere um corte simultâneo causando o dado de dano da runa, concede flanqueamento imediato e deixa o alvo **Desorientado** (ou **Abalado + sem Reação** em runas de 3+ condições).
+
+#### Efeito 5 — Pálpebra Sem Sono
+
+**Olho da Vigília Abissal.** Onde a arma corta, pequenos olhos abissais se abrem na pele ou armadura do inimigo, impedindo-o de se esconder. Ao fechar as condições, os olhos choram icor cáustico: causa o dado de dano da runa, anula invisibilidade/furtividade e, em Acerto Total, deixa o alvo **Cego** até o fim do próximo turno (ou até limpar com teste contra a CD).
+
+#### Efeito 6 — Relógio de Ossos Quebrados
+
+**Pêndulo de Atraso.** A arma rouba o compasso temporal dos reflexos do inimigo. Ao cumprir as condições, um badalo seco ecoa nos ossos do alvo: causa o dado de dano da runa e, em Acerto Total, aplica **Lento** + **arranca a Reação** do alvo + atrasa a posição dele na Iniciativa em `-5` pelo resto da cena.
+
+#### Efeito 7 — Raiz Parasita de Sárkora
+
+**Semente Carnívora.** O primeiro golpe planta uma semente negra na ferida; os golpes seguintes a regam. Ao cumprir as condições, raízes espinhosas rebentam de dentro do alvo para o solo: causa o dado de dano da runa, transforma um raio de `2m` ao redor dele em terreno difícil e, em Acerto Total, deixa-o **Imobilizado/Enraizado** (`Força ou Constituição + Atletismo` contra a CD para arrancar as raízes).
+
+#### Efeito 8 — Sino do Funeral Submerso
+
+**Pulmão de Salmoura.** A arma ressoa como um sino afundado no oceano. Ao fechar as condições, os pulmões do alvo enchem-se instantaneamente de água negra gelada: causa o dado de dano da runa e, em Acerto Total, impõe **Abalado + Exaustão Respiratória** (`-1d20` em todos os testes físicos e perda da Ação de Movimento se falhar em `Constituição + Atletismo` contra a CD).
+
+#### Efeito 9 — Moeda do Barqueiro
+
+**Pedágio de Caronte.** Crava o selo de uma dívida fúnebre no peito do alvo. Ao cumprir as condições, a arma cobra o tributo: causa o dado de dano da runa e queima **metade desse valor diretamente do Karma atual** do inimigo. Em Acerto Total, aplica **Maldição de Estagnação** (qualquer cura recebida pelo alvo até o fim do próximo turno é reduzida à metade).
+
+#### Efeito 10 — Teatro de Tendões
+
+**Fios do Titereiro.** A lâmina amarra tendões espirituais nos pulsos do inimigo. Ao fechar as condições (exigindo 3+ condições e Acerto Total), além de sofrer o dado de dano da runa, os fios puxam os braços do alvo involuntariamente: o inimigo é forçado a realizar **1 ataque básico imediato contra o aliado dele mais próximo** ao alcance antes de ficar **Desorientado**.
+
+#### Efeito 11 — Forja de Medula
+
+**Febre de Cinzas.** Cada marca aquece o cálcio dos ossos do alvo como carvão em brasa. Ao cumprir as condições, o calor explode de dentro da medula: causa o dado de dano da runa e, em Acerto Total, força o alvo a **Desarmar-se** (largando o que segura nas mãos por espasmo térmico) ou sofrer metade do dano novamente no início do turno dele (`Constituição + Atletismo` contra a CD para segurar o item).
+
+#### Efeito 12 — Cão de Duas Cabeças
+
+**Frenesi da Matilha Bipolar.** Desenhada para caçadores que alternam alvos: ao marcar um inimigo A e um inimigo B a até `4m` um do outro e fechar a condição da runa, duas cabeças de mastim espectral surgem e **colidem os dois inimigos um contra o outro**: ambos sofrem o dado de dano da runa e, em Acerto Total, ambos caem **Caídos** e **Desorientados**.
+
+#### Efeito 13 — Cicatriz Magnetizada
+
+**Pólo de Carne Atratora.** Carrega o sangue do inimigo com magnetismo reverso. Ao fechar as condições, o corpo do alvo puxa violentamente todas as armas e estilhaços ao redor: sofre o dado de dano da runa, puxa o alvo `3m` na direção do portador e, em Acerto Total, deixa o alvo **Vulnerável a Metal** (`-2` nos limiares de CA Parcial e Total contra ataques de armas até o fim do próximo turno).
+
+#### Efeito 14 — Veredito do Carrasco
+
+**Cepo da Guilhotina.** A arma sente o cheiro de fim de linha. Ao cumprir as condições contra um alvo (ideal com condição de alvo abaixo de 50% de PV), um cepo fantasma trava os ombros do inimigo e uma lâmina de sombra desce verticalmente: causa o dado de dano máximo da faixa (ex.: `1d16` ou `1d20` em 4–5 condições) e, em Acerto Total, aplica **Sangramento Severo + Caído** sem permitir levantar com metade do movimento se falhar na CD.
+
+#### Efeito 15 — Vesícula de Bile Negra
+
+**Erupção Cáustica.** Contamina o sangue do alvo com bile volátil. Ao atingir as marcas da condição, a ferida entra em erupção jorrando ácido negro num **cone de `3m` atrás do alvo**: o alvo principal sofre o dado cheio de dano da runa + **Envenenado** (em Acerto Total), e inimigos no cone atrás dele sofrem metade do dano.
+
+#### Efeito 16 — Labirinto de Espelhos Partidos
+
+**Vertigem de Retorno.** A arma fratura o senso de direção do inimigo. Ao fechar as condições, causa o dado de dano da runa e, em Acerto Total, aplica **Prisão Espacial de Espelho**: na próxima vez que o inimigo tentar usar sua Ação de Movimento para se afastar do portador, o espaço se dobra e o movimento dele termina **adjacente ao portador novamente** (salvo `Espírito + Canalização` contra a CD da runa).
+
+#### Efeito 17 — Hospedeiro de Larvas Astrais
+
+**Enxame Devorador de Escudo.** Deposita larvas famintas por energia kármica na aura do alvo. Ao cumprir as condições, o enxame eclode: **destrói imediatamente até `10 pontos` de Escudo Temporário / Barreira** do alvo antes de aplicar o dado de dano da runa e, em Acerto Total, deixa o alvo **Enfraquecido (`-1d20` em ataques)** por 1 rodada.
+
+#### Efeito 18 — Balança de Órgãos
+
+**Simetria do Martírio.** Quanto mais ferido estiver o portador, mais alto a arma canta. Ao fechar as condições, a arma causa o dado de dano da runa e, em Acerto Total, **transfere 1 condição negativa física ou mental simples** que esteja afetando o portador diretamente para o inimigo atingido (caso o inimigo falhe contra a CD da runa).
+
+#### Efeito 19 — Trono de Ossos Vazios
+
+**Genuflexão pelo Peso.** Cada golpe multiplica o peso da própria carne do inimigo. Ao fechar as condições, a pressão esmaga os joelhos do alvo contra o solo: causa o dado de dano da runa e, em Acerto Total, aplica **Ajoelhado / Imobilizado no Solo** (o alvo fica *Caído* e seu Deslocamento cai a `0m` até vencer `Força ou Constituição + Atletismo` contra a CD da runa).
+
+#### Efeito 20 — Coração de Cinza Fria
+
+**Estopim de Cadáver.** A arma transforma o corpo do inimigo marcado em uma bomba de corrupção latente. Ao cumprir as condições, crava um núcleo instável no tórax do alvo causando o dado de dano da runa + **Abalado** em Acerto Total; se o alvo chegar a `0 de Vida` enquanto estiver com o núcleo ativo, ele explode em `3m` causando o mesmo dado de dano da runa em todos os inimigos adjacentes.
+
+</div>
+
 
 # Capítulo 10 - Criação de técnicas
 
@@ -2731,18 +3007,20 @@ Esses dados pertencem às técnicas ofensivas. Ataques básicos, cura e Escudo s
 
 ## A guarda diante das subdobras
 
-| Elemento primário | Subdobras                                               |
-|-------------------|---------------------------------------------------------|
-| Vento (Ar)        | Raio, Som e Vácuo                                       |
-| Água              | Gelo, Sangue e Vapor (com Fogo)                         |
-| Fogo              | Combustão, Plasma e Cinza Ardente; também Vapor e Magma |
-| Terra             | Metal, Cristal, Quartzo, Areia, Magma e Lava (com Fogo) |
-| Luz               | Laser e Miragem Solar                                   |
-| Sombra (Trevas)   | Erosão e Breu Abissal                                   |
+| Origem elemental | Subdobras                                     | Defesa parental                                                    |
+|------------------|-----------------------------------------------|--------------------------------------------------------------------|
+| Água             | Gelo, Geada, Névoa, Sangue                    | Metade da defesa de Água, arredondada para baixo.                  |
+| Fogo             | Combustão, Cinza, Incandescência, Deflagração | Metade da defesa de Fogo, arredondada para baixo.                  |
+| Terra            | Areia, Metal, Cristal, Peso                   | Metade da defesa de Terra, arredondada para baixo.                 |
+| Ar / Vento       | Raio, Som, Vácuo, Pressão Atmosférica         | Metade da defesa de Ar / Vento, arredondada para baixo.            |
+| Água + Fogo      | Vapor                                         | Metade da maior defesa entre Água e Fogo, arredondada para baixo.  |
+| Terra + Fogo     | Magma / Lava                                  | Metade da maior defesa entre Terra e Fogo, arredondada para baixo. |
 
-Use a defesa inteira contra seu elemento primário. Subdobras não têm defesa própria: aplique metade da defesa do elemento de origem, arredondando para baixo. Quando houver dois elementos-pai, escolha a maior defesa entre eles antes de dividir. Não some as duas.
+Os seis elementos primários são Fogo, Terra, Água, Ar (Vento), Luz e Trevas (Sombra). Use a defesa inteira contra o elemento primário. As 18 subdobras da tabela usam metade da defesa de seu elemento de origem, arredondada para baixo. Para Vapor e Magma / Lava, escolha a maior defesa entre os dois elementos-pai antes de dividir; não some as duas. Magma e Lava são nomes da mesma subdobra.
 
-> O Raio é uma subdobra do Vento. Se a criatura tem 4 de Resistência contra Vento, ainda se protege de um ataque de Elemental / Raio. A descarga atravessa parte da guarda: reduza o dano em apenas 2 pontos.
+Peso aumenta ou diminui o peso, a massa aparente e a carga física de objetos, armas e corpos. Não manipula a gravidade nem cria campos gravitacionais. A técnica declara alvo, intensidade, duração, teste e custo.
+
+> O Raio é uma subdobra do Vento. Se a criatura tem Resistência Alta (3) contra Vento, reduz o dano de um ataque de Elemental / Raio em 1 ponto.
 
 ## A dívida da Marca
 
@@ -2774,7 +3052,28 @@ O desgaste corrupto atinge a Vida diretamente, sem Escudo ou armadura. Registre 
 | Tritão      | Use o Pulso de Maré para empurrar o alvo atingido em 2 m ou impor o controle hidrostático da sua Etapa.                            |
 | Abissal     | Trace a técnica a partir da Âncora do Vazio ativa.                                                                                 |
 
-**Reconheça a doutrina da classe.** Um Duelista ou Pugilista pode economizar 1 Karma em uma manobra comprada; um Conjurador, em alcance, área ou sustentação; um Assassino, em precisão ou ocultação; um Tanque, em bloqueio ou proteção aliada. A economia só vale quando existe um componente que a doutrina possa aperfeiçoar. Ela entra no mesmo limite de redução da técnica.
+**Reconheça a doutrina da classe.** Ao construir uma técnica, desconte no máximo 1 Karma de um componente temático efetivamente comprado, conforme a tabela. Registre qual componente recebeu a economia. Sem componente elegível, não há desconto. A doutrina não concede função, fonte ou permissão nova, não altera habilidades prontas de custo próprio e entra no mesmo limite total de redução e no custo mínimo da técnica. Não some descontos de doutrina para ultrapassar 1 Karma e não desconte a manutenção separadamente.
+
+| Classe          | Componente temático                      | Aplicação                              |
+|-----------------|------------------------------------------|----------------------------------------|
+| Mercenário      | Manobra de ataque                        | Impacto, Manobra, Quebra de guarda.    |
+| Pugilista       | Manobra de ataque                        | Impacto, Manobra, Quebra de guarda.    |
+| Duelista        | Manobra de ataque                        | Impacto, Manobra, Quebra de guarda.    |
+| Tanque          | Defesa / guarda ou condição / controle   | Bloqueio, Proteção aliada, Provocação. |
+| Ranger          | Manobra de ataque ou condição / controle | Precisão, Ocultação, Alvo isolado.     |
+| Ladrão          | Manobra de ataque ou condição / controle | Precisão, Ocultação, Alvo isolado.     |
+| Assassino       | Manobra de ataque ou condição / controle | Precisão, Ocultação, Alvo isolado.     |
+| Samaritano      | Suporte / cura                           | Cura, Purificação, Amparo.             |
+| Curandeiro      | Suporte / cura                           | Cura, Purificação, Amparo.             |
+| Alquimista      | Alcance / área ou suporte                | Dispositivo, Preparação, Área.         |
+| Inventor        | Alcance / área ou suporte                | Dispositivo, Preparação, Área.         |
+| Bardo           | Alcance / área ou suporte                | Coordenação, Alcance, Sustentação.     |
+| Ocultista       | Alcance / área ou suporte                | Alcance, Área, Sustentação.            |
+| Especialista    | Alcance / área ou suporte                | Dispositivo, Preparação, Área.         |
+| Invocador       | Alcance / área ou suporte                | Coordenação, Alcance, Sustentação.     |
+| Elementalista   | Alcance / área ou suporte                | Alcance, Área, Sustentação.            |
+| Conjurador      | Alcance / área ou suporte                | Alcance, Área, Sustentação.            |
+| Escriba Kármico | Condição / controle                      | Condição, Controle, Selo.              |
 
 **Por fim, dê medida ao efeito.** Compre alcance, área, duração, controle ou proteção. Indique o alvo, o teste, a defesa e o que sobra no parcial. Uma condição precisa de gatilho e duração; um redutor precisa impor uma restrição que importe na mesa. O nome de uma técnica não lhe concede uma segunda ação, dano adicional ou uma defesa que não foi registrada.
 
@@ -2999,12 +3298,12 @@ As propriedades Perfurante e Antiblindagem de equipamentos seguem seus capítulo
 
 Escolha a resolução pela natureza da ação. Um ataque que tenta impor dano ou um selo contra um adversário pode enfrentar CA; superar um obstáculo sem oponente rolando utiliza CD; uma disputa direta utiliza teste oposto. Use as regras da fonte e das manobras quando elas já determinarem a defesa.
 
-| **Resolução**        | **Resultado favorável**         | **Como tratar o parcial**                                              |
-|----------------------|---------------------------------|------------------------------------------------------------------------|
-| Ataque contra CA     | Igualar ou superar a CA         | Da metade da CA arredondada para baixo até CA − 1                      |
-| Teste contra CD      | Igualar ou superar a CD         | Só existe se a regra específica o declarar                             |
-| Teste oposto         | Superar o resultado do oponente | Só existe se a regra específica o declarar; empate preserva a situação |
-| Efeito sem incerteza | Cumprir as condições da ficha   | Não há rolagem nem resultado parcial                                   |
+| **Resolução**        | **Resultado favorável**                                                               | **Como tratar o parcial**                                                                                                                           |
+|----------------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ataque contra CA     | Total: superar a CA; na igualdade, Atributo do atacante maior que o regente da defesa | Da metade da CA arredondada para baixo até CA − 1; na igualdade com a CA, Parcial se o Atributo do atacante for menor ou igual ao regente da defesa |
+| Teste contra CD      | Igualar ou superar a CD                                                               | Só existe se a regra específica o declarar                                                                                                          |
+| Teste oposto         | Superar o resultado do oponente                                                       | Só existe se a regra específica o declarar; empate preserva a situação                                                                              |
+| Efeito sem incerteza | Cumprir as condições da ficha                                                         | Não há rolagem nem resultado parcial                                                                                                                |
 
 Um efeito sobre o próprio usuário ou um aliado voluntário não exige automaticamente um teste contra CA. A ficha pode dispensar rolagem quando não houver incerteza, como no escudo pessoal do exemplo Muralha de Retorno. Havendo obstáculo ou interferência, indique a resolução cabível antes do uso.
 
@@ -3036,7 +3335,7 @@ Um 20 natural no dado normalmente selecionado é crítico, mas não supera autom
 
 - Confira consequências que dependam do dano efetivamente sofrido, como Ferimento Grave ou Avaria.
 
-Exemplo: um ataque obtém 18 contra CA 18. É parcial. Se o dano calculado for 9, ele passa a 4; contra Resistência 2, restam 2. Se a Resistência fosse 5, o dano final seria zero. Não reaplique o mínimo de 1 depois da redução.
+Exemplo: um ataque de Força 6 obtém 18 contra CA 18 de um defensor cuja CA é regida por Agilidade 7. A igualdade produz Acerto Parcial porque o Atributo do atacante é menor. Se o dano calculado for 9, ele passa a 4; contra Resistência 2, restam 2. Se a Resistência fosse 5, o dano final seria zero. Não reaplique o mínimo de 1 depois da redução. Com resultado 19, esse mesmo ataque obteria Acerto Total.
 
 ### Duração e encerramento
 
@@ -3140,7 +3439,7 @@ Nos seis exemplos seguintes, não há preparação nem consumível adicional. Ca
 
 **Resolução:** ataque contra CA. O alvo pode Evadir se cumprir seus requisitos. Cobertura e proteções pertinentes continuam valendo. Total causa 2d6 de Água e empurra 2 metros. Parcial causa metade do dano, arredondada para baixo, e empurra 1 metro. Falha não causa dano nem deslocamento; os 6 Karma e a Ação Principal são gastos.
 
-**Exemplo de uso:** com Espírito 5 e Controle de Água 1, o usuário rola 3d20 e soma +2 ao maior. Dados 7, 12 e 16 produzem 18. Contra CA 17, é total; se o dano mostrar 9, aplique 9 antes das reduções e empurre 2 metros. Contra CA 18, o mesmo ataque seria parcial: 4 de dano antes das reduções e 1 metro de empurrão.
+**Exemplo de uso:** com Espírito 5 e Controle de Água 1, o usuário rola 3d20 e soma +2 ao maior. Dados 7, 12 e 16 produzem 18. Contra CA 17, é Acerto Total: se o dano mostrar 9, aplique 9 antes das reduções e empurre 2 metros. Contra CA 18 regida por Agilidade 7, compare Espírito 5 com Agilidade 7: o ataque é Parcial, com 4 de dano antes das reduções e 1 metro de empurrão. Contra CA 19, seria Parcial independentemente do confronto, pois o resultado ficou abaixo da CA Total.
 
 **Por que a composição funciona:** o pequeno empurrão cabe no efeito menor. A lança não recebe também Queimando, Silenciado ou outro benefício. O deslocamento termina diante de um obstáculo que não possa atravessar.
 
@@ -3248,6 +3547,16 @@ Durante a cena, uma aplicação ainda não aprendida utiliza improvisação comu
 
 - A técnica respeita recursos, proteção contra supressão repetida e limites por cena?
 
+<div class="section" book206-section="conferencia-da-tecnica">
+
+## Conferência da técnica pronta
+
+Percorra a criação nesta ordem: conceito e fonte; acesso por Etapa, Grau e treinamento; função primária; função secundária ou efeito menor; forma de uso; custo e modificadores; resolução de Total, Parcial e Falha; registro e comparação com técnica semelhante. As tabelas do capítulo fornecem os valores de cada escolha.
+
+Alcance não é área: uma explosão lançada a 15 metros com raio de 2 metros compra alcance médio e área pequena (+2 Karma), além dos demais componentes. O roteiro não concede componentes gratuitos e não altera o limite de descontos.
+
+</div>
+
 
 # Capítulo 11 - Domínios e Caminho
 
@@ -3329,20 +3638,22 @@ Cada Domínio permite dois Refinamentos, obtidos por acontecimentos e treinament
 
 A rerrolagem de Precisão aceita o resultado novo. Ela não rerrola o dano nem um dado de outra fonte. Refinamentos não concedem uma segunda ativação na mesma cena.
 
-## O Caminho {#o-caminho}
+## O Caminho
 
 O Caminho é a forma que mente, corpo, técnica e Karma assumem quando uma criatura ultrapassa o limite que até então dava sentido à sua vida. Para as divindades das Nove Asas, que já atingiram o ápice de seus conceitos, uma Bênção é um fragmento desse Caminho entregue a alguém que ainda pode mudar. O risco mortal aperfeiçoa o fragmento. Quando o portador morre ou a Bênção retorna, a divindade recolhe o poder emprestado e a evolução que ele acumulou. Essa colheita não se aplica a um vínculo já rompido por Emancipação.
 
 ### Despertar na Etapa III
 
-A partir da Etapa III, você pode despertar o Caminho antes de possuir um Domínio. Exige uma crise em cena: estar com metade da Vida ou menos, enfrentar ameaça de Etapa igual ou superior, ou pôr uma convicção vital em risco direto. Faça Espírito ou o Atributo-chave do Caminho + Canalização de Karma. Vontade designa a resistência interior da cena, resolvida por esse teste no sistema atual. Use a reserva do Atributo-chave, o bônus de treinamento em Vontade ou Canalização de Karma e +1 por falha em sessão anterior. Ímpeto, Analítico e outros bônus de perícia ficam fora desse teste.
+A partir da Etapa III, você pode despertar o Caminho antes de possuir um Domínio. Exige uma crise em cena: estar com metade da Vida ou menos, enfrentar ameaça de Etapa igual ou superior, ou pôr uma convicção vital em risco direto. Faça Espírito ou o Atributo-chave do Caminho + Canalização de Karma, usando a reserva do Atributo escolhido e o bônus de treinamento em Canalização de Karma. Vontade designa a resistência interior resolvida por esse teste; não existe treinamento separado em Vontade. Some +1 por falha em sessão anterior. Ímpeto, Analítico e outros bônus de perícia ficam fora desse teste.
 
-| Tentativa | Despertar puro | Despertar sob Outorga ou doutrina |
-|---|---|---|
-| Obstáculo | Tábula rasa kármica | Inércia de dependência espiritual |
-| Teste | CD 20 | CD 24 e −1d20 na reserva, conforme a regra de Desvantagem |
-| Preço da tentativa | 6 Karma, ou uma Fratura ou Exaustão se não houver Karma disponível | 10 Karma e 2d6 de dano kármico irreduzível |
-| Falha | Não desperta na cena. Some +1 acumulado à próxima tentativa em sessão futura | Mesmo bônus acumulado. As habilidades da Bênção custam +2 Karma até o fim da cena |
+| Tentativa          | Despertar puro                                                               | Despertar sob Outorga ou ensinamento                                              |
+|--------------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Obstáculo          | Tábula rasa kármica                                                          | Inércia da Outorga ou do ensinamento recebido                                     |
+| Teste              | CD 20                                                                        | CD 24 e −1d20 na reserva, conforme a regra de Desvantagem                         |
+| Preço da tentativa | 6 Karma, ou uma Fratura ou Exaustão se não houver Karma disponível           | 10 Karma e 2d6 de dano kármico irreduzível                                        |
+| Falha              | Não desperta na cena. Some +1 acumulado à próxima tentativa em sessão futura | Mesmo bônus acumulado. As habilidades da Bênção custam +2 Karma até o fim da cena |
+
+A coluna de CD 24 aplica-se a quem possui uma Outorga (Bênção) ou possui ou já teve mestre, mentor ou qualquer ensinamento formal, incluindo a doutrina marcial ou de classe. Apenas personagens estritamente autodidatas e sem Bênção usam CD 20. A Desvantagem, os 10 Karma e os 2d6 da coluna difícil permanecem mesmo que o ensinamento ou vínculo com o mestre tenha terminado.
 
 O despertar reduz em 20% a CD, as Marcas exigidas e o custo de abertura dos Domínios. Arredonde ao inteiro mais próximo, com mínimo de 1 para requisito ou custo positivo, e calcule o custo depois dos Refinamentos de Eficiência. O atributo regente exigido e os demais requisitos de Domínio continuam valendo.
 
@@ -3350,28 +3661,40 @@ O despertar reduz em 20% a CD, as Marcas exigidas e o custo de abertura dos Dom�
 
 **Independente.** Quem não possui Bênção recebe Reserva Soberana (+4 Karma máximo e +2 no resultado de resistências contra Matriz Divina e presença de Asas) e escolhe um Axioma.
 
+A vertente Independente descreve a ausência de Bênção; não impede filiação à Guilda ou progressão pela Torre. Caminho Pessoal é a expressão da Lei individual, distinto do caminho de progressão institucional do Capítulo 4.
+
 **Subversão.** Conserva a Bênção e recebe um Axioma. Técnicas podem combinar a Bênção com a regra do Axioma. Usos de sobrecarga divina custam o dobro.
 
 **Emancipação.** Rompe o vínculo de colheita, converte a estrutura da Bênção em técnica própria, recebe um Axioma e +4 Karma máximo. Registre a técnica resultante com os custos e limites acordados na mesa.
 
 A Lei pessoal, a Afirmação e a Culminação continuam sendo registros da expressão avançada do Caminho. Seus custos de manifestação são próprios e distintos do teste de despertar.
 
-### Axiomas Autorais {#axiomas-autorais}
+A ordem de desenvolvimento é Despertar na Etapa III, escolha da vertente e do Axioma, registro da Lei e acesso às suas manifestações conforme o registro. Imposição permite exercer a Lei e a Afirmação; Culminação é sua execução extrema. Essa sequência não cria novos bloqueios por Etapa IV, V, VI ou VII: preserve os requisitos da Assinatura e a exceção de Culminação antes da VII.
+
+| Refinamentos de Eficiência | Manifestação normal | Manifestação com Caminho |
+|----------------------------|---------------------|--------------------------|
+| Nenhum                     | 3 Karma             | 2 Karma                  |
+| Um                         | 2 Karma             | 2 Karma                  |
+| Dois                       | 1 Karma             | 1 Karma                  |
+
+Aplique primeiro Eficiência e depois o redutor de 20%, arredondando ao inteiro mais próximo e respeitando o mínimo de 1 Karma.
+
+### Axiomas Autorais
 
 Escolha um Axioma ao despertar e registre seu nome na ficha.
 
-| Axioma | Arquétipo | Benefício |
-|---|---|---|
-| Quebra de Limite Físico | Força Bruta / Vanguarda Marcial | Seus ataques da Matriz Marcial ignoram os primeiros 4 pontos de Redução de Dano ou Escudo Temporário do alvo. Uma vez por turno, ao acertar um golpe corpo a corpo Total, você empurra o alvo em 2m e soma +Etapa ao dano causado. |
-| Anatomia do Ponto Fatal | Letalidade / Precisão / Crítico | Reduz em -2 o limiar de CA Total de qualquer alvo que já tenha sofrido dano na rodada ou que esteja fora do alcance de aliados dele. Seus ataques que atinjam a CA Total aplicam Sangramento ou reduzem a cura recebida pelo alvo pela metade por 1 rodada. |
-| Passo de Horizonte Curto | Velocidade / Mobilidade / Espaço | Aumenta seu Movimento base em +3 metros permanentes. Você ignora terreno difícil e, uma vez por rodada como Ação Livre (custo: 1 Karma), pode percorrer até 3m sem provocar ataques de oportunidade antes ou depois de atacar. |
-| Bastião Inquebrável | Defesa Pesada / Guardião / Sobrevivência | Aumenta sua CA Parcial e Total em +1 e sua Vida Máxima em +2 por Etapa. Sempre que você usar uma Reação defensiva ou receber um Escudo Temporário, o valor de absorção ou redução de dano aumenta em +Etapa. |
-| Circuito Rúnico Autônomo | Escriba / Especialista Rúnico | Amplia seu limite máximo de Runas Kármicas ativas em +2. A primeira Runa que você estourar em cada cena recupera 3 de Karma para sua reserva e tem sua Classe de Dificuldade (CD) ou bônus de acerto aumentado em +2. |
-| Soberania Elemental | Elementalista / Conjurador de Área | Técnicas da Matriz Elemental recebem +1 dado do mesmo tipo no cálculo de dano antes do parcial e ignoram resistências elementais leves. Além disso, você pode excluir até 2 aliados da área de efeito das suas próprias técnicas elementais. |
-| Regência de Comando Neural | Invocador / Criador de Constructos | Reduz em -1 de Karma (mínimo 1) o custo de Manutenção de todas as suas Invocações e dispositivos ativos. Suas invocações somam +2 na CA e nos testes de ataque, e uma delas pode receber ordens por turno mesmo sem linha de visão direta. |
-| Síntese Alquímica de Campo | Alquimista / Suporte Tático | Aumenta seu limiar seguro de Saturação Alquímica em +2. Permite consumir ou aplicar elixires, munições especiais e reparos táticos reduzindo a ação exigida em um passo (Principal → Movimento → Livre) uma vez por rodada, somando +Etapa à cura ou escudo gerado. |
-| Vácuo de Anulação Kármica | Antimago / Caçador de Conjuradores | Quando você acerta um alvo com arma ou técnica, pode queimar 2 de Karma para destruir 4 de Karma da reserva do alvo (ou encerrar 1 efeito sustentado de Grau igual ou inferior à sua Etapa). Concede +2 na CA contra técnicas das Matrizes Kármica e Divina. |
-| Predação de Sombra Viva | Subterfúgio / Furtividade / Emboscada | Atacar a partir de cobertura, furtividade ou flanco adiciona +1d20 na Reserva do ataque e impede que o alvo utilize Reações até o início do próximo turno dele. Abater ou deixar um inimigo em estado crítico permite entrar em furtividade como Ação Livre. |
+| Axioma                     | Arquétipo                                | Benefício                                                                                                                                                                                                                                                                                                                                        |
+|----------------------------|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Quebra de Limite Físico    | Força Bruta / Vanguarda Marcial          | Seus ataques da Matriz Marcial ignoram os primeiros 4 pontos de Redução de Dano ou Escudo Temporário do alvo. Uma vez por turno, ao acertar um golpe corpo a corpo Total, você empurra o alvo em 2m e soma +Etapa ao dano causado.                                                                                                               |
+| Anatomia do Ponto Fatal    | Letalidade / Precisão / Crítico          | Reduz em -2 o limiar de CA Total de qualquer alvo que já tenha sofrido dano na rodada ou que esteja fora do alcance de aliados dele. Seus ataques que atinjam a CA Total aplicam Sangramento ou reduzem a cura recebida pelo alvo pela metade por 1 rodada.                                                                                      |
+| Passo de Horizonte Curto   | Velocidade / Mobilidade / Espaço         | Aumenta seu Movimento base em +3 metros permanentes. Você ignora terreno difícil e, uma vez por rodada como Ação Livre (custo: 1 Karma), pode percorrer até 3m sem provocar ataques de oportunidade antes ou depois de atacar.                                                                                                                   |
+| Bastião Inquebrável        | Defesa Pesada / Guardião / Sobrevivência | Aumenta sua CA Parcial e Total em +1 e sua Vida Máxima em +2 por Etapa. Sempre que você usar uma Reação defensiva ou receber um Escudo Temporário, o valor de absorção ou redução de dano aumenta em +Etapa.                                                                                                                                     |
+| Circuito Rúnico Autônomo   | Escriba / Especialista Rúnico            | Amplia seu limite máximo de Runas Kármicas ativas em +2. A primeira Runa que você estourar em cada cena recupera 3 de Karma para sua reserva e tem sua Classe de Dificuldade (CD) ou bônus de acerto aumentado em +2.                                                                                                                            |
+| Soberania Elemental        | Elementalista / Conjurador de Área       | Técnicas da Matriz Elemental recebem +1 dado do mesmo tipo no cálculo de dano antes do parcial e reduzem em 1 ponto a Resistência Elemental do alvo, até o mínimo de 0 (ignorando Resistência Leve 1). Além disso, você pode excluir até 2 aliados da área de efeito das suas próprias técnicas elementais.                                      |
+| Regência de Comando Neural | Invocador / Criador de Constructos       | Reduz em -1 de Karma (mínimo 1) o custo de Manutenção de todas as suas Invocações e dispositivos ativos. Suas invocações somam +2 na CA e nos testes de ataque, e uma delas pode receber ordens por turno mesmo sem linha de visão direta.                                                                                                       |
+| Síntese Alquímica de Campo | Alquimista / Suporte Tático              | Aumenta seu limiar seguro de Saturação Alquímica em +2. Permite consumir ou aplicar elixires, munições especiais e reparos táticos reduzindo a ação exigida em um passo (Principal → Movimento → Livre) uma vez por rodada, somando +Etapa à cura ou escudo gerado.                                                                              |
+| Vácuo de Anulação Kármica  | Antimago / Caçador de Conjuradores       | Quando você acerta um alvo com arma ou técnica, pode queimar 2 de Karma para destruir 4 de Karma da reserva do alvo (ou encerrar 1 efeito sustentado de Grau igual ou inferior à sua Etapa). Concede +2 na CA contra técnicas das Matrizes Kármica e Divina.                                                                                     |
+| Predação de Sombra Viva    | Subterfúgio / Furtividade / Emboscada    | Atacar a partir de cobertura, furtividade ou flanco adiciona +1d20 na Reserva do ataque. Se esse golpe obtiver Acerto Total, depois de resolvidas as defesas do próprio golpe, o alvo não pode usar Reações até o início do próximo turno dele. Deixar um inimigo Morrendo ou com Ferimento Grave permite entrar em furtividade como Ação Livre. |
 
 ### Registro da Lei pessoal
 
@@ -3456,37 +3779,37 @@ Esse uso não causa dano, concede cobertura, impõe condição, repõe recurso o
 
 Fogo governa calor, expansão e transformação rápida. Suas técnicas causam dano, criam zonas perigosas, consomem materiais e impulsionam movimento. Fogo não cria combustível infinito: sem técnica específica, a chama precisa de matéria ou Karma para permanecer.
 
-Subdobras e expressões derivadas incluem: Combustão, Plasma e Cinza Ardente; também Vapor e Magma. Contra subdobras, aplique 50% da defesa do elemento primário, arredondada para baixo; com dois elementos de origem, use a maior defesa antes de dividir, conforme o Capítulo 10.
+Subdobras desta origem: Combustão, Cinza, Incandescência e Deflagração. A defesa parental é metade da defesa do elemento, arredondada para baixo. Consulte a tabela das 18 subdobras no Capítulo 10 para as origens mistas.
 
 ### Terra
 
 Terra governa estrutura, peso, mineral e estabilidade. Suas técnicas erguem cobertura, controlam terreno, reforçam objetos e restringem passagem. Terra criada por Karma se desfaz ao fim da duração se não houver matéria para incorporá-la.
 
-Subdobras e expressões derivadas incluem: Metal, Cristal, Quartzo, Areia, Magma e Lava (com Fogo). Contra subdobras, aplique 50% da defesa do elemento primário, arredondada para baixo; com dois elementos de origem, use a maior defesa antes de dividir, conforme o Capítulo 10.
+Subdobras desta origem: Areia, Metal, Cristal e Peso. A defesa parental é metade da defesa do elemento, arredondada para baixo. Consulte a tabela das 18 subdobras no Capítulo 10 para as origens mistas.
 
 ### Água
 
 Água governa fluxo, pressão, adaptação e mudança de estado. Suas técnicas movem, envolvem, amortecem, cortam por pressão e sustentam cura quando combinadas com Medicina ou Bênção. Água elemental não purifica Corrupção sozinha.
 
-Subdobras e expressões derivadas incluem: Gelo, Sangue e Vapor (com Fogo). Contra subdobras, aplique 50% da defesa do elemento primário, arredondada para baixo; com dois elementos de origem, use a maior defesa antes de dividir, conforme o Capítulo 10.
+Subdobras desta origem: Gelo, Geada, Névoa e Sangue. A defesa parental é metade da defesa do elemento, arredondada para baixo. Consulte a tabela das 18 subdobras no Capítulo 10 para as origens mistas.
 
 ### Ar
 
 Ar governa movimento, som, pressão e distância. Suas técnicas empurram, elevam, silenciam, aceleram projéteis e alteram respiração. Retirar todo o ar de um corpo é efeito de grau V e nunca morte automática; resolve-se como ataque e condição grave.
 
-Subdobras e expressões derivadas incluem: Raio, Som e Vácuo. Contra subdobras, aplique 50% da defesa do elemento primário, arredondada para baixo; com dois elementos de origem, use a maior defesa antes de dividir, conforme o Capítulo 10.
+Subdobras desta origem: Raio, Som, Vácuo e Pressão Atmosférica. A defesa parental é metade da defesa do elemento, arredondada para baixo. Consulte a tabela das 18 subdobras no Capítulo 10 para as origens mistas.
 
 ### Luz
 
 Luz governa revelação, direção, refração e presença visível. Pode iluminar, criar miragens, concentrar calor, marcar um alvo ou revelar ocultação. Não lê verdade moral nem destrói Corrupção por natureza; isso exige fonte Divina. Em domínio inicial, a manipulação comum não causa dano sem técnica ou atribuição elemental apropriada.
 
-Subdobras e expressões derivadas incluem: Laser e Miragem Solar. Contra subdobras, aplique 50% da defesa do elemento primário, arredondada para baixo; com dois elementos de origem, use a maior defesa antes de dividir, conforme o Capítulo 10.
+Luz permanece um elemento primordial. A tabela canônica das 18 subdobras não acrescenta derivações desta origem.
 
 ### Trevas
 
 Trevas governam ocultação, absorção, silêncio visual e espaço não observado. Podem apagar contraste, esconder trajetória, absorver luz e criar volumes de sombra. Não geram Corrupção por natureza; isso exige fonte corrompida. Em domínio inicial, a manipulação comum não causa dano sem técnica ou atribuição elemental apropriada.
 
-Subdobras e expressões derivadas incluem: Erosão e Breu Abissal. Contra subdobras, aplique 50% da defesa do elemento primário, arredondada para baixo; com dois elementos de origem, use a maior defesa antes de dividir, conforme o Capítulo 10.
+Trevas permanece um elemento primordial. A tabela canônica das 18 subdobras não acrescenta derivações desta origem.
 
 ### Progressão elemental
 
@@ -3517,17 +3840,34 @@ Se a atribuição for usada apenas para explorar vulnerabilidade conhecida, ela 
 
 ### Luz contra Trevas
 
-Luz e Trevas são elementos neutros que se anulam mutuamente. Quando uma técnica de Luz for o ataque principal e encontrar defesa, técnica ou criatura cuja fonte principal seja Trevas, o lado de Trevas recebe Desvantagem no teste defensivo, na oposição ou na Evasão. Quando Trevas atacar Luz, o lado de Luz recebe a mesma Desvantagem.
+Registre a fonte elemental principal diretamente na ficha: ela é o primeiro elemento com que o ser nasceu ou que despertou. Conhecer outro elemento não troca essa origem. Quando uma técnica de Luz enfrenta um ser de fonte principal Trevas que se defende utilizando ou manifestando Trevas, esse ser recebe Desvantagem no teste defensivo, na oposição ou na Evasão. A regra é recíproca quando Trevas enfrenta fonte principal Luz que se defende utilizando ou manifestando Luz. A mera presença de uma segunda afinidade não aplica a penalidade a defesas que não usem o elemento oposto.
 
 **Essa regra é recíproca, não uma hierarquia:** nenhum dos dois é superior. Se Luz e Trevas estiverem na mesma técnica em proporções equivalentes, neutralizam as propriedades de oposição e produzem Karma neutro visível como penumbra, eclipse ou ausência de cor.
 
 ### Elemento no ambiente
 
-Fonte abundante pode conceder +1 dado a uma manipulação diretamente apoiada por ela; ausência extrema pode exigir +1 Karma ou impedir técnica que declare depender de matéria. O personagem ainda consegue criar pequena quantidade com Karma. Ambiente nunca concede dano gratuito e só fornece Vantagem se mudar de fato a dificuldade.
+Uma fonte elemental abundante concede Vantagem à manipulação diretamente apoiada por ela. Aplique a regra normal de Vantagem, sem acumular fontes adicionais do mesmo tipo. Ausência extrema pode exigir +1 Karma ou impedir técnica que declare depender de matéria. O personagem ainda consegue criar pequena quantidade com Karma. O ambiente não concede dano gratuito.
 
 ### Mistura elemental
 
 Duas pessoas podem combinar técnicas por ação preparada, pagando e testando separadamente; use o menor Grau para um efeito conjunto coerente, sem duplicar dano e condições gratuitamente. Um usuário individual precisa de Controle 1 em cada elemento. Sua técnica mista tem um custo e um teste, usa o menor treinamento dos elementos e respeita a Etapa. Subformas e permanência mantêm seus requisitos.
+
+<div class="section" book206-section="as-18-subdobras">
+
+## As 18 subdobras
+
+| Origem elemental | Subdobras                                     | Defesa parental                                                    |
+|------------------|-----------------------------------------------|--------------------------------------------------------------------|
+| Água             | Gelo, Geada, Névoa, Sangue                    | Metade da defesa de Água, arredondada para baixo.                  |
+| Fogo             | Combustão, Cinza, Incandescência, Deflagração | Metade da defesa de Fogo, arredondada para baixo.                  |
+| Terra            | Areia, Metal, Cristal, Peso                   | Metade da defesa de Terra, arredondada para baixo.                 |
+| Ar / Vento       | Raio, Som, Vácuo, Pressão Atmosférica         | Metade da defesa de Ar / Vento, arredondada para baixo.            |
+| Água + Fogo      | Vapor                                         | Metade da maior defesa entre Água e Fogo, arredondada para baixo.  |
+| Terra + Fogo     | Magma / Lava                                  | Metade da maior defesa entre Terra e Fogo, arredondada para baixo. |
+
+Aumenta ou diminui o peso, a massa aparente e a carga física de objetos, armas e corpos. Não manipula a gravidade nem cria campos gravitacionais. Magma e Lava designam uma única subdobra. O acesso e o Grau da técnica continuam seguindo a progressão elemental.
+
+</div>
 
 
 # Capítulo 13 - Bênçãos e Comunhão Divina
@@ -3700,7 +4040,7 @@ Antes de aprovar, o Mestre deve confirmar que o poder oferece soluções própri
 
 Comunhão Divina é a Perícia que opera Poder Divino por meio do Concordato das Nove Asas. O vínculo concede autoridade delimitada; não concede obediência automática, acesso a qualquer divindade ou permissão para produzir qualquer efeito.
 
-Todo teste usa Presença + Comunhão Divina, com treinamento +2, +5 ou +10. Presença monta a reserva; com Presença 0, prevalece 1d20 −4 sem treinamento.
+Todo teste usa Presença + Comunhão Divina, com treinamento +2, +5 ou +10. Presença monta a reserva. Com Presença 0, um teste destreinado usa 1d20 −4; se treinado, usa 1d20 +2, +5 ou +10 conforme o nível da Perícia, sem a penalidade de −4.
 
 ### Poder Divino e termos da Comunhão
 
@@ -3976,38 +4316,48 @@ Os nomes sugeridos não limitam o panteão. Para incluir outra divindade, regist
 
 Título amplo não concede Perícia, dano ou imunidade. Manifestação própria é criada como Milagre do Grau correspondente. Nenhuma divindade fornece ações ilimitadas, Favor infinito, redução permanente de Karma ou autoridade sobre todas as Jurisdições.
 
-## Registros de Linhagens Soberanas e Portadores Únicos {#bencaos-exclusivas}
+## Registros de Linhagens Soberanas e Portadores Únicos
 
-<p><span class="blessing-exclusive-seal">[EXCLUSIVA DE LINHAGEM / BESTIÁRIO — INDISPONÍVEL PARA PLAYERS]</span></p>
+<span class="blessing-exclusive-seal">\[EXCLUSIVA DE LINHAGEM / BESTIÁRIO — INDISPONÍVEL PARA PLAYERS\]</span>
 
 Bênçãos hereditárias passam exclusivamente pelo sangue dinástico da família ou casa registrada. Uma Bênção única corresponde a um fragmento indivisível e tem um só portador por vez. As outorgas destes registros pertencem às linhagens e aos personagens do Bestiário.
 
 Na criação de ficha, escolha uma das 243 outorgas abertas ou crie uma Bênção autoral com nome e funcionamento próprios. A regra de exclusividade vale também para o uso em combate.
 
-| Bênção reservada | Acesso | Portador ou linhagem |
-|---|---|---|
-| Geometria do Amparo | Hereditária | Aveline, Isadora |
-| Nemeton | Hereditária | Naerith |
-| Vitral do Meio-Dia | Hereditária | Thaerion |
-| Haimaton | Hereditária | Alucard |
-| Desespero | Única | Valac |
-| Sceleris | Única | Belial |
-| Concordato | Única | Asmodeus |
-| Magnetismo | Única | Eirik |
-| Criação de Matéria Inorgânica | Única | Eirik |
-| Tiamat | Hereditária | Sael, Maelis |
-| Bóreas | Hereditária | Darian |
-| Consanguis | Hereditária | Agares |
-| Dragão Negro | Única | Euphere |
-| Fios da Providência Usurpada | Única | Falsa Santa |
-| Ius Procellae | Única | Atargatis |
-| Vectis | Hereditária | Atargatis Kalypso · linhagem Kalypso |
-| Desastres Naturais | Única | Ummu-Hubur |
-| Astrônoma | Única | Asteria V. Hubur |
-| Fissão e Meia-Vida | Única | Lachesis V. Hubur |
-| Cinemática Relativística e Óptica | Única | Atropos V. Hubur |
+| Bênção reservada                  | Acesso      | Portador ou linhagem                 |
+|-----------------------------------|-------------|--------------------------------------|
+| Geometria do Amparo               | Hereditária | Aveline, Isadora                     |
+| Nemeton                           | Hereditária | Naerith                              |
+| Vitral do Meio-Dia                | Hereditária | Thaerion                             |
+| Haimaton                          | Hereditária | Alucard                              |
+| Desespero                         | Única       | Valac                                |
+| Sceleris                          | Única       | Belial                               |
+| Concordato                        | Única       | Asmodeus                             |
+| Magnetismo                        | Única       | Eirik                                |
+| Criação de Matéria Inorgânica     | Única       | Eirik                                |
+| Tiamat                            | Hereditária | Sael, Maelis                         |
+| Bóreas                            | Hereditária | Darian                               |
+| Consanguis                        | Hereditária | Agares                               |
+| Dragão Negro                      | Única       | Euphere                              |
+| Fios da Providência Usurpada      | Única       | Falsa Santa                          |
+| Ius Procellae                     | Única       | Atargatis                            |
+| Vectis                            | Hereditária | Atargatis Kalypso · linhagem Kalypso |
+| Desastres Naturais                | Única       | Ummu-Hubur                           |
+| Astrônoma                         | Única       | Asteria V. Hubur                     |
+| Fissão e Meia-Vida                | Única       | Lachesis V. Hubur                    |
+| Cinemática Relativística e Óptica | Única       | Atropos V. Hubur                     |
 
-## Portal das Nove Asas {#portal-das-nove-asas}
+<div class="section" book206-section="como-usar-as-outorgas">
+
+### Preparar uma Outorga
+
+As 243 entradas do Portal são bases abertas de Bênçãos: o Fenômeno apresenta o Núcleo e o Dom Inicial; as Extensões apresentam aplicações específicas. Antes da primeira utilização em mesa, registre com o Mestre o Atributo regente, os Graus das Expressões e seus requisitos de acesso, os três Limites Essenciais, a Interdição e a Reparação, seguindo as regras deste capítulo. Complete apenas campos ausentes; conserve as ações, custos, alcances, dados e exceções expressamente definidos na entrada. Uma aplicação não recebe progressão ou dados adicionais gratuitos pela passagem de Etapa.
+
+Quando houver teste, use o Atributo regente registrado e Manifestação de Bênção, salvo combinação expressamente indicada pela aplicação. Descritores separados por barra podem identificar natureza e manifestação do efeito; a barra sozinha não duplica o dano nem exige duas Resistências sucessivas. Identifique na ficha a natureza de cada parcela e aplique a proteção correspondente uma vez.
+
+</div>
+
+## Portal das Nove Asas
 
 Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização de Karma. Se a extensão pedir resistência sem CD, use oposição contra a Manifestação da Bênção, com empate a favor do defensor.
 
@@ -4019,8 +4369,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo mantém carga eletrostática contínua que ioniza o ar em 4,5m. Metais inimigos na zona ficam magnetizados (-1 no acerto contra você).
 
-1. Arco de Descarga (Extra · 3 Karma): Salta um raio instantâneo no inimigo mais próximo com armadura ou arma metálica a até 9m, causando 2d6 elétrico sem permitir esquiva parcial.
-2. Gaiola de Faraday (Reação · 4 Karma): Converte um projétil ou feixe recebido em carga estática, reduzindo o dano em 2d8 e eletrocutando quem estiver a 2m.
+1.  Arco de Descarga (Extra · 3 Karma · 9m · Grau I): Salta um raio no inimigo mais próximo com armadura ou arma metálica a até 9m, causando 2d6 de dano elétrico. “Sem esquiva parcial” impede reduzir o grau por defesa ativa; uma Evasão plena que supere o ataque ainda evita todo o efeito. A expressão não transforma em Total um Acerto Parcial obtido normalmente contra a CA.
+2.  Gaiola de Faraday (Reação · 4 Karma · Grau II): Converte um projétil ou feixe recebido em carga estática, reduzindo o dano recebido em 2d8 e causando automaticamente 1d8 de dano elétrico aos inimigos a até 2m do portador.
 
 **Safra na Morte.** Zeus absorve o controle de microcampos eletromagnéticos em ambientes fechados.
 
@@ -4028,8 +4378,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua voz carrega pressão barométrica física; ordens curtas de uma palavra empurram o ar como ondas de choque.
 
-1. Palavra de Ajoelhar (Principal · 4 Karma · 9m): Dispara uma ordem sônica que causa 2d8 contundente e força o alvo a cair Caído se não superar sua CD em Fortitude.
-2. Édito de Silêncio Aéreo (Reação · 3 Karma): Estoura um trovão seco que anula projéteis leves no ar e aplica Desorientado em 3m.
+1.  Palavra de Ajoelhar (Principal · 4 Karma · 9m): Dispara uma ordem sônica que causa 2d8 contundente e força o alvo a cair Caído se não superar sua CD em Fortitude.
+2.  Édito de Silêncio Aéreo (Reação · 3 Karma): Estoura um trovão seco que anula projéteis leves no ar e aplica Desorientado em 3m.
 
 **Safra na Morte.** Zeus colhe a modulação de ondas de choque sônicas concentradas por cordas vocais mortais.
 
@@ -4037,8 +4387,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus nervos conduzem impulsos na velocidade de descargas elétricas, permitindo converter deslocamento em linha reta em um feixe de plasma curto.
 
-1. Investida de Raio (Movimento + Principal · 4 Karma): Você atravessa até 9m em linha reta passando por dentro do espaço de inimigos; o alvo principal sofre 2d10 perfurante/elétrico e você termina às costas dele.
-2. Pós-Imagem Voltaica (Reação · 3 Karma): Ao sofrer um ataque, deixa uma estátua de eletricidade estática no lugar que explode em 1d10 enquanto você recua 3m.
+1.  Investida de Raio (Movimento + Principal · 4 Karma): Você atravessa até 9m em linha reta passando por dentro do espaço de inimigos; o alvo principal sofre 2d10 perfurante/elétrico e você termina às costas dele.
+2.  Pós-Imagem Voltaica (Reação · 3 Karma): Ao sofrer um ataque, deixa uma estátua de eletricidade estática no lugar que explode em 1d10 enquanto você recua 3m.
 
 **Safra na Morte.** Zeus recolhe a técnica de conversão biológica de massa muscular em plasma condutor.
 
@@ -4048,8 +4398,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O ar ao seu redor estica-se em 7 cordas invisíveis de tensão sonora; cada movimento ou disparo seu dedilha uma nota que afina a precisão dos aliados ou descompassa o ritmo cardíaco inimigo.
 
-1. Acorde Dórico (Extra · 3 Karma · Raio 6 m): Todos os aliados a até 6 m recebem +2 no acerto e encerram Desorientado ou Abalado.
-2. Nota Dissonante (Principal · 4 Karma · 12 m): Dispara uma vibração harmônica que causa 2d8 sônico/radiante e impede o alvo de sustentar concentração ou usar Reações por 1 rodada.
+1.  Acorde Dórico (Extra · 3 Karma · Raio 6 m): Todos os aliados a até 6 m recebem +2 no acerto e encerram Desorientado ou Abalado.
+2.  Nota Dissonante (Principal · 4 Karma · 12 m): Dispara uma vibração harmônica que causa 2d8 sônico/radiante e impede o alvo de sustentar concentração ou usar Reações por 1 rodada.
 
 **Safra na Morte.** Apolo absorve a matemática de frequências musicais aplicadas ao controle neural em combate.
 
@@ -4057,8 +4407,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus olhos enxergam uma silhueta dourada 2 segundos à frente do movimento de qualquer criatura a até 12m.
 
-1. Disparo Antecipado (Livre no ataque · 3 Karma): Você atira para onde o alvo vai estar, ignorando bônus de Agilidade ou Reflexos na CA dele e somando +1d20 na Reserva.
-2. Aviso de Cassandra (Reação · 4 Karma): Revela em voz alta o movimento de um inimigo para um aliado a 12m, somando +4 na CA do aliado contra aquele golpe.
+1.  Disparo Antecipado (Livre no ataque · 3 Karma): Você atira para onde o alvo vai estar, ignorando bônus de Agilidade ou Reflexos na CA dele e somando +1d20 na Reserva.
+2.  Aviso de Cassandra (Reação · 4 Karma): Revela em voz alta o movimento de um inimigo para um aliado a 12m, somando +4 na CA do aliado contra aquele golpe.
 
 **Safra na Morte.** Apolo colhe o processamento preditivo de microexpressões e vetores de combate.
 
@@ -4066,8 +4416,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus ataques imbuídos de Karma deixam partículas de calor ultravioleta invisível que provocam febre celular instantânea no alvo.
 
-1. Seta de Insolação (Principal · 4 Karma · 18m): Causa 2d8 radiante/térmico e aplica Febre Solar (o alvo sofre -1d20 em testes físicos e perde 3 de Vida sempre que correr ou gastar mais de 3 de Karma no turno).
-2. Purgação Térmica (Extra · 3 Karma): Queima venenos ou doenças no próprio sangue ou de um aliado adjacente, convertendo a condição removida em +2d6 de Escudo Temporário.
+1.  Seta de Insolação (Principal · 4 Karma · 18m): Causa 2d8 radiante/térmico e aplica Febre Solar (o alvo sofre -1d20 em testes físicos e perde 3 de Vida sempre que correr ou gastar mais de 3 de Karma no turno).
+2.  Purgação Térmica (Extra · 3 Karma): Queima venenos ou doenças no próprio sangue ou de um aliado adjacente, convertendo a condição removida em +2d6 de Escudo Temporário.
 
 **Safra na Morte.** Apolo absorve cepas de radiação térmica seletiva desenvolvidas pelo organismo mortal.
 
@@ -4077,8 +4427,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo registra cada golpe sofrido não como fraqueza, mas como memória muscular furiosa contra o tipo exato de arma que o feriu.
 
-1. Revide de Trincheira (Reação ao sofrer dano · 3 Karma): Desfere imediatamente um ataque básico contra o agressor com +2 no acerto e +1d8 de dano adicional.
-2. Quebrar a Ameaça (Principal · 4 Karma): Golpe brutal que causa 2d8 contundente/cortante e aplica -2 no dano de todos os ataques do alvo por 2 rodadas.
+1.  Revide de Trincheira (Reação ao sofrer dano · 3 Karma): Desfere imediatamente um ataque básico contra o agressor com +2 no acerto e +1d8 de dano adicional.
+2.  Quebrar a Ameaça (Principal · 4 Karma): Golpe brutal que causa 2d8 contundente/cortante e aplica -2 no dano de todos os ataques do alvo por 2 rodadas.
 
 **Safra na Morte.** Ares colhe o condicionamento reflexo de contra-ataque imediato sob trauma físico.
 
@@ -4086,8 +4436,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo exala feromônios de agressão que aceleram o batimento cardíaco de todos em 6m; cada ferimento na área alimenta sua força.
 
-1. Sede de Primeira Linha (Passiva Ativável · 3 Karma): Enquanto houver ao menos uma criatura com Sangramento a até 6m, você recebe +2 no acerto, +4 no dano marcial e ignora penalidades de dor/medo.
-2. Grito de Motim (Principal · 5 Karma): Força dois inimigos adjacentes entre si a desferirem um ataque básico imediato um contra o outro se falharem em Vontade.
+1.  Sede de Primeira Linha (Passiva Ativável · 3 Karma): Enquanto houver ao menos uma criatura com Sangramento a até 6m, você recebe +2 no acerto, +4 no dano marcial e ignora penalidades de dor/medo.
+2.  Grito de Motim (Principal · 5 Karma): Força dois inimigos adjacentes entre si a desferirem um ataque básico imediato um contra o outro se falharem em Vontade.
 
 **Safra na Morte.** Ares colhe a manipulação neuroquímica da fúria em grupos armados.
 
@@ -4095,8 +4445,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Duas sombras de terror marcial projetam-se dos seus ombros quando você avança, fazendo com que o inimigo enxergue sua arma como se tivesse o dobro do tamanho real.
 
-1. Sombra de Fobos (Principal · 4 Karma): Ataque intimidador que causa 2d8 de dano e aplica Abalado; enquanto o alvo estiver Abalado, ele sofre -2 na CA Parcial contra você.
-2. Debandada de Deimos (Extra · 3 Karma): Força um inimigo Abalado a até 6 m a gastar sua reação recuando 3 m na direção oposta à sua.
+1.  Sombra de Fobos (Principal · 4 Karma): Ataque intimidador que causa 2d8 de dano e aplica Abalado; enquanto o alvo estiver Abalado, ele sofre -2 na CA Parcial contra você.
+2.  Debandada de Deimos (Extra · 3 Karma): Força um inimigo Abalado a até 6 m a gastar sua reação recuando 3 m na direção oposta à sua.
 
 **Safra na Morte.** Ares absorve a projeção psíquica de pavor coletivo em linhas de frente.
 
@@ -4106,8 +4456,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você tece malhas quase invisíveis de bronze e ouro incandescente no chão ou entre colunas, iguais à rede indestrutível com que Hefesto prendeu os próprios deuses no Olimpo.
 
-1. Lançar Malha Olímpica (Principal · 4 Karma · 9 m): Prende o alvo em fios dourados em brasa que causam 2d6 térmico e aplicam Lento (e -2 em Agilidade/Reflexos) até que ele gaste 1 Ação de Movimento para se soltar.
-2. Aquecer Filigrana (Extra · 3 Karma): Faz a rede já presa no alvo contrair em brasa viva, causando 2d6 de dano térmico automático.
+1.  Lançar Malha Olímpica (Principal · 4 Karma · 9 m): Prende o alvo em fios dourados em brasa que causam 2d6 térmico e aplicam Lento (e -2 em Agilidade/Reflexos) até que ele gaste 1 Ação de Movimento para se soltar.
+2.  Aquecer Filigrana (Extra · 3 Karma): Faz a rede já presa no alvo contrair em brasa viva, causando 2d6 de dano térmico automático.
 
 **Safra na Morte.** Hefesto colhe técnicas de contenção por ligas metálicas ultrafinas e flexíveis.
 
@@ -4115,8 +4465,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua caixa torácica funciona como uma fornalha de alta pressão; cada inspiração aquece seu sangue e armadura, liberando jatos de vapor superaquecido pelas juntas.
 
-1. Soco de Pistão Térmico (Principal · 4 Karma): Libera o vapor comprimido pelo cotovelo no instante do golpe, causando 2d8 contundente/térmico e empurrando o alvo em 4m.
-2. Têmpera a Frio (Reação · 3 Karma): Libera uma nuvem de vapor denso ao sofrer um ataque, ganhando camuflagem parcial e +3 de Redução de Dano.
+1.  Soco de Pistão Térmico (Principal · 4 Karma): Libera o vapor comprimido pelo cotovelo no instante do golpe, causando 2d8 contundente/térmico e empurrando o alvo em 4m.
+2.  Têmpera a Frio (Reação · 3 Karma): Libera uma nuvem de vapor denso ao sofrer um ataque, ganhando camuflagem parcial e +3 de Redução de Dano.
 
 **Safra na Morte.** Hefesto absorve a termodinâmica de compressão pulmonar aplicada às artes marciais.
 
@@ -4124,8 +4474,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao observar qualquer objeto, armadura, parede ou corpo a até 9m, você enxerga linhas luminosas indicando onde a tensão estrutural é mais frágil.
 
-1. Toque de Desmontagem (Principal · 4 Karma): Golpeia exatamente o nó de tensão do alvo; ignora toda a CA de armadura/escudo (atacando a CA Desprevenida) e causa 2d8 de dano, aplicando Danificado no equipamento inimigo.
-2. Solda Instantânea (Movimento · 2 Karma): Funde duas superfícies metálicas ou de pedra ao toque, trancando portas, armas em bainhas ou restaurando 2d6 de Vida de um constructo.
+1.  Toque de Desmontagem (Principal · 4 Karma): Golpeia o nó de tensão do alvo, calculando a CA sem os bônus de armadura e escudo; preserve os demais componentes e recalcule a CA Parcial pela metade, arredondada para baixo. Causa 2d8 de dano e aplica Danificado ao equipamento inimigo conforme o resultado do ataque. Danificado é estado estrutural do equipamento, não condição corporal do portador.
+2.  Solda Instantânea (Movimento · 2 Karma): Funde duas superfícies metálicas ou de pedra ao toque, trancando portas, armas em bainhas ou restaurando 2d6 de Vida de um constructo.
 
 **Safra na Morte.** Hefesto recolhe o catálogo de pontos de ruptura molecular descobertos pelo usuário.
 
@@ -4135,8 +4485,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** No centro da sua armadura ou foco repousa o relevo da Medusa dado a Atena; encarar seu peito no momento do ataque calcifica temporariamente as articulações do inimigo.
 
-1. Olhar de Calcário (Reação ao ser atacado ou Extra · 4 Karma · 6 m): Os pés e joelhos do atacante endurecem como mármore por 1 rodada, reduzindo o deslocamento dele a 0 m e aplicando -2 no teste de ataque dele.
-2. Quebrar Estátua (Principal · 4 Karma): Contra um alvo com deslocamento reduzido ou Lento, seu golpe causa 2d10 contundente ignorando 4 de Redução de Dano.
+1.  Olhar de Calcário (Reação ao ser atacado ou Extra · 4 Karma · 6 m): Os pés e joelhos do atacante endurecem como mármore por 1 rodada, reduzindo o deslocamento dele a 0 m e aplicando -2 no teste de ataque dele.
+2.  Quebrar Estátua (Principal · 4 Karma): Contra um alvo com deslocamento reduzido ou Lento, seu golpe causa 2d10 contundente ignorando 4 de Redução de Dano.
 
 **Safra na Morte.** Atena absorve o controle de rigidez muscular induzida por choque visual.
 
@@ -4144,8 +4494,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sempre que um inimigo usa uma técnica ou ataque contra você pela primeira vez na cena, sua mente decodifica o padrão muscular e kármico dele.
 
-1. Contra-Regra (Passiva + 2 Karma na Reação): Contra qualquer habilidade que você já tenha visto na cena, sua CA sobe em +3 e você pode dar um passo de 2m livre antes do impacto.
-2. Xeque Tático (Extra · 3 Karma): Declara uma ação específica (ex.: "usar técnica", "recuar"); se o alvo marcado fizer essa ação no próximo turno dele, sofre 2d8 de dano mental/kármico automático.
+1.  Contra-Regra (Passiva + 2 Karma na Reação): Contra qualquer habilidade que você já tenha visto na cena, sua CA sobe em +3 e você pode dar um passo de 2m livre antes do impacto.
+2.  Xeque Tático (Extra · 3 Karma): Declara uma ação específica (ex.: “usar técnica”, “recuar”); se o alvo marcado fizer essa ação no próximo turno dele, sofre 2d8 de dano mental/kármico automático.
 
 **Safra na Morte.** Atena colhe milhares de árvores de decisão tática processadas sob pressão mortal.
 
@@ -4153,8 +4503,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua arma brilha com uma linha fina de luz prateada que corta proporcionalmente à sua precisão intelectual, e não à sua força muscular.
 
-1. Corte Demonstrativo (Principal · 4 Karma): Realiza um ataque corpo a corpo usando Intelecto (com Bônus Analítico), causando 2d8 de dano que ignora escudos espirituais e revela todas as resistências e o Karma atual do alvo.
-2. Comando de Sincronia (Movimento · 3 Karma): Concede a um aliado a até 9m uma reação imediata de ataque ou movimento usando a sua Reserva de Intelecto.
+1.  Corte Demonstrativo (Principal · 4 Karma): Realiza um ataque corpo a corpo usando Intelecto (com Bônus Analítico), causando 2d8 de dano que ignora escudos espirituais e revela todas as resistências e o Karma atual do alvo.
+2.  Comando de Sincronia (Movimento · 3 Karma): Concede a um aliado a até 9m uma reação imediata de ataque ou movimento usando a sua Reserva de Intelecto.
 
 **Safra na Morte.** Atena absorve a substituição de força cinética por precisão geométrica pura.
 
@@ -4164,8 +4514,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus golpes entram em ressonância com a umidade do ar e com os líquidos internos do alvo, transformando o próprio corpo inimigo em condutor de choque hidrostático.
 
-1. Reverberação Subcutânea (Extra · 3 Karma): Mesmo em Acerto Parcial, o golpe transmite uma onda interna que causa +1d8 contundente direto e empurra 2m.
-2. Cortina de Cavitação (Reação · 4 Karma): Golpeia o ar criando bolhas de vácuo na umidade atmosférica, somando +3 na CA Parcial e Total contra projéteis.
+1.  Reverberação Subcutânea (Extra · 3 Karma): Mesmo em Acerto Parcial, o golpe transmite uma onda interna que causa +1d8 contundente direto e empurra 2m.
+2.  Cortina de Cavitação (Reação · 4 Karma): Golpeia o ar criando bolhas de vácuo na umidade atmosférica, somando +3 na CA Parcial e Total contra projéteis.
 
 **Safra na Morte.** Poseidon colhe técnicas de combate hidrostático adaptadas para ambientes secos.
 
@@ -4173,8 +4523,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Poseidon criou o primeiro cavalo a partir da quebra das ondas; suas pernas acumulam a tração de uma carga de cavalaria marítima que atropela linhas defensivas.
 
-1. Carga de Espuma Branca (Movimento + Principal · 4 Karma): Corre pelo menos 4,5 m em linha reta ganhando +3 m de deslocamento extra e atinge o alvo com 2d8 + 3 de dano contundente, lançando-o 3 m para trás.
-2. Salto Sobre Quebra-Mar (Reação · 3 Karma): Salta sobre uma investida ou ataque rasteiro inimigo, evitando o golpe e caindo 3 m atrás do atacante.
+1.  Carga de Espuma Branca (Movimento + Principal · 4 Karma): Corre pelo menos 4,5 m em linha reta ganhando +3 m de deslocamento extra e atinge o alvo com 2d8 + 3 de dano contundente, lançando-o 3 m para trás.
+2.  Salto Sobre Quebra-Mar (Reação · 3 Karma): Salta sobre uma investida ou ataque rasteiro inimigo, evitando o golpe e caindo 3 m atrás do atacante.
 
 **Safra na Morte.** Poseidon colhe a biomecânica de impulsão terrestre contínua inspirada no movimento das ondas.
 
@@ -4182,8 +4532,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus pés e sua arma transmitem vibrações de baixa frequência diretamente para o piso, colunas e fundações.
 
-1. Onda de Liquefação (Principal · 4 Karma): Bate no solo transformando uma linha de 9m × 2m em rocha trêmula; causa 2d8 contundente e derruba (Caído) quem falhar em Reflexos/Acrobacia.
-2. Ressonância de Armadura (Extra · 3 Karma): Faz a armadura rígida do alvo vibrar na frequência de quebra, reduzindo a CA dele em -2 até o próximo turno.
+1.  Onda de Liquefação (Principal · 4 Karma): Bate no solo transformando uma linha de 9m × 2m em rocha trêmula; causa 2d8 contundente e derruba (Caído) quem falhar em Reflexos/Acrobacia.
+2.  Ressonância de Armadura (Extra · 3 Karma): Faz a armadura rígida do alvo vibrar na frequência de quebra, reduzindo a CA dele em -2 até o próximo turno.
 
 **Safra na Morte.** Poseidon recolhe o mapeamento de frequências de ressonância sísmica em estruturas artificiais.
 
@@ -4191,19 +4541,19 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **19. Manto de Ausência Estígia** · Elmo da Invisibilidade · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Em vez de apenas esconder sua imagem, você apaga sua "presença de ameaça" da percepção sensorial e espiritual dos inimigos.
+**Fenômeno base.** Em vez de apenas esconder sua imagem, você apaga sua “presença de ameaça” da percepção sensorial e espiritual dos inimigos.
 
-1. Passo Inexistente (Movimento · 3 Karma): Até o início do seu próximo turno (ou até causar dano), inimigos a mais de 2m não conseguem focar você com ataques ou técnicas de alvo único, e seu primeiro ataque recebe +1d20 e +2 no acerto.
-2. Sequestro de Sombra (Reação · 4 Karma): Puxa um aliado adjacente para dentro do seu manto, anulando um ataque mirado nele.
+1.  Passo Inexistente (Movimento · 3 Karma): Até o início do seu próximo turno (ou até causar dano), inimigos a mais de 2m não conseguem focar você com ataques ou técnicas de alvo único, e seu primeiro ataque recebe +1d20 e +2 no acerto.
+2.  Sequestro de Sombra (Reação · 4 Karma): Puxa um aliado adjacente para dentro do seu manto, anulando um ataque mirado nele.
 
 **Safra na Morte.** Hades absorve técnicas de supressão de assinatura kármica contra radares modernos e sobrenaturais.
 
 **20. Gravidade de Óbolo Funerário** · O Peso dos Mortos · Runa Kármica Primordial
 
-**Fenômeno base.** Cada ponto de Vida ou de Karma que um inimigo perde perto de você condensa-se em "moedas espirituais invisíveis" que pesam sobre os ombros dele.
+**Fenômeno base.** Cada ponto de Vida ou de Karma que um inimigo perde perto de você condensa-se em “moedas espirituais invisíveis” que pesam sobre os ombros dele.
 
-1. Cobrança do Barqueiro (Principal · 4 Karma · 12m): Contra um alvo que já tenha perdido Vida ou Karma na cena, detona o peso acumulado causando 2d8 necrótico/kármico (+1d6 se o alvo estiver abaixo da metade da Vida) e zerando a reação dele.
-2. Pedágio de Passagem (Extra · 2 Karma): Impõe uma taxa espiritual ao alvo: para se mover ou usar técnica no próximo turno, ele deve pagar +2 de Karma extra.
+1.  Cobrança do Barqueiro (Principal · 4 Karma · 12m): Contra um alvo que já tenha perdido Vida ou Karma na cena, detona o peso acumulado causando 2d8 necrótico/kármico (+1d6 se o alvo estiver abaixo da metade da Vida) e zerando a reação dele.
+2.  Pedágio de Passagem (Extra · 2 Karma): Impõe uma taxa espiritual ao alvo: para se mover ou usar técnica no próximo turno, ele deve pagar +2 de Karma extra.
 
 **Safra na Morte.** Hades colhe o sistema de tributação cinética sobre o desgaste vital dos adversários.
 
@@ -4211,8 +4561,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você faz brotar cristais negros e afiados de obsidiana e metais pesados a partir de qualquer piso de pedra, terra ou concreto, que drenam calor da área.
 
-1. Geodo Empalador (Principal · 4 Karma · 9m): Ergue um aglomerado cristalino sob o alvo causando 2d8 perfurante e criando uma cobertura sólida de 1,5m (Vida 15) no local.
-2. Estilhaço de Gelo Negro (Extra · 3 Karma): Explode um cristal criado anteriormente causando 2d6 em 3m e reduzindo a cura dos atingidos pela metade.
+1.  Geodo Empalador (Principal · 4 Karma · 9m): Ergue um aglomerado cristalino sob o alvo causando 2d8 perfurante e criando uma cobertura sólida de 1,5m (Vida 15) no local.
+2.  Estilhaço de Gelo Negro (Extra · 3 Karma): Explode um cristal criado anteriormente causando 2d6 em 3m e reduzindo a cura dos atingidos pela metade.
 
 **Safra na Morte.** Hades absorve a cristalografia tática de minerais abissais em superfície.
 
@@ -4222,8 +4572,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O primeiro alvo que você fere na cena recebe um crescente prateado luminoso sobre o peito; você sente a direção e distância exata dele através de paredes.
 
-1. Flecha Perseguidora (Extra no disparo · 3 Karma): Seu projétil corrige a própria trajetória no ar para buscar o alvo marcado, ignorando cobertura parcial/total (desde que haja caminho físico) e somando +2 no acerto e +1d8 no dano.
-2. Salto de Espreita (Reação · 2 Karma): Sempre que o alvo marcado se afastar de você, você pode avançar 4,5m na direção dele gratuitamente.
+1.  Flecha Perseguidora (Extra no disparo · 3 Karma): Seu projétil corrige a própria trajetória no ar para buscar o alvo marcado, ignorando cobertura parcial/total (desde que haja caminho físico) e somando +2 no acerto e +1d8 no dano.
+2.  Salto de Espreita (Reação · 2 Karma): Sempre que o alvo marcado se afastar de você, você pode avançar 4,5m na direção dele gratuitamente.
 
 **Safra na Morte.** Ártemis colhe algoritmos de rastreamento balístico em ambientes labirínticos.
 
@@ -4231,8 +4581,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus ataques alternam ciclicamente entre 4 estados lunares (Nova, Crescente, Cheia, Minguante), mudando a propriedade física de cada golpe.
 
-1. Disparo de Fase (Livre · 2 Karma): Escolhe a fase do ataque: Lua Nova (silencioso, -2 na CA Parcial do alvo), Lua Cheia (explode em 2m causando +1d6 nos adjacentes) ou Lua Minguante (drena 2m de movimento e 2 de Karma do alvo).
-2. Eclipse de Prata (Principal · 5 Karma): Dispara duas fases simultâneas causando 2d10 de dano e aplicando Desorientado.
+1.  Disparo de Fase (Livre · 2 Karma): Escolhe a fase do ataque: Lua Nova (silencioso, -2 na CA Parcial do alvo), Lua Cheia (explode em 2m causando +1d6 nos adjacentes) ou Lua Minguante (drena 2m de movimento e 2 de Karma do alvo).
+2.  Eclipse de Prata (Principal · 5 Karma): Dispara duas fases simultâneas causando 2d10 de dano e aplicando Desorientado.
 
 **Safra na Morte.** Ártemis absorve a modulação cíclica de projéteis kármicos.
 
@@ -4240,8 +4590,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus sentidos operam em frequência animal aguda; você enxerga batimentos cardíacos pelo calor e coordena aliados como uma matilha sincronizada.
 
-1. Cerco de Matilha (Passiva + 3 Karma como Extra): Enquanto você e ao menos 1 aliado estiverem a até 9m do mesmo inimigo, ambos recebem +2 para atingir a CA Total daquele alvo e +1d6 de dano.
-2. Reflexo de Fera Acuada (Reação · 3 Karma): Ao sofrer um ataque corpo a corpo, desfere um contra-ataque imediato de 1d10 cortante e salta 3m para trás.
+1.  Cerco de Matilha (Passiva + 3 Karma como Extra): Enquanto você e ao menos 1 aliado estiverem a até 9m do mesmo inimigo, ambos recebem +2 para atingir a CA Total daquele alvo e +1d6 de dano.
+2.  Reflexo de Fera Acuada (Reação · 3 Karma): Ao sofrer um ataque corpo a corpo, desfere um contra-ataque imediato de 1d10 cortante e salta 3m para trás.
 
 **Safra na Morte.** Ártemis recolhe o instinto neural de coordenação de esquadrão sem comunicação verbal.
 
@@ -4251,17 +4601,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A palma da sua mão possui um glifo que achata objetos soltos (até 4 espaços), armadilhas ou projéteis interceptados em fitas bidimensionais de papel sem peso.
 
-1. Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.
-2. Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade.
+1.  Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.
+2.  Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade.
 
 **Safra na Morte.** Hermes recolhe o método de compressão bidimensional de matéria e projéteis.
 
 **26. Furto de Conceito Tático** · Príncipe dos Ladrões · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Ao tocar ou acertar um inimigo de raspão, seus dedos podem "roubar" temporariamente propriedades intangíveis dele (velocidade, equilíbrio ou foco).
+**Fenômeno base.** Ao tocar ou acertar um inimigo de raspão, seus dedos podem “roubar” temporariamente propriedades intangíveis dele (velocidade, equilíbrio ou foco).
 
-1. Mão Leve de Atributo (Principal · 4 Karma): Ataque corpo a corpo ou a 3m (2d6 de dano); rouba 3 metros de Movimento ou 2 pontos de CA do alvo até o final do seu próximo turno, somando-os diretamente à sua própria ficha.
-2. Troca de Bolso (Reação · 3 Karma): Troca um item empunhado ou uma condição menor (Lento / Abalado) sua por um consumível ou bônus temporário do inimigo adjacente.
+1.  Mão Leve de Atributo (Principal · 4 Karma): Ataque corpo a corpo ou a 3m (2d6 de dano); rouba 3 metros de Movimento ou 2 pontos de CA do alvo até o final do seu próximo turno, somando-os diretamente à sua própria ficha.
+2.  Troca de Bolso (Reação · 3 Karma): Troca um item empunhado ou uma condição menor (Lento / Abalado) sua por um consumível ou bônus temporário do inimigo adjacente.
 
 **Safra na Morte.** Hermes absorve a capacidade de extrair propriedades abstratas e estatísticas de outros seres vivos.
 
@@ -4269,8 +4619,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus pés anulam o coeficiente de atrito com qualquer superfície (chão, paredes, água ou cabos), permitindo patinar em velocidade balística e correr pelas paredes.
 
-1. Órbita Centrípeta (Movimento + 3 Karma): Corre em círculo fechado ao redor do alvo (incluindo pelas paredes), deixando-o Desorientado e somando +2d6 de dano por velocidade no próximo golpe.
-2. Deslizamento de Esquiva (Reação · 3 Karma): Quando um ataque erra você ou acerta apenas a CA Parcial, a própria onda de impacto faz você deslizar 4,5m para qualquer direção sem custo.
+1.  Órbita Centrípeta (Movimento + 3 Karma): Corre em círculo fechado ao redor do alvo (incluindo pelas paredes), deixando-o Desorientado e somando +2d6 de dano por velocidade no próximo golpe.
+2.  Deslizamento de Esquiva (Reação · 3 Karma): Quando um ataque erra você ou acerta apenas a CA Parcial, a própria onda de impacto faz você deslizar 4,5m para qualquer direção sem custo.
 
 **Safra na Morte.** Hermes colhe a cinemática de combate em superfícies verticais sob atrito nulo.
 
@@ -4282,8 +4632,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma águia de luz dourada e relâmpagos pousa sobre sua cabeça ou estandarte, servindo como ponto focal de moral e artilharia celeste para o seu grupo.
 
-1. Rasante da Aquila (Principal · 4 Karma · 15 m): A águia mergulha sobre o alvo causando 2d8 elétrico/perfurante e ilumina o inimigo (o próximo aliado que atacar esse alvo ganha +1d20 na Reserva).
-2. Orgulho da Coorte (Extra · 3 Karma): Todos os aliados a até 6 m recebem +2 na CA Parcial e 1d8 + Espírito de Escudo Temporário.
+1.  Rasante da Aquila (Principal · 4 Karma · 15 m): A águia mergulha sobre o alvo causando 2d8 elétrico/perfurante e ilumina o inimigo (o próximo aliado que atacar esse alvo ganha +1d20 na Reserva).
+2.  Orgulho da Coorte (Extra · 3 Karma): Todos os aliados a até 6 m recebem +2 na CA Parcial e 1d8 + Espírito de Escudo Temporário.
 
 **Safra na Morte.** Júpiter absorve a coordenação aérea de ataque e suporte moral de esquadrão.
 
@@ -4291,8 +4641,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus raios são dourados, densos e caem verticalmente do teto ou do céu sobre alvos que já tenham ferido você ou seus aliados na cena.
 
-1. Sentença Vertical (Principal · 4 Karma · 15m): Cai uma coluna de raio dourado sobre o alvo causando 2d8 de dano (+1d8 se o alvo já tiver causado dano a um aliado seu nesta rodada).
-2. Marca de Rebelde (Livre · 2 Karma): O alvo atingido pela Sentença recebe -2 em testes de ataque contra qualquer pessoa que não seja você.
+1.  Sentença Vertical (Principal · 4 Karma · 15m): Cai uma coluna de raio dourado sobre o alvo causando 2d8 de dano (+1d8 se o alvo já tiver causado dano a um aliado seu nesta rodada).
+2.  Marca de Rebelde (Livre · 2 Karma): O alvo atingido pela Sentença recebe -2 em testes de ataque contra qualquer pessoa que não seja você.
 
 **Safra na Morte.** Júpiter colhe o direcionamento seletivo de descargas atmosféricas baseadas em hostilidade prévia.
 
@@ -4300,8 +4650,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quanto mais ereta e inabalável for sua postura (sem recuar no turno), maior é a pressão gravitacional que emana dos seus ombros contra inimigos próximos.
 
-1. Peso da Hierarquia (Passiva + 3 Karma como Extra): Inimigos a até 3m de você gastam o dobro de movimento para se aproximar e sofrem -1 na CA Total enquanto você não tiver recuado na rodada.
-2. Submissão pelo Olhar (Principal · 4 Karma): Teste de Espírito/Presença contra a Vontade do alvo a 6m; causa 2d6 mental e impede o alvo de usar ações Extras ou Reações por 1 rodada.
+1.  Peso da Hierarquia (Passiva + 3 Karma como Extra): Inimigos a até 3m de você gastam o dobro de movimento para se aproximar e sofrem -1 na CA Total enquanto você não tiver recuado na rodada.
+2.  Submissão pelo Olhar (Principal · 4 Karma): Teste de Espírito/Presença contra a Vontade do alvo a 6m; causa 2d6 mental e impede o alvo de usar ações Extras ou Reações por 1 rodada.
 
 **Safra na Morte.** Júpiter recolhe a conversão de presença psicológica em vetor gravitacional físico.
 
@@ -4311,17 +4661,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sempre que você assume postura de guarda ou avança em linha reta, até 2 soldados espectrais de bronze surgem flanqueando seus ombros, copiando seus golpes com 1 segundo de atraso.
 
-1. Estocada Tripla de Coorte (Principal · 4 Karma): Seu ataque corpo a corpo é repetido pelos espectros, causando 2d8 perfurante e atingindo em linha de 3m.
-2. Parede de Escudos (Scutum) (Reação · 3 Karma): Os dois espectros cruzam escudos romanos à sua frente, somando +4 na sua CA Parcial e Total contra um ataque frontal.
+1.  Estocada Tripla de Coorte (Principal · 4 Karma): Seu ataque corpo a corpo é repetido pelos espectros, causando 2d8 perfurante e atingindo em linha de 3m.
+2.  Parede de Escudos (Scutum) (Reação · 3 Karma): Os dois espectros cruzam escudos romanos à sua frente, somando +4 na sua CA Parcial e Total contra um ataque frontal.
 
 **Safra na Morte.** Marte absorve táticas de formação militar executadas por um único combatente solitário.
 
 **32. Marco de Terreno Tomado** · Direito de Conquista · Runa Kármica Primordial
 
-**Fenômeno base.** O espaço exato de onde você expulsa, derruba ou abate um inimigo torna-se "Solo Conquistado", brilhando com insígnias rubras pelo resto da cena.
+**Fenômeno base.** O espaço exato de onde você expulsa, derruba ou abate um inimigo torna-se “Solo Conquistado”, brilhando com insígnias rubras pelo resto da cena.
 
-1. Bastião do Conquistador (Passiva + 2 Karma): Enquanto você ou seus aliados pisarem em um Solo Conquistado, recebem +2 no dano e regeneram 3 de Vida no início do turno.
-2. Avanço de Fronteira (Extra · 3 Karma): Teleporta ou salta instantaneamente entre dois pontos de Solo Conquistado a até 9m, desferindo um golpe com +1d8 de dano.
+1.  Bastião do Conquistador (Passiva + 2 Karma): Enquanto você ou seus aliados pisarem em um Solo Conquistado, recebem +2 no dano e regeneram 3 de Vida no início do turno.
+2.  Avanço de Fronteira (Extra · 3 Karma): Teleporta ou salta instantaneamente entre dois pontos de Solo Conquistado a até 9m, desferindo um golpe com +1d8 de dano.
 
 **Safra na Morte.** Marte colhe a geometria de dominação territorial progressiva em combate.
 
@@ -4329,8 +4679,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Qualquer arma ou projétil arremessado ou estocado por você deforma-se no impacto para entortar e inutilizar a defesa do adversário.
 
-1. Cravar no Escudo (Principal · 4 Karma · 9m): Causa 2d6 perfurante e deixa uma haste kármica pesada presa no alvo: enquanto ele não gastar 1 Ação de Movimento para arrancá-la, sofre -3 na CA Total e fica Lento.
-2. Arranco de Haste (Extra · 2 Karma): Puxa a haste cravada de volta à distância, rasgando 1d10 de dano adicional e puxando o alvo 2m.
+1.  Cravar no Escudo (Principal · 4 Karma · 9m): Causa 2d6 perfurante e deixa uma haste kármica pesada presa no alvo: enquanto ele não gastar 1 Ação de Movimento para arrancá-la, sofre -3 na CA Total e fica Lento.
+2.  Arranco de Haste (Extra · 2 Karma): Puxa a haste cravada de volta à distância, rasgando 1d10 de dano adicional e puxando o alvo 2m.
 
 **Safra na Morte.** Marte recolhe a balística de neutralização de armaduras pesadas.
 
@@ -4340,8 +4690,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode abrir duas fendas circulares planas de 1m de diâmetro conectadas entre si a até 12m de distância, permitindo passar braços, ataques ou projéteis através delas.
 
-1. Golpe Transposto (Extra no ataque · 3 Karma): Desfere um ataque corpo a corpo ou disparo através da fenda, atingindo o inimigo a até 12m pelas costas (-2 na CA dele e ignora cobertura).
-2. Inversão de Limiar (Reação · 4 Karma): Quando um inimigo avança contra você, faz com que ele atravesse a fenda e saia 4m atrás de onde começou o movimento.
+1.  Golpe Transposto (Extra no ataque · 3 Karma): Desfere um ataque corpo a corpo ou disparo através da fenda, atingindo o inimigo a até 12m pelas costas (-2 na CA dele e ignora cobertura).
+2.  Inversão de Limiar (Reação · 4 Karma): Quando um inimigo avança contra você, faz com que ele atravesse a fenda e saia 4m atrás de onde começou o movimento.
 
 **Safra na Morte.** Janus absorve o uso ofensivo de microfendas espaciais em combate de curto alcance.
 
@@ -4349,17 +4699,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** No início de cada turno seu, uma silhueta de bronze marca a posição e o estado físico exato em que você estava ao começar a rodada.
 
-1. Retorno ao Ponto Zero (Reação ou Livre · 4 Karma): Volta instantaneamente para a marca do início do turno, recuperando metade da Vida perdida naquela rodada e encerrando condições de agarrão/imobilização.
-2. Dupla Face de Abertura (Passiva na Rodada 1): Na primeira rodada de qualquer combate, você age duas vezes na Iniciativa (recebendo 1 Ação Principal extra no Turno 1).
+1.  Retorno ao Ponto Zero (Reação ou Livre · 4 Karma): Volta instantaneamente para a marca do início do turno, recuperando metade da Vida perdida naquela rodada e encerrando condições de agarrão/imobilização.
+2.  Dupla Face de Abertura (Passiva na Rodada 1): Na primeira rodada de qualquer combate, você age duas vezes na Iniciativa (recebendo 1 Ação Principal extra no Turno 1).
 
 **Safra na Morte.** Janus colhe a ancoragem temporal de estados iniciais de combate.
 
 **36. Tranca de Conceito Fechado** · Senhor das Chaves · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Seus dedos projetam uma chave espectral de ouro e ferro capaz de "trancar" ou "destrancar" objetos físicos, ferimentos ou até uma técnica específica de um alvo.
+**Fenômeno base.** Seus dedos projetam uma chave espectral de ouro e ferro capaz de “trancar” ou “destrancar” objetos físicos, ferimentos ou até uma técnica específica de um alvo.
 
-1. Girar a Chave (Principal · 4 Karma · Toque/3m): Causa 2d6 kármico e "tranca" a última habilidade/técnica que o inimigo usou, impedindo-o de repeti-la na próxima rodada.
-2. Estancar Ferida (Extra · 3 Karma): "Tranca" o sangue de um aliado adjacente, encerrando Sangramento e convertendo o dano contínuo que ele sofreria em +2d6 de Escudo Temporário.
+1.  Girar a Chave (Principal · 4 Karma · Toque/3m): Causa 2d6 kármico e “tranca” a última habilidade/técnica que o inimigo usou, impedindo-o de repeti-la na próxima rodada.
+2.  Estancar Ferida (Extra · 3 Karma): “Tranca” o sangue de um aliado adjacente, encerrando Sangramento e convertendo o dano contínuo que ele sofreria em +2d6 de Escudo Temporário.
 
 **Safra na Morte.** Janus absorve a aplicação do conceito de fechadura sobre processos biológicos e espirituais.
 
@@ -4369,8 +4719,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Divide cada rodada em uma sequência de 24 quadros fotográficos, exigindo declarar no início do turno a trajetória exata que será percorrida.
 
-1. Corrida de Quadro Cortado (Movimento + 3 Karma): Seguir a trajetória declarada concede +6m de Movimento e +2 para atingir a CA Total.
-2. Congelamento de Quadro (Principal · 5 Karma): Alvo atingido que falhe em Reflexos fica preso em uma moldura plana (Lento/Imóvel), sofrendo +2d8 no primeiro golpe que quebrar o quadro.
+1.  Corrida de Quadro Cortado (Movimento + 3 Karma): Seguir a trajetória declarada concede +6m de Movimento e +2 para atingir a CA Total.
+2.  Congelamento de Quadro (Principal · 5 Karma): Alvo atingido que falhe em Reflexos fica preso em uma moldura plana (Lento/Imóvel), sofrendo +2d8 no primeiro golpe que quebrar o quadro.
 
 **Safra na Morte.** Saturno absorve a compressão de intervalos de ação em corpos mortais.
 
@@ -4378,17 +4728,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma aura cinzenta nas suas mãos acelera a passagem de décadas em segundos sobre materiais inorgânicos, escudos e equipamentos que você toca.
 
-1. Toque de Pó e Ferrugem (Principal · 4 Karma): Causa 2d8 de dano kármico/entrópico; apodrece a estrutura da armadura ou cobertura do alvo, reduzindo a CA dele em -2 até o fim da cena.
-2. Envelhecer Projétil (Reação · 3 Karma): Desintegra em poeira um projétil físico ou reduz em 2d8 o dano de um ataque armado contra você.
+1.  Toque de Pó e Ferrugem (Principal · 4 Karma): Causa 2d8 de dano kármico/entrópico; apodrece a estrutura da armadura ou cobertura do alvo, reduzindo a CA dele em -2 até o fim da cena.
+2.  Envelhecer Projétil (Reação · 3 Karma): Desintegra em poeira um projétil físico ou reduz em 2d8 o dano de um ataque armado contra você.
 
 **Safra na Morte.** Saturno colhe o controle localizado da entropia sobre ligas metálicas e barreiras.
 
 **39. Empréstimo do Turno Futuro** · A Foice da Safra · Runa Kármica Primordial
 
-**Fenômeno base.** Você pode "pedir emprestado" o seu próprio tempo do futuro para agir duas vezes no presente, pagando a conta depois.
+**Fenômeno base.** Você pode “pedir emprestado” o seu próprio tempo do futuro para agir duas vezes no presente, pagando a conta depois.
 
-1. Safra Antecipada (Livre · 5 Karma · 1x por cena): Realiza imediatamente 1 Ação Principal extra neste turno; em troca, no seu próximo turno você não possui Ação de Movimento e sofre -2 na CA.
-2. Atrasar Relógio Biológico (Reação · 3 Karma): Adia qualquer dano ou condição que você acabou de sofrer para só fazer efeito no final do seu próximo turno.
+1.  Safra Antecipada (Livre · 5 Karma · 1x por cena): Realiza imediatamente 1 Ação Principal extra neste turno; em troca, no seu próximo turno você não possui Ação de Movimento e sofre -2 na CA.
+2.  Atrasar Relógio Biológico (Reação · 3 Karma): Adia o dano ou condição que você acabou de sofrer para o fim do seu próximo turno. Registre o dano líquido depois da Resistência, antes do Escudo Temporário, e a condição devida. Na quitação, aplique o Escudo Temporário que estiver ativo naquele instante, depois Vida, sem aplicar Resistência novamente; a condição passa a produzir seus efeitos então, com sua duração registrada. O mesmo dano ou condição não pode ser adiado uma segunda vez, por esta habilidade ou por outra reação.
 
 **Safra na Morte.** Saturno recolhe a mecânica de crédito e débito temporal em organismos vivos.
 
@@ -4398,8 +4748,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Conecta mentalmente você e até 3 aliados a até 15m em uma rede silenciosa de cálculo tático compartilhado.
 
-1. Visão Triangular (Passiva da Rede + 2 Karma): Você pode traçar linha de visão para suas técnicas e ataques a partir dos olhos de qualquer aliado conectado na rede.
-2. Manobra Coordenada (Extra · 3 Karma): Dois aliados conectados podem trocar de posição entre si (movendo até 3m cada) ou somar +2 em um ataque conjunto contra o mesmo alvo.
+1.  Visão Triangular (Passiva da Rede + 2 Karma): Você pode traçar linha de visão para suas técnicas e ataques a partir dos olhos de qualquer aliado conectado na rede.
+2.  Manobra Coordenada (Extra · 3 Karma): Dois aliados conectados podem trocar de posição entre si (movendo até 3m cada) ou somar +2 em um ataque conjunto contra o mesmo alvo.
 
 **Safra na Morte.** Minerva absorve protocolos de comunicação telepática instantânea de esquadrão.
 
@@ -4407,8 +4757,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você desfia qualquer pedaço de metal, tecido ou escombro em fios prateados ultrarresistentes para costurar barreiras ou armadilhas instantâneas.
 
-1. Bastidor de Contenção (Principal · 4 Karma · 9m): Tece uma grade cortante ao redor do inimigo causando 2d6 cortante e aplicando Lento (se o alvo correr, sofre mais 1d8).
-2. Remendo de Batalha (Extra · 3 Karma): Costura uma armadura aliada ou o próprio traje, concedendo 2d6 + Intelecto de Escudo Temporário.
+1.  Bastidor de Contenção (Principal · 4 Karma · 9m): Tece uma grade cortante ao redor do inimigo causando 2d6 cortante e aplicando Lento (se o alvo correr, sofre mais 1d8).
+2.  Remendo de Batalha (Extra · 3 Karma): Costura uma armadura aliada ou o próprio traje, concedendo 2d6 + Intelecto de Escudo Temporário.
 
 **Safra na Morte.** Minerva colhe técnicas de tecelagem balística de emergência.
 
@@ -4416,8 +4766,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao observar ou sofrer uma técnica inimiga, a runa na sua testa decompõe a matriz dela em equações compreensíveis.
 
-1. Copiar Esboço (Reação · 5 Karma): Após um inimigo lançar uma técnica de Grau igual ou inferior à sua Etapa a até 12m, você grava a estrutura dela: no seu próximo turno, você pode disparar uma versão kármica daquela mesma técnica pagando o custo normal.
-2. Desmontar Matriz (Principal · 4 Karma): Dispara um feixe disruptivo (2d6) que encerra um buff ou escudo ativo no alvo.
+1.  Copiar Esboço (Reação · 5 Karma): Após um inimigo lançar uma técnica de Grau igual ou inferior à sua Etapa a até 12m, você grava sua estrutura. No seu próximo turno, pode disparar uma versão kármica da mesma técnica, usando a ação e pagando o custo normal da técnica copiada. Conserve Grau, alcance, área, alvos, duração e função; execute com o Atributo regente da sua Bênção e o seu treinamento na Perícia de manifestação ou execução exigida pela técnica copiada. Não copie Atributos, treinamento, Domínios ou recursos do autor original. Uma cópia de Grau V consome o seu próprio Ápice da cena e deve respeitar seus demais pagamentos e requisitos.
+2.  Desmontar Matriz (Principal · 4 Karma): Dispara um feixe disruptivo (2d6) que encerra um buff ou escudo ativo no alvo.
 
 **Safra na Morte.** Minerva recolhe o catálogo de técnicas raras dissecadas e replicadas pelo mortal.
 
@@ -4427,8 +4777,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você libera cinza vulcânica densa e superaquecida que pode se solidificar instantaneamente em pedra-pomes ao seu comando, prendendo quem estiver dentro.
 
-1. Estátua de Cinza (Principal · 4 Karma · 9m): Envolve o alvo em cinza incandescente (2d8 térmico) que endurece na hora, reduzindo o deslocamento dele a 0m até que quebre a crosta (ou sofra um golpe pesado).
-2. Cortina Vesuviana (Extra · 3 Karma): Cria uma zona de 4m de fumaça vulcânica que bloqueia visão inimiga e causa 4 de dano térmico a quem terminar o turno nela.
+1.  Estátua de Cinza (Principal · 4 Karma · 9m): Envolve o alvo em cinza incandescente (2d8 térmico) que endurece na hora, reduzindo o deslocamento dele a 0m até que quebre a crosta (ou sofra um golpe pesado).
+2.  Cortina Vesuviana (Extra · 3 Karma): Cria uma zona de 4m de fumaça vulcânica que bloqueia visão inimiga e causa 4 de dano térmico a quem terminar o turno nela.
 
 **Safra na Morte.** Vulcano absorve o controle de transição rápida entre gás piroclástico e rocha sólida.
 
@@ -4436,8 +4786,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu metabolismo queima Karma como combustível de alta octanagem; seus socos e golpes liberam explosões secas de impacto pelo impacto mecânico.
 
-1. Ignição de Segundo Estágio (Livre no ataque · 3 Karma): Quando acerta um ataque na faixa Parcial ou Total, provoca uma segunda explosão no ponto de contato que soma +2d6 de dano de fogo/contundente e ignora 3 de Redução de Dano.
-2. Purga de Escape (Reação · 3 Karma): Explode chamas pelas costas para impulsionar uma esquiva ou avançar 4,5m em linha reta.
+1.  Ignição de Segundo Estágio (Livre no ataque · 3 Karma): Quando acerta um ataque na faixa Parcial ou Total, provoca uma segunda explosão no ponto de contato que soma +2d6 de dano de fogo/contundente e ignora 3 de Redução de Dano.
+2.  Purga de Escape (Reação · 3 Karma): Explode chamas pelas costas para impulsionar uma esquiva ou avançar 4,5m em linha reta.
 
 **Safra na Morte.** Vulcano colhe a integração da engenharia de motores de combustão do século XX ao corpo humano.
 
@@ -4445,8 +4795,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode fundir temporariamente armas, placas de aço ou escudos ao próprio corpo (ou ao corpo de aliados consentidos) sem causar rejeição biológica.
 
-1. Enxerto de Blindagem (Movimento · 3 Karma): Funde um escudo ou peça metálica ao braço pela cena: você não pode ser desarmado, recebe +2 na CA e seus ataques desarmados usam o dado e as propriedades da arma fundida.
-2. Superaquecer Arma Inimiga (Principal · 4 Karma · 6m): Faz a arma metálica do inimigo brilhar em brasa viva, causando 2d6 térmico nele e forçando-o a largá-la ou sofrer -2 no acerto.
+1.  Enxerto de Blindagem (Movimento · 3 Karma): Funde um escudo ou peça metálica ao braço pela cena: você não pode ser desarmado, recebe +2 na CA e seus ataques desarmados usam o dado e as propriedades da arma fundida.
+2.  Superaquecer Arma Inimiga (Principal · 4 Karma · 6m): Faz a arma metálica do inimigo brilhar em brasa viva, causando 2d6 térmico nele e forçando-o a largá-la ou sofrer -2 no acerto.
 
 **Safra na Morte.** Vulcano recolhe a biomecânica de fusão entre tecido vivo e metalurgia pesada.
 
@@ -4456,8 +4806,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua arma ou manopla projeta três bocas espectrais de mastim negro no momento do impacto, que mordem de três ângulos diferentes ao mesmo tempo para impedir fugas.
 
-1. Mordida de Três Cabeças (Principal · 4 Karma): Ataca um alvo causando 2d8 perfurante/necrótico e reduzindo a CA de esquiva dele em -2 (ou dividindo o golpe contra até 2 inimigos adjacentes entre si causando 1d10 em cada).
-2. Guarda do Portão Negro (Reação · 3 Karma): Quando um inimigo a até 3 m tenta beber uma poção ou conjurar, as mandíbulas mordem o braço dele causando 1d8 e impondo -2 no teste dele.
+1.  Mordida de Três Cabeças (Principal · 4 Karma): Ataca um alvo causando 2d8 perfurante/necrótico e reduzindo a CA de esquiva dele em -2 (ou dividindo o golpe contra até 2 inimigos adjacentes entre si causando 1d10 em cada).
+2.  Guarda do Portão Negro (Reação · 3 Karma): Quando um inimigo a até 3 m tenta beber uma poção ou conjurar, as mandíbulas mordem o braço dele causando 1d8 e impondo -2 no teste dele.
 
 **Safra na Morte.** Plutão colhe técnicas de bloqueio simultâneo de múltiplas rotas de evasão.
 
@@ -4465,8 +4815,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O toque da sua arma converte a camada superficial da roupa, armadura ou pele do alvo em ouro maciço extremamente denso e pesado.
 
-1. Fardo de Midas (Principal · 4 Karma): Ataque que causa 2d6 contundente e reveste as pernas ou braços do alvo de ouro pesado, aplicando Lento e -2 em Reflexos e Agilidade por 2 rodadas.
-2. Estilhaçar Lingote (Extra · 3 Karma): Contra um alvo sob Fardo de Midas, quebra a crosta dourada causando 2d8 perfurante adicional.
+1.  Fardo de Midas (Principal · 4 Karma): Ataque que causa 2d6 contundente e reveste as pernas ou braços do alvo de ouro pesado, aplicando Lento e -2 em Reflexos e Agilidade por 2 rodadas.
+2.  Estilhaçar Lingote (Extra · 3 Karma): Contra um alvo sob Fardo de Midas, quebra a crosta dourada causando 2d8 perfurante adicional.
 
 **Safra na Morte.** Plutão colhe a alquimia de petrificação metálica parcial em combate.
 
@@ -4474,8 +4824,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você transforma o piso sólido a até 9m em uma boca escura de terra movediça gravitacional que puxa os pés dos inimigos para baixo.
 
-1. Afundar até os Joelhos (Principal · 4 Karma · Raio 3m): Causa 2d6 de dano e prende os alvos no solo (imobilizados no lugar até gastarem 1 ação de Movimento ou vencerem Atletismo).
-2. Mergulho Subterrâneo (Reação · 4 Karma): Afunda no próprio chão como em água escura para escapar de um ataque de área e emerge a até 4,5m de distância.
+1.  Afundar até os Joelhos (Principal · 4 Karma · Raio 3m): Causa 2d6 de dano e prende os alvos no solo (imobilizados no lugar até gastarem 1 ação de Movimento ou vencerem Atletismo).
+2.  Mergulho Subterrâneo (Reação · 4 Karma): Afunda no próprio chão como em água escura para escapar de um ataque de área e emerge a até 4,5m de distância.
 
 **Safra na Morte.** Plutão recolhe a manipulação de permeabilidade do solo urbano e rochoso.
 
@@ -4485,8 +4835,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Em vez do mar selvagem, você domina a engenharia hidráulica romana: comprime pequenos volumes de água em jatos finos de altíssima pressão capazes de cortar pedra e aço.
 
-1. Corte de Jato Hidráulico (Principal · 4 Karma · Linha de 9 m): Um feixe fino de água pressurizada corta o alvo causando 2d8 cortante e ignorando 4 pontos de Redução de Dano de armadura.
-2. Gêiser de Aqueduto (Extra · 3 Karma · 6 m): Ergue uma coluna de água sob si mesmo ou um aliado (elevando-o 4,5 m para o alto sem ataques de oportunidade) ou sob um inimigo (derrubando-o Caído).
+1.  Corte de Jato Hidráulico (Principal · 4 Karma · Linha de 9 m): Um feixe fino de água pressurizada corta o alvo causando 2d8 cortante e ignorando 4 pontos de Redução de Dano de armadura.
+2.  Gêiser de Aqueduto (Extra · 3 Karma · 6 m): Ergue uma coluna de água sob si mesmo ou um aliado (elevando-o 4,5 m para o alto sem ataques de oportunidade) ou sob um inimigo (derrubando-o Caído).
 
 **Safra na Morte.** Netuno absorve o uso industrial de jatos de água de alta pressão para corte balístico.
 
@@ -4494,8 +4844,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você exala uma neblina úmida que refrata imagens e sons, fazendo com que os inimigos vejam sua silhueta deslocada em 2 metros da sua posição real.
 
-1. Banco de Cerração (Extra · 3 Karma · Raio 4,5m): Enquanto estiver na neblina, ataques contra você sofrem -2 para atingir a CA Parcial e Total.
-2. Fantasma do Convés (Principal · 4 Karma): Cria um duplo de espuma condensada que avança e explode ao ser tocado ou atacar, causando 2d8 de dano frio/kármico.
+1.  Banco de Cerração (Extra · 3 Karma · Raio 4,5m): Enquanto estiver na neblina, ataques contra você sofrem -2 para atingir a CA Parcial e Total.
+2.  Fantasma do Convés (Principal · 4 Karma): Cria um duplo de espuma condensada que avança e explode ao ser tocado ou atacar, causando 2d8 de dano frio/kármico.
 
 **Safra na Morte.** Netuno colhe o domínio de ilusão óptica por dispersão de aerossóis líquidos.
 
@@ -4503,8 +4853,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus movimentos giratórios de arma criam correntes de sucção espiral no ar e na água, puxando inimigos e projéteis para a órbita do seu golpe.
 
-1. Espiral de Tridente (Principal · 4 Karma): Golpe giratório em 3m ao seu redor que puxa todos os inimigos próximos em 2m na sua direção e causa 2d8 cortante.
-2. Engolir Disparo (Reação · 3 Karma): Captura um projétil na corrente espiral da arma, anulando o dano e arremessando-o de volta com 1d10 de dano.
+1.  Espiral de Tridente (Principal · 4 Karma): Golpe giratório em 3m ao seu redor que puxa todos os inimigos próximos em 2m na sua direção e causa 2d8 cortante.
+2.  Engolir Disparo (Reação · 3 Karma): Captura um projétil na corrente espiral da arma, anulando o dano e arremessando-o de volta com 1d10 de dano.
 
 **Safra na Morte.** Netuno recolhe a hidrodinâmica de vórtices aplicada ao combate com armas de haste.
 
@@ -4514,8 +4864,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode transformar o próprio corpo (ou um objeto que você toque) em um polo de atração gravitacional seletiva contra um alvo específico.
 
-1. Puxão de Órbita (Extra · 3 Karma · 9m): O alvo marcado é puxado 4 metros na sua direção (ou na direção do objeto marcado, como uma parede ou armadilha); se colidir, sofre 2d6 contundente.
-2. Desvio de Olhar e Lâmina (Reação · 4 Karma): Atrai magneticamente o braço ou arma do inimigo que atacava um aliado seu, forçando o ataque a errar ou bater no chão.
+1.  Puxão de Órbita (Extra · 3 Karma · 9m): O alvo marcado é puxado 4 metros na sua direção (ou na direção do objeto marcado, como uma parede ou armadilha); se colidir, sofre 2d6 contundente.
+2.  Desvio de Olhar e Lâmina (Reação · 4 Karma): Atrai magneticamente o braço ou arma do inimigo que atacava um aliado seu, forçando o ataque a errar ou bater no chão.
 
 **Safra na Morte.** Vênus absorve a conversão do conceito de desejo/atração em força vetorial física.
 
@@ -4523,8 +4873,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao tocar um inimigo ou ser ferido por ele, você estabelece um fio cor-de-rosa translúcido de empatia forçada entre o seu sistema nervoso e o dele.
 
-1. Reflexo de Narciso (Reação · 4 Karma): Quando o inimigo vinculado causa dano a você, você reduz o dano sofrido em 1d10 e o próprio atacante recebe exatamente o mesmo valor de dano final que causou em você.
-2. Inversão de Charme (Principal · 4 Karma): Teste de Presença/Espírito contra Vontade; o alvo vinculado não consegue atacar você diretamente por 1 rodada sem antes sofrer 2d6 de dano mental.
+1.  Reflexo de Narciso (Reação · 4 Karma): Quando o inimigo vinculado causa dano a você, você reduz o dano sofrido em 1d10 e o próprio atacante recebe exatamente o mesmo valor de dano final que causou em você.
+2.  Inversão de Charme (Principal · 4 Karma): Teste de Presença/Espírito contra Vontade; o alvo vinculado não consegue atacar você diretamente por 1 rodada sem antes sofrer 2d6 de dano mental.
 
 **Safra na Morte.** Vênus colhe o espelhamento sináptico de dor entre agressor e vítima.
 
@@ -4532,8 +4882,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu sangue e seu Karma liberam uma fragrância adocicada invisível que entorpece os reflexos motores dos adversários a cada respiração.
 
-1. Névoa de Ambrosia (Extra · 3 Karma · Cone 4,5m): Alvos na área sofrem -2 em Iniciativa, Reflexos e Percepção por 2 rodadas.
-2. Espinho Despertador (Principal · 4 Karma): Golpe perfurante contra um alvo sob efeito da névoa; causa 2d8 + 4 de dano e converte o torpor em condição Desorientado.
+1.  Névoa de Ambrosia (Extra · 3 Karma · Cone 4,5m): Alvos na área sofrem -2 em Iniciativa, Reflexos e Percepção por 2 rodadas.
+2.  Espinho Despertador (Principal · 4 Karma): Golpe perfurante contra um alvo sob efeito da névoa; causa 2d8 + 4 de dano e converte o torpor em condição Desorientado.
 
 **Safra na Morte.** Vênus absorve neurotoxinas aromáticas de ação rápida para controle de multidões.
 
@@ -4545,8 +4895,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma inscrição na sua mão dominante altera a causalidade de um ataque: uma vez lançado, o golpe dobra o espaço para buscar o coração do alvo.
 
-1. Juramento de Gungnir (Livre no ataque · 4 Karma): Seu ataque ignora penalidades de distância, cobertura e camuflagem, e converte automaticamente um resultado de Falha em Acerto Parcial (ou soma +3 para atingir a CA Total).
-2. Perfuração de Linha (Extra · 3 Karma): O golpe atravessa o primeiro alvo causando 2d6 também no inimigo posicionado logo atrás dele.
+1.  Juramento de Gungnir (Livre no ataque · 4 Karma): Seu ataque ignora penalidades de distância, cobertura e camuflagem, e converte automaticamente um resultado de Falha em Acerto Parcial (ou soma +3 para atingir a CA Total).
+2.  Perfuração de Linha (Extra · 3 Karma): O golpe atravessa o primeiro alvo causando 2d6 também no inimigo posicionado logo atrás dele.
 
 **Safra na Morte.** Odin absorve a manipulação de probabilidade e certeza de impacto em combate mortal.
 
@@ -4554,8 +4904,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como Odin se feriu com a própria lança para ler as runas, seu corpo converte perda de sangue e Vida diretamente em clareza mental e poder kármico.
 
-1. Tributo do Caolho (Livre · 0 Karma + 4 de Vida irreduzível): Sacrifica a própria Vida para recuperar imediatamente 6 de Karma (ou gravar 1 Runa de Grau até III sem gastar ação) e receber +1d20 no próximo teste.
-2. Olho do Poço de Mimir (Passiva): Enquanto estiver com metade da Vida ou menos, a CD de todas as suas técnicas e runas sobe em +2.
+1.  Tributo do Caolho (Livre · 0 Karma + 4 de Vida irreduzível): Pague 4 de Vida diretamente, sem absorção por Resistência ou Escudo Temporário, para recuperar imediatamente 6 de Karma (ou gravar 1 Runa de Grau até III sem gastar ação) e receber +1d20 no próximo teste. Preserve os limites gerais de ações Livres e de repetição da mesma habilidade.
+2.  Olho do Poço de Mimir (Passiva): Enquanto estiver com metade da Vida ou menos, a CD de todas as suas técnicas e runas sobe em +2.
 
 **Safra na Morte.** Odin colhe os segredos rúnicos arrancados pelo mortal no limiar da própria morte.
 
@@ -4563,8 +4913,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Dois corvos feitos de sombra e tinta rúnica pousam nos seus ombros, podendo desprender-se do seu corpo para atuar como extensões da sua mente a até 18m.
 
-1. Rasante de Munin (Memória) (Extra · 3 Karma): O corvo bica a têmpora do alvo a 12m causando 1d10 mental e apagando a memória muscular de curto prazo dele (-2 na CA e impede o alvo de usar Reações até o próximo turno).
-2. Olhos de Hugin (Pensamento) (Movimento · 2 Karma): Envia o corvo pelo mapa; você enxerga tudo em 360° ao redor dele e pode lançar técnicas usando o corvo como ponto de origem.
+1.  Rasante de Munin (Memória) (Extra · 3 Karma): O corvo bica a têmpora do alvo a 12m causando 1d10 mental e apagando a memória muscular de curto prazo dele (-2 na CA e impede o alvo de usar Reações até o próximo turno).
+2.  Olhos de Hugin (Pensamento) (Movimento · 2 Karma): Envia o corvo pelo mapa; você enxerga tudo em 360° ao redor dele e pode lançar técnicas usando o corvo como ponto de origem.
 
 **Safra na Morte.** Odin recolhe todas as memórias de batalha registradas pelos dois corvos durante a vida do usuário.
 
@@ -4574,8 +4924,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Qualquer arma ou objeto que você empunhe possui um selo de retorno: após ser arremessado ou solto, ele volta voando para a sua mão com o dobro da velocidade.
 
-1. Ida e Volta (Principal · 4 Karma · 9m): Arremessa sua arma contra o alvo (2d6 de dano na ida) e puxa-a de volta no fim do turno atingindo o alvo pelas costas (+1d10 de dano na volta, ignorando escudo frontal).
-2. Puxar pelo Cabo (Movimento · 3 Karma): Em vez de puxar a arma para a mão, você se deixa puxar pelo voo da arma arremessada, voando 6m até ela e derrubando quem estiver no caminho.
+1.  Ida e Volta (Principal · 4 Karma · 9m): Arremessa sua arma contra o alvo (2d6 de dano na ida) e puxa-a de volta no fim do turno atingindo o alvo pelas costas (+1d10 de dano na volta, ignorando escudo frontal).
+2.  Puxar pelo Cabo (Movimento · 3 Karma): Em vez de puxar a arma para a mão, você se deixa puxar pelo voo da arma arremessada, voando 6m até ela e derrubando quem estiver no caminho.
 
 **Safra na Morte.** Thor absorve manobras acrobáticas e balísticas de vetores bidirecionais.
 
@@ -4583,8 +4933,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma faixa de energia elétrica envolve sua cintura; ao firmar os pés no chão, a massa efetiva dos seus golpes dobra sem aumentar o peso do seu corpo.
 
-1. Impacto de Montanha (Principal · 4 Karma): Golpe pesado que causa 2d10 contundente, destrói coberturas físicas ou portas reforçadas automaticamente e lança o alvo 3m para trás.
-2. Firmeza de Rocha (Reação · 2 Karma): Anula qualquer tentativa de empurrão, queda ou desarme contra você e causa 1d8 elétrico no agressor.
+1.  Impacto de Montanha (Principal · 4 Karma): Golpe pesado que causa 2d10 contundente, destrói coberturas físicas ou portas reforçadas automaticamente e lança o alvo 3m para trás.
+2.  Firmeza de Rocha (Reação · 2 Karma): Anula qualquer tentativa de empurrão, queda ou desarme contra você e causa 1d8 elétrico no agressor.
 
 **Safra na Morte.** Thor colhe o aperfeiçoamento da geração de torque mecânico em corpos de porte médio.
 
@@ -4592,8 +4942,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Cada golpe físico que você desfere ou recebe acumula cargas de relâmpago azul nos seus punhos e arma, saltando em faíscas para quem estiver perto.
 
-1. Trovão em Cadeia (Extra · 3 Karma): Após acertar um alvo, descarrega um arco voltaico que salta para até 2 outros inimigos a 3m do primeiro, causando 1d10 elétrico em cada um.
-2. Queda do Céu (Principal · 5 Karma): Salta alto e desaba em um ponto a 6m, causando 2d8 em área de 3m e aplicando Desorientado.
+1.  Trovão em Cadeia (Extra · 3 Karma): Após acertar um alvo, descarrega um arco voltaico que salta para até 2 outros inimigos a 3m do primeiro, causando 1d10 elétrico em cada um.
+2.  Queda do Céu (Principal · 5 Karma): Salta alto e desaba em um ponto a 6m, causando 2d8 em área de 3m e aplicando Desorientado.
 
 **Safra na Morte.** Thor recolhe a condução de correntes alternadas de alta voltagem através de combates corpo a corpo.
 
@@ -4603,8 +4953,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** No mito, os anões costuraram a boca de Loki para calar suas trapaças; você projeta essas linhas invisíveis à distância para fechar a boca, as bainhas ou as frestas dos inimigos.
 
-1. Costurar a Língua (Principal · 4 Karma · 12 m): Causa 2d6 kármico/perfurante e Silencia o alvo por 1 rodada (impedindo ordens verbais, gritos e técnicas que exijam voz/sopro), além de aplicar -2 em testes de Canalização de Karma dele.
-2. Costurar Bainha ou Bolso (Extra · 3 Karma · 9 m): Trava o equipamento secundário ou consumíveis do alvo, exigindo que ele gaste 1 Ação de Movimento para rasgar os fios antes de sacar itens.
+1.  Costurar a Língua (Principal · 4 Karma · 12 m): Causa 2d6 kármico/perfurante e Silencia o alvo por 1 rodada (impedindo ordens verbais, gritos e técnicas que exijam voz/sopro), além de aplicar -2 em testes de Canalização de Karma dele.
+2.  Costurar Bainha ou Bolso (Extra · 3 Karma · 9 m): Trava o equipamento secundário ou consumíveis do alvo, exigindo que ele gaste 1 Ação de Movimento para rasgar os fios antes de sacar itens.
 
 **Safra na Morte.** Loki colhe técnicas de sabotagem silenciosa de recursos e conjurações inimigas.
 
@@ -4612,8 +4962,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você cria uma cópia visual e sonora idêntica de si mesmo que possui peso leve o suficiente para pisar em armadilhas e atrair mira, durando até ser atingida.
 
-1. Troca de Palco (Reação · 4 Karma): Quando você sofre um ataque e seu Dublê está a até 9m, você revela que o alvo atingido era a cópia (que se desfaz em risadas e fumaça verde causando 1d8 mental no atacante), enquanto você surge ileso na posição onde a cópia estava.
-2. Finta Dupla (Extra · 2 Karma): Move o Dublê 6m para flanquear o inimigo, reduzindo a CA Parcial dele em -2 contra seu próximo golpe.
+1.  Troca de Palco (Reação · 4 Karma): Quando você sofre um ataque e seu Dublê está a até 9m, você revela que o alvo atingido era a cópia (que se desfaz em risadas e fumaça verde causando 1d8 mental no atacante), enquanto você surge ileso na posição onde a cópia estava.
+2.  Finta Dupla (Extra · 2 Karma): Move o Dublê 6m para flanquear o inimigo, reduzindo a CA Parcial dele em -2 contra seu próximo golpe.
 
 **Safra na Morte.** Loki absorve o teatro tático de iscas físicas e inversão de posicionamento.
 
@@ -4621,8 +4971,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus órgãos vitais e articulações não ficam fixos no lugar padrão; você pode deslocar o próprio coração de lugar, esticar membros ou imitar a voz e o rosto de outros.
 
-1. Órgão Deslocado (Reação · 3 Karma): Quando sofre um Acerto Total ou crítico perfurante/cortante, desliza seus órgãos internos de lugar, convertendo o Acerto Total em Acerto Parcial (metade do dano).
-2. Chicote de Articulação Solta (Principal · 4 Karma): Desloca o ombro e o pulso para esticar o ataque em +3m por um ângulo impossível, causando 2d8 e ignorando bloqueio frontal.
+1.  Órgão Deslocado (Reação · 3 Karma): Quando sofre um Acerto Total ou crítico perfurante/cortante, desliza seus órgãos internos de lugar, convertendo o Acerto Total em Acerto Parcial (metade do dano).
+2.  Chicote de Articulação Solta (Principal · 4 Karma): Desloca o ombro e o pulso para esticar o ataque em +3m por um ângulo impossível, causando 2d8 e ignorando bloqueio frontal.
 
 **Safra na Morte.** Loki recolhe o controle voluntário de mutação anatômica e evasão visceral.
 
@@ -4632,8 +4982,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma joia espectral de âmbar na sua garganta absorve metade do choque emocional e físico que você sofre, armazenando-o como luz dourada.
 
-1. Explosão de Âmbar (Principal · 4 Karma): Libera a luz acumulada em um feixe ou pulso de 4,5m que causa 2d8 radiante/kármico nos inimigos e cura 1d8 + Espírito em um aliado na área.
-2. Deslumbramento de Vanaheim (Reação · 3 Karma): Brilha intensamente quando atacada corpo a corpo, aplicando -2 no teste de ataque do inimigo.
+1.  Explosão de Âmbar (Principal · 4 Karma): Libera a luz acumulada em um feixe ou pulso de 4,5m que causa 2d8 radiante/kármico nos inimigos e cura 1d8 + Espírito em um aliado na área.
+2.  Deslumbramento de Vanaheim (Reação · 3 Karma): Brilha intensamente quando atacada corpo a corpo, aplicando -2 no teste de ataque do inimigo.
 
 **Safra na Morte.** Freya absorve a reciclagem de trauma físico em energia radiante de suporte e ataque.
 
@@ -4641,8 +4991,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu manto ou braços desfazem-se em dezenas de penas de falcão afiadas como navalhas que sustentam seu peso no ar e respondem ao seu comando.
 
-1. Rajada de Penas de Aço (Principal · 4 Karma · Cone 6m): Dispara uma tempestade de plumas que causa 2d8 cortante e permite a você planar 4,5m para trás acima do solo.
-2. Resgate de Valquíria (Movimento · 3 Karma): Envolve a si mesmo ou um aliado caído a 6m em um redemoinho de penas, erguendo-o do chão e movendo-o 4,5m pelo ar sem ataques de oportunidade.
+1.  Rajada de Penas de Aço (Principal · 4 Karma · Cone 6m): Dispara uma tempestade de plumas que causa 2d8 cortante e permite a você planar 4,5m para trás acima do solo.
+2.  Resgate de Valquíria (Movimento · 3 Karma): Envolve a si mesmo ou um aliado caído a 6m em um redemoinho de penas, erguendo-o do chão e movendo-o 4,5m pelo ar sem ataques de oportunidade.
 
 **Safra na Morte.** Freya colhe a aerodinâmica de dispersão e recomposição em plumas cortantes.
 
@@ -4650,8 +5000,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você enxerga e dedilha os fios dourados de sorte que cercam as criaturas na cena, podendo puxar um fio para favorecer um aliado ou dar um nó no fio de um inimigo.
 
-1. Nó de Azar (Reação · 4 Karma · 12m): Quando um inimigo rola um teste de ataque ou resistência, você puxa o fio dele: força o inimigo a descartar o maior d20 rolado na Reserva dele (ou impõe -3 no resultado final se ele tiver apenas 1 dado).
-2. Trama de Favor (Extra · 3 Karma): Concede a um aliado a até 9m +1d20 e +2 no próximo teste dele nesta rodada.
+1.  Nó de Azar (Reação · 4 Karma · 12m): Quando um inimigo rola um teste de ataque ou resistência, você puxa o fio dele: força o inimigo a descartar o maior d20 rolado na Reserva dele (ou impõe -3 no resultado final se ele tiver apenas 1 dado).
+2.  Trama de Favor (Extra · 3 Karma): Concede a um aliado a até 9m +1d20 e +2 no próximo teste dele nesta rodada.
 
 **Safra na Morte.** Freya recolhe métodos de manipulação direta das reservas de probabilidade em combate.
 
@@ -4661,8 +5011,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode deixar um ataque inimigo acertar seu braço ou guarda de propósito para travar a arma ou o membro do agressor sem escapatória.
 
-1. Mordida Aceita (Reação ao sofrer dano corpo a corpo · 3 Karma): Você recebe o dano normalmente, mas trava o atacante adjacente: ele fica Imóvel, sofre -3 na CA Total e o seu próximo ataque contra ele no seu turno é um Acerto Total automático com +1d10 de dano.
-2. Punho Fantasma de Tyr (Passiva): Mesmo que seu braço esteja ferido, ocupado ou com condição física, você projeta um braço kármico invisível para empunhar armas de duas mãos ou escudos sem penalidade.
+1.  Mordida Aceita (Reação ao sofrer dano corpo a corpo · 3 Karma): Você recebe o dano normalmente, mas trava o atacante adjacente: ele fica Imóvel, sofre -3 na CA Total e o seu próximo ataque contra ele no seu turno é um Acerto Total automático com +1d10 de dano.
+2.  Punho Fantasma de Tyr (Passiva): Mesmo que seu braço esteja ferido, ocupado ou com condição física, você projeta um braço kármico invisível para empunhar armas de duas mãos ou escudos sem penalidade.
 
 **Safra na Morte.** Tyr absorve a psicologia e a biomecânica do contra-ataque por sacrifício calculado.
 
@@ -4670,8 +5020,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você conjura uma fita fina e macia como seda (feita de conceitos intangíveis como o som do passo de um gato e o fôlego de um peixe) que fica mais forte quanto mais força bruta o inimigo usa contra ela.
 
-1. Atar o Lobo (Principal · 4 Karma · 6m): Enlaça o alvo causando 2d6 kármico; o alvo não pode usar Força para escapar (qualquer tentativa de quebrar a fita à força causa mais 1d10 de dano nele mesmo), exigindo técnica fina ou ajuda externa.
-2. Esticar Limite (Extra · 3 Karma): Usa a fita para amarrar a arma do inimigo ao chão, aplicando -2 nos ataques dele por 1 rodada.
+1.  Atar o Lobo (Principal · 4 Karma · 6m): Enlaça o alvo causando 2d6 kármico; o alvo não pode usar Força para escapar (qualquer tentativa de quebrar a fita à força causa mais 1d10 de dano nele mesmo), exigindo técnica fina ou ajuda externa.
+2.  Esticar Limite (Extra · 3 Karma): Usa a fita para amarrar a arma do inimigo ao chão, aplicando -2 nos ataques dele por 1 rodada.
 
 **Safra na Morte.** Tyr colhe o uso de amarras conceituais que invertem a Força física do oponente contra ele mesmo.
 
@@ -4679,8 +5029,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você crava sua arma no chão desafiando um inimigo a até 6m para um duelo sob o olho de Tyr, nivelando covardias e interferências externas.
 
-1. Declarar Holmgang (Extra · 4 Karma): Vincula você e 1 inimigo por 2 rodadas: ataques de terceiros vindos de fora contra vocês dois causam apenas metade do dano, e se o inimigo tentar atacar outra pessoa que não seja você, sofre 2d8 de dano divino automático.
-2. Balança de Honra (Reação · 2 Karma): Se o inimigo vinculado receber cura ou buff externo, você recebe metade daquele mesmo valor gratuitamente.
+1.  Declarar Holmgang (Extra · 4 Karma): Vincula você e 1 inimigo por 2 rodadas: ataques de terceiros vindos de fora contra vocês dois causam apenas metade do dano, e se o inimigo tentar atacar outra pessoa que não seja você, sofre 2d8 de dano divino automático.
+2.  Balança de Honra (Reação · 2 Karma): Se o inimigo vinculado receber cura ou buff externo, você recebe metade daquele mesmo valor gratuitamente.
 
 **Safra na Morte.** Tyr recolhe a imposição de regras de duelo isolado no meio de batalhas caóticas.
 
@@ -4690,8 +5040,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo pode alternar entre o Lado Vivo (quente, regenerativo) e o Lado Morto (frio, insensível à dor e necrótico) no início de cada turno.
 
-1. Mudança de Semblante (Livre no turno · 2 Karma): No Lado Vivo, você regenera Etapa de Vida no turno e recebe +2 em testes sociais/mentais; no Lado Morto, você recebe Redução de Dano 3 contra tudo, fica imune a veneno/sangramento e seus golpes somam +1d6 necrótico.
-2. Choque Térmico de Hel (Principal · 4 Karma): Golpeia com as duas mãos ao mesmo tempo (vida e morte), causando 2d10 de dano e aplicando Abalado.
+1.  Mudança de Semblante (Livre no turno · 2 Karma): No Lado Vivo, você regenera Etapa de Vida no turno e recebe +2 em testes sociais/mentais; no Lado Morto, você recebe Redução de Dano 3 contra tudo, fica imune a veneno/sangramento e seus golpes somam +1d6 necrótico.
+2.  Choque Térmico de Hel (Principal · 4 Karma): Golpeia com as duas mãos ao mesmo tempo (vida e morte), causando 2d10 de dano e aplicando Abalado.
 
 **Safra na Morte.** Hel absorve a homeostase entre metabolismo vivo e estase cadavérica.
 
@@ -4699,8 +5049,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O frio que você emana não congela apenas a água, mas adormece o próprio Karma e os nervos dos inimigos que respiram o vapor azulado.
 
-1. Sopro dos Nove Mundos Frios (Principal · 4 Karma · Cone 4,5m): Causa 2d8 de dano frio/necrótico e congela 3 pontos de Karma da reserva dos alvos atingidos (eles não podem gastar esses 3 pontos até o final do próximo turno).
-2. Piso de Geada Negra (Movimento · 2 Karma): Deixa um rastro congelado por onde anda que reduz o movimento de perseguidores pela metade.
+1.  Sopro dos Nove Mundos Frios (Principal · 4 Karma · Cone 4,5m): Causa 2d8 de dano frio/necrótico e congela 3 pontos de Karma da reserva dos alvos atingidos (eles não podem gastar esses 3 pontos até o final do próximo turno).
+2.  Piso de Geada Negra (Movimento · 2 Karma): Deixa um rastro congelado por onde anda que reduz o movimento de perseguidores pela metade.
 
 **Safra na Morte.** Hel colhe a criogenia espiritual capaz de congelar reservas de Karma em combate.
 
@@ -4708,8 +5058,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Onde houver sombras ou cadáveres na cena, braços pálidos e gelados brotam do chão sob seu comando para agarrar os tornozelos dos vivos.
 
-1. Agarrão dos Esquecidos (Extra · 3 Karma · 9m): Braços brotam sob um inimigo causando 1d10 necrótico e reduzindo a CA de esquiva/Agilidade dele em -2 até o próximo turno.
-2. Recusar o Valhala (Reação · 5 Karma · 1x/cena): Quando um aliado a até 9m cairia a 0 de Vida, as mãos de Hel seguram a alma dele no corpo, mantendo-o com 1 de Vida e de pé por mais 1 rodada completa.
+1.  Agarrão dos Esquecidos (Extra · 3 Karma · 9m): Braços brotam sob um inimigo causando 1d10 necrótico e reduzindo a CA de esquiva/Agilidade dele em -2 até o próximo turno.
+2.  Recusar o Valhala (Reação · 5 Karma · 1x/cena): Quando um aliado a até 9m cairia a 0 de Vida, as mãos de Hel seguram a alma dele no corpo, mantendo-o com 1 de Vida e de pé por mais 1 rodada completa.
 
 **Safra na Morte.** Hel recolhe a ancoragem de almas à beira do óbito.
 
@@ -4719,8 +5069,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Projeta uma esfera invisível de 4m de raio a até 12m onde nenhum som se propaga; todo ruído suprimido acumula-se como energia mecânica no centro da bolha.
 
-1. Emboscada Muda (2 Karma): Aliados na esfera recebem +1d20 em Furtividade e inimigos dentro dela não podem usar comandos de voz.
-2. Colapso de Decibéis (Principal · 5 Karma): Detona a bolha liberando todo o som reprimido, causando 2d8 de dano em 4m e aplicando Desorientado.
+1.  Emboscada Muda (2 Karma): Aliados na esfera recebem +1d20 em Furtividade e inimigos dentro dela não podem usar comandos de voz.
+2.  Colapso de Decibéis (Principal · 5 Karma): Detona a bolha liberando todo o som reprimido, causando 2d8 de dano em 4m e aplicando Desorientado.
 
 **Safra na Morte.** Heimdall absorve o armazenamento de ondas mecânicas via privação sensorial.
 
@@ -4728,8 +5078,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você cria pontes e rampas curtas de luz sólida multicolorida no ar, que queimam pés inimigos mas aceleram o passo de aliados.
 
-1. Passarela do Arco-Íris (Movimento · 3 Karma): Cria uma rampa de luz de 9m (inclusive subindo para telhados ou sobre abismos); você e aliados que corram por ela ganham +3m de movimento, enquanto inimigos que toquem a ponte sofrem 2d6 radiante.
-2. Corte de Sete Cores (Principal · 4 Karma): Desfaz a ponte em um feixe prismático contra um alvo a 9m, causando 2d8 de dano que ignora resistências elementais.
+1.  Passarela do Arco-Íris (Movimento · 3 Karma): Cria uma rampa de luz de 9m (inclusive subindo para telhados ou sobre abismos); você e aliados que corram por ela ganham +3m de movimento, enquanto inimigos que toquem a ponte sofrem 2d6 radiante.
+2.  Corte de Sete Cores (Principal · 4 Karma): Desfaz a ponte em um feixe prismático contra um alvo a 9m, causando 2d8 de dano que ignora resistências elementais.
 
 **Safra na Morte.** Heimdall colhe a engenharia de pontes fotônicas táticas de curta distância.
 
@@ -4737,8 +5087,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus olhos dourados enxergam em 360 graus através de paredes finas, fumaça e ilusões a até 15m; é impossível pegar você desprevenido.
 
-1. Toque de Gjallarhorn (Reação no início do combate · 3 Karma): Você nunca fica surpreso, soma +4 na sua Iniciativa e concede +2 na Iniciativa e na CA de todos os aliados a até 9m na primeira rodada.
-2. Sentinela Implacável (Reação · 3 Karma): Quando um inimigo tenta entrar ou sair de furtividade/teleporte a até 12m, você desfere um ataque imediato contra ele com +2 no acerto.
+1.  Toque de Gjallarhorn (Reação no início do combate · 3 Karma): Você nunca fica surpreso, soma +4 na sua Iniciativa e concede +2 na Iniciativa e na CA de todos os aliados a até 9m na primeira rodada.
+2.  Sentinela Implacável (Reação · 3 Karma): Quando um inimigo tenta entrar ou sair de furtividade/teleporte a até 12m, você desfere um ataque imediato contra ele com +2 no acerto.
 
 **Safra na Morte.** Heimdall recolhe protocolos de detecção contra infiltração e teletransporte.
 
@@ -4748,8 +5098,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Suas botas condensam lâminas finas de gelo sob as solas que permitem deslizar sobre qualquer terreno (terra, pedra, escadas ou água) em alta velocidade mantendo as duas mãos livres para atirar ou golpear.
 
-1. Tiro em Curva de Avalancha (Movimento + Principal · 4 Karma): Desliza até 9m em arco ao redor do alvo enquanto dispara ou golpeia, causando 2d8 perfurante/frio e somando +2 na sua própria CA até o próximo turno.
-2. Rastro Cortante (Extra · 2 Karma): Quem cruzar a linha de gelo que você deixou no chão neste turno sofre 1d8 frio e precisa vencer Acrobacia ou fica Caído.
+1.  Tiro em Curva de Avalancha (Movimento + Principal · 4 Karma): Desliza até 9m em arco ao redor do alvo enquanto dispara ou golpeia, causando 2d8 perfurante/frio e somando +2 na sua própria CA até o próximo turno.
+2.  Rastro Cortante (Extra · 2 Karma): Quem cruzar a linha de gelo que você deixou no chão neste turno sofre 1d8 frio e precisa vencer Acrobacia ou fica Caído.
 
 **Safra na Morte.** Skadi absorve a cinemática de tiro em movimento contínuo sobre superfícies congeladas.
 
@@ -4757,8 +5107,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Cada ataque seu que acerta um inimigo rouba calor cinético dele, cobrindo as juntas do alvo com camadas cumulativas de geada branca.
 
-1. Flecha de Estalactite (Principal · 4 Karma · 18m): Causa 2d8 perfurante/frio e reduz o Movimento do alvo em -3m (-6m se ele já estiver Lento).
-2. Estilhaçar Geada (Extra · 3 Karma): Contra um alvo que esteja Lento ou com geada acumulada, explode o gelo no corpo dele causando 2d6 adicional e aplicando -2 nos ataques dele por 1 rodada.
+1.  Flecha de Estalactite (Principal · 4 Karma · 18m): Causa 2d8 perfurante/frio e reduz o Movimento do alvo em -3m (-6m se ele já estiver Lento).
+2.  Estilhaçar Geada (Extra · 3 Karma): Contra um alvo que esteja Lento ou com geada acumulada, explode o gelo no corpo dele causando 2d6 adicional e aplicando -2 nos ataques dele por 1 rodada.
 
 **Safra na Morte.** Skadi colhe o método de desaceleração térmica progressiva de alvos velozes.
 
@@ -4766,8 +5116,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao ficar imóvel perto de uma parede, coluna ou cobertura, a luz ao seu redor se espalha como reflexo de neve, tornando seu contorno quase invisível à distância.
 
-1. Emboscada da Montanha (Passiva + 3 Karma no ataque): Se você não se moveu mais que 1,5m no turno antes de atacar à distância, seu ataque ganha +6m de alcance, +1d20 na Reserva e soma +Etapa ao dano.
-2. Vento de Cume (Reação · 3 Karma): Rajada de ar gelado que desvia projéteis inimigos (+3 na CA contra ataques à distância).
+1.  Emboscada da Montanha (Passiva + 3 Karma no ataque): Se você não se moveu mais que 1,5m no turno antes de atacar à distância, seu ataque ganha +6m de alcance, +1d20 na Reserva e soma +Etapa ao dano.
+2.  Vento de Cume (Reação · 3 Karma): Rajada de ar gelado que desvia projéteis inimigos (+3 na CA contra ataques à distância).
 
 **Safra na Morte.** Skadi recolhe técnicas de franco-atirador e camuflagem óptica em relevos elevados.
 
@@ -4777,8 +5127,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua pele carrega o juramento que protegeu Baldur: no início da cena (ou ao ativar), seu corpo torna-se quase impenetrável contra uma natureza específica de ataque, mantendo apenas um ponto cego.
 
-1. Juramento das Coisas (Extra · 4 Karma): Escolha 1 tipo de dano (Cortante, Perfurante, Contundente, Elemental ou Kármico): até o fim do seu próximo turno, você recebe Redução de Dano 6 contra aquele tipo e imunidade a Acertos Críticos dele (em troca, sofre +2 de dano de um único outro tipo à sua escolha, o seu "Visco").
-2. Desviar Ameaça (Reação · 3 Karma): Armas comuns que atinjam apenas sua CA Parcial escorregam sem causar dano algum.
+1.  Juramento das Coisas (Extra · 4 Karma): Escolha 1 tipo de dano (Cortante, Perfurante, Contundente, Elemental ou Kármico): até o fim do seu próximo turno, você recebe Redução de Dano 6 contra aquele tipo e imunidade a Acertos Críticos dele (em troca, sofre +2 de dano de um único outro tipo à sua escolha, o seu “Visco”).
+2.  Desviar Ameaça (Reação · 3 Karma): Armas comuns que atinjam apenas sua CA Parcial escorregam sem causar dano algum.
 
 **Safra na Morte.** Baldur absorve a adaptação dinâmica de imunidades seletivas em combate.
 
@@ -4786,8 +5136,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma luz serena e quente emana de você; ferir você parece um ato antinatural para a mente subconsciente de qualquer criatura viva.
 
-1. Peso da Culpa (Passiva + 3 Karma na Reação): Quando um inimigo declara um ataque contra você, ele sofre -2 no teste de acerto; se mesmo assim ele lhe causar dano, sofre 2d6 de dano mental/radiante imediato pelo rebote espiritual.
-2. Trégua de Solstício (Principal · 4 Karma · 9m): Remove Abalado / Desorientado de até 2 aliados e concede 1d10 + Espírito de Escudo Temporário a eles.
+1.  Peso da Culpa (Passiva + 3 Karma na Reação): Quando um inimigo declara um ataque contra você, ele sofre -2 no teste de acerto; se mesmo assim ele lhe causar dano, sofre 2d6 de dano mental/radiante imediato pelo rebote espiritual.
+2.  Trégua de Solstício (Principal · 4 Karma · 9m): Remove Abalado / Desorientado de até 2 aliados e concede 1d10 + Espírito de Escudo Temporário a eles.
 
 **Safra na Morte.** Baldur colhe o bloqueio psicológico de intenção assassina em combatentes hostis.
 
@@ -4795,8 +5145,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu Karma queima com a promessa do mundo que renasce das cinzas; quanto mais destruído estiver o campo de batalha ou seu próprio corpo, mais forte brilha sua chama dourada.
 
-1. Fulgor de Novo Mundo (Principal · 4 Karma · 9m): Dispara uma onda de luz dourada que causa 2d8 radiante nos inimigos e faz brotar luz curativa no chão, restaurando 1d8 de Vida em você ou em um aliado na área.
-2. Erguer das Cinzas (Reação · 6 Karma · 1x/cena): Ao cair a 0 de Vida ou sofrer uma Fratura, explode em luz (2d6 nos inimigos a 3m) e recupera imediatamente 2d10 + Etapa de Vida.
+1.  Fulgor de Novo Mundo (Principal · 4 Karma · 9m): Dispara uma onda de luz dourada que causa 2d8 radiante nos inimigos e faz brotar luz curativa no chão, restaurando 1d8 de Vida em você ou em um aliado na área.
+2.  Erguer das Cinzas (Reação · 6 Karma · 1x/cena): Ao cair a 0 de Vida ou sofrer uma Fratura, explode em luz (2d6 nos inimigos a 3m) e recupera imediatamente 2d10 + Etapa de Vida.
 
 **Safra na Morte.** Baldur recolhe a ignição de autorressurreição celular movida pelo Karma residual.
 
@@ -4808,8 +5158,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você condensa uma esfera giratória de fogo solar nas mãos que cresce de tamanho e calor a cada metro que percorre pelo campo de batalha.
 
-1. Rolar o Sol Nascente (Principal · 4 Karma · Linha 9 m): Lança a esfera solar que causa 2d6 térmico (ou 2d10 se percorrer pelo menos 6 m antes de atingir o alvo) e empurra o inimigo 2 m.
-2. Casca do Escaravelho Dourado (Reação · 3 Karma): Asas quitinosas douradas fecham-se sobre suas costas, concedendo +3 na CA Total contra um ataque e limpando condições de frio/lentidão.
+1.  Rolar o Sol Nascente (Principal · 4 Karma · Linha 9 m): Lança a esfera solar que causa 2d6 térmico (ou 2d10 se percorrer pelo menos 6 m antes de atingir o alvo) e empurra o inimigo 2 m.
+2.  Casca do Escaravelho Dourado (Reação · 3 Karma): Asas quitinosas douradas fecham-se sobre suas costas, concedendo +3 na CA Total contra um ataque e limpando condições de frio/lentidão.
 
 **Safra na Morte.** Rá absorve a aceleração progressiva de esferas de plasma térmico sobre o solo.
 
@@ -4817,8 +5167,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você projeta sob seus pés uma plataforma translúcida em forma de proa solar (3m × 1,5m) que desliza a 30 cm acima do solo, ignorando terreno difícil, líquidos e armadilhas de piso.
 
-1. Abalroamento da Barca (Movimento + 3 Karma): Desliza até 9m em linha reta levando até 1 aliado adjacente junto; inimigos no caminho sofrem 2d6 radiante e são empurrados 2m para os lados.
-2. Remos de Luz (Extra · 2 Karma): A plataforma ergue bordas de luz dourada que concedem cobertura parcial (+2 CA) contra ataques vindos de cotas inferiores.
+1.  Abalroamento da Barca (Movimento + 3 Karma): Desliza até 9m em linha reta levando até 1 aliado adjacente junto; inimigos no caminho sofrem 2d6 radiante e são empurrados 2m para os lados.
+2.  Remos de Luz (Extra · 2 Karma): A plataforma ergue bordas de luz dourada que concedem cobertura parcial (+2 CA) contra ataques vindos de cotas inferiores.
 
 **Safra na Morte.** Rá colhe o método de locomoção vetorial suspensa para transporte tático de esquadrão.
 
@@ -4826,8 +5176,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Toda noite a barca de Rá enfrenta a grande serpente do caos no submundo; suas armas projetam correntes e arpões de fogo dourado especializados em prender e abater criaturas grandes ou corruptas.
 
-1. Cravar Arpão de Fogo (Principal · 4 Karma · 9 m): Causa 2d8 perfurante/radiante e prende um cabo solar no alvo: enquanto você mantiver o cabo, o alvo não pode se afastar de você e sofre 4 de dano radiante no início do turno.
-2. Puxar pela Corrente Solar (Extra · 2 Karma): Puxa o alvo arpoado em 3 m (ou puxa você até ele) reduzindo a CA Parcial dele em -2.
+1.  Cravar Arpão de Fogo (Principal · 4 Karma · 9 m): Causa 2d8 perfurante/radiante e prende um cabo solar no alvo: enquanto você mantiver o cabo, o alvo não pode se afastar de você e sofre 4 de dano radiante no início do turno.
+2.  Puxar pela Corrente Solar (Extra · 2 Karma): Puxa o alvo arpoado em 3 m (ou puxa você até ele) reduzindo a CA Parcial dele em -2.
 
 **Safra na Morte.** Rá colhe táticas de contenção com arpões energéticos contra monstros de grande porte.
 
@@ -4837,8 +5187,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Projeta linhas e faixas cirúrgicas espectrais a até 6m capazes de costurar ou abrir fechos entre sombras, objetos e tecidos vivos como peças de um manequim.
 
-1. Costura de Sombra (Principal · 4 Karma): Costura a sombra do alvo ao chão (2d6 kármico; impede o alvo de se afastar mais de 3m do ponto até rasgar os fios).
-2. Transplante de Fratura (Reação · 5 Karma): Transfere 2d8 de dano sofrido por um aliado e uma condição de Sangramento/Lento para uma estrutura ou escudo próximo.
+1.  Costura de Sombra (Principal · 4 Karma): Costura a sombra do alvo ao chão (2d6 kármico; impede o alvo de se afastar mais de 3m do ponto até rasgar os fios).
+2.  Transplante de Fratura (Reação · 5 Karma): Transfere 2d8 de dano sofrido por um aliado e uma condição de Sangramento/Lento para uma estrutura ou escudo próximo.
 
 **Safra na Morte.** Anúbis absorve o domínio cirúrgico entre matéria viva e inanimada.
 
@@ -4846,8 +5196,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma runa em forma de balança flutua sobre a sua mão; ela mede instantaneamente a diferença entre o Karma gasto por um inimigo e o Karma gasto por você na rodada.
 
-1. Peso da Culpa Kármica (Principal · 4 Karma · 12m): Contra um alvo que tenha gasto Karma ou causado dano na última rodada, causa 2d8 necrótico/divino + 2 de dano extra para cada ponto de Karma que o alvo gastou no último turno dele (máximo +8).
-2. Igualar os Pratos (Reação · 3 Karma): Quando um inimigo recebe cura ou Escudo Temporário a até 12m, metade desse valor é desviada para você ou para o aliado mais ferido na cena.
+1.  Peso da Culpa Kármica (Principal · 4 Karma · 12m): Contra um alvo que tenha gasto Karma ou causado dano na última rodada, causa 2d8 necrótico/divino + 2 de dano extra para cada ponto de Karma que o alvo gastou no último turno dele (máximo +8).
+2.  Igualar os Pratos (Reação · 3 Karma): Quando um inimigo recebe cura ou Escudo Temporário a até 12m, metade desse valor é desviada para você ou para o aliado mais ferido na cena.
 
 **Safra na Morte.** Anúbis colhe equações de auditoria energética sobre o gasto espiritual de adversários.
 
@@ -4855,8 +5205,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus braços e arma são envolvidos por longas bandagens de linho funerário tratadas com betume e sais kármicos que se esticam como chicotes rígidos ou se contraem como talas médicas.
 
-1. Enfaixamento Constritor (Principal · 4 Karma · 6m): Ataque que causa 2d6 contundente e enrola uma faixa no membro do alvo, aplicando -2 nos ataques dele (ou Lento) e permitindo puxá-lo 3m.
-2. Preservação em Resina (Extra · 3 Karma): Enfaixa um ferimento seu ou de um aliado adjacente, estancando Sangramento, curando 1d8 + Intelecto e reduzindo o próximo dano recebido em 4.
+1.  Enfaixamento Constritor (Principal · 4 Karma · 6m): Ataque que causa 2d6 contundente e enrola uma faixa no membro do alvo, aplicando -2 nos ataques dele (ou Lento) e permitindo puxá-lo 3m.
+2.  Preservação em Resina (Extra · 3 Karma): Enfaixa um ferimento seu ou de um aliado adjacente, estancando Sangramento, curando 1d8 + Intelecto e reduzindo o próximo dano recebido em 4.
 
 **Safra na Morte.** Anúbis recolhe técnicas de imobilização têxtil combinadas com medicina de preservação em combate.
 
@@ -4866,8 +5216,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Na palma da sua mão existe um glifo que achata objetos soltos (até 4 espaços), armadilhas ou projéteis interceptados em fitas bidimensionais de papiro sem peso.
 
-1. Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.
-2. Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade.
+1.  Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.
+2.  Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade.
 
 **Safra na Morte.** Thoth recolhe o método de compressão bidimensional de matéria e projéteis.
 
@@ -4875,8 +5225,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao tocar uma superfície, arma ou inimigo, você escreve um hieróglifo luminoso que altera temporariamente uma propriedade descritiva simples daquilo (Pesado, Escorregadio, Frágil ou Silencioso).
 
-1. 1.Reescrever Propriedade (Principal · 4 Karma · 6m): Crava um glifo no alvo causando 2d6 kármico e impondo uma palavra por 1 rodada: "Frágil" (-2 na CA Parcial e Total do alvo), "Pesado" (o alvo fica Lento e não pode saltar) ou "Cego" (alcance visual do alvo cai para 3m).
-2. Nota de Rodapé (Reação · 3 Karma): Altera a trajetória de uma técnica em área para abrir um buraco seguro de 1,5m onde você ou um aliado está pisando.
+1.  1.Reescrever Propriedade (Principal · 4 Karma · 6m): Crava um glifo no alvo causando 2d6 kármico e impondo uma palavra por 1 rodada: “Frágil” (-2 na CA Parcial e Total do alvo), “Pesado” (o alvo fica Lento e não pode saltar) ou “Cego” (alcance visual do alvo cai para 3m).
+2.  Nota de Rodapé (Reação · 3 Karma): Altera a trajetória de uma técnica em área para abrir um buraco seguro de 1,5m onde você ou um aliado está pisando.
 
 **Safra na Morte.** Thoth absorve a gramática kármica capaz de sobrescrever estados físicos da matéria.
 
@@ -4884,8 +5234,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua mente enxerga o campo de batalha como uma grade trigonométrica numerada; cada passo ou golpe seu é calculado pelo ângulo exato de menor esforço.
 
-1. Vetor de Hipotenusa (Extra · 3 Karma): Substitui o atributo de qualquer ataque ou teste de esquiva neste turno por Intelecto (aplicando o Bônus Analítico de até +3) e aumenta o alcance da sua arma ou técnica em +3m.
-2. Zeramento de Variável (Reação · 4 Karma): Anula todos os dados de bônus ou vantagem de um ataque inimigo contra você, forçando-o a rolar apenas a reserva base seca.
+1.  Vetor de Hipotenusa (Extra · 3 Karma): Substitui o atributo de qualquer ataque ou teste de esquiva neste turno por Intelecto (aplicando o Bônus Analítico de até +3) e aumenta o alcance da sua arma ou técnica em +3m.
+2.  Zeramento de Variável (Reação · 4 Karma): Anula todos os dados de bônus ou vantagem de um ataque inimigo contra você, forçando-o a rolar apenas a reserva base seca.
 
 **Safra na Morte.** Thoth colhe modelos matemáticos de otimização cinética aplicados ao corpo mortal.
 
@@ -4893,10 +5243,10 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **91. Rastreio de Assinatura Ontológica** · O Nome Verdadeiro de Rá · Runa Kármica Primordial
 
-**Fenômeno base.** Sempre que uma criatura fala, sangra ou gasta Karma perto de você, você decifra uma sílaba do "Nome Secreto" da alma dela, ganhando autoridade progressiva sobre ela.
+**Fenômeno base.** Sempre que uma criatura fala, sangra ou gasta Karma perto de você, você decifra uma sílaba do “Nome Secreto” da alma dela, ganhando autoridade progressiva sobre ela.
 
-1. Pronunciar Sílabas (Principal · 4 Karma · 12m): Contra um alvo que você já tenha ferido ou visto gastar Karma na cena, pronuncia a frequência espiritual dele: causa 2d8 kármico/mental que ignora cobertura e reduz em -2 os testes de resistência dele contra você até o fim da cena.
-2. Voz de Comando Íntimo (Reação · 3 Karma): Interrompe o movimento de um alvo cujo "Nome" você já marcou, reduzindo o passo dele pela metade.
+1.  Pronunciar Sílabas (Principal · 4 Karma · 12m): Contra um alvo que você já tenha ferido ou visto gastar Karma na cena, pronuncia a frequência espiritual dele: causa 2d8 kármico/mental que ignora cobertura e reduz em -2 os testes de resistência dele contra você até o fim da cena.
+2.  Voz de Comando Íntimo (Reação · 3 Karma): Interrompe o movimento de um alvo cujo “Nome” você já marcou, reduzindo o passo dele pela metade.
 
 **Safra na Morte.** Ísis absorve a decodificação de frequências de identidade espiritual de outras raças e criaturas.
 
@@ -4904,8 +5254,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Suas mãos emitem filamentos dourados que lembram o estado íntegro original de corpos e objetos, puxando carne rasgada ou metal quebrado de volta ao lugar.
 
-1. Reconstruir o Despedaçado (Principal · 4 Karma · 6m): Restaura 2d8 + Espírito + Etapa de Vida em um aliado (ou em uma invocação/dispositivo) e remove Sangramento ou Danificado.
-2. Empréstimo de Integridade (Reação · 3 Karma): Quando um aliado a até 9m sofre dano pesado, os fios seguram o corpo dele, concedendo 2d6 de Escudo Temporário imediato.
+1.  Reconstruir o Despedaçado (Principal · 4 Karma · 6m): Restaura 2d8 + Espírito + Etapa de Vida em um aliado (ou em uma invocação/dispositivo) e remove Sangramento ou Danificado.
+2.  Empréstimo de Integridade (Reação · 3 Karma): Quando um aliado a até 9m sofre dano pesado, os fios seguram o corpo dele, concedendo 2d6 de Escudo Temporário imediato.
 
 **Safra na Morte.** Ísis colhe técnicas de reversão de trauma celular e estrutural sob fogo inimigo.
 
@@ -4913,8 +5263,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Duas asas translúcidas de vento e luz dourada abrem-se a partir das suas omoplatas, varrendo miasmas, gases e projéteis para longe.
 
-1. Bater de Asas Purificador (Principal · 4 Karma · Cone 6m): Dispara uma lufada cortante que causa 2d6 de dano, empurra inimigos em 3m e limpa qualquer nuvem tóxica, fogo ou zona hostil na área.
-2. Abraço de Plumas (Reação · 3 Karma): Fecha as asas ao redor de si ou de um aliado adjacente, somando +3 na CA Total e concedendo resistência elemental até o próximo turno.
+1.  Bater de Asas Purificador (Principal · 4 Karma · Cone 6m): Dispara uma lufada cortante que causa 2d6 de dano, empurra inimigos em 3m e limpa qualquer nuvem tóxica, fogo ou zona hostil na área.
+2.  Abraço de Plumas (Reação · 3 Karma): Fecha as asas ao redor de si ou de um aliado adjacente, somando +3 na CA Total e concedendo resistência elemental até o próximo turno.
 
 **Safra na Morte.** Ísis recolhe a aerodinâmica de barreiras eólicas protetoras.
 
@@ -4922,10 +5272,10 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **94. Visão das Seis Frações** · O Olho Udjat Fracionado · Runa Kármica Primordial
 
-**Fenômeno base.** Sua pupila exibe o símbolo do Olho de Hórus dividido nas 6 frações matemáticas egípcias (1/2, 1/4, 1/8...), permitindo enxergar a grandes distâncias e dividir a mira entre múltiplos pontos.
+**Fenômeno base.** Sua pupila exibe o símbolo do Olho de Hórus dividido nas 6 frações matemáticas egípcias (1/2, 1/4, 1/8…), permitindo enxergar a grandes distâncias e dividir a mira entre múltiplos pontos.
 
-1. Foco Fracionado (Extra · 3 Karma): Seu próximo ataque à distância ou técnica de feixe divide-se no ar para atingir 2 alvos diferentes a até 15m (causando o dano normal no primeiro e 1d10 no segundo) ou concentra todas as frações em 1 único ponto (+3 para atingir a CA Total).
-2. Olho que Cura (Movimento · 3 Karma): Sacrifica o bônus visual por 1 rodada para projetar luz curativa do olho, restaurando 1d10 + Espírito de Vida em um aliado a 9m.
+1.  Foco Fracionado (Extra · 3 Karma): Seu próximo ataque à distância ou técnica de feixe divide-se no ar para atingir 2 alvos diferentes a até 15m (causando o dano normal no primeiro e 1d10 no segundo) ou concentra todas as frações em 1 único ponto (+3 para atingir a CA Total).
+2.  Olho que Cura (Movimento · 3 Karma): Sacrifica o bônus visual por 1 rodada para projetar luz curativa do olho, restaurando 1d10 + Espírito de Vida em um aliado a 9m.
 
 **Safra na Morte.** Hórus absorve a geometria óptica de divisão e convergência de feixes.
 
@@ -4933,8 +5283,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode impulsionar saltos verticais extremos e pairar por um instante no ponto mais alto antes de desabar diagonalmente como um falcão em caça a mais de 300 km/h.
 
-1. Picada Real (Movimento + Principal · 4 Karma): Salta acima do campo (ignorando obstáculos e ataques de oportunidade) e cai sobre um alvo a até 9m, causando 2d10 perfurante/contundente e deixando-o Caído em caso de Acerto Total.
-2. Ascensão de Garras (Reação · 3 Karma): Ao ser atacado no solo, salta 4,5m na vertical ou para trás, somando +3 na CA contra o golpe.
+1.  Picada Real (Movimento + Principal · 4 Karma): Salta acima do campo (ignorando obstáculos e ataques de oportunidade) e cai sobre um alvo a até 9m, causando 2d10 perfurante/contundente e deixando-o Caído em caso de Acerto Total.
+2.  Ascensão de Garras (Reação · 3 Karma): Ao ser atacado no solo, salta 4,5m na vertical ou para trás, somando +3 na CA contra o golpe.
 
 **Safra na Morte.** Hórus colhe a cinemática de ataques aéreos de queda livre em ambientes urbanos e internos.
 
@@ -4942,8 +5292,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma coroa dupla invisível (branca e vermelha) impõe uma diferença de hierarquia kármica: inimigos que estejam em cota inferior ou com menos Vida percentual que você sentem seus movimentos travarem.
 
-1. Decreto do Céu Alto (Passiva + 3 Karma como Extra): Contra qualquer inimigo que esteja fisicamente mais baixo que você, Caído ou com menos Vida atual que você, seus ataques somam +2 no acerto e +1d8 no dano.
-2. Repelir Usurpador (Reação · 3 Karma): Quando um inimigo entra no seu alcance corpo a corpo, uma onda de pressão dourada exige que ele gaste +2m de movimento ou pare a 2m de você.
+1.  Decreto do Céu Alto (Passiva + 3 Karma como Extra): Contra qualquer inimigo que esteja fisicamente mais baixo que você, Caído ou com menos Vida atual que você, seus ataques somam +2 no acerto e +1d8 no dano.
+2.  Repelir Usurpador (Reação · 3 Karma): Quando um inimigo entra no seu alcance corpo a corpo, uma onda de pressão dourada exige que ele gaste +2m de movimento ou pare a 2m de você.
 
 **Safra na Morte.** Hórus recolhe o condicionamento de superioridade posicional e psicológica em combate.
 
@@ -4953,8 +5303,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao seu redor gira um redemoinho constante de areia vermelha fina em altíssima velocidade, que funciona como uma lixa industrial capaz de esfolar carne e cegar olhos.
 
-1. Jato de Jateamento (Principal · 4 Karma · Linha 9m): Dispara um feixe de areia pressurizada que causa 2d8 cortante, aplica Sangramento e reduz a CA de armadura do alvo em -1 pela erosão.
-2. Redoma do Deserto (Extra · 3 Karma): Expande a areia em 3m de raio por 1 rodada; ataques à distância contra você sofrem -2 e inimigos que entrarem na área ficam Desorientados.
+1.  Jato de Jateamento (Principal · 4 Karma · Linha 9m): Dispara um feixe de areia pressurizada que causa 2d8 cortante, aplica Sangramento e reduz a CA de armadura do alvo em -1 pela erosão.
+2.  Redoma do Deserto (Extra · 3 Karma): Expande a areia em 3m de raio por 1 rodada; ataques à distância contra você sofrem -2 e inimigos que entrarem na área ficam Desorientados.
 
 **Safra na Morte.** Set absorve o uso de partículas sólidas em suspensão supersônica para corte e erosão balística.
 
@@ -4962,8 +5312,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu cetro ou mão carrega a marca do regicídio: você não apenas destrói as vantagens do inimigo, mas toma para si aquilo que pertencia a ele.
 
-1. Golpe de Estado (Principal · 4 Karma · Toque/Arma): Causa 2d6 kármico e rouba até 8 pontos de Escudo Temporário ou 1 efeito de bônus positivo (buff) que esteja ativo no inimigo, transferindo-o imediatamente para você.
-2. Desarmar o Rei (Reação · 3 Karma): Quando um inimigo usa Ímpeto ou um bônus de dados contra você, você drena 2 de Karma dele para a sua reserva.
+1.  Golpe de Estado (Principal · 4 Karma · Toque/Arma): Causa 2d6 kármico e rouba até 8 pontos de Escudo Temporário ou 1 efeito de bônus positivo (buff) que esteja ativo no inimigo, transferindo-o imediatamente para você.
+2.  Desarmar o Rei (Reação · 3 Karma): Quando um inimigo usa Ímpeto ou um bônus de dados contra você, você drena 2 de Karma dele para a sua reserva.
 
 **Safra na Morte.** Set colhe a mecânica de parasitismo e apropriação direta de escudos e melhorias inimigas.
 
@@ -4971,8 +5321,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus movimentos têm espasmos angulares impossíveis de ler; até mesmo as técnicas de previsão ou leitura tática falham ao tentar calcular seu próximo passo.
 
-1. Passo Errático (Livre · 2 Karma): Seu movimento e ataque neste turno tornam-se imunes a Reações inimigas (como contra-ataques ou escudos reativos) e ignoram bônus defensivos baseados em Intelecto/Tática do alvo.
-2. Mordida de Ferro Meteórico (Principal · 4 Karma): Ataque brutal que causa 2d8 perfurante e aplica uma condição aleatória severa (Sangramento, Lento ou Abalado).
+1.  Passo Errático (Livre · 2 Karma): Seu movimento e ataque neste turno tornam-se imunes a Reações inimigas (como contra-ataques ou escudos reativos) e ignoram bônus defensivos baseados em Intelecto/Tática do alvo.
+2.  Mordida de Ferro Meteórico (Principal · 4 Karma): Ataque brutal que causa 2d8 perfurante e aplica uma condição aleatória severa (Sangramento, Lento ou Abalado).
 
 **Safra na Morte.** Set recolhe padrões de movimento caótico que quebram leituras preditivas.
 
@@ -4982,8 +5332,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua respiração e o giro das suas armas levantam o vento escaldante de 50 graus do deserto do Saara, desidratando e rachando a guarda dos inimigos instantaneamente.
 
-1. Rajada de Desidratação (Principal · 4 Karma · Cone 6 m): Causa 2d8 térmico e resseca os músculos dos atingidos, aplicando Lento e -2 em testes de Força e Constituição por 1 rodada.
-2. Miragem da Juba de Fogo (Reação · 3 Karma): O ar trêmulo de calor ao redor dos seus ombros faz ataques corpo a corpo e à distância sofrerem -2 para acertar você.
+1.  Rajada de Desidratação (Principal · 4 Karma · Cone 6 m): Causa 2d8 térmico e resseca os músculos dos atingidos, aplicando Lento e -2 em testes de Força e Constituição por 1 rodada.
+2.  Miragem da Juba de Fogo (Reação · 3 Karma): O ar trêmulo de calor ao redor dos seus ombros faz ataques corpo a corpo e à distância sofrerem -2 para acertar você.
 
 **Safra na Morte.** Sekhmet absorve o uso de correntes térmicas desérticas para exaustão física rápida.
 
@@ -4991,8 +5341,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu calor corporal gera patógenos kármicos efêmeros que inflamam os músculos dos inimigos, mas morrem instantaneamente ao seu comando.
 
-1. Inoculação Ardente (Principal · 4 Karma · 9m): Causa 2d6 térmico/necrótico e contamina o alvo por 2 rodadas: o alvo sofre 4 de dano no início do turno e causa -2 de dano em todos os seus ataques pela fraqueza muscular.
-2. Contágio de Proximidade (Livre · 2 Karma): Se um alvo contaminado terminar o turno adjacente a outro inimigo, a febre salta para o segundo inimigo.
+1.  Inoculação Ardente (Principal · 4 Karma · 9m): Causa 2d6 térmico/necrótico e contamina o alvo por 2 rodadas: o alvo sofre 4 de dano no início do turno e causa -2 de dano em todos os seus ataques pela fraqueza muscular.
+2.  Contágio de Proximidade (Livre · 2 Karma): Se um alvo contaminado terminar o turno adjacente a outro inimigo, a febre salta para o segundo inimigo.
 
 **Safra na Morte.** Sekhmet colhe cepas de exaustão térmica controlada para enfraquecimento de chefes e tropas.
 
@@ -5000,8 +5350,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como Sekhmet traz a praga, ela detém a cura absoluta pelo calor; suas garras podem queimar a doença e fechar artérias abertas instantaneamente.
 
-1. Toque de Cautério (Extra · 3 Karma · Toque): Fecha ferimentos a fogo sagrado em você ou em um aliado: encerra todas as condições físicas negativas (Sangramento, Envenenado, Lento), restaura 2d6 de Vida e concede +2 em Força/Agilidade por 1 rodada pela descarga de adrenalina.
-2. Reverter Toxina (Reação · 3 Karma): Converte um dano de veneno, ácido ou corrupção recebido em metade desse valor como cura de Vida.
+1.  Toque de Cautério (Extra · 3 Karma · Toque): Fecha ferimentos a fogo sagrado em você ou em um aliado: encerra todas as condições físicas negativas (Sangramento, Envenenado, Lento), restaura 2d6 de Vida e concede +2 em Força/Agilidade por 1 rodada pela descarga de adrenalina.
+2.  Reverter Toxina (Reação · 3 Karma): Converte um dano de veneno, ácido ou corrupção recebido em metade desse valor como cura de Vida.
 
 **Safra na Morte.** Sekhmet recolhe técnicas médicas de choque térmico e imunização instantânea.
 
@@ -5011,8 +5361,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo já carrega a memória da própria morte; cair em combate não encerra sua ação, mas desperta sua forma mais fria e lúcida.
 
-1. Trono Cinzento (Reação ao cair a 0 de Vida ou abaixo de 25% · 5 Karma · 1x/cena): Você não cai inconsciente; recupera imediatamente 2d10 + Espírito de Vida, limpa condições mentais e, por 2 rodadas, seus ataques somam +2 no acerto e +1d8 de dano necrótico.
-2. Sangue Frio de Osíris (Passiva): Você não sofre penalidades por estar ferido ou próximo da morte e estabiliza automaticamente.
+1.  Trono Cinzento (Reação ao cair a 0 de Vida ou abaixo de 25% · 5 Karma · 1x/cena): Você não cai inconsciente; recupera imediatamente 2d10 + Espírito de Vida, limpa condições mentais e, por 2 rodadas, seus ataques somam +2 no acerto e +1d8 de dano necrótico.
+2.  Sangue Frio de Osíris (Passiva): Você não sofre penalidades por estar ferido ou próximo da morte e estabiliza automaticamente.
 
 **Safra na Morte.** Osíris absorve a resiliência psicológica e espiritual de quem luta além do limite clínico do óbito.
 
@@ -5020,8 +5370,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** De qualquer lugar onde sangue ou Karma tenha tocado o chão, você faz germinar raízes negras e espigas espinhosas que drenam a força dos vivos para alimentar seus aliados.
 
-1. Safra do Duat (Principal · 4 Karma · Raio 3m a 9m): Raízes prendem os inimigos na área causando 2d6 perfurante e aplicando Lento; para cada inimigo atingido, um aliado na área recupera 4 de Vida.
-2. Casulo de Junco Negro (Reação · 3 Karma): Ergue raízes trançadas ao redor de si ou de um aliado, absorvendo 1d10 + Etapa de dano.
+1.  Safra do Duat (Principal · 4 Karma · Raio 3m a 9m): Raízes prendem os inimigos na área causando 2d6 perfurante e aplicando Lento; para cada inimigo atingido, um aliado na área recupera 4 de Vida.
+2.  Casulo de Junco Negro (Reação · 3 Karma): Ergue raízes trançadas ao redor de si ou de um aliado, absorvendo 1d10 + Etapa de dano.
 
 **Safra na Morte.** Osíris colhe a botânica kármica de transferência vital pelo solo.
 
@@ -5029,8 +5379,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Suas duas mãos manifestam as insígnias reais do submundo: o Heka (gancho que puxa e guia) e o Nekhakha (mangual que pune e afasta).
 
-1. Gancho Heka (Extra · 3 Karma · 9m): Puxa um aliado até 4,5m para fora de perigo (concedendo +2 na CA dele) ou puxa um inimigo 3m quebrando sua postura (-2 na CA Parcial).
-2. Mangual Nekhakha (Principal · 4 Karma): Golpe em cone curto de 3m que causa 2d8 kármico e impede os atingidos de se aproximarem de você no próximo turno.
+1.  Gancho Heka (Extra · 3 Karma · 9m): Puxa um aliado até 4,5m para fora de perigo (concedendo +2 na CA dele) ou puxa um inimigo 3m quebrando sua postura (-2 na CA Parcial).
+2.  Mangual Nekhakha (Principal · 4 Karma): Golpe em cone curto de 3m que causa 2d8 kármico e impede os atingidos de se aproximarem de você no próximo turno.
 
 **Safra na Morte.** Osíris recolhe o controle posicional simultâneo de aliados e inimigos.
 
@@ -5040,8 +5390,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quando você agarra ou acerta um inimigo a curta distância, seu corpo inteiro gira em espiral com o torque de um crocodilo gigante, triturando armaduras e articulações.
 
-1. Giro do Nilo (Principal · 4 Karma): Ataque corpo a corpo que causa 2d10 contundente/cortante, derruba o alvo (Caído) e reduz a CA Total dele em -2 até o início do seu próximo turno.
-2. Trava de Mandíbula (Reação · 3 Karma): Quando um inimigo adjacente tenta recuar ou usar Movimento, você o trava no lugar causando 1d10 de dano e zerando o deslocamento dele.
+1.  Giro do Nilo (Principal · 4 Karma): Ataque corpo a corpo que causa 2d10 contundente/cortante, derruba o alvo (Caído) e reduz a CA Total dele em -2 até o início do seu próximo turno.
+2.  Trava de Mandíbula (Reação · 3 Karma): Quando um inimigo adjacente tenta recuar ou usar Movimento, você o trava no lugar causando 1d10 de dano e zerando o deslocamento dele.
 
 **Safra na Morte.** Sobek absorve técnicas de alavanca rotacional para destruição de armaduras pesadas.
 
@@ -5049,8 +5399,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A pele dos seus antebraços, costas e ombros condensa osteodermos (placas ósseas esverdeadas e pétreas) que desviam lâminas e tiros em ângulo raso.
 
-1. Endurecer Dorso (Reação ou Extra · 3 Karma): Até o início do seu próximo turno, você recebe Redução de Dano 5 contra ataques físicos e imunidade a Sangramento.
-2. Golpe de Cauda Hidrostática (Extra · 3 Karma): Uma onda de impacto varre 2m ao seu redor, causando 1d8 contundente e empurrando inimigos adjacentes em 2m.
+1.  Endurecer Dorso (Reação ou Extra · 3 Karma): Até o início do seu próximo turno, você recebe Redução de Dano 5 contra ataques físicos e imunidade a Sangramento.
+2.  Golpe de Cauda Hidrostática (Extra · 3 Karma): Uma onda de impacto varre 2m ao seu redor, causando 1d8 contundente e empurrando inimigos adjacentes em 2m.
 
 **Safra na Morte.** Sobek colhe a calcificação dérmica rápida contra armamento perfurante moderno.
 
@@ -5058,8 +5408,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você trata pisos sólidos, lama ou sombras rasas como a superfície de um rio turvo, podendo deslizar rente ao chão com apenas os olhos visíveis.
 
-1. Bote da Margem (Movimento + Principal · 4 Karma): Desliza 6m rente ao solo ignorando linha de tiro à distância e salta na garganta do alvo com +1d20 na Reserva, causando 2d8 perfurante.
-2. Arrastar para o Fundo (Extra · 2 Karma): Puxa um alvo Caído por 3m pelo chão junto com você, impedindo-o de se levantar sem gastar 2 ações de Movimento (ou vencer Força).
+1.  Bote da Margem (Movimento + Principal · 4 Karma): Desliza 6m rente ao solo ignorando linha de tiro à distância e salta na garganta do alvo com +1d20 na Reserva, causando 2d8 perfurante.
+2.  Arrastar para o Fundo (Extra · 2 Karma): Puxa um alvo Caído por 3m pelo chão junto com você, impedindo-o de se levantar sem gastar 2 ações de Movimento (ou vencer Força).
 
 **Safra na Morte.** Sobek recolhe táticas de infiltração rasteira e neutralização de alvos isolados.
 
@@ -5071,8 +5421,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** No centro da sua testa existe uma fenda vertical fechada; quando aberta por um segundo, ela não dispara fogo comum, mas desfaz a coesão molecular do que estiver na linha focal.
 
-1. Abrir o Terceiro Olho (Principal · 5 Karma · Linha 12m): Dispara um feixe fino que causa 2d10 kármico/divino, destrói qualquer cobertura física não mágica na linha e ignora completamente escudos temporários e reduções de dano.
-2. Cinza de Vibhuti (Extra · 2 Karma): A matéria desintegrada vira cinza branca sagrada que cobre seu corpo, concedendo +2 na CA e em Vontade por 1 rodada.
+1.  Abrir o Terceiro Olho (Principal · 5 Karma · Linha 12m): Dispara um feixe fino que causa 2d10 kármico/divino, destrói qualquer cobertura física não mágica na linha e ignora completamente escudos temporários e reduções de dano.
+2.  Cinza de Vibhuti (Extra · 2 Karma): A matéria desintegrada vira cinza branca sagrada que cobre seu corpo, concedendo +2 na CA e em Vontade por 1 rodada.
 
 **Safra na Morte.** Shiva absorve a focalização cirúrgica da entropia destrutiva em feixes estreitos.
 
@@ -5080,8 +5430,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu combate segue uma cadência rítmica contínua: enquanto você não parar de se mover e atacar a cada rodada, sua velocidade e impacto crescem exponencialmente.
 
-1. Passo de Tandava (Passiva de Ritmo + 3 Karma): A cada turno consecutivo em que você se mover ao menos 3m e realizar um ataque, você acumula 1 Compasso (máximo 3): cada Compasso concede +1 no acerto, +1 na CA de esquiva e +1d6 de dano térmico/contundente.
-2. Batida do Tambor Damaru (Principal · 4 Karma): Consome os Compassos para liberar uma onda de choque em 4m que causa 2d8 e derruba os inimigos.
+1.  Passo de Tandava (Passiva de Ritmo + 3 Karma): A cada turno consecutivo em que você se mover ao menos 3m e realizar um ataque, você acumula 1 Compasso (máximo 3): cada Compasso concede +1 no acerto, +1 na CA de esquiva e +1d6 de dano térmico/contundente.
+2.  Batida do Tambor Damaru (Principal · 4 Karma): Consome os Compassos para liberar uma onda de choque em 4m que causa 2d8 e derruba os inimigos.
 
 **Safra na Morte.** Shiva colhe variações cinéticas de combate contínuo baseadas em cadência rítmica mortal.
 
@@ -5089,8 +5439,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma marca azul-escura no seu pescoço permite engolir e reter na garganta venenos, maldições, corrupção ou até técnicas hostis sem deixá-las descer para o coração.
 
-1. Engolir o Halahala (Reação · 4 Karma): Quando você sofre dano de Veneno, Ácido, Corrupção ou Matriz Kármica, reduz o dano à metade e armazena a energia retida na garganta.
-2. Cuspir Peçonha Retida (Principal · 3 Karma · Cone 4,5m): Expulsa a carga armazenada na garganta causando 2d8 de dano corrosivo/kármico e aplicando a condição que você havia absorvido.
+1.  Engolir o Halahala (Reação · 4 Karma): Quando você sofre dano de Veneno, Ácido, Corrupção ou Matriz Kármica, reduz o dano à metade e armazena a energia retida na garganta.
+2.  Cuspir Peçonha Retida (Principal · 3 Karma · Cone 4,5m): Expulsa a carga armazenada na garganta causando 2d8 de dano corrosivo/kármico e aplicando a condição que você havia absorvido.
 
 **Safra na Morte.** Shiva recolhe a filtragem biológica de energias corruptas e letais.
 
@@ -5100,17 +5450,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Um disco luminoso de 108 dentes gira em alta rotação ao redor do seu pulso ou ombro, podendo ser lançado em trajetórias curvas que cortam múltiplos alvos antes de retornar.
 
-1. Trajetória de Bumerangue Solar (Principal · 4 Karma · 15m): O disco voa atingindo até 2 inimigos em linha ou curva, causando 2d8 cortante/radiante no primeiro e 1d8 no segundo, e retorna à sua mão.
-2. Órbita Guardiã (Extra · 3 Karma): O disco permanece girando a 1,5m ao seu redor por 1 rodada, somando +2 na CA e causando 1d6 automático em quem atacar você corpo a corpo.
+1.  Trajetória de Bumerangue Solar (Principal · 4 Karma · 15m): O disco voa atingindo até 2 inimigos em linha ou curva, causando 2d8 cortante/radiante no primeiro e 1d8 no segundo, e retorna à sua mão.
+2.  Órbita Guardiã (Extra · 3 Karma): O disco permanece girando a 1,5m ao seu redor por 1 rodada, somando +2 na CA e causando 1d6 automático em quem atacar você corpo a corpo.
 
 **Safra na Morte.** Vishnu absorve o controle giroscópico de armas circulares autopropulsadas.
 
 **113. Adaptação Evolutiva Instantânea** · Dashavatara · Os Avatares · Dobra Elemental Anômala
 
-**Fenômeno base.** Sua biologia e seu Karma reagem ao ambiente e ao tipo de ameaça mudando de "Avatar" (Aquático, Couraça de Tartaruga, Presas de Javali ou Garras de Leão) conforme a necessidade.
+**Fenômeno base.** Sua biologia e seu Karma reagem ao ambiente e ao tipo de ameaça mudando de “Avatar” (Aquático, Couraça de Tartaruga, Presas de Javali ou Garras de Leão) conforme a necessidade.
 
-1. Assumir Forma de Preservação (Livre no início do turno · 3 Karma): Escolha uma adaptação até o próximo turno: Kurma (Tartaruga) (+3 CA Total e imunidade a empurrão), Narasimha (Leão) (+2d6 de dano cortante em ataques corpo a corpo e ignora escudos) ou Garuda/Vamana (+4,5m de Movimento e salto livre).
-2. Transição Fluida (Reação · 2 Karma): Muda de adaptação no instante em que sofre um ataque.
+1.  Assumir Forma de Preservação (Livre no início do turno · 3 Karma): Escolha uma adaptação até o próximo turno: Kurma (Tartaruga) (+3 CA Total e imunidade a empurrão), Narasimha (Leão) (+2d6 de dano cortante em ataques corpo a corpo e ignora escudos) ou Garuda/Vamana (+4,5m de Movimento e salto livre).
+2.  Transição Fluida (Reação · 2 Karma): Muda de adaptação no instante em que sofre um ataque.
 
 **Safra na Morte.** Vishnu colhe a plasticidade morfogenética sob condições extremas de combate.
 
@@ -5118,8 +5468,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você emite um campo de harmonia que impede mudanças bruscas e catastróficas na realidade e na integridade física dos seus aliados.
 
-1. Decreto de Preservação (Reação · 4 Karma · 12m): Quando você ou um aliado sofrer um Acerto Total ou crítico que causaria mais de um terço da Vida máxima em um único golpe, você suaviza a realidade: converte o golpe em Acerto Parcial e concede Etapa de regeneração no próximo turno.
-2. Selar Anomalia (Principal · 4 Karma): Causa 2d6 divino e desativa por 1 rodada o traço especial de uma invocação ou mutação inimiga.
+1.  Decreto de Preservação (Reação · 4 Karma · 12m): Quando você ou um aliado sofrer um Acerto Total ou crítico que causaria mais de um terço da Vida máxima em um único golpe, você suaviza a realidade: converte o golpe em Acerto Parcial e concede Etapa de regeneração no próximo turno.
+2.  Selar Anomalia (Principal · 4 Karma): Causa 2d6 divino e desativa por 1 rodada o traço especial de uma invocação ou mutação inimiga.
 
 **Safra na Morte.** Vishnu recolhe protocolos de amortecimento de picos de dano letal.
 
@@ -5129,8 +5479,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Nenhuma gota de sangue ou energia regenerativa dos seus inimigos toca o chão sem ser devorada pela sua aura rubra; você anula a imortalidade e a cura dos oponentes.
 
-1. Língua que Seca o Sangue (Passiva + 3 Karma no ataque): Inimigos feridos por você ficam impedidos de recuperar Vida ou receber Escudos Temporários por 2 rodadas; se tentarem se curar, você absorve essa cura para si e causa +1d8 de dano neles.
-2. Frenesi da Taça (Extra · 3 Karma): Consome uma condição de Sangramento ativa em um inimigo a 6m para causar 2d6 imediato nele e recuperar 3 de Karma.
+1.  Língua que Seca o Sangue (Passiva + 3 Karma no ataque): Inimigos feridos por você ficam impedidos de recuperar Vida ou receber Escudos Temporários por 2 rodadas; se tentarem se curar, você absorve essa cura para si e causa +1d8 de dano neles.
+2.  Frenesi da Taça (Extra · 3 Karma): Consome uma condição de Sangramento ativa em um inimigo a 6m para causar 2d6 imediato nele e recuperar 3 de Karma.
 
 **Safra na Morte.** Kali absorve técnicas de bloqueio metabólico contra seres regenerativos e imortais.
 
@@ -5138,8 +5488,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Dois braços adicionais feitos de sombra negra e Karma denso brotam das suas costas, permitindo empunhar armas extras, segurar o inimigo enquanto o corta ou aparar golpes simultâneos.
 
-1. Golpe Quádruplo (Principal · 4 Karma): Ataca com seus braços reais e os braços espectrais ao mesmo tempo, somando +1d20 na Reserva, causando 2d8 + 4 de dano cortante e impedindo o alvo de usar escudo/parry.
-2. Agarrar e Decapitar (Extra · 3 Karma): Os braços extras seguram os pulsos de um inimigo adjacente, aplicando -2 na CA Total dele até o fim do turno.
+1.  Golpe Quádruplo (Principal · 4 Karma): Ataca com seus braços reais e os braços espectrais ao mesmo tempo, somando +1d20 na Reserva, causando 2d8 + 4 de dano cortante e impedindo o alvo de usar escudo/parry.
+2.  Agarrar e Decapitar (Extra · 3 Karma): Os braços extras seguram os pulsos de um inimigo adjacente, aplicando -2 na CA Total dele até o fim do turno.
 
 **Safra na Morte.** Kali colhe a coordenação motora de múltiplos membros independentes em combate fechado.
 
@@ -5147,8 +5497,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Cada vez que um inimigo (ou invocação hostil) é derrotado ou sofre um ferimento grave na cena, um glifo em forma de pequeno crânio luminoso acende ao redor do seu pescoço (máximo de 3).
 
-1. Dança sobre o Fim (Passiva por Crânio): Cada Crânio aceso concede +1 em todos os ataques, +1m de Movimento e +2 no dano.
-2. Estourar o Colar (Livre ou Reação · 3 Karma): Quebra um Crânio aceso para somar +2d8 de dano necrótico/kármico em um golpe ou para ignorar completamente uma condição mental/física recém-sofrida.
+1.  Dança sobre o Fim (Passiva por Crânio): Cada Crânio aceso concede +1 em todos os ataques, +1m de Movimento e +2 no dano.
+2.  Estourar o Colar (Livre ou Reação · 3 Karma): Quebra um Crânio aceso para somar +2d8 de dano necrótico/kármico em um golpe ou para ignorar completamente uma condição mental/física recém-sofrida.
 
 **Safra na Morte.** Kali recolhe a conversão da morte de combatentes próximos em combustível cinético.
 
@@ -5158,8 +5508,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu Karma condensa eletricidade em uma estrutura cristalina indestrutível como diamante ao redor do seu punho ou foco, combinando dureza física absoluta com descarga elétrica.
 
-1. Impacto de Vajra (Principal · 4 Karma · 6m): Golpe ou disparo que causa 2d8 elétrico/contundente; em caso de Acerto Total, o choque paralisa os nervos do alvo, retirando a Ação de Movimento dele no próximo turno.
-2. Corpo Indestrutível de Indra (Reação · 3 Karma): Reveste a pele com a dureza do diamante contra um golpe, ganhando Redução de Dano 8 contra aquele ataque.
+1.  Impacto de Vajra (Principal · 4 Karma · 6m): Golpe ou disparo que causa 2d8 elétrico/contundente; em caso de Acerto Total, o choque paralisa os nervos do alvo, retirando a Ação de Movimento dele no próximo turno.
+2.  Corpo Indestrutível de Indra (Reação · 3 Karma): Reveste a pele com a dureza do diamante contra um golpe, ganhando Redução de Dano 8 contra aquele ataque.
 
 **Safra na Morte.** Indra absorve a fusão de rigidez cristalina com condutividade elétrica de alta tensão.
 
@@ -5167,8 +5517,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você espalha pequenos pontos de luz (joias de Karma) pelo campo a até 12m; como no mito da Rede de Indra, o que acontece em uma joia reflete instantaneamente em todas as outras.
 
-1. Ressonância em Rede (Principal · 4 Karma): Dispara uma técnica ou ataque contra uma das joias: o efeito se multiplica refletindo contra até 2 inimigos que estejam a 3m de qualquer outra joia da rede, causando 2d6 de dano em cada.
-2. Troca de Reflexo (Movimento · 3 Karma): Teleporta-se instantaneamente para a posição de uma joia ativa a até 9m.
+1.  Ressonância em Rede (Principal · 4 Karma): Dispara uma técnica ou ataque contra uma das joias: o efeito se multiplica refletindo contra até 2 inimigos que estejam a 3m de qualquer outra joia da rede, causando 2d6 de dano em cada.
+2.  Troca de Reflexo (Movimento · 3 Karma): Teleporta-se instantaneamente para a posição de uma joia ativa a até 9m.
 
 **Safra na Morte.** Indra colhe a topologia de redes de transmissão instantânea de energia em espaço tridimensional.
 
@@ -5176,8 +5526,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Nuvens brancas densas e pesadas como chumbo formam-se ao seu redor, avançando com a massa esmagadora do elefante celestial de três cabeças.
 
-1. Estampido de Monção (Principal · 4 Karma · Linha 6m × 3m): Uma massa de nuvem pressurizada e trovão atropela a linha causando 2d8 contundente e empurrando todos os alvos em 3m.
-2. Chuva Revigorante de Svarga (Extra · 3 Karma): Faz chover sobre 4,5m, apagando chamas, limpando ácido/veneno e restaurando 1d8 de Vida nos aliados na área.
+1.  Estampido de Monção (Principal · 4 Karma · Linha 6m × 3m): Uma massa de nuvem pressurizada e trovão atropela a linha causando 2d8 contundente e empurrando todos os alvos em 3m.
+2.  Chuva Revigorante de Svarga (Extra · 3 Karma): Faz chover sobre 4,5m, apagando chamas, limpando ácido/veneno e restaurando 1d8 de Vida nos aliados na área.
 
 **Safra na Morte.** Indra recolhe o controle de massas atmosféricas de alta densidade em baixa altitude.
 
@@ -5185,10 +5535,10 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **121. Combustão de Conversão Kármica** · O Mensageiro das Oferendas · Runa Kármica Primordial
 
-**Fenômeno base.** Qualquer item mundano, poção, munição ou até mesmo um projétil inimigo que você queime na sua mão de fogo é "ofertado" e convertido diretamente em Karma puro ou cura.
+**Fenômeno base.** Qualquer item mundano, poção, munição ou até mesmo um projétil inimigo que você queime na sua mão de fogo é “ofertado” e convertido diretamente em Karma puro ou cura.
 
-1. Queimar Oferenda (Extra ou Reação · 2 Karma): Consome um item de inventário (ou incinera um projétil físico atirado contra você) para recuperar 1d6 + 2 de Karma ou somar +2d6 de dano de fogo no próximo ataque.
-2. Chama que Leva ao Céu (Principal · 4 Karma · 12m): Fogo teleguiado que sobe do chão sob o alvo causando 2d8 térmico sem poder ser bloqueado por escudos laterais.
+1.  Queimar Oferenda (Extra ou Reação · 2 Karma): Consome um item de inventário (ou incinera um projétil físico atirado contra você) para recuperar 1d6 + 2 de Karma ou somar +2d6 de dano de fogo no próximo ataque.
+2.  Chama que Leva ao Céu (Principal · 4 Karma · 12m): Fogo teleguiado que sobe do chão sob o alvo causando 2d8 térmico sem poder ser bloqueado por escudos laterais.
 
 **Safra na Morte.** Agni absorve a conversão termoquímica de matéria sólida em reserva espiritual.
 
@@ -5196,8 +5546,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma chama sagrada arde no seu plexo solar, digerindo fadiga, toxinas e impactos físicos para manter seu corpo em temperatura e velocidade sobre-humanas.
 
-1. Sangue em Ebulição (Livre · 3 Karma): Por 2 rodadas, seu corpo brilha em brasa: você fica imune a Lento/Envenenado, ganha +3m de Movimento e seus ataques corpo a corpo somam +1d8 térmico.
-2. Expiração de Cinza Quente (Reação · 3 Karma): Ao sofrer um golpe corpo a corpo, sopra fogo a queima-roupa no rosto do agressor causando 2d6 e aplicando -2 no próximo teste dele.
+1.  Sangue em Ebulição (Livre · 3 Karma): Por 2 rodadas, seu corpo brilha em brasa: você fica imune a Lento/Envenenado, ganha +3m de Movimento e seus ataques corpo a corpo somam +1d8 térmico.
+2.  Expiração de Cinza Quente (Reação · 3 Karma): Ao sofrer um golpe corpo a corpo, sopra fogo a queima-roupa no rosto do agressor causando 2d6 e aplicando -2 no próximo teste dele.
 
 **Safra na Morte.** Agni colhe a regulação endotérmica extrema do corpo humano sob estresse.
 
@@ -5205,8 +5555,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Suas mãos controlam dois tipos opostos de fogo simultaneamente: a Chama Destrutiva (Vermelha) na mão direita e a Chama do Lar (Dourada) na mão esquerda.
 
-1. Feixe Bipartido (Principal · 4 Karma · 9m): Dispara ambas as chamas: a vermelha atinge o inimigo causando 2d8 térmico, enquanto a dourada curva-se para um aliado a até 6m concedendo 1d8 + Espírito de Escudo Temporário quente.
-2. Troca de Polaridade Térmica (Extra · 2 Karma): Absorve o calor de um incêndio ou ataque de fogo na área para curar 1d10 da própria Vida.
+1.  Feixe Bipartido (Principal · 4 Karma · 9m): Dispara ambas as chamas: a vermelha atinge o inimigo causando 2d8 térmico, enquanto a dourada curva-se para um aliado a até 6m concedendo 1d8 + Espírito de Escudo Temporário quente.
+2.  Troca de Polaridade Térmica (Extra · 2 Karma): Absorve o calor de um incêndio ou ataque de fogo na área para curar 1d10 da própria Vida.
 
 **Safra na Morte.** Agni recolhe o controle seletivo de radiação térmica benigna e letal no mesmo disparo.
 
@@ -5216,8 +5566,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Nenhuma barreira física, parede fina, tranca ou bloqueio tático consegue deter seu avanço ou a linha de ação dos seus aliados quando você decreta a abertura do caminho.
 
-1. Abrir o Caminho (Movimento · 3 Karma): Neste turno, você e até 2 aliados a 6m ignoram terreno difícil, passam livremente por espaços ocupados por inimigos, atravessam barreiras/paredes de até 1m de espessura como se fossem fumaça e não provocam ataques de oportunidade.
-2. Quebrar Obstrução (Principal · 4 Karma): Golpe que causa 2d8 contundente e destrói instantaneamente qualquer parede, escudo erguido ou zona de bloqueio inimiga.
+1.  Abrir o Caminho (Movimento · 3 Karma): Neste turno, você e até 2 aliados a 6m ignoram terreno difícil, passam livremente por espaços ocupados por inimigos, atravessam barreiras/paredes de até 1m de espessura como se fossem fumaça e não provocam ataques de oportunidade.
+2.  Quebrar Obstrução (Principal · 4 Karma): Golpe que causa 2d8 contundente e destrói instantaneamente qualquer parede, escudo erguido ou zona de bloqueio inimiga.
 
 **Safra na Morte.** Ganesha absorve a dissolução conceitual de barreiras físicas e espaciais.
 
@@ -5225,8 +5575,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como remove barreiras para os justos, Ganesha ergue obstáculos invisíveis e colossais diante daqueles que avançam sem permissão.
 
-1. Portão de Marfim (Reação · 4 Karma · 9m): Quando um inimigo declara um movimento ou investida na direção sua ou de um aliado, você crava um selo no chão à frente dele: o inimigo bate contra uma parede invisível de força, sofrendo 2d6 contundente e encerrando o movimento imediatamente.
-2. Peso do Passo Injusto (Extra · 3 Karma): Pelas próximas 2 rodadas, cada metro que o alvo marcado andar na sua direção custa 2m de Movimento e 1 de Karma.
+1.  Portão de Marfim (Reação · 4 Karma · 9m): Quando um inimigo declara um movimento ou investida na direção sua ou de um aliado, você crava um selo no chão à frente dele: o inimigo bate contra uma parede invisível de força, sofrendo 2d6 contundente e encerrando o movimento imediatamente.
+2.  Peso do Passo Injusto (Extra · 3 Karma): Pelas próximas 2 rodadas, cada metro que o alvo marcado andar na sua direção custa 2m de Movimento e 1 de Karma.
 
 **Safra na Morte.** Ganesha colhe a geometria de contenção vetorial sem necessidade de muros físicos.
 
@@ -5234,8 +5584,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Conta o mito que Ganesha quebrou a própria presa para continuar escrevendo o Mahabharata sem parar; você nunca perde a concentração e transforma qualquer arma ou foco quebrado/sacrificado em poder imediato.
 
-1. Concentração Inabalável (Passiva): Suas técnicas, runas e canalizações nunca podem ser interrompidas por dano ou condições menores, e você soma +2 em Tática e Criação.
-2. Estocada da Presa de Marfim (Principal · 4 Karma): Dispara um projétil ou estocada de osso espiritual que causa 2d8 perfurante e grava 1 Runa ou condição de -2 na CA do alvo automaticamente.
+1.  Concentração Inabalável (Passiva): Suas técnicas, runas e canalizações nunca podem ser interrompidas por dano ou condições menores, e você soma +2 em Tática e Criação.
+2.  Estocada da Presa de Marfim (Principal · 4 Karma): Dispara um projétil ou estocada de osso espiritual que causa 2d8 perfurante e grava 1 Runa ou condição de -2 na CA do alvo automaticamente.
 
 **Safra na Morte.** Ganesha recolhe métodos de manutenção de foco mental absoluto sob trauma físico.
 
@@ -5245,8 +5595,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma auréola dourada às suas costas mantém suspensas as silhuetas de diferentes armas divinas (Tridente, Arco, Espada, Maça, Disco, Concha), permitindo alternar o alcance e a natureza de cada golpe instantaneamente.
 
-1. Troca de Insígnia (Livre no ataque · 2 Karma): Escolhe a arma espiritual do golpe: Arco (alcance 18m, perfurante), Maça (esmaga 4 de RD e empurra 2m), Tridente (+2 para atingir a CA Total) ou Concha (causa dano sônico em cone de 3m).
-2. Descarga das Dez Armas (Principal · 5 Karma): Dispara todas as armas espectrais sobre um alvo a até 9m, causando 2d10 + 4 de dano misto.
+1.  Troca de Insígnia (Livre no ataque · 2 Karma): Escolhe a arma espiritual do golpe: Arco (alcance 18m, perfurante), Maça (esmaga 4 de RD e empurra 2m), Tridente (+2 para atingir a CA Total) ou Concha (causa dano sônico em cone de 3m).
+2.  Descarga das Dez Armas (Principal · 5 Karma): Dispara todas as armas espectrais sobre um alvo a até 9m, causando 2d10 + 4 de dano misto.
 
 **Safra na Morte.** Durga absorve a versatilidade de transição instantânea entre múltiplos estilos de armamento.
 
@@ -5254,8 +5604,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu poder cresce proporcionalmente ao tamanho, Etapa ou quantidade de Vida máxima do inimigo que você enfrenta; quanto maior o monstro ou chefe, mais letal você se torna.
 
-1. Caçadora de Titãs (Passiva + 3 Karma no ataque): Contra inimigos de porte Grande ou maior, ou que possuam mais Vida máxima que você, você recebe +2 no acerto, +2 na CA e soma +1d8 ao dano de todos os ataques.
-2. Pisar no Pescoço da Fera (Extra · 3 Karma): Ao acertar um ataque Total em um alvo maior ou com mais Vida, aplica Caído ou Lento mesmo que ele normalmente tenha vantagem física.
+1.  Caçadora de Titãs (Passiva + 3 Karma no ataque): Contra inimigos de porte Grande ou maior, ou que possuam mais Vida máxima que você, você recebe +2 no acerto, +2 na CA e soma +1d8 ao dano de todos os ataques.
+2.  Pisar no Pescoço da Fera (Extra · 3 Karma): Ao acertar um ataque Total em um alvo maior ou com mais Vida, aplica Caído ou Lento mesmo que ele normalmente tenha vantagem física.
 
 **Safra na Morte.** Durga colhe técnicas de inversão de massa para abater criaturas colossais.
 
@@ -5263,8 +5613,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quando você se posiciona entre um aliado ferido e o inimigo, seu corpo e seu escudo ancoram-se na realidade como a muralha de uma cidadela dourada.
 
-1. Muralha Invencível (Reação · 4 Karma): Quando um aliado a até 6m é alvo de um ataque, você salta para a frente dele, aumenta sua própria CA em +3 contra o golpe e, se o ataque errar ou for apenas Parcial, você desfere um contra-ataque imediato de 2d6 de dano.
-2. Rugido do Leão Dawon (Extra · 2 Karma): Concede +2 em Vontade e imunidade a Abalado para todos os aliados a até 6m.
+1.  Muralha Invencível (Reação · 4 Karma): Quando um aliado a até 6m é alvo de um ataque, você salta para a frente dele, aumenta sua própria CA em +3 contra o golpe e, se o ataque errar ou for apenas Parcial, você desfere um contra-ataque imediato de 2d6 de dano.
+2.  Rugido do Leão Dawon (Extra · 2 Karma): Concede +2 em Vontade e imunidade a Abalado para todos os aliados a até 6m.
 
 **Safra na Morte.** Durga recolhe doutrinas de guarda-costas e contra-ataque defensivo perfeito.
 
@@ -5274,8 +5624,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao correr, sua silhueta se divide nas 7 cores do espectro da luz solar, confundindo a mira inimiga e deixando trilhas térmicas pelo caminho.
 
-1. Carga de Sete Espectros (Movimento + Principal · 4 Karma): Avança até 9m; as 7 imagens coloridas atacam o alvo simultaneamente de ângulos distintos, reduzindo a CA Parcial e Total dele em -2 e causando 2d8 radiante.
-2. Refração Evasiva (Reação · 3 Karma): Ao sofrer um ataque, uma das 7 cores absorve o impacto (reduzindo o dano em 2d6) e cega o atacante (-2 no próximo acerto).
+1.  Carga de Sete Espectros (Movimento + Principal · 4 Karma): Avança até 9m; as 7 imagens coloridas atacam o alvo simultaneamente de ângulos distintos, reduzindo a CA Parcial e Total dele em -2 e causando 2d8 radiante.
+2.  Refração Evasiva (Reação · 3 Karma): Ao sofrer um ataque, uma das 7 cores absorve o impacto (reduzindo o dano em 2d6) e cega o atacante (-2 no próximo acerto).
 
 **Safra na Morte.** Surya absorve a dispersão cromática de corpos físicos em alta velocidade.
 
@@ -5283,8 +5633,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua pele e seus pulmões convertem qualquer fonte de luz (solar, artificial, chamas ou técnicas radiantes) em vigor celular e reserva espiritual.
 
-1. Pulso de Alvorada (Extra · 3 Karma): Emite um clarão quente em 6m que restaura 1d8 + Espírito de Vida em você e em um aliado na área, além de remover condições de frio ou fadiga.
-2. Baterias Solares (Passiva): Sempre que você sofrer dano térmico, elétrico ou radiante, você recupera 2 de Karma automaticamente.
+1.  Pulso de Alvorada (Extra · 3 Karma): Emite um clarão quente em 6m que restaura 1d8 + Espírito de Vida em você e em um aliado na área, além de remover condições de frio ou fadiga.
+2.  Baterias Solares (Passiva): Sempre que você sofrer dano térmico, elétrico ou radiante, você recupera 2 de Karma automaticamente.
 
 **Safra na Morte.** Surya colhe o metabolismo de conversão direta de fótons em energia vital humana.
 
@@ -5292,8 +5642,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como Karna nasceu com a armadura solar fundida à própria pele, placas de luz dourada aderem ao seu torso como uma segunda epiderme.
 
-1. Revestimento de Kavacha (Passiva + 3 Karma ao ativar): Concede permanentemente +1 na CA Total e Redução de Dano 2; ao gastar 3 de Karma como Ação Livre, a armadura brilha intensamente concedendo 2d8 de Escudo Temporário e queimando quem o agarrar em 4 de dano.
-2. Rasgar a Própria Couraça (Livre · 0 Karma · 1x/cena): Sacrifica o bônus da armadura pelo resto da cena para disparar uma lança solar infalível (Vasavi Shakti) que causa 3d10 de dano direto a até 15m.
+1.  Revestimento de Kavacha (Passiva + 3 Karma ao ativar): Concede permanentemente +1 na CA Total e Redução de Dano 2; ao gastar 3 de Karma como Ação Livre, a armadura brilha intensamente concedendo 2d8 de Escudo Temporário e queimando quem o agarrar em 4 de dano.
+2.  Rasgar a Própria Couraça (Livre · 0 Karma · 1x/cena): Sacrifica o bônus da armadura pelo resto da cena para disparar uma lança solar infalível (Vasavi Shakti) que causa 3d10 de dano direto a até 15m.
 
 **Safra na Morte.** Surya recolhe a simbiose biológica entre tecido epidérmico e blindagem fotônica.
 
@@ -5303,8 +5653,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você projeta um laço vermelho-escuro trançado com o tempo de vida restante das criaturas; ele ignora armaduras físicas para laçar diretamente o fluxo de Karma e o fôlego do alvo.
 
-1. Laçar o Prazo (Principal · 4 Karma · 9m): Causa 2d8 kármico/necrótico, puxa o alvo em 3m e prende o fôlego dele: no próximo turno do alvo, ele perde a Ação Extra/Reação e sofre -2 na CA.
-2. Puxão do Além (Reação · 3 Karma): Usa o laço para puxar um aliado inconsciente ou sob ataque a até 9m diretamente para o seu lado.
+1.  Laçar o Prazo (Principal · 4 Karma · 9m): Causa 2d8 kármico/necrótico, puxa o alvo em 3m e prende o fôlego dele: no próximo turno do alvo, ele perde a Ação Extra/Reação e sofre -2 na CA.
+2.  Puxão do Além (Reação · 3 Karma): Usa o laço para puxar um aliado inconsciente ou sob ataque a até 9m diretamente para o seu lado.
 
 **Safra na Morte.** Yama absorve técnicas de apreensão direta da força vital sem necessidade de dano anatômico.
 
@@ -5312,8 +5662,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sobre a cabeça de cada combatente você enxerga o pergaminho invisível de Chitragupta listando exatamente tudo o que aquele ser fez desde o início do combate.
 
-1. Sentença Retroativa (Principal · 4 Karma · 12m): Escolha um inimigo; o dano deste ataque é 2d6 + 3 de dano verdadeiro para cada vez que esse inimigo atacou ou feriu alguém nesta cena (máximo +9).
-2. Proibir Reincidência (Extra · 3 Karma): Marca a última ação que o inimigo realizou; se ele repetir a exata mesma ação no próximo turno, sofre 2d6 de dano mental automático.
+1.  Sentença Retroativa (Principal · 4 Karma · 12m): Escolha um inimigo; este ataque causa 2d6 de dano Divino, mais 3 para cada vez que esse inimigo atacou ou feriu alguém nesta cena, até +9. Aqui, “dano verdadeiro” significa ignorar Resistência ou Redução de Dano. O ataque ainda precisa vencer a CA e respeita Escudo Temporário, com o grau de acerto e a ordem de dano normais.
+2.  Proibir Reincidência (Extra · 3 Karma): Marca a última ação que o inimigo realizou; se ele repetir a exata mesma ação no próximo turno, sofre 2d6 de dano mental automático.
 
 **Safra na Morte.** Yama colhe algoritmos de punição cumulativa baseados no histórico de hostilidade do combate.
 
@@ -5321,8 +5671,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Dois mastins espectrais de quatro olhos acompanham sua sombra, farejando o medo, a queda de pressão sanguínea e a abertura na guarda de quem está prestes a cair.
 
-1. Execução do Primeiro Mortal (Principal · 4 Karma): Contra qualquer alvo que esteja abaixo da metade da Vida (ou com Sangramento / Abalado), seu ataque recebe +1d20 na Reserva, +2 para atingir a CA Total e soma +2d6 ao dano.
-2. Ladrido do Crepúsculo (Extra · 2 Karma): Os cães avançam sobre a sombra do alvo a 6m, aplicando Abalado e reduzindo o deslocamento dele em 3m.
+1.  Execução do Primeiro Mortal (Principal · 4 Karma): Contra qualquer alvo que esteja abaixo da metade da Vida (ou com Sangramento / Abalado), seu ataque recebe +1d20 na Reserva, +2 para atingir a CA Total e soma +2d6 ao dano.
+2.  Ladrido do Crepúsculo (Extra · 2 Karma): Os cães avançam sobre a sombra do alvo a 6m, aplicando Abalado e reduzindo o deslocamento dele em 3m.
 
 **Safra na Morte.** Yama recolhe o instinto de finalização cirúrgica contra oponentes debilitados.
 
@@ -5332,10 +5682,10 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **136. Reflexão de Verdade Nua** · Yata no Kagami · O Espelho Sagrado · Técnica Divina / Fenômeno
 
-**Fenômeno base.** Um espelho octogonal de bronze polido e luz branca flutua à sua frente; ele não apenas bloqueia feixes e técnicas, mas reflete a "natureza real" do ataque de volta ao emissor.
+**Fenômeno base.** Um espelho octogonal de bronze polido e luz branca flutua à sua frente; ele não apenas bloqueia feixes e técnicas, mas reflete a “natureza real” do ataque de volta ao emissor.
 
-1. Espelho de Oito Palmos (Reação · 4 Karma): Quando você é alvo de uma técnica elemental, kármica ou divina a até 15m, reduz o dano recebido em 2d8 + Espírito e dispara de volta um feixe branco que causa 2d6 radiante no atacante.
-2. Revelar Ilusão (Livre · 2 Karma): O brilho do espelho desfaz clones ilusórios, camuflagens e invisibilidades em um cone de 9m.
+1.  Espelho de Oito Palmos (Reação · 4 Karma): Quando você é alvo de uma técnica elemental, kármica ou divina a até 15m, reduz o dano recebido em 2d8 + Espírito e dispara de volta um feixe branco que causa 2d6 radiante no atacante.
+2.  Revelar Ilusão (Livre · 2 Karma): O brilho do espelho desfaz clones ilusórios, camuflagens e invisibilidades em um cone de 9m.
 
 **Safra na Morte.** Amaterasu absorve o polimento de superfícies kármicas capazes de inverter o vetor de técnicas complexas.
 
@@ -5343,8 +5693,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode selar a si mesmo (ou um aliado) dentro de uma fenda rochosa dimensional de escuridão e silêncio por 1 rodada, mergulhando os inimigos ao redor em um frio escuro enquanto você se recupera lá dentro.
 
-1. Fechar a Rocha Celeste (Reação ou Principal · 5 Karma · 1x/cena): Você fica invulnerável e intangível até o início do seu próximo turno, recuperando 2d8 de Vida e 3 de Karma; quando a rocha se abre no turno seguinte, a explosão do Sol Nascente cega os inimigos em 4,5m (Desorientado) e soma +2d6 ao seu primeiro ataque.
-2. Penumbra Súbita (Extra · 2 Karma): Escurece a visão de um inimigo a 9m, reduzindo o alcance dele para 3m.
+1.  Fechar a Rocha Celeste (Reação ou Principal · 5 Karma · 1x/cena): Você fica invulnerável e intangível até o início do seu próximo turno, recuperando 2d8 de Vida e 3 de Karma; quando a rocha se abre no turno seguinte, a explosão do Sol Nascente cega os inimigos em 4,5m (Desorientado) e soma +2d6 ao seu primeiro ataque.
+2.  Penumbra Súbita (Extra · 2 Karma): Escurece a visão de um inimigo a 9m, reduzindo o alcance dele para 3m.
 
 **Safra na Morte.** Amaterasu colhe a tática de alternância brusca entre privação luminosa e clarão de abertura.
 
@@ -5352,8 +5702,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Suas chamas são brancas, silenciosas e purificadoras: elas não produzem fumaça e queimam com o dobro de intensidade qualquer alvo que possua Corrupção, maldições ou condições negativas.
 
-1. Alvorada Imaculada (Principal · 4 Karma · 12m): Dispara uma lâmina de fogo branco que causa 2d8 radiante (+1d8 contra inimigos da Matriz Corrupta ou com condições ativas) e limpa 1 condição negativa de um aliado próximo ao alvo.
-2. Solo Santificado (Extra · 3 Karma): Ilumina 3m no chão; aliados ali dentro recebem +2 em testes de resistência e regeneram 3 de Vida por rodada.
+1.  Alvorada Imaculada (Principal · 4 Karma · 12m): Dispara uma lâmina de fogo branco que causa 2d8 radiante (+1d8 contra inimigos da Matriz Corrupta ou com condições ativas) e limpa 1 condição negativa de um aliado próximo ao alvo.
+2.  Solo Santificado (Extra · 3 Karma): Ilumina uma área circular fixa de 3m de raio no chão, centrada em você ou em um ponto visível a até 5m. Dura até o início do seu terceiro turno subsequente à ativação, encerrando-se antes de qualquer cura naquele início. Enquanto você e seus aliados estiverem na área, recebem +2 em testes de resistência e recuperam 3 de Vida no início do próprio turno. Não há pulso imediato ao ativar. O portador pode receber dois pulsos; um aliado pode receber até três, conforme a iniciativa. Áreas sobrepostas não acumulam bônus ou cura.
 
 **Safra na Morte.** Amaterasu recolhe o método de incineração seletiva de impurezas e corrupção kármica.
 
@@ -5363,8 +5713,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Todo corte que você desfere com uma arma ou com a mão aberta projeta uma lâmina de vácuo atmosférico que prolonga o fio do golpe por metros à frente, cortando tudo na linha.
 
-1. Corte da Nuvem Celestial (Principal · 4 Karma · Linha ou Cone 6m): Desfere um golpe que varre a área causando 2d8 cortante, destrói projéteis em voo na direção do corte e empurra os atingidos em 2m.
-2. Redemoinho de Repulsão (Reação · 3 Karma): Ao ser cercado ou atacado corpo a corpo, gira a lâmina criando uma barreira de vento que soma +3 na CA e causa 1d8 cortante em quem estiver a 1,5m.
+1.  Corte da Nuvem Celestial (Principal · 4 Karma · Linha ou Cone 6m): Desfere um golpe que varre a área causando 2d8 cortante, destrói projéteis em voo na direção do corte e empurra os atingidos em 2m.
+2.  Redemoinho de Repulsão (Reação · 3 Karma): Ao ser cercado ou atacado corpo a corpo, gira a lâmina criando uma barreira de vento que soma +3 na CA e causa 1d8 cortante em quem estiver a 1,5m.
 
 **Safra na Morte.** Susanoo absorve o prolongamento aerodinâmico de golpes de espada em ondas de vácuo.
 
@@ -5372,8 +5722,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu espírito rebelde se inflama quando você está em desvantagem numérica ou enfrentando inimigos com múltiplas partes/invocações; quanto mais alvos cercarem você, mais golpes você desfere.
 
-1. Fúria de Oito Frentes (Principal · 4 Karma): Ataca um alvo causando 2d8 de dano; se houver um segundo ou terceiro inimigo a até 3m de você, você desfere um golpe extra gratuito de 1d10 contra cada um deles no mesmo movimento.
-2. Extrair Tesouro da Cauda (Passiva): Sempre que você abater um inimigo ou destruir uma invocação/dispositivo inimigo, você recupera 4 de Karma e ganha +2 no próximo ataque.
+1.  Fúria de Oito Frentes (Principal · 4 Karma): Ataca um alvo causando 2d8 de dano; se houver um segundo ou terceiro inimigo a até 3m de você, você desfere um golpe extra gratuito de 1d10 contra cada um deles no mesmo movimento.
+2.  Extrair Tesouro da Cauda (Passiva): Sempre que você abater um inimigo ou destruir uma invocação/dispositivo inimigo, você recupera 4 de Karma e ganha +2 no próximo ataque.
 
 **Safra na Morte.** Susanoo colhe técnicas de combate assimétrico contra múltiplos oponentes simultâneos.
 
@@ -5381,8 +5731,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ventos de tufão e chuva salgada giram furiosamente ao redor dos seus pés, arrancando a estabilidade de qualquer um que tente manter postura perto de você.
 
-1. Parede de Tufão (Extra · 3 Karma · Raio 3m): Pelas próximas 2 rodadas, o vento ao seu redor desvia tiros comuns (+3 na CA contra distância) e puxa inimigos a 4,5m para perto da sua lâmina.
-2. Estouro Barométrico (Principal · 4 Karma): Descarrega a pressão do ciclone em um golpe de água e vento que causa 2d8 contundente e aplica Caído.
+1.  Parede de Tufão (Extra · 3 Karma · Raio 3m): Pelas próximas 2 rodadas, o vento ao seu redor desvia tiros comuns (+3 na CA contra distância) e puxa inimigos a 4,5m para perto da sua lâmina.
+2.  Estouro Barométrico (Principal · 4 Karma): Descarrega a pressão do ciclone em um golpe de água e vento que causa 2d8 contundente e aplica Caído.
 
 **Safra na Morte.** Susanoo recolhe a compressão de ciclones tropicais em escala de combate individual.
 
@@ -5392,8 +5742,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus ataques não produzem som nem deslocamento de ar; o inimigo só percebe que foi cortado um segundo depois de você embainhar a arma ou concluir o passo.
 
-1. Corte de Atraso Lunar (Principal · 4 Karma): Você passa a até 2m do alvo durante seu movimento e realiza o corte: o alvo sofre 2d8 cortante/frio no final do turno dele (ignorando escudos reativos ativados na hora do golpe) e fica impedido de fazer Reações até lá.
-2. Passo Sem Eco (Movimento · 2 Karma): Move-se 6m em silêncio absoluto, ficando invisível para percepção auditiva ou tremores.
+1.  Corte de Atraso Lunar (Principal · 4 Karma): Você passa a até 2m do alvo durante seu movimento e realiza o corte: o alvo sofre 2d8 cortante/frio no final do turno dele (ignorando escudos reativos ativados na hora do golpe) e fica impedido de fazer Reações até lá.
+2.  Passo Sem Eco (Movimento · 2 Karma): Move-se 6m em silêncio absoluto, ficando invisível para percepção auditiva ou tremores.
 
 **Safra na Morte.** Tsukuyomi absorve a execução de cortes de velocidade subsônica sem assinatura acústica.
 
@@ -5401,17 +5751,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você impõe a ordem fria e matemática do calendário lunar sobre o caos do combate, fixando valores que normalmente dependeriam da sorte.
 
-1. Noite Fixa (Livre antes de rolar · 3 Karma): Em vez de rolar os dados da sua Reserva em um teste de ataque ou perícia, você pode decretar que o dado selecionado vale automaticamente 15 (somando seus bônus normais de perícia e treinamento em cima disso).
-2. Adiantar a Meia-Noite (Reação · 3 Karma · 12m): Reduz a duração de um efeito positivo inimigo ou de uma condição negativa em um aliado em 1 rodada.
+1.  Noite Fixa (Livre antes de rolar · 3 Karma): Em vez de rolar os dados da sua Reserva em um teste de ataque ou perícia, você pode decretar que o dado selecionado vale automaticamente 15 (somando seus bônus normais de perícia e treinamento em cima disso).
+2.  Adiantar a Meia-Noite (Reação · 3 Karma · 12m): Reduz a duração de um efeito positivo inimigo ou de uma condição negativa em um aliado em 1 rodada.
 
 **Safra na Morte.** Tsukuyomi colhe o domínio de estabilização determinística sobre variáveis caóticas de batalha.
 
-**144. Reflexo no Espelho d'Água** · Luar de Prata Fria · Técnica Divina / Fenômeno
+**144. Reflexo no Espelho d’Água** · Luar de Prata Fria · Técnica Divina / Fenômeno
 
 **Fenômeno base.** Assim como a lua reflete na água sem jamais se molhar, sua presença real permanece intocável enquanto o inimigo golpeia apenas o seu reflexo prateado.
 
-1. Lua na Água (Reação · 4 Karma): Quando sofre um ataque corpo a corpo, seu corpo se desfaz em ondulações prateadas como água tocada: você anula o dano de um Acerto Parcial (ou reduz um Acerto Total à metade) e reaparece 3m atrás do atacante.
-2. Frio da Noite Clara (Principal · 4 Karma · 9m): Um feixe de luar pálido causa 2d8 frio/mental e reduz a Iniciativa e o Movimento do alvo em -3.
+1.  Lua na Água (Reação · 4 Karma): Quando sofre um ataque corpo a corpo, seu corpo se desfaz em ondulações prateadas como água tocada: você anula o dano de um Acerto Parcial (ou reduz um Acerto Total à metade) e reaparece 3m atrás do atacante.
+2.  Frio da Noite Clara (Principal · 4 Karma · 9m): Um feixe de luar pálido causa 2d8 frio/mental e reduz a Iniciativa e o Movimento do alvo em -3.
 
 **Safra na Morte.** Tsukuyomi recolhe a projeção de miragens táteis baseadas em reflexão luminosa noturna.
 
@@ -5421,8 +5771,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você mantém até 3 chamas azuis flutuantes (Kitsune-bi) orbitando sua cintura; elas não queimam a matéria física, mas queimam diretamente o Karma e a percepção de quem encosta nelas.
 
-1. Enxame de Fogo-Fátuo (Principal · 4 Karma · 12m): Envia as 3 chamas contra um ou mais alvos, causando 2d8 kármico/espiritual no total e iluminando a alma do alvo (o próximo ataque contra ele recebe +2 no acerto).
-2. Escudo de Nove Caudas (Reação · 3 Karma): Consome uma chama orbital para absorver 1d10 + Espírito de dano e criar uma ilusão momentânea que desloca você 2m.
+1.  Enxame de Fogo-Fátuo (Principal · 4 Karma · 12m): Envia as 3 chamas contra um ou mais alvos, causando 2d8 kármico/espiritual no total e iluminando a alma do alvo (o próximo ataque contra ele recebe +2 no acerto).
+2.  Escudo de Nove Caudas (Reação · 3 Karma): Consome uma chama orbital para absorver 1d10 + Espírito de dano e criar uma ilusão momentânea que desloca você 2m.
 
 **Safra na Morte.** Inari absorve a manipulação de plasma espiritual frio guiado à distância.
 
@@ -5430,8 +5780,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você faz surgir portões vermelhos (Torii) translúcidos em sequência no campo; atravessar um Torii acelera o aliado e limpa maldições, mas comprime o espaço contra inimigos.
 
-1. Passagem de Fushimi (Movimento · 3 Karma): Ergue 2 portões Torii conectados a até 9m um do outro; você e seus aliados podem entrar em um e sair imediatamente no outro sem gastar o movimento intermediário e ganhando +2 no próximo teste.
-2. Queda do Portão Sagrado (Principal · 4 Karma): Faz um Torii materializar-se caindo sobre o inimigo a 9m, causando 2d8 contundente/divino e prendendo-o no lugar (Lento).
+1.  Passagem de Fushimi (Movimento · 3 Karma): Ergue 2 portões Torii conectados a até 9m um do outro; você e seus aliados podem entrar em um e sair imediatamente no outro sem gastar o movimento intermediário e ganhando +2 no próximo teste.
+2.  Queda do Portão Sagrado (Principal · 4 Karma): Faz um Torii materializar-se caindo sobre o inimigo a 9m, causando 2d8 contundente/divino e prendendo-o no lugar (Lento).
 
 **Safra na Morte.** Inari colhe a arquitetura de corredores de teletransporte curto em terreno aberto.
 
@@ -5439,8 +5789,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quando você empunha uma arma ou opera um dispositivo, um espírito de raposa invisível bate o segundo martelo em sincronia perfeita com você, dobrando o fio e a qualidade do equipamento.
 
-1. Fio de Munechika (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma (ou a de um aliado tocado) sobe um passo no dado de dano (ex.: de 1d8 para 1d10, ou soma +1d6) e reduz em -1 o limiar de CA Total do alvo.
-2. Prosperidade de Colheita (Passiva): Uma vez por cena, ao obter um 20 natural ou abater um inimigo, recupera 3 de Karma e 1 carga de consumível/munição comum.
+1.  Fio de Munechika (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma (ou a de um aliado tocado) sobe um passo no dado de dano (ex.: de 1d8 para 1d10, ou soma +1d6) e reduz em -1 o limiar de CA Total do alvo.
+2.  Prosperidade de Colheita (Passiva): Uma vez por cena, ao obter um 20 natural ou abater um inimigo, recupera 3 de Karma e 1 carga de consumível/munição comum.
 
 **Safra na Morte.** Inari recolhe técnicas de afiação kármica e sincronia de forja em tempo real.
 
@@ -5450,8 +5800,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Três tambores espirituais com o símbolo Tomoe flutuam atrás dos seus ombros; cada golpe seu ressoa nos tambores, somando ondas sônicas de concussão às suas descargas elétricas.
 
-1. Rufo de Trovão Duplo (Principal · 4 Karma · 9m): Dispara um pulso que combina som e raio, causando 2d8 elétrico/sônico e empurrando o alvo em 3m (se bater em uma parede ou outro inimigo, sofre +1d6).
-2. Batida de Contra-Fase (Reação · 3 Karma): Toca um tambor para gerar uma onda de choque que explode projéteis ou reduz o dano corpo a corpo recebido em 2d6.
+1.  Rufo de Trovão Duplo (Principal · 4 Karma · 9m): Dispara um pulso que combina som e raio, causando 2d8 elétrico/sônico e empurrando o alvo em 3m (se bater em uma parede ou outro inimigo, sofre +1d6).
+2.  Batida de Contra-Fase (Reação · 3 Karma): Toca um tambor para gerar uma onda de choque que explode projéteis ou reduz o dano corpo a corpo recebido em 2d6.
 
 **Safra na Morte.** Raijin absorve o acoplamento entre frequência acústica e descarga elétrica.
 
@@ -5459,8 +5809,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você estimula os próprios músculos com microchoques dos tambores de Raijin, eliminando o tempo de reação humana entre o pensamento e o golpe.
 
-1. Saque de Relâmpago (Livre ou Reação · 3 Karma): Você recebe +4 na Iniciativa; uma vez por rodada, quando um inimigo a até 4,5m declara um ataque contra você, você pode resolver o seu ataque básico antes do ataque dele (se o seu golpe deixar o inimigo Caído, Desorientado ou a 0 PV, o ataque dele é cancelado).
-2. Curto-Circuito Motor (Extra · 2 Karma): Seu próximo acerto aplica espasmos elétricos que reduzem o deslocamento do alvo pela metade.
+1.  Saque de Relâmpago (Livre ou Reação · 3 Karma): Você recebe +4 na Iniciativa; uma vez por rodada, quando um inimigo a até 4,5m declara um ataque contra você, você pode resolver o seu ataque básico antes do ataque dele (se o seu golpe deixar o inimigo Caído, Desorientado ou a 0 PV, o ataque dele é cancelado).
+2.  Curto-Circuito Motor (Extra · 2 Karma): Seu próximo acerto aplica espasmos elétricos que reduzem o deslocamento do alvo pela metade.
 
 **Safra na Morte.** Raijin colhe o controle de bioeletricidade para antecipação de ataques.
 
@@ -5468,8 +5818,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você magnetiza um ponto do chão ou um inimigo como um para-raios positivo, fazendo com que toda a eletricidade estática da área desabe sobre aquele ponto após um breve intervalo.
 
-1. Cravar Ionização (Principal · 4 Karma · 12m): Causa 2d6 elétrico no alvo e o magnetiza; no final do turno desse alvo, um segundo raio cai automaticamente sobre a cabeça dele causando mais 1d10 elétrico sem gastar sua ação.
-2. Salto pelo Conduíte (Movimento · 3 Karma): Transforma-se em faísca para saltar instantaneamente até 6m na direção do alvo magnetizado.
+1.  Cravar Ionização (Principal · 4 Karma · 12m): Causa 2d6 elétrico no alvo e o magnetiza; no final do turno desse alvo, um segundo raio cai automaticamente sobre a cabeça dele causando mais 1d10 elétrico sem gastar sua ação.
+2.  Salto pelo Conduíte (Movimento · 3 Karma): Transforma-se em faísca para saltar instantaneamente até 6m na direção do alvo magnetizado.
 
 **Safra na Morte.** Raijin recolhe técnicas de indução de descargas retardadas por polarização do alvo.
 
@@ -5479,8 +5829,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você carrega um fole ou manto dimensional que suga o ar do ambiente (criando vácuo) e o armazena sob pressão extrema para liberá-lo de uma só vez.
 
-1. Suco de Vácuo (Extra · 3 Karma · Cone 6m): Suga o ar puxando todos os inimigos no cone em 3m na sua direção e desequilibrando-os (-2 na CA Parcial deles neste turno).
-2. Soltar os Quatro Ventos (Principal · 4 Karma): Libera o ar comprimido em um canhão eólico que causa 2d8 contundente/cortante e arremessa os inimigos 4,5m para trás.
+1.  Suco de Vácuo (Extra · 3 Karma · Cone 6m): Suga o ar puxando todos os inimigos no cone em 3m na sua direção e desequilibrando-os (-2 na CA Parcial deles neste turno).
+2.  Soltar os Quatro Ventos (Principal · 4 Karma): Libera o ar comprimido em um canhão eólico que causa 2d8 contundente/cortante e arremessa os inimigos 4,5m para trás.
 
 **Safra na Morte.** Fujin absorve o ciclo mecânico de sucção a vácuo seguida de propulsão pneumática.
 
@@ -5488,8 +5838,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você cria redemoinhos finos como fios de navalha invisíveis onde a queda súbita de pressão atmosférica abre cortes na pele e nas juntas sem que o inimigo veja a lâmina.
 
-1. Três Cortes de Kamaitachi (Principal · 4 Karma · 12m): O primeiro vento desequilibra, o segundo rasga (2d8 cortante, ignorando cobertura parcial) e o terceiro anestesia pelo frio (o alvo sofre Sangramento e -2 em Percepção/Reflexos).
-2. Armadilha de Corrente de Ar (Extra · 2 Karma): Deixa um bolso de vento cortante em um espaço de 2m; o primeiro inimigo a pisar ali sofre 1d10 cortante automático.
+1.  Três Cortes de Kamaitachi (Principal · 4 Karma · 12m): O primeiro vento desequilibra, o segundo rasga (2d8 cortante, ignorando cobertura parcial) e o terceiro anestesia pelo frio (o alvo sofre Sangramento e -2 em Percepção/Reflexos).
+2.  Armadilha de Corrente de Ar (Extra · 2 Karma): Deixa um bolso de vento cortante em um espaço de 2m; o primeiro inimigo a pisar ali sofre 1d10 cortante automático.
 
 **Safra na Morte.** Fujin colhe a balística de lâminas de descompressão barométrica invisíveis.
 
@@ -5497,8 +5847,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo pesa menos que uma folha seca para as correntes de ar; qualquer movimento ou ataque inimigo que desloque o ar perto de você impulsiona seu corpo para fora do perigo.
 
-1. Cavalgar a Onda de Impacto (Reação · 3 Karma): Quando um ataque corpo a corpo ou explosão atinge você ou passa perto, você flutua na corrente de ar do próprio golpe inimigo, reduzindo o dano em 2d6 e planando 4,5m para o alto ou para trás sem tocar o chão.
-2. Impulso de Cauda (Livre · 2 Karma): Soma +4,5m de deslocamento aéreo/salto neste turno e permite atacar enquanto plana no ar com +2 no acerto.
+1.  Cavalgar a Onda de Impacto (Reação · 3 Karma): Quando um ataque corpo a corpo ou explosão atinge você ou passa perto, você flutua na corrente de ar do próprio golpe inimigo, reduzindo o dano em 2d6 e planando 4,5m para o alto ou para trás sem tocar o chão.
+2.  Impulso de Cauda (Livre · 2 Karma): Soma +4,5m de deslocamento aéreo/salto neste turno e permite atacar enquanto plana no ar com +2 no acerto.
 
 **Safra na Morte.** Fujin recolhe a arte marcial de redirecionamento de deslocamento atmosférico hostil.
 
@@ -5508,8 +5858,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Na filosofia do arco de Hachiman, o acerto ocorre no coração do arqueiro antes de a corda ser solta; quanto mais calma e imóvel estiver sua mente, menos a distância e os obstáculos importam.
 
-1. Disparo de Mente Vazia (Mushin) (Extra + Principal · 4 Karma): Se você gastar sua ação Extra para respirar e focar antes do tiro/golpe, o ataque ganha +1d20 na Reserva, dobra o alcance normal, ignora toda cobertura que não seja uma sala totalmente fechada e soma +Etapa ao dano (2d8 + Etapa).
-2. Flecha que Divide Flecha (Reação · 3 Karma): Dispara ou golpeia interceptando um projétil ou feixe inimigo no ar, anulando-o completamente.
+1.  Disparo de Mente Vazia (Mushin) (Extra + Principal · 4 Karma): Se você gastar sua ação Extra para respirar e focar antes do tiro/golpe, o ataque ganha +1d20 na Reserva, dobra o alcance normal, ignora toda cobertura que não seja uma sala totalmente fechada e soma +Etapa ao dano (2d8 + Etapa).
+2.  Flecha que Divide Flecha (Reação · 3 Karma): Dispara ou golpeia interceptando um projétil ou feixe inimigo no ar, anulando-o completamente.
 
 **Safra na Morte.** Hachiman absorve o estado psicológico de precisão absoluta sob fogo cruzado.
 
@@ -5517,8 +5867,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Um estandarte espiritual branco flutua às suas costas (ou onde você o cravar no chão), irradiando disciplina marcial para todos os aliados sob sua bandeira.
 
-1. Erguer os Oito Estandartes (Extra · 4 Karma · Raio 6m): Pelas próximas 2 rodadas, você e todos os aliados a até 6m do estandarte recebem +1 na CA Total, +2 no dano de ataques básicos e imunidade a Abalado.
-2. Ordem de Carga Sincronizada (Principal · 4 Karma): Você realiza um ataque (2d6) e permite que 1 aliado dentro da área do estandarte avance 3m e realize um ataque básico imediato como Reação.
+1.  Erguer os Oito Estandartes (Extra · 4 Karma · Raio 6m): Pelas próximas 2 rodadas, você e todos os aliados a até 6m do estandarte recebem +1 na CA Total, +2 no dano de ataques básicos e imunidade a Abalado.
+2.  Ordem de Carga Sincronizada (Principal · 4 Karma): Você realiza um ataque (2d6) e permite que 1 aliado dentro da área do estandarte avance 3m e realize um ataque básico imediato como Reação.
 
 **Safra na Morte.** Hachiman colhe táticas modernas de comando de pelotão e moral coletiva.
 
@@ -5526,8 +5876,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus golpes e disparos liberam pombas feitas de papel e luz branca que voam ao redor do rosto do inimigo, abrindo brechas na guarda dele para o próximo golpe.
 
-1. Revoada Desconcertante (Extra · 3 Karma · 12m): As aves de luz cercam o alvo causando 1d8 radiante e distraindo-o: o próximo ataque seu ou de qualquer aliado contra ele até o fim da rodada reduz a CA Parcial e Total dele em -2.
-2. Mensagem de Socorro (Reação · 3 Karma): As pombas voam até um aliado a 12m limpando Desorientado e puxando-o 2m para fora de uma área de risco.
+1.  Revoada Desconcertante (Extra · 3 Karma · 12m): As aves de luz cercam o alvo causando 1d8 radiante e distraindo-o: o próximo ataque seu ou de qualquer aliado contra ele até o fim da rodada reduz a CA Parcial e Total dele em -2.
+2.  Mensagem de Socorro (Reação · 3 Karma): As pombas voam até um aliado a 12m limpando Desorientado e puxando-o 2m para fora de uma área de risco.
 
 **Safra na Morte.** Hachiman recolhe o uso de enxames luminosos para quebra de foco visual do oponente.
 
@@ -5537,8 +5887,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quando um inimigo fere você ou rompe um acordo/recua diante de você, você crava nele a sentença de Izanami: um contador espiritual que apressa o colapso do corpo dele a cada rodada.
 
-1. Promessa de Mil Mortes (Principal · 4 Karma · 9m): Causa 2d6 necrótico e crava a marca por 3 rodadas: no final de cada turno do alvo marcado, ele sofre 4 de dano necrótico irreduzível (6 se tentar se afastar de você).
-2. Agravar Sentença (Extra · 3 Karma): Contra o alvo marcado, seu ataque soma +1d8 de dano e reduz a cura recebida por ele a zero naquela rodada.
+1.  Promessa de Mil Mortes (Principal · 4 Karma · 9m): Causa 2d6 necrótico e crava a marca por 3 rodadas: no final de cada turno do alvo marcado, ele sofre 4 de dano necrótico irreduzível (6 se tentar se afastar de você).
+2.  Agravar Sentença (Extra · 3 Karma): Contra o alvo marcado, seu ataque soma +1d8 de dano e reduz a cura recebida por ele a zero naquela rodada.
 
 **Safra na Morte.** Izanami absorve maldições de deterioração progressiva atreladas ao comportamento do alvo.
 
@@ -5546,8 +5896,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua sombra e suas vestes projetam mechas longas de cinza e sombra faminta que perseguem incansavelmente quem tenta fugir do seu alcance.
 
-1. Perseguição de Yomi (Principal · 4 Karma · 9m): As mechas avançam pelo chão agarrando o alvo, causando 2d8 contundente/necrótico e puxando-o 4,5m para perto de você (deixando-o Lento).
-2. Pêssegos da Fronteira (Reação · 3 Karma): Consome um fruto espiritual do submundo para anular um efeito de medo/mental ou recuperar 1d8 + Constituição de Vida ao sofrer dano.
+1.  Perseguição de Yomi (Principal · 4 Karma · 9m): As mechas avançam pelo chão agarrando o alvo, causando 2d8 contundente/necrótico e puxando-o 4,5m para perto de você (deixando-o Lento).
+2.  Pêssegos da Fronteira (Reação · 3 Karma): Consome um fruto espiritual do submundo para anular um efeito de medo/mental ou recuperar 1d8 + Constituição de Vida ao sofrer dano.
 
 **Safra na Morte.** Izanami colhe vetores de captura e contenção de alvos velozes.
 
@@ -5555,8 +5905,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** No mito, oito deuses do trovão nasceram do corpo em decomposição de Izanami; seu sangue libera uma névoa escura condutora que explode em raios negros quando você é atacado.
 
-1. Trovão da Carne Caída (Reação ao sofrer dano · 3 Karma): A névoa ao redor do seu ferimento detona em um raio negro curto que causa 2d6 elétrico/necrótico no atacante e reduz a CA dele em -1.
-2. Nuvem dos Oito Trovões (Principal · 4 Karma · Raio 3m): Libera o miasma elétrico ao seu redor causando 2d8 em todos os inimigos na área e aplicando Envenenado / Abalado.
+1.  Trovão da Carne Caída (Reação ao sofrer dano · 3 Karma): A névoa ao redor do seu ferimento detona em um raio negro curto que causa 2d6 elétrico/necrótico no atacante e reduz a CA dele em -1.
+2.  Nuvem dos Oito Trovões (Principal · 4 Karma · Raio 3m): Libera o miasma elétrico ao seu redor causando 2d8 em todos os inimigos na área e aplicando Envenenado / Abalado.
 
 **Safra na Morte.** Izanami recolhe a bioquímica de descargas bioelétricas geradas por tecido necrosado.
 
@@ -5566,8 +5916,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu fogo é tão jovem e violento que não precisa ser lançado: qualquer arma, punho ou projétil que toque você (ou que você toque) entra em combustão imediata pelo simples contato.
 
-1. Nascimento Incandescente (Livre · 3 Karma): Por 2 rodadas, sua pele e arma atingem temperatura crítica: qualquer inimigo que acertar você corpo a corpo sofre 1d8 de dano térmico automático, e todos os seus ataques somam +1d8 de fogo antes do parcial.
-2. Derreter o Aço (Principal · 4 Karma): Golpe que causa 2d8 térmico e derrete a guarda do inimigo, ignorando toda a Redução de Dano física dele.
+1.  Nascimento Incandescente (Livre · 3 Karma): Por 2 rodadas, sua pele e arma atingem temperatura crítica: qualquer inimigo que acertar você corpo a corpo sofre 1d8 de dano térmico automático, e todos os seus ataques somam +1d8 de fogo antes do parcial.
+2.  Derreter o Aço (Principal · 4 Karma): Golpe que causa 2d8 térmico e derrete a guarda do inimigo, ignorando toda a Redução de Dano física dele.
 
 **Safra na Morte.** Kagu-Tsuchi absorve a geração de plasma térmico de contato imediato.
 
@@ -5575,8 +5925,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quando Kagu-Tsuchi foi decapitado, o sangue que escorreu pela espada de Izanagi gerou novos deuses; cada gota de fogo e sangue que respinga da sua arma no chão vira uma mina incandescente.
 
-1. Corte de Respingo Vulcânico (Principal · 4 Karma): Causa 2d8 cortante/térmico no alvo e espalha 3 Brasas de Magma nos espaços adjacentes a ele; qualquer inimigo que pisar ou terminar o turno sobre uma Brasa sofre 1d6 térmico.
-2. Detonar Respingos (Extra · 2 Karma): Explode todas as Brasas no chão de uma só vez, causando 2d6 térmico em quem estiver a 1,5m delas.
+1.  Corte de Respingo Vulcânico (Principal · 4 Karma): Causa 2d8 cortante/térmico no alvo e espalha 3 Brasas de Magma nos espaços adjacentes a ele; qualquer inimigo que pisar ou terminar o turno sobre uma Brasa sofre 1d6 térmico.
+2.  Detonar Respingos (Extra · 2 Karma): Explode todas as Brasas no chão de uma só vez, causando 2d6 térmico em quem estiver a 1,5m delas.
 
 **Safra na Morte.** Kagu-Tsuchi colhe o controle de área por respingos balísticos de escória em brasa.
 
@@ -5584,8 +5934,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao cravar a ponta da sua arma ou o calcanhar no chão, você desenha uma linha de fratura magmática sob o piso que explode segundos depois sob os pés da linha de trás inimiga.
 
-1. Gêiser de Cratera (Principal · 4 Karma · 12m): Faz o chão explodir em um pilar de fogo e rocha sob um ponto a até 12m, causando 2d8 térmico/contundente em 2m de raio e lançando o alvo 2m para o alto (Desorientado).
-2. Cinza de Resfriamento Rápido (Reação · 3 Karma): Endurece uma camada de rocha basáltica negra sobre o próprio peito contra um golpe, reduzindo o dano em 2d8.
+1.  Gêiser de Cratera (Principal · 4 Karma · 12m): Faz o chão explodir em um pilar de fogo e rocha sob um ponto a até 12m, causando 2d8 térmico/contundente em 2m de raio e lançando o alvo 2m para o alto (Desorientado).
+2.  Cinza de Resfriamento Rápido (Reação · 3 Karma): Endurece uma camada de rocha basáltica negra sobre o próprio peito contra um golpe, reduzindo o dano em 2d8.
 
 **Safra na Morte.** Kagu-Tsuchi recolhe a canalização de pressão geotérmica através de pisos artificiais.
 
@@ -5595,10 +5945,10 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **163. Carimbo de Decreto Físico** · O Selo Imperial de Jade · Runa Kármica Primordial
 
-**Fenômeno base.** Você projeta um selo quadrado de jade translúcido no ar ou no solo; tudo o que é carimbado por ele fica sujeito à burocracia celeste, precisando de "autorização" kármica para alterar seu estado.
+**Fenômeno base.** Você projeta um selo quadrado de jade translúcido no ar ou no solo; tudo o que é carimbado por ele fica sujeito à burocracia celeste, precisando de “autorização” kármica para alterar seu estado.
 
-1. Carimbar Veto (Principal · 4 Karma · 12m): Desce um selo de jade pesado sobre o alvo causando 2d8 contundente/divino e "embargando" uma categoria de ação dele no próximo turno (Movimento, Técnicas ou Reações): para usar a categoria embargada, o inimigo precisa pagar +3 de Karma.
-2. Alvará de Passagem (Extra · 2 Karma): Carimba um aliado a 9m, concedendo a ele +2 na CA e imunidade a terreno difícil e ataques de oportunidade por 1 rodada.
+1.  Carimbar Veto (Principal · 4 Karma · 12m): Desce um selo de jade pesado sobre o alvo causando 2d8 contundente/divino e “embargando” uma categoria de ação dele no próximo turno (Movimento, Técnicas ou Reações): para usar a categoria embargada, o inimigo precisa pagar +3 de Karma.
+2.  Alvará de Passagem (Extra · 2 Karma): Carimba um aliado a 9m, concedendo a ele +2 na CA e imunidade a terreno difícil e ataques de oportunidade por 1 rodada.
 
 **Safra na Morte.** O Imperador de Jade absorve protocolos de restrição contratual aplicados ao combate rápido.
 
@@ -5606,8 +5956,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você pode emitir ordens curtas que requisitam recursos temporários dos quatro ministérios do Céu (Trovão, Fogo, Epidemia e Riqueza) diretamente para o seu espaço de batalha.
 
-1. Despacho Ministerial (Extra · 3 Karma): Escolha um despacho para o seu próximo ataque neste turno: Ministério do Trovão (soma +1d8 elétrico e empurra 2m), Ministério do Fogo (explode em 2m ao redor do alvo) ou Ministério da Riqueza (se o ataque acertar na faixa Total, você recupera 3 de Karma).
-2. Auditoria de Campo (Reação · 3 Karma): Quando um inimigo gasta Karma a até 12m, você confisca 1 ponto desse Karma para si.
+1.  Despacho Ministerial (Extra · 3 Karma): Escolha um despacho para o seu próximo ataque neste turno: Ministério do Trovão (soma +1d8 elétrico e empurra 2m), Ministério do Fogo (explode em 2m ao redor do alvo) ou Ministério da Riqueza (se o ataque acertar na faixa Total, você recupera 3 de Karma).
+2.  Auditoria de Campo (Reação · 3 Karma): Quando um inimigo gasta Karma a até 12m, você confisca 1 ponto desse Karma para si.
 
 **Safra na Morte.** Yu Huang colhe a logística de distribuição energética instantânea em conflitos mortais.
 
@@ -5615,8 +5965,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Um ábaco de jade invisível registra cada golpe trocado na cena: proteger aliados gera Mérito (fichas brancas) e sofrer ataques gera Demérito (fichas negras) contra o agressor.
 
-1. Liquidar Deméritos (Principal · 4 Karma · 12m): Causa 2d8 divino no alvo + +2 de dano verdadeiro para cada vez que ele feriu você ou um aliado na cena (máximo +8).
-2. Converter Mérito em Graça (Reação · 3 Karma): Reduz o dano sofrido por um aliado a 9m em 2d6 + Espírito e concede +2 no próximo teste dele.
+1.  Liquidar Deméritos (Principal · 4 Karma · 12m): Causa 2d8 divino no alvo + +2 de dano verdadeiro para cada vez que ele feriu você ou um aliado na cena (máximo +8).
+2.  Converter Mérito em Graça (Reação · 3 Karma): Reduz o dano sofrido por um aliado a 9m em 2d6 + Espírito e concede +2 no próximo teste dele.
 
 **Safra na Morte.** Yu Huang recolhe o algoritmo de conversão moral em pressão kármica direta.
 
@@ -5626,8 +5976,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como Nezha teve seu corpo reconstruído com raízes e pétalas de lótus sagrado após devolver seus ossos aos pais, sua estrutura interna não depende de órgãos comuns e resiste a venenos e sangramentos.
 
-1. Fisiologia de Lótus (Passiva + 3 Karma ao ativar): Você possui resistência permanente a dano de Veneno/Corrupção e imunidade a Sangramento; ao gastar 3 de Karma como Ação Livre, pétalas douradas reconstroem seus tecidos curando 2d6 + Etapa de Vida.
-2. Desabrochar de Três Cabeças (Extra · 4 Karma): Por 1 rodada, projeta braços e faces extras de lótus que concedem +1d20 em ataques e impedem flanqueamento.
+1.  Fisiologia de Lótus (Passiva + 3 Karma ao ativar): Você possui resistência permanente a dano de Veneno/Corrupção e imunidade a Sangramento; ao gastar 3 de Karma como Ação Livre, pétalas douradas reconstroem seus tecidos curando 2d6 + Etapa de Vida.
+2.  Desabrochar de Três Cabeças (Extra · 4 Karma): Por 1 rodada, projeta braços e faces extras de lótus que concedem +1d20 em ataques e impedem flanqueamento.
 
 **Safra na Morte.** Nezha absorve a adaptação de tecidos sintéticos vegetais para suportar traumas balísticos e cortantes.
 
@@ -5635,8 +5985,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Dois anéis ardentes de vento e fogo giram sob a sola dos seus pés, transformando cada passo em um voo rasante supersônico que deixa trilhas de labaredas pelo chão.
 
-1. Rasante das Duas Rodas (Movimento + Principal · 4 Karma): Desliza até 9m ignorando o chão (sobre água, buracos ou paredes) e desfere um chute ou golpe giratório que causa 2d8 térmico/contundente; o rastro de fogo deixado no caminho causa 4 de dano a quem cruzá-lo.
-2. Arrancada de Turbina (Reação · 3 Karma): Ao ser alvo de ataque em área ou corpo a corpo, dispara 4,5m para fora da zona, reduzindo o dano à metade.
+1.  Rasante das Duas Rodas (Movimento + Principal · 4 Karma): Desliza até 9m ignorando o chão (sobre água, buracos ou paredes) e desfere um chute ou golpe giratório que causa 2d8 térmico/contundente; o rastro de fogo deixado no caminho causa 4 de dano a quem cruzá-lo.
+2.  Arrancada de Turbina (Reação · 3 Karma): Ao ser alvo de ataque em área ou corpo a corpo, dispara 4,5m para fora da zona, reduzindo o dano à metade.
 
 **Safra na Morte.** Nezha colhe manobras de combate aéreo de baixa altitude em corredores estreitos.
 
@@ -5644,8 +5994,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma faixa longa de seda vermelha flutua ao redor dos seus ombros como uma serpente viva; embora pareça tecido leve, ela pode assumir o peso de uma viga de ferro ou prender alvos a distância.
 
-1. Laço que Revira o Mar (Principal · 4 Karma · 9m): A faixa estica, enrola-se no inimigo causando 2d6 contundente e o arremessa 3m em qualquer direção (ou o deixa Lento e com -2 na CA Parcial).
-2. Redoma de Seda Carmesim (Reação · 3 Karma): A faixa gira em esfera ao seu redor, somando +3 na CA Total contra projéteis e lâminas.
+1.  Laço que Revira o Mar (Principal · 4 Karma · 9m): A faixa estica, enrola-se no inimigo causando 2d6 contundente e o arremessa 3m em qualquer direção (ou o deixa Lento e com -2 na CA Parcial).
+2.  Redoma de Seda Carmesim (Reação · 3 Karma): A faixa gira em esfera ao seu redor, somando +3 na CA Total contra projéteis e lâminas.
 
 **Safra na Morte.** Nezha recolhe a dinâmica de tecidos flexíveis endurecidos por fluxo kármico.
 
@@ -5655,8 +6005,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O olho vertical na sua fronte enxerga a estrutura original de qualquer técnica, ilusão, metamorfose ou ponto fraco, impedindo que mentiras visuais funcionem contra você.
 
-1. Raio de Desmistificação (Principal · 4 Karma · 15m): Dispara um feixe prateado da testa que causa 2d8 radiante/kármico, encerra qualquer invisibilidade, clone ou metamorfose do alvo e expõe o ponto vital dele (-2 nos limiares de CA Parcial e Total até o próximo turno).
-2. Leitura de Postura (Livre · 2 Karma): Descobre imediatamente a CA exata, a Vida atual e as reações disponíveis de um alvo a 12m.
+1.  Raio de Desmistificação (Principal · 4 Karma · 15m): Dispara um feixe prateado da testa que causa 2d8 radiante/kármico, encerra qualquer invisibilidade, clone ou metamorfose do alvo e expõe o ponto vital dele (-2 nos limiares de CA Parcial e Total até o próximo turno).
+2.  Leitura de Postura (Livre · 2 Karma): Descobre imediatamente a CA exata, a Vida atual e as reações disponíveis de um alvo a 12m.
 
 **Safra na Morte.** Erlang Shen absorve o diagnóstico óptico instantâneo de fraquezas estruturais.
 
@@ -5664,8 +6014,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu corpo altera densidade, forma e escala em frações de segundo durante o próprio movimento de ataque ou esquiva (virando pedra no impacto, ave no salto ou lâmina no giro).
 
-1. Mutação de Golpe (Livre no turno · 3 Karma): Escolha uma transformação para esta rodada: Escala de Titã (seus ataques causam +1d8 contundente e empurram 3m), Passo de Pardal (voa 6m e passa por frestas de 15 cm sem ataques de oportunidade) ou Casca de Ferro (recebe Redução de Dano 5).
-2. Mimetismo de Objeto (Reação · 3 Karma): Transforma-se em pedra ou estátua por 1 segundo para ignorar um efeito mental/sensorial e reduzir um dano físico em 2d6.
+1.  Mutação de Golpe (Livre no turno · 3 Karma): Escolha uma transformação para esta rodada: Escala de Titã (seus ataques causam +1d8 contundente e empurram 3m), Passo de Pardal (voa 6m e passa por frestas de 15 cm sem ataques de oportunidade) ou Casca de Ferro (recebe Redução de Dano 5).
+2.  Mimetismo de Objeto (Reação · 3 Karma): Transforma-se em pedra ou estátua por 1 segundo para ignorar um efeito mental/sensorial e reduzir um dano físico em 2d6.
 
 **Safra na Morte.** Erlang Shen colhe sequências de transmutação rápida de massa em combate armado.
 
@@ -5673,8 +6023,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua própria sombra se destaca do chão na forma de um cão de caça negro e feroz que corre junto com seus golpes de lança ou lâmina para morder os tendões do inimigo.
 
-1. Mordida no Calcanhar (Extra após atacar · 3 Karma): O cão de sombra morde a perna do alvo que você acabou de atacar, causando 1d10 perfurante/kármico e impedindo o alvo de recuar ou usar ações de Movimento para fugir de você por 1 rodada.
-2. Faro de Eclipse (Passiva): Você rastreia qualquer alvo que já tenha ferido na cena a até 30m, mesmo através de paredes.
+1.  Mordida no Calcanhar (Extra após atacar · 3 Karma): O cão de sombra morde a perna do alvo que você acabou de atacar, causando 1d10 perfurante/kármico e impedindo o alvo de recuar ou usar ações de Movimento para fugir de você por 1 rodada.
+2.  Faro de Eclipse (Passiva): Você rastreia qualquer alvo que já tenha ferido na cena a até 30m, mesmo através de paredes.
 
 **Safra na Morte.** Erlang Shen recolhe a sincronia entre artes de haste e contenção por invocação de sombra.
 
@@ -5684,8 +6034,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você não oferece resistência rígida à força do oponente; seu corpo cede como a água e usa a própria velocidade e violência do inimigo para jogá-lo contra o chão.
 
-1. Ceder para Vencer (Reação ao ser atacado corpo a corpo · 4 Karma): Soma +3 na sua CA; se o inimigo errar ou acertar apenas na faixa Parcial, você desvia o vetor dele fazendo-o sofrer 2d8 contundente da própria força e cair Caído adjacente a você.
-2. Passo de Água Corrente (Passiva): Enquanto você não usar armadura pesada, empurrões ou puxões inimigos permitem que você escolha para qual direção deslizar.
+1.  Ceder para Vencer (Reação ao ser atacado corpo a corpo · 4 Karma): Soma +3 na sua CA; se o inimigo errar ou acertar apenas na faixa Parcial, você desvia o vetor dele fazendo-o sofrer 2d8 contundente da própria força e cair Caído adjacente a você.
+2.  Passo de Água Corrente (Passiva): Enquanto você não usar armadura pesada, empurrões ou puxões inimigos permitem que você escolha para qual direção deslizar.
 
 **Safra na Morte.** Laozi absorve a aplicação prática do Wu Wei contra armas modernas e técnicas pesadas.
 
@@ -5693,8 +6043,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você projeta um octógono de linhas flamejantes (Fogo Samadhi) no chão ou ao redor do alvo, que derrete ataques impuros e refina elixires no calor da luta.
 
-1. Chamas do Crisol (Principal · 4 Karma · Raio 3m a 9m): Ergue o octógono de fogo branco e dourado que causa 2d8 térmico/kármico nos inimigos e queima 2 pontos de Karma deles.
-2. Destilação em Combate (Extra · 3 Karma): Reduz a sua Saturação Alquímica (ou de um aliado adjacente) em -1 e converte a toxina purgada em +2d6 de Escudo Temporário.
+1.  Chamas do Crisol (Principal · 4 Karma · Raio 3m a 9m): Ergue o octógono de fogo branco e dourado que causa 2d8 térmico/kármico nos inimigos e queima 2 pontos de Karma deles.
+2.  Destilação em Combate (Extra · 3 Karma): Reduz a sua Saturação Alquímica (ou de um aliado adjacente) em -1 e converte a toxina purgada em +2d6 de Escudo Temporário.
 
 **Safra na Morte.** Laozi colhe processos de purificação alquímica acelerada sob estresse.
 
@@ -5702,8 +6052,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Um aro metálico prateado flutua no seu pulso; ao ser lançado girando, ele gera um campo gravitacional que suga armas soltas, projéteis e focos da mão dos inimigos.
 
-1. Confiscar Instrumento (Principal · 4 Karma · 9m): O aro atinge o alvo causando 2d6 contundente e força um teste contra desarme: em caso de sucesso, a arma ou foco do inimigo é puxada por 3m para o chão (ou o alvo sofre -3 nos ataques com ela por 1 rodada se for arma natural/fixa).
-2. Engolir Munição (Reação · 3 Karma): O aro absorve um disparo ou projétil mágico no ar, anulando o dano e convertendo-o em +2 no seu próximo ataque.
+1.  Confiscar Instrumento (Principal · 4 Karma · 9m): O aro atinge o alvo causando 2d6 contundente e força um teste contra desarme: em caso de sucesso, a arma ou foco do inimigo é puxada por 3m para o chão (ou o alvo sofre -3 nos ataques com ela por 1 rodada se for arma natural/fixa).
+2.  Engolir Munição (Reação · 3 Karma): O aro absorve um disparo ou projétil mágico no ar, anulando o dano e convertendo-o em +2 no seu próximo ataque.
 
 **Safra na Morte.** Laozi recolhe a neutralização magnética e gravitacional de armamentos inimigos.
 
@@ -5713,8 +6063,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A cada cena, seu Karma condensa até 2 frutos translúcidos de jade e ouro que contêm vitalidade imortal concentrada, podendo ser consumidos ou lançados a aliados.
 
-1. Ofertar Pêssego de Kunlun (Extra · 3 Karma · 6m): O aliado (ou você) que consome o fruto recupera imediatamente 2d8 + Espírito de Vida, remove 1 condição de Exaustão / Envenenado / Sangramento e recebe +1d20 no próximo teste.
-2. Semente de Espinheiro Real (Principal · 4 Karma): Arremessa o caroço sagrado contra o inimigo a 9m, que germina no impacto causando 2d6 perfurante e prendendo-o no lugar (Lento).
+1.  Ofertar Pêssego de Kunlun (Extra · 3 Karma · 6m): O aliado (ou você) que consome o fruto recupera imediatamente 2d8 + Espírito de Vida, remove 1 condição de Exaustão / Envenenado / Sangramento e recebe +1d20 no próximo teste.
+2.  Semente de Espinheiro Real (Principal · 4 Karma): Arremessa o caroço sagrado contra o inimigo a 9m, que germina no impacto causando 2d6 perfurante e prendendo-o no lugar (Lento).
 
 **Safra na Morte.** Xi Wangmu absorve a síntese rápida de vitalidade biológica em corpos mortais feridos.
 
@@ -5722,8 +6072,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao riscar o ar ou o chão com sua arma, dedo ou grampo metálico, você abre uma fenda luminosa pela qual jorra uma torrente de água celestial prateada que separa você dos inimigos.
 
-1. Riscar o Rio Celeste (Principal · 4 Karma · Linha de 9m): Abre uma torrente que causa 2d8 contundente/kármico em todos na linha e cria uma barreira líquida por 1 rodada (inimigos precisam gastar +3m de Movimento para atravessá-la).
-2. Agulha da Fênix (Extra · 2 Karma): Dispara o grampo de luz causando 1d10 perfurante que ignora cobertura parcial.
+1.  Riscar o Rio Celeste (Principal · 4 Karma · Linha de 9m): Abre uma torrente que causa 2d8 contundente/kármico em todos na linha e cria uma barreira líquida por 1 rodada (inimigos precisam gastar +3m de Movimento para atravessá-la).
+2.  Agulha da Fênix (Extra · 2 Karma): Dispara o grampo de luz causando 1d10 perfurante que ignora cobertura parcial.
 
 **Safra na Morte.** Xi Wangmu colhe a criação de divisórias topográficas instantâneas em combate.
 
@@ -5731,8 +6081,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Antes de ser associada apenas aos jardins imortais, Xi Wangmu regia as pragas celestes com dentes de tigre; você exala um vento frio de alta montanha que pune quem avança sem reverência.
 
-1. Sopro da Montanha de Jade (Principal · 4 Karma · Cone 6m): Causa 2d8 frio/cortante e congela o ímpeto dos atingidos (eles não podem realizar ataques de oportunidade nem usar ações Extras no próximo turno).
-2. Manto de Geada Real (Reação · 3 Karma): Reduz o dano recebido em 2d6 e deixa o atacante Lento.
+1.  Sopro da Montanha de Jade (Principal · 4 Karma · Cone 6m): Causa 2d8 frio/cortante e congela o ímpeto dos atingidos (eles não podem realizar ataques de oportunidade nem usar ações Extras no próximo turno).
+2.  Manto de Geada Real (Reação · 3 Karma): Reduz o dano recebido em 2d6 e deixa o atacante Lento.
 
 **Safra na Morte.** Xi Wangmu recolhe o controle criogênico de ventos de grandes altitudes.
 
@@ -5742,8 +6092,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Suas duas mãos operam como o Martelo (que gera o trovão sônico) e o Cinzel (que crava o raio perfurante): acertar com um prepara a destruição exata do outro.
 
-1. Cravar o Cinzel e Bater o Martelo (Principal · 4 Karma): Desfere dois golpes rápidos no mesmo alvo: o Cinzel abre uma fissura elétrica (-2 na CA Total do alvo) e o Martelo detona a fissura causando 2d10 elétrico/contundente.
-2. Estilhaço Condutor (Extra · 2 Karma): Deixa uma ponta elétrica cravada no alvo que causa 4 de dano automático se ele usar qualquer técnica no próximo turno.
+1.  Cravar o Cinzel e Bater o Martelo (Principal · 4 Karma): Desfere dois golpes rápidos no mesmo alvo: o Cinzel abre uma fissura elétrica (-2 na CA Total do alvo) e o Martelo detona a fissura causando 2d10 elétrico/contundente.
+2.  Estilhaço Condutor (Extra · 2 Karma): Deixa uma ponta elétrica cravada no alvo que causa 4 de dano automático se ele usar qualquer técnica no próximo turno.
 
 **Safra na Morte.** Lei Gong absorve a técnica marcial de impacto duplo (perfuração seguida de detonação elétrica).
 
@@ -5751,8 +6101,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Asas escuras de nuvem carregada e eletricidade projetam-se das suas costas, permitindo pairar acima de obstáculos terrestres e desabar com o peso de uma tempestade.
 
-1. Mergulho do Duque do Trovão (Movimento + Principal · 4 Karma): Voa até 9m ignorando terreno e desaba sobre o alvo causando 2d8 elétrico em 2m de raio e deixando o alvo principal Desorientado.
-2. Pluma Para-Raios (Reação · 3 Karma): Fecha as asas contra um ataque, ganhando +3 na CA e eletrocutando armas metálicas que toquem você (1d8).
+1.  Mergulho do Duque do Trovão (Movimento + Principal · 4 Karma): Voa até 9m ignorando terreno e desaba sobre o alvo causando 2d8 elétrico em 2m de raio e deixando o alvo principal Desorientado.
+2.  Pluma Para-Raios (Reação · 3 Karma): Fecha as asas contra um ataque, ganhando +3 na CA e eletrocutando armas metálicas que toquem você (1d8).
 
 **Safra na Morte.** Lei Gong colhe vetores de propulsão eletrostática em baixa altitude.
 
@@ -5760,8 +6110,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O raio de Lei Gong foi criado para atingir malfeitores que se escondem dos olhos humanos; seus ataques elétricos ignoram tetos, paredes finas e furtividade contra quem já agiu na rodada.
 
-1. Clarão Desmascarador (Principal · 4 Karma · 15m): Dispara um raio em ziguezague que faz curvas ao redor de pilares ou coberturas para atingir um inimigo oculto ou em cobertura total, causando 2d8 elétrico e revelando a posição dele para todos.
-2. Marca do Trovão Punitivo (Livre · 2 Karma): Se o alvo marcado atacar um aliado seu pelas costas ou em flanco, sofre 2d6 elétrico imediato.
+1.  Clarão Desmascarador (Principal · 4 Karma · 15m): Dispara um raio em ziguezague que faz curvas ao redor de pilares ou coberturas para atingir um inimigo oculto ou em cobertura total, causando 2d8 elétrico e revelando a posição dele para todos.
+2.  Marca do Trovão Punitivo (Livre · 2 Karma): Se o alvo marcado atacar um aliado seu pelas costas ou em flanco, sofre 2d6 elétrico imediato.
 
 **Safra na Morte.** Lei Gong recolhe algoritmos de condução elétrica não linear através de obstáculos.
 
@@ -5771,17 +6121,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você mantém uma lanterna espiritual vermelha acesa na mão ou flutuando a até 12m; a luz dela guia aliados perdidos ou sob condições mentais e puxa companheiros feridos para longe do naufrágio.
 
-1. Luz que Guia ao Porto (Extra · 3 Karma · 12m): Remove imediatamente Desorientado, Abalado ou Cego de um aliado na luz da lanterna e permite que ele se mova 4,5m na sua direção como Reação livre sem sofrer ataques de oportunidade.
-2. Fogo de Santelmo (Principal · 4 Karma): A lanterna dispara um feixe rubro que causa 2d8 radiante/térmico e reduz a CA Parcial do inimigo em -2.
+1.  Luz que Guia ao Porto (Extra · 3 Karma · 12m): Remove imediatamente Desorientado, Abalado ou Cego de um aliado na luz da lanterna e permite que ele se mova 4,5m na sua direção como Reação livre sem sofrer ataques de oportunidade.
+2.  Fogo de Santelmo (Principal · 4 Karma): A lanterna dispara um feixe rubro que causa 2d8 radiante/térmico e reduz a CA Parcial do inimigo em -2.
 
 **Safra na Morte.** Mazu absorve sistemas de navegação luminosa e extração de aliados sob pressão.
 
-**182. Olhos de Mil Milhas e Ouvidos no Vento** · Qianliyan e Shunfeng'er · Runa Kármica Primordial
+**182. Olhos de Mil Milhas e Ouvidos no Vento** · Qianliyan e Shunfeng’er · Runa Kármica Primordial
 
 **Fenômeno base.** Os dois generais guardiões de Mazu emprestam seus sentidos a você: você enxerga detalhes microscópicos a longa distância e escuta o sussurro ou o puxar de um gatilho antes de o som chegar.
 
-1. Antecipação de Mil Milhas (Passiva + 2 Karma na Reação): Aumenta o alcance de todas as suas armas e técnicas à distância em +6m; ao gastar 2 de Karma como Reação, você avisa um aliado ou a si mesmo de um tiro/emboscada, somando +4 na CA contra aquele ataque.
-2. Ouvir o Ponto Fraco (Extra · 2 Karma): Soma +1d20 no próximo ataque contra um alvo cujo movimento você ouviu nesta rodada.
+1.  Antecipação de Mil Milhas (Passiva + 2 Karma na Reação): Aumenta o alcance de todas as suas armas e técnicas à distância em +6m; ao gastar 2 de Karma como Reação, você avisa um aliado ou a si mesmo de um tiro/emboscada, somando +4 na CA contra aquele ataque.
+2.  Ouvir o Ponto Fraco (Extra · 2 Karma): Soma +1d20 no próximo ataque contra um alvo cujo movimento você ouviu nesta rodada.
 
 **Safra na Morte.** Mazu colhe a integração sensorial de longo alcance para tiro de precisão e defesa.
 
@@ -5789,8 +6139,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao abrir os braços, as águas e o ar turbulento ao seu redor tornam-se calmos como um espelho, amortecendo explosões, chamas e investidas violentas.
 
-1. Decreto de Mar Calmo (Reação · 4 Karma · Raio 4,5m): Quando uma técnica de área ou explosão atinge você e seus aliados no raio, a água serena absorve o pico de energia, reduzindo o dano recebido por todos vocês em 2d6 + Espírito.
-2. Onda de Ressaca Suave (Principal · 4 Karma): Empurra suavemente todos os inimigos a 3m para longe (3m de recuo) causando 2d6 contundente e curando 1d6 de Vida em você.
+1.  Decreto de Mar Calmo (Reação · 4 Karma · Raio 4,5m): Quando uma técnica de área ou explosão atinge você e seus aliados no raio, a água serena absorve o pico de energia, reduzindo o dano recebido por todos vocês em 2d6 + Espírito.
+2.  Onda de Ressaca Suave (Principal · 4 Karma): Empurra suavemente todos os inimigos a 3m para longe (3m de recuo) causando 2d6 contundente e curando 1d6 de Vida em você.
 
 **Safra na Morte.** Mazu recolhe técnicas de dissipação de ondas de choque e energia cinética em área.
 
@@ -5800,8 +6150,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A manga da sua veste (ou uma cabaça na cintura) abre-se como um vórtice escuro capaz de engolir projéteis sobrenaturais, maldições e até invocações ou constructos inimigos enfraquecidos.
 
-1. Engolir na Manga (Principal ou Reação · 4 Karma · 6m): Absorve um projétil kármico/elemental (anulando o dano) ou suga uma invocação/inimigo espiritual causando 2d8 de dano kármico e prendendo-o por 1 rodada se falhar em Vontade/Força.
-2. Devolver Capturado (Extra · 3 Karma): Dispara de volta a energia ou destroço absorvido anteriormente na manga, causando 2d8 de dano a até 9m.
+1.  Engolir na Manga (Principal ou Reação · 4 Karma · 6m): Absorve um projétil kármico/elemental (anulando o dano) ou suga uma invocação/inimigo espiritual causando 2d8 de dano kármico e prendendo-o por 1 rodada se falhar em Vontade/Força.
+2.  Devolver Capturado (Extra · 3 Karma): Dispara de volta a energia ou destroço absorvido anteriormente na manga, causando 2d8 de dano a até 9m.
 
 **Safra na Morte.** Zhong Kui absorve técnicas de contenção dimensional de bolso contra entidades conjuradas.
 
@@ -5809,8 +6159,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Conta a lenda que Zhong Kui era tão feroz que até os demônios tremiam diante de sua pintura; sua presença esmaga a moral de inimigos corruptos, covardes ou invocadores.
 
-1. Encarada do Juiz do Inferno (Extra · 3 Karma · 9m): Teste de Espírito/Presença (ou Intelecto) contra a Vontade do alvo: aplica Abalado e faz com que o alvo sofra +1d6 de dano de todos os seus ataques enquanto estiver com medo.
-2. Expulsar Possessão (Principal · 4 Karma): Golpe que causa 2d8 divino/kármico e encerra imediatamente qualquer controle mental, charme ou condição sobrenatural em um aliado.
+1.  Encarada do Juiz do Inferno (Extra · 3 Karma · 9m): Teste de Espírito/Presença (ou Intelecto) contra a Vontade do alvo: aplica Abalado e faz com que o alvo sofra +1d6 de dano de todos os seus ataques enquanto estiver com medo.
+2.  Expulsar Possessão (Principal · 4 Karma): Golpe que causa 2d8 divino/kármico e encerra imediatamente qualquer controle mental, charme ou condição sobrenatural em um aliado.
 
 **Safra na Morte.** Zhong Kui colhe a projeção de autoridade intimidadora como arma de supressão espiritual.
 
@@ -5818,8 +6168,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua lâmina ou arma brilha com a constelação da Ursa Maior (Sete Estrelas), cortando com facilidade redobrada qualquer ser que use Karma, Bênçãos ou Corrupção.
 
-1. Corte das Sete Estrelas (Principal · 4 Karma): Causa 2d8 cortante/divino; se o alvo possuir qualquer Bênção, Corrupção ou estiver sustentando uma técnica/invocação, o golpe soma +1d8 de dano adicional e reduz o Karma dele em 3.
-2. Passo da Ursa Maior (Movimento · 2 Karma): Move-se em ziguezague pelas 7 posições da constelação (6m), ganhando +2 na CA até o próximo turno.
+1.  Corte das Sete Estrelas (Principal · 4 Karma): Causa 2d8 cortante/divino; se o alvo possuir qualquer Bênção, Corrupção ou estiver sustentando uma técnica/invocação, o golpe soma +1d8 de dano adicional e reduz o Karma dele em 3.
+2.  Passo da Ursa Maior (Movimento · 2 Karma): Move-se em ziguezague pelas 7 posições da constelação (6m), ganhando +2 na CA até o próximo turno.
 
 **Safra na Morte.** Zhong Kui recolhe a esgrima especializada em romper defesas sobrenaturais.
 
@@ -5829,17 +6179,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O espírito de um dragão verde esmeralda enrola-se na sua arma; o primeiro golpe que você desfere após se aproximar de um inimigo carrega um momento angular devastador que parte escudos ao meio.
 
-1. Corte da Lua Crescente (Principal · 4 Karma): Ataque amplo que atinge o alvo principal e até 1 inimigo adjacente a ele, causando 2d10 cortante, ignorando 4 pontos de Redução de Dano e reduzindo a CA Parcial dos atingidos em -2.
-2. Guardar o Portão (Reação · 3 Karma): Crava a arma no chão impedindo qualquer inimigo de passar pelo seu espaço ou pelos 2m adjacentes a você nesta rodada.
+1.  Corte da Lua Crescente (Principal · 4 Karma): Ataque amplo que atinge o alvo principal e até 1 inimigo adjacente a ele, causando 2d10 cortante, ignorando 4 pontos de Redução de Dano e reduzindo a CA Parcial dos atingidos em -2.
+2.  Guardar o Portão (Reação · 3 Karma): Crava a arma no chão impedindo qualquer inimigo de passar pelo seu espaço ou pelos 2m adjacentes a você nesta rodada.
 
 **Safra na Morte.** Guan Yu absorve o domínio de armas pesadas em espaços confinados e modernos.
 
 **188. Vínculo de Irmandade de Sangue** · O Juramento do Jardim dos Pêssegos · Runa Kármica Primordial
 
-**Fenômeno base.** No início da cena, você declara até 2 aliados como seus "Irmãos de Juramento": enquanto lutarem na mesma cena, o sangue e a coragem de um sustentam a vida do outro.
+**Fenômeno base.** No início da cena, você declara até 2 aliados como seus “Irmãos de Juramento”: enquanto lutarem na mesma cena, o sangue e a coragem de um sustentam a vida do outro.
 
-1. Vingar o Irmão (Reação · 3 Karma): Sempre que um aliado juramentado a até 9m sofrer dano de um inimigo, você pode avançar 4,5m na direção daquele inimigo e desferir um ataque básico com +1d20 na Reserva.
-2. Dividir o Cálice Amargo (Reação · 3 Karma): Transfere metade do dano que um aliado juramentado acabou de sofrer para si mesmo (reduzindo essa metade transferida em Etapa pontos).
+1.  Vingar o Irmão (Reação · 3 Karma): Sempre que um aliado juramentado a até 9m sofrer dano de um inimigo, você pode avançar 4,5m na direção daquele inimigo e desferir um ataque básico com +1d20 na Reserva.
+2.  Dividir o Cálice Amargo (Reação · 3 Karma): Transfere metade do dano que um aliado juramentado acabou de sofrer para si mesmo (reduzindo essa metade transferida em Etapa pontos).
 
 **Safra na Morte.** Guan Yu colhe a sinergia tática de proteção mútua entre companheiros de esquadrão.
 
@@ -5847,8 +6197,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Conta a história que Guan Yu jogou uma partida de Go calmamente enquanto o médico raspava o veneno diretamente do osso do seu braço sem anestesia; você ignora completamente o choque da dor física.
 
-1. Partida Inabalável (Livre ou Reação · 3 Karma): Você ignora todas as penalidades de dados causadas por ferimentos, Sangramento, Envenenado, Lento ou Fraturas por 2 rodadas e recebe 2d8 + Constituição de Escudo Temporário.
-2. Olhar do Rosto Vermelho (Extra · 2 Karma): Quando você sofre um ataque e não recua nem um centímetro, o atacante fica Abalado pela sua frieza.
+1.  Partida Inabalável (Livre ou Reação · 3 Karma): Você ignora todas as penalidades de dados causadas por ferimentos, Sangramento, Envenenado, Lento ou Fraturas por 2 rodadas e recebe 2d8 + Constituição de Escudo Temporário.
+2.  Olhar do Rosto Vermelho (Extra · 2 Karma): Quando você sofre um ataque e não recua nem um centímetro, o atacante fica Abalado pela sua frieza.
 
 **Safra na Morte.** Guan Yu recolhe o bloqueio neural voluntário de receptores de dor em combate extremo.
 
@@ -5860,8 +6210,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus golpes carregam o trovão tropical úmido e pesado que sacode o chão e as árvores antes mesmo de o raio cair, paralisando a presa pelo choque acústico.
 
-1. Trovão da Mata Fechada (Principal · 4 Karma · 9m): Causa 2d8 elétrico/sônico no alvo e em 2m ao redor dele; os atingidos perdem a Reação até o próximo turno e sofrem -2 na CA de esquiva.
-2. Eco de Tempestade (Extra · 3 Karma): No início do seu próximo turno, o estrondo reverbera no mesmo local causando mais 1d8 sônico em quem permaneceu ali.
+1.  Trovão da Mata Fechada (Principal · 4 Karma · 9m): Causa 2d8 elétrico/sônico no alvo e em 2m ao redor dele; os atingidos perdem a Reação até o próximo turno e sofrem -2 na CA de esquiva.
+2.  Eco de Tempestade (Extra · 3 Karma): No início do seu próximo turno, o estrondo reverbera no mesmo local causando mais 1d8 sônico em quem permaneceu ali.
 
 **Safra na Morte.** Tupã absorve a propagação de ondas acústicas de baixa frequência em ambientes densos.
 
@@ -5869,8 +6219,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você se move como o raio que salta da nuvem para a copa mais alta: seu corpo ricocheteia entre paredes, colunas ou árvores transformado em eletricidade dourada.
 
-1. Ricochete de Relâmpago (Movimento + Principal · 4 Karma): Salta em até 2 superfícies verticais (percorrendo até 9m sem tocar o chão) e desaba sobre o inimigo com +2 no acerto, causando 2d10 perfurante/elétrico.
-2. Aterramento Brusco (Reação · 3 Karma): Descarrega a eletricidade de um golpe recebido diretamente para o solo, reduzindo o dano em 2d6 e eletrificando 2m ao redor.
+1.  Ricochete de Relâmpago (Movimento + Principal · 4 Karma): Salta em até 2 superfícies verticais (percorrendo até 9m sem tocar o chão) e desaba sobre o inimigo com +2 no acerto, causando 2d10 perfurante/elétrico.
+2.  Aterramento Brusco (Reação · 3 Karma): Descarrega a eletricidade de um golpe recebido diretamente para o solo, reduzindo o dano em 2d6 e eletrificando 2m ao redor.
 
 **Safra na Morte.** Tupã colhe a cinemática de ricochete tridimensional em estruturas verticais.
 
@@ -5878,8 +6228,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Uma chuva morna e carregada de ozônio cai em 4,5m ao seu redor, lavando ferimentos e revigorando a musculatura dos aliados enquanto pesa sobre as roupas dos inimigos.
 
-1. Aguaceiro Sagrado (Extra · 3 Karma · Raio 4,5m): Apaga chamas/ácidos na área, restaura 1d8 + Espírito de Vida em você e em um aliado no raio, e deixa os inimigos na chuva Encharcados (eles sofrem +4 de dano de qualquer ataque elétrico ou frio).
-2. Cortina d'Água (Reação · 3 Karma): A chuva engrossa por um segundo, impondo -2 em ataques à distância contra quem está dentro.
+1.  Aguaceiro Sagrado (Extra · 3 Karma · Raio 4,5m): Apaga chamas/ácidos na área, restaura 1d8 + Espírito de Vida em você e em um aliado no raio, e deixa os inimigos na chuva Encharcados (eles sofrem +4 de dano de qualquer ataque elétrico ou frio).
+2.  Cortina d’Água (Reação · 3 Karma): A chuva engrossa por um segundo, impondo -2 em ataques à distância contra quem está dentro.
 
 **Safra na Morte.** Tupã recolhe a sinergia entre precipitação atmosférica e condução bioelétrica.
 
@@ -5889,8 +6239,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A luz fria da lua condensa gotas de orvalho prateado sobre sua pele e armas; esse líquido fecha cortes ao contato com aliados e adormece os nervos de quem você fere.
 
-1. Lâmina de Orvalho Frio (Principal · 4 Karma): Ataque que causa 2d8 frio/kármico e entorpece o membro atingido (-2 nos ataques do alvo por 1 rodada); ao mesmo tempo, o orvalho respinga curando 1d8 de Vida em você ou em um aliado adjacente.
-2. Bruma de Jaci (Extra · 3 Karma): Cria um véu prateado de 3m que concede camuflagem parcial (+2 CA) e limpa venenos leves.
+1.  Lâmina de Orvalho Frio (Principal · 4 Karma): Ataque que causa 2d8 frio/kármico e entorpece o membro atingido (-2 nos ataques do alvo por 1 rodada); ao mesmo tempo, o orvalho respinga curando 1d8 de Vida em você ou em um aliado adjacente.
+2.  Bruma de Jaci (Extra · 3 Karma): Cria um véu prateado de 3m que concede camuflagem parcial (+2 CA) e limpa venenos leves.
 
 **Safra na Morte.** Jaci absorve o uso de condensação térmica noturna para analgesia e cicatrização rápida.
 
@@ -5898,8 +6248,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como Jaci puxa as marés dos rios e faz a seiva subir pelas árvores à noite, você exerce uma tração gravitacional silenciosa sobre o sangue e o equilíbrio dos corpos a até 12m.
 
-1. Maré Alta Interna (Principal · 4 Karma · 12m): Puxa os fluidos e o centro de gravidade do alvo, causando 2d6 kármico, arrastando-o 3m na direção que você escolher e deixando-o Desorientado.
-2. Flutuação de Maré Baixa (Movimento · 2 Karma): Reduz o próprio peso sob a luz lunar, saltando até 6m sem precisar de corrida e caindo sem sofrer dano de queda.
+1.  Maré Alta Interna (Principal · 4 Karma · 12m): Puxa os fluidos e o centro de gravidade do alvo, causando 2d6 kármico, arrastando-o 3m na direção que você escolher e deixando-o Desorientado.
+2.  Flutuação de Maré Baixa (Movimento · 2 Karma): Reduz o próprio peso sob a luz lunar, saltando até 6m sem precisar de corrida e caindo sem sofrer dano de queda.
 
 **Safra na Morte.** Jaci colhe o controle gravitacional sutil sobre líquidos corporais em combate.
 
@@ -5907,8 +6257,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O brilho nos seus olhos desperta no peito do adversário uma saudade súbita e avassaladora de casa e de quem ele ama, esvaziando a vontade dele de lutar até a morte.
 
-1. Luar da Saudade (Principal · 4 Karma · 9m): Teste contra a Vontade do alvo; causa 2d6 mental e faz o inimigo hesitar profundamente: ele fica impedido de realizar ataques ofensivos contra você no próximo turno (a menos que gaste 3 de Karma para forçar a mente) e sofre -2 na CA Parcial.
-2. Consolo Materno (Reação · 3 Karma): Concede +2d6 de Escudo Temporário a um aliado que acabou de sofrer um ataque crítico ou mental.
+1.  Luar da Saudade (Principal · 4 Karma · 9m): Teste contra a Vontade do alvo; causa 2d6 mental e faz o inimigo hesitar profundamente: ele fica impedido de realizar ataques ofensivos contra você no próximo turno (a menos que gaste 3 de Karma para forçar a mente) e sofre -2 na CA Parcial.
+2.  Consolo Materno (Reação · 3 Karma): Concede +2d6 de Escudo Temporário a um aliado que acabou de sofrer um ataque crítico ou mental.
 
 **Safra na Morte.** Jaci recolhe a manipulação de memórias afetivas para desarme psicológico de agressores.
 
@@ -5918,8 +6268,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao seu redor o ar torna-se úmido, abafado e escaldante como o meio-dia na linha do equador; respirar e mover-se com armadura perto de você drena o fôlego dos inimigos rapidamente.
 
-1. Onda de Insolação (Principal · 4 Karma · Raio 4,5m): Causa 2d8 térmico em todos os inimigos na área e impõe Fadiga de Mormaço por 1 rodada (qualquer inimigo na área que correr ou usar ataque corpo a corpo pesado perde 2 de Karma ou sofre 4 de dano térmico).
-2. Suor de Brasa (Passiva na Zona): Você recebe +2 em Fortitude e ignora penalidades de calor ou fumaça.
+1.  Onda de Insolação (Principal · 4 Karma · Raio 4,5m): Causa 2d8 térmico em todos os inimigos na área e impõe Fadiga de Mormaço por 1 rodada (qualquer inimigo na área que correr ou usar ataque corpo a corpo pesado perde 2 de Karma ou sofre 4 de dano térmico).
+2.  Suor de Brasa (Passiva na Zona): Você recebe +2 em Fortitude e ignora penalidades de calor ou fumaça.
 
 **Safra na Morte.** Guaraci absorve a termodinâmica de calor úmido para desgaste acelerado de vigor inimigo.
 
@@ -5927,8 +6277,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você faz descer feixes finos e diagonais de luz solar intensa (como os raios que atravessam a copa fechada da floresta), criando pilares luminosos que queimam inimigos e curam aliados.
 
-1. Feixe de Clareira (Principal · 4 Karma · 15m): Desce um raio de luz concentrada que ignora cobertura parcial, causa 2d8 radiante no inimigo e ilumina o espaço dele (aliados que atacarem aquele espaço até o próximo turno recebem +2 no acerto).
-2. Passo entre Feixes (Movimento · 3 Karma): Teleporta-se instantaneamente de um ponto iluminado para outro a até 6m.
+1.  Feixe de Clareira (Principal · 4 Karma · 15m): Desce um raio de luz concentrada que ignora cobertura parcial, causa 2d8 radiante no inimigo e ilumina o espaço dele (aliados que atacarem aquele espaço até o próximo turno recebem +2 no acerto).
+2.  Passo entre Feixes (Movimento · 3 Karma): Teleporta-se instantaneamente de um ponto iluminado para outro a até 6m.
 
 **Safra na Morte.** Guaraci colhe a canalização de feixes solares estreitos em ambientes cobertos e subterrâneos.
 
@@ -5936,8 +6286,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sua presença desperta o metabolismo diurno máximo nos corpos aliados: músculos respondem mais rápido, pupilas se ajustam e o medo do escuro desaparece.
 
-1. Despertar do Sol Alto (Extra · 3 Karma · 9m): Você e até 2 aliados a 9m ganham +3m de Movimento, +1d20 em testes de Percepção/Iniciativa e somam +1d6 radiante no primeiro ataque que acertarem nesta rodada.
-2. Clarão de Meio-Dia (Reação · 3 Karma): Quando atacado de surpresa ou por inimigo furtivo, emite um flash solar que anula a vantagem do inimigo e aplica Desorientado nele.
+1.  Despertar do Sol Alto (Extra · 3 Karma · 9m): Você e até 2 aliados a 9m ganham +3m de Movimento, +1d20 em testes de Percepção/Iniciativa e somam +1d6 radiante no primeiro ataque que acertarem nesta rodada.
+2.  Clarão de Meio-Dia (Reação · 3 Karma): Quando atacado de surpresa ou por inimigo furtivo, emite um flash solar que anula a vantagem do inimigo e aplica Desorientado nele.
 
 **Safra na Morte.** Guaraci recolhe o estímulo biofotonico sobre reflexos neuromusculares.
 
@@ -5947,8 +6297,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quanto mais furiosamente um inimigo tenta caçar ou focar você, mais sua silhueta parece escapar por entre árvores fantasmas, deixando o caçador exausto e perdido.
 
-1. Passo do Cervo Branco (Reação ao ser atacado · 3 Karma): Sua imagem se desfaz em névoa branca e olhos de brasa; você soma +3 na CA contra o ataque e se move 3m sem provocar ataques de oportunidade (se o inimigo errar, ele perde 2m de Movimento no próximo turno).
-2. Galhada de Brasa (Principal · 4 Karma): Investida espectral que causa 2d8 perfurante/térmico e empurra o alvo em 3m.
+1.  Passo do Cervo Branco (Reação ao ser atacado · 3 Karma): Sua imagem se desfaz em névoa branca e olhos de brasa; você soma +3 na CA contra o ataque e se move 3m sem provocar ataques de oportunidade (se o inimigo errar, ele perde 2m de Movimento no próximo turno).
+2.  Galhada de Brasa (Principal · 4 Karma): Investida espectral que causa 2d8 perfurante/térmico e empurra o alvo em 3m.
 
 **Safra na Morte.** Anhangá absorve técnicas de evasão psicológica que induzem o erro por excesso de agressividade do atacante.
 
@@ -5956,8 +6306,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Anhangá pune implacavelmente quem ataca filhotes ou seres indefesos; você marca o aliado mais ferido do seu grupo com a proteção sagrada da mata.
 
-1. Marca de Caça Proibida (Extra · 3 Karma · 12m): Protege um aliado por 2 rodadas: qualquer inimigo que atacar esse aliado sofre imediatamente 2d6 de dano mental/térmico pelos olhos de fogo de Anhangá e fica Abalado.
-2. Vingança da Mata (Principal · 4 Karma): Contra um inimigo que tenha ferido um aliado seu na última rodada, seu ataque causa 2d8 + Etapa de dano e reduz a CA Total dele em -2.
+1.  Marca de Caça Proibida (Extra · 3 Karma · 12m): Protege um aliado por 2 rodadas: qualquer inimigo que atacar esse aliado sofre imediatamente 2d6 de dano mental/térmico pelos olhos de fogo de Anhangá e fica Abalado.
+2.  Vingança da Mata (Principal · 4 Karma): Contra um inimigo que tenha ferido um aliado seu na última rodada, seu ataque causa 2d8 + Etapa de dano e reduz a CA Total dele em -2.
 
 **Safra na Morte.** Anhangá colhe gatilhos kármicos de retaliação automática contra agressores de alvos vulneráveis.
 
@@ -5965,8 +6315,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus olhos brilham como duas brasas vermelhas no escuro; encarar você faz o inimigo ver o cenário se contorcer em galhos secos, vultos e ruídos que não existem.
 
-1. Delírio de Anhangá (Principal · 4 Karma · 9m): Causa 2d6 mental/kármico e embaralha os sentidos do alvo por 1 rodada: para o alvo, aliados e inimigos parecem vultos idênticos (ele sofre -3 no acerto e não pode fazer ataques de oportunidade).
-2. Assovio daNoite (Extra · 2 Karma): Faz um som fantasma surgir atrás do inimigo, virando a guarda dele e reduzindo a CA Parcial dele em -2.
+1.  Delírio de Anhangá (Principal · 4 Karma · 9m): Causa 2d6 mental/kármico e embaralha os sentidos do alvo por 1 rodada: para o alvo, aliados e inimigos parecem vultos idênticos (ele sofre -3 no acerto e não pode fazer ataques de oportunidade).
+2.  Assovio daNoite (Extra · 2 Karma): Faz um som fantasma surgir atrás do inimigo, virando a guarda dele e reduzindo a CA Parcial dele em -2.
 
 **Safra na Morte.** Anhangá recolhe o sequestro do córtex visual e auditivo por estímulos kármicos de medo.
 
@@ -5976,8 +6326,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seu fogo-fátuo azul e esverdeado possui inteligência seletiva: ele desliza sobre plantas, madeira, aliados e seus próprios equipamentos sem chamuscá-los, queimando exclusivamente a carne e o Karma dos invasores/inimigos.
 
-1. Serpente de Fogo-Fátuo (Principal · 4 Karma · Linha sinuosa de 9m): Uma língua de chama azul serpenteia entre aliados sem feri-los e atinge até 2 inimigos, causando 2d8 térmico/kármico no primeiro e 1d8 no segundo.
-2. Anel Protetor de Campina (Extra · 3 Karma): Cria um círculo de chamas azuis ao redor de si ou de um aliado; aliados dentro não sofrem nada, mas inimigos que entrarem sofrem 2d6 de dano.
+1.  Serpente de Fogo-Fátuo (Principal · 4 Karma · Linha sinuosa de 9m): Uma língua de chama azul serpenteia entre aliados sem feri-los e atinge até 2 inimigos, causando 2d8 térmico/kármico no primeiro e 1d8 no segundo.
+2.  Anel Protetor de Campina (Extra · 3 Karma): Cria um círculo de chamas azuis ao redor de si ou de um aliado; aliados dentro não sofrem nada, mas inimigos que entrarem sofrem 2d6 de dano.
 
 **Safra na Morte.** Boitatá absorve o controle de combustão seletiva por reconhecimento de assinatura kármica.
 
@@ -5985,8 +6335,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Segundo a lenda, o Boitatá ficou transparente e luminoso após comer apenas os olhos dos animais mortos no dilúvio; seu corpo acumula luz interna que pode estourar em um clarão ofuscante insuportável.
 
-1. Clarão dos Mil Olhos (Extra ou Reação · 4 Karma · Raio 4,5m): Seu corpo brilha como um sol azulado por um segundo: todos os inimigos a até 4,5m que estiverem olhando na sua direção sofrem 1d10 radiante e ficam Desorientados / Cegos (-3 no acerto e na Percepção) até o final do próximo turno.
-2. Olhar Predador (Passiva): Você enxerga perfeitamente na escuridão total e percebe a direção para onde cada inimigo está olhando.
+1.  Clarão dos Mil Olhos (Extra ou Reação · 4 Karma · Raio 4,5m): Seu corpo brilha como um sol azulado por um segundo: todos os inimigos a até 4,5m que estiverem olhando na sua direção sofrem 1d10 radiante e ficam Desorientados / Cegos (-3 no acerto e na Percepção) até o final do próximo turno.
+2.  Olhar Predador (Passiva): Você enxerga perfeitamente na escuridão total e percebe a direção para onde cada inimigo está olhando.
 
 **Safra na Morte.** Boitatá colhe a sobrecarga de fotorreceptores oculares em combate aproximado.
 
@@ -5994,8 +6344,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus movimentos de luta de solo, esquiva e agarrão imitam o bote elástico de uma jiboia de fogo líquido, deslizando por baixo da guarda inimiga para sufocar e queimar ao mesmo tempo.
 
-1. Bote de Espiral Azul (Principal · 4 Karma): Avança 3m rasteiro e se enrola no ataque contra o alvo, causando 2d8 contundente/térmico e prendendo o alvo (ele fica Lento e sofre 4 de dano de fogo no início do turno se não se soltar).
-2. Troca de Pele de Cinza (Reação · 3 Karma): Escapa instantaneamente de qualquer agarrão, imobilização ou rede deixando uma casca de fogo que explode em 1d8 no agressor.
+1.  Bote de Espiral Azul (Principal · 4 Karma): Avança 3m rasteiro e se enrola no ataque contra o alvo, causando 2d8 contundente/térmico e prendendo o alvo (ele fica Lento e sofre 4 de dano de fogo no início do turno se não se soltar).
+2.  Troca de Pele de Cinza (Reação · 3 Karma): Escapa instantaneamente de qualquer agarrão, imobilização ou rede deixando uma casca de fogo que explode em 1d8 no agressor.
 
 **Safra na Morte.** Boitatá recolhe técnicas de luta agarrada combinadas com transferência térmica contínua.
 
@@ -6005,8 +6355,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Seus pés têm aderência perfeita em troncos, vigas, muros e colunas; você trata paredes verticais como chão plano para correr e saltar sobre o ponto cego dos inimigos.
 
-1. Queda do Galho Seco (Movimento + Principal · 4 Karma): Caminha até 6 m por uma superfície vertical ou obstáculo e salta sobre o alvo: o ataque recebe +1d20 na Reserva, causa 2d8 contundente/perfurante e deixa o alvo Desorientado.
-2. Sumir na Folhagem (Reação · 3 Karma): Após sofrer ou errar um ataque, salta 3 m para uma cobertura ou parede próxima entrando em cobertura parcial (+2 CA).
+1.  Queda do Galho Seco (Movimento + Principal · 4 Karma): Caminha até 6 m por uma superfície vertical ou obstáculo e salta sobre o alvo: o ataque recebe +1d20 na Reserva, causa 2d8 contundente/perfurante e deixa o alvo Desorientado.
+2.  Sumir na Folhagem (Reação · 3 Karma): Após sofrer ou errar um ataque, salta 3 m para uma cobertura ou parede próxima entrando em cobertura parcial (+2 CA).
 
 **Safra na Morte.** Curupira colhe a acrobacia de combate vertical e emboscadas de cota superior.
 
@@ -6014,8 +6364,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você emite um assovio agudo cujo som bate nas superfícies e parece vir de todas as direções ao mesmo tempo, destruindo o senso de direção e equilíbrio do ouvido interno inimigo.
 
-1. Assovio de Perdição (Principal · 4 Karma · 12m): Causa 2d6 sônico/mental no alvo; no próximo turno dele, o senso de direção dele se inverte (para se mover na direção que deseja, ele precisa gastar o dobro de Movimento e vencer um teste de Vontade, ou caminha na direção escolhida por você).
-2. Batida no Tronco (Sapopema) (Extra · 2 Karma): Bate o calcanhar no chão ou parede enviando um sinal sônico que concede +2 na CA e na Iniciativa de aliados a 12m.
+1.  Assovio de Perdição (Principal · 4 Karma · 12m): Causa 2d6 sônico/mental no alvo; no próximo turno dele, o senso de direção dele se inverte (para se mover na direção que deseja, ele precisa gastar o dobro de Movimento e vencer um teste de Vontade, ou caminha na direção escolhida por você).
+2.  Batida no Tronco (Sapopema) (Extra · 2 Karma): Bate o calcanhar no chão ou parede enviando um sinal sônico que concede +2 na CA e na Iniciativa de aliados a 12m.
 
 **Safra na Morte.** Curupira colhe a manipulação do sistema vestibular humano por frequências acústicas.
 
@@ -6023,37 +6373,37 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Raízes e cipós fibrosos brotam de frestas no piso, madeira ou da sua própria cintura para dar rasteiras e amarrar os tornozelos de quem invade seu território.
 
-1. Armadilha de Cipó Tenso (Principal · 4 Karma · 9m): Cipós chicoteiam as pernas do alvo causando 2d8 contundente/cortante e derrubando-o (Caído).
-2. Casca de Árvore-Ferro (Reação · 3 Karma): Endurece a pele com fibras de madeira avermelhada, recebendo Redução de Dano 5 contra o golpe recebido.
+1.  Armadilha de Cipó Tenso (Principal · 4 Karma · 9m): Cipós chicoteiam as pernas do alvo causando 2d8 contundente/cortante e derrubando-o (Caído).
+2.  Casca de Árvore-Ferro (Reação · 3 Karma): Endurece a pele com fibras de madeira avermelhada, recebendo Redução de Dano 5 contra o golpe recebido.
 
 **Safra na Morte.** Curupira recolhe o uso de fibras vegetais de alta tração como armadilhas de acionamento instantâneo.
 
-#### Iara · A Mãe d'Água, do Canto Hipnótico e do Redemoinho de Rio Escuro
+#### Iara · A Mãe d’Água, do Canto Hipnótico e do Redemoinho de Rio Escuro
 
-**208. Ressonância de Fascínio Letal** · O Canto da Mãe d'Água · Técnica Divina / Fenômeno
+**208. Ressonância de Fascínio Letal** · O Canto da Mãe d’Água · Técnica Divina / Fenômeno
 
 **Fenômeno base.** Sua voz (ou o som harmônico da sua arma cortando o ar) cria uma melodia hipnótica que desliga o instinto de autodefesa do alvo, fazendo-o caminhar docilmente na direção do próprio fim.
 
-1. Chamado para o Fundo (Principal · 4 Karma · 12m): Teste contra a Vontade do alvo: causa 2d6 mental e faz o inimigo caminhar imediatamente 4,5m na sua direção (entrando em armadilhas, bordas ou no alcance corpo a corpo dos seus aliados) com a guarda aberta (-2 na CA Total até o próximo turno).
-2. Voz que Acalma a Dor (Extra · 3 Karma): Canta uma nota curta que limpa Abalado de um aliado a 9m e concede a ele 1d10 + Presença/Espírito de Escudo Temporário.
+1.  Chamado para o Fundo (Principal · 4 Karma · 12m): Teste contra a Vontade do alvo: causa 2d6 mental e faz o inimigo caminhar imediatamente 4,5m na sua direção (entrando em armadilhas, bordas ou no alcance corpo a corpo dos seus aliados) com a guarda aberta (-2 na CA Total até o próximo turno).
+2.  Voz que Acalma a Dor (Extra · 3 Karma): Canta uma nota curta que limpa Abalado de um aliado a 9m e concede a ele 1d10 + Presença/Espírito de Escudo Temporário.
 
 **Safra na Morte.** Iara absorve frequências vocais de indução hipnótica que superam o barulho de combate.
 
-**209. Espelho d'Água no Chão Seco** · O Remanso do Rio Negro · Dobra Elemental Anômala
+**209. Espelho d’Água no Chão Seco** · O Remanso do Rio Negro · Dobra Elemental Anômala
 
 **Fenômeno base.** O chão num raio de 3m ao seu redor adquire o reflexo e a profundidade ilusória de um rio escuro; você desliza como se nadasse, enquanto inimigos sentem a água fria puxando suas pernas.
 
-1. Redemoinho de Igapó (Principal · 4 Karma · 6m): Cria um vórtice de água escura sob o alvo causando 2d8 contundente/frio e deixando-o Lento e sem poder saltar.
-2. Submergir no Reflexo (Reação · 4 Karma): Quando atacado, mergulha no "espelho d'água" do piso reduzindo o dano em 2d8 e emergindo a 3m de distância.
+1.  Redemoinho de Igapó (Principal · 4 Karma · 6m): Cria um vórtice de água escura sob o alvo causando 2d8 contundente/frio e deixando-o Lento e sem poder saltar.
+2.  Submergir no Reflexo (Reação · 4 Karma): Quando atacado, mergulha no “espelho d’água” do piso reduzindo o dano em 2d8 e emergindo a 3m de distância.
 
-**Safra na Morte.** Iara colhe a transmutação superficial de pisos sólidos em lâminas d'água táticas.
+**Safra na Morte.** Iara colhe a transmutação superficial de pisos sólidos em lâminas d’água táticas.
 
 **210. Asfixia de Água Doce** · O Beijo que Rouba o Fôlego · Runa Kármica Primordial
 
 **Fenômeno base.** Ao tocar ou acertar um inimigo, você condensa umidade diretamente dentro das vias aéreas dele, provocando a sensação imediata de afogamento em terra firme.
 
-1. Pulmão Alagado (Principal · 4 Karma · Toque/6m): Causa 2d8 necrótico/frio e priva o alvo de ar: o alvo fica Silenciado (não pode falar nem usar comandos vocais) e sofre -1d20 em todos os testes físicos até recuperar o fôlego no fim do próximo turno.
-2. Respiração Anfíbia (Passiva): Você nunca sufoca em água, fumaça ou gases tóxicos.
+1.  Pulmão Alagado (Principal · 4 Karma · Toque/6m): Causa 2d8 necrótico/frio e priva o alvo de ar: o alvo fica Silenciado (não pode falar nem usar comandos vocais) e sofre -1d20 em todos os testes físicos até recuperar o fôlego no fim do próximo turno.
+2.  Respiração Anfíbia (Passiva): Você nunca sufoca em água, fumaça ou gases tóxicos.
 
 **Safra na Morte.** Iara recolhe técnicas de privação de oxigênio por condensação interna.
 
@@ -6063,8 +6413,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como a mandioca brava é um veneno mortal quando crua (manipueira), mas torna-se o alimento que sustenta a vida quando processada pelo fogo e pela prensa, você domina a conversão instantânea entre toxina letal e cura pura.
 
-1. Extrair Manipueira (Principal · 4 Karma · 9m): Dispara seiva leitosa tóxica que causa 2d8 de dano de veneno/ácido e aplica Envenenado (o alvo perde 4 de Vida no início do turno e sofre -2 em Fortitude).
-2. Prensar em Alimento (Extra · 3 Karma): Drena a condição Envenenado de um inimigo (ou usa suas próprias reservas) para criar um bolo de energia branca que cura 2d8 + Espírito de Vida em você ou em um aliado a 6m.
+1.  Extrair Manipueira (Principal · 4 Karma · 9m): Dispara seiva leitosa tóxica que causa 2d8 de dano de veneno/ácido e aplica Envenenado (o alvo perde 4 de Vida no início do turno e sofre -2 em Fortitude).
+2.  Prensar em Alimento (Extra · 3 Karma): Drena a condição Envenenado de um inimigo (ou usa suas próprias reservas) para criar um bolo de energia branca que cura 2d8 + Espírito de Vida em você ou em um aliado a 6m.
 
 **Safra na Morte.** Ceuci absorve a bioquímica de reversão molecular entre alcaloides tóxicos e nutrientes celulares.
 
@@ -6072,17 +6422,17 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** No mito, a raiz sagrada brotou da terra onde o corpo de Mani foi enterrado; qualquer ponto do campo onde você ou um aliado tenha perdido Vida torna-se solo fértil que brota proteção e força.
 
-1. Brotar da Terra (Reação ao sofrer dano ou Extra · 3 Karma): O local onde você sangrou floresce em raízes brancas que concedem 2d6 + Constituição de Escudo Temporário a você (ou a um aliado pisando ali) e aumentam o dano do próximo ataque em +4.
-2. Colheita de Raízes (Principal · 4 Karma): Faz as raízes do solo fértil chicotearem os inimigos a até 6m, causando 2d8 contundente.
+1.  Brotar da Terra (Reação ao sofrer dano ou Extra · 3 Karma): O local onde você sangrou floresce em raízes brancas que concedem 2d6 + Constituição de Escudo Temporário a você (ou a um aliado pisando ali) e aumentam o dano do próximo ataque em +4.
+2.  Colheita de Raízes (Principal · 4 Karma): Faz as raízes do solo fértil chicotearem os inimigos a até 6m, causando 2d8 contundente.
 
 **Safra na Morte.** Ceuci colhe o ciclo de reciclagem de dano vital em fortificação de terreno.
 
-**213. Ritmo das Estações Agrícolas** · A Estrela D'Alva da Plantação · Técnica Divina / Fenômeno
+**213. Ritmo das Estações Agrícolas** · A Estrela D’Alva da Plantação · Técnica Divina / Fenômeno
 
 **Fenômeno base.** Seu Karma alterna entre o tempo de Plantar (preparar e acumular energia em silêncio) e o tempo de Colher (descarregar tudo com rendimento multiplicado).
 
-1. Semear no Turno (Extra · 2 Karma): Planta uma semente de Karma no chão ou no próprio peito; no próximo turno (Colheita), ela germina devolvendo 4 de Karma (lucro líquido de +2 Karma) ou somando +2d6 de dano à sua primeira técnica.
-2. Terra Arada (Movimento · 2 Karma): Transforma 4,5m de piso à sua frente em terra macia que anula dano de queda para aliados e reduz o movimento inimigo pela metade.
+1.  Semear no Turno (Extra · 2 Karma): Planta uma semente de Karma no chão ou no próprio peito; no próximo turno (Colheita), ela germina devolvendo 4 de Karma (lucro líquido de +2 Karma) ou somando +2d6 de dano à sua primeira técnica.
+2.  Terra Arada (Movimento · 2 Karma): Transforma 4,5m de piso à sua frente em terra macia que anula dano de queda para aliados e reduz o movimento inimigo pela metade.
 
 **Safra na Morte.** Ceuci recolhe a economia de investimento retardado de Karma em combates prolongados.
 
@@ -6092,8 +6442,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Jurupari visita os adormecidos sentando-se sobre o peito deles e travando seus membros e gritos; você projeta essa paralisia do sono sobre inimigos acordados em pleno combate.
 
-1. Paralisia de Pesadelo (Principal · 4 Karma · 9m): Sua sombra salta sobre o peito do alvo causando 2d8 mental/necrótico; se o alvo não superar sua CD em Vontade/Fortitude, seus membros travam (Lento, -2 na CA Total e impedido de gritar ou usar Reações por 1 rodada).
-2. Alimentar-se do Pavor (Passiva): Contra alvos que estejam Abalados, Lentos ou Silenciados, seus ataques somam +1d6 de dano e recuperam 2 de Vida.
+1.  Paralisia de Pesadelo (Principal · 4 Karma · 9m): Sua sombra salta sobre o peito do alvo causando 2d8 mental/necrótico; se o alvo não superar sua CD em Vontade/Fortitude, seus membros travam (Lento, -2 na CA Total e impedido de gritar ou usar Reações por 1 rodada).
+2.  Alimentar-se do Pavor (Passiva): Contra alvos que estejam Abalados, Lentos ou Silenciados, seus ataques somam +1d6 de dano e recuperam 2 de Vida.
 
 **Safra na Morte.** Jurupari absorve a indução de atonia muscular REM em adversários conscientes.
 
@@ -6101,8 +6451,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O som grave que emana das suas armas ou da sua respiração carrega as Leis Secretas de Jurupari: quem não tem permissão para ouvir ou olhar para o ritual sofre punição espiritual imediata.
 
-1. Sopro da Flauta de Osso (Extra · 3 Karma · Raio 6m): Emite uma nota grave por 1 rodada; inimigos dentro de 6m que olharem diretamente para você para declarar um ataque sofrem 1d10 de dano mental/sônico automático antes de rolarem o ataque (ou precisam atacar de olhos fechados com -3 no acerto).
-2. Segredo de Iniciação (Reação · 3 Karma): Torna a técnica de um aliado a 9m invisível e silenciosa, reduzindo em -2 a defesa do inimigo contra ela.
+1.  Sopro da Flauta de Osso (Extra · 3 Karma · Raio 6m): Emite uma nota grave por 1 rodada; inimigos dentro de 6m que olharem diretamente para você para declarar um ataque sofrem 1d10 de dano mental/sônico automático antes de rolarem o ataque (ou precisam atacar de olhos fechados com -3 no acerto).
+2.  Segredo de Iniciação (Reação · 3 Karma): Torna a técnica de um aliado a 9m invisível e silenciosa, reduzindo em -2 a defesa do inimigo contra ela.
 
 **Safra na Morte.** Jurupari colhe o uso de tabus sensoriais como escudo psicológico ativo.
 
@@ -6110,8 +6460,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você condensa a escuridão espessa da floresta meia-noite ao redor do seu manto ou arma, apagando fontes de luz e engolindo projéteis que entram no breu.
 
-1. Manto de Breu Fechado (Principal · 4 Karma · 9m): Envolve o alvo em uma esfera de escuridão absoluta de 2m causando 2d8 necrótico/kármico e isolando a visão dele do resto do campo por 1 rodada.
-2. Passo na Escuridão (Movimento · 2 Karma): Enquanto estiver em sombra ou penumbra, você ganha +3m de Movimento e +1d20 em Furtividade/Acrobacia.
+1.  Manto de Breu Fechado (Principal · 4 Karma · 9m): Envolve o alvo em uma esfera de escuridão absoluta de 2m causando 2d8 necrótico/kármico e isolando a visão dele do resto do campo por 1 rodada.
+2.  Passo na Escuridão (Movimento · 2 Karma): Enquanto estiver em sombra ou penumbra, você ganha +3m de Movimento e +1d20 em Furtividade/Acrobacia.
 
 **Safra na Morte.** Jurupari recolhe técnicas de privação luminosa localizada contra esquadrões táticos.
 
@@ -6123,8 +6473,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Todo o ferro, aço, engrenagem ou arma de fogo em um raio de 9m reconhece você como seu senhor; suas armas nunca travam, e o metal na mão dos seus inimigos hesita em ferir você.
 
-1. Domínio da Bigorna e do Trilho (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma metálica (ou constructo/dispositivo) recebe +2 no acerto, +1d8 de dano perfurante/cortante e ignora toda Redução de Dano de armaduras metálicas inimigas.
-2. Repulsão de Lâmina Alheia (Reação · 3 Karma): Faz o ferro da arma ou bala inimiga desviar no último centímetro, somando +3 na sua CA contra ataques metálicos.
+1.  Domínio da Bigorna e do Trilho (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma metálica (ou constructo/dispositivo) recebe +2 no acerto, +1d8 de dano perfurante/cortante e ignora toda Redução de Dano de armaduras metálicas inimigas.
+2.  Repulsão de Lâmina Alheia (Reação · 3 Karma): Faz o ferro da arma ou bala inimiga desviar no último centímetro, somando +3 na sua CA contra ataques metálicos.
 
 **Safra na Morte.** Ogum absorve o domínio eletromagnético e mecânico sobre ligas industriais modernas.
 
@@ -6132,8 +6482,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ogum é aquele que vai na frente abrindo a trilha com o facão para que os outros possam passar; seu avanço corta obstáculos, teias, barreiras e formações inimigas de ponta a ponta.
 
-1. Abrir Picada de Ferro (Movimento + Principal · 4 Karma): Avança 6m em linha reta cortando tudo à frente: destrói armadilhas/barreiras no caminho, causa 2d8 cortante no inimigo principal e deixa uma "Trilha Aberta" atrás de si (todos os aliados que passarem por essa linha até o próximo turno ganham +3m de Movimento livre e +2 no ataque).
-2. Romper Imobilização (Livre · 2 Karma): Corta instantaneamente qualquer condição de Lento, Agarrado ou Imóvel em si ou em um aliado adjacente.
+1.  Abrir Picada de Ferro (Movimento + Principal · 4 Karma): Avança 6m em linha reta cortando tudo à frente: destrói armadilhas/barreiras no caminho, causa 2d8 cortante no inimigo principal e deixa uma “Trilha Aberta” atrás de si (todos os aliados que passarem por essa linha até o próximo turno ganham +3m de Movimento livre e +2 no ataque).
+2.  Romper Imobilização (Livre · 2 Karma): Corta instantaneamente qualquer condição de Lento, Agarrado ou Imóvel em si ou em um aliado adjacente.
 
 **Safra na Morte.** Ogum colhe doutrinas de vanguarda e abertura de brechas para avanço de tropa.
 
@@ -6141,8 +6491,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Sete lâminas de ferro forjado em brasa azulada flutuam ao redor das suas costas em formação de leque, atacando em conjunto com seus golpes ou cravando-se no chão para proteger o grupo.
 
-1. Revoada das Sete Ferramentas (Principal · 4 Karma · 9m): Dispara as lâminas contra um ou dois alvos causando 2d8 + 3 de dano cortante/kármico e aplicando Sangramento.
-2. Paliçada de Aço Vivo (Reação · 3 Karma): Crava as 7 espadas no chão à frente de você ou de um aliado, absorvendo 2d8 de dano e causando 1d6 em quem bater nelas.
+1.  Revoada das Sete Ferramentas (Principal · 4 Karma · 9m): Dispara as lâminas contra um ou dois alvos causando 2d8 + 3 de dano cortante/kármico e aplicando Sangramento.
+2.  Paliçada de Aço Vivo (Reação · 3 Karma): Crava as 7 espadas no chão à frente de você ou de um aliado, absorvendo 2d8 de dano e causando 1d6 em quem bater nelas.
 
 **Safra na Morte.** Ogum recolhe a regência telecinética de múltiplas lâminas de aço em combate.
 
@@ -6152,8 +6502,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O fogo e o raio de Xangô não são gás efêmero, mas condensam-se em pedras negras incandescentes (Edun Ará) que caem com impacto cinético devastador e explodem em chamas reais.
 
-1. Queda de Edun Ará (Principal · 4 Karma · 12m): Arremessa ou faz cair uma pedra de raio sobre o alvo, causando 2d8 contundente/elétrico, derrubando-o (Caído) se atingir a CA Total e deixando uma brasa no chão.
-2. Recolher a Pedra (Extra · 2 Karma): Puxa a pedra de raio de volta para a mão, incendiando todos os inimigos na linha de retorno em 1d8 térmico.
+1.  Queda de Edun Ará (Principal · 4 Karma · 12m): Arremessa ou faz cair uma pedra de raio sobre o alvo, causando 2d8 contundente/elétrico, derrubando-o (Caído) se atingir a CA Total e deixando uma brasa no chão.
+2.  Recolher a Pedra (Extra · 2 Karma): Puxa a pedra de raio de volta para a mão, incendiando todos os inimigos na linha de retorno em 1d8 térmico.
 
 **Safra na Morte.** Xangô absorve a balística de plasma solidificado em projéteis de alta massa.
 
@@ -6161,8 +6511,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O Oxê possui duas lâminas simétricas porque a justiça de Xangô corta para os dois lados: todo golpe que você recebe carrega a primeira lâmina, e o seu ataque devolve o peso dobrado na segunda lâmina.
 
-1. Corte das Duas Lâminas (Principal · 4 Karma): Causa 2d8 cortante/térmico; se você tiver sofrido dano desde o seu último turno, a segunda lâmina brilha somando +1d10 de dano adicional e ignorando escudos.
-2. Peso da Sentença Real (Reação · 3 Karma): Quando um inimigo ataca um aliado seu sem ter sido provocado por ele, um trovão seco atinge o inimigo aplicando -2 no teste dele e 1d6 de dano.
+1.  Corte das Duas Lâminas (Principal · 4 Karma): Causa 2d8 cortante/térmico; se você tiver sofrido dano desde o seu último turno, a segunda lâmina brilha somando +1d10 de dano adicional e ignorando escudos.
+2.  Peso da Sentença Real (Reação · 3 Karma): Quando um inimigo ataca um aliado seu sem ter sido provocado por ele, um trovão seco atinge o inimigo aplicando -2 no teste dele e 1d6 de dano.
 
 **Safra na Morte.** Xangô colhe o equilíbrio mecânico de conversão de impacto sofrido em torque ofensivo.
 
@@ -6170,8 +6520,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Ao falar ou rugir, labaredas douradas e vermelhas saem da sua boca com a autoridade de um rei em seu trono, incendiando a coragem dos aliados e derretendo mentiras e covardias.
 
-1. Rugido de Ajaká e Xangô (Principal · 4 Karma · Cone 6m): Sopro de fogo real que causa 2d8 térmico/divino e empurra os inimigos em 2m; aliados dentro de 6m que ouvirem o rugido ganham +2 no dano até o próximo turno.
-2. Coroa de Brasa (Passiva): Você possui resistência a dano de Fogo e Elétrico e soma +2 em testes de Liderança / Intimidação.
+1.  Rugido de Ajaká e Xangô (Principal · 4 Karma · Cone 6m): Sopro de fogo real que causa 2d8 térmico/divino e empurra os inimigos em 2m; aliados dentro de 6m que ouvirem o rugido ganham +2 no dano até o próximo turno.
+2.  Coroa de Brasa (Passiva): Você possui resistência a dano de Fogo e Elétrico e soma +2 em testes de Liderança / Intimidação.
 
 **Safra na Morte.** Xangô recolhe a projeção de chamas pressurizadas combinadas com comando vocal.
 
@@ -6181,8 +6531,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Oyá é a mudança brusca de tempo; o ar ao seu redor gira em lufadas quentes e elétricas que mudam sua posição no campo antes que o inimigo consiga fechar a mira.
 
-1. Redemoinho de Oyá (Movimento + Extra · 3 Karma): Transforma seu movimento em uma rajada de vento que percorre até 9m passando por dentro de inimigos: cada inimigo atravessado sofre 1d8 cortante/elétrico e perde o equilíbrio (-2 na CA Parcial até o fim do turno).
-2. Desviar com a Brisa (Reação · 3 Karma): Uma lufada súbita empurra você 3m para o lado quando atacado, somando +3 na CA.
+1.  Redemoinho de Oyá (Movimento + Extra · 3 Karma): Transforma seu movimento em uma rajada de vento que percorre até 9m passando por dentro de inimigos: cada inimigo atravessado sofre 1d8 cortante/elétrico e perde o equilíbrio (-2 na CA Parcial até o fim do turno).
+2.  Desviar com a Brisa (Reação · 3 Karma): Uma lufada súbita empurra você 3m para o lado quando atacado, somando +3 na CA.
 
 **Safra na Morte.** Iansã absorve a aerodinâmica de mudança instantânea de vetor em combate aproximado.
 
@@ -6190,8 +6540,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Como única divindade que não teme os Eguns (espíritos dos mortos) e os guia com seu Erukerê, você comanda as sombras residuais do campo de batalha e anula qualquer poder necrótico ou de terror.
 
-1. Chicotada do Erukerê (Principal · 4 Karma · 9m): Varre o ar liberando vultos de vento e luz rubra que causam 2d8 kármico/divino, empurram o alvo em 3m e encerram qualquer invocação menor ou condição de medo/necrótica na área.
-2. Soberana do Balé dos Mortos (Passiva): Você é imune à condição Abalado e recebe +2 na CA contra invocações e técnicas necróticas/corruptas.
+1.  Chicotada do Erukerê (Principal · 4 Karma · 9m): Varre o ar liberando vultos de vento e luz rubra que causam 2d8 kármico/divino, empurram o alvo em 3m e encerram qualquer invocação menor ou condição de medo/necrótica na área.
+2.  Soberana do Balé dos Mortos (Passiva): Você é imune à condição Abalado e recebe +2 na CA contra invocações e técnicas necróticas/corruptas.
 
 **Safra na Morte.** Iansã colhe métodos de expurgo espiritual e controle de entidades desencarnadas.
 
@@ -6199,8 +6549,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Quando você parte para o ataque total, sua aura assume a força imparável do búfalo africano combinada ao fio elétrico de uma cimitarra de cobre em brasa.
 
-1. Corte do Raio Vermelho (Principal · 4 Karma): Golpe veloz que causa 2d8 + 2 cortante/elétrico; em caso de Acerto Total, a descarga vermelha salta para outro inimigo a 3m causando 1d8 de dano.
-2. Fúria de Chifres de Vento (Reação ao sofrer dano · 3 Karma): Contra-ataca imediatamente o agressor a até 3m causando 1d10 de dano e empurrando-o 2m.
+1.  Corte do Raio Vermelho (Principal · 4 Karma): Golpe veloz que causa 2d8 + 2 cortante/elétrico; em caso de Acerto Total, a descarga vermelha salta para outro inimigo a 3m causando 1d8 de dano.
+2.  Fúria de Chifres de Vento (Reação ao sofrer dano · 3 Karma): Contra-ataca imediatamente o agressor a até 3m causando 1d10 de dano e empurrando-o 2m.
 
 **Safra na Morte.** Iansã recolhe a fusão entre esgrima ágil de cimitarra e impacto de investida pesada.
 
@@ -6210,8 +6560,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Oxóssi nunca precisa de uma segunda flecha porque a primeira jamais erra seu propósito; quando você concentra todos os seus recursos em um único ataque no turno, a letalidade dele torna-se cirúrgica.
 
-1. A Flecha que Não Volta Vazia (Principal · 4 Karma · Alcance da Arma + 6m): Exige que você faça apenas 1 único ataque nesta rodada: o disparo recebe +1d20 na Reserva, ignora cobertura parcial e total (curvando-se pelas frestas da mata/cenário), reduz o limiar de CA Total do alvo em -3 e soma +1d10 ao dano.
-2. Recuperar o Ofá (Livre): Se por qualquer motivo um ataque seu falhar completamente, você recupera 2 de Karma imediatamente.
+1.  A Flecha que Não Volta Vazia (Principal · 4 Karma · Alcance da Arma + 6m): Exige que você faça apenas 1 único ataque nesta rodada: o disparo recebe +1d20 na Reserva, ignora cobertura parcial e total (curvando-se pelas frestas da mata/cenário), reduz o limiar de CA Total do alvo em -3 e soma +1d10 ao dano.
+2.  Recuperar o Ofá (Livre): Se por qualquer motivo um ataque seu falhar completamente, você recupera 2 de Karma imediatamente.
 
 **Safra na Morte.** Oxóssi absorve o cálculo balístico de precisão extrema com economia máxima de munição.
 
@@ -6219,8 +6569,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O caçador sagrado não caça por crueldade, mas para alimentar seu povo; cada acerto preciso que você conquista em combate nutre o vigor e o Karma dos seus companheiros.
 
-1. Dividir a Presa (Passiva + 2 Karma ao acertar na faixa Total): Sempre que você acertar um ataque na faixa Total (ou abater um inimigo), você e um aliado a até 12m recuperam 1d8 + Etapa de Vida (ou 2 de Karma).
-2. Armadilha de Caçador (Extra · 3 Karma): Marca um ponto de 2m a até 12m; quem pisar ali fica Lento e exposto (-2 na CA contra o grupo).
+1.  Dividir a Presa (Passiva + 2 Karma ao acertar na faixa Total): Sempre que você acertar um ataque na faixa Total (ou abater um inimigo), você e um aliado a até 12m recuperam 1d8 + Etapa de Vida (ou 2 de Karma).
+2.  Armadilha de Caçador (Extra · 3 Karma): Marca um ponto de 2m a até 12m; quem pisar ali fica Lento e exposto (-2 na CA contra o grupo).
 
 **Safra na Morte.** Oxóssi colhe o ciclo de sustentação logística do grupo através da precisão ofensiva.
 
@@ -6228,8 +6578,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você se move em harmonia absoluta com o ambiente (seja selva ou ruínas urbanas); o cenário parece abrir espaço para a sua passagem e fechar-se sobre quem tenta perseguir você.
 
-1. Camuflagem de Folhagem e Sombra (Movimento · 3 Karma): Move-se até seu deslocamento completo podendo atirar no meio do caminho e terminando o movimento em Furtividade / Cobertura Parcial mesmo em terreno aberto (+2 na CA até o próximo turno).
-2. Assobio dePássaro Guia (Extra · 2 Karma): Revela a posição exata de todos os inimigos ocultos a 15m e concede +2 no próximo ataque de um aliado.
+1.  Camuflagem de Folhagem e Sombra (Movimento · 3 Karma): Move-se até seu deslocamento completo podendo atirar no meio do caminho e terminando o movimento em Furtividade / Cobertura Parcial mesmo em terreno aberto (+2 na CA até o próximo turno).
+2.  Assobio dePássaro Guia (Extra · 2 Karma): Revela a posição exata de todos os inimigos ocultos a 15m e concede +2 no próximo ataque de um aliado.
 
 **Safra na Morte.** Oxóssi recolhe táticas de guerrilha móvel e mimetismo ambiental.
 
@@ -6239,8 +6589,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Um espelho circular dourado (Abebé) reflete a luz das águas doces nas suas mãos; quem olha para o brilho dele durante um ataque perde o foco pelo deslumbramento, abrindo o peito para o seu contragolpe.
 
-1. Reflexo Deslumbrante do Abebé (Reação · 4 Karma): Quando um inimigo a até 9m ataca você ou um aliado, o brilho dourado do espelho impõe -3 no teste de ataque dele; se o ataque errar ou for apenas Parcial, o inimigo fica Desorientado e sofre 2d6 radiante/kármico.
-2. Luz de Ouro Líquido (Principal · 4 Karma): Dispara um feixe dourado da superfície do espelho que causa 2d8 de dano e reduz a iniciativa/reação do alvo.
+1.  Reflexo Deslumbrante do Abebé (Reação · 4 Karma): Quando um inimigo a até 9m ataca você ou um aliado, o brilho dourado do espelho impõe -3 no teste de ataque dele; se o ataque errar ou for apenas Parcial, o inimigo fica Desorientado e sofre 2d6 radiante/kármico.
+2.  Luz de Ouro Líquido (Principal · 4 Karma): Dispara um feixe dourado da superfície do espelho que causa 2d8 de dano e reduz a iniciativa/reação do alvo.
 
 **Safra na Morte.** Oxum absorve o uso de óptica reflexiva dourada para desorientação e contra-ataque.
 
@@ -6248,8 +6598,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A água doce parece suave, mas fura a pedra mais dura com constância; suas técnicas e golpes fluem por dentro das frestas da armadura inimiga, aumentando de dano a cada acerto consecutivo.
 
-1. Véu da Cachoeira (Principal · 4 Karma · 9m): Envolve o golpe em correntes de água dourada causando 2d8 contundente/kármico que ignora toda a CA de armadura pesada ou escudo (usando o limiar base do alvo) e limpa condições negativas de você.
-2. Banho de Rio Doce (Extra · 3 Karma · 6m): Água fresca envolve um aliado, curando 2d6 + Espírito de Vida e concedendo +2 em testes sociais/mentais e de Vontade.
+1.  Véu da Cachoeira (Principal · 4 Karma · 9m): Envolve o golpe em correntes de água dourada, causando 2d8 de dano contundente/kármico. Contra este golpe, retire somente os bônus de armadura pesada e escudo da CA do alvo; preserve os demais componentes, incluindo armadura leve ou média, e recalcule a CA Parcial pela metade, arredondada para baixo. Limpa condições negativas de você.
+2.  Banho de Rio Doce (Extra · 3 Karma · 6m): Água fresca envolve um aliado, curando 2d6 + Espírito de Vida e concedendo +2 em testes sociais/mentais e de Vontade.
 
 **Safra na Morte.** Oxum colhe a hidrodinâmica de infiltração em defesas rígidas.
 
@@ -6257,8 +6607,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Fios finos de ouro e perfume de rio cercam sua presença; sua própria energia kármica rende juros e protege seu corpo como uma joia sagrada.
 
-1. Couraça de Ouro Maleável (Extra · 3 Karma): Reveste a si mesmo ou a um aliado com uma película dourada que concede 2d8 + Presença/Espírito de Escudo Temporário; enquanto esse escudo durar, quem atacar o protegido sofre -2 em Vontade e não pode aplicar acertos críticos.
-2. Prosperidade do Axé (Passiva): Uma vez por cena, ao ajudar um aliado ou usar uma técnica de suporte/controle, você recupera 3 de Karma.
+1.  Couraça de Ouro Maleável (Extra · 3 Karma): Reveste a si mesmo ou a um aliado com uma película dourada que concede 2d8 + Presença/Espírito de Escudo Temporário; enquanto esse escudo durar, quem atacar o protegido sofre -2 em Vontade e não pode aplicar acertos críticos.
+2.  Prosperidade do Axé (Passiva): Uma vez por cena, ao ajudar um aliado ou usar uma técnica de suporte/controle, você recupera 3 de Karma.
 
 **Safra na Morte.** Oxum recolhe a condensação de reservas kármicas em barreiras protetoras de alta densidade.
 
@@ -6268,8 +6618,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Na tradição iorubá, Iemanjá é quem molda e equilibra o Ori (a cabeça, a consciência e o destino individual); sob sua bênção, a mente sua e dos seus aliados torna-se um oceano profundo imune ao desespero e à loucura.
 
-1. Lavar o Ori (Extra ou Reação · 3 Karma · 9m): Remove instantaneamente qualquer condição mental (Abalado, Desorientado, Confuso, Controle Mental ou Dissonância) de você ou de um aliado a 9m, concedendo +1d20 e +2 no próximo teste daquele personagem.
-2. Paz das Águas Profundas (Passiva): Você recebe +3 permanente em Vontade contra efeitos mentais ou de Corrupção.
+1.  Lavar o Ori (Extra ou Reação · 3 Karma · 9m): Remove instantaneamente qualquer condição mental (Abalado, Desorientado, Confuso, Controle Mental ou Dissonância) de você ou de um aliado a 9m, concedendo +1d20 e +2 no próximo teste daquele personagem. Como exceção, remover Dissonância por esta expressão dispensa a Reparação daquela Dissonância removida. Não desperta uma Bênção Dormente, cujo retorno ainda exige Reparação e descanso longo seguro.
+2.  Paz das Águas Profundas (Passiva): Você recebe +3 permanente em Vontade contra efeitos mentais ou de Corrupção.
 
 **Safra na Morte.** Iemanjá absorve arquiteturas de blindagem psíquica contra traumas de combate e corrupção.
 
@@ -6277,8 +6627,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** O movimento da água salgada de Iemanjá tem dois tempos: a onda que avança para proteger os seus e a corrente de retorno (ressaca) que arrasta os agressores para longe.
 
-1. Vaga de Espuma Branca (Principal · 4 Karma · Cone ou Linha 6m): Uma onda pesada de água salgada avança causando 2d8 contundente nos inimigos e arrastando todos eles 3 metros para trás (deixando o terreno escorregadio).
-2. Abraço da Maré Materna (Reação · 4 Karma): Quando um aliado a até 6m sofre um golpe que o deixaria abaixo da metade da Vida, uma onda o envolve reduzindo o dano em 2d8 e o puxa 3m para trás em segurança.
+1.  Vaga de Espuma Branca (Principal · 4 Karma · Cone ou Linha 6m): Uma onda pesada de água salgada avança causando 2d8 contundente nos inimigos e arrastando todos eles 3 metros para trás (deixando o terreno escorregadio).
+2.  Abraço da Maré Materna (Reação · 4 Karma): Quando um aliado a até 6m sofre um golpe que o deixaria abaixo da metade da Vida, uma onda o envolve reduzindo o dano em 2d8 e o puxa 3m para trás em segurança.
 
 **Safra na Morte.** Iemanjá colhe o controle de massas líquidas para reposicionamento defensivo de grupo.
 
@@ -6286,8 +6636,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** A luz prateada que reflete do seu foco/espelho cria a pressão e o silêncio do alto-mar ao seu redor, afogando o ímpeto ofensivo dos adversários.
 
-1. Pressão de Alto-Mar (Principal · 4 Karma · Raio 4,5m): O ar na área ganha o peso das águas oceânicas: inimigos sofrem 2d6 frio/kármico, ficam Lentos e sofrem -2 no dano de todos os ataques físicos por 1 rodada.
-2. Canto das Conchas (Extra · 2 Karma): Restaura 1d8 de Vida em todos os aliados adjacentes a você.
+1.  Pressão de Alto-Mar (Principal · 4 Karma · Raio 4,5m): O ar na área ganha o peso das águas oceânicas: inimigos sofrem 2d6 frio/kármico, ficam Lentos e sofrem -2 no dano de todos os ataques físicos por 1 rodada.
+2.  Canto das Conchas (Extra · 2 Karma): Restaura 1d8 de Vida em todos os aliados adjacentes a você.
 
 **Safra na Morte.** Iemanjá recolhe a modulação de pressão hidrostática para amortecimento de ataques em área.
 
@@ -6297,8 +6647,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Franjas espirituais de palha dourada (Mariwô / Palha da Costa) cobrem seu contorno; ninguém consegue enxergar sua verdadeira abertura física, e quem ousa levantar a palha para atacá-lo de perto encara o clarão insuportável do Sol da Terra.
 
-1. Véu de Palha Sagrada (Passiva + 3 Karma na Reação): Inimigos não podem aplicar acertos críticos ou bônus de precisão/brecha contra você; ao gastar 3 de Karma quando atacado corpo a corpo, as palhas se abrem liberando um clarão febril que causa 2d6 radiante/necrótico no atacante e reduz o acerto dele em -3.
-2. Varredura do Xaxará (Extra · 3 Karma): Varre 3m à frente com o feixe de nervuras de palmeira, limpando miasmas, runas inimigas de solo ou venenos.
+1.  Véu de Palha Sagrada (Passiva + 3 Karma na Reação): Inimigos não podem aplicar acertos críticos ou bônus de precisão/brecha contra você; ao gastar 3 de Karma quando atacado corpo a corpo, as palhas se abrem liberando um clarão febril que causa 2d6 radiante/necrótico no atacante e reduz o acerto dele em -3.
+2.  Varredura do Xaxará (Extra · 3 Karma): Varre 3m à frente com o feixe de nervuras de palmeira, limpando miasmas, runas inimigas de solo ou venenos.
 
 **Safra na Morte.** Obaluaê absorve técnicas de ocultação de pontos vitais e contra-ataque por radiação de curto alcance.
 
@@ -6306,8 +6656,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Assim como Obaluaê transforma as feridas da peste em pipocas brancas (Deburu) que limpam o corpo do doente, você pode arrancar doenças, sangramentos e dores dos seus aliados e devolvê-las como praga contra os inimigos.
 
-1. Florescer de Deburu (Principal · 4 Karma · 9m): Escolha um aliado (ou você) e um inimigo a até 9m: você remove até 2 condições negativas do aliado e restaura 2d6 + Espírito de Vida nele, enquanto o inimigo sofre 2d8 necrótico e recebe as condições removidas (ou Envenenado / Abalado).
-2. Imunidade pelas Cicatrizes (Passiva): Sempre que uma condição negativa termina em você, você recebe +4 de Escudo Temporário.
+1.  Florescer de Deburu (Principal · 4 Karma · 9m): Escolha um aliado (ou você) e um inimigo a até 9m: você remove até 2 condições negativas do aliado e restaura 2d6 + Espírito de Vida nele, enquanto o inimigo sofre 2d8 necrótico e recebe as condições removidas (ou Envenenado / Abalado).
+2.  Imunidade pelas Cicatrizes (Passiva): Sempre que uma condição negativa termina em você, você recebe +4 de Escudo Temporário.
 
 **Safra na Morte.** Obaluaê colhe a transferência vetorial de patologias e traumas físicos entre organismos.
 
@@ -6315,8 +6665,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Cada passo seu transmite o calor profundo do interior da terra; o chão sob os pés dos seus inimigos queima como brasa seca e puxa a força das pernas deles.
 
-1. Chão de Terra Ardente (Principal · 4 Karma · Raio 3m a 9m): Aquece a terra sob os inimigos causando 2d8 térmico/necrótico e aplicando Lento e -2 em Fortitude por 2 rodadas.
-2. Passo Pesado de Omolu (Movimento · 2 Karma): Caminha ignorando qualquer empurrão ou terreno difícil, ganhando Redução de Dano 3 até o próximo turno.
+1.  Chão de Terra Ardente (Principal · 4 Karma · Raio 3m a 9m): Aquece a terra sob os inimigos causando 2d8 térmico/necrótico e aplicando Lento e -2 em Fortitude por 2 rodadas.
+2.  Passo Pesado de Omolu (Movimento · 2 Karma): Caminha ignorando qualquer empurrão ou terreno difícil, ganhando Redução de Dano 3 até o próximo turno.
 
 **Safra na Morte.** Obaluaê recolhe o acoplamento entre febre biológica e radiação geotérmica do solo.
 
@@ -6324,10 +6674,10 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **238. Disparo de Causalidade Invertida** · A Pedra que Matou Ontem o Pássaro de Hoje · Runa Kármica Primordial
 
-**Fenômeno base.** Provérbio iorubá sagrado de Exu: "Exu matou um pássaro ontem com uma pedra que só arremessou hoje". Você pode aplicar o efeito do seu ataque ou truque no presente e "pagar/disparar" o movimento no turno seguinte, invertendo a ordem de causa e efeito.
+**Fenômeno base.** Provérbio iorubá sagrado de Exu: “Exu matou um pássaro ontem com uma pedra que só arremessou hoje”. Você pode aplicar o efeito do seu ataque ou truque no presente e “pagar/disparar” o movimento no turno seguinte, invertendo a ordem de causa e efeito.
 
-1. Pedra de Ontem (Livre ou Reação · 4 Karma · 12m): O inimigo sofre imediatamente 2d8 de dano contundente/kármico (ou recebe -2 na CA Total dele agora) como se já tivesse sido atingido antes, sem que você gaste sua Ação Principal neste instante (o tiro real ocorre automaticamente como eco durante o seu próximo movimento).
-2. Trocar o Caminho do Tiro (Reação · 3 Karma): Faz um projétil que erraria o alvo curvar na encruzilhada do ar para acertar na faixa Parcial.
+1.  Pedra de Ontem (Livre ou Reação · 4 Karma · 12m): O inimigo sofre imediatamente 2d8 de dano contundente/kármico (ou recebe -2 na CA Total dele agora) como se já tivesse sido atingido antes, sem que você gaste sua Ação Principal neste instante (o tiro real ocorre automaticamente como eco durante o seu próximo movimento).
+2.  Trocar o Caminho do Tiro (Reação · 3 Karma): Faz um projétil que erraria o alvo curvar na encruzilhada do ar para acertar na faixa Parcial.
 
 **Safra na Morte.** Exu absorve paradoxos de inversão causal aplicados à troca de tiros e golpes rápidos.
 
@@ -6335,8 +6685,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Onde duas linhas de movimento se cruzam no mapa, você cria uma Encruzilhada de Exu; nada passa, entra ou sai daquele cruzamento sem pagar pedágio ao mensageiro.
 
-1. Abrir Encruzilhada (Extra · 3 Karma · 9m): Marca um cruzamento de 3m no chão: aliados que passarem por ali podem mudar de direção e ganhar +3m de Movimento livre, enquanto inimigos que cruzarem o ponto sofrem 2d6 kármico (ou têm seu ataque redirecionado para outro ponto à sua escolha).
-2. Troca de Esquina (Movimento · 3 Karma): Troca instantaneamente de posição com um aliado (ou objeto solto) que esteja a até 9m de você.
+1.  Abrir Encruzilhada (Extra · 3 Karma · 9m): Marca um cruzamento de 3m no chão: aliados que passarem por ali podem mudar de direção e ganhar +3m de Movimento livre, enquanto inimigos que cruzarem o ponto sofrem 2d6 kármico (ou têm seu ataque redirecionado para outro ponto à sua escolha).
+2.  Troca de Esquina (Movimento · 3 Karma): Troca instantaneamente de posição com um aliado (ou objeto solto) que esteja a até 9m de você.
 
 **Safra na Morte.** Exu colhe a geometria tática de controle de fluxos e cruzamentos urbanos.
 
@@ -6344,8 +6694,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Exu é o princípio do movimento e da comunicação que conecta o Orum e o Aiyê; você nunca pode ser totalmente contido, e pode entregar a técnica de um aliado diretamente através do seu próprio golpe.
 
-1. Entregar o Ebó (Principal · 4 Karma): Você realiza um ataque corpo a corpo ou à distância (2d8 de dano) e pode carregar junto uma técnica ou runa de um aliado (com o consentimento dele), fazendo-a explodir diretamente no ponto que você acertou com +2 na CD.
-2. Gargalhada na Fresta (Reação · 3 Karma): Escapa de qualquer prisão, agarrão ou área fechada reaparecendo a 4,5m fora dela.
+1.  Entregar o Ebó (Principal · 4 Karma): Realize um ataque corpo a corpo ou à distância que causa 2d8 de dano e pode carregar uma técnica ou Runa de um aliado voluntário a até 5m. Declare aliado, carga, alvo e pagamentos antes da rolagem. Para executar uma técnica na hora, o aliado gasta sua Reação e paga o Karma e os demais custos da técnica; pode também fornecer uma Runa já inscrita e armada. No acerto, a carga se manifesta no ponto atingido: se exigir resistência, use a CD do aliado +2; se exigir ataque contra CA, compare o resultado do ataque portador com a CA de cada alvo, sem conceder +2 ao ataque. Cada alvo secundário de uma área resolve a própria defesa. Na Falha, a técnica aliada conserva seus gastos, inclusive eventual Ápice; uma Runa já armada cujo Estouro dependa do acerto permanece intacta no suporte. O Ápice de uma carga de Grau V pertence ao aliado fornecedor. Se a Runa V já estiver vinculada ao Ápice desse aliado na cena, seu Estouro usa o mesmo vínculo, sem cobrar outro; se outra fonte tiver comprometido o Ápice, a Runa V não é elegível. A Falha não devolve um Ápice já comprometido.
+2.  Gargalhada na Fresta (Reação · 3 Karma): Escapa de qualquer prisão, agarrão ou área fechada reaparecendo a 4,5m fora dela.
 
 **Safra na Morte.** Exu recolhe protocolos de transmissão cinética de técnicas combinadas entre aliados.
 
@@ -6355,8 +6705,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Um manto imenso de tecido espiritual branco e luminoso (Alá) estende-se sobre você e os aliados próximos; debaixo do pano branco de Oxalá, a violência perde força e o sangue para de jorrar.
 
-1. Estender o Alá (Principal ou Reação · 4 Karma · Raio 4,5m): Até o início do seu próximo turno, você e todos os aliados sob o manto branco recebem Redução de Dano 4 contra todas as fontes, curam 1d6 de Vida e têm qualquer condição de Sangramento ou Queimadura encerrada.
-2. Dobrar a Violência (Reação · 3 Karma): Quando um inimigo desfere um Acerto Total contra alguém sob o Alá, o pano amortece o impacto convertendo-o em Acerto Parcial.
+1.  Estender o Alá (Principal ou Reação · 4 Karma · Raio 4,5m): Até o início do seu próximo turno, você e todos os aliados sob o manto branco recebem Redução de Dano 4 contra todas as fontes, curam 1d6 de Vida e têm qualquer condição de Sangramento ou Queimadura encerrada.
+2.  Dobrar a Violência (Reação · 3 Karma): Quando um inimigo desfere um Acerto Total contra alguém sob o Alá, o pano amortece o impacto convertendo-o em Acerto Parcial.
 
 **Safra na Morte.** Oxalá absorve a dissipação de energia cinética letal através de campos de serenidade espiritual.
 
@@ -6364,8 +6714,8 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Você manifesta os dois aspectos de Oxalá: a paciência imóvel e inabalável de Oxalufã (o sábio apoiado no cajado) e o ímpeto fulminante de Oxaguiã (o jovem guerreiro do pilão e da espada branca).
 
-1. Postura de Oxalufã (Quando você não se move no turno · Passiva + 2 Karma): Você recebe +2 na CA Total, +2 na CD das suas técnicas e recupera 2 de Karma.
-2. Salto de Oxaguiã (Principal · 4 Karma): Quando você decide avançar após um turno em postura calma, explode em velocidade branca avançando 6m e desferindo um golpe que causa 2d10 radiante/contundente e empurra o alvo em 3m.
+1.  Postura de Oxalufã (Quando você não se move no turno · Passiva + 2 Karma): Você recebe +2 na CA Total, +2 na CD das suas técnicas e recupera 2 de Karma.
+2.  Salto de Oxaguiã (Principal · 4 Karma): Quando você decide avançar após um turno em postura calma, explode em velocidade branca avançando 6m e desferindo um golpe que causa 2d10 radiante/contundente e empurra o alvo em 3m.
 
 **Safra na Morte.** Oxalá colhe o ritmo marcial de transição entre imobilidade meditativa e explosão ofensiva.
 
@@ -6373,10 +6723,11 @@ Fortitude usa Constituição + Atletismo. Vontade usa Espírito + Canalização 
 
 **Fenômeno base.** Foi Oxalá quem modelou a forma dos seres vivos antes de receberem o sopro; suas mãos podem remodelar tecidos feridos de volta à perfeição original e silenciar anomalias corruptas.
 
-1. Remodelar na Argila Branca (Principal · 4 Karma · Toque/6m): Restaura 2d8 + Espírito + Etapa de Vida em um aliado (ou em si mesmo), remove penalidades temporárias de atributos/fraturas menores e concede +2 na CA por 1 rodada.
-2. Silêncio de Criação (Principal · 4 Karma · 9m): Impõe uma luz branca silenciosa sobre um inimigo causando 2d8 divino e impedindo-o de usar habilidades da Matriz Corrupta ou Sobrecargas por 1 rodada.
+1.  Remodelar na Argila Branca (Principal · 4 Karma · Toque/6m): Restaura 2d8 + Espírito + Etapa de Vida em um aliado (ou em si mesmo), remove penalidades temporárias de atributos/fraturas menores e concede +2 na CA por 1 rodada.
+2.  Silêncio de Criação (Principal · 4 Karma · 9m): Impõe uma luz branca silenciosa sobre um inimigo causando 2d8 divino e impedindo-o de usar habilidades da Matriz Corrupta ou Sobrecargas por 1 rodada.
 
 **Safra na Morte.** Oxalá recolhe a memória morfogenética de restauração celular completa em combate.
+
 
 # Capítulo 14 - Corrupção e a Marca
 
@@ -6385,6 +6736,34 @@ Corrupção é uma presença que aprende. A Voz começa oferecendo uma solução
 O poder resolve a intenção; o Teste de Controle determina o espaço que a Voz ocupa. Falhar nesse teste não equivale a falhar no uso da técnica.
 
 ## Carga e Teste de Controle
+
+<div class="section" book206-section="consulta-da-corrupcao">
+
+### Controle por contexto
+
+| Evento                                                            | CD e momento                                                                                                                                                                      |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Marca, Anatomia e rede; ativação corporal ou marco de permanência | 14 + Carga efetiva + temporárias aplicáveis, no momento próprio do gatilho.                                                                                                       |
+| Técnica da Matriz Corrupta                                        | 16 + Carga efetiva + todas as temporárias aplicáveis; conserve o momento definido pela Matriz. Se combinar rede, Ampliação e desconto na mesma execução, não duplique o Controle. |
+| Retomar o controle na Ruptura                                     | 24 fixa no início do turno; não some Carga 10 novamente.                                                                                                                          |
+
+As Cargas temporárias do desconto e do risco da Matriz são registradas por origem. No sucesso, metade das temporárias, arredondada para baixo, torna-se efetiva; na falha, todas se tornam efetivas, somadas apenas às consequências expressas. Não conte duas vezes a mesma falha compartilhada.
+
+| Carga efetiva, sem temporárias | Controle comum da Marca | Matriz Corrupta |
+|--------------------------------|-------------------------|-----------------|
+| 8                              | CD 22                   | CD 24           |
+| 9                              | CD 23                   | CD 25           |
+
+Com Controle da Corrupção nível 1 (+2) e sem outros bônus fixos, o teto é 22 (20 +2). Com Ímpeto de +2, quando permitido, chega a 24; com nível 2 (+5), o teto é 25 antes de outros bônus. Assim, mais d20 aumentam a chance de atingir o teto, sem elevá-lo; um 20 natural não garante sucesso universal. Cargas temporárias aumentam a CD conforme a origem.
+
+| Camada             | Ativação e acesso                                                                                                | Limites e fim                                                                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Anatomia e rede    | Movimento, 0 Karma; conforme Carga. Em 7/8/9 Cargas, a rede permite 2/4/8 Enxertos a 15m.                        | Usa as ações e testes da rede; não multiplica o dano total. Ruptura encerra a rede.                                                                                                                                            |
+| Mutações corporais | Etapa III, Controle 1 e 7–9 Cargas; Movimento e 6 Karma. Manutenção de 1 Karma no início de cada turno seguinte. | Espaços por Etapa e treinamento. A cada cinco turnos corporais acumulados, +1 Carga e Controle, salvo chegada a 10, que inicia Ruptura. Encerrar após cinco ou mais causa Exausto; Ruptura bloqueia até descanso longo seguro. |
+
+Com Presença 0, Controle da Corrupção destreinado usa 1d20 −4; treinado usa 1d20 +2, +5 ou +10, sem o −4.
+
+</div>
 
 Registre de 0 a 10 Cargas efetivas. Elas permanecem até uma forma válida de redução. Cargas temporárias usadas para descontar Karma entram na dificuldade, mas ainda não alteram o estágio da Marca.
 
@@ -6568,7 +6947,7 @@ Encerrar e reabrir as mutações não zera esse contador dentro da cena nem reno
 
 Toda ação conserva seu próprio Controle quando o capítulo o exigir. Ativar com Movimento e atacar com Principal são duas ações diferentes; combinar ativação da rede e despertar corporal no mesmo Movimento é uma única ação. Manter os traços por 1 Karma não cria um teste extra, e um benefício passivo não exige Controle a cada ataque recebido.
 
-Ao usar uma técnica com rede, Ampliação e desconto, declare tudo antes das rolagens e faça um único Controle: CD 14 + Carga efetiva atual + Cargas temporárias. A Carga automática de Abandonar o Controle entra antes dessa CD. Uma falha compartilhada de rede e Ampliação Controlada continua concedendo apenas 1 Carga por esses usos, além das Cargas do desconto e de consequências expressas. O uso de uma mutação nessa mesma ação não acrescenta outra Carga de falha nem outra Intrusão.
+Ao usar uma técnica com rede, Ampliação e desconto, declare tudo antes das rolagens e faça um único Controle no momento previsto para a ação. Se ela incluir técnica da Matriz Corrupta, use CD 16 + Carga efetiva atual + Cargas temporárias e o momento de Controle dessa Matriz; para os gatilhos comuns da Marca, use CD 14 + Carga efetiva atual + Cargas temporárias. Ruptura permanece CD 24 fixa, em seu próprio momento. A Carga automática de Abandonar o Controle entra antes da CD. Uma falha compartilhada de rede e Ampliação Controlada concede apenas 1 Carga por esses usos, além das Cargas do desconto e das consequências expressas. Usar uma mutação nessa mesma ação não acrescenta outra Carga de falha nem outra Intrusão.
 
 Instinto intruso e a opção de +1d20 da Ampliação podem coexistir quando ambos se aplicarem. Cada fonte fornece apenas um dado; respeite o teto geral de +3d20 provenientes de fontes comuns, além das exceções expressas dos Domínios. Nunca some o valor de Presença ao resultado só por estar transformado. Ocultista conserva Vantagem e +2 no resultado do Controle, juntos, sem dispensar o teste.
 
@@ -6645,12 +7024,28 @@ Uma área contaminada informa o gatilho e a frequência de exposição antes de 
 
 Contaminação leve concede 1 Carga na falha; contaminação forte concede 1 em sucesso ou 2 em falha. Use a CD de Controle, 14 + Carga efetiva atual. Proteção, consagração e preparo podem modificar o teste ou impedir a exposição quando possuírem grau e função adequados. Um selo particular deve registrar sua própria consequência; o Mestre não duplica testes pelo mesmo acontecimento.
 
+<div class="section" book206-section="maldição-selada-na-arma">
+
+## A maldição selada na arma
+
+Uma Runa Amaldiçoada é um parasita espiritual ou fragmento faminto da Marca selado em uma arma. Criar, gravar, manipular, suprimir ou interagir com a maldição usa sempre Presença + Controle da Corrupção. Presença 0 destreinada usa 1d20 −4; com treinamento, usa 1d20 +2, +5 ou +10, sem acumular o −4.
+
+Ao obter 1 natural no dado selecionado de um ataque com a arma amaldiçoada, faça Controle contra CD 14 + o número de Condições da Runa. Sucesso evita a Fome; falha causa 1d6 Corrupto ao portador ou +1 Carga Temporária, conforme a consequência registrada. Essa Carga é temporária e segue as regras da Marca; não a confunda com Carga efetiva. As tabelas de criação e os 21 efeitos estão em [Runas Amaldiçoadas, no Capítulo 9](/regras/9-karma#runas-amaldicoadas).
+
+</div>
+
 
 # Capítulo 15 - Invocações
 
 Invocação é pacto manifestado. A criatura possui identidade, limite e preço. Ela amplia a presença do invocador sem receber uma economia independente de turnos ofensivos.
 
 ## Registro do pacto
+
+<div class="section" book206-section="presenca-zero-nos-pactos">
+
+Conjuração Vincular usa Presença. Com Presença 0, um teste destreinado usa 1d20 −4; um teste treinado usa 1d20 +2, +5 ou +10, conforme o treinamento, sem o −4.
+
+</div>
 
 Registre nome e natureza; desejo da criatura; serviço aceito; limite ou ordem recusada; preço; forma de chamada; sinal perceptível; e três caixas de Fratura. Um pacto com ser livre exige negociação e um teste pertinente contra sua resistência. Derrotar alguém não produz obediência automática.
 
@@ -6706,13 +7101,28 @@ Invocar exige Ação Principal, custo da tabela e um espaço válido em alcance 
 
 A chamada de um pacto válido é automática, sem CD, materiais consumíveis ou preparo adicional, salvo preço expresso do próprio pacto. A criatura surge em espaço percebido, desocupado e compatível a até 5 metros, com linha de efeito. Pague a chamada, não a manutenção, no instante inicial. Ela permanece até dispensa, incapacidade de pagar, 0 Vida ou limite específico; Fusão dura uma cena. Dispensar é Livre no turno do invocador, sem devolver Karma. Grau V consome seu ápice da cena ao chamar; estar ativo depois não cria outro ápice.
 
-Pague manutenção ao iniciar cada rodada seguinte à chamada em combate. Fora de combate, cobre uma única taxa por cena de exploração na primeira vez que a invocação fizer esforço físico, transportar carga ou ativar uma habilidade. Use o custo de manutenção do Grau, com desconto de Regência de Comando Neural quando aplicável. Uma invocação de Grau IV paga 3 Karma por cena, ou 2 com Regência.
+Pague manutenção ao iniciar cada rodada seguinte à chamada em combate. Fora de combate, pague uma taxa de exploração na primeira vez que a invocação fizer esforço físico, transportar carga ou ativar uma habilidade. A taxa cobre até 2 TE (4 horas) contínuos ou até mudar de Zona, o que ocorrer primeiro; encerrado esse período, o próximo esforço elegível exige nova taxa. Entrar em combate passa a usar a manutenção por rodada, sem devolver a taxa já paga. Use o custo do Grau, com desconto de Regência de Comando Neural quando aplicável. Uma invocação de Grau IV paga 3 Karma por taxa de exploração, ou 2 com Regência.
 
 Cada criatura além da primeira custa +1 Karma na própria chamada e +1 na própria manutenção. O acréscimo é fixo por criatura adicional: a terceira também recebe +1, não +2. Não aplique um segundo aumento só por possuir Conjuração maior. Registre uma criatura como primeira; ao dispensá-la, escolha entre as restantes a isenta a partir do próximo pagamento, sem devolver custos anteriores.
 
 Ao cair a 0 Vida em cena, a invocação é recolhida e recebe exatamente uma Fratura. A dispensa voluntária e a nova chamada preservam dano e condições.
 
 ## Comandos
+
+<div class="section" book206-section="comandos-em-consulta">
+
+### Ações de comando
+
+| Recurso do invocador                   | Permissão                                                           |
+|----------------------------------------|---------------------------------------------------------------------|
+| Livre, uma vez por turno, ou Movimento | Comande um ataque básico, incluindo até o Deslocamento da criatura. |
+| Extra                                  | Comande uma criatura nas opções permitidas.                         |
+| Principal                              | Comande outra criatura nas opções permitidas.                       |
+| Movimento: Comando Duplo               | Comande duas criaturas distintas.                                   |
+
+Todas essas permissões compartilham o mesmo teto de três criaturas distintas por turno e um único comando, de qualquer natureza, para cada criatura. Um recurso gasto numa opção não fica disponível para outra. Manifestar conserva o custo da habilidade e a movimentação própria. Sem comando, apenas acompanhamento e postura defensiva nos limites descritos abaixo.
+
+</div>
 
 Em cada turno do invocador, no máximo **três criaturas distintas** podem receber um comando cada. Uma criatura não recebe segundo comando naquele turno, mesmo por habilidade, Ação Principal adicional ou chamado imediato.
 
@@ -6752,7 +7162,7 @@ A Âncora percebe e manifesta sua habilidade pelo suporte. Mover o suporte muda 
 
 ## Fratura e reparação
 
-Uma ordem fora do serviço permite recusa. Forçar obediência exige Presença + Conjuração contra CD 15 + 2 × Grau. Na falha, a criatura não age. Cada Fratura reduz a CA e os testes da invocação em 1. Em 3/3, ocorre Colapso Estrutural e a chamada fica bloqueada até reparo completo em oficina. O reparo exige 1 TE, Criação CD 14 e 2 M$ em peças. No sucesso, zere as Fraturas e restaure a Vida.
+Uma ordem fora do serviço permite recusa. Forçar obediência exige Presença + Conjuração contra CD 15 + 2 × Grau; na falha, a criatura não age. Cada Fratura reduz sua CA e seus testes em 1. Em 3/3 ocorre Colapso Estrutural, e a chamada fica bloqueada até reparo completo em oficina. O reparo pode ser realizado também em 1/3 ou 2/3 Fraturas e em invocação recolhida com 0 Vida: exige 1 TE, Criação CD 14 e 2 M\$ em peças. Para pactos orgânicos ou espirituais, substitua peças por reagentes ou incensos de 2 M\$ e use Medicina ou Canalização de Karma CD 14. No sucesso, zere as Fraturas e restaure a Vida ao máximo; a falha não restaura Vida nem remove Fraturas. Dispensa e nova chamada, isoladamente, continuam preservando dano e condições.
 
 ## Exemplos
 
@@ -6807,7 +7217,7 @@ A capacidade de Votos é **1 + metade do Espírito, arredondada para baixo**, m�
 
 **Peso 3:** +2d20 em um teste definido, uma vez; ou execute uma técnica conhecida um Grau acima, até IV, uma vez, recalculando e pagando seu custo; ou use Memória de uma Única Obra, descrita adiante. A elevação pontual é uma permissão do Voto, sem aprendizado permanente.
 
-**Peso 4:** execute uma técnica preparada de Grau V uma vez, pagando seu custo; ou dobre os dados-base de dano, cura ou escudo de uma execução. A técnica precisa estar escrita antes da selagem. Usar Grau V consome o ápice compartilhado da cena.
+**Peso 4:** execute uma técnica preparada de Grau V uma vez, pagando seu custo; ou dobre os dados-base de dano, cura ou escudo de uma execução. A técnica precisa estar escrita antes da selagem. Esta permissão de Peso 4 ou 5 pode dispensar pontualmente os requisitos ordinários de Etapa e treinamento para essa execução de Grau V. Não concede a fonte de poder nem acesso permanente: a fonte precisa estar disponível, e a execução conserva ação, custo, alcance, oposição e demais limites. Usar Grau V consome o ápice compartilhado da cena.
 
 **Peso 5:** aplique duas permissões diferentes de Peso 4 à mesma execução previamente construída; ou crie uma exceção narrativa equivalente, finita e contestável. Não escolha a mesma dobra duas vezes.
 
@@ -6817,7 +7227,7 @@ Quando uma mesma execução puder receber mais de um multiplicador especial, esc
 
 ### Voto recorrente
 
-Um Voto de Peso 2 ou maior pode, em vez do pacote de uso único, sustentar um pacote **um Peso abaixo**, uma vez por cena enquanto estiver ativo. A renúncia precisa continuar relevante, e os espaços permanecem ocupados. A selagem é paga uma vez; custos das técnicas e das ativações continuam sendo pagos a cada uso.
+Um Voto de Peso 2 ou maior pode, em vez do pacote de uso único, sustentar um pacote **um Peso abaixo**, uma vez por cena enquanto estiver ativo. A renúncia precisa continuar relevante, e os espaços permanecem ocupados. A selagem é paga uma vez; custos das técnicas e das ativações continuam sendo pagos a cada uso. A ativação do pacote ocorre uma vez por cena; sua cadência interna permanece a que estiver escrita. Assim, um pacote de +2 CA dura a cena contra a ameaça definida, enquanto a redução de 2 Karma da técnica nomeada pode aplicar-se uma vez por turno durante essa cena, mínimo 1 por execução.
 
 Declarar um benefício recorrente não converte uma perda irrelevante em sacrifício. Registre como a restrição será enfrentada nas cenas seguintes e o marco objetivo de encerramento.
 
@@ -6865,7 +7275,7 @@ Antes de um único teste com a Perícia-alvo, declare o uso: some **+10 de trein
 
 Sucesso, falha, interrupção depois da declaração ou desistência após conhecer o resultado consomem o benefício. Os pontos e espaços continuam comprometidos até o marco registrado. Depois de encerrar integralmente o Voto, é possível selar outro; não existe limite de uma vez na vida.
 
-**Exemplo:** uma personagem com Criação 2 suspende seus pontos-base de História, Condução, Atuação e Sobrevivência até recuperar os arquivos de uma cidade sitiada. Em um reparo decisivo, usa Memória com Intelecto 5: 3d20, maior resultado +10 de treinamento +2 Analítico. Depois, Criação continua 2 e volta a fornecer +5. As quatro bases só retornam ao concluir o marco.
+**Exemplo:** uma personagem com Criação 2 suspende seus pontos-base de História, Condução, Atuação e Sobrevivência até recuperar os arquivos de uma cidade sitiada. Em um reparo decisivo, usa Memória com Intelecto 5: 3d20, maior resultado +10 de treinamento +3 Analítico. Depois, Criação continua 2 e volta a fornecer +5. As quatro bases só retornam ao concluir o marco.
 
 ## Exemplos de equivalência
 
@@ -6896,7 +7306,7 @@ Ataques de contato usam Força + Luta; arremessos e disparos usam Agilidade + Po
 
 **Ações de inventário.** Principal é a ação central do turno; Movimento é a ação que normalmente permite deslocar; interação simples é o gesto breve gratuito do próprio turno. Há uma interação simples de inventário por turno. Uma Livre concedida para outra função não permite sacar uma segunda arma. Se uma técnica concede ações adicionais, ela precisa autorizar expressamente a interação correspondente.
 
-**Tempo e alcance.** Um Tempo de Expedição (TE) equivale a 2 horas de trabalho focado ou manutenção. Um descanso curto comporta 1 TE. Um descanso longo de 8 horas comporta até 3 TE de criação ou reparo. Corpo a corpo alcança 2 m; curto, 5 m; médio, 15 m; longo, 30 m. Uma distância numérica no catálogo prevalece sobre a faixa. Ações realizadas durante o mesmo TE não cobram esse tempo duas vezes.
+**Tempo e alcance.** Um Tempo de Expedição (TE) equivale a 2 horas de trabalho focado ou manutenção. Um descanso curto comporta 1 TE. Um descanso longo de 8 horas comporta até 3 TE de criação ou reparo. Corpo a corpo alcança 2 m; curto, 5 m; médio, 15 m. Longo começa em 16 m e vai até o limite do equipamento, da técnica, da linha de visão e da cena. Os 30 m são uma referência do catálogo, não um teto universal. Uma distância numérica no catálogo prevalece sobre a faixa. Ações realizadas durante o mesmo TE não cobram esse tempo duas vezes.
 
 **Defesas.** Equipamento altera apenas as parcelas de CA, Resistência e Evasão expressamente indicadas. Ataques conservam os graus total, parcial e falha do combate. Evasão gasta Reação e usa Agilidade + Reflexos, precisando superar o ataque. Em oposição, empate conserva a situação do defensor. A divisão do dano parcial ocorre antes da Resistência, dos escudos temporários e da perda de Vida.
 
@@ -6917,12 +7327,13 @@ Para um personagem Médio, **Carga Confortável C = 8 + 2 × Força**. Aplique d
 
 Arma ou armadura feita para outro tamanho recebe Desvantagem em seu uso e não permite técnicas que exijam empunhadura adequada. Redimensionar uma peça mundana custa +25% do preço; sua carga de catálogo permanece igual, pois o espaço representa o conjunto funcional. Armas de fogo, motores e aparelhos não encolhem por serem destinados a um usuário menor: reduzir sua carga exige um projeto, com perda de capacidade ou outra limitação registrada.
 
-| Faixa          | Carga atual            | Deslocamento e defesa                                                                                                                                                                                                                                  | Esforço e discrição                                                        |
-|----------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Leve ou Ágil   | L até metade de C      | +2 m ao deslocamento pessoal; não concede CA ou Reação                                                                                                                                                                                                 | +1d20 em um teste de marcha por jornada, declarado antes de rolar          |
-| Confortável    | Acima da metade até C  | Sem ajuste de carga                                                                                                                                                                                                                                    | Sem ajuste de carga                                                        |
-| Sobrecarregado | Acima de C até 1,5 × C | −2 m, mínimo 2 M<span class="math inline">; −1*CA*; *DesvantagememEvasão*\|*DesvantagememFurtividade*; +3*àCDdamarcha*\|\|*Crítica*\|*Acimade*1, 5 × *Caté*2 × *C*\|*Deslocamentodivididoporquatro*, *mínimo*1*M*</span>; −3 CA; sem Evasão ou corrida | Desvantagem em esforço físico e Furtividade; não realiza jornada de viagem |
-| Imobilizante   | Acima de 2 × C         | Não transporta o conjunto nem se desloca com ele                                                                                                                                                                                                       | Precisa largar, repartir ou colocar a carga em transporte                  |
+| Faixa          | Carga atual                | Deslocamento e defesa                                                      | Esforço e discrição                                                        |
+|----------------|----------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Leve ou Ágil   | L até metade de C          | +2 m ao deslocamento pessoal; não concede CA ou Reação                     | +1d20 em um teste de marcha por jornada, declarado antes de rolar          |
+| Confortável    | Acima da metade até C      | Sem ajuste de carga                                                        | Sem ajuste de carga                                                        |
+| Sobrecarregado | Acima de C até 1,5 × C     | −2 m, mínimo 2 m; −1 CA; Desvantagem em Evasão                             | Desvantagem em Furtividade; +3 à CD da marcha                              |
+| Crítica        | Acima de 1,5 × C até 2 × C | Deslocamento dividido por quatro, mínimo 1 m; −3 CA; sem Evasão ou corrida | Desvantagem em esforço físico e Furtividade; não realiza jornada de viagem |
+| Imobilizante   | Acima de 2 × C             | Não transporta o conjunto nem se desloca com ele                           | Precisa largar, repartir ou colocar a carga em transporte                  |
 
 Use somente a faixa mais severa. As penalidades de carga não se somam entre faixas; condições e limitações independentes ainda se aplicam. Carga Crítica não impede falar ou realizar uma Principal compatível, mas impede saltar, escalar ou nadar levando o conjunto. A faixa Imobilizante não paralisa o corpo: o personagem pode soltar o que o prende e agir normalmente com a carga restante.
 
@@ -7004,7 +7415,7 @@ Leve, Média e Pesada são categorias de construção. Quantidade de mãos, requ
 
 **Condutora.** Registre uma fonte. Uma técnica dessa fonte pode partir do item e, se for um ataque direto contra um alvo, herdar uma propriedade compatível entre Precisa, Alcance e Brutal. A técnica conserva ação, teste e custo. Não soma o dano completo da arma, não herda Automática ou Perfurante, não concede vantagem genérica de conjuração e não reduz Karma.
 
-**Ritualística.** Registre uma família de ritos. Uma vez por descanso longo seguro, ao iniciar um rito dessa família com preparação de duas rodadas ou mais, ou de pelo menos 1 TE, escolha reduzir à metade apenas a preparação ou substituir até 10 M\$ de materiais comuns consumidos. Arredonde rodadas para cima; meio TE equivale a 15 minutos. A conclusão, os testes, a ação final, os componentes únicos, os votos e os custos sobrenaturais permanecem. Não converte uma técnica instantânea em ritual gratuito.
+**Ritualística.** Registre uma família de ritos. O preparo fora de combate dura de 5 a 15 minutos, conforme a complexidade da fórmula, declarado antes do início; escreva o prazo em minutos, sem redefinir TE. Uma vez por descanso longo seguro, ao iniciar um rito dessa família com preparação de duas rodadas ou mais, ou com esse preparo em minutos, escolha reduzir à metade apenas a preparação ou substituir até 10 M\$ de materiais comuns consumidos. Arredonde rodadas e minutos para cima. A conclusão, os testes, a ação final, os componentes únicos, os votos e os custos sobrenaturais permanecem. Não converte uma técnica instantânea em ritual gratuito.
 
 **Origem Remota.** Permite que a técnica canalizada pelo foco tenha origem na posição dele. Exige linha de efeito do usuário ao foco e do foco ao alvo, além de percepção do alvo pelo usuário. O alcance da técnica é medido a partir do foco; o usuário precisa mantê-lo a até 15 m. Não concede olhos, ações, alvos ou disparos adicionais. As defesas consideram a origem real do efeito. O orbe tem CA 12 e Vida 6; fora do alcance ou sem linha de efeito, sua levitação termina e ele retorna à mão apenas se houver caminho livre, caso contrário cai. Quebrado permanece onde caiu.
 
@@ -7067,24 +7478,24 @@ O ataque básico usa uma Principal, custa 0 Karma e exige linha de efeito. A tab
 | <span item="orbe-de-convergencia">Orbe de Ressonância</span>      | 75          | 1d8 Elemental / Kármico      | 1               | 0                  | 15 m · Focal, Condutora, Flutuante                       | 1             |
 | <span item="cajado">Cajado Rúnico</span>                          | 20          | 1d10 Contundente / Kármico   | 2               | 1                  | 2 m / 18 m · Focal, Condutora, Ritualística, Duas Mãos   | 2             |
 | <span item="cetro-de-combate">Cetro de Comando</span>             | 28          | 1d8 Contundente              | 1               | 1                  | 12 m · Focal, Precisa, Uma Mão                           | 1             |
-| <span item="luvas-canalizadoras">Luvas Canalizadoras</span>       | A definir   | 1d6 Contundente / Kármico    | 0,5             | 0                  | toque (1,5 m) / 9 m · Focal, Condutora, Leve             | 0             |
+| <span item="luvas-canalizadoras">Luvas Canalizadoras</span>       | 18          | 1d6 Contundente / Kármico    | 0,5             | 0                  | toque (1,5 m) / 9 m · Focal, Condutora, Leve             | 0             |
 | <span item="lamina-runica">Lâmina Rúnica</span>                   | 22          | 1d8 Cortante / Kármico       | 1               | 1                  | 1,5 m / 6 m (feixe) · Focal, Condutora, Precisa, Uma Mão | 2             |
-| <span item="lanterna-astral">Lanterna Astral</span>               | A definir   | 1d8 Divino / Kármico         | 1               | 0                  | 12 m · Focal, Ritualística, Iluminação                   | 0             |
-| <span item="correntes-de-selamento">Correntes de Selamento</span> | A definir   | 1d8 Contundente / Perfurante | 1,5             | 1                  | 4,5 m · Focal, Condutora, Alcance                        | 1             |
+| <span item="lanterna-astral">Lanterna Astral</span>               | 22          | 1d8 Divino / Kármico         | 1               | 0                  | 12 m · Focal, Ritualística, Iluminação                   | 0             |
+| <span item="correntes-de-selamento">Correntes de Selamento</span> | 25          | 1d8 Contundente / Perfurante | 1,5             | 1                  | 4,5 m · Focal, Condutora, Alcance                        | 1             |
 
-**Grimório Catalisador.** +1 em Intelecto (para cálculo de CD e Analítico) enquanto empunhado. Reduz em -1 de Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior.
+**Grimório Catalisador.** +1 em Intelecto para cálculo de CD que use Intelecto e do bônus Analítico, enquanto empunhado. Analítico continua limitado a +3 e depende da elegibilidade do teste. Esse benefício não soma Intelecto ao resultado de um ataque nem aumenta sua reserva. Reduz em 1 Karma (mínimo 1) o custo para gravar Runas ou lançar técnicas de Grau II ou superior. Os descontos obedecem aos limites totais do Capítulo 10; não reduzem manutenção separada.
 
 **Orbe de Ressonância.** +2 no resultado final de testes de Canalização de Karma. Por flutuar ao redor do pulso, deixa a mão livre para gestos e amplia o raio ou cone de técnicas de área em +1,5m.
 
-**Cajado Rúnico.** +2 na CD de todas as suas Técnicas e Runas. Ao bater a base do cajado no chão (Movimento), o alcance de todas as suas técnicas sobe em +6m e o dano soma +Etapa até o próximo turno.
+**Cajado Rúnico.** +2 na CD expressamente definida para suas Técnicas e Runas. Se a resolução usa ataque contra CA ou uma disputa sem CD, esse +2 não é somado ao ataque nem ao teste de Canalização de Karma e não cria uma CD nova. Ao bater a base do cajado no chão (Movimento), o alcance de todas as suas técnicas sobe em +6m e o dano soma +Etapa até o próximo turno.
 
 **Cetro de Comando.** +1 em Espírito (aumentando o Karma Máximo em +2) e +2 em testes de ataque e CA das suas Invocações/Constructos. Permite redirecionar o ponto de origem de uma técnica para o espaço de uma invocação aliada a até 12m.
 
 **Luvas Canalizadoras.** +1 em Agilidade (para Iniciativa e Pontaria/Luta com técnicas) e mantém ambas as mãos livres. Permite cravar Runas de Selo ou técnicas de toque como parte de um ataque desarmado ou disparo curto com +2 no acerto.
 
-**Lâmina Rúnica.** Arma híbrida para magos de combate: Permite usar Intelecto ou Espírito no lugar de Força/Agilidade para ataques com a lâmina. Sempre que acertar um golpe físico Total, reduz em -2 de Karma a próxima técnica usada no mesmo turno.
+**Lâmina Rúnica.** Arma híbrida para magos de combate: Permite usar Intelecto ou Espírito no lugar de Força/Agilidade para ataques com a lâmina. Sempre que acertar um golpe físico Total, reduz em 2 Karma a próxima técnica usada no mesmo turno, respeitando o custo mínimo e o limite total de descontos do Capítulo 10. O benefício vale somente para a próxima técnica: não acumule descontos por vários golpes, não transfira para outro turno e não reduza manutenção separada.
 
-**Lanterna Astral.** Emite luz espiritual em 6m de raio que revela inimigos furtivos/invisíveis e concede +1 na CA Parcial para aliados dentro do facho. Técnicas de suporte, barreira ou controle lançadas através da lanterna somam +1d8 de potência.
+**Lanterna Astral.** Emite luz espiritual em 6m de raio que revela inimigos furtivos/invisíveis e concede +1 diretamente ao limiar de CA Parcial dos aliados dentro do facho, depois de calculá-lo. Não aumenta a CA Total: por exemplo, CA Parcial 9 / Total 18 passa a 10 / 18; não recalcule a metade da Total por esse bônus. Técnicas de suporte, barreira ou controle lançadas através da lanterna somam +1d8 de potência.
 
 **Correntes de Selamento.** Permite atacar e transferir Runas de Campo/Selo a até 4,5m de distância. Em caso de Acerto Total, além do dano, aplica a condição Lento (ou impede o alvo de se afastar mais de 4,5m de você por 1 rodada).
 
@@ -7151,7 +7562,7 @@ Ter uma ferramenta permite a tarefa. Um bônus só existe quando estiver escrito
 
 **Cura e veneno.** Poções não removem Ferimentos Graves automaticamente. Antídoto permite Constituição + Atletismo contra a CD original do veneno comum, ou CD 15 se não houver registro. Sucesso encerra Envenenado e o dano ainda não aplicado; falha conserva o efeito. O bônus de 2d20 é uma exceção expressa do consumível. Dano já sofrido não é devolvido. Veneno sobrenatural exige antídoto compatível.
 
-**Pacotes de expedição.** O conjunto de um explorador contém mochila de campanha, kit de viagem, três dias de ração e água, corda e lanterna: 22 m de compra individual, carga 6,5, mais óleo e arma. Ele ocupa mochila 1 + viagem 2 + provisões 1,5 + corda 1 + lanterna 1 = 6,5. Não receba desconto de carga por chamá-lo de pacote. Um grupo pode dividir corda, tenda e kits sem duplicar sua disponibilidade em locais separados.
+**Pacotes de expedição.** O conjunto de um explorador contém mochila de campanha, kit de viagem, três dias de ração e água, corda e lanterna: 22 M\$ de compra individual, carga 6,5, mais óleo e arma. Ele ocupa mochila 1 + viagem 2 + provisões 1,5 + corda 1 + lanterna 1 = 6,5. Não receba desconto de carga por chamá-lo de pacote. Um grupo pode dividir corda, tenda e kits sem duplicar sua disponibilidade em locais separados.
 
 ## Alquimia, síntese de poções e saturação
 
@@ -7175,23 +7586,23 @@ Todo frasco de poção, elixir, antídoto, óleo, base líquida ou catalisador o
 
 **Reagentes.** Escolha um vetor primário. Um reagente de Vitalidade conduz recuperação; Fluxo Kármico, circulação de Karma; Estímulo Muscular, esforço; Foco Mental, percepção e clareza; Purgação, neutralização; Volatilidade, corrosão, fumaça e calor. Cada porção é consumida numa dose. Um segundo ou terceiro reagente só serve a uma fórmula que os peça; ingredientes excedentes não acrescentam dados, duração ou funções. Corrosão não transforma qualquer elixir em ácido por simples inversão: é necessária a receita de ampola correspondente.
 
-**Catalisador.** Cada dose consome uma medida de estabilizante químico ou um Catalisador kármico. O estabilizante, de 1 m, fixa fórmulas mundanas; o Catalisador kármico, de 6 m, permite fórmulas de fluxo, purgação sobrenatural e óleos selados. A escolha entre ingestão, arremesso e infusão é feita ao preparar a dose, não ao usá-la. O catalisador comprado para síntese substitui seu uso em rito: não concede também +1d20 à mesma fabricação. O bônus ritual existente permanece válido fora dessa síntese.
+**Catalisador.** Cada dose consome uma medida de estabilizante químico ou um Catalisador kármico. O estabilizante, de 1 M\$, fixa fórmulas mundanas; o Catalisador kármico, de 6 M\$, permite fórmulas de fluxo, purgação sobrenatural e óleos selados. A escolha entre ingestão, arremesso e infusão é feita ao preparar a dose, não ao usá-la. O catalisador comprado para síntese substitui seu uso em rito: não concede também +1d20 à mesma fabricação. O bônus ritual existente permanece válido fora dessa síntese.
 
 **Receita.** Registre nome, tipo, Grau, vetor, base, um a três reagentes, catalisador, CD, tempo, custo, validade, Saturação e efeito completo. As fórmulas da tabela são conhecidas onde houver acesso comercial compatível; novas fórmulas requerem pesquisa, amostra e aprovação de efeito pelo Mestre. Não podem copiar Bênçãos, Domínios, assinaturas ou ápices. Um aprimoramento conserva o limite de uma dose e exige nova receita; não multiplique uma poção por número de ingredientes.
 
-| Potência                | Requisito                        | CD de síntese | Tempo por dose   | Saturação ingerida |
-|-------------------------|----------------------------------|---------------|------------------|--------------------|
-| Comum, Grau I           | Perícia 1, kit portátil          | 15            | 1 TE de trabalho | 1                  |
-| Difícil, Graus II–III   | Perícia 2, bancada estável       | 18            | 3 TE de trabalho | 2                  |
-| Heroica ou experimental | Perícia 2 e Etapa V, laboratório | 24            | 6 TE de trabalho | 3                  |
+| Potência                                   | Requisito                        | CD de síntese | Tempo por dose         | Saturação ingerida |
+|--------------------------------------------|----------------------------------|---------------|------------------------|--------------------|
+| Comum, Grau I — síntese simples            | Perícia 1, kit portátil          | 15            | 15 minutos de trabalho | 1                  |
+| Difícil, Graus II–III — síntese moderada   | Perícia 2, bancada estável       | 18            | 30 minutos de trabalho | 2                  |
+| Heroica ou experimental — síntese complexa | Perícia 2 e Etapa V, laboratório | 24            | 60 minutos de trabalho | 3                  |
 
-Um TE corresponde a aproximadamente 30 minutos. Trabalho em descanso ocupa esse tempo e não conta simultaneamente como repouso; só o período restante pode cumprir o descanso. Não há síntese modular durante um turno de combate. A habilidade Síntese Alquímica conserva seu procedimento excepcional de fabricação rápida. Fórmulas corrompidas exigem acesso legítimo à Corrupção; testes da Marca e Cargas seguem o Capítulo 14 e não são substituídos pela Saturação.
+Os tempos de síntese são contados diretamente em minutos. A unidade geral permanece 1 TE = 2 horas; os demais procedimentos conservam seus prazos expressos em TE. Trabalho em descanso ocupa esse tempo e não conta simultaneamente como repouso; só o período restante pode cumprir o descanso. Não há síntese modular durante um turno de combate. A habilidade Síntese Alquímica do Alquimista oferece tempos reduzidos, testes próprios e preparo imediato conforme o Capítulo 6; fora dessas exceções, os requisitos, materiais e efeitos da receita permanecem. Fórmulas corrompidas exigem acesso legítimo à Corrupção; testes da Marca e Cargas seguem o Capítulo 14 e não são substituídos pela Saturação.
 
 **Materiais e preço.** Para cada produto final listado, o custo de síntese é 75% do preço de compra, arredondado para cima, mínimo 2 M\$. Esse total inclui base, reagentes, catalisador e frasco; não some esses componentes de novo. Ao usar componentes já comprados ou colhidos, desconte seu valor de referência do total, até zero, e consuma-os. Bases, reagentes puros, catalisadores e kits não são produzidos por essa fórmula de desconto; óleos de infusão são produtos finais e usam o custo de síntese. O custo só vale para a receita específica: quatro frascos de água não substituem reagentes raros. Venda de fabricação doméstica segue demanda e licenças, sem lucro automático garantido.
 
 **Colheita.** Em 1 TE, faça Intelecto + Sobrevivência para flora, Medicina para tecido orgânico ou Ocultismo para resíduo sobrenatural, CD 15, 18 ou 24 conforme o perigo. Sucesso extrai uma porção do vetor declarado; falha inutiliza essa oportunidade. Cada fonte oferece no máximo uma porção útil por vetor autorizado pelo Mestre, sem nova tentativa sobre o mesmo resto. A coleta não faz surgir ingredientes em qualquer cadáver. Anote vetor, procedência e valor; material instável dura 24 horas sem conservação, ou sete dias no kit de conservação de reagentes. A carga de cada porção lacrada é 0,25 espaços.
 
-**Validade.** Doses seladas conservam potência por 30 dias; fórmulas experimentais ou corrompidas, por 24 horas. Um frasco aberto deve ser usado no mesmo turno ou descartado. Síntese Alquímica conserva suas 24 horas próprias. Misturar doses prontas inutiliza ambas, sem criar outro efeito.
+**Validade.** Doses seladas conservam potência por 30 dias; fórmulas experimentais ou corrompidas, por 24 horas. Um frasco aberto deve ser usado no mesmo turno ou descartado. Doses de Síntese Alquímica preparadas com tempo seguem a validade normal da receita; somente as doses imediatas conservam o prazo próprio de 24 horas e o limite de seis doses simultâneas. Misturar doses prontas inutiliza ambas, sem criar outro efeito.
 
 **Resultados.** Sucesso produz uma dose, sem ganho adicional no crítico. Falha por até 4 pontos consome tempo e metade do orçamento de materiais, arredondada para cima, incluindo pelo menos um reagente; a parte não consumida permanece identificada. Falha por 5 ou mais consome todos os materiais e deixa mistura instável, sem efeito utilizável. Descartá-la com o kit ao fim do trabalho é automático; transportá-la não cria uma ampola gratuita. Quebra ou tentativa de ingestão dessa mistura causa 1d6 químico ao manipulador, sem benefício, e a destrói. Não há nova tentativa sem novo tempo e reposição do material perdido.
 
@@ -7203,7 +7614,7 @@ Doses arremessadas e óleos não geram Saturação no usuário; seus perigos sã
 
 **Restauração de Karma.** Uma criatura recebe benefício de restaurador alquímico de Karma somente uma vez por cena substancial, somando poções comerciais e Síntese Alquímica. Trocar de fórmula ou fabricante não renova esse limite. A cena só se renova após acontecimento ou desafio relevante, nunca pela declaração de uma pausa ou novo combate artificial. A dose repetida é consumida e gera Saturação normalmente, mesmo sem restaurar Karma. Cristais investidos e fontes kármicas seguem suas próprias regras, sem se tornarem poções.
 
-**Teste de rejeição.** Se a nova Saturação ultrapassar o limiar, faça imediatamente Constituição + Atletismo contra **CD 14 + Saturação total após a dose**. Não use Medicina para resistir com o próprio corpo. Medicina pode diagnosticar ou tratar a reação pelas regras abaixo, sem substituir esse teste. Sucesso permite o efeito integral da dose, respeitados os limites, mas não reduz Saturação. Na falha, sofra 1d6 de dano químico por ponto acima do limiar e fique Envenenado, ou Exausto se houver colapso. Aplique a linha correspondente ao excesso total; as linhas não se acumulam entre si na mesma dose. Novas doses exigem novo teste; reações anteriores ainda em duração continuam válidas, sem somar penalidades idênticas. Não é possível escolher falhar para obter um benefício.
+**Teste de rejeição.** Se a nova Saturação ultrapassar o limiar, faça imediatamente Constituição + Atletismo contra **CD 14 + Saturação total após a dose**. Não use Medicina para resistir com o próprio corpo. Medicina pode diagnosticar ou tratar a reação pelas regras abaixo, sem substituir esse teste. Sucesso permite o efeito integral da dose, respeitados os limites, mas não reduz Saturação. Na falha, sofra 1d6 de dano químico por ponto acima do limiar e fique Envenenado, ou Exausto se houver colapso. Aplique também a linha correspondente ao excesso total; as linhas não se acumulam entre si na mesma dose. Novas doses exigem novo teste; reações anteriores ainda em duração continuam válidas, sem somar penalidades idênticas. Não é possível escolher falhar para obter um benefício.
 
 | Excesso acima do limiar | Rejeição na falha | Efeito completo                                                                                                                                                                                                                                                                                                                                             |
 |-------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -7261,13 +7672,13 @@ Os preços são por dose; os efeitos não somam bônus idênticos. Efeitos de co
 | <span item="bancada-alquimica-portatil">Bancada alquímica portátil</span>                 | Kit                                | 60          | 5               | —                | —             | Montagem em 1 TE em superfície estável; permite síntese difícil. Não conta como laboratório heroico.                                                                                                                                                                                                                 |
 | <span item="kit-de-conservacao-de-reagentes">Kit de conservação de reagentes</span>       | Kit                                | 24          | 2               | —                | —             | Conserva até oito porções por sete dias; cada porção mantém sua própria carga de 0,25, além do kit.                                                                                                                                                                                                                  |
 
-**Receitas de referência.** Cura comum usa água, Vitalidade e estabilizante; cura concentrada usa soro, duas porções de Vitalidade e estabilizante; regeneração usa Mercúrio Kármico, duas Vitalidades, um Fluxo e catalisador kármico. Antídoto e purgador usam água, Purgação e estabilizante. Vigor usa água e Estímulo; adrenalina e força usam soro e duas porções de Estímulo, todos com estabilizante. Fluxo comum usa soro, Fluxo e catalisador kármico; profundo usa soro, dois Fluxos e catalisador kármico. Lucidez usa água, Foco e estabilizante; clarividência usa soro, Foco, Fluxo e catalisador kármico. Resistência química usa soro, duas Purgações e estabilizante. Corrosiva usa destilado, Volatilidade e estabilizante; chama usa destilado, duas Volatilidades e estabilizante; fumaça usa destilado, Volatilidade, Purgação e estabilizante; enfraquecimento usa destilado, Estímulo, Volatilidade e estabilizante. Óleo cáustico usa destilado, Volatilidade, Purgação e estabilizante; óleo selado usa destilado, Fluxo, Purgação e catalisador kármico. Pulso corrompido usa Mercúrio Kármico, Fluxo, Foco, resíduo corrompido identificado e catalisador kármico; o resíduo vale 6 m e ocupa 0,25 espaços. O orçamento de cada receita inclui seus componentes, mesmo quando o conjunto comercial sai mais barato que comprar cada componente isolado.
+**Receitas de referência.** Cura comum usa água, Vitalidade e estabilizante; cura concentrada usa soro, duas porções de Vitalidade e estabilizante; regeneração usa Mercúrio Kármico, duas Vitalidades, um Fluxo e catalisador kármico. Antídoto e purgador usam água, Purgação e estabilizante. Vigor usa água e Estímulo; adrenalina e força usam soro e duas porções de Estímulo, todos com estabilizante. Fluxo comum usa soro, Fluxo e catalisador kármico; profundo usa soro, dois Fluxos e catalisador kármico. Lucidez usa água, Foco e estabilizante; clarividência usa soro, Foco, Fluxo e catalisador kármico. Resistência química usa soro, duas Purgações e estabilizante. Corrosiva usa destilado, Volatilidade e estabilizante; chama usa destilado, duas Volatilidades e estabilizante; fumaça usa destilado, Volatilidade, Purgação e estabilizante; enfraquecimento usa destilado, Estímulo, Volatilidade e estabilizante. Óleo cáustico usa destilado, Volatilidade, Purgação e estabilizante; óleo selado usa destilado, Fluxo, Purgação e catalisador kármico. Pulso corrompido usa Mercúrio Kármico, Fluxo, Foco, resíduo corrompido identificado e catalisador kármico; o resíduo vale 6 M\$ e ocupa 0,25 espaços. O orçamento de cada receita inclui seus componentes, mesmo quando o conjunto comercial sai mais barato que comprar cada componente isolado.
 
 ### Exemplos de síntese e rejeição
 
-**Uma dose preparada.** Irene tem Intelecto 5 e Medicina 1. Cura comum exige CD 15 e 1 TE; os materiais custam teto de 8 × 0,75 = 6 M\$. Ela rola 3d20, escolhe 12 e soma +2 de treino e +3 Analítico: 17, sucesso. Consome os materiais e registra Poção de cura, 0,25 espaços, 2d6 Vida, Saturação 1. Sem treino, não poderia usar essa síntese modular.
+**Uma dose preparada.** Irene tem Intelecto 5 e Medicina 1. Cura comum exige CD 15 e 15 minutos; os materiais custam teto de 8 × 0,75 = 6 M\$. Ela rola 3d20, escolhe 12 e soma +2 de treino e +3 Analítico: 17, sucesso. Consome os materiais e registra Poção de cura, 0,25 espaços, 2d6 Vida, Saturação 1. Sem treino, não poderia usar essa síntese modular.
 
-**Uma dose a mais.** Damião tem Constituição 5 e Atletismo 2: limiar 5. Já acumula Saturação 5 e bebe cura concentrada em Prontidão, gastando Movimento. Vai a 7; excesso 2, CD 21. Rola 3d20, seleciona 13 e soma +5: 18, falha. Não recupera Vida, fica sem Evasão até o início do próximo turno e perde a Ação de Movimento desse próximo turno, pois já gastou a atual. Permanece com Saturação 7. Uma segunda dose arriscaria rejeição mais grave; mudar de poção não limpa o sangue.
+**Uma dose a mais.** Damião tem Constituição 5 e Atletismo 2: limiar 5. Já acumula Saturação 5 e bebe cura concentrada em Prontidão, gastando Movimento. Vai a 7; excesso 2, CD 21. Rola 3d20, seleciona 13 e soma +5: 18, falha. Não recupera Vida, sofre 2d6 de dano químico pelo excesso de 2 pontos e fica Envenenado. Além disso, fica sem Evasão até o início do próximo turno e perde a Ação de Movimento desse próximo turno, pois já gastou a atual. Permanece com Saturação 7. Uma segunda dose arriscaria rejeição mais grave; mudar de poção não limpa o sangue.
 
 ## Forja, materiais e modificações
 
@@ -7290,7 +7701,7 @@ Os valores adicionais são custos de componentes; serviço usa os procedimentos 
 
 ## Economia, serviços e disponibilidade
 
-Uma refeição simples custa 1 M<span class="math inline">; *umadiáriaemhospedariamodestacusta*2*M*</span>. A semana de vida comum de 10 M\$ pressupõe preparo doméstico, alimentação comprada em quantidade e alojamento compartilhado; não equivale a sete diárias com refeições avulsas. Dinheiro compra tempo e acesso, mas a segurança de uma rota ou a lealdade de uma facção continuam dependendo do mundo.
+Uma refeição simples custa 1 M\$; uma diária em hospedaria modesta custa 2 M\$. A semana de vida comum de 10 M\$ pressupõe preparo doméstico, alimentação comprada em quantidade e alojamento compartilhado; não equivale a sete diárias com refeições avulsas. Dinheiro compra tempo e acesso, mas a segurança de uma rota ou a lealdade de uma facção continuam dependendo do mundo.
 
 | Compra ou serviço                  | Preço de referência  | Condição                                                   |
 |------------------------------------|----------------------|------------------------------------------------------------|
@@ -7369,6 +7780,16 @@ Uma exploradora Média com Força 3 tem C 14. Leva mochila 1, armadura leve 3, e
 
 Ela encontra uma caixa de peças de 4 espaços: L passa a 15,75, Sobrecarregada, sofrendo −2 m, −1 CA e as Desvantagens correspondentes. Ao prender a caixa num carrinho, volta a 11,75 pessoais; a caixa ocupa 4 dos 40 espaços do carrinho. O carrinho não acompanha uma escalada. Antes de subir, o grupo precisa decidir o destino das peças.
 
+<div class="section" book206-section="armas-com-runas-amaldicoadas">
+
+## Armas com Runas Amaldiçoadas
+
+Apenas armas de contato, arremesso, disparo ou armas de magos podem receber uma Runa Amaldiçoada. Cada arma comporta uma única maldição; ela ocupa todos os encaixes dessa arma, impede novas Runas Kármicas convencionais e destrói as inscrições comuns existentes ao ser selada. O vínculo amaldiçoado não retém Karma nem ocupa vaga pessoal do portador.
+
+Registre no equipamento o efeito escolhido, de uma a cinco Condições distintas, o dado de dano permitido, o modo de CD da vítima e as alternativas próprias de C7 e C8 quando utilizadas. Criar ou interagir usa Presença + Controle da Corrupção; as CDs de forja e de resistência estão em [Runas Amaldiçoadas, no Capítulo 9](/regras/9-karma#runas-amaldicoadas). A quantidade de condições define a potência, sem Graus de técnica ou tabela de Etapas.
+
+</div>
+
 
 # Capítulo 18 - Inimigos monstros e encontros
 
@@ -7397,7 +7818,7 @@ A CA-base abaixo já incorpora o aumento de 20%, arredondado para cima. Não aum
 | SS         | 29     | 120      | Maior de 5d20 +5  | 2d10            |
 | SSS        | 33     | 160      | Maior de 5d20 +10 | 3d10            |
 
-A CA é decisiva porque define também o limiar parcial. Uma criatura de CA 22 sofre total com 23 ou mais, parcial de 11 a 22 e falha abaixo de 11. Um 20 natural não ignora essas faixas. Contra proteções elevadas, posicionamento, retirada de componentes defensivos, técnicas adequadas e Caminho mudam a qualidade do acerto.
+A CA é decisiva porque define também o limiar parcial. Uma criatura de CA 22 sofre Acerto Total com 23 ou mais, Parcial de 11 a 21 e Falha abaixo de 11. No resultado 22, compare o Atributo do ataque com o regente da CA: atacante maior obtém Total; defensor maior ou igual obtém Parcial. Um 20 natural não ignora essas faixas. Contra proteções elevadas, posicionamento, retirada de componentes defensivos, técnicas adequadas e Caminho mudam a qualidade do acerto.
 
 ### Funções de combate
 
@@ -7421,7 +7842,7 @@ Lacaios têm dois estados, Apto e Ferido. Um acerto total que produza dano final
 
 Efeito direto sem redução que produza dano positivo retira o lacaio; se o próprio efeito tiver versão reduzida, ela o deixa Ferido. Condições continuam funcionando normalmente. A retirada pode significar queda, fuga, rendição ou incapacidade, conforme a fonte.
 
-O dano do lacaio é metade do dano comum, arredondado para baixo, mínimo 1 antes das reduções. Se seu próprio ataque for parcial, divida outra vez. Quatro lacaios equivalem aproximadamente a uma criatura comum para planejar presença no encontro, sem garantir equivalência em qualquer área ou formação.
+O dano do lacaio é metade do dano comum, arredondado para baixo, mínimo 1 antes das reduções. Se seu próprio ataque for parcial, divida outra vez. Quatro lacaios equivalem aproximadamente a uma criatura comum para planejar presença no encontro, sem garantir equivalência em qualquer área ou formação. Para Contribuição, cada lacaio vale um quarto da recompensa-base de um inimigo comum do ranque: quatro compartilham a recompensa equivalente a um comum. Some as parcelas antes do arredondamento final por personagem.
 
 ## Criação de chefes
 
@@ -7498,13 +7919,13 @@ Domínios e Caminho são conquistas raras. Um chefe só os recebe quando sua his
 
 ### Guardião da Caldeira
 
-**Ranque S:** Vida 120; Karma 30; CA 25; limiar parcial 12; total a partir de 26. Porte Grande; Deslocamento 8 metros. Força 7, Agilidade 3, Constituição 7, Intelecto 5, Presença 2, Espírito 6. Luta, Atletismo, Criação e Canalização 2; Reflexos, Percepção e Tática 1; demais Perícias 0. Iniciativa e Evasão: maior de 2d20 +2. Ataque básico: Principal, maior de 4d20 +5, até 2 metros, 2d8 físicos, 0 Karma; parcial metade. Nenhuma Resistência adicional ou Domínio implícito. A CA pronta já inclui porte, corpo e placas; não some novamente esses componentes.
+**Ranque S:** Vida 120; Karma 30; CA 25; limiar parcial 12; Total com 26 ou mais; no resultado 25, confronto do Atributo do ataque com o regente da CA. Porte Grande; Deslocamento 8 metros. Força 7, Agilidade 3, Constituição 7, Intelecto 5, Presença 2, Espírito 6. Luta, Atletismo, Criação e Canalização 2; Reflexos, Percepção e Tática 1; demais Perícias 0. Iniciativa e Evasão: maior de 2d20 +2. Ataque básico: Principal, maior de 4d20 +5, até 2 metros, 2d8 físicos, 0 Karma; parcial metade. Nenhuma Resistência adicional ou Domínio implícito. A CA pronta já inclui porte, corpo e placas; não some novamente esses componentes.
 
 **Intenção e leitura:** proteger a caldeira e impedir a abertura do núcleo. Voz metálica anuncia que aceita cessar-fogo se ninguém danificar o núcleo e a pressão voltar à faixa segura. O visor e o som dos reguladores tornam reconhecível que a proteção depende deles. Um teste de Intelecto + Investigação ou Criação CD 15, Principal, revela a função e a rota até os dois reguladores; informações observadas por interação direta não exigem esse teste.
 
 **Traço Núcleo Vinculado:** passivo; não pode afastar-se mais de 20 metros da caldeira nem persegui-los além desse limite. Desativar o núcleo desliga o Guardião sem morte automática dos seres da arena. **Traço Carapaça Pressurizada:** os 4 pontos físicos de proteção já incluídos na CA existem enquanto ao menos um regulador funciona; não são Blindagem nem Resistência.
 
-**Proteção:** 4 pontos da CA 25 provêm de placas pressurizadas. Dois reguladores mantêm essa pressão. Desativar ambos reduz a CA para 21, cujo limiar parcial é 10. Esses 4 pontos já estavam incluídos em 25.
+**Proteção:** 4 pontos da CA 25 provêm de placas pressurizadas. Dois reguladores mantêm essa pressão. Desativar ambos reduz a CA para 21, cujo limiar parcial é 10: resultados de 10 a 20 são Parciais, 22 ou mais são Totais e 21 exige confronto de Atributos. Esses 4 pontos já estavam incluídos em 25.
 
 **Reguladores:** objetos com CA 14 e Vida 12. Cada um pode ser destruído por dano adequado ou desativado com Ação Principal adjacente e Criação CD 18. Vapor, som e mostradores permitem reconhecer a relação com as placas.
 
@@ -7528,7 +7949,7 @@ Abaixo de 60 Vida, prioriza Expansão quando houver dois alvos no raio; caso con
 
 ## Dimensionar o encontro
 
-Use unidades de ameaça como estimativa, considerando criaturas da mesma faixa dos personagens: quatro lacaios valem 1; comum, 1; elite, 2; chefe, 3. Uma faixa abaixo vale metade; uma acima, o dobro. Para quatro personagens, 2 unidades tendem a ser confortáveis, 4 desafiadoras e 6 severas.
+Use unidades de ameaça como estimativa. Defina a faixa de referência examinando as fichas e os recursos reais do grupo: Vida, CA, ataques, Graus acessíveis, Reações e recursos limitados. Etapa, ranque institucional e ranque de ameaça não são equivalentes automáticos. Para criaturas da faixa de referência: quatro lacaios valem 1; comum, 1; elite, 2; chefe, 3. Uma faixa abaixo vale metade; uma acima, o dobro. Para quatro personagens, 2 unidades tendem a ser confortáveis, 4 desafiadoras e 6 severas.
 
 **Essa conta não é uma garantia:** área, distância, cobertura, fontes, recursos gastos, CA e objetivos podem mudar o resultado. Ajuste quantidade, posição, reforços anunciados ou condições da vitória; não aumente secretamente a Vida fixa de um chefe durante a batalha.
 
@@ -7549,6 +7970,16 @@ Elite multiplica a recompensa por 1,5; chefe, por 2; um feito histórico pode mu
 
 Captura, selamento ou outra resolução definitiva reconhecida podem conceder a mesma recompensa. Criar, libertar ou repetir ameaças apenas para acumular Contribuição não gera progresso. Registre espólio físico, informação, contato ou mudança de acesso separadamente; a recompensa numérica não obriga todo inimigo a carregar moedas.
 
+<div class="section" book206-section="igualdade-na-tabela-de-chefes">
+
+## Como ler os limiares dos chefes
+
+Na tabela de chefes, a coluna de Acerto Total indica o primeiro resultado que supera diretamente a CA. O resultado exatamente igual à CA pode antecipar o Total somente se o Atributo do atacante superar o regente da defesa. Declare esse regente na ficha do chefe e conserve os valores de Vida e CA da tabela.
+
+Contra a CA 25 do Guardião da Caldeira, um ataque de Força 6 que tira 25 será Parcial se sua defesa for regida por Constituição 7 e Total se for regida por Agilidade 3. Defina o regente ao preparar a ficha; as placas retiradas reduzem a CA em 4, sem alterar o confronto dos Atributos.
+
+</div>
+
 
 # Capítulo 19 - Jornadas e exploração da Torre
 
@@ -7558,7 +7989,7 @@ Explorar significa transformar tempo, recursos e conhecimento em uma rota possí
 
 Um Tempo de Expedição, ou TE, representa cerca de 2 horas. Cada personagem realiza uma atividade principal por TE: navegar, mapear, investigar, vigiar, procurar recursos, tratar, preparar um ritual ou trabalhar no acampamento. Conversas e gestos menores podem acompanhar a atividade sem conceder outra tarefa completa.
 
-Uma jornada de viagem ocupa 8 TE; descanso longo, 8 horas. O tempo de preparar abrigo é separado do repouso. Prazos, perseguições e acontecimentos do mundo continuam avançando; registre cada passagem de tempo uma vez, sem cobrar de novo a mesma duração por estar em uma regra diferente.
+Uma jornada de viagem ocupa 8 TE, equivalentes a 16 horas; descanso longo, 8 horas, equivalentes a 4 TE. Rota e jornada são medidas distintas: a rota termina ao alcançar o Progresso necessário; não ganha duração fixa de 8 TE por isso. O tempo de preparar abrigo é separado do repouso. Prazos, perseguições e acontecimentos do mundo continuam avançando; registre cada passagem de tempo uma vez, sem cobrar de novo a mesma duração por estar em uma regra diferente.
 
 ## Navegação e progresso
 
@@ -7651,13 +8082,13 @@ Para reencontrar um caminho perdido, obtenha três sucessos antes de três falha
 
 Fora da Torre, consuma uma unidade de suprimento por pessoa por dia. Na Torre, uma unidade por pessoa a cada 6 TE. Três unidades ocupam um espaço de carga. Munição, combustível e cargas médicas são contados separadamente.
 
-Uma unidade reúne o alimento, água e consumíveis ordinários necessários ao trecho, conforme ambiente e equipamento. Um suprimento incompatível com a zona não elimina um perigo explicitamente identificado, como ar irrespirável ou frio sobrenatural.
+Suprimento é uma contabilidade abstrata alternativa à compra e à carga detalhadas de ração, água e insumos ordinários. Escolha o método para a expedição e registre-o: não cobre novamente os mesmos alimentos e água no inventário avulso. As três unidades por espaço são a conversão deste método abstrato, sem compactar fisicamente itens do catálogo. Uma unidade reúne o alimento, água e consumíveis ordinários necessários ao trecho, conforme ambiente e equipamento. Um suprimento incompatível com a zona não elimina um perigo explicitamente identificado, como ar irrespirável ou frio sobrenatural.
 
 Para um acampamento com descanso na Torre, reserve duas unidades por pessoa para as 8 horas de repouso. Se a preparação fracassar e o grupo abandonar o procedimento, perde metade da reserva. Quando o descanso se conclui, essa reserva já cobre suas 8 horas: não cobre novamente as mesmas duas unidades pelo contador geral. A preparação continua consumindo tempo normal e seus gastos próprios.
 
 ## Preparar acampamento
 
-**Escolha local e distribua tarefas:** proteção, abrigo, camuflagem, suprimentos, investigação da Lei ou outra contribuição pertinente. Cada personagem contribui no máximo uma vez por TE; pode participar em um TE posterior com uma tarefa diferente e significativa.
+**Escolha local e distribua tarefas:** proteção, abrigo, camuflagem, suprimentos, investigação da Lei ou outra contribuição pertinente. O Mestre anuncia a CD de cada tarefa antes da rolagem, conforme a ação e as circunstâncias; a dificuldade da zona serve de referência quando pertinente. Não há um ajuste fixo obrigatório para todas as tarefas. Cada personagem contribui no máximo uma vez por TE; pode participar em um TE posterior com uma tarefa diferente e significativa.
 
 **Fora da Torre:** obtenha dois sucessos antes de duas falhas, em pelo menos 1 TE.
 
@@ -7673,7 +8104,7 @@ Uma tentativa de acampamento fracassada pode levar a outro local ou método, com
 
 Na Torre, um descanso seguro pausa o aumento de Pressão por permanência durante suas 8 horas. Ao concluir, reduza Pressão em 2 e reinicie o contador de permanência do andar. Prazos narrativos continuam avançando; dormir não pausa um ritual inimigo ou uma inundação anunciada.
 
-**Repouso exposto:** 8 horas sem cumprir as condições de segurança recuperam toda a Vida e metade do Karma faltante, arredondada para baixo. Não removem Exausto e não renovam recursos que exijam descanso seguro. Na Torre, essas 8 horas já produzem +2 Pressão por permanência, além de um Evento coerente de exposição; não acrescente outros +2 pelo mesmo motivo. Se os limiares já produzirem um Evento correspondente, ele satisfaz essa consequência.
+**Repouso exposto:** 8 horas sem cumprir as condições de segurança recuperam toda a Vida e metade do Karma faltante, arredondada para baixo. Não removem Exausto e não renovam recursos que exijam descanso seguro. Na Torre, essas 8 horas já produzem +2 Pressão por permanência, além de um Evento coerente de exposição; não acrescente outros +2 pelo mesmo motivo. Se os limiares já produzirem um Evento correspondente, ele satisfaz essa consequência. Ao concluir o repouso exposto, reinicie o contador comum de permanência em 0/6 TE. Essa reinicialização não remove a Pressão e o Evento já devidos pelas 8 horas de exposição.
 
 ## Poderes durante a exploração
 
@@ -7696,6 +8127,14 @@ Uma zona B exige CD 18, seis pontos de progresso e Pressão inicial 1. No primei
 No segundo TE, a navegação falha. O grupo gasta o Marco antes das consequências, rerrola e consegue sucesso: passa a quatro pontos, sem receber a Pressão da falha substituída. Um fenômeno distinto, já anunciado, produz +2 Pressão; o marcador chega a 3 e ocorre um Evento relacionado ao fenômeno.
 
 No terceiro TE, outro sucesso completa os seis pontos e revela o objetivo anunciado. Se houver um chefe B como barreira final, sua ficha usa Vida 80 e CA 21; completar o trajeto não o derrota. O grupo decide se enfrenta, negocia, procura outra solução permitida ou retorna usando o conhecimento adquirido.
+
+<div class="section" book206-section="duracao-da-presenca-invocada">
+
+## Duração da presença invocada
+
+Fora de combate, a taxa única de manutenção de uma invocação cobre a cena de exploração por até 2 TE (4 horas), ou até uma mudança de zona, o que ocorrer primeiro. O esforço inicial e os custos seguem o Capítulo 15; iniciar um novo período ou mudar de zona renova a cobrança quando houver o esforço previsto. A taxa não transforma uma duração de rodadas em horas.
+
+</div>
 
 
 # Capítulo 20 - Tecnologia, Armas de Fogo, Explosivos e Máquinas
@@ -7771,15 +8210,26 @@ Escolha um modo antes de rolar. Uma ação não combina os três. Uma técnica q
 
 Supressão total aplica Abalado e restringe movimento voluntário a buscar ou preservar cobertura até o início do próximo turno do atirador. Se não houver cobertura alcançável, o alvo pode mover-se em qualquer direção pela metade do deslocamento. Parcial aplica apenas Abalado. Abalado impõe Desvantagem somente ao próximo teste e termina após ele; sem teste, termina no prazo indicado. Não se acumula consigo. Supressão não impede Principal ou Reação, não afeta quem está atrás de cobertura total e pode atingir aliados expostos. O chassi não fica Abalado; ocupantes expostos podem ficar.
 
-A supressão precisa ser sustentada por novas ações e munição a cada rodada. A Evasão segue as regras de área e pode reduzir seu grau; não há dano para reduzir. Personagem imune a Abalado ainda sofre a restrição de movimento somente se a ficha da imunidade não abranger coerção pelo fogo. Máquinas fechadas não ficam presas por esse efeito sobre a tripulação protegida.
+A supressão precisa ser sustentada por novas ações e munição a cada rodada. A Evasão segue as regras de área: havendo margem ou abrigo válido, superar o ataque evita os efeitos dessa incidência, sem deslocamento automático no mapa ou desconto do Movimento seguinte. O Bloqueio reduz o grau, quando puder enfrentar a incidência; não há dano para reduzir. Personagem imune a Abalado ainda sofre a restrição de movimento somente se a ficha da imunidade não abranger coerção pelo fogo. Máquinas fechadas não ficam presas por esse efeito sobre a tripulação protegida.
 
 ## Munição e carregadores
 
 Registre calibre ou família compatível na compra. Munição de pistola, fuzil, espingarda e arma pesada não é intercambiável apenas por compartilhar dado de dano. Cargas abaixo incluem embalagem e dispositivo de alimentação quando expressos. Um carregador abastecido substitui, sem somar, a carga dele vazio e a munição solta que contém.
 
-Munição ou recipiente \| Licença \| Preço (M\$) \| Efeito \| Carga (Espaços) \| Força \| Capacidade e uso \|
-
-\|—\|—\|—\|—\|—\|—\|—\| \| <span item="caixa-de-pistola-ou-submetralhadora">Caixa de pistola ou submetralhadora</span> \| Licenciado \| 6 \| Munição comum \| 1/3 \| — \| 20 disparos; três caixas formam 1 \| \| <span item="caixa-de-fuzil-ou-carabina">Caixa de fuzil ou carabina</span> \| Licenciado \| 8 \| Munição comum \| 0,5 \| — \| 20 disparos; duas caixas formam 1 \| \| <span item="caixa-de-espingarda">Caixa de espingarda</span> \| Licenciado \| 8 \| Munição comum \| 0,5 \| — \| 12 cartuchos; duas caixas formam 1 \| \| <span item="carregador-de-pistola-vazio">Carregador de pistola vazio</span> \| Livre \| 2 \| Recipiente reutilizável \| 0,25 \| — \| Até 10 disparos compatíveis \| \| <span item="carregador-de-pistola-abastecido">Carregador de pistola abastecido</span> \| Licenciado \| 5 \| Inclui recipiente e munição \| 1/3 \| — \| 8 disparos; remanescente do lote fica separado \| \| <span item="carregador-de-fuzil-abastecido">Carregador de fuzil abastecido</span> \| Licenciado \| 6 \| Inclui recipiente e munição \| 0,5 \| — \| 10 disparos; vazio custa 2 M\$ e ocupa 0,25 \| \| <span item="carregador-de-submetralhadora-abastecido">Carregador de submetralhadora abastecido</span> \| Restrito \| 9 \| Inclui recipiente e munição \| 0,5 \| — \| 20 disparos; vazio custa 3 M\$ e ocupa 0,25 \| \| <span item="fita-de-metralhadora">Fita de metralhadora</span> \| Restrito \| 12 \| Munição e alimentação compatíveis \| 1 \| — \| 50 disparos; caixa rígida reutilizável ocupa 0,25 vazia \| \| <span item="projetil-antiblindagem">Projétil antiblindagem</span> \| Restrito \| 18 \| Aplica a ficha do lançador \| 1 \| — \| Uma utilização; embalagem de transporte incluída \| \| <span item="granada-de-morteiro">Granada de morteiro</span> \| Restrito \| 15 \| Aplica a ficha do morteiro \| 0,5 \| — \| Uma utilização \| \| <span item="tanque-de-lanca-chamas-de-reserva">Tanque de lança-chamas de reserva</span> \| Restrito \| 16 \| Quatro jatos \| 2 \| 1 \| Inclui recipiente; um tanque instalado já integra carga 7 \| \| <span item="carga-de-combustivel-comum">Carga de combustível comum</span> \| Livre \| 2 \| Abastece consumo de máquinas \| 1/3 \| — \| Unidade abstrata; três formam 1; recipiente incluído \|
+| Munição ou recipiente                                                                                 | Licença    | Preço (M\$) | Efeito                            | Carga (Espaços) | Força | Capacidade e uso                                          |
+|-------------------------------------------------------------------------------------------------------|------------|-------------|-----------------------------------|-----------------|-------|-----------------------------------------------------------|
+| <span item="caixa-de-pistola-ou-submetralhadora">Caixa de pistola ou submetralhadora</span>           | Licenciado | 6           | Munição comum                     | 1/3             | —     | 20 disparos; três caixas formam 1                         |
+| <span item="caixa-de-fuzil-ou-carabina">Caixa de fuzil ou carabina</span>                             | Licenciado | 8           | Munição comum                     | 0,5             | —     | 20 disparos; duas caixas formam 1                         |
+| <span item="caixa-de-espingarda">Caixa de espingarda</span>                                           | Licenciado | 8           | Munição comum                     | 0,5             | —     | 12 cartuchos; duas caixas formam 1                        |
+| <span item="carregador-de-pistola-vazio">Carregador de pistola vazio</span>                           | Livre      | 2           | Recipiente reutilizável           | 0,25            | —     | Até 10 disparos compatíveis                               |
+| <span item="carregador-de-pistola-abastecido">Carregador de pistola abastecido</span>                 | Licenciado | 5           | Inclui recipiente e munição       | 1/3             | —     | 8 disparos; remanescente do lote fica separado            |
+| <span item="carregador-de-fuzil-abastecido">Carregador de fuzil abastecido</span>                     | Licenciado | 6           | Inclui recipiente e munição       | 0,5             | —     | 10 disparos; vazio custa 2 M\$ e ocupa 0,25               |
+| <span item="carregador-de-submetralhadora-abastecido">Carregador de submetralhadora abastecido</span> | Restrito   | 9           | Inclui recipiente e munição       | 0,5             | —     | 20 disparos; vazio custa 3 M\$ e ocupa 0,25               |
+| <span item="fita-de-metralhadora">Fita de metralhadora</span>                                         | Restrito   | 12          | Munição e alimentação compatíveis | 1               | —     | 50 disparos; caixa rígida reutilizável ocupa 0,25 vazia   |
+| <span item="projetil-antiblindagem">Projétil antiblindagem</span>                                     | Restrito   | 18          | Aplica a ficha do lançador        | 1               | —     | Uma utilização; embalagem de transporte incluída          |
+| <span item="granada-de-morteiro">Granada de morteiro</span>                                           | Restrito   | 15          | Aplica a ficha do morteiro        | 0,5             | —     | Uma utilização                                            |
+| <span item="tanque-de-lanca-chamas-de-reserva">Tanque de lança-chamas de reserva</span>               | Restrito   | 16          | Quatro jatos                      | 2               | 1     | Inclui recipiente; um tanque instalado já integra carga 7 |
+| <span item="carga-de-combustivel-comum">Carga de combustível comum</span>                             | Livre      | 2           | Abastece consumo de máquinas      | 1/3             | —     | Unidade abstrata; três formam 1; recipiente incluído      |
 
 Carregadores abastecidos são referência para compra pronta; transferir munição entre embalagens fora de combate não muda o total de disparos. Uma caixa ou carregador parcialmente cheio conserva sua carga até ser esvaziado. O conteúdo de um carregador instalado integra a arma; todos os carregadores de reserva continuam no inventário. Trocar continuamente carregadores não permite ocultar carga.
 
@@ -7819,7 +8269,7 @@ As fichas abaixo são dispositivos do jogo. Instalação e desarme são resolvid
 
 **Defesa de área.** Lançamento ativo usa uma rolagem de Agilidade + Pontaria, comparada separadamente com a CA de cada alvo; Evasão usa esse resultado como referência. A coluna E/D fornece a referência fixa de Evasão apenas quando não existe ataque ativo, como uma detonação ambiental. Essa referência substitui a rolagem de ataque; não é um segundo teste depois dela. Evasão precisa superá-la. Desarme usa Intelecto + Criação e iguala ou supera a CD indicada. Uma defesa por incidência, sem somar Evasão e Bloqueio.
 
-Uma explosão rola dano uma vez para todos. Cobertura é medida a partir do centro. Evasão ou Bloqueio reduz o grau conforme combate; se o resultado já era parcial, essa redução pode anulá-lo. Área não ignora parede fechada que realmente contenha o efeito. Ninguém recebe uma rolagem de Evasão sem Reação ou sem destino possível.
+Uma explosão rola dano uma vez para todos. Cobertura é medida a partir do centro. Havendo margem, abrigo ou zona menos intensa alcançável, Evasão que supera a referência evita completamente essa incidência. Ela é abstrata: não desloca a miniatura nem desconta Movimento futuro. Bloqueio reduz o grau do ataque conforme o combate, podendo anular um Parcial. Uma área contínua continua sujeitando o alvo às incidências futuras enquanto ele permanecer exposto. Área não ignora parede fechada que realmente contenha o efeito. Ninguém recebe uma rolagem de Evasão sem Reação ou sem destino possível.
 
 | Dispositivo                                                                       | Licença    | Preço (M\$)       | Dano / Efeito                                                | Carga (Espaços) | Força | CD E/D e área                                             |
 |-----------------------------------------------------------------------------------|------------|-------------------|--------------------------------------------------------------|-----------------|-------|-----------------------------------------------------------|
@@ -7835,7 +8285,7 @@ Uma explosão rola dano uma vez para todos. Cobertura é medida a partir do cent
 
 **Fumaça.** Escolha ponto alcançável a 5 m, sem teste se o arremesso estiver livre. A nuvem dura três rodadas; vento forte reduz a uma. Concede cobertura parcial visual e bloqueia visão através de todo o diâmetro, sem impedir som ou passagem. Não causa dano, não envenena e não concede invisibilidade a quem atira de dentro. Depois de ativada, a fumaça é dispersa ou evitada, não desarmada.
 
-**Anti-karma.** Em total, a primeira técnica que cada atingido declarar em cada um dos próximos dois turnos custa +2 Karma. Em parcial, apenas a próxima técnica até o fim do próximo turno custa +1. Se não puder pagar, o usuário pode escolher outra ação antes de gastar recursos. Não drena a reserva, não remove vínculos, não encerra poderes já ativos e não anula passivas, Favor ou Bênçãos sem custo de Karma. Afeta aliados e criaturas na área da mesma forma. Evasão reduz o grau do efeito; não é preciso um segundo teste de Canalização.
+**Anti-karma.** Em total, a primeira técnica que cada atingido declarar em cada um dos próximos dois turnos custa +2 Karma. Em parcial, apenas a próxima técnica até o fim do próximo turno custa +1. Se não puder pagar, o usuário pode escolher outra ação antes de gastar recursos. Não drena a reserva, não remove vínculos, não encerra poderes já ativos e não anula passivas, Favor ou Bênçãos sem custo de Karma. Afeta aliados e criaturas na área da mesma forma. Evasão que supera a referência, com margem ou abrigo válido, evita o efeito dessa incidência. Bloqueio reduz seu grau quando cabível. Não é preciso um segundo teste de Canalização.
 
 **Instalação.** Uma mina ou carga preparada exige seis Principais consecutivas, ou 1 TE, kit de demolição e Intelecto + Criação CD 15; a mina antiveículo usa CD 18. Sucesso registra o resultado como ataque futuro da detonação. Falha consome tempo, não detona e deixa o conjunto inerte até nova tentativa. Ocultar usa Agilidade + Furtividade em teste separado, oposto à Percepção ou Investigação de quem procura. Instalar não torna automaticamente o objeto invisível.
 
@@ -7961,7 +8411,7 @@ Uma carga de combustível custa 2 M\$ e ocupa 1/3 de espaço. Cada veículo terr
 | Gerador comum                                                       | 1 carga por 8 TE               | 2 m; 1/3 espaço            | Uma carga integral               |
 | Gerador com radar experimental                                      | 1 carga por 4 TE               | 2 m; 1/3 espaço            | Reabastecimento antes de esgotar |
 
-Trecho menor consome a fração proporcional, arredondada para cima apenas ao encerrar o registro de abastecimento da jornada. Cada nova cena não cobra uma unidade mínima separada. Motor ligado durante espera continua consumindo tempo; desligá-lo impede deslocamento imediato até ser acionado. Sobrecarga dobra consumo e não amplia tanque.
+Uma jornada de viagem ocupa 8 TE, isto é, 16 horas; uma rota pode exigir várias jornadas. O tanque registra autonomia, sem criar um teto diário de viagem ou uma obrigação de reabastecer a cada dia. Trecho menor consome a fração proporcional, arredondada para cima apenas ao encerrar o registro de abastecimento da jornada. Cada nova cena não cobra uma unidade mínima separada. Motor ligado durante espera continua consumindo tempo; desligá-lo impede deslocamento imediato até ser acionado. Sobrecarga dobra consumo e não amplia tanque.
 
 Inspeção após uma jornada de uso severo ocupa 1 TE, kit e peças de 1% do preço, mínimo 1 M\$. A falta de inspeção não destrói a máquina ao acaso; anuncia um risco de Avaria na próxima manobra exigente. Reparo de campo usa 1 TE, kit, peças de 5 m e Criação CD 15; sucesso recupera 1d8 + nível real de Criação, de 0 a 3, de Estrutura. Falha consome peças e tempo. Uma tentativa por máquina em 48 TE contados da primeira; oficina de campo permite duas. Nenhum desses reparos reconstrói componente Quebrado.
 

@@ -23,6 +23,7 @@ import { quickTechnique, TECH_GRADES, vowJudgement } from "@/lib/gm-rules";
 import type { searchRules } from "@/lib/gm-search";
 import type { searchItemCatalog } from "@/lib/item-catalog";
 import { MATRICES, type TechniqueMatrix } from "@/lib/technique-matrices";
+import { armorRangeLabel } from "@/lib/table-play";
 import { lazy, Suspense, useEffect, useState } from "react";
 const EncounterDesk = lazy(() =>
   import("@/components/encounter-desk").then((module) => ({
@@ -56,6 +57,10 @@ export function GmPage() {
     [life, setLife] = useState(20),
     [karma, setKarma] = useState(8),
     [ca, setCa] = useState(15),
+    [caRegent, setCaRegent] = useState<"" | "Agilidade" | "Constituição">(""),
+    [attackAttribute, setAttackAttribute] = useState<
+      (typeof ATTRIBUTES)[number] | ""
+    >(""),
     [attrs, setAttrs] = useState([3, 3, 3, 1, 1, 1]),
     [skills, setSkills] = useState("Luta 1; Reflexos 1"),
     [reactions, setReactions] = useState(1),
@@ -169,6 +174,7 @@ export function GmPage() {
       life,
       karma,
       ca,
+      ...(caRegent ? { caRegent } : {}),
       movement: "7 m",
       attributes: attrs,
       skills,
@@ -184,6 +190,7 @@ export function GmPage() {
           roll,
           damage: primary === "Ataque" ? t.damage : "",
           attack: primary === "Ataque",
+          ...(attackAttribute ? { attribute: attackAttribute } : {}),
           action,
           calculation: t.calculation,
         },
@@ -363,8 +370,21 @@ export function GmPage() {
               />
             </label>
           ))}
+          <label>
+            Regente da CA
+            <select
+              value={caRegent}
+              onChange={(event) =>
+                setCaRegent(event.target.value as typeof caRegent)
+              }
+            >
+              <option value="">Definir antes de um confronto</option>
+              <option>Agilidade</option>
+              <option>Constituição</option>
+            </select>
+          </label>
           <p>
-            CA {ca} · parcial {Math.floor(ca / 2)}–{ca - 1} · total {ca}+
+            CA {ca} · {armorRangeLabel(ca)}
           </p>
         </div>
         <div className="live-attributes">
@@ -507,6 +527,20 @@ export function GmPage() {
               onChange={(e) => setRoll(e.target.value)}
               placeholder="3d20 +5"
             />
+          </label>
+          <label>
+            Atributo usado no ataque
+            <select
+              value={attackAttribute}
+              onChange={(event) =>
+                setAttackAttribute(event.target.value as typeof attackAttribute)
+              }
+            >
+              <option value="">Definir antes de um confronto</option>
+              {ATTRIBUTES.map((attribute) => (
+                <option key={attribute}>{attribute}</option>
+              ))}
+            </select>
           </label>
         </div>
         <label>

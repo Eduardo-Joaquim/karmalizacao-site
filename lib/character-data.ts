@@ -17,8 +17,10 @@ import {
 import {
   calculateAutomaticBonuses,
   calculateDerivedStats,
+  getStageIndex,
 } from "@/lib/character-rules";
 import { canonicalizeBlessings } from "@/lib/divine-blessings";
+import { reconcileCursedRuneInscriptions } from "@/lib/cursed-rune-model";
 export * from "@/lib/character-model";
 export function normalizeCharacterPayload(
   payload: Partial<CharacterPayload>,
@@ -44,6 +46,8 @@ export function normalizeCharacterPayload(
     ...blank,
     ...payload,
     version: 1,
+    firstMilestoneConfirmed:
+      payload.firstMilestoneConfirmed ?? getStageIndex(payload.stage ?? "") > 0,
     classAbilities: (payload.classAbilities ?? []).map(
       (name) =>
         ({
@@ -184,6 +188,8 @@ export function normalizeCharacterPayload(
     summons: live?.summons ?? {},
     runes: live?.runes ?? [],
     runeBurstUsed: live?.runeBurstUsed ?? false,
+    gradeVApex: live?.gradeVApex,
+    cursedWeapons: live?.cursedWeapons,
     impetus: live?.impetus,
     impetusBloodied: live?.impetusBloodied,
     impetusNaturalRound: live?.impetusNaturalRound,
@@ -210,5 +216,5 @@ export function normalizeCharacterPayload(
     round: live?.round ?? old?.round ?? 1,
     domainRounds: live?.domainRounds ?? old?.domainRounds ?? {},
   };
-  return normalized;
+  return reconcileCursedRuneInscriptions(normalized);
 }

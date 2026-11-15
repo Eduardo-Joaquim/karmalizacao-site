@@ -33,7 +33,7 @@
     "id": 6,
     "name": "Soberania Elemental",
     "focus": "Elementalista / Conjurador de Área",
-    "effect": "Técnicas da Matriz Elemental recebem +1 dado do mesmo tipo no cálculo de dano antes do parcial e ignoram resistências elementais leves. Além disso, você pode excluir até 2 aliados da área de efeito das suas próprias técnicas elementais."
+    "effect": "Técnicas da Matriz Elemental recebem +1 dado do mesmo tipo no cálculo de dano antes do parcial e reduzem em 1 ponto a Resistência Elemental do alvo, até o mínimo de 0 (ignorando Resistência Leve 1). Além disso, você pode excluir até 2 aliados da área de efeito das suas próprias técnicas elementais."
   },
   {
     "id": 7,
@@ -57,6 +57,6 @@
     "id": 10,
     "name": "Predação de Sombra Viva",
     "focus": "Subterfúgio / Furtividade / Emboscada",
-    "effect": "Atacar a partir de cobertura, furtividade ou flanco adiciona +1d20 na Reserva do ataque e impede que o alvo utilize Reações até o início do próximo turno dele. Abater ou deixar um inimigo em estado crítico permite entrar em furtividade como Ação Livre."
+    "effect": "Atacar a partir de cobertura, furtividade ou flanco adiciona +1d20 na Reserva do ataque. Se esse golpe obtiver Acerto Total, depois de resolvidas as defesas do próprio golpe, o alvo não pode usar Reações até o início do próximo turno dele. Deixar um inimigo Morrendo ou com Ferimento Grave permite entrar em furtividade como Ação Livre."
   }
 ]

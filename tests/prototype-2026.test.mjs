@@ -26,7 +26,7 @@ test('level three requires stage seven and grants +10',()=>{
  d.stage='Etapa VI';assert.equal(rules.getFinalSkill(d,rules.calculateAutomaticBonuses(d),'Reflexos'),2);
 });
 test('common growth and class extras both apply',()=>{
- const d=data.createBlankCharacter();d.race='Tritão';d.className='Pugilista';d.stage='Etapa II';
+ const d=data.createBlankCharacter();d.race='Tritão';d.className='Pugilista';d.stage='Etapa II';d.firstMilestoneConfirmed=true;
  const a=rules.calculateAutomaticBonuses(d);assert.equal(a.life,18);assert.equal(a.karma,10);assert.equal(a.armor,1);
 });
 test('new races have faithful numeric grants',()=>{

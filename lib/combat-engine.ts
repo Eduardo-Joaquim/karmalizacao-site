@@ -20,6 +20,13 @@ import type {
 } from "@/lib/combat-types";
 import { visualFromRoll } from "@/lib/combat-visuals";
 import { corruptedFormState, corruptionControlDC } from "@/lib/corrupted-form";
+import {
+  cursedRuneKey,
+  getCursedRuneError,
+  getCursedRuneProfile,
+} from "@/lib/cursed-runes";
+import { reconcileCursedRuneInscriptions } from "@/lib/cursed-rune-model";
+import { damageResistance } from "@/lib/damage-types";
 import { rollDiceExpression } from "@/lib/dice-expression";
 import { blessingGrants } from "@/lib/divine-blessings";
 import {
@@ -29,6 +36,8 @@ import {
 import { calculateInvocationStats } from "@/lib/invocation-rules";
 import {
   availableKarma,
+  hasVectorInterception,
+  interceptedRuneSlotExemption,
   karmicRunes,
   runeInscriptionAction,
   runeInscriptionError,
@@ -47,6 +56,24 @@ import {
 } from "@/lib/technique-matrices";
 export const clamp = (n: number, max = 99999) =>
   Math.max(0, Math.min(max, Math.floor(n)));
+function commitGradeVApex(
+  state: LiveCombatState,
+  binding: NonNullable<LiveCombatState["gradeVApex"]>,
+) {
+  const existing = state.gradeVApex;
+  if (
+    existing &&
+    !(
+      existing.kind === "rune" &&
+      binding.kind === "rune" &&
+      existing.sourceId === binding.sourceId
+    )
+  )
+    throw Error(
+      `Ápice de Grau V já comprometido nesta cena${existing.label ? `: ${existing.label}` : "."}`,
+    );
+  state.gradeVApex = binding;
+}
 export function characterMax(draft: CharacterPayload) {
   return calculateDerivedStats(draft, calculateAutomaticBonuses(draft));
 }
@@ -60,8 +87,10 @@ export function liveState(draft: CharacterPayload): LiveCombatState {
     s = draft.combatState;
   return {
     session: s?.session,
+    cursedWeapons: s?.cursedWeapons ?? {},
     runes: s?.runes ?? [],
     runeBurstUsed: s?.runeBurstUsed ?? false,
+    gradeVApex: s?.gradeVApex,
     impetus: clamp(
       s?.impetus ?? Math.min(2, impetusLimit(draft)),
       impetusLimit(draft),
@@ -124,25 +153,27 @@ export function mergeCombat(
         }
       : item;
   });
-  return withLiveState(
-    {
-      ...local,
-      inventory,
-      combat: {
-        ...local.combat!,
-        temporaryCharges: remote.combat?.temporaryCharges ?? 0,
+  return reconcileCursedRuneInscriptions(
+    withLiveState(
+      {
+        ...local,
+        inventory,
+        combat: {
+          ...local.combat!,
+          temporaryCharges: remote.combat?.temporaryCharges ?? 0,
+        },
+        divine: { ...local.divine, favor: remote.divine.favor },
+        alchemicalSaturation: remote.alchemicalSaturation,
+        corruption: {
+          ...local.corruption,
+          charge: remote.corruption.charge,
+          formActive: remote.corruption.formActive,
+          formTurns: remote.corruption.formTurns,
+          formBlocked: remote.corruption.formBlocked,
+        },
       },
-      divine: { ...local.divine, favor: remote.divine.favor },
-      alchemicalSaturation: remote.alchemicalSaturation,
-      corruption: {
-        ...local.corruption,
-        charge: remote.corruption.charge,
-        formActive: remote.corruption.formActive,
-        formTurns: remote.corruption.formTurns,
-        formBlocked: remote.corruption.formBlocked,
-      },
-    },
-    liveState(remote),
+      liveState(remote),
+    ),
   );
 }
 export function parseCombatLink(raw: string) {
@@ -197,6 +228,29 @@ export function rollInitiative(
   return { ...test, ...resolveRoll(dice, test.bonus), dice };
 }
 
+export function pathAwakeningRequirements(draft: CharacterPayload) {
+  const hasOutorga = Boolean(
+    draft.divine.enabled ||
+    draft.divine.blessingName.trim() ||
+    blessingGrants(draft.divine).some((grant) =>
+      [
+        grant.name,
+        grant.core,
+        grant.initialGift,
+        grant.activeManifestation,
+      ].some((value) => value?.trim()),
+    ),
+  );
+  const difficult =
+    hasOutorga || draft.personalPath.strictlySelfTaught !== true;
+  return {
+    difficult,
+    dc: difficult ? 24 : 20,
+    karma: difficult ? 10 : 6,
+    irreducibleDamage: difficult ? "2d6" : undefined,
+  };
+}
+
 export function rollPathAwakening(
   draft: CharacterPayload,
   attribute: AttributeName,
@@ -206,16 +260,15 @@ export function rollPathAwakening(
     throw Error("O despertar exige Etapa III ou superior.");
   const automatic = calculateAutomaticBonuses(draft);
   const value = getFinalAttribute(draft, automatic, attribute);
-  const blessed =
-    draft.divine.enabled &&
-    blessingGrants(draft.divine).some((grant) => grant.name.trim());
-  const pool = Math.max(1, Math.ceil(value / 2)) - Number(blessed);
+  const requirements = pathAwakeningRequirements(draft);
+  const pool =
+    Math.max(1, Math.ceil(value / 2)) - Number(requirements.difficult);
   const level = getFinalSkill(draft, automatic, "Canalização de Karma");
   const bonus =
     (value === 0 && level === 0 ? -4 : ([0, 2, 5, 10][level] ?? 0)) +
     (draft.personalPath.failedAttempts ?? 0);
   const dice = diceSource(pool < 1 ? 2 : pool, 20);
-  const dc = blessed ? 24 : 20;
+  const dc = requirements.dc;
   return {
     ...resolveRoll(dice, bonus, dc, "CD", pool < 1 ? "menor" : "maior"),
     dice,
@@ -355,6 +408,186 @@ export function applyCombatAction(
     s = { ...s, currentLife: r.life, tempShield: r.shield };
     event.kind = "damage";
     event.details = `${op.amount} bruto − ${resistance} Resistência; ${r.absorbed} no escudo; ${r.damage} na Vida.`;
+  }
+  if (op.type === "cursedStrike" || op.type === "cursedWeapon") {
+    const item = draft.inventory.find((entry) => entry.id === op.weaponId);
+    const inscription = item?.cursedRune;
+    if (!item || !inscription) throw Error("Arma amaldiçoada não encontrada.");
+    const error = getCursedRuneError(draft, item, inscription);
+    if (error) throw Error(error);
+    if (item.quantity < 1 || item.location === "external")
+      throw Error("A arma amaldiçoada não está acessível.");
+    const profile = getCursedRuneProfile(draft, inscription);
+    const key = cursedRuneKey(inscription);
+    const previous = s.cursedWeapons?.[item.id];
+    const current =
+      previous?.runeKey === key
+        ? { ...previous, targets: { ...previous.targets } }
+        : { runeKey: key, targets: {}, bloodFed: false, dormant: false };
+    const conditions = inscription.conditionIds;
+    event.kind = "ability";
+    if (op.type === "cursedWeapon") {
+      if (
+        !Number.isFinite(op.controlTotal) ||
+        !Number.isFinite(op.ritualDC) ||
+        op.ritualDC! < 0
+      )
+        throw Error(
+          "Informe a CD anunciada pelo Mestre e o resultado de Presença + Controle da Corrupção para interagir com a maldição.",
+        );
+      if (op.operation === "wake" && !op.ritualCompleted)
+        throw Error("Confirme 1 TE de alimentação antes de despertar a arma.");
+      if (op.controlTotal! < op.ritualDC!) {
+        event.details = `Controle ${op.controlTotal} contra CD ${op.ritualDC}: falha; a alimentação ou supressão não foi confirmada e o estado da maldição permanece.`;
+      } else if (op.operation === "feed") {
+        current.bloodFed = true;
+        event.details =
+          "Sangue de um inimigo derrotado confirmado nesta cena. A alimentação não resolve o ritual de despertar de uma arma já em torpor.";
+      } else if (op.operation === "torpor") {
+        current.dormant = true;
+        current.targets = {};
+        event.details =
+          "Torpor registrado; marcas encerradas. Complete 1 TE de alimentação e o Controle anunciado para despertar a arma.";
+      } else {
+        if (!current.dormant) throw Error("Esta arma não está em torpor.");
+        if (op.controlTotal! >= op.ritualDC!) {
+          current.dormant = false;
+          current.bloodFed = true;
+          event.details = `Ritual de 1 TE concluído: Controle ${op.controlTotal} contra CD ${op.ritualDC}; arma desperta.`;
+        } else
+          event.details = `Ritual de 1 TE concluído: Controle ${op.controlTotal} contra CD ${op.ritualDC}; a arma permanece em torpor.`;
+      }
+    } else {
+      if (!item.equipped && item.location !== "ready")
+        throw Error("Equipe a arma ou coloque-a em Prontidão antes do ataque.");
+      if (current.dormant)
+        throw Error(
+          "A maldição está em torpor; desperte-a antes de registrar marcas.",
+        );
+      if (
+        !op.targetId.trim() ||
+        op.targetId.length > 120 ||
+        !Number.isFinite(op.distance) ||
+        op.distance < 0
+      )
+        throw Error("Informe o alvo e uma distância válida.");
+      if (
+        !Number.isInteger(op.selectedNatural) ||
+        op.selectedNatural! < 1 ||
+        op.selectedNatural! > 20
+      )
+        throw Error("Informe o d20 natural selecionado do ataque, de 1 a 20.");
+      current.combatScene = true;
+      let hunger = "";
+      if (op.selectedNatural === 1) {
+        if (!Number.isFinite(op.controlTotal))
+          throw Error(
+            "Falha Crítica: informe Presença + Controle da Corrupção contra a Fome.",
+          );
+        if (op.controlTotal! < profile.hungerDC) {
+          if (inscription.hungerPenalty === "temporaryCharge") {
+            next.combat = {
+              life: s.currentLife,
+              karma: s.currentKarma,
+              shield: s.tempShield,
+              round: s.round,
+              domainRounds: s.domainRounds,
+              temporaryCharges: clamp(
+                (draft.combat?.temporaryCharges ?? 0) + 1,
+              ),
+            };
+            hunger = `Fome CD ${profile.hungerDC}: falha; +1 Carga Temporária de Corrupção. `;
+          } else {
+            if (
+              !Number.isInteger(op.hungerDie) ||
+              op.hungerDie! < 1 ||
+              op.hungerDie! > 6
+            )
+              throw Error("Informe o resultado de 1d6 da mordida da arma.");
+            const resistance = damageResistance(draft, "Corrupto");
+            const damage = receiveDamage(
+              s.currentLife,
+              s.tempShield,
+              op.hungerDie!,
+              resistance,
+            );
+            s = { ...s, currentLife: damage.life, tempShield: damage.shield };
+            hunger = `Fome CD ${profile.hungerDC}: falha; ${op.hungerDie} Corrupto − ${resistance} Resistência; ${damage.absorbed} no escudo e ${damage.damage} na Vida. `;
+          }
+        } else hunger = `Fome CD ${profile.hungerDC}: Controle bem-sucedido. `;
+      }
+      if (op.outcome === "Falha") {
+        if (conditions.includes("C6")) current.targets = {};
+        event.details =
+          hunger +
+          (conditions.includes("C6")
+            ? "Fome Intacta: a Falha apagou todas as marcas desta arma, em todos os alvos."
+            : "Ataque falhou; nenhuma marca acrescentada.");
+      } else {
+        const vectorValid =
+          (!conditions.includes("C1") || op.vector === "melee") &&
+          (!conditions.includes("C2") ||
+            (op.vector === "ranged" && op.distance >= 9));
+        const positionValid =
+          !conditions.includes("C7") ||
+          (inscription.isolationMode === "flanked"
+            ? op.flanked === true
+            : op.isolated === true);
+        if (!vectorValid || !positionValid)
+          event.details =
+            hunger +
+            "O vetor ou a posição exigida pela maldição não foi cumprido; nenhuma marca acrescentada.";
+        else {
+          const oldTarget = Object.hasOwn(current.targets, op.targetId)
+            ? current.targets[op.targetId]
+            : { marks: 0, hasTotal: false };
+          const marksNeeded = conditions.includes("C4")
+            ? 3
+            : conditions.includes("C3")
+              ? 2
+              : 1;
+          const target = {
+            marks: Math.min(marksNeeded, oldTarget.marks + 1),
+            hasTotal: oldTarget.hasTotal || op.outcome === "Acerto total",
+          };
+          const victimValid =
+            !conditions.includes("C9") || op.targetDebilitated === true;
+          const tributeValid =
+            !conditions.includes("C8") ||
+            (inscription.tributeMode === "wounded"
+              ? s.currentLife < max.life / 2
+              : s.currentLife >= 3);
+          if (target.marks >= marksNeeded && victimValid && tributeValid) {
+            if (
+              conditions.includes("C8") &&
+              inscription.tributeMode !== "wounded"
+            )
+              s.currentLife -= 3;
+            const stateAllowed = conditions.includes("C5")
+              ? target.hasTotal
+              : op.outcome === "Acerto total";
+            delete current.targets[op.targetId];
+            event.details =
+              hunger +
+              `${profile.effect!.name}: ${marksNeeded} marca(s), despertar com ${profile.damage} Corrupto; CD de resistência/escape ${profile.escapeDC}. ${stateAllowed ? "Requisito de Acerto Total para o estado cumprido." : "Sem requisito de Acerto Total: o estado não se aplica."} ${conditions.includes("C8") && inscription.tributeMode !== "wounded" ? "Tributo: 3 Vida irreduzíveis pagos. " : ""}Resolva o dano, alvos adicionais e efeitos da fórmula em mesa; este registro não reaplica o dano da arma nem os estados.`;
+          } else {
+            if (
+              !Object.hasOwn(current.targets, op.targetId) &&
+              Object.keys(current.targets).length >= 100
+            )
+              throw Error(
+                "Limite de cem alvos com marcas atingido nesta arma; encerre marcas antes de registrar outro alvo.",
+              );
+            current.targets = { ...current.targets, [op.targetId]: target };
+            event.details =
+              hunger +
+              `${profile.effect!.name}: ${target.marks}/${marksNeeded} marcas em ${op.targetId}; ${target.hasTotal ? "há Acerto Total na sequência" : "sequência sem Acerto Total"}.${!victimValid ? " Aguarda alvo debilitado." : ""}${!tributeValid ? " Aguarda tributo válido do portador." : ""}`;
+          }
+        }
+      }
+    }
+    s.cursedWeapons = { ...(s.cursedWeapons ?? {}), [item.id]: current };
+    event.inventoryItemId = item.id;
   }
   if (op.type === "summon") {
     const invocation = draft.invocations.find((i) => i.id === op.invocationId);
@@ -545,41 +778,50 @@ export function applyCombatAction(
             op.rounds,
             op.potency,
           )
-        : { rounds: op.rounds, potency: op.potency };
-    if (!applied) return draft;
-    if (applied.potency !== undefined)
-      event.details = `${op.condition} · Potência ${applied.potency}`;
+        : { name: op.condition, rounds: op.rounds, potency: op.potency };
+    if (!applied?.name) return draft;
+    const conditionName = applied.name;
+    if (applied.loseReaction && !op.remove) s.reactions = 0;
+    event.details = [
+      conditionName !== op.condition
+        ? `${op.condition} → ${conditionName}`
+        : conditionName,
+      applied.potency !== undefined ? `Potência ${applied.potency}` : "",
+      applied.manualNote ?? "",
+    ]
+      .filter(Boolean)
+      .join(" · ");
     s.activeConditions = op.remove
-      ? s.activeConditions.filter((c) => c !== op.condition)
-      : [...new Set([...s.activeConditions, op.condition])].slice(0, 20);
+      ? s.activeConditions.filter((c) => c !== conditionName)
+      : [...new Set([...s.activeConditions, conditionName])].slice(0, 20);
     s.conditionRounds = Object.fromEntries(
       Object.entries(s.conditionRounds ?? {}).filter(
-        ([name]) => name !== op.condition,
+        ([name]) => name !== conditionName,
       ),
     );
     s.conditionPotency = Object.fromEntries(
       Object.entries(s.conditionPotency ?? {}).filter(
-        ([name]) => name !== op.condition,
+        ([name]) => name !== conditionName,
       ),
     );
     if (
       applied.potency !== undefined &&
       !op.remove &&
-      s.activeConditions.includes(op.condition)
+      s.activeConditions.includes(conditionName)
     ) {
       s.conditionPotency = {
         ...s.conditionPotency,
-        [op.condition]: applied.potency,
+        [conditionName]: applied.potency,
       };
     }
     if (
       applied.rounds &&
       !op.remove &&
-      s.activeConditions.includes(op.condition)
+      s.activeConditions.includes(conditionName)
     ) {
       s.conditionRounds = {
         ...s.conditionRounds,
-        [op.condition]: applied.rounds,
+        [conditionName]: applied.rounds,
       };
     }
   }
@@ -623,6 +865,12 @@ export function applyCombatAction(
       const art = draft.techniques.find((t) => t.id === op.techniqueId);
       if (!art) throw Error("Técnica não registrada.");
       const grade = techniqueGradeIndex(art.grade);
+      if (grade === 4)
+        commitGradeVApex(s, {
+          kind: "technique",
+          sourceId: op.id,
+          label: art.name,
+        });
       if (art.matrix === "Divino" && grade >= 3) {
         if (draft.divine.favor < 1)
           throw Error("Esta técnica exige 1 Favor Divino.");
@@ -733,7 +981,97 @@ export function applyCombatAction(
       { id: op.id, runeId: rune.id, weaponId: op.weaponId },
     ];
     event.kind = "ability";
-    event.details = `${runeInscriptionAction(draft, rune)} · ${rune.retained} Karma retidos. ${rune.passive}`;
+    event.details = `${runeInscriptionAction(draft, rune)} · ${rune.retained} Karma retidos. ${rune.grade === "V" ? "A inscrição não consome o Ápice. Registre o primeiro benefício antes de aplicar a passiva de Grau V. " : ""}${rune.passive}`;
+  }
+  if (op.type === "runeBenefit") {
+    const inscription = s.runes?.find(
+      (entry) => entry.id === op.inscriptionId && !entry.spent,
+    );
+    const rune = karmicRunes.find((entry) => entry.id === inscription?.runeId);
+    if (!inscription || !rune || techniqueGradeIndex(rune.grade) !== 4)
+      throw Error("Escolha uma Runa de Grau V armada.");
+    commitGradeVApex(s, {
+      kind: "rune",
+      sourceId: inscription.id,
+      label: rune.name,
+    });
+    event.kind = "ability";
+    event.details = `Ápice da cena vinculado a ${rune.name}. A passiva e o Estouro desta inscrição compartilham o mesmo Ápice.`;
+  }
+  if (op.type === "gradeVApex") {
+    commitGradeVApex(s, { kind: "other", sourceId: op.id, label: op.label });
+    event.kind = "ability";
+    event.details = `Ápice de Grau V da cena comprometido: ${op.label}. Resolva ação, custos e demais requisitos da fonte em mesa.`;
+  }
+  if (op.type === "interceptRune") {
+    if (!hasVectorInterception(draft))
+      throw Error(
+        "Registre Sobrescrita de Vetor entre suas habilidades de Escriba.",
+      );
+    if (op.referenceKind === "cd" && op.hostilePartial)
+      throw Error("Uma CD não concede Acerto Parcial à Sobrescrita.");
+    if (
+      !Number.isFinite(op.reference) ||
+      !Number.isFinite(op.testTotal) ||
+      !Number.isInteger(op.damageBeforeMitigation) ||
+      op.damageBeforeMitigation < 0
+    )
+      throw Error(
+        "Informe o ataque ou CD e o dano elegível antes de registrar a Sobrescrita.",
+      );
+    const success = op.testTotal >= op.reference;
+    if (
+      success &&
+      (!Number.isInteger(op.mitigationDie) ||
+        op.mitigationDie! < 1 ||
+        op.mitigationDie! > 8)
+    )
+      throw Error("O sucesso exige a rolagem de 1d8 da redução.");
+    if (s.reactions < 1) throw Error("Reação indisponível.");
+    if (availableKarma(s) < 4) throw Error("Karma insuficiente.");
+    const intellect = getFinalAttribute(
+      draft,
+      calculateAutomaticBonuses(draft),
+      "Intelecto",
+    );
+    const reduction = success ? op.mitigationDie! + intellect : 0;
+    const remaining = Math.max(0, op.damageBeforeMitigation - reduction);
+    const capture = (success && remaining === 0) || op.hostilePartial;
+    s.currentKarma -= 4;
+    s.reactions -= 1;
+    let captureText = "Nenhuma Runa gerada.";
+    if (capture && op.runeId !== undefined) {
+      const rune = karmicRunes.find((entry) => entry.id === op.runeId);
+      const exempt = interceptedRuneSlotExemption(draft);
+      const error =
+        !rune || techniqueGradeIndex(rune.grade) > 1
+          ? "A captura exige uma fórmula conhecida de Grau I ou II."
+          : runeInscriptionError(draft, s, rune, op.weaponId, {
+              captured: true,
+              waivePersonalSlot: exempt,
+            });
+      if (error)
+        captureText = `${error} Nenhuma Runa nasce; os 4 Karma e a Reação permanecem gastos.`;
+      else if (rune) {
+        s.runes = [
+          ...(s.runes ?? []),
+          {
+            id: op.id,
+            runeId: rune.id,
+            weaponId: op.weaponId,
+            temporary: true,
+            personalSlotExempt: exempt,
+          },
+        ];
+        captureText = `${rune.name} capturada sem Karma Retido. Encerre-a no fim do próximo turno do Escriba; a expiração é registrada manualmente.`;
+      }
+    } else if (capture)
+      captureText =
+        "Captura disponível, mas nenhuma fórmula e suporte foram declarados. Nenhuma Runa nasce.";
+    event.kind = "ability";
+    event.karmaSpent = 4;
+    event.total = op.testTotal;
+    event.details = `Sobrescrita: Intelecto + ${op.skill} ${op.testTotal} contra ${op.referenceKind === "attack" ? "ataque" : "CD"} ${op.reference}: ${success ? "sucesso" : "falha"}. Redução ${reduction}; dano restante ${remaining} antes de Escudo Temporário e Vida. Aplique esse dano separadamente. ${captureText}`;
   }
   if (op.type === "burstRune") {
     const inscription = s.runes?.find(
@@ -741,6 +1079,12 @@ export function applyCombatAction(
     );
     const rune = karmicRunes.find((entry) => entry.id === inscription?.runeId);
     if (!inscription || !rune) throw Error("Runa armada não encontrada.");
+    if (!op.disarm && techniqueGradeIndex(rune.grade) === 4)
+      commitGradeVApex(s, {
+        kind: "rune",
+        sourceId: inscription.id,
+        label: rune.name,
+      });
     const releaseRound =
       draft.className === "Escriba Kármico"
         ? Math.min(99999, s.round + 1)
@@ -750,7 +1094,11 @@ export function applyCombatAction(
         ? { ...entry, spent: true, releaseRound }
         : entry,
     );
-    const circuit = !op.disarm && hasAxiom(draft, 5) && !s.runeBurstUsed;
+    const circuit =
+      !op.disarm &&
+      !inscription.temporary &&
+      hasAxiom(draft, 5) &&
+      !s.runeBurstUsed;
     if (circuit) s.currentKarma = Math.min(max.karma, s.currentKarma + 3);
     if (!op.disarm) s.runeBurstUsed = true;
     event.kind = "ability";
@@ -870,8 +1218,33 @@ export function applyCombatAction(
       );
   }
   if (op.type === "scene") {
-    s.runes = s.runes?.filter((rune) => !rune.spent);
+    s.cursedWeapons = Object.fromEntries(
+      draft.inventory.flatMap((item) => {
+        if (!item.cursedRune) return [];
+        const current = s.cursedWeapons?.[item.id];
+        const same = current?.runeKey === cursedRuneKey(item.cursedRune);
+        const starved =
+          item.cursedRune.conditionIds.includes("C10") &&
+          ((s.inCombat && item.quantity > 0 && item.location !== "external") ||
+            (same && current?.combatScene)) &&
+          !(same && current?.bloodFed);
+        return [
+          [
+            item.id,
+            {
+              runeKey: cursedRuneKey(item.cursedRune),
+              targets: {},
+              bloodFed: false,
+              combatScene: false,
+              dormant: Boolean((same && current?.dormant) || starved),
+            },
+          ],
+        ];
+      }),
+    );
+    s.runes = s.runes?.filter((rune) => !rune.spent && !rune.temporary);
     s.runeBurstUsed = false;
+    s.gradeVApex = undefined;
     s.impetus = Math.min(2, impetusLimit(draft));
     s.impetusBloodied = false;
     s.impetusNaturalRound = undefined;
@@ -906,6 +1279,13 @@ export function applyCombatAction(
       ),
       runes: [],
       runeBurstUsed: false,
+      gradeVApex: undefined,
+      cursedWeapons: Object.fromEntries(
+        Object.entries(s.cursedWeapons ?? {}).map(([id, unit]) => [
+          id,
+          { ...unit, targets: {} },
+        ]),
+      ),
       impetusNaturalRound: undefined,
       impetusBloodied: false,
       inCombat: false,

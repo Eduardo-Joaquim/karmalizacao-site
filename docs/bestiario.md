@@ -1816,7 +1816,7 @@ Leonor herdou uma fronteira cujas fortalezas envelhecem mais depressa que os jur
 
 **Identidade:** Humana · Casa Ferromonte · civil. **Vida:** 18. **Karma:** 16. **CA:** 14. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 2 · Constituição 3 · Intelecto 5 · Presença 6 · Espírito 3.
 
-**Perícias:** Persuasão 2; Intimidação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Persuasão 2; Intimidação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Cadeia de comando:** Uma vez por cena, apresenta uma ordem verificável de sua jurisdição e recebe +2 em um teste de Persuasão para solicitar cooperação de uma patrulha. Não força obediência nem legitima ordens fora de sua autoridade.
 
@@ -1833,7 +1833,7 @@ Mateus cresceu entre relatórios de obra e funerais de soldados. Financia engenh
 
 **Identidade:** Humano · Casa Ferromonte · civil. **Vida:** 16. **Karma:** 16. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 3 · Constituição 3 · Intelecto 5 · Presença 4 · Espírito 3.
 
-**Perícias:** Investigação 1; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 1; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Memória das obras:** Uma vez por cena, após examinar uma obra por pelo menos um minuto, recebe +2 em Investigação para reconhecer alteração em relação à planta que possui. Sem planta ou acesso à estrutura, não recebe o bônus.
 
@@ -1890,7 +1890,7 @@ Artur manteve trabalhadores empregados durante a seca assumindo compromissos que
 
 **Identidade:** Humano · Casa Vesperal · civil. **Vida:** 16. **Karma:** 16. **CA:** 14. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 2 · Constituição 3 · Intelecto 5 · Presença 5 · Espírito 3.
 
-**Perícias:** Persuasão 2; Enganação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Persuasão 2; Enganação 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Mesa de negociação:** Uma vez por cena, depois de expor uma concessão concreta que pode cumprir, recebe +2 em Persuasão numa negociação de abastecimento. O bônus não revela se a outra parte mente e não substitui o consentimento.
 
@@ -1907,7 +1907,7 @@ Naira é tritã, engenheira e esposa de Artur. Sua autoridade nas obras foi conq
 
 **Identidade:** Tritã · Casa Vesperal · civil. **Vida:** 20. **Karma:** 18. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 3 · Constituição 4 · Intelecto 6 · Presença 4 · Espírito 4.
 
-**Perícias:** Investigação 2; Percepção 2; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 2; Percepção 2; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Leitura de vazão:** Uma vez por cena, após observar o fluxo por um minuto, recebe +2 em Percepção para localizar uma obstrução ou desvio visível no canal examinado. Não detecta automaticamente magia ou passagens fora de seu alcance sensorial.
 
@@ -1924,7 +1924,7 @@ Lídia acompanha a mãe nas inspeções e mantém um mapa próprio, corrigido a 
 
 **Identidade:** Humana · Casa Vesperal · civil. **Vida:** 14. **Karma:** 16. **CA:** 16. **Deslocamento:** 9 m. **Atributos:** Força 1 · Agilidade 4 · Constituição 3 · Intelecto 5 · Presença 3 · Espírito 3.
 
-**Perícias:** Investigação 1; Furtividade 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 1; Furtividade 1; Percepção 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Mapa de campo:** Uma vez por cena, com seu caderno e dez minutos para comparar marcos, recebe +2 em Investigação para identificar divergência entre o mapa e o trajeto percorrido. Não cria uma rota segura onde ela não existe.
 
@@ -1981,7 +1981,7 @@ Damião recebeu a concessão depois de atravessar uma ponte com refugiados quand
 
 **Identidade:** Humano · Cedro Novo · civil. **Vida:** 22. **Karma:** 16. **CA:** 14. **Deslocamento:** 9 m. **Atributos:** Força 3 · Agilidade 2 · Constituição 4 · Intelecto 3 · Presença 5 · Espírito 3.
 
-**Perícias:** Persuasão 1; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Persuasão 1; Atletismo 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Nome entre os moradores:** Uma vez por cena, após oferecer abrigo ou alimento que realmente possui, recebe +2 em Persuasão para organizar uma evacuação em Cedro Novo. Não dispõe de estoque infinito nem recebe lealdade automática.
 
@@ -1998,7 +1998,7 @@ Teresa administra o celeiro principal e conhece a diferença entre uma conta mal
 
 **Identidade:** Humana · Cedro Novo · civil. **Vida:** 18. **Karma:** 16. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 2 · Agilidade 3 · Constituição 4 · Intelecto 5 · Presença 4 · Espírito 3.
 
-**Perícias:** Investigação 2; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Investigação 2; Percepção 1; Persuasão 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Peso de aferição:** Uma vez por cena, usando seu peso e examinando uma balança por um minuto, recebe +2 em Investigação para comprovar adulteração daquele instrumento. O resultado não identifica sozinho quem o alterou.
 
@@ -2059,7 +2059,7 @@ Rui transforma autorizações antigas em ordens novas e confia que ninguém comp
 
 **Identidade:** Humano · Chancelaria · civil. **Vida:** 12. **Karma:** 16. **CA:** 15. **Deslocamento:** 9 m. **Atributos:** Força 1 · Agilidade 3 · Constituição 2 · Intelecto 6 · Presença 5 · Espírito 3.
 
-**Perícias:** Enganação 2; Investigação 1; Furtividade 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes treinados de Intelecto, some também metade do Intelecto, arredondada para baixo. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
+**Perícias:** Enganação 2; Investigação 1; Furtividade 1. Perícias não indicadas são 0. Testes treinados usam metade do Atributo, arredondada para cima, em d20; escolha o maior e some +2 no nível 1 ou +5 no nível 2. Em testes mentais ou técnicos treinados regidos por Intelecto, some também o bônus Analítico igual ao Intelecto final, limitado a +3, uma única vez. Testes sociais, inclusive Persuasão racional com reserva de Intelecto, não recebem Analítico. Perícia 0 usa 1d20 sem treinamento ou bônus Analítico.
 
 **Traço — Índice dos contratos:** Uma vez por cena, com acesso ao arquivo em que trabalha, recebe +2 em Investigação para localizar um documento que conhece. O traço não falsifica selos automaticamente, não altera a memória de testemunhas e não destrói provas à distância.
 
@@ -2502,7 +2502,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Domínios:** Técnica, Resistência e Superação. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa.
 
-**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total iguala ou supera a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
 **Traço 1:** Glaciação Criogênica, Caldeira Termobárica e Pressão / Salmoura são três expressões mestras de Água. Gelo e Pressão usam metade da defesa parental de Água, arredondada para baixo; Vapor usa metade da maior defesa entre Água e Fogo. Descritores perfurante, cortante e contundente não geram uma segunda parcela de dano.
 
@@ -2520,7 +2520,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total exige superar a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1; na igualdade exata com a CA, compare Espírito do ataque ao Atributo regente da CA do defensor: Espírito maior produz Total, menor ou igual produz Parcial.
 
 **Resolução mecânica:** Calcule a CA Parcial como máximo entre 0 e metade da CA arredondada para baixo menos 2; a CA Total permanece intacta. No Acerto Total, cause 2d6 Elemental / Gelo, com descritor perfurante. No Acerto Parcial, cause metade do dano, arredondada para baixo. Em qualquer acerto, o próximo deslocamento do alvo fica reduzido em 3 m, mínimo 0, até o início do próximo turno de Atargatis. Falha não causa dano nem redução. A redução não acumula consigo mesma; uma nova aplicação renova o prazo. Cobertura total bloqueia a trajetória.
 
@@ -2548,7 +2548,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total exige superar a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1; na igualdade exata com a CA, compare Espírito do ataque ao Atributo regente da CA do defensor: Espírito maior produz Total, menor ou igual produz Parcial.
 
 **Resolução mecânica:** Escolha um centro sobre água, solo molhado ou superfície previamente umedecida; a coluna atinge todas as criaturas no volume, inclusive aliados. Para esta rolagem, ignore até 5 pontos do bônus de CA proveniente de armadura natural ou metálica: desconte apenas essa contribuição, depois recalcule a CA Parcial pela metade da CA resultante. Não remova CA de Agilidade, tamanho, classe, escudo físico ou cobertura. Total causa 2d8 Elemental / Vapor; parcial metade; falha nada. A proteção elemental contra Vapor usa metade da maior defesa parental de Água e Fogo; não se subtraem outros 5 pontos de Resistência além da exclusão de armadura já descrita. O calor deforma rebites e revestimentos na prosa, mas não destrói permanentemente uma ficha de equipamento sem regra específica. Um impacto único: não reaplique dano no turno seguinte.
 
@@ -2576,7 +2576,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total exige superar a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1; na igualdade exata com a CA, compare Espírito do ataque ao Atributo regente da CA do defensor: Espírito maior produz Total, menor ou igual produz Parcial.
 
 **Resolução mecânica:** Total causa 1d10 de dano cortante puro, registrado como Marcial/cortante nesta execução; parcial causa metade. Puro significa que não há segunda parcela elemental, e não que ignora toda defesa. Após qualquer acerto, role 1d100 uma única vez: de 1 a 30 aplica Sangramento Profundo; de 31 a 100 não aplica. A condição afeta criaturas vivas, Abissais e constructos por perda de sangue, fluido ou integridade estrutural, sem exigir hemomancia. Causa 1d8 do mesmo tipo no início de cada um dos próximos três turnos do alvo. Uma Principal e Intelecto + Medicina CD 19, ou Intelecto + Criação CD 19 para constructos, encerram a condição em sucesso; falha gasta a ação. Outra aplicação renova o prazo sem duplicar pulsos. Falha no ataque não rola a chance. A imunidade a Sangrando comum não impede automaticamente esta lesão estrutural nomeada.
 
@@ -2590,7 +2590,7 @@ Vectis percorre a linhagem Kalypso como Bênção Hereditária de Manipulação 
 
 **Preparação:** Sem turno de preparação; declare antes da rolagem.
 
-**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total iguala ou supera a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1.
+**Teste e limiares:** Espírito + Controle Elemental: maior de 6d20 +10 contra a CA de cada alvo; Acerto Total exige superar a CA; Acerto Parcial vai de metade da CA, arredondada para baixo, até CA − 1; na igualdade exata com a CA, compare Espírito do ataque ao Atributo regente da CA do defensor: Espírito maior produz Total, menor ou igual produz Parcial.
 
 **Resolução mecânica:** Total causa 2d10 Elemental / Pressão, descritor contundente; parcial causa metade. Após qualquer acerto, o alvo faz Constituição + Atletismo CD 19, a resistência física do sistema. Falha aplica Fratura de Compressão: −2 em testes físicos regidos por Força, Agilidade ou Constituição durante dois turnos próprios, encerrando ao fim do segundo. Constructos sofrem a mesma penalidade por deformação estrutural. Sucesso evita apenas a fratura, não o dano já acertado. A penalidade não acumula consigo; renovar reinicia o prazo. Falha no ataque não causa dano nem resistência secundária. Não use uma Perícia inexistente chamada Resistência.
 
@@ -3192,7 +3192,7 @@ Nammu reconheceu Atargatis após os três anos de disputa. Agora exige corredore
 
 **Domínios:** Resistência. Nível máximo: Essência e um Refinamento de Permanência; Manifestação custa 3 Karma e Ação Extra, dura cinco rodadas. Uma ativação por combate. Não concede Reações ou ações adicionais.
 
-**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total iguala ou supera a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
 **Traço 1:** Água e Pressão / Salmoura; defesas parentais de Água. Sem Vectis nem outorga divina copiada. A coroa é autoridade política; sua ficha usa o patamar comum de Etapa VI, sem fase adicional ou reserva oculta.
 
@@ -3465,7 +3465,7 @@ Jurou vingança contra os deuses e as raças que participaram do massacre. Suas 
 
 **Domínios:** Força, Velocidade, Resistência, Superação e Técnica. Nível máximo: Essência e dois Refinamentos de Permanência; Manifestação custa 3 Karma, Ação Extra, dura seis rodadas. Não concede ações adicionais. Uma ativação por combate, salvo exceção expressa. Exceção: três ativações de cada Domínio por combate, em vez de uma.
 
-**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total iguala ou supera a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
+**Resolução do arsenal:** Pague ação e Karma conforme o perfil individual. Acerto Total exige superar a CA. Acerto Parcial vai do limiar Parcial até CA − 1. Na igualdade exata com a CA, compare o Atributo usado no ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Um 20 natural que acerta dobra apenas os dados-base do ataque, salvo a vedação expressa do retorno de Reflexio; dano contínuo ambiental não tem crítico. Dados adicionais e bônus fixos entram uma vez. Área compara uma rolagem separadamente à defesa de cada alvo; não some os dados de modos alternativos no mesmo alvo.
 
 **Traço 1:** Água, Terra, Vento e Fogo respondem a Desastres Naturais como matérias de uma catástrofe concreta: uma execução tem a matriz e a parcela de dano declaradas, nunca quatro danos somados. Tremores, águas, ventos, lava e corpos minerais não concedem turnos a criaturas independentes.
 
@@ -4430,7 +4430,7 @@ Eleito para seis mandatos ao longo da carreira, Eirik preside uma república que
 
 **Identidade:** Anão · Inventor · Etapa VI · chefe A · 68 anos. **Vida:** 100. **Karma:** 132. **CA:** 23. **Deslocamento:** 7 m. **Atributos:** Força 1 · Agilidade 1 · Constituição 8 · Intelecto 14 · Presença 8 · Espírito 10.
 
-**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; parcial da metade da CA arredondada para baixo até CA; falha abaixo disso. Contra CA 23: parcial 11–23 e total 24+. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
+**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; Parcial vai da metade da CA arredondada para baixo até CA − 1; falha abaixo desse limiar. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Contra CA 23: Parcial 11–22, Total 24+; no resultado 23, resolva o confronto de Atributos. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
 
 **Cargo — Prefeito-Geral da República:** Chamado presidente no uso nacional e prefeito-geral nos estatutos federativos; eleito por voto popular, não por herança. Os quatro reis são prefeitos das cidades, apelidos de autoridade local, sem coroas hereditárias. Cada mandato exige eleição; seu cargo permanece sujeito a nova votação e fiscalização.
 
@@ -4565,7 +4565,7 @@ Conheceu Al-Aqwa nos combates clandestinos. A rivalidade nunca tornou Oren dono 
 
 **Identidade:** Humano de ascendência demi-humana · Pugilista · Etapa VI · chefe SS. **Vida:** 150. **Karma:** 108. **CA:** 27. **Deslocamento:** 12 m. **Atributos:** Força 8 · Agilidade 9 · Constituição 10 · Intelecto 7 · Presença 3 · Espírito 3.
 
-**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; parcial da metade da CA arredondada para baixo até CA; falha abaixo disso. Contra CA 27: parcial 13–27 e total 28+. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
+**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; Parcial vai da metade da CA arredondada para baixo até CA − 1; falha abaixo desse limiar. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Contra CA 27: Parcial 13–26, Total 28+; no resultado 27, resolva o confronto de Atributos. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
 
 **Domínios — Ativação e Essências:** Força, Velocidade, Resistência e Técnica. Os quatro foram despertados e têm dois Refinamentos de Eficiência cada: 1 Karma por Manifestação, quatro rodadas, uma ativação por cena por Domínio. Uma Extra pode ativar os quatro, pagando 4 Karma. Não possui Superação. Inconsciência encerra as Manifestações. As Essências coexistem: +3 m de Deslocamento e +1 CA já incluídos nos valores, Resistência 1 geral, +1 em testes treinados regidos por Intelecto; no primeiro total corpo a corpo de Força da rodada ignora 1 de Resistência física. Sem a Essência de Velocidade: CA 26 e deslocamento −3 m.
 
@@ -4672,7 +4672,7 @@ Seu governo fiscaliza os estaleiros de dirigíveis e as fundições. Não promet
 
 **Identidade:** Anão · Pugilista · Etapa VI · chefe SS. **Vida:** 150. **Karma:** 100. **CA:** 27. **Deslocamento:** 9 m. **Atributos:** Força 7 · Agilidade 6 · Constituição 8 · Intelecto 9 · Presença 4 · Espírito 5.
 
-**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; parcial da metade da CA arredondada para baixo até CA; falha abaixo disso. Contra CA 27: parcial 13–27 e total 28+. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
+**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; Parcial vai da metade da CA arredondada para baixo até CA − 1; falha abaixo desse limiar. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Contra CA 27: Parcial 13–26, Total 28+; no resultado 27, resolva o confronto de Atributos. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
 
 **Domínios — Ativação e Essências:** Força, Velocidade, Resistência e Técnica. Os quatro foram despertados e têm dois Refinamentos de Eficiência cada: 1 Karma por Manifestação, quatro rodadas, uma ativação por cena por Domínio. Uma Extra pode ativar os quatro, pagando 4 Karma. Não possui Superação. Inconsciência encerra as Manifestações. As Essências coexistem: +3 m de Deslocamento e +1 CA já incluídos nos valores, Resistência 1 geral, +1 em testes treinados regidos por Intelecto; no primeiro total corpo a corpo de Força da rodada ignora 1 de Resistência física. Sem a Essência de Velocidade: CA 26 e deslocamento −3 m.
 
@@ -4779,7 +4779,7 @@ Tratou o pai de Eirik e conhece a razão de sua entrada na política. Ainda assi
 
 **Identidade:** Demi-humana felina · Pugilista · Etapa VI · chefe SS. **Vida:** 150. **Karma:** 116. **CA:** 27. **Deslocamento:** 12 m. **Atributos:** Força 5 · Agilidade 8 · Constituição 6 · Intelecto 10 · Presença 6 · Espírito 5.
 
-**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; parcial da metade da CA arredondada para baixo até CA; falha abaixo disso. Contra CA 27: parcial 13–27 e total 28+. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
+**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; Parcial vai da metade da CA arredondada para baixo até CA − 1; falha abaixo desse limiar. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Contra CA 27: Parcial 13–26, Total 28+; no resultado 27, resolva o confronto de Atributos. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
 
 **Domínios — Ativação e Essências:** Força, Velocidade, Resistência e Técnica. Os quatro foram despertados e têm dois Refinamentos de Eficiência cada: 1 Karma por Manifestação, quatro rodadas, uma ativação por cena por Domínio. Uma Extra pode ativar os quatro, pagando 4 Karma. Não possui Superação. Inconsciência encerra as Manifestações. As Essências coexistem: +3 m de Deslocamento e +1 CA já incluídos nos valores, Resistência 1 geral, +1 em testes treinados regidos por Intelecto; no primeiro total corpo a corpo de Força da rodada ignora 1 de Resistência física. Sem a Essência de Velocidade: CA 26 e deslocamento −3 m.
 
@@ -4886,7 +4886,7 @@ Conhece Al-Aqwa e reconhece sua força sem aceitar que o combate substitua elei�
 
 **Identidade:** Ghoul · Pugilista · Etapa VI · chefe SS. **Vida:** 150. **Karma:** 108. **CA:** 27. **Deslocamento:** 10 m. **Atributos:** Força 10 · Agilidade 5 · Constituição 9 · Intelecto 5 · Presença 5 · Espírito 7.
 
-**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; parcial da metade da CA arredondada para baixo até CA; falha abaixo disso. Contra CA 27: parcial 13–27 e total 28+. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
+**Resolução:** Principal, Movimento, Livre e duas Reações por rodada; apenas uma resposta por resolução. Corpo a corpo até 2 m, passagem física necessária. Total supera CA; Parcial vai da metade da CA arredondada para baixo até CA − 1; falha abaixo desse limiar. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Contra CA 27: Parcial 13–26, Total 28+; no resultado 27, resolva o confronto de Atributos. Um 1 natural selecionado falha; 20 natural dobra somente dano-base. Não soma Atributo ao dano. Resistências, escudos e condições seguem Capítulos 7 e 10. Condições não se renovam indefinidamente; respeitar imunidades temporárias do livro. Assinatura IV é uma utilização voluntariamente limitada por cena, não libera Grau V.
 
 **Domínios — Ativação e Essências:** Força, Velocidade, Resistência e Técnica. Os quatro foram despertados e têm dois Refinamentos de Eficiência cada: 1 Karma por Manifestação, quatro rodadas, uma ativação por cena por Domínio. Uma Extra pode ativar os quatro, pagando 4 Karma. Não possui Superação. Inconsciência encerra as Manifestações. As Essências coexistem: +3 m de Deslocamento e +1 CA já incluídos nos valores, Resistência 1 geral, +1 em testes treinados regidos por Intelecto; no primeiro total corpo a corpo de Força da rodada ignora 1 de Resistência física. Sem a Essência de Velocidade: CA 26 e deslocamento −3 m.
 
@@ -5114,14 +5114,14 @@ De pele parda e cabelos azul-escuros, Euphere fala baixo e observa as saídas an
 | Raça · classe · posição | Abissal · Especialista · chefe SS, Etapa VI |
 | Vida · Karma | 180 · 126 |
 | CA | 23 sem armadura; 27 nas duas fases da armadura |
-| Parcial / total | CA 23: 11–22 / 23+; CA 27: 13–26 / 27+ |
+| Limiar Parcial / CA Total | 11 / 23 sem armadura; 13 / 27 com armadura. Na igualdade com a CA, confronte os Atributos; acima dela, Total. |
 | Deslocamento | 11 m; voo 12 m com asas |
 | Atributos | FOR 7 · AGI 4 · CON 5 · INT 8 · PRE 5 · ESP 6 |
 | Reações | Uma comum e uma adicional para defesa ou movimento |
 
 **Perícias:** Luta 2, Reflexos 2, Atletismo 2, Canalização de Karma 2, Controle de Água 2; Tática 2 e Investigação 2 com Intelecto e Analítico. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Bênção — Dragão Negro:** <span data-divine-grant="tiamat">Outorgada por Tiamat · Entidade Primordial.</span><span data-world-blessing="outorga-15"></span> O Dragão Negro é uma carapaça viva, distribuída entre placas, garras e asas. Euphere molda essa presença com a massa disponível; Nadir reúne sua matéria, plasma e Karma em uma única assinatura.
 
@@ -5172,7 +5172,7 @@ Na corte, Gula possui duas vozes. João enfraquece a resistência e conduz as v�
 
 **Perícias:** João: Controle de Trevas 2, Ocultismo 2 e Reflexos 2. Maria: Controle de Terra 2, Controle de Fogo 2, Pontaria 2 e Reflexos 2. Cada combinação usa o Atributo do próprio corpo. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Coração da Gula:** Resolva defesa, Resistência e escudo no corpo atingido; retire o dano restante uma vez da reserva comum. Condições e Ferimentos pertencem ao corpo afetado. Uma cura que alcance os dois na mesma resolução restaura a reserva uma única vez. A 0 Vida, ambos ficam Morrendo e Inconscientes e usam um único marcador de morte. Karma, ações e concentração são individuais; ambos estão na Etapa V e não possuem ápice de Grau V.
 
@@ -5208,13 +5208,13 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 |---|---|
 | Classe · posição | Invocador · chefe S, Etapa V |
 | Vida · Karma · CA | 80 · 124 · 23 |
-| Parcial / total | 11–22 / 23+ |
+| Limiar Parcial / CA Total | 11 / 23. Na igualdade com a CA, confronte os Atributos; acima dela, Total. |
 | Atributos | FOR 1 · AGI 2 · CON 4 · INT 5 · PRE 7 · ESP 6 |
 | Deslocamento · Reações | 7 m · uma comum e uma defensiva adicional |
 
 **Perícias:** Conjuração Vincular 2 com Presença, Canalização de Karma 2 com Espírito, Reflexos 2, Ocultismo 2 e Tática 2. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Estilete de Fio:** Principal, 0 Karma, 5 m; 2d8 kármicos no total, metade no parcial.
 
@@ -5242,7 +5242,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Pinóquio · O Menino de Madeira
 
-**Ficha da invocação:** Grau IV; Vida 45; CA 25; parcial 12–24; total 25+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
+**Ficha da invocação:** Grau IV; Vida 45; CA 25; parcial 12–24; em 25, Atributo do ataque menor ou igual ao regente da CA; total 26+; em 25, Atributo do ataque maior que o regente da CA; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
 
 **Atributos:** FOR 2 · AGI 10 · CON 2 · INT 2 · PRE 12 · ESP 2.
 
@@ -5262,7 +5262,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Grilo Falante · A Consciência
 
-**Ficha da invocação:** Grau II; Vida 17; CA 19; parcial 9–18; total 19+; deslocamento 15 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 17; CA 19; parcial 9–18; em 19, Atributo do ataque menor ou igual ao regente da CA; total 20+; em 19, Atributo do ataque maior que o regente da CA; deslocamento 15 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 7 · PRE 4 · ESP 2.
 
@@ -5282,7 +5282,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Fada Azul · A Promessa
 
-**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; total 21+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
+**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; em 21, Atributo do ataque menor ou igual ao regente da CA; total 22+; em 21, Atributo do ataque maior que o regente da CA; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 2 · PRE 10 · ESP 7.
 
@@ -5300,7 +5300,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Gato · O Ladrão de Voz
 
-**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; total 19+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; em 19, Atributo do ataque menor ou igual ao regente da CA; total 20+; em 19, Atributo do ataque maior que o regente da CA; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 7 · CON 2 · INT 4 · PRE 2 · ESP 2.
 
@@ -5320,7 +5320,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Raposa · A Negociadora
 
-**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; total 19+; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
+**Ficha da invocação:** Grau II; Vida 24; CA 19; parcial 9–18; em 19, Atributo do ataque menor ou igual ao regente da CA; total 20+; em 19, Atributo do ataque maior que o regente da CA; deslocamento 11 m; chamada 3 Karma; manutenção entre cenas 1 Karma.
 
 **Atributos:** FOR 2 · AGI 2 · CON 2 · INT 4 · PRE 7 · ESP 2.
 
@@ -5340,7 +5340,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Baleia · O Ventre do Mundo
 
-**Ficha da invocação:** Grau IV; Vida 56; CA 23; parcial 11–22; total 23+; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
+**Ficha da invocação:** Grau IV; Vida 56; CA 23; parcial 11–22; em 23, Atributo do ataque menor ou igual ao regente da CA; total 24+; em 23, Atributo do ataque maior que o regente da CA; deslocamento 11 m; chamada 8 Karma; manutenção entre cenas 3 Karma.
 
 **Atributos:** FOR 10 · AGI 2 · CON 12 · INT 2 · PRE 2 · ESP 2.
 
@@ -5360,7 +5360,7 @@ Pinóquio, o Grilo Falante, a Fada Azul, o Gato, a Raposa, a Baleia e Pavio repr
 
 ##### Pavio · O Convite ao Abandono
 
-**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; total 21+; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
+**Ficha da invocação:** Grau III; Vida 29; CA 21; parcial 10–20; em 21, Atributo do ataque menor ou igual ao regente da CA; total 22+; em 21, Atributo do ataque maior que o regente da CA; deslocamento 11 m; chamada 5 Karma; manutenção entre cenas 2 Karma.
 
 **Atributos:** FOR 2 · AGI 7 · CON 2 · INT 2 · PRE 10 · ESP 2.
 
@@ -5398,7 +5398,7 @@ De cabelos brancos muito longos, olhos vermelhos e vestes nobres claras, Ganânc
 |---|---|
 | Raça · classe · posição | Vampiro · Ladrão com prática Elementalista · chefe S, Etapa V |
 | Vida · Karma · CA | 120 · 91 · 25 |
-| Parcial / total | 12–24 / 25+ |
+| Limiar Parcial / CA Total | 12 / 25. Na igualdade com a CA, confronte os Atributos; acima dela, Total. |
 | Atributos | FOR 4 · AGI 6 · CON 5 · INT 8 · PRE 7 · ESP 6 |
 | Deslocamento · Resistência física | 9 m · 0 |
 | Ataques de precisão / Evasão | Maior de 3d20 +5 / maior de 3d20 +5 |
@@ -5406,7 +5406,7 @@ De cabelos brancos muito longos, olhos vermelhos e vestes nobres claras, Ganânc
 
 **Perícias:** Luta 2, Reflexos 2, Ladinagem 2, Controle de Luz 2, Controle de Trevas 2 e Canalização de Karma 2. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Rapieira:** Principal, 0 Karma, 2 m; 1d8 perfurante, metade no parcial. **Guarda de Rapieira:** Reação, 3 Karma, antes de um ataque corpo a corpo percebido; CA 27 apenas contra ele, sem outra defesa na mesma resolução.
 
@@ -5440,14 +5440,14 @@ Ele protege o ritual antes de perseguir adversários. Libertar uma oferenda muda
 |---|---|
 | Posição · porte | Chefe S · Etapa V · 3 m |
 | Vida · Karma · CA | 120 · 54 · 25 |
-| Parcial / total | 12–24 / 25+ |
+| Limiar Parcial / CA Total | 12 / 25. Na igualdade com a CA, confronte os Atributos; acima dela, Total. |
 | Atributos | FOR 5 · AGI 1 · CON 5 · INT 1 · PRE 3 · ESP 5 |
 | Deslocamento | 7 m; 14 m sob o solo; 10 m na segunda fase |
 | Reações | Uma comum e uma defensiva adicional |
 
 **Perícias:** Luta 2, Atletismo 2, Canalização de Karma 2 e Controle de Terra 2; Percepção 1. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Corpo de solo e lenho:** Imune a Sangramento, veneno e sufocamento. Fogo suspende suas proteções de casca e raiz enquanto a queimadura estiver ativa; não impede que outras criaturas o tratem como alvo.
 
@@ -5490,7 +5490,7 @@ As maçãs acompanham seus encontros como um sinal reconhecível. Uma superfíci
 
 **Perícias:** Luta 2, Pontaria 2, Furtividade 2, Reflexos 2, Controle de Água 2, Controle de Terra 2, Controle de Ar 2 e Controle da Corrupção 2. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 | Técnica | Ação · custo | Resolução |
 |---|---|---|
@@ -5535,7 +5535,7 @@ Os cabelos castanhos descem até metade das costas; a cicatriz acompanha o olho 
 
 **Perícias:** Medicina 2, Controle da Corrupção 2, Resistência à Corrupção 2, Canalização de Karma 2 e Ocultismo 2; Reflexos 1. Demais 0.
 
-**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto total iguala ou supera a CA; parcial vai de metade da CA, arredondada para baixo, até CA − 1. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
+**Resolução de danos e efeitos:** Em ataques contra CA, escolha o maior d20 e some o bônus escrito uma única vez. Acerto Total exige superar a CA; Parcial vai de metade da CA, arredondada para baixo, até CA − 1. Na igualdade exata com a CA, compare o Atributo do ataque ao regente da CA do defensor: somente o atacante com Atributo maior obtém Total; menor ou igual produz Parcial. Dados de dano são somados: 3d10 significa rolar três d10 e somar os três resultados. Não some Atributo ao dano sem uma regra expressa. No parcial, role o dano indicado e divida por dois, arredondando para baixo, antes de aplicar Resistência e escudo. Falha não causa dano ou condição, salvo efeito expresso. Condições, empurrões e duração só se aplicam como descritos em cada habilidade. Em ataques contra CA, use a faixa do resultado total. Um 20 natural dobra apenas os dados de dano-base quando o ataque produz efeito. Dados adicionais e bônus fixos entram uma vez. Testes por CD são bem-sucedidos ao igualar ou superar a dificuldade; em oposição, empate favorece quem resiste. Ataques de área usam uma rolagem comparada separadamente à CA de cada alvo.
 
 **Argila Viva:** Subdobra avançada de Terra que molda ferramentas, barreiras e construções animadas. A Corrupção grava memórias na matéria. As cópias não possuem alma.
 

@@ -1,5 +1,5 @@
 import type { BossPhaseState } from "@/lib/boss-phase-state";
-import type { CharacterPayload } from "@/lib/character-data";
+import { ATTRIBUTES, type CharacterPayload } from "@/lib/character-data";
 import { characterPayloadSchema } from "@/lib/character-schema";
 import type { NpcTemplate } from "@/lib/combat-catalog";
 import { z } from "zod";
@@ -61,6 +61,7 @@ export const npcTemplateSchema = z.object({
   life: bounded,
   karma: bounded,
   ca: bounded,
+  caRegent: z.enum(["Agilidade", "Constituição"]).optional(),
   movement: short,
   attributes: z.array(z.number().int().min(0).max(50)).length(6),
   skills: long,
@@ -81,6 +82,7 @@ export const npcTemplateSchema = z.object({
         roll: short,
         damage: short,
         attack: z.boolean(),
+        attribute: z.enum(ATTRIBUTES).optional(),
         action: short,
         domain: short.optional(),
       }),

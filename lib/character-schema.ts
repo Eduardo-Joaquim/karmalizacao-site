@@ -6,7 +6,9 @@ import { divineBlessingError } from "@/lib/divine-blessings";
 import { invocationAbilityDamageError } from "@/lib/invocation-rules";
 import { workshopProfile } from "@/lib/workshop-rules";
 import { z } from "zod";
-import { DAMAGE_TYPES } from "./technique-matrices";
+import { ACCEPTED_DAMAGE_TYPES } from "./technique-matrices";
+import cursedRunes from "@/data/cursed-runes.json";
+import { isCursedRuneWeapon } from "@/lib/cursed-rune-model";
 
 import {
   CHARACTER_SIZES,
@@ -65,6 +67,7 @@ const domainSchema = z.object({
 });
 
 const personalPathSchema = z.object({
+  strictlySelfTaught: z.boolean().optional(),
   axiom: z.number().int().min(1).max(10).optional(),
   branch: z.enum(["independente", "subversao", "emancipacao"]).optional(),
   failedAttempts: z.number().int().min(0).max(999).optional(),
@@ -168,6 +171,7 @@ const subBendingSchema = z.object({
 });
 
 const elementalSchema = z.object({
+  primaryElement: shortText.optional(),
   controlledElements: z.array(shortText).max(12).default([]),
   masteryLevel: z.number().int().min(0).max(5).default(0),
   manifestation: longText(1000).default(""),
@@ -181,7 +185,7 @@ const techniqueSchema = z.object({
   matrix: z
     .enum(["Kármico", "Elemental", "Divino", "Marcial", "Corrupto"])
     .optional(),
-  damageType: z.enum([...DAMAGE_TYPES, "Físico"] as const).optional(),
+  damageType: z.enum([...ACCEPTED_DAMAGE_TYPES, "Físico"] as const).optional(),
   lineageCatalyst: shortText.optional(),
   doctrine: shortText.optional(),
   matrixExtras: z.number().min(0).max(999).optional(),
@@ -213,7 +217,85 @@ const itemTacticalBaselineSchema = z.object({
   tacticalRev: z.number().int().min(0).max(Number.MAX_SAFE_INTEGER),
 });
 
+const cursedRuneSchema = z
+  .object({
+    effectId: z.string().min(1).max(100),
+    conditionIds: z
+      .array(
+        z.enum(["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10"]),
+      )
+      .min(1)
+      .max(5),
+    damageChoice: z.string().max(12).optional(),
+    dcMode: z.enum(["fixed", "scaled"]),
+    isolationMode: z.enum(["isolated", "flanked"]).optional(),
+    tributeMode: z.enum(["life", "wounded"]).optional(),
+    hungerPenalty: z.enum(["damage", "temporaryCharge"]).optional(),
+    name: z.string().trim().max(100).optional(),
+  })
+  .superRefine((rune, ctx) => {
+    const ids = new Set(rune.conditionIds);
+    if (
+      ids.size !== rune.conditionIds.length ||
+      (ids.has("C1") && ids.has("C2")) ||
+      (ids.has("C3") && ids.has("C4"))
+    )
+      ctx.addIssue({
+        code: "custom",
+        path: ["conditionIds"],
+        message:
+          "Escolha condições distintas e compatíveis; C3 e C4 são alternativas.",
+      });
+    const effect = cursedRunes.effects.find(
+      (entry) => entry.id === rune.effectId,
+    );
+    if (!effect)
+      ctx.addIssue({
+        code: "custom",
+        path: ["effectId"],
+        message: "Efeito de maldição desconhecido.",
+      });
+    if (
+      effect?.example &&
+      ((effect.defaultConditions ?? []).length !== ids.size ||
+        !(effect.defaultConditions ?? []).every((id) =>
+          ids.has(id as (typeof rune.conditionIds)[number]),
+        ) ||
+        rune.dcMode !== "fixed" ||
+        (rune.damageChoice && rune.damageChoice !== effect.damageOverride))
+    )
+      ctx.addIssue({
+        code: "custom",
+        path: ["conditionIds"],
+        message:
+          "O exemplo Deus Selvagem usa C1 + C4 + C5, dano 2d6 e CD fixa 20.",
+      });
+    if (
+      effect?.minimumConditions &&
+      rune.conditionIds.length < effect.minimumConditions
+    )
+      ctx.addIssue({
+        code: "custom",
+        path: ["conditionIds"],
+        message: "Este efeito exige mais condições de despertar.",
+      });
+    const tier = cursedRunes.powerLevels.find(
+      (entry) => entry.conditions === rune.conditionIds.length,
+    );
+    if (
+      rune.damageChoice &&
+      tier &&
+      ![tier.damage, ...tier.alternatives].includes(rune.damageChoice)
+    )
+      ctx.addIssue({
+        code: "custom",
+        path: ["damageChoice"],
+        message: "Dado de dano incompatível com o número de condições.",
+      });
+  });
+
 const inventoryItemSchema = z.object({
+  cursedRune: cursedRuneSchema.optional(),
   tacticalRev: z.number().int().min(0).max(Number.MAX_SAFE_INTEGER).default(0),
   catalogId: shortText.optional(),
   category: z
@@ -358,11 +440,50 @@ export const liveCombatSchema = z.object({
         weaponId: shortText.optional(),
         spent: z.boolean().optional(),
         releaseRound: z.number().int().min(1).max(99999).optional(),
+        temporary: z.boolean().optional(),
+        personalSlotExempt: z.boolean().optional(),
       }),
     )
     .max(100)
     .optional(),
   runeBurstUsed: z.boolean().optional(),
+  gradeVApex: z
+    .object({
+      kind: z.enum(["rune", "technique", "other"]),
+      sourceId: shortText,
+      label: shortText.optional(),
+    })
+    .optional(),
+  cursedWeapons: z
+    .record(
+      z
+        .string()
+        .min(1)
+        .max(120)
+        .refine(
+          (key) => !["__proto__", "prototype", "constructor"].includes(key),
+        ),
+      z.object({
+        runeKey: z.string().max(1200).optional(),
+        targets: z.record(
+          z
+            .string()
+            .min(1)
+            .max(120)
+            .refine(
+              (key) => !["__proto__", "prototype", "constructor"].includes(key),
+            ),
+          z.object({
+            marks: z.number().int().min(0).max(3),
+            hasTotal: z.boolean(),
+          }),
+        ),
+        bloodFed: z.boolean().optional(),
+        dormant: z.boolean().optional(),
+        combatScene: z.boolean().optional(),
+      }),
+    )
+    .optional(),
   summons: z
     .record(
       z.string().max(80),
@@ -429,6 +550,7 @@ export const characterPayloadSchema = z.object({
   className: shortText,
   path: shortText,
   stage: shortText,
+  firstMilestoneConfirmed: z.boolean().optional(),
   commonLanguage: shortText,
   bond: longText(500),
   affinity: shortText,
@@ -495,6 +617,15 @@ export const saveCharacterSchema = z
     }),
   })
   .superRefine(({ payload }, ctx) => {
+    for (const [index, item] of (payload.inventory ?? []).entries()) {
+      if (item.cursedRune && (!isCursedRuneWeapon(item) || item.quantity > 1))
+        ctx.addIssue({
+          code: "custom",
+          path: ["payload", "inventory", index, "cursedRune"],
+          message:
+            "A maldição exige uma arma individual; separe as unidades antes de selar.",
+        });
+    }
     for (const [index, invocation] of (payload.invocations ?? []).entries()) {
       if (!invocation.ability.damage) continue;
       const error = invocationAbilityDamageError(invocation);

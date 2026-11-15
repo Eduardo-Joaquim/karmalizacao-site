@@ -138,6 +138,7 @@ test('initiative and awakening use pure reserves, and partial conditions survive
  draft.attributes.Intelecto.base=5;
  draft.skills['Canalização de Karma'].base=1;
  draft.personalPath.failedAttempts=2;
+ draft.personalPath.strictlySelfTaught=true;
  const pure=engine.rollPathAwakening(draft,'Intelecto',n=>Array(n).fill(10));
  assert.deepEqual([pure.dc,pure.bonus,pure.dice.length],[20,4,3]);
  draft.divine.enabled=true;

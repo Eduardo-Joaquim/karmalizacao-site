@@ -24,11 +24,11 @@ A fila de ações é persistida antes do envio. Confirmações removem a operaç
 
 O campo estruturado Uso conserva seu HTML integral, sem cortar tags com expressão regular. Atributos como Constituição permanecem no mesmo agrupamento das demais mecânicas. Identidades dos dossiês são explícitas, a chance usa o metadado de cada habilidade e a API obsoleta de ornamentos foi removida dos chamadores.
 
-As quatro técnicas contraditórias de Atargatis foram corrigidas na fonte editorial e propagadas aos arquivos derivados. Acerto Parcial termina em CA − 1; igualar a CA continua sendo Acerto Total. Nenhuma estatística ou custo foi rebalanceado.
+As quatro técnicas contraditórias de Atargatis foram corrigidas na fonte editorial e propagadas aos arquivos derivados. No fechamento autoral do livro, a igualdade exata com a CA passou a exigir confronto de Atributos: apenas atacante com Atributo maior obtém Total; defensor maior ou igual produz Parcial. Nenhuma estatística ou custo do Bestiário foi rebalanceado.
 
 A declaração de apresentação da barra de combate deixa de vencer a ocultação de impressão. O comportamento de recolhimento em tela permanece protegido pelo atributo hidden.
 
-## Validação
+## Validação da entrega técnica anterior — 13/11/2026
 
 Tipos, lint, formatação e build de produção aprovados. A suíte completa terminou com **203 testes aprovados**, sem falhas, cancelamentos ou testes ignorados. Inclui regressões de inventário, concorrência, recuperação, deduplicação após 600 ações, sessões distintas, transições consecutivas e renderização explícita dos **65 dossiês**, com verificação de integridade das tags HTML.
 
@@ -37,3 +37,15 @@ O artefato de produção foi consultado em **57 rotas**, todas com os status esp
 A revisão independente também cobriu confirmação de salvamento chegando após sincronização mais recente, compactação de sessão encerrada, reabertura de filas após fechar a aba, escritores concorrentes de operações diferentes e respostas HTTP de erro sem JSON. O limite físico do registro recusa novas ações sem descartar recibos da sessão ativa; o encerramento compacta os recibos e continua disponível.
 
 O fluxo gerenciado não disponibiliza a ferramenta de navegador necessária para homologação interativa. Testes de domínio, SSR e inspeção da cascata não são apresentados como execução de impressão/PDF, acessibilidade, Lighthouse ou teste entre navegadores.
+
+## Fechamento autoral do livro — preparação de 15/11/2026
+
+`npm run content:build` aplica os compiladores especializados e, por último, `scripts/build-book-206.py`. Os módulos de `scripts/book206/` integram as decisões dos vinte capítulos e recompõem os índices e `docs/regras.md` a partir do mesmo HTML. A substituição de seções reconhece também os títulos preservados por uma passagem intermediária por Markdown, evitando duplicação na regeneração.
+
+A taxonomia das 18 Subdobras está em `data/elemental-taxonomy.json`. Expressões de técnicas antigas permanecem compatíveis com os registros anteriores, sem voltar ao catálogo de novas escolhas. Resistências parentais do Tritão e do Demônio usam o mesmo cálculo de metade, arredondada para baixo. A conversão de equipamento desativa matemática delimitada por dólares, preservando moeda e células de tabelas.
+
+O confronto de CA admite estado pendente quando faltam Atributos e não o trata como sucesso ou dano zero. Condições graves no Parcial usam a Forma reduzida; efeitos que exigem resolução contextual exibem instrução manual. Persuasão racional admite Intelecto sem Analítico. O primeiro marco possui confirmação separada dos benefícios iniciais, com migração conservadora dos personagens anteriores. O despertar difícil é o padrão, salvo declaração de autodidatismo estrito sem Outorga.
+
+O Ápice V é compartilhado por técnicas, primeiro benefício passivo e Estouro de uma inscrição e registro explícito de outras fontes. Inscrever uma Runa V não o consome. Sobrescrita usa uma operação única para pagar Reação e 4 Karma, resolver a redução declarada e validar a captura. A expiração ao fim do próximo turno do Escriba é registrada manualmente, pois o contador existente acompanha rodadas e não o encerramento individual dos turnos. O fluxo não aplica dano automaticamente.
+
+Validação desta preparação: **244 testes aprovados**, typecheck e build de produção aprovados. A geração completa repetida produziu o mesmo livro, com vinte capítulos, dezoito classes, 243 Outorgas e sem IDs ou âncoras de sumário ausentes. A comparação de 94 fichas do Bestiário verificou 673 campos protegidos e 497 campos de custo sem mudança inesperada. A homologação interativa em navegador permanece não realizada. Esta preparação não foi publicada.
