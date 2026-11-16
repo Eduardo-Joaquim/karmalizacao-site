@@ -322,7 +322,7 @@ test("failed manipulation cannot feed or suppress the weapon and target names ca
   assert.equal(Object.getPrototypeOf(targets), Object.prototype);
 });
 
-test("the canonical example cannot be rewritten and a stacked item must be separated", () => {
+test("a fixed recipe cannot be rewritten and a stacked item must be separated", () => {
   const draft = sheet();
   assert.match(
     cursed.getCursedRuneError(
@@ -330,7 +330,7 @@ test("the canonical example cannot be rewritten and a stacked item must be separ
       draft.inventory[0],
       inscription({ conditionIds: ["C1", "C3", "C5"] }),
     ),
-    /canônico/,
+    /C1 \+ C4 \+ C5 e 2d6/,
   );
   assert.match(
     cursed.getCursedRuneError(
@@ -338,7 +338,7 @@ test("the canonical example cannot be rewritten and a stacked item must be separ
       draft.inventory[0],
       inscription({ dcMode: "scaled" }),
     ),
-    /canônico/,
+    /C1 \+ C4 \+ C5 e 2d6/,
   );
   assert.match(
     cursed.getCursedRuneError(

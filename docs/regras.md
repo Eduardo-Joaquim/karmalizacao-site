@@ -2916,7 +2916,19 @@ Condições sem prazo próprio seguem a duração padrão do Capítulo 7: termin
 
 As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras maldições e nove composições prontas. Os alcances, alvos, dados fixos, testes e exceções expressamente escritos permanecem próprios de cada efeito. As composições prontas registram suas condições e seu dado de dano; uma interação não quantificada deve ser registrada antes do uso, sem conceder dados ou benefícios adicionais por inferência.
 
-#### Runa 1 - Exemplo canônico - Runa do Deus Selvagem
+#### Runa 1 - Runa do Deus Selvagem
+
+Condições para forjar  
+3 condições
+
+Classificação  
+Maldição Voraz
+
+Composição  
+Fixa
+
+CD de Forja  
+18
 
 **Marca da Fera** - Ao acertar o inimigo com um ataque corpo a corpo (não importando se foi Acerto Parcial ou Total), marca-o com 1 Marca da Fera. Ao atingir **3 Marcas**, dois lobos negros emergem do chão e estraçalham o alvo, causando **`2d6` de dano Corrupto/Perfuração**. Caso pelo menos um dos três ataques da sequência tenha sido **Acerto Total** contra a CA, o alvo fica **Agarrado** pelas mandíbulas dos dois lobos. Para se libertar do estado, o alvo deve gastar uma ação e vencer um teste de **Força ou Constituição + Atletismo contra a CD de Escape da runa**.
 
@@ -2924,85 +2936,495 @@ As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras m
 
 #### Runa 2 - Costura de Sombras
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Agulha do Alfaiate Cego** - Cada acerto prende um fio de sombra no calcanhar do alvo. Ao cumprir as condições da runa, a sombra do alvo é costurada à sombra do inimigo mais próximo a até `4m`: ambos sofrem o dado de dano da runa (`1d8` a `1d20`) e, com o requisito de Acerto Total, ficam **Imobilizados** um ao outro (nenhum dos dois pode se mover para longe do outro até rasgar a costura com `Força + Atletismo` contra a CD da runa).
 
 #### Runa 3 - Banquete de Ferrugem
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Mandíbula Oxidada** - A arma secreta saliva ácida que oxida defesas. Ao fechar as condições da runa, placas de ferrugem explodem na armadura ou carapaça do inimigo: causa o dado de dano da runa e aplica **Danificado (`-2 CA`)** no equipamento/couro do alvo + **Sangramento** em Acerto Total.
 
 #### Runa 4 - Coro dos Enforcados
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Laço do Patíbulo** - A cada marca aplicada, uma corda espectral aperta a garganta do alvo. Ao cumprir as condições, o alçapão espiritual se abre: o alvo sofre o dado de dano da runa (natureza Corrupta) e, em Acerto Total, fica **Silenciado e Sufocado** (impedido de falar, conjurar técnicas verbais ou comandar invocações até passar em `Constituição + Atletismo` contra a CD da runa).
 
 #### Runa 5 - Espelho de Sangue Faminto
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Duplo Carniceiro** - A arma absorve o sangue respingado nos golpes. Ao completar as condições, o sangue coagula atrás do alvo formando um **Duplo Efêmero** que desfere um corte simultâneo causando o dado de dano da runa, concede flanqueamento imediato e deixa o alvo **Desorientado** (ou **Abalado + sem Reação** em runas de 3+ condições).
 
 #### Runa 6 - Pálpebra Sem Sono
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Olho da Vigília Abissal** - Onde a arma corta, pequenos olhos abissais se abrem na pele ou armadura do inimigo, impedindo-o de se esconder. Ao fechar as condições, os olhos choram icor cáustico: causa o dado de dano da runa, anula invisibilidade/furtividade e, em Acerto Total, deixa o alvo **Cego** até o fim do próximo turno (ou até limpar com teste contra a CD).
 
 #### Runa 7 - Relógio de Ossos Quebrados
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Pêndulo de Atraso** - A arma rouba o compasso temporal dos reflexos do inimigo. Ao cumprir as condições, um badalo seco ecoa nos ossos do alvo: causa o dado de dano da runa e, em Acerto Total, aplica **Lento** + **arranca a Reação** do alvo + atrasa a posição dele na Iniciativa em `-5` pelo resto da cena.
 
 #### Runa 8 - Raiz Parasita de Sárkora
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Semente Carnívora** - O primeiro golpe planta uma semente negra na ferida; os golpes seguintes a regam. Ao cumprir as condições, raízes espinhosas rebentam de dentro do alvo para o solo: causa o dado de dano da runa, transforma um raio de `2m` ao redor dele em terreno difícil e, em Acerto Total, deixa-o **Imobilizado/Enraizado** (`Força ou Constituição + Atletismo` contra a CD para arrancar as raízes).
 
 #### Runa 9 - Sino do Funeral Submerso
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Pulmão de Salmoura** - A arma ressoa como um sino afundado no oceano. Ao fechar as condições, os pulmões do alvo enchem-se instantaneamente de água negra gelada: causa o dado de dano da runa e, em Acerto Total, impõe **Abalado + Exaustão Respiratória** (`-1d20` em todos os testes físicos e perda da Ação de Movimento se falhar em `Constituição + Atletismo` contra a CD).
 
 #### Runa 10 - Moeda do Barqueiro
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Pedágio de Caronte** - Crava o selo de uma dívida fúnebre no peito do alvo. Ao cumprir as condições, a arma cobra o tributo: causa o dado de dano da runa e queima **metade desse valor diretamente do Karma atual** do inimigo. Em Acerto Total, aplica **Maldição de Estagnação** (qualquer cura recebida pelo alvo até o fim do próximo turno é reduzida à metade).
 
 #### Runa 11 - Teatro de Tendões
+
+Condições para forjar  
+3 a 5 condições distintas
+
+Classificação  
+Maldição Voraz a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+18 a 22
+
+Consultar classificação por quantidade de condições
+
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Fios do Titereiro** - A lâmina amarra tendões espirituais nos pulsos do inimigo. Ao fechar as condições (exigindo 3+ condições e Acerto Total), além de sofrer o dado de dano da runa, os fios puxam os braços do alvo involuntariamente: o inimigo é forçado a realizar **1 ataque básico imediato contra o aliado dele mais próximo** ao alcance antes de ficar **Desorientado**.
 
 #### Runa 12 - Forja de Medula
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Febre de Cinzas** - Cada marca aquece o cálcio dos ossos do alvo como carvão em brasa. Ao cumprir as condições, o calor explode de dentro da medula: causa o dado de dano da runa e, em Acerto Total, força o alvo a **Desarmar-se** (largando o que segura nas mãos por espasmo térmico) ou sofrer metade do dano novamente no início do turno dele (`Constituição + Atletismo` contra a CD para segurar o item).
 
 #### Runa 13 - Cão de Duas Cabeças
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Frenesi da Matilha Bipolar** - Desenhada para caçadores que alternam alvos: ao marcar um inimigo A e um inimigo B a até `4m` um do outro e fechar a condição da runa, duas cabeças de mastim espectral surgem e **colidem os dois inimigos um contra o outro**: ambos sofrem o dado de dano da runa e, em Acerto Total, ambos caem **Caídos** e **Desorientados**.
 
 #### Runa 14 - Cicatriz Magnetizada
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Pólo de Carne Atratora** - Carrega o sangue do inimigo com magnetismo reverso. Ao fechar as condições, o corpo do alvo puxa violentamente todas as armas e estilhaços ao redor: sofre o dado de dano da runa, puxa o alvo `3m` na direção do portador e, em Acerto Total, deixa o alvo **Vulnerável a Metal** (`-2` nos limiares de CA Parcial e Total contra ataques de armas até o fim do próximo turno).
 
 #### Runa 15 - Veredito do Carrasco
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Cepo da Guilhotina** - A arma sente o cheiro de fim de linha. Ao cumprir as condições contra um alvo (ideal com condição de alvo abaixo de 50% de PV), um cepo fantasma trava os ombros do inimigo e uma lâmina de sombra desce verticalmente: causa o dado de dano máximo da faixa (ex.: `1d16` ou `1d20` em 4–5 condições) e, em Acerto Total, aplica **Sangramento Severo + Caído** sem permitir levantar com metade do movimento se falhar na CD.
 
 #### Runa 16 - Vesícula de Bile Negra
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Erupção Cáustica** - Contamina o sangue do alvo com bile volátil. Ao atingir as marcas da condição, a ferida entra em erupção jorrando ácido negro num **cone de `3m` atrás do alvo**: o alvo principal sofre o dado cheio de dano da runa + **Envenenado** (em Acerto Total), e inimigos no cone atrás dele sofrem metade do dano.
 
 #### Runa 17 - Labirinto de Espelhos Partidos
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Vertigem de Retorno** - A arma fratura o senso de direção do inimigo. Ao fechar as condições, causa o dado de dano da runa e, em Acerto Total, aplica **Prisão Espacial de Espelho**: na próxima vez que o inimigo tentar usar sua Ação de Movimento para se afastar do portador, o espaço se dobra e o movimento dele termina **adjacente ao portador novamente** (salvo `Espírito + Canalização` contra a CD da runa).
 
 #### Runa 18 - Hospedeiro de Larvas Astrais
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Enxame Devorador de Escudo** - Deposita larvas famintas por energia kármica na aura do alvo. Ao cumprir as condições, o enxame eclode: **destrói imediatamente até `10 pontos` de Escudo Temporário / Barreira** do alvo antes de aplicar o dado de dano da runa e, em Acerto Total, deixa o alvo **Enfraquecido (`-1d20` em ataques)** por 1 rodada.
 
 #### Runa 19 - Balança de Órgãos
+
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
 
 **Simetria do Martírio** - Quanto mais ferido estiver o portador, mais alto a arma canta. Ao fechar as condições, a arma causa o dado de dano da runa e, em Acerto Total, **transfere 1 condição negativa física ou mental simples** que esteja afetando o portador diretamente para o inimigo atingido (caso o inimigo falhe contra a CD da runa).
 
 #### Runa 20 - Trono de Ossos Vazios
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Genuflexão pelo Peso** - Cada golpe multiplica o peso da própria carne do inimigo. Ao fechar as condições, a pressão esmaga os joelhos do alvo contra o solo: causa o dado de dano da runa e, em Acerto Total, aplica **Ajoelhado / Imobilizado no Solo** (o alvo fica *Caído* e seu Deslocamento cai a `0m` até vencer `Força ou Constituição + Atletismo` contra a CD da runa).
 
 #### Runa 21 - Coração de Cinza Fria
 
+Condições para forjar  
+1 a 5 condições distintas
+
+Classificação  
+Maldição Latente a Maldição Soberana
+
+Composição  
+Configurável
+
+CD de Forja  
+14 a 22
+
+Consultar classificação por quantidade de condições
+
+- **1 condição** - Maldição Latente; Forja CD 14
+- **2 condições** - Maldição Desperta; Forja CD 16
+- **3 condições** - Maldição Voraz; Forja CD 18
+- **4 condições** - Maldição Abissal; Forja CD 20
+- **5 condições** - Maldição Soberana; Forja CD 22
+
 **Estopim de Cadáver** - A arma transforma o corpo do inimigo marcado em uma bomba de corrupção latente. Ao cumprir as condições, crava um núcleo instável no tórax do alvo causando o dado de dano da runa + **Abalado** em Acerto Total; se o alvo chegar a `0 de Vida` enquanto estiver com o núcleo ativo, ele explode em `3m` causando o mesmo dado de dano da runa em todos os inimigos adjacentes.
 
 #### Runa 22 - Língua de Cinza Calcinada
+
+Condições para forjar  
+1 condição
+
+Classificação  
+Maldição Latente
+
+Composição  
+Fixa
+
+CD de Forja  
+14
 
 **Brasa na Garganta** - Ao cumprir C1, o despertar causa **1d8 Corrupto** e impõe **Silenciado** por uma brasa que se fecha na garganta da vítima.
 
@@ -3010,11 +3432,35 @@ As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras m
 
 #### Runa 23 - Espinho de Vidro Abissal
 
+Condições para forjar  
+2 condições
+
+Classificação  
+Maldição Desperta
+
+Composição  
+Fixa
+
+CD de Forja  
+16
+
 **Hemorragia de Vidro** - Feche as 2 Marcas de C3 no mesmo turno. O despertar causa **1d10 Corrupto**; com pelo menos 1 Acerto Total na sequência, os fragmentos provocam **Sangramento Hemorrágico de 1d6**, persistente.
 
 **Composição fixa:** C3 + C5; 2 condições; dano escolhido 1d10. As três CDs são calculadas pela Tabela B.
 
 #### Runa 24 - Cadeia de Almas Perdidas
+
+Condições para forjar  
+3 condições
+
+Classificação  
+Maldição Voraz
+
+Composição  
+Fixa
+
+CD de Forja  
+18
 
 **Grilhões das Almas** - Feche 3 Marcas persistentes na cena contra a presa isolada ou flanqueada escolhida em C7. O despertar causa **1d12 Corrupto**; com pelo menos 1 Acerto Total na sequência, a cadeia **anula saltos e voo** e reduz o **Movimento à metade**.
 
@@ -3022,11 +3468,35 @@ As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras m
 
 #### Runa 25 - Foice de Gelo Necrótico
 
+Condições para forjar  
+3 condições
+
+Classificação  
+Maldição Voraz
+
+Composição  
+Fixa
+
+CD de Forja  
+18
+
 **Geada da Sepultura** - Feche 3 Marcas de contato contra o alvo debilitado exigido por C9. O despertar causa **1d12 Corrupto** e aplica **Paralisado em sua Forma reduzida (Imobilizado, conforme o Capítulo 7)** ao alvo debilitado.
 
 **Composição fixa:** C1 + C4 + C9; 3 condições; dano escolhido 1d12. As três CDs são calculadas pela Tabela B.
 
 #### Runa 26 - Vulto da Peste Negra
+
+Condições para forjar  
+4 condições
+
+Classificação  
+Maldição Abissal
+
+Composição  
+Fixa
+
+CD de Forja  
+20
 
 **Miasma da Peste** - Feche 3 Marcas de contato, sem errar nem trocar de alvo. O despertar causa **1d16 Corrupto** e **ignora Resistência Leve (1)**; com pelo menos 1 Acerto Total na sequência, aplica **Envenenado severo**, com **−2d20 nos testes físicos**.
 
@@ -3034,17 +3504,53 @@ As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras m
 
 #### Runa 27 - Trombeta dos Deserdados
 
+Condições para forjar  
+4 condições
+
+Classificação  
+Maldição Abissal
+
+Composição  
+Fixa
+
+CD de Forja  
+20
+
 **Clamor dos Deserdados** - O clamor desafia espíritos fortes. Feche 3 Marcas por disparos a 9 m ou mais, contra o alvo de Presença maior ou igual exigido por C18. O despertar causa **1d16 Corrupto**; com pelo menos 1 Acerto Total na sequência, impõe **Atordoado pleno**.
 
 **Composição fixa:** C2 + C4 + C5 + C18; 4 condições; dano escolhido 1d16. As três CDs são calculadas pela Tabela B.
 
 #### Runa 28 - Mandíbula do Leviatã
 
+Condições para forjar  
+5 condições
+
+Classificação  
+Maldição Soberana
+
+Composição  
+Fixa
+
+CD de Forja  
+22
+
 **Ruptura do Leviatã** - Componha a Maldição Soberana com os cinco requisitos registrados. Feche 3 Marcas de contato, sem errar nem trocar de alvo e cumprindo o vetor aéreo ou em carga de C11. O despertar causa **1d20 Corrupto** e **ignora Resistência Média (2)**; com pelo menos 1 Acerto Total na sequência, provoca **fratura permanente na armadura, −2 CA**.
 
 **Composição fixa:** C1 + C4 + C5 + C6 + C11; 5 condições; dano escolhido 1d20. As três CDs são calculadas pela Tabela B.
 
 #### Runa 29 - Olho do Ciclone Sangrento
+
+Condições para forjar  
+5 condições
+
+Classificação  
+Maldição Soberana
+
+Composição  
+Fixa
+
+CD de Forja  
+22
 
 **Ciclone Rubro** - Feche 3 Marcas sem errar nem trocar de alvo, cumprindo o cerco de C16 e o dano aliado de C19. O despertar usa **uma única rolagem de 1d20 Corrupto** contra o alvo principal e os demais inimigos em um **raio de 3 m centrado nele**. Resolva separadamente as proteções de cada vítima. A área não repete o dano da arma nem de técnicas acopladas.
 
@@ -3053,6 +3559,18 @@ As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras m
 **Composição fixa:** C4 + C5 + C6 + C16 + C19; 5 condições; dano escolhido 1d20. As três CDs são calculadas pela Tabela B.
 
 #### Runa 30 - Selo de Amnésia Eterna
+
+Condições para forjar  
+5 condições
+
+Classificação  
+Maldição Soberana
+
+Composição  
+Fixa
+
+CD de Forja  
+22
 
 **Memória Selada** - Feche 3 Marcas de contato contra um alvo de Presença maior ou igual e pague os **2 de Karma de C17** no fechamento. O despertar causa **1d20 Corrupto**; com pelo menos **1 Acerto Total na sequência**, sele uma única técnica conhecida e ativável do alvo: a de **maior Grau entre I e V**. Se houver empate, o alvo escolhe entre as técnicas desse Grau. Uma assinatura também pode ser escolhida se for uma técnica ativa conhecida com Grau I–V explicitamente declarado. Capacidades sem Grau declarado ficam fora da escolha; não atribua Grau por inferência.
 

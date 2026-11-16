@@ -229,3 +229,126 @@
     padding: 0.75rem;
   }
 }
+
+/* Os três catálogos compartilham o selo; cada tradição conserva sua cor. */
+.rule-content [data-book206-section="runas-amaldicoadas"] {
+  --rune-accent: #c4a1dd;
+}
+.rule-content [data-book206-section="runas-elementais-ambientais"] {
+  --rune-accent: #8dd6ce;
+}
+.rule-content .rune-catalog-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--rune-accent, #dac18a);
+}
+.rule-content .rune-catalog-heading::before {
+  content: none;
+}
+.rule-content .rune-seal {
+  flex: 0 0 auto;
+  width: 3.5rem;
+  height: 3.5rem;
+  stroke-width: 1.1;
+  color: var(--rune-accent, #dac18a);
+}
+.rule-content .tome-ability-card.tome-rune-card {
+  margin-block: 1.5rem;
+  padding: 1.35rem;
+  border: 1px solid #b28cc240;
+  border-radius: 1rem;
+  background:
+    radial-gradient(ellipse at top left, #8e4cac16, transparent 70%), #110f19;
+}
+.rule-content .tome-ability-card.tome-rune-card > h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 1.2rem;
+  padding: 0 0 1rem;
+  border-left: 0;
+  border-bottom: 1px solid #b28cc240;
+  background: transparent;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: 0.015em;
+  line-height: 1.4;
+}
+.rule-content .tome-ability-card.tome-rune-card > h4 .rune-seal {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.rule-content .tome-ability-card.tome-rune-card > p {
+  font-family: Georgia, serif;
+  font-size: 1.04rem;
+  line-height: 1.85;
+  color: #d9d2df;
+  margin-block: 1rem;
+  max-width: 76ch;
+}
+.rule-content .rune-forge-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.2rem;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  border: 1px solid #b28cc230;
+  border-radius: 0.65rem;
+  background: #c6a6dd08;
+}
+.rule-content .rune-forge-summary > div {
+  min-width: 0;
+}
+.rule-content .rune-forge-summary dt {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b8a4c5;
+  margin-bottom: 0.3rem;
+}
+.rule-content .rune-forge-summary dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #efe5f6;
+  overflow-wrap: anywhere;
+}
+.rule-content .rune-forge-tiers {
+  margin-block: 0.75rem 1.2rem;
+}
+.rule-content .rune-forge-tiers > summary {
+  cursor: pointer;
+  color: #cbb2da;
+  font-size: 0.85rem;
+}
+.rule-content .rune-forge-tiers li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.rule-content .tome-table-wrap[data-rune-kind="karmic"] td:first-child,
+.rule-content
+  [data-book206-section="runas-elementais-ambientais"]
+  td:nth-child(2) {
+  font-family: Georgia, serif;
+  color: var(--rune-accent, #dac18a);
+}
+@media (max-width: 600px) {
+  .rule-content .tome-ability-card.tome-rune-card {
+    padding: 1rem;
+  }
+  .rule-content .tome-ability-card.tome-rune-card > h4 {
+    font-size: 1.05rem;
+  }
+  .rule-content .rune-forge-summary {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+  .rule-content .rune-seal {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}

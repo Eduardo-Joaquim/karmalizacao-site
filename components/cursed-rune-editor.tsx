@@ -382,8 +382,8 @@ export function CursedRuneEditor({
             </fieldset>
             {effect?.example && (
               <p className="cursed-rune-note">
-                O exemplo canônico conserva sua composição e seu dano. Escolha
-                outro efeito para construir uma composição diferente.
+                Esta receita conserva sua composição e seu dano. Escolha outro
+                efeito para construir uma composição diferente.
               </p>
             )}
             {effect?.fixedComposition && (

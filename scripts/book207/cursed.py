@@ -1,4 +1,5 @@
 """Compile the Cursed Rune manuscript from its shared catalog."""
+from html import escape
 from pathlib import Path
 import json
 import re
@@ -40,8 +41,18 @@ def _effects(data):
     parts = []
     for index, entry in enumerate(data['effects']):
         number = index + 1
-        label = f'Runa {number} - Exemplo canônico' if entry.get('example') else f"Runa {number}"
+        label = f"Runa {number}"
         parts.append(f"#### {label} - {entry['name']} {{#cursed-effect-{entry['id']}}}\n\n")
+        fixed = bool(entry.get('fixedComposition') or entry.get('example'))
+        minimum = len(entry.get('defaultConditions', [])) if fixed else entry.get('minimumConditions', 1)
+        eligible = [tier for tier in data['powerLevels'] if tier['conditions'] >= minimum and (not fixed or tier['conditions'] == minimum)]
+        requirement = f"{minimum} {'condição' if minimum == 1 else 'condições'}" if fixed else f"{minimum} a 5 condições distintas"
+        classification = eligible[0]['classification'] if fixed else f"{eligible[0]['classification']} a {eligible[-1]['classification']}"
+        forge = str(eligible[0]['forgeDC']) if fixed else f"{eligible[0]['forgeDC']} a {eligible[-1]['forgeDC']}"
+        fields = [('Condições para forjar', requirement), ('Classificação', classification), ('Composição', 'Fixa' if fixed else 'Configurável'), ('CD de Forja', forge)]
+        parts.append('<dl class="rune-forge-summary">' + ''.join(f'<div><dt>{escape(label)}</dt><dd>{escape(value)}</dd></div>' for label, value in fields) + '</dl>\n\n')
+        if not fixed:
+            parts.append('<details class="rune-forge-tiers"><summary>Consultar classificação por quantidade de condições</summary><ul>' + ''.join(f"<li><strong>{tier['conditions']} {'condição' if tier['conditions'] == 1 else 'condições'}</strong> - {escape(tier['classification'])}; Forja CD {tier['forgeDC']}</li>" for tier in eligible) + '</ul></details>\n\n')
         parts.append(f"**{entry['epithet']}** - {entry['effect']}\n\n")
         if entry.get('defaultConditions') and not entry.get('example'):
             conditions = ' + '.join(entry['defaultConditions'])

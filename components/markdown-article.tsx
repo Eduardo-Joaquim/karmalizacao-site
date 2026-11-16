@@ -2,18 +2,34 @@ const filigree =
   '<svg class="section-filigree" viewBox="0 0 400 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M1 12h144q26 0 38-8l17 8-17 8q-12-8-38-8m255 0H255q-26 0-38-8l-17 8 17 8q12-8 38-8"/><path d="m200 1 11 11-11 11-11-11zM159 12l6-4 6 4-6 4zM229 12l6-4 6 4-6 4z"/></svg>';
 const corner =
   '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 18V2h16M5 14V5h9m-9 4 4-4"/></svg>';
+const runeSeal =
+  '<svg class="rune-seal" viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="28"/><circle cx="32" cy="32" r="21" stroke-dasharray="2 5"/><path d="m32 9 20 35H12zM32 55 12 20h40zM32 20v24m-10-12h20"/><circle cx="32" cy="32" r="5"/></svg>';
 export function decorateRuleHtml(html: string, chapter: number) {
   let heading = 0;
   let n = 0;
   const decorated = html
-    .replace(/<h2\b/g, () => (heading++ === 0 ? "<h2" : filigree + "<h2"))
     .replace(
-      /<table\b[\s\S]*?<\/table>/g,
-      (t) =>
-        '<div class="canon-table-wrap tome-table-wrap" tabindex="0" role="region" aria-label="Tabela de regras com rolagem">' +
-        t +
-        "</div>",
+      /<h2 id="(runas-karmicas|runas-amaldicoadas|runas-elementais-ambientais)">([^<]+)<\/h2>/g,
+      '<h2 id="$1" class="rune-catalog-heading">' +
+        runeSeal +
+        "<span>$2</span></h2>",
     )
+    .replace(/<h2\b/g, () => (heading++ === 0 ? "<h2" : filigree + "<h2"))
+    .replace(/<table\b[\s\S]*?<\/table>/g, (t) => {
+      const kind =
+        /Enquanto armada/.test(t) && /Karma Retido/.test(t)
+          ? "karmic"
+          : /Efeito ambiental/.test(t) && /Origem da inscrição/.test(t)
+            ? "elemental"
+            : undefined;
+      return (
+        '<div class="canon-table-wrap tome-table-wrap"' +
+        (kind ? ` data-rune-kind="${kind}"` : "") +
+        ' tabindex="0" role="region" aria-label="Tabela de regras com rolagem">' +
+        t +
+        "</div>"
+      );
+    })
     .replace(
       /<blockquote>/g,
       '<blockquote class="canon-callout">' + corner.repeat(4),
@@ -52,7 +68,13 @@ export function decorateRuleHtml(html: string, chapter: number) {
     );
   const cards = blocks.replace(
     /(<h4\b[^>]*>[\s\S]*?<\/h4>)([\s\S]*?)(?=<h[1-4]\b|<svg class="section-filigree"|$)/g,
-    '<section class="tome-ability-card">$1$2</section>',
+    (_match, heading: string, body: string) =>
+      heading.includes('id="cursed-effect-')
+        ? '<section class="tome-ability-card tome-rune-card">' +
+          heading.replace(/(<h4\b[^>]*>)/, "$1" + runeSeal) +
+          body +
+          "</section>"
+        : '<section class="tome-ability-card">' + heading + body + "</section>",
   );
   const stack: string[] = [];
   return cards

@@ -154,7 +154,7 @@ export function getCursedRuneError(
       (version === 1 && inscription.dcMode !== "fixed") ||
       profile.damage !== profile.effect.damageOverride
     )
-      return "O exemplo canônico do Deus Selvagem usa C1 + C4 + C5 e 2d6.";
+      return "Esta receita usa C1 + C4 + C5 e 2d6.";
   }
   if (conditions.length < (profile.effect.minimumConditions ?? 1))
     return `Este efeito exige pelo menos ${profile.effect.minimumConditions} condições.`;
