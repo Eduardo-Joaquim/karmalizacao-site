@@ -10,8 +10,8 @@
   "regent": "Intelecto",
   "controlDCBase": 12,
   "radiusRange": [
-    4,
-    8
+    10,
+    20
   ],
   "parameters": {
     "inscriptionAction": "Ação Principal",
@@ -30,7 +30,7 @@
       "parents": [
         "Fogo"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Causa 1d6 de dano térmico em cada pulso às criaturas na zona. O primeiro pulso acende material inflamável exposto; essa combustão não acrescenta outro dado da runa e depois segue as regras normais de fogo."
     },
     {
@@ -43,7 +43,7 @@
       "parents": [
         "Água"
       ],
-      "radius": 7,
+      "radius": 17.5,
       "effect": "Anula chamas na zona e encharca o solo. Para correr sobre o solo molhado, faça Acrobacia CD 14 uma vez por turno: falhar encerra aquela corrida no ponto alcançado, sem causar queda automática."
     },
     {
@@ -56,7 +56,7 @@
       "parents": [
         "Ar"
       ],
-      "radius": 8,
+      "radius": 20,
       "effect": "Projéteis cujo trajeto cruza a zona sofrem Desvantagem e têm seu alcance reduzido em 6 m, mínimo 1 m. A redução não converte o disparo em ataque de contato e não se repete por cruzar a zona várias vezes."
     },
     {
@@ -69,7 +69,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 5,
+      "radius": 12.5,
       "effect": "Ergue obstáculos de solo que concedem Cobertura Parcial (+2 CA) contra ataques à distância a criaturas apoiadas no terreno da zona. Os obstáculos não se tornam cobertura total nem concedem o bônus a quem sobrevoa a área."
     },
     {
@@ -82,7 +82,7 @@
       "parents": [
         "Luz"
       ],
-      "radius": 8,
+      "radius": 20,
       "effect": "Ilumina a zona, dissipa trevas e suprime ilusões apenas na parte sobreposta à área; a fonte de uma ilusão não é destruída. Impõe Desvantagem em Furtividade enquanto a criatura permanece iluminada."
     },
     {
@@ -95,7 +95,7 @@
       "parents": [
         "Trevas"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Cria sombra densa: a visão através da zona fica limitada a 1 m e feixes de luz comuns são abafados. A limitação vale para qualquer criatura que dependa de visão e não impede sentidos expressamente capazes de atravessar essa escuridão."
     },
     {
@@ -108,7 +108,7 @@
       "parents": [
         "Fogo"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Quando uma criatura na zona realiza uma ação que cause dano de Fogo, a combustão reativa causa 1d8 térmico a ela, depois da ação. Cada criatura sofre essa reação no máximo uma vez por rodada; o dano da própria runa não a reativa."
     },
     {
@@ -121,7 +121,7 @@
       "parents": [
         "Fogo"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Uma criatura sem respirador funcional na zona sofre −1d20 em testes físicos enquanto respira a cinza. O modificador cessa ao sair da zona ou vedar a respiração com proteção apropriada."
     },
     {
@@ -134,8 +134,8 @@
       "parents": [
         "Fogo"
       ],
-      "radius": 4,
-      "effect": "O centro, em um raio de 2 m, causa Cego às criaturas que dependam de visão e estejam com os olhos expostos. Cego dura somente enquanto a criatura permanece nesse centro; fechar os olhos evita a luz, mas impede enxergar normalmente."
+      "radius": 10,
+      "effect": "O centro, em um raio de 5 m, causa Cego às criaturas que dependam de visão e estejam com os olhos expostos. Cego dura somente enquanto a criatura permanece nesse centro; fechar os olhos evita a luz, mas impede enxergar normalmente."
     },
     {
       "id": "deflagracao",
@@ -147,7 +147,7 @@
       "parents": [
         "Fogo"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Na ativação, uma única onda de choque causa 2d6 de dano Elemental/Fogo e empurra cada criatura na zona 3 m para longe do centro, até o primeiro obstáculo. Não há novos pulsos de explosão nas rodadas seguintes."
     },
     {
@@ -160,7 +160,7 @@
       "parents": [
         "Água"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "O piso fica escorregadio. Ao começar um deslocamento a pé na zona ou entrar nela dessa forma, faça Acrobacia CD 16 uma vez por turno: falhar causa Caído e encerra esse deslocamento; levantar segue a regra normal."
     },
     {
@@ -173,7 +173,7 @@
       "parents": [
         "Água"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Enquanto o componente verbal de uma técnica é pronunciado dentro da zona, ele falha automaticamente e a técnica não se resolve. Técnicas sem componente verbal continuam possíveis; a zona não desfaz efeitos já ativos."
     },
     {
@@ -186,7 +186,7 @@
       "parents": [
         "Água"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Limita a visão através da zona a 2 m e aplica Abalado enquanto a criatura permanece em seu interior. Sair encerra somente o Abalado produzido por esta runa, sem cancelar condições de outras fontes."
     },
     {
@@ -199,7 +199,7 @@
       "parents": [
         "Água"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Em cada pulso, causa 1d6 de dano Elemental/Água, de expressão térmica/sônica. O mesmo dado é um único pacote de dano, não dois danos separados. Enquanto na zona, o Deslocamento é reduzido à metade."
     },
     {
@@ -212,7 +212,7 @@
       "parents": [
         "Ar"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Em cada pulso, um arco elétrico causa automaticamente 1d8 de dano Elemental/Ar à criatura que veste armadura de metal na zona. O arco não salta para alvos adicionais nem se repete pela quantidade de peças metálicas."
     },
     {
@@ -225,7 +225,7 @@
       "parents": [
         "Ar"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Em cada pulso, puxa criaturas de tamanho Médio ou menor que estejam na zona até 2 m em direção ao centro, até o primeiro obstáculo e sem ultrapassar o centro. Cada criatura é puxada no máximo uma vez por rodada."
     },
     {
@@ -238,7 +238,7 @@
       "parents": [
         "Ar"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Anula ondas sonoras na zona e impede a resolução de componentes sônicos ou verbais que precisem de som audível em seu interior. Não afeta comunicação mental nem técnicas sem esses componentes e não desfaz efeitos anteriores."
     },
     {
@@ -251,7 +251,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Sobre o solo da zona, cada 1 m real percorrido a pé consome 3 m de Movimento. A areia não impede voo ou teleporte; não multiplique novamente esse mesmo custo por outra zona idêntica."
     },
     {
@@ -264,7 +264,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Os cristais causam 1d6 perfurante a cada 2 m efetivamente percorridos a pé sobre o solo da zona. Some a distância da criatura durante o turno; entrar e sair não zera os metros restantes. Movimento forçado a pé também conta; voo e teleporte não contam."
     },
     {
@@ -277,7 +277,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Em cada pulso, o calor irradiado causa 1d6 de dano Elemental/Terra à criatura que veste armadura pesada na zona. O dano não se repete pela quantidade de peças e não concede calor ofensivo à arma da criatura."
     },
     {
@@ -290,7 +290,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 4,
+      "radius": 10,
       "effect": "Multiplica por 3 a pressão gravitacional dentro da zona. Triplique a carga efetiva para determinar a faixa de carga e suas penalidades; massas, espaços de inventário e capacidade máxima não são reescritos. Não causa dano adicional, não altera quedas fora da zona e não concede manipulação gravitacional fora desta inscrição."
     },
     {
@@ -303,7 +303,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Converte o solo da zona em argila pegajosa; criaturas em contato com esse solo têm Deslocamento à metade. Não afeta voo ou teleporte e não se combina consigo mesma para reduzir o Deslocamento a um quarto."
     },
     {
@@ -316,7 +316,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 8,
+      "radius": 20,
       "effect": "Uma cortina mineral bloqueia a linha de visão que atravessa a zona, inclusive entre dois pontos em seu interior. Não é uma barreira física e não bloqueia sentidos que funcionem sem visão."
     },
     {
@@ -329,7 +329,7 @@
       "parents": [
         "Terra"
       ],
-      "radius": 6,
+      "radius": 15,
       "effect": "Estabiliza o solo e concede Vantagem a testes para resistir a quedas e empurrões enquanto a criatura permanece apoiada nele. A Vantagem não converte automaticamente uma falha em sucesso nem permite resistir a um efeito que não ofereça teste."
     }
   ],

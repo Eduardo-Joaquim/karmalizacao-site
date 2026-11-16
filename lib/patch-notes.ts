@@ -9,13 +9,15 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
-    id: "patch-2-0-9-2026-11-16-catalogos-runicos-r2",
+    id: "patch-2-0-9-2026-11-16-catalogos-runicos-r3",
     version: "2.0.9",
     label: "Patch 2.0.9 - 16/11/2026",
     title: "Ciclos de maldição e Runas Elementais Ambientais",
     highlights: [
-      "Todas as maldições exibem condições necessárias, classificação e CD de Forja, distinguindo receitas fixas e composições configuráveis. Capítulo 9.",
-      "Os catálogos de Runas Kármicas, Amaldiçoadas e Elementais recebem ornamentos e uma apresentação de leitura mais clara. Capítulos 9 e 12.",
+      "Aumentados em 150% os raios das 24 Runas Elementais Ambientais, agora entre 10 e 20 metros. Capítulo 12.",
+      "Runas Amaldiçoadas reorganizadas no capítulo de Corrupção, com regras, condições, classificações e catálogo reunidos. Capítulo 14.",
+      "Todas as maldições exibem condições necessárias, classificação e CD de Forja, distinguindo receitas fixas e composições configuráveis. Capítulo 14.",
+      "Os catálogos de Runas Kármicas, Amaldiçoadas e Elementais recebem ornamentos e uma apresentação de leitura mais clara. Capítulos 9, 12 e 14.",
       "Atualizadas as regras de inscrição e resolução nos capítulos 9, 10 e 12, com referências alinhadas nos capítulos 14 e 17.",
       "As Runas Amaldiçoadas passam a ter 20 condições táticas e 30 fórmulas de efeitos, com requisitos e incompatibilidades explícitos.",
       "Escape da vítima, Forja e Fome apresentam CDs separadas. O Escape usa o maior valor entre a faixa fixa e a fórmula de Presença final com Controle da Corrupção.",

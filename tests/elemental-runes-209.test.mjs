@@ -41,13 +41,13 @@ test("catálogo ambiental fecha as 24 entradas sem substituir a taxonomia geral"
   );
   assert.deepEqual(
     runes.filter((rune) => rune.kind === "primary").map((rune) => rune.radius),
-    [6, 7, 8, 5, 8, 6],
+    [15, 17.5, 20, 12.5, 20, 15],
   );
   const subelements = runes.filter((rune) => rune.kind === "subelement");
   assert.equal(subelements.length, 18);
   assert.deepEqual(
     subelements.map((rune) => rune.radius),
-    [4, 6, 4, 4, 6, 4, 6, 4, 4, 4, 4, 6, 4, 4, 4, 6, 8, 6],
+    [10, 15, 10, 10, 15, 10, 15, 10, 10, 10, 10, 15, 10, 10, 10, 15, 20, 15],
   );
   assert.equal(
     elemental.elementalRuneCatalog.taxonomyScope,

@@ -1,4 +1,5 @@
 import { MarkdownArticle } from "@/components/markdown-article";
+import { CursedRuneLocation } from "@/components/cursed-rune-location";
 import { PantheonBlessingsPortal } from "@/components/pantheon-blessings-portal";
 import { RuleOrnament } from "@/components/rule-ornament";
 import court from "@/data/court-sheets.json";
@@ -85,6 +86,7 @@ export default async function RuleChapterPage({
 
   return (
     <div className="site-page rule-reader-page">
+      {chapter.number === 9 && <CursedRuneLocation />}
       <SiteHeader user={user} />
       <main className="rules-reader-shell">
         <RulesNavigation chapters={chapterMetadata} activeSlug={slug} />

@@ -14,9 +14,13 @@ after(() => vite.close());
 const { decorateRuleHtml } = await vite.ssrLoadModule(
   "/components/markdown-article.tsx",
 );
+const { legacyCursedRuneDestination } = await vite.ssrLoadModule(
+  "/lib/rune-chapter-location.ts",
+);
 const book = JSON.parse(readFileSync("data/rules.json", "utf8"));
 const plain = (html) =>
   html
+    .replace(/<span class="tome-example-seal">[^<]*<\/span>/g, "")
     .replace(/<[^>]*>/g, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -31,7 +35,7 @@ import json
 from lxml import html
 book=json.load(open('data/rules.json'))
 catalog=json.load(open('data/cursed-runes.json'))
-tree=html.fragment_fromstring(next(c['html'] for c in book['chapters'] if c['number']==9),create_parent='div')
+tree=html.fragment_fromstring(next(c['html'] for c in book['chapters'] if c['number']==14),create_parent='div')
 summaries=tree.xpath('.//dl[@class="rune-forge-summary"]')
 assert len(summaries)==30
 for entry,summary in zip(catalog['effects'],summaries):
@@ -48,6 +52,12 @@ assert len(tree.xpath('.//details[@class="rune-forge-tiers"]'))==20
 for heading in tree.xpath('.//h4[starts-with(@id,"cursed-effect-")]'):
     assert 'Exemplo canônico' not in heading.text_content()
 assert 'condiçãos' not in tree.text_content()
+karma=html.fragment_fromstring(next(c['html'] for c in book['chapters'] if c['number']==9),create_parent='div')
+assert not karma.xpath('.//h4[starts-with(@id,"cursed-effect-")]')
+assert karma.xpath('.//a[@href="/regras/14-corrupcao-e-a-marca#runas-amaldicoadas"]')
+for chapter in book['chapters']:
+    node=html.fragment_fromstring(chapter['html'],create_parent='div')
+    assert not node.xpath('.//a[@href="/regras/9-karma#runas-amaldicoadas"]')
 `,
     ],
     { encoding: "utf8" },
@@ -55,8 +65,30 @@ assert 'condiçãos' not in tree.text_content()
   assert.equal(result.status, 0, result.stderr);
 });
 
+test("old cursed-rune bookmarks preserve their destination without redirecting Karma rules", () => {
+  const catalog = JSON.parse(readFileSync("data/cursed-runes.json", "utf8"));
+  for (const hash of [
+    "#runas-amaldicoadas",
+    "#cursed-condicoes",
+    ...catalog.effects.map((e) => `#cursed-effect-${e.id}`),
+  ]) {
+    assert.equal(
+      legacyCursedRuneDestination(hash),
+      `/regras/14-corrupcao-e-a-marca${hash}`,
+    );
+  }
+  for (const hash of [
+    "",
+    "#runas-karmicas",
+    "#retencao-e-apice-runico",
+    "https://example.com/",
+  ]) {
+    assert.equal(legacyCursedRuneDestination(hash), undefined);
+  }
+});
+
 test("ornamental catalog rendering preserves all rule text and existing anchors", () => {
-  for (const number of [9, 12]) {
+  for (const number of [9, 12, 14]) {
     const chapter = book.chapters.find((c) => c.number === number);
     const decorated = decorateRuleHtml(chapter.html, number);
     assert.equal(plain(decorated), plain(chapter.html));
@@ -66,7 +98,7 @@ test("ornamental catalog rendering preserves all rule text and existing anchors"
     assert(decorated.includes('class="rune-catalog-heading"'));
     assert(decorated.includes('class="rune-seal"'));
     assert(decorated.includes('aria-hidden="true"'));
-    if (number === 9)
+    if (number === 14)
       assert.equal((decorated.match(/tome-rune-card/g) ?? []).length, 30);
   }
 });

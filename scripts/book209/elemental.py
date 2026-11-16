@@ -45,7 +45,7 @@ def _catalog():
                                           for parent in rune['parents']):
             raise ValueError(f"Environmental Rune {rune['number']} has no elemental origin")
         radius = rune.get('radius')
-        if isinstance(radius, bool) or not isinstance(radius, (int, float)) or not 4 <= radius <= 8:
+        if isinstance(radius, bool) or not isinstance(radius, (int, float)) or not 10 <= radius <= 20:
             raise ValueError(f"Environmental Rune {rune['number']} has an invalid radius")
     return data
 
@@ -75,7 +75,7 @@ def _cell(value):
 def _radius(rune, data):
     radius = rune.get('radius')
     if radius is not None:
-        return f'{radius:g} m'
+        return f'{radius:g} m'.replace('.', ',')
     lower, upper = rune.get('radiusRange', data['radiusRange'])
     return f'{lower:g}–{upper:g} m'
 
@@ -124,7 +124,7 @@ def apply(book):
         input=source, text=True,
     )
     rendered += ('<p>A exclusividade de uma arma amaldiçoada também vale quando ela é um Foco de Mago. Consulte '
-                 '<a href="/regras/9-karma#runas-amaldicoadas">as Runas Amaldiçoadas, no Capítulo 9</a>.</p>')
+                 '<a href="/regras/14-corrupcao-e-a-marca#runas-amaldicoadas">as Runas Amaldiçoadas, no Capítulo 14</a>.</p>')
     c9, c10, c12 = (chapter(book, number) for number in (9, 10, 12))
     append_section(c9, 'tres-sistemas-de-inscricao', 'Três sistemas de inscrição',
                    '<p>Runas Kármicas, Runas Amaldiçoadas e Runas Elementais Ambientais têm procedimentos próprios. Identifique o sistema antes de gravar ou resolver uma inscrição.</p>'
@@ -133,7 +133,7 @@ def apply(book):
                    '<li><strong>Runas Elementais Ambientais</strong> - Usam Intelecto + Controle do Elemento, com treinamento de nível 1 ou superior. São gravadas no solo ou em Focos de Mago, não ocupam vagas de armas nem vagas pessoais e não retêm Karma.</li></ul>'
                    '<p>Um Foco de Mago que já contenha uma Runa Amaldiçoada não pode receber uma Runa Elemental. A inscrição ambiental não contorna a exclusividade da maldição. Consulte '
                    f'<a href="{escape(CATALOG_URL, quote=True)}">as 24 Runas Elementais Ambientais, no Capítulo 12</a>, e '
-                   '<a href="/regras/9-karma#runas-amaldicoadas">as Runas Amaldiçoadas</a>.</p>')
+                   '<a href="/regras/14-corrupcao-e-a-marca#runas-amaldicoadas">as Runas Amaldiçoadas</a>.</p>')
     append_section(c10, 'zonas-de-inscricao-elemental', 'Zonas de inscrição elemental',
                    '<p>Uma Runa Elemental Ambiental produz a zona e os efeitos indicados em sua entrada. Sua gravação usa Intelecto + Controle do Elemento, e sua CD é 12 + Intelecto final + nível de Controle. Ar e Vento designam a mesma origem; Trevas e Sombra também.</p>'
                    '<p>O dano da zona tem natureza Elemental. Contra um elemento primordial, aplique a defesa elemental inteira; contra uma subdobra, aplique metade da defesa parental, arredondada para baixo. Quando o efeito possuir dois elementos-pai, use metade da maior defesa entre eles, sem somá-las.</p>'

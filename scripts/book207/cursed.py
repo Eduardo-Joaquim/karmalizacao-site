@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 import re
 import subprocess
+from lxml import html as html_parser
 
 from book206.common import append_section, chapter
 
@@ -84,10 +85,27 @@ def apply(book):
         ['pandoc', '-f', 'markdown-tex_math_dollars', '-t', 'html5', '--wrap=none'],
         input=source, text=True,
     )
-    append_section(chapter(book, 9), 'runas-amaldicoadas', 'Runas Amaldiçoadas', rendered)
+    karma = chapter(book, 9)
+    tree = html_parser.fragment_fromstring(karma['html'], create_parent='div')
+    for old in tree.xpath('.//section[@data-book206-section="runas-amaldicoadas"]'):
+        old.getparent().remove(old)
+    for heading in tree.xpath('.//h2[@id="runas-amaldicoadas"]'):
+        for sibling in list(heading.itersiblings()):
+            if sibling.tag == 'h2' or sibling.xpath('.//h2'):
+                break
+            sibling.getparent().remove(sibling)
+        heading.getparent().remove(heading)
+    karma['html'] = ''.join(html_parser.tostring(node, encoding='unicode') for node in tree)
+    append_section(karma, 'runas-amaldicoadas-remetidas', 'Runas Amaldiçoadas no capítulo de Corrupção',
+                   '<p>As regras de forja, as vinte condições e o catálogo das trinta maldições estão reunidos em '
+                   '<a href="/regras/14-corrupcao-e-a-marca#runas-amaldicoadas">Runas Amaldiçoadas, no Capítulo 14 - Corrupção e a Marca</a>.</p>')
     append_section(chapter(book, 14), 'maldição-selada-na-arma', 'A maldição selada na arma',
                    '<p>Uma Runa Amaldiçoada é um parasita espiritual ou fragmento faminto da Marca selado em uma arma. Criar, gravar, manipular, suprimir ou interagir com a maldição usa sempre Presença + Controle da Corrupção. Presença 0 destreinada usa 1d20 −4; com treinamento, usa 1d20 +2, +5 ou +10, sem acumular o −4.</p>'
-                   '<p>Ao obter 1 natural no dado selecionado de um ataque com a arma amaldiçoada, faça Presença + Controle da Corrupção contra CD 14 + o número de Condições da Runa. Sucesso evita a Fome; falha causa 1d6 de dano Corrupto direto ao portador. Esse dano não é um gasto de Karma nem se converte em Carga Temporária. A forja ou alteração exige 1 TE (2 horas) e teste contra a CD de Forja da faixa. A vítima usa a maior CD entre a fixa da faixa e a escalonada por Presença Final e nível de Controle. As vinte condições e as trinta runas estão em <a href="/regras/9-karma#runas-amaldicoadas">Runas Amaldiçoadas, no Capítulo 9</a>.</p>')
+                   '<p>Ao obter 1 natural no dado selecionado de um ataque com a arma amaldiçoada, faça Presença + Controle da Corrupção contra CD 14 + o número de Condições da Runa. Sucesso evita a Fome; falha causa 1d6 de dano Corrupto direto ao portador. Esse dano não é um gasto de Karma nem se converte em Carga Temporária. A forja ou alteração exige 1 TE (2 horas) e teste contra a CD de Forja da faixa. A vítima usa a maior CD entre a fixa da faixa e a escalonada por Presença Final e nível de Controle. As vinte condições e as trinta runas estão em <a href="/regras/14-corrupcao-e-a-marca#runas-amaldicoadas">Runas Amaldiçoadas, no Capítulo 14</a>.</p>')
     append_section(chapter(book, 17), 'armas-com-runas-amaldicoadas', 'Armas com Runas Amaldiçoadas',
                    '<p>Apenas armas de contato, arremesso, disparo ou armas de magos podem receber uma Runa Amaldiçoada. Cada arma comporta uma única maldição; ela ocupa todos os encaixes dessa arma, impede novas Runas Kármicas convencionais e destrói as inscrições comuns existentes ao ser selada. O vínculo amaldiçoado não retém Karma nem ocupa vaga pessoal do portador.</p>'
-                   '<p>Registre no equipamento o efeito escolhido, de uma a cinco Condições distintas entre C1 e C20, o dado de dano permitido e as alternativas de C7 e C10 quando usadas. C8 exige estar ferido e paga 4 de Vida no despertar; C17 paga 2 de Karma no fechamento do ciclo. Gravar ou alterar exige 1 TE (2 horas) e Presença + Controle da Corrupção contra a CD de Forja. A CD de Escape da Vítima é sempre a maior entre a fixa da faixa e sua fórmula escalonada; não é escolhida pelo portador. Consulte as três CDs em <a href="/regras/9-karma#runas-amaldicoadas">Runas Amaldiçoadas, no Capítulo 9</a>. A quantidade de condições define a potência, sem Graus de técnica ou tabela de Etapas.</p>')
+                   '<p>Registre no equipamento o efeito escolhido, de uma a cinco Condições distintas entre C1 e C20, o dado de dano permitido e as alternativas de C7 e C10 quando usadas. C8 exige estar ferido e paga 4 de Vida no despertar; C17 paga 2 de Karma no fechamento do ciclo. Gravar ou alterar exige 1 TE (2 horas) e Presença + Controle da Corrupção contra a CD de Forja. A CD de Escape da Vítima é sempre a maior entre a fixa da faixa e sua fórmula escalonada; não é escolhida pelo portador. Consulte as três CDs em <a href="/regras/14-corrupcao-e-a-marca#runas-amaldicoadas">Runas Amaldiçoadas, no Capítulo 14</a>. A quantidade de condições define a potência, sem Graus de técnica ou tabela de Etapas.</p>')
+    append_section(chapter(book, 14), 'runas-amaldicoadas', 'Runas Amaldiçoadas', rendered)
+    corruption = chapter(book, 14)
+    if 'Runas Amaldiçoadas' not in corruption['description']:
+        corruption['description'] += ' Inclui as regras e o catálogo de Runas Amaldiçoadas.'
