@@ -90,7 +90,7 @@ test("sealing an unseen remote inscription survives owner reconciliation, normal
   const exported = await owner.GET(new Request(`http://example.test/api/personagens?id=${id}&export=raw`));
   assert.equal(exported.status, 200);
   const raw = await exported.json(), restored = model.normalizeCharacterPayload(schema.characterPayloadSchema.parse(raw));
-  assert.deepEqual(restored.inventory[0].cursedRune, curse());
+  assert.deepEqual(restored.inventory[0].cursedRune, { ...curse(), rulesVersion: 1 });
   assert.equal(restored.combatState.cursedWeapons["staff-A"].targets["enemy-A"].marks, 1);
   assert.equal(restored.combatState.runes.find((r) => r.weaponId === "staff-A").releaseRound, destroyed.releaseRound);
   assert.deepEqual(raw, stored());
@@ -134,4 +134,37 @@ test("save validation rejects invalid curse construction and preserves an older 
     assert.equal((await save(draft, initial.revision)).status, 400);
   }
   assert.deepEqual(stored(), initial.payload);
+});
+
+test("new cursed contexts, turn expiry and atomic toll persist through combat tokens without changing the inscription", async () => {
+  const initial = await create(), edit = observed(initial.payload);
+  const { cursedRunes, cursedRuneKey } = await vite.ssrLoadModule("/lib/cursed-runes.ts");
+  const newCurse = { rulesVersion: 2, effectId: cursedRunes.effects[1].id, conditionIds: ["C3", "C17", "C20"], dcMode: "fixed" };
+  edit.inventory[0].cursedRune = newCurse;
+  assert.equal((await save(edit, initial.revision)).status, 200);
+  auth.setOwner(false);
+  try {
+    const before = engine.liveState(stored());
+    const strike = { type: "cursedStrike", weaponId: "staff-A", targetId: "enemy-A", outcome: "Acerto total", selectedNatural: 12, vector: "melee", distance: 1, sheltered: true };
+    assert.equal((await send(strike, true)).status, 200);
+    assert.equal(engine.liveState(stored()).cursedWeapons["staff-A"].targets["enemy-A"].marks, 1);
+    assert.equal(engine.liveState(stored()).currentKarma, before.currentKarma);
+    assert.equal((await send({ type: "cursedTurnEnd" }, true)).status, 200);
+    assert.equal(stored().combatState.cursedTurnClosed, true);
+    assert.deepEqual(stored().combatState.cursedWeapons["staff-A"].targets, {});
+    assert.equal((await send(strike, true)).status, 200);
+    assert.deepEqual(stored().combatState.cursedWeapons["staff-A"].targets, {});
+    assert.equal((await send({ type: "round" }, true)).status, 200);
+    assert.equal(stored().combatState.cursedTurnClosed, false);
+    assert.equal((await send(strike, true)).status, 200);
+    assert.equal((await send(strike, true)).status, 200);
+    const after = stored();
+    assert.equal(engine.liveState(after).currentKarma, before.currentKarma - 2);
+    assert.deepEqual(after.inventory[0].cursedRune, newCurse);
+    assert.equal(after.combatState.cursedWeapons["staff-A"].runeKey, cursedRuneKey(newCurse));
+    assert.deepEqual(after.combatState.cursedWeapons["staff-A"].targets, {});
+    const bad = await send({ ...strike, targetPresence: Infinity }, true);
+    assert.equal(bad.status, 400);
+    assert.deepEqual(stored(), after);
+  } finally { auth.setOwner(true); }
 });

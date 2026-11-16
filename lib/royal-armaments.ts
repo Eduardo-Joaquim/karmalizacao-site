@@ -21,6 +21,8 @@ export type RoyalCursedRune = {
   marks: number;
   damage: string;
   escapeDC: number;
+  escapeCalculation: string;
+  forgeDC: number;
   hungerDC: number;
   effect: string;
   tributeLife?: number;
@@ -49,7 +51,10 @@ type CursedConfig = {
   effectId: string;
   conditions: string[];
   damage: string;
-  effect: string;
+  presence: number;
+  controlLevel: number;
+  escapeTest: string;
+  effect: (escapeDC: number) => string;
 };
 
 // Only presentation references live here. The two source fields remain intact
@@ -77,16 +82,22 @@ const LOADOUTS: Record<string, ConventionalConfig | CursedConfig> = {
     effectId: "trono-de-ossos-vazios",
     conditions: ["C1", "C4", "C5", "C8"],
     damage: "2d8",
-    effect:
-      "Com ao menos um Total, o alvo fica Caído e Imobilizado no solo. Uma Principal e Força ou Constituição + Atletismo CD 22 encerram a imobilização; levantar ainda segue a regra de Caído.",
+    presence: 12,
+    controlLevel: 3,
+    escapeTest: "Força ou Constituição + Atletismo",
+    effect: (escapeDC) =>
+      `Com ao menos um Total, o alvo fica Caído e Imobilizado no solo. Uma Principal e Força ou Constituição + Atletismo CD ${escapeDC} encerram a imobilização; levantar ainda segue a regra de Caído.`,
   },
   "rainha-sael": {
     kind: "cursed",
     effectId: "forja-de-medula",
     conditions: ["C1", "C4", "C5"],
     damage: "2d6",
-    effect:
-      "Selada somente na manopla direita. Com ao menos um Total, o alvo larga o que empunha ou testa Constituição + Atletismo CD 20. Se falhar conservando os itens, sofre metade do dano da runa no início do próximo turno.",
+    presence: 5,
+    controlLevel: 0,
+    escapeTest: "Constituição + Atletismo",
+    effect: (escapeDC) =>
+      `Selada somente na manopla direita. Com ao menos um Total, o alvo larga o que empunha ou testa Constituição + Atletismo CD ${escapeDC}. Se falhar conservando os itens, sofre metade do dano da runa no início do próximo turno.`,
   },
   "atargatis-kalypso": {
     kind: "conventional",
@@ -104,8 +115,11 @@ const LOADOUTS: Record<string, ConventionalConfig | CursedConfig> = {
     effectId: "labirinto-de-espelhos-partidos",
     conditions: ["C1", "C4", "C5", "C8"],
     damage: "1d16",
-    effect:
-      "Até o fim do próximo turno do alvo e se houve um Total, sua primeira tentativa de gastar Movimento para se afastar exige Espírito + Canalização de Karma CD 22. Falhar termina o movimento adjacente à portadora, num espaço livre; a tentativa encerra a prisão, que não bloqueia teleporte.",
+    presence: 12,
+    controlLevel: 3,
+    escapeTest: "Espírito + Canalização de Karma",
+    effect: (escapeDC) =>
+      `Até o fim do próximo turno do alvo e se houve um Total, sua primeira tentativa de gastar Movimento para se afastar exige Espírito + Canalização de Karma CD ${escapeDC}. Falhar termina o movimento adjacente à portadora, num espaço livre; a tentativa encerra a prisão, que não bloqueia teleporte.`,
   },
 };
 
@@ -227,14 +241,35 @@ function cursedSummary(
     return;
   const sourceDamage = source.match(/\b\d+d(?:20|16|12|10|8|6|4)\b/)?.[0];
   if (sourceDamage !== config.damage) return;
-  const escapeDC = Number(source.match(/CD fixa\s+(\d+)/i)?.[1]);
-  if (escapeDC !== power.escapeDC) return;
+  const escapeDC = Math.max(
+    power.escapeDC,
+    power.scalingBase + config.presence + config.controlLevel,
+  );
+  const escapeCalculation = `maior entre ${power.escapeDC} e (${power.scalingBase} + Presença final ${config.presence} + nível de Controle ${config.controlLevel})`;
+  const sourceEscapeDC = Number(
+    source.match(/CD de Escape(?: da Vítima)?(?: é)?\s+(\d+)/i)?.[1],
+  );
+  if (
+    sourceEscapeDC !== escapeDC ||
+    !key(source).includes(key(escapeCalculation)) ||
+    !key(source).includes(key(`${config.escapeTest} contra a CD de Escape`)) ||
+    /CD fixa\s+\d+/i.test(source)
+  )
+    return;
   const hungerDC = Number(source.match(/1 natural[\s\S]*?\bCD\s+(\d+)/i)?.[1]);
   const forgeDC = Number(source.match(/CD de forja(?: é)?\s+(\d+)/i)?.[1]);
   if (hungerDC !== 14 + conditions.length || forgeDC !== power.forgeDC) return;
   if (
+    !/Gravar ou alterar exige 1 TE \(2 horas\) e Presença \+ Controle da Corrupção contra CD de forja/i.test(
+      source,
+    )
+  )
+    return;
+  if (
     conditions.includes("C8") &&
-    !/3\s+(?:de\s+)?Vida irreduz[ií]ve(?:l|is)/i.test(source)
+    !/C8[^.;]*portadora j[aá] ferida \(Vida atual menor que a m[aá]xima\) e cobra 4\s+(?:de\s+)?Vida irreduz[ií]ve(?:l|is)/i.test(
+      source,
+    )
   )
     return;
   return {
@@ -245,9 +280,11 @@ function cursedSummary(
     marks: conditions.includes("C4") ? 3 : conditions.includes("C3") ? 2 : 1,
     damage: config.damage,
     escapeDC,
+    escapeCalculation,
+    forgeDC,
     hungerDC,
-    effect: config.effect,
-    ...(conditions.includes("C8") ? { tributeLife: 3 } : {}),
+    effect: config.effect(escapeDC),
+    ...(conditions.includes("C8") ? { tributeLife: 4 } : {}),
   };
 }
 

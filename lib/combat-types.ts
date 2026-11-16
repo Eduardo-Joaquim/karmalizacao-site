@@ -39,12 +39,14 @@ export type LiveRune = {
 export type CursedWeaponState = {
   runeKey?: string;
   targets: Record<string, { marks: number; hasTotal: boolean }>;
+  lastTargetId?: string;
   bloodFed?: boolean;
   dormant?: boolean;
   combatScene?: boolean;
 };
 export type LiveCombatState = {
   cursedWeapons?: Record<string, CursedWeaponState>;
+  cursedTurnClosed?: boolean;
   session?: CombatSessionState;
   runes?: LiveRune[];
   runeBurstUsed?: boolean;
@@ -180,6 +182,15 @@ export type CombatAction = {
       isolated?: boolean;
       flanked?: boolean;
       targetDebilitated?: boolean;
+      movedDistance?: number;
+      higherGround?: boolean;
+      targetDamagedBearer?: boolean;
+      elementalOrArcane?: boolean;
+      effectiveDamage?: number;
+      nearbyAllies?: number;
+      targetPresence?: number;
+      allyDamagedTarget?: boolean;
+      sheltered?: boolean;
       controlTotal?: number;
       hungerDie?: number;
     }
@@ -216,6 +227,7 @@ export type CombatAction = {
       sessionId: string;
       previousSessionId?: string;
     }
+  | { type: "cursedTurnEnd" }
   | { type: "scene" }
   | { type: "rest" }
   | { type: "toggle"; active: boolean }

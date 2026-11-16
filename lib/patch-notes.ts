@@ -9,6 +9,24 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
+    id: "patch-2-0-9-2026-11-16-ciclos-e-inscricoes-elementais",
+    version: "2.0.9",
+    label: "Patch 2.0.9 - 16/11/2026",
+    title: "Ciclos de maldição e Runas Elementais Ambientais",
+    highlights: [
+      "Atualizadas as regras de inscrição e resolução nos capítulos 9, 10 e 12, com referências alinhadas nos capítulos 14 e 17.",
+      "As Runas Amaldiçoadas passam a ter 20 condições táticas e 30 fórmulas de efeitos, com requisitos e incompatibilidades explícitos.",
+      "Escape da vítima, Forja e Fome apresentam CDs separadas. O Escape usa o maior valor entre a faixa fixa e a fórmula de Presença final com Controle da Corrupção.",
+      "A gravação e a alteração de maldições exigem 1 TE, equivalente a 2 horas. Nas novas inscrições, o Dízimo exige estar ferido e pagar 4 de Vida; falhar no teste da Fome causa 1d6 Corrupto.",
+      "Os ciclos distinguem marcas no mesmo turno, marcas persistentes na cena, interrupções e custos no despertar. Inscrições antigas conservam suas condições até uma reforja explícita.",
+      "Adicionadas 24 Runas Elementais Ambientais para solo ou Focos de Mago, com regência de Intelecto e treinamento no Controle do elemento.",
+      "As zonas ambientais têm raios definidos, custo de 6 Karma, duração de três rodadas e limite de uma zona ativa por portador. Sua lista de expressões é própria e preserva a tabela geral de Subdobras.",
+      "Esclarecidos alcance, cura e limites do Olho do Ciclone Sangrento e duração e escape do Selo de Amnésia Eterna.",
+      "Armas amaldiçoadas continuam ocupando todos os seus encaixes e bloqueando outras inscrições no mesmo item.",
+      "As fichas de armamento das rainhas apresentam as CDs de Escape, Forja e Fome e os requisitos do Dízimo atualizados.",
+    ],
+  },
+  {
     id: "patch-2-0-8-2026-11-15-armas-assinaturas-e-acessos",
     version: "2.0.8",
     label: "Patch 2.0.8 - 15/11/2026",

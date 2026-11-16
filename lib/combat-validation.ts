@@ -20,9 +20,16 @@ const base = z
   })
   .strict();
 export const combatActionSchema = z.discriminatedUnion("type", [
+  base.extend({ type: z.literal("cursedTurnEnd") }),
   base.extend({
     type: z.literal("cursedStrike"),
-    weaponId: z.string().min(1).max(120),
+    weaponId: z
+      .string()
+      .min(1)
+      .max(120)
+      .refine(
+        (key) => !["__proto__", "prototype", "constructor"].includes(key),
+      ),
     targetId: z
       .string()
       .min(1)
@@ -37,12 +44,27 @@ export const combatActionSchema = z.discriminatedUnion("type", [
     isolated: z.boolean().optional(),
     flanked: z.boolean().optional(),
     targetDebilitated: z.boolean().optional(),
+    movedDistance: z.number().finite().min(0).max(99999).optional(),
+    higherGround: z.boolean().optional(),
+    targetDamagedBearer: z.boolean().optional(),
+    elementalOrArcane: z.boolean().optional(),
+    effectiveDamage: num.optional(),
+    nearbyAllies: z.number().int().min(0).max(100).optional(),
+    targetPresence: num.optional(),
+    allyDamagedTarget: z.boolean().optional(),
+    sheltered: z.boolean().optional(),
     controlTotal: z.number().int().min(-99999).max(99999).optional(),
     hungerDie: z.number().int().min(1).max(6).optional(),
   }),
   base.extend({
     type: z.literal("cursedWeapon"),
-    weaponId: z.string().min(1).max(120),
+    weaponId: z
+      .string()
+      .min(1)
+      .max(120)
+      .refine(
+        (key) => !["__proto__", "prototype", "constructor"].includes(key),
+      ),
     operation: z.enum(["feed", "torpor", "wake"]),
     controlTotal: z.number().int().min(-99999).max(99999).optional(),
     ritualDC: z.number().int().min(0).max(99999).optional(),

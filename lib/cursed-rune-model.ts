@@ -2,6 +2,9 @@ import mageWeapons from "@/data/mage-weapons.json";
 import type { CharacterPayload, InventoryItem } from "@/lib/character-model";
 
 export type CursedRuneInscription = {
+  /** Existing inscriptions retain their original contract until explicitly reforged. */
+  rulesVersion?: 1 | 2;
+  counterTimeMode?: "revenge" | "charge";
   effectId: string;
   conditionIds: string[];
   damageChoice?: string;
@@ -11,6 +14,10 @@ export type CursedRuneInscription = {
   hungerPenalty?: "damage" | "temporaryCharge";
   name?: string;
 };
+
+export function curseRulesVersion(inscription: CursedRuneInscription): 1 | 2 {
+  return inscription.rulesVersion ?? 1;
+}
 
 const mageWeaponIds = new Set(mageWeapons.map((weapon) => weapon.id));
 

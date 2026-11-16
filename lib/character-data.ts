@@ -171,7 +171,11 @@ export function normalizeCharacterPayload(
         : CHARACTER_SIZES.includes(payload.size as CharacterSize)
           ? payload.size!
           : "Médio",
-    inventory: payload.inventory ?? blank.inventory,
+    inventory: (payload.inventory ?? blank.inventory).map((item) =>
+      item.cursedRune && item.cursedRune.rulesVersion === undefined
+        ? { ...item, cursedRune: { ...item.cursedRune, rulesVersion: 1 } }
+        : item,
+    ),
     alchemicalSaturation: Number.isFinite(payload.alchemicalSaturation)
       ? Math.max(0, Math.min(999, Math.floor(payload.alchemicalSaturation!)))
       : 0,
@@ -190,6 +194,7 @@ export function normalizeCharacterPayload(
     runeBurstUsed: live?.runeBurstUsed ?? false,
     gradeVApex: live?.gradeVApex,
     cursedWeapons: live?.cursedWeapons,
+    cursedTurnClosed: live?.cursedTurnClosed,
     impetus: live?.impetus,
     impetusBloodied: live?.impetusBloodied,
     impetusNaturalRound: live?.impetusNaturalRound,

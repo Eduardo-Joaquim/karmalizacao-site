@@ -3,6 +3,7 @@ import "@/styles/bestiary.css";
 import type { Metadata } from "next";
 import "./bestiary.css";
 import "./combat-cinema.css";
+import "./cursed-runes.css";
 import "./gaeria.css";
 import "./globals.css";
 import "./ignaria.css";

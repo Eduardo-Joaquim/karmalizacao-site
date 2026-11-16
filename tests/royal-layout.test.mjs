@@ -35,6 +35,32 @@ const { NobleTraitCards } = await vite.ssrLoadModule(
 const { RoyalSignatureCard } = await vite.ssrLoadModule(
   "/components/royal-signature-card.tsx",
 );
+const { RoyalArmamentCard } = await vite.ssrLoadModule(
+  "/components/royal-armament-card.tsx",
+);
+
+// Exercise the authored manuscript before the final, shared content rebuild.
+function currentRoyalCurseFacts(profile) {
+  const facts = structuredClone(profile.facts);
+  const field = facts
+    .flatMap((fact) => fact.fields)
+    .find(
+      (field) =>
+        isRoyalArmamentField(field.label) &&
+        !/^Arma principal/.test(field.label),
+    );
+  if (profile.id === "ummu-hubur") {
+    field.html = `<p>${read("thalassia-source").people.find((person) => person.id === profile.id).weapon.rune.mechanics}</p>`;
+  } else {
+    const file =
+      profile.id === "rainha-valac"
+        ? "corte-demoniaca-ignaria.md"
+        : "corte-demi-humana-aeria.md";
+    const source = readFileSync(`docs/${file}`, "utf8");
+    field.html = `<p>${source.match(/^\*\*Runa da arma:\*\* (.+)$/m)[1]}</p>`;
+  }
+  return facts;
+}
 
 test("eight weapons show one compact card with all authored rules available", () => {
   for (let index = 0; index < profiles.length; index++) {
@@ -88,13 +114,94 @@ test("curses have no conventional inscription fields and retain their restrictio
     }
     assert.equal(armament.rune.marks, 3);
     assert.equal(armament.rune.hungerDC, index === 4 ? 17 : 18);
-    assert.equal(armament.rune.tributeLife, index === 4 ? undefined : 3);
+    assert.equal(armament.rune.tributeLife, index === 4 ? undefined : 4);
   }
   const ranger = getRoyalArmament(profiles[1].id, profiles[1].facts);
   assert.equal(ranger.rune.support, "armor");
   assert.equal(ranger.rune.retainedKarma, 3);
   const scepter = getRoyalArmament(profiles[5].id, profiles[5].facts);
   assert.match(scepter.rune.burst, /não se soma a outro \+2 de Precisa/);
+});
+
+test("canonical royal curses calculate all three CDs from the approved attributes", () => {
+  const valac = readFileSync("docs/corte-demoniaca-ignaria.md", "utf8");
+  const sael = readFileSync("docs/corte-demi-humana-aeria.md", "utf8");
+  const ummu = read("thalassia-source").people.find(
+    (person) => person.id === "ummu-hubur",
+  );
+  assert.match(valac, /Presença 12 · Espírito 10/);
+  assert.match(valac, /Controle da Corrupção 3 e Liderança 3/);
+  assert.match(sael, /Presença 5 · Espírito 8/);
+  assert.match(sael, /Perícias não indicadas são 0/);
+  assert.equal(ummu.attrs[4], 12);
+  assert.match(ummu.skills, /Controle da Corrupção 3/);
+  assert.equal(ummu.weapon.rune.victimDC, 33);
+  assert.equal(ummu.weapon.rune.tributeLife, 4);
+
+  for (const [index, escapeDC, forgeDC, hungerDC] of [
+    [3, 33, 20, 18],
+    [4, 21, 18, 17],
+    [7, 33, 20, 18],
+  ]) {
+    const profile = profiles[index];
+    const armament = getRoyalArmament(
+      profile.id,
+      currentRoyalCurseFacts(profile),
+    );
+    assert(armament, profile.id);
+    assert.equal(armament.rune.escapeDC, escapeDC, profile.id);
+    assert.equal(armament.rune.forgeDC, forgeDC, profile.id);
+    assert.equal(armament.rune.hungerDC, hungerDC, profile.id);
+    assert.match(armament.rune.effect, new RegExp(`CD ${escapeDC}\\b`));
+    const markup = renderToStaticMarkup(
+      React.createElement(RoyalArmamentCard, { armament }),
+    );
+    assert(markup.includes(`<dt>Escape</dt><dd>CD ${escapeDC}`), profile.id);
+    assert(
+      markup.includes("1 TE (2 horas) para gravar ou alterar"),
+      profile.id,
+    );
+    assert(markup.includes("Presença + Controle da Corrupção"), profile.id);
+    assert(markup.includes("Corrupto direto"), profile.id);
+    if (index !== 4) {
+      assert.equal(armament.rune.tributeLife, 4, profile.id);
+      assert(markup.includes("já ferida"), profile.id);
+      assert(markup.includes("cobra 4 Vida irreduzíveis"), profile.id);
+      assert(!markup.includes("metade da Vida"), profile.id);
+    }
+  }
+});
+
+test("stale royal curse CDs, tribute alternatives and ritual fields fail closed", () => {
+  for (const index of [3, 4, 7]) {
+    const profile = profiles[index];
+    const current = currentRoyalCurseFacts(profile);
+    const mutate = (replace) => {
+      const facts = structuredClone(current);
+      const field = facts
+        .flatMap((fact) => fact.fields)
+        .find(
+          (field) =>
+            isRoyalArmamentField(field.label) &&
+            !/^Arma principal/.test(field.label),
+        );
+      const previous = field.html;
+      field.html = replace(previous);
+      assert.notEqual(field.html, previous, profile.id);
+      assert.equal(getRoyalArmament(profile.id, facts), undefined, profile.id);
+    };
+    mutate((source) =>
+      source.replace(/CD de Escape é \d+/, "CD de Escape é 20"),
+    );
+    mutate((source) => source.replace("Presença final", "Presença base"));
+    mutate((source) => source.replace("contra a CD de Escape", "CD fixa 22"));
+    mutate((source) => source.replace("1 TE (2 horas)", "1 rodada"));
+    if (index !== 4) {
+      mutate((source) => source.replace("cobra 4 Vida", "cobra 3 Vida"));
+      mutate((source) => source.replace("portadora já ferida", "portadora"));
+      mutate((source) => source.replace("e cobra 4 Vida", "ou cobra 4 Vida"));
+    }
+  }
 });
 
 test("mixed inscriptions fail closed instead of showing an apparently valid loadout", () => {

@@ -44,6 +44,7 @@ def main():
     for name in MODULES:
         importlib.import_module('book206.' + name).apply(book)
     importlib.import_module('book207.cursed').apply(book)
+    importlib.import_module('book209.elemental').apply(book)
     for item in book['chapters']:
         normalize_chapter(item)
         index_chapter(item)
@@ -55,7 +56,7 @@ def main():
         content = subprocess.check_output(['pandoc', '-f', 'html', '-t', 'gfm', '--wrap=none'], input=re.sub(r'<!--.*?-->', '', item['html'], flags=re.S), text=True)
         manuscript.append('# ' + item['title'] + '\n\n' + content)
     (ROOT / 'docs/regras.md').write_text('\n\n'.join(manuscript))
-    print('Livro 2.0.7: decisões autorais, índices e manuscrito sincronizados.')
+    print('Livro: decisões autorais, catálogos, índices e manuscrito sincronizados.')
 
 
 if __name__ == '__main__':

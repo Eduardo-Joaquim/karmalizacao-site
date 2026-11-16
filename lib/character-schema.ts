@@ -219,10 +219,33 @@ const itemTacticalBaselineSchema = z.object({
 
 const cursedRuneSchema = z
   .object({
+    rulesVersion: z.union([z.literal(1), z.literal(2)]).optional(),
+    counterTimeMode: z.enum(["revenge", "charge"]).optional(),
     effectId: z.string().min(1).max(100),
     conditionIds: z
       .array(
-        z.enum(["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10"]),
+        z.enum([
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8",
+          "C9",
+          "C10",
+          "C11",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "C17",
+          "C18",
+          "C19",
+          "C20",
+        ]),
       )
       .min(1)
       .max(5),
@@ -235,6 +258,36 @@ const cursedRuneSchema = z
   })
   .superRefine((rune, ctx) => {
     const ids = new Set(rune.conditionIds);
+    const version = rune.rulesVersion ?? 1;
+    if (
+      (version === 1 &&
+        rune.conditionIds.some((id) => Number(id.slice(1)) > 10)) ||
+      (version === 2 &&
+        ((ids.has("C13") && (ids.has("C3") || ids.has("C4"))) ||
+          (ids.has("C5") && ids.has("C14")) ||
+          (ids.has("C7") && ids.has("C16"))))
+    )
+      ctx.addIssue({
+        code: "custom",
+        path: ["conditionIds"],
+        message: "Condições incompatíveis com esta gravação.",
+      });
+    if (
+      version === 2 &&
+      (rune.tributeMode === "wounded" ||
+        rune.hungerPenalty === "temporaryCharge")
+    )
+      ctx.addIssue({
+        code: "custom",
+        message:
+          "Novas gravações usam Dízimo de 4 Vida e Fome de 1d6 Corrupto.",
+      });
+    if (version === 2 && ids.has("C10") && !rune.counterTimeMode)
+      ctx.addIssue({
+        code: "custom",
+        path: ["counterTimeMode"],
+        message: "Escolha Vingança ou Investida.",
+      });
     if (
       ids.size !== rune.conditionIds.length ||
       (ids.has("C1") && ids.has("C2")) ||
@@ -256,19 +309,33 @@ const cursedRuneSchema = z
         message: "Efeito de maldição desconhecido.",
       });
     if (
+      effect?.fixedComposition &&
+      (version !== 2 ||
+        (effect.defaultConditions ?? []).length !== ids.size ||
+        !(effect.defaultConditions ?? []).every((id) =>
+          ids.has(id as (typeof rune.conditionIds)[number]),
+        ) ||
+        (rune.damageChoice !== undefined &&
+          rune.damageChoice !== effect.damageOverride))
+    )
+      ctx.addIssue({
+        code: "custom",
+        path: ["conditionIds"],
+        message: "Esta fórmula conserva suas condições e seu dano oficiais.",
+      });
+    if (
       effect?.example &&
       ((effect.defaultConditions ?? []).length !== ids.size ||
         !(effect.defaultConditions ?? []).every((id) =>
           ids.has(id as (typeof rune.conditionIds)[number]),
         ) ||
-        rune.dcMode !== "fixed" ||
+        (version === 1 && rune.dcMode !== "fixed") ||
         (rune.damageChoice && rune.damageChoice !== effect.damageOverride))
     )
       ctx.addIssue({
         code: "custom",
         path: ["conditionIds"],
-        message:
-          "O exemplo Deus Selvagem usa C1 + C4 + C5, dano 2d6 e CD fixa 20.",
+        message: "O exemplo Deus Selvagem usa C1 + C4 + C5 e dano 2d6.",
       });
     if (
       effect?.minimumConditions &&
@@ -454,6 +521,7 @@ export const liveCombatSchema = z.object({
       label: shortText.optional(),
     })
     .optional(),
+  cursedTurnClosed: z.boolean().optional(),
   cursedWeapons: z
     .record(
       z
@@ -474,10 +542,18 @@ export const liveCombatSchema = z.object({
               (key) => !["__proto__", "prototype", "constructor"].includes(key),
             ),
           z.object({
-            marks: z.number().int().min(0).max(3),
+            marks: z.number().int().min(0).max(4),
             hasTotal: z.boolean(),
           }),
         ),
+        lastTargetId: z
+          .string()
+          .min(1)
+          .max(120)
+          .refine(
+            (key) => !["__proto__", "prototype", "constructor"].includes(key),
+          )
+          .optional(),
         bloodFed: z.boolean().optional(),
         dormant: z.boolean().optional(),
         combatScene: z.boolean().optional(),

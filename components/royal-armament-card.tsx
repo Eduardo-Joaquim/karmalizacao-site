@@ -94,11 +94,32 @@ export function RoyalArmamentCard({ armament }: { armament: RoyalArmament }) {
                 <dt>Efeito</dt>
                 <dd>{rune.effect}</dd>
               </div>
+              <div>
+                <dt>Escape</dt>
+                <dd>
+                  CD {rune.escapeDC} - {rune.escapeCalculation}.
+                </dd>
+              </div>
+              <div>
+                <dt>Forja</dt>
+                <dd>
+                  Presença + Controle da Corrupção CD {rune.forgeDC}; 1 TE (2
+                  horas) para gravar ou alterar.
+                </dd>
+              </div>
+              <div>
+                <dt>Fome</dt>
+                <dd>
+                  1 natural selecionado exige Presença + Controle da Corrupção
+                  CD {rune.hungerDC}; falha causa 1d6 Corrupto direto.
+                </dd>
+              </div>
             </dl>
             {rune.tributeLife !== undefined && (
               <p className="royal-armament-note">
-                Tributo no despertar - {rune.tributeLife} Vida irreduzíveis da
-                portadora.
+                Dízimo de Carne - exige a portadora já ferida, com Vida atual
+                menor que a máxima, e cobra {rune.tributeLife} Vida irreduzíveis
+                no despertar.
               </p>
             )}
             <p className="royal-armament-exclusivity">

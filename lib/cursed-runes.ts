@@ -2,6 +2,7 @@ import catalog from "@/data/cursed-runes.json";
 import type { CharacterPayload, InventoryItem } from "@/lib/character-model";
 import {
   isCursedRuneWeapon,
+  curseRulesVersion,
   type CursedRuneInscription,
 } from "@/lib/cursed-rune-model";
 import {
@@ -17,6 +18,7 @@ export type CursedRuneCatalog = {
     description: string;
     incompatibleWith?: string[];
   }[];
+  legacyConditions?: CursedRuneCatalog["conditions"];
   powerLevels: {
     conditions: number;
     classification: string;
@@ -34,6 +36,7 @@ export type CursedRuneCatalog = {
     effect: string;
     minimumConditions?: number;
     example?: boolean;
+    fixedComposition?: boolean;
     defaultConditions?: string[];
     damageOverride?: string;
   }[];
@@ -64,10 +67,10 @@ export function getCursedRuneProfile(
     damage,
     presence,
     controlLevel,
-    escapeDC:
-      inscription.dcMode === "scaled"
-        ? (power?.scalingBase ?? 0) + presence + controlLevel
-        : (power?.escapeDC ?? 0),
+    escapeDC: Math.max(
+      power?.escapeDC ?? 0,
+      (power?.scalingBase ?? 0) + presence + controlLevel,
+    ),
     forgeDC: power?.forgeDC ?? 0,
     hungerDC: 14 + inscription.conditionIds.length,
   };
@@ -83,6 +86,7 @@ export function getCursedRuneError(
   if (item.quantity > 1)
     return "Separe uma arma individual do conjunto antes de selar a maldição.";
   const conditions = inscription.conditionIds;
+  const version = curseRulesVersion(inscription);
   if (
     conditions.length < 1 ||
     conditions.length > 5 ||
@@ -91,12 +95,38 @@ export function getCursedRuneError(
     return "Escolha de uma a cinco condições distintas.";
   if (
     conditions.some(
-      (id) => !cursedRunes.conditions.some((entry) => entry.id === id),
+      (id) =>
+        !cursedRunes.conditions.some((entry) => entry.id === id) ||
+        (version === 1 && Number(id.slice(1)) > 10),
     )
   )
     return "Condição de maldição desconhecida.";
-  if (conditions.includes("C3") && conditions.includes("C4"))
+  if (version === 1 && conditions.includes("C3") && conditions.includes("C4"))
     return "O ciclo de três marcas substitui o de duas marcas.";
+  const incompatible =
+    version === 2
+      ? [
+          ["C3", "C4"],
+          ["C3", "C13"],
+          ["C4", "C13"],
+          ["C5", "C14"],
+          ["C7", "C16"],
+        ]
+      : [["C3", "C4"]];
+  if (incompatible.some((pair) => pair.every((id) => conditions.includes(id))))
+    return "As condições escolhidas são incompatíveis.";
+  if (
+    version === 2 &&
+    (inscription.tributeMode === "wounded" ||
+      inscription.hungerPenalty === "temporaryCharge")
+  )
+    return "Novas gravações exigem o Dízimo de 4 Vida e a Fome de 1d6 Corrupto.";
+  if (
+    version === 2 &&
+    conditions.includes("C10") &&
+    !["revenge", "charge"].includes(inscription.counterTimeMode ?? "")
+  )
+    return "Escolha Vingança ou Investida para o Contra-Tempo.";
   if (conditions.includes("C1") && conditions.includes("C2"))
     return "Um mesmo despertar não pode exigir contato e distância de nove metros simultaneamente.";
   if (inscription.dcMode !== "fixed" && inscription.dcMode !== "scaled")
@@ -104,15 +134,27 @@ export function getCursedRuneError(
   const profile = getCursedRuneProfile(draft, inscription);
   if (!profile.effect || !profile.power)
     return "Escolha uma fórmula de maldição do catálogo.";
+  if (profile.effect.fixedComposition) {
+    if (version !== 2) return "Esta fórmula exige a matriz atual de gravação.";
+    const expected = profile.effect.defaultConditions ?? [];
+    if (
+      conditions.length !== expected.length ||
+      expected.some((id) => !conditions.includes(id)) ||
+      profile.damage !== profile.effect.damageOverride ||
+      (inscription.damageChoice !== undefined &&
+        inscription.damageChoice !== profile.effect.damageOverride)
+    )
+      return "Esta fórmula conserva suas condições e seu dano oficiais.";
+  }
   if (profile.effect.example) {
     const expected = profile.effect.defaultConditions ?? [];
     if (
       conditions.length !== expected.length ||
       expected.some((id) => !conditions.includes(id)) ||
-      inscription.dcMode !== "fixed" ||
+      (version === 1 && inscription.dcMode !== "fixed") ||
       profile.damage !== profile.effect.damageOverride
     )
-      return "O exemplo canônico do Deus Selvagem usa C1 + C4 + C5, 2d6 e CD 20.";
+      return "O exemplo canônico do Deus Selvagem usa C1 + C4 + C5 e 2d6.";
   }
   if (conditions.length < (profile.effect.minimumConditions ?? 1))
     return `Este efeito exige pelo menos ${profile.effect.minimumConditions} condições.`;
@@ -127,7 +169,7 @@ export function getCursedRuneError(
 }
 
 export function cursedRuneKey(inscription: CursedRuneInscription) {
-  return JSON.stringify([
+  const legacy = [
     inscription.effectId,
     [...inscription.conditionIds].sort(),
     inscription.damageChoice ?? "",
@@ -135,5 +177,10 @@ export function cursedRuneKey(inscription: CursedRuneInscription) {
     inscription.isolationMode ?? "isolated",
     inscription.tributeMode ?? "life",
     inscription.hungerPenalty ?? "damage",
-  ]);
+  ];
+  return JSON.stringify(
+    curseRulesVersion(inscription) === 1
+      ? legacy
+      : [...legacy, 2, inscription.counterTimeMode ?? "revenge"],
+  );
 }

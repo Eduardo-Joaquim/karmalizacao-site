@@ -314,10 +314,11 @@ test("failed manipulation cannot feed or suppress the weapon and target names ca
     ritualDC: 18,
   });
   assert.equal(engine.liveState(draft).cursedWeapons.weapon.dormant, false);
-  draft = apply(draft, strike({ targetId: "__proto__" }));
+  const before = structuredClone(draft);
+  assert.throws(() => apply(draft, strike({ targetId: "__proto__" })), /alvo/);
+  assert.deepEqual(draft, before);
   const targets = engine.liveState(draft).cursedWeapons.weapon.targets;
-  assert.equal(Object.hasOwn(targets, "__proto__"), true);
-  assert.equal(targets["__proto__"].marks, 1);
+  assert.equal(Object.hasOwn(targets, "__proto__"), false);
   assert.equal(Object.getPrototypeOf(targets), Object.prototype);
 });
 

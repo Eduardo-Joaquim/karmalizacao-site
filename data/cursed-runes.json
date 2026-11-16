@@ -3,7 +3,7 @@
     {
       "id": "C1",
       "name": "Restrição de Vetor Corpo a Corpo",
-      "description": "O efeito e o acúmulo de marcas só progridem em ataques de contato (Força ou Agilidade + Luta).",
+      "description": "O efeito e o acúmulo de marcas só progridem em ataques de contato a até 3 m, resolvidos por Força ou Agilidade + Luta.",
       "incompatibleWith": [
         "C2"
       ]
@@ -11,56 +11,124 @@
     {
       "id": "C2",
       "name": "Restrição de Vetor à Distância Longa",
-      "description": "O efeito só progride em ataques à distância realizados a 9 metros ou mais do alvo.",
+      "description": "O efeito e o acúmulo de marcas só progridem em disparos realizados a 9 m ou mais do alvo.",
       "incompatibleWith": [
         "C1"
       ]
     },
     {
       "id": "C3",
-      "name": "Ciclo de 2 Marcas no Mesmo Alvo",
-      "description": "Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 2 Marcas no mesmo inimigo (zerando as marcas após o disparo).",
+      "name": "Ciclo de 2 Marcas no Mesmo Turno",
+      "description": "Cada acerto Parcial ou Total aplica 1 Marca; exige fechar 2 Marcas no mesmo alvo e no mesmo turno. Marcas incompletas expiram ao fim desse turno; as marcas zeram após o disparo.",
       "incompatibleWith": [
-        "C4"
+        "C4",
+        "C13"
       ]
     },
     {
       "id": "C4",
-      "name": "Ciclo de 3 Marcas no Mesmo Alvo (Substitui C3)",
-      "description": "Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 3 Marcas no mesmo inimigo (zerando as marcas após o disparo).",
+      "name": "Ciclo de 3 Marcas na Cena",
+      "description": "Cada acerto Parcial ou Total aplica 1 Marca; exige 3 Marcas no mesmo alvo. As marcas persistem na cena e zeram após o disparo.",
       "incompatibleWith": [
-        "C3"
+        "C3",
+        "C13"
       ]
     },
     {
       "id": "C5",
-      "name": "Exigência de Acerto Total para o Estado",
-      "description": "Para que a condição/estado da runa seja aplicado quando ela despertar, pelo menos 1 dos ataques da sequência (ou o golpe final) deve ter sido Acerto Total contra a CA do alvo."
+      "name": "Selo de Precisão",
+      "description": "Exige pelo menos 1 Acerto Total na sequência para liberar a condição ou estado da runa. Sem esse Total, o fechamento causa somente o dano do despertar, conforme o efeito.",
+      "incompatibleWith": [
+        "C14"
+      ]
     },
     {
       "id": "C6",
-      "name": "Sequência Sem Errar (Fome Intacta)",
-      "description": "Se o portador errar um ataque (Falha) antes de fechar as marcas, todas as marcas acumuladas na cena se apagam."
+      "name": "Fome Intacta",
+      "description": "Errar um ataque ou trocar de alvo antes de fechar o ciclo apaga as marcas acumuladas da arma."
     },
     {
       "id": "C7",
-      "name": "Alvo Isolado ou Flanqueado",
-      "description": "A marca só é aplicada se o alvo não tiver nenhum aliado dele a até 3m (Isolado) OU estiver engajado com um aliado seu (Flanqueado), escolhido na criação."
+      "name": "Presa Isolada ou Flanqueada",
+      "description": "Escolha na composição: alvo isolado, sem aliados dele a até 3 m, ou alvo flanqueado. A marca só é aplicada quando a alternativa registrada estiver cumprida.",
+      "incompatibleWith": [
+        "C16"
+      ]
     },
     {
       "id": "C8",
-      "name": "Sangue por Sangue (Tributo do Portador)",
-      "description": "No instante em que a runa desperta, ela drena 3 de Vida irreduzíveis do próprio portador (ou exige que o portador já esteja abaixo de 50% da Vida)."
+      "name": "Dízimo de Carne",
+      "description": "O portador precisa estar ferido, com Vida atual menor que a máxima, e a runa drena 4 de Vida no despertar. Os dois requisitos são cumulativos."
     },
     {
       "id": "C9",
-      "name": "Alvo Já Debilitado",
-      "description": "A runa só desperta contra um alvo que já esteja sofrendo uma condição negativa ou esteja com menos de 50% da Vida."
+      "name": "Vulnerabilidade",
+      "description": "O alvo precisa estar sob uma condição negativa ou com 50% ou menos de sua Vida máxima."
     },
     {
       "id": "C10",
-      "name": "Ritual de Forja Estrito (Manutenção de Sangue)",
-      "description": "A arma exige receber o sangue de pelo menos 1 inimigo derrotado por cena de combate; caso contrário, entra em torpor até ser alimentada com 1 TE e Presença + Controle da Corrupção."
+      "name": "Contra-Tempo",
+      "description": "Escolha na composição: Vingança, se sofreu dano daquele alvo desde o último turno, ou Investida, se o portador se deslocou 4 m ou mais."
+    },
+    {
+      "id": "C11",
+      "name": "Vetor Aéreo ou em Carga",
+      "description": "O ataque deve ser desferido após uma investida de 3 m ou mais ou de uma posição vertical superior à do alvo."
+    },
+    {
+      "id": "C12",
+      "name": "Sintonia Elemental",
+      "description": "O ataque básico precisa estar revestido por dano elemental ou ser conduzido por um foco arcano."
+    },
+    {
+      "id": "C13",
+      "name": "Caçada Ouroboros",
+      "description": "Exige exatamente 4 Marcas no mesmo alvo, persistentes na cena. Sofrer dano antes de fechar o ciclo quebra a caçada; as marcas zeram após o disparo.",
+      "incompatibleWith": [
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": "C14",
+      "name": "Brecha Parcial",
+      "description": "A runa recusa Acertos Totais: o golpe precisa resultar em Acerto Parcial para progredir ou despertar.",
+      "incompatibleWith": [
+        "C5"
+      ]
+    },
+    {
+      "id": "C15",
+      "name": "Absolutismo de Dano",
+      "description": "Se a armadura ou uma barreira mitigar totalmente o ataque, deixando seu dano líquido em 0, o ciclo engasga e esse golpe não o faz progredir."
+    },
+    {
+      "id": "C16",
+      "name": "Panóptico de Cerco",
+      "description": "O alvo precisa estar cercado simultaneamente por dois aliados do portador, ambos a até 3 m dele.",
+      "incompatibleWith": [
+        "C7"
+      ]
+    },
+    {
+      "id": "C17",
+      "name": "Pedágio Kármico",
+      "description": "No fechamento do ciclo, a runa consome instantaneamente 2 de Karma da reserva do portador."
+    },
+    {
+      "id": "C18",
+      "name": "Presença Superior",
+      "description": "A Presença do alvo precisa ser maior ou igual à Presença do portador."
+    },
+    {
+      "id": "C19",
+      "name": "Fogo Cruzado",
+      "description": "O alvo precisa ter sofrido dano de outro aliado do portador na mesma rodada."
+    },
+    {
+      "id": "C20",
+      "name": "Torpor de Sombra",
+      "description": "A runa recusa luz solar direta: o ataque exige ambiente coberto, subterrâneo ou noturno."
     }
   ],
   "powerLevels": [
@@ -127,7 +195,7 @@
       "id": "runa-do-deus-selvagem",
       "name": "Runa do Deus Selvagem",
       "epithet": "Marca da Fera",
-      "effect": "Ao acertar o inimigo com um ataque corpo a corpo (não importando se foi Acerto Parcial ou Total), marca-o com 1 Marca da Fera. Ao atingir **3 Marcas**, dois lobos negros emergem do chão e estraçalham o alvo, causando **`2d6` de dano Corrupto/Perfuração**. Caso pelo menos um dos três ataques da sequência tenha sido **Acerto Total** contra a CA, o alvo fica **Agarrado** pelas mandíbulas dos dois lobos. Para se libertar do estado, o alvo deve gastar uma ação e vencer um teste de **Força ou Constituição + Atletismo contra CD 20**.",
+      "effect": "Ao acertar o inimigo com um ataque corpo a corpo (não importando se foi Acerto Parcial ou Total), marca-o com 1 Marca da Fera. Ao atingir **3 Marcas**, dois lobos negros emergem do chão e estraçalham o alvo, causando **`2d6` de dano Corrupto/Perfuração**. Caso pelo menos um dos três ataques da sequência tenha sido **Acerto Total** contra a CA, o alvo fica **Agarrado** pelas mandíbulas dos dois lobos. Para se libertar do estado, o alvo deve gastar uma ação e vencer um teste de **Força ou Constituição + Atletismo contra a CD de Escape da runa**.",
       "example": true,
       "defaultConditions": [
         "C1",
@@ -256,6 +324,201 @@
       "name": "Coração de Cinza Fria",
       "epithet": "Estopim de Cadáver",
       "effect": "A arma transforma o corpo do inimigo marcado em uma bomba de corrupção latente. Ao cumprir as condições, crava um núcleo instável no tórax do alvo causando o dado de dano da runa + **Abalado** em Acerto Total; se o alvo chegar a `0 de Vida` enquanto estiver com o núcleo ativo, ele explode em `3m` causando o mesmo dado de dano da runa em todos os inimigos adjacentes."
+    },
+    {
+      "id": "lingua-de-cinza-calcinada",
+      "name": "Língua de Cinza Calcinada",
+      "epithet": "Brasa na Garganta",
+      "effect": "Ao cumprir C1, o despertar causa **1d8 Corrupto** e impõe **Silenciado** por uma brasa que se fecha na garganta da vítima.",
+      "minimumConditions": 1,
+      "defaultConditions": [
+        "C1"
+      ],
+      "damageOverride": "1d8",
+      "fixedComposition": true
+    },
+    {
+      "id": "espinho-de-vidro-abissal",
+      "name": "Espinho de Vidro Abissal",
+      "epithet": "Hemorragia de Vidro",
+      "effect": "Feche as 2 Marcas de C3 no mesmo turno. O despertar causa **1d10 Corrupto**; com pelo menos 1 Acerto Total na sequência, os fragmentos provocam **Sangramento Hemorrágico de 1d6**, persistente.",
+      "minimumConditions": 2,
+      "defaultConditions": [
+        "C3",
+        "C5"
+      ],
+      "damageOverride": "1d10",
+      "fixedComposition": true
+    },
+    {
+      "id": "cadeia-de-almas-perdidas",
+      "name": "Cadeia de Almas Perdidas",
+      "epithet": "Grilhões das Almas",
+      "effect": "Feche 3 Marcas persistentes na cena contra a presa isolada ou flanqueada escolhida em C7. O despertar causa **1d12 Corrupto**; com pelo menos 1 Acerto Total na sequência, a cadeia **anula saltos e voo** e reduz o **Movimento à metade**.",
+      "minimumConditions": 3,
+      "defaultConditions": [
+        "C4",
+        "C5",
+        "C7"
+      ],
+      "damageOverride": "1d12",
+      "fixedComposition": true
+    },
+    {
+      "id": "foice-de-gelo-necrotico",
+      "name": "Foice de Gelo Necrótico",
+      "epithet": "Geada da Sepultura",
+      "effect": "Feche 3 Marcas de contato contra o alvo debilitado exigido por C9. O despertar causa **1d12 Corrupto** e aplica **Paralisado em sua Forma reduzida (Imobilizado, conforme o Capítulo 7)** ao alvo debilitado.",
+      "minimumConditions": 3,
+      "defaultConditions": [
+        "C1",
+        "C4",
+        "C9"
+      ],
+      "damageOverride": "1d12",
+      "fixedComposition": true
+    },
+    {
+      "id": "vulto-da-peste-negra",
+      "name": "Vulto da Peste Negra",
+      "epithet": "Miasma da Peste",
+      "effect": "Feche 3 Marcas de contato, sem errar nem trocar de alvo. O despertar causa **1d16 Corrupto** e **ignora Resistência Leve (1)**; com pelo menos 1 Acerto Total na sequência, aplica **Envenenado severo**, com **−2d20 nos testes físicos**.",
+      "minimumConditions": 4,
+      "defaultConditions": [
+        "C1",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "damageOverride": "1d16",
+      "fixedComposition": true
+    },
+    {
+      "id": "trombeta-dos-deserdados",
+      "name": "Trombeta dos Deserdados",
+      "epithet": "Clamor dos Deserdados",
+      "effect": "O clamor desafia espíritos fortes. Feche 3 Marcas por disparos a 9 m ou mais, contra o alvo de Presença maior ou igual exigido por C18. O despertar causa **1d16 Corrupto**; com pelo menos 1 Acerto Total na sequência, impõe **Atordoado pleno**.",
+      "minimumConditions": 4,
+      "defaultConditions": [
+        "C2",
+        "C4",
+        "C5",
+        "C18"
+      ],
+      "damageOverride": "1d16",
+      "fixedComposition": true
+    },
+    {
+      "id": "mandibula-do-leviata",
+      "name": "Mandíbula do Leviatã",
+      "epithet": "Ruptura do Leviatã",
+      "effect": "Componha a Maldição Soberana com os cinco requisitos registrados. Feche 3 Marcas de contato, sem errar nem trocar de alvo e cumprindo o vetor aéreo ou em carga de C11. O despertar causa **1d20 Corrupto** e **ignora Resistência Média (2)**; com pelo menos 1 Acerto Total na sequência, provoca **fratura permanente na armadura, −2 CA**.",
+      "minimumConditions": 5,
+      "defaultConditions": [
+        "C1",
+        "C4",
+        "C5",
+        "C6",
+        "C11"
+      ],
+      "damageOverride": "1d20",
+      "fixedComposition": true
+    },
+    {
+      "id": "olho-do-ciclone-sangrento",
+      "name": "Olho do Ciclone Sangrento",
+      "epithet": "Ciclone Rubro",
+      "effect": "Feche 3 Marcas sem errar nem trocar de alvo, cumprindo o cerco de C16 e o dano aliado de C19. O despertar usa **uma única rolagem de 1d20 Corrupto** contra o alvo principal e os demais inimigos em um **raio de 3 m centrado nele**. Resolva separadamente as proteções de cada vítima. A área não repete o dano da arma nem de técnicas acopladas.\n\n**Cura do Ciclone** - Com pelo menos **1 Acerto Total na sequência**, o portador recupera **50% do dano efetivamente retirado da Vida do alvo principal por esta maldição**, arredondado para baixo. Calcule depois de Resistência e escudo, sem ultrapassar a Vida que o alvo principal tinha antes desse dano. Não conte dano aos demais alvos, dano da arma, de técnicas ou de aliados, nem dano excedente contra uma vítima já a 0 de Vida ou contra objetos. A cura não ultrapassa a Vida máxima, não gera Escudo Temporário e não recupera um portador que já esteja a 0 de Vida. Uma sequência só de Parciais causa o dano do despertar, sem conceder a cura.",
+      "minimumConditions": 5,
+      "defaultConditions": [
+        "C4",
+        "C5",
+        "C6",
+        "C16",
+        "C19"
+      ],
+      "damageOverride": "1d20",
+      "fixedComposition": true
+    },
+    {
+      "id": "selo-de-amnesia-eterna",
+      "name": "Selo de Amnésia Eterna",
+      "epithet": "Memória Selada",
+      "effect": "Feche 3 Marcas de contato contra um alvo de Presença maior ou igual e pague os **2 de Karma de C17** no fechamento. O despertar causa **1d20 Corrupto**; com pelo menos **1 Acerto Total na sequência**, sele uma única técnica conhecida e ativável do alvo: a de **maior Grau entre I e V**. Se houver empate, o alvo escolhe entre as técnicas desse Grau. Uma assinatura também pode ser escolhida se for uma técnica ativa conhecida com Grau I–V explicitamente declarado. Capacidades sem Grau declarado ficam fora da escolha; não atribua Grau por inferência.\n\n**Duração e limites** - A técnica escolhida **não pode ser ativada até o fim do próximo turno do portador da runa**. O selo não apaga o aprendizado, não remove uma Bênção inteira ou um Domínio, não cancela efeitos já resolvidos e não desliga capacidades passivas permanentes. As demais técnicas e ações permanecem disponíveis. Se o alvo não conhecer uma técnica elegível, resolva somente o dano.\n\n**Escape** - A vítima pode gastar **uma Ação Principal** e fazer **Espírito + Canalização de Karma contra a CD de Escape da runa**; igualar ou superar a CD encerra o selo antes do prazo. Este é o teste defensivo da vítima; o portador continua usando Presença + Controle da Corrupção para gravar ou manipular a maldição. Enquanto o selo estiver ativo, novos despertares não trocam a técnica escolhida nem renovam sua duração. O selo não suprime a Ação Principal; os limites de supressão e a proteção contra encadeamento do Capítulo 7 continuam valendo para outros efeitos que a suprimam.",
+      "minimumConditions": 5,
+      "defaultConditions": [
+        "C1",
+        "C4",
+        "C5",
+        "C17",
+        "C18"
+      ],
+      "damageOverride": "1d20",
+      "fixedComposition": true
+    }
+  ],
+  "legacyConditions": [
+    {
+      "id": "C1",
+      "name": "Restrição de Vetor Corpo a Corpo",
+      "description": "O efeito e o acúmulo de marcas só progridem em ataques de contato (Força ou Agilidade + Luta).",
+      "incompatibleWith": [
+        "C2"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "Restrição de Vetor à Distância Longa",
+      "description": "O efeito só progride em ataques à distância realizados a 9 metros ou mais do alvo.",
+      "incompatibleWith": [
+        "C1"
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "Ciclo de 2 Marcas no Mesmo Alvo",
+      "description": "Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 2 Marcas no mesmo inimigo (zerando as marcas após o disparo).",
+      "incompatibleWith": [
+        "C4"
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "Ciclo de 3 Marcas no Mesmo Alvo (Substitui C3)",
+      "description": "Cada acerto (Parcial ou Total) aplica 1 Marca; a runa só desperta ao atingir 3 Marcas no mesmo inimigo (zerando as marcas após o disparo).",
+      "incompatibleWith": [
+        "C3"
+      ]
+    },
+    {
+      "id": "C5",
+      "name": "Exigência de Acerto Total para o Estado",
+      "description": "Para que a condição/estado da runa seja aplicado quando ela despertar, pelo menos 1 dos ataques da sequência (ou o golpe final) deve ter sido Acerto Total contra a CA do alvo."
+    },
+    {
+      "id": "C6",
+      "name": "Sequência Sem Errar (Fome Intacta)",
+      "description": "Se o portador errar um ataque (Falha) antes de fechar as marcas, todas as marcas acumuladas na cena se apagam."
+    },
+    {
+      "id": "C7",
+      "name": "Alvo Isolado ou Flanqueado",
+      "description": "A marca só é aplicada se o alvo não tiver nenhum aliado dele a até 3m (Isolado) OU estiver engajado com um aliado seu (Flanqueado), escolhido na criação."
+    },
+    {
+      "id": "C8",
+      "name": "Sangue por Sangue (Tributo do Portador)",
+      "description": "No instante em que a runa desperta, ela drena 3 de Vida irreduzíveis do próprio portador (ou exige que o portador já esteja abaixo de 50% da Vida)."
+    },
+    {
+      "id": "C9",
+      "name": "Alvo Já Debilitado",
+      "description": "A runa só desperta contra um alvo que já esteja sofrendo uma condição negativa ou esteja com menos de 50% da Vida."
+    },
+    {
+      "id": "C10",
+      "name": "Ritual de Forja Estrito (Manutenção de Sangue)",
+      "description": "A arma exige receber o sangue de pelo menos 1 inimigo derrotado por cena de combate; caso contrário, entra em torpor até ser alimentada com 1 TE e Presença + Controle da Corrupção."
     }
   ]
 }

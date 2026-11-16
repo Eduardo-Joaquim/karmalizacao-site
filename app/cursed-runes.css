@@ -1,0 +1,231 @@
+.inventory-cursed-rune,
+.cursed-rune-combat {
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(163 115 183 / 30%);
+  border-radius: 0.7rem;
+  background: rgb(36 20 43 / 28%);
+  overflow-wrap: anywhere;
+}
+
+.inventory-cursed-rune > summary,
+.cursed-rune-combat > summary {
+  color: #e4c8e9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inventory-cursed-rune p,
+.cursed-rune-combat p {
+  line-height: 1.6;
+}
+
+.inventory-cursed-profile,
+.cursed-combat-profile {
+  margin-block: 1rem;
+}
+
+.inventory-cursed-profile > header strong,
+.inventory-cursed-profile > header small {
+  display: block;
+}
+
+.inventory-cursed-profile > header strong,
+.cursed-combat-profile > strong {
+  color: #efdaee;
+  font-size: 1.1rem;
+}
+
+.inventory-cursed-profile > header small {
+  margin-bottom: 0.35rem;
+  color: #bd9fc6;
+}
+
+.cursed-dc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-block: 1rem;
+}
+
+.cursed-dc-grid > div {
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid rgb(163 115 183 / 23%);
+  border-radius: 0.4rem;
+  background: rgb(14 10 21 / 38%);
+}
+
+.cursed-dc-grid dt {
+  color: #ccb2d2;
+  font-size: 0.8rem;
+}
+
+.cursed-dc-grid dd {
+  margin: 0.25rem 0 0;
+  color: #f0deed;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.cursed-dc-grid p {
+  margin-bottom: 0;
+  color: #bbadbd;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.cursed-rune-note {
+  color: #bcb0c2;
+  font-size: 0.85rem;
+}
+
+.cursed-rune-reference,
+.cursed-rune-editor-fields > details {
+  margin-block: 0.8rem;
+  padding-block: 0.6rem;
+  border-block-start: 1px solid rgb(163 115 183 / 20%);
+}
+
+.cursed-rune-reference summary,
+.cursed-rune-editor-fields > details > summary {
+  color: #d7b9dd;
+  cursor: pointer;
+}
+
+.cursed-rune-reference li,
+.cursed-target-marks li {
+  margin-block: 0.6rem;
+  line-height: 1.6;
+}
+
+.cursed-rune-editor-fields label,
+.cursed-rune-combat label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+  margin-block: 0.7rem;
+  color: #d3c4d6;
+  font-size: 0.9rem;
+}
+
+.cursed-rune-editor-fields label:has(input[type="checkbox"]),
+.cursed-rune-combat label:has(input[type="checkbox"]) {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.cursed-rune-editor-fields input[type="checkbox"],
+.cursed-rune-combat input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: auto;
+  margin-top: 0.25rem;
+  accent-color: #b68fc6;
+}
+
+.cursed-rune-editor-fields :is(input:not([type="checkbox"]), select),
+.cursed-rune-combat :is(input:not([type="checkbox"]), select) {
+  width: 100%;
+  min-width: 0;
+  padding: 0.6rem;
+  border: 1px solid rgb(163 115 183 / 32%);
+  border-radius: 0.35rem;
+  color: #e6dae8;
+  background: #15101d;
+}
+
+.inventory-cursed-rune :is(input, select, button, summary):focus-visible,
+.cursed-rune-combat :is(input, select, button, summary):focus-visible {
+  outline: 2px solid #c69cda;
+  outline-offset: 3px;
+}
+
+.cursed-rune-editor-fields fieldset,
+.cursed-rune-combat fieldset {
+  min-width: 0;
+  margin-block: 1rem;
+  padding: 0.8rem;
+  border: 1px solid rgb(163 115 183 / 25%);
+  border-radius: 0.4rem;
+}
+
+.cursed-rune-editor-fields legend,
+.cursed-rune-combat legend {
+  padding-inline: 0.35rem;
+  color: #d7b9dd;
+  font-size: 0.85rem;
+}
+
+.cursed-condition-options > label + label {
+  padding-block-start: 0.8rem;
+  border-block-start: 1px solid rgb(163 115 183 / 16%);
+}
+
+.cursed-condition-options label > span > :is(strong, span, small) {
+  display: block;
+}
+
+.cursed-condition-options label > span > span {
+  margin-block-start: 0.25rem;
+  color: #bcb0c2;
+  line-height: 1.5;
+}
+
+.cursed-condition-options label > span > small {
+  margin-block-start: 0.3rem;
+  color: #dcaf9e;
+}
+
+.inventory-cursed-catalog {
+  display: grid;
+  gap: 1rem;
+  max-height: 34rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.25rem;
+}
+
+.inventory-cursed-catalog article {
+  padding: 1rem;
+  border: 1px solid rgb(163 115 183 / 24%);
+  border-radius: 0.4rem;
+  background: rgb(14 10 21 / 30%);
+}
+
+.inventory-cursed-catalog h4 {
+  margin: 0;
+  color: #e2c5e5;
+}
+
+.cursed-rune-editor-fields button,
+.cursed-rune-combat button {
+  min-height: 2.65rem;
+  max-width: 100%;
+  padding: 0.65rem 0.9rem;
+  margin: 0.3rem 0.4rem 0.3rem 0;
+  border: 1px solid rgb(182 143 198 / 40%);
+  border-radius: 0.35rem;
+  color: #ead7ef;
+  background: rgb(112 68 131 / 22%);
+  white-space: normal;
+  cursor: pointer;
+}
+
+.cursed-rune-editor-fields button:disabled,
+.cursed-rune-combat button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .cursed-dc-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .inventory-cursed-rune,
+  .cursed-rune-combat {
+    padding: 0.75rem;
+  }
+}

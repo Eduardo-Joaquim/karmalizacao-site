@@ -20,13 +20,15 @@ import type {
 } from "@/lib/combat-types";
 import { visualFromRoll } from "@/lib/combat-visuals";
 import { corruptedFormState, corruptionControlDC } from "@/lib/corrupted-form";
+import { cursedRuneKey } from "@/lib/cursed-runes";
 import {
-  cursedRuneKey,
-  getCursedRuneError,
-  getCursedRuneProfile,
-} from "@/lib/cursed-runes";
-import { reconcileCursedRuneInscriptions } from "@/lib/cursed-rune-model";
-import { damageResistance } from "@/lib/damage-types";
+  curseRulesVersion,
+  reconcileCursedRuneInscriptions,
+} from "@/lib/cursed-rune-model";
+import {
+  applyCursedAction,
+  clearCursedCycles,
+} from "@/lib/cursed-rune-runtime";
 import { rollDiceExpression } from "@/lib/dice-expression";
 import { blessingGrants } from "@/lib/divine-blessings";
 import {
@@ -88,6 +90,7 @@ export function liveState(draft: CharacterPayload): LiveCombatState {
   return {
     session: s?.session,
     cursedWeapons: s?.cursedWeapons ?? {},
+    cursedTurnClosed: s?.cursedTurnClosed,
     runes: s?.runes ?? [],
     runeBurstUsed: s?.runeBurstUsed ?? false,
     gradeVApex: s?.gradeVApex,
@@ -409,185 +412,28 @@ export function applyCombatAction(
     event.kind = "damage";
     event.details = `${op.amount} bruto − ${resistance} Resistência; ${r.absorbed} no escudo; ${r.damage} na Vida.`;
   }
-  if (op.type === "cursedStrike" || op.type === "cursedWeapon") {
-    const item = draft.inventory.find((entry) => entry.id === op.weaponId);
-    const inscription = item?.cursedRune;
-    if (!item || !inscription) throw Error("Arma amaldiçoada não encontrada.");
-    const error = getCursedRuneError(draft, item, inscription);
-    if (error) throw Error(error);
-    if (item.quantity < 1 || item.location === "external")
-      throw Error("A arma amaldiçoada não está acessível.");
-    const profile = getCursedRuneProfile(draft, inscription);
-    const key = cursedRuneKey(inscription);
-    const previous = s.cursedWeapons?.[item.id];
-    const current =
-      previous?.runeKey === key
-        ? { ...previous, targets: { ...previous.targets } }
-        : { runeKey: key, targets: {}, bloodFed: false, dormant: false };
-    const conditions = inscription.conditionIds;
+  if (op.type === "cursedTurnEnd") {
+    s = clearCursedCycles(draft, s, "C3");
+    s.cursedTurnClosed = true;
     event.kind = "ability";
-    if (op.type === "cursedWeapon") {
-      if (
-        !Number.isFinite(op.controlTotal) ||
-        !Number.isFinite(op.ritualDC) ||
-        op.ritualDC! < 0
-      )
-        throw Error(
-          "Informe a CD anunciada pelo Mestre e o resultado de Presença + Controle da Corrupção para interagir com a maldição.",
-        );
-      if (op.operation === "wake" && !op.ritualCompleted)
-        throw Error("Confirme 1 TE de alimentação antes de despertar a arma.");
-      if (op.controlTotal! < op.ritualDC!) {
-        event.details = `Controle ${op.controlTotal} contra CD ${op.ritualDC}: falha; a alimentação ou supressão não foi confirmada e o estado da maldição permanece.`;
-      } else if (op.operation === "feed") {
-        current.bloodFed = true;
-        event.details =
-          "Sangue de um inimigo derrotado confirmado nesta cena. A alimentação não resolve o ritual de despertar de uma arma já em torpor.";
-      } else if (op.operation === "torpor") {
-        current.dormant = true;
-        current.targets = {};
-        event.details =
-          "Torpor registrado; marcas encerradas. Complete 1 TE de alimentação e o Controle anunciado para despertar a arma.";
-      } else {
-        if (!current.dormant) throw Error("Esta arma não está em torpor.");
-        if (op.controlTotal! >= op.ritualDC!) {
-          current.dormant = false;
-          current.bloodFed = true;
-          event.details = `Ritual de 1 TE concluído: Controle ${op.controlTotal} contra CD ${op.ritualDC}; arma desperta.`;
-        } else
-          event.details = `Ritual de 1 TE concluído: Controle ${op.controlTotal} contra CD ${op.ritualDC}; a arma permanece em torpor.`;
-      }
-    } else {
-      if (!item.equipped && item.location !== "ready")
-        throw Error("Equipe a arma ou coloque-a em Prontidão antes do ataque.");
-      if (current.dormant)
-        throw Error(
-          "A maldição está em torpor; desperte-a antes de registrar marcas.",
-        );
-      if (
-        !op.targetId.trim() ||
-        op.targetId.length > 120 ||
-        !Number.isFinite(op.distance) ||
-        op.distance < 0
-      )
-        throw Error("Informe o alvo e uma distância válida.");
-      if (
-        !Number.isInteger(op.selectedNatural) ||
-        op.selectedNatural! < 1 ||
-        op.selectedNatural! > 20
-      )
-        throw Error("Informe o d20 natural selecionado do ataque, de 1 a 20.");
-      current.combatScene = true;
-      let hunger = "";
-      if (op.selectedNatural === 1) {
-        if (!Number.isFinite(op.controlTotal))
-          throw Error(
-            "Falha Crítica: informe Presença + Controle da Corrupção contra a Fome.",
-          );
-        if (op.controlTotal! < profile.hungerDC) {
-          if (inscription.hungerPenalty === "temporaryCharge") {
-            next.combat = {
-              life: s.currentLife,
-              karma: s.currentKarma,
-              shield: s.tempShield,
-              round: s.round,
-              domainRounds: s.domainRounds,
-              temporaryCharges: clamp(
-                (draft.combat?.temporaryCharges ?? 0) + 1,
-              ),
-            };
-            hunger = `Fome CD ${profile.hungerDC}: falha; +1 Carga Temporária de Corrupção. `;
-          } else {
-            if (
-              !Number.isInteger(op.hungerDie) ||
-              op.hungerDie! < 1 ||
-              op.hungerDie! > 6
-            )
-              throw Error("Informe o resultado de 1d6 da mordida da arma.");
-            const resistance = damageResistance(draft, "Corrupto");
-            const damage = receiveDamage(
-              s.currentLife,
-              s.tempShield,
-              op.hungerDie!,
-              resistance,
-            );
-            s = { ...s, currentLife: damage.life, tempShield: damage.shield };
-            hunger = `Fome CD ${profile.hungerDC}: falha; ${op.hungerDie} Corrupto − ${resistance} Resistência; ${damage.absorbed} no escudo e ${damage.damage} na Vida. `;
-          }
-        } else hunger = `Fome CD ${profile.hungerDC}: Controle bem-sucedido. `;
-      }
-      if (op.outcome === "Falha") {
-        if (conditions.includes("C6")) current.targets = {};
-        event.details =
-          hunger +
-          (conditions.includes("C6")
-            ? "Fome Intacta: a Falha apagou todas as marcas desta arma, em todos os alvos."
-            : "Ataque falhou; nenhuma marca acrescentada.");
-      } else {
-        const vectorValid =
-          (!conditions.includes("C1") || op.vector === "melee") &&
-          (!conditions.includes("C2") ||
-            (op.vector === "ranged" && op.distance >= 9));
-        const positionValid =
-          !conditions.includes("C7") ||
-          (inscription.isolationMode === "flanked"
-            ? op.flanked === true
-            : op.isolated === true);
-        if (!vectorValid || !positionValid)
-          event.details =
-            hunger +
-            "O vetor ou a posição exigida pela maldição não foi cumprido; nenhuma marca acrescentada.";
-        else {
-          const oldTarget = Object.hasOwn(current.targets, op.targetId)
-            ? current.targets[op.targetId]
-            : { marks: 0, hasTotal: false };
-          const marksNeeded = conditions.includes("C4")
-            ? 3
-            : conditions.includes("C3")
-              ? 2
-              : 1;
-          const target = {
-            marks: Math.min(marksNeeded, oldTarget.marks + 1),
-            hasTotal: oldTarget.hasTotal || op.outcome === "Acerto total",
-          };
-          const victimValid =
-            !conditions.includes("C9") || op.targetDebilitated === true;
-          const tributeValid =
-            !conditions.includes("C8") ||
-            (inscription.tributeMode === "wounded"
-              ? s.currentLife < max.life / 2
-              : s.currentLife >= 3);
-          if (target.marks >= marksNeeded && victimValid && tributeValid) {
-            if (
-              conditions.includes("C8") &&
-              inscription.tributeMode !== "wounded"
-            )
-              s.currentLife -= 3;
-            const stateAllowed = conditions.includes("C5")
-              ? target.hasTotal
-              : op.outcome === "Acerto total";
-            delete current.targets[op.targetId];
-            event.details =
-              hunger +
-              `${profile.effect!.name}: ${marksNeeded} marca(s), despertar com ${profile.damage} Corrupto; CD de resistência/escape ${profile.escapeDC}. ${stateAllowed ? "Requisito de Acerto Total para o estado cumprido." : "Sem requisito de Acerto Total: o estado não se aplica."} ${conditions.includes("C8") && inscription.tributeMode !== "wounded" ? "Tributo: 3 Vida irreduzíveis pagos. " : ""}Resolva o dano, alvos adicionais e efeitos da fórmula em mesa; este registro não reaplica o dano da arma nem os estados.`;
-          } else {
-            if (
-              !Object.hasOwn(current.targets, op.targetId) &&
-              Object.keys(current.targets).length >= 100
-            )
-              throw Error(
-                "Limite de cem alvos com marcas atingido nesta arma; encerre marcas antes de registrar outro alvo.",
-              );
-            current.targets = { ...current.targets, [op.targetId]: target };
-            event.details =
-              hunger +
-              `${profile.effect!.name}: ${target.marks}/${marksNeeded} marcas em ${op.targetId}; ${target.hasTotal ? "há Acerto Total na sequência" : "sequência sem Acerto Total"}.${!victimValid ? " Aguarda alvo debilitado." : ""}${!tributeValid ? " Aguarda tributo válido do portador." : ""}`;
-          }
-        }
-      }
-    }
-    s.cursedWeapons = { ...(s.cursedWeapons ?? {}), [item.id]: current };
-    event.inventoryItemId = item.id;
+    event.details =
+      "Turno encerrado; ciclos de duas marcas deste turno expiraram.";
+  }
+  if (op.type === "cursedStrike" || op.type === "cursedWeapon") {
+    const result = applyCursedAction(
+      draft,
+      s,
+      op,
+      event,
+      max.life,
+      receiveDamage,
+    );
+    s = result.state;
+    if (result.temporaryChargeAdded)
+      next.combat = {
+        ...draft.combat!,
+        temporaryCharges: clamp((draft.combat?.temporaryCharges ?? 0) + 1),
+      };
   }
   if (op.type === "summon") {
     const invocation = draft.invocations.find((i) => i.id === op.invocationId);
@@ -1163,6 +1009,8 @@ export function applyCombatAction(
       : "Mutações encerradas; contador corporal da cena preservado. Se acumulou cinco turnos, aplique Exausto.";
   }
   if (op.type === "round" && s.round < 99999) {
+    s = clearCursedCycles(draft, s, "C3");
+    s.cursedTurnClosed = false;
     s.round += 1;
     s.runes = s.runes?.filter(
       (rune) => rune.releaseRound === undefined || rune.releaseRound > s.round,
@@ -1218,12 +1066,14 @@ export function applyCombatAction(
       );
   }
   if (op.type === "scene") {
+    s.cursedTurnClosed = false;
     s.cursedWeapons = Object.fromEntries(
       draft.inventory.flatMap((item) => {
         if (!item.cursedRune) return [];
         const current = s.cursedWeapons?.[item.id];
         const same = current?.runeKey === cursedRuneKey(item.cursedRune);
         const starved =
+          curseRulesVersion(item.cursedRune) === 1 &&
           item.cursedRune.conditionIds.includes("C10") &&
           ((s.inCombat && item.quantity > 0 && item.location !== "external") ||
             (same && current?.combatScene)) &&
@@ -1264,6 +1114,7 @@ export function applyCombatAction(
     next.corruption = { ...next.corruption, formTurns: 0 };
   }
   if (op.type === "rest") {
+    s.cursedTurnClosed = false;
     s = {
       ...s,
       summons: Object.fromEntries(
@@ -1343,6 +1194,8 @@ export function applyCombatAction(
         .trim()
         .slice(0, 2000);
   }
+  if (s.currentLife < before && op.type !== "cursedStrike")
+    s = clearCursedCycles(draft, s, "C13");
   event.lifeDelta = s.currentLife - before;
   event.karmaDelta = s.currentKarma - karmaBefore;
   event.shieldDelta = s.tempShield - shieldBefore;

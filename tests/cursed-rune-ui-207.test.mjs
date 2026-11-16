@@ -54,18 +54,19 @@ test("read-only cursed weapons display their real potency and no forging control
   const html = render(CursedRuneEditor, { draft, item, readOnly: true });
   assert.match(html, /Runa do Deus Selvagem/);
   assert.match(html, /2d6 no despertar/);
-  assert.match(html, /escape CD 20/);
-  assert.match(html, /forja CD 18/);
-  assert.match(html, /Fome CD 17/);
+  const text = html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.match(text, /Escape da vítima CD 21/);
+  assert.match(text, /Forja CD 18/);
+  assert.match(text, /Fome CD 17/);
   assert.match(
     html.replace(/<[^>]*>/g, ""),
-    /Presença final 4 \+ Controle da Corrupção nível\s+1/,
+    /Presença final 4 e Controle da Corrupção nível\s+1/,
   );
   assert.match(html, /C4/);
   assert.doesNotMatch(html, /type="button"|O ritual foi concluído|\*\*|`/);
 });
 
-test("scaled curses show Presence and Control rather than a fixed escape number", () => {
+test("both compatibility modes show the higher escape DC and its calculation", () => {
   const { draft, item } = fixture();
   item.cursedRune.effectId = cursedRunes.effects.find(
     (effect) => !effect.example,
@@ -73,8 +74,10 @@ test("scaled curses show Presence and Control rather than a fixed escape number"
   item.cursedRune.damageChoice = "1d12";
   item.cursedRune.dcMode = "scaled";
   const html = render(CursedRuneEditor, { draft, item, readOnly: true });
-  assert.match(html, /escape CD 21/);
-  assert.match(html, /A CD de escape acompanha esses valores/);
+  const text = html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.match(text, /Escape da vítima CD 21/);
+  assert.match(text, /Maior entre a fixa 20 e a escalonada 16 \+ 4 \+ 1 = 21/);
+  assert.doesNotMatch(html, /A CD de escape usa o valor fixo/);
 });
 
 test("armor and ordinary foci cannot offer a cursed-weapon constructor", () => {
@@ -102,7 +105,10 @@ test("inventory marks conventional sockets blocked and shared readers cannot edi
   const { draft } = fixture();
   const html = render(InventoryManager, { draft, readOnly: true });
   assert.match(html, /encaixes convencionais bloqueados/);
-  assert.match(html, /escape CD 20/);
+  assert.match(
+    html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " "),
+    /Escape da vítima CD 21/,
+  );
   assert.doesNotMatch(
     html,
     /Selar Runa Amaldiçoada|Registrar nova gravação|Editar Item/,
