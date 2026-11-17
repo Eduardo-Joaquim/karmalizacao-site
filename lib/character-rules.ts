@@ -22,6 +22,7 @@ import { inventoryState, inventoryTestPenalty } from "@/lib/inventory";
 import { hasAwakenedPath, hasAxiom } from "@/lib/personal-path";
 
 export type RuleFeature = {
+  activationKarma?: number;
   name: string;
   kind: "Passiva" | "Habilidade" | "Fraqueza" | "Traço";
   description: string;

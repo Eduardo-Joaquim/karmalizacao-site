@@ -897,7 +897,12 @@ export function PlayerCombatMode({
           {/^Etapa (IV|V|VI|VII)$/.test(draft.stage) && (
             <button
               type="button"
-              disabled={!s.impetus || !s.reactions || pending > 0}
+              disabled={
+                !s.impetus ||
+                !s.reactions ||
+                s.indomitableSurvivalRound === s.round ||
+                pending > 0
+              }
               onClick={() =>
                 op({ type: "indomitableSurvival" }, "Sobrevivência Indomável")
               }

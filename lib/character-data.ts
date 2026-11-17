@@ -198,6 +198,7 @@ export function normalizeCharacterPayload(
     impetus: live?.impetus,
     impetusBloodied: live?.impetusBloodied,
     impetusNaturalRound: live?.impetusNaturalRound,
+    indomitableSurvivalRound: live?.indomitableSurvivalRound,
     conditionRounds: live?.conditionRounds,
     conditionPotency: live?.conditionPotency,
     inCombat: live?.inCombat ?? false,

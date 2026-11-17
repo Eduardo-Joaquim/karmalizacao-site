@@ -575,6 +575,7 @@ export const liveCombatSchema = z.object({
   impetus: z.number().int().min(0).max(4).optional(),
   impetusBloodied: z.boolean().optional(),
   impetusNaturalRound: z.number().int().min(1).max(99999).optional(),
+  indomitableSurvivalRound: z.number().int().min(1).max(99999).optional(),
   inCombat: z.boolean(),
   currentLife: z.number().int().min(0).max(99999),
   currentKarma: z.number().int().min(0).max(99999),

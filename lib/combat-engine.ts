@@ -102,6 +102,7 @@ export function liveState(draft: CharacterPayload): LiveCombatState {
     ),
     impetusBloodied: s?.impetusBloodied ?? false,
     impetusNaturalRound: s?.impetusNaturalRound,
+    indomitableSurvivalRound: s?.indomitableSurvivalRound,
     summons: s?.summons ?? {},
     bossPhases: s?.bossPhases ?? {},
     inCombat: s?.inCombat ?? false,
@@ -603,17 +604,14 @@ export function applyCombatAction(
       throw Error(
         "Sobrevivência Indomável exige Humano na Etapa IV, 1 Ímpeto e uma Reação.",
       );
+    if (s.indomitableSurvivalRound === s.round)
+      throw Error("Sobrevivência Indomável já foi usada nesta rodada.");
     const automatic = calculateAutomaticBonuses(draft);
-    const shield =
-      getFinalAttribute(draft, automatic, "Constituição") +
-      Math.max(
-        getFinalAttribute(draft, automatic, "Presença"),
-        getFinalAttribute(draft, automatic, "Espírito"),
-      ) +
-      stage;
+    const shield = getFinalAttribute(draft, automatic, "Constituição") + stage;
     s.impetus -= 1;
     s.reactions -= 1;
     s.tempShield = clamp(Math.max(s.tempShield, shield), 9999);
+    s.indomitableSurvivalRound = s.round;
     event.kind = "ability";
     event.details = `Escudo Temporário ${shield}. Ignore as penalidades de uma condição física ou mental até o fim do próximo turno.`;
   }
@@ -1120,6 +1118,7 @@ export function applyCombatAction(
     s.impetus = Math.min(2, impetusLimit(draft));
     s.impetusBloodied = false;
     s.impetusNaturalRound = undefined;
+    s.indomitableSurvivalRound = undefined;
     s.summons = Object.fromEntries(
       Object.entries(s.summons ?? {}).map(([id, unit]) => [
         id,
@@ -1160,6 +1159,7 @@ export function applyCombatAction(
         ]),
       ),
       impetusNaturalRound: undefined,
+      indomitableSurvivalRound: undefined,
       impetusBloodied: false,
       inCombat: false,
       currentLife: max.life,

@@ -9,11 +9,17 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
-    id: "patch-2-1-0-2026-11-17-leitura-e-regras",
+    id: "patch-2-1-0-2026-11-17-leitura-e-regras-r2",
     version: "2.1.0",
     label: "Patch 2.1.0 - 17/11/2026",
     title: "Leitura do livro e revisão das regras",
     highlights: [
+      "Rebalanceadas as habilidades raciais de Humano, Elfo, Anão, Demi-humano, Vampiro, Demônio, Ghoul e Abissal, com custos e limites mais claros. Capítulo 5.",
+      "Sobrevivência Indomável concede Constituição + Etapa de Escudo, uma vez por rodada. Recusa ao Fim compartilha um uso por cena entre as opções; a técnica adicional recebe desconto de 2 no custo-base, mínimo 1 Karma.",
+      "Cálice recupera 1 Karma e soma Etapa ao dano. O dado adicional do Zênite exige a forma ativa e Harmonia. Bigorna concede até Resistência Alta (3) e descarrega +1d4 por carga.",
+      "Forma Ancestral Quimérica custa 4 Karma e recupera Etapa de Vida por turno. A extração de Vitae da névoa ocorre uma vez por cena; Jurisdição concede somente um tributo por ativação.",
+      "Apogeu da Fome ignora Resistência Leve (1), chegando a Alta (3) durante Frenesi. A borda de Horizonte de Eventos causa 2d6 Mental.",
+      "Os dados de Escudo do Samaritano diminuem de d6 para d4: Atendimento de Emergência e Proteção Convertida usam 2d4; Equipe de Emergência usa 3d4. Quantidades, custos e demais efeitos das classes são preservados. Capítulo 6.",
       "Guia lateral com tópicos recolhíveis, seção atual destacada, filtro e progresso de leitura. Parágrafos e tabelas ficam mais confortáveis para consultar.",
       "Inabalável passa a ter reserva de 12 a 24 pontos. Corpo Fortaleza acrescenta 6 pontos e absorve até 6 por resolução. Capítulo 6.",
       "Trono Imortal de Sárkora recompõe o Vampiro com 14 de Vida na Etapa VI e 16 na VII. Capítulo 5.",

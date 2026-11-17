@@ -459,11 +459,11 @@ em sucesso, cure 2d8 + Constituição e encerre Sangramento comum. A falha, CD, 
 
 **Uso:** Reação, 6 Karma, depois de um ataque ou perigo real deixar outro aliado abaixo da metade da Vida máxima ou em 0. Uma vez por beneficiário a cada cena. Preparação: perceber o aliado a até 15 metros e possuir linha de efeito.
 
-Resolução: a intervenção é automática. Se estiver em 0 e ainda vivo, o aliado recupera 1 Vida, estabilizando; isso não garante despertar. Em qualquer caso, recebe 2d6 de escudo temporário até o fim da cena ou seu esgotamento. O dano que provocou o gatilho já aconteceu; não o devolva nem apague Ferimento Grave. Não pode ser ativada por quem já esteja Inconsciente. O mesmo beneficiário não recebe outra Emergência na cena por trocar de Samaritano.
+Resolução: a intervenção é automática. Se estiver em 0 e ainda vivo, o aliado recupera 1 Vida, estabilizando; isso não garante despertar. Em qualquer caso, recebe 2d4 de escudo temporário até o fim da cena ou seu esgotamento. O dano que provocou o gatilho já aconteceu; não o devolva nem apague Ferimento Grave. Não pode ser ativada por quem já esteja Inconsciente. O mesmo beneficiário não recebe outra Emergência na cena por trocar de Samaritano.
 
 #### Ampliação — Equipe de Emergência
 
-quando a mesma resolução atingir dois aliados elegíveis, pode atender ambos com uma Reação e um pagamento. Disponha 3d6 de escudo entre eles antes de rolar, ao menos um dado para cada. Cada um em 0 recebe 1 Vida. Se atender só um, ele recebe os três dados. Marque o uso por cena de cada beneficiário.
+quando a mesma resolução atingir dois aliados elegíveis, pode atender ambos com uma Reação e um pagamento. Disponha 3d4 de escudo entre eles antes de rolar, ao menos um dado para cada. Cada um em 0 recebe 1 Vida. Se atender só um, ele recebe os três dados. Marque o uso por cena de cada beneficiário.
 
 #### Habilidade 3 — Interferência Protetora
 
@@ -473,7 +473,7 @@ Resolução: sem teste, reduza esse dano pela metade, arredondando para baixo. A
 
 #### Ampliação — Proteção Convertida
 
-depois de reduzir, role 2d6. O aliado recebe escudo temporário igual ao menor valor entre essa rolagem e o dano realmente evitado, até o início do próximo turno do Samaritano. Dano evitado 0 concede escudo 0. O recuo continua opcional e exige a Reação do protegido.
+depois de reduzir, role 2d4. O aliado recebe escudo temporário igual ao menor valor entre essa rolagem e o dano realmente evitado, até o início do próximo turno do Samaritano. Dano evitado 0 concede escudo 0. O recuo continua opcional e exige a Reação do protegido.
 
 ### Progressão de status e desenvolvimento
 

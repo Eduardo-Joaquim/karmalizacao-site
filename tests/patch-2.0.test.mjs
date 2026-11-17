@@ -168,7 +168,7 @@ test('exploration charges once and only reaching zero adds a Fratura', () => {
  assert.equal(summon('repair').summons['test-invocation'].fractures,0);
 });
 
-test('natural 20 earns one Ímpeto per round across reloads and the shield uses the greater mental attribute', () => {
+test('natural 20 earns one Ímpeto per round across reloads and the shield uses only Constitution and stage', () => {
  let draft=model.createBlankCharacter();
  draft.race='Humano';
  draft.stage='Etapa IV';
@@ -182,7 +182,7 @@ test('natural 20 earns one Ímpeto per round across reloads and the shield uses 
  act({type:'round'});
  assert.equal(act(natural).impetus,2);
  const shield=act({type:'indomitableSurvival'});
- assert.equal(shield.tempShield,10);
+ assert.equal(shield.tempShield,6);
  assert.equal(shield.impetus,1);
  assert.equal(shield.reactions,0);
 });

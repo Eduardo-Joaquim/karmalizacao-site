@@ -58,6 +58,7 @@ export type LiveCombatState = {
   impetus?: number;
   impetusBloodied?: boolean;
   impetusNaturalRound?: number;
+  indomitableSurvivalRound?: number;
   inCombat: boolean;
   currentLife: number;
   currentKarma: number;

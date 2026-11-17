@@ -23,12 +23,13 @@ A vontade não é herança de um trono. É a chama que ainda arde quando o desti
 #### Etapa IV — Sobrevivência Indomável
 
 - **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 3.
-- **Ativação / Reação:** Como Reação ao sofrer dano ou ser alvo de um efeito debilitante, você pode gastar 1 Ímpeto para receber Escudo Temporário igual a Constituição + maior entre Presença e Espírito + Etapa antes que o dano seja aplicado, além de ignorar as penalidades de uma condição física ou mental ativa até o final do seu próximo turno.
+- **Ativação / Reação:** Uma vez por rodada, como Reação ao sofrer dano ou ser alvo de um efeito debilitante, você pode gastar 1 Ímpeto para receber Escudo Temporário igual a Constituição + Etapa antes que o dano seja aplicado, além de ignorar as penalidades de uma condição física ou mental ativa até o final do seu próximo turno.
 
 #### Etapa VI — Recusa ao Fim
 
 - **Aprimoramento / Passiva:** Seu limite máximo de Pontos de Ímpeto sobe para 4 e você recebe +1 ponto em um Atributo à escolha. Uma vez por cena, você pode gastar 2 Ímpetos após ver o resultado de uma rolagem sua para elevar uma Falha para Acerto Parcial, ou um Acerto Parcial para Acerto Total, quando o teste possuir esses graus.
-- **Ativação / Reação:** Em testes binários contra CD ou em disputa oposta, converte uma Falha em Sucesso. Recusa ao Fim não altera uma Falha Crítica: 1 natural no dado selecionado. Alternativamente, no seu turno, você pode gastar 2 Ímpetos para executar uma Ação Principal adicional, usando-a para realizar um ataque básico ou lançar uma técnica de até Grau III sem pagar o custo-base de Karma dela (ampliações continuam pagas normalmente).
+- **Ativação / Reação:** Em testes binários contra CD ou em disputa oposta, converte uma Falha em Sucesso. Recusa ao Fim não altera uma Falha Crítica: 1 natural no dado selecionado.
+- **Efeito e limites:** Alternativamente, no seu turno, você pode gastar 2 Ímpetos para executar uma Ação Principal adicional, usando-a para realizar um ataque básico ou lançar uma técnica de até Grau III reduzindo o custo-base de Karma da técnica em 2, até o mínimo de 1 Karma (ampliações continuam pagas normalmente). As duas opções de Recusa ao Fim compartilham um único uso por cena: escolher uma impede usar a outra nessa cena.
 
 ### Elfo
 
@@ -51,12 +52,12 @@ O arqueiro élfico lê a paisagem pelo que ela devolve: a sombra entre folhas, o
 #### Etapa IV — Cálice de Luz Perene
 
 - **Aprimoramento / Passiva:** Seu Karma máximo aumenta em um valor igual à sua Etapa.
-- **Ativação / Reação:** Uma vez por rodada, enquanto estiver em Harmonia, ao obter um Acerto Total (ou resultado natural 17 ou superior no dado selecionado), você recupera 2 Karma. O ataque ou técnica também causa dano adicional igual a Intelecto + Etapa, do mesmo tipo do golpe, ao alvo original ou a um segundo inimigo a até 4 m dele.
+- **Ativação / Reação:** Uma vez por rodada, enquanto estiver em Harmonia, ao obter um Acerto Total (ou resultado natural 17 ou superior no dado selecionado), você recupera 1 Karma. O ataque ou técnica também causa dano adicional igual à Etapa, do mesmo tipo do golpe, ao alvo original ou a um segundo inimigo a até 4 m dele.
 
 #### Etapa VI — Zênite Astral
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Agilidade, Intelecto ou Espírito. Enquanto estiver em Harmonia, recebe +1d20 em testes de Canalização de Karma, Controles elementais e Pontaria.
-- **Ativação / Reação:** Uma vez por cena, como Ação Livre, você pode entrar em Zênite Astral por 3 rodadas: suas técnicas custam 2 Karma a menos, até o mínimo de 1, e deixam um rastro luminoso. Um aliado que atravesse esse rastro recebe Vantagem (+1d20) no próximo teste de ataque, Reflexos ou Acrobacia que realizar até o fim do próximo turno dele.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Agilidade, Intelecto ou Espírito.
+- **Ativação / Reação:** Uma vez por cena, como Ação Livre, você pode entrar em Zênite Astral por 3 rodadas: durante essas três rodadas, enquanto estiver em Harmonia, recebe +1d20 em testes de Canalização de Karma, Controles elementais e Pontaria; suas técnicas custam 2 Karma a menos, até o mínimo de 1, e deixam um rastro luminoso. Um aliado que atravesse esse rastro recebe Vantagem (+1d20) no próximo teste de ataque, Reflexos ou Acrobacia que realizar até o fim do próximo turno dele.
 
 ### Anão
 
@@ -69,12 +70,12 @@ A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver 
 #### Etapa I — Fornalha de Inércia
 
 - **Aprimoramento / Passiva:** Você recebe +2 espaços de carga, e armaduras ou escudos pesados não reduzem seu deslocamento. As Cargas de Bigorna começam em 0 no início de cada cena e voltam a 0 ao fim dela.
-- **Ativação / Reação:** Sempre que sofre um golpe que causaria dano, mesmo que absorvido por Resistência ou Escudo, ou termina seu turno tendo se deslocado no máximo 3 m, acumula 1 Carga de Bigorna, até o limite de 3. Cada carga concede +1 de Resistência contra dano Marcial, Elemental / Terra e Elemental / Fogo.
+- **Ativação / Reação:** Sempre que sofre um golpe que causaria dano, mesmo que absorvido por Resistência ou Escudo, ou termina seu turno tendo se deslocado no máximo 3 m, acumula 1 Carga de Bigorna, até o limite de 3. Cada carga concede +1 de Resistência contra dano Marcial, Elemental / Terra e Elemental / Fogo, até o teto universal de 3 pontos (Resistência Alta), mesmo com quatro Cargas de Bigorna. A Resistência não ultrapassa esse teto ao combinar a têmpera ou outra fonte.
 
 #### Etapa II — Têmpera de Nidavellir
 
 - **Aprimoramento / Passiva:** Você recebe +1d20 em testes para resistir a empurrão, queda ou desarme. Escolha uma têmpera: +1 no dano-base de suas armas empunhadas ou +1 de Resistência Marcial enquanto utilizar armadura ou escudo.
-- **Ativação / Reação:** Ao acertar um ataque corpo a corpo ou técnica de curta distância, você pode descarregar todas as Cargas de Bigorna. Cada carga gasta acrescenta +1d6 ao dano; o alvo deve recuar 2 m ou perder 2 m de deslocamento por 1 rodada.
+- **Ativação / Reação:** Ao acertar um ataque corpo a corpo ou técnica de curta distância, você pode descarregar todas as Cargas de Bigorna. Cada carga gasta acrescenta +1d4 ao dano; o alvo deve recuar 2 m ou perder 2 m de deslocamento por 1 rodada.
 
 #### Etapa IV — Reação Sísmica
 
@@ -83,7 +84,7 @@ A montanha não se apressa. Cada golpe contra ela ensina à pedra onde devolver 
 
 #### Etapa VI — Monólito de Ferro
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição ou Força, e seu limite máximo de Cargas de Bigorna sobe para 4. Uma vez por cena, como Ação Livre ou Reação ao sofrer um Acerto Total, você assume o Monólito de Ferro por 3 rodadas.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição ou Força, e seu limite máximo de Cargas de Bigorna sobe para 4; a Resistência concedida pelas cargas continua limitada a 3 pontos (Resistência Alta). Uma vez por cena, como Ação Livre ou Reação ao sofrer um Acerto Total, você assume o Monólito de Ferro por 3 rodadas.
 - **Ativação / Reação:** Nesse período, reduz à metade todo dano sofrido e fica imune a movimento forçado, Caído e Atordoado. O solo a até 4 m de você torna-se terreno difícil apenas para inimigos.
 
 ### Demi-humano
@@ -112,7 +113,7 @@ A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que
 #### Etapa VI — Forma Ancestral Quimérica
 
 - **Aprimoramento / Passiva:** Você recebe +1 ponto em Força, Agilidade ou Espírito.
-- **Ativação / Reação:** Uma vez por cena, como Ação Livre, manifesta a Forma Ancestral Quimérica por 3 rodadas. Durante esse período, mantém simultaneamente os três Aspectos Bestiais, soma um dado-base de dano aos ataques e técnicas ofensivas e recupera Espírito + Etapa de Vida no início de cada um desses três turnos.
+- **Ativação / Reação:** Uma vez por cena, como Ação Livre, pagando 4 Karma, manifesta a Forma Ancestral Quimérica por 3 rodadas. Durante esse período, mantém simultaneamente os três Aspectos Bestiais, soma um dado-base de dano aos ataques e técnicas ofensivas e recupera Etapa pontos de Vida no início de cada um desses três turnos.
 
 ### Vampiro
 
@@ -136,7 +137,7 @@ Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas cois
 #### Etapa IV — Transfusão de Névoa Rubra
 
 - **Aprimoramento / Passiva:** Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Trevas (Sombra), Elemental / Sangue ou efeitos necróticos.
-- **Ativação / Reação:** Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.
+- **Ativação / Reação:** Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. No máximo uma vez por cena, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.
 
 #### Etapa VI — Trono Imortal de Sárkora
 
@@ -164,7 +165,7 @@ Diante de Aqueronte, até o silêncio tem cláusulas. O inimigo marcado pode esc
 #### Etapa IV — Jurisdição dos Sete Círculos
 
 - **Aprimoramento / Passiva:** Você recebe +1d20 em testes de Controle da Corrupção, Intimidação e Comunhão Divina.
-- **Ativação / Reação:** Uma vez por rodada, quando um inimigo sob o seu Selo de Coação falha em um teste de resistência ou sofre um Acerto Total seu, você colhe o tributo do pacto: recupera 2 Karma, recebe Escudo Temporário igual a Presença + Etapa e pode dissipar 1 Carga Temporária de Corrupção de si mesmo.
+- **Ativação / Reação:** Uma vez por rodada, quando um inimigo sob o seu Selo de Coação falha em um teste de resistência ou sofre um Acerto Total seu, você escolhe exatamente um dos três tributos do pacto: recuperar 2 Karma, receber Escudo Temporário igual a Presença + Etapa ou dissipar 1 Carga Temporária de Corrupção de si mesmo. Os benefícios não são recebidos simultaneamente.
 
 #### Etapa VI — Soberania de Aqueronte
 
@@ -196,8 +197,8 @@ O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o ras
 
 #### Etapa VI — Apogeu da Fome
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo (Resistência Alta).
-- **Ativação / Reação:** Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar 1 ponto de Resistência do alvo (Resistência Leve). Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas.
+- **Ativação / Reação:** Durante essas três rodadas, seus ataques e técnicas ignoram até 3 pontos de Resistência (Resistência Alta), em lugar de 1. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.
 
 ### Tritão
 
@@ -254,5 +255,5 @@ Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar 
 
 - **Aprimoramento / Passiva:** Você recebe +1 ponto em Espírito, Intelecto ou Presença, e pode manter duas Âncoras do Vazio simultaneamente. Uma vez por cena, como Ação Livre, conecta as âncoras em uma Zona de Singularidade por 3 rodadas.
 - **Ativação / Reação:** A zona é uma faixa de 2 m de largura entre as âncoras; com três ou mais âncoras autorizadas por outro efeito, delimite um perímetro fechado. Uma vez por turno, pode se teleportar entre elas por até 3 m e recebe +1d20 nos testes de técnicas.
-- **Efeito e limites:** Um inimigo que tente sair da zona cruzando sua borda sofre automaticamente 2d10 de dano Mental, no máximo uma vez por turno; apenas Resistência contra dano Mental reduz esse dano, sem teste para evitá-lo. O inimigo também tem seu deslocamento reduzido à metade.
+- **Efeito e limites:** Um inimigo que tente sair da zona cruzando sua borda sofre automaticamente 2d6 de dano Mental, no máximo uma vez por turno; apenas Resistência contra dano Mental reduz esse dano, sem teste para evitá-lo. O inimigo também tem seu deslocamento reduzido à metade.
 

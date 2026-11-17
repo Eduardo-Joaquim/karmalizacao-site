@@ -138,10 +138,12 @@ export function playerArts(d: CharacterPayload): CombatArt[] {
       id: `race-${f.name}`,
       name: f.name,
       category: "Herança racial",
-      cost: usageCost(
-        f.description,
-        f.kind === "Passiva" || f.kind === "Traço" || f.kind === "Fraqueza",
-      ),
+      cost:
+        f.activationKarma ??
+        usageCost(
+          f.description,
+          f.kind === "Passiva" || f.kind === "Traço" || f.kind === "Fraqueza",
+        ),
       usage: f.kind,
       text: f.description,
     });
