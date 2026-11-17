@@ -293,11 +293,11 @@
         "attack": "Ataque básico: Principal, 0 Karma, alcance 12 m, maior de 6d20 +10 contra CA, dano 1d8 Kármico/contundente. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Na igualdade com a CA, compare Espírito 12 ao regente da defesa. Os ataques próprios do cetro não acrescentam seu dado às técnicas, nem recebem automaticamente os alcances ou alvos do arsenal soberano.",
         "rune": {
           "type": "conventional",
-          "id": 2,
-          "name": "Elhaz - Runa do Alcance Estendido",
-          "grade": "I",
-          "retainedKarma": 2,
-          "mechanics": "Clavis Pelagi recebe somente Elhaz, de Grau I: enquanto armada, o alcance do ataque básico à distância sobe de 12 m para 18 m. Seu Estouro acompanha um ataque com o próprio cetro, ignora cobertura parcial e soma +2 no teste; não se soma a outro +2 de Precisa no mesmo teste. Não ignora cobertura total. A inscrição custa uma Principal ao toque e retém 2 Karma na única vaga do cetro; com a reserva cheia, são 218 livres e 2 retidos, sem alterar o máximo 220. O Estouro não cria outro ataque, não aumenta áreas nem amplia o alcance das técnicas soberanas. Ao estourar ou desarmar, a vaga fica livre, mas os 2 Karma só voltam a ficar disponíveis no fim da cena; rearmar exige outra inscrição. A arma não contém maldição viva."
+          "id": 4,
+          "name": "Runa da Hélice Dupla (Jera)",
+          "grade": "III",
+          "retainedKarma": 4,
+          "mechanics": "Runa da Hélice Dupla (Jera) - Grau III. Retém 4 Karma e ocupa uma vaga pessoal; na reserva cheia de 220, são 216 livres e 4 retidos. Enquanto armada: Ao errar um ataque (Falha), você recupera 1m de deslocamento livre. Estouro: Cria um eco kármico do golpe: causa +2d6 de dano e atinge também um segundo inimigo a até 2m do primeiro. O Estouro acompanha a resolução indicada, sem ataque adicional; dados extras entram antes do Parcial, sem multiplicação por crítico. Falha não causa dano nem aplica condições. Condições seguem a gravidade do Capítulo 7. Estourar libera a vaga e encerra a passiva; o Karma retido só fica disponível ao fim da cena. Reinscrever exige Principal, contato com o suporte e nova retenção disponível, sem antecipar a liberação anterior. Jera pertence somente ao cetro; o eco afeta um segundo inimigo a até 2 m do primeiro, resolvido contra sua própria CA e defesa, sem duplicar o dano-base da arma ou técnicas soberanas."
         }
       },
       "caRegent": "Constituição"
@@ -1247,11 +1247,11 @@
         "attack": "Ataque básico: Principal, 0 Karma, maior de 4d20 +10 contra CA, dano 1d8 Kármico/perfurante; a Desvantagem de contato reduz essa reserva em 1d20. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Na igualdade com a CA, compare Espírito 7 ao regente da defesa. A lança não acrescenta seu dano às técnicas de Água ou ao escudo de Claustrum Bathys.",
         "rune": {
           "type": "conventional",
-          "id": 3,
-          "name": "Thurisaz - Runa da Fenda de Guarda",
-          "grade": "II",
-          "retainedKarma": 3,
-          "mechanics": "A única inscrição da Haste da Válvula é Thurisaz, de Grau II. Ataques com a lança reduzem em 1 apenas o limiar de CA Parcial do alvo. O Estouro acompanha um desses ataques: soma 1d8 antes da divisão do Parcial e destrói até 7 pontos de Escudo Temporário antes de aplicar o dano; Falha não causa dano nem destrói Escudo. Esse dado adicional não é dobrado pelo crítico. A inscrição custa uma Principal ao toque, ocupa uma das três vagas pessoais de Nammu e retém 3 Karma; na reserva cheia, são 93 livres e 3 retidos, com máximo 96. Estourar ou desarmar encerra a passiva e libera a vaga, mas o Karma só fica disponível no fim da cena. Não modifica ataques que não usem a lança e não está combinada com maldição viva."
+          "id": 2,
+          "name": "Runa do Alcance Estendido (Elhaz)",
+          "grade": "I",
+          "retainedKarma": 2,
+          "mechanics": "Runa do Alcance Estendido (Elhaz) - Grau I. Retém 2 Karma e ocupa uma vaga pessoal; na reserva cheia de 96, são 94 livres e 2 retidos. Enquanto armada: Aumenta o alcance de ataques corpo a corpo em +1,5m ou à distância em +6m. Estouro: O ataque ignora cobertura parcial e soma +2 no teste de acerto. O Estouro acompanha a resolução indicada, sem ataque adicional; dados extras entram antes do Parcial, sem multiplicação por crítico. Falha não causa dano nem aplica condições. Condições seguem a gravidade do Capítulo 7. Estourar libera a vaga e encerra a passiva; o Karma retido só fica disponível ao fim da cena. Reinscrever exige Principal, contato com o suporte e nova retenção disponível, sem antecipar a liberação anterior. Elhaz pertence à Haste da Válvula: o contato passa de 5 m para 6,5 m. Não estende áreas nem técnicas que não usem a lança."
         }
       },
       "caRegent": "Constituição"
@@ -1692,24 +1692,14 @@
         "itemId": "lamina-runica",
         "type": "Lâmina Rúnica",
         "description": "Uma lâmina física de metal negro, com gume refletido para dentro do próprio aço. Exige uma mão, Força 1 e ocupa 1 espaço. Focal e Condutora: Espírito + Canalização de Karma; Precisa: +2 somente diante de abertura concreta declarada. Condutora pode transmitir Precisa a uma técnica kármica direta contra um alvo, conservando seu teste, custo e ação; não concede esse bônus a áreas ou campos.",
-        "attack": "Ataque básico de contato: Principal, 0 Karma, alcance 1,5 m, Força + Luta, maior de 6d20 +10, dano 1d8 Marcial/cortante. Alternativamente, o feixe a até 6 m usa Espírito + Canalização de Karma, maior de 6d20 +10, e causa 1d8 Kármico; ele não satisfaz C1. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Empate com a CA compara Força 12 no contato ou Espírito 12 no feixe ao regente da defesa. A lâmina não soma 1d8 aos dados soberanos; Ordo Tenebrarum conserva sua projeção espacial sem contato e não marca a maldição.",
+        "attack": "Ataque básico de contato: Principal, 0 Karma, alcance 1,5 m, Força + Luta, maior de 6d20 +10, dano 1d8 Marcial/cortante. Alternativamente, o feixe a até 6 m usa Espírito + Canalização de Karma, maior de 6d20 +10, e causa 1d8 Kármico.. Total causa o dado integral; Parcial, metade arredondada para baixo; Falha, nada. Empate com a CA compara Força 12 no contato ou Espírito 12 no feixe ao regente da defesa. A lâmina não soma 1d8 aos dados soberanos; Ordo Tenebrarum conserva sua projeção espacial sem contato.",
         "rune": {
-          "type": "cursed",
-          "id": "labirinto-de-espelhos-partidos",
-          "name": "Labirinto de Espelhos Partidos - Vertigem de Retorno",
-          "conditions": [
-            "C1",
-            "C4",
-            "C5",
-            "C8"
-          ],
-          "classification": "Maldição Abissal",
-          "damage": "1d16",
-          "victimDC": 33,
-          "forgeDC": 20,
-          "hungerDC": 18,
-          "tributeLife": 4,
-          "mechanics": "Maldição Abissal de quatro Condições: C1, apenas contato com Força ou Agilidade + Luta; C4, três Marcas persistentes na cena no mesmo alvo; C5, Selo de Precisão, ao menos um Acerto Total na sequência para liberar o estado; C8, Dízimo de Carne, exige a portadora já ferida (Vida atual menor que a máxima) e cobra 4 Vida irreduzíveis no despertar. Acertos Parciais e Totais elegíveis aplicam uma Marca; na terceira, zere as Marcas desse alvo, cobre o tributo e resolva 1d16 Corrupto da runa, separadamente do dano-base, sem crítico próprio. O tributo ignora Resistência e Escudo e é cumulativo com a exigência de já estar ferida. Se houve Total na sequência, aplique Prisão Espacial de Espelho: até o fim do próximo turno do alvo, sua primeira tentativa de gastar Movimento para se afastar exige Espírito + Canalização de Karma contra a CD de Escape; sucesso permite o movimento normal, falha faz o movimento terminar novamente adjacente à portadora, num espaço livre. Essa tentativa encerra a prisão. Sem Total, ocorre apenas o dano da runa. Não acumula prisões no mesmo alvo, não trava teleporte e não escolhe vítima substituta. Diante de 1 natural selecionado em ataque com a arma, Ummu testa Presença + Controle da Corrupção, maior de 6d20 +10, contra CD 18; falha causa 1d6 Corrupto direto nela, em vez de Carga Temporária. A CD de Escape é 33, o maior entre 22 e (18 + Presença final 12 + nível de Controle 3). Gravar ou alterar exige 1 TE (2 horas) e Presença + Controle da Corrupção contra CD de forja 20. Sem Karma Retido, Grau ou vaga pessoal; a maldição ocupa todos os encaixes da lâmina, impedindo inscrições convencionais. Feixes, campos, reflexões e ataques sem contato não geram Marcas."
+          "type": "conventional",
+          "id": 3,
+          "name": "Runa da Fenda de Guarda (Thurisaz)",
+          "grade": "II",
+          "retainedKarma": 3,
+          "mechanics": "Runa da Fenda de Guarda (Thurisaz) - Grau II. Retém 3 Karma e ocupa uma vaga pessoal; na reserva cheia de 540, são 537 livres e 3 retidos. Enquanto armada: Ataques com a arma reduzem em -1 a CA Parcial do alvo. Estouro: Causa +1d8 de dano e destrói até 7 pontos de Escudo Temporário do alvo antes de aplicar o dano. O Estouro acompanha a resolução indicada, sem ataque adicional; dados extras entram antes do Parcial, sem multiplicação por crítico. Falha não causa dano nem aplica condições. Condições seguem a gravidade do Capítulo 7. Estourar libera a vaga e encerra a passiva; o Karma retido só fica disponível ao fim da cena. Reinscrever exige Principal, contato com o suporte e nova retenção disponível, sem antecipar a liberação anterior. Thurisaz pertence à Limiar de Kenoma; contato e feixe usam seus próprios testes e dados, sem maldição, marcas ou tributo. Não se aplica às projeções soberanas sem a arma."
         }
       },
       "caRegent": "Constituição"

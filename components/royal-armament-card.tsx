@@ -69,14 +69,22 @@ export function RoyalArmamentCard({ armament }: { armament: RoyalArmament }) {
               </div>
             </dl>
             <p className="royal-armament-note">
-              {rune.retainedKarma} Karma Retido
+              Grau {rune.grade} · {rune.retainedKarma} Karma Retido
               {rune.support === "armor" &&
                 ". A inscrição pertence à guarda da armadura; o arco permanece sem runa."}
             </p>
+            {rune.apexRequired && (
+              <p className="royal-armament-note">
+                Passiva de Grau V e Estouro compartilham o único Ápice da cena;
+                a inscrição não permite outra técnica de Grau V.
+              </p>
+            )}
           </>
         ) : (
           <>
-            <p className="royal-armament-rune-kind">Maldição selada</p>
+            <p className="royal-armament-rune-kind">
+              {rune.classification} · {rune.conditionIds.length} condições
+            </p>
             <h6>{rune.name}</h6>
             <dl className="royal-armament-effects">
               <div>

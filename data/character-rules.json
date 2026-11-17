@@ -322,7 +322,7 @@
         {
           "name": "Inabalável",
           "usage": "Ação de Movimento, 6 Karma, uma vez por cena. Preparação e alvo: firme a postura; afeta você e não exige teste.",
-          "effect": "Duração: três rodadas, contando a ativação. Receba uma reserva de proteção de 15 + duas vezes sua Etapa (I a VII: 17, 19, 21, 23, 25, 27 ou 29 pontos). Depois de resolver parcial, Resistência e outras reduções, mas antes de Escudo Temporário e Vida, escolha quantos pontos gastar para reduzir o dano restante na mesma quantidade, até 5 por resolução e sem gastar além do dano restante. Vários dados do mesmo ataque constituem uma única resolução. Essa escolha não consome ação ou Reação. A reserva também pode absorver ataques que você recebe por Interceptação, dentro do mesmo limite por resolução. Receba Vantagem em Constituição + Atletismo para resistir a empurrões e derrubadas enquanto a reserva estiver ativa. Não mitiga custos em Vida, sacrifícios, perda direta de Vida ou dano expressamente impossível de mitigar. Não é Escudo Temporário, não cura nem recupera recursos. A habilidade termina quando a reserva chegar a zero, no prazo ou se ficar Inconsciente; pontos restantes se perdem."
+          "effect": "Duração: três rodadas, contando a ativação. Receba uma reserva de proteção de 10 + duas vezes sua Etapa (I a VII: 12, 14, 16, 18, 20, 22 ou 24 pontos). Depois de resolver parcial, Resistência e outras reduções, mas antes de Escudo Temporário e Vida, escolha quantos pontos gastar para reduzir o dano restante na mesma quantidade, até 5 por resolução e sem gastar além do dano restante. Vários dados do mesmo ataque constituem uma única resolução. Essa escolha não consome ação ou Reação. A reserva também pode absorver ataques que você recebe por Interceptação, dentro do mesmo limite por resolução. Receba Vantagem em Constituição + Atletismo para resistir a empurrões e derrubadas enquanto a reserva estiver ativa. Não mitiga custos em Vida, sacrifícios, perda direta de Vida ou dano expressamente impossível de mitigar. Não é Escudo Temporário, não cura nem recupera recursos. A habilidade termina quando a reserva chegar a zero, no prazo ou se ficar Inconsciente; pontos restantes se perdem."
         }
       ],
       "amplifications": [
@@ -339,7 +339,7 @@
         {
           "abilityName": "Inabalável",
           "name": "Corpo Fortaleza",
-          "description": "a reserva inicial aumenta em 10 pontos, o limite de absorção passa a 7 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena."
+          "description": "a reserva inicial aumenta em 6 pontos (total de 18 a 30 pontos da Etapa I à VII), o limite de absorção passa a 6 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena."
         }
       ],
       "progression": [
@@ -634,7 +634,7 @@
         {
           "abilityName": "Execução Silenciosa",
           "name": "Golpe Irrecuperável",
-          "description": "o ataque ignora 5 de Resistência física. Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece."
+          "description": "o ataque ignora 3 pontos de Resistência física (Resistência Alta). Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece."
         },
         {
           "abilityName": "Passo Sombrio",
@@ -916,8 +916,8 @@
         },
         {
           "name": "Síntese Alquímica",
-          "usage": "Síntese preparada: 0 Karma, de 1 a 15 minutos. Síntese imediata: Principal e 4 Karma por dose. Exige receita conhecida, treinamento apropriado e todos os materiais da fórmula.",
-          "effect": "Utiliza as receitas de produtos finais do Capítulo 17: poções, antídotos, soros, elixires, ampolas e óleos. Declare receita e modalidade antes do teste. Síntese preparada: 0 Karma; uma dose comum em 1 minuto, difícil em 5 minutos ou heroica/experimental em 15 minutos. Kit portátil basta para receitas comuns e difíceis; receitas heroicas/experimentais mantêm laboratório, Etapa V e os requisitos próprios. Síntese imediata: Principal, 4 Karma, kit portátil acessível e materiais à mão; produz uma dose comum ou difícil, sem incluir saque de materiais na Mochila, ingestão, arremesso ou aplicação. Não produz fórmulas heroicas, experimentais ou corrompidas em combate. Teste Intelecto + Criação, Medicina ou Ocultismo, conforme a natureza da receita, com +1d20 e CD 12 comum, 15 difícil ou 21 heroica/experimental, respeitando o teto de dados adicionais. Mantém Perícia 1 para comum, Perícia 2 para difícil e os requisitos próprios das demais. Fora do combate, acesso legítimo à Corrupção e seus testes continuam necessários para fórmulas corrompidas. Materiais custam 75% do preço do produto, arredondado para cima, mínimo 2 m, incluindo base, reagentes, catalisador e frasco; desconte componentes já fornecidos conforme o Capítulo 17, sem cobrá-los duas vezes. Não fabrica reagentes puros, catalisadores ou kits por esse desconto. Sucesso produz uma dose com o efeito integral da receita. Falhas usam as perdas e misturas instáveis do Capítulo 17; Karma pago não é devolvido. Doses preparadas seguem a validade normal da receita e não têm limite especial de estoque, além da carga e conservação. Doses imediatas duram 24 horas; mantenha até seis simultaneamente e não produza uma sétima antes de liberar uma vaga. Cada frasco ocupa 0,25 espaços. Saturação, formas de consumo, licenças e limites de cada produto permanecem. Restauradores de Karma compartilham um único benefício por cena substancial; purgadores não renovam seus próprios limites."
+          "usage": "Síntese preparada: 0 Karma, 15, 30 ou 60 minutos, conforme a dificuldade. Síntese imediata: Principal e 4 Karma por dose. Exige receita conhecida, treinamento apropriado e todos os materiais da fórmula.",
+          "effect": "Utiliza as receitas de produtos finais do Capítulo 17: poções, antídotos, soros, elixires, ampolas e óleos. Declare receita e modalidade antes do teste. Síntese preparada: 0 Karma; uma dose comum em 15 minutos, difícil em 30 minutos ou heroica/experimental em 60 minutos. Kit portátil basta para receitas comuns e difíceis; receitas heroicas/experimentais mantêm laboratório, Etapa V e os requisitos próprios. Síntese imediata: Principal, 4 Karma, kit portátil acessível e materiais à mão; produz uma dose comum ou difícil, sem incluir saque de materiais na Mochila, ingestão, arremesso ou aplicação. Não produz fórmulas heroicas, experimentais ou corrompidas em combate. Teste Intelecto + Criação, Medicina ou Ocultismo, conforme a natureza da receita, com +1d20 e CD 12 comum, 15 difícil ou 21 heroica/experimental, respeitando o teto de dados adicionais. Mantém Perícia 1 para comum, Perícia 2 para difícil e os requisitos próprios das demais. Fora do combate, acesso legítimo à Corrupção e seus testes continuam necessários para fórmulas corrompidas. Materiais custam 75% do preço do produto, arredondado para cima, mínimo 2 m, incluindo base, reagentes, catalisador e frasco; desconte componentes já fornecidos conforme o Capítulo 17, sem cobrá-los duas vezes. Não fabrica reagentes puros, catalisadores ou kits por esse desconto. Sucesso produz uma dose com o efeito integral da receita. Falhas usam as perdas e misturas instáveis do Capítulo 17; Karma pago não é devolvido. Doses preparadas seguem a validade normal da receita e não têm limite especial de estoque, além da carga e conservação. Doses imediatas duram 24 horas; mantenha até seis simultaneamente e não produza uma sétima antes de liberar uma vaga. Cada frasco ocupa 0,25 espaços. Saturação, formas de consumo, licenças e limites de cada produto permanecem. Restauradores de Karma compartilham um único benefício por cena substancial; purgadores não renovam seus próprios limites."
         },
         {
           "name": "Círculo de Transmutação",
@@ -1503,7 +1503,7 @@
       "name": "Elementalista",
       "function": "Controle de campo, adaptação e pressão sobrenatural por meio de um elemento.",
       "identity": "O Elementalista transforma o ambiente em extensão do próprio estilo. Não depende de Ressonância ou outro contador: sua profundidade vem da Assinatura escolhida, do Domínio e da capacidade de assumir o elemento.",
-      "initialBonus": "+10 Karma máximo; +1 Espírito; +2 no Controle de um elemento à escolha.",
+      "initialBonus": "+10 Karma máximo; +1 Espírito; +1 no Controle de um elemento à escolha (Nível 1, +2).",
       "recommendedAttributes": "Espírito e Intelecto.",
       "recommendedSkills": "Controle do elemento escolhido, Canalização de Karma, Ocultismo, Percepção e uma Perícia coerente com o uso prático do elemento.",
       "trait": {
@@ -1703,7 +1703,7 @@
       "name": "Escriba Kármico",
       "function": "Preparação rúnica, controle de campo e detonações combinadas.",
       "identity": "Calígrafos espirituais tratam Karma como linguagem. Gravam glifos em armas, armaduras, sangue e superfícies para escolher onde e quando a energia se libera.",
-      "initialBonus": "+2 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).",
+      "initialBonus": "+8 Karma máximo; +2 Vida máxima; +2 Intelecto; +1 Espírito; +1 em Canalização de Karma e +1 em Tática (Nível 1, +2).",
       "recommendedAttributes": "Intelecto e Espírito.",
       "recommendedSkills": "Canalização de Karma, Tática, Criação e Ocultismo.",
       "trait": {
@@ -1748,50 +1748,50 @@
         {
           "stage": "Etapa I",
           "systemStatus": "+2 Vida máxima.",
-          "classStatus": "—",
-          "status": "Sistema: +2 Vida máxima.",
+          "classStatus": "+2 Vida máxima.",
+          "status": "Sistema: +2 Vida máxima. Extra da classe: +2 Vida máxima.",
           "development": "Progressão geral de Etapa."
         },
         {
           "stage": "Etapa II",
           "systemStatus": "+2 Karma máximo.",
-          "classStatus": "—",
-          "status": "Sistema: +2 Karma máximo.",
+          "classStatus": "+3 Karma máximo e +1 ponto de Atributo à escolha.",
+          "status": "Sistema: +2 Karma máximo. Extra da classe: +3 Karma máximo e +1 ponto de Atributo à escolha.",
           "development": "Progressão geral de Etapa."
         },
         {
           "stage": "Etapa III",
           "systemStatus": "+2 Vida máxima e +1 CA.",
-          "classStatus": "—",
-          "status": "Sistema: +2 Vida máxima e +1 CA.",
+          "classStatus": "+2 Vida máxima.",
+          "status": "Sistema: +2 Vida máxima e +1 CA. Extra da classe: +2 Vida máxima.",
           "development": "Progressão geral de Etapa."
         },
         {
           "stage": "Etapa IV",
           "systemStatus": "+2 Karma máximo.",
-          "classStatus": "—",
-          "status": "Sistema: +2 Karma máximo.",
+          "classStatus": "+3 Karma máximo e +1 ponto de Atributo à escolha.",
+          "status": "Sistema: +2 Karma máximo. Extra da classe: +3 Karma máximo e +1 ponto de Atributo à escolha.",
           "development": "Progressão geral de Etapa."
         },
         {
           "stage": "Etapa V",
           "systemStatus": "+2 Vida máxima, +2 Karma máximo e +1 CA.",
-          "classStatus": "—",
-          "status": "Sistema: +2 Vida máxima, +2 Karma máximo e +1 CA.",
+          "classStatus": "+1 Intelecto ou Espírito.",
+          "status": "Sistema: +2 Vida máxima, +2 Karma máximo e +1 CA. Extra da classe: +1 Intelecto ou Espírito.",
           "development": "Sentença Tripla disponível."
         },
         {
           "stage": "Etapa VI",
           "systemStatus": "+2 Karma máximo.",
-          "classStatus": "—",
-          "status": "Sistema: +2 Karma máximo.",
+          "classStatus": "+3 Karma máximo e +1 ponto de Atributo à escolha.",
+          "status": "Sistema: +2 Karma máximo. Extra da classe: +3 Karma máximo e +1 ponto de Atributo à escolha.",
           "development": "Progressão geral de Etapa."
         },
         {
           "stage": "Etapa VII",
           "systemStatus": "+4 Vida máxima, +2 Karma máximo e +1 CA.",
-          "classStatus": "—",
-          "status": "Sistema: +4 Vida máxima, +2 Karma máximo e +1 CA.",
+          "classStatus": "+3 Vida máxima e +4 Karma máximo.",
+          "status": "Sistema: +4 Vida máxima, +2 Karma máximo e +1 CA. Extra da classe: +3 Vida máxima e +4 Karma máximo.",
           "development": "Progressão geral de Etapa."
         }
       ],
@@ -2034,7 +2034,7 @@
         {
           "stage": "I",
           "name": "Despertar de Aspecto",
-          "description": "Você recebe +1d20 em testes de Percepção auditiva ou olfativa. No início do seu turno, como Ação Livre, pode alternar entre três Aspectos Bestiais. No Aspecto da Garra, seus ataques desarmados causam 1d8 de dano Marcial (ou suas armas corpo a corpo somam +2 ao dano) e, em um Acerto Total, você impõe a condição Sangrando ao alvo. No Aspecto da Asa ou Salto, recebe +2 m de deslocamento, ignora quedas de até 10 m e cruza obstáculos e inimigos sem provocar Reações. No Aspecto da Carapaça ou Escama, recebe +1 na CA e Resistência 2 contra dano Elemental / Fogo, Água, Vento ou Terra, escolhido ao assumir o aspecto.",
+          "description": "Você recebe +1d20 em testes de Percepção auditiva ou olfativa. No início do seu turno, como Ação Livre, pode alternar entre três Aspectos Bestiais. No Aspecto da Garra, seus ataques desarmados causam 1d8 de dano Marcial (ou suas armas corpo a corpo somam +2 ao dano) e, em um Acerto Total, você impõe a condição Sangrando ao alvo. No Aspecto da Asa ou Salto, recebe +2 m de deslocamento, ignora quedas de até 10 m e cruza obstáculos e inimigos sem provocar Reações. No Aspecto da Carapaça ou Escama, recebe +1 na CA e Resistência 2 contra dano Elemental / Fogo, Elemental / Água, Elemental / Ar (Vento) ou Elemental / Terra, escolhido ao assumir o aspecto.",
           "kind": "Traço"
         },
         {
@@ -2098,7 +2098,7 @@
         {
           "stage": "I",
           "name": "Predador de Sárkora e Reserva de Vitae",
-          "description": "Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m. A Reserva de Vitae começa a sessão com 1 ponto; conserve seu saldo entre cenas até o descanso longo, respeitando o limite vigente. Ficar mais de 3 dias sem alimentar-se de sangue impõe −1d20 em todos os testes e impede recuperar Vitae; a partir de 7 dias, você fica Exausto até alimentar-se. Sob luz solar direta, sem cobertura ou traje fechado, você sofre Desvantagem em testes físicos e de Percepção, não pode regenerar nem usar Vitae e perde 2 pontos de Vida por rodada de exposição em combate ou por TE em viagem descoberta. Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante). Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae). Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Sombra. Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.",
+          "description": "Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m. A Reserva de Vitae começa a sessão com 1 ponto; conserve seu saldo entre cenas até o descanso longo, respeitando o limite vigente. Ficar mais de 3 dias sem alimentar-se de sangue impõe −1d20 em todos os testes e impede recuperar Vitae; a partir de 7 dias, você fica Exausto até alimentar-se. Sob luz solar direta, sem cobertura ou traje fechado, você sofre Desvantagem em testes físicos e de Percepção, não pode regenerar nem usar Vitae e perde 2 pontos de Vida por rodada de exposição em combate ou por TE em viagem descoberta. Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante). Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae). Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Trevas (Sombra). Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.",
           "kind": "Traço"
         },
         {
@@ -2110,13 +2110,13 @@
         {
           "stage": "IV",
           "name": "Transfusão de Névoa Rubra",
-          "description": "Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Sombra, Elemental / Sangue ou efeitos necróticos. Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.",
+          "description": "Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Trevas (Sombra), Elemental / Sangue ou efeitos necróticos. Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.",
           "kind": "Habilidade"
         },
         {
           "stage": "VI",
           "name": "Trono Imortal de Sárkora",
-          "description": "Você recebe +1 ponto em Presença, Agilidade ou Espírito. Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com Etapa × 4 pontos de Vida, encerrando todas as condições físicas de imobilização e sangramento sobre você.",
+          "description": "Você recebe +1 ponto em Presença, Agilidade ou Espírito. Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com (Etapa × 2) + 2 pontos de Vida (14 na Etapa VI; 16 na Etapa VII), encerrando todas as condições físicas de imobilização e sangramento sobre você.",
           "kind": "Habilidade"
         }
       ],
@@ -2129,12 +2129,12 @@
         {
           "stage": "IV",
           "name": "Transfusão de Névoa Rubra",
-          "description": "Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Sombra, Elemental / Sangue ou efeitos necróticos. Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele."
+          "description": "Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Trevas (Sombra), Elemental / Sangue ou efeitos necróticos. Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele."
         },
         {
           "stage": "VI",
           "name": "Trono Imortal de Sárkora",
-          "description": "Você recebe +1 ponto em Presença, Agilidade ou Espírito. Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com Etapa × 4 pontos de Vida, encerrando todas as condições físicas de imobilização e sangramento sobre você."
+          "description": "Você recebe +1 ponto em Presença, Agilidade ou Espírito. Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com (Etapa × 2) + 2 pontos de Vida (14 na Etapa VI; 16 na Etapa VII), encerrando todas as condições físicas de imobilização e sangramento sobre você."
         }
       ]
     },
@@ -2253,7 +2253,7 @@
         {
           "stage": "VI",
           "name": "Apogeu da Fome",
-          "description": "Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo. Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.",
+          "description": "Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo (Resistência Alta). Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.",
           "kind": "Habilidade"
         }
       ],
@@ -2271,7 +2271,7 @@
         {
           "stage": "VI",
           "name": "Apogeu da Fome",
-          "description": "Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo. Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas."
+          "description": "Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo (Resistência Alta). Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas."
         }
       ]
     },
@@ -2373,7 +2373,7 @@
         {
           "stage": "I",
           "name": "Fenda de Horizonte",
-          "description": "Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m. O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora. Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.",
+          "description": "Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Trevas (Sombra) e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m. O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora. Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.",
           "kind": "Traço"
         },
         {
@@ -2385,7 +2385,7 @@
         {
           "stage": "IV",
           "name": "Dobra de Singularidade",
-          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado.",
+          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Trevas (Sombra), consumindo o eco armazenado.",
           "kind": "Habilidade"
         },
         {
@@ -2404,7 +2404,7 @@
         {
           "stage": "IV",
           "name": "Dobra de Singularidade",
-          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado."
+          "description": "Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda. Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Trevas (Sombra), consumindo o eco armazenado."
         },
         {
           "stage": "VI",

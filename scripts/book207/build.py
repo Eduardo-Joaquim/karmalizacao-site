@@ -41,10 +41,13 @@ def index_chapter(item):
 def main():
     path = ROOT / 'data/rules.json'
     book = json.loads(path.read_text())
+    from book207.cursed import manuscript as cursed_manuscript
+    (ROOT / 'docs/runas-amaldicoadas.md').write_text(cursed_manuscript())
     for name in MODULES:
         importlib.import_module('book206.' + name).apply(book)
     importlib.import_module('book207.cursed').apply(book)
     importlib.import_module('book209.elemental').apply(book)
+    importlib.import_module('book210.revision').apply(book)
     for item in book['chapters']:
         normalize_chapter(item)
         index_chapter(item)

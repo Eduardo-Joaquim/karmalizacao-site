@@ -50,8 +50,8 @@
     "grade": "IV",
     "retained": 6,
     "category": "Arma",
-    "passive": "A arma ignora Redução de Dano física e elemental de até 2 pontos.",
-    "burst": "Causa +2d8 de dano e aplica Sangramento e Abalado sem permitir redução por armadura."
+    "passive": "A arma ignora até 2 pontos de Resistência física e elemental (Resistência Média).",
+    "burst": "Causa +2d8 de dano e aplica Sangramento e Abalado ignorando Resistência física."
   },
   {
     "id": 7,
@@ -68,7 +68,7 @@
     "grade": "I",
     "retained": 2,
     "category": "Armadura e guarda",
-    "passive": "Concede +1 de Redução de Dano contra ataques físicos.",
+    "passive": "Concede Resistência Leve (1) contra ataques físicos.",
     "burst": "Ao sofrer dano: Absorve 1d8 + Constituição do dano recebido naquele golpe."
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "id": 21,
-    "name": "Runa daPupila de Cristal (Dagaz)",
+    "name": "Runa da Pupila de Cristal (Dagaz)",
     "grade": "II",
     "retained": 3,
     "category": "Sangue e corpo",

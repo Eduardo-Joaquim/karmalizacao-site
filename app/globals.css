@@ -7020,3 +7020,120 @@ h4,
     scroll-behavior: auto;
   }
 }
+
+/* Guia de leitura: dois níveis, foco no trecho atual e progresso do capítulo. */
+.rule-toc {
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-right: 0.4rem;
+}
+.rule-toc .rule-toc-progress {
+  height: 3px;
+  overflow: hidden;
+  background: #dac18a18;
+  border-radius: 2px;
+}
+.rule-toc-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--karma);
+}
+.rule-toc-percent {
+  display: block;
+  color: var(--text-faint);
+  margin: 0.4rem 0 1.1rem;
+  font-size: 0.72rem;
+}
+.rule-toc-filter {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+.rule-toc-filter input {
+  width: 100%;
+  min-width: 0;
+  padding: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+  background: #14121b;
+  color: var(--text);
+}
+.rule-toc .rule-toc-parent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.rule-toc .rule-toc-parent > a {
+  display: flex;
+  flex: 1;
+  gap: 0.6rem;
+  padding-block: 0.45rem;
+  font-size: 0.78rem;
+}
+.rule-toc-number {
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.65rem;
+  padding-top: 0.12rem;
+}
+.rule-toc-parent button {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  color: var(--karma);
+  background: transparent;
+  cursor: pointer;
+}
+.rule-toc .rule-toc-children {
+  margin: 0.25rem 0 0.65rem 1.3rem;
+  padding-left: 0.65rem;
+  border-left: 1px solid var(--line);
+  gap: 0.15rem;
+}
+.rule-toc .rule-toc-children a {
+  padding-block: 0.35rem;
+  font-size: 0.73rem;
+}
+.rule-toc ol[hidden] {
+  display: none;
+}
+.rule-toc a[aria-current="location"] {
+  color: var(--karma);
+  font-weight: 600;
+}
+.rule-toc a[aria-current="location"] .rule-toc-number {
+  color: var(--karma);
+}
+.rule-toc button:focus-visible,
+.rule-toc input:focus-visible {
+  outline: 2px solid var(--karma);
+  outline-offset: 3px;
+}
+.rule-toc .rule-toc-empty {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.rule-content p,
+.rule-content li {
+  max-width: 72ch;
+}
+.rule-content .tome-table-wrap,
+.rule-content .tome-ability-card {
+  width: 100%;
+}
+.tome-table-wrap table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #14121b;
+}
+.rule-content :is(h2, h3) {
+  scroll-margin-top: 6rem;
+}

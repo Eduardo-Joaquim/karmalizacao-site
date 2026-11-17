@@ -196,9 +196,25 @@ export function racialFeatures(draft: CharacterPayload) {
   );
 }
 
+export function tankProtectionProfile(stage: string, fortress = false) {
+  const step = Math.max(1, Math.min(7, getStageIndex(stage)));
+  return {
+    reserve: 10 + 2 * step + (fortress ? 6 : 0),
+    perResolution: fortress ? 6 : 5,
+    rounds: fortress ? 4 : 3,
+  };
+}
+
+export function vampireReconstitutionLife(stage: string) {
+  const step = Math.min(7, getStageIndex(stage));
+  return step >= 6 ? step * 2 + 2 : 0;
+}
+
 const CLASS_INITIAL_RULES: Record<string, ClassInitialRule> = {
   "Escriba Kármico": {
     automatic: {
+      life: 2,
+      karma: 8,
       attributes: { Intelecto: 2, Espírito: 1 },
       skills: { "Canalização de Karma": 1, Tática: 1 },
     },
@@ -1251,7 +1267,9 @@ export function getSkillTest(
   testPurpose?: "evasion" | "movement" | "perception" | "technique",
 ) {
   const intellect = getFinalAttribute(draft, automatic, "Intelecto");
-  const mental = (MENTAL_SKILLS as readonly string[]).includes(skill);
+  const mental =
+    (MENTAL_SKILLS as readonly string[]).includes(skill) ||
+    skill === "Sobrevivência";
   const attribute: AttributeName =
     skill === "Persuasão" && approach === "Intelecto"
       ? "Intelecto"

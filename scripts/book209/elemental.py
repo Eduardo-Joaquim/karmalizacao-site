@@ -47,6 +47,11 @@ def _catalog():
         radius = rune.get('radius')
         if isinstance(radius, bool) or not isinstance(radius, (int, float)) or not 10 <= radius <= 20:
             raise ValueError(f"Environmental Rune {rune['number']} has an invalid radius")
+    canonical = json.loads((ROOT / 'data/elemental-taxonomy.json').read_text())
+    expected = {entry['name']: entry['parents'] for entry in canonical['subElements']}
+    actual = {rune['expression']: rune['parents'] for rune in runes if rune['kind'] == 'subelement'}
+    if actual != expected:
+        raise ValueError('Environmental Rune expressions must match the eighteen canonical Subdobras')
     return data
 
 
@@ -137,7 +142,7 @@ def apply(book):
     append_section(c10, 'zonas-de-inscricao-elemental', 'Zonas de inscrição elemental',
                    '<p>Uma Runa Elemental Ambiental produz a zona e os efeitos indicados em sua entrada. Sua gravação usa Intelecto + Controle do Elemento, e sua CD é 12 + Intelecto final + nível de Controle. Ar e Vento designam a mesma origem; Trevas e Sombra também.</p>'
                    '<p>O dano da zona tem natureza Elemental. Contra um elemento primordial, aplique a defesa elemental inteira; contra uma subdobra, aplique metade da defesa parental, arredondada para baixo. Quando o efeito possuir dois elementos-pai, use metade da maior defesa entre eles, sem somá-las.</p>'
-                   '<p>As dezoito expressões ambientais não substituem a tabela geral de Subdobras. Para a defesa contra uma zona, use a origem da inscrição registrada no catálogo ambiental: Som desta inscrição usa Água, e Peso gravitacional é uma permissão somente da zona. As técnicas e ataques fora desse subsistema conservam seus elementos-pai e limites gerais.</p>'
+                   '<p>As dezoito expressões ambientais seguem a tabela geral de Subdobras. Som deriva de Ar (Vento); Vapor deriva de Água e Fogo, e Magma / Lava de Terra e Fogo. Peso altera apenas peso e carga física. Use as mesmas origens para calcular as defesas contra essas zonas.</p>'
                    '<p>Respeite o gatilho, a frequência e as medidas da inscrição: dano por rodada não é dano a cada metro percorrido, e dano por deslocamento só ocorre na distância indicada. Um teste ou uma CD expressamente definidos na entrada continuam valendo para aquele efeito. A inscrição não acrescenta dano ao ataque da arma portadora.</p>'
                    '<p>A abundância natural de um elemento continua sem conceder dano gratuito. O dano e as alterações de terreno das Runas Elementais são efeitos da inscrição, com sua ação, custo e duração próprios. Consulte '
                    f'<a href="{escape(CATALOG_URL, quote=True)}">o catálogo ambiental do Capítulo 12</a>.</p>')

@@ -30,6 +30,21 @@ export type ElementalRuneParameters = {
   maxActiveZones: number | null;
 };
 
+export type ElementalRuneRegency = {
+  intellect: number;
+  controlLevel: number;
+  additionalControlLevels?: Record<string, number>;
+};
+
+function hasParentTraining(rune: ElementalRune, regency: ElementalRuneRegency) {
+  return rune.parents.slice(1).every((parent) => {
+    const level = regency.additionalControlLevels?.[parent];
+    return (
+      Number.isInteger(level) && level !== undefined && level >= 1 && level <= 3
+    );
+  });
+}
+
 export type ElementalRuneSupport =
   | { kind: "ground"; distance?: number }
   | { kind: "mageFocus"; item: InventoryItem };
@@ -117,7 +132,7 @@ export function isCompleteElementalRuneConfiguration(
 
 export function getElementalRuneError(
   id: string,
-  regency: { intellect: number; controlLevel: number },
+  regency: ElementalRuneRegency,
   support: ElementalRuneSupport,
   parameters: ElementalRuneParameters = elementalRuneCatalog.parameters,
 ): ElementalRuneError | undefined {
@@ -131,7 +146,10 @@ export function getElementalRuneError(
     regency.controlLevel > 3
   )
     return "invalid_regency";
-  if (regency.controlLevel < elementalRuneCatalog.minimumControlLevel)
+  if (
+    regency.controlLevel < elementalRuneCatalog.minimumControlLevel ||
+    !hasParentTraining(rune, regency)
+  )
     return "training_required";
   if (support.kind === "mageFocus") {
     if (support.item.cursedRune) return "cursed_support";
@@ -161,7 +179,7 @@ export function getElementalRuneError(
  */
 export function resolveElementalRuneProfile(
   id: string,
-  regency: { intellect: number; controlLevel: number },
+  regency: ElementalRuneRegency,
   parameters: ElementalRuneParameters = elementalRuneCatalog.parameters,
 ) {
   const rune = getElementalRune(id);
@@ -174,6 +192,7 @@ export function resolveElementalRuneProfile(
     regency.controlLevel <= 3;
   const trained =
     validRegency &&
+    hasParentTraining(rune, regency) &&
     regency.controlLevel >= elementalRuneCatalog.minimumControlLevel;
   return {
     rune,

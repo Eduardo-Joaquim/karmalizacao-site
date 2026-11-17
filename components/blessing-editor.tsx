@@ -45,14 +45,11 @@ export function DivineRoll({
     skill,
     regent,
   );
-  const raw = t.baseDice - t.inventoryPenalty.dicePenalty;
-  const worst = raw <= 0;
-  const dice = worst ? 2 : Math.min(30, raw);
   return (
     <p className="divine-roll">
       <strong>
-        {skill}: {worst ? "menor de " : "maior de "}
-        {dice}d20 {t.bonus >= 0 ? "+" : ""}
+        {skill}: {t.selection === "menor" ? "menor de " : "maior de "}
+        {t.dice}d20 {t.bonus >= 0 ? "+" : ""}
         {t.bonus}
       </strong>
       <span>

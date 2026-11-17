@@ -1,3 +1,4 @@
+import { npcSkillTest } from "@/lib/npc-skill-test";
 import { DiceRoller } from "@/components/dice-roller";
 import { TechniqueCost } from "@/components/technique-cost";
 import threats from "@/data/early-threats.json";
@@ -83,24 +84,12 @@ export function ContinentalMonstersSection({ region }: { region: string }) {
                           </span>
                           <DiceRoller
                             label={s.name}
-                            dice={Math.max(
-                              1,
-                              Math.ceil(
-                                c.attributes[
-                                  s.name === "Luta" || s.name === "Atletismo"
-                                    ? 0
-                                    : s.name === "Reflexos" ||
-                                        s.name === "Pontaria" ||
-                                        s.name === "Acrobacia"
-                                      ? 1
-                                      : s.name.startsWith("Controle") ||
-                                          s.name === "Canalização de Karma"
-                                        ? 5
-                                        : 3
-                                ] / 2,
-                              ),
-                            )}
-                            bonus={[0, 2, 5, 10][s.level]}
+                            dice={
+                              npcSkillTest(c.attributes, s.name, s.level).dice
+                            }
+                            bonus={
+                              npcSkillTest(c.attributes, s.name, s.level).bonus
+                            }
                           />
                         </div>
                       ))}

@@ -11,6 +11,8 @@ export type RoyalConventionalRune = {
   passive: string;
   burst: string;
   retainedKarma: number;
+  grade: string;
+  apexRequired: boolean;
 };
 
 export type RoyalCursedRune = {
@@ -60,66 +62,29 @@ type CursedConfig = {
 // Only presentation references live here. The two source fields remain intact
 // and authoritative; a reference mismatch must not create a different loadout.
 const LOADOUTS: Record<string, ConventionalConfig | CursedConfig> = {
-  "rainha-aveline": {
+  "rainha-aveline": { kind: "conventional", runeId: 3, support: "weapon" },
+  "rainha-naerith": { kind: "conventional", runeId: 12, support: "armor" },
+  "rainha-nosferato": { kind: "conventional", runeId: 5, support: "weapon" },
+  "rainha-sael": { kind: "conventional", runeId: 7, support: "weapon" },
+  "atargatis-kalypso": { kind: "conventional", runeId: 4, support: "weapon" },
+  "nammu-salacia": {
     kind: "conventional",
     runeId: 2,
     support: "weapon",
     vector: "contact",
   },
-  "rainha-naerith": {
-    kind: "conventional",
-    runeId: 9,
-    support: "armor",
-  },
-  "rainha-nosferato": {
-    kind: "conventional",
-    runeId: 2,
-    support: "weapon",
-    vector: "contact",
-  },
+  "ummu-hubur": { kind: "conventional", runeId: 3, support: "weapon" },
+  "al-aqwa": { kind: "conventional", runeId: 6, support: "weapon" },
   "rainha-valac": {
     kind: "cursed",
     effectId: "trono-de-ossos-vazios",
-    conditions: ["C1", "C4", "C5", "C8"],
-    damage: "2d8",
+    conditions: ["C1", "C4", "C5", "C6", "C8"],
+    damage: "1d20",
     presence: 12,
     controlLevel: 3,
     escapeTest: "Força ou Constituição + Atletismo",
     effect: (escapeDC) =>
-      `Com ao menos um Total, o alvo fica Caído e Imobilizado no solo. Uma Principal e Força ou Constituição + Atletismo CD ${escapeDC} encerram a imobilização; levantar ainda segue a regra de Caído.`,
-  },
-  "rainha-sael": {
-    kind: "cursed",
-    effectId: "forja-de-medula",
-    conditions: ["C1", "C4", "C5"],
-    damage: "2d6",
-    presence: 5,
-    controlLevel: 0,
-    escapeTest: "Constituição + Atletismo",
-    effect: (escapeDC) =>
-      `Selada somente na manopla direita. Com ao menos um Total, o alvo larga o que empunha ou testa Constituição + Atletismo CD ${escapeDC}. Se falhar conservando os itens, sofre metade do dano da runa no início do próximo turno.`,
-  },
-  "atargatis-kalypso": {
-    kind: "conventional",
-    runeId: 2,
-    support: "weapon",
-    vector: "ranged",
-  },
-  "nammu-salacia": {
-    kind: "conventional",
-    runeId: 3,
-    support: "weapon",
-  },
-  "ummu-hubur": {
-    kind: "cursed",
-    effectId: "labirinto-de-espelhos-partidos",
-    conditions: ["C1", "C4", "C5", "C8"],
-    damage: "1d16",
-    presence: 12,
-    controlLevel: 3,
-    escapeTest: "Espírito + Canalização de Karma",
-    effect: (escapeDC) =>
-      `Até o fim do próximo turno do alvo e se houve um Total, sua primeira tentativa de gastar Movimento para se afastar exige Espírito + Canalização de Karma CD ${escapeDC}. Falhar termina o movimento adjacente à portadora, num espaço livre; a tentativa encerra a prisão, que não bloqueia teleporte.`,
+      `Com ao menos um Total, o alvo fica Caído e Imobilizado no solo. Uma Principal e Força ou Constituição + Atletismo CD ${escapeDC} encerram a imobilização; levantar ainda segue a regra de Caído. Errar ou trocar de alvo antes do disparo apaga as marcas.`,
   },
 };
 
@@ -207,6 +172,8 @@ function conventionalSummary(
           ? `${rune.burst} O +2 não se soma a outro +2 de Precisa no mesmo teste.`
           : rune.burst,
     retainedKarma: rune.retained,
+    grade: rune.grade,
+    apexRequired: rune.grade === "V",
   };
 }
 

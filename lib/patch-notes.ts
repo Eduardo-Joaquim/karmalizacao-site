@@ -9,6 +9,22 @@ export type PatchNote = {
 // Mais recente primeiro. Não inventar datas ou versões para registros históricos.
 export const PATCH_NOTES: readonly PatchNote[] = [
   {
+    id: "patch-2-1-0-2026-11-17-leitura-e-regras",
+    version: "2.1.0",
+    label: "Patch 2.1.0 - 17/11/2026",
+    title: "Leitura do livro e revisão das regras",
+    highlights: [
+      "Guia lateral com tópicos recolhíveis, seção atual destacada, filtro e progresso de leitura. Parágrafos e tabelas ficam mais confortáveis para consultar.",
+      "Inabalável passa a ter reserva de 12 a 24 pontos. Corpo Fortaleza acrescenta 6 pontos e absorve até 6 por resolução. Capítulo 6.",
+      "Trono Imortal de Sárkora recompõe o Vampiro com 14 de Vida na Etapa VI e 16 na VII. Capítulo 5.",
+      "Revistas as armas reais e a arma de Al-Aqwa. Valac conserva a Maldição Soberana de cinco condições; as demais soberanas usam Runas Kármicas. Capítulos 9, 14 e 21.",
+      "As 24 Runas Elementais Ambientais apresentam nomes completos e seguem as 18 Subdobras canônicas, mantendo os raios de 10 a 20 metros. Capítulo 12.",
+      "Corrigidas as rolagens de perícias, a contabilização inicial e os extras de progressão do Escriba Kármico. Capítulos 3 e 6.",
+      "Alinhadas regras e referências nos capítulos 9, 10 e 12, com revisão de Resistências, igualdade da CA e efeitos das Bênçãos.",
+      "Revistos os capítulos 1 a 21, incluindo Atletismo, Sobrevivência, tempos de alquimia, desarme, raças, equipamentos e encontros.",
+    ],
+  },
+  {
     id: "patch-2-0-9-2026-11-16-catalogos-runicos-r3",
     version: "2.0.9",
     label: "Patch 2.0.9 - 16/11/2026",

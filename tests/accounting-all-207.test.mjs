@@ -57,8 +57,8 @@ const classes = [
   ["Conjurador", 4, 10, 0, { Espírito: 1 }, { "Canalização de Karma": 1 }, 0],
   [
     "Escriba Kármico",
-    0,
-    0,
+    2,
+    8,
     0,
     { Intelecto: 2, Espírito: 1 },
     { "Canalização de Karma": 1, Tática: 1 },

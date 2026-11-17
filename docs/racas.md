@@ -97,7 +97,7 @@ A fera que moldou a linhagem não vive em um brasão. Ela desperta no ouvido que
 #### Etapa I — Despertar de Aspecto
 
 - **Aprimoramento / Passiva:** Você recebe +1d20 em testes de Percepção auditiva ou olfativa. No início do seu turno, como Ação Livre, pode alternar entre três Aspectos Bestiais.
-- **Ativação / Reação:** No Aspecto da Garra, seus ataques desarmados causam 1d8 de dano Marcial (ou suas armas corpo a corpo somam +2 ao dano) e, em um Acerto Total, você impõe a condição Sangrando ao alvo. No Aspecto da Asa ou Salto, recebe +2 m de deslocamento, ignora quedas de até 10 m e cruza obstáculos e inimigos sem provocar Reações. No Aspecto da Carapaça ou Escama, recebe +1 na CA e Resistência 2 contra dano Elemental / Fogo, Água, Vento ou Terra, escolhido ao assumir o aspecto.
+- **Ativação / Reação:** No Aspecto da Garra, seus ataques desarmados causam 1d8 de dano Marcial (ou suas armas corpo a corpo somam +2 ao dano) e, em um Acerto Total, você impõe a condição Sangrando ao alvo. No Aspecto da Asa ou Salto, recebe +2 m de deslocamento, ignora quedas de até 10 m e cruza obstáculos e inimigos sem provocar Reações. No Aspecto da Carapaça ou Escama, recebe +1 na CA e Resistência 2 contra dano Elemental / Fogo, Elemental / Água, Elemental / Ar (Vento) ou Elemental / Terra, escolhido ao assumir o aspecto.
 
 #### Etapa II — Marca de Caça
 
@@ -126,7 +126,7 @@ Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas cois
 
 - **Aprimoramento / Passiva:** Você enxerga na escuridão plena e percebe batimentos cardíacos de criaturas vivas a até 10 m. A Reserva de Vitae começa a sessão com 1 ponto; conserve seu saldo entre cenas até o descanso longo, respeitando o limite vigente.
 - **Ativação / Reação:** Ficar mais de 3 dias sem alimentar-se de sangue impõe −1d20 em todos os testes e impede recuperar Vitae; a partir de 7 dias, você fica Exausto até alimentar-se. Sob luz solar direta, sem cobertura ou traje fechado, você sofre Desvantagem em testes físicos e de Percepção, não pode regenerar nem usar Vitae e perde 2 pontos de Vida por rodada de exposição em combate ou por TE em viagem descoberta. Mordida Vampírica: Suas presas são uma arma natural de contato (Luta contra CA, alcance de toque, dano-base 1d8 Marcial perfurante).
-- **Efeito e limites:** Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae). Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Sombra. Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.
+- **Efeito e limites:** Somente ao acertar um ataque direto de mordida com suas presas contra uma criatura viva, uma vez por rodada, você drena o sangue fresco da vítima: você recupera pontos de Vida iguais a 2 + metade da sua Etapa (arredondada para baixo) (ou Etapa + 2 se o ataque de mordida obtiver Acerto Total ou atingir um alvo Agarrado ou Sangrando) e acumula 1 ponto de Vitae (até o limite de 3 Vitae). Uso da Reserva de Vitae: Você também gera 1 Vitae (uma vez por turno) ao ferir uma criatura viva com técnicas de Elemental / Sangue ou Elemental / Trevas (Sombra). Os pontos de Vitae não curam Vida diretamente; você pode gastar 1 Vitae (ou sacrificar 3 pontos da própria Vida) antes de um ataque ou técnica para acrescentar +1d6 de dano (Marcial, Sangue ou Sombra) àquele golpe.
 
 #### Etapa II — Dízimo Carmesim e Olhar Hipnótico
 
@@ -135,13 +135,13 @@ Em Sárkora, o sangue carrega lembranças, sustento e poder. Nenhuma dessas cois
 
 #### Etapa IV — Transfusão de Névoa Rubra
 
-- **Aprimoramento / Passiva:** Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Sombra, Elemental / Sangue ou efeitos necróticos.
+- **Aprimoramento / Passiva:** Seu limite máximo da Reserva de Vitae sobe para 5 e você recebe Resistência 3 contra sangramento, venenos e danos de Elemental / Trevas (Sombra), Elemental / Sangue ou efeitos necróticos.
 - **Ativação / Reação:** Uma vez por rodada, como Reação ao ser alvo de um ataque, você pode gastar 1 Vitae (ou 2 Karma) para dissolver seu corpo em névoa rubra: você reduz o dano sofrido em Espírito + Etapa e reaparece em um espaço desocupado a até 5 m sem provocar Reações. Uma vez por reação, se o trajeto da névoa atravessar o espaço de um inimigo vivo, você extrai 1 Vitae dele.
 
 #### Etapa VI — Trono Imortal de Sárkora
 
 - **Aprimoramento / Passiva:** Você recebe +1 ponto em Presença, Agilidade ou Espírito.
-- **Ativação / Reação:** Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com Etapa × 4 pontos de Vida, encerrando todas as condições físicas de imobilização e sangramento sobre você.
+- **Ativação / Reação:** Uma vez por cena, quando sofrer um dano que reduziria sua Vida a 0, você não cai inconsciente: seu corpo se desfaz em uma revoada carmesim que causa 2d8 de dano de Elemental / Sangue aos inimigos adjacentes e se recompõe em um espaço livre a até 6 m com (Etapa × 2) + 2 pontos de Vida (14 na Etapa VI; 16 na Etapa VII), encerrando todas as condições físicas de imobilização e sangramento sobre você.
 
 ### Demônio
 
@@ -196,7 +196,7 @@ O sangue deixa um rastro mesmo onde os olhos nada encontram. O ghoul sente o ras
 
 #### Etapa VI — Apogeu da Fome
 
-- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo.
+- **Aprimoramento / Passiva:** Você recebe +1 ponto em Constituição, Força ou Agilidade, e seus ataques e técnicas passam a ignorar até 3 pontos de Resistência do alvo (Resistência Alta).
 - **Ativação / Reação:** Uma vez por cena, ao cair para metade ou menos da Vida, ou como Reação ao sofrer um Acerto Total, você desperta o Frenesi por 3 rodadas. Recebe +2 na CA, fica imune a Abalado, Lento e Caído e acrescenta um dado-base de dano a seus ataques e técnicas ofensivas.
 
 ### Tritão
@@ -237,7 +237,7 @@ Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar 
 
 #### Etapa I — Fenda de Horizonte
 
-- **Aprimoramento / Passiva:** Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Sombra e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m.
+- **Aprimoramento / Passiva:** Você enxerga através de ilusões simples e escuridão mágica e possui Resistência 3 contra dano Elemental / Trevas (Sombra) e dano Mental. Uma vez por turno, como Ação de Movimento, pode posicionar ou movimentar sua única Âncora do Vazio em um ponto visível a até 10 m.
 - **Ativação / Reação:** O alcance e a trajetória de suas técnicas podem ser medidos a partir de você ou dessa âncora. Utilizar uma técnica através da Âncora do Vazio custa +1 Karma além do custo normal da técnica.
 
 #### Etapa II — Passo de Fresta
@@ -248,7 +248,7 @@ Onde o mundo parece inteiro, o abissal vê uma fresta. Ela não leva a um lugar 
 #### Etapa IV — Dobra de Singularidade
 
 - **Aprimoramento / Passiva:** Uma vez por rodada, ao ser alvo de uma técnica sobrenatural ou ataque à distância, você pode usar sua Reação e gastar 2 Karma para abrir uma microfenda.
-- **Ativação / Reação:** Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Sombra, consumindo o eco armazenado.
+- **Ativação / Reação:** Reduz o dano sofrido em Espírito e armazena o eco na Âncora do Vazio. Seu próximo ataque ou técnica acrescenta +1d4 de dano Elemental / Trevas (Sombra), consumindo o eco armazenado.
 
 #### Etapa VI — Horizonte de Eventos
 

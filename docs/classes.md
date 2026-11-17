@@ -223,11 +223,11 @@ receba +2 CA contra o ataque interceptado e reduza em 2 seu dano final antes do 
 
 **Uso:** Ação de Movimento, 6 Karma, uma vez por cena. Preparação e alvo: firme a postura; afeta você e não exige teste.
 
-Duração: três rodadas, contando a ativação. Receba uma reserva de proteção de 15 + duas vezes sua Etapa (I a VII: 17, 19, 21, 23, 25, 27 ou 29 pontos). Depois de resolver parcial, Resistência e outras reduções, mas antes de Escudo Temporário e Vida, escolha quantos pontos gastar para reduzir o dano restante na mesma quantidade, até 5 por resolução e sem gastar além do dano restante. Vários dados do mesmo ataque constituem uma única resolução. Essa escolha não consome ação ou Reação. A reserva também pode absorver ataques que você recebe por Interceptação, dentro do mesmo limite por resolução. Receba Vantagem em Constituição + Atletismo para resistir a empurrões e derrubadas enquanto a reserva estiver ativa. Não mitiga custos em Vida, sacrifícios, perda direta de Vida ou dano expressamente impossível de mitigar. Não é Escudo Temporário, não cura nem recupera recursos. A habilidade termina quando a reserva chegar a zero, no prazo ou se ficar Inconsciente; pontos restantes se perdem.
+Duração: três rodadas, contando a ativação. Receba uma reserva de proteção de 10 + duas vezes sua Etapa (I a VII: 12, 14, 16, 18, 20, 22 ou 24 pontos). Depois de resolver parcial, Resistência e outras reduções, mas antes de Escudo Temporário e Vida, escolha quantos pontos gastar para reduzir o dano restante na mesma quantidade, até 5 por resolução e sem gastar além do dano restante. Vários dados do mesmo ataque constituem uma única resolução. Essa escolha não consome ação ou Reação. A reserva também pode absorver ataques que você recebe por Interceptação, dentro do mesmo limite por resolução. Receba Vantagem em Constituição + Atletismo para resistir a empurrões e derrubadas enquanto a reserva estiver ativa. Não mitiga custos em Vida, sacrifícios, perda direta de Vida ou dano expressamente impossível de mitigar. Não é Escudo Temporário, não cura nem recupera recursos. A habilidade termina quando a reserva chegar a zero, no prazo ou se ficar Inconsciente; pontos restantes se perdem.
 
 #### Ampliação — Corpo Fortaleza
 
-a reserva inicial aumenta em 10 pontos, o limite de absorção passa a 7 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena.
+a reserva inicial aumenta em 6 pontos (total de 18 a 30 pontos da Etapa I à VII), o limite de absorção passa a 6 por resolução e a duração a quatro rodadas. Enquanto a habilidade estiver ativa e você permanecer apoiado numa superfície firme, não pode ser empurrado ou derrubado por manobra comum. Destruir a superfície, deslocar o terreno inteiro ou uma exceção sobrenatural expressa continua possível. Ao esgotar a reserva, todos os benefícios terminam. O custo permanece 6 Karma e o uso continua limitado a uma vez por cena.
 
 ### Progressão de status e desenvolvimento
 
@@ -400,7 +400,7 @@ Resolução: use Força ou Agilidade + Luta, ou Agilidade + Pontaria, contra CA.
 
 #### Ampliação — Golpe Irrecuperável
 
-o ataque ignora 5 de Resistência física. Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece.
+o ataque ignora 3 pontos de Resistência física (Resistência Alta). Um parcial causa o dano calculado sem a divisão pela metade, mas seus demais efeitos continuam parciais. Falha e Evasão bem-sucedida continuam sem causar dano. O limite por alvo e cena permanece.
 
 #### Habilidade 3 — Passo Sombrio
 
@@ -579,9 +579,9 @@ admite até 50 kg e dura até o fim da cena quando ativada em combate, ou até d
 
 #### Habilidade 2 — Síntese Alquímica
 
-**Uso:** Síntese preparada: 0 Karma, de 1 a 15 minutos. Síntese imediata: Principal e 4 Karma por dose. Exige receita conhecida, treinamento apropriado e todos os materiais da fórmula.
+**Uso:** Síntese preparada: 0 Karma, 15, 30 ou 60 minutos, conforme a dificuldade. Síntese imediata: Principal e 4 Karma por dose. Exige receita conhecida, treinamento apropriado e todos os materiais da fórmula.
 
-Utiliza as receitas de produtos finais do Capítulo 17: poções, antídotos, soros, elixires, ampolas e óleos. Declare receita e modalidade antes do teste. Síntese preparada: 0 Karma; uma dose comum em 1 minuto, difícil em 5 minutos ou heroica/experimental em 15 minutos. Kit portátil basta para receitas comuns e difíceis; receitas heroicas/experimentais mantêm laboratório, Etapa V e os requisitos próprios. Síntese imediata: Principal, 4 Karma, kit portátil acessível e materiais à mão; produz uma dose comum ou difícil, sem incluir saque de materiais na Mochila, ingestão, arremesso ou aplicação. Não produz fórmulas heroicas, experimentais ou corrompidas em combate. Teste Intelecto + Criação, Medicina ou Ocultismo, conforme a natureza da receita, com +1d20 e CD 12 comum, 15 difícil ou 21 heroica/experimental, respeitando o teto de dados adicionais. Mantém Perícia 1 para comum, Perícia 2 para difícil e os requisitos próprios das demais. Fora do combate, acesso legítimo à Corrupção e seus testes continuam necessários para fórmulas corrompidas. Materiais custam 75% do preço do produto, arredondado para cima, mínimo 2 m, incluindo base, reagentes, catalisador e frasco; desconte componentes já fornecidos conforme o Capítulo 17, sem cobrá-los duas vezes. Não fabrica reagentes puros, catalisadores ou kits por esse desconto. Sucesso produz uma dose com o efeito integral da receita. Falhas usam as perdas e misturas instáveis do Capítulo 17; Karma pago não é devolvido. Doses preparadas seguem a validade normal da receita e não têm limite especial de estoque, além da carga e conservação. Doses imediatas duram 24 horas; mantenha até seis simultaneamente e não produza uma sétima antes de liberar uma vaga. Cada frasco ocupa 0,25 espaços. Saturação, formas de consumo, licenças e limites de cada produto permanecem. Restauradores de Karma compartilham um único benefício por cena substancial; purgadores não renovam seus próprios limites.
+Utiliza as receitas de produtos finais do Capítulo 17: poções, antídotos, soros, elixires, ampolas e óleos. Declare receita e modalidade antes do teste. Síntese preparada: 0 Karma; uma dose comum em 15 minutos, difícil em 30 minutos ou heroica/experimental em 60 minutos. Kit portátil basta para receitas comuns e difíceis; receitas heroicas/experimentais mantêm laboratório, Etapa V e os requisitos próprios. Síntese imediata: Principal, 4 Karma, kit portátil acessível e materiais à mão; produz uma dose comum ou difícil, sem incluir saque de materiais na Mochila, ingestão, arremesso ou aplicação. Não produz fórmulas heroicas, experimentais ou corrompidas em combate. Teste Intelecto + Criação, Medicina ou Ocultismo, conforme a natureza da receita, com +1d20 e CD 12 comum, 15 difícil ou 21 heroica/experimental, respeitando o teto de dados adicionais. Mantém Perícia 1 para comum, Perícia 2 para difícil e os requisitos próprios das demais. Fora do combate, acesso legítimo à Corrupção e seus testes continuam necessários para fórmulas corrompidas. Materiais custam 75% do preço do produto, arredondado para cima, mínimo 2 m, incluindo base, reagentes, catalisador e frasco; desconte componentes já fornecidos conforme o Capítulo 17, sem cobrá-los duas vezes. Não fabrica reagentes puros, catalisadores ou kits por esse desconto. Sucesso produz uma dose com o efeito integral da receita. Falhas usam as perdas e misturas instáveis do Capítulo 17; Karma pago não é devolvido. Doses preparadas seguem a validade normal da receita e não têm limite especial de estoque, além da carga e conservação. Doses imediatas duram 24 horas; mantenha até seis simultaneamente e não produza uma sétima antes de liberar uma vaga. Cada frasco ocupa 0,25 espaços. Saturação, formas de consumo, licenças e limites de cada produto permanecem. Restauradores de Karma compartilham um único benefício por cena substancial; purgadores não renovam seus próprios limites.
 
 #### Ampliação — Síntese em Lote
 
@@ -949,7 +949,7 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 **Identidade:** O Elementalista transforma o ambiente em extensão do próprio estilo. Não depende de Ressonância ou outro contador: sua profundidade vem da Assinatura escolhida, do Domínio e da capacidade de assumir o elemento.
 
-**Bônus inicial:** +10 Karma máximo; +1 Espírito; +2 no Controle de um elemento à escolha.
+**Bônus inicial:** +10 Karma máximo; +1 Espírito; +1 no Controle de um elemento à escolha (Nível 1, +2).
 
 **Atributos recomendados:** Espírito e Intelecto.
 
@@ -1085,7 +1085,7 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 **Identidade:** Calígrafos espirituais tratam Karma como linguagem. Gravam glifos em armas, armaduras, sangue e superfícies para escolher onde e quando a energia se libera.
 
-**Bônus inicial:** +2 Intelecto, +1 Espírito, Canalização de Karma e Tática no Nível 1 (+2).
+**Bônus inicial:** +8 Karma máximo; +2 Vida máxima; +2 Intelecto; +1 Espírito; +1 em Canalização de Karma e +1 em Tática (Nível 1, +2).
 
 **Atributos recomendados:** Intelecto e Espírito.
 
@@ -1139,11 +1139,11 @@ Receba cada linha uma única vez ao alcançar a Etapa. Aumento geral e extra de 
 
 | Etapa | Aumento geral | Extra da classe | Desenvolvimento |
 |---|---|---|---|
-| Etapa I | +2 Vida máxima. | — | Progressão geral de Etapa. |
-| Etapa II | +2 Karma máximo. | — | Progressão geral de Etapa. |
-| Etapa III | +2 Vida máxima e +1 CA. | — | Progressão geral de Etapa. |
-| Etapa IV | +2 Karma máximo. | — | Progressão geral de Etapa. |
-| Etapa V | +2 Vida máxima, +2 Karma máximo e +1 CA. | — | Sentença Tripla disponível. |
-| Etapa VI | +2 Karma máximo. | — | Progressão geral de Etapa. |
-| Etapa VII | +4 Vida máxima, +2 Karma máximo e +1 CA. | — | Progressão geral de Etapa. |
+| Etapa I | +2 Vida máxima. | +2 Vida máxima. | Progressão geral de Etapa. |
+| Etapa II | +2 Karma máximo. | +3 Karma máximo e +1 ponto de Atributo à escolha. | Progressão geral de Etapa. |
+| Etapa III | +2 Vida máxima e +1 CA. | +2 Vida máxima. | Progressão geral de Etapa. |
+| Etapa IV | +2 Karma máximo. | +3 Karma máximo e +1 ponto de Atributo à escolha. | Progressão geral de Etapa. |
+| Etapa V | +2 Vida máxima, +2 Karma máximo e +1 CA. | +1 Intelecto ou Espírito. | Sentença Tripla disponível. |
+| Etapa VI | +2 Karma máximo. | +3 Karma máximo e +1 ponto de Atributo à escolha. | Progressão geral de Etapa. |
+| Etapa VII | +4 Vida máxima, +2 Karma máximo e +1 CA. | +3 Vida máxima e +4 Karma máximo. | Progressão geral de Etapa. |
 

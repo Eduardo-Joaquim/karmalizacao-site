@@ -47,7 +47,7 @@ test("catálogo ambiental fecha as 24 entradas sem substituir a taxonomia geral"
   assert.equal(subelements.length, 18);
   assert.deepEqual(
     subelements.map((rune) => rune.radius),
-    [10, 15, 10, 10, 15, 10, 15, 10, 10, 10, 10, 15, 10, 10, 10, 15, 20, 15],
+    [10, 15, 10, 10, 15, 10, 15, 10, 10, 10, 10, 10, 15, 10, 10, 10, 10, 10],
   );
   assert.equal(
     elemental.elementalRuneCatalog.taxonomyScope,
@@ -66,13 +66,13 @@ test("catálogo ambiental fecha as 24 entradas sem substituir a taxonomia geral"
     taxonomy.subElements.find((entry) => entry.name === "Peso").scope,
     /Não manipula a gravidade/,
   );
-  assert.equal(elemental.getElementalRune("som").element, "Água");
+  assert.equal(elemental.getElementalRune("som").element, "Ar");
   assert.match(
     elemental.getElementalRune("peso").effect,
-    /por 3 a pressão gravitacional/,
+    /triplica|Triplica/,
   );
   assert.match(
-    elemental.getElementalRune("metal-magma").effect,
+    elemental.getElementalRune("metal").effect,
     /1d6.*armadura pesada/,
   );
   assert.match(
@@ -144,7 +144,7 @@ test("regência usa Intelecto final e o treinamento correspondente, inclusive co
 });
 
 test("focos do catálogo independem de encaixes e uma maldição impede qualquer inscrição ambiental", () => {
-  const regency = { intellect: 5, controlLevel: 1 };
+  const regency = { intellect: 5, controlLevel: 1, additionalControlLevels: { Fogo: 1 } };
   for (const weapon of mageWeapons) {
     const item = focus(weapon.id);
     assert.equal(elemental.isElementalRuneFocus(item), true, weapon.id);
@@ -284,7 +284,7 @@ test("perfis completos descrevem custos e tempo; configurações inválidas não
 });
 
 test("suportes obedecem alcance, equipamento e exclusividade, sem alterar inventário", () => {
-  const regency = { intellect: 5, controlLevel: 1 };
+  const regency = { intellect: 5, controlLevel: 1, additionalControlLevels: { Fogo: 1 } };
   const item = focus(mageWeapons[0].id);
   const before = structuredClone(item);
   for (const distance of [0, 1]) {

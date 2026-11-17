@@ -397,7 +397,7 @@
       "id": "trombeta-dos-deserdados",
       "name": "Trombeta dos Deserdados",
       "epithet": "Clamor dos Deserdados",
-      "effect": "O clamor desafia espíritos fortes. Feche 3 Marcas por disparos a 9 m ou mais, contra o alvo de Presença maior ou igual exigido por C18. O despertar causa **1d16 Corrupto**; com pelo menos 1 Acerto Total na sequência, impõe **Atordoado pleno**.",
+      "effect": "O clamor desafia alvos de Presença superior. Feche 3 Marcas por disparos a 9 m ou mais, contra o alvo de Presença maior ou igual exigido por C18. O despertar causa **1d16 Corrupto**; com pelo menos 1 Acerto Total na sequência, impõe **Atordoado pleno**.",
       "minimumConditions": 4,
       "defaultConditions": [
         "C2",

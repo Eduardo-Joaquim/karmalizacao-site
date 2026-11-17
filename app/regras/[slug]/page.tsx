@@ -1,3 +1,4 @@
+import { RuleToc } from "@/components/rule-toc";
 import { MarkdownArticle } from "@/components/markdown-article";
 import { CursedRuneLocation } from "@/components/cursed-rune-location";
 import { PantheonBlessingsPortal } from "@/components/pantheon-blessings-portal";
@@ -176,23 +177,7 @@ export default async function RuleChapterPage({
           </nav>
         </article>
 
-        <aside className="rule-toc" aria-label="Nesta página">
-          <p>Nesta página</p>
-          {chapter.sections.length ? (
-            <ol>
-              {chapter.sections.map((section) => (
-                <li key={section.id} data-level={section.level}>
-                  <a href={`#${section.id}`}>{section.title}</a>
-                </li>
-              ))}
-            </ol>
-          ) : (
-            <a href="#topo">Início do capítulo</a>
-          )}
-          <a href="#topo" className="back-to-top">
-            Voltar ao topo ↑
-          </a>
-        </aside>
+        <RuleToc key={chapter.slug} sections={chapter.sections} />
       </main>
     </div>
   );

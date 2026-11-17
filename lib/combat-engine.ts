@@ -12,6 +12,8 @@ import {
   getFinalSkill,
   getSkillTest,
   initiativeTest,
+  tankProtectionProfile,
+  vampireReconstitutionLife,
 } from "@/lib/character-rules";
 import type {
   CombatAction,
@@ -674,6 +676,26 @@ export function applyCombatAction(
   if (op.type === "toggle") s.inCombat = op.active;
   if (op.type === "execute") {
     let riskText = "";
+    if (
+      op.kind === "ability" &&
+      draft.className === "Tanque" &&
+      /Inabalável|Corpo Fortaleza/.test(op.title)
+    ) {
+      const profile = tankProtectionProfile(
+        draft.stage,
+        draft.classAmplifications.includes("Corpo Fortaleza"),
+      );
+      riskText += `Proteção: reserva ${profile.reserve}, até ${profile.perResolution} por resolução, ${profile.rounds} rodadas. Resolva a absorção escolhida em mesa; não é Escudo Temporário. `;
+    }
+    if (
+      op.kind === "ability" &&
+      draft.race === "Vampiro" &&
+      op.title.includes("Trono Imortal")
+    ) {
+      const life = vampireReconstitutionLife(draft.stage);
+      if (!life) throw Error("Trono Imortal exige Etapa VI ou VII.");
+      riskText += `Reconstituição: ${life} Vida, a até 6 m, uma vez por cena. Confirme o gatilho e registre a Vida recomposta em mesa. `;
+    }
     if (op.impetus) {
       if (!impetusLimit(draft) || !(s.impetus ?? 0) || !op.diceResults?.length)
         throw Error("Ímpeto indisponível para este teste.");

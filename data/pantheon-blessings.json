@@ -174,7 +174,7 @@
             "phenomenon": "Sua caixa torácica funciona como uma fornalha de alta pressão; cada inspiração aquece seu sangue e armadura, liberando jatos de vapor superaquecido pelas juntas.",
             "extensions": [
               "Soco de Pistão Térmico (Principal · 4 Karma): Libera o vapor comprimido pelo cotovelo no instante do golpe, causando 2d8 contundente/térmico e empurrando o alvo em 4m.",
-              "Têmpera a Frio (Reação · 3 Karma): Libera uma nuvem de vapor denso ao sofrer um ataque, ganhando camuflagem parcial e +3 de Redução de Dano."
+              "Têmpera a Frio (Reação · 3 Karma): Libera uma nuvem de vapor denso ao sofrer um ataque, ganhando camuflagem parcial e Resistência Alta (3)."
             ],
             "harvest": "Hefesto absorve a termodinâmica de compressão pulmonar aplicada às artes marciais.",
             "categoriaAcesso": "catalogo_player",
@@ -208,7 +208,7 @@
             "phenomenon": "No centro da sua armadura ou foco repousa o relevo da Medusa dado a Atena; encarar seu peito no momento do ataque calcifica temporariamente as articulações do inimigo.",
             "extensions": [
               "Olhar de Calcário (Reação ao ser atacado ou Extra · 4 Karma · 6 m): Os pés e joelhos do atacante endurecem como mármore por 1 rodada, reduzindo o deslocamento dele a 0 m e aplicando -2 no teste de ataque dele.",
-              "Quebrar Estátua (Principal · 4 Karma): Contra um alvo com deslocamento reduzido ou Lento, seu golpe causa 2d10 contundente ignorando 4 de Redução de Dano."
+              "Quebrar Estátua (Principal · 4 Karma): Contra um alvo com deslocamento reduzido ou Lento, seu golpe causa 2d10 contundente ignorando Resistência Alta (3)."
             ],
             "harvest": "Atena absorve o controle de rigidez muscular induzida por choque visual.",
             "categoriaAcesso": "catalogo_player",
@@ -246,7 +246,7 @@
       },
       {
         "name": "Poseidon",
-        "epithet": "O Deus dos Mares, da Pressão Abissal e dos Terremotos",
+        "epithet": "O Deus dos Mares, da Pressão Oceânica e dos Terremotos",
         "blessings": [
           {
             "id": 16,
@@ -1143,7 +1143,7 @@
           {
             "id": 71,
             "facet": "Geada de Niflheim",
-            "title": "Névoa deFrio Necrótico",
+            "title": "Névoa de Frio Necrótico",
             "nature": "Dobra Elemental Anômala",
             "phenomenon": "O frio que você emana não congela apenas a água, mas adormece o próprio Karma e os nervos dos inimigos que respiram o vapor azulado.",
             "extensions": [
@@ -1286,7 +1286,7 @@
           },
           {
             "id": 80,
-            "facet": "OMais Amado",
+            "facet": "O Mais Amado",
             "title": "Aura de Hesitação e Paz Forçada",
             "nature": "Técnica Divina / Fenômeno",
             "phenomenon": "Uma luz serena e quente emana de você; ferir você parece um ato antinatural para a mente subconsciente de qualquer criatura viva.",
@@ -1428,8 +1428,8 @@
             "nature": "Runa Kármica Primordial",
             "phenomenon": "Na palma da sua mão existe um glifo que achata objetos soltos (até 4 espaços), armadilhas ou projéteis interceptados em fitas bidimensionais de papiro sem peso.",
             "extensions": [
-              "Descompressão Balística (Principal/Reação · 4 Karma · 12m): Rasga uma fita liberando o objeto com sua massa e velocidade originais, causando 2d8 de dano e empurrando 3m.",
-              "Sombra Dobrada (Extra · 3 Karma): Puxa a si mesmo ou um aliado por 4m através de superfícies planas sem provocar ataque de oportunidade."
+              "Catalogar em Fita (Principal · 4 Karma · toque): Comprime um objeto solto e não vestido de até 4 espaços numa fita de papiro identificada por hieróglifos, por até o fim da cena. Mantenha no máximo duas fitas; o objeto conserva dano e conteúdo, não pode ser usado comprimido e não inclui seres vivos nem efeitos ativos. Destruir a fita devolve o objeto no espaço livre mais próximo, sem dano de explosão.",
+              "Restituir o Arquivo (Extra · 3 Karma · 6 m): Descomprime uma de suas fitas em espaço desocupado e apoiado, devolvendo exatamente o objeto catalogado. Não lança projétil, não conserva velocidade anterior, não causa dano nem desloca criaturas; não cria cópias ou atalhos para transportar seres vivos."
             ],
             "harvest": "Thoth recolhe o método de compressão bidimensional de matéria e projéteis.",
             "categoriaAcesso": "catalogo_player",
@@ -1442,7 +1442,7 @@
             "nature": "Técnica Divina / Fenômeno",
             "phenomenon": "Ao tocar uma superfície, arma ou inimigo, você escreve um hieróglifo luminoso que altera temporariamente uma propriedade descritiva simples daquilo (Pesado, Escorregadio, Frágil ou Silencioso).",
             "extensions": [
-              "1.Reescrever Propriedade (Principal · 4 Karma · 6m): Crava um glifo no alvo causando 2d6 kármico e impondo uma palavra por 1 rodada: \"Frágil\" (-2 na CA Parcial e Total do alvo), \"Pesado\" (o alvo fica Lento e não pode saltar) ou \"Cego\" (alcance visual do alvo cai para 3m).",
+              "Reescrever Propriedade (Principal · 4 Karma · 6m): Crava um glifo no alvo causando 2d6 kármico e impondo uma palavra por 1 rodada: \"Frágil\" (-2 na CA Parcial e Total do alvo), \"Pesado\" (o alvo fica Lento e não pode saltar) ou \"Cego\" (alcance visual do alvo cai para 3m).",
               "Nota de Rodapé (Reação · 3 Karma): Altera a trajetória de uma técnica em área para abrir um buraco seguro de 1,5m onde você ou um aliado está pisando."
             ],
             "harvest": "Thoth absorve a gramática kármica capaz de sobrescrever estados físicos da matéria.",
@@ -1771,7 +1771,7 @@
             "nature": "Técnica Divina / Fenômeno",
             "phenomenon": "No centro da sua testa existe uma fenda vertical fechada; quando aberta por um segundo, ela não dispara fogo comum, mas desfaz a coesão molecular do que estiver na linha focal.",
             "extensions": [
-              "Abrir o Terceiro Olho (Principal · 5 Karma · Linha 12m): Dispara um feixe fino que causa 2d10 kármico/divino, destrói qualquer cobertura física não mágica na linha e ignora completamente escudos temporários e reduções de dano.",
+              "Abrir o Terceiro Olho (Principal · 5 Karma · Linha 12m): Dispara um feixe fino que causa 2d10 kármico/divino, destrói qualquer cobertura física não mágica na linha e ignora completamente escudos temporários e Resistências.",
               "Cinza de Vibhuti (Extra · 2 Karma): A matéria desintegrada vira cinza branca sagrada que cobre seu corpo, concedendo +2 na CA e em Vontade por 1 rodada."
             ],
             "harvest": "Shiva absorve a focalização cirúrgica da entropia destrutiva em feixes estreitos.",
@@ -2595,7 +2595,7 @@
             "phenomenon": "Seu fogo é tão jovem e violento que não precisa ser lançado: qualquer arma, punho ou projétil que toque você (ou que você toque) entra em combustão imediata pelo simples contato.",
             "extensions": [
               "Nascimento Incandescente (Livre · 3 Karma): Por 2 rodadas, sua pele e arma atingem temperatura crítica: qualquer inimigo que acertar você corpo a corpo sofre 1d8 de dano térmico automático, e todos os seus ataques somam +1d8 de fogo antes do parcial.",
-              "Derreter o Aço (Principal · 4 Karma): Golpe que causa 2d8 térmico e derrete a guarda do inimigo, ignorando toda a Redução de Dano física dele."
+              "Derreter o Aço (Principal · 4 Karma): Golpe que causa 2d8 térmico e derrete a guarda do inimigo, ignorando toda a Resistência física dele."
             ],
             "harvest": "Kagu-Tsuchi absorve a geração de plasma térmico de contato imediato.",
             "categoriaAcesso": "catalogo_player",
@@ -3033,7 +3033,7 @@
             "nature": "Método de Luta Exclusivo",
             "phenomenon": "O espírito de um dragão verde esmeralda enrola-se na sua arma; o primeiro golpe que você desfere após se aproximar de um inimigo carrega um momento angular devastador que parte escudos ao meio.",
             "extensions": [
-              "Corte da Lua Crescente (Principal · 4 Karma): Ataque amplo que atinge o alvo principal e até 1 inimigo adjacente a ele, causando 2d10 cortante, ignorando 4 pontos de Redução de Dano e reduzindo a CA Parcial dos atingidos em -2.",
+              "Corte da Lua Crescente (Principal · 4 Karma): Ataque amplo que atinge o alvo principal e até 1 inimigo adjacente a ele, causando 2d10 cortante, ignorando Resistência Alta (3) e reduzindo a CA Parcial dos atingidos em -2.",
               "Guardar o Portão (Reação · 3 Karma): Crava a arma no chão impedindo qualquer inimigo de passar pelo seu espaço ou pelos 2m adjacentes a você nesta rodada."
             ],
             "harvest": "Guan Yu absorve o domínio de armas pesadas em espaços confinados e modernos.",
@@ -3357,7 +3357,7 @@
             "phenomenon": "Raízes e cipós fibrosos brotam de frestas no piso, madeira ou da sua própria cintura para dar rasteiras e amarrar os tornozelos de quem invade seu território.",
             "extensions": [
               "Armadilha de Cipó Tenso (Principal · 4 Karma · 9m): Cipós chicoteiam as pernas do alvo causando 2d8 contundente/cortante e derrubando-o (Caído).",
-              "Casca de Árvore-Ferro (Reação · 3 Karma): Endurece a pele com fibras de madeira avermelhada, recebendo Redução de Dano 5 contra o golpe recebido."
+              "Casca de Árvore-Ferro (Reação · 3 Karma): Endurece a pele com fibras de madeira avermelhada, recebendo Resistência Alta (3) contra o golpe recebido."
             ],
             "harvest": "Curupira recolhe o uso de fibras vegetais de alta tração como armadilhas de acionamento instantâneo.",
             "categoriaAcesso": "catalogo_player",
@@ -3527,7 +3527,7 @@
             "nature": "Dobra Elemental Anômala",
             "phenomenon": "Todo o ferro, aço, engrenagem ou arma de fogo em um raio de 9m reconhece você como seu senhor; suas armas nunca travam, e o metal na mão dos seus inimigos hesita em ferir você.",
             "extensions": [
-              "Domínio da Bigorna e do Trilho (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma metálica (ou constructo/dispositivo) recebe +2 no acerto, +1d8 de dano perfurante/cortante e ignora toda Redução de Dano de armaduras metálicas inimigas.",
+              "Domínio da Bigorna e do Trilho (Extra · 3 Karma): Pelas próximas 2 rodadas, sua arma metálica (ou constructo/dispositivo) recebe +2 no acerto, +1d8 de dano perfurante/cortante e ignora toda Resistência de armaduras metálicas inimigas.",
               "Repulsão de Lâmina Alheia (Reação · 3 Karma): Faz o ferro da arma ou bala inimiga desviar no último centímetro, somando +3 na sua CA contra ataques metálicos."
             ],
             "harvest": "Ogum absorve o domínio eletromagnético e mecânico sobre ligas industriais modernas.",

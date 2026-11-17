@@ -60,14 +60,14 @@ export function SkillPanel({
                 <p className="skill-roll">{cleanedRoll}</p>
               )}
               {roll &&
-                /\d+d20\s*[+−-]\s*\d+/.test(roll) &&
+                /\d+d20(?:\s*[+−-]\s*\d+)?/i.test(roll) &&
                 (() => {
-                  const m = roll.match(/(\d+)d20\s*([+−-])\s*(\d+)/)!;
+                  const m = roll.match(/(\d+)d20(?:\s*([+−-])\s*(\d+))?/i)!;
                   return (
                     <DiceRoller
                       label={skill.name}
                       dice={Number(m[1])}
-                      bonus={Number(m[3]) * (m[2] === "+" ? 1 : -1)}
+                      bonus={Number(m[3] ?? 0) * (m[2] === "+" ? 1 : -1)}
                     />
                   );
                 })()}

@@ -101,7 +101,7 @@
     {
       "id": "combustao",
       "number": 7,
-      "name": "Combustão",
+      "name": "Runa da Combustão Reativa",
       "kind": "subelement",
       "element": "Fogo",
       "expression": "Combustão",
@@ -114,7 +114,7 @@
     {
       "id": "cinza",
       "number": 8,
-      "name": "Cinza",
+      "name": "Runa da Cinza Sufocante",
       "kind": "subelement",
       "element": "Fogo",
       "expression": "Cinza",
@@ -127,7 +127,7 @@
     {
       "id": "incandescencia",
       "number": 9,
-      "name": "Incandescência",
+      "name": "Runa da Incandescência Central",
       "kind": "subelement",
       "element": "Fogo",
       "expression": "Incandescência",
@@ -140,7 +140,7 @@
     {
       "id": "deflagracao",
       "number": 10,
-      "name": "Deflagração",
+      "name": "Runa da Deflagração Expansiva",
       "kind": "subelement",
       "element": "Fogo",
       "expression": "Deflagração",
@@ -153,7 +153,7 @@
     {
       "id": "gelo",
       "number": 11,
-      "name": "Gelo",
+      "name": "Runa do Gelo Traiçoeiro",
       "kind": "subelement",
       "element": "Água",
       "expression": "Gelo",
@@ -164,22 +164,22 @@
       "effect": "O piso fica escorregadio. Ao começar um deslocamento a pé na zona ou entrar nela dessa forma, faça Acrobacia CD 16 uma vez por turno: falhar causa Caído e encerra esse deslocamento; levantar segue a regra normal."
     },
     {
-      "id": "som",
-      "number": 12,
-      "name": "Som",
       "kind": "subelement",
-      "element": "Água",
-      "expression": "Som",
+      "radius": 10,
+      "id": "geada",
+      "number": 12,
+      "name": "Runa da Geada Persistente",
+      "expression": "Geada",
       "parents": [
         "Água"
       ],
-      "radius": 10,
-      "effect": "Enquanto o componente verbal de uma técnica é pronunciado dentro da zona, ele falha automaticamente e a técnica não se resolve. Técnicas sem componente verbal continuam possíveis; a zona não desfaz efeitos já ativos."
+      "element": "Água",
+      "effect": "Uma camada de geada recobre o solo. Criaturas apoiadas nele têm Deslocamento à metade e não podem correr enquanto permanecem na zona. Não afeta voo ou teleporte e não se multiplica com outras reduções à metade."
     },
     {
       "id": "nevoa",
       "number": 13,
-      "name": "Névoa",
+      "name": "Runa da Névoa Desorientadora",
       "kind": "subelement",
       "element": "Água",
       "expression": "Névoa",
@@ -190,61 +190,74 @@
       "effect": "Limita a visão através da zona a 2 m e aplica Abalado enquanto a criatura permanece em seu interior. Sair encerra somente o Abalado produzido por esta runa, sem cancelar condições de outras fontes."
     },
     {
-      "id": "vapor",
-      "number": 14,
-      "name": "Vapor",
       "kind": "subelement",
-      "element": "Água",
-      "expression": "Vapor",
+      "radius": 10,
+      "id": "sangue",
+      "number": 14,
+      "name": "Runa do Sangue Pulsante",
+      "expression": "Sangue",
       "parents": [
         "Água"
       ],
-      "radius": 10,
-      "effect": "Em cada pulso, causa 1d6 de dano Elemental/Água, de expressão térmica/sônica. O mesmo dado é um único pacote de dano, não dois danos separados. Enquanto na zona, o Deslocamento é reduzido à metade."
+      "element": "Água",
+      "effect": "Em cada pulso, uma criatura que já sofra Sangramento na zona recebe 1d6 de dano Elemental/Água pela ressonância de suas feridas. Não cria Sangramento, não renova sua duração, não causa perda irreduzível de Vida e não controla o sangue dentro de corpos intactos."
     },
     {
-      "id": "raio-vento",
+      "id": "raio",
       "number": 15,
-      "name": "Raio / Vento",
+      "name": "Runa do Raio Condutor",
       "kind": "subelement",
       "element": "Ar",
-      "expression": "Raio / Vento",
+      "expression": "Raio",
       "parents": [
-        "Ar"
+        "Vento"
       ],
       "radius": 10,
       "effect": "Em cada pulso, um arco elétrico causa automaticamente 1d8 de dano Elemental/Ar à criatura que veste armadura de metal na zona. O arco não salta para alvos adicionais nem se repete pela quantidade de peças metálicas."
     },
     {
-      "id": "vacuo",
+      "id": "som",
       "number": 16,
-      "name": "Vácuo",
+      "name": "Runa do Som Ressonante",
+      "kind": "subelement",
+      "element": "Ar",
+      "expression": "Som",
+      "parents": [
+        "Vento"
+      ],
+      "radius": 10,
+      "effect": "A ressonância do ar interfere nos componentes verbais pronunciados dentro da zona: eles falham automaticamente e a técnica não se resolve. Técnicas sem componente verbal continuam possíveis. Não cria silêncio absoluto, não bloqueia comunicação mental e não desfaz efeitos já ativos."
+    },
+    {
+      "id": "vacuo",
+      "number": 17,
+      "name": "Runa do Vácuo Convergente",
       "kind": "subelement",
       "element": "Ar",
       "expression": "Vácuo",
       "parents": [
-        "Ar"
+        "Vento"
       ],
       "radius": 10,
       "effect": "Em cada pulso, puxa criaturas de tamanho Médio ou menor que estejam na zona até 2 m em direção ao centro, até o primeiro obstáculo e sem ultrapassar o centro. Cada criatura é puxada no máximo uma vez por rodada."
     },
     {
-      "id": "silencio",
-      "number": 17,
-      "name": "Silêncio",
       "kind": "subelement",
-      "element": "Ar",
-      "expression": "Silêncio",
-      "parents": [
-        "Ar"
-      ],
       "radius": 10,
-      "effect": "Anula ondas sonoras na zona e impede a resolução de componentes sônicos ou verbais que precisem de som audível em seu interior. Não afeta comunicação mental nem técnicas sem esses componentes e não desfaz efeitos anteriores."
+      "id": "pressao-atmosferica",
+      "number": 18,
+      "name": "Runa da Pressão Atmosférica",
+      "expression": "Pressão Atmosférica",
+      "parents": [
+        "Vento"
+      ],
+      "element": "Ar",
+      "effect": "Em cada pulso, uma onda de ar comprimido empurra criaturas de tamanho Médio ou menor até 2 m para longe do centro, até o primeiro obstáculo. Cada criatura é deslocada no máximo uma vez por rodada; não remove o ar dos pulmões, não causa asfixia e não acrescenta dano."
     },
     {
       "id": "areia",
-      "number": 18,
-      "name": "Areia",
+      "number": 19,
+      "name": "Runa da Areia Profunda",
       "kind": "subelement",
       "element": "Terra",
       "expression": "Areia",
@@ -255,9 +268,22 @@
       "effect": "Sobre o solo da zona, cada 1 m real percorrido a pé consome 3 m de Movimento. A areia não impede voo ou teleporte; não multiplique novamente esse mesmo custo por outra zona idêntica."
     },
     {
+      "id": "metal",
+      "number": 20,
+      "name": "Runa do Metal Incandescente",
+      "kind": "subelement",
+      "element": "Terra",
+      "expression": "Metal",
+      "parents": [
+        "Terra"
+      ],
+      "radius": 10,
+      "effect": "Em cada pulso, o calor irradiado causa 1d6 de dano Elemental/Terra à criatura que veste armadura pesada na zona. O dano não se repete pela quantidade de peças e não concede calor ofensivo à arma da criatura."
+    },
+    {
       "id": "cristal",
-      "number": 19,
-      "name": "Cristal",
+      "number": 21,
+      "name": "Runa do Cristal Cortante",
       "kind": "subelement",
       "element": "Terra",
       "expression": "Cristal",
@@ -268,22 +294,9 @@
       "effect": "Os cristais causam 1d6 perfurante a cada 2 m efetivamente percorridos a pé sobre o solo da zona. Some a distância da criatura durante o turno; entrar e sair não zera os metros restantes. Movimento forçado a pé também conta; voo e teleporte não contam."
     },
     {
-      "id": "metal-magma",
-      "number": 20,
-      "name": "Metal / Magma",
-      "kind": "subelement",
-      "element": "Terra",
-      "expression": "Metal / Magma",
-      "parents": [
-        "Terra"
-      ],
-      "radius": 10,
-      "effect": "Em cada pulso, o calor irradiado causa 1d6 de dano Elemental/Terra à criatura que veste armadura pesada na zona. O dano não se repete pela quantidade de peças e não concede calor ofensivo à arma da criatura."
-    },
-    {
       "id": "peso",
-      "number": 21,
-      "name": "Peso",
+      "number": 22,
+      "name": "Runa do Peso Triplicado",
       "kind": "subelement",
       "element": "Terra",
       "expression": "Peso",
@@ -291,46 +304,35 @@
         "Terra"
       ],
       "radius": 10,
-      "effect": "Multiplica por 3 a pressão gravitacional dentro da zona. Triplique a carga efetiva para determinar a faixa de carga e suas penalidades; massas, espaços de inventário e capacidade máxima não são reescritos. Não causa dano adicional, não altera quedas fora da zona e não concede manipulação gravitacional fora desta inscrição."
+      "effect": "Triplica o peso e a carga física efetiva dos objetos, armas e corpos na zona para determinar a faixa de carga e suas penalidades. Não reescreve espaços do inventário nem a capacidade máxima e não causa dano adicional. O efeito termina ao sair da área."
     },
     {
-      "id": "lama",
-      "number": 22,
-      "name": "Lama",
-      "kind": "subelement",
-      "element": "Terra",
-      "expression": "Lama",
-      "parents": [
-        "Terra"
-      ],
-      "radius": 15,
-      "effect": "Converte o solo da zona em argila pegajosa; criaturas em contato com esse solo têm Deslocamento à metade. Não afeta voo ou teleporte e não se combina consigo mesma para reduzir o Deslocamento a um quarto."
-    },
-    {
-      "id": "poeira",
+      "id": "vapor",
       "number": 23,
-      "name": "Poeira",
+      "name": "Runa do Vapor Escaldante",
       "kind": "subelement",
-      "element": "Terra",
-      "expression": "Poeira",
+      "element": "Água",
+      "expression": "Vapor",
       "parents": [
-        "Terra"
+        "Água",
+        "Fogo"
       ],
-      "radius": 20,
-      "effect": "Uma cortina mineral bloqueia a linha de visão que atravessa a zona, inclusive entre dois pontos em seu interior. Não é uma barreira física e não bloqueia sentidos que funcionem sem visão."
+      "radius": 10,
+      "effect": "Em cada pulso, causa 1d6 de dano Elemental/Água, de expressão térmica/sônica. O mesmo dado é um único pacote de dano, não dois danos separados. Enquanto na zona, o Deslocamento é reduzido à metade."
     },
     {
-      "id": "obsidiana",
-      "number": 24,
-      "name": "Obsidiana",
       "kind": "subelement",
-      "element": "Terra",
-      "expression": "Obsidiana",
+      "radius": 10,
+      "id": "magma-lava",
+      "number": 24,
+      "name": "Runa do Magma Fluente",
+      "expression": "Magma / Lava",
       "parents": [
-        "Terra"
+        "Terra",
+        "Fogo"
       ],
-      "radius": 15,
-      "effect": "Estabiliza o solo e concede Vantagem a testes para resistir a quedas e empurrões enquanto a criatura permanece apoiada nele. A Vantagem não converte automaticamente uma falha em sucesso nem permite resistir a um efeito que não ofereça teste."
+      "element": "Terra",
+      "effect": "Em cada pulso, criaturas apoiadas no solo da zona recebem 1d6 de dano Elemental/Terra e Fogo, como um único pacote. O piso exige 2 m de Movimento por 1 m percorrido a pé; voo e teleporte não sofrem esse custo. A lava não altera permanentemente o terreno nem permanece após o fim da inscrição."
     }
   ],
   "taxonomyScope": "environmentalOnly",

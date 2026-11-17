@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Quebra de Limite Físico",
     "focus": "Força Bruta / Vanguarda Marcial",
-    "effect": "Seus ataques da Matriz Marcial ignoram os primeiros 4 pontos de Redução de Dano ou Escudo Temporário do alvo. Uma vez por turno, ao acertar um golpe corpo a corpo Total, você empurra o alvo em 2m e soma +Etapa ao dano causado."
+    "effect": "Seus ataques da Matriz Marcial ignoram até 3 pontos de Resistência física (Resistência Alta) ou os primeiros 4 pontos de Escudo Temporário do alvo. Uma vez por turno, ao acertar um golpe corpo a corpo Total, você empurra o alvo em 2m e soma +Etapa ao dano causado."
   },
   {
     "id": 2,

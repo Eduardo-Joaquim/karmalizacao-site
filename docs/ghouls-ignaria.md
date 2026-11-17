@@ -24,6 +24,11 @@ Ele recusa uma coroa que exigiria abandonar as ruas onde cresceu. Recebe pretend
 
 **Punhos:** Luta contra CA, alcance 2 m, dano base 2d10 físico. As técnicas substituem esse dano quando indicam outro valor. **Carne obstinada:** Redução 4 contra dano físico. Ferimentos continuam a afetá-lo normalmente; não regenera membros durante um confronto.
 
+**Arma principal:** Férulas de Qahir - reforços articulados de punho e antebraço, usados para quebrar linhas de defesa. Principal, Força + Luta, maior de 5d20 +10 contra CA, alcance 2 m, 2d10 físico; Parcial metade e Falha nada. O ataque equipado e os punhos livres são modos alternativos, sem somar seus dados. Técnicas conservam seus custos, fontes e dados próprios.
+
+**Runa da arma:** Runa da Ruptura de Essência (Hagalaz) - Grau IV. Retém 6 Karma e ocupa uma vaga pessoal; na reserva cheia de 100, são 94 livres e 6 retidos. Enquanto armada: A arma ignora até 2 pontos de Resistência física e elemental (Resistência Média). Estouro: Causa +2d8 de dano e aplica Sangramento e Abalado ignorando Resistência física. O Estouro acompanha a resolução indicada, sem ataque adicional; dados extras entram antes do Parcial, sem multiplicação por crítico. Falha não causa dano nem aplica condições. Condições seguem a gravidade do Capítulo 7. Estourar libera a vaga e encerra a passiva; o Karma retido só fica disponível ao fim da cena. Reinscrever exige Principal, contato com o suporte e nova retenção disponível, sem antecipar a liberação anterior. Inscrita nas Férulas de Qahir. Apenas golpes entregues por essa arma recebem a runa; punhos livres não a acionam.
+
+
 ##### 1 · Ruína {#aqwa-ruina}
 
 **Fonte e Grau:** Marcial IV. **Uso:** Principal, 9 Karma, alvo a 2 m. Luta contra CA: total **2d8 físico** E Caído. Parcial causa metade, sem derrubar. Levantar consome Movimento.

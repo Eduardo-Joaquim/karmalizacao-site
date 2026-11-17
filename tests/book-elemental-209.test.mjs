@@ -180,9 +180,10 @@ assert 'início do terceiro turno seguinte' in text
 assert 'sem um quarto pulso' in text
 assert 'tentar e falhar preserva' in text
 assert 'incluindo aliados e o portador' in text
-assert 'não substituem a tabela geral de Subdobras' in text
+assert '18 Subdobras canônicas' in text
 assert 'DURAÇÃO FICTÍCIA' not in text and 'AÇÃO FICTÍCIA' not in text
-assert 'Peso gravitacional' in section(10).text_content()
+assert 'Peso' in section(10).text_content()
+assert 'Peso gravitacional' not in section(10).text_content()
 assert Path('data/elemental-taxonomy.json').read_bytes() == general
 assert source_fingerprints() == before
 `);

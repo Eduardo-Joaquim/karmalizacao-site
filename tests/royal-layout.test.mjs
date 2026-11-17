@@ -11,10 +11,11 @@ const targets = [
   ["elven-gaeria", "rainha-naerith", "conventional", "1d10"],
   ["vampire-ignaria", "rainha-nosferato", "conventional", "2d10"],
   ["demon-ignaria", "rainha-valac", "cursed", "1d8"],
-  ["demi-aeria", "rainha-sael", "cursed", "2d4"],
+  ["demi-aeria", "rainha-sael", "conventional", "2d4"],
   ["thalassia", "atargatis-kalypso", "conventional", "1d8"],
   ["thalassia", "nammu-salacia", "conventional", "1d8"],
-  ["thalassia", "ummu-hubur", "cursed", "1d8"],
+  ["thalassia", "ummu-hubur", "conventional", "1d8"],
+  ["ghoul-ignaria", "al-aqwa", "conventional", "2d10"],
 ];
 const profiles = targets.map(([file, id]) =>
   read(file).courtProfiles.find((profile) => profile.id === id),
@@ -99,7 +100,7 @@ test("eight weapons show one compact card with all authored rules available", ()
 });
 
 test("curses have no conventional inscription fields and retain their restrictions", () => {
-  for (const index of [3, 4, 7]) {
+  for (const index of [3]) {
     const profile = profiles[index];
     const armament = getRoyalArmament(profile.id, profile.facts);
     assert.equal(armament.rune.kind, "cursed");
@@ -113,14 +114,14 @@ test("curses have no conventional inscription fields and retain their restrictio
       assert(!Object.hasOwn(armament.rune, key), `${profile.id}: ${key}`);
     }
     assert.equal(armament.rune.marks, 3);
-    assert.equal(armament.rune.hungerDC, index === 4 ? 17 : 18);
-    assert.equal(armament.rune.tributeLife, index === 4 ? undefined : 4);
+    assert.equal(armament.rune.hungerDC, 19);
+    assert.equal(armament.rune.tributeLife, 4);
   }
   const ranger = getRoyalArmament(profiles[1].id, profiles[1].facts);
   assert.equal(ranger.rune.support, "armor");
-  assert.equal(ranger.rune.retainedKarma, 3);
+  assert.equal(ranger.rune.retainedKarma, 6);
   const scepter = getRoyalArmament(profiles[5].id, profiles[5].facts);
-  assert.match(scepter.rune.burst, /não se soma a outro \+2 de Precisa/);
+  assert.match(scepter.rune.burst, /segundo inimigo/);
 });
 
 test("canonical royal curses calculate all three CDs from the approved attributes", () => {
@@ -135,13 +136,11 @@ test("canonical royal curses calculate all three CDs from the approved attribute
   assert.match(sael, /Perícias não indicadas são 0/);
   assert.equal(ummu.attrs[4], 12);
   assert.match(ummu.skills, /Controle da Corrupção 3/);
-  assert.equal(ummu.weapon.rune.victimDC, 33);
-  assert.equal(ummu.weapon.rune.tributeLife, 4);
+  assert.equal(ummu.weapon.rune.type, "conventional");
+  assert.equal(ummu.weapon.rune.retainedKarma, 3);
 
   for (const [index, escapeDC, forgeDC, hungerDC] of [
-    [3, 33, 20, 18],
-    [4, 21, 18, 17],
-    [7, 33, 20, 18],
+    [3, 35, 22, 19],
   ]) {
     const profile = profiles[index];
     const armament = getRoyalArmament(
@@ -173,7 +172,7 @@ test("canonical royal curses calculate all three CDs from the approved attribute
 });
 
 test("stale royal curse CDs, tribute alternatives and ritual fields fail closed", () => {
-  for (const index of [3, 4, 7]) {
+  for (const index of [3]) {
     const profile = profiles[index];
     const current = currentRoyalCurseFacts(profile);
     const mutate = (replace) => {
@@ -205,7 +204,7 @@ test("stale royal curse CDs, tribute alternatives and ritual fields fail closed"
 });
 
 test("mixed inscriptions fail closed instead of showing an apparently valid loadout", () => {
-  for (const index of [3, 4, 7]) {
+  for (const index of [3]) {
     const profile = profiles[index];
     const facts = structuredClone(profile.facts);
     facts

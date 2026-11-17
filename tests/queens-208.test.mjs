@@ -7,13 +7,13 @@ import { createServer } from "vite";
 
 const read = (name) => JSON.parse(readFileSync(`data/${name}.json`, "utf8"));
 const published = [
-  ["gaeria", "rainha-aveline", 200, 90, 29, 7, "Elhaz"],
-  ["elven-gaeria", "rainha-naerith", 200, 100, 29, 7, "Laguz"],
-  ["vampire-ignaria", "rainha-nosferato", 200, 126, 29, 7, "Elhaz"],
+  ["gaeria", "rainha-aveline", 200, 90, 29, 7, "Thurisaz"],
+  ["elven-gaeria", "rainha-naerith", 200, 100, 29, 7, "Sowilo"],
+  ["vampire-ignaria", "rainha-nosferato", 200, 126, 29, 7, "Othala"],
   ["demon-ignaria", "rainha-valac", 200, 180, 29, 9, "Trono de Ossos Vazios"],
-  ["demi-aeria", "rainha-sael", 200, 128, 29, 9, "Forja de Medula"],
-  ["thalassia", "atargatis-kalypso", 280, 220, 28, 10, "Elhaz"],
-  ["thalassia", "nammu-salacia", 150, 96, 26, 7, "Thurisaz"],
+  ["demi-aeria", "rainha-sael", 200, 128, 29, 9, "Tiwaz-Omega"],
+  ["thalassia", "atargatis-kalypso", 280, 220, 28, 10, "Jera"],
+  ["thalassia", "nammu-salacia", 150, 96, 26, 7, "Elhaz"],
   [
     "thalassia",
     "ummu-hubur",
@@ -21,7 +21,7 @@ const published = [
     540,
     35,
     9,
-    "Labirinto de Espelhos Partidos",
+    "Thurisaz",
   ],
 ];
 const profiles = published.map(([file, id]) =>
@@ -80,13 +80,13 @@ test("each queen exposes her principal weapon and the location of her rune", () 
     .join(" ")
     .replace(/\s+/g, " ");
   assert.match(ranger, /guarda da armadura/);
-  assert.match(ranger, /97 livres e 3 retidos/);
+  assert.match(ranger, /94 livres e 6 retidos/);
   const aveline = profiles[0].facts
     .flatMap((fact) => fact.fields)
     .map((field) => field.html)
     .join(" ")
     .replace(/\s+/g, " ");
-  assert.match(aveline, /88 livres e 2 retidos/);
+  assert.match(aveline, /87 livres e 3 retidos/);
 });
 
 test("the new utility technique reaches the real NPC catalog with its cost", async () => {

@@ -6,9 +6,9 @@ import { createServer } from 'vite';
 const vite = await createServer({ configFile: false, appType: 'custom', resolve: { alias: { '@': process.cwd() } }, server: { middlewareMode: true, hmr: false, ws: false } });
 after(() => vite.close());
 
-test('release 2.0.9 is announced with player changes and preserves the patch archive', async () => {
+test('release 2.1.0 is announced with player changes and preserves the patch archive', async () => {
   const { PATCH_NOTES, LATEST_PATCH, shouldShowPatch } = await vite.ssrLoadModule('/lib/patch-notes.ts');
-  assert.equal(LATEST_PATCH.version, '2.0.9');
+  assert.equal(LATEST_PATCH.version, '2.1.0');
   assert.equal(JSON.parse(readFileSync('package.json')).version, LATEST_PATCH.version);
   assert.equal(JSON.parse(readFileSync('package-lock.json')).version, LATEST_PATCH.version);
   assert.equal(new Set(PATCH_NOTES.map(p => p.id)).size, PATCH_NOTES.length);

@@ -296,7 +296,7 @@ As **trinta runas** abaixo incluem o exemplo do Deus Selvagem, as vinte outras m
 
 <dl class="rune-forge-summary"><div><dt>Condições para forjar</dt><dd>4 condições</dd></div><div><dt>Classificação</dt><dd>Maldição Abissal</dd></div><div><dt>Composição</dt><dd>Fixa</dd></div><div><dt>CD de Forja</dt><dd>20</dd></div></dl>
 
-**Clamor dos Deserdados** - O clamor desafia espíritos fortes. Feche 3 Marcas por disparos a 9 m ou mais, contra o alvo de Presença maior ou igual exigido por C18. O despertar causa **1d16 Corrupto**; com pelo menos 1 Acerto Total na sequência, impõe **Atordoado pleno**.
+**Clamor dos Deserdados** - O clamor desafia alvos de Presença superior. Feche 3 Marcas por disparos a 9 m ou mais, contra o alvo de Presença maior ou igual exigido por C18. O despertar causa **1d16 Corrupto**; com pelo menos 1 Acerto Total na sequência, impõe **Atordoado pleno**.
 
 **Composição fixa:** C2 + C4 + C5 + C18; 4 condições; dano escolhido 1d16. As três CDs são calculadas pela Tabela B.
 
